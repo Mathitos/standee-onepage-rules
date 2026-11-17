@@ -42,6 +42,7 @@ As dimensões externas da base vêm do catálogo; não herdar o retângulo 25 ×
   - Duas metades: cada arte no sentido do PDF, na face de cima da sua metade. O contorno da metade traseira é a silhueta da frente espelhada, para coincidir quando a peça for virada e unida.
 - Peça única: qual arte vai na face da mesa e qual no relevo ainda não foi decidido; proposta: frente na face da mesa.
 - Casos assimétricos (arma de um lado só) são obrigatórios nos testes visuais.
+- **Pendente de decisão do usuário — silhuetas diferentes**: no PDF HDF, 13 de 69 artes têm frente × verso abaixo de 0,95; nos Storm Troopers com capa chega a 0,40–0,62, porque a capa do verso se abre para outro lado. Usar só a silhueta da frente cortaria a capa do verso. Opções: (a) contorno = união das duas silhuetas, deixando área branca sem desenho do lado que não tem capa; (b) manter a frente e aceitar o corte; (c) escolha por arte. Até decidir, o gerador usa a frente e o relatório marca essas artes.
 
 ## Cores
 

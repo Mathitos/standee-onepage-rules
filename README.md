@@ -9,7 +9,7 @@ Transforma listas do [Army Forge](https://army-forge.onepagerules.com) (One Page
 | Parte | Situação |
 |---|---|
 | Importar lista ("Share as Text") | Site, com testes |
-| Catálogo de artes a partir do PDF | Especificado (skill, PRD-04); recorte prototipado |
+| Catálogo de artes a partir do PDF | Skill `importar-artes-pdf` pronta; pacote HDF com 8 de 69 artes revisadas |
 | Geração 3MF/STL | Protótipo Python, validado no fatiador do Bambu (CLI) |
 | Geração no navegador | Não iniciado |
 
@@ -46,5 +46,7 @@ src/armyforge/   importação da lista (parser + tipos)
 src/ui/          telas
 tests/           testes (Vitest) e fixtures
 prototipo/       gerador Python de referência (recorte do PDF, 3MF/STL, fatiamento)
+.claude/skills/  skill importar-artes-pdf (PDF da OPR -> pacote do catálogo)
+catalog/         revisões e manifestos por facção (imagens fora do git)
 docs/            PRDs, decisões, status, evidências
 ```

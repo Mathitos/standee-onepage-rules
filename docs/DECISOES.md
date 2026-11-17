@@ -24,6 +24,8 @@
 
 ## Decisões ainda pendentes
 
+- Contorno quando frente e verso têm silhuetas diferentes (capas dos Storm Troopers): união, só frente ou escolha por arte (PRD-03).
+- Aliases propostos na revisão parcial do piloto: Rifle → Battle Rifle, Baton → Shock Baton, Axe → Energy Axe e "Lance" (Heavy, Hunting ou Anti-Tank).
 - Mecanismo de encaixe das metades (pino solto, só cola ou outro), após cupom físico.
 - Geometria da base oval 60x35: elipse (suposição) — confirmar.
 - Repositório, conta/organização GitHub e visibilidade do código.

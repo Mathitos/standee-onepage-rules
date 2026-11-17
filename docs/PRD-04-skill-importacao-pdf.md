@@ -80,6 +80,15 @@ catalog/<sistema>/<faccao>/
 - Army book: só leitura, uma requisição por facção, sem login.
 - Sessões paralelas: cada facção em sua pasta; nenhum índice global editado por duas sessões ao mesmo tempo.
 
+## Implementação (17/11/2026)
+
+- Scripts: `extrair.py` (passo 1), `armybook.py` (passo 2), `montar.py` (passo 4); instruções em `SKILL.md`.
+- Estilo por página: fração escura entre 0,7 e 1,0 mm para dentro do contorno (mediana da página); limiar 0,55. No HDF: fino 0,20–0,31, borda 0,80–1,00. Uma faixa de 0,6 mm não separava (pneus escuros das motos).
+- Cópias: mesma página, tamanho ±1 mm e miniatura com diferença média < 0,035.
+- Pares fino × borda: rótulo (igual nos dois estilos) + tamanho compatível + contenção da silhueta fina dilatada; atribuição global pelo rótulo mais idêntico (a atribuição gulosa trocava "Storm Trooper Rifle" com "Storm Trooper Drum Rifle"). Não assume deslocamento de páginas; no HDF todos os 69 pares deram 30 páginas.
+- `revisao.json` fica na raiz da facção (versionado); `--aprovado` só após o "ok" do usuário.
+- Resultado no HDF: 218 linhas → 138 grupos → 69 artes, todas pareadas; 13 com frente × verso < 0,95 (Storm Troopers com capa e outros), ver PRD-03.
+
 ## Aceite
 
 - PDF HDF: 30 páginas de arte por estilo detectadas; capa e instruções ignoradas; cópias deduplicadas; pares fino × borda grossa formados.
