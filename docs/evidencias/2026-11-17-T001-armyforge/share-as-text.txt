@@ -1,0 +1,13 @@
+++ Human Defense Force (v3.6.0) [GFF 780pts] [6 Units] ++
+
+Infantry Squad [3] Q5+ D5+ | 85pts | 3x Hold the Line, Tough(3)
+3x Battle Rifle (24", A2), 3x Strike (A2)
+
+Combat Bikers [3] Q5+ D5+ | 115pts | 3x Fast, 3x Hold the Line, Tough(3)
+3x Pistol (12", A2, Assault), 3x Hunting Lance (A2, Thrust)
+
+2x Veterans [3] Q4+ D5+ | 140pts | 3x Hold the Line, Tough(3)
+3x Strike (A2), 3x Shotgun (12", A4, AP(1))
+
+2x OGRE Robot [1] Q4+ D4+ | 150pts | Fearless, Tough(9), Hold the Line, Furious
+Gatling Gun (18", A6, Anti-Cover, Surge), Strike (A2)

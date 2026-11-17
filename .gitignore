@@ -1,0 +1,24 @@
+# Arte e dados da OPR ficam fora do git até decidir uso pessoal/público (D006)
+*.pdf
+saidas/
+catalog/**/arts/
+catalog/**/armybook/
+catalog/**/review/
+catalog/**/build/
+docs/evidencias/**/armybook-*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node / build
+node_modules/
+dist/
+coverage/
+*.tmp
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
