@@ -34,6 +34,19 @@ Dependência nova: `manifold3d` (pip, Python 3.14). Geração em ~4 s.
 - Comparação: duas metades = 1 troca por placa e ~469 min para 28 metades; peça única = 3 trocas e ~354 min para 14 peças.
 - Uma execução da CLI travou sem CPU por 10 min (processo que não pôde ser encerrado nem com `taskkill`); `fatiar_cli.py` agora usa tempo limite de 300 s com nova tentativa.
 
+## Estilo contorno fino (mesma noite, dois modos)
+
+| | Borda grossa | Contorno fino |
+|---|---|---|
+| Traço preto < 0,4 mm (fração da área preta) | 15–30% | **44–77%** |
+| IoU frente × verso | 0,983–0,996 | 0,979–0,994 |
+| Infantry (altura × largura da peça) | 40,5 × 23,8 mm | 38,1 × 18,8 mm |
+| Arma passa da base | OGRE 1,6 mm, Veteran 0,9 mm | nenhuma |
+| Fatiador, duas metades (28 peças) | OK, 1 troca, ~469 min | OK, 1 troca, ~370 min |
+| Fatiador, peça única (14 peças) | OK, 3 trocas, ~354 min | OK, 3 trocas, ~298 min |
+
+Conclusão provisória: no bico 0,4, o relevo do contorno fino deve perder boa parte do detalhe; a borda grossa é o padrão recomendado até o teste físico.
+
 ## O que a CLI do Bambu exige (aprendizado para o exportador do site)
 
 Observado com Bambu Studio 02.0x no Windows; cada item foi isolado por teste:
