@@ -25,6 +25,15 @@ Dependência nova: `manifold3d` (pip, Python 3.14). Geração em ~4 s.
 - **Bambu Studio CLI, perfil A1 0,4 de teste**: figuras OK — 28 objetos, 8 camadas, 1 troca (Z 1,4 mm, filamento 2), ~469 min; bases OK — 14 objetos, 20 camadas, 0 trocas, ~235 min. Purga suposta (200/600 mm³).
 - Substituições de teste (não decididas pelo usuário): OGRE Minigun para Gatling; 2 Biker Pistol + 1 Biker Lance.
 
+## Modo peça única (mesma noite, estilo borda)
+
+`--modo peca-unica`: face da mesa com o desenho P/B da **frente** (espelhado no modelo para ser lido por baixo), núcleo branco, relevo preto com a arte do **verso** em cima; lingueta simples de 1,2 mm e fenda de 1,45 mm.
+
+- Seções da primeira figura: em Z 0,1 e 0,3 mm, branco 1020,6 + preto 921,6 = 1942,2 mm² (silhueta inteira); de 0,6 a 1,1 mm só branco (1942,2); em 1,4 mm só relevo preto (953,1). Interseção entre partes: 0 mm³.
+- Fatiador (CLI, perfil A1 de teste): figuras OK — 14 objetos, 8 camadas, **3 trocas** (Z 0,2 → preto; 0,4 → branco; 1,4 → preto), ~354 min; bases OK — 14 objetos, sem troca, ~236 min. 3MF de figuras: 5,2 MB.
+- Comparação: duas metades = 1 troca por placa e ~469 min para 28 metades; peça única = 3 trocas e ~354 min para 14 peças.
+- Uma execução da CLI travou sem CPU por 10 min (processo que não pôde ser encerrado nem com `taskkill`); `fatiar_cli.py` agora usa tempo limite de 300 s com nova tentativa.
+
 ## O que a CLI do Bambu exige (aprendizado para o exportador do site)
 
 Observado com Bambu Studio 02.0x no Windows; cada item foi isolado por teste:

@@ -6,7 +6,11 @@ Frontend estático no GitHub Pages. Catálogo público permitido como JSON e ass
 
 T001 comprovou que a API do Army Forge não envia cabeçalhos CORS: o Pages não consegue ler o link. O MVP não chama o Army Forge; a lista entra como texto colado (D010) e bases/IDs vêm do catálogo (D015). Não há servidor. Uma função intermediária (por exemplo Cloudflare Worker) para o modo link fica fora do MVP e depende de verificar termos de uso; nunca usar proxy público genérico.
 
-## Stack proposta, ainda não aprovada por spike
+## Stack
+
+Adotada no esqueleto em 17/11/2026 (D019): Vite 8, React 19, TypeScript 7, Vitest 5, Node 24. Geometria no navegador ainda não iniciada; candidata: manifold-3d (WebAssembly), a mesma biblioteca do protótipo Python (D018).
+
+### Stack proposta originalmente
 
 - TypeScript, Vite, React para interface e estado do projeto.
 - Web Worker para malhas e arquivos; mensagens com job ID, progresso, cancelamento e erros.

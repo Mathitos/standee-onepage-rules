@@ -18,6 +18,7 @@
 | D014 | Proposta (revisão 17/11) | Escala física padrão = escala de impressão do PDF a 100% (300 dpi). Multiplicador global só por escolha explícita. Abandona a altura fixa de 40 mm dos testes |
 | D015 | Proposta (revisão 17/11) | Bases vêm do catálogo, capturadas do army book pelo curador com versão e data, porque o texto não traz bases. Versão diferente na lista → alerta e revisão |
 | D016 | **Substituída por D017** | Catálogo por recorte de grade + rotulagem manual em tela; OCR opcional |
+| D019 | Adotada no esqueleto (17/11), reversível | Site em Vite + React + TypeScript + Vitest, publicado pelo GitHub Actions no Pages com caminhos relativos. Repositório local em `main`; o usuário faz o push |
 | D018 | Proposta (17/11) | Geometria por polígonos extrudados com manifold3d (Python no protótipo; existe build WebAssembly para o site). Substitui marching cubes do protótipo antigo: 28 metades em 3,7 MB contra 36 MB para 8 peças |
 | D017 | **Aceita pelo usuário** (17/11) | Rotulagem e importação das imagens são uma skill do Claude Code executada pelo agente, uma sessão por PDF; o pacote é exportado para dentro do projeto. Scripts fazem recorte e medidas; o agente lê rótulos e propõe o mapeamento. Sem tela de rotulagem no site e sem OCR. Especificação em PRD-04 |
 

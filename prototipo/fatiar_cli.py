@@ -34,8 +34,14 @@ def resolver(pasta, nome):
     return base
 
 
-def cli(args):
-    return subprocess.run([str(EXE), *args], capture_output=True, text=True).returncode
+def cli(args, limite_s=300, tentativas=2):
+    """Roda a CLI com tempo limite. Observado em 17/11: uma execução travou sem CPU por 10 min."""
+    for n in range(1, tentativas + 1):
+        try:
+            return subprocess.run([str(EXE), *args], capture_output=True, text=True, timeout=limite_s).returncode
+        except subprocess.TimeoutExpired:
+            print(f'CLI do Bambu passou de {limite_s}s (tentativa {n}/{tentativas})', file=sys.stderr)
+    return -999
 
 
 def main():

@@ -33,8 +33,9 @@ VERSAO = 'prototipo-0.1'
 
 @dataclass
 class Param:
-    corpo: float = 1.2            # espessura de cada metade, sem relevo
+    corpo: float = 1.2            # espessura do corpo (de cada metade, ou da peça única), sem relevo
     relevo: float = 0.4
+    camada_mesa: float = 0.4      # peça única: espessura do desenho P/B na face da mesa (2 camadas de 0,2)
     lingueta_larg: float = 6.0
     lingueta_prof: float = 3.0
     travessa: float = 0.5         # meia altura da travessa sob os pés
@@ -186,6 +187,23 @@ def metade(corpo_mask, relevo_mask, furos, P):
     # o relevo nunca passa da borda do corpo
     relevo = mf.Manifold.extrude(secao(relevo_mask) ^ contorno, P.relevo).translate((0, 0, P.corpo))
     return corpo, relevo
+
+
+def peca_unica(corpo_mask, preto_mesa_mask, relevo_mask, P):
+    """Peça única (D002/D011): desenho P/B na face da mesa, núcleo branco, relevo preto em cima.
+
+    corpo_mask já está no sistema de coordenadas do modelo visto de cima; preto_mesa_mask
+    deve vir espelhado (a face é vista por baixo). Branco e preto da camada inferior são
+    complementares e coplanares em Z=0.
+    """
+    contorno = secao(corpo_mask)
+    preto_cs = secao(preto_mesa_mask) ^ contorno
+    branco_cs = contorno - preto_cs
+    cam = P.camada_mesa
+    branco = mf.Manifold.extrude(branco_cs, cam) + mf.Manifold.extrude(contorno, P.corpo - cam).translate((0, 0, cam))
+    preto_mesa = mf.Manifold.extrude(preto_cs, cam)
+    relevo = mf.Manifold.extrude(secao(relevo_mask) ^ contorno, P.relevo).translate((0, 0, P.corpo))
+    return branco, preto_mesa, relevo
 
 
 def base(forma, mm, P, espessura_lingueta):
@@ -402,9 +420,8 @@ def main():
     ap.add_argument('--margem', type=float, default=Param.margem_mesa, help='margem da borda da mesa (mm)')
     ap.add_argument('--espaco', type=float, default=Param.espaco, help='espaço entre peças (mm)')
     a = ap.parse_args()
-    if a.modo == 'peca-unica':
-        sys.exit('modo peca-unica ainda não implementado neste protótipo')
     P = Param(margem_mesa=a.margem, espaco=a.espaco)
+    duas = a.modo == 'duas-metades'
     t0 = time.time()
     lista = json.loads(a.lista.read_text(encoding='utf-8'))
     pdf = Path(lista['pdf']['caminho'])
@@ -432,39 +449,58 @@ def main():
         pad = lambda m: np.pad(m, ((P.pad, corpo_f.shape[0] - m.shape[0] - P.pad), (P.pad, P.pad)))
         rel_f, rel_v = pad(rel_f), pad(rel_v)
         corpo_v = corpo_f[:, ::-1]
-        furos_f = posicionar_furos(pad(frente_sil), P)
-        furos_v = [(r, corpo_f.shape[1] - 1 - c) for r, c in furos_f]
         assert np.array_equal(corpo_v[:, ::-1], corpo_f)
-        partes = {}
-        for lado, corpo_m, rel_m, furos in (('frente', corpo_f, rel_f, furos_f), ('verso', corpo_v, rel_v, furos_v)):
-            corpo3, relevo3 = metade(corpo_m, rel_m, furos, P)
-            bmin = corpo3.bounding_box()
+        if duas:
+            furos_f = posicionar_furos(pad(frente_sil), P)
+            furos_v = [(r, corpo_f.shape[1] - 1 - c) for r, c in furos_f]
+            pecas = []
+            for lado, corpo_m, rel_m, furos in (('frente', corpo_f, rel_f, furos_f),
+                                                ('verso', corpo_v, rel_v, furos_v)):
+                corpo3, relevo3 = metade(corpo_m, rel_m, furos, P)
+                pecas.append((lado, corpo_m, rel_m,
+                              [(corpo3, 0, 'Branco - corpo'), (relevo3, 1, 'Preto - relevo')]))
+        else:
+            # vista de cima: contorno = frente espelhada; face da mesa mostra a frente (espelhada
+            # no modelo, lida certa por baixo); relevo em cima = verso como impresso
+            furos_f = []
+            branco3, preto3, relevo3 = peca_unica(corpo_v, rel_f[:, ::-1], rel_v, P)
+            pecas = [('peca', corpo_v, rel_v, [(branco3, 0, 'Branco - corpo'),
+                                                (preto3, 1, 'Preto - desenho na mesa'),
+                                                (relevo3, 1, 'Preto - relevo')])]
+        dims = None
+        for sufixo, corpo_m, rel_m, partes3 in pecas:
+            bmin = partes3[0][0].bounding_box()
             desl = (-bmin[0], -bmin[1], 0)
-            corpo3, relevo3 = corpo3.translate(desl), relevo3.translate(desl)
-            k = f'{chave}-{lado}'
-            objetos_fig[k] = (f'{info["rotulo"]} - {lado}', [(corpo3, 0, 'Branco - corpo'), (relevo3, 1, 'Preto - relevo')])
+            partes3 = [(m.translate(desl), cor, rot) for m, cor, rot in partes3]
+            k = f'{chave}-{sufixo}'
+            nome = f'{info["rotulo"]} - {sufixo}' if duas else info['rotulo']
+            objetos_fig[k] = (nome, partes3)
             mascaras[k] = (corpo_m, rel_m)
-            checks += [checar(f'{k} corpo', corpo3), checar(f'{k} relevo', relevo3)]
-            uniao = corpo3 + relevo3
+            checks += [checar(f'{k} {rot}', m) for m, _, rot in partes3]
+            uniao = partes3[0][0]
+            for m, _, _ in partes3[1:]:
+                uniao = uniao + m
             para_trimesh(uniao).export(saida / 'stl' / f'{k}.stl')
             stl.append(f'stl/{k}.stl')
-            partes[lado] = previa_metade(corpo_m, rel_m, furos)
-            bb = corpo3.bounding_box()
-            partes[f'{lado}_mm'] = [round(bb[3] - bb[0], 2), round(bb[4] - bb[1], 2)]
-        sep = np.full((partes['frente'].shape[0], 12, 3), 200, np.uint8)
-        cv2.imwrite(str(saida / 'previas' / f'{chave}.png'), np.hstack([partes['frente'], sep, partes['verso']]))
+            bb = partes3[0][0].bounding_box()
+            dims = [round(bb[3] - bb[0], 2), round(bb[4] - bb[1], 2)]
+        # prévia: frente como vista pela frente e verso como visto por trás, nos dois modos
+        sep = np.full((previa_metade(corpo_f, rel_f, []).shape[0], 12, 3), 200, np.uint8)
+        furos_v = [(r, corpo_f.shape[1] - 1 - c) for r, c in furos_f]
+        cv2.imwrite(str(saida / 'previas' / f'{chave}.png'),
+                    np.hstack([previa_metade(corpo_f, rel_f, furos_f), sep, previa_metade(corpo_v, rel_v, furos_v)]))
         artes[chave] = {
             'rotulo': info['rotulo'], 'pagina_pdf': pagina, 'linha': info['linha'], 'estilo': a.estilo,
             'iou_frente_verso': round(iou_fv, 3), 'furos_por_metade': len(furos_f),
             'preto_fino_frente': round(fracao_fina(rel_f), 3), 'preto_fino_verso': round(fracao_fina(rel_v), 3),
-            'metade_mm': partes['frente_mm'], **med,
+            'peca_mm': dims, **med,
         }
 
     bases_def, objetos_base = {}, {}
     for chave_b, bdef in lista['bases'].items():
         if not any(m['base'] == chave_b for m in lista['modelos']):
             continue
-        solido, med_b = base(bdef['forma'], bdef['mm'], P, 2 * P.corpo)
+        solido, med_b = base(bdef['forma'], bdef['mm'], P, (2 if duas else 1) * P.corpo)
         # bases numa cor só (filamento 1, cor à escolha): sem torre de purga
         objetos_base[f'base-{chave_b}'] = (f'Base {chave_b}', [(solido, 0, 'Base')])
         checks.append(checar(f'base-{chave_b}', solido))
@@ -488,9 +524,8 @@ def main():
     pecas_fig, pecas_base = [], []
     for m in lista['modelos']:
         for i in range(m['qtd']):
-            for lado in ('frente', 'verso'):
-                k = f'{m["arte"]}-{lado}'
-                pecas_fig.append((k, *artes[m['arte']]['metade_mm']))
+            for sufixo in (('frente', 'verso') if duas else ('peca',)):
+                pecas_fig.append((f'{m["arte"]}-{sufixo}', *artes[m['arte']]['peca_mm']))
             pecas_base.append((f'base-{m["base"]}', *bases_def[m['base']]['dim_mm']))
     placas_fig = empacotar(pecas_fig, P, reservado=P.torre_xyxy)
     placas_base = empacotar(pecas_base, P)
@@ -517,10 +552,11 @@ def main():
 
     relatorio = {
         'gerador': VERSAO, 'modo': a.modo, 'estilo': a.estilo, 'parametros': asdict(P),
-        'furo_prof_mm': P.furo_prof, 'pino_sugerido_mm': [1.75, round(2 * P.furo_prof - 0.1, 2)],
-        'lingueta_unida_mm': round(2 * P.corpo, 2), 'pdf_sha256': sha,
+        'furo_prof_mm': P.furo_prof if duas else None,
+        'pino_sugerido_mm': [1.75, round(2 * P.furo_prof - 0.1, 2)] if duas else None,
+        'espessura_lingueta_mm': round((2 if duas else 1) * P.corpo, 2), 'pdf_sha256': sha,
         'modelos': lista['modelos'], 'total_modelos': sum(m['qtd'] for m in lista['modelos']),
-        'total_metades': len(pecas_fig), 'total_bases': len(pecas_base),
+        'total_pecas_figura': len(pecas_fig), 'total_bases': len(pecas_base),
         'artes': artes, 'bases': bases_def, 'arquivos_3mf': arquivos, 'stl': stl,
         'checagens_malha': checks, 'tempo_s': round(time.time() - t0, 1),
     }
