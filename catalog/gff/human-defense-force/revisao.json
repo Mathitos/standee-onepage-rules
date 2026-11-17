@@ -1,0 +1,59 @@
+{
+  "packId": "human-defense-force",
+  "packVersion": "0.1.0",
+  "gameSystem": {"code": "GFF", "slug": "grimdark-future-firefight", "armyForgeId": 3},
+  "armyBook": {"arquivo": "armybook/z65fgu0l29i4lnlu-gs3-v3.6.0.json"},
+  "nota": "Revisão PARCIAL feita pelo agente em 17/11/2026 só com as artes ligadas à lista piloto (teste da skill, T007). Rótulos lidos em work/rotulos-02/03/06.png. Os demais 61 candidatos ainda não foram revisados (T008).",
+  "unidades": {
+    "infantry-squad": {"nomes": ["Infantry Squad"], "armyForgeUnitId": "_nbz3zj"},
+    "veterans": {"nomes": ["Veterans"], "armyForgeUnitId": "SScXOqX"},
+    "combat-bikers": {"nomes": ["Combat Bikers"], "armyForgeUnitId": "UoYLgB-"},
+    "ogre-robot": {"nomes": ["OGRE Robot", "OGRE Robots"], "armyForgeUnitId": "44TuRY_"}
+  },
+  "artes": {
+    "a014": {
+      "artId": "infantry-rifle", "rotulo": "Infantry Rifle", "confiancaRotulo": "alta",
+      "unitKey": "infantry-squad", "equipmentTags": ["Battle Rifle"], "cosmetic": null,
+      "status": "alias-proposed", "aliases": [{"pdf": "Rifle", "armyBook": "Battle Rifle"}],
+      "notas": "army book não tem arma chamada só 'Rifle'; a arma padrão é Battle Rifle"
+    },
+    "a034": {
+      "artId": "veteran-shotgun", "rotulo": "Veteran Shotgun", "confiancaRotulo": "alta",
+      "unitKey": "veterans", "equipmentTags": ["Shotgun"], "cosmetic": null,
+      "status": "mapped", "aliases": [], "notas": ""
+    },
+    "a064": {
+      "artId": "biker-pistol", "rotulo": "Biker Pistol", "confiancaRotulo": "alta",
+      "unitKey": "combat-bikers", "equipmentTags": ["Pistol"], "cosmetic": null,
+      "status": "mapped", "aliases": [], "notas": "nas opções do army book Pistol vem junto com uma lança"
+    },
+    "a065": {
+      "artId": "biker-lance", "rotulo": "Biker Lance", "confiancaRotulo": "alta",
+      "unitKey": "combat-bikers", "equipmentTags": [], "cosmetic": null,
+      "status": "alias-proposed",
+      "aliases": [{"pdf": "Lance", "armyBook": ["Heavy Lance", "Hunting Lance", "Anti-Tank Lance"]}],
+      "notas": "rótulo diz só 'Lance'; o army book tem três lanças. Usuário escolhe a quais ela serve"
+    },
+    "a066": {
+      "artId": "ogre-minigun", "rotulo": "OGRE Minigun", "confiancaRotulo": "alta",
+      "unitKey": "ogre-robot", "equipmentTags": [], "cosmetic": null,
+      "status": "unmapped", "aliases": [],
+      "notas": "army book v3.6.0 não tem Minigun; candidata a substituta de Gatling Gun (decisão do usuário, D013)"
+    },
+    "a067": {
+      "artId": "ogre-grenade-launcher", "rotulo": "OGRE Grenade Launcher", "confiancaRotulo": "alta",
+      "unitKey": "ogre-robot", "equipmentTags": ["Grenade Launcher"], "cosmetic": null,
+      "status": "mapped", "aliases": [], "notas": ""
+    },
+    "a068": {
+      "artId": "ogre-baton", "rotulo": "OGRE Baton", "confiancaRotulo": "alta",
+      "unitKey": "ogre-robot", "equipmentTags": ["Shock Baton"], "cosmetic": null,
+      "status": "alias-proposed", "aliases": [{"pdf": "Baton", "armyBook": "Shock Baton"}], "notas": ""
+    },
+    "a069": {
+      "artId": "ogre-axe", "rotulo": "OGRE Axe", "confiancaRotulo": "alta",
+      "unitKey": "ogre-robot", "equipmentTags": ["Energy Axe"], "cosmetic": null,
+      "status": "alias-proposed", "aliases": [{"pdf": "Axe", "armyBook": "Energy Axe"}], "notas": ""
+    }
+  }
+}

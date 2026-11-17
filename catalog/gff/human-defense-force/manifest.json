@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1,
+  "packId": "human-defense-force",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "GFF",
+    "slug": "grimdark-future-firefight",
+    "armyForgeId": 3
+  },
+  "armyBook": {
+    "id": "z65fgu0l29i4lnlu",
+    "name": "Human Defense Force",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-17"
+  },
+  "source": {
+    "pdfName": "Human_Defense_Force_-_BW.pdf",
+    "pdfSha256": "b17c9ba4f73f8f5c1a2aca045526f3e7009b06e8113b653f6f4cf3a0ddd719fc",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "infantry-squad",
+      "names": [
+        "Infantry Squad"
+      ],
+      "armyForgeUnitId": "_nbz3zj",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-17"
+      }
+    },
+    {
+      "unitKey": "veterans",
+      "names": [
+        "Veterans"
+      ],
+      "armyForgeUnitId": "SScXOqX",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-17"
+      }
+    },
+    {
+      "unitKey": "combat-bikers",
+      "names": [
+        "Combat Bikers"
+      ],
+      "armyForgeUnitId": "UoYLgB-",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-17"
+      }
+    },
+    {
+      "unitKey": "ogre-robot",
+      "names": [
+        "OGRE Robot",
+        "OGRE Robots"
+      ],
+      "armyForgeUnitId": "44TuRY_",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-17"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "infantry-rifle",
+      "candidateId": "a014",
+      "pdfLabel": "Infantry Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantry-squad",
+      "equipmentTags": [
+        "Battle Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": "Battle Rifle"
+        }
+      ],
+      "notes": "army book não tem arma chamada só 'Rifle'; a arma padrão é Battle Rifle",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/infantry-rifle/fino/frente.png",
+          "back": "arts/infantry-rifle/fino/verso.png",
+          "mask": "arts/infantry-rifle/fino/mascara.png",
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            34.5,
+            18.7
+          ]
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/infantry-rifle/borda/frente.png",
+          "back": "arts/infantry-rifle/borda/verso.png",
+          "mask": "arts/infantry-rifle/borda/mascara.png",
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            36.9,
+            23.7
+          ]
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "unverified"
+    },
+    {
+      "artId": "veteran-shotgun",
+      "candidateId": "a034",
+      "pdfLabel": "Veteran Shotgun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veterans",
+      "equipmentTags": [
+        "Shotgun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/veteran-shotgun/fino/frente.png",
+          "back": "arts/veteran-shotgun/fino/verso.png",
+          "mask": "arts/veteran-shotgun/fino/mascara.png",
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            34.1,
+            21.5
+          ]
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/veteran-shotgun/borda/frente.png",
+          "back": "arts/veteran-shotgun/borda/verso.png",
+          "mask": "arts/veteran-shotgun/borda/mascara.png",
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            36.7,
+            26.6
+          ]
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "unverified"
+    },
+    {
+      "artId": "biker-pistol",
+      "candidateId": "a064",
+      "pdfLabel": "Biker Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "combat-bikers",
+      "equipmentTags": [
+        "Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "nas opções do army book Pistol vem junto com uma lança",
+      "styles": {
+        "fino": {
+          "page": 26,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/biker-pistol/fino/frente.png",
+          "back": "arts/biker-pistol/fino/verso.png",
+          "mask": "arts/biker-pistol/fino/mascara.png",
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            32.4,
+            40.2
+          ]
+        },
+        "borda": {
+          "page": 56,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/biker-pistol/borda/frente.png",
+          "back": "arts/biker-pistol/borda/verso.png",
+          "mask": "arts/biker-pistol/borda/mascara.png",
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            34.7,
+            44.9
+          ]
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "unverified"
+    },
+    {
+      "artId": "biker-lance",
+      "candidateId": "a065",
+      "pdfLabel": "Biker Lance",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "combat-bikers",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Lance",
+          "armyBook": [
+            "Heavy Lance",
+            "Hunting Lance",
+            "Anti-Tank Lance"
+          ]
+        }
+      ],
+      "notes": "rótulo diz só 'Lance'; o army book tem três lanças. Usuário escolhe a quais ela serve",
+      "styles": {
+        "fino": {
+          "page": 27,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/biker-lance/fino/frente.png",
+          "back": "arts/biker-lance/fino/verso.png",
+          "mask": "arts/biker-lance/fino/mascara.png",
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            32.7,
+            41.1
+          ]
+        },
+        "borda": {
+          "page": 57,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/biker-lance/borda/frente.png",
+          "back": "arts/biker-lance/borda/verso.png",
+          "mask": "arts/biker-lance/borda/mascara.png",
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            35.0,
+            45.8
+          ]
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "unverified"
+    },
+    {
+      "artId": "ogre-minigun",
+      "candidateId": "a066",
+      "pdfLabel": "OGRE Minigun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ogre-robot",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "army book v3.6.0 não tem Minigun; candidata a substituta de Gatling Gun (decisão do usuário, D013)",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ogre-minigun/fino/frente.png",
+          "back": "arts/ogre-minigun/fino/verso.png",
+          "mask": "arts/ogre-minigun/fino/mascara.png",
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            54.0,
+            37.3
+          ]
+        },
+        "borda": {
+          "page": 58,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ogre-minigun/borda/frente.png",
+          "back": "arts/ogre-minigun/borda/verso.png",
+          "mask": "arts/ogre-minigun/borda/mascara.png",
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            56.3,
+            41.9
+          ]
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "unverified"
+    },
+    {
+      "artId": "ogre-grenade-launcher",
+      "candidateId": "a067",
+      "pdfLabel": "OGRE Grenade Launcher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ogre-robot",
+      "equipmentTags": [
+        "Grenade Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 29,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ogre-grenade-launcher/fino/frente.png",
+          "back": "arts/ogre-grenade-launcher/fino/verso.png",
+          "mask": "arts/ogre-grenade-launcher/fino/mascara.png",
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            52.9,
+            40.6
+          ]
+        },
+        "borda": {
+          "page": 59,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ogre-grenade-launcher/borda/frente.png",
+          "back": "arts/ogre-grenade-launcher/borda/verso.png",
+          "mask": "arts/ogre-grenade-launcher/borda/mascara.png",
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            55.3,
+            45.2
+          ]
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "unverified"
+    },
+    {
+      "artId": "ogre-baton",
+      "candidateId": "a068",
+      "pdfLabel": "OGRE Baton",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ogre-robot",
+      "equipmentTags": [
+        "Shock Baton"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Baton",
+          "armyBook": "Shock Baton"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 30,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ogre-baton/fino/frente.png",
+          "back": "arts/ogre-baton/fino/verso.png",
+          "mask": "arts/ogre-baton/fino/mascara.png",
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            52.7,
+            46.7
+          ]
+        },
+        "borda": {
+          "page": 60,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ogre-baton/borda/frente.png",
+          "back": "arts/ogre-baton/borda/verso.png",
+          "mask": "arts/ogre-baton/borda/mascara.png",
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            55.0,
+            51.4
+          ]
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "unverified"
+    },
+    {
+      "artId": "ogre-axe",
+      "candidateId": "a069",
+      "pdfLabel": "OGRE Axe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ogre-robot",
+      "equipmentTags": [
+        "Energy Axe"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Axe",
+          "armyBook": "Energy Axe"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 31,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ogre-axe/fino/frente.png",
+          "back": "arts/ogre-axe/fino/verso.png",
+          "mask": "arts/ogre-axe/fino/mascara.png",
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            52.4,
+            42.4
+          ]
+        },
+        "borda": {
+          "page": 61,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ogre-axe/borda/frente.png",
+          "back": "arts/ogre-axe/borda/verso.png",
+          "mask": "arts/ogre-axe/borda/mascara.png",
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            54.8,
+            47.2
+          ]
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "unverified"
+    }
+  ]
+}

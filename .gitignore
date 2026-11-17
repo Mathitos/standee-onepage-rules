@@ -22,3 +22,6 @@ coverage/
 # Sistema
 .DS_Store
 Thumbs.db
+
+# trabalho da skill (recortes com arte da OPR)
+catalog/**/work/
