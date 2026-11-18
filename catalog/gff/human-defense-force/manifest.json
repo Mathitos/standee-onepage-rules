@@ -119,14 +119,23 @@
             3,
             4
           ],
-          "front": "arts/infantry-rifle/fino/frente.png",
-          "back": "arts/infantry-rifle/fino/verso.png",
-          "mask": "arts/infantry-rifle/fino/mascara.png",
+          "front": "arts/infantry-rifle/fino/frente.svg",
+          "back": "arts/infantry-rifle/fino/verso.svg",
+          "canvasMm": [
+            19.13,
+            34.97
+          ],
           "frontBackIoU": 0.991,
           "sizeMm": [
             34.5,
             18.7
-          ]
+          ],
+          "vector": {
+            "epsPx": 0.5,
+            "silhouetteIoU": 0.9985,
+            "inkIoU": 0.9078,
+            "pxOutsideEdge": 0
+          }
         },
         "borda": {
           "page": 36,
@@ -137,19 +146,28 @@
             3,
             4
           ],
-          "front": "arts/infantry-rifle/borda/frente.png",
-          "back": "arts/infantry-rifle/borda/verso.png",
-          "mask": "arts/infantry-rifle/borda/mascara.png",
+          "front": "arts/infantry-rifle/borda/frente.svg",
+          "back": "arts/infantry-rifle/borda/verso.svg",
+          "canvasMm": [
+            24.38,
+            37.34
+          ],
           "frontBackIoU": 0.992,
           "sizeMm": [
             36.9,
             23.7
-          ]
+          ],
+          "vector": {
+            "epsPx": 0.5,
+            "silhouetteIoU": 0.9992,
+            "inkIoU": 0.9691,
+            "pxOutsideEdge": 0
+          }
         }
       },
       "pendencias": [],
       "reviewStatus": "agent-proposed",
-      "licenseStatus": "unverified"
+      "licenseStatus": "user-approved"
     },
     {
       "artId": "veteran-shotgun",
@@ -175,14 +193,23 @@
             3,
             4
           ],
-          "front": "arts/veteran-shotgun/fino/frente.png",
-          "back": "arts/veteran-shotgun/fino/verso.png",
-          "mask": "arts/veteran-shotgun/fino/mascara.png",
+          "front": "arts/veteran-shotgun/fino/frente.svg",
+          "back": "arts/veteran-shotgun/fino/verso.svg",
+          "canvasMm": [
+            21.93,
+            34.71
+          ],
           "frontBackIoU": 0.973,
           "sizeMm": [
             34.1,
             21.5
-          ]
+          ],
+          "vector": {
+            "epsPx": 0.5,
+            "silhouetteIoU": 0.9986,
+            "inkIoU": 0.9097,
+            "pxOutsideEdge": 0
+          }
         },
         "borda": {
           "page": 45,
@@ -193,19 +220,28 @@
             3,
             4
           ],
-          "front": "arts/veteran-shotgun/borda/frente.png",
-          "back": "arts/veteran-shotgun/borda/verso.png",
-          "mask": "arts/veteran-shotgun/borda/mascara.png",
+          "front": "arts/veteran-shotgun/borda/frente.svg",
+          "back": "arts/veteran-shotgun/borda/verso.svg",
+          "canvasMm": [
+            27.01,
+            37.25
+          ],
           "frontBackIoU": 0.982,
           "sizeMm": [
             36.7,
             26.6
-          ]
+          ],
+          "vector": {
+            "epsPx": 0.5,
+            "silhouetteIoU": 0.9992,
+            "inkIoU": 0.9685,
+            "pxOutsideEdge": 0
+          }
         }
       },
       "pendencias": [],
       "reviewStatus": "agent-proposed",
-      "licenseStatus": "unverified"
+      "licenseStatus": "user-approved"
     },
     {
       "artId": "biker-pistol",
@@ -229,14 +265,23 @@
             1,
             2
           ],
-          "front": "arts/biker-pistol/fino/frente.png",
-          "back": "arts/biker-pistol/fino/verso.png",
-          "mask": "arts/biker-pistol/fino/mascara.png",
-          "frontBackIoU": 0.993,
+          "front": "arts/biker-pistol/fino/frente.svg",
+          "back": "arts/biker-pistol/fino/verso.svg",
+          "canvasMm": [
+            40.64,
+            32.85
+          ],
+          "frontBackIoU": 0.994,
           "sizeMm": [
             32.4,
             40.2
-          ]
+          ],
+          "vector": {
+            "epsPx": 0.5,
+            "silhouetteIoU": 0.9993,
+            "inkIoU": 0.9096,
+            "pxOutsideEdge": 0
+          }
         },
         "borda": {
           "page": 56,
@@ -245,19 +290,28 @@
             1,
             2
           ],
-          "front": "arts/biker-pistol/borda/frente.png",
-          "back": "arts/biker-pistol/borda/verso.png",
-          "mask": "arts/biker-pistol/borda/mascara.png",
-          "frontBackIoU": 0.994,
+          "front": "arts/biker-pistol/borda/frente.svg",
+          "back": "arts/biker-pistol/borda/verso.svg",
+          "canvasMm": [
+            45.3,
+            35.14
+          ],
+          "frontBackIoU": 0.995,
           "sizeMm": [
             34.7,
             44.9
-          ]
+          ],
+          "vector": {
+            "epsPx": 0.5,
+            "silhouetteIoU": 0.9997,
+            "inkIoU": 0.9537,
+            "pxOutsideEdge": 0
+          }
         }
       },
       "pendencias": [],
       "reviewStatus": "agent-proposed",
-      "licenseStatus": "unverified"
+      "licenseStatus": "user-approved"
     },
     {
       "artId": "biker-lance",
@@ -288,14 +342,23 @@
             1,
             2
           ],
-          "front": "arts/biker-lance/fino/frente.png",
-          "back": "arts/biker-lance/fino/verso.png",
-          "mask": "arts/biker-lance/fino/mascara.png",
-          "frontBackIoU": 0.99,
+          "front": "arts/biker-lance/fino/frente.svg",
+          "back": "arts/biker-lance/fino/verso.svg",
+          "canvasMm": [
+            41.66,
+            33.1
+          ],
+          "frontBackIoU": 0.993,
           "sizeMm": [
             32.7,
             41.1
-          ]
+          ],
+          "vector": {
+            "epsPx": 0.5,
+            "silhouetteIoU": 0.9991,
+            "inkIoU": 0.9127,
+            "pxOutsideEdge": 0
+          }
         },
         "borda": {
           "page": 57,
@@ -304,19 +367,28 @@
             1,
             2
           ],
-          "front": "arts/biker-lance/borda/frente.png",
-          "back": "arts/biker-lance/borda/verso.png",
-          "mask": "arts/biker-lance/borda/mascara.png",
+          "front": "arts/biker-lance/borda/frente.svg",
+          "back": "arts/biker-lance/borda/verso.svg",
+          "canvasMm": [
+            46.31,
+            35.39
+          ],
           "frontBackIoU": 0.996,
           "sizeMm": [
             35.0,
             45.8
-          ]
+          ],
+          "vector": {
+            "epsPx": 0.5,
+            "silhouetteIoU": 0.9996,
+            "inkIoU": 0.9578,
+            "pxOutsideEdge": 0
+          }
         }
       },
       "pendencias": [],
       "reviewStatus": "agent-proposed",
-      "licenseStatus": "unverified"
+      "licenseStatus": "user-approved"
     },
     {
       "artId": "ogre-minigun",
@@ -338,14 +410,23 @@
             1,
             2
           ],
-          "front": "arts/ogre-minigun/fino/frente.png",
-          "back": "arts/ogre-minigun/fino/verso.png",
-          "mask": "arts/ogre-minigun/fino/mascara.png",
+          "front": "arts/ogre-minigun/fino/frente.svg",
+          "back": "arts/ogre-minigun/fino/verso.svg",
+          "canvasMm": [
+            37.76,
+            54.44
+          ],
           "frontBackIoU": 0.979,
           "sizeMm": [
             54.0,
             37.3
-          ]
+          ],
+          "vector": {
+            "epsPx": 0.5,
+            "silhouetteIoU": 0.9991,
+            "inkIoU": 0.9147,
+            "pxOutsideEdge": 0
+          }
         },
         "borda": {
           "page": 58,
@@ -354,19 +435,28 @@
             1,
             2
           ],
-          "front": "arts/ogre-minigun/borda/frente.png",
-          "back": "arts/ogre-minigun/borda/verso.png",
-          "mask": "arts/ogre-minigun/borda/mascara.png",
+          "front": "arts/ogre-minigun/borda/frente.svg",
+          "back": "arts/ogre-minigun/borda/verso.svg",
+          "canvasMm": [
+            42.33,
+            56.73
+          ],
           "frontBackIoU": 0.983,
           "sizeMm": [
             56.3,
             41.9
-          ]
+          ],
+          "vector": {
+            "epsPx": 0.5,
+            "silhouetteIoU": 0.9995,
+            "inkIoU": 0.96,
+            "pxOutsideEdge": 0
+          }
         }
       },
       "pendencias": [],
       "reviewStatus": "agent-proposed",
-      "licenseStatus": "unverified"
+      "licenseStatus": "user-approved"
     },
     {
       "artId": "ogre-grenade-launcher",
@@ -390,14 +480,23 @@
             1,
             2
           ],
-          "front": "arts/ogre-grenade-launcher/fino/frente.png",
-          "back": "arts/ogre-grenade-launcher/fino/verso.png",
-          "mask": "arts/ogre-grenade-launcher/fino/mascara.png",
-          "frontBackIoU": 0.974,
+          "front": "arts/ogre-grenade-launcher/fino/frente.svg",
+          "back": "arts/ogre-grenade-launcher/fino/verso.svg",
+          "canvasMm": [
+            40.98,
+            53.51
+          ],
+          "frontBackIoU": 0.975,
           "sizeMm": [
             52.9,
             40.6
-          ]
+          ],
+          "vector": {
+            "epsPx": 0.5,
+            "silhouetteIoU": 0.9989,
+            "inkIoU": 0.9275,
+            "pxOutsideEdge": 0
+          }
         },
         "borda": {
           "page": 59,
@@ -406,19 +505,28 @@
             1,
             2
           ],
-          "front": "arts/ogre-grenade-launcher/borda/frente.png",
-          "back": "arts/ogre-grenade-launcher/borda/verso.png",
-          "mask": "arts/ogre-grenade-launcher/borda/mascara.png",
-          "frontBackIoU": 0.98,
+          "front": "arts/ogre-grenade-launcher/borda/frente.svg",
+          "back": "arts/ogre-grenade-launcher/borda/verso.svg",
+          "canvasMm": [
+            45.64,
+            55.88
+          ],
+          "frontBackIoU": 0.981,
           "sizeMm": [
             55.3,
             45.2
-          ]
+          ],
+          "vector": {
+            "epsPx": 0.5,
+            "silhouetteIoU": 0.9994,
+            "inkIoU": 0.963,
+            "pxOutsideEdge": 0
+          }
         }
       },
       "pendencias": [],
       "reviewStatus": "agent-proposed",
-      "licenseStatus": "unverified"
+      "licenseStatus": "user-approved"
     },
     {
       "artId": "ogre-baton",
@@ -447,14 +555,23 @@
             1,
             2
           ],
-          "front": "arts/ogre-baton/fino/frente.png",
-          "back": "arts/ogre-baton/fino/verso.png",
-          "mask": "arts/ogre-baton/fino/mascara.png",
+          "front": "arts/ogre-baton/fino/frente.svg",
+          "back": "arts/ogre-baton/fino/verso.svg",
+          "canvasMm": [
+            47.16,
+            53.26
+          ],
           "frontBackIoU": 0.983,
           "sizeMm": [
             52.7,
             46.7
-          ]
+          ],
+          "vector": {
+            "epsPx": 0.5,
+            "silhouetteIoU": 0.9989,
+            "inkIoU": 0.9313,
+            "pxOutsideEdge": 0
+          }
         },
         "borda": {
           "page": 60,
@@ -463,19 +580,28 @@
             1,
             2
           ],
-          "front": "arts/ogre-baton/borda/frente.png",
-          "back": "arts/ogre-baton/borda/verso.png",
-          "mask": "arts/ogre-baton/borda/mascara.png",
+          "front": "arts/ogre-baton/borda/frente.svg",
+          "back": "arts/ogre-baton/borda/verso.svg",
+          "canvasMm": [
+            51.82,
+            55.63
+          ],
           "frontBackIoU": 0.986,
           "sizeMm": [
             55.0,
             51.4
-          ]
+          ],
+          "vector": {
+            "epsPx": 0.5,
+            "silhouetteIoU": 0.9993,
+            "inkIoU": 0.9659,
+            "pxOutsideEdge": 0
+          }
         }
       },
       "pendencias": [],
       "reviewStatus": "agent-proposed",
-      "licenseStatus": "unverified"
+      "licenseStatus": "user-approved"
     },
     {
       "artId": "ogre-axe",
@@ -504,14 +630,23 @@
             1,
             2
           ],
-          "front": "arts/ogre-axe/fino/frente.png",
-          "back": "arts/ogre-axe/fino/verso.png",
-          "mask": "arts/ogre-axe/fino/mascara.png",
-          "frontBackIoU": 0.978,
+          "front": "arts/ogre-axe/fino/frente.svg",
+          "back": "arts/ogre-axe/fino/verso.svg",
+          "canvasMm": [
+            42.84,
+            52.92
+          ],
+          "frontBackIoU": 0.983,
           "sizeMm": [
             52.4,
             42.4
-          ]
+          ],
+          "vector": {
+            "epsPx": 0.5,
+            "silhouetteIoU": 0.9991,
+            "inkIoU": 0.9267,
+            "pxOutsideEdge": 0
+          }
         },
         "borda": {
           "page": 61,
@@ -520,19 +655,28 @@
             1,
             2
           ],
-          "front": "arts/ogre-axe/borda/frente.png",
-          "back": "arts/ogre-axe/borda/verso.png",
-          "mask": "arts/ogre-axe/borda/mascara.png",
-          "frontBackIoU": 0.984,
+          "front": "arts/ogre-axe/borda/frente.svg",
+          "back": "arts/ogre-axe/borda/verso.svg",
+          "canvasMm": [
+            47.58,
+            55.29
+          ],
+          "frontBackIoU": 0.986,
           "sizeMm": [
             54.8,
             47.2
-          ]
+          ],
+          "vector": {
+            "epsPx": 0.5,
+            "silhouetteIoU": 0.9995,
+            "inkIoU": 0.963,
+            "pxOutsideEdge": 0
+          }
         }
       },
       "pendencias": [],
       "reviewStatus": "agent-proposed",
-      "licenseStatus": "unverified"
+      "licenseStatus": "user-approved"
     }
   ]
 }

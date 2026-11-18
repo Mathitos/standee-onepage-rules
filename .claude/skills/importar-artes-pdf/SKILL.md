@@ -12,7 +12,7 @@ Especificação: `docs/PRD-04-skill-importacao-pdf.md`. Decisões: D012 (dois es
 - **Não invente.** Transcreva o rótulo exatamente como está impresso. Se houver dúvida em qualquer letra, use `"confiancaRotulo": "baixa"`; nunca complete palavras.
 - Correspondência com o army book só por nome, alias ou equipamento que você consegue justificar. Sem justificativa: `"status": "unmapped"`. Alias novo: `"status": "alias-proposed"` (o usuário aprova).
 - Base nunca é inventada: vem do army book pelo `armyForgeUnitId`; sem isso fica `unknown`.
-- Imagens, PDF e snapshot do army book **nunca** vão para o git (`arts/`, `work/`, `armybook/`, `review/`, `build/` estão no `.gitignore`). Só `manifest.json` e `revisao.json` podem ser versionados.
+- O PDF **nunca** vai para o git (nem cópia dele). Versionados: `manifest.json`, `revisao.json`, `arts/` (SVG) e `armybook/`. Fora do git: `work/`, `review/`, `build/` (D006/D020).
 - Army Forge: só leitura, uma requisição por army book, sem login. Nunca peça senha ou token.
 - Uma facção por pasta; não edite a pasta de outra facção que outra sessão possa estar usando.
 
@@ -92,16 +92,16 @@ Corrija os erros que ele listar até sair `"situacao": "ok"`.
 Mostre ao usuário: resumo, `review/relatorio.md`, as folhas `review/contato-NN.png` (Read) e as pendências (rótulos de baixa confiança, aliases propostos, `unmapped`, frente × verso < 0,95, sem par). Peça aprovação explícita.
 
 - Aprovado: rode `montar.py --saida … --aprovado`. Correções do usuário viram alterações no `revisao.json` (aliases aprovados passam a `mapped`).
-- Commit (se houver repositório): só `manifest.json` e `revisao.json`.
+- Commit (se houver repositório): `manifest.json`, `revisao.json`, `arts/` e `armybook/`. Confira com `git status` que nenhum PDF ou PNG entrou.
 
 ## Saídas
 
 ```text
 catalog/<sistema>/<faccao>/
-  revisao.json, manifest.json        versionados (sem imagens)
-  arts/<artId>/<estilo>/frente.png, verso.png, mascara.png
-  armybook/                          snapshot + resumo
-  review/relatorio.md, contato-*.png
-  build/<packId>-<versao>.zip        pacote para carregar no site
-  work/                              recortes e folhas de rótulo
+  revisao.json, manifest.json        versionados
+  arts/<artId>/<estilo>/frente.svg, verso.svg   vetores em mm, versionados (contrato em scripts/vetor.py)
+  armybook/                          snapshot + resumo, versionados
+  review/relatorio.md, contato-*.png fora do git (prévias renderizadas dos vetores)
+  build/<packId>-<versao>.zip        fora do git (pacote avulso, opcional)
+  work/                              fora do git (recortes raster e folhas de rótulo)
 ```

@@ -4,10 +4,10 @@ Uso: python -I montar.py --saida catalog/<sistema>/<faccao>
 
 Lê <saida>/work/candidatos.json (passo 1) e <saida>/revisao.json (escrito pelo agente,
 formato no SKILL.md; versionado). Gera:
-  manifest.json                 (sem imagens; pode ir para o git)
-  arts/<artId>/<estilo>/frente.png, verso.png, mascara.png
-  review/relatorio.md, review/contato-NN.png
-  build/<packId>-<versao>.zip    (manifest + arts, para carregar no site)
+  manifest.json                         (versionado)
+  arts/<artId>/<estilo>/frente.svg, verso.svg   (vetores em mm, versionados; contrato em vetor.py)
+  review/relatorio.md, review/contato-NN.png    (prévias renderizadas dos vetores)
+  build/<packId>-<versao>.zip            (manifest + arts, para levar o pacote sem o repositório)
 Candidatos sem revisão ficam fora do manifesto e listados como pendência. Nada é inventado:
 base sem dado vira "unknown"; rótulo vazio é erro.
 """
@@ -24,6 +24,11 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).parent))
 import extrair as E  # noqa: E402
+import vetor as V  # noqa: E402
+
+
+def ler_cinza(caminho):
+    return cv2.imdecode(np.fromfile(str(caminho), np.uint8), cv2.IMREAD_GRAYSCALE)
 
 SLUG = re.compile(r'^[a-z0-9]+(-[a-z0-9]+)*$')
 STATUS = {'mapped', 'alias-proposed', 'unmapped'}
@@ -76,7 +81,7 @@ def main():
 
     candidatos = {c['id']: c for c in cand['candidatos']}
     revisadas = rev.get('artes', {})
-    artes, art_ids = [], set()
+    artes, art_ids, vetores = [], set(), {}
     for cid, r in revisadas.items():
         if cid not in candidatos:
             erros.append(f'{cid}: não existe em candidatos.json')
@@ -98,18 +103,31 @@ def main():
         estilos = {}
         for estilo, gid in c['grupos'].items():
             g = next(x for x in cand['grupos'] if x['id'] == gid)
+            pasta = work / 'grupos' / gid
+            try:
+                vet = V.vetorizar(ler_cinza(pasta / 'frente.png'), ler_cinza(pasta / 'verso.png'),
+                                  f'{art_id} {estilo}')
+            except ValueError as e:
+                erros.append(f'{cid}: {e}')
+                continue
+            vetores[(art_id, estilo)] = vet
+            med = vet['medidas'].values()
             estilos[estilo] = {'page': g['pagina'], 'rows': g['linhas'],
-                               'front': f'arts/{art_id}/{estilo}/frente.png',
-                               'back': f'arts/{art_id}/{estilo}/verso.png',
-                               'mask': f'arts/{art_id}/{estilo}/mascara.png',
-                               'frontBackIoU': g['iou_frente_verso'], 'sizeMm': g['tamanho_mm']}
+                               'front': f'arts/{art_id}/{estilo}/frente.svg',
+                               'back': f'arts/{art_id}/{estilo}/verso.svg',
+                               'canvasMm': vet['telaMm'],
+                               'frontBackIoU': vet['iouFrenteVerso'], 'sizeMm': g['tamanho_mm'],
+                               'vector': {'epsPx': V.EPS_PX,
+                                          'silhouetteIoU': min(m['iouSilhueta'] for m in med),
+                                          'inkIoU': min(m['iouTinta'] for m in med),
+                                          'pxOutsideEdge': sum(m['pxForaDaBorda'] for m in med)}}
         artes.append({
             'artId': art_id, 'candidateId': cid, 'pdfLabel': r.get('rotulo'),
             'labelSource': 'agent-vision', 'labelConfidence': r.get('confiancaRotulo', 'alta'),
             'unitKey': r.get('unitKey'), 'equipmentTags': r.get('equipmentTags', []),
             'cosmetic': r.get('cosmetic'), 'mappingStatus': status, 'aliases': r.get('aliases', []),
             'notes': r.get('notas', ''), 'styles': estilos, 'pendencias': c['pendencias'],
-            'reviewStatus': 'approved' if a.aprovado else 'agent-proposed', 'licenseStatus': 'unverified',
+            'reviewStatus': 'approved' if a.aprovado else 'agent-proposed', 'licenseStatus': 'user-approved',
         })
 
     if erros:
@@ -127,16 +145,14 @@ def main():
         'units': unidades, 'arts': artes,
     }
 
-    # imagens
+    # vetores
     if (raiz / 'arts').exists():
         shutil.rmtree(raiz / 'arts')
-    for art in artes:
-        c = candidatos[art['candidateId']]
-        for estilo, gid in c['grupos'].items():
-            destino = raiz / 'arts' / art['artId'] / estilo
-            destino.mkdir(parents=True, exist_ok=True)
-            for nome in ('frente', 'verso', 'mascara'):
-                shutil.copy(work / 'grupos' / gid / f'{nome}.png', destino / f'{nome}.png')
+    for (art_id, estilo), vet in vetores.items():
+        destino = raiz / 'arts' / art_id / estilo
+        destino.mkdir(parents=True, exist_ok=True)
+        for lado, texto in vet['svg'].items():
+            (destino / f'{lado}.svg').write_text(texto, encoding='utf-8', newline='\n')
 
     (raiz / 'manifest.json').write_text(json.dumps(manifesto, indent=2, ensure_ascii=False), encoding='utf-8')
 
@@ -152,6 +168,11 @@ def main():
               f'- Rótulo com baixa confiança: {", ".join(x["artId"] for x in artes if x["labelConfidence"] != "alta") or "nenhum"}.',
               f'- Alias proposto (precisa aprovação): {", ".join(x["artId"] for x in artes if x["mappingStatus"] == "alias-proposed") or "nenhum"}.',
               f'- Sem correspondência no army book: {", ".join(x["artId"] for x in artes if x["mappingStatus"] == "unmapped") or "nenhum"}.',
+              f'- Vetores (SVG, eps {V.EPS_PX} px): IoU mínimo silhueta '
+              f'{min((s["vector"]["silhouetteIoU"] for x in artes for s in x["styles"].values()), default="—")}, '
+              f'tinta {min((s["vector"]["inkIoU"] for x in artes for s in x["styles"].values()), default="—")}; '
+              f'pixels diferentes fora da faixa de 1 px da borda: '
+              f'{sum(s["vector"]["pxOutsideEdge"] for x in artes for s in x["styles"].values())} (esperado 0).',
               '', '| Candidato | artId | Rótulo | Unidade | Equipamento | Status | Pendências |', '|---|---|---|---|---|---|---|']
     for x in artes:
         linhas.append(f'| {x["candidateId"]} | {x["artId"]} | {x["pdfLabel"]} | {x["unitKey"] or "—"} | '
@@ -168,9 +189,8 @@ def main():
         imgs = []
         for estilo in ('borda', 'fino'):
             if estilo in x['styles']:
-                for lado in ('frente', 'verso'):
-                    arq = raiz / 'arts' / x['artId'] / estilo / f'{lado}.png'
-                    imgs.append(cv2.imdecode(np.fromfile(str(arq), np.uint8), 0))
+                prev = vetores[(x['artId'], estilo)]['previas']
+                imgs += [prev['frente'], prev['verso']]
                 break
         tiles.append(E.tile(f'{x["artId"]} ({x["unitKey"] or "?"})', None, imgs))
     folhas = []
@@ -186,7 +206,7 @@ def main():
     tmp = zip_path.with_suffix('.tmp')
     with zipfile.ZipFile(tmp, 'w', zipfile.ZIP_DEFLATED) as z:
         z.write(raiz / 'manifest.json', 'manifest.json')
-        for f in sorted((raiz / 'arts').rglob('*.png')):
+        for f in sorted((raiz / 'arts').rglob('*.svg')):
             z.write(f, f.relative_to(raiz).as_posix())
     tmp.replace(zip_path)
 

@@ -56,16 +56,16 @@ Observadas no PDF Human Defense Force. A skill verifica cada PDF novo e para com
 ```text
 catalog/<sistema>/<faccao>/
   manifest.json                    schema do PRD-02, sem imagens
-  arts/<artId>/<estilo>/front.png, back.png, mask.png
+  arts/<artId>/<estilo>/frente.svg, verso.svg   vetores em mm (D020)
   armybook/<id>-v<versão>.json     snapshot usado no mapeamento
   review/report.md, contact-*.png, labels-*.png
-  build/<faccao>-<versão>.zip      pacote para carregar no site
+  build/<faccao>-<versão>.zip      pacote avulso (opcional; o site lê catalog/)
 ```
 
-- Imagens em escala de cinza a 300 dpi, sem reamostragem; máscara separada.
+- Recortes em escala de cinza a 300 dpi, sem reamostragem, só em `work/`. A arte publicada é o SVG traçado deles (D020): `path#silhueta` e `path#tinta`, mm, mesma tela na frente e no verso, verso já alinhado (espelhar em x o sobrepõe à frente) e sem recorte pela frente, para a política das capas ficar no gerador. As folhas de contato são renderizadas a partir dos vetores, e o relatório traz IoU e pixels fora da faixa de 1 px da borda (esperado 0).
 - Idempotente: mesmo SHA-256 não refaz nada sem pedido explícito. PDF novo gera nova `packVersion`, com diferenças no relatório.
 - O PDF original não é copiado para o projeto; registram-se hash, nome e páginas.
-- Licença (D006): `arts/`, `armybook/`, `review/` e `build/` ficam no `.gitignore` até decidir uso pessoal ou público. O `manifest.json` não tem imagens e pode ser versionado.
+- Git (D006): `manifest.json`, `revisao.json`, `arts/` (SVG) e `armybook/` são versionados; o PDF, `work/`, `review/` e `build/` ficam fora.
 
 ## Aprovação
 

@@ -64,9 +64,9 @@ src/geometry/           geração e worker
 src/export/             STL e 3MF
 src/ui/                 telas
 .claude/skills/importar-artes-pdf/   skill de catálogo: SKILL.md + scripts Python (PRD-04)
-catalog/<sistema>/<faccao>/          manifest.json versionado; arts/, armybook/, review/, build/ no .gitignore até D006
+catalog/<sistema>/<faccao>/          manifest.json, revisao.json, arts/ (SVG, D020) e armybook/ versionados; work/, review/, build/ fora
 tests/fixtures/         casos pequenos e permitidos
 .github/workflows/      build e deploy
 ```
 
-Fixtures não devem embutir todo o PDF ou artes não liberadas no repositório público. Fixtures geométricas sintéticas podem testar a exportação sem depender de arte OPR.
+Fixtures não devem embutir o PDF; as artes publicadas são os SVGs do catálogo (D006/D020). Fixtures geométricas sintéticas podem testar a exportação sem depender de arte OPR.

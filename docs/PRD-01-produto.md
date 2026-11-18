@@ -10,7 +10,7 @@ Usuário inicial: hobbyista com impressora FDM e, opcionalmente, sistema multico
 
 1. Colar o texto do "Share as Text" do Army Forge (D010).
 2. Mostrar sistema, facção, versão do army book, unidades, número de modelos e equipamentos; destacar linhas não reconhecidas.
-3. Carregar o pacote de artes correspondente, do catálogo permitido ou de arquivo local.
+3. Usar as artes do catálogo embutido no site (SVG no repositório, D020) ou de um pacote local.
 4. Exibir uma linha por variante com imagem de frente e verso, quantidade, base e estado da associação.
 5. Resolver associações ausentes/ambíguas: escolher a variante substituta vendo a imagem (D013) e distribuir poses entre cópias.
 6. Escolher o estilo da arte (contorno fino ou borda grossa, D012), ajustar parâmetros de impressão e conferir frente, verso e encaixe.

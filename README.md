@@ -9,7 +9,7 @@ Transforma listas do [Army Forge](https://army-forge.onepagerules.com) (One Page
 | Parte | Situação |
 |---|---|
 | Importar lista ("Share as Text") | Site, com testes |
-| Catálogo de artes a partir do PDF | Skill `importar-artes-pdf` pronta; pacote HDF com 8 de 69 artes revisadas |
+| Catálogo de artes a partir do PDF | Skill `importar-artes-pdf` pronta, artes em SVG; pacote HDF com 8 de 69 artes revisadas |
 | Geração 3MF/STL | Protótipo Python, validado no fatiador do Bambu (CLI) |
 | Geração no navegador | Não iniciado |
 
@@ -37,7 +37,7 @@ npm run build   # gera dist/
 
 ## Artes e licença
 
-As artes vêm dos PDFs de miniaturas de papel da OPR. Até decidir uso pessoal ou público (D006), **nenhuma arte, PDF ou arquivo gerado entra no git**: `saidas/`, `*.pdf` e as imagens do catálogo estão no `.gitignore`. O site não inclui artes.
+As artes vêm dos PDFs gratuitos de miniaturas de papel da OPR (D006). A skill extrai as artes como **vetores SVG em mm** e as grava em `catalog/` com o mapeamento (D020); esses arquivos vão para o git e para o site. O **PDF não entra no git** (`*.pdf` no `.gitignore`), nem as saídas geradas (`saidas/`) e os intermediários da skill (`work/`, `review/`, `build/`).
 
 ## Estrutura
 
@@ -47,6 +47,6 @@ src/ui/          telas
 tests/           testes (Vitest) e fixtures
 prototipo/       gerador Python de referência (recorte do PDF, 3MF/STL, fatiamento)
 .claude/skills/  skill importar-artes-pdf (PDF da OPR -> pacote do catálogo)
-catalog/         revisões e manifestos por facção (imagens fora do git)
+catalog/         por facção: manifesto, revisão, army book e artes em SVG
 docs/            PRDs, decisões, status, evidências
 ```

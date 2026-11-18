@@ -23,3 +23,7 @@ Usuário decidiu que peça única ou duas metades é opção de geração (D011)
 ## 17/11/2026 (noite) — repositório e trabalho autônomo
 
 Usuário saiu do PC e pediu para seguir implementando com git. Criado repositório local (`main`, sem remoto; artes/PDF/saídas fora do git). Site: Vite + React + TypeScript + Vitest, parser do "Share as Text" com 19 testes (T006), tela da etapa 1 testada no navegador, workflow de checks e deploy no Pages. Protótipo: modo peça única e estilo contorno fino, os quatro combinados aceitos pelo fatiador do Bambu (CLI); contorno fino perde muito traço no bico 0,4. Skill `importar-artes-pdf` (T007) construída e rodada no PDF HDF: 69 artes pareadas; revisão parcial com as 8 artes do piloto. Achado: capas dos Storm Troopers deixam frente e verso com silhuetas diferentes (decisão pendente).
+
+## 17/11/2026 (noite) — artes no git como vetores
+
+Usuário decidiu que as artes vão para o git e para o site (paper minis gratuitos da OPR), mas o PDF não (D006). Pediu as artes vetorizadas e mapeadas como assets (D020). Como o PDF HDF é raster, a skill agora traça os recortes em SVG (mm, silhueta + tinta, verso alinhado à frente espelhada) com `scripts/vetor.py`; `montar.py` grava os SVGs, mede a fidelidade e renderiza as folhas de contato a partir deles. Pacote piloto refeito: 8 artes, 32 SVGs, 3,6 MB; silhueta IoU ≥ 0,998, diferenças da tinta só na faixa de 1 px da borda; SVGs conferidos no navegador. O gerador do protótipo ainda lê o PDF.

@@ -51,5 +51,5 @@ Strings no bundle da interface: "Share as Link", "Share as File", "Share as Text
 ## Arquivos
 
 - `share-QSGxDO-P48YX.json`, `share.headers.txt`
-- `armybook-z65fgu0l29i4lnlu-gff-v3.6.0.json`, `armybook.headers.txt` — conteúdo da OPR; uso local como fixture, não publicar sem verificar os termos. O JSON fica **fora do git** (`.gitignore`); só existe na máquina onde foi capturado.
+- `armybook-z65fgu0l29i4lnlu-gff-v3.6.0.json`, `armybook.headers.txt` — conteúdo da OPR, versionado desde a decisão D006 (17/11).
 - `share-as-text.txt` — exportação "Share as Text" enviada pelo usuário em 17/11 (formato usado no MVP, D010).

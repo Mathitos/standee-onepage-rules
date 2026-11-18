@@ -1,11 +1,9 @@
-# Arte e dados da OPR ficam fora do git até decidir uso pessoal/público (D006)
+# PDFs da OPR ficam fora do git (D006); artes vetorizadas (SVG), manifestos e
+# snapshots do army book entram (D020). Saídas geradas e trabalho da skill ficam fora.
 *.pdf
 saidas/
-catalog/**/arts/
-catalog/**/armybook/
 catalog/**/review/
 catalog/**/build/
-docs/evidencias/**/armybook-*.json
 
 # Python
 __pycache__/
@@ -23,5 +21,5 @@ coverage/
 .DS_Store
 Thumbs.db
 
-# trabalho da skill (recortes com arte da OPR)
+# trabalho da skill (recortes raster do PDF; regeneráveis)
 catalog/**/work/

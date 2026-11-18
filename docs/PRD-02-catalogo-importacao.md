@@ -10,7 +10,7 @@ Revisado em 17/11/2026 com evidência real (T001, PDF) e decisões D010–D016.
 
 ## Catálogo versionado
 
-Um pacote contém `manifest.json`, imagens, máscaras e histórico de revisão. Unidades e artes são entidades separadas: uma unidade tem base e aliases; uma arte é uma pose com frente, verso e estilos.
+Um pacote contém `manifest.json`, artes vetoriais (SVG em mm, D020: silhueta e tinta de cada face) e histórico de revisão. Unidades e artes são entidades separadas: uma unidade tem base e aliases; uma arte é uma pose com frente, verso e estilos.
 
 ```json
 {
@@ -33,12 +33,12 @@ Um pacote contém `manifest.json`, imagens, máscaras e histórico de revisão. 
     "equipmentTags": ["pistol"],
     "cosmetic": null,
     "styles": {
-      "outline": {"page": 26, "row": 1, "front": "…", "back": "…", "mask": "…"},
-      "border":  {"page": 56, "row": 1, "front": "…", "back": "…", "mask": "…"}
+      "outline": {"page": 26, "row": 1, "front": "…/frente.svg", "back": "…/verso.svg", "canvasMm": [w, h]},
+      "border":  {"page": 56, "row": 1, "front": "…/frente.svg", "back": "…/verso.svg", "canvasMm": [w, h]}
     },
     "frontBackIoU": 0.97,
     "reviewStatus": "pending",
-    "licenseStatus": "unverified"
+    "licenseStatus": "user-approved"
   }]
 }
 ```
@@ -111,4 +111,4 @@ Páginas da borda grossa inferidas pelo deslocamento de 30 e conferidas só em m
 - Testes cobrem: agrupamento `Nx`, vírgulas dentro de parênteses, distribuição parcial, versão diferente, linha não reconhecida, alias, substituição, troca de estilo, base ausente e oval incompleto.
 - Pacote inválido é rejeitado com mensagem localizada; conteúdo de pacotes nunca é executado.
 - Cache local exportável. A interface avisa que limpar o armazenamento do navegador pode apagar os arquivos.
-- Nenhuma arte de licença não verificada entra na publicação pública por padrão.
+- Artes publicadas por decisão do usuário (D006); o PDF de origem nunca é publicado.

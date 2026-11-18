@@ -7,7 +7,7 @@ Site (GitHub Pages) que gera standees STL/3MF a partir de listas do Army Forge. 
 ## Repositório
 
 - Git local em `C:\Users\Matheus\Desktop\dev\standee-onepage-rules`, branch `main`, **sem remoto** (o usuário cria o repositório no GitHub e faz o push). Commits pequenos; ver `git log`.
-- Fora do git (`.gitignore`, D006): `*.pdf`, `saidas/`, imagens/snapshots do catálogo, `docs/evidencias/**/armybook-*.json`.
+- No git: artes vetorizadas (SVG) do catálogo, manifestos, revisões e snapshots do army book (D006 decidida, D020). Fora do git: `*.pdf`, `saidas/` e intermediários da skill (`work/`, `review/`, `build/`).
 - `npm run check` (tipos + 19 testes) e `npm run build` passam localmente. Workflow `.github/workflows/pages.yml`: checks em push/PR, deploy da `main` no Pages. **Ainda não rodou no GitHub.**
 - `npm audit`: 0 vulnerabilidades em dependências de produção; alerta "high" de ReDoS no `picomatch` só em ferramentas de desenvolvimento (não corrigido às cegas).
 
@@ -19,7 +19,7 @@ Site (GitHub Pages) que gera standees STL/3MF a partir de listas do Army Forge. 
 - **Geração (protótipo Python)**: `prototipo/gerar.py --modo duas-metades|peca-unica --estilo borda|fino`. Saídas em `saidas/piloto-<modo>-<estilo>/` com LEIA-ME. Fatiador do Bambu (CLI, perfil A1 0,4 de teste) aceitou: duas metades = 1 troca/placa; peça única = 3 trocas/placa. Detalhes: `evidencias/2026-11-17-geracao-piloto.md`.
 - Substituições usadas só no teste: OGRE Minigun no lugar de Gatling; Bikers 2 Pistol + 1 Lance.
 - **Não validado**: abrir na interface do Bambu Studio, impressão física, workflow no GitHub.
-- **Skill `importar-artes-pdf` pronta (T007)** em `.claude/skills/importar-artes-pdf/`. Rodada no PDF HDF: 69 artes pareadas (fino × borda). Pacote parcial em `catalog/gff/human-defense-force/` com as 8 artes do piloto (`revisao.json` e `manifest.json` no git; imagens e ZIP fora). Revisão completa (T008) pendente.
+- **Skill `importar-artes-pdf` pronta (T007)** em `.claude/skills/importar-artes-pdf/`. Rodada no PDF HDF: 69 artes pareadas (fino × borda). Pacote parcial em `catalog/gff/human-defense-force/` com as 8 artes do piloto, agora em SVG (D020): 32 arquivos, 3,6 MB, silhueta com IoU ≥ 0,998 e diferenças da tinta só na faixa de 1 px da borda; conferidos no navegador. Revisão completa (T008) pendente.
 - Achado: 13 artes têm frente e verso com silhuetas diferentes (capas dos Storm Troopers); política de contorno pendente do usuário (PRD-03).
 - Processo `bambu-studio.exe` PID 37008 (17/11 18:34) veio de uma execução da CLI que travou e não pôde ser encerrado nem com `taskkill`; reiniciar o Windows deve limpar. Há ainda PIDs 32380 (16/11 20:11) e 13004 (17/11 16:10), de origem não verificada (podem ser a interface aberta); não foram tocados.
 
@@ -35,7 +35,7 @@ Site (GitHub Pages) que gera standees STL/3MF a partir de listas do Army Forge. 
 1. **Usuário**: criar o repositório no GitHub, `git remote add origin …`, `git push -u origin main`, ativar Pages (Settings → Pages → Source: GitHub Actions) e conferir o site publicado.
 2. **Usuário**: abrir no Bambu Studio `saidas/piloto-duas-metades-borda/figuras-duas-metades-borda.3mf` (e, se quiser, a peça única) e imprimir uma figura + base.
 3. **Usuário**: decidir aliases propostos (Rifle → Battle Rifle, Baton → Shock Baton, Axe → Energy Axe, "Lance") e a política de silhuetas diferentes (capas).
-4. Agente: T008 (revisar os 61 candidatos restantes numa sessão própria com a skill), T002 (casos especiais do texto), T005 (schemas do catálogo e do projeto no site), depois a etapa 2 do site (carregar o pacote ZIP e associar artes).
+4. Agente: T008 (revisar os 61 candidatos restantes numa sessão própria com a skill), T002 (casos especiais do texto), T005 (schemas do catálogo e do projeto no site), depois a etapa 2 do site (ler o catálogo do repositório, mostrar as artes em SVG e associar). O gerador do protótipo ainda lê o PDF; o port para o navegador deve ler os SVGs.
 
 ## Perguntas abertas
 
