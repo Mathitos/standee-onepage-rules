@@ -2,49 +2,27 @@
 
 Uso: python -I prototipo/fatiar_cli.py ARQUIVO.3mf --saida PASTA [--maquina "Bambu Lab A1 0.4 nozzle"]
 
-Observado em 17/11/2026 (Bambu Studio 02.0x, Windows), e por isso este roteiro:
+Observado em 17/11/2026 (Bambu Studio 02.0x, Windows):
 - a CLI cai (0xC0000005) ao abrir projeto Bambu sem Metadata/project_settings.config;
 - carregando os perfis do sistema, a CLI não resolve "inherits" (A1 vira mesa 200x200);
-- perfis "resolvidos" à mão fazem o fatiamento falhar (-100);
-- ao exportar projeto, a CLI descarta filamentos não usados (fica 1 filamento);
-- (18/11) o project_settings exportado traz o NOME do perfil, mas valores genéricos (bico 0,2
-  saía com linha de 0,4 mm e camada de 0,2 mm). Os valores do perfil resolvido são copiados
-  por cima, chave a chave, só nas chaves que o projeto já tem.
-Então: pedimos à CLI um project_settings a partir dos perfis do sistema, corrigimos a mesa
-com o valor do perfil-pai, completamos 2 filamentos (branco/preto) e injetamos tudo numa
-CÓPIA de teste. O arquivo entregue continua sem perfil. Não substitui abrir na interface
-nem imprimir. Volumes de purga usados aqui são suposição (só afetam estimativa de tempo/material).
+- perfis "resolvidos" à mão fazem o fatiamento falhar (-100).
+Por isso o project_settings vem de perfil_bambu.project_settings (exportação pela CLI + valores
+dos perfis resolvidos + 2 filamentos) e é gravado numa CÓPIA de teste, por cima do que o arquivo
+trouxer. Não substitui abrir na interface nem imprimir. Volumes de purga são suposição (só
+afetam estimativa de tempo/material).
 """
 import argparse
+import copy
 import json
 import re
-import subprocess
+import shutil
 import sys
 import tempfile
 import zipfile
 from pathlib import Path
 
-EXE = Path(r'C:/Program Files/Bambu Studio/bambu-studio.exe')
-PERFIS = EXE.parent / 'resources/profiles/BBL'
-PURGA_SUPOSTA = ['0', '200', '600', '0']   # branco->preto, preto->branco (mm3), suposição
-
-
-def resolver(pasta, nome):
-    d = json.loads((PERFIS / pasta / f'{nome}.json').read_text(encoding='utf-8'))
-    pai = d.pop('inherits', None)
-    base = resolver(pasta, pai) if pai else {}
-    base.update(d)
-    return base
-
-
-def cli(args, limite_s=300, tentativas=2):
-    """Roda a CLI com tempo limite. Observado em 17/11: uma execução travou sem CPU por 10 min."""
-    for n in range(1, tentativas + 1):
-        try:
-            return subprocess.run([str(EXE), *args], capture_output=True, text=True, timeout=limite_s).returncode
-        except subprocess.TimeoutExpired:
-            print(f'CLI do Bambu passou de {limite_s}s (tentativa {n}/{tentativas})', file=sys.stderr)
-    return -999
+sys.path.insert(0, str(Path(__file__).parent))
+import perfil_bambu as B  # noqa: E402
 
 
 def main():
@@ -58,50 +36,14 @@ def main():
     ap.add_argument('--ajuste', action='append', default=[],
                     help='sobrescreve um ajuste na cópia de teste, ex.: brim_type=no_brim (diagnóstico)')
     a = ap.parse_args()
-    if a.bico == '0.2':
-        a.maquina, a.processo = 'Bambu Lab A1 0.2 nozzle', '0.10mm Standard @BBL A1 0.2 nozzle'
-        a.filamento = 'Bambu PLA Basic @BBL A1 0.2 nozzle'
+    if a.bico:
+        a.maquina, a.processo, a.filamento = B.A1[a.bico]
     a.saida.mkdir(parents=True, exist_ok=True)
     tmp = Path(tempfile.mkdtemp(prefix='fatiar_'))
-    ajustes = f'{PERFIS / "machine" / (a.maquina + ".json")};{PERFIS / "process" / (a.processo + ".json")}'
-    fil = PERFIS / 'filament' / f'{a.filamento}.json'
-    filamentos = f'{fil};{fil}'
-
-    # 1) cópia genérica -> projeto exportado pela CLI -> project_settings
     zorig = zipfile.ZipFile(a.arquivo)
     original = {n: zorig.read(n) for n in zorig.namelist()}
-    generico = tmp / 'generico.3mf'
-    with zipfile.ZipFile(generico, 'w', zipfile.ZIP_DEFLATED) as z:
-        for n, d in original.items():
-            if n == '3D/3dmodel.model':
-                d = re.sub(rb'<metadata name="Application">[^<]*</metadata>', b'', d)
-            z.writestr(n, d)
-    rc = cli(['--outputdir', str(tmp), '--export-3mf', 'exportado.3mf', '--load-settings', ajustes,
-              '--load-filaments', filamentos, str(generico)])
-    exportado = tmp / 'exportado.3mf'
-    if rc != 0 or not exportado.exists():
-        sys.exit(f'exportação de perfil falhou: {rc}')
-    proj = json.loads(zipfile.ZipFile(exportado).read('Metadata/project_settings.config'))
-
-    # 2) correções: valores dos perfis resolvidos (máquina, processo, filamento); dois filamentos
-    meta = {'name', 'from', 'inherits', 'setting_id', 'instantiation', 'type', 'version', 'filament_id',
-            'print_settings_id', 'printer_settings_id', 'filament_settings_id', 'filename_format',
-            'compatible_printers', 'compatible_printers_condition', 'compatible_prints', 'compatible_prints_condition'}
-    trocados = {}
-    for tipo, nome in (('machine', a.maquina), ('process', a.processo), ('filament', a.filamento)):
-        for k, v in resolver(tipo, nome).items():
-            if k in proj and k not in meta and proj[k] != v:
-                proj[k] = v
-                trocados[k] = tipo
-    proj['enable_prime_tower'] = resolver('process', a.processo).get('enable_prime_tower', '1')
-    chaves_fil = set(resolver('filament', a.filamento)) | {'filament_settings_id', 'filament_colour', 'filament_ids'}
-    for k, v in list(proj.items()):
-        if k in chaves_fil and isinstance(v, list) and len(v) == 1:
-            proj[k] = v * 2
-    proj['filament_colour'] = ['#FFFFFF', '#000000']
-    proj['flush_volumes_matrix'] = PURGA_SUPOSTA
-    if isinstance(proj.get('flush_volumes_vector'), list) and len(proj['flush_volumes_vector']) == 2:
-        proj['flush_volumes_vector'] = proj['flush_volumes_vector'] * 2
+    base, trocados = B.project_settings(a.maquina, a.processo, a.filamento)
+    proj = copy.deepcopy(base)
     for aj in a.ajuste:
         k, v = aj.split('=', 1)
         proj[k] = json.loads(v) if v.startswith('[') else v
@@ -110,19 +52,20 @@ def main():
     teste = tmp / 'teste.3mf'
     with zipfile.ZipFile(teste, 'w', zipfile.ZIP_DEFLATED) as z:
         for n, d in original.items():
-            z.writestr(n, d)
+            if n != 'Metadata/project_settings.config':
+                z.writestr(n, d)
         z.writestr('Metadata/project_settings.config', json.dumps(proj))
 
     # 4) fatiar e resumir; guarda a cópia validada (com perfil de teste) ao lado do resultado
-    import shutil
     shutil.copy(teste, a.saida / f'{a.arquivo.stem}-com-perfil-teste.3mf')
-    rc = cli(['--slice', '0', '--outputdir', str(a.saida), str(teste)])
+    rc = B.cli(['--slice', '0', '--outputdir', str(a.saida), str(teste)])
     resultado = json.loads((a.saida / 'result.json').read_text(encoding='utf-8'))
     resumo = {'arquivo': a.arquivo.name, 'perfis': [a.maquina, a.processo, a.filamento], 'ajustes': a.ajuste,
-              'mesa': proj.get('printable_area'), 'purga_suposta_mm3': PURGA_SUPOSTA, 'codigo_saida': rc,
+              'mesa': proj.get('printable_area'), 'purga_suposta_mm3': B.PURGA_SUPOSTA,
+              'arquivo_trazia_perfil': 'Metadata/project_settings.config' in original, 'codigo_saida': rc,
               'perfil_aplicado': {k: proj.get(k) for k in ('nozzle_diameter', 'layer_height', 'line_width',
                                                            'outer_wall_line_width', 'wall_generator')},
-              'chaves_do_perfil_copiadas': len(trocados),
+              'chaves_do_perfil_copiadas': trocados,
               'retorno': resultado.get('return_code'), 'mensagem': resultado.get('error_string'), 'placas': []}
     for pl in resultado.get('sliced_plates', []):
         gcode = (a.saida / f'plate_{pl["id"]}.gcode').read_text(encoding='utf-8', errors='replace')

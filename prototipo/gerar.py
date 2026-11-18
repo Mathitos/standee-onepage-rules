@@ -29,6 +29,7 @@ from scipy import ndimage as ndi
 
 sys.path.insert(0, str(Path(__file__).parent))
 import pdf_grade as G  # noqa: E402
+import perfil_bambu as B  # noqa: E402
 
 DPI = G.DPI_ARTE           # lê a arte na resolução nativa do PDF (600 dpi)
 S = 25.4 / DPI
@@ -385,13 +386,24 @@ def _malha_xml(k, p, mid, m):
             f'<mesh><vertices>{vs}</vertices><triangles>{ts}</triangles></mesh></object>\n'), len(f)
 
 
-def escrever_3mf(caminho, objetos, itens, ajustes=None):
-    """Projeto 3MF no formato do Bambu Studio, sem perfil de impressora embutido.
+def colunas_de_placas(n):
+    """Colunas da grade de placas do Bambu Studio (PartPlate.hpp, compute_colum_count)."""
+    v = math.sqrt(n)
+    r = round(v)
+    return int(r + 1 if v > r else r)
+
+
+def escrever_3mf(caminho, objetos, placas, ajustes=None, projeto=None, mesa=256.0):
+    """Projeto 3MF no formato do Bambu Studio, com várias placas.
 
     objetos: {chave: (nome, [(manifold, cor 0=branco 1=preto, rotulo)])}
-    itens: [(chave, x, y)]
+    placas: [(nome da placa, [(chave, x, y)])], x/y em mm dentro da placa.
     ajustes: ajustes de impressão por objeto (ex.: {'wall_generator': 'arachne'}), gravados
     como o Bambu Studio grava um ajuste mudado só naquele objeto.
+    projeto: project_settings.config (dict). Sem ele o Bambu Studio diz que o 3MF é de versão
+    antiga e carrega só a geometria (Plater.cpp, load_files; observado pelo usuário em 18/11).
+    Placas: o Bambu decide a placa de cada objeto pela posição (PartPlate.cpp,
+    compute_shape_position): a placa i fica em (coluna, -linha) x mesa x 1,2.
     Reproduz o que o próprio Bambu Studio grava: cada cópia é um objeto, com arquivo
     3D/Objects/object_k.model; a malha fica só no arquivo da primeira cópia e as
     demais apontam para ele (o arquivo não cresce com as cópias). Os ids de malhas e
@@ -406,9 +418,14 @@ def escrever_3mf(caminho, objetos, itens, ajustes=None):
         lo, hi = caixas[:, :3].min(0), caixas[:, 3:].max(0)
         c = (lo + hi) / 2
         preparadas[chave] = (nome, [(m.translate(tuple(-c)), cor, rot) for m, cor, rot in partes], c - lo)
-    arquivos, rels, dono, recursos, cfg, build, instancias, cortes, contagem = {}, [], {}, [], [], [], [], [], {}
+    arquivos, rels, dono, recursos, cfg, build, cortes, contagem = {}, [], {}, [], [], [], [], {}
     proximo_id = 1
-    for k, (chave, x, y) in enumerate(itens, 1):
+    passo, cols = mesa * 1.2, colunas_de_placas(len(placas))
+    itens, instancias = [], [[] for _ in placas]
+    for ip, (_, lista_itens) in enumerate(placas):
+        ox, oy = (ip % cols) * passo, -(ip // cols) * passo
+        itens += [(ip, chave, x + ox, y + oy) for chave, x, y in lista_itens]
+    for k, (ip, chave, x, y) in enumerate(itens, 1):
         nome, partes, centro = preparadas[chave]
         arq = f'3D/Objects/object_{k}.model'
         rels.append(f'<Relationship Target="/{arq}" Id="rel-{k}" Type="{REL_3DMODEL}"/>')
@@ -444,19 +461,24 @@ def escrever_3mf(caminho, objetos, itens, ajustes=None):
         cx, cy, cz = centro
         build.append(f'<item objectid="{oid}" p:UUID="{UUID_ITEM.format(oid)}" '
                      f'transform="1 0 0 0 1 0 0 0 1 {x + cx:.3f} {y + cy:.3f} {cz:.3f}" printable="1"/>\n')
-        instancias.append(f'<model_instance><metadata key="object_id" value="{oid}"/>'
+        instancias[ip].append(f'<model_instance><metadata key="object_id" value="{oid}"/>'
                           '<metadata key="instance_id" value="0"/>'
                           f'<metadata key="identify_id" value="{100 + k}"/></model_instance>')
         cortes.append(f'<object id="{oid}"><cut_id id="0" check_sum="1" connectors_cnt="0"/></object>')
     principal = (f'{CABECALHO}<metadata name="Application">BambuStudio-02.07.01.57</metadata>\n'
                  f'<resources>\n{"".join(recursos)}</resources>\n'
                  f'<build p:UUID="{UUID_BUILD}">\n{"".join(build)}</build>\n</model>\n')
-    placa = ('<plate><metadata key="plater_id" value="1"/><metadata key="plater_name" value=""/>'
-             '<metadata key="locked" value="false"/><metadata key="filament_map_mode" value="Auto For Flush"/>'
-             f'<metadata key="gcode_file" value=""/>{"".join(instancias)}</plate>')
-    config = f'<?xml version="1.0" encoding="UTF-8"?>\n<config>\n{"".join(cfg)}{placa}\n<assemble>\n</assemble>\n</config>\n'
+    xml_placas = ''.join(
+        f'<plate><metadata key="plater_id" value="{ip + 1}"/><metadata key="plater_name" value="{nome_p}"/>'
+        '<metadata key="locked" value="false"/><metadata key="filament_map_mode" value="Auto For Flush"/>'
+        f'<metadata key="gcode_file" value=""/>{"".join(instancias[ip])}</plate>\n'
+        for ip, (nome_p, _) in enumerate(placas))
+    config = f'<?xml version="1.0" encoding="UTF-8"?>\n<config>\n{"".join(cfg)}{xml_placas}<assemble>\n</assemble>\n</config>\n'
     arquivos['Metadata/cut_information.xml'] = f'<?xml version="1.0" encoding="utf-8"?>\n<objects>{"".join(cortes)}</objects>\n'
-    arquivos['Metadata/filament_sequence.json'] = '{"plate_1":{"nozzle_sequence":[],"optimal_assignment":[],"sequence":[]}}'
+    arquivos['Metadata/filament_sequence.json'] = json.dumps(
+        {f'plate_{i + 1}': {'nozzle_sequence': [], 'optimal_assignment': [], 'sequence': []} for i in range(len(placas))})
+    if projeto:
+        arquivos['Metadata/project_settings.config'] = json.dumps(projeto, indent=4, ensure_ascii=False)
     tmp = Path(str(caminho) + '.tmp')
     with zipfile.ZipFile(tmp, 'w', zipfile.ZIP_DEFLATED) as z:
         z.writestr('[Content_Types].xml', '<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="model" ContentType="application/vnd.ms-package.3dmanufacturing-3dmodel+xml"/><Default Extension="png" ContentType="image/png"/><Default Extension="gcode" ContentType="text/x.gcode"/></Types>')
@@ -693,20 +715,26 @@ def main():
             pecas_base.append((kb, *bases_def[kb]['dim_mm']))
     placas_fig = empacotar(pecas_fig, P, reservado=P.torre_xyxy)
     placas_base = empacotar(pecas_base, P)
-    arquivos = []
-    for nome, objetos, placas in (('figuras', objetos_fig, placas_fig), ('bases', objetos_base, placas_base)):
+    # um projeto só (pedido do usuário em 18/11): placas de figuras, depois placas de bases
+    placas_proj, info_placas = [], []
+    for nome, placas in (('Figuras', placas_fig), ('Bases', placas_base)):
         for i, placa in enumerate(placas, 1):
-            sufixo = f'-placa{i}' if len(placas) > 1 else ''
-            arq = f'{nome}-{a.modo}-{a.estilo}{sufixo}.3mf'
-            usados = {k for k, *_ in placa}
-            escrever_3mf(saida / arq, {k: v for k, v in objetos.items() if k in usados},
-                         [(k, x, y) for k, x, y, _, _ in placa],
-                         ajustes={'wall_generator': P.paredes} if P.paredes else None)
-            reservado = P.torre_xyxy if nome == 'figuras' else None
-            cv2.imwrite(str(saida / 'previas' / f'placa-{nome}{sufixo}.png'),
-                        previa_placa(placa, mascaras, P, reservado=reservado))
-            arquivos.append({'arquivo': arq, 'pecas': len(placa),
-                             'tamanho_mb': round((saida / arq).stat().st_size / 1e6, 2)})
+            rotulo = nome if len(placas) == 1 else f'{nome} {i}'
+            placas_proj.append((rotulo, [(k, x, y) for k, x, y, _, _ in placa]))
+            arq_png = f'placa-{len(placas_proj)}-{rotulo.lower().replace(" ", "-")}.png'
+            cv2.imwrite(str(saida / 'previas' / arq_png),
+                        previa_placa(placa, mascaras, P, reservado=P.torre_xyxy if nome == 'Figuras' else None))
+            info_placas.append({'placa': len(placas_proj), 'nome': rotulo, 'pecas': len(placa)})
+    try:
+        perfis, projeto = B.para_bico(P.bico)
+    except (OSError, RuntimeError, KeyError) as e:
+        print(f'AVISO: sem perfil embutido ({e}); o Bambu vai carregar só a geometria', file=sys.stderr)
+        perfis, projeto = None, None
+    arq = f'projeto-{a.modo}-{a.estilo}.3mf'
+    escrever_3mf(saida / arq, {**objetos_fig, **objetos_base}, placas_proj,
+                 ajustes={'wall_generator': P.paredes} if P.paredes else None, projeto=projeto, mesa=P.mesa)
+    arquivos = [{'arquivo': arq, 'placas': info_placas, 'perfil_embutido': perfis,
+                 'tamanho_mb': round((saida / arq).stat().st_size / 1e6, 2)}]
 
     # sobreposição na mesa
     for placa in placas_fig + placas_base:

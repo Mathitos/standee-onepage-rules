@@ -76,7 +76,7 @@ As dimensões externas da base vêm do catálogo; não herdar o retângulo 25 ×
 
 STL: uma malha por peça (cada metade separada), monocromática, em mm, nomeada por unidade/variante/peça; manifesto com quantidades. STL não transporta cores.
 
-3MF Bambu: componentes nomeados (modelo, metade, cor), filamento por parte, cópias e bases; disposição sem sobreposição, dentro da mesa e com a área da torre de purga livre. Reutilizar malhas nas cópias. Organizar múltiplas placas quando necessário. Não embutir perfil de impressora errado nem comandos de impressão. A estrutura precisa seguir a do próprio Bambu Studio (ids globais, UUIDs no padrão, `model_settings.config` com filamento por parte); detalhes e testes em `evidencias/2026-11-17-geracao-piloto.md`. Figuras e bases saem em arquivos separados: bases numa cor só, sem torre.
+3MF Bambu: componentes nomeados (modelo, metade, cor), filamento por parte, cópias e bases; disposição sem sobreposição, dentro da mesa e com a área da torre de purga livre. Reutilizar malhas nas cópias. Organizar múltiplas placas quando necessário. Um projeto só, com figuras e bases em placas diferentes (D026), e `project_settings.config` da impressora/bico escolhidos (sem ele o Bambu carrega só a geometria); sem comandos de impressão. A estrutura precisa seguir a do próprio Bambu Studio (ids globais, UUIDs no padrão, `model_settings.config` com filamento por parte); detalhes e testes em `evidencias/2026-11-17-geracao-piloto.md`. Placa de bases numa cor só, sem torre; placa de figuras com a área da torre livre.
 
 Manifesto: peças por modelo, estilo, substituições escolhidas e, no modo duas metades, instruções de montagem.
 

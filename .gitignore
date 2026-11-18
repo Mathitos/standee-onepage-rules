@@ -23,3 +23,6 @@ Thumbs.db
 
 # trabalho da skill (recortes raster do PDF; regeneráveis)
 catalog/**/work/
+
+# cache do protótipo (project_settings gerado dos perfis do Bambu Studio instalado)
+prototipo/.cache/
