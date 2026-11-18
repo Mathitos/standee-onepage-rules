@@ -8,7 +8,8 @@ Observado em 17/11/2026 (Bambu Studio 02.0x, Windows):
 - perfis "resolvidos" à mão fazem o fatiamento falhar (-100).
 Por isso o project_settings vem de perfil_bambu.project_settings (exportação pela CLI + valores
 dos perfis resolvidos + 2 filamentos) e é gravado numa CÓPIA de teste, por cima do que o arquivo
-trouxer. Não substitui abrir na interface nem imprimir. Volumes de purga são suposição (só
+trouxer; só a posição da torre, que é por placa, vem do arquivo. Não substitui abrir na
+interface nem imprimir. Volumes de purga são suposição (só
 afetam estimativa de tempo/material).
 """
 import argparse
@@ -23,6 +24,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import perfil_bambu as B  # noqa: E402
+
+POR_PLACA = ('wipe_tower_x', 'wipe_tower_y')  # mantidos do arquivo, se ele trouxer
 
 
 def main():
@@ -44,6 +47,13 @@ def main():
     original = {n: zorig.read(n) for n in zorig.namelist()}
     base, trocados = B.project_settings(a.maquina, a.processo, a.filamento)
     proj = copy.deepcopy(base)
+    # a posição da torre é por placa e faz parte do arranjo do arquivo, não do perfil
+    # (gerar.py põe a das bases em y = 200); sem isto a cópia de teste usava y = 220 em todas
+    mantidos = {}
+    if 'Metadata/project_settings.config' in original:
+        do_arquivo = json.loads(original['Metadata/project_settings.config'])
+        mantidos = {k: do_arquivo[k] for k in POR_PLACA if k in do_arquivo}
+        proj.update(mantidos)
     for aj in a.ajuste:
         k, v = aj.split('=', 1)
         proj[k] = json.loads(v) if v.startswith('[') else v
@@ -65,7 +75,7 @@ def main():
               'arquivo_trazia_perfil': 'Metadata/project_settings.config' in original, 'codigo_saida': rc,
               'perfil_aplicado': {k: proj.get(k) for k in ('nozzle_diameter', 'layer_height', 'line_width',
                                                            'outer_wall_line_width', 'wall_generator')},
-              'chaves_do_perfil_copiadas': trocados,
+              'chaves_do_perfil_copiadas': trocados, 'mantidos_do_arquivo': mantidos,
               'retorno': resultado.get('return_code'), 'mensagem': resultado.get('error_string'), 'placas': []}
     for pl in resultado.get('sliced_plates', []):
         gcode = (a.saida / f'plate_{pl["id"]}.gcode').read_text(encoding='utf-8', errors='replace')

@@ -32,7 +32,7 @@ Status permitidos: TODO, IN_PROGRESS, BLOCKED, DONE. DONE exige evidência. Os t
 - [ ] T017 — Cupom de encaixe e teste físico pelo usuário; incorporar calibração aprovada.
 - [ ] T018 — Configurar Pages, publicar e testar URL final/subpath. Publicação das artes decidida pelo usuário (D006).
 - [ ] T019 — Preparar guia de cadastro de facções e issues de melhorias pós-MVP.
-- [ ] T020 — Cupom de calibração dos dois modos: fenda simples e dupla, furos/pinos (E1) e só cola (E2). D011 já decidido (os dois modos são opção); o cupom define folgas. Primeira impressão de teste: lista piloto em duas metades (já gerada).
+- [ ] T020 — Cupom de calibração dos dois modos: fenda simples e dupla, furos/pinos (E1) e só cola (E2). Revisto em 18/11: o encaixe padrão passou a ser a base com 2 linguetas cônicas (D031), que não depende de folga justa; o cupom só volta se a impressão mostrar problema no assento. D011 já decidido (os dois modos são opção); o cupom define folgas. Primeira impressão de teste: lista piloto em duas metades (já gerada).
 
 ## Regras de avanço
 

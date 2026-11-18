@@ -47,3 +47,7 @@ Usuário pediu o nome em branco numa base preta, sem relevo (colidiria com o sta
 ## 18/11/2026 — gabarito de colagem e contorno fino
 
 Usuário: cortar filamento para pinos de 1,5 mm é inviável; pediu grampo ou peça intermediária de guia. Criado o gabarito de colagem: bandeja com bolso no contorno da peça, um por arte, numa placa "Gabaritos"; as metades deixaram de ter furos (D029). Usuário pediu os próximos testes em contorno fino; virou o padrão do gerador (D030). Projeto de teste regerado em contorno fino e fatiado pela CLI, 5 placas.
+
+## 18/11/2026 — a base como guia, com 2 encaixes
+
+Pesquisa de união e boas práticas feita por subagentes (`evidencias/2026-11-18-pesquisa-uniao-e-boas-praticas.md`). Proposto o pintado com pino e rasgo, depois a base como guia com uma fenda justa. O usuário decidiu por 2 encaixes: depender de ajuste justo é ruim porque varia com a impressora de quem imprime, e 2 encaixes evitam desvio de inclinação. Implementado com linguetas e fendas cônicas (D031): a centragem não depende da folga, e as duas linguetas seguram a inclinação. O gabarito saiu do padrão. Conferido nas malhas com `prototipo/verificar_encaixe.py`; projeto de teste regerado e fatiado pela CLI.

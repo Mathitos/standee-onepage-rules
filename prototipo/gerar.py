@@ -48,12 +48,18 @@ class Param:
     corpo: float = 1.2            # espessura do corpo (de cada metade, ou da peça única), sem relevo
     relevo: float = 0.4
     camada_mesa: float = 0.4      # peça única: espessura do desenho P/B na face da mesa (2 camadas de 0,2)
-    lingueta_larg: float = 6.0
-    lingueta_prof: float = 1.9    # fenda vazada: a lingueta fica 0,1 mm acima da mesa, sem sobrar por baixo
+    # duas linguetas cônicas em duas fendas cônicas da base (D031): empurrada, cada lingueta
+    # centra sozinha nas paredes inclinadas, sem depender da folga da impressora
+    lingueta_larg: float = 4.0    # largura de cada lingueta junto à barra
+    lingueta_entre: float = 12.0  # entre os centros das linguetas; igual em todas as artes (bases trocáveis)
+    lingueta_conicidade: float = 0.5  # cada lado estreita 0,5 mm por mm de profundidade (~27°)
+    lingueta_folga_barra: float = 0.15  # assentada, a barra fica esta altura acima da base
+    lingueta_prof: float = 1.9    # fenda vazada: a lingueta não chega à mesa
+    barra_sobra: float = 0.5      # a barra passa das linguetas por este tanto (alarga a de figuras estreitas)
+    boca_chanfro: float = 0.3     # chanfro na boca das fendas (face da mesa da base): pé de elefante
     travessa: float = 0.5         # meia altura da travessa sob os pés
     contato_mm: float = 1.0       # faixa considerada apoio dos pés
-    folga_larg: float = 0.3       # folga total da fenda
-    folga_esp: float = 0.25
+    folga_esp: float = 0.25       # folga total da fenda na espessura
     base_altura: float = 2.0      # pedido do usuário (17/11): base de 2 mm com fenda vazada
     bico: float = 0.2             # diâmetro do bico (mm) para o qual o desenho é preparado
     traco: str = 'original'       # original: traço do PDF a 600 dpi (D024); engrossado: + engorda
@@ -69,7 +75,7 @@ class Param:
     texto_engorda: float = 0.06   # engrossa as letras; 0,12 era preciso com bico 0,4 e texto em relevo
     texto_arco_graus: float = 140 # arco da frente da base usado pelo texto
     fonte: str = 'C:/Windows/Fonts/bahnschrift.ttf'  # protótipo; o site precisa de fonte livre embutida
-    encaixe: str = 'gabarito'     # duas metades: gabarito de colagem (D029) | pinos (furos para pino solto)
+    encaixe: str = 'base'         # duas metades: base (as fendas alinham, D031) | gabarito (D029) | pinos
     gabarito_folga: float = 0.2   # folga do bolso em volta do contorno (mm, de cada lado)
     gabarito_fundo: float = 1.0
     gabarito_parede: float = 3.0
@@ -169,32 +175,60 @@ def fracao_fina(m, largura_mm=0.4):
     return float(1 - aberto.sum() / max(1, m.sum()))
 
 
+def meio_entre_px(P):
+    """Meia distância entre as linguetas, em px; a mesma em todas as artes."""
+    return int(round(P.lingueta_entre / 2 / S))
+
+
+def entre_linguetas_mm(P):
+    """Distância real entre os centros das linguetas (múltiplo de 2 px), usada também nas fendas."""
+    return 2 * meio_entre_px(P) * S
+
+
 def corpo_com_lingueta(sil, P):
-    """Adiciona margem, travessa sob os pés e lingueta central. Retorna canvas e medidas."""
+    """Adiciona margem, travessa sob os pés e duas linguetas cônicas (D031).
+
+    As linguetas ficam simétricas em volta do meio da travessa, a P.lingueta_entre uma da outra
+    em todas as artes, para as bases servirem a qualquer figura do mesmo tamanho de base. Se a
+    figura for estreita, a travessa é alargada até cobrir as duas. Cada lingueta estreita para
+    baixo (P.lingueta_conicidade), como a fenda: ao ser empurrada, centra nas paredes inclinadas.
+    Retorna (canvas, px de margem lateral, medidas).
+    """
     h, w = sil.shape
-    extra = int(math.ceil((P.travessa + P.lingueta_prof + 1.0) / S))
-    m = np.zeros((h + 2 * P.pad + extra, w + 2 * P.pad), bool)
-    m[P.pad:P.pad + h, P.pad:P.pad + w] = sil
-    fundo = np.where(m.any(1))[0].max()
+    fundo = int(np.where(sil.any(1))[0].max())
     k = int(round(P.contato_mm / S))
-    cols = np.where(m[fundo - k:fundo + 1].any(0))[0]
+    cols = np.where(sil[max(0, fundo - k):fundo + 1].any(0))[0]
     esq, dir_ = int(cols.min()), int(cols.max())
-    centro = (esq + dir_) // 2
+    centro = (esq + dir_ + 1) // 2           # fronteira entre colunas: eixo de simetria das linguetas
+    D = meio_entre_px(P)
+    meia_topo = P.lingueta_larg / 2 / S
+    alcance = D + int(math.ceil(meia_topo + P.barra_sobra / S))
+    lado = P.pad + max(0, alcance - centro, centro + alcance - w)
+    extra = int(math.ceil((P.travessa + P.lingueta_prof + 1.0) / S))
+    m = np.zeros((h + 2 * P.pad + extra, w + 2 * lado), bool)
+    m[P.pad:P.pad + h, lado:lado + w] = sil
+    fundo, esq, dir_, centro = fundo + P.pad, esq + lado, dir_ + lado, centro + lado
+    trav_orig = (dir_ - esq + 1) * S
+    esq, dir_ = min(esq, centro - alcance), max(dir_, centro + alcance - 1)
     t = int(round(P.travessa / S))
     m[fundo - t:fundo + t + 1, esq:dir_ + 1] = True
     apoio = fundo + t
-    meia = int(round(P.lingueta_larg / 2 / S))
     prof = int(round(P.lingueta_prof / S))
-    if centro - meia < 0 or centro + meia >= m.shape[1]:
-        raise ValueError('lingueta maior que a figura')
-    m[apoio + 1:apoio + 1 + prof, centro - meia:centro + meia] = True
-    cols_fig = np.where(sil.any(0))[0] + P.pad
-    return m, {
+    for cx in (centro - D, centro + D):
+        for i in range(prof):
+            meia = int(round(meia_topo - (i + 0.5) * P.lingueta_conicidade))
+            m[apoio + 1 + i, cx - meia:cx + meia] = True
+    cols_fig = np.where(sil.any(0))[0] + lado
+    return m, lado, {
         'centro_col': int(centro), 'apoio_row': int(apoio),
         'travessa_mm': round((dir_ - esq + 1) * S, 2),
-        'lingueta_mm': [round(2 * meia * S, 2), round(prof * S, 2)],
+        'travessa_alargada': bool((dir_ - esq + 1) * S > trav_orig + 1e-6),
+        'linguetas_mm': {'quantidade': 2, 'entre_centros': round(entre_linguetas_mm(P), 3),
+                         'larg_junto_barra': round(2 * int(round(meia_topo)) * S, 2),
+                         'larg_ponta': round(2 * int(round(meia_topo - (prof - 0.5) * P.lingueta_conicidade)) * S, 2),
+                         'prof': round(prof * S, 2), 'conicidade': P.lingueta_conicidade},
         'figura_esq_mm': round((centro - cols_fig.min()) * S, 2),
-        'figura_dir_mm': round((cols_fig.max() - centro) * S, 2),
+        'figura_dir_mm': round((cols_fig.max() + 1 - centro) * S, 2),
         'altura_mm': round((apoio - np.where(m.any(1))[0].min()) * S, 2),
     }
 
@@ -368,8 +402,41 @@ def texto_na_borda(nome, a, b, P):
                        'arco_disponivel_mm': round(float(s[-1]), 1)}
 
 
+def fendas(P, espessura_lingueta):
+    """Duas fendas vazadas e cônicas (D031), centradas em x = 0, no sistema da base impressa de
+    cabeça para baixo: z = 0 é a boca (face de cima no jogo).
+
+    A fenda tem a conicidade da lingueta e, na boca, é 2 x folga_barra x conicidade mais
+    estreita que a lingueta junto à barra: empurrada, a lingueta encosta nas duas paredes
+    inclinadas e para com a barra a P.lingueta_folga_barra da base. Um erro de largura da
+    impressora muda só essa altura (erro / (2 x conicidade)), não o centro. A boca tem
+    chanfro contra o pé de elefante da primeira camada. Retorna (Manifold, medidas).
+    """
+    tg, H, c = P.lingueta_conicidade, P.base_altura, P.boca_chanfro
+    boca = P.lingueta_larg - 2 * P.lingueta_folga_barra * tg
+    e = espessura_lingueta + P.folga_esp
+    larg = lambda z: boca - 2 * z * tg
+    if larg(H) < 0.8:
+        raise ValueError('fenda cônica fecha antes do fundo da base')
+
+    def tronco(x, z0, w0, e0, z1, w1, e1):
+        return mf.Manifold.hull_points([(x + sx * w / 2, sy * ee / 2, z)
+                                        for z, w, ee in ((z0, w0, e0), (z1, w1, e1))
+                                        for sx in (-1, 1) for sy in (-1, 1)])
+    L = entre_linguetas_mm(P)
+    total = None
+    for x in (-L / 2, L / 2):
+        f = tronco(x, -0.01, larg(-0.01), e, H + 0.01, larg(H + 0.01), e)
+        f = f + tronco(x, -0.01, boca + 2 * (c + 0.01), e + 2 * (c + 0.01), c, larg(c), e)
+        total = f if total is None else total + f
+    med = {'quantidade': 2, 'entre_centros': round(L, 3), 'larg_boca': round(boca, 3),
+           'larg_fundo': round(larg(H), 3), 'espessura': round(e, 3), 'chanfro_boca': c,
+           'altura': H, 'conicidade': tg, 'folga_barra_mm': P.lingueta_folga_barra}
+    return total, med
+
+
 def base(forma, mm, P, espessura_lingueta, nome=None):
-    """Base preta com fenda vazada, impressa de cabeça para baixo (D027).
+    """Base preta com duas fendas cônicas vazadas (D031), impressa de cabeça para baixo (D027).
 
     A face da mesa é a de cima no jogo: sai lisa, com o acabamento da mesa. Com nome, o texto
     fica embutido em branco nas primeiras P.texto_camada mm, rente à superfície (não colide com
@@ -380,15 +447,17 @@ def base(forma, mm, P, espessura_lingueta, nome=None):
     t = np.linspace(0, 2 * math.pi, 192, endpoint=False)
     contorno = mf.CrossSection([np.column_stack([a * np.cos(t), b * np.sin(t)])])
     solido = mf.Manifold.extrude(contorno, P.base_altura)
-    fl, fe = P.lingueta_larg + P.folga_larg, espessura_lingueta + P.folga_esp
-    fenda = mf.Manifold.cube((fl, fe, P.base_altura + 0.02)).translate((-fl / 2, -fe / 2, -0.01))
-    solido = solido - fenda
-    med = {'fenda_mm': [round(fl, 2), round(fe, 2), P.base_altura], 'fenda': 'vazada',
+    vaos, med_f = fendas(P, espessura_lingueta)
+    xf, yf = (med_f['entre_centros'] + med_f['larg_boca']) / 2 + P.boca_chanfro, med_f['espessura'] / 2 + P.boca_chanfro
+    if (xf + 1.2) ** 2 / a ** 2 + (yf + 1.2) ** 2 / b ** 2 > 1:
+        raise ValueError(f'as fendas não cabem numa base de {mm} mm')
+    solido = solido - vaos
+    med = {'fendas_mm': med_f, 'fenda': 'duas, vazadas e cônicas',
            'impressa': 'de cabeça para baixo (face da mesa = face de cima)'}
     partes = [(solido, 1, 'Preto - base')]
     if nome:
         txt, med_txt = texto_na_borda(nome, a, b, P)
-        livre = mf.CrossSection.square((fl + 1.6, fe + 1.6)).translate((-(fl + 1.6) / 2, -(fe + 1.6) / 2))
+        livre = mf.CrossSection.square((2 * xf + 1.6, 2 * yf + 1.6)).translate((-xf - 0.8, -yf - 0.8))
         txt = txt.offset(P.texto_engorda, mf.JoinType.Round)
         txt = ((txt ^ contorno.offset(-0.3, mf.JoinType.Round)) - livre).mirror((1, 0))
         branco = mf.Manifold.extrude(txt, P.texto_camada)
@@ -663,8 +732,9 @@ def main():
     ap.add_argument('--modo', choices=['duas-metades', 'peca-unica'], default='duas-metades')
     ap.add_argument('--estilo', choices=['fino', 'borda'], default='fino',
                     help='fino (contorno fino, padrão dos testes desde 18/11) ou borda (borda grossa)')
-    ap.add_argument('--encaixe', choices=['gabarito', 'pinos'], default=Param.encaixe,
-                    help='duas metades: gabarito de colagem impresso (padrão, D029) ou furos para pino solto')
+    ap.add_argument('--encaixe', choices=['base', 'gabarito', 'pinos'], default=Param.encaixe,
+                    help='duas metades: base (padrão, D031: as duas fendas cônicas alinham na colagem), '
+                         'gabarito de colagem impresso (D029) ou furos para pino solto')
     ap.add_argument('--saida', type=Path, required=True)
     ap.add_argument('--margem', type=float, default=Param.margem_mesa, help='margem da borda da mesa (mm)')
     ap.add_argument('--espaco', type=float, default=Param.espaco, help='espaço entre peças (mm)')
@@ -724,8 +794,8 @@ def main():
         rel_v = tinta(verso_al, alvo)
         fino_antes = (fracao_fina(rel_f, P.bico), fracao_fina(rel_v, P.bico))
         # a engorda (modo engrossado) vai para a malha pelo vetor (secao); aqui só nas prévias e métricas
-        corpo_f, med = corpo_com_lingueta(frente_sil, P)
-        pad = lambda m: np.pad(m, ((P.pad, corpo_f.shape[0] - m.shape[0] - P.pad), (P.pad, P.pad)))
+        corpo_f, lado, med = corpo_com_lingueta(frente_sil, P)
+        pad = lambda m: np.pad(m, ((P.pad, corpo_f.shape[0] - m.shape[0] - P.pad), (lado, lado)))
         rel_f, rel_v = pad(rel_f), pad(rel_v)
         sil_f, sil_v = pad(frente_sil), pad(alvo)
         vis_f, vis_v = engordar(rel_f, P.engorda_malha) & sil_f, engordar(rel_v, P.engorda_malha) & sil_v
