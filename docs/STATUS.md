@@ -38,11 +38,11 @@ Site (GitHub Pages) que gera standees STL/3MF a partir de listas do Army Forge. 
 ## Próxima ação
 
 1. **Usuário**: criar o repositório no GitHub, `git remote add origin …`, `git push -u origin main`, ativar Pages (Settings → Pages → Source: GitHub Actions) e conferir o site publicado.
-2. **Usuário**: abrir `saidas/piloto-duas-metades-borda/projeto-duas-metades-borda.3mf`, conferir se os avisos sumiram (ou se o de impressora pede outro bico), se há duas placas e se os objetos mostram o ajuste de paredes; fatiar e imprimir uma figura + base. Informar o bico instalado na A1.
+2. **Usuário**: abrir `saidas/piloto-duas-metades-borda/projeto-duas-metades-borda.3mf`, conferir se os avisos sumiram (ou se o de impressora pede outro bico), se há duas placas e se os objetos mostram o ajuste de paredes; fatiar e imprimir uma figura + base. Impressora do usuário: Bambu Lab A1 "Isaac"; o teste de 18/11 na interface foi com bico 0,4 instalado (daí o aviso de perfil), e o usuário trocou para 0,2 para a impressão de teste, que bate com o perfil embutido.
 3. **Usuário**: decidir aliases propostos (Rifle → Battle Rifle, Baton → Shock Baton, Axe → Energy Axe, "Lance") e a política de silhuetas diferentes (capas).
 4. Agente: refazer os SVGs do catálogo a 600 dpi na skill (D020/D024). Depois T008 (revisar os 61 candidatos restantes numa sessão própria com a skill), T002 (casos especiais do texto), T005 (schemas do catálogo e do projeto no site), depois a etapa 2 do site (ler o catálogo do repositório, mostrar as artes em SVG e associar). O gerador do protótipo ainda lê o PDF; o port para o navegador deve ler os SVGs.
 
 ## Perguntas abertas
 
 - Resultado da abertura e da impressão (pinos, fenda, legibilidade).
-- GitHub (nome do repositório, público ou privado), uso pessoal/público das artes, impressora e bico. Não pedir tokens ou senhas.
+- GitHub (nome do repositório, público ou privado), uso pessoal/público das artes. Não pedir tokens ou senhas.
