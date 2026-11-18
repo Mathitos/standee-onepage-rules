@@ -69,7 +69,12 @@ class Param:
     texto_engorda: float = 0.06   # engrossa as letras; 0,12 era preciso com bico 0,4 e texto em relevo
     texto_arco_graus: float = 140 # arco da frente da base usado pelo texto
     fonte: str = 'C:/Windows/Fonts/bahnschrift.ttf'  # protótipo; o site precisa de fonte livre embutida
-    furo_diam: float = 2.0        # pino: filamento 1,75 mm
+    encaixe: str = 'gabarito'     # duas metades: gabarito de colagem (D029) | pinos (furos para pino solto)
+    gabarito_folga: float = 0.2   # folga do bolso em volta do contorno (mm, de cada lado)
+    gabarito_fundo: float = 1.0
+    gabarito_parede: float = 3.0
+    gabarito_fechamento: float = 1.5  # fecha reentrâncias estreitas do bolso (sem paredes finas)
+    furo_diam: float = 2.0        # encaixe por pinos: filamento 1,75 mm
     furo_parede: float = 1.0
     furo_dist_min: float = 6.0
     mesa: float = 256.0           # suposição: mesa 256 x 256 (A1/P1/X1); não confirmada
@@ -443,6 +448,35 @@ def _malha_xml(k, p, mid, m):
             f'<mesh><vertices>{vs}</vertices><triangles>{ts}</triangles></mesh></object>\n'), len(f)
 
 
+def gabarito(corpo_mask, P):
+    """Gabarito de colagem das duas metades (D029): bandeja com um bolso no contorno da peça.
+
+    A primeira metade entra com a face de fora para baixo; a segunda vai por cima, com a face
+    de fora para cima; as paredes do bolso (contorno + folga) alinham as duas, inclusive a
+    lingueta. corpo_mask é o contorno visto de cima com a primeira metade de face para baixo
+    (o mesmo do verso impresso). Profundidade: primeira metade com relevo + metade da segunda.
+    Um furo no fundo serve para empurrar a peça colada para fora.
+    """
+    fech = P.gabarito_fechamento
+    bolso = secao(corpo_mask).offset(P.gabarito_folga, mf.JoinType.Round)
+    bolso = bolso.offset(fech, mf.JoinType.Round).offset(-fech, mf.JoinType.Round)
+    x0, y0, x1, y1 = bolso.bounds()
+    m = P.gabarito_parede
+    caixa = mf.CrossSection.square((x1 - x0 + 2 * m, y1 - y0 + 2 * m)).translate((x0 - m, y0 - m))
+    prof = round(P.corpo + P.relevo + 0.5 * P.corpo, 2)
+    solido = mf.Manifold.extrude(caixa, P.gabarito_fundo + prof)
+    solido = solido - mf.Manifold.extrude(bolso, prof + 0.01).translate((0, 0, P.gabarito_fundo))
+    dt = ndi.distance_transform_edt(corpo_mask)
+    r, c = np.unravel_index(np.argmax(dt), dt.shape)
+    raio = min(3.0, dt.max() * S - 1.0)
+    if raio >= 1.0:
+        h = corpo_mask.shape[0]
+        furo = mf.Manifold.cylinder(P.gabarito_fundo + 0.02, raio, raio, 48)
+        solido = solido - furo.translate((c * S, (h - r) * S, -0.01))
+    return solido, {'bolso_prof_mm': prof, 'folga_mm': P.gabarito_folga,
+                    'furo_para_empurrar_mm': round(2 * raio, 1) if raio >= 1.0 else None}
+
+
 def colunas_de_placas(n):
     """Colunas da grade de placas do Bambu Studio (PartPlate.hpp, compute_colum_count)."""
     v = math.sqrt(n)
@@ -627,7 +661,10 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('lista', type=Path)
     ap.add_argument('--modo', choices=['duas-metades', 'peca-unica'], default='duas-metades')
-    ap.add_argument('--estilo', choices=['fino', 'borda'], default='borda')
+    ap.add_argument('--estilo', choices=['fino', 'borda'], default='fino',
+                    help='fino (contorno fino, padrão dos testes desde 18/11) ou borda (borda grossa)')
+    ap.add_argument('--encaixe', choices=['gabarito', 'pinos'], default=Param.encaixe,
+                    help='duas metades: gabarito de colagem impresso (padrão, D029) ou furos para pino solto')
     ap.add_argument('--saida', type=Path, required=True)
     ap.add_argument('--margem', type=float, default=Param.margem_mesa, help='margem da borda da mesa (mm)')
     ap.add_argument('--espaco', type=float, default=Param.espaco, help='espaço entre peças (mm)')
@@ -650,6 +687,7 @@ def main():
     P = Param(margem_mesa=a.margem, espaco=a.espaco, bico=a.bico, traco=a.traco, engorda=a.engorda,
               paredes='' if a.paredes == 'perfil' else a.paredes,
               acabamento=a.acabamento, sulco_engorda=a.sulco_engorda, corpo=a.corpo, relevo=a.relevo_mm,
+              encaixe=a.encaixe,
               nome_na_base=a.nome_na_base)
     duas = a.modo == 'duas-metades'
     acab_de = lambda m: m.get('acabamento', P.acabamento)
@@ -673,6 +711,7 @@ def main():
             sys.exit(f'acabamento {acab_de(m)!r} não existe neste modo ({m["unidade"]})')
     usadas = sorted({m['arte'] for m in lista['modelos']})
     artes, objetos_fig, mascaras, checks, stl = {}, {}, {}, [], []
+    objetos_gab, gabaritos = {}, {}
     for chave in usadas:
         info = lista['artes'][chave]
         pagina = info['pagina'][a.estilo]
@@ -693,7 +732,16 @@ def main():
         corpo_v = corpo_f[:, ::-1]
         assert np.array_equal(corpo_v[:, ::-1], corpo_f)
         if duas:
-            furos_f = posicionar_furos(pad(frente_sil), P)
+            furos_f = posicionar_furos(pad(frente_sil), P) if P.encaixe == 'pinos' else []
+            if P.encaixe == 'gabarito':
+                gab, med_gab = gabarito(corpo_v, P)
+                bmin = gab.bounding_box()
+                objetos_gab[f'gabarito-{chave}'] = (f'Gabarito {info["rotulo"]}', [(gab.translate((-bmin[0], -bmin[1], 0)), 0, 'Gabarito')])
+                checks.append(checar(f'gabarito-{chave}', gab))
+                bb = gab.bounding_box()
+                med_gab['dim_mm'] = [round(bb[3] - bb[0], 2), round(bb[4] - bb[1], 2)]
+                gabaritos[chave] = med_gab
+                mascaras[f'gabarito-{chave}'] = (np.ones((int(med_gab['dim_mm'][1] / S), int(med_gab['dim_mm'][0] / S)), bool), None)
             furos_v = [(r, corpo_f.shape[1] - 1 - c) for r, c in furos_f]
             pecas = []
             for ac in sorted({acab_de(m) for m in lista['modelos'] if m['arte'] == chave}, key=list(ACABAMENTOS).index):
@@ -796,17 +844,19 @@ def main():
                    empacotar(pecas_fig[ac], P, reservado=P.torre_xyxy)) for ac in usados_ac]
     # com nome, a placa de bases tem duas cores e precisa da área da torre livre
     placas_base = empacotar(pecas_base, P, reservado=P.torre_xyxy_bases if P.nome_na_base else None)
-    # um projeto só (pedido do usuário em 18/11): placas de figuras, depois placas de bases
+    # gabaritos de colagem: um por arte, numa placa de uma cor
+    placas_gab = empacotar([(k, *gabaritos[k.removeprefix('gabarito-')]['dim_mm']) for k in objetos_gab], P) if objetos_gab else []
+    # um projeto só (pedido do usuário em 18/11): placas de figuras, de bases e de gabaritos
     placas_proj, info_placas, torres = [], [], []
-    for nome, placas in grupos_fig + [('Bases', placas_base)]:
+    for nome, placas in grupos_fig + [('Bases', placas_base), ('Gabaritos', placas_gab)]:
         for i, placa in enumerate(placas, 1):
             rotulo = nome if len(placas) == 1 else f'{nome} {i}'
             placas_proj.append((rotulo, [(k, x, y) for k, x, y, _, _ in placa]))
-            torres.append(P.torre_pos_bases if nome == 'Bases' else P.torre_pos)
+            torres.append(P.torre_pos_bases if nome == 'Bases' else None if nome == 'Gabaritos' else P.torre_pos)
             arq_png = f'placa-{len(placas_proj)}-' + re.sub(r'[^a-z0-9]+', '-', rotulo.lower()).strip('-') + '.png'
             cv2.imwrite(str(saida / 'previas' / arq_png),
-                        previa_placa(placa, mascaras, P, reservado=P.torre_xyxy if nome != 'Bases' else
-                                     (P.torre_xyxy_bases if P.nome_na_base else None)))
+                        previa_placa(placa, mascaras, P, reservado=None if nome == 'Gabaritos' else P.torre_xyxy
+                                     if nome != 'Bases' else (P.torre_xyxy_bases if P.nome_na_base else None)))
             info_placas.append({'placa': len(placas_proj), 'nome': rotulo, 'pecas': len(placa)})
     try:
         perfis, projeto = B.para_bico(P.bico)
@@ -814,14 +864,14 @@ def main():
         print(f'AVISO: sem perfil embutido ({e}); o Bambu vai carregar só a geometria', file=sys.stderr)
         perfis, projeto = None, None
     arq = f'projeto-{a.modo}-{a.estilo}.3mf'
-    escrever_3mf(saida / arq, {**objetos_fig, **objetos_base}, placas_proj,
+    escrever_3mf(saida / arq, {**objetos_fig, **objetos_base, **objetos_gab}, placas_proj,
                  ajustes={'wall_generator': P.paredes} if P.paredes else None, projeto=projeto, mesa=P.mesa,
                  torres=torres)
     arquivos = [{'arquivo': arq, 'placas': info_placas, 'perfil_embutido': perfis,
                  'tamanho_mb': round((saida / arq).stat().st_size / 1e6, 2)}]
 
     # sobreposição na mesa
-    for placa in [pl for _, placas in grupos_fig for pl in placas] + placas_base:
+    for placa in [pl for _, placas in grupos_fig for pl in placas] + placas_base + placas_gab:
         for i, (_, x1, y1, w1, h1) in enumerate(placa):
             assert x1 >= 0 and y1 >= 0 and x1 + w1 <= P.mesa and y1 + h1 <= P.mesa
             for _, x2, y2, w2, h2 in placa[i + 1:]:
@@ -829,8 +879,9 @@ def main():
 
     relatorio = {
         'gerador': VERSAO, 'modo': a.modo, 'estilo': a.estilo, 'parametros': asdict(P),
-        'furo_prof_mm': P.furo_prof if duas else None,
-        'pino_sugerido_mm': [1.75, round(2 * P.furo_prof - 0.1, 2)] if duas else None,
+        'encaixe': P.encaixe if duas else None, 'gabaritos': gabaritos,
+        'furo_prof_mm': P.furo_prof if duas and P.encaixe == 'pinos' else None,
+        'pino_sugerido_mm': [1.75, round(2 * P.furo_prof - 0.1, 2)] if duas and P.encaixe == 'pinos' else None,
         'espessura_lingueta_mm': round((2 if duas else 1) * P.corpo, 2), 'pdf_sha256': sha,
         'modelos': lista['modelos'], 'total_modelos': sum(m['qtd'] for m in lista['modelos']),
         'total_pecas_figura': sum(map(len, pecas_fig.values())), 'total_bases': len(pecas_base),

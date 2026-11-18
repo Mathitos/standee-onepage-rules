@@ -128,3 +128,33 @@ O usuário abriu `figuras-duas-metades-borda.3mf` na interface e viu dois avisos
 | 3 | pintado: Infantry | 5 | 71 min |
 | 4 | 7 bases com nome | 5 | 147 min |
 
+## Gabarito de colagem e contorno fino (18/11)
+
+**Gabarito (D029):**
+
+- Bandeja com bolso no contorno da peça visto com a primeira metade de face para baixo: é o contorno do verso impresso.
+- Medidas: folga de 0,2 mm, reentrâncias estreitas fechadas em 1,5 mm, fundo de 1 mm, bolso de 2,2 mm e paredes de 3 mm.
+- Furo de 6 mm no ponto mais interno, para empurrar a peça colada.
+- Na prévia do G-code (camada de cima), o bolso segue o contorno, inclusive a lingueta. O vão entre as pernas fica como ilha da parede, o que também ajuda a alinhar.
+- Medidas do gabarito, em mm:
+
+| Arte | Gabarito |
+|---|---|
+| Infantry | 25,3 × 43,4 |
+| Veteran | 28,0 × 43,0 |
+| Biker Pistol | 46,7 × 41,3 |
+| Biker Lance | 47,6 × 41,5 |
+| OGRE | 43,8 × 62,9 |
+
+**Contorno fino (D030):** a Infantry Rifle nos três acabamentos está em `2026-11-18-acabamentos-infantry-fino.png`.
+
+**Projeto de teste** `saidas/teste-acabamento/projeto-duas-metades-fino.3mf`, fatiado pela CLI como está:
+
+| Placa | Conteúdo | Trocas | Tempo |
+|---|---|---:|---:|
+| 1 | preto em relevo, 5 artes | 1 | 253 min |
+| 2 | branco em relevo | 1 | 40 min |
+| 3 | pintado | 5 | 64 min |
+| 4 | 7 bases | 5 | 147 min |
+| 5 | 5 gabaritos | 0 | 164 min |
+

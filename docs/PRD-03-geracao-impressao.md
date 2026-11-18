@@ -60,6 +60,7 @@ As dimensões externas da base vêm do catálogo; não herdar o retângulo 25 ×
 - Encaixe, a decidir no cupom físico:
   - **E1 — furos + pino solto + cola**: furos cegos nas faces de colagem das duas metades e um pino separado (pedaço de filamento 1,75 mm ou pino impresso à parte). Pinos não podem sair da face da mesa, que ficaria sem apoio; por isso as duas metades têm furo.
   - **E2 — só cola**, alinhando pelo contorno e pela fenda da base.
+  - **E3 — gabarito de colagem (padrão, D029)**: bandeja impressa com bolso no contorno da peça (lingueta incluída, folga 0,2 mm, fundo 2,2 mm). A primeira metade entra de face para baixo e a segunda vai por cima; as paredes alinham as duas. Um gabarito por arte, reutilizável; furo no fundo para empurrar a peça. O usuário descartou E1 por ser inviável cortar pinos de 1,5 mm.
 - Posição dos furos: automática pela transformada de distância da silhueta (regiões largas, como o torso), nunca em armas ou partes finas, espelhada na metade traseira e visível na prévia. Profundidade ≤ corpo − 0,4 mm. Diâmetro e folga calibrados no cupom.
 - O requisito de desenho P/B na face da mesa (D002) não se aplica a esse modo: a face fica oculta.
 - Riscos: montagem manual (14 modelos = 28 metades), linha de junção visível na lateral, partes finas com meia espessura até a colagem, desalinhamento sem pinos.
