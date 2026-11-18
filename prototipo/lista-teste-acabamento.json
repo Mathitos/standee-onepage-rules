@@ -1,0 +1,128 @@
+{
+  "descricao": "Teste de impressão (pedido do usuário em 18/11/2026): 1 miniatura de cada arte da lista piloto, e a Infantry Rifle também nos acabamentos branco em relevo e pintado (sem relevo), para comparar. Mesmas artes, bases e PDF da lista piloto.",
+  "pdf": {
+    "caminho": "C:/Users/Matheus/Downloads/Human_Defense_Force_-_BW.pdf",
+    "sha256": "b17c9ba4f73f8f5c1a2aca045526f3e7009b06e8113b653f6f4cf3a0ddd719fc"
+  },
+  "artes": {
+    "infantry-rifle": {
+      "rotulo": "Infantry Rifle",
+      "pagina": {
+        "fino": 6,
+        "borda": 36
+      },
+      "linha": 0
+    },
+    "veteran-shotgun": {
+      "rotulo": "Veteran Shotgun",
+      "pagina": {
+        "fino": 15,
+        "borda": 45
+      },
+      "linha": 0
+    },
+    "biker-pistol": {
+      "rotulo": "Biker Pistol",
+      "pagina": {
+        "fino": 26,
+        "borda": 56
+      },
+      "linha": 0
+    },
+    "biker-lance": {
+      "rotulo": "Biker Lance",
+      "pagina": {
+        "fino": 27,
+        "borda": 57
+      },
+      "linha": 0
+    },
+    "ogre-minigun": {
+      "rotulo": "OGRE Minigun",
+      "pagina": {
+        "fino": 28,
+        "borda": 58
+      },
+      "linha": 0
+    }
+  },
+  "bases": {
+    "redonda-25": {
+      "forma": "redonda",
+      "mm": [
+        25
+      ],
+      "fonte": "Army Forge v3.6.0, 17/11/2026"
+    },
+    "oval-60x35": {
+      "forma": "oval",
+      "mm": [
+        60,
+        35
+      ],
+      "fonte": "Army Forge v3.6.0 (\"60x35\"), 17/11/2026; elipse é suposição"
+    },
+    "redonda-40": {
+      "forma": "redonda",
+      "mm": [
+        40
+      ],
+      "fonte": "Army Forge v3.6.0, 17/11/2026"
+    }
+  },
+  "modelos": [
+    {
+      "unidade": "Infantry Squad",
+      "equipamento": "Battle Rifle, Strike",
+      "qtd": 1,
+      "arte": "infantry-rifle",
+      "base": "redonda-25",
+      "acabamento": "preto-relevo"
+    },
+    {
+      "unidade": "Infantry Squad",
+      "equipamento": "Battle Rifle, Strike",
+      "qtd": 1,
+      "arte": "infantry-rifle",
+      "base": "redonda-25",
+      "acabamento": "branco-relevo"
+    },
+    {
+      "unidade": "Infantry Squad",
+      "equipamento": "Battle Rifle, Strike",
+      "qtd": 1,
+      "arte": "infantry-rifle",
+      "base": "redonda-25",
+      "acabamento": "pintado"
+    },
+    {
+      "unidade": "Combat Bikers",
+      "equipamento": "Pistol, Hunting Lance",
+      "qtd": 1,
+      "arte": "biker-pistol",
+      "base": "oval-60x35"
+    },
+    {
+      "unidade": "Combat Bikers",
+      "equipamento": "Pistol, Hunting Lance",
+      "qtd": 1,
+      "arte": "biker-lance",
+      "base": "oval-60x35"
+    },
+    {
+      "unidade": "Veterans",
+      "equipamento": "Shotgun, Strike",
+      "qtd": 1,
+      "arte": "veteran-shotgun",
+      "base": "redonda-25"
+    },
+    {
+      "unidade": "OGRE Robot",
+      "equipamento": "Gatling Gun, Strike",
+      "qtd": 1,
+      "arte": "ogre-minigun",
+      "base": "redonda-40",
+      "substituicao": "TESTE: Minigun no lugar de Gatling Gun"
+    }
+  ]
+}

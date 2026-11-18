@@ -36,6 +36,11 @@ S = 25.4 / DPI
 TINTA_LIMIAR = 200         # traços de ~0,1 mm ficam cinza na borda; limiar alto não os quebra
 TINTA_SUAVE_MM = 0.035     # desfoque leve antes do limiar: tira o serrilhado do JPEG
 VERSAO = 'prototipo-0.2'
+ACABAMENTOS = {                 # duas metades (D028); a lista pode pedir um por modelo
+    'preto-relevo': 'preto em relevo',      # corpo branco, desenho preto em relevo (padrão)
+    'branco-relevo': 'branco em relevo',    # corpo preto, branco em relevo, linhas como sulcos
+    'pintado': 'pintado, sem relevo',       # desenho rente na face da mesa
+}
 
 
 @dataclass
@@ -54,13 +59,14 @@ class Param:
     traco: str = 'original'       # original: traço do PDF a 600 dpi (D024); engrossado: + engorda
     engorda: float = 0.05         # modo engrossado: mm de cada lado, aplicado no vetor
     paredes: str = 'arachne'      # gerador de paredes gravado em cada objeto do 3MF (D025); '' = o do perfil
-    relevo_negativo: bool = False # True: corpo preto e relevo branco; as linhas viram vãos no branco
+    acabamento: str = 'preto-relevo'  # duas metades: preto-relevo | branco-relevo | pintado (D028)
+    sulco_engorda: float = 0.0    # branco-relevo: alarga as linhas (sulcos); no G-code (bico 0,2, Arachne) 0 ficou mais limpo que 0,03-0,08
     nome_na_base: bool = False    # escreve o nome da unidade na borda de cima da base
     texto_altura: float = 3.0     # altura das maiúsculas (mm); cai até texto_min se não couber
     texto_min: float = 1.8        # abaixo disto o nome não cabe e o relatório avisa
-    texto_relevo: float = 0.6
+    texto_camada: float = 0.4     # nome embutido em branco nas primeiras camadas (D027)
     texto_margem: float = 0.6     # da borda da base até o texto
-    texto_engorda: float = 0.12   # o fatiador perdia a barra do t e o pingo do i com bico 0,4
+    texto_engorda: float = 0.06   # engrossa as letras; 0,12 era preciso com bico 0,4 e texto em relevo
     texto_arco_graus: float = 140 # arco da frente da base usado pelo texto
     fonte: str = 'C:/Windows/Fonts/bahnschrift.ttf'  # protótipo; o site precisa de fonte livre embutida
     furo_diam: float = 2.0        # pino: filamento 1,75 mm
@@ -69,8 +75,13 @@ class Param:
     mesa: float = 256.0           # suposição: mesa 256 x 256 (A1/P1/X1); não confirmada
     margem_mesa: float = 8.0
     espaco: float = 4.0
-    # área livre para a torre de purga padrão da A1 (x=15, y=220, largura 35) — só na placa de 2 cores
-    torre_xyxy: tuple = (0.0, 205.0, 62.0, 256.0)
+    # torre de purga (placas de 2 cores), por placa: nas figuras, a posição padrão da A1 (x=15,
+    # y=220; torre de ~37 x 37 mm). Nas bases com nome, as trocas nas primeiras camadas fazem a
+    # torre chegar a 43 x 42 mm e ela passava da borda (18/11): lá fica em y=200
+    torre_pos: tuple = (15.0, 220.0)
+    torre_xyxy: tuple = (0.0, 205.0, 62.0, 256.0)   # área deixada livre de peças
+    torre_pos_bases: tuple = (15.0, 200.0)
+    torre_xyxy_bases: tuple = (0.0, 190.0, 70.0, 256.0)
     pad: int = 2                  # px de margem no canvas
 
     @property
@@ -220,17 +231,54 @@ def secao(mask, engorda=0.0):
     return cs.offset(engorda, mf.JoinType.Round) if engorda > 0 else cs
 
 
-def metade(corpo_mask, relevo_mask, furos, P, engorda=None):
+def _furos(furos, h, P, z0):
+    """Cilindros dos furos de pino (diâmetro P.furo_diam, fundo P.furo_prof) a partir de z0."""
+    cils = None
+    for r, c in furos:
+        cil = mf.Manifold.cylinder(P.furo_prof + 0.02, P.furo_diam / 2, P.furo_diam / 2, 48)
+        cil = cil.translate((c * S, (h - r) * S, z0 - 0.01))
+        cils = cil if cils is None else cils + cil
+    return cils
+
+
+def metade(corpo_mask, relevo_mask, furos, P):
+    """Acabamento preto-relevo: corpo branco, desenho preto em relevo; furos na face da mesa."""
     h = corpo_mask.shape[0]
     contorno = secao(corpo_mask)
     corpo = mf.Manifold.extrude(contorno, P.corpo)
-    for r, c in furos:
-        cil = mf.Manifold.cylinder(P.furo_prof + 0.01, P.furo_diam / 2, P.furo_diam / 2, 48)
-        corpo = corpo - cil.translate((c * S, (h - r) * S, -0.01))
+    if furos:
+        corpo = corpo - _furos(furos, h, P, 0.0)
     # o relevo nunca passa da borda do corpo
-    eng = P.engorda_malha if engorda is None else engorda
-    relevo = mf.Manifold.extrude(secao(relevo_mask, eng) ^ contorno, P.relevo).translate((0, 0, P.corpo))
+    relevo = mf.Manifold.extrude(secao(relevo_mask, P.engorda_malha) ^ contorno, P.relevo).translate((0, 0, P.corpo))
     return corpo, relevo
+
+
+def metade_branco_relevo(corpo_mask, sil_mask, tinta_mask, furos, P):
+    """Acabamento branco-relevo: corpo preto e relevo branco onde não há tinta; as linhas do
+    desenho viram sulcos pretos (P.sulco_engorda os alarga, se o fatiador fechá-los). Furos na
+    face da mesa."""
+    h = corpo_mask.shape[0]
+    contorno = secao(corpo_mask)
+    corpo = mf.Manifold.extrude(contorno, P.corpo)
+    if furos:
+        corpo = corpo - _furos(furos, h, P, 0.0)
+    branco = (secao(sil_mask) - secao(tinta_mask, P.sulco_engorda)) ^ contorno
+    return corpo, mf.Manifold.extrude(branco, P.relevo).translate((0, 0, P.corpo))
+
+
+def metade_pintada(corpo_mask, tinta_mask, furos, P):
+    """Acabamento pintado: desenho rente na face da mesa (primeiras P.camada_mesa mm, preto e
+    branco coplanares), resto branco, sem relevo. A face de colar fica em cima, com os furos.
+    corpo_mask e tinta_mask já vêm espelhados (a face da mesa é vista por baixo)."""
+    h = corpo_mask.shape[0]
+    contorno = secao(corpo_mask)
+    preto_cs = secao(tinta_mask, P.engorda_malha) ^ contorno
+    cam = P.camada_mesa
+    branco = (mf.Manifold.extrude(contorno - preto_cs, cam)
+              + mf.Manifold.extrude(contorno, P.corpo - cam).translate((0, 0, cam)))
+    if furos:
+        branco = branco - _furos(furos, h, P, P.corpo - P.furo_prof)
+    return branco, mf.Manifold.extrude(preto_cs, cam)
 
 
 def peca_unica(corpo_mask, preto_mesa_mask, relevo_mask, P):
@@ -316,7 +364,13 @@ def texto_na_borda(nome, a, b, P):
 
 
 def base(forma, mm, P, espessura_lingueta, nome=None):
-    """Base com fenda vazada (atravessa a base). Com nome, escreve-o em relevo na borda da frente."""
+    """Base preta com fenda vazada, impressa de cabeça para baixo (D027).
+
+    A face da mesa é a de cima no jogo: sai lisa, com o acabamento da mesa. Com nome, o texto
+    fica embutido em branco nas primeiras P.texto_camada mm, rente à superfície (não colide com
+    o standee ao encaixar) e espelhado, porque é lido do outro lado. Retorna ([(malha, cor,
+    rótulo)], medidas); cor 0 = filamento 1 (branco), 1 = filamento 2 (preto).
+    """
     a, b = (mm[0] / 2, mm[0] / 2) if forma == 'redonda' else (mm[0] / 2, mm[1] / 2)
     t = np.linspace(0, 2 * math.pi, 192, endpoint=False)
     contorno = mf.CrossSection([np.column_stack([a * np.cos(t), b * np.sin(t)])])
@@ -324,15 +378,18 @@ def base(forma, mm, P, espessura_lingueta, nome=None):
     fl, fe = P.lingueta_larg + P.folga_larg, espessura_lingueta + P.folga_esp
     fenda = mf.Manifold.cube((fl, fe, P.base_altura + 0.02)).translate((-fl / 2, -fe / 2, -0.01))
     solido = solido - fenda
-    med = {'fenda_mm': [round(fl, 2), round(fe, 2), P.base_altura], 'fenda': 'vazada'}
+    med = {'fenda_mm': [round(fl, 2), round(fe, 2), P.base_altura], 'fenda': 'vazada',
+           'impressa': 'de cabeça para baixo (face da mesa = face de cima)'}
+    partes = [(solido, 1, 'Preto - base')]
     if nome:
         txt, med_txt = texto_na_borda(nome, a, b, P)
         livre = mf.CrossSection.square((fl + 1.6, fe + 1.6)).translate((-(fl + 1.6) / 2, -(fe + 1.6) / 2))
         txt = txt.offset(P.texto_engorda, mf.JoinType.Round)
-        txt = (txt ^ contorno.offset(-0.3, mf.JoinType.Round)) - livre
-        solido = solido + mf.Manifold.extrude(txt, P.texto_relevo).translate((0, 0, P.base_altura))
-        med['nome'] = med_txt
-    return solido.translate((a, b, 0)), med
+        txt = ((txt ^ contorno.offset(-0.3, mf.JoinType.Round)) - livre).mirror((1, 0))
+        branco = mf.Manifold.extrude(txt, P.texto_camada)
+        partes = [(solido - branco, 1, 'Preto - base'), (branco, 0, 'Branco - nome')]
+        med['nome'] = {**med_txt, 'embutido_mm': P.texto_camada}
+    return [(m.translate((a, b, 0)), cor, rot) for m, cor, rot in partes], med
 
 
 def chave_base(m, P):
@@ -393,11 +450,12 @@ def colunas_de_placas(n):
     return int(r + 1 if v > r else r)
 
 
-def escrever_3mf(caminho, objetos, placas, ajustes=None, projeto=None, mesa=256.0):
+def escrever_3mf(caminho, objetos, placas, ajustes=None, projeto=None, mesa=256.0, torres=None):
     """Projeto 3MF no formato do Bambu Studio, com várias placas.
 
     objetos: {chave: (nome, [(manifold, cor 0=branco 1=preto, rotulo)])}
     placas: [(nome da placa, [(chave, x, y)])], x/y em mm dentro da placa.
+    torres: posição (x, y) da torre de purga em cada placa (None = a do perfil).
     ajustes: ajustes de impressão por objeto (ex.: {'wall_generator': 'arachne'}), gravados
     como o Bambu Studio grava um ajuste mudado só naquele objeto.
     projeto: project_settings.config (dict). Sem ele o Bambu Studio diz que o 3MF é de versão
@@ -478,6 +536,12 @@ def escrever_3mf(caminho, objetos, placas, ajustes=None, projeto=None, mesa=256.
     arquivos['Metadata/filament_sequence.json'] = json.dumps(
         {f'plate_{i + 1}': {'nozzle_sequence': [], 'optimal_assignment': [], 'sequence': []} for i in range(len(placas))})
     if projeto:
+        projeto = dict(projeto)
+        for i, k in enumerate(('wipe_tower_x', 'wipe_tower_y')):   # um valor por placa (PartPlate.cpp)
+            if isinstance(projeto.get(k), list) and projeto[k]:
+                padrao = projeto[k][0]
+                projeto[k] = [padrao if not torres or torres[n] is None else f'{torres[n][i]:g}'
+                              for n in range(len(placas))]
         arquivos['Metadata/project_settings.config'] = json.dumps(projeto, indent=4, ensure_ascii=False)
     tmp = Path(str(caminho) + '.tmp')
     with zipfile.ZipFile(tmp, 'w', zipfile.ZIP_DEFLATED) as z:
@@ -574,19 +638,21 @@ def main():
     ap.add_argument('--paredes', choices=['arachne', 'classic', 'perfil'], default=Param.paredes,
                     help='gerador de paredes gravado nos objetos do 3MF; perfil = não grava (usa o do perfil)')
     ap.add_argument('--so', action='append', help='gera só estas artes (diagnóstico)')
-    ap.add_argument('--relevo', choices=['positivo', 'negativo'], default='positivo',
-                    help='negativo: corpo preto e relevo branco, linhas como vãos (só duas metades)')
+    ap.add_argument('--acabamento', choices=list(ACABAMENTOS), default=Param.acabamento,
+                    help='duas metades: preto-relevo (padrão), branco-relevo ou pintado; a lista pode '
+                         'pedir um por modelo ("acabamento")')
+    ap.add_argument('--sulco-engorda', type=float, default=Param.sulco_engorda,
+                    help='branco-relevo: alarga as linhas pretas (sulcos), mm de cada lado')
     ap.add_argument('--corpo', type=float, default=Param.corpo, help='espessura do corpo (mm)')
     ap.add_argument('--relevo-mm', type=float, default=Param.relevo, help='altura do relevo (mm)')
     ap.add_argument('--nome-na-base', action='store_true', help='escreve o nome da unidade na borda da base')
     a = ap.parse_args()
     P = Param(margem_mesa=a.margem, espaco=a.espaco, bico=a.bico, traco=a.traco, engorda=a.engorda,
               paredes='' if a.paredes == 'perfil' else a.paredes,
-              relevo_negativo=a.relevo == 'negativo', corpo=a.corpo, relevo=a.relevo_mm,
+              acabamento=a.acabamento, sulco_engorda=a.sulco_engorda, corpo=a.corpo, relevo=a.relevo_mm,
               nome_na_base=a.nome_na_base)
     duas = a.modo == 'duas-metades'
-    if P.relevo_negativo and not duas:
-        sys.exit('relevo negativo ainda só no modo duas-metades')
+    acab_de = lambda m: m.get('acabamento', P.acabamento)
     if P.lingueta_prof > P.base_altura:
         sys.exit('lingueta mais funda que a base: sobraria por baixo da fenda vazada')
     t0 = time.time()
@@ -602,6 +668,9 @@ def main():
 
     if a.so:
         lista['modelos'] = [m for m in lista['modelos'] if m['arte'] in a.so]
+    for m in lista['modelos']:
+        if acab_de(m) not in ACABAMENTOS or (not duas and acab_de(m) != 'preto-relevo'):
+            sys.exit(f'acabamento {acab_de(m)!r} não existe neste modo ({m["unidade"]})')
     usadas = sorted({m['arte'] for m in lista['modelos']})
     artes, objetos_fig, mascaras, checks, stl = {}, {}, {}, [], []
     for chave in usadas:
@@ -627,33 +696,39 @@ def main():
             furos_f = posicionar_furos(pad(frente_sil), P)
             furos_v = [(r, corpo_f.shape[1] - 1 - c) for r, c in furos_f]
             pecas = []
-            for lado, corpo_m, rel_m, vis_m, sil_m, furos in (('frente', corpo_f, rel_f, vis_f, sil_f, furos_f),
-                                                              ('verso', corpo_v, rel_v, vis_v, sil_v, furos_v)):
-                if P.relevo_negativo:
-                    # relevo = branco onde não há tinta; o preto visível é o corpo nos vãos
-                    branco = sil_m & ~vis_m
-                    corpo3, relevo3 = metade(corpo_m, branco, furos, P, engorda=0)
-                    pecas.append((lado, corpo_m, corpo_m & ~branco,
-                                  [(corpo3, 1, 'Preto - corpo'), (relevo3, 0, 'Branco - relevo')]))
-                else:
-                    corpo3, relevo3 = metade(corpo_m, rel_m, furos, P)
-                    pecas.append((lado, corpo_m, vis_m,
-                                  [(corpo3, 0, 'Branco - corpo'), (relevo3, 1, 'Preto - relevo')]))
+            for ac in sorted({acab_de(m) for m in lista['modelos'] if m['arte'] == chave}, key=list(ACABAMENTOS).index):
+                for lado, corpo_m, rel_m, vis_m, sil_m, furos, furos_esp in (
+                        ('frente', corpo_f, rel_f, vis_f, sil_f, furos_f, furos_v),
+                        ('verso', corpo_v, rel_v, vis_v, sil_v, furos_v, furos_f)):
+                    if ac == 'branco-relevo':
+                        corpo3, relevo3 = metade_branco_relevo(corpo_m, sil_m, rel_m, furos, P)
+                        branco = sil_m & ~engordar(rel_m, P.sulco_engorda)
+                        pecas.append((ac, lado, corpo_m, corpo_m & ~branco,
+                                      [(corpo3, 1, 'Preto - corpo'), (relevo3, 0, 'Branco - relevo')]))
+                    elif ac == 'pintado':
+                        # desenho na face da mesa: tudo espelhado, inclusive contorno e furos
+                        branco3, preto3 = metade_pintada(corpo_m[:, ::-1], rel_m[:, ::-1], furos_esp, P)
+                        pecas.append((ac, lado, corpo_m[:, ::-1], vis_m[:, ::-1],
+                                      [(branco3, 0, 'Branco - corpo'), (preto3, 1, 'Preto - desenho na mesa')]))
+                    else:
+                        corpo3, relevo3 = metade(corpo_m, rel_m, furos, P)
+                        pecas.append((ac, lado, corpo_m, vis_m,
+                                      [(corpo3, 0, 'Branco - corpo'), (relevo3, 1, 'Preto - relevo')]))
         else:
             # vista de cima: contorno = frente espelhada; face da mesa mostra a frente (espelhada
             # no modelo, lida certa por baixo); relevo em cima = verso como impresso
             furos_f = []
             branco3, preto3, relevo3 = peca_unica(corpo_v, rel_f[:, ::-1], rel_v, P)
-            pecas = [('peca', corpo_v, vis_v, [(branco3, 0, 'Branco - corpo'),
+            pecas = [('preto-relevo', 'peca', corpo_v, vis_v, [(branco3, 0, 'Branco - corpo'),
                                                 (preto3, 1, 'Preto - desenho na mesa'),
                                                 (relevo3, 1, 'Preto - relevo')])]
         dims = None
-        for sufixo, corpo_m, rel_m, partes3 in pecas:
+        for ac, lado, corpo_m, rel_m, partes3 in pecas:
             bmin = partes3[0][0].bounding_box()
             desl = (-bmin[0], -bmin[1], 0)
             partes3 = [(m.translate(desl), cor, rot) for m, cor, rot in partes3]
-            k = f'{chave}-{sufixo}'
-            nome = f'{info["rotulo"]} - {sufixo}' if duas else info['rotulo']
+            k = f'{chave}-{ac}-{lado}'
+            nome = info['rotulo'] + ('' if ac == P.acabamento else f' ({ACABAMENTOS[ac]})') + (f' - {lado}' if duas else '')
             objetos_fig[k] = (nome, partes3)
             mascaras[k] = (corpo_m, rel_m)
             checks += [checar(f'{k} {rot}', m) for m, _, rot in partes3]
@@ -684,11 +759,13 @@ def main():
         kb = chave_base(m, P)
         if kb in bases_def:
             continue
-        solido, med_b = base(bdef['forma'], bdef['mm'], P, (2 if duas else 1) * P.corpo, nome=nome_u)
-        # bases numa cor só (filamento 1, cor à escolha): sem torre de purga
+        partes_b, med_b = base(bdef['forma'], bdef['mm'], P, (2 if duas else 1) * P.corpo, nome=nome_u)
         rotulo = f'Base {chave_b}' + (f' - {nome_u}' if nome_u else '')
-        objetos_base[kb] = (rotulo, [(solido, 0, 'Base')])
-        checks.append(checar(kb, solido))
+        objetos_base[kb] = (rotulo, partes_b)
+        checks += [checar(f'{kb} {rot}', m) for m, _, rot in partes_b]
+        solido = partes_b[0][0]
+        for m_b, _, _ in partes_b[1:]:
+            solido = solido + m_b
         para_trimesh(solido).export(saida / 'stl' / f'{kb}.stl')
         stl.append(f'stl/{kb}.stl')
         bb = solido.bounding_box()
@@ -706,24 +783,30 @@ def main():
         art['sobra_lateral_mm'] = round(max(art['figura_esq_mm'], art['figura_dir_mm']) - meio_eixo, 2)
 
     # instâncias e placas
-    pecas_fig, pecas_base = [], []
+    pecas_fig, pecas_base = {ac: [] for ac in ACABAMENTOS}, []
     for m in lista['modelos']:
         for i in range(m['qtd']):
-            for sufixo in (('frente', 'verso') if duas else ('peca',)):
-                pecas_fig.append((f'{m["arte"]}-{sufixo}', *artes[m['arte']]['peca_mm']))
+            for lado in (('frente', 'verso') if duas else ('peca',)):
+                pecas_fig[acab_de(m)].append((f'{m["arte"]}-{acab_de(m)}-{lado}', *artes[m['arte']]['peca_mm']))
             kb = chave_base(m, P)
             pecas_base.append((kb, *bases_def[kb]['dim_mm']))
-    placas_fig = empacotar(pecas_fig, P, reservado=P.torre_xyxy)
-    placas_base = empacotar(pecas_base, P)
+    # cada acabamento numa placa própria: misturados, cada camada teria as duas cores
+    usados_ac = [ac for ac in ACABAMENTOS if pecas_fig[ac]]
+    grupos_fig = [('Figuras' if len(usados_ac) == 1 else f'Figuras - {ACABAMENTOS[ac]}',
+                   empacotar(pecas_fig[ac], P, reservado=P.torre_xyxy)) for ac in usados_ac]
+    # com nome, a placa de bases tem duas cores e precisa da área da torre livre
+    placas_base = empacotar(pecas_base, P, reservado=P.torre_xyxy_bases if P.nome_na_base else None)
     # um projeto só (pedido do usuário em 18/11): placas de figuras, depois placas de bases
-    placas_proj, info_placas = [], []
-    for nome, placas in (('Figuras', placas_fig), ('Bases', placas_base)):
+    placas_proj, info_placas, torres = [], [], []
+    for nome, placas in grupos_fig + [('Bases', placas_base)]:
         for i, placa in enumerate(placas, 1):
             rotulo = nome if len(placas) == 1 else f'{nome} {i}'
             placas_proj.append((rotulo, [(k, x, y) for k, x, y, _, _ in placa]))
-            arq_png = f'placa-{len(placas_proj)}-{rotulo.lower().replace(" ", "-")}.png'
+            torres.append(P.torre_pos_bases if nome == 'Bases' else P.torre_pos)
+            arq_png = f'placa-{len(placas_proj)}-' + re.sub(r'[^a-z0-9]+', '-', rotulo.lower()).strip('-') + '.png'
             cv2.imwrite(str(saida / 'previas' / arq_png),
-                        previa_placa(placa, mascaras, P, reservado=P.torre_xyxy if nome == 'Figuras' else None))
+                        previa_placa(placa, mascaras, P, reservado=P.torre_xyxy if nome != 'Bases' else
+                                     (P.torre_xyxy_bases if P.nome_na_base else None)))
             info_placas.append({'placa': len(placas_proj), 'nome': rotulo, 'pecas': len(placa)})
     try:
         perfis, projeto = B.para_bico(P.bico)
@@ -732,12 +815,13 @@ def main():
         perfis, projeto = None, None
     arq = f'projeto-{a.modo}-{a.estilo}.3mf'
     escrever_3mf(saida / arq, {**objetos_fig, **objetos_base}, placas_proj,
-                 ajustes={'wall_generator': P.paredes} if P.paredes else None, projeto=projeto, mesa=P.mesa)
+                 ajustes={'wall_generator': P.paredes} if P.paredes else None, projeto=projeto, mesa=P.mesa,
+                 torres=torres)
     arquivos = [{'arquivo': arq, 'placas': info_placas, 'perfil_embutido': perfis,
                  'tamanho_mb': round((saida / arq).stat().st_size / 1e6, 2)}]
 
     # sobreposição na mesa
-    for placa in placas_fig + placas_base:
+    for placa in [pl for _, placas in grupos_fig for pl in placas] + placas_base:
         for i, (_, x1, y1, w1, h1) in enumerate(placa):
             assert x1 >= 0 and y1 >= 0 and x1 + w1 <= P.mesa and y1 + h1 <= P.mesa
             for _, x2, y2, w2, h2 in placa[i + 1:]:
@@ -749,7 +833,7 @@ def main():
         'pino_sugerido_mm': [1.75, round(2 * P.furo_prof - 0.1, 2)] if duas else None,
         'espessura_lingueta_mm': round((2 if duas else 1) * P.corpo, 2), 'pdf_sha256': sha,
         'modelos': lista['modelos'], 'total_modelos': sum(m['qtd'] for m in lista['modelos']),
-        'total_pecas_figura': len(pecas_fig), 'total_bases': len(pecas_base),
+        'total_pecas_figura': sum(map(len, pecas_fig.values())), 'total_bases': len(pecas_base),
         'artes': artes, 'bases': bases_def, 'arquivos_3mf': arquivos, 'stl': stl,
         'checagens_malha': checks, 'tempo_s': round(time.time() - t0, 1),
     }

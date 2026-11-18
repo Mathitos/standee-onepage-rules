@@ -100,3 +100,31 @@ O usuário abriu `figuras-duas-metades-borda.3mf` na interface e viu dois avisos
 - abrir na interface e ver se os dois avisos sumiram;
 - se o aviso de impressora continuar, o bico instalado na A1 não é 0,2: gerar com `--bico 0.4`.
 
+## Base com nome embutido e teste de acabamentos (18/11, pedidos do usuário)
+
+**Base (D027):**
+
+- A base é preta e impressa de cabeça para baixo.
+- O nome fica em branco, embutido e espelhado nas primeiras 0,4 mm, que no bico 0,2 são 4 camadas.
+- Fatiado e desenhado visto por baixo, o nome se lê, com a barra do "t" e o pingo do "i".
+- A placa de bases ficou com 5 trocas de filamento.
+- Com a torre na posição padrão (y = 220), a CLI recusou a placa: "Found G-code outside of the printable area".
+  - Medido no G-code: a torre dessa placa vai de x 15 a 58 e de y 220 a 262,5. Ela cresce porque as trocas acontecem nas primeiras camadas.
+  - Com y = 150 a placa passou. Ficou y = 200 só na placa de bases (`wipe_tower_x/y` é por placa), com a área (0, 190)–(70, 256) livre de peças.
+
+**Acabamentos da Infantry Rifle (D028)**, no G-code com bico 0,2 e Arachne (`2026-11-18-acabamentos-infantry.png`):
+
+- **Preto em relevo**: o padrão.
+- **Branco em relevo**: corpo preto e relevo branco onde não há tinta.
+  - Comparadas larguras extras de 0, 0,03, 0,05 e 0,08 mm de cada lado nos sulcos (as linhas). 0 ficou mais limpo; as outras escurecem e picotam o branco.
+- **Pintado**: desenho rente na face da mesa, sem relevo.
+
+**Projeto de teste** (`saidas/teste-acabamento/projeto-duas-metades-borda.3mf`), fatiado pela CLI como está:
+
+| Placa | Conteúdo | Trocas | Tempo |
+|---|---|---:|---:|
+| 1 | preto em relevo: 5 artes, 10 metades | 1 | 301 min |
+| 2 | branco em relevo: Infantry | 1 | 47 min |
+| 3 | pintado: Infantry | 5 | 71 min |
+| 4 | 7 bases com nome | 5 | 147 min |
+

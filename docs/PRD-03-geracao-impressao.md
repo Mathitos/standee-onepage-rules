@@ -30,7 +30,8 @@ Defaults iniciais, sujeitos a calibração:
 | Folga total da fenda na espessura | 0,25 mm |
 | Altura da base | 2 mm, fenda vazada (D021) |
 | Desenho | traço do PDF lido a 600 dpi, sem engrossar (D024); paredes Arachne gravadas em cada objeto do 3MF (D025) |
-| Nome na base (opcional, D022) | relevo 0,6 mm; letra 3 mm, reduz até 1,8 mm |
+| Nome na base (opcional, D022/D027) | branco embutido nas primeiras 0,4 mm de uma base preta impressa de cabeça para baixo; letra 3 mm, reduz até 1,8 mm |
+| Acabamento das metades (D028) | preto em relevo (padrão), branco em relevo ou pintado (rente, na face da mesa) |
 
 **Escala (D014):** padrão = escala de impressão do PDF a 100%, `mm = px × 25,4 / dpi` (a arte do PDF HDF é JPEG de 600 dpi). Medidas do PDF HDF: Infantry ≈ 34 mm de altura, Biker ≈ 32 × 40 mm, OGRE ≈ 54 × 37 mm. Não normalizar pela altura nem fixar 40 mm. Multiplicador global só por escolha explícita, registrado no projeto.
 
@@ -68,7 +69,7 @@ As dimensões externas da base vêm do catálogo; não herdar o retângulo 25 ×
 - A lingueta nasce no centro do apoio dos pés, não no centro de uma caixa delimitadora dominada por uma arma lateral.
 - Travessa discreta pode unir pés e lingueta, sempre visível na prévia.
 - Base circular/oval de 2 mm com fenda vazada (D021); a lingueta fica 0,1 mm mais curta que a base para não sobrar por baixo. Oval 60x35 tratada como elipse até confirmação.
-- Nome da unidade (opcional, D022): só o nome da unidade, em relevo na borda da frente, com o topo das letras voltado para o centro, num arco de 140°. Se não couber, a letra diminui até 1,8 mm e o relatório avisa; nunca corta o nome. Uma base por unidade quando ligado.
+- Nome da unidade (opcional, D022/D027): só o nome da unidade, na borda da frente, com o topo das letras voltado para o centro, num arco de 140°. A base é preta e impressa de cabeça para baixo; o nome fica embutido em branco nas primeiras camadas, rente à face de cima, para não colidir com o standee e sair com o acabamento da mesa. Se não couber, a letra diminui até 1,8 mm e o relatório avisa; nunca corta o nome. Uma base por unidade quando ligado.
 - Mostrar dimensões nominais e folgas totais, distinguindo-as de folga por lado.
 - Incluir cupom de teste antes da produção em lote: fenda simples e dupla, furos e pinos.
 
