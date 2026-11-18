@@ -21,12 +21,16 @@
 | D019 | Adotada no esqueleto (17/11), reversível | Site em Vite + React + TypeScript + Vitest, publicado pelo GitHub Actions no Pages com caminhos relativos. Repositório local em `main`; o usuário faz o push |
 | D018 | Proposta (17/11) | Geometria por polígonos extrudados com manifold3d (Python no protótipo; existe build WebAssembly para o site). Substitui marching cubes do protótipo antigo: 28 metades em 3,7 MB contra 36 MB para 8 peças |
 | D020 | **Aceita pelo usuário** (17/11) | Artes do catálogo são vetores: a skill extrai do PDF e grava SVG em mm por arte, estilo e face (`silhueta` + `tinta`), mapeados no `manifest.json`. O PDF HDF é raster (300 dpi), então o vetor é traçado com o mesmo método do gerador (contorno do pixel, 0,5 px). Medido no piloto: IoU da silhueta ≥ 0,998; toda diferença da tinta fica na faixa de 1 px da borda (< 0,085 mm). Frente e verso têm a mesma tela e o verso já vem alinhado: espelhar em x o sobrepõe à frente. Contrato em `.claude/skills/importar-artes-pdf/scripts/vetor.py` |
+| D021 | **Aceita pelo usuário** (17/11) | Base com 2 mm de espessura e fenda vazada até o outro lado. A lingueta da figura passa a 1,9 mm (≤ base), para não sobrar por baixo. Substitui a base de 4 mm com fundo fechado |
+| D022 | **Aceita pelo usuário** (17/11) | Opção ativável: nome da unidade (só o nome, ex.: "Infantry Squad", sem variante) em relevo na borda de cima da base. Arquivos de teste saem com o nome ligado. A fonte do protótipo é do Windows; o site precisa de fonte livre embutida |
+| D023 | Proposta, com evidência do fatiador (17/11) | Traço mínimo de 0,45 mm (bico 0,4) ligado por padrão e exibido como opção: traços mais finos são engrossados pelo esqueleto. Sem isso, 70–82% do comprimento das linhas fica abaixo de 0,4 mm e vira pontilhado ou some. Relevo negativo (corpo preto, relevo branco) testado e descartado. Evidência: `evidencias/2026-11-17-traco-e-base.md` |
 | D017 | **Aceita pelo usuário** (17/11) | Rotulagem e importação das imagens são uma skill do Claude Code executada pelo agente, uma sessão por PDF; o pacote é exportado para dentro do projeto. Scripts fazem recorte e medidas; o agente lê rótulos e propõe o mapeamento. Sem tela de rotulagem no site e sem OCR. Especificação em PRD-04 |
 
 ## Decisões ainda pendentes
 
 - Contorno quando frente e verso têm silhuetas diferentes (capas dos Storm Troopers): união, só frente ou escolha por arte (PRD-03).
 - Aliases propostos na revisão parcial do piloto: Rifle → Battle Rifle, Baton → Shock Baton, Axe → Energy Axe e "Lance" (Heavy, Hunting ou Anti-Tank).
+- Traço mínimo (D023): confirmar na impressão e definir o valor por bico.
 - Mecanismo de encaixe das metades (pino solto, só cola ou outro), após cupom físico.
 - Geometria da base oval 60x35: elipse (suposição) — confirmar.
 - Repositório, conta/organização GitHub e visibilidade do código.

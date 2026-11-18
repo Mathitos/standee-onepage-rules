@@ -31,6 +31,7 @@ Usuário inicial: hobbyista com impressora FDM e, opcionalmente, sistema multico
 - RF11: variante sem arte mapeada oferece as artes disponíveis com imagem; a escolha fica registrada como substituição (D013).
 - RF12: estilo da arte (contorno fino ou borda grossa) escolhido por projeto, com troca por linha (D012).
 - RF13: o texto colado é preservado no projeto; linhas não reconhecidas nunca são descartadas em silêncio.
+- RF14: opções de geração visíveis: traço mínimo (padrão 0,45 mm para bico 0,4, D023) e nome da unidade na base (ativável, D022).
 
 ## Escopo do MVP
 

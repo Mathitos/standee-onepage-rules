@@ -2,6 +2,7 @@
 
 Uso (na raiz do projeto):
   python -I prototipo/gerar.py prototipo/lista-piloto.json --modo duas-metades --estilo borda --saida saidas/piloto
+      [--traco-min 0.45] [--relevo negativo] [--nome-na-base]
 
 Saídas: 3MF Bambu de figuras (branco/preto) e de bases, STL por peça, prévias PNG,
 relatorio.json e LEIA-ME.md. Modo implementado: duas-metades (peca-unica ainda não).
@@ -11,6 +12,7 @@ import argparse
 import hashlib
 import json
 import math
+import re
 import sys
 import time
 import zipfile
@@ -22,7 +24,9 @@ import manifold3d as mf
 import numpy as np
 import pymupdf
 import trimesh
+from PIL import Image, ImageDraw, ImageFont
 from scipy import ndimage as ndi
+from skimage.morphology import skeletonize
 
 sys.path.insert(0, str(Path(__file__).parent))
 import pdf_grade as G  # noqa: E402
@@ -37,13 +41,22 @@ class Param:
     relevo: float = 0.4
     camada_mesa: float = 0.4      # peça única: espessura do desenho P/B na face da mesa (2 camadas de 0,2)
     lingueta_larg: float = 6.0
-    lingueta_prof: float = 3.0
+    lingueta_prof: float = 1.9    # fenda vazada: a lingueta fica 0,1 mm acima da mesa, sem sobrar por baixo
     travessa: float = 0.5         # meia altura da travessa sob os pés
     contato_mm: float = 1.0       # faixa considerada apoio dos pés
     folga_larg: float = 0.3       # folga total da fenda
     folga_esp: float = 0.25
-    base_altura: float = 4.0
-    fenda_prof: float = 3.2
+    base_altura: float = 2.0      # pedido do usuário (17/11): base de 2 mm com fenda vazada
+    traco_min: float = 0.45       # bico 0,4: traços mais finos somem ou viram pontilhado no fatiador; 0 = como no PDF
+    relevo_negativo: bool = False # True: corpo preto e relevo branco; as linhas viram vãos no branco
+    nome_na_base: bool = False    # escreve o nome da unidade na borda de cima da base
+    texto_altura: float = 3.0     # altura das maiúsculas (mm); cai até texto_min se não couber
+    texto_min: float = 1.8        # abaixo disto o nome não cabe e o relatório avisa
+    texto_relevo: float = 0.6
+    texto_margem: float = 0.6     # da borda da base até o texto
+    texto_engorda: float = 0.12   # o fatiador perdia a barra do t e o pingo do i com bico 0,4
+    texto_arco_graus: float = 140 # arco da frente da base usado pelo texto
+    fonte: str = 'C:/Windows/Fonts/bahnschrift.ttf'  # protótipo; o site precisa de fonte livre embutida
     furo_diam: float = 2.0        # pino: filamento 1,75 mm
     furo_parede: float = 1.0
     furo_dist_min: float = 6.0
@@ -112,6 +125,17 @@ def fracao_fina(m, largura_mm=0.4):
     k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (r, r))
     aberto = cv2.morphologyEx(m.astype(np.uint8), cv2.MORPH_OPEN, k) > 0
     return float(1 - aberto.sum() / max(1, m.sum()))
+
+
+def engrossar(m, largura_mm):
+    """Traço mínimo: todo traço passa a ter pelo menos largura_mm, dilatando o esqueleto.
+
+    Traços já mais grossos não mudam. Linhas muito próximas podem se fundir.
+    """
+    if largura_mm <= 0 or not m.any():
+        return m
+    dist = ndi.distance_transform_edt(~skeletonize(m))
+    return m | (dist <= largura_mm / 2 / S)
 
 
 def corpo_com_lingueta(sil, P):
@@ -206,16 +230,96 @@ def peca_unica(corpo_mask, preto_mesa_mask, relevo_mask, P):
     return branco, preto_mesa, relevo
 
 
-def base(forma, mm, P, espessura_lingueta):
+def _glifo(fonte, ch, k):
+    """Polígonos de um caractere em mm, origem na linha de base à esquerda, y para cima."""
+    l, t, r, b = fonte.getbbox(ch, anchor='ls')
+    w, h = r - l + 8, b - t + 8
+    img = Image.new('L', (w, h), 0)
+    ImageDraw.Draw(img).text((4 - l, 4 - t), ch, font=fonte, anchor='ls', fill=255)
+    m = np.asarray(img) > 127
+    cnts, _ = cv2.findContours(m.astype(np.uint8), cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
+    polys = []
+    for c in cnts:
+        c = cv2.approxPolyDP(c, 0.6, True)
+        if len(c) >= 3:
+            p = c[:, 0, :].astype(float)
+            polys.append(np.column_stack([(p[:, 0] - (4 - l)) / k, ((4 - t) - p[:, 1]) / k]))
+    return polys, fonte.getlength(ch) / k
+
+
+def texto_na_borda(nome, a, b, P):
+    """Nome na borda da frente da base (y negativo), letras com o topo para o centro.
+
+    Os glifos seguem a elipse interna (a, b) recuada pela margem; o tamanho cai até
+    texto_min se o nome não couber no arco. Retorna (CrossSection, medidas).
+    """
+    k = 40.0                                  # px por mm na rasterização dos glifos
+    altura = P.texto_altura
+    while True:
+        fonte = ImageFont.truetype(P.fonte, int(round(altura / 0.72 * k)))
+        try:
+            fonte.set_variation_by_name('Bold SemiCondensed')
+        except (OSError, ValueError):
+            pass
+        desc = fonte.getmetrics()[1] / k
+        glifos = [_glifo(fonte, ch, k) if ch.strip() else ([], fonte.getlength(ch) / k) for ch in nome]
+        espaco = 0.06 * altura
+        total = sum(adv for _, adv in glifos) + espaco * (len(glifos) - 1)
+        # curva na meia altura das letras: o espaçamento fica correto no meio do glifo
+        meio = P.texto_margem + desc + altura / 2
+        ra, rb = a - meio, b - meio
+        t = np.linspace(math.radians(270 - P.texto_arco_graus / 2), math.radians(270 + P.texto_arco_graus / 2), 2000)
+        pts = np.column_stack([ra * np.cos(t), rb * np.sin(t)])
+        s = np.concatenate([[0], np.cumsum(np.hypot(*np.diff(pts, axis=0).T))])
+        if total <= s[-1] or altura <= P.texto_min:
+            break
+        altura = max(P.texto_min, altura * s[-1] / total * 0.98)
+    s0 = (s[-1] - total) / 2
+    secao_txt = mf.CrossSection()
+    pos = s0
+    for polys, adv in glifos:
+        sc = pos + adv / 2
+        pos += adv + espaco
+        if not polys:
+            continue
+        i = int(np.clip(np.searchsorted(s, sc), 1, len(s) - 1))
+        tt = t[i]
+        tan = np.array([-ra * math.sin(tt), rb * math.cos(tt)])
+        tan /= np.linalg.norm(tan)
+        nor = np.array([-tan[1], tan[0]])        # para dentro da base
+        centro = pts[i] - nor * altura / 2      # linha de base fica a meia altura para fora
+        mundo = [centro + np.outer(p[:, 0] - adv / 2, tan) + np.outer(p[:, 1], nor) for p in polys]
+        secao_txt = secao_txt + mf.CrossSection(mundo, mf.FillRule.EvenOdd)
+    return secao_txt, {'texto': nome, 'altura_letra_mm': round(altura, 2),
+                       'coube': bool(total <= s[-1]), 'comprimento_mm': round(total, 1),
+                       'arco_disponivel_mm': round(float(s[-1]), 1)}
+
+
+def base(forma, mm, P, espessura_lingueta, nome=None):
+    """Base com fenda vazada (atravessa a base). Com nome, escreve-o em relevo na borda da frente."""
     a, b = (mm[0] / 2, mm[0] / 2) if forma == 'redonda' else (mm[0] / 2, mm[1] / 2)
     t = np.linspace(0, 2 * math.pi, 192, endpoint=False)
     contorno = mf.CrossSection([np.column_stack([a * np.cos(t), b * np.sin(t)])])
     solido = mf.Manifold.extrude(contorno, P.base_altura)
     fl, fe = P.lingueta_larg + P.folga_larg, espessura_lingueta + P.folga_esp
-    fenda = mf.Manifold.cube((fl, fe, P.fenda_prof + 0.01)).translate(
-        (-fl / 2, -fe / 2, P.base_altura - P.fenda_prof))
-    return (solido - fenda).translate((a, b, 0)), {'fenda_mm': [round(fl, 2), round(fe, 2), P.fenda_prof],
-                                                    'fundo_mm': round(P.base_altura - P.fenda_prof, 2)}
+    fenda = mf.Manifold.cube((fl, fe, P.base_altura + 0.02)).translate((-fl / 2, -fe / 2, -0.01))
+    solido = solido - fenda
+    med = {'fenda_mm': [round(fl, 2), round(fe, 2), P.base_altura], 'fenda': 'vazada'}
+    if nome:
+        txt, med_txt = texto_na_borda(nome, a, b, P)
+        livre = mf.CrossSection.square((fl + 1.6, fe + 1.6)).translate((-(fl + 1.6) / 2, -(fe + 1.6) / 2))
+        txt = txt.offset(P.texto_engorda, mf.JoinType.Round)
+        txt = (txt ^ contorno.offset(-0.3, mf.JoinType.Round)) - livre
+        solido = solido + mf.Manifold.extrude(txt, P.texto_relevo).translate((0, 0, P.base_altura))
+        med['nome'] = med_txt
+    return solido.translate((a, b, 0)), med
+
+
+def chave_base(m, P):
+    k = f'base-{m["base"]}'
+    if P.nome_na_base:
+        k += '-' + re.sub(r'[^a-z0-9]+', '-', m['unidade'].lower()).strip('-')
+    return k
 
 
 def para_trimesh(m):
@@ -322,7 +426,7 @@ def escrever_3mf(caminho, objetos, itens):
                           '<metadata key="instance_id" value="0"/>'
                           f'<metadata key="identify_id" value="{100 + k}"/></model_instance>')
         cortes.append(f'<object id="{oid}"><cut_id id="0" check_sum="1" connectors_cnt="0"/></object>')
-    principal = (f'{CABECALHO}<metadata name="Application">BambuStudio-02.00.02.01</metadata>\n'
+    principal = (f'{CABECALHO}<metadata name="Application">BambuStudio-02.07.01.57</metadata>\n'
                  f'<resources>\n{"".join(recursos)}</resources>\n'
                  f'<build p:UUID="{UUID_BUILD}">\n{"".join(build)}</build>\n</model>\n')
     placa = ('<plate><metadata key="plater_id" value="1"/><metadata key="plater_name" value=""/>'
@@ -340,7 +444,7 @@ def escrever_3mf(caminho, objetos, itens):
         for nome_arq, xml in arquivos.items():
             z.writestr(nome_arq, xml)
         z.writestr('Metadata/model_settings.config', config)
-        z.writestr('Metadata/slice_info.config', '<?xml version="1.0" encoding="UTF-8"?><config><header><header_item key="X-BBL-Client-Type" value="slicer"/><header_item key="X-BBL-Client-Version" value="02.00.02.01"/></header></config>')
+        z.writestr('Metadata/slice_info.config', '<?xml version="1.0" encoding="UTF-8"?><config><header><header_item key="X-BBL-Client-Type" value="slicer"/><header_item key="X-BBL-Client-Version" value="02.07.01.57"/></header></config>')
     tmp.replace(caminho)
 
 
@@ -419,9 +523,22 @@ def main():
     ap.add_argument('--saida', type=Path, required=True)
     ap.add_argument('--margem', type=float, default=Param.margem_mesa, help='margem da borda da mesa (mm)')
     ap.add_argument('--espaco', type=float, default=Param.espaco, help='espaço entre peças (mm)')
+    ap.add_argument('--traco-min', type=float, default=Param.traco_min,
+                    help='engrossa traços pretos mais finos que isto (mm); 0 = como no PDF')
+    ap.add_argument('--relevo', choices=['positivo', 'negativo'], default='positivo',
+                    help='negativo: corpo preto e relevo branco, linhas como vãos (só duas metades)')
+    ap.add_argument('--corpo', type=float, default=Param.corpo, help='espessura do corpo (mm)')
+    ap.add_argument('--relevo-mm', type=float, default=Param.relevo, help='altura do relevo (mm)')
+    ap.add_argument('--nome-na-base', action='store_true', help='escreve o nome da unidade na borda da base')
     a = ap.parse_args()
-    P = Param(margem_mesa=a.margem, espaco=a.espaco)
+    P = Param(margem_mesa=a.margem, espaco=a.espaco, traco_min=a.traco_min,
+              relevo_negativo=a.relevo == 'negativo', corpo=a.corpo, relevo=a.relevo_mm,
+              nome_na_base=a.nome_na_base)
     duas = a.modo == 'duas-metades'
+    if P.relevo_negativo and not duas:
+        sys.exit('relevo negativo ainda só no modo duas-metades')
+    if P.lingueta_prof > P.base_altura:
+        sys.exit('lingueta mais funda que a base: sobraria por baixo da fenda vazada')
     t0 = time.time()
     lista = json.loads(a.lista.read_text(encoding='utf-8'))
     pdf = Path(lista['pdf']['caminho'])
@@ -445,6 +562,9 @@ def main():
         verso_al, iou_fv = registrar_verso(alvo, L.verso)
         rel_f = limpar((L.frente < G.DARK) & frente_sil)
         rel_v = limpar((verso_al < G.DARK) & alvo)
+        fino_antes = (fracao_fina(rel_f), fracao_fina(rel_v))
+        rel_f = engrossar(rel_f, P.traco_min) & frente_sil
+        rel_v = engrossar(rel_v, P.traco_min) & alvo
         corpo_f, med = corpo_com_lingueta(frente_sil, P)
         pad = lambda m: np.pad(m, ((P.pad, corpo_f.shape[0] - m.shape[0] - P.pad), (P.pad, P.pad)))
         rel_f, rel_v = pad(rel_f), pad(rel_v)
@@ -454,11 +574,18 @@ def main():
             furos_f = posicionar_furos(pad(frente_sil), P)
             furos_v = [(r, corpo_f.shape[1] - 1 - c) for r, c in furos_f]
             pecas = []
-            for lado, corpo_m, rel_m, furos in (('frente', corpo_f, rel_f, furos_f),
-                                                ('verso', corpo_v, rel_v, furos_v)):
-                corpo3, relevo3 = metade(corpo_m, rel_m, furos, P)
-                pecas.append((lado, corpo_m, rel_m,
-                              [(corpo3, 0, 'Branco - corpo'), (relevo3, 1, 'Preto - relevo')]))
+            sil_f, sil_v = pad(frente_sil), pad(alvo)
+            for lado, corpo_m, rel_m, sil_m, furos in (('frente', corpo_f, rel_f, sil_f, furos_f),
+                                                       ('verso', corpo_v, rel_v, sil_v, furos_v)):
+                if P.relevo_negativo:
+                    # relevo = branco onde não há tinta; o preto visível é o corpo nos vãos
+                    corpo3, relevo3 = metade(corpo_m, sil_m & ~rel_m, furos, P)
+                    pecas.append((lado, corpo_m, corpo_m & ~(sil_m & ~rel_m),
+                                  [(corpo3, 1, 'Preto - corpo'), (relevo3, 0, 'Branco - relevo')]))
+                else:
+                    corpo3, relevo3 = metade(corpo_m, rel_m, furos, P)
+                    pecas.append((lado, corpo_m, rel_m,
+                                  [(corpo3, 0, 'Branco - corpo'), (relevo3, 1, 'Preto - relevo')]))
         else:
             # vista de cima: contorno = frente espelhada; face da mesa mostra a frente (espelhada
             # no modelo, lida certa por baixo); relevo em cima = verso como impresso
@@ -492,26 +619,31 @@ def main():
         artes[chave] = {
             'rotulo': info['rotulo'], 'pagina_pdf': pagina, 'linha': info['linha'], 'estilo': a.estilo,
             'iou_frente_verso': round(iou_fv, 3), 'furos_por_metade': len(furos_f),
+            'preto_fino_frente_pdf': round(fino_antes[0], 3), 'preto_fino_verso_pdf': round(fino_antes[1], 3),
             'preto_fino_frente': round(fracao_fina(rel_f), 3), 'preto_fino_verso': round(fracao_fina(rel_v), 3),
             'peca_mm': dims, **med,
         }
 
     bases_def, objetos_base = {}, {}
-    for chave_b, bdef in lista['bases'].items():
-        if not any(m['base'] == chave_b for m in lista['modelos']):
+    for m in lista['modelos']:
+        chave_b, bdef = m['base'], lista['bases'][m['base']]
+        nome_u = m['unidade'] if P.nome_na_base else None
+        kb = chave_base(m, P)
+        if kb in bases_def:
             continue
-        solido, med_b = base(bdef['forma'], bdef['mm'], P, (2 if duas else 1) * P.corpo)
+        solido, med_b = base(bdef['forma'], bdef['mm'], P, (2 if duas else 1) * P.corpo, nome=nome_u)
         # bases numa cor só (filamento 1, cor à escolha): sem torre de purga
-        objetos_base[f'base-{chave_b}'] = (f'Base {chave_b}', [(solido, 0, 'Base')])
-        checks.append(checar(f'base-{chave_b}', solido))
-        para_trimesh(solido).export(saida / 'stl' / f'base-{chave_b}.stl')
-        stl.append(f'stl/base-{chave_b}.stl')
+        rotulo = f'Base {chave_b}' + (f' - {nome_u}' if nome_u else '')
+        objetos_base[kb] = (rotulo, [(solido, 0, 'Base')])
+        checks.append(checar(kb, solido))
+        para_trimesh(solido).export(saida / 'stl' / f'{kb}.stl')
+        stl.append(f'stl/{kb}.stl')
         bb = solido.bounding_box()
         hh, ww = int((bb[4] - bb[1]) / S), int((bb[3] - bb[0]) / S)
         yy, xx = np.ogrid[:hh, :ww]
         elipse = ((xx - ww / 2) / (ww / 2)) ** 2 + ((yy - hh / 2) / (hh / 2)) ** 2 <= 1
-        mascaras[f'base-{chave_b}'] = (elipse, None)
-        bases_def[chave_b] = {**bdef, **med_b, 'dim_mm': [round(bb[3] - bb[0], 2), round(bb[4] - bb[1], 2)]}
+        mascaras[kb] = (elipse, None)
+        bases_def[kb] = {**bdef, **med_b, 'dim_mm': [round(bb[3] - bb[0], 2), round(bb[4] - bb[1], 2)]}
 
     # encaixe figura x base
     for m in lista['modelos']:
@@ -526,7 +658,8 @@ def main():
         for i in range(m['qtd']):
             for sufixo in (('frente', 'verso') if duas else ('peca',)):
                 pecas_fig.append((f'{m["arte"]}-{sufixo}', *artes[m['arte']]['peca_mm']))
-            pecas_base.append((f'base-{m["base"]}', *bases_def[m['base']]['dim_mm']))
+            kb = chave_base(m, P)
+            pecas_base.append((kb, *bases_def[kb]['dim_mm']))
     placas_fig = empacotar(pecas_fig, P, reservado=P.torre_xyxy)
     placas_base = empacotar(pecas_base, P)
     arquivos = []

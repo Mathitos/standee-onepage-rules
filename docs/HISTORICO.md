@@ -27,3 +27,7 @@ Usuário saiu do PC e pediu para seguir implementando com git. Criado repositór
 ## 17/11/2026 (noite) — artes no git como vetores
 
 Usuário decidiu que as artes vão para o git e para o site (paper minis gratuitos da OPR), mas o PDF não (D006). Pediu as artes vetorizadas e mapeadas como assets (D020). Como o PDF HDF é raster, a skill agora traça os recortes em SVG (mm, silhueta + tinta, verso alinhado à frente espelhada) com `scripts/vetor.py`; `montar.py` grava os SVGs, mede a fidelidade e renderiza as folhas de contato a partir deles. Pacote piloto refeito: 8 artes, 32 SVGs, 3,6 MB; silhueta IoU ≥ 0,998, diferenças da tinta só na faixa de 1 px da borda; SVGs conferidos no navegador. O gerador do protótipo ainda lê o PDF.
+
+## 17/11/2026 (noite) — teste na interface do Bambu, traço mínimo e base nova
+
+Usuário abriu o 3MF na interface: aviso de versão antiga e linhas internas sumindo depois do fatiamento. Medido: traços internos com mediana de 0,17–0,24 mm (70–82% do comprimento abaixo de 0,4 mm). Criado `prototipo/previa_gcode.py` para ver o G-code por filamento; comparadas três variantes no fatiador: atual (pontilhado), traço mínimo 0,45 mm (linhas contínuas) e relevo negativo (o branco fecha os vãos, descartado). Traço mínimo virou padrão proposto (D023). O gerador passou a gravar a versão 02.07.01.57 do Bambu Studio. Usuário pediu base de 2 mm com fenda vazada (D021) e nome da unidade na borda como opção (D022); implementado e fatiado pela CLI. Saídas piloto regeradas com traço mínimo e nome na base.
