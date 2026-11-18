@@ -6,7 +6,10 @@ Observado em 17/11/2026 (Bambu Studio 02.0x, Windows), e por isso este roteiro:
 - a CLI cai (0xC0000005) ao abrir projeto Bambu sem Metadata/project_settings.config;
 - carregando os perfis do sistema, a CLI não resolve "inherits" (A1 vira mesa 200x200);
 - perfis "resolvidos" à mão fazem o fatiamento falhar (-100);
-- ao exportar projeto, a CLI descarta filamentos não usados (fica 1 filamento).
+- ao exportar projeto, a CLI descarta filamentos não usados (fica 1 filamento);
+- (18/11) o project_settings exportado traz o NOME do perfil, mas valores genéricos (bico 0,2
+  saía com linha de 0,4 mm e camada de 0,2 mm). Os valores do perfil resolvido são copiados
+  por cima, chave a chave, só nas chaves que o projeto já tem.
 Então: pedimos à CLI um project_settings a partir dos perfis do sistema, corrigimos a mesa
 com o valor do perfil-pai, completamos 2 filamentos (branco/preto) e injetamos tudo numa
 CÓPIA de teste. O arquivo entregue continua sem perfil. Não substitui abrir na interface
@@ -48,12 +51,16 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('arquivo', type=Path)
     ap.add_argument('--saida', type=Path, required=True)
+    ap.add_argument('--bico', choices=['0.2', '0.4'], help='atalho: máquina, processo e filamento da A1 com este bico')
     ap.add_argument('--maquina', default='Bambu Lab A1 0.4 nozzle')
     ap.add_argument('--processo', default='0.20mm Standard @BBL A1')
     ap.add_argument('--filamento', default='Bambu PLA Basic @BBL A1')
     ap.add_argument('--ajuste', action='append', default=[],
                     help='sobrescreve um ajuste na cópia de teste, ex.: brim_type=no_brim (diagnóstico)')
     a = ap.parse_args()
+    if a.bico == '0.2':
+        a.maquina, a.processo = 'Bambu Lab A1 0.2 nozzle', '0.10mm Standard @BBL A1 0.2 nozzle'
+        a.filamento = 'Bambu PLA Basic @BBL A1 0.2 nozzle'
     a.saida.mkdir(parents=True, exist_ok=True)
     tmp = Path(tempfile.mkdtemp(prefix='fatiar_'))
     ajustes = f'{PERFIS / "machine" / (a.maquina + ".json")};{PERFIS / "process" / (a.processo + ".json")}'
@@ -76,12 +83,16 @@ def main():
         sys.exit(f'exportação de perfil falhou: {rc}')
     proj = json.loads(zipfile.ZipFile(exportado).read('Metadata/project_settings.config'))
 
-    # 2) correções: mesa do perfil-pai; dois filamentos
-    maquina = resolver('machine', a.maquina)
-    for k in ('printable_area', 'printable_height', 'bed_exclude_area', 'machine_start_gcode',
-              'machine_end_gcode', 'change_filament_gcode', 'layer_change_gcode', 'time_lapse_gcode'):
-        if k in maquina:
-            proj[k] = maquina[k]
+    # 2) correções: valores dos perfis resolvidos (máquina, processo, filamento); dois filamentos
+    meta = {'name', 'from', 'inherits', 'setting_id', 'instantiation', 'type', 'version', 'filament_id',
+            'print_settings_id', 'printer_settings_id', 'filament_settings_id', 'filename_format',
+            'compatible_printers', 'compatible_printers_condition', 'compatible_prints', 'compatible_prints_condition'}
+    trocados = {}
+    for tipo, nome in (('machine', a.maquina), ('process', a.processo), ('filament', a.filamento)):
+        for k, v in resolver(tipo, nome).items():
+            if k in proj and k not in meta and proj[k] != v:
+                proj[k] = v
+                trocados[k] = tipo
     proj['enable_prime_tower'] = resolver('process', a.processo).get('enable_prime_tower', '1')
     chaves_fil = set(resolver('filament', a.filamento)) | {'filament_settings_id', 'filament_colour', 'filament_ids'}
     for k, v in list(proj.items()):
@@ -109,6 +120,9 @@ def main():
     resultado = json.loads((a.saida / 'result.json').read_text(encoding='utf-8'))
     resumo = {'arquivo': a.arquivo.name, 'perfis': [a.maquina, a.processo, a.filamento], 'ajustes': a.ajuste,
               'mesa': proj.get('printable_area'), 'purga_suposta_mm3': PURGA_SUPOSTA, 'codigo_saida': rc,
+              'perfil_aplicado': {k: proj.get(k) for k in ('nozzle_diameter', 'layer_height', 'line_width',
+                                                           'outer_wall_line_width', 'wall_generator')},
+              'chaves_do_perfil_copiadas': len(trocados),
               'retorno': resultado.get('return_code'), 'mensagem': resultado.get('error_string'), 'placas': []}
     for pl in resultado.get('sliced_plates', []):
         gcode = (a.saida / f'plate_{pl["id"]}.gcode').read_text(encoding='utf-8', errors='replace')

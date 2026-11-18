@@ -4,10 +4,10 @@ Não é o site. Serve para validar geometria, formato 3MF e fatiamento antes do 
 
 | Arquivo | Função |
 |---|---|
-| `pdf_grade.py` | Detecta faixas da tabela, recorta rótulo/frente/verso e gera silhueta (PRD-04) |
-| `gerar.py` | Lista resolvida → peças, bases, 3MF Bambu, STL, prévias e relatório (PRD-03). `--modo duas-metades\|peca-unica`, `--estilo borda\|fino`, `--traco-min` (padrão 0,45, D023), `--nome-na-base` (D022), `--relevo negativo` (experimental) |
-| `fatiar_cli.py` | Fatia um 3MF com a CLI do Bambu Studio numa cópia com perfil de teste e resume trocas de filamento |
-| `previa_gcode.py` | Desenha o G-code fatiado visto de cima, por filamento, para ver se o desenho sobrevive ao fatiamento |
+| `pdf_grade.py` | Detecta faixas da tabela (a 300 dpi), recorta rótulo/frente/verso (na resolução pedida; a arte do HDF é 600 dpi) e gera silhueta (PRD-04) |
+| `gerar.py` | Lista resolvida → peças, bases, 3MF Bambu, STL, prévias e relatório (PRD-03). `--modo duas-metades\|peca-unica`, `--estilo borda\|fino`, `--bico` (padrão 0,2), `--traco original\|engrossado` (D024), `--paredes arachne\|classic\|perfil` (D025), `--nome-na-base` (D022), `--relevo negativo` (experimental), `--so ARTE` (diagnóstico) |
+| `fatiar_cli.py` | Fatia um 3MF com a CLI do Bambu Studio numa cópia com o perfil de sistema (valores resolvidos copiados por cima) e resume trocas de filamento. `--bico 0.2\|0.4` escolhe os perfis da A1 |
+| `previa_gcode.py` | Desenha o G-code fatiado visto de cima, por filamento, com a largura de cada cordão, para ver se o desenho sobrevive ao fatiamento |
 | `lista-piloto.json` | Lista piloto resolvida, com as substituições de teste marcadas |
 
 Comandos e resultados: `docs/evidencias/2026-11-17-geracao-piloto.md`. Python: `C:/Users/Matheus/AppData/Local/Python/pythoncore-3.14-64/python.exe -I` (com `manifold3d`).

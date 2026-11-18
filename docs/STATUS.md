@@ -1,4 +1,4 @@
-# Checkpoint atual — 17/11/2026 (noite, trabalho autônomo)
+# Checkpoint atual — 18/11/2026 (manhã)
 
 ## Objetivo
 
@@ -18,9 +18,11 @@ Site (GitHub Pages) que gera standees STL/3MF a partir de listas do Army Forge. 
 - **PDF**: `prototipo/pdf_grade.py` extrai 218 linhas (109 por estilo), rótulo fora da tabela nos dois estilos.
 - **Geração (protótipo Python)**: `prototipo/gerar.py --modo duas-metades|peca-unica --estilo borda|fino`. Saídas em `saidas/piloto-<modo>-<estilo>/` com LEIA-ME. Fatiador do Bambu (CLI, perfil A1 0,4 de teste) aceitou: duas metades = 1 troca/placa; peça única = 3 trocas/placa. Detalhes: `evidencias/2026-11-17-geracao-piloto.md`.
 - Substituições usadas só no teste: OGRE Minigun no lugar de Gatling; Bikers 2 Pistol + 1 Lance.
-- **Interface do Bambu (17/11, usuário)**: aviso "versão antiga" e linhas internas do desenho sumindo. Causa das linhas: traços de 0,17–0,24 mm, mais finos que o bico 0,4. Corrigido com traço mínimo 0,45 mm (D023, comparado no G-code) e versão 02.07.01.57 no 3MF. Falta o usuário reabrir os arquivos novos.
+- **Interface do Bambu (usuário)**: em 17/11, aviso "versão antiga" e linhas internas sumindo; em 18/11, com bico 0,2 e traço mínimo, desenho "estranho" (linhas grossas, quebradas, pontos brancos). Causas: a arte é JPEG de 600 dpi e era lida a 300 dpi (traços de ~0,1 mm quebravam); o traço mínimo engrossava pedaços quebrados; os perfis de sistema da A1 usam paredes classic, que fazem contas de pontos. Corrigido: leitura a 600 dpi sem engrossar (D024) e `wall_generator = arachne` em cada objeto do 3MF (D025). Fatiado pela CLI com o perfil real do bico 0,2: desenho contínuo e próximo do original (`evidencias/2026-11-18-traco-600dpi-arachne.png`). Falta o usuário reabrir os arquivos novos.
+- **Ferramentas de validação corrigidas (18/11)**: `fatiar_cli.py` fatiava com valores genéricos (bico 0,2 saía com linha de 0,4 e camada de 0,2); agora copia os valores do perfil resolvido. `previa_gcode.py` desenhava desretrações como pontos, arcos minúsculos como voltas inteiras e linhas ~2 px mais largas; corrigido. Evidências de 17/11 feitas com essas ferramentas valem só como indício.
 - **Base nova (D021/D022)**: 2 mm, fenda vazada, lingueta 1,9 mm; nome da unidade na borda (opção `--nome-na-base`, ligada nos arquivos de teste). Evidência: `evidencias/2026-11-17-traco-e-base.md`.
 - **Não validado**: impressão física, workflow no GitHub.
+- **SVGs do catálogo perdem traços finos**: foram traçados de um render a 300 dpi com limiar 128 (D020, correção de 18/11). Refazer a 600 dpi antes da etapa 2 do site.
 - **Skill `importar-artes-pdf` pronta (T007)** em `.claude/skills/importar-artes-pdf/`. Rodada no PDF HDF: 69 artes pareadas (fino × borda). Pacote parcial em `catalog/gff/human-defense-force/` com as 8 artes do piloto, agora em SVG (D020): 32 arquivos, 3,6 MB, silhueta com IoU ≥ 0,998 e diferenças da tinta só na faixa de 1 px da borda; conferidos no navegador. Revisão completa (T008) pendente.
 - Achado: 13 artes têm frente e verso com silhuetas diferentes (capas dos Storm Troopers); política de contorno pendente do usuário (PRD-03).
 - Processo `bambu-studio.exe` PID 37008 (17/11 18:34) veio de uma execução da CLI que travou e não pôde ser encerrado nem com `taskkill`; reiniciar o Windows deve limpar. PIDs 32380 (16/11 20:11) e 13004 (17/11 16:10) são sessões da interface do Bambu Studio (logs `studio_*_32380`, `studio_*_13004`); não foram tocados.
@@ -35,9 +37,9 @@ Site (GitHub Pages) que gera standees STL/3MF a partir de listas do Army Forge. 
 ## Próxima ação
 
 1. **Usuário**: criar o repositório no GitHub, `git remote add origin …`, `git push -u origin main`, ativar Pages (Settings → Pages → Source: GitHub Actions) e conferir o site publicado.
-2. **Usuário**: reabrir no Bambu Studio os arquivos regerados em `saidas/piloto-duas-metades-borda/` (traço mínimo, base de 2 mm com nome), confirmar se o aviso de versão sumiu e imprimir uma figura + base.
+2. **Usuário**: reabrir no Bambu Studio os arquivos regerados em 18/11 em `saidas/piloto-duas-metades-borda/` (600 dpi, Arachne por objeto, base de 2 mm com nome), conferir se o aviso de versão sumiu e se a lista de objetos mostra o ajuste de paredes, fatiar com bico 0,2 e imprimir uma figura + base.
 3. **Usuário**: decidir aliases propostos (Rifle → Battle Rifle, Baton → Shock Baton, Axe → Energy Axe, "Lance") e a política de silhuetas diferentes (capas).
-4. Agente: T008 (revisar os 61 candidatos restantes numa sessão própria com a skill), T002 (casos especiais do texto), T005 (schemas do catálogo e do projeto no site), depois a etapa 2 do site (ler o catálogo do repositório, mostrar as artes em SVG e associar). O gerador do protótipo ainda lê o PDF; o port para o navegador deve ler os SVGs.
+4. Agente: refazer os SVGs do catálogo a 600 dpi na skill (D020/D024). Depois T008 (revisar os 61 candidatos restantes numa sessão própria com a skill), T002 (casos especiais do texto), T005 (schemas do catálogo e do projeto no site), depois a etapa 2 do site (ler o catálogo do repositório, mostrar as artes em SVG e associar). O gerador do protótipo ainda lê o PDF; o port para o navegador deve ler os SVGs.
 
 ## Perguntas abertas
 

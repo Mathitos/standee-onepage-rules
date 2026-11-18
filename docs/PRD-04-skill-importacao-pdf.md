@@ -62,7 +62,7 @@ catalog/<sistema>/<faccao>/
   build/<faccao>-<versão>.zip      pacote avulso (opcional; o site lê catalog/)
 ```
 
-- Recortes em escala de cinza a 300 dpi, sem reamostragem, só em `work/`. A arte publicada é o SVG traçado deles (D020): `path#silhueta` e `path#tinta`, mm, mesma tela na frente e no verso, verso já alinhado (espelhar em x o sobrepõe à frente) e sem recorte pela frente, para a política das capas ficar no gerador. As folhas de contato são renderizadas a partir dos vetores, e o relatório traz IoU e pixels fora da faixa de 1 px da borda (esperado 0).
+- Recortes em escala de cinza a 300 dpi, sem reamostragem, só em `work/`. A arte publicada é o SVG traçado deles (D020): `path#silhueta` e `path#tinta`, mm, mesma tela na frente e no verso, verso já alinhado (espelhar em x o sobrepõe à frente) e sem recorte pela frente, para a política das capas ficar no gerador. As folhas de contato são renderizadas a partir dos vetores, e o relatório traz IoU e pixels fora da faixa de 1 px da borda (esperado 0). **Pendente (18/11)**: recortar a arte a 600 dpi, resolução nativa do PDF HDF, com o tratamento do gerador (D024); a 300 dpi com limiar 128 os traços de ~0,1 mm quebram.
 - Idempotente: mesmo SHA-256 não refaz nada sem pedido explícito. PDF novo gera nova `packVersion`, com diferenças no relatório.
 - O PDF original não é copiado para o projeto; registram-se hash, nome e páginas.
 - Git (D006): `manifest.json`, `revisao.json`, `arts/` (SVG) e `armybook/` são versionados; o PDF, `work/`, `review/` e `build/` ficam fora.

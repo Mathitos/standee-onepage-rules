@@ -29,10 +29,10 @@ Defaults iniciais, sujeitos a calibração:
 | Folga total da fenda na largura | 0,3 mm |
 | Folga total da fenda na espessura | 0,25 mm |
 | Altura da base | 2 mm, fenda vazada (D021) |
-| Traço mínimo do desenho | 0,45 mm com bico 0,4 (D023); 0 = como no PDF |
+| Desenho | traço do PDF lido a 600 dpi, sem engrossar (D024); paredes Arachne gravadas em cada objeto do 3MF (D025) |
 | Nome na base (opcional, D022) | relevo 0,6 mm; letra 3 mm, reduz até 1,8 mm |
 
-**Escala (D014):** padrão = escala de impressão do PDF a 100%, `mm = px × 25,4 / 300`. Medidas do PDF HDF: Infantry ≈ 34 mm de altura, Biker ≈ 32 × 40 mm, OGRE ≈ 54 × 37 mm. Não normalizar pela altura nem fixar 40 mm. Multiplicador global só por escolha explícita, registrado no projeto.
+**Escala (D014):** padrão = escala de impressão do PDF a 100%, `mm = px × 25,4 / dpi` (a arte do PDF HDF é JPEG de 600 dpi). Medidas do PDF HDF: Infantry ≈ 34 mm de altura, Biker ≈ 32 × 40 mm, OGRE ≈ 54 × 37 mm. Não normalizar pela altura nem fixar 40 mm. Multiplicador global só por escolha explícita, registrado no projeto.
 
 As dimensões externas da base vêm do catálogo; não herdar o retângulo 25 × 16 mm do protótipo. Não aumentar a base oficial para acomodar arte: sinalizar quando a figura excede a base e permitir ajuste explícito. O estilo borda grossa (D012) acrescenta ~1,2 mm por lado; refazer a checagem.
 
@@ -51,7 +51,7 @@ As dimensões externas da base vêm do catálogo; não herdar o retângulo 25 ×
 - **Peça única**: camada inferior (0 a 0,4 mm) com preto e branco coplanares em Z=0; núcleo branco; relevo preto acima do núcleo. Substitui o protótipo em que o preto atravessava o corpo inteiro e exigia troca de cor em todas as camadas.
 - **Duas metades**: corpo branco de Z=0 até a espessura do corpo; relevo preto acima.
 - Sem interseções volumétricas, fendas entre cores ou partes flutuantes. Ilhas de uma cor são aceitáveis quando ligadas pela outra no objeto composto.
-- Linhas mais finas que o bico se perdem ou viram pontilhado (medido em 17/11: 70–82% do comprimento das linhas internas abaixo de 0,4 mm). O traço mínimo (D023) engrossa só os traços finos, pelo esqueleto; é opção visível, ligada por padrão, e o relatório mostra a fração fina antes e depois. Relevo negativo foi testado e não funciona: o branco fecha os vãos finos.
+- Os traços internos da arte têm ~0,1 mm (medido a 600 dpi em 18/11), mais finos que qualquer bico. O desenho é lido na resolução nativa do PDF e vai para a malha sem engrossar (D024); o fatiador com paredes Arachne (D025) imprime cada linha com a largura mínima do cordão, contínua. Com paredes classic as linhas somem ou viram contas de pontos. Engrossar no gerador (traço mínimo pelo esqueleto, por igual ou redesenho) escureceu o desenho no G-code e foi descartado como padrão; `--traco engrossado` fica como opção. Relevo negativo também não funciona: o branco fecha os vãos finos.
 
 ## Duas metades — detalhes (D011)
 

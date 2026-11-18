@@ -18,6 +18,26 @@ import numpy as np
 
 NUM = r'(-?\d*\.?\d+)'
 CORES = {0: (235, 235, 235), 1: (20, 20, 20)}
+AREA_FILAMENTO = math.pi * (1.75 / 2) ** 2
+
+
+SUB = 16   # subpixel (cv2 shift=4)
+
+
+def tracar(img, p, q, larg_px, cor):
+    """Cordão com a largura exata (retângulo + pontas redondas). cv2.line com espessura t
+    desenha ~t+2 px e escurecia a prévia (medido em 18/11). O preenchimento do OpenCV inclui
+    os pixels da borda (~0,5 px a mais de cada lado), descontados no raio."""
+    (x0, y0), (x1, y1) = p, q
+    r = max(0.5, larg_px / 2 - 0.5)
+    dx, dy = x1 - x0, y1 - y0
+    n = math.hypot(dx, dy)
+    if n > 1e-9:
+        ox, oy = -dy / n * r, dx / n * r
+        pts = np.array([[x0 + ox, y0 + oy], [x1 + ox, y1 + oy], [x1 - ox, y1 - oy], [x0 - ox, y0 - oy]])
+        cv2.fillConvexPoly(img, np.round(pts * SUB).astype(np.int32), cor, cv2.LINE_8, 4)
+    for cx, cy in (p, q):
+        cv2.circle(img, (int(round(cx * SUB)), int(round(cy * SUB))), max(1, int(round(r * SUB))), cor, -1, cv2.LINE_8, 4)
 
 
 def ler(caminho):
@@ -41,17 +61,19 @@ def main():
     img = np.full((int((y1 - y0) * k), int((x1 - x0) * k), 3), 110, np.uint8)
 
     def px(x, y):
-        return (int(round((x - x0) * k)), int(round((y1 - y) * k)))
+        return ((x - x0) * k, (y1 - y) * k)
 
     # o G-code da A1 começa com o filamento inicial carregado sem "T<n>" explícito; com dois
     # filamentos, o inicial é o outro em relação à primeira troca (sem troca, filamento 1)
     primeira = next((int(m[1]) for m in (re.match(r'^T(\d+)\b', l) for l in ler(a.gcode))
                      if m and int(m[1]) < 255), 1)
     x = y = z = 0.0
+    camada, z_ant = 0.2, 0.0
     largura, ferramenta, relativo, dentro = 0.4, 1 - primeira if primeira in (0, 1) else 0, True, False
     for linha in ler(a.gcode):
         if linha.startswith('; Z_HEIGHT:'):
             z = float(linha.split(':')[1])
+            camada, z_ant = (z - z_ant if z > z_ant else camada), z
             dentro = a.z_min < z <= a.z_max
             continue
         if linha.startswith('; LINE_WIDTH:'):
@@ -71,10 +93,12 @@ def main():
         g = cmd.split()[0]
         val = {c: float(v) for c, v in re.findall(r'([XYZEIJ])' + NUM, cmd)}
         nx, ny = val.get('X', x), val.get('Y', y)
-        extrude = val.get('E', 0) > 0 if relativo else False
+        # "G1 E.." sem X/Y é desretração (repõe a pressão no bico), não deposita uma gota:
+        # desenhá-la como ponto deixava as linhas pontilhadas na prévia (corrigido em 18/11)
+        extrude = (val.get('E', 0) > 0 if relativo else False) and ('X' in val or 'Y' in val)
         if dentro and extrude:
             cor = CORES.get(ferramenta, (0, 0, 200))
-            esp = max(1, int(round(largura * k)))
+            esp = largura * k
             if g in ('G2', 'G3') and ('I' in val or 'J' in val):
                 cx, cy = x + val.get('I', 0), y + val.get('J', 0)
                 a0 = math.atan2(y - cy, x - cx)
@@ -84,19 +108,28 @@ def main():
                     a1 -= 2 * math.pi
                 if g == 'G3' and a1 <= a0:
                     a1 += 2 * math.pi
+                # arco curtíssimo: o arredondamento das coordenadas pode inverter o sentido e
+                # virar volta inteira (desenhava "bolinhas" nas linhas; 18/11). Decide pelo
+                # comprimento que o filamento extrudado cobre.
+                h = max(0.04, camada)
+                secao_cordao = (largura - h) * h + math.pi * h * h / 4
+                comp_e = val.get('E', 0) * AREA_FILAMENTO / max(1e-6, secao_cordao)
+                alt = a1 + 2 * math.pi if a1 < a0 else a1 - 2 * math.pi
+                if abs(abs(alt - a0) * r - comp_e) < abs(abs(a1 - a0) * r - comp_e):
+                    a1 = alt
                 passos = max(2, int(abs(a1 - a0) * r * k / 2))
                 pts = [px(cx + r * math.cos(a0 + (a1 - a0) * i / passos), cy + r * math.sin(a0 + (a1 - a0) * i / passos))
                        for i in range(passos + 1)]
                 for p, q in zip(pts, pts[1:]):
-                    cv2.line(img, p, q, cor, esp, cv2.LINE_AA)
+                    tracar(img, p, q, esp, cor)
             else:
-                cv2.line(img, px(x, y), px(nx, ny), cor, esp, cv2.LINE_AA)
+                tracar(img, px(x, y), px(nx, ny), esp, cor)
         x, y = nx, ny
         z = val.get('Z', z)
     if a.cortar:
         # corta no que foi extrudado, fora da área reservada à torre de purga (canto x<62, y>205)
         usado = np.any(img != 110, axis=2)
-        tx, ty = px(62, 205)
+        tx, ty = (int(v) for v in px(62, 205))
         usado[:max(0, ty), :max(0, tx)] = False
         ys, xs = np.where(usado)
         if len(ys):

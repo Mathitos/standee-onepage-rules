@@ -16,7 +16,8 @@ import numpy as np
 import pymupdf
 from scipy import ndimage as ndi
 
-DPI = 300
+DPI = 300           # detecção da grade
+DPI_ARTE = 600      # resolução nativa da arte (JPEG 4960x7016 na página A4); traços de ~0,1 mm
 MM_PER_PX = 25.4 / DPI
 DARK = 128          # limiar de "preto" em escala de cinza
 LINE_MIN_MM = 80    # linha da tabela: mais longa que qualquer traço de figura
@@ -81,17 +82,23 @@ def detectar_linhas(cinza):
     return validas, descartadas
 
 
-def extrair_pagina(doc, pagina):
+def extrair_pagina(doc, pagina, dpi=DPI):
+    """Recorta as linhas da página. A grade é sempre detectada a DPI; com dpi maior, as
+    células saem de uma renderização em dpi, nas mesmas coordenadas escaladas."""
     cinza = render_cinza(doc, pagina)
     faixas, descartadas = detectar_linhas(cinza)
+    f = dpi / DPI
+    alta = cinza if dpi == DPI else render_cinza(doc, pagina, dpi=dpi)
+    ins = int(round(INSET_PX * f))
+    e = lambda v: int(round(v * f))
     linhas = []
     for i, (y0, y1, v) in enumerate(faixas):
-        ya, yb = y0 + INSET_PX, y1 - INSET_PX
-        cel = lambda a, b: cinza[ya:yb, v[a][1] + 1 + INSET_PX:v[b][0] - INSET_PX]
-        x_rot = max(0, v[0][0] - int(LABEL_MM / MM_PER_PX))
+        ya, yb = e(y0) + ins, e(y1) - ins
+        cel = lambda a, b: alta[ya:yb, e(v[a][1] + 1) + ins:e(v[b][0]) - ins]
+        x_rot = max(0, e(v[0][0]) - int(LABEL_MM * dpi / 25.4))
         linhas.append(Linha(
             pagina=pagina, indice=i,
-            rotulo=cv2.rotate(cinza[ya:yb, x_rot:v[0][0] - INSET_PX], cv2.ROTATE_90_COUNTERCLOCKWISE),
+            rotulo=cv2.rotate(alta[ya:yb, x_rot:e(v[0][0]) - ins], cv2.ROTATE_90_COUNTERCLOCKWISE),
             frente=cv2.rotate(cel(1, 2), cv2.ROTATE_90_COUNTERCLOCKWISE),
             verso=cv2.rotate(cel(2, 3), cv2.ROTATE_90_CLOCKWISE),
             faixa_mm=(round(y0 * MM_PER_PX, 1), round(y1 * MM_PER_PX, 1)),
@@ -99,10 +106,11 @@ def extrair_pagina(doc, pagina):
     return linhas, descartadas
 
 
-def silhueta(cinza):
+def silhueta(cinza, dpi=DPI):
     """Silhueta preenchida: traço escuro fechado, buracos preenchidos, ilhas mínimas removidas."""
     escuro = cinza < DARK
-    k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
+    n = int(round(5 * dpi / DPI))     # fechamento de ~0,42 mm em qualquer resolução
+    k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (n, n))
     fechado = cv2.morphologyEx(escuro.astype(np.uint8), cv2.MORPH_CLOSE, k) > 0
     cheio = ndi.binary_fill_holes(fechado)
     rot, n = ndi.label(cheio)

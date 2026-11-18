@@ -2,7 +2,7 @@
 
 Uso (na raiz do projeto):
   python -I prototipo/gerar.py prototipo/lista-piloto.json --modo duas-metades --estilo borda --saida saidas/piloto
-      [--traco-min 0.45] [--relevo negativo] [--nome-na-base]
+      [--bico 0.2] [--traco original|engrossado] [--paredes arachne] [--nome-na-base]
 
 Saídas: 3MF Bambu de figuras (branco/preto) e de bases, STL por peça, prévias PNG,
 relatorio.json e LEIA-ME.md. Modo implementado: duas-metades (peca-unica ainda não).
@@ -26,13 +26,15 @@ import pymupdf
 import trimesh
 from PIL import Image, ImageDraw, ImageFont
 from scipy import ndimage as ndi
-from skimage.morphology import skeletonize
 
 sys.path.insert(0, str(Path(__file__).parent))
 import pdf_grade as G  # noqa: E402
 
-S = G.MM_PER_PX
-VERSAO = 'prototipo-0.1'
+DPI = G.DPI_ARTE           # lê a arte na resolução nativa do PDF (600 dpi)
+S = 25.4 / DPI
+TINTA_LIMIAR = 200         # traços de ~0,1 mm ficam cinza na borda; limiar alto não os quebra
+TINTA_SUAVE_MM = 0.035     # desfoque leve antes do limiar: tira o serrilhado do JPEG
+VERSAO = 'prototipo-0.2'
 
 
 @dataclass
@@ -47,7 +49,10 @@ class Param:
     folga_larg: float = 0.3       # folga total da fenda
     folga_esp: float = 0.25
     base_altura: float = 2.0      # pedido do usuário (17/11): base de 2 mm com fenda vazada
-    traco_min: float = 0.45       # bico 0,4: traços mais finos somem ou viram pontilhado no fatiador; 0 = como no PDF
+    bico: float = 0.2             # diâmetro do bico (mm) para o qual o desenho é preparado
+    traco: str = 'original'       # original: traço do PDF a 600 dpi (D024); engrossado: + engorda
+    engorda: float = 0.05         # modo engrossado: mm de cada lado, aplicado no vetor
+    paredes: str = 'arachne'      # gerador de paredes gravado em cada objeto do 3MF (D025); '' = o do perfil
     relevo_negativo: bool = False # True: corpo preto e relevo branco; as linhas viram vãos no branco
     nome_na_base: bool = False    # escreve o nome da unidade na borda de cima da base
     texto_altura: float = 3.0     # altura das maiúsculas (mm); cai até texto_min se não couber
@@ -66,6 +71,10 @@ class Param:
     # área livre para a torre de purga padrão da A1 (x=15, y=220, largura 35) — só na placa de 2 cores
     torre_xyxy: tuple = (0.0, 205.0, 62.0, 256.0)
     pad: int = 2                  # px de margem no canvas
+
+    @property
+    def engorda_malha(self):
+        return self.engorda if self.traco == 'engrossado' else 0.0
 
     @property
     def furo_prof(self):
@@ -97,26 +106,42 @@ def iou(a, b):
 
 def registrar_verso(alvo, verso_cinza):
     """Alinha o verso ao contorno alvo (frente espelhada) maximizando IoU."""
-    vs = G.silhueta(verso_cinza)
+    vs = G.silhueta(verso_cinza, DPI)
     ay0, ay1, ax0, ax1 = bbox(alvo)
     vy0, vy1, vx0, vx1 = bbox(vs)
     dy0, dx0 = int(ay1 - vy1), int(round((ax0 + ax1) / 2 - (vx0 + vx1) / 2))
     melhor = (-1.0, dy0, dx0)
-    for dy in range(dy0 - 8, dy0 + 9):
-        for dx in range(dx0 - 8, dx0 + 9):
-            v = iou(deslocar(vs, dy, dx, alvo.shape, False), alvo)
-            if v > melhor[0]:
-                melhor = (v, dy, dx)
+    # busca de ±0,68 mm em passo de 2 px e depois refino de ±2 px
+    for passo, raio in ((2, int(round(0.68 / S))), (1, 2)):
+        _, cy, cx = melhor
+        for dy in range(cy - raio, cy + raio + 1, passo):
+            for dx in range(cx - raio, cx + raio + 1, passo):
+                v = iou(deslocar(vs, dy, dx, alvo.shape, False), alvo)
+                if v > melhor[0]:
+                    melhor = (v, dy, dx)
     _, dy, dx = melhor
     return deslocar(verso_cinza, dy, dx, alvo.shape, 255), melhor[0]
 
 
-def limpar(m, min_px=4):
+def limpar(m, min_mm2=0.015):
     rot, n = ndi.label(m)
     if n == 0:
         return m
     areas = ndi.sum(m, rot, range(1, n + 1))
-    return np.isin(rot, [i + 1 for i, a in enumerate(areas) if a >= min_px])
+    return np.isin(rot, [i + 1 for i, a in enumerate(areas) if a * S * S >= min_mm2])
+
+
+def tinta(cinza, sil):
+    """Traço preto da arte (600 dpi): desfoque leve + limiar alto, para as linhas finas não quebrarem."""
+    g = cv2.GaussianBlur(cinza, (0, 0), TINTA_SUAVE_MM / S)
+    return limpar((g < TINTA_LIMIAR) & sil)
+
+
+def engordar(m, mm):
+    """Engrossa todo o preto por igual (dilatação por um disco de raio mm)."""
+    if mm <= 0 or not m.any():
+        return m
+    return ndi.distance_transform_edt(~m) * S <= mm
 
 
 def fracao_fina(m, largura_mm=0.4):
@@ -125,17 +150,6 @@ def fracao_fina(m, largura_mm=0.4):
     k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (r, r))
     aberto = cv2.morphologyEx(m.astype(np.uint8), cv2.MORPH_OPEN, k) > 0
     return float(1 - aberto.sum() / max(1, m.sum()))
-
-
-def engrossar(m, largura_mm):
-    """Traço mínimo: todo traço passa a ter pelo menos largura_mm, dilatando o esqueleto.
-
-    Traços já mais grossos não mudam. Linhas muito próximas podem se fundir.
-    """
-    if largura_mm <= 0 or not m.any():
-        return m
-    dist = ndi.distance_transform_edt(~skeletonize(m))
-    return m | (dist <= largura_mm / 2 / S)
 
 
 def corpo_com_lingueta(sil, P):
@@ -186,8 +200,12 @@ def posicionar_furos(sil_pad, P):
 
 # ---------------------------------------------------------------- 3D
 
-def secao(mask):
-    """Máscara -> CrossSection em mm (y para cima), compensando meio pixel da borda."""
+def secao(mask, engorda=0.0):
+    """Máscara -> CrossSection em mm (y para cima), compensando meio pixel da borda.
+
+    engorda (mm) é aplicada no vetor: a 600 dpi um pixel tem 0,042 mm, grosso demais para
+    engrossar traços de 0,1 mm com precisão.
+    """
     cnts, _ = cv2.findContours(mask.astype(np.uint8), cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
     h = mask.shape[0]
     polys = []
@@ -197,11 +215,11 @@ def secao(mask):
             continue
         p = c[:, 0, :].astype(float)
         polys.append(np.column_stack([p[:, 0] * S, (h - p[:, 1]) * S]))
-    cs = mf.CrossSection(polys, mf.FillRule.EvenOdd)
-    return cs.offset(S / 2, mf.JoinType.Miter, 2.0)
+    cs = mf.CrossSection(polys, mf.FillRule.EvenOdd).offset(S / 2, mf.JoinType.Miter, 2.0)
+    return cs.offset(engorda, mf.JoinType.Round) if engorda > 0 else cs
 
 
-def metade(corpo_mask, relevo_mask, furos, P):
+def metade(corpo_mask, relevo_mask, furos, P, engorda=None):
     h = corpo_mask.shape[0]
     contorno = secao(corpo_mask)
     corpo = mf.Manifold.extrude(contorno, P.corpo)
@@ -209,7 +227,8 @@ def metade(corpo_mask, relevo_mask, furos, P):
         cil = mf.Manifold.cylinder(P.furo_prof + 0.01, P.furo_diam / 2, P.furo_diam / 2, 48)
         corpo = corpo - cil.translate((c * S, (h - r) * S, -0.01))
     # o relevo nunca passa da borda do corpo
-    relevo = mf.Manifold.extrude(secao(relevo_mask) ^ contorno, P.relevo).translate((0, 0, P.corpo))
+    eng = P.engorda_malha if engorda is None else engorda
+    relevo = mf.Manifold.extrude(secao(relevo_mask, eng) ^ contorno, P.relevo).translate((0, 0, P.corpo))
     return corpo, relevo
 
 
@@ -221,12 +240,12 @@ def peca_unica(corpo_mask, preto_mesa_mask, relevo_mask, P):
     complementares e coplanares em Z=0.
     """
     contorno = secao(corpo_mask)
-    preto_cs = secao(preto_mesa_mask) ^ contorno
+    preto_cs = secao(preto_mesa_mask, P.engorda_malha) ^ contorno
     branco_cs = contorno - preto_cs
     cam = P.camada_mesa
     branco = mf.Manifold.extrude(branco_cs, cam) + mf.Manifold.extrude(contorno, P.corpo - cam).translate((0, 0, cam))
     preto_mesa = mf.Manifold.extrude(preto_cs, cam)
-    relevo = mf.Manifold.extrude(secao(relevo_mask) ^ contorno, P.relevo).translate((0, 0, P.corpo))
+    relevo = mf.Manifold.extrude(secao(relevo_mask, P.engorda_malha) ^ contorno, P.relevo).translate((0, 0, P.corpo))
     return branco, preto_mesa, relevo
 
 
@@ -366,17 +385,20 @@ def _malha_xml(k, p, mid, m):
             f'<mesh><vertices>{vs}</vertices><triangles>{ts}</triangles></mesh></object>\n'), len(f)
 
 
-def escrever_3mf(caminho, objetos, itens):
+def escrever_3mf(caminho, objetos, itens, ajustes=None):
     """Projeto 3MF no formato do Bambu Studio, sem perfil de impressora embutido.
 
     objetos: {chave: (nome, [(manifold, cor 0=branco 1=preto, rotulo)])}
     itens: [(chave, x, y)]
+    ajustes: ajustes de impressão por objeto (ex.: {'wall_generator': 'arachne'}), gravados
+    como o Bambu Studio grava um ajuste mudado só naquele objeto.
     Reproduz o que o próprio Bambu Studio grava: cada cópia é um objeto, com arquivo
     3D/Objects/object_k.model; a malha fica só no arquivo da primeira cópia e as
     demais apontam para ele (o arquivo não cresce com as cópias). Os ids de malhas e
     de objetos montados compartilham UM espaço global (ids repetidos entre arquivos
     fazem o Bambu misturar malhas: conflitos e "fora da mesa").
     """
+    extra_cfg = ''.join(f'<metadata key="{k}" value="{v}"/>' for k, v in (ajustes or {}).items())
     preparadas = {}
     for chave, (nome, partes) in objetos.items():
         # convenção do Bambu: malha centrada na origem; a posição vai no item
@@ -418,7 +440,7 @@ def escrever_3mf(caminho, objetos, itens):
             'facets_reversed="0" backwards_edges="0"/></part>'
             for mid, nf, (_, cor, rot) in zip(mids, faces, partes))
         cfg.append(f'<object id="{oid}"><metadata key="name" value="{nome} #{contagem[chave]}"/>'
-                   f'<metadata key="extruder" value="1"/><metadata face_count="{sum(faces)}"/>{partes_cfg}</object>\n')
+                   f'<metadata key="extruder" value="1"/>{extra_cfg}<metadata face_count="{sum(faces)}"/>{partes_cfg}</object>\n')
         cx, cy, cz = centro
         build.append(f'<item objectid="{oid}" p:UUID="{UUID_ITEM.format(oid)}" '
                      f'transform="1 0 0 0 1 0 0 0 1 {x + cx:.3f} {y + cy:.3f} {cz:.3f}" printable="1"/>\n')
@@ -482,7 +504,7 @@ def empacotar(pecas, P, reservado=None):
 
 # ---------------------------------------------------------------- prévias
 
-def previa_metade(corpo, relevo, furos, escala=3):
+def previa_metade(corpo, relevo, furos, escala=max(1, round(0.254 / S))):
     img = np.full((*corpo.shape, 3), 200, np.uint8)
     img[corpo] = 255
     img[relevo] = 0
@@ -523,15 +545,21 @@ def main():
     ap.add_argument('--saida', type=Path, required=True)
     ap.add_argument('--margem', type=float, default=Param.margem_mesa, help='margem da borda da mesa (mm)')
     ap.add_argument('--espaco', type=float, default=Param.espaco, help='espaço entre peças (mm)')
-    ap.add_argument('--traco-min', type=float, default=Param.traco_min,
-                    help='engrossa traços pretos mais finos que isto (mm); 0 = como no PDF')
+    ap.add_argument('--bico', type=float, default=Param.bico, help='diâmetro do bico (mm)')
+    ap.add_argument('--traco', choices=['original', 'engrossado'], default=Param.traco,
+                    help='original: traço do PDF a 600 dpi (padrão); engrossado: engrossa tudo por igual (--engorda)')
+    ap.add_argument('--engorda', type=float, default=Param.engorda, help='modo engrossado: mm de cada lado')
+    ap.add_argument('--paredes', choices=['arachne', 'classic', 'perfil'], default=Param.paredes,
+                    help='gerador de paredes gravado nos objetos do 3MF; perfil = não grava (usa o do perfil)')
+    ap.add_argument('--so', action='append', help='gera só estas artes (diagnóstico)')
     ap.add_argument('--relevo', choices=['positivo', 'negativo'], default='positivo',
                     help='negativo: corpo preto e relevo branco, linhas como vãos (só duas metades)')
     ap.add_argument('--corpo', type=float, default=Param.corpo, help='espessura do corpo (mm)')
     ap.add_argument('--relevo-mm', type=float, default=Param.relevo, help='altura do relevo (mm)')
     ap.add_argument('--nome-na-base', action='store_true', help='escreve o nome da unidade na borda da base')
     a = ap.parse_args()
-    P = Param(margem_mesa=a.margem, espaco=a.espaco, traco_min=a.traco_min,
+    P = Param(margem_mesa=a.margem, espaco=a.espaco, bico=a.bico, traco=a.traco, engorda=a.engorda,
+              paredes='' if a.paredes == 'perfil' else a.paredes,
               relevo_negativo=a.relevo == 'negativo', corpo=a.corpo, relevo=a.relevo_mm,
               nome_na_base=a.nome_na_base)
     duas = a.modo == 'duas-metades'
@@ -550,48 +578,51 @@ def main():
     for sub in ('stl', 'previas'):
         (saida / sub).mkdir(parents=True, exist_ok=True)
 
+    if a.so:
+        lista['modelos'] = [m for m in lista['modelos'] if m['arte'] in a.so]
     usadas = sorted({m['arte'] for m in lista['modelos']})
     artes, objetos_fig, mascaras, checks, stl = {}, {}, {}, [], []
     for chave in usadas:
         info = lista['artes'][chave]
         pagina = info['pagina'][a.estilo]
-        linhas, _ = G.extrair_pagina(doc, pagina)
+        linhas, _ = G.extrair_pagina(doc, pagina, DPI)
         L = linhas[info['linha']]
-        frente_sil = G.silhueta(L.frente)
+        frente_sil = G.silhueta(L.frente, DPI)
         alvo = frente_sil[:, ::-1]
         verso_al, iou_fv = registrar_verso(alvo, L.verso)
-        rel_f = limpar((L.frente < G.DARK) & frente_sil)
-        rel_v = limpar((verso_al < G.DARK) & alvo)
-        fino_antes = (fracao_fina(rel_f), fracao_fina(rel_v))
-        rel_f = engrossar(rel_f, P.traco_min) & frente_sil
-        rel_v = engrossar(rel_v, P.traco_min) & alvo
+        rel_f = tinta(L.frente, frente_sil)
+        rel_v = tinta(verso_al, alvo)
+        fino_antes = (fracao_fina(rel_f, P.bico), fracao_fina(rel_v, P.bico))
+        # a engorda (modo engrossado) vai para a malha pelo vetor (secao); aqui só nas prévias e métricas
         corpo_f, med = corpo_com_lingueta(frente_sil, P)
         pad = lambda m: np.pad(m, ((P.pad, corpo_f.shape[0] - m.shape[0] - P.pad), (P.pad, P.pad)))
         rel_f, rel_v = pad(rel_f), pad(rel_v)
+        sil_f, sil_v = pad(frente_sil), pad(alvo)
+        vis_f, vis_v = engordar(rel_f, P.engorda_malha) & sil_f, engordar(rel_v, P.engorda_malha) & sil_v
         corpo_v = corpo_f[:, ::-1]
         assert np.array_equal(corpo_v[:, ::-1], corpo_f)
         if duas:
             furos_f = posicionar_furos(pad(frente_sil), P)
             furos_v = [(r, corpo_f.shape[1] - 1 - c) for r, c in furos_f]
             pecas = []
-            sil_f, sil_v = pad(frente_sil), pad(alvo)
-            for lado, corpo_m, rel_m, sil_m, furos in (('frente', corpo_f, rel_f, sil_f, furos_f),
-                                                       ('verso', corpo_v, rel_v, sil_v, furos_v)):
+            for lado, corpo_m, rel_m, vis_m, sil_m, furos in (('frente', corpo_f, rel_f, vis_f, sil_f, furos_f),
+                                                              ('verso', corpo_v, rel_v, vis_v, sil_v, furos_v)):
                 if P.relevo_negativo:
                     # relevo = branco onde não há tinta; o preto visível é o corpo nos vãos
-                    corpo3, relevo3 = metade(corpo_m, sil_m & ~rel_m, furos, P)
-                    pecas.append((lado, corpo_m, corpo_m & ~(sil_m & ~rel_m),
+                    branco = sil_m & ~vis_m
+                    corpo3, relevo3 = metade(corpo_m, branco, furos, P, engorda=0)
+                    pecas.append((lado, corpo_m, corpo_m & ~branco,
                                   [(corpo3, 1, 'Preto - corpo'), (relevo3, 0, 'Branco - relevo')]))
                 else:
                     corpo3, relevo3 = metade(corpo_m, rel_m, furos, P)
-                    pecas.append((lado, corpo_m, rel_m,
+                    pecas.append((lado, corpo_m, vis_m,
                                   [(corpo3, 0, 'Branco - corpo'), (relevo3, 1, 'Preto - relevo')]))
         else:
             # vista de cima: contorno = frente espelhada; face da mesa mostra a frente (espelhada
             # no modelo, lida certa por baixo); relevo em cima = verso como impresso
             furos_f = []
             branco3, preto3, relevo3 = peca_unica(corpo_v, rel_f[:, ::-1], rel_v, P)
-            pecas = [('peca', corpo_v, rel_v, [(branco3, 0, 'Branco - corpo'),
+            pecas = [('peca', corpo_v, vis_v, [(branco3, 0, 'Branco - corpo'),
                                                 (preto3, 1, 'Preto - desenho na mesa'),
                                                 (relevo3, 1, 'Preto - relevo')])]
         dims = None
@@ -612,15 +643,15 @@ def main():
             bb = partes3[0][0].bounding_box()
             dims = [round(bb[3] - bb[0], 2), round(bb[4] - bb[1], 2)]
         # prévia: frente como vista pela frente e verso como visto por trás, nos dois modos
-        sep = np.full((previa_metade(corpo_f, rel_f, []).shape[0], 12, 3), 200, np.uint8)
+        sep = np.full((previa_metade(corpo_f, vis_f, []).shape[0], 12, 3), 200, np.uint8)
         furos_v = [(r, corpo_f.shape[1] - 1 - c) for r, c in furos_f]
         cv2.imwrite(str(saida / 'previas' / f'{chave}.png'),
-                    np.hstack([previa_metade(corpo_f, rel_f, furos_f), sep, previa_metade(corpo_v, rel_v, furos_v)]))
+                    np.hstack([previa_metade(corpo_f, vis_f, furos_f), sep, previa_metade(corpo_v, vis_v, furos_v)]))
         artes[chave] = {
             'rotulo': info['rotulo'], 'pagina_pdf': pagina, 'linha': info['linha'], 'estilo': a.estilo,
             'iou_frente_verso': round(iou_fv, 3), 'furos_por_metade': len(furos_f),
             'preto_fino_frente_pdf': round(fino_antes[0], 3), 'preto_fino_verso_pdf': round(fino_antes[1], 3),
-            'preto_fino_frente': round(fracao_fina(rel_f), 3), 'preto_fino_verso': round(fracao_fina(rel_v), 3),
+            'preto_fino_frente': round(fracao_fina(vis_f, P.bico), 3), 'preto_fino_verso': round(fracao_fina(vis_v, P.bico), 3),
             'peca_mm': dims, **med,
         }
 
@@ -669,7 +700,8 @@ def main():
             arq = f'{nome}-{a.modo}-{a.estilo}{sufixo}.3mf'
             usados = {k for k, *_ in placa}
             escrever_3mf(saida / arq, {k: v for k, v in objetos.items() if k in usados},
-                         [(k, x, y) for k, x, y, _, _ in placa])
+                         [(k, x, y) for k, x, y, _, _ in placa],
+                         ajustes={'wall_generator': P.paredes} if P.paredes else None)
             reservado = P.torre_xyxy if nome == 'figuras' else None
             cv2.imwrite(str(saida / 'previas' / f'placa-{nome}{sufixo}.png'),
                         previa_placa(placa, mascaras, P, reservado=reservado))

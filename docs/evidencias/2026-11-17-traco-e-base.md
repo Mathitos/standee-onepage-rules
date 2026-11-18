@@ -1,5 +1,7 @@
 # Traços que somem no fatiamento e base nova — 17/11/2026 (noite)
 
+> **Revisão de 18/11**: a parte do traço foi refeita em `2026-11-18-traco-600dpi-arachne.md`. As larguras abaixo foram medidas a 300 dpi (a arte é 600 dpi; a largura real é ~0,1 mm), e a comparação no fatiador usou valores genéricos (a CLI não aplicava o perfil) e uma prévia que desenhava desretrações como pontos. A parte da base continua valendo.
+
 ## O que o usuário viu
 
 Abriu `figuras-duas-metades-borda.3mf` na interface do Bambu Studio 02.07.01.57 (PC desktop do usuário):
