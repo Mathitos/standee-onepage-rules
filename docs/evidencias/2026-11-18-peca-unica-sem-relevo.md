@@ -26,11 +26,11 @@ Medido na frente da Infantry do projeto de teste, que usa o mesmo tratamento da 
   - As 2 linguetas cônicas (D031) são as mesmas.
   - `verificar_encaixe.py` deu folga barra–base de 0,159 mm nas 5 artes, igual às metades.
 - **Teste:** lista `prototipo/lista-teste-peca-unica.json`, com 1 miniatura de cada arte.
-  - Saída: `saidas/teste-peca-unica-sem-relevo/projeto-peca-unica-fino.3mf`, com a placa 1 "Figuras" e a placa 2 "Bases".
+  - Saída: `saidas/teste-peca-unica-sem-relevo/projeto-peca-unica-fino.3mf`. Primeiro com a placa 1 "Figuras" e a placa 2 "Bases"; depois regerado com uma placa só, "Figuras e bases" (D033, abaixo).
 
 ## No G-code
 
-Fatiado pela CLI como está: "Success", sem aviso.
+Fatiado pela CLI como está, em duas placas: "Success", sem aviso.
 
 | Placa | Conteúdo | Camadas | Trocas | Tempo |
 |---|---|---:|---:|---:|
@@ -52,6 +52,27 @@ Mesma região da Infantry, branco do modelo coberto de preto no G-code:
 - Sem relevo, os vãos finos viram cordões brancos na mesma camada, em vez de canaletas vazias entre paredes pretas.
 - Uma parte pequena fica sem material nenhum: 4,0% do branco na região da arma, 4,6% na figura inteira e 2,1% no verso. São vãos estreitos demais para qualquer das duas cores.
 - Imagem: `2026-11-18-peca-unica-sem-relevo-arma.png`. Mostra o modelo, o relevo e a face da mesa sem relevo, com cada cordão na largura anotada no G-code.
+
+## Bases na placa das figuras (D033)
+
+O usuário observou que a peça única pintada já troca de cor em várias camadas e perguntou se não valia pôr as bases na mesma placa. Fatiado pela CLI, com as mesmas 5 figuras e 5 bases com nome. Os volumes de purga são supostos (200 e 600 mm³).
+
+| Caso | Placas | Trocas | Tempo | Filamento |
+|---|---:|---:|---:|---:|
+| Peça única sem relevo, separadas | 2 | 9 + 5 = 14 | 292 + 129 = 421 min | 25,8 g |
+| Peça única sem relevo, juntas | 1 | 16 | 419 min | 26,4 g |
+| Peça única com relevo, separadas | 2 | 6 + 5 = 11 | 240 + 129 = 369 min | 23,9 g |
+| Peça única com relevo, juntas | 1 | 12 | 365 min | 24,2 g |
+| Metades em preto em relevo, separadas | 2 | 1 + 5 = 6 | 253 + 129 = 382 min | 28,5 g |
+| Metades em preto em relevo, juntas | 1 | 13 | 411 min | 32,1 g |
+
+- **Peça única:** juntar dá o mesmo tempo e o mesmo filamento.
+  - As trocas das bases (camadas 0,1–0,4) caem nas camadas em que a figura já troca.
+  - O que se acrescenta são as camadas do miolo, em que a figura é branca e a base é preta: uma troca a mais por camada. No total, sobram de 1 a 2 trocas.
+  - O ganho é prático: uma impressão só, sem trocar de placa nem repetir o início. A estimativa quase não conta o início, que em cada placa dá 19 s entre o tempo do modelo e o total.
+- **Metades:** a placa de figuras tem só 1 troca, onde começa o relevo. Juntar põe as duas cores em cada camada do miolo, com +7 trocas, +29 min e +3,6 g.
+- Padrão `--bases-junto auto`: junta só na peça única. As peças são empacotadas juntas, e o que não couber vai para outra placa.
+- O projeto de teste foi regerado assim, com a placa 1 "Figuras e bases". É idêntico, fora o perfil, ao que foi fatiado: 20 camadas, 16 trocas, 419 min, "Success", sem aviso.
 
 ## Não verificado
 

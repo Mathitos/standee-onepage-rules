@@ -68,6 +68,10 @@ class Param:
     acabamento: str = 'preto-relevo'  # duas metades: preto-relevo | branco-relevo | pintado (D028)
     sulco_engorda: float = 0.0    # branco-relevo: alarga as linhas (sulcos); no G-code (bico 0,2, Arachne) 0 ficou mais limpo que 0,03-0,08
     nome_na_base: bool = False    # escreve o nome da unidade na borda de cima da base
+    # bases na placa das figuras (D033). auto: só na peça única, que já troca de cor nas primeiras
+    # camadas (na CLI: tempo e filamento iguais); nas metades a placa de figuras tem 1 troca e
+    # juntar passou para 13 trocas, +29 min e +3,6 g
+    bases_junto: str = 'auto'     # auto | sim | nao
     texto_altura: float = 3.0     # altura das maiúsculas (mm); cai até texto_min se não couber
     texto_min: float = 1.8        # abaixo disto o nome não cabe e o relatório avisa
     texto_camada: float = 0.4     # nome embutido em branco nas primeiras camadas (D027)
@@ -781,12 +785,14 @@ def main():
     ap.add_argument('--corpo', type=float, default=Param.corpo, help='espessura do corpo (mm)')
     ap.add_argument('--relevo-mm', type=float, default=Param.relevo, help='altura do relevo (mm)')
     ap.add_argument('--nome-na-base', action='store_true', help='escreve o nome da unidade na borda da base')
+    ap.add_argument('--bases-junto', choices=['auto', 'sim', 'nao'], default=Param.bases_junto,
+                    help='bases na placa das figuras, o que couber (D033); auto = só na peça única')
     a = ap.parse_args()
     P = Param(margem_mesa=a.margem, espaco=a.espaco, bico=a.bico, traco=a.traco, engorda=a.engorda,
               paredes='' if a.paredes == 'perfil' else a.paredes,
               acabamento=a.acabamento, sulco_engorda=a.sulco_engorda, corpo=a.corpo, relevo=a.relevo_mm,
               encaixe=a.encaixe,
-              nome_na_base=a.nome_na_base)
+              nome_na_base=a.nome_na_base, bases_junto=a.bases_junto)
     duas = a.modo == 'duas-metades'
     acab_de = lambda m: m.get('acabamento', P.acabamento)
     if P.lingueta_prof > P.base_altura:
@@ -949,6 +955,12 @@ def main():
                    empacotar(pecas_fig[ac], P, reservado=P.torre_xyxy)) for ac in usados_ac]
     # com nome, a placa de bases tem duas cores e precisa da área da torre livre
     placas_base = empacotar(pecas_base, P, reservado=P.torre_xyxy_bases if P.nome_na_base else None)
+    junto = P.bases_junto == 'sim' or (P.bases_junto == 'auto' and not duas and len(usados_ac) == 1)
+    if junto:
+        if len(usados_ac) != 1:
+            sys.exit('--bases-junto sim: só com um acabamento de figura')
+        grupos_fig = [('Figuras e bases', empacotar(pecas_fig[usados_ac[0]] + pecas_base, P, reservado=P.torre_xyxy_bases))]
+        placas_base = []
     # gabaritos de colagem: um por arte, numa placa de uma cor
     placas_gab = empacotar([(k, *gabaritos[k.removeprefix('gabarito-')]['dim_mm']) for k in objetos_gab], P) if objetos_gab else []
     # um projeto só (pedido do usuário em 18/11): placas de figuras, de bases e de gabaritos
@@ -957,11 +969,11 @@ def main():
         for i, placa in enumerate(placas, 1):
             rotulo = nome if len(placas) == 1 else f'{nome} {i}'
             placas_proj.append((rotulo, [(k, x, y) for k, x, y, _, _ in placa]))
-            torres.append(P.torre_pos_bases if nome == 'Bases' else None if nome == 'Gabaritos' else P.torre_pos)
+            torres.append(P.torre_pos_bases if nome in ('Bases', 'Figuras e bases') else None if nome == 'Gabaritos' else P.torre_pos)
             arq_png = f'placa-{len(placas_proj)}-' + re.sub(r'[^a-z0-9]+', '-', rotulo.lower()).strip('-') + '.png'
             cv2.imwrite(str(saida / 'previas' / arq_png),
                         previa_placa(placa, mascaras, P, reservado=None if nome == 'Gabaritos' else P.torre_xyxy
-                                     if nome != 'Bases' else (P.torre_xyxy_bases if P.nome_na_base else None)))
+                                     if nome not in ('Bases', 'Figuras e bases') else (P.torre_xyxy_bases if P.nome_na_base or nome != 'Bases' else None)))
             info_placas.append({'placa': len(placas_proj), 'nome': rotulo, 'pecas': len(placa)})
     try:
         perfis, projeto = B.para_bico(P.bico)
