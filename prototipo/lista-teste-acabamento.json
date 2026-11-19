@@ -1,5 +1,5 @@
 {
-  "descricao": "Teste de impressão (pedido do usuário em 18/11/2026): 1 miniatura de cada arte da lista piloto, e a Infantry Rifle também nos acabamentos branco em relevo e pintado (sem relevo), para comparar. Mesmas artes, bases e PDF da lista piloto.",
+  "descricao": "Teste de impressão (pedido do usuário em 18/11/2026): 1 miniatura de cada arte da lista piloto, e a Infantry Rifle também nos acabamentos branco em relevo e pintado (sem relevo), para comparar. Mesmas artes, bases e PDF da lista piloto. \"numero\" segue a lista do Army Forge (D035); das unidades repetidas, vale o número da primeira (Veterans 3, OGRE Robot 5).",
   "pdf": {
     "caminho": "C:/Users/Matheus/Downloads/Human_Defense_Force_-_BW.pdf",
     "sha256": "b17c9ba4f73f8f5c1a2aca045526f3e7009b06e8113b653f6f4cf3a0ddd719fc"
@@ -73,6 +73,7 @@
   "modelos": [
     {
       "unidade": "Infantry Squad",
+      "numero": 1,
       "equipamento": "Battle Rifle, Strike",
       "qtd": 1,
       "arte": "infantry-rifle",
@@ -81,6 +82,7 @@
     },
     {
       "unidade": "Infantry Squad",
+      "numero": 1,
       "equipamento": "Battle Rifle, Strike",
       "qtd": 1,
       "arte": "infantry-rifle",
@@ -89,6 +91,7 @@
     },
     {
       "unidade": "Infantry Squad",
+      "numero": 1,
       "equipamento": "Battle Rifle, Strike",
       "qtd": 1,
       "arte": "infantry-rifle",
@@ -97,6 +100,7 @@
     },
     {
       "unidade": "Combat Bikers",
+      "numero": 2,
       "equipamento": "Pistol, Hunting Lance",
       "qtd": 1,
       "arte": "biker-pistol",
@@ -104,6 +108,7 @@
     },
     {
       "unidade": "Combat Bikers",
+      "numero": 2,
       "equipamento": "Pistol, Hunting Lance",
       "qtd": 1,
       "arte": "biker-lance",
@@ -111,6 +116,7 @@
     },
     {
       "unidade": "Veterans",
+      "numero": 3,
       "equipamento": "Shotgun, Strike",
       "qtd": 1,
       "arte": "veteran-shotgun",
@@ -118,6 +124,7 @@
     },
     {
       "unidade": "OGRE Robot",
+      "numero": 5,
       "equipamento": "Gatling Gun, Strike",
       "qtd": 1,
       "arte": "ogre-minigun",

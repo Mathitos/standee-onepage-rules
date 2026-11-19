@@ -75,6 +75,7 @@ As dimensões externas da base vêm do catálogo; não herdar o retângulo 25 ×
 - Travessa discreta pode unir pés e lingueta, sempre visível na prévia.
 - Base circular/oval de 2 mm com duas fendas vazadas e cônicas (D021/D031); as linguetas não chegam à mesa. Oval 60x35 tratada como elipse até confirmação.
 - Nome da unidade (opcional, D022/D027): só o nome da unidade, na borda da frente, com o topo das letras voltado para o centro, num arco de 140°. A base é preta e impressa de cabeça para baixo; o nome fica embutido em branco nas primeiras camadas, rente à face de cima, para não colidir com o standee e sair com o acabamento da mesa. Se não couber, a letra diminui até 1,8 mm e o relatório avisa; nunca corta o nome. Uma base por unidade quando ligado.
+- Número da unidade (D035): com o nome ligado, o número da unidade na lista vai na borda de trás, do lado oposto, com o mesmo tratamento, lido por trás. Unidades repetidas na lista ("2x Veterans") têm números diferentes.
 - Mostrar dimensões nominais e folgas totais, distinguindo-as de folga por lado.
 - Antes da produção em lote, confirmar numa impressão o assento das linguetas cônicas (barra a ~0,15 mm da base).
 

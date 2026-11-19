@@ -1,5 +1,5 @@
 {
-  "descricao": "Lista piloto resolvida para teste de geração. Fonte: docs/evidencias/2026-11-17-T001-armyforge/share-as-text.txt (Human Defense Force v3.6.0, GFF, 780 pts).",
+  "descricao": "Lista piloto resolvida para teste de geração. Fonte: docs/evidencias/2026-11-17-T001-armyforge/share-as-text.txt (Human Defense Force v3.6.0, GFF, 780 pts). \"numero\" é a posição da unidade na lista do Army Forge (D035); as repetidas (2x Veterans, 2x OGRE Robot) viram uma entrada por unidade.",
   "pdf": {
     "caminho": "C:/Users/Matheus/Downloads/Human_Defense_Force_-_BW.pdf",
     "sha256": "b17c9ba4f73f8f5c1a2aca045526f3e7009b06e8113b653f6f4cf3a0ddd719fc"
@@ -17,14 +17,17 @@
     "redonda-40":  {"forma": "redonda", "mm": [40],     "fonte": "Army Forge v3.6.0, 17/11/2026"}
   },
   "modelos": [
-    {"unidade": "Infantry Squad", "equipamento": "Battle Rifle, Strike", "qtd": 3, "arte": "infantry-rifle", "base": "redonda-25",
+    {"unidade": "Infantry Squad", "numero": 1, "equipamento": "Battle Rifle, Strike", "qtd": 3, "arte": "infantry-rifle", "base": "redonda-25",
      "observacao": "alias Battle Rifle ↔ Rifle ainda não aprovado"},
-    {"unidade": "Combat Bikers", "equipamento": "Pistol, Hunting Lance", "qtd": 2, "arte": "biker-pistol", "base": "oval-60x35",
+    {"unidade": "Combat Bikers", "numero": 2, "equipamento": "Pistol, Hunting Lance", "qtd": 2, "arte": "biker-pistol", "base": "oval-60x35",
      "substituicao": "TESTE: modelo tem Pistol + Hunting Lance; arte escolhida pelo agente só para testar distribuição"},
-    {"unidade": "Combat Bikers", "equipamento": "Pistol, Hunting Lance", "qtd": 1, "arte": "biker-lance", "base": "oval-60x35",
+    {"unidade": "Combat Bikers", "numero": 2, "equipamento": "Pistol, Hunting Lance", "qtd": 1, "arte": "biker-lance", "base": "oval-60x35",
      "substituicao": "TESTE: idem; 2 Pistol + 1 Lance"},
-    {"unidade": "Veterans", "equipamento": "Shotgun, Strike", "qtd": 6, "arte": "veteran-shotgun", "base": "redonda-25"},
-    {"unidade": "OGRE Robot", "equipamento": "Gatling Gun, Strike", "qtd": 2, "arte": "ogre-minigun", "base": "redonda-40",
-     "substituicao": "TESTE: não há arte com Gatling Gun; Minigun escolhida pelo agente só para o teste"}
+    {"unidade": "Veterans", "numero": 3, "equipamento": "Shotgun, Strike", "qtd": 3, "arte": "veteran-shotgun", "base": "redonda-25"},
+    {"unidade": "Veterans", "numero": 4, "equipamento": "Shotgun, Strike", "qtd": 3, "arte": "veteran-shotgun", "base": "redonda-25"},
+    {"unidade": "OGRE Robot", "numero": 5, "equipamento": "Gatling Gun, Strike", "qtd": 1, "arte": "ogre-minigun", "base": "redonda-40",
+     "substituicao": "TESTE: não há arte com Gatling Gun; Minigun escolhida pelo agente só para o teste"},
+    {"unidade": "OGRE Robot", "numero": 6, "equipamento": "Gatling Gun, Strike", "qtd": 1, "arte": "ogre-minigun", "base": "redonda-40",
+     "substituicao": "TESTE: idem"}
   ]
 }

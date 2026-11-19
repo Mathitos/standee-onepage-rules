@@ -59,3 +59,7 @@ O usuário imprimiu o teste anterior. Na Infantry, os detalhes da arma em preto 
 ## 18/11/2026 — lateral preta
 
 O usuário viu na impressão as laterais brancas e pediu o preto. Medido o contorno preto da arte na borda (mediana de 0,30–0,36 mm na Infantry): uma faixa preta de 0,3 mm na borda, em toda a altura, deixa a lateral preta sem mexer no miolo nem nas faces (D034). Na peça única não custou trocas; nas metades, a placa de figuras foi de 1 para 13 trocas, e com isso juntar as bases passou a compensar ali também. A torre das figuras em y = 220 saía da mesa e foi para y = 200. Testes e pilotos regerados; os testes foram fatiados pela CLI.
+
+## 19/11/2026 — número da unidade na base
+
+O usuário aprovou as bases do teste impresso e pediu o número da unidade na lista do lado oposto ao nome (1 Infantry Squad, 2 Combat Bikers, 3 e 4 Veterans, 5 e 6 OGRE Robot). O número foi para a borda de trás, com o mesmo tratamento do nome, lido por trás (D035). As listas ganharam `"numero"`; na piloto, Veterans e OGRE Robot viraram uma entrada por unidade. Peça única de teste regerada e fatiada pela CLI, sem troca a mais; pilotos e teste das metades regerados.

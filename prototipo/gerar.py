@@ -71,6 +71,10 @@ class Param:
     acabamento: str = 'preto-relevo'  # duas metades: preto-relevo | branco-relevo | pintado (D028)
     sulco_engorda: float = 0.0    # branco-relevo: alarga as linhas (sulcos); no G-code (bico 0,2, Arachne) 0 ficou mais limpo que 0,03-0,08
     nome_na_base: bool = False    # escreve o nome da unidade na borda de cima da base
+    # com o nome, o número da unidade na lista vai na borda de trás, do lado oposto (D035, pedido
+    # do usuário em 19/11): unidades iguais (2x Veterans) ficam distinguíveis na mesa
+    numero_na_base: bool = True
+    numero_altura: float = 3.0    # altura dos algarismos (mm), a mesma pedida para o nome
     # bases na placa das figuras (D033). auto: quando as figuras já trocam de cor em quase toda
     # camada: peça única, ou qualquer modo com lateral preta (D034). Metades sem lateral preta têm
     # 1 troca na placa de figuras e juntar dava 13 trocas, +29 min e +3,6 g (CLI, 18/11)
@@ -413,14 +417,15 @@ def _glifo(fonte, ch, k):
     return polys, fonte.getlength(ch) / k
 
 
-def texto_na_borda(nome, a, b, P):
-    """Nome na borda da frente da base (y negativo), letras com o topo para o centro.
+def texto_na_borda(nome, a, b, P, centro=270, altura=None):
+    """Texto na borda da base, letras com o topo para o centro. centro = 270 graus: borda da
+    frente (y negativo), lida pela frente; 90: borda de trás, lida por trás.
 
     Os glifos seguem a elipse interna (a, b) recuada pela margem; o tamanho cai até
     texto_min se o nome não couber no arco. Retorna (CrossSection, medidas).
     """
     k = 40.0                                  # px por mm na rasterização dos glifos
-    altura = P.texto_altura
+    altura = altura or P.texto_altura
     while True:
         fonte = ImageFont.truetype(P.fonte, int(round(altura / 0.72 * k)))
         try:
@@ -434,7 +439,7 @@ def texto_na_borda(nome, a, b, P):
         # curva na meia altura das letras: o espaçamento fica correto no meio do glifo
         meio = P.texto_margem + desc + altura / 2
         ra, rb = a - meio, b - meio
-        t = np.linspace(math.radians(270 - P.texto_arco_graus / 2), math.radians(270 + P.texto_arco_graus / 2), 2000)
+        t = np.linspace(math.radians(centro - P.texto_arco_graus / 2), math.radians(centro + P.texto_arco_graus / 2), 2000)
         pts = np.column_stack([ra * np.cos(t), rb * np.sin(t)])
         s = np.concatenate([[0], np.cumsum(np.hypot(*np.diff(pts, axis=0).T))])
         if total <= s[-1] or altura <= P.texto_min:
@@ -494,13 +499,14 @@ def fendas(P, espessura_lingueta):
     return total, med
 
 
-def base(forma, mm, P, espessura_lingueta, nome=None):
+def base(forma, mm, P, espessura_lingueta, nome=None, numero=None):
     """Base preta com duas fendas cônicas vazadas (D031), impressa de cabeça para baixo (D027).
 
     A face da mesa é a de cima no jogo: sai lisa, com o acabamento da mesa. Com nome, o texto
     fica embutido em branco nas primeiras P.texto_camada mm, rente à superfície (não colide com
-    o standee ao encaixar) e espelhado, porque é lido do outro lado. Retorna ([(malha, cor,
-    rótulo)], medidas); cor 0 = filamento 1 (branco), 1 = filamento 2 (preto).
+    o standee ao encaixar) e espelhado, porque é lido do outro lado. O número da unidade (D035)
+    vai do mesmo jeito na borda de trás, lido por trás. Retorna ([(malha, cor, rótulo)],
+    medidas); cor 0 = filamento 1 (branco), 1 = filamento 2 (preto).
     """
     a, b = (mm[0] / 2, mm[0] / 2) if forma == 'redonda' else (mm[0] / 2, mm[1] / 2)
     t = np.linspace(0, 2 * math.pi, 192, endpoint=False)
@@ -516,11 +522,15 @@ def base(forma, mm, P, espessura_lingueta, nome=None):
     partes = [(solido, 1, 'Preto - base')]
     if nome:
         txt, med_txt = texto_na_borda(nome, a, b, P)
+        if numero is not None:
+            txt_n, med_n = texto_na_borda(str(numero), a, b, P, centro=90, altura=P.numero_altura)
+            txt = txt + txt_n
+            med['numero'] = {**med_n, 'embutido_mm': P.texto_camada}
         livre = mf.CrossSection.square((2 * xf + 1.6, 2 * yf + 1.6)).translate((-xf - 0.8, -yf - 0.8))
         txt = txt.offset(P.texto_engorda, mf.JoinType.Round)
         txt = ((txt ^ contorno.offset(-0.3, mf.JoinType.Round)) - livre).mirror((1, 0))
         branco = mf.Manifold.extrude(txt, P.texto_camada)
-        partes = [(solido - branco, 1, 'Preto - base'), (branco, 0, 'Branco - nome')]
+        partes = [(solido - branco, 1, 'Preto - base'), (branco, 0, 'Branco - nome' + (' e número' if numero is not None else ''))]
         med['nome'] = {**med_txt, 'embutido_mm': P.texto_camada}
     return [(m.translate((a, b, 0)), cor, rot) for m, cor, rot in partes], med
 
@@ -530,8 +540,21 @@ def chave_base(m, P, duas=True):
     if not duas and m.get('acabamento', P.acabamento) == 'pintado':
         k += '-plana'   # fenda para a peça única pintada, mais grossa
     if P.nome_na_base:
-        k += '-' + re.sub(r'[^a-z0-9]+', '-', m['unidade'].lower()).strip('-')
+        k += ('-' + str(m['numero']) if P.numero_na_base else '') + '-' + re.sub(r'[^a-z0-9]+', '-', m['unidade'].lower()).strip('-')
     return k
+
+
+def numerar(modelos):
+    """Número de cada modelo na lista (D035). Com "numero" em todos, vale o da lista, que separa
+    unidades repetidas (2x Veterans = 3 e 4). Sem nenhum, numera os nomes de unidade na ordem em
+    que aparecem; aí unidades repetidas com o mesmo nome ganhariam o mesmo número."""
+    com = [m for m in modelos if 'numero' in m]
+    if com and len(com) != len(modelos):
+        sys.exit('"numero" precisa estar em todos os modelos da lista, ou em nenhum')
+    if not com:
+        ordem = list(dict.fromkeys(m['unidade'] for m in modelos))
+        for m in modelos:
+            m['numero'] = ordem.index(m['unidade']) + 1
 
 
 def para_trimesh(m):
@@ -815,6 +838,8 @@ def main():
     ap.add_argument('--corpo', type=float, default=Param.corpo, help='espessura do corpo (mm)')
     ap.add_argument('--relevo-mm', type=float, default=Param.relevo, help='altura do relevo (mm)')
     ap.add_argument('--nome-na-base', action='store_true', help='escreve o nome da unidade na borda da base')
+    ap.add_argument('--sem-numero', action='store_true',
+                    help='com --nome-na-base, não escreve o número da unidade na borda de trás (D035)')
     ap.add_argument('--lateral-preta', type=float, default=Param.lateral_preta,
                     help='mm de faixa preta na lateral das figuras, em toda a altura (D034); 0 desliga')
     ap.add_argument('--bases-junto', choices=['auto', 'sim', 'nao'], default=Param.bases_junto,
@@ -824,7 +849,7 @@ def main():
               paredes='' if a.paredes == 'perfil' else a.paredes,
               acabamento=a.acabamento, sulco_engorda=a.sulco_engorda, corpo=a.corpo, relevo=a.relevo_mm,
               encaixe=a.encaixe,
-              nome_na_base=a.nome_na_base, bases_junto=a.bases_junto, lateral_preta=a.lateral_preta)
+              nome_na_base=a.nome_na_base, numero_na_base=not a.sem_numero, bases_junto=a.bases_junto, lateral_preta=a.lateral_preta)
     duas = a.modo == 'duas-metades'
     acab_de = lambda m: m.get('acabamento', P.acabamento)
     if P.lingueta_prof > P.base_altura:
@@ -842,6 +867,7 @@ def main():
 
     if a.so:
         lista['modelos'] = [m for m in lista['modelos'] if m['arte'] in a.so]
+    numerar(lista['modelos'])
     for m in lista['modelos']:
         if acab_de(m) not in ACABAMENTOS or (not duas and acab_de(m) not in ('preto-relevo', 'pintado')):
             sys.exit(f'acabamento {acab_de(m)!r} não existe neste modo ({m["unidade"]})')
@@ -948,11 +974,12 @@ def main():
     for m in lista['modelos']:
         chave_b, bdef = m['base'], lista['bases'][m['base']]
         nome_u = m['unidade'] if P.nome_na_base else None
+        num_u = m['numero'] if P.nome_na_base and P.numero_na_base else None
         kb = chave_base(m, P, duas)
         if kb in bases_def:
             continue
-        partes_b, med_b = base(bdef['forma'], bdef['mm'], P, espessura_peca(duas, acab_de(m), P), nome=nome_u)
-        rotulo = f'Base {chave_b}' + (f' - {nome_u}' if nome_u else '')
+        partes_b, med_b = base(bdef['forma'], bdef['mm'], P, espessura_peca(duas, acab_de(m), P), nome=nome_u, numero=num_u)
+        rotulo = f'Base {chave_b}' + (f' - {num_u} {nome_u}' if num_u is not None else f' - {nome_u}' if nome_u else '')
         objetos_base[kb] = (rotulo, partes_b)
         checks += [checar(f'{kb} {rot}', m) for m, _, rot in partes_b]
         solido = partes_b[0][0]
