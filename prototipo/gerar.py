@@ -837,6 +837,8 @@ def main():
                     help='branco-relevo: alarga as linhas pretas (sulcos), mm de cada lado')
     ap.add_argument('--corpo', type=float, default=Param.corpo, help='espessura do corpo (mm)')
     ap.add_argument('--relevo-mm', type=float, default=Param.relevo, help='altura do relevo (mm)')
+    ap.add_argument('--face-mm', type=float, default=Param.camada_mesa,
+                    help='espessura do desenho rente em cada face (peça única e pintado), mm')
     ap.add_argument('--nome-na-base', action='store_true', help='escreve o nome da unidade na borda da base')
     ap.add_argument('--sem-numero', action='store_true',
                     help='com --nome-na-base, não escreve o número da unidade na borda de trás (D035)')
@@ -847,7 +849,7 @@ def main():
     a = ap.parse_args()
     P = Param(margem_mesa=a.margem, espaco=a.espaco, bico=a.bico, traco=a.traco, engorda=a.engorda,
               paredes='' if a.paredes == 'perfil' else a.paredes,
-              acabamento=a.acabamento, sulco_engorda=a.sulco_engorda, corpo=a.corpo, relevo=a.relevo_mm,
+              acabamento=a.acabamento, sulco_engorda=a.sulco_engorda, corpo=a.corpo, relevo=a.relevo_mm, camada_mesa=a.face_mm,
               encaixe=a.encaixe,
               nome_na_base=a.nome_na_base, numero_na_base=not a.sem_numero, bases_junto=a.bases_junto, lateral_preta=a.lateral_preta)
     duas = a.modo == 'duas-metades'
