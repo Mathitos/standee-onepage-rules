@@ -51,3 +51,7 @@ Usuário: cortar filamento para pinos de 1,5 mm é inviável; pediu grampo ou pe
 ## 18/11/2026 — a base como guia, com 2 encaixes
 
 Pesquisa de união e boas práticas feita por subagentes (`evidencias/2026-11-18-pesquisa-uniao-e-boas-praticas.md`). Proposto o pintado com pino e rasgo, depois a base como guia com uma fenda justa. O usuário decidiu por 2 encaixes: depender de ajuste justo é ruim porque varia com a impressora de quem imprime, e 2 encaixes evitam desvio de inclinação. Implementado com linguetas e fendas cônicas (D031): a centragem não depende da folga, e as duas linguetas seguram a inclinação. O gabarito saiu do padrão. Conferido nas malhas com `prototipo/verificar_encaixe.py`; projeto de teste regerado e fatiado pela CLI.
+
+## 18/11/2026 — peça única sem relevo
+
+O usuário imprimiu o teste anterior. Na Infantry, os detalhes da arma em preto em relevo saíram misturados, embora no fatiador parecessem melhores. Medido: vãos brancos de 0,1–0,25 mm entre as linhas, e no G-code o preto já cobre 14,7% do branco dessa região. Propostos relevo mais baixo, um vão mínimo no desenho e uma placa de comparação. O usuário pediu uma versão sem relevo em peça única: desenho rente nas duas faces, 1,6 mm, bases com fenda própria (D032). No G-code o preto cobre 5,8% do branco da arma; fatiado pela CLI, com 9 trocas na placa de figuras.

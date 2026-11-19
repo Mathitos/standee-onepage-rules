@@ -5,7 +5,7 @@ Uso (na raiz do projeto):
       [--bico 0.2] [--traco original|engrossado] [--paredes arachne] [--nome-na-base]
 
 Saídas: 3MF Bambu de figuras (branco/preto) e de bases, STL por peça, prévias PNG,
-relatorio.json e LEIA-ME.md. Modo implementado: duas-metades (peca-unica ainda não).
+relatorio.json e LEIA-ME.md. Modos: duas-metades e peca-unica (preto-relevo ou pintado).
 Protótipo de referência para o gerador do site; não é o site.
 """
 import argparse
@@ -36,10 +36,10 @@ S = 25.4 / DPI
 TINTA_LIMIAR = 200         # traços de ~0,1 mm ficam cinza na borda; limiar alto não os quebra
 TINTA_SUAVE_MM = 0.035     # desfoque leve antes do limiar: tira o serrilhado do JPEG
 VERSAO = 'prototipo-0.2'
-ACABAMENTOS = {                 # duas metades (D028); a lista pode pedir um por modelo
+ACABAMENTOS = {                 # D028; a lista pode pedir um por modelo. Peça única: preto-relevo ou pintado (D032)
     'preto-relevo': 'preto em relevo',      # corpo branco, desenho preto em relevo (padrão)
     'branco-relevo': 'branco em relevo',    # corpo preto, branco em relevo, linhas como sulcos
-    'pintado': 'pintado, sem relevo',       # desenho rente na face da mesa
+    'pintado': 'pintado, sem relevo',       # desenho rente na face da mesa (peça única: nas duas faces)
 }
 
 
@@ -337,6 +337,31 @@ def peca_unica(corpo_mask, preto_mesa_mask, relevo_mask, P):
     return branco, preto_mesa, relevo
 
 
+def espessura_peca(duas, acabamento, P):
+    """Espessura da parte que entra na fenda: as duas metades unidas, o corpo da peça única com
+    relevo (o relevo não chega à lingueta) ou a peça única pintada inteira."""
+    if duas:
+        return 2 * P.corpo
+    return P.corpo + P.relevo if acabamento == 'pintado' else P.corpo
+
+
+def peca_unica_pintada(corpo_mask, preto_mesa_mask, preto_cima_mask, P):
+    """Peça única sem relevo (D032): desenho rente nas duas faces, preto e branco coplanares nas
+    primeiras e nas últimas P.camada_mesa mm, núcleo branco. Espessura total P.corpo + P.relevo,
+    a mesma da peça única com relevo: o preto de uma face fica atrás de 1,2 mm de branco na outra
+    (branco fino deixa o preto aparecer, pesquisa de 18/11). preto_mesa_mask vem espelhado
+    (a face da mesa é vista por baixo); preto_cima_mask é o verso como impresso.
+    """
+    contorno = secao(corpo_mask)
+    esp, cam = P.corpo + P.relevo, P.camada_mesa
+    baixo = secao(preto_mesa_mask, P.engorda_malha) ^ contorno
+    cima = secao(preto_cima_mask, P.engorda_malha) ^ contorno
+    branco = (mf.Manifold.extrude(contorno - baixo, cam)
+              + mf.Manifold.extrude(contorno, esp - 2 * cam).translate((0, 0, cam))
+              + mf.Manifold.extrude(contorno - cima, cam).translate((0, 0, esp - cam)))
+    return branco, mf.Manifold.extrude(baixo, cam), mf.Manifold.extrude(cima, cam).translate((0, 0, esp - cam))
+
+
 def _glifo(fonte, ch, k):
     """Polígonos de um caractere em mm, origem na linha de base à esquerda, y para cima."""
     l, t, r, b = fonte.getbbox(ch, anchor='ls')
@@ -466,8 +491,10 @@ def base(forma, mm, P, espessura_lingueta, nome=None):
     return [(m.translate((a, b, 0)), cor, rot) for m, cor, rot in partes], med
 
 
-def chave_base(m, P):
+def chave_base(m, P, duas=True):
     k = f'base-{m["base"]}'
+    if not duas and m.get('acabamento', P.acabamento) == 'pintado':
+        k += '-plana'   # fenda para a peça única pintada, mais grossa
     if P.nome_na_base:
         k += '-' + re.sub(r'[^a-z0-9]+', '-', m['unidade'].lower()).strip('-')
     return k
@@ -746,7 +773,8 @@ def main():
                     help='gerador de paredes gravado nos objetos do 3MF; perfil = não grava (usa o do perfil)')
     ap.add_argument('--so', action='append', help='gera só estas artes (diagnóstico)')
     ap.add_argument('--acabamento', choices=list(ACABAMENTOS), default=Param.acabamento,
-                    help='duas metades: preto-relevo (padrão), branco-relevo ou pintado; a lista pode '
+                    help='duas metades: preto-relevo (padrão), branco-relevo ou pintado; peça única: preto-relevo ou '
+                         'pintado (desenho rente nas duas faces, D032); a lista pode '
                          'pedir um por modelo ("acabamento")')
     ap.add_argument('--sulco-engorda', type=float, default=Param.sulco_engorda,
                     help='branco-relevo: alarga as linhas pretas (sulcos), mm de cada lado')
@@ -777,7 +805,7 @@ def main():
     if a.so:
         lista['modelos'] = [m for m in lista['modelos'] if m['arte'] in a.so]
     for m in lista['modelos']:
-        if acab_de(m) not in ACABAMENTOS or (not duas and acab_de(m) != 'preto-relevo'):
+        if acab_de(m) not in ACABAMENTOS or (not duas and acab_de(m) not in ('preto-relevo', 'pintado')):
             sys.exit(f'acabamento {acab_de(m)!r} não existe neste modo ({m["unidade"]})')
     usadas = sorted({m['arte'] for m in lista['modelos']})
     artes, objetos_fig, mascaras, checks, stl = {}, {}, {}, [], []
@@ -835,11 +863,18 @@ def main():
         else:
             # vista de cima: contorno = frente espelhada; face da mesa mostra a frente (espelhada
             # no modelo, lida certa por baixo); relevo em cima = verso como impresso
-            furos_f = []
-            branco3, preto3, relevo3 = peca_unica(corpo_v, rel_f[:, ::-1], rel_v, P)
-            pecas = [('preto-relevo', 'peca', corpo_v, vis_v, [(branco3, 0, 'Branco - corpo'),
-                                                (preto3, 1, 'Preto - desenho na mesa'),
-                                                (relevo3, 1, 'Preto - relevo')])]
+            furos_f, pecas = [], []
+            for ac in sorted({acab_de(m) for m in lista['modelos'] if m['arte'] == chave}, key=list(ACABAMENTOS).index):
+                if ac == 'pintado':
+                    branco3, preto3, cima3 = peca_unica_pintada(corpo_v, rel_f[:, ::-1], rel_v, P)
+                    pecas.append((ac, 'peca', corpo_v, vis_v, [(branco3, 0, 'Branco - corpo'),
+                                                               (preto3, 1, 'Preto - desenho na mesa'),
+                                                               (cima3, 1, 'Preto - desenho em cima')]))
+                else:
+                    branco3, preto3, relevo3 = peca_unica(corpo_v, rel_f[:, ::-1], rel_v, P)
+                    pecas.append((ac, 'peca', corpo_v, vis_v, [(branco3, 0, 'Branco - corpo'),
+                                                               (preto3, 1, 'Preto - desenho na mesa'),
+                                                               (relevo3, 1, 'Preto - relevo')]))
         dims = None
         for ac, lado, corpo_m, rel_m, partes3 in pecas:
             bmin = partes3[0][0].bounding_box()
@@ -874,10 +909,10 @@ def main():
     for m in lista['modelos']:
         chave_b, bdef = m['base'], lista['bases'][m['base']]
         nome_u = m['unidade'] if P.nome_na_base else None
-        kb = chave_base(m, P)
+        kb = chave_base(m, P, duas)
         if kb in bases_def:
             continue
-        partes_b, med_b = base(bdef['forma'], bdef['mm'], P, (2 if duas else 1) * P.corpo, nome=nome_u)
+        partes_b, med_b = base(bdef['forma'], bdef['mm'], P, espessura_peca(duas, acab_de(m), P), nome=nome_u)
         rotulo = f'Base {chave_b}' + (f' - {nome_u}' if nome_u else '')
         objetos_base[kb] = (rotulo, partes_b)
         checks += [checar(f'{kb} {rot}', m) for m, _, rot in partes_b]
@@ -906,7 +941,7 @@ def main():
         for i in range(m['qtd']):
             for lado in (('frente', 'verso') if duas else ('peca',)):
                 pecas_fig[acab_de(m)].append((f'{m["arte"]}-{acab_de(m)}-{lado}', *artes[m['arte']]['peca_mm']))
-            kb = chave_base(m, P)
+            kb = chave_base(m, P, duas)
             pecas_base.append((kb, *bases_def[kb]['dim_mm']))
     # cada acabamento numa placa própria: misturados, cada camada teria as duas cores
     usados_ac = [ac for ac in ACABAMENTOS if pecas_fig[ac]]
@@ -952,7 +987,7 @@ def main():
         'encaixe': P.encaixe if duas else None, 'gabaritos': gabaritos,
         'furo_prof_mm': P.furo_prof if duas and P.encaixe == 'pinos' else None,
         'pino_sugerido_mm': [1.75, round(2 * P.furo_prof - 0.1, 2)] if duas and P.encaixe == 'pinos' else None,
-        'espessura_lingueta_mm': round((2 if duas else 1) * P.corpo, 2), 'pdf_sha256': sha,
+        'espessura_lingueta_mm': sorted({round(espessura_peca(duas, acab_de(m), P), 2) for m in lista['modelos']}), 'pdf_sha256': sha,
         'modelos': lista['modelos'], 'total_modelos': sum(m['qtd'] for m in lista['modelos']),
         'total_pecas_figura': sum(map(len, pecas_fig.values())), 'total_bases': len(pecas_base),
         'artes': artes, 'bases': bases_def, 'arquivos_3mf': arquivos, 'stl': stl,
