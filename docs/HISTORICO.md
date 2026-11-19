@@ -55,3 +55,7 @@ Pesquisa de união e boas práticas feita por subagentes (`evidencias/2026-11-18
 ## 18/11/2026 — peça única sem relevo
 
 O usuário imprimiu o teste anterior. Na Infantry, os detalhes da arma em preto em relevo saíram misturados, embora no fatiador parecessem melhores. Medido: vãos brancos de 0,1–0,25 mm entre as linhas, e no G-code o preto já cobre 14,7% do branco dessa região. Propostos relevo mais baixo, um vão mínimo no desenho e uma placa de comparação. O usuário pediu uma versão sem relevo em peça única: desenho rente nas duas faces, 1,6 mm, bases com fenda própria (D032). No G-code o preto cobre 5,8% do branco da arma; fatiado pela CLI, com 9 trocas na placa de figuras. O usuário sugeriu pôr as bases na mesma placa, já que há troca de cor em várias camadas. Fatiado pela CLI nos três casos: na peça única, com ou sem relevo, juntar dá o mesmo tempo e filamento, e vira uma impressão só; nas metades, juntar dobra as trocas. Ficou automático só na peça única (D033).
+
+## 18/11/2026 — lateral preta
+
+O usuário viu na impressão as laterais brancas e pediu o preto. Medido o contorno preto da arte na borda (mediana de 0,30–0,36 mm na Infantry): uma faixa preta de 0,3 mm na borda, em toda a altura, deixa a lateral preta sem mexer no miolo nem nas faces (D034). Na peça única não custou trocas; nas metades, a placa de figuras foi de 1 para 13 trocas, e com isso juntar as bases passou a compensar ali também. A torre das figuras em y = 220 saía da mesa e foi para y = 200. Testes e pilotos regerados; os testes foram fatiados pela CLI.

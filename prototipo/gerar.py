@@ -59,6 +59,9 @@ class Param:
     boca_chanfro: float = 0.3     # chanfro na boca das fendas (face da mesa da base): pé de elefante
     travessa: float = 0.5         # meia altura da travessa sob os pés
     contato_mm: float = 1.0       # faixa considerada apoio dos pés
+    # faixa preta na lateral das figuras (D034, pedido do usuário: laterais brancas apareciam).
+    # 0,3 mm: o contorno preto da arte tem mediana de 0,30-0,36 mm na borda (Infantry); 0 desliga
+    lateral_preta: float = 0.3
     folga_esp: float = 0.25       # folga total da fenda na espessura
     base_altura: float = 2.0      # pedido do usuário (17/11): base de 2 mm com fenda vazada
     bico: float = 0.2             # diâmetro do bico (mm) para o qual o desenho é preparado
@@ -68,9 +71,9 @@ class Param:
     acabamento: str = 'preto-relevo'  # duas metades: preto-relevo | branco-relevo | pintado (D028)
     sulco_engorda: float = 0.0    # branco-relevo: alarga as linhas (sulcos); no G-code (bico 0,2, Arachne) 0 ficou mais limpo que 0,03-0,08
     nome_na_base: bool = False    # escreve o nome da unidade na borda de cima da base
-    # bases na placa das figuras (D033). auto: só na peça única, que já troca de cor nas primeiras
-    # camadas (na CLI: tempo e filamento iguais); nas metades a placa de figuras tem 1 troca e
-    # juntar passou para 13 trocas, +29 min e +3,6 g
+    # bases na placa das figuras (D033). auto: quando as figuras já trocam de cor em quase toda
+    # camada: peça única, ou qualquer modo com lateral preta (D034). Metades sem lateral preta têm
+    # 1 troca na placa de figuras e juntar dava 13 trocas, +29 min e +3,6 g (CLI, 18/11)
     bases_junto: str = 'auto'     # auto | sim | nao
     texto_altura: float = 3.0     # altura das maiúsculas (mm); cai até texto_min se não couber
     texto_min: float = 1.8        # abaixo disto o nome não cabe e o relatório avisa
@@ -339,6 +342,33 @@ def peca_unica(corpo_mask, preto_mesa_mask, relevo_mask, P):
     preto_mesa = mf.Manifold.extrude(preto_cs, cam)
     relevo = mf.Manifold.extrude(secao(relevo_mask, P.engorda_malha) ^ contorno, P.relevo).translate((0, 0, P.corpo))
     return branco, preto_mesa, relevo
+
+
+def lateral_preta(partes, corpo_mask, P):
+    """Troca por preto o branco que fica a menos de P.lateral_preta mm da borda, em toda a altura
+    (D034): a lateral da figura sai preta, inclusive no miolo. Na face, o contorno da arte fica com
+    pelo menos essa largura. Retorna as partes com o branco recortado e uma parte "Preto - lateral"."""
+    if P.lateral_preta <= 0:
+        return partes
+    contorno = secao(corpo_mask)
+    prisma = mf.Manifold.extrude(contorno - contorno.offset(-P.lateral_preta, mf.JoinType.Round), 100).translate((0, 0, -50))
+    saida, faixa = [], None
+    for m, cor, rot in partes:
+        if cor == 0:
+            parte = m ^ prisma
+            faixa = parte if faixa is None else faixa + parte
+            m = m - prisma
+        saida.append((m, cor, rot))
+    if faixa is not None and not faixa.is_empty():
+        saida.append((faixa, 1, 'Preto - lateral'))
+    return saida
+
+
+def anel_px(corpo_mask, P):
+    """A faixa da lateral preta em pixels (prévias)."""
+    if P.lateral_preta <= 0:
+        return np.zeros_like(corpo_mask)
+    return corpo_mask & (ndi.distance_transform_edt(corpo_mask) * S <= P.lateral_preta)
 
 
 def espessura_peca(duas, acabamento, P):
@@ -785,14 +815,16 @@ def main():
     ap.add_argument('--corpo', type=float, default=Param.corpo, help='espessura do corpo (mm)')
     ap.add_argument('--relevo-mm', type=float, default=Param.relevo, help='altura do relevo (mm)')
     ap.add_argument('--nome-na-base', action='store_true', help='escreve o nome da unidade na borda da base')
+    ap.add_argument('--lateral-preta', type=float, default=Param.lateral_preta,
+                    help='mm de faixa preta na lateral das figuras, em toda a altura (D034); 0 desliga')
     ap.add_argument('--bases-junto', choices=['auto', 'sim', 'nao'], default=Param.bases_junto,
-                    help='bases na placa das figuras, o que couber (D033); auto = só na peça única')
+                    help='bases na placa das figuras, o que couber (D033); auto = na peça única ou com lateral preta')
     a = ap.parse_args()
     P = Param(margem_mesa=a.margem, espaco=a.espaco, bico=a.bico, traco=a.traco, engorda=a.engorda,
               paredes='' if a.paredes == 'perfil' else a.paredes,
               acabamento=a.acabamento, sulco_engorda=a.sulco_engorda, corpo=a.corpo, relevo=a.relevo_mm,
               encaixe=a.encaixe,
-              nome_na_base=a.nome_na_base, bases_junto=a.bases_junto)
+              nome_na_base=a.nome_na_base, bases_junto=a.bases_junto, lateral_preta=a.lateral_preta)
     duas = a.modo == 'duas-metades'
     acab_de = lambda m: m.get('acabamento', P.acabamento)
     if P.lingueta_prof > P.base_altura:
@@ -883,26 +915,27 @@ def main():
                                                                (relevo3, 1, 'Preto - relevo')]))
         dims = None
         for ac, lado, corpo_m, rel_m, partes3 in pecas:
-            bmin = partes3[0][0].bounding_box()
+            bmin = partes3[0][0].bounding_box()      # o corpo inteiro, antes de recortar a lateral
             desl = (-bmin[0], -bmin[1], 0)
-            partes3 = [(m.translate(desl), cor, rot) for m, cor, rot in partes3]
+            partes3 = [(m.translate(desl), cor, rot) for m, cor, rot in lateral_preta(partes3, corpo_m, P)]
             k = f'{chave}-{ac}-{lado}'
             nome = info['rotulo'] + ('' if ac == P.acabamento else f' ({ACABAMENTOS[ac]})') + (f' - {lado}' if duas else '')
             objetos_fig[k] = (nome, partes3)
-            mascaras[k] = (corpo_m, rel_m)
+            mascaras[k] = (corpo_m, rel_m | anel_px(corpo_m, P))
             checks += [checar(f'{k} {rot}', m) for m, _, rot in partes3]
             uniao = partes3[0][0]
             for m, _, _ in partes3[1:]:
                 uniao = uniao + m
             para_trimesh(uniao).export(saida / 'stl' / f'{k}.stl')
             stl.append(f'stl/{k}.stl')
-            bb = partes3[0][0].bounding_box()
+            bb = uniao.bounding_box()
             dims = [round(bb[3] - bb[0], 2), round(bb[4] - bb[1], 2)]
         # prévia: frente como vista pela frente e verso como visto por trás, nos dois modos
         sep = np.full((previa_metade(corpo_f, vis_f, []).shape[0], 12, 3), 200, np.uint8)
         furos_v = [(r, corpo_f.shape[1] - 1 - c) for r, c in furos_f]
         cv2.imwrite(str(saida / 'previas' / f'{chave}.png'),
-                    np.hstack([previa_metade(corpo_f, vis_f, furos_f), sep, previa_metade(corpo_v, vis_v, furos_v)]))
+                    np.hstack([previa_metade(corpo_f, vis_f | anel_px(corpo_f, P), furos_f), sep,
+                               previa_metade(corpo_v, vis_v | anel_px(corpo_v, P), furos_v)]))
         artes[chave] = {
             'rotulo': info['rotulo'], 'pagina_pdf': pagina, 'linha': info['linha'], 'estilo': a.estilo,
             'iou_frente_verso': round(iou_fv, 3), 'furos_por_metade': len(furos_f),
@@ -951,11 +984,15 @@ def main():
             pecas_base.append((kb, *bases_def[kb]['dim_mm']))
     # cada acabamento numa placa própria: misturados, cada camada teria as duas cores
     usados_ac = [ac for ac in ACABAMENTOS if pecas_fig[ac]]
+    # com lateral preta (D034) toda camada das figuras tem as duas cores: a torre cresce como a das
+    # bases e, em y = 220, saía da mesa (CLI, 18/11)
+    area_fig, torre_fig = (P.torre_xyxy_bases, P.torre_pos_bases) if P.lateral_preta > 0 else (P.torre_xyxy, P.torre_pos)
     grupos_fig = [('Figuras' if len(usados_ac) == 1 else f'Figuras - {ACABAMENTOS[ac]}',
-                   empacotar(pecas_fig[ac], P, reservado=P.torre_xyxy)) for ac in usados_ac]
+                   empacotar(pecas_fig[ac], P, reservado=area_fig)) for ac in usados_ac]
     # com nome, a placa de bases tem duas cores e precisa da área da torre livre
     placas_base = empacotar(pecas_base, P, reservado=P.torre_xyxy_bases if P.nome_na_base else None)
-    junto = P.bases_junto == 'sim' or (P.bases_junto == 'auto' and not duas and len(usados_ac) == 1)
+    junto = P.bases_junto == 'sim' or (P.bases_junto == 'auto' and len(usados_ac) == 1
+                                       and (not duas or P.lateral_preta > 0))
     if junto:
         if len(usados_ac) != 1:
             sys.exit('--bases-junto sim: só com um acabamento de figura')
@@ -969,10 +1006,10 @@ def main():
         for i, placa in enumerate(placas, 1):
             rotulo = nome if len(placas) == 1 else f'{nome} {i}'
             placas_proj.append((rotulo, [(k, x, y) for k, x, y, _, _ in placa]))
-            torres.append(P.torre_pos_bases if nome in ('Bases', 'Figuras e bases') else None if nome == 'Gabaritos' else P.torre_pos)
+            torres.append(P.torre_pos_bases if nome in ('Bases', 'Figuras e bases') else None if nome == 'Gabaritos' else torre_fig)
             arq_png = f'placa-{len(placas_proj)}-' + re.sub(r'[^a-z0-9]+', '-', rotulo.lower()).strip('-') + '.png'
             cv2.imwrite(str(saida / 'previas' / arq_png),
-                        previa_placa(placa, mascaras, P, reservado=None if nome == 'Gabaritos' else P.torre_xyxy
+                        previa_placa(placa, mascaras, P, reservado=None if nome == 'Gabaritos' else area_fig
                                      if nome not in ('Bases', 'Figuras e bases') else (P.torre_xyxy_bases if P.nome_na_base or nome != 'Bases' else None)))
             info_placas.append({'placa': len(placas_proj), 'nome': rotulo, 'pecas': len(placa)})
     try:
