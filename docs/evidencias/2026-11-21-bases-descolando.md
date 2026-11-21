@@ -24,8 +24,11 @@
   - Isso é uma precaução: não há medição de temperatura nas bordas da mesa da A1.
 - **Tempo:** sem mudança relevante (lista completa: 1044,7 min, 48 trocas).
 
+## Placa do usuário
+
+- Em 21/11, o usuário disse que usa a Textured PEI na A1. Ela bate com o tipo de placa que o gerador grava agora, então não há o que trocar no Bambu Studio.
+
 ## Não verificado
 
 - Impressão com a mesa a 65 °C.
-- Qual placa o usuário usa. Se não for PEI, é preciso trocar o tipo de placa no Bambu Studio antes de imprimir.
 - Brim: o perfil usa `auto_brim`, e não foi alterado. Um brim seguraria mais, mas deixaria rebarba na borda da face de cima da base, que é a face da mesa na impressão.
