@@ -79,3 +79,9 @@ O usuário perdeu 4 bases e 1 Biker, descolados no meio da impressão da lista c
 ## 21/11/2026 — artes P&B de todas as facções
 
 O usuário baixou os PDFs de todas as facções que achou e pediu as artes P&B de todas, de GF e de AoF. Nos sets, as P&B ficam entre as coloridas; foram juntadas num PDF por facção. O detector de grade, calibrado no HDF, perdia figuras de página inteira (faixa vertical), abas de outras larguras, tabelas estreitas e faixas com uma linha a mais ou a menos; a detecção foi ampliada, com uma trava contra as capas, e o HDF continuou idêntico. 22 facções extraídas: 1152 candidatos, 954 pares (D038).
+
+Um agente revisor independente, pedido pelo usuário, achou 23 artes perdidas: tabelas estreitas ao lado de largas no Ratmen, e poses diferentes agrupadas como cópia, com rótulos diferentes ou cabeças trocadas. Também achou silhuetas quebradas no contorno fino do Eternal Dynasty. A grade passou a juntar as tabelas estreitas. A silhueta passou ao limiar 200. Uma cópia agora exige o mesmo rótulo impresso e o mesmo desenho, medido em cinza com desfoque, dentro da silhueta e sem o preto sólido. A calibração descartou duas versões da medida que separavam cópias idênticas. As 42 faixas apontadas voltaram, e o HDF ficou idêntico.
+
+## 21/11/2026 — gerador de 3MF no site
+
+O usuário pediu para começar a página que gera o 3MF, para publicar no GitHub Pages. O caminho padrão do protótipo foi portado para TypeScript e roda no navegador com manifold-3d em WebAssembly (D039). O site lê a arte de SVG a 600 dpi exportados para todas as artes das 22 facções, não do PDF. Na lista piloto, o 3MF do site tem as mesmas medidas do protótipo e fatiou na CLI do Bambu. No navegador, 14 modelos levaram 6,7 s.

@@ -2,11 +2,11 @@
 
 Uso: python -I montar.py --saida catalog/<sistema>/<faccao>
 
-Lê <saida>/work/candidatos.json (passo 1) e <saida>/revisao.json (escrito pelo agente,
-formato no SKILL.md; versionado). Gera:
-  manifest.json                         (versionado)
-  arts/<artId>/<estilo>/frente.svg, verso.svg   (vetores em mm, versionados; contrato em vetor.py)
-  review/relatorio.md, review/contato-NN.png    (prévias renderizadas dos vetores)
+Lê <saida>/work/candidatos.json (passo 1), <saida>/revisao.json (escrito pelo agente,
+formato no SKILL.md; versionado) e <saida>/artes.json, que exportar_web.py grava junto com os
+SVG (contrato v2, 600 dpi; rode-o antes, depois de mudar a revisão). Gera:
+  manifest.json                         (versionado; aponta para arts/<artId>/<estilo>/*.svg)
+  review/relatorio.md, review/contato-NN.png    (prévias dos recortes)
   build/<packId>-<versao>.zip            (manifest + arts, para levar o pacote sem o repositório)
 Candidatos sem revisão ficam fora do manifesto e listados como pendência. Nada é inventado:
 base sem dado vira "unknown"; rótulo vazio é erro.
@@ -14,7 +14,6 @@ base sem dado vira "unknown"; rótulo vazio é erro.
 import argparse
 import json
 import re
-import shutil
 import sys
 import zipfile
 from pathlib import Path
@@ -24,7 +23,6 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).parent))
 import extrair as E  # noqa: E402
-import vetor as V  # noqa: E402
 
 
 def ler_cinza(caminho):
@@ -81,7 +79,10 @@ def main():
 
     candidatos = {c['id']: c for c in cand['candidatos']}
     revisadas = rev.get('artes', {})
-    artes, art_ids, vetores = [], set(), {}
+    exportadas = {}
+    if (raiz / 'artes.json').exists():
+        exportadas = {a['id']: a for a in json.loads((raiz / 'artes.json').read_text(encoding='utf-8'))['artes']}
+    artes, art_ids = [], set()
     for cid, r in revisadas.items():
         if cid not in candidatos:
             erros.append(f'{cid}: não existe em candidatos.json')
@@ -101,26 +102,21 @@ def main():
         if status != 'unmapped' and r.get('unitKey') not in chaves_unidade:
             erros.append(f'{cid}: unitKey {r.get("unitKey")!r} não declarada em "unidades"')
         estilos = {}
+        exp = exportadas.get(art_id)
+        if exp is None:
+            erros.append(f'{cid}: {art_id} não está em artes.json; rode exportar_web.py depois da revisão')
+            continue
         for estilo, gid in c['grupos'].items():
             g = next(x for x in cand['grupos'] if x['id'] == gid)
-            pasta = work / 'grupos' / gid
-            try:
-                vet = V.vetorizar(ler_cinza(pasta / 'frente.png'), ler_cinza(pasta / 'verso.png'),
-                                  f'{art_id} {estilo}')
-            except ValueError as e:
-                erros.append(f'{cid}: {e}')
+            e = exp['estilos'].get(estilo)
+            if e is None:
+                erros.append(f'{cid}: estilo {estilo} sem SVG exportado')
                 continue
-            vetores[(art_id, estilo)] = vet
-            med = vet['medidas'].values()
             estilos[estilo] = {'page': g['pagina'], 'rows': g['linhas'],
                                'front': f'arts/{art_id}/{estilo}/frente.svg',
                                'back': f'arts/{art_id}/{estilo}/verso.svg',
-                               'canvasMm': vet['telaMm'],
-                               'frontBackIoU': vet['iouFrenteVerso'], 'sizeMm': g['tamanho_mm'],
-                               'vector': {'epsPx': V.EPS_PX,
-                                          'silhouetteIoU': min(m['iouSilhueta'] for m in med),
-                                          'inkIoU': min(m['iouTinta'] for m in med),
-                                          'pxOutsideEdge': sum(m['pxForaDaBorda'] for m in med)}}
+                               'canvasMm': e['telaMm'], 'frontBackIoU': e['iouFrenteVerso'],
+                               'sizeMm': g['tamanho_mm'], 'vector': {'contract': 2, 'dpi': 600}}
         artes.append({
             'artId': art_id, 'candidateId': cid, 'pdfLabel': r.get('rotulo'),
             'labelSource': 'agent-vision', 'labelConfidence': r.get('confiancaRotulo', 'alta'),
@@ -145,16 +141,7 @@ def main():
         'units': unidades, 'arts': artes,
     }
 
-    # vetores
-    if (raiz / 'arts').exists():
-        shutil.rmtree(raiz / 'arts')
-    for (art_id, estilo), vet in vetores.items():
-        destino = raiz / 'arts' / art_id / estilo
-        destino.mkdir(parents=True, exist_ok=True)
-        for lado, texto in vet['svg'].items():
-            (destino / f'{lado}.svg').write_text(texto, encoding='utf-8', newline='\n')
-
-    (raiz / 'manifest.json').write_text(json.dumps(manifesto, indent=2, ensure_ascii=False), encoding='utf-8')
+    (raiz / 'manifest.json').write_text(json.dumps(manifesto, indent=2, ensure_ascii=False), encoding='utf-8', newline='\n')
 
     # relatório e folhas de contato
     review = raiz / 'review'
@@ -168,11 +155,7 @@ def main():
               f'- Rótulo com baixa confiança: {", ".join(x["artId"] for x in artes if x["labelConfidence"] != "alta") or "nenhum"}.',
               f'- Alias proposto (precisa aprovação): {", ".join(x["artId"] for x in artes if x["mappingStatus"] == "alias-proposed") or "nenhum"}.',
               f'- Sem correspondência no army book: {", ".join(x["artId"] for x in artes if x["mappingStatus"] == "unmapped") or "nenhum"}.',
-              f'- Vetores (SVG, eps {V.EPS_PX} px): IoU mínimo silhueta '
-              f'{min((s["vector"]["silhouetteIoU"] for x in artes for s in x["styles"].values()), default="—")}, '
-              f'tinta {min((s["vector"]["inkIoU"] for x in artes for s in x["styles"].values()), default="—")}; '
-              f'pixels diferentes fora da faixa de 1 px da borda: '
-              f'{sum(s["vector"]["pxOutsideEdge"] for x in artes for s in x["styles"].values())} (esperado 0).',
+              '- Vetores: SVG contrato v2 a 600 dpi, gravados por exportar_web.py (todas as artes da facção).',
               '', '| Candidato | artId | Rótulo | Unidade | Equipamento | Status | Pendências |', '|---|---|---|---|---|---|---|']
     for x in artes:
         linhas.append(f'| {x["candidateId"]} | {x["artId"]} | {x["pdfLabel"]} | {x["unitKey"] or "—"} | '
@@ -189,8 +172,8 @@ def main():
         imgs = []
         for estilo in ('borda', 'fino'):
             if estilo in x['styles']:
-                prev = vetores[(x['artId'], estilo)]['previas']
-                imgs += [prev['frente'], prev['verso']]
+                pasta = work / 'grupos' / candidatos[x['candidateId']]['grupos'][estilo]
+                imgs += [ler_cinza(pasta / 'frente.png'), ler_cinza(pasta / 'verso.png')]
                 break
         tiles.append(E.tile(f'{x["artId"]} ({x["unitKey"] or "?"})', None, imgs))
     folhas = []

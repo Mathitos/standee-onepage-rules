@@ -29,6 +29,8 @@ LABEL_MM = 25       # área à esquerda da tabela onde fica o rótulo
 INSET_PX = 3        # descarta a borda antialiased das linhas da grade
 ABA_MIN_MM, ABA_MAX_MM = 12, 30   # abas observadas: 14,8 (Wood Elves) a 24,8 mm (Daemons of Lust)
 LINHA_CURTA_MM = 50               # 2ª tentativa, para tabelas estreitas
+SIL_LIMIAR = 200                  # traço que fecha a silhueta (ver silhueta)
+LIMIAR_DIF_LOCAL = 0.05           # cópias: diferença local de cinza (ver diferenca_local)
 CELULA_MIN_MM = 10                # frente e verso; as capas davam "faixas" de 0,2 a 3,7 mm
 ABA_TINTA_MAX = 0.2               # aba é papel em branco: até 0,07 nas faixas reais, 0,63+ nas capas
 
@@ -140,21 +142,41 @@ def localizar_faixas(cinza):
             c = cv2.rotate(cinza, cv2.ROTATE_90_CLOCKWISE) if girada else cinza
             faixas, descartadas = detectar_linhas(c, linha_min)
             if faixas:
+                if linha_min == LINE_MIN_MM:
+                    # tabelas estreitas na mesma página de tabelas largas (Ratmen p24: 3 "Giant Rat
+                    # V1" de 70 mm sobre 2 "V2" de 85 mm): entram as faixas de 50 mm que não cruzam
+                    # nenhuma das de 80 mm
+                    curtas, _ = detectar_linhas(c, LINHA_CURTA_MM)
+                    novas = [f for f in curtas if all(f[1] < y0 or f[0] > y1 for y0, y1, _ in faixas)]
+                    faixas = sorted(faixas + novas, key=lambda f: f[0])
                 return c, faixas, descartadas, girada
             primeira = primeira or (cinza, [], descartadas, False)
     return primeira
 
 
 def recortar_rotulo(cinza, y0, y1, v, girada, inset=INSET_PX, rotulo_px=int(LABEL_MM / MM_PER_PX)):
-    """Rótulo na horizontal. Fica à esquerda da faixa; na figura grande (página girada),
-    pode estar embaixo da faixa (aqui, à esquerda) ou à esquerda dela (aqui, em cima)."""
+    """Rótulo na horizontal. Fica à esquerda da faixa. Na figura grande (página girada), pode
+    estar embaixo da faixa (aqui, à esquerda) ou à esquerda dela (aqui, em cima). Na faixa larga
+    encostada na margem, fica embaixo do canto esquerdo da faixa (Mummified Undead p3, Eternal
+    Dynasty p3, Wood Elves p20) ou em cima dele (Human Empire p4): 26 artes sem rótulo até 21/11."""
+    tem_tinta = lambda m: m.size > 0 and int((m < DARK).sum()) > 30
     x_rot = max(0, v[0][0] - rotulo_px)
     esquerda = cv2.rotate(cinza[y0 + inset:y1 - inset, x_rot:max(x_rot, v[0][0] - inset)],
                           cv2.ROTATE_90_COUNTERCLOCKWISE)
-    if not girada or int((esquerda < DARK).sum()) > 30:
+    if tem_tinta(esquerda):
         return esquerda
-    y_rot = max(0, y0 - rotulo_px)
-    return cv2.rotate(cinza[y_rot:max(y_rot, y0 - inset), max(0, v[0][0]):v[4][1] + 1], cv2.ROTATE_180)
+    if girada:
+        y_rot = max(0, y0 - rotulo_px)
+        return cv2.rotate(cinza[y_rot:max(y_rot, y0 - inset), max(0, v[0][0]):v[4][1] + 1], cv2.ROTATE_180)
+    alt = int(rotulo_px * 1.8)              # o texto girado desce até ~45 mm
+    lado = int(rotulo_px / 3)               # ~8 mm para cada lado da borda esquerda
+    escala = rotulo_px / int(LABEL_MM / MM_PER_PX)
+    vao = int(round(1.5 / MM_PER_PX * escala))   # pula a linha de baixo da faixa
+    for y_a, y_b in ((y1 + vao, y1 + alt), (max(0, y0 - alt), max(0, y0 - vao))):   # embaixo; em cima (Human Empire p4)
+        canto = cinza[y_a:y_b, max(0, v[0][0] - lado):max(0, v[0][0] + lado)]
+        if tem_tinta(canto):
+            return cv2.rotate(canto, cv2.ROTATE_90_COUNTERCLOCKWISE)
+    return esquerda
 
 
 def extrair_pagina(doc, pagina):
@@ -176,8 +198,13 @@ def extrair_pagina(doc, pagina):
 
 
 def silhueta(cinza):
-    """Silhueta preenchida: traço escuro fechado, buracos preenchidos, ilhas mínimas removidas."""
-    escuro = cinza < DARK
+    """Silhueta preenchida: traço escuro fechado, buracos preenchidos, ilhas mínimas removidas.
+
+    Limiar SIL_LIMIAR (200), como a tinta do gerador (D024): no contorno fino do Eternal Dynasty
+    (p5-8) e do Daemons of Lust o traço de fora é cinza claro e, com 128, abria e a silhueta
+    vazava (frente x verso de 0,05-0,17; com 200, 0,97).
+    """
+    escuro = cinza < SIL_LIMIAR
     k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
     fechado = cv2.morphologyEx(escuro.astype(np.uint8), cv2.MORPH_CLOSE, k) > 0
     cheio = ndi.binary_fill_holes(fechado)
@@ -187,6 +214,88 @@ def silhueta(cinza):
     areas = ndi.sum(cheio, rot, range(1, n + 1))
     manter = [i + 1 for i, a in enumerate(areas) if a >= 0.02 * areas.max()]
     return np.isin(rot, manter)
+
+
+def _alinhar_tinta(A, B, raio=2):
+    """Menor diferença entre duas máscaras de tinta, com tolerância de 1 px e busca de ±raio px."""
+    H, W = max(A.shape[0], B.shape[0]) + 2 * raio, max(A.shape[1], B.shape[1]) + 2 * raio
+
+    def pad(m, dy, dx):
+        o = np.zeros((H, W), bool)
+        o[raio + dy:raio + dy + m.shape[0], raio + dx:raio + dx + m.shape[1]] = m
+        return o
+    k = np.ones((3, 3), np.uint8)
+    PA = pad(A, 0, 0)
+    DA = cv2.dilate(PA.astype(np.uint8), k) > 0
+    melhor = None
+    for dy in range(-raio, raio + 1):
+        for dx in range(-raio, raio + 1):
+            PB = pad(B, dy, dx)
+            dif = (PA & ~(cv2.dilate(PB.astype(np.uint8), k) > 0)) | (PB & ~DA)
+            n = int(dif.sum())
+            if melhor is None or n < melhor[0]:
+                melhor = (n, dif, PA.sum() + PB.sum())
+    return melhor
+
+
+def _diferenca_local(a, ma, b, mb, sigma_px=1.0, limiar=60):
+    """Maior fração de diferença forte de cinza numa janela de 2 mm, num sentido (b alinhado a a).
+
+    Recortes na caixa da silhueta, alinhados em ±2 px, desfocados (sigma 1 px) e comparados em
+    cinza; conta o que difere mais que `limiar`, só dentro da silhueta de a e fora do preto
+    sólido (com 3 px de folga), depois de abrir a máscara com 2x2. Cada etapa tira um ruído que
+    separava cópias idênticas: hachuras de 1 px (HDF p10), furos no preenchimento da borda grossa
+    (High Elf Fleets p58-70), linhas finas antisserrilhadas (HEF p4, p40). As variantes do mesmo
+    tamanho e rótulo (cabeças do Eternal Dynasty) ficam em 0,104-0,58. Calibração de 21/11.
+    """
+    A = recorte_bbox(a, ma).astype(np.float32)
+    B = recorte_bbox(b, mb).astype(np.float32)
+    SA = recorte_bbox(ma, ma).astype(np.uint8)
+    r = 2
+    H, W = max(A.shape[0], B.shape[0]) + 2 * r, max(A.shape[1], B.shape[1]) + 2 * r
+
+    def pad(m, dy, dx, fundo=255):
+        o = np.full((H, W), fundo, np.float32)
+        o[r + dy:r + dy + m.shape[0], r + dx:r + dx + m.shape[1]] = m
+        return o
+    PA0 = pad(A, 0, 0)
+    PA = cv2.GaussianBlur(PA0, (0, 0), sigma_px)
+    dentro = pad(SA, 0, 0, 0) > 0
+    melhor = None
+    for dy in range(-r, r + 1):
+        for dx in range(-r, r + 1):
+            PB0 = pad(B, dy, dx)
+            d = np.abs(PA - cv2.GaussianBlur(PB0, (0, 0), sigma_px))
+            soma = float(d.sum())
+            if melhor is None or soma < melhor[0]:
+                melhor = (soma, d, PB0)
+    m = (melhor[1] > limiar) & dentro
+    preto = cv2.morphologyEx(((PA0 < DARK) | (melhor[2] < DARK)).astype(np.uint8), cv2.MORPH_OPEN, np.ones((5, 5), np.uint8))
+    m &= ~(cv2.dilate(preto, np.ones((7, 7), np.uint8)) > 0)
+    m = cv2.morphologyEx(m.astype(np.uint8), cv2.MORPH_OPEN, np.ones((2, 2), np.uint8))
+    w = int(round(2 / MM_PER_PX))
+    return float(cv2.blur(m.astype(np.float32), (w, w)).max())
+
+
+def diferenca_local(a, ma, b, mb):
+    """Diferença local nos dois sentidos, a menor. Uma caixa de silhueta 1 px maior numa das
+    cópias deixava uma faixa sem par na borda só num sentido (HDF p15); as variantes dão o mesmo
+    valor nos dois (Eternal Dynasty)."""
+    return min(_diferenca_local(a, ma, b, mb), _diferenca_local(b, mb, a, ma))
+
+
+def rotulos_iguais(ra, rb, limite=0.01):
+    """Rótulos impressos iguais? Idênticos dão 0; um caractere diferente ("Raider V1" x "V2"), 0,04+."""
+    def tinta(r):
+        ys, xs = np.where(r < 160)
+        return (r[ys.min():ys.max() + 1, xs.min():xs.max() + 1] < 160) if len(ys) > 30 else None
+    A, B = tinta(ra), tinta(rb)
+    if A is None or B is None:
+        return A is None and B is None
+    if abs(A.shape[0] - B.shape[0]) > 4 or abs(A.shape[1] - B.shape[1]) > 4:
+        return False
+    n, _, _ = _alinhar_tinta(A, B)
+    return n / max(1, int(max(A.sum(), B.sum()))) < limite
 
 
 def tem_texto(rotulo):

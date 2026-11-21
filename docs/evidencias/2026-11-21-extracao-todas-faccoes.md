@@ -43,7 +43,7 @@ O detector de grade foi calibrado no HDF. Nos outros PDFs apareceram:
 - **Mesma regra no gerador:** `prototipo/pdf_grade.py` usa o mesmo código de detecção (conferido: funções iguais), para os índices de linha da lista baterem. A 600 dpi os recortes saem com o dobro do tamanho.
 - **HDF inalterado:** o `candidatos.json` do HDF, regerado com o código novo, é idêntico ao anterior (páginas, grupos e candidatos), e o gerador continua achando 218 linhas.
 
-## Resultado (passo 1 da skill; 21 facções extraídas agora, mais o HDF)
+## Primeira extração (antes da revisão independente)
 
 | Facção | Páginas | Arte | Ignoradas | Giradas | Candidatos | Pares | Sem par | Rótulo vazio |
 |---|---:|---:|---|---:|---:|---:|---:|---:|
@@ -75,11 +75,72 @@ O detector de grade foi calibrado no HDF. Nos outros PDFs apareceram:
 - **Tempo:** ~2,5 min para todas as facções, 4 de cada vez.
 - **Daemons of Lust p8 (Harbinger):** recorte em pé e rótulo legível na folha de rótulos.
 
+## Revisão independente e correções
+
+O usuário pediu um agente para conferir se faltava alguma arte. O agente revisor trabalhou sem as conclusões desta sessão, comparando contagens próprias de faixas, cores das páginas, rótulos por XOR e tokens de VTT de cada set. Ele achou artes perdidas:
+
+- **Ratmen p24 e p57:** 3 tabelas "Giant Rat V1" de 70 mm, numa página que também tinha tabelas de 85 mm. A tentativa com linhas de 50 mm só rodava em páginas sem nenhuma faixa de 80 mm.
+- **Cópias agrupadas por engano:** o agrupamento olhava só tamanho e miniatura.
+  - **Rótulos diferentes:** "Raider V1" × "V2", "Vulture Zapper" × "Shotgun" × "Blaster" e outros 11 casos.
+  - **Mesmo rótulo, cabeça diferente:** 6 variantes do Eternal Dynasty.
+  - **Total perdido:** 16 artes nos dois estilos e 7 num estilo só.
+- **Silhuetas quebradas:** no contorno fino do Eternal Dynasty (p5–8), frente × verso ficava entre 0,04 e 0,17.
+
+Correções (`grade.py`, com o mesmo código em `prototipo/pdf_grade.py`):
+
+- **Tabelas estreitas:** as faixas de 50 mm entram também em páginas com faixas de 80 mm, quando não cruzam nenhuma delas.
+- **Silhueta com limiar 200, não 128:** o traço de fora do contorno fino é cinza claro.
+  - Eternal Dynasty p5: 0,165 → 0,973; Daemons of Lust p3: 0,64 → 0,96.
+  - Grupos com frente × verso < 0,9: de 222 para 59, somando as 22 facções.
+- **Cópia exige o mesmo rótulo impresso** (`rotulos_iguais`): idênticos dão 0; um caractere diferente, 0,04 ou mais.
+- **Cópia exige o mesmo desenho** (`diferenca_local`): diferença forte de cinza numa janela de 2 mm, com o recorte desfocado.
+  - A medida fica dentro da silhueta, fora do preto sólido, com abertura 2×2, e vale o menor dos dois sentidos.
+  - **Calibração:** cópias e ruído dão 0,0. Os testes foram nas hachuras de 1 px do HDF, nos furos da borda grossa do High Elf Fleets e nas linhas finas. As cabeças trocadas do Eternal Dynasty dão de 0,104 a 0,58. O limite ficou em 0,05.
+  - As primeiras versões da medida (binária, só em cinza, sem tirar o preto sólido) separavam cópias idênticas. Chegaram a 124 artes a mais, e foram descartadas.
+
+Resultado:
+
+- **Faixas perdidas:** as 42 apontadas pelo revisor agora são grupos próprios.
+- **Ratmen p24/p57:** 5 faixas em 2 grupos.
+- **Totais:** 4434 → 4440 faixas, 1152 → 1149 candidatos, 954 → 993 pares. Com os rótulos de canto (abaixo), 1137 candidatos e 1005 pares.
+  - O total de candidatos quase não muda porque a silhueta nova também junta cópias que antes ficavam separadas por máscara quebrada. Por exemplo, o Eternal Dynasty foi de 67 para 61 candidatos e de 27 para 46 pares.
+- **HDF:** candidatos idênticos aos de antes, na mesma ordem. O `revisao.json` continua valendo.
+
+- **Rótulos vazios (26):** em faixas largas encostadas na margem, o rótulo fica embaixo do canto esquerdo da faixa (Mummified Undead p3, Eternal Dynasty p3, Wood Elves p20) ou em cima dele (Human Empire p4). A grade passou a procurar nessas duas posições quando não acha nada à esquerda. Os 26 apareceram, todos legíveis ("Snake King", "Army Standard", "Drone Sage"…).
+
+Não verificado: variantes do mesmo rótulo com diferença menor que a das cabeças do Eternal Dynasty. O revisor não inspecionou um a um os ~640 grupos com pontuação baixa.
+
+## Resultado final (depois das correções)
+
+| Facção | Faixas | Candidatos | Pares | Sem par |
+|---|---:|---:|---:|---:|
+| aof/beastmen | 176 | 52 | 41 | 11 |
+| aof/daemons-of-change | 122 | 28 | 18 | 10 |
+| aof/daemons-of-lust | 90 | 22 | 21 | 1 |
+| aof/daemons-of-plague | 100 | 26 | 19 | 7 |
+| aof/daemons-of-war | 104 | 25 | 21 | 4 |
+| aof/duchies-of-vinci | 206 | 51 | 41 | 10 |
+| aof/human-empire | 240 | 79 | 71 | 8 |
+| aof/mummified-undead | 212 | 56 | 48 | 8 |
+| aof/ratmen | 250 | 50 | 50 | 0 |
+| aof/saurians | 178 | 51 | 40 | 11 |
+| aof/shadow-stalkers | 188 | 39 | 39 | 0 |
+| aof/vampiric-undead | 246 | 56 | 55 | 1 |
+| aof/wood-elves | 328 | 79 | 70 | 9 |
+| gff/alien-hives | 166 | 41 | 41 | 0 |
+| gff/blessed-sisters | 328 | 85 | 83 | 2 |
+| gff/dwarf-guilds | 306 | 71 | 67 | 4 |
+| gff/eternal-dynasty | 184 | 61 | 46 | 15 |
+| gff/high-elf-fleets | 286 | 70 | 53 | 17 |
+| gff/human-defense-force | 218 | 69 | 69 | 0 |
+| gff/jackals | 182 | 44 | 38 | 6 |
+| gff/robot-legions | 148 | 36 | 36 | 0 |
+| gff/saurian-starhost | 182 | 46 | 38 | 8 |
+| **Total** | **4440** | **1137** | **1005** | **132** |
+
+Nenhum rótulo vazio; páginas ignoradas só capa e instruções.
+
 ## Pendências
 
-- **"Sem par" (198):** arte que só aparece num estilo. Causas vistas até aqui:
-  - cópias agrupadas por engano numa página (Daemons of Lust: "Warrior Dual Sword" fino caiu no grupo de outra pose);
-  - o Eternal Dynasty, com 40, ainda não investigado.
-- **Rótulo vazio (26):** rótulo fora da área esperada; ainda não investigado.
-- **Revisão por um agente independente:** pedida pelo usuário, em andamento.
+- **"Sem par" (132, depois das correções):** arte que só aparece num estilo, ou cujo par não foi achado pelo rótulo e pela silhueta.
 - **Passos 2 a 5 da skill:** army book, leitura dos rótulos, mapeamento e montagem do pacote, para cada facção.

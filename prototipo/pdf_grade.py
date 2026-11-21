@@ -28,6 +28,7 @@ LABEL_MM = 25       # área à esquerda da tabela onde fica o rótulo
 INSET_PX = 3        # descarta a borda antialiased das linhas da grade
 ABA_MIN_MM, ABA_MAX_MM = 12, 30   # abas observadas: 14,8 (Wood Elves) a 24,8 mm (Daemons of Lust)
 LINHA_CURTA_MM = 50               # 2ª tentativa, para tabelas estreitas
+SIL_LIMIAR = 200                  # traço que fecha a silhueta (ver silhueta)
 CELULA_MIN_MM = 10                # frente e verso; as capas davam "faixas" de 0,2 a 3,7 mm
 ABA_TINTA_MAX = 0.2               # aba é papel em branco: até 0,07 nas faixas reais, 0,63+ nas capas
 
@@ -139,21 +140,41 @@ def localizar_faixas(cinza):
             c = cv2.rotate(cinza, cv2.ROTATE_90_CLOCKWISE) if girada else cinza
             faixas, descartadas = detectar_linhas(c, linha_min)
             if faixas:
+                if linha_min == LINE_MIN_MM:
+                    # tabelas estreitas na mesma página de tabelas largas (Ratmen p24: 3 "Giant Rat
+                    # V1" de 70 mm sobre 2 "V2" de 85 mm): entram as faixas de 50 mm que não cruzam
+                    # nenhuma das de 80 mm
+                    curtas, _ = detectar_linhas(c, LINHA_CURTA_MM)
+                    novas = [f for f in curtas if all(f[1] < y0 or f[0] > y1 for y0, y1, _ in faixas)]
+                    faixas = sorted(faixas + novas, key=lambda f: f[0])
                 return c, faixas, descartadas, girada
             primeira = primeira or (cinza, [], descartadas, False)
     return primeira
 
 
 def recortar_rotulo(cinza, y0, y1, v, girada, inset=INSET_PX, rotulo_px=int(LABEL_MM / MM_PER_PX)):
-    """Rótulo na horizontal. Fica à esquerda da faixa; na figura grande (página girada),
-    pode estar embaixo da faixa (aqui, à esquerda) ou à esquerda dela (aqui, em cima)."""
+    """Rótulo na horizontal. Fica à esquerda da faixa. Na figura grande (página girada), pode
+    estar embaixo da faixa (aqui, à esquerda) ou à esquerda dela (aqui, em cima). Na faixa larga
+    encostada na margem, fica embaixo do canto esquerdo da faixa (Mummified Undead p3, Eternal
+    Dynasty p3, Wood Elves p20) ou em cima dele (Human Empire p4): 26 artes sem rótulo até 21/11."""
+    tem_tinta = lambda m: m.size > 0 and int((m < DARK).sum()) > 30
     x_rot = max(0, v[0][0] - rotulo_px)
     esquerda = cv2.rotate(cinza[y0 + inset:y1 - inset, x_rot:max(x_rot, v[0][0] - inset)],
                           cv2.ROTATE_90_COUNTERCLOCKWISE)
-    if not girada or int((esquerda < DARK).sum()) > 30:
+    if tem_tinta(esquerda):
         return esquerda
-    y_rot = max(0, y0 - rotulo_px)
-    return cv2.rotate(cinza[y_rot:max(y_rot, y0 - inset), max(0, v[0][0]):v[4][1] + 1], cv2.ROTATE_180)
+    if girada:
+        y_rot = max(0, y0 - rotulo_px)
+        return cv2.rotate(cinza[y_rot:max(y_rot, y0 - inset), max(0, v[0][0]):v[4][1] + 1], cv2.ROTATE_180)
+    alt = int(rotulo_px * 1.8)              # o texto girado desce até ~45 mm
+    lado = int(rotulo_px / 3)               # ~8 mm para cada lado da borda esquerda
+    escala = rotulo_px / int(LABEL_MM / MM_PER_PX)
+    vao = int(round(1.5 / MM_PER_PX * escala))   # pula a linha de baixo da faixa
+    for y_a, y_b in ((y1 + vao, y1 + alt), (max(0, y0 - alt), max(0, y0 - vao))):   # embaixo; em cima (Human Empire p4)
+        canto = cinza[y_a:y_b, max(0, v[0][0] - lado):max(0, v[0][0] + lado)]
+        if tem_tinta(canto):
+            return cv2.rotate(canto, cv2.ROTATE_90_COUNTERCLOCKWISE)
+    return esquerda
 
 
 def extrair_pagina(doc, pagina, dpi=DPI):
@@ -185,8 +206,9 @@ def extrair_pagina(doc, pagina, dpi=DPI):
 
 
 def silhueta(cinza, dpi=DPI):
-    """Silhueta preenchida: traço escuro fechado, buracos preenchidos, ilhas mínimas removidas."""
-    escuro = cinza < DARK
+    """Silhueta preenchida: traço escuro fechado, buracos preenchidos, ilhas mínimas removidas.
+    Limiar SIL_LIMIAR (200), o mesmo da skill (grade.silhueta): traço de fora cinza claro."""
+    escuro = cinza < SIL_LIMIAR
     n = int(round(5 * dpi / DPI))     # fechamento de ~0,42 mm em qualquer resolução
     k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (n, n))
     fechado = cv2.morphologyEx(escuro.astype(np.uint8), cv2.MORPH_CLOSE, k) > 0

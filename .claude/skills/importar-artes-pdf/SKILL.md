@@ -28,11 +28,27 @@ Os scripts ficam em `.claude/skills/importar-artes-pdf/scripts/`; rode da raiz d
 
 ### 1. Extrair
 
+PDF em "Sets" (P&B no meio das coloridas): junte antes as páginas P&B de todos os sets da facção num PDF só, no padrão dos avulsos (`juntar_sets.py`, D038). Terreno não entra no catálogo.
+
+```bash
+PY -I .claude/skills/importar-artes-pdf/scripts/juntar_sets.py --saida "<Facção>_-_BW.pdf" "<Set 1>.pdf" "<Set 2>.pdf" ...
+```
+
 ```bash
 PY -I .claude/skills/importar-artes-pdf/scripts/extrair.py --pdf "<pdf>" --saida catalog/<sistema>/<faccao>
 ```
 
 Confira o resumo: páginas de arte, páginas ignoradas (capa, instruções), estilos por página, número de candidatos e pares. Se não houver páginas de arte ou a grade não bater, **pare e relate**: o layout é diferente do esperado (PRD-04, "Regras de layout"). Saída `ja-extraido` significa mesmo PDF já processado; só use `--refazer` se o usuário pedir.
+
+A grade aceita as variações vistas nos 22 PDFs (abas de 12 a 30 mm, figura de página inteira com a faixa na vertical, linha a mais ou a menos, tabelas estreitas) e agrupa como cópia só faixas com o mesmo rótulo impresso e o mesmo desenho (`grade.rotulos_iguais`, `grade.diferenca_local`). Revisão independente de 21/11: nenhuma faixa ou arte perdida depois dessas regras.
+
+### 1b. Exportar para o site
+
+```bash
+PY -I .claude/skills/importar-artes-pdf/scripts/exportar_web.py --pdf "<pdf>" --saida catalog/<sistema>/<faccao>
+```
+
+Grava os SVG de todas as artes (contrato v2 em `scripts/vetor.py`: 600 dpi, mesmo tratamento do gerador), a imagem do rótulo impresso e `artes.json`, que o site lê (D039). Sem revisão, cada arte tem o id do candidato e o usuário escolhe pela figura; rode de novo depois de mudar o `revisao.json`, para usar os `artId`.
 
 ### 2. Army book
 
@@ -85,21 +101,23 @@ Leia cada `work/rotulos-NN.png` (Read). Cada quadro traz o id do candidato (`a00
 PY -I .claude/skills/importar-artes-pdf/scripts/montar.py --saida catalog/<sistema>/<faccao>
 ```
 
-Corrija os erros que ele listar até sair `"situacao": "ok"`.
+Corrija os erros que ele listar até sair `"situacao": "ok"`. O `montar.py` não grava SVG: usa os do passo 1b (rode `exportar_web.py` antes, depois da revisão).
 
 ### 5. Relatar e pedir aprovação
 
 Mostre ao usuário: resumo, `review/relatorio.md`, as folhas `review/contato-NN.png` (Read) e as pendências (rótulos de baixa confiança, aliases propostos, `unmapped`, frente × verso < 0,95, sem par). Peça aprovação explícita.
 
 - Aprovado: rode `montar.py --saida … --aprovado`. Correções do usuário viram alterações no `revisao.json` (aliases aprovados passam a `mapped`).
-- Commit (se houver repositório): `manifest.json`, `revisao.json`, `arts/` e `armybook/`. Confira com `git status` que nenhum PDF ou PNG entrou.
+- Commit (se houver repositório): `manifest.json`, `revisao.json`, `artes.json`, `arts/` e `armybook/`. Confira com `git status` que nenhum PDF entrou e que os únicos PNG são `arts/*/rotulo.png`.
 
 ## Saídas
 
 ```text
 catalog/<sistema>/<faccao>/
   revisao.json, manifest.json        versionados
-  arts/<artId>/<estilo>/frente.svg, verso.svg   vetores em mm, versionados (contrato em scripts/vetor.py)
+  artes.json                         versionado: índice de todas as artes, lido pelo site
+  arts/<id>/<estilo>/frente.svg, verso.svg   vetores v2 (600 dpi), versionados (contrato em scripts/vetor.py)
+  arts/<id>/rotulo.png               rótulo impresso em 1 bit, versionado
   armybook/                          snapshot + resumo, versionados
   review/relatorio.md, contato-*.png fora do git (prévias renderizadas dos vetores)
   build/<packId>-<versao>.zip        fora do git (pacote avulso, opcional)

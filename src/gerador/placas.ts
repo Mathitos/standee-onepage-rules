@@ -1,0 +1,68 @@
+/** Disposição das peças na mesa, port de prototipo/gerar.py empacotar() e centralizar(). */
+import type { Parametros } from './parametros'
+
+/** [chave, x, y, largura, altura] em mm da mesa */
+export type Colocada = [string, number, number, number, number]
+type Retangulo = [number, number, number, number]
+
+/**
+ * Prateleiras simples, da peça mais alta para a mais baixa; o que não couber vai para outra
+ * placa. `reservado` (x0, y0, x1, y1) fica livre (torre de purga). Cada placa vai para o centro.
+ */
+export function empacotar(pecas: [string, number, number][], P: Parametros, reservado?: Retangulo): Colocada[][] {
+  const util = P.mesa - 2 * P.margemMesa
+  const m = P.margemMesa
+  const bate = (x: number, y: number, w: number, h: number) =>
+    !!reservado && !(x + m + w <= reservado[0] || x + m >= reservado[2] || y + m + h <= reservado[1] || y + m >= reservado[3])
+  const placas: Colocada[][] = []
+  let atual: Colocada[] = []
+  let x = 0
+  let y = 0
+  let altLinha = 0
+  const ordem = pecas.map((p, i) => [p, i] as const).sort((A, B) => B[0][2] - A[0][2] || A[1] - B[1])
+  for (const [[chave, w, h]] of ordem) {
+    if (w > util || h > util) throw new Error(`${chave} não cabe na mesa`)
+    for (;;) {
+      if (x + w > util) {
+        x = 0
+        y = y + altLinha + P.espaco
+        altLinha = 0
+      }
+      if (y + h > util) {
+        placas.push(atual)
+        atual = []
+        x = y = altLinha = 0
+        continue
+      }
+      if (bate(x, y, w, h)) {
+        x = reservado![2] - m + P.espaco
+        continue
+      }
+      break
+    }
+    atual.push([chave, x + m, y + m, w, h])
+    x += w + P.espaco
+    altLinha = Math.max(altLinha, h)
+  }
+  placas.push(atual)
+  return placas.map((pl) => centralizar(pl, P, reservado))
+}
+
+/** Leva o conjunto para o centro da mesa; se bater na torre, aproxima da frente até não bater. */
+export function centralizar(placa: Colocada[], P: Parametros, reservado?: Retangulo): Colocada[] {
+  if (!placa.length) return placa
+  const x0 = Math.min(...placa.map((p) => p[1]))
+  const y0 = Math.min(...placa.map((p) => p[2]))
+  const x1 = Math.max(...placa.map((p) => p[1] + p[3]))
+  const y1 = Math.max(...placa.map((p) => p[2] + p[4]))
+  const dx = Math.max(0, P.mesa / 2 - (x0 + x1) / 2)
+  const dy0 = Math.max(0, P.mesa / 2 - (y0 + y1) / 2)
+  const bate = (dy: number) =>
+    !!reservado && placa.some(([, x, y, w, h]) =>
+      !(x + dx + w <= reservado[0] || x + dx >= reservado[2] || y + dy + h <= reservado[1] || y + dy >= reservado[3]))
+  for (let passo = 0; passo <= 20; passo++) {
+    const dy = dy0 * (1 - passo / 20)
+    if (!bate(dy)) return placa.map(([k, x, y, w, h]) => [k, x + dx, y + dy, w, h] as Colocada)
+  }
+  return placa
+}

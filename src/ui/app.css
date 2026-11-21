@@ -374,3 +374,286 @@ code {
   margin-top: 20px;
   font-size: 0.85rem;
 }
+
+/* etapas 2 e 3: artes, bases e geração */
+.etapa-artes {
+  margin-top: 16px;
+}
+
+.linha-controles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  margin: 8px 0 12px;
+}
+
+.linha-controles select,
+.linha-controles input[type='search'] {
+  font: inherit;
+  padding: 6px 8px;
+  border: 1px solid var(--linha);
+  border-radius: 6px;
+  background: var(--painel);
+  color: var(--texto);
+  max-width: 100%;
+}
+
+.linha-controles input[type='search'] {
+  flex: 1 1 220px;
+}
+
+.contagem {
+  color: var(--suave);
+  font-size: 0.9em;
+}
+
+.erro-carga {
+  color: var(--erro);
+  background: var(--erro-fundo);
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.tabela-artes td {
+  vertical-align: top;
+}
+
+.tabela-artes tr.pendente td:first-child {
+  box-shadow: inset 3px 0 0 var(--atencao);
+}
+
+.variantes-arte {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.variantes-arte li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+}
+
+.variantes-arte .equip {
+  color: var(--suave);
+  min-width: 120px;
+}
+
+button.escolher {
+  background: var(--painel);
+  color: var(--texto);
+  border: 1px dashed var(--linha);
+  padding: 4px 8px;
+}
+
+.miniatura {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.miniatura > img {
+  height: 120px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  background: #c9c7bf;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.miniatura.pequena {
+  flex-direction: row;
+}
+
+.miniatura.pequena > img {
+  height: 56px;
+  max-width: 70px;
+}
+
+.miniatura .legenda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.rotulo-img {
+  height: 14px;
+  width: auto;
+  max-width: 140px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .rotulo-img {
+    filter: invert(1);
+  }
+}
+
+.aviso-estilo {
+  color: var(--atencao);
+  font-size: 0.8em;
+}
+
+.galeria-fundo {
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 0.45);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 24px 12px;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+.galeria {
+  background: var(--painel);
+  border-radius: var(--raio);
+  padding: 16px;
+  width: min(1100px, 100%);
+}
+
+.galeria-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.galeria-topo h3 {
+  margin: 0;
+}
+
+.grade-artes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+button.cartao-arte {
+  background: var(--fundo);
+  color: var(--texto);
+  border: 1px solid var(--linha);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+button.cartao-arte:hover {
+  border-color: var(--acento);
+}
+
+.id-arte {
+  color: var(--suave);
+  font-size: 0.75em;
+}
+
+.etapa-gerar {
+  border-top: 1px solid var(--linha);
+  margin-top: 16px;
+  padding-top: 8px;
+}
+
+.aviso-omitidas {
+  background: var(--atencao-fundo);
+  color: var(--atencao);
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.aviso-omitidas p {
+  margin: 0 0 4px;
+}
+
+.progresso {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.progresso progress {
+  width: min(320px, 60vw);
+}
+
+.pronto {
+  margin-top: 12px;
+}
+
+a.botao {
+  display: inline-block;
+  background: var(--acento);
+  color: var(--acento-texto);
+  border-radius: 8px;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.linha-controles label {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 6px;
+  max-width: 100%;
+}
+
+.linha-controles label select {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+/* celular: cada unidade vira um bloco (unidade, modelos e arte, base) */
+@media (max-width: 640px) {
+  .tabela-artes,
+  .tabela-artes tbody,
+  .tabela-artes tr,
+  .tabela-artes td {
+    display: block;
+    width: 100%;
+  }
+
+  .tabela-artes thead {
+    display: none;
+  }
+
+  .tabela-artes tr {
+    border-bottom: 1px solid var(--linha);
+    padding: 10px 0;
+  }
+
+  .tabela-artes td {
+    border: none;
+    padding: 4px 0;
+  }
+
+  .tabela-artes tr.pendente td:first-child {
+    box-shadow: none;
+  }
+
+  .tabela-artes tr.pendente {
+    box-shadow: inset 3px 0 0 var(--atencao);
+    padding-left: 8px;
+  }
+
+  .grade-artes {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .linha-controles label:has(select) {
+    width: 100%;
+  }
+
+  .linha-controles label select {
+    width: 100%;
+  }
+}

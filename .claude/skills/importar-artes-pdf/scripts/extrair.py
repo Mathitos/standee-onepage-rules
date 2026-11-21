@@ -126,8 +126,13 @@ def main():
             ys, xs = np.where(m)
             tam = ((ys.max() - ys.min()) * S, (xs.max() - xs.min()) * S)
             for g in locais:
+                # cópia = mesmo tamanho, miniatura parecida, MESMO rótulo impresso e nenhuma
+                # diferença local no desenho (revisão de 21/11: "Raider V1" x "V2" e as cabeças
+                # trocadas do Eternal Dynasty eram agrupados e uma das artes se perdia)
                 if abs(g['tam'][0] - tam[0]) < 1 and abs(g['tam'][1] - tam[1]) < 1 and \
-                        float(np.abs(g['sig'] - sig).mean()) < LIMIAR_COPIA:
+                        float(np.abs(g['sig'] - sig).mean()) < LIMIAR_COPIA and \
+                        G.rotulos_iguais(g['L'].rotulo, L.rotulo) and \
+                        G.diferenca_local(g['L'].frente, g['m'], L.frente, m) < G.LIMIAR_DIF_LOCAL:
                     g['linhas'].append(L.indice)
                     break
             else:

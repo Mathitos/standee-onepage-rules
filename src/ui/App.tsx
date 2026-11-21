@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { parseShareText } from '../armyforge/parseShareText'
 import type { ImportIssue, NormalizedArmyList, UnitGroup } from '../armyforge/types'
 import exemplo from '../../tests/fixtures/armyforge/piloto-share-as-text.txt?raw'
+import { EtapaArtes } from './EtapaArtes'
 
 const CHAVE_TEXTO = 'standee-forge:texto-lista'
 
@@ -23,9 +24,8 @@ function salvar(texto: string) {
 
 const ETAPAS = [
   { nome: 'Importar lista', pronta: true },
-  { nome: 'Artes e associação', pronta: false },
-  { nome: 'Bases, escala e estilo', pronta: false },
-  { nome: 'Gerar 3MF / STL', pronta: false },
+  { nome: 'Artes e bases', pronta: true },
+  { nome: 'Gerar 3MF', pronta: true },
 ]
 
 export function App() {
@@ -43,7 +43,7 @@ export function App() {
         </div>
         <ol className="etapas" aria-label="Etapas">
           {ETAPAS.map((e, i) => (
-            <li key={e.nome} className={i === 0 ? 'ativa' : e.pronta ? '' : 'futura'}>
+            <li key={e.nome} className={i === 0 || (lista && lista.units.length > 0) ? 'ativa' : e.pronta ? '' : 'futura'}>
               <span className="num">{i + 1}</span>
               {e.nome}
               {!e.pronta && <span className="breve">em breve</span>}
@@ -97,9 +97,11 @@ export function App() {
         </section>
       </main>
 
+      {lista && lista.units.length > 0 && <EtapaArtes lista={lista} />}
+
       <footer className="rodape">
-        Próximas etapas ainda não implementadas: catálogo de artes, associação com escolha de variante, bases e geração
-        de arquivos no navegador. Um protótipo Python já gera 3MF/STL fora do site.
+        Tudo roda neste navegador: a lista, as artes escolhidas e a geração do 3MF não saem do seu computador. Artes dos
+        paper minis da One Page Rules; listas do Army Forge.
       </footer>
     </div>
   )
