@@ -63,3 +63,7 @@ O usuário viu na impressão as laterais brancas e pediu o preto. Medido o conto
 ## 19/11/2026 — número da unidade na base
 
 O usuário aprovou as bases do teste impresso e pediu o número da unidade na lista do lado oposto ao nome (1 Infantry Squad, 2 Combat Bikers, 3 e 4 Veterans, 5 e 6 OGRE Robot). O número foi para a borda de trás, com o mesmo tratamento do nome, lido por trás (D035). As listas ganharam `"numero"`; na piloto, Veterans e OGRE Robot viraram uma entrada por unidade. Peça única de teste regerada e fatiada pela CLI, sem troca a mais; pilotos e teste das metades regerados.
+
+## 21/11/2026 — miolo preto e Infantry com bico 0,4
+
+O usuário pediu a peça em preto, com branco só onde precisa, e uma Infantry para bico 0,4. No acabamento pintado, o miolo passou a preto e o branco ficou só nas áreas brancas do desenho (D036). A primeira versão deixava barra e linguetas brancas; o G-code mostrou, e o branco passou a ficar só dentro da silhueta da arte. Com o miolo preto, só as camadas com desenho pedem troca: a lista completa foi de 16 para 8 trocas. A Infantry com bico 0,4 fatiou em 19,6 min, com perda de detalhe visível no G-code. Testes pintados e lista completa regerados.

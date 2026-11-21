@@ -48,6 +48,9 @@ class Param:
     corpo: float = 1.2            # espessura do corpo (de cada metade, ou da peça única), sem relevo
     relevo: float = 0.4
     camada_mesa: float = 0.4      # peça única: espessura do desenho P/B na face da mesa (2 camadas de 0,2)
+    # acabamento pintado: cor do miolo. preto (D036, pedido do usuário em 21/11): a peça é preta e
+    # o branco fica só nas áreas brancas do desenho, com camada_mesa de fundo em cada face
+    miolo: str = 'preto'          # preto | branco
     # duas linguetas cônicas em duas fendas cônicas da base (D031): empurrada, cada lingueta
     # centra sozinha nas paredes inclinadas, sem depender da folga da impressora
     lingueta_larg: float = 4.0    # largura de cada lingueta junto à barra
@@ -316,19 +319,30 @@ def metade_branco_relevo(corpo_mask, sil_mask, tinta_mask, furos, P):
     return corpo, mf.Manifold.extrude(branco, P.relevo).translate((0, 0, P.corpo))
 
 
-def metade_pintada(corpo_mask, tinta_mask, furos, P):
+def metade_pintada(corpo_mask, tinta_mask, furos, P, sil_mask=None):
     """Acabamento pintado: desenho rente na face da mesa (primeiras P.camada_mesa mm, preto e
-    branco coplanares), resto branco, sem relevo. A face de colar fica em cima, com os furos.
-    corpo_mask e tinta_mask já vêm espelhados (a face da mesa é vista por baixo)."""
+    branco coplanares), sem relevo. Miolo preto (D036): o branco fica só nas áreas brancas do
+    desenho; miolo branco: o resto é branco. A face de colar fica em cima, com os furos.
+    corpo_mask e tinta_mask já vêm espelhados (a face da mesa é vista por baixo).
+    Retorna [(malha, cor, rótulo)]; cor 0 = branco, 1 = preto."""
     h = corpo_mask.shape[0]
     contorno = secao(corpo_mask)
     preto_cs = secao(tinta_mask, P.engorda_malha) ^ contorno
     cam = P.camada_mesa
+    vaos = _furos(furos, h, P, P.corpo - P.furo_prof) if furos else None
+    if P.miolo == 'preto':
+        # branco só dentro da silhueta da arte: barra e linguetas ficam pretas
+        area = secao(sil_mask) ^ contorno if sil_mask is not None else contorno
+        branco = mf.Manifold.extrude(area - preto_cs, cam)
+        preto = mf.Manifold.extrude(contorno, P.corpo) - branco
+        if vaos is not None:
+            preto = preto - vaos
+        return [(preto, 1, 'Preto - corpo'), (branco, 0, 'Branco - desenho na mesa')]
     branco = (mf.Manifold.extrude(contorno - preto_cs, cam)
               + mf.Manifold.extrude(contorno, P.corpo - cam).translate((0, 0, cam)))
-    if furos:
-        branco = branco - _furos(furos, h, P, P.corpo - P.furo_prof)
-    return branco, mf.Manifold.extrude(preto_cs, cam)
+    if vaos is not None:
+        branco = branco - vaos
+    return [(branco, 0, 'Branco - corpo'), (mf.Manifold.extrude(preto_cs, cam), 1, 'Preto - desenho na mesa')]
 
 
 def peca_unica(corpo_mask, preto_mesa_mask, relevo_mask, P):
@@ -383,9 +397,10 @@ def espessura_peca(duas, acabamento, P):
     return P.corpo + P.relevo if acabamento == 'pintado' else P.corpo
 
 
-def peca_unica_pintada(corpo_mask, preto_mesa_mask, preto_cima_mask, P):
+def peca_unica_pintada(corpo_mask, preto_mesa_mask, preto_cima_mask, P, sil_mask=None):
     """Peça única sem relevo (D032): desenho rente nas duas faces, preto e branco coplanares nas
-    primeiras e nas últimas P.camada_mesa mm, núcleo branco. Espessura total P.corpo + P.relevo,
+    primeiras e nas últimas P.camada_mesa mm. Miolo preto (D036): o resto da peça é preto; miolo
+    branco: núcleo branco. Espessura total P.corpo + P.relevo,
     a mesma da peça única com relevo: o preto de uma face fica atrás de 1,2 mm de branco na outra
     (branco fino deixa o preto aparecer, pesquisa de 18/11). preto_mesa_mask vem espelhado
     (a face da mesa é vista por baixo); preto_cima_mask é o verso como impresso.
@@ -394,10 +409,21 @@ def peca_unica_pintada(corpo_mask, preto_mesa_mask, preto_cima_mask, P):
     esp, cam = P.corpo + P.relevo, P.camada_mesa
     baixo = secao(preto_mesa_mask, P.engorda_malha) ^ contorno
     cima = secao(preto_cima_mask, P.engorda_malha) ^ contorno
+    if P.miolo == 'preto':
+        # D036: peça preta; o branco só nas áreas brancas de cada face, com cam de fundo, e só
+        # dentro da silhueta da arte (barra e linguetas pretas). A silhueta é a mesma nas duas
+        # faces vista de cima (o verso é a frente espelhada)
+        area = secao(sil_mask) ^ contorno if sil_mask is not None else contorno
+        b_mesa = mf.Manifold.extrude(area - baixo, cam)
+        b_cima = mf.Manifold.extrude(area - cima, cam).translate((0, 0, esp - cam))
+        preto = mf.Manifold.extrude(contorno, esp) - b_mesa - b_cima
+        return [(preto, 1, 'Preto - corpo'), (b_mesa, 0, 'Branco - desenho na mesa'),
+                (b_cima, 0, 'Branco - desenho em cima')]
     branco = (mf.Manifold.extrude(contorno - baixo, cam)
               + mf.Manifold.extrude(contorno, esp - 2 * cam).translate((0, 0, cam))
               + mf.Manifold.extrude(contorno - cima, cam).translate((0, 0, esp - cam)))
-    return branco, mf.Manifold.extrude(baixo, cam), mf.Manifold.extrude(cima, cam).translate((0, 0, esp - cam))
+    return [(branco, 0, 'Branco - corpo'), (mf.Manifold.extrude(baixo, cam), 1, 'Preto - desenho na mesa'),
+            (mf.Manifold.extrude(cima, cam).translate((0, 0, esp - cam)), 1, 'Preto - desenho em cima')]
 
 
 def _glifo(fonte, ch, k):
@@ -839,6 +865,8 @@ def main():
     ap.add_argument('--relevo-mm', type=float, default=Param.relevo, help='altura do relevo (mm)')
     ap.add_argument('--face-mm', type=float, default=Param.camada_mesa,
                     help='espessura do desenho rente em cada face (peça única e pintado), mm')
+    ap.add_argument('--miolo', choices=['preto', 'branco'], default=Param.miolo,
+                    help='acabamento pintado: miolo preto (padrão, D036: branco só nas áreas brancas do desenho) ou branco')
     ap.add_argument('--nome-na-base', action='store_true', help='escreve o nome da unidade na borda da base')
     ap.add_argument('--sem-numero', action='store_true',
                     help='com --nome-na-base, não escreve o número da unidade na borda de trás (D035)')
@@ -849,7 +877,7 @@ def main():
     a = ap.parse_args()
     P = Param(margem_mesa=a.margem, espaco=a.espaco, bico=a.bico, traco=a.traco, engorda=a.engorda,
               paredes='' if a.paredes == 'perfil' else a.paredes,
-              acabamento=a.acabamento, sulco_engorda=a.sulco_engorda, corpo=a.corpo, relevo=a.relevo_mm, camada_mesa=a.face_mm,
+              acabamento=a.acabamento, sulco_engorda=a.sulco_engorda, corpo=a.corpo, relevo=a.relevo_mm, camada_mesa=a.face_mm, miolo=a.miolo,
               encaixe=a.encaixe,
               nome_na_base=a.nome_na_base, numero_na_base=not a.sem_numero, bases_junto=a.bases_junto, lateral_preta=a.lateral_preta)
     duas = a.modo == 'duas-metades'
@@ -919,9 +947,8 @@ def main():
                                       [(corpo3, 1, 'Preto - corpo'), (relevo3, 0, 'Branco - relevo')]))
                     elif ac == 'pintado':
                         # desenho na face da mesa: tudo espelhado, inclusive contorno e furos
-                        branco3, preto3 = metade_pintada(corpo_m[:, ::-1], rel_m[:, ::-1], furos_esp, P)
                         pecas.append((ac, lado, corpo_m[:, ::-1], vis_m[:, ::-1],
-                                      [(branco3, 0, 'Branco - corpo'), (preto3, 1, 'Preto - desenho na mesa')]))
+                                      metade_pintada(corpo_m[:, ::-1], rel_m[:, ::-1], furos_esp, P, sil_m[:, ::-1])))
                     else:
                         corpo3, relevo3 = metade(corpo_m, rel_m, furos, P)
                         pecas.append((ac, lado, corpo_m, vis_m,
@@ -932,10 +959,7 @@ def main():
             furos_f, pecas = [], []
             for ac in sorted({acab_de(m) for m in lista['modelos'] if m['arte'] == chave}, key=list(ACABAMENTOS).index):
                 if ac == 'pintado':
-                    branco3, preto3, cima3 = peca_unica_pintada(corpo_v, rel_f[:, ::-1], rel_v, P)
-                    pecas.append((ac, 'peca', corpo_v, vis_v, [(branco3, 0, 'Branco - corpo'),
-                                                               (preto3, 1, 'Preto - desenho na mesa'),
-                                                               (cima3, 1, 'Preto - desenho em cima')]))
+                    pecas.append((ac, 'peca', corpo_v, vis_v, peca_unica_pintada(corpo_v, rel_f[:, ::-1], rel_v, P, sil_v)))
                 else:
                     branco3, preto3, relevo3 = peca_unica(corpo_v, rel_f[:, ::-1], rel_v, P)
                     pecas.append((ac, 'peca', corpo_v, vis_v, [(branco3, 0, 'Branco - corpo'),
@@ -943,7 +967,10 @@ def main():
                                                                (relevo3, 1, 'Preto - relevo')]))
         dims = None
         for ac, lado, corpo_m, rel_m, partes3 in pecas:
-            bmin = partes3[0][0].bounding_box()      # o corpo inteiro, antes de recortar a lateral
+            bmin = partes3[0][0]                     # o corpo inteiro, antes de recortar a lateral
+            for m_p, _, _ in partes3[1:]:
+                bmin = bmin + m_p
+            bmin = bmin.bounding_box()
             desl = (-bmin[0], -bmin[1], 0)
             partes3 = [(m.translate(desl), cor, rot) for m, cor, rot in lateral_preta(partes3, corpo_m, P)]
             k = f'{chave}-{ac}-{lado}'
