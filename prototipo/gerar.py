@@ -81,7 +81,11 @@ class Param:
     # bases na placa das figuras (D033). auto: quando as figuras já trocam de cor em quase toda
     # camada: peça única, ou qualquer modo com lateral preta (D034). Metades sem lateral preta têm
     # 1 troca na placa de figuras e juntar dava 13 trocas, +29 min e +3,6 g (CLI, 18/11)
-    bases_junto: str = 'auto'     # auto | sim | nao
+    bases_junto: str = 'auto'     # auto | sim | nao (só com placas = acabamento)
+    # unidade (D037, pedido do usuário em 21/11): uma placa por unidade da lista, com as figuras e
+    # as bases dela; o que não couber vai para outra placa da mesma unidade. acabamento: placas por
+    # acabamento, com as bases juntas ou à parte (D033)
+    placas: str = 'unidade'       # unidade | acabamento
     texto_altura: float = 3.0     # altura das maiúsculas (mm); cai até texto_min se não couber
     texto_min: float = 1.8        # abaixo disto o nome não cabe e o relatório avisa
     texto_camada: float = 0.4     # nome embutido em branco nas primeiras camadas (D027)
@@ -872,12 +876,15 @@ def main():
                     help='com --nome-na-base, não escreve o número da unidade na borda de trás (D035)')
     ap.add_argument('--lateral-preta', type=float, default=Param.lateral_preta,
                     help='mm de faixa preta na lateral das figuras, em toda a altura (D034); 0 desliga')
+    ap.add_argument('--placas', choices=['unidade', 'acabamento'], default=Param.placas,
+                    help='unidade (padrão, D037): uma placa por unidade da lista, com as bases; '
+                         'acabamento: placas por acabamento (--bases-junto decide as bases)')
     ap.add_argument('--bases-junto', choices=['auto', 'sim', 'nao'], default=Param.bases_junto,
                     help='bases na placa das figuras, o que couber (D033); auto = na peça única ou com lateral preta')
     a = ap.parse_args()
     P = Param(margem_mesa=a.margem, espaco=a.espaco, bico=a.bico, traco=a.traco, engorda=a.engorda,
               paredes='' if a.paredes == 'perfil' else a.paredes,
-              acabamento=a.acabamento, sulco_engorda=a.sulco_engorda, corpo=a.corpo, relevo=a.relevo_mm, camada_mesa=a.face_mm, miolo=a.miolo,
+              acabamento=a.acabamento, sulco_engorda=a.sulco_engorda, corpo=a.corpo, relevo=a.relevo_mm, camada_mesa=a.face_mm, miolo=a.miolo, placas=a.placas,
               encaixe=a.encaixe,
               nome_na_base=a.nome_na_base, numero_na_base=not a.sem_numero, bases_junto=a.bases_junto, lateral_preta=a.lateral_preta)
     duas = a.modo == 'duas-metades'
@@ -894,6 +901,8 @@ def main():
     saida = a.saida
     for sub in ('stl', 'previas'):
         (saida / sub).mkdir(parents=True, exist_ok=True)
+    for velho in (saida / 'previas').glob('placa-*.png'):   # prévias de placas de uma geração anterior
+        velho.unlink()
 
     if a.so:
         lista['modelos'] = [m for m in lista['modelos'] if m['arte'] in a.so]
@@ -1049,7 +1058,22 @@ def main():
     placas_base = empacotar(pecas_base, P, reservado=P.torre_xyxy_bases if P.nome_na_base else None)
     junto = P.bases_junto == 'sim' or (P.bases_junto == 'auto' and len(usados_ac) == 1
                                        and (not duas or P.lateral_preta > 0))
-    if junto:
+    com_bases = {'Bases', 'Figuras e bases'}
+    if P.placas == 'unidade':
+        # D037: uma unidade por placa, figuras e bases juntas, na ordem do número da unidade
+        por_un = {}
+        for m in lista['modelos']:
+            g = por_un.setdefault((m['numero'], m['unidade']), [])
+            for i in range(m['qtd']):
+                for lado in (('frente', 'verso') if duas else ('peca',)):
+                    g.append((f'{m["arte"]}-{acab_de(m)}-{lado}', *artes[m['arte']]['peca_mm']))
+                kb = chave_base(m, P, duas)
+                g.append((kb, *bases_def[kb]['dim_mm']))
+        grupos_fig = [(f'{n} {u}', empacotar(g, P, reservado=P.torre_xyxy_bases))
+                      for (n, u), g in sorted(por_un.items(), key=lambda kv: kv[0][0])]
+        com_bases |= {nome for nome, _ in grupos_fig}
+        placas_base = []
+    elif junto:
         if len(usados_ac) != 1:
             sys.exit('--bases-junto sim: só com um acabamento de figura')
         grupos_fig = [('Figuras e bases', empacotar(pecas_fig[usados_ac[0]] + pecas_base, P, reservado=P.torre_xyxy_bases))]
@@ -1060,13 +1084,13 @@ def main():
     placas_proj, info_placas, torres = [], [], []
     for nome, placas in grupos_fig + [('Bases', placas_base), ('Gabaritos', placas_gab)]:
         for i, placa in enumerate(placas, 1):
-            rotulo = nome if len(placas) == 1 else f'{nome} {i}'
+            rotulo = nome if len(placas) == 1 else f'{nome} ({i}/{len(placas)})'
             placas_proj.append((rotulo, [(k, x, y) for k, x, y, _, _ in placa]))
-            torres.append(P.torre_pos_bases if nome in ('Bases', 'Figuras e bases') else None if nome == 'Gabaritos' else torre_fig)
+            torres.append(P.torre_pos_bases if nome in com_bases else None if nome == 'Gabaritos' else torre_fig)
             arq_png = f'placa-{len(placas_proj)}-' + re.sub(r'[^a-z0-9]+', '-', rotulo.lower()).strip('-') + '.png'
             cv2.imwrite(str(saida / 'previas' / arq_png),
                         previa_placa(placa, mascaras, P, reservado=None if nome == 'Gabaritos' else area_fig
-                                     if nome not in ('Bases', 'Figuras e bases') else (P.torre_xyxy_bases if P.nome_na_base or nome != 'Bases' else None)))
+                                     if nome not in com_bases else (P.torre_xyxy_bases if P.nome_na_base or nome != 'Bases' else None)))
             info_placas.append({'placa': len(placas_proj), 'nome': rotulo, 'pecas': len(placa)})
     try:
         perfis, projeto = B.para_bico(P.bico)

@@ -67,3 +67,7 @@ O usuário aprovou as bases do teste impresso e pediu o número da unidade na li
 ## 21/11/2026 — miolo preto e Infantry com bico 0,4
 
 O usuário pediu a peça em preto, com branco só onde precisa, e uma Infantry para bico 0,4. No acabamento pintado, o miolo passou a preto e o branco ficou só nas áreas brancas do desenho (D036). A primeira versão deixava barra e linguetas brancas; o G-code mostrou, e o branco passou a ficar só dentro da silhueta da arte. Com o miolo preto, só as camadas com desenho pedem troca: a lista completa foi de 16 para 8 trocas. A Infantry com bico 0,4 fatiou em 19,6 min, com perda de detalhe visível no G-code. Testes pintados e lista completa regerados.
+
+## 21/11/2026 — uma unidade por placa
+
+O usuário decidiu manter o bico 0,2 e pediu o 3MF com uma unidade por placa, com as bases (D037). Virou o padrão do gerador. Medido pela CLI na lista completa: 6 placas e 48 trocas, 17,4 h no total, contra 13,6 h numa placa só; a diferença é a purga das trocas repetidas em cada placa. Saídas regeradas.
