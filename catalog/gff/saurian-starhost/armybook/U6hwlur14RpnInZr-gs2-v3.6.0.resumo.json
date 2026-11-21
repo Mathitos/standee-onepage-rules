@@ -1,0 +1,1326 @@
+{
+  "armyBook": {
+    "id": "U6hwlur14RpnInZr",
+    "nome": "Saurian Starhosts",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:33.946Z",
+    "sistema": "grimdark-future",
+    "sistemaId": 2
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "ozQztyW",
+      "nome": "Tehaxi",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Channel Flames",
+        "Magic Pulse",
+        "Ornate Claws"
+      ],
+      "itens": [
+        {
+          "nome": "Starseer Palanquin",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Channel Flames",
+          "ganha": [
+            "Sacred Priest"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "igyAK4c",
+      "nome": "Frog-Mage",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Great Magic Pulse"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Great Magic Pulse",
+          "ganha": [
+            "Sorcerous Blast",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Great Magic Pulse",
+          "ganha": [
+            "Frog-Mage Staff"
+          ]
+        },
+        {
+          "secao": "Replace Great Magic Pulse",
+          "ganha": [
+            "Magic Blast",
+            "Magic Pulse"
+          ]
+        },
+        {
+          "secao": "Replace Sorcerous Blast",
+          "ganha": [
+            "Sorcerous Shock"
+          ]
+        },
+        {
+          "secao": "Replace Sorcerous Blast",
+          "ganha": [
+            "Sorcerous Beam"
+          ]
+        },
+        {
+          "secao": "Replace Magic Blast",
+          "ganha": [
+            "Magic Surge"
+          ]
+        },
+        {
+          "secao": "Replace Magic Blast",
+          "ganha": [
+            "Magic Spurt"
+          ]
+        },
+        {
+          "secao": "Replace Magic Blast",
+          "ganha": [
+            "Magic Shock"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sacred Destiny"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Ancient Palanquin"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Enlightened Mage"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Primal Guidance"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Zealot"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Temple Guardian"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Crusader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d5xE-v0",
+      "nome": "Gator Veteran",
+      "tamanho": 1,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Heavy Mace",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace any Heavy Mace",
+          "ganha": [
+            "Heavy Bludgeon"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Mace",
+          "ganha": [
+            "Power Claw"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Mace",
+          "ganha": [
+            "Heavy Shooter"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Mace",
+          "ganha": [
+            "Power Knuckles"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Mace",
+          "ganha": [
+            "Power Spike"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Disposable Assault Rocket-Pod"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Sacred Destiny"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Storm Leader"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Primal Roar"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Zealot"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Crusader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RpQgbmd",
+      "nome": "Saurian Veteran",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Flamer Pistol",
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Flamer Pistol and Hand Weapon",
+          "ganha": [
+            "Burst Carbine",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Flamer Pistol and Hand Weapon",
+          "ganha": [
+            "Beam Mace-Staff",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Flamer Pistol and Hand Weapon",
+          "ganha": [
+            "Energy Mace-Staff"
+          ]
+        },
+        {
+          "secao": "Replace Flamer Pistol and Hand Weapon",
+          "ganha": [
+            "Fusion-Blaster Mace-Staff",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Flamer Pistol",
+          "ganha": [
+            "Spike Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Flamer Pistol",
+          "ganha": [
+            "Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Flamer Pistol",
+          "ganha": [
+            "Beam Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Flamer Pistol",
+          "ganha": [
+            "Fusion-Blaster Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Power Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Power Lance"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Power Claw"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Power Mace"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sacred Destiny"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Raptor"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Tyrannosaur"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Storm Leader"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Zealot"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Temple Guardian"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Crusader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "X1af9wy",
+      "nome": "Gecko Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [
+        {
+          "nome": "Energy Shield",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Hand Weapon and Energy Shield",
+          "ganha": [
+            "Flechette Pistol",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Energy Shield",
+          "ganha": [
+            "Burst Flechette Carbine",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Energy Shield",
+          "ganha": [
+            "Burst Pistol",
+            "Energy Shield"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Energy Shield",
+          "ganha": [
+            "Priest Staff"
+          ]
+        },
+        {
+          "secao": "Replace Burst Flechette Carbine",
+          "ganha": [
+            "Burst Scatter Gun"
+          ]
+        },
+        {
+          "secao": "Replace Burst Flechette Carbine",
+          "ganha": [
+            "Burst Precision Carbine"
+          ]
+        },
+        {
+          "secao": "Replace Burst Flechette Carbine",
+          "ganha": [
+            "Sniper Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Burst Flechette Carbine",
+          "ganha": [
+            "Shock Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Burst Pistol",
+          "ganha": [
+            "Burst Flechette Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Burst Pistol",
+          "ganha": [
+            "Burst Flamer Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Burst Pistol",
+          "ganha": [
+            "Burst Shock Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Burst Pistol",
+          "ganha": [
+            "Burst Beam Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Burst Pistol",
+          "ganha": [
+            "Burst Fusion-Blaster Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Flechette Pistol",
+          "ganha": [
+            "Shock Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Flechette Pistol",
+          "ganha": [
+            "Flamer Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Flechette Pistol",
+          "ganha": [
+            "Beam Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Flechette Pistol",
+          "ganha": [
+            "Fusion-Blaster Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Power Claw"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Power Lance"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Power Mace"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sacred Destiny"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Phase Backpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Deinonychus"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Chameleon Breed"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Starseer Palanquin"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Ripjawdactyl"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pterodactyl"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Storm Leader"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Primal Hunter"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Zealot"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sacred Priest"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Temple Guardian"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FfHElYl",
+      "nome": "Gecko Cohort",
+      "tamanho": 10,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Pistol"
+      ],
+      "itens": [
+        {
+          "nome": "Energy Shield",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace all Pistols and Energy Shields",
+          "ganha": [
+            "Pistol",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace all Pistols and Energy Shields",
+          "ganha": [
+            "Shock Pistol",
+            "Energy Shield"
+          ]
+        },
+        {
+          "secao": "Replace all Pistols and Energy Shields",
+          "ganha": [
+            "Shock Pistol",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Phase Backpacks"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Sacred Destiny"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GfTlKWo",
+      "nome": "Deinonychus Riders",
+      "tamanho": 5,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Power Lance"
+      ],
+      "itens": [
+        {
+          "nome": "Energy Shield",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace all Power Lances",
+          "ganha": [
+            "Pistol"
+          ]
+        },
+        {
+          "secao": "Replace all Power Lances",
+          "ganha": [
+            "Shock Pistol"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d3_323-",
+      "nome": "Saurian Warriors",
+      "tamanho": 5,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Pistol",
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Pistols and Hand Weapons",
+          "ganha": [
+            "Carbine",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace one Pistol",
+          "ganha": [
+            "Flamer"
+          ]
+        },
+        {
+          "secao": "Replace one Pistol",
+          "ganha": [
+            "Beam Gun"
+          ]
+        },
+        {
+          "secao": "Replace one Pistol",
+          "ganha": [
+            "Shock Charger"
+          ]
+        },
+        {
+          "secao": "Replace one Pistol",
+          "ganha": [
+            "Fusion-Blaster Gun"
+          ]
+        },
+        {
+          "secao": "Replace one Pistol",
+          "ganha": [
+            "Spike Shooter"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Sacred Destiny"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sd-Y62t",
+      "nome": "Saurian Guardians",
+      "tamanho": 5,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Hammer"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Hammers",
+          "ganha": [
+            "Energy Mace-Staff"
+          ]
+        },
+        {
+          "secao": "Replace one Hammer",
+          "ganha": [
+            "Power Hammer"
+          ]
+        },
+        {
+          "secao": "Replace one Hammer",
+          "ganha": [
+            "Beam Mace-Staff"
+          ]
+        },
+        {
+          "secao": "Replace one Hammer",
+          "ganha": [
+            "Fusion-Blaster Mace-Staff"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Hardened Elites"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Sacred Destiny"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Cet1xy8",
+      "nome": "Chameleons",
+      "tamanho": 5,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Flechette Carbine",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Flechette Carbines",
+          "ganha": [
+            "Precision Carbine"
+          ]
+        },
+        {
+          "secao": "Replace all Flechette Carbines",
+          "ganha": [
+            "Scatter Gun"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Demo Charge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_XxIYpx",
+      "nome": "Gecko Snipers",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Sniper Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Sniper Rifles",
+          "ganha": [
+            "Shock-Sniper Carbine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "23TvtrB",
+      "nome": "Gators",
+      "tamanho": 3,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Power Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Dual Power Claws",
+          "ganha": [
+            "Dual Heavy Bludgeons"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Power Claws",
+          "ganha": [
+            "Assault Heavy Shooter",
+            "Power Claw"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Power Claws",
+          "ganha": [
+            "Dual Heavy Shooters",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Power Claws",
+          "ganha": [
+            "Dual Power Knuckles"
+          ]
+        },
+        {
+          "secao": "Replace all Power Claws",
+          "ganha": [
+            "Heavy Bludgeon"
+          ]
+        },
+        {
+          "secao": "Replace all Power Claws",
+          "ganha": [
+            "Power Knuckles"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Disposable Assault Rocket-Pod"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Sacred Destiny"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0tlypaz",
+      "nome": "Pterodactyl Riders",
+      "tamanho": 3,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Hand Weapon",
+        "Heavy Claws"
+      ],
+      "itens": [
+        {
+          "nome": "Energy Shield",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace all Hand Weapons and Energy Shields",
+          "ganha": [
+            "Burst Pistol",
+            "Energy Shield"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons and Energy Shields",
+          "ganha": [
+            "Shock Rifle"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons and Energy Shields",
+          "ganha": [
+            "Burst Shock Pistol",
+            "Energy Shields"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Drop Bombs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w3V96GX",
+      "nome": "Ripjawdactyl Riders",
+      "tamanho": 3,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [
+        {
+          "nome": "Energy Shield",
+          "bases": null
+        },
+        {
+          "nome": "Ripjawdactyl Attack",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace all Hand Weapons and Energy Shields and Ripjawdactyl Attacks",
+          "ganha": [
+            "Shock Rifle",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons and Energy Shields and Ripjawdactyl Attacks",
+          "ganha": [
+            "Burst Pistol",
+            "Energy Shields",
+            "Ripjawdactyl Attack"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons and Energy Shields and Ripjawdactyl Attacks",
+          "ganha": [
+            "Burst Shock Pistol",
+            "Energy Shields",
+            "Ripjawdactyl Attack"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Hunting Bait"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9-8Xg6h",
+      "nome": "Raptor Riders",
+      "tamanho": 3,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Pistol",
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Pistols",
+          "ganha": [
+            "Spike Pistol"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Power Lance"
+          ]
+        },
+        {
+          "secao": "Replace one Hand Weapon",
+          "ganha": [
+            "Power Claw"
+          ]
+        },
+        {
+          "secao": "Replace one Hand Weapon",
+          "ganha": [
+            "Power Mace"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hHlo6_1",
+      "nome": "Cyber-Beast Swarms",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Cyber-Toxins"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Pathfinder Beast Handlers"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Combat Beast Handlers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uSPAW_e",
+      "nome": "Vulturedactyls",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Jagged Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Pathfinder Beast Handlers"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Combat Beast Handlers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q6xnsW8",
+      "nome": "Dragon Lizard",
+      "tamanho": 1,
+      "bases": {
+        "round": "90x52",
+        "square": "75x50"
+      },
+      "armas": [
+        "Flame Burst",
+        "Heavy Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Vanguard Lizard Handlers"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Lizard Handlers"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Poison Flechettes"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Fire Blast"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G9Cu-8-",
+      "nome": "Spiked Lizard",
+      "tamanho": 1,
+      "bases": {
+        "round": "90x52",
+        "square": "75x50"
+      },
+      "armas": [
+        "Arc-Rockets Launcher",
+        "Heavy Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Vanguard Lizard Handlers"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Lizard Handlers"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Poison Flechettes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FH30sw7",
+      "nome": "Spinosaurus",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Stomp",
+        "Toxin Bite"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Chief Rider"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Spit Venom"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Primal Roar"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_jdnOUr",
+      "nome": "Triceratops",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Heavy Horns",
+        "Stomp"
+      ],
+      "itens": [
+        {
+          "nome": "Carrier Platform",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Heavy Horns and Carrier Platform",
+          "ganha": [
+            "Gecko Crew",
+            "Great Horns"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Horns and Carrier Platform",
+          "ganha": [
+            "Heavy Arc-Rockets Launcher"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Horns and Carrier Platform",
+          "ganha": [
+            "Heavy Missile Launcher"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Trample"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Gecko Priest"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fyqjUBx",
+      "nome": "Ankylosaurus",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Heavy Beam Cannon",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Heavy Beam Cannon",
+          "ganha": [
+            "Heavy Plasma Burster"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Beam Cannon",
+          "ganha": [
+            "Heavy Fusion-Blaster Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Stomp",
+          "ganha": [
+            "Mace Tail"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Poison Flechettes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kcGBHe3",
+      "nome": "Dread Titan",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Stomp"
+      ],
+      "itens": [
+        {
+          "nome": "Dread Gator",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Dread Gator",
+          "ganha": [
+            "Dread Scorcher"
+          ]
+        },
+        {
+          "secao": "Replace Dread Gator",
+          "ganha": [
+            "Dread Behemoth"
+          ]
+        },
+        {
+          "secao": "Replace Dread Gator",
+          "ganha": [
+            "Dread Tyrannosaur"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,59 +1,1082 @@
 {
-  "packId": "human-defense-force",
-  "packVersion": "0.1.0",
-  "gameSystem": {"code": "GFF", "slug": "grimdark-future-firefight", "armyForgeId": 3},
-  "armyBook": {"arquivo": "armybook/z65fgu0l29i4lnlu-gs3-v3.6.0.json"},
-  "nota": "Revisão PARCIAL feita pelo agente em 17/11/2026 só com as artes ligadas à lista piloto (teste da skill, T007). Rótulos lidos em work/rotulos-02/03/06.png. Os demais 61 candidatos ainda não foram revisados (T008).",
-  "unidades": {
-    "infantry-squad": {"nomes": ["Infantry Squad"], "armyForgeUnitId": "_nbz3zj"},
-    "veterans": {"nomes": ["Veterans"], "armyForgeUnitId": "SScXOqX"},
-    "combat-bikers": {"nomes": ["Combat Bikers"], "armyForgeUnitId": "UoYLgB-"},
-    "ogre-robot": {"nomes": ["OGRE Robot", "OGRE Robots"], "armyForgeUnitId": "44TuRY_"}
+ "packId": "human-defense-force",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "GF",
+   "slug": "grimdark-future",
+   "armyForgeId": 2
   },
-  "artes": {
-    "a014": {
-      "artId": "infantry-rifle", "rotulo": "Infantry Rifle", "confiancaRotulo": "alta",
-      "unitKey": "infantry-squad", "equipmentTags": ["Battle Rifle"], "cosmetic": null,
-      "status": "alias-proposed", "aliases": [{"pdf": "Rifle", "armyBook": "Battle Rifle"}],
-      "notas": "army book não tem arma chamada só 'Rifle'; a arma padrão é Battle Rifle"
-    },
-    "a034": {
-      "artId": "veteran-shotgun", "rotulo": "Veteran Shotgun", "confiancaRotulo": "alta",
-      "unitKey": "veterans", "equipmentTags": ["Shotgun"], "cosmetic": null,
-      "status": "mapped", "aliases": [], "notas": ""
-    },
-    "a064": {
-      "artId": "biker-pistol", "rotulo": "Biker Pistol", "confiancaRotulo": "alta",
-      "unitKey": "combat-bikers", "equipmentTags": ["Pistol"], "cosmetic": null,
-      "status": "mapped", "aliases": [], "notas": "nas opções do army book Pistol vem junto com uma lança"
-    },
-    "a065": {
-      "artId": "biker-lance", "rotulo": "Biker Lance", "confiancaRotulo": "alta",
-      "unitKey": "combat-bikers", "equipmentTags": [], "cosmetic": null,
-      "status": "alias-proposed",
-      "aliases": [{"pdf": "Lance", "armyBook": ["Heavy Lance", "Hunting Lance", "Anti-Tank Lance"]}],
-      "notas": "rótulo diz só 'Lance'; o army book tem três lanças. Usuário escolhe a quais ela serve"
-    },
-    "a066": {
-      "artId": "ogre-minigun", "rotulo": "OGRE Minigun", "confiancaRotulo": "alta",
-      "unitKey": "ogre-robot", "equipmentTags": [], "cosmetic": null,
-      "status": "unmapped", "aliases": [],
-      "notas": "army book v3.6.0 não tem Minigun; candidata a substituta de Gatling Gun (decisão do usuário, D013)"
-    },
-    "a067": {
-      "artId": "ogre-grenade-launcher", "rotulo": "OGRE Grenade Launcher", "confiancaRotulo": "alta",
-      "unitKey": "ogre-robot", "equipmentTags": ["Grenade Launcher"], "cosmetic": null,
-      "status": "mapped", "aliases": [], "notas": ""
-    },
-    "a068": {
-      "artId": "ogre-baton", "rotulo": "OGRE Baton", "confiancaRotulo": "alta",
-      "unitKey": "ogre-robot", "equipmentTags": ["Shock Baton"], "cosmetic": null,
-      "status": "alias-proposed", "aliases": [{"pdf": "Baton", "armyBook": "Shock Baton"}], "notas": ""
-    },
-    "a069": {
-      "artId": "ogre-axe", "rotulo": "OGRE Axe", "confiancaRotulo": "alta",
-      "unitKey": "ogre-robot", "equipmentTags": ["Energy Axe"], "cosmetic": null,
-      "status": "alias-proposed", "aliases": [{"pdf": "Axe", "armyBook": "Energy Axe"}], "notas": ""
-    }
+  {
+   "code": "GFF",
+   "slug": "grimdark-future-firefight",
+   "armyForgeId": 3
   }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/z65fgu0l29i4lnlu-gs3-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/z65fgu0l29i4lnlu-gs2-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão completa feita por agente: as 8 artes da lista piloto em 17/11/2026 (T007) e os outros 61 candidatos em 2026-11-21 (T008). Rótulos de work/rotulos-01..06.png, army books v3.6.0 (os dois sistemas).",
+ "unidades": {
+  "infantry-squad": {
+   "nomes": [
+    "Infantry Squad"
+   ],
+   "armyForgeUnitId": "_nbz3zj"
+  },
+  "veterans": {
+   "nomes": [
+    "Veterans"
+   ],
+   "armyForgeUnitId": "SScXOqX"
+  },
+  "combat-bikers": {
+   "nomes": [
+    "Combat Bikers"
+   ],
+   "armyForgeUnitId": "UoYLgB-"
+  },
+  "ogre-robot": {
+   "nomes": [
+    "OGRE Robot",
+    "OGRE Robots"
+   ],
+   "armyForgeUnitId": "44TuRY_"
+  },
+  "company-leader": {
+   "armyForgeUnitId": "3Tk4911"
+  },
+  "storm-leader": {
+   "armyForgeUnitId": "dwJg2Bu"
+  },
+  "recruits": {
+   "armyForgeUnitId": "97ShHAa"
+  },
+  "grunt-robot": {
+   "armyForgeUnitId": "kTKbTVs"
+  },
+  "storm-trooper": {
+   "armyForgeUnitId": "Xuu-drz"
+  },
+  "sapper": {
+   "armyForgeUnitId": "SG9cgFZ"
+  },
+  "sniper": {
+   "armyForgeUnitId": "95wirM-"
+  },
+  "weapon-team": {
+   "armyForgeUnitId": "8jb141s"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "company-leader-pistol",
+   "rotulo": "Company Leader Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Pistol"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pistola e espada (padrão: Pistol + Hand Weapon)"
+  },
+  "a002": {
+   "artId": "company-leader-rifle",
+   "rotulo": "Company Leader Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Burst Battle Rifle|Burst Long Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": [
+      "Burst Battle Rifle",
+      "Burst Long Rifle"
+     ]
+    }
+   ],
+   "notas": "como em a014 (Rifle -> Battle Rifle); Burst Long Rifle também é fuzil, a tag aceita os dois"
+  },
+  "a003": {
+   "artId": "storm-leader-pistol",
+   "rotulo": "Storm Leader Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-leader",
+   "equipmentTags": [
+    "Heavy Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Pistol",
+     "armyBook": "Heavy Pistol"
+    }
+   ],
+   "notas": "a pistola do Storm Leader é Heavy Pistol"
+  },
+  "a004": {
+   "artId": "storm-leader-rifle",
+   "rotulo": "Storm Leader Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-leader",
+   "equipmentTags": [
+    "Burst Heavy Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Burst Heavy Rifle"
+    }
+   ],
+   "notas": "o único fuzil do Storm Leader é Burst Heavy Rifle"
+  },
+  "a005": {
+   "artId": "biker-leader-pistol",
+   "rotulo": "Biker Leader Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Combat Bike",
+    "Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Biker Leader",
+     "armyBook": "Company Leader + Combat Bike"
+    }
+   ],
+   "notas": "Combat Bikers não têm líder; o herói que monta moto é o Company Leader (upgrade Combat Bike)"
+  },
+  "a006": {
+   "artId": "biker-leader-lance",
+   "rotulo": "Biker Leader Lance",
+   "confiancaRotulo": "alta",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Combat Bike",
+    "Heavy Lance|Hunting Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Biker Leader",
+     "armyBook": "Company Leader + Combat Bike"
+    },
+    {
+     "pdf": "Lance",
+     "armyBook": [
+      "Heavy Lance",
+      "Hunting Lance"
+     ]
+    }
+   ],
+   "notas": "rótulo diz só Lance; a tag aceita Heavy Lance e Hunting Lance. Com lança o modelo mantém a Pistol: empata com a005 (2 tags) e o site fica com a005"
+  },
+  "a007": {
+   "artId": "commander",
+   "rotulo": "Commander",
+   "confiancaRotulo": "alta",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Commander"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Commander",
+     "armyBook": "Company Leader + Commander"
+    }
+   ],
+   "notas": "herói que é opção; opção também do Storm Leader e do Tank Company Leader"
+  },
+  "a008": {
+   "artId": "drill-sergeant",
+   "rotulo": "Drill Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Drill Sergeant"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Drill Sergeant",
+     "armyBook": "Company Leader + Drill Sergeant"
+    }
+   ],
+   "notas": "herói que é opção; opção também do Storm Leader"
+  },
+  "a009": {
+   "artId": "enforcer",
+   "rotulo": "Enforcer",
+   "confiancaRotulo": "alta",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Enforcer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Enforcer",
+     "armyBook": "Company Leader + Enforcer"
+    }
+   ],
+   "notas": "Enforcer é opção só do Company Leader"
+  },
+  "a010": {
+   "artId": "forward-observer",
+   "rotulo": "Forward Observer",
+   "confiancaRotulo": "alta",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Forward Observer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Forward Observer",
+     "armyBook": "Company Leader + Forward Observer"
+    }
+   ],
+   "notas": "herói que é opção; opção também do Storm Leader (e de veículos)"
+  },
+  "a011": {
+   "artId": "munitioner",
+   "rotulo": "Munitioner",
+   "confiancaRotulo": "alta",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Munitioner"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Munitioner",
+     "armyBook": "Company Leader + Munitioner"
+    }
+   ],
+   "notas": "herói que é opção; opção também do Storm Leader"
+  },
+  "a012": {
+   "artId": "psy-hacker",
+   "rotulo": "Psy-Hacker",
+   "confiancaRotulo": "alta",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Psy-Hacker"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Psy-Hacker",
+     "armyBook": "Company Leader + Psy-Hacker"
+    }
+   ],
+   "notas": "herói que é opção; opção também do Storm Leader"
+  },
+  "a013": {
+   "artId": "sniper-leader",
+   "rotulo": "Sniper Leader",
+   "confiancaRotulo": "alta",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Sniper Leader"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sniper Leader",
+     "armyBook": "Company Leader + Sniper Leader"
+    }
+   ],
+   "notas": "Sniper Leader é opção só do Company Leader; figura com fuzil de precisão"
+  },
+  "a014": {
+   "artId": "infantry-rifle",
+   "rotulo": "Infantry Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [
+    "Battle Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Battle Rifle"
+    }
+   ],
+   "notas": "army book não tem arma chamada só 'Rifle'; a arma padrão é Battle Rifle"
+  },
+  "a015": {
+   "artId": "infantry-drum-rifle",
+   "rotulo": "Infantry Drum Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [
+    "Shredder Drum-Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Drum Rifle",
+     "armyBook": "Shredder Drum-Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a016": {
+   "artId": "infantry-fusion-rifle",
+   "rotulo": "Infantry Fusion Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a017": {
+   "artId": "infantry-flamer",
+   "rotulo": "Infantry Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [
+    "Flamer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a018": {
+   "artId": "infantry-laser-rifle",
+   "rotulo": "Infantry Laser Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [
+    "Laser Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a019": {
+   "artId": "infantry-grenade-launcher",
+   "rotulo": "Infantry Grenade Launcher",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [
+    "Grenade Launcher"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a020": {
+   "artId": "infantry-plasma-rifle",
+   "rotulo": "Infantry Plasma Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a021": {
+   "artId": "infantry-sniper-rifle",
+   "rotulo": "Infantry Sniper Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "Infantry Squad v3.6.0 não tem Sniper Rifle (Veterans e Storm Troopers têm)"
+  },
+  "a022": {
+   "artId": "infantry-sergeant",
+   "rotulo": "Infantry Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "sargento (Sgt. Pistol + Sgt. Hand Weapon)"
+  },
+  "a023": {
+   "artId": "infantry-radio",
+   "rotulo": "Infantry Radio",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [],
+   "cosmetic": "radio",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Radio = Field Radio"
+  },
+  "a024": {
+   "artId": "infantry-medic",
+   "rotulo": "Infantry Medic",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [],
+   "cosmetic": "medic",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Medic = Medical Training"
+  },
+  "a025": {
+   "artId": "infantry-banner",
+   "rotulo": "Infantry Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Banner = Company Standard"
+  },
+  "a026": {
+   "artId": "recruits",
+   "rotulo": "Recruits",
+   "confiancaRotulo": "alta",
+   "unitKey": "recruits",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a027": {
+   "artId": "grunt",
+   "rotulo": "GRUNT",
+   "confiancaRotulo": "alta",
+   "unitKey": "grunt-robot",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "GRUNT Robots (GF) / GRUNT Robot (Firefight)"
+  },
+  "a028": {
+   "artId": "machine-gun-team",
+   "rotulo": "Machine Gun Team",
+   "confiancaRotulo": "alta",
+   "unitKey": "weapon-team",
+   "equipmentTags": [
+    "Heavy Machinegun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Machine Gun",
+     "armyBook": "Heavy Machinegun"
+    }
+   ],
+   "notas": "arma padrão do Weapon Team. As artes de equipe também serviriam à opção Weapon Team de Infantry Squad/Veterans"
+  },
+  "a029": {
+   "artId": "mortar-team",
+   "rotulo": "Mortar Team",
+   "confiancaRotulo": "alta",
+   "unitKey": "weapon-team",
+   "equipmentTags": [
+    "Mortar"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a030": {
+   "artId": "rocket-team",
+   "rotulo": "Rocket Team",
+   "confiancaRotulo": "alta",
+   "unitKey": "weapon-team",
+   "equipmentTags": [
+    "Missile Launcher"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rocket",
+     "armyBook": "Missile Launcher"
+    }
+   ],
+   "notas": "o único lançador do Weapon Team é Missile Launcher"
+  },
+  "a031": {
+   "artId": "laser-cannon-team",
+   "rotulo": "Laser Cannon Team",
+   "confiancaRotulo": "alta",
+   "unitKey": "weapon-team",
+   "equipmentTags": [
+    "Laser Cannon"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a032": {
+   "artId": "autocannon-team",
+   "rotulo": "Autocannon Team",
+   "confiancaRotulo": "alta",
+   "unitKey": "weapon-team",
+   "equipmentTags": [
+    "Autocannon"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a033": {
+   "artId": "veteran-rifle",
+   "rotulo": "Veteran Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "veterans",
+   "equipmentTags": [
+    "Battle Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Battle Rifle"
+    }
+   ],
+   "notas": "como a014: a arma padrão é Battle Rifle"
+  },
+  "a034": {
+   "artId": "veteran-shotgun",
+   "rotulo": "Veteran Shotgun",
+   "confiancaRotulo": "alta",
+   "unitKey": "veterans",
+   "equipmentTags": [
+    "Shotgun"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a035": {
+   "artId": "veteran-flamer",
+   "rotulo": "Veteran Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "veterans",
+   "equipmentTags": [
+    "Flamer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a036": {
+   "artId": "veteran-drum-rifle",
+   "rotulo": "Veteran Drum Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "veterans",
+   "equipmentTags": [
+    "Shredder Drum-Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Drum Rifle",
+     "armyBook": "Shredder Drum-Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a037": {
+   "artId": "veteran-plasma-rifle",
+   "rotulo": "Veteran Plasma Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "veterans",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a038": {
+   "artId": "veteran-fusion-rifle",
+   "rotulo": "Veteran Fusion Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "veterans",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a039": {
+   "artId": "veteran-grenade-launcher",
+   "rotulo": "Veteran Grenade Launcher",
+   "confiancaRotulo": "alta",
+   "unitKey": "veterans",
+   "equipmentTags": [
+    "Grenade Launcher"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a040": {
+   "artId": "veteran-sniper-rifle",
+   "rotulo": "Veteran Sniper Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "veterans",
+   "equipmentTags": [
+    "Sniper Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a041": {
+   "artId": "veteran-banner",
+   "rotulo": "Veteran Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "veterans",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Banner = Company Standard"
+  },
+  "a042": {
+   "artId": "veteran-radio",
+   "rotulo": "Veteran Radio",
+   "confiancaRotulo": "alta",
+   "unitKey": "veterans",
+   "equipmentTags": [],
+   "cosmetic": "radio",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Radio = Field Radio"
+  },
+  "a043": {
+   "artId": "veteran-medic",
+   "rotulo": "Veteran Medic",
+   "confiancaRotulo": "alta",
+   "unitKey": "veterans",
+   "equipmentTags": [],
+   "cosmetic": "medic",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Medic = Medical Training"
+  },
+  "a044": {
+   "artId": "veteran-sergeant",
+   "rotulo": "Veteran Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "veterans",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a045": {
+   "artId": "storm-trooper-rifle",
+   "rotulo": "Storm Trooper Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [
+    "Heavy Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Heavy Rifle"
+    }
+   ],
+   "notas": "a arma padrão do Storm Trooper é Heavy Rifle"
+  },
+  "a046": {
+   "artId": "storm-trooper-flamer",
+   "rotulo": "Storm Trooper Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [
+    "Flamer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a047": {
+   "artId": "storm-trooper-drum-rifle",
+   "rotulo": "Storm Trooper Drum Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [
+    "Shredder Drum-Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Drum Rifle",
+     "armyBook": "Shredder Drum-Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a048": {
+   "artId": "storm-trooper-grenade-launcher",
+   "rotulo": "Storm Trooper Grenade Launcher",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [
+    "Grenade Launcher"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a049": {
+   "artId": "storm-trooper-machine-gun",
+   "rotulo": "Storm Trooper Machine Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [
+    "Storm Machinegun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Machine Gun",
+     "armyBook": "Storm Machinegun"
+    }
+   ],
+   "notas": "a única metralhadora do Storm Trooper é Storm Machinegun"
+  },
+  "a050": {
+   "artId": "storm-trooper-fusion-rifle",
+   "rotulo": "Storm Trooper Fusion Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a051": {
+   "artId": "storm-trooper-plasma-rifle",
+   "rotulo": "Storm Trooper Plasma Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a052": {
+   "artId": "storm-trooper-sniper-rifle",
+   "rotulo": "Storm Trooper Sniper Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [
+    "Sniper Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a053": {
+   "artId": "storm-trooper-banner",
+   "rotulo": "Storm Trooper Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Banner = Company Standard"
+  },
+  "a054": {
+   "artId": "storm-trooper-radio",
+   "rotulo": "Storm Trooper Radio",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [],
+   "cosmetic": "radio",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Radio = Field Radio"
+  },
+  "a055": {
+   "artId": "storm-trooper-medic",
+   "rotulo": "Storm Trooper Medic",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [],
+   "cosmetic": "medic",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Medic = Medical Training"
+  },
+  "a056": {
+   "artId": "storm-trooper-sergeant",
+   "rotulo": "Storm Trooper Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a057": {
+   "artId": "sappers-fusion-rifle",
+   "rotulo": "Sappers Fusion Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "sapper",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a058": {
+   "artId": "sappers-drum-rifle",
+   "rotulo": "Sappers Drum Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "sapper",
+   "equipmentTags": [
+    "Shredder Drum-Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Drum Rifle",
+     "armyBook": "Shredder Drum-Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a059": {
+   "artId": "sappers-flamer",
+   "rotulo": "Sappers Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "sapper",
+   "equipmentTags": [
+    "Flamer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a060": {
+   "artId": "sappers-grenade-launcher",
+   "rotulo": "Sappers Grenade Launcher",
+   "confiancaRotulo": "alta",
+   "unitKey": "sapper",
+   "equipmentTags": [
+    "Grenade Launcher"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "arma padrão"
+  },
+  "a061": {
+   "artId": "sappers-laser-rifle",
+   "rotulo": "Sappers Laser Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "sapper",
+   "equipmentTags": [
+    "Laser Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a062": {
+   "artId": "sappers-plasma-rifle",
+   "rotulo": "Sappers Plasma Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "sapper",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a063": {
+   "artId": "sniper",
+   "rotulo": "Sniper",
+   "confiancaRotulo": "alta",
+   "unitKey": "sniper",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a064": {
+   "artId": "biker-pistol",
+   "rotulo": "Biker Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "combat-bikers",
+   "equipmentTags": [
+    "Pistol"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "nas opções do army book Pistol vem junto com uma lança"
+  },
+  "a065": {
+   "artId": "biker-lance",
+   "rotulo": "Biker Lance",
+   "confiancaRotulo": "alta",
+   "unitKey": "combat-bikers",
+   "equipmentTags": [
+    "Heavy Lance|Hunting Lance|Anti-Tank Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Lance",
+     "armyBook": [
+      "Heavy Lance",
+      "Hunting Lance",
+      "Anti-Tank Lance"
+     ]
+    }
+   ],
+   "notas": "rótulo diz só 'Lance'; o army book tem três lanças: tag com as três alternativas"
+  },
+  "a066": {
+   "artId": "ogre-minigun",
+   "rotulo": "OGRE Minigun",
+   "confiancaRotulo": "alta",
+   "unitKey": "ogre-robot",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "army book v3.6.0 não tem Minigun; candidata a substituta de Gatling Gun (decisão do usuário, D013)"
+  },
+  "a067": {
+   "artId": "ogre-grenade-launcher",
+   "rotulo": "OGRE Grenade Launcher",
+   "confiancaRotulo": "alta",
+   "unitKey": "ogre-robot",
+   "equipmentTags": [
+    "Grenade Launcher"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a068": {
+   "artId": "ogre-baton",
+   "rotulo": "OGRE Baton",
+   "confiancaRotulo": "alta",
+   "unitKey": "ogre-robot",
+   "equipmentTags": [
+    "Shock Baton"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Baton",
+     "armyBook": "Shock Baton"
+    }
+   ],
+   "notas": ""
+  },
+  "a069": {
+   "artId": "ogre-axe",
+   "rotulo": "OGRE Axe",
+   "confiancaRotulo": "alta",
+   "unitKey": "ogre-robot",
+   "equipmentTags": [
+    "Energy Axe"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Axe",
+     "armyBook": "Energy Axe"
+    }
+   ],
+   "notas": ""
+  }
+ }
 }

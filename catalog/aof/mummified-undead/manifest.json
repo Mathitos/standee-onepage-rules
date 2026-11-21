@@ -1,0 +1,3987 @@
+{
+  "schemaVersion": 1,
+  "packId": "mummified-undead",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "AOF",
+    "slug": "age-of-fantasy",
+    "armyForgeId": 4
+  },
+  "gameSystems": [
+    {
+      "code": "AOF",
+      "slug": "age-of-fantasy",
+      "armyForgeId": 4
+    },
+    {
+      "code": "AOFS",
+      "slug": "age-of-fantasy-skirmish",
+      "armyForgeId": 5
+    }
+  ],
+  "armyBook": {
+    "id": "t-sIke2snonFSL6Q",
+    "name": "Mummified Undead",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "t-sIke2snonFSL6Q",
+      "name": "Mummified Undead",
+      "version": "3.6.0",
+      "gameSystemId": 4,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "t-sIke2snonFSL6Q",
+      "name": "Mummified Undead",
+      "version": "3.6.0",
+      "gameSystemId": 5,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Mummified_Undead_-_BW.pdf",
+    "pdfSha256": "d637de8a66aff2b78cf447e99fe7625e5d2291d1a4e5fe1df7e9ec1540423948",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "royal-champion",
+      "names": [
+        "Royal Champion"
+      ],
+      "armyForgeUnitId": "AfqFVor",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "skeleton-leader",
+      "names": [
+        "Skeleton Leader"
+      ],
+      "armyForgeUnitId": "lmuO_K1",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "skeleton-warriors",
+      "names": [
+        "Skeleton Warriors"
+      ],
+      "armyForgeUnitId": "IvDRlw5",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "royal-guard",
+      "names": [
+        "Royal Guard"
+      ],
+      "armyForgeUnitId": "c14qXDf",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "skeleton-archers",
+      "names": [
+        "Skeleton Archers"
+      ],
+      "armyForgeUnitId": "SJevoE7",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "mummies",
+      "names": [
+        "Mummies"
+      ],
+      "armyForgeUnitId": "T5hPi6m",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "skeleton-horsemen",
+      "names": [
+        "Skeleton Horsemen",
+        "Skeleton Horseman"
+      ],
+      "armyForgeUnitId": "6aipsh4",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "beast-riders",
+      "names": [
+        "Beast Riders",
+        "Beast Rider"
+      ],
+      "armyForgeUnitId": "xCYqdWK",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "guardian-statues",
+      "names": [
+        "Guardian Statues",
+        "Guardian Statue"
+      ],
+      "armyForgeUnitId": "Dzx2JbZ",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "snakemen",
+      "names": [
+        "Snakemen",
+        "Snakeman"
+      ],
+      "armyForgeUnitId": "xE4z4X9",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          75.0,
+          46.0
+        ],
+        "raw": "75x46",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "snake-riders",
+      "names": [
+        "Snake Riders",
+        "Snake Rider"
+      ],
+      "armyForgeUnitId": "d1f_Kvo",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          90.0,
+          52.0
+        ],
+        "raw": "90x52",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "hunting-beasts",
+      "names": [
+        "Hunting Beasts",
+        "Hunting Beast"
+      ],
+      "armyForgeUnitId": "g87PBrZ",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "scarab-swarms",
+      "names": [
+        "Scarab Swarms",
+        "Scarab Swarm"
+      ],
+      "armyForgeUnitId": "fJ6qv3u",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "vultures",
+      "names": [
+        "Vultures",
+        "Vulture"
+      ],
+      "armyForgeUnitId": "VO46CPB",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "death-casket",
+      "names": [
+        "Death Casket"
+      ],
+      "armyForgeUnitId": "Be6l2xH",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          75.0,
+          46.0
+        ],
+        "raw": "75x46",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "great-scorpion",
+      "names": [
+        "Great Scorpion"
+      ],
+      "armyForgeUnitId": "BfFa2ZP",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          60.0
+        ],
+        "raw": "60",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "king",
+      "candidateId": "a001",
+      "pdfLabel": "King",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "royal-champion",
+      "equipmentTags": [
+        "Monarch"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "King",
+          "armyBook": "Royal Champion"
+        },
+        {
+          "pdf": "King",
+          "armyBook": "Monarch"
+        }
+      ],
+      "notes": "herói rei; no army book v3.6.0 é o Royal Champion (Elite Skeleton Leader) com a opção Monarch",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0
+          ],
+          "front": "arts/king/fino/frente.svg",
+          "back": "arts/king/fino/verso.svg",
+          "canvasMm": [
+            45.254,
+            36.449
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            36.3,
+            45.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            0
+          ],
+          "front": "arts/king/borda/frente.svg",
+          "back": "arts/king/borda/verso.svg",
+          "canvasMm": [
+            48.472,
+            38.058
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            37.9,
+            48.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "queen",
+      "candidateId": "a002",
+      "pdfLabel": "Queen",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "royal-champion",
+      "equipmentTags": [
+        "Monarch"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Queen",
+          "armyBook": "Royal Champion"
+        },
+        {
+          "pdf": "Queen",
+          "armyBook": "Monarch"
+        }
+      ],
+      "notes": "rainha com cetro; Monarch (rei ou rainha) do Royal Champion. Alternativa: Tomb Queen Icon Bearer, mas a figura não carrega ícone",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            1
+          ],
+          "front": "arts/queen/fino/frente.svg",
+          "back": "arts/queen/fino/verso.svg",
+          "canvasMm": [
+            32.512,
+            31.157
+          ],
+          "frontBackIoU": 0.805,
+          "sizeMm": [
+            31.0,
+            32.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            1
+          ],
+          "front": "arts/queen/borda/frente.svg",
+          "back": "arts/queen/borda/verso.svg",
+          "canvasMm": [
+            35.729,
+            32.766
+          ],
+          "frontBackIoU": 0.869,
+          "sizeMm": [
+            32.6,
+            35.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "priest",
+      "candidateId": "a003",
+      "pdfLabel": "Priest",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-leader",
+      "equipmentTags": [
+        "Priest"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Priest",
+          "armyBook": "Skeleton Leader"
+        }
+      ],
+      "notes": "opção Priest existe no Skeleton Leader e no Royal Champion; figura é um esqueleto simples com cajado, escolhi Skeleton Leader",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            2
+          ],
+          "front": "arts/priest/fino/frente.svg",
+          "back": "arts/priest/fino/verso.svg",
+          "canvasMm": [
+            22.056,
+            39.074
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            38.9,
+            21.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            2
+          ],
+          "front": "arts/priest/borda/frente.svg",
+          "back": "arts/priest/borda/verso.svg",
+          "canvasMm": [
+            25.273,
+            40.682
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            40.6,
+            25.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "stone-shaper",
+      "candidateId": "a004",
+      "pdfLabel": "Stone Shaper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-leader",
+      "equipmentTags": [
+        "Master Stone Shaper"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Stone Shaper",
+          "armyBook": "Master Stone Shaper"
+        }
+      ],
+      "notes": "herói a pé; só o Skeleton Leader tem Master Stone Shaper (Stone Shaper simples é upgrade de constructos)",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            3
+          ],
+          "front": "arts/stone-shaper/fino/frente.svg",
+          "back": "arts/stone-shaper/fino/verso.svg",
+          "canvasMm": [
+            30.099,
+            29.379
+          ],
+          "frontBackIoU": 0.943,
+          "sizeMm": [
+            29.3,
+            29.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            3
+          ],
+          "front": "arts/stone-shaper/borda/frente.svg",
+          "back": "arts/stone-shaper/borda/verso.svg",
+          "canvasMm": [
+            33.316,
+            30.988
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            30.9,
+            33.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horse-king",
+      "candidateId": "a005",
+      "pdfLabel": "Horse King",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "royal-champion",
+      "equipmentTags": [
+        "Monarch",
+        "Skeletal Steed"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "King",
+          "armyBook": "Monarch"
+        },
+        {
+          "pdf": "Horse",
+          "armyBook": "Skeletal Steed"
+        }
+      ],
+      "notes": "rei em cavalo esquelético: Royal Champion com Monarch e montaria Skeletal Steed",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0
+          ],
+          "front": "arts/horse-king/fino/frente.svg",
+          "back": "arts/horse-king/fino/verso.svg",
+          "canvasMm": [
+            38.904,
+            41.571
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            41.4,
+            38.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 30,
+          "rows": [
+            0
+          ],
+          "front": "arts/horse-king/borda/frente.svg",
+          "back": "arts/horse-king/borda/verso.svg",
+          "canvasMm": [
+            42.926,
+            43.561
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            43.4,
+            42.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "beast-rider-king",
+      "candidateId": "a006",
+      "pdfLabel": "Beast Rider King",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "royal-champion",
+      "equipmentTags": [
+        "Monarch",
+        "Royal Beast"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "King",
+          "armyBook": "Monarch"
+        },
+        {
+          "pdf": "Beast Rider",
+          "armyBook": "Royal Beast"
+        }
+      ],
+      "notes": "rei montado na fera dos Beast Riders: Royal Champion com Monarch e montaria Royal Beast",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            1
+          ],
+          "front": "arts/beast-rider-king/fino/frente.svg",
+          "back": "arts/beast-rider-king/fino/verso.svg",
+          "canvasMm": [
+            48.641,
+            41.698
+          ],
+          "frontBackIoU": 0.947,
+          "sizeMm": [
+            41.6,
+            48.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 30,
+          "rows": [
+            1
+          ],
+          "front": "arts/beast-rider-king/borda/frente.svg",
+          "back": "arts/beast-rider-king/borda/verso.svg",
+          "canvasMm": [
+            52.62,
+            43.688
+          ],
+          "frontBackIoU": 0.96,
+          "sizeMm": [
+            43.6,
+            52.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "snake-king",
+      "candidateId": "a007",
+      "pdfLabel": "Snake King",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "royal-champion",
+      "equipmentTags": [
+        "Monarch",
+        "Royal Snake"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "King",
+          "armyBook": "Monarch"
+        },
+        {
+          "pdf": "Snake",
+          "armyBook": "Royal Snake"
+        }
+      ],
+      "notes": "rei sobre serpente gigante: Royal Champion com Monarch e montaria Royal Snake",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            2
+          ],
+          "front": "arts/snake-king/fino/frente.svg",
+          "back": "arts/snake-king/fino/verso.svg",
+          "canvasMm": [
+            55.668,
+            74.21
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            74.1,
+            55.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 30,
+          "rows": [
+            2
+          ],
+          "front": "arts/snake-king/borda/frente.svg",
+          "back": "arts/snake-king/borda/verso.svg",
+          "canvasMm": [
+            59.69,
+            76.242
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            76.1,
+            59.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sword",
+      "candidateId": "a008",
+      "pdfLabel": "Warrior Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-warriors",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Skeleton Warriors"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "esqueleto com espada e escudo; Warrior = Skeleton Warriors (genericName igual), arma padrão Hand Weapon",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0,
+            1,
+            4
+          ],
+          "front": "arts/warrior-sword/fino/frente.svg",
+          "back": "arts/warrior-sword/fino/verso.svg",
+          "canvasMm": [
+            19.643,
+            30.48
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            30.4,
+            19.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 31,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sword/borda/frente.svg",
+          "back": "arts/warrior-sword/borda/verso.svg",
+          "canvasMm": [
+            22.521,
+            31.919
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            31.8,
+            22.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sword-copia-2",
+      "candidateId": "a009",
+      "pdfLabel": "Warrior Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-warriors",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Skeleton Warriors"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "mesma arte de a008 (cópia que o recorte não juntou)",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            2,
+            3
+          ],
+          "front": "arts/warrior-sword-copia-2/fino/frente.svg",
+          "back": "arts/warrior-sword-copia-2/fino/verso.svg",
+          "canvasMm": [
+            19.643,
+            30.48
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            30.4,
+            19.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 31,
+          "rows": [
+            1,
+            2,
+            3
+          ],
+          "front": "arts/warrior-sword-copia-2/borda/frente.svg",
+          "back": "arts/warrior-sword-copia-2/borda/verso.svg",
+          "canvasMm": [
+            22.564,
+            31.919
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            31.8,
+            22.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-spear",
+      "candidateId": "a010",
+      "pdfLabel": "Warrior Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-warriors",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Skeleton Warriors"
+        }
+      ],
+      "notes": "Warrior = Skeleton Warriors (genericName igual)",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-spear/fino/frente.svg",
+          "back": "arts/warrior-spear/fino/verso.svg",
+          "canvasMm": [
+            26.458,
+            30.48
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            30.4,
+            26.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-spear/borda/frente.svg",
+          "back": "arts/warrior-spear/borda/verso.svg",
+          "canvasMm": [
+            29.379,
+            31.919
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            31.8,
+            29.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sergeant",
+      "candidateId": "a011",
+      "pdfLabel": "Warrior Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-warriors",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Skeleton Warriors"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sergeant/fino/frente.svg",
+          "back": "arts/warrior-sergeant/fino/verso.svg",
+          "canvasMm": [
+            22.479,
+            34.248
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            34.1,
+            22.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sergeant/borda/frente.svg",
+          "back": "arts/warrior-sergeant/borda/verso.svg",
+          "canvasMm": [
+            25.4,
+            35.687
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            35.6,
+            25.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-musician",
+      "candidateId": "a012",
+      "pdfLabel": "Warrior Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-warriors",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Skeleton Warriors"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-musician/fino/frente.svg",
+          "back": "arts/warrior-musician/fino/verso.svg",
+          "canvasMm": [
+            27.559,
+            37.38
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            37.3,
+            27.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-musician/borda/frente.svg",
+          "back": "arts/warrior-musician/borda/verso.svg",
+          "canvasMm": [
+            30.438,
+            38.82
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            38.7,
+            30.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-banner",
+      "candidateId": "a013",
+      "pdfLabel": "Warrior Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-warriors",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Skeleton Warriors"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-banner/fino/frente.svg",
+          "back": "arts/warrior-banner/fino/verso.svg",
+          "canvasMm": [
+            31.962,
+            62.823
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            62.7,
+            31.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-banner/borda/frente.svg",
+          "back": "arts/warrior-banner/borda/verso.svg",
+          "canvasMm": [
+            34.883,
+            64.262
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            64.2,
+            34.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "kings-guard-sword",
+      "candidateId": "a014",
+      "pdfLabel": "King’s Guard Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "royal-guard",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "King’s Guard",
+          "armyBook": "Royal Guard"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "guarda de elite com escudo grande: Royal Guard (genericName Elite Skeleton Warriors); arma padrão Hand Weapon",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/kings-guard-sword/fino/frente.svg",
+          "back": "arts/kings-guard-sword/fino/verso.svg",
+          "canvasMm": [
+            23.622,
+            33.613
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            33.5,
+            23.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/kings-guard-sword/borda/frente.svg",
+          "back": "arts/kings-guard-sword/borda/verso.svg",
+          "canvasMm": [
+            25.739,
+            34.713
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            34.6,
+            25.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "kings-guard-spear",
+      "candidateId": "a015",
+      "pdfLabel": "King’s Guard Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "royal-guard",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [
+        {
+          "pdf": "King’s Guard",
+          "armyBook": "Royal Guard"
+        }
+      ],
+      "notes": "Royal Guard v3.6.0 não tem Spear (só Hand Weapon, Halberd, Great Weapon, Royal Axe, Royal Scythe); usuário decide se serve para Halberd",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/kings-guard-spear/fino/frente.svg",
+          "back": "arts/kings-guard-spear/fino/verso.svg",
+          "canvasMm": [
+            25.019,
+            33.74
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            33.6,
+            24.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/kings-guard-spear/borda/frente.svg",
+          "back": "arts/kings-guard-spear/borda/verso.svg",
+          "canvasMm": [
+            27.093,
+            34.798
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            34.7,
+            26.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "kings-guard-sergeant",
+      "candidateId": "a016",
+      "pdfLabel": "King’s Guard Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "royal-guard",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "King’s Guard",
+          "armyBook": "Royal Guard"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0
+          ],
+          "front": "arts/kings-guard-sergeant/fino/frente.svg",
+          "back": "arts/kings-guard-sergeant/fino/verso.svg",
+          "canvasMm": [
+            29.718,
+            32.639
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            32.5,
+            29.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            0
+          ],
+          "front": "arts/kings-guard-sergeant/borda/frente.svg",
+          "back": "arts/kings-guard-sergeant/borda/verso.svg",
+          "canvasMm": [
+            31.835,
+            33.697
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            33.6,
+            31.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "kings-guard-musician",
+      "candidateId": "a017",
+      "pdfLabel": "King’s Guard Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "royal-guard",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "King’s Guard",
+          "armyBook": "Royal Guard"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            1
+          ],
+          "front": "arts/kings-guard-musician/fino/frente.svg",
+          "back": "arts/kings-guard-musician/fino/verso.svg",
+          "canvasMm": [
+            22.267,
+            43.392
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            43.3,
+            22.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            1
+          ],
+          "front": "arts/kings-guard-musician/borda/frente.svg",
+          "back": "arts/kings-guard-musician/borda/verso.svg",
+          "canvasMm": [
+            24.384,
+            44.45
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            44.4,
+            24.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "kings-guard-banner",
+      "candidateId": "a018",
+      "pdfLabel": "King’s Guard Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "royal-guard",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "King’s Guard",
+          "armyBook": "Royal Guard"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            2
+          ],
+          "front": "arts/kings-guard-banner/fino/frente.svg",
+          "back": "arts/kings-guard-banner/fino/verso.svg",
+          "canvasMm": [
+            39.497,
+            63.458
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            63.3,
+            39.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            2
+          ],
+          "front": "arts/kings-guard-banner/borda/frente.svg",
+          "back": "arts/kings-guard-banner/borda/verso.svg",
+          "canvasMm": [
+            41.614,
+            64.516
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            64.4,
+            41.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "archer",
+      "candidateId": "a019",
+      "pdfLabel": "Archer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-archers",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "genericName da unidade é Archers",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/archer/fino/frente.svg",
+          "back": "arts/archer/fino/verso.svg",
+          "canvasMm": [
+            31.962,
+            41.021
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            40.9,
+            31.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/archer/borda/frente.svg",
+          "back": "arts/archer/borda/verso.svg",
+          "canvasMm": [
+            34.205,
+            42.079
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            42.0,
+            34.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "mummy",
+      "candidateId": "a020",
+      "pdfLabel": "Mummy",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "mummies",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/mummy/fino/frente.svg",
+          "back": "arts/mummy/fino/verso.svg",
+          "canvasMm": [
+            24.68,
+            33.359
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            33.3,
+            24.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/mummy/borda/frente.svg",
+          "back": "arts/mummy/borda/verso.svg",
+          "canvasMm": [
+            28.067,
+            35.052
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            35.0,
+            27.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horseman-sword",
+      "candidateId": "a021",
+      "pdfLabel": "Horseman Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-horsemen",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Horseman",
+          "armyBook": "Skeleton Horsemen"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "cavaleiro esqueleto; no Skirmish a unidade é Skeleton Horseman (genericName Cavalry)",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/horseman-sword/fino/frente.svg",
+          "back": "arts/horseman-sword/fino/verso.svg",
+          "canvasMm": [
+            27.178,
+            51.181
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            51.1,
+            26.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            0,
+            3
+          ],
+          "front": "arts/horseman-sword/borda/frente.svg",
+          "back": "arts/horseman-sword/borda/verso.svg",
+          "canvasMm": [
+            30.099,
+            52.663
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            52.6,
+            29.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horseman-spear",
+      "candidateId": "a022",
+      "pdfLabel": "Horseman Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-horsemen",
+      "equipmentTags": [
+        "Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Horseman",
+          "armyBook": "Skeleton Horsemen"
+        },
+        {
+          "pdf": "Spear",
+          "armyBook": "Lance"
+        }
+      ],
+      "notes": "a unidade não tem Spear; a arma de haste da cavalaria é Lance",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/horseman-spear/fino/frente.svg",
+          "back": "arts/horseman-spear/fino/verso.svg",
+          "canvasMm": [
+            27.136,
+            57.15
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            57.1,
+            26.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/horseman-spear/borda/frente.svg",
+          "back": "arts/horseman-spear/borda/verso.svg",
+          "canvasMm": [
+            30.014,
+            58.632
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            58.5,
+            29.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horseman-sergeant",
+      "candidateId": "a023",
+      "pdfLabel": "Horseman Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-horsemen",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Horseman",
+          "armyBook": "Skeleton Horsemen"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0
+          ],
+          "front": "arts/horseman-sergeant/fino/frente.svg",
+          "back": "arts/horseman-sergeant/fino/verso.svg",
+          "canvasMm": [
+            37.042,
+            46.609
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            46.5,
+            36.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            0
+          ],
+          "front": "arts/horseman-sergeant/borda/frente.svg",
+          "back": "arts/horseman-sergeant/borda/verso.svg",
+          "canvasMm": [
+            39.92,
+            48.048
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            47.9,
+            39.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horseman-musician",
+      "candidateId": "a024",
+      "pdfLabel": "Horseman Musican",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-horsemen",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Horseman",
+          "armyBook": "Skeleton Horsemen"
+        }
+      ],
+      "notes": "rótulo impresso com erro de grafia (Musican); artId com a grafia correta",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            1
+          ],
+          "front": "arts/horseman-musician/fino/frente.svg",
+          "back": "arts/horseman-musician/fino/verso.svg",
+          "canvasMm": [
+            26.712,
+            50.758
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            50.6,
+            26.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            1
+          ],
+          "front": "arts/horseman-musician/borda/frente.svg",
+          "back": "arts/horseman-musician/borda/verso.svg",
+          "canvasMm": [
+            29.633,
+            52.197
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            52.1,
+            29.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horseman-banner",
+      "candidateId": "a025",
+      "pdfLabel": "Horseman Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-horsemen",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Horseman",
+          "armyBook": "Skeleton Horsemen"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            2
+          ],
+          "front": "arts/horseman-banner/fino/frente.svg",
+          "back": "arts/horseman-banner/fino/verso.svg",
+          "canvasMm": [
+            31.284,
+            76.666
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            76.5,
+            31.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            2
+          ],
+          "front": "arts/horseman-banner/borda/frente.svg",
+          "back": "arts/horseman-banner/borda/verso.svg",
+          "canvasMm": [
+            34.205,
+            78.105
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            78.1,
+            34.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horseman-archer",
+      "candidateId": "a026",
+      "pdfLabel": "Horseman Archer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-horsemen",
+      "equipmentTags": [
+        "Bow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Horseman",
+          "armyBook": "Skeleton Horsemen"
+        },
+        {
+          "pdf": "Archer",
+          "armyBook": "Bow"
+        }
+      ],
+      "notes": "arqueiro montado; Bow é a arma padrão da unidade",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/horseman-archer/fino/frente.svg",
+          "back": "arts/horseman-archer/fino/verso.svg",
+          "canvasMm": [
+            41.656,
+            50.08
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            50.0,
+            41.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/horseman-archer/borda/frente.svg",
+          "back": "arts/horseman-archer/borda/verso.svg",
+          "canvasMm": [
+            45.889,
+            52.197
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            52.1,
+            45.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "beast-rider-sword",
+      "candidateId": "a027",
+      "pdfLabel": "Beast Rider Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "beast-riders",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "Beast Rider é o nome no Skirmish; arma padrão Hand Weapon",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/beast-rider-sword/fino/frente.svg",
+          "back": "arts/beast-rider-sword/fino/verso.svg",
+          "canvasMm": [
+            45.889,
+            44.492
+          ],
+          "frontBackIoU": 0.955,
+          "sizeMm": [
+            44.4,
+            45.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/beast-rider-sword/borda/frente.svg",
+          "back": "arts/beast-rider-sword/borda/verso.svg",
+          "canvasMm": [
+            50.123,
+            46.609
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            46.5,
+            49.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "beast-rider-spear",
+      "candidateId": "a028",
+      "pdfLabel": "Beast Rider Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "beast-riders",
+      "equipmentTags": [
+        "Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Spear",
+          "armyBook": "Lance"
+        }
+      ],
+      "notes": "a unidade não tem Spear; Lance é a opção de haste",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/beast-rider-spear/fino/frente.svg",
+          "back": "arts/beast-rider-spear/fino/verso.svg",
+          "canvasMm": [
+            46.059,
+            44.704
+          ],
+          "frontBackIoU": 0.955,
+          "sizeMm": [
+            44.6,
+            45.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "front": "arts/beast-rider-spear/borda/frente.svg",
+          "back": "arts/beast-rider-spear/borda/verso.svg",
+          "canvasMm": [
+            50.123,
+            46.609
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            46.5,
+            49.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "beast-rider-sergeant",
+      "candidateId": "a029",
+      "pdfLabel": "Beast Rider Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "beast-riders",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            0
+          ],
+          "front": "arts/beast-rider-sergeant/fino/frente.svg",
+          "back": "arts/beast-rider-sergeant/fino/verso.svg",
+          "canvasMm": [
+            43.815,
+            44.535
+          ],
+          "frontBackIoU": 0.945,
+          "sizeMm": [
+            44.4,
+            43.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            0
+          ],
+          "front": "arts/beast-rider-sergeant/borda/frente.svg",
+          "back": "arts/beast-rider-sergeant/borda/verso.svg",
+          "canvasMm": [
+            48.048,
+            46.651
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            46.6,
+            47.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "beast-rider-musician",
+      "candidateId": "a030",
+      "pdfLabel": "Beast Rider Musican",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "beast-riders",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "rótulo impresso com erro de grafia (Musican); artId com a grafia correta",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            1
+          ],
+          "front": "arts/beast-rider-musician/fino/frente.svg",
+          "back": "arts/beast-rider-musician/fino/verso.svg",
+          "canvasMm": [
+            50.8,
+            55.584
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            55.5,
+            50.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            1
+          ],
+          "front": "arts/beast-rider-musician/borda/frente.svg",
+          "back": "arts/beast-rider-musician/borda/verso.svg",
+          "canvasMm": [
+            55.033,
+            57.7
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            57.6,
+            54.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "beast-rider-banner",
+      "candidateId": "a031",
+      "pdfLabel": "Beast Rider Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "beast-riders",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            2
+          ],
+          "front": "arts/beast-rider-banner/fino/frente.svg",
+          "back": "arts/beast-rider-banner/fino/verso.svg",
+          "canvasMm": [
+            53.679,
+            75.48
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            75.4,
+            53.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            2
+          ],
+          "front": "arts/beast-rider-banner/borda/frente.svg",
+          "back": "arts/beast-rider-banner/borda/verso.svg",
+          "canvasMm": [
+            57.954,
+            77.597
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            77.5,
+            57.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-sword-1",
+      "candidateId": "a032",
+      "pdfLabel": "Guardian Sword 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardian-statues",
+      "equipmentTags": [
+        "Dual Hand Weapons"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guardian",
+          "armyBook": "Guardian Statues"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Dual Hand Weapons"
+        }
+      ],
+      "notes": "estátua com cabeça de falcão e uma khopesh; a arma corpo a corpo padrão é Dual Hand Weapons",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0
+          ],
+          "front": "arts/guardian-sword-1/fino/frente.svg",
+          "back": "arts/guardian-sword-1/fino/verso.svg",
+          "canvasMm": [
+            43.688,
+            43.646
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            43.5,
+            43.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            0
+          ],
+          "front": "arts/guardian-sword-1/borda/frente.svg",
+          "back": "arts/guardian-sword-1/borda/verso.svg",
+          "canvasMm": [
+            47.075,
+            45.339
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            45.2,
+            46.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-sword-2",
+      "candidateId": "a033",
+      "pdfLabel": "Guardian Sword 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardian-statues",
+      "equipmentTags": [
+        "Dual Hand Weapons"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guardian",
+          "armyBook": "Guardian Statues"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Dual Hand Weapons"
+        }
+      ],
+      "notes": "duas lâminas curvas; Dual Hand Weapons",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            1
+          ],
+          "front": "arts/guardian-sword-2/fino/frente.svg",
+          "back": "arts/guardian-sword-2/fino/verso.svg",
+          "canvasMm": [
+            29.252,
+            43.265
+          ],
+          "frontBackIoU": 0.961,
+          "sizeMm": [
+            43.2,
+            29.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            1
+          ],
+          "front": "arts/guardian-sword-2/borda/frente.svg",
+          "back": "arts/guardian-sword-2/borda/verso.svg",
+          "canvasMm": [
+            32.639,
+            44.958
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            44.9,
+            32.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-sword-3",
+      "candidateId": "a034",
+      "pdfLabel": "Guardian Sword 3",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardian-statues",
+      "equipmentTags": [
+        "Dual Hand Weapons"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guardian",
+          "armyBook": "Guardian Statues"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Dual Hand Weapons"
+        }
+      ],
+      "notes": "estátua de chacal com espada reta; Dual Hand Weapons",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            2
+          ],
+          "front": "arts/guardian-sword-3/fino/frente.svg",
+          "back": "arts/guardian-sword-3/fino/verso.svg",
+          "canvasMm": [
+            29.252,
+            52.62
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            52.5,
+            29.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            2
+          ],
+          "front": "arts/guardian-sword-3/borda/frente.svg",
+          "back": "arts/guardian-sword-3/borda/verso.svg",
+          "canvasMm": [
+            32.766,
+            54.314
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            54.2,
+            32.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-spear-1",
+      "candidateId": "a035",
+      "pdfLabel": "Guardian Spear 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardian-statues",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [
+        {
+          "pdf": "Guardian",
+          "armyBook": "Guardian Statues"
+        }
+      ],
+      "notes": "army book não tem Spear para Guardian Statues; e a figura segura uma lâmina larga de cabo curto, não lança (rótulo e figura não batem)",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0
+          ],
+          "front": "arts/guardian-spear-1/fino/frente.svg",
+          "back": "arts/guardian-spear-1/fino/verso.svg",
+          "canvasMm": [
+            34.925,
+            44.577
+          ],
+          "frontBackIoU": 0.957,
+          "sizeMm": [
+            44.4,
+            34.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            0
+          ],
+          "front": "arts/guardian-spear-1/borda/frente.svg",
+          "back": "arts/guardian-spear-1/borda/verso.svg",
+          "canvasMm": [
+            38.269,
+            46.27
+          ],
+          "frontBackIoU": 0.958,
+          "sizeMm": [
+            46.1,
+            38.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-spear-2",
+      "candidateId": "a036",
+      "pdfLabel": "Guardian Spear 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardian-statues",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [
+        {
+          "pdf": "Guardian",
+          "armyBook": "Guardian Statues"
+        }
+      ],
+      "notes": "army book não tem Spear (opções: Dual Hand Weapons, Great Weapon, Great Bow, Great Cursed Bow); usuário decide se a lança serve para Great Weapon",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            1
+          ],
+          "front": "arts/guardian-spear-2/fino/frente.svg",
+          "back": "arts/guardian-spear-2/fino/verso.svg",
+          "canvasMm": [
+            46.228,
+            45.127
+          ],
+          "frontBackIoU": 0.96,
+          "sizeMm": [
+            45.0,
+            46.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            1
+          ],
+          "front": "arts/guardian-spear-2/borda/frente.svg",
+          "back": "arts/guardian-spear-2/borda/verso.svg",
+          "canvasMm": [
+            49.615,
+            46.821
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            46.7,
+            49.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-spear-3",
+      "candidateId": "a037",
+      "pdfLabel": "Guardian Spear 3",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardian-statues",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [
+        {
+          "pdf": "Guardian",
+          "armyBook": "Guardian Statues"
+        }
+      ],
+      "notes": "army book não tem Spear para Guardian Statues; usuário decide se serve para Great Weapon",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            2
+          ],
+          "front": "arts/guardian-spear-3/fino/frente.svg",
+          "back": "arts/guardian-spear-3/fino/verso.svg",
+          "canvasMm": [
+            28.744,
+            42.884
+          ],
+          "frontBackIoU": 0.959,
+          "sizeMm": [
+            42.8,
+            28.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            2
+          ],
+          "front": "arts/guardian-spear-3/borda/frente.svg",
+          "back": "arts/guardian-spear-3/borda/verso.svg",
+          "canvasMm": [
+            32.131,
+            44.577
+          ],
+          "frontBackIoU": 0.972,
+          "sizeMm": [
+            44.4,
+            31.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-bow-1",
+      "candidateId": "a038",
+      "pdfLabel": "Guardian Bow 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardian-statues",
+      "equipmentTags": [
+        "Great Bow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guardian",
+          "armyBook": "Guardian Statues"
+        },
+        {
+          "pdf": "Bow",
+          "armyBook": "Great Bow"
+        }
+      ],
+      "notes": "army book só tem Great Bow e Great Cursed Bow",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0
+          ],
+          "front": "arts/guardian-bow-1/fino/frente.svg",
+          "back": "arts/guardian-bow-1/fino/verso.svg",
+          "canvasMm": [
+            46.651,
+            58.378
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            58.3,
+            46.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            0
+          ],
+          "front": "arts/guardian-bow-1/borda/frente.svg",
+          "back": "arts/guardian-bow-1/borda/verso.svg",
+          "canvasMm": [
+            50.038,
+            60.071
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            59.9,
+            49.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-bow-2",
+      "candidateId": "a039",
+      "pdfLabel": "Guardian Bow 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardian-statues",
+      "equipmentTags": [
+        "Great Bow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guardian",
+          "armyBook": "Guardian Statues"
+        },
+        {
+          "pdf": "Bow",
+          "armyBook": "Great Bow"
+        }
+      ],
+      "notes": "army book só tem Great Bow e Great Cursed Bow",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            1
+          ],
+          "front": "arts/guardian-bow-2/fino/frente.svg",
+          "back": "arts/guardian-bow-2/fino/verso.svg",
+          "canvasMm": [
+            38.989,
+            58.462
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            58.3,
+            38.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            1
+          ],
+          "front": "arts/guardian-bow-2/borda/frente.svg",
+          "back": "arts/guardian-bow-2/borda/verso.svg",
+          "canvasMm": [
+            42.545,
+            60.156
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            60.0,
+            42.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-bow-3",
+      "candidateId": "a040",
+      "pdfLabel": "Guardian Bow 3",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardian-statues",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [
+        {
+          "pdf": "Guardian",
+          "armyBook": "Guardian Statues"
+        }
+      ],
+      "notes": "rótulo diz Bow, mas a figura segura uma haste longa com ponta (lança ou cajado), sem arco; sem tag para não ser escolhida para arqueiros",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            2
+          ],
+          "front": "arts/guardian-bow-3/fino/frente.svg",
+          "back": "arts/guardian-bow-3/fino/verso.svg",
+          "canvasMm": [
+            45.0,
+            45.72
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            45.6,
+            44.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            2
+          ],
+          "front": "arts/guardian-bow-3/borda/frente.svg",
+          "back": "arts/guardian-bow-3/borda/verso.svg",
+          "canvasMm": [
+            48.387,
+            47.413
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            47.3,
+            48.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "snakeman",
+      "candidateId": "a041",
+      "pdfLabel": "Snakeman",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "snakemen",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Snakeman é o nome no Skirmish",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/snakeman/fino/frente.svg",
+          "back": "arts/snakeman/fino/verso.svg",
+          "canvasMm": [
+            61.68,
+            49.996
+          ],
+          "frontBackIoU": 0.902,
+          "sizeMm": [
+            49.9,
+            61.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/snakeman/borda/frente.svg",
+          "back": "arts/snakeman/borda/verso.svg",
+          "canvasMm": [
+            65.913,
+            52.112
+          ],
+          "frontBackIoU": 0.918,
+          "sizeMm": [
+            52.0,
+            65.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "snake-rider",
+      "candidateId": "a042",
+      "pdfLabel": "Snake Rider",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "snake-riders",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/snake-rider/fino/frente.svg",
+          "back": "arts/snake-rider/fino/verso.svg",
+          "canvasMm": [
+            74.634,
+            60.579
+          ],
+          "frontBackIoU": 0.952,
+          "sizeMm": [
+            60.5,
+            74.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 50,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/snake-rider/borda/frente.svg",
+          "back": "arts/snake-rider/borda/verso.svg",
+          "canvasMm": [
+            78.867,
+            62.696
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            62.6,
+            78.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "snake-rider-sergeant",
+      "candidateId": "a043",
+      "pdfLabel": "Snake Rider Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "snake-riders",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            0
+          ],
+          "front": "arts/snake-rider-sergeant/fino/frente.svg",
+          "back": "arts/snake-rider-sergeant/fino/verso.svg",
+          "canvasMm": [
+            68.622,
+            52.197
+          ],
+          "frontBackIoU": 0.922,
+          "sizeMm": [
+            52.1,
+            68.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            0
+          ],
+          "front": "arts/snake-rider-sergeant/borda/frente.svg",
+          "back": "arts/snake-rider-sergeant/borda/verso.svg",
+          "canvasMm": [
+            72.856,
+            54.314
+          ],
+          "frontBackIoU": 0.942,
+          "sizeMm": [
+            54.2,
+            72.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "snake-rider-musician",
+      "candidateId": "a044",
+      "pdfLabel": "Snake Rider Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "snake-riders",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            1
+          ],
+          "front": "arts/snake-rider-musician/fino/frente.svg",
+          "back": "arts/snake-rider-musician/fino/verso.svg",
+          "canvasMm": [
+            66.844,
+            58.759
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            58.7,
+            66.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            1
+          ],
+          "front": "arts/snake-rider-musician/borda/frente.svg",
+          "back": "arts/snake-rider-musician/borda/verso.svg",
+          "canvasMm": [
+            71.078,
+            60.875
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            60.8,
+            70.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "snake-rider-banner",
+      "candidateId": "a045",
+      "pdfLabel": "Snake Rider Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "snake-riders",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            2
+          ],
+          "front": "arts/snake-rider-banner/fino/frente.svg",
+          "back": "arts/snake-rider-banner/fino/verso.svg",
+          "canvasMm": [
+            55.499,
+            83.481
+          ],
+          "frontBackIoU": 0.919,
+          "sizeMm": [
+            83.4,
+            55.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            2
+          ],
+          "front": "arts/snake-rider-banner/borda/frente.svg",
+          "back": "arts/snake-rider-banner/borda/verso.svg",
+          "canvasMm": [
+            59.732,
+            85.259
+          ],
+          "frontBackIoU": 0.945,
+          "sizeMm": [
+            85.2,
+            59.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunting-beast",
+      "candidateId": "a046",
+      "pdfLabel": "Hunting Beast",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hunting-beasts",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só estilo fino; o estilo borda da mesma arte saiu separado em a054 e a055",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/hunting-beast/fino/frente.svg",
+          "back": "arts/hunting-beast/fino/verso.svg",
+          "canvasMm": [
+            52.917,
+            28.871
+          ],
+          "frontBackIoU": 0.575,
+          "sizeMm": [
+            28.8,
+            52.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo",
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "swarm",
+      "candidateId": "a047",
+      "pdfLabel": "Swarm",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scarab-swarms",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Swarm",
+          "armyBook": "Scarab Swarms"
+        }
+      ],
+      "notes": "enxame de escaravelhos; única unidade de enxame (genericName Scorpion Swarms)",
+      "styles": {
+        "fino": {
+          "page": 26,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/swarm/fino/frente.svg",
+          "back": "arts/swarm/fino/verso.svg",
+          "canvasMm": [
+            35.729,
+            13.885
+          ],
+          "frontBackIoU": 0.939,
+          "sizeMm": [
+            13.8,
+            35.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 53,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/swarm/borda/frente.svg",
+          "back": "arts/swarm/borda/verso.svg",
+          "canvasMm": [
+            38.142,
+            14.944
+          ],
+          "frontBackIoU": 0.942,
+          "sizeMm": [
+            14.8,
+            37.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vulture",
+      "candidateId": "a048",
+      "pdfLabel": "Vulture",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vultures",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só estilo fino; o estilo borda da mesma arte saiu separado em a056",
+      "styles": {
+        "fino": {
+          "page": 27,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/vulture/fino/frente.svg",
+          "back": "arts/vulture/fino/verso.svg",
+          "canvasMm": [
+            49.826,
+            46.482
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            46.3,
+            49.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "death-casket",
+      "candidateId": "a049",
+      "pdfLabel": "Death Casket",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "death-casket",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            0
+          ],
+          "front": "arts/death-casket/fino/frente.svg",
+          "back": "arts/death-casket/fino/verso.svg",
+          "canvasMm": [
+            67.733,
+            53.001
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            52.9,
+            67.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            0
+          ],
+          "front": "arts/death-casket/borda/frente.svg",
+          "back": "arts/death-casket/borda/verso.svg",
+          "canvasMm": [
+            71.459,
+            54.864
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            54.8,
+            71.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scorpion",
+      "candidateId": "a050",
+      "pdfLabel": "Scorpion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "great-scorpion",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Scorpion",
+          "armyBook": "Great Scorpion"
+        }
+      ],
+      "notes": "escorpião grande sozinho; nome e genericName da unidade são Great Scorpion",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            1,
+            2
+          ],
+          "front": "arts/scorpion/fino/frente.svg",
+          "back": "arts/scorpion/fino/verso.svg",
+          "canvasMm": [
+            63.923,
+            48.556
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            48.4,
+            63.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            1,
+            2
+          ],
+          "front": "arts/scorpion/borda/frente.svg",
+          "back": "arts/scorpion/borda/verso.svg",
+          "canvasMm": [
+            67.649,
+            50.419
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            50.3,
+            67.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sword-borda",
+      "candidateId": "a051",
+      "pdfLabel": "Warrior Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-warriors",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Skeleton Warriors"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "mesma arte de a008, só no estilo borda (cópia que o recorte não juntou)",
+      "styles": {
+        "borda": {
+          "page": 31,
+          "rows": [
+            4
+          ],
+          "front": "arts/warrior-sword-borda/borda/frente.svg",
+          "back": "arts/warrior-sword-borda/borda/verso.svg",
+          "canvasMm": [
+            22.521,
+            31.919
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            31.8,
+            22.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horseman-sword-borda",
+      "candidateId": "a052",
+      "pdfLabel": "Horseman Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-horsemen",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Horseman",
+          "armyBook": "Skeleton Horsemen"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "mesma arte de a021, só no estilo borda (cópia que o recorte não juntou)",
+      "styles": {
+        "borda": {
+          "page": 39,
+          "rows": [
+            1,
+            2,
+            4
+          ],
+          "front": "arts/horseman-sword-borda/borda/frente.svg",
+          "back": "arts/horseman-sword-borda/borda/verso.svg",
+          "canvasMm": [
+            30.099,
+            52.663
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            52.6,
+            29.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "beast-rider-spear-borda",
+      "candidateId": "a053",
+      "pdfLabel": "Beast Rider Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "beast-riders",
+      "equipmentTags": [
+        "Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Spear",
+          "armyBook": "Lance"
+        }
+      ],
+      "notes": "mesma arte de a028, só no estilo borda (cópia que o recorte não juntou)",
+      "styles": {
+        "borda": {
+          "page": 44,
+          "rows": [
+            3
+          ],
+          "front": "arts/beast-rider-spear-borda/borda/frente.svg",
+          "back": "arts/beast-rider-spear-borda/borda/verso.svg",
+          "canvasMm": [
+            50.08,
+            46.609
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            46.5,
+            49.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunting-beast-borda",
+      "candidateId": "a054",
+      "pdfLabel": "Hunting Beast",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hunting-beasts",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "mesma arte de a046, só no estilo borda (recorte não pareou)",
+      "styles": {
+        "borda": {
+          "page": 52,
+          "rows": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "front": "arts/hunting-beast-borda/borda/frente.svg",
+          "back": "arts/hunting-beast-borda/borda/verso.svg",
+          "canvasMm": [
+            56.811,
+            30.903
+          ],
+          "frontBackIoU": 0.774,
+          "sizeMm": [
+            30.8,
+            56.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo",
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunting-beast-borda-2",
+      "candidateId": "a055",
+      "pdfLabel": "Hunting Beast",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hunting-beasts",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "mesma arte de a046 e a054, só no estilo borda (cópia que o recorte não juntou)",
+      "styles": {
+        "borda": {
+          "page": 52,
+          "rows": [
+            3
+          ],
+          "front": "arts/hunting-beast-borda-2/borda/frente.svg",
+          "back": "arts/hunting-beast-borda-2/borda/verso.svg",
+          "canvasMm": [
+            57.15,
+            30.903
+          ],
+          "frontBackIoU": 0.774,
+          "sizeMm": [
+            30.8,
+            57.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo",
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vulture-borda",
+      "candidateId": "a056",
+      "pdfLabel": "Vulture",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vultures",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "mesma arte de a048, só no estilo borda (recorte não pareou)",
+      "styles": {
+        "borda": {
+          "page": 54,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/vulture-borda/borda/frente.svg",
+          "back": "arts/vulture-borda/borda/verso.svg",
+          "canvasMm": [
+            54.06,
+            57.827
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            57.7,
+            53.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

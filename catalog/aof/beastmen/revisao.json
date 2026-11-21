@@ -1,0 +1,933 @@
+{
+ "packId": "beastmen",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "AOF",
+   "slug": "age-of-fantasy",
+   "armyForgeId": 4
+  },
+  {
+   "code": "AOFS",
+   "slug": "age-of-fantasy-skirmish",
+   "armyForgeId": 5
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/TciwNI3AOMXAM-dr-gs4-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/TciwNI3AOMXAM-dr-gs5-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-*.png, army books v3.6.0 (os dois sistemas).",
+ "unidades": {
+  "ndoli-beast-lord": {
+   "armyForgeUnitId": "wdLZRL7"
+  },
+  "kemba-brute-boss": {
+   "armyForgeUnitId": "qt6GWWu"
+  },
+  "ndwari-centaur-boss": {
+   "armyForgeUnitId": "GfyrCwd"
+  },
+  "waheni-hunt-master": {
+   "armyForgeUnitId": "vCLM1-8"
+  },
+  "ndoli-warriors": {
+   "armyForgeUnitId": "qexD7jM"
+  },
+  "ndoli-elites": {
+   "armyForgeUnitId": "49PAMNU"
+  },
+  "waheni-hunters": {
+   "armyForgeUnitId": "ygSV4y6"
+  },
+  "waheni-raiders": {
+   "armyForgeUnitId": "8EzZLWg"
+  },
+  "kemba-brutes": {
+   "armyForgeUnitId": "r4tGNht"
+  },
+  "ndwari-centaurs": {
+   "armyForgeUnitId": "0OibnBL"
+  },
+  "hapari-harpies": {
+   "armyForgeUnitId": "Ny-d4S5"
+  },
+  "sambari-hounds": {
+   "armyForgeUnitId": "SVFVgdJ"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "beast-lord",
+   "rotulo": "Beast Lord",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndoli-beast-lord",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Beast Lord",
+     "armyBook": "Ndoli Beast Lord"
+    }
+   ],
+   "notas": "nome atual sem o prefixo Ndoli; genericName Beastman Leader"
+  },
+  "a002": {
+   "artId": "beast-pet",
+   "rotulo": "Beast Pet",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndoli-beast-lord",
+   "equipmentTags": [
+    "Beast Companion"
+   ],
+   "cosmetic": "companion",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Beast Pet",
+     "armyBook": "Beast Companion"
+    }
+   ],
+   "notas": "o felino é o pet do Beast Lord (produto 'ndoli-beast-lord-pet'); no army book é a opção Beast Companion. cosmetic para o site não trocar o lorde pelo pet"
+  },
+  "a003": {
+   "artId": "brute-lord",
+   "rotulo": "Brute Lord",
+   "confiancaRotulo": "alta",
+   "unitKey": "kemba-brute-boss",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Brute Lord",
+     "armyBook": "Kemba Brute Boss"
+    }
+   ],
+   "notas": "genericName Brute Leader; Lord = líder dos Brutes"
+  },
+  "a004": {
+   "artId": "centaur-lord",
+   "rotulo": "Centaur Lord",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndwari-centaur-boss",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Centaur Lord",
+     "armyBook": "Ndwari Centaur Boss"
+    }
+   ],
+   "notas": "genericName Centaur Leader"
+  },
+  "a005": {
+   "artId": "hunt-master-1",
+   "rotulo": "Hunt Master 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunt-master",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunt Master",
+     "armyBook": "Waheni Hunt Master"
+    }
+   ],
+   "notas": "nome atual sem o prefixo Waheni; genericName Grunt Leader"
+  },
+  "a006": {
+   "artId": "hunt-master-2",
+   "rotulo": "Hunt Master 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunt-master",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunt Master",
+     "armyBook": "Waheni Hunt Master"
+    }
+   ],
+   "notas": "nome atual sem o prefixo Waheni; genericName Grunt Leader"
+  },
+  "a007": {
+   "artId": "raid-master-1",
+   "rotulo": "Raid Master 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunt-master",
+   "equipmentTags": [
+    "Raider Cloak"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Raid Master",
+     "armyBook": "Waheni Hunt Master (Raider Cloak)"
+    }
+   ],
+   "notas": "arqueiro; no army book o produto da opção Raider Cloak do Hunt Master se chama 'Waheni Hunt Master (Raid Master)'"
+  },
+  "a008": {
+   "artId": "raid-master-2",
+   "rotulo": "Raid Master 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunt-master",
+   "equipmentTags": [
+    "Raider Cloak"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Raid Master",
+     "armyBook": "Waheni Hunt Master (Raider Cloak)"
+    }
+   ],
+   "notas": "arqueiro; no army book o produto da opção Raider Cloak do Hunt Master se chama 'Waheni Hunt Master (Raid Master)'"
+  },
+  "a009": {
+   "artId": "shaman",
+   "rotulo": "Shaman",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunt-master",
+   "equipmentTags": [
+    "Shaman"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shaman",
+     "armyBook": "Waheni Hunt Master (Shaman)"
+    }
+   ],
+   "notas": "Shaman é opção do Hunt Master (produto 'Waheni Hunt Master (Shaman)'); Hakemba e Centaur Boss também têm a opção, mas a figura é a pé e do porte dos Waheni"
+  },
+  "a010": {
+   "artId": "warrior-sword-1",
+   "rotulo": "Warrior Sword 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndoli-warriors",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Ndoli Warriors"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "nome atual sem o prefixo Ndoli (genericName Beastmen); espada = Hand Weapon"
+  },
+  "a011": {
+   "artId": "warrior-sword-2",
+   "rotulo": "Warrior Sword 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndoli-warriors",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Ndoli Warriors"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "nome atual sem o prefixo Ndoli (genericName Beastmen); espada = Hand Weapon"
+  },
+  "a012": {
+   "artId": "warrior-spear-1",
+   "rotulo": "Warrior Spear 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndoli-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Ndoli Warriors"
+    }
+   ],
+   "notas": "nome atual sem o prefixo Ndoli (genericName Beastmen)"
+  },
+  "a013": {
+   "artId": "warrior-spear-2",
+   "rotulo": "Warrior Spear 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndoli-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Ndoli Warriors"
+    }
+   ],
+   "notas": "nome atual sem o prefixo Ndoli (genericName Beastmen)"
+  },
+  "a014": {
+   "artId": "warrior-spear-2-a014",
+   "rotulo": "Warrior Spear 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndoli-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Ndoli Warriors"
+    }
+   ],
+   "notas": "só contorno fino (sem par); provável cópia de a013"
+  },
+  "a015": {
+   "artId": "warrior-sergeant",
+   "rotulo": "Warrior Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndoli-warriors",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Ndoli Warriors"
+    }
+   ],
+   "notas": "pose de comando (opção Sergeant)"
+  },
+  "a016": {
+   "artId": "warrior-banner",
+   "rotulo": "Warrior Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndoli-warriors",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Ndoli Warriors"
+    }
+   ],
+   "notas": "pose de comando (opção Banner)"
+  },
+  "a017": {
+   "artId": "warrior-musician",
+   "rotulo": "Warrior Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndoli-warriors",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Ndoli Warriors"
+    }
+   ],
+   "notas": "pose de comando (opção Musician)"
+  },
+  "a018": {
+   "artId": "elite-sword",
+   "rotulo": "Elite Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndoli-elites",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Elite",
+     "armyBook": "Ndoli Elites"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "nome atual sem o prefixo Ndoli (genericName Elite Beastmen); espada = Hand Weapon"
+  },
+  "a019": {
+   "artId": "elite-spear",
+   "rotulo": "Elite Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndoli-elites",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "lança com escudo; Ndoli Elites não têm Spear (só Hand Weapon, Great Weapon, Halberd, Headtaker Axe, Flameforged Weapon). Halberd seria a haste mais próxima, se o usuário aceitar"
+  },
+  "a020": {
+   "artId": "elite-great-weapon",
+   "rotulo": "Elite Great Weapon",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndoli-elites",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Elite",
+     "armyBook": "Ndoli Elites"
+    }
+   ],
+   "notas": "nome atual sem o prefixo Ndoli (genericName Elite Beastmen)"
+  },
+  "a021": {
+   "artId": "elite-champion",
+   "rotulo": "Elite Champion",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndoli-elites",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Elite",
+     "armyBook": "Ndoli Elites"
+    },
+    {
+     "pdf": "Champion",
+     "armyBook": "Sergeant"
+    }
+   ],
+   "notas": "pose de comando; Champion = opção Sergeant"
+  },
+  "a022": {
+   "artId": "elite-musician",
+   "rotulo": "Elite Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndoli-elites",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Elite",
+     "armyBook": "Ndoli Elites"
+    }
+   ],
+   "notas": "pose de comando (opção Musician)"
+  },
+  "a023": {
+   "artId": "elite-banner",
+   "rotulo": "Elite Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndoli-elites",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Elite",
+     "armyBook": "Ndoli Elites"
+    }
+   ],
+   "notas": "pose de comando (opção Banner)"
+  },
+  "a024": {
+   "artId": "hunter-sword",
+   "rotulo": "Hunter Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunter",
+     "armyBook": "Waheni Hunters"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "nome atual sem o prefixo Waheni (genericName Grunts); espada = Hand Weapon"
+  },
+  "a025": {
+   "artId": "hunter-spear",
+   "rotulo": "Hunter Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunter",
+     "armyBook": "Waheni Hunters"
+    }
+   ],
+   "notas": "nome atual sem o prefixo Waheni (genericName Grunts)"
+  },
+  "a026": {
+   "artId": "hunter-dual-claws",
+   "rotulo": "Hunter Dual Claws",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunter",
+     "armyBook": "Waheni Hunters"
+    },
+    {
+     "pdf": "Dual Claws",
+     "armyBook": "Dual Hand Weapons"
+    }
+   ],
+   "notas": "nome atual sem o prefixo Waheni; garras duplas = Dual Hand Weapons (única opção dupla)"
+  },
+  "a027": {
+   "artId": "hunter-sergeant",
+   "rotulo": "Hunter Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunter",
+     "armyBook": "Waheni Hunters"
+    }
+   ],
+   "notas": "pose de comando (opção Sergeant)"
+  },
+  "a028": {
+   "artId": "hunter-musician",
+   "rotulo": "Hunter Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunter",
+     "armyBook": "Waheni Hunters"
+    }
+   ],
+   "notas": "pose de comando (opção Musician)"
+  },
+  "a029": {
+   "artId": "hunter-banner",
+   "rotulo": "Hunter Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunter",
+     "armyBook": "Waheni Hunters"
+    }
+   ],
+   "notas": "pose de comando (opção Banner)"
+  },
+  "a030": {
+   "artId": "raider-v1",
+   "rotulo": "Raider V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-raiders",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Raider",
+     "armyBook": "Waheni Raiders"
+    }
+   ],
+   "notas": "nome atual sem o prefixo Waheni (genericName Grunt Archers)"
+  },
+  "a031": {
+   "artId": "raider-v2",
+   "rotulo": "Raider V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-raiders",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Raider",
+     "armyBook": "Waheni Raiders"
+    }
+   ],
+   "notas": "nome atual sem o prefixo Waheni (genericName Grunt Archers)"
+  },
+  "a032": {
+   "artId": "brute-dual-axe",
+   "rotulo": "Brute Dual Axe",
+   "confiancaRotulo": "alta",
+   "unitKey": "kemba-brutes",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Dual Axe",
+     "armyBook": "Dual Hand Weapons"
+    }
+   ],
+   "notas": "Brute = genericName Brutes; machados duplos = Dual Hand Weapons"
+  },
+  "a033": {
+   "artId": "brute-great-axe",
+   "rotulo": "Brute Great Axe",
+   "confiancaRotulo": "alta",
+   "unitKey": "kemba-brutes",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Great Axe",
+     "armyBook": "Great Weapon"
+    }
+   ],
+   "notas": "Brute = genericName Brutes; machado grande = Great Weapon"
+  },
+  "a034": {
+   "artId": "brute-banner",
+   "rotulo": "Brute Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "kemba-brutes",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Brute = genericName Brutes; pose de comando (opção Banner)"
+  },
+  "a035": {
+   "artId": "brute-sergeant",
+   "rotulo": "Brute Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "kemba-brutes",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Brute = genericName Brutes; pose de comando (opção Sergeant)"
+  },
+  "a036": {
+   "artId": "brute-musician",
+   "rotulo": "Brute Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "kemba-brutes",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Brute = genericName Brutes; pose de comando (opção Musician)"
+  },
+  "a037": {
+   "artId": "centaur",
+   "rotulo": "Centaur",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndwari-centaurs",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Centaur = genericName Centaurs"
+  },
+  "a038": {
+   "artId": "centaur-sergeant",
+   "rotulo": "Centaur Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndwari-centaurs",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose de comando (opção Sergeant)"
+  },
+  "a039": {
+   "artId": "centaur-musician",
+   "rotulo": "Centaur Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndwari-centaurs",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose de comando (opção Musician)"
+  },
+  "a040": {
+   "artId": "centaur-banner",
+   "rotulo": "Centaur Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "ndwari-centaurs",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose de comando (opção Banner)"
+  },
+  "a041": {
+   "artId": "harpy",
+   "rotulo": "Harpy",
+   "confiancaRotulo": "alta",
+   "unitKey": "hapari-harpies",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Harpy = genericName Harpies"
+  },
+  "a042": {
+   "artId": "hound",
+   "rotulo": "Hound",
+   "confiancaRotulo": "alta",
+   "unitKey": "sambari-hounds",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hound",
+     "armyBook": "Sambari Hounds"
+    }
+   ],
+   "notas": "genericName Combat Hounds; produto do army book se chama 'Hounds'"
+  },
+  "a043": {
+   "artId": "hunter-sword-a043",
+   "rotulo": "Hunter Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunter",
+     "armyBook": "Waheni Hunters"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "só borda grossa (sem par); provável cópia de a024"
+  },
+  "a044": {
+   "artId": "hunter-sword-a044",
+   "rotulo": "Hunter Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunter",
+     "armyBook": "Waheni Hunters"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "só borda grossa (sem par); provável cópia de a024"
+  },
+  "a045": {
+   "artId": "hunter-spear-a045",
+   "rotulo": "Hunter Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunter",
+     "armyBook": "Waheni Hunters"
+    }
+   ],
+   "notas": "só borda grossa (sem par); provável cópia de a025"
+  },
+  "a046": {
+   "artId": "hunter-spear-a046",
+   "rotulo": "Hunter Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunter",
+     "armyBook": "Waheni Hunters"
+    }
+   ],
+   "notas": "só borda grossa (sem par); provável cópia de a025"
+  },
+  "a047": {
+   "artId": "hunter-dual-claws-a047",
+   "rotulo": "Hunter Dual Claws",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunter",
+     "armyBook": "Waheni Hunters"
+    },
+    {
+     "pdf": "Dual Claws",
+     "armyBook": "Dual Hand Weapons"
+    }
+   ],
+   "notas": "só borda grossa (sem par); provável cópia de a026"
+  },
+  "a048": {
+   "artId": "hunter-dual-claws-a048",
+   "rotulo": "Hunter Dual Claws",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunter",
+     "armyBook": "Waheni Hunters"
+    },
+    {
+     "pdf": "Dual Claws",
+     "armyBook": "Dual Hand Weapons"
+    }
+   ],
+   "notas": "só borda grossa (sem par); provável cópia de a026"
+  },
+  "a049": {
+   "artId": "raider-v1-a049",
+   "rotulo": "Raider V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "waheni-raiders",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Raider",
+     "armyBook": "Waheni Raiders"
+    }
+   ],
+   "notas": "só borda grossa (sem par); provável cópia de a030"
+  },
+  "a050": {
+   "artId": "brute-dual-axe-a050",
+   "rotulo": "Brute Dual Axe",
+   "confiancaRotulo": "alta",
+   "unitKey": "kemba-brutes",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Dual Axe",
+     "armyBook": "Dual Hand Weapons"
+    }
+   ],
+   "notas": "só borda grossa (sem par); provável cópia de a032"
+  },
+  "a051": {
+   "artId": "harpy-a051",
+   "rotulo": "Harpy",
+   "confiancaRotulo": "alta",
+   "unitKey": "hapari-harpies",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só borda grossa (sem par); provável cópia de a041"
+  },
+  "a052": {
+   "artId": "hound-a052",
+   "rotulo": "Hound",
+   "confiancaRotulo": "alta",
+   "unitKey": "sambari-hounds",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hound",
+     "armyBook": "Sambari Hounds"
+    }
+   ],
+   "notas": "só borda grossa (sem par); provável cópia de a042"
+  }
+ }
+}

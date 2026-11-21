@@ -1,0 +1,829 @@
+{
+ "packId": "saurian-starhost",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "GF",
+   "slug": "grimdark-future",
+   "armyForgeId": 2
+  },
+  {
+   "code": "GFF",
+   "slug": "grimdark-future-firefight",
+   "armyForgeId": 3
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/U6hwlur14RpnInZr-gs3-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/U6hwlur14RpnInZr-gs2-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-01..04.png, army books v3.6.0 (os dois sistemas). work/rotulos-05.png é de uma extração anterior (mostra a049–a052, que não existem em candidatos.json) e foi desconsiderada. Montarias e opções conferidas no army book bruto (gains e links de loja). a043–a046 são cópias só em borda grossa que ficaram sem par; mapeadas como as artes de origem (a039–a042, só contorno fino).",
+ "unidades": {
+  "saurian-warrior": {
+   "armyForgeUnitId": "d3_323-"
+  },
+  "gecko-champion": {
+   "armyForgeUnitId": "X1af9wy"
+  },
+  "saurian-veteran": {
+   "armyForgeUnitId": "RpQgbmd"
+  },
+  "saurian-guardian": {
+   "armyForgeUnitId": "sd-Y62t"
+  },
+  "chameleon": {
+   "armyForgeUnitId": "Cet1xy8"
+  },
+  "cyber-beast-swarm": {
+   "armyForgeUnitId": "hHlo6_1"
+  },
+  "raptor-rider": {
+   "armyForgeUnitId": "9-8Xg6h"
+  },
+  "frog-mage": {
+   "armyForgeUnitId": "igyAK4c"
+  },
+  "gecko-cohort": {
+   "armyForgeUnitId": "FfHElYl"
+  },
+  "gecko-sniper": {
+   "armyForgeUnitId": "_XxIYpx"
+  },
+  "gator-veteran": {
+   "armyForgeUnitId": "d5xE-v0"
+  },
+  "gator": {
+   "armyForgeUnitId": "23TvtrB"
+  },
+  "dragon-lizard": {
+   "armyForgeUnitId": "Q6xnsW8"
+  },
+  "spiked-lizard": {
+   "armyForgeUnitId": "G9Cu-8-"
+  },
+  "pterodactyl-rider": {
+   "armyForgeUnitId": "0tlypaz"
+  },
+  "ripjawdactyl-rider": {
+   "armyForgeUnitId": "w3V96GX"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "warrior-rifle",
+   "rotulo": "Warrior Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-warrior",
+   "equipmentTags": [
+    "Carbine"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Carbine"
+    }
+   ],
+   "notas": "rótulo em duas linhas no PDF; army book não tem Rifle para Saurian Warrior; a troca da unidade toda é Carbine (5 cópias)"
+  },
+  "a002": {
+   "artId": "warrior-pistol",
+   "rotulo": "Warrior Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-warrior",
+   "equipmentTags": [
+    "Pistol"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo em duas linhas no PDF; Pistol + Hand Weapon é o equipamento padrão"
+  },
+  "a003": {
+   "artId": "warrior-shock",
+   "rotulo": "Warrior Shock",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-warrior",
+   "equipmentTags": [
+    "Shock Charger"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shock",
+     "armyBook": "Shock Charger"
+    }
+   ],
+   "notas": "rótulo em duas linhas no PDF; única arma Shock da unidade"
+  },
+  "a004": {
+   "artId": "warrior-spike",
+   "rotulo": "Warrior Spike",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-warrior",
+   "equipmentTags": [
+    "Spike Shooter"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spike",
+     "armyBook": "Spike Shooter"
+    }
+   ],
+   "notas": "rótulo em duas linhas no PDF; única arma Spike da unidade"
+  },
+  "a005": {
+   "artId": "warrior-flamer",
+   "rotulo": "Warrior Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-warrior",
+   "equipmentTags": [
+    "Flamer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo em duas linhas no PDF"
+  },
+  "a006": {
+   "artId": "warrior-blast",
+   "rotulo": "Warrior Blast",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-warrior",
+   "equipmentTags": [
+    "Fusion-Blaster Gun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Blast",
+     "armyBook": "Fusion-Blaster Gun"
+    }
+   ],
+   "notas": "rótulo em duas linhas no PDF; 'Blast' lembra Fusion-Blaster Gun; a outra arma especial sem arte é Beam Gun, que também pode ser esta"
+  },
+  "a007": {
+   "artId": "gecko-psychic",
+   "rotulo": "Gecko Psychic",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Sacred Priest"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Psychic",
+     "armyBook": "Gecko Champion + Sacred Priest"
+    }
+   ],
+   "notas": "rótulo em duas linhas no PDF; Psychic é o nome antigo de conjurador (genericName do Frog-Mage é 'Psychic Frog Leader'); Sacred Priest é a opção de conjurador do Gecko Champion (loja 'Gecko Champion (Priest)'); figura com cajado"
+  },
+  "a008": {
+   "artId": "veteran-mace",
+   "rotulo": "Veteran Mace",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-veteran",
+   "equipmentTags": [
+    "Power Mace"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Veteran",
+     "armyBook": "Saurian Veteran"
+    },
+    {
+     "pdf": "Mace",
+     "armyBook": "Power Mace"
+    }
+   ],
+   "notas": "rótulo em duas linhas no PDF; figura de saurian (não gator, cuja arte é a024); Power Mace é troca da Hand Weapon"
+  },
+  "a009": {
+   "artId": "veteran-claw",
+   "rotulo": "Veteran Claw",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-veteran",
+   "equipmentTags": [
+    "Power Claw"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Veteran",
+     "armyBook": "Saurian Veteran"
+    },
+    {
+     "pdf": "Claw",
+     "armyBook": "Power Claw"
+    }
+   ],
+   "notas": "rótulo em duas linhas no PDF; mesmo corpo de a008; Power Claw é troca da Hand Weapon"
+  },
+  "a010": {
+   "artId": "guardian-hammer",
+   "rotulo": "Guardian Hammer",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-guardian",
+   "equipmentTags": [
+    "Hammer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo em duas linhas no PDF; Hammer é a arma padrão"
+  },
+  "a011": {
+   "artId": "guardian-staff",
+   "rotulo": "Guardian Staff",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-guardian",
+   "equipmentTags": [
+    "Energy Mace-Staff"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Staff",
+     "armyBook": "Energy Mace-Staff"
+    }
+   ],
+   "notas": "rótulo em duas linhas no PDF; 5 cópias = troca da unidade toda, que é Energy Mace-Staff (Beam/Fusion-Blaster Mace-Staff são troca de um só)"
+  },
+  "a012": {
+   "artId": "chameleon",
+   "rotulo": "Chameleon",
+   "confiancaRotulo": "alta",
+   "unitKey": "chameleon",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a013": {
+   "artId": "chameleon-chief",
+   "rotulo": "Chameleon Chief",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Chameleon Breed"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Chameleon Chief",
+     "armyBook": "Gecko Champion + Chameleon Breed"
+    }
+   ],
+   "notas": "rótulo em duas linhas no PDF; opção Chameleon Breed do Gecko Champion (loja 'Gecko Champion (Chameleon)'); a unidade Chameleon não tem líder"
+  },
+  "a014": {
+   "artId": "swarm",
+   "rotulo": "Swarm",
+   "confiancaRotulo": "alta",
+   "unitKey": "cyber-beast-swarm",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Swarm",
+     "armyBook": "Cyber-Beast Swarm"
+    }
+   ],
+   "notas": "única unidade de enxame (genericName 'Bot Swarms'); figura de feras robóticas sobre pedra, 3 cópias"
+  },
+  "a015": {
+   "artId": "raptor-rider-spear",
+   "rotulo": "Raptor Rider Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "raptor-rider",
+   "equipmentTags": [
+    "Power Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spear",
+     "armyBook": "Power Lance"
+    }
+   ],
+   "notas": "rótulo em duas linhas no PDF; a troca de todas as Hand Weapons é Power Lance (3 cópias)"
+  },
+  "a016": {
+   "artId": "raptor-rider-club",
+   "rotulo": "Raptor Rider Club",
+   "confiancaRotulo": "alta",
+   "unitKey": "raptor-rider",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Club",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "rótulo em duas linhas no PDF; Hand Weapon é a arma padrão (3 cópias); Power Mace é troca de um só modelo"
+  },
+  "a017": {
+   "artId": "raptor-veteran",
+   "rotulo": "Raptor Veteran",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-veteran",
+   "equipmentTags": [
+    "Raptor"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Raptor Veteran",
+     "armyBook": "Saurian Veteran + Raptor"
+    }
+   ],
+   "notas": "só Saurian Veteran tem a montaria Raptor (loja 'Saurian Veteran on Raptor')"
+  },
+  "a018": {
+   "artId": "frog-mage",
+   "rotulo": "Frog Mage",
+   "confiancaRotulo": "alta",
+   "unitKey": "frog-mage",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a019": {
+   "artId": "starseer",
+   "rotulo": "Starseer",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Starseer Palanquin"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Starseer",
+     "armyBook": "Gecko Champion + Starseer Palanquin"
+    }
+   ],
+   "notas": "opção Starseer Palanquin do Gecko Champion (loja 'Gecko Champion on Starseer Palanquin (Priest)'); o herói nomeado Tehaxi também usa um Starseer Palanquin, mas o rótulo é genérico"
+  },
+  "a020": {
+   "artId": "gecko-pistol",
+   "rotulo": "Gecko Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-cohort",
+   "equipmentTags": [
+    "Pistol"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Gecko = genericName 'Geckos' da Gecko Cohort; Pistol + Energy Shield é o padrão (figura com escudo); 4 cópias"
+  },
+  "a021": {
+   "artId": "gecko-pistol-2",
+   "rotulo": "Gecko Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-cohort",
+   "equipmentTags": [
+    "Pistol"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "mesmo rótulo e desenho praticamente igual a a020 (agrupado à parte na extração); 1 cópia"
+  },
+  "a022": {
+   "artId": "gecko-dagger",
+   "rotulo": "Gecko Dagger",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-cohort",
+   "equipmentTags": [
+    "Pistol",
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Dagger",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "figura sem escudo, com pistola e faca: opção 'Pistol + Hand Weapon'; a tag Pistol evita empate com Gecko Pistol"
+  },
+  "a023": {
+   "artId": "gecko-sniper",
+   "rotulo": "Gecko Sniper",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-sniper",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a024": {
+   "artId": "gator-veteran",
+   "rotulo": "Gator Veteran",
+   "confiancaRotulo": "alta",
+   "unitKey": "gator-veteran",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a025": {
+   "artId": "gecko-chief-sniper",
+   "rotulo": "Gecko Chief Sniper",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Sniper Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Chief",
+     "armyBook": "Gecko Champion"
+    }
+   ],
+   "notas": "Gecko Chief = Gecko Champion (loja 'Gecko Champion (Chief)'); Sniper Rifle é troca da Burst Flechette Carbine"
+  },
+  "a026": {
+   "artId": "gecko-chief-pistol",
+   "rotulo": "Gecko Chief Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Flechette Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Chief",
+     "armyBook": "Gecko Champion"
+    },
+    {
+     "pdf": "Pistol",
+     "armyBook": "Flechette Pistol"
+    }
+   ],
+   "notas": "não há Pistol simples no Gecko Champion; a figura tem pistola e lâmina, sem escudo: opção 'Flechette Pistol + Hand Weapon' (Burst Pistol vem com Energy Shield)"
+  },
+  "a027": {
+   "artId": "gator-guns",
+   "rotulo": "Gator Guns",
+   "confiancaRotulo": "alta",
+   "unitKey": "gator",
+   "equipmentTags": [
+    "Dual Heavy Shooters"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guns",
+     "armyBook": "Dual Heavy Shooters"
+    }
+   ],
+   "notas": "'Guns' no plural; braço com canhão. Assault Heavy Shooter (com Power Claw) também é possível"
+  },
+  "a028": {
+   "artId": "gator-fist",
+   "rotulo": "Gator Fist",
+   "confiancaRotulo": "alta",
+   "unitKey": "gator",
+   "equipmentTags": [
+    "Dual Power Knuckles"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fist",
+     "armyBook": "Dual Power Knuckles"
+    }
+   ],
+   "notas": "punho = Power Knuckles; escolhida a troca dupla como nas outras artes de Gator (Power Knuckles simples também existe)"
+  },
+  "a029": {
+   "artId": "gator-claws",
+   "rotulo": "Gator Claws",
+   "confiancaRotulo": "alta",
+   "unitKey": "gator",
+   "equipmentTags": [
+    "Dual Power Claws"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Claws",
+     "armyBook": "Dual Power Claws"
+    }
+   ],
+   "notas": "Dual Power Claws é a arma padrão"
+  },
+  "a030": {
+   "artId": "gator-bludgeons",
+   "rotulo": "Gator Bludgeons",
+   "confiancaRotulo": "alta",
+   "unitKey": "gator",
+   "equipmentTags": [
+    "Dual Heavy Bludgeons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Bludgeons",
+     "armyBook": "Dual Heavy Bludgeons"
+    }
+   ],
+   "notas": "braço com maça cravejada"
+  },
+  "a031": {
+   "artId": "dragon-lizard",
+   "rotulo": "Dragon Lizard",
+   "confiancaRotulo": "alta",
+   "unitKey": "dragon-lizard",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "unidade só no Grimdark Future (gs2)"
+  },
+  "a032": {
+   "artId": "lizard-handler-v1-dragon-lizard",
+   "rotulo": "Lizard Handler V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "dragon-lizard",
+   "equipmentTags": [],
+   "cosmetic": "handler",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Lizard Handler",
+     "armyBook": "Lizard Handlers"
+    }
+   ],
+   "notas": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Dragon Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto"
+  },
+  "a033": {
+   "artId": "lizard-handler-v2-dragon-lizard",
+   "rotulo": "Lizard Handler V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "dragon-lizard",
+   "equipmentTags": [],
+   "cosmetic": "handler",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Lizard Handler",
+     "armyBook": "Lizard Handlers"
+    }
+   ],
+   "notas": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Dragon Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto"
+  },
+  "a034": {
+   "artId": "lizard-handler-v3-dragon-lizard",
+   "rotulo": "Lizard Handler V3",
+   "confiancaRotulo": "alta",
+   "unitKey": "dragon-lizard",
+   "equipmentTags": [],
+   "cosmetic": "handler",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Lizard Handler",
+     "armyBook": "Lizard Handlers"
+    }
+   ],
+   "notas": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Dragon Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto"
+  },
+  "a035": {
+   "artId": "spiked-lizard",
+   "rotulo": "Spiked Lizard",
+   "confiancaRotulo": "alta",
+   "unitKey": "spiked-lizard",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "unidade só no Grimdark Future (gs2)"
+  },
+  "a036": {
+   "artId": "lizard-handler-v1-spiked-lizard",
+   "rotulo": "Lizard Handler V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "spiked-lizard",
+   "equipmentTags": [],
+   "cosmetic": "handler",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Lizard Handler",
+     "armyBook": "Lizard Handlers"
+    }
+   ],
+   "notas": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Spiked Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto"
+  },
+  "a037": {
+   "artId": "lizard-handler-v2-spiked-lizard",
+   "rotulo": "Lizard Handler V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "spiked-lizard",
+   "equipmentTags": [],
+   "cosmetic": "handler",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Lizard Handler",
+     "armyBook": "Lizard Handlers"
+    }
+   ],
+   "notas": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Spiked Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto"
+  },
+  "a038": {
+   "artId": "lizard-handler-v3-spiked-lizard",
+   "rotulo": "Lizard Handler V3",
+   "confiancaRotulo": "alta",
+   "unitKey": "spiked-lizard",
+   "equipmentTags": [],
+   "cosmetic": "handler",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Lizard Handler",
+     "armyBook": "Lizard Handlers"
+    }
+   ],
+   "notas": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Spiked Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto"
+  },
+  "a039": {
+   "artId": "pterodactyl",
+   "rotulo": "Pterodactyl",
+   "confiancaRotulo": "alta",
+   "unitKey": "pterodactyl-rider",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Pterodactyl",
+     "armyBook": "Pterodactyl Rider"
+    }
+   ],
+   "notas": "rótulo é só a montaria; 3 cópias = unidade Pterodactyl Rider (genericName 'Pterodactyl Riders'), com cavaleiro e bomba (opção Drop Bombs, não rotulada). Vulturedactyl não tem cavaleiro. Só contorno fino; a borda é a043"
+  },
+  "a040": {
+   "artId": "ripjawdactyl",
+   "rotulo": "Ripjawdactyl",
+   "confiancaRotulo": "alta",
+   "unitKey": "ripjawdactyl-rider",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Ripjawdactyl",
+     "armyBook": "Ripjawdactyl Rider"
+    }
+   ],
+   "notas": "rótulo é só a montaria; 3 cópias = unidade Ripjawdactyl Rider, com cavaleiro. Só contorno fino; a borda é a044"
+  },
+  "a041": {
+   "artId": "gecko-chief-pterodactyl",
+   "rotulo": "Gecko Chief Pterodactyl",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Pterodactyl"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Chief Pterodactyl",
+     "armyBook": "Gecko Champion + Pterodactyl"
+    }
+   ],
+   "notas": "rótulo em duas linhas no PDF; montaria Pterodactyl do Gecko Champion (loja 'Gecko Champion on Pterodactyl'). Só contorno fino; a borda é a045"
+  },
+  "a042": {
+   "artId": "gecko-chief-ripjawdactyl",
+   "rotulo": "Gecko Chief Ripjawdactyl",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Ripjawdactyl"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Chief Ripjawdactyl",
+     "armyBook": "Gecko Champion + Ripjawdactyl"
+    }
+   ],
+   "notas": "rótulo em duas linhas no PDF; montaria Ripjawdactyl do Gecko Champion. Só contorno fino; a borda é a046"
+  },
+  "a043": {
+   "artId": "pterodactyl-borda",
+   "rotulo": "Pterodactyl",
+   "confiancaRotulo": "alta",
+   "unitKey": "pterodactyl-rider",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Pterodactyl",
+     "armyBook": "Pterodactyl Rider"
+    }
+   ],
+   "notas": "cópia só em borda grossa, sem par; mesma figura de a039. rótulo é só a montaria; 3 cópias = unidade Pterodactyl Rider (genericName 'Pterodactyl Riders'), com cavaleiro e bomba (opção Drop Bombs, não rotulada). Vulturedactyl não tem cavaleiro"
+  },
+  "a044": {
+   "artId": "ripjawdactyl-borda",
+   "rotulo": "Ripjawdactyl",
+   "confiancaRotulo": "alta",
+   "unitKey": "ripjawdactyl-rider",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Ripjawdactyl",
+     "armyBook": "Ripjawdactyl Rider"
+    }
+   ],
+   "notas": "cópia só em borda grossa, sem par; mesma figura de a040. rótulo é só a montaria; 3 cópias = unidade Ripjawdactyl Rider, com cavaleiro"
+  },
+  "a045": {
+   "artId": "gecko-chief-pterodactyl-borda",
+   "rotulo": "Gecko Chief Pterodactyl",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Pterodactyl"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Chief Pterodactyl",
+     "armyBook": "Gecko Champion + Pterodactyl"
+    }
+   ],
+   "notas": "cópia só em borda grossa, sem par; mesma figura de a041. rótulo em duas linhas no PDF; montaria Pterodactyl do Gecko Champion (loja 'Gecko Champion on Pterodactyl')"
+  },
+  "a046": {
+   "artId": "gecko-chief-ripjawdactyl-borda",
+   "rotulo": "Gecko Chief Ripjawdactyl",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Ripjawdactyl"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Chief Ripjawdactyl",
+     "armyBook": "Gecko Champion + Ripjawdactyl"
+    }
+   ],
+   "notas": "cópia só em borda grossa, sem par; mesma figura de a042. rótulo em duas linhas no PDF; montaria Ripjawdactyl do Gecko Champion"
+  }
+ }
+}

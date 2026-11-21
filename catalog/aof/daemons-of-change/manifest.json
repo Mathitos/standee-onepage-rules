@@ -1,0 +1,2015 @@
+{
+  "schemaVersion": 1,
+  "packId": "daemons-of-change",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "AOF",
+    "slug": "age-of-fantasy",
+    "armyForgeId": 4
+  },
+  "gameSystems": [
+    {
+      "code": "AOF",
+      "slug": "age-of-fantasy",
+      "armyForgeId": 4
+    },
+    {
+      "code": "AOFS",
+      "slug": "age-of-fantasy-skirmish",
+      "armyForgeId": 5
+    }
+  ],
+  "armyBook": {
+    "id": "yxVDySKYQYRhdEgA",
+    "name": "Daemons of Change",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "yxVDySKYQYRhdEgA",
+      "name": "Daemons of Change",
+      "version": "3.6.0",
+      "gameSystemId": 4,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "yxVDySKYQYRhdEgA",
+      "name": "Daemons of Change",
+      "version": "3.6.0",
+      "gameSystemId": 5,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Daemons_of_Change_-_BW.pdf",
+    "pdfSha256": "5f61cc22a80467fac901dcb8c276df7b01bfa36b800303956b814accc39c1978",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "change-warriors",
+      "names": [
+        "Change Warriors",
+        "Change Warrior"
+      ],
+      "armyForgeUnitId": "UMiqTdF",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "champion-of-change",
+      "names": [
+        "Champion of Change"
+      ],
+      "armyForgeUnitId": "MvLZSIo",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "harbinger-of-change",
+      "names": [
+        "Harbinger of Change"
+      ],
+      "armyForgeUnitId": "F0XvHTF",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          60.0
+        ],
+        "raw": "60",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "change-furies",
+      "names": [
+        "Change Furies",
+        "Change Fury"
+      ],
+      "armyForgeUnitId": "moiRRNr",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "scorchers",
+      "names": [
+        "Scorchers",
+        "Scorcher"
+      ],
+      "armyForgeUnitId": "P8kTKn6",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          50.0
+        ],
+        "raw": "50",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "screechers",
+      "names": [
+        "Screechers",
+        "Screecher"
+      ],
+      "armyForgeUnitId": "s2ElE6T",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "change-horrors",
+      "names": [
+        "Change Horrors",
+        "Change Horror"
+      ],
+      "armyForgeUnitId": "BzjTlSG",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "lesser-change-horrors",
+      "names": [
+        "Lesser Change Horrors",
+        "Lesser Change Horror"
+      ],
+      "armyForgeUnitId": "zt7BQGh",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "changelings",
+      "names": [
+        "Changelings"
+      ],
+      "armyForgeUnitId": "9LtzG6R",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "warrior-sword",
+      "candidateId": "a001",
+      "pdfLabel": "Warrior Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "change-warriors",
+      "equipmentTags": [
+        "Power Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Change Warriors"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Power Sword"
+        }
+      ],
+      "notes": "Warrior = Change Warriors. Power Sword é a arma padrão; alternativa: Hand Weapon",
+      "styles": {
+        "fino": {
+          "page": 1,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-sword/fino/frente.svg",
+          "back": "arts/warrior-sword/fino/verso.svg",
+          "canvasMm": [
+            27.474,
+            33.57
+          ],
+          "frontBackIoU": 0.95,
+          "sizeMm": [
+            33.4,
+            27.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 16,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-sword/borda/frente.svg",
+          "back": "arts/warrior-sword/borda/verso.svg",
+          "canvasMm": [
+            30.861,
+            35.264
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            35.1,
+            30.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-greatsword",
+      "candidateId": "a002",
+      "pdfLabel": "Warrior Greatsword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "change-warriors",
+      "equipmentTags": [
+        "Great Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Change Warriors"
+        },
+        {
+          "pdf": "Greatsword",
+          "armyBook": "Great Weapon"
+        }
+      ],
+      "notes": "Warrior = Change Warriors",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-greatsword/fino/frente.svg",
+          "back": "arts/warrior-greatsword/fino/verso.svg",
+          "canvasMm": [
+            32.935,
+            33.613
+          ],
+          "frontBackIoU": 0.953,
+          "sizeMm": [
+            33.5,
+            32.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-greatsword/borda/frente.svg",
+          "back": "arts/warrior-greatsword/borda/verso.svg",
+          "canvasMm": [
+            36.28,
+            35.264
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            35.1,
+            36.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-double-chakram",
+      "candidateId": "a003",
+      "pdfLabel": "Warrior Double Chakram",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "change-warriors",
+      "equipmentTags": [
+        "Dual Hand Weapons"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Change Warriors"
+        },
+        {
+          "pdf": "Double Chakram",
+          "armyBook": "Dual Hand Weapons"
+        }
+      ],
+      "notes": "Warrior = Change Warriors. Dois chakras usados em corpo a corpo; as 5 artes de tropa (págs. 1-5, 5 cópias cada) batem com as 5 armas dos Change Warriors. Alternativa: Change Hexers (Hexed Chakram, tiro)",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-double-chakram/fino/frente.svg",
+          "back": "arts/warrior-double-chakram/fino/verso.svg",
+          "canvasMm": [
+            22.056,
+            33.867
+          ],
+          "frontBackIoU": 0.955,
+          "sizeMm": [
+            33.8,
+            21.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 18,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-double-chakram/borda/frente.svg",
+          "back": "arts/warrior-double-chakram/borda/verso.svg",
+          "canvasMm": [
+            25.442,
+            35.56
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            35.5,
+            25.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-halberd",
+      "candidateId": "a004",
+      "pdfLabel": "Warrior Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "change-warriors",
+      "equipmentTags": [
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Change Warriors"
+        }
+      ],
+      "notes": "Warrior = Change Warriors",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-halberd/fino/frente.svg",
+          "back": "arts/warrior-halberd/fino/verso.svg",
+          "canvasMm": [
+            30.692,
+            33.74
+          ],
+          "frontBackIoU": 0.956,
+          "sizeMm": [
+            33.6,
+            30.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 19,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-halberd/borda/frente.svg",
+          "back": "arts/warrior-halberd/borda/verso.svg",
+          "canvasMm": [
+            34.078,
+            35.433
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            35.3,
+            33.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-spear",
+      "candidateId": "a005",
+      "pdfLabel": "Warrior Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "change-warriors",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Change Warriors"
+        }
+      ],
+      "notes": "Warrior = Change Warriors",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-spear/fino/frente.svg",
+          "back": "arts/warrior-spear/fino/verso.svg",
+          "canvasMm": [
+            30.353,
+            33.824
+          ],
+          "frontBackIoU": 0.954,
+          "sizeMm": [
+            33.7,
+            30.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 20,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-spear/borda/frente.svg",
+          "back": "arts/warrior-spear/borda/verso.svg",
+          "canvasMm": [
+            33.74,
+            35.518
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            35.4,
+            33.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sargeant",
+      "candidateId": "a006",
+      "pdfLabel": "Warrior Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "change-warriors",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Change Warriors"
+        }
+      ],
+      "notes": "Warrior = Change Warriors; PDF escreve Sargeant",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sargeant/fino/frente.svg",
+          "back": "arts/warrior-sargeant/fino/verso.svg",
+          "canvasMm": [
+            34.036,
+            37.677
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            37.6,
+            33.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 21,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sargeant/borda/frente.svg",
+          "back": "arts/warrior-sargeant/borda/verso.svg",
+          "canvasMm": [
+            37.423,
+            39.37
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            39.3,
+            37.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-musician",
+      "candidateId": "a007",
+      "pdfLabel": "Warrior Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "change-warriors",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Change Warriors"
+        }
+      ],
+      "notes": "Warrior = Change Warriors",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-musician/fino/frente.svg",
+          "back": "arts/warrior-musician/fino/verso.svg",
+          "canvasMm": [
+            33.316,
+            41.783
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            41.7,
+            33.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 21,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-musician/borda/frente.svg",
+          "back": "arts/warrior-musician/borda/verso.svg",
+          "canvasMm": [
+            36.703,
+            43.476
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            43.3,
+            36.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-banner",
+      "candidateId": "a008",
+      "pdfLabel": "Warrior Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "change-warriors",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Change Warriors"
+        }
+      ],
+      "notes": "Warrior = Change Warriors",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-banner/fino/frente.svg",
+          "back": "arts/warrior-banner/fino/verso.svg",
+          "canvasMm": [
+            34.883,
+            57.997
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            57.9,
+            34.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 21,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-banner/borda/frente.svg",
+          "back": "arts/warrior-banner/borda/verso.svg",
+          "canvasMm": [
+            38.269,
+            59.69
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            59.6,
+            38.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-bolt-staff",
+      "candidateId": "a009",
+      "pdfLabel": "Champion Bolt Staff",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion-of-change",
+      "equipmentTags": [
+        "Heavy Magic Bolt|Daemon Loremaster Staff"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Champion of Change"
+        },
+        {
+          "pdf": "Bolt Staff",
+          "armyBook": [
+            "Heavy Magic Bolt",
+            "Daemon Loremaster Staff"
+          ]
+        }
+      ],
+      "notes": "Champion = Champion of Change (a pé, sem asas). Bolt Staff pode ser Heavy Magic Bolt ou Daemon Loremaster Staff; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma).",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0
+          ],
+          "front": "arts/champion-bolt-staff/fino/frente.svg",
+          "back": "arts/champion-bolt-staff/fino/verso.svg",
+          "canvasMm": [
+            47.794,
+            38.312
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            38.2,
+            47.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 22,
+          "rows": [
+            0
+          ],
+          "front": "arts/champion-bolt-staff/borda/frente.svg",
+          "back": "arts/champion-bolt-staff/borda/verso.svg",
+          "canvasMm": [
+            51.181,
+            40.005
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            39.9,
+            50.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-spear-staff",
+      "candidateId": "a010",
+      "pdfLabel": "Champion Spear Staff",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion-of-change",
+      "equipmentTags": [
+        "Daemon Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Champion of Change"
+        },
+        {
+          "pdf": "Spear Staff",
+          "armyBook": "Daemon Spear"
+        }
+      ],
+      "notes": "Champion = Champion of Change (a pé, sem asas). Alternativa: Master Daemon Spear",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            1
+          ],
+          "front": "arts/champion-spear-staff/fino/frente.svg",
+          "back": "arts/champion-spear-staff/fino/verso.svg",
+          "canvasMm": [
+            39.878,
+            46.948
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            46.8,
+            39.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 22,
+          "rows": [
+            1
+          ],
+          "front": "arts/champion-spear-staff/borda/frente.svg",
+          "back": "arts/champion-spear-staff/borda/verso.svg",
+          "canvasMm": [
+            43.265,
+            48.641
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            48.5,
+            43.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-power-staff",
+      "candidateId": "a011",
+      "pdfLabel": "Champion Power Staff",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion-of-change",
+      "equipmentTags": [
+        "Power Staff"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Champion of Change"
+        }
+      ],
+      "notes": "Champion = Champion of Change (a pé, sem asas). Alternativa: Master Power Staff",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            2
+          ],
+          "front": "arts/champion-power-staff/fino/frente.svg",
+          "back": "arts/champion-power-staff/fino/verso.svg",
+          "canvasMm": [
+            34.925,
+            48.641
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            48.5,
+            34.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 22,
+          "rows": [
+            2
+          ],
+          "front": "arts/champion-power-staff/borda/frente.svg",
+          "back": "arts/champion-power-staff/borda/verso.svg",
+          "canvasMm": [
+            38.312,
+            50.334
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            50.2,
+            38.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "harbinger",
+      "candidateId": "a012",
+      "pdfLabel": "Harbinger",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "harbinger-of-change",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Harbinger",
+          "armyBook": "Harbinger of Change"
+        }
+      ],
+      "notes": "figura alada grande (~118 mm); alternativa: Ascended Harbinger of Change",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0
+          ],
+          "front": "arts/harbinger/fino/frente.svg",
+          "back": "arts/harbinger/fino/verso.svg",
+          "canvasMm": [
+            81.28,
+            118.068
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            117.9,
+            81.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 23,
+          "rows": [
+            0
+          ],
+          "front": "arts/harbinger/borda/frente.svg",
+          "back": "arts/harbinger/borda/verso.svg",
+          "canvasMm": [
+            87.207,
+            121.031
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            120.9,
+            87.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-bolt-staff-on-disc",
+      "candidateId": "a013",
+      "pdfLabel": "Champion Bolt Staff on Disc",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion-of-change",
+      "equipmentTags": [
+        "Disc of Change",
+        "Heavy Magic Bolt|Daemon Loremaster Staff"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Champion of Change"
+        },
+        {
+          "pdf": "on Disc",
+          "armyBook": "Disc of Change"
+        },
+        {
+          "pdf": "Bolt Staff",
+          "armyBook": [
+            "Heavy Magic Bolt",
+            "Daemon Loremaster Staff"
+          ]
+        }
+      ],
+      "notes": "Champion of Change com Disc of Change. Bolt Staff pode ser Heavy Magic Bolt ou Daemon Loremaster Staff; usuário escolhe. Só contorno fino: a versão borda grossa é a023 (pareamento falhou por causa da haste do disco) Arma ambígua: tag com alternativas (casa com qualquer uma).",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0
+          ],
+          "front": "arts/champion-bolt-staff-on-disc/fino/frente.svg",
+          "back": "arts/champion-bolt-staff-on-disc/fino/verso.svg",
+          "canvasMm": [
+            52.282,
+            43.095
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            42.8,
+            52.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-power-staff-on-disc",
+      "candidateId": "a014",
+      "pdfLabel": "Champion Power Staff on Disc",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion-of-change",
+      "equipmentTags": [
+        "Disc of Change",
+        "Power Staff"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Champion of Change"
+        },
+        {
+          "pdf": "on Disc",
+          "armyBook": "Disc of Change"
+        }
+      ],
+      "notes": "Champion of Change com Disc of Change. Só contorno fino: a versão borda grossa é a024",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            1
+          ],
+          "front": "arts/champion-power-staff-on-disc/fino/frente.svg",
+          "back": "arts/champion-power-staff-on-disc/fino/verso.svg",
+          "canvasMm": [
+            39.285,
+            52.959
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            52.7,
+            39.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-spear-staff-on-disc",
+      "candidateId": "a015",
+      "pdfLabel": "Champion Spear Staff on Disc",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion-of-change",
+      "equipmentTags": [
+        "Disc of Change",
+        "Daemon Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Champion of Change"
+        },
+        {
+          "pdf": "on Disc",
+          "armyBook": "Disc of Change"
+        },
+        {
+          "pdf": "Spear Staff",
+          "armyBook": "Daemon Spear"
+        }
+      ],
+      "notes": "Champion of Change com Disc of Change. Só contorno fino: a versão borda grossa é a025",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            2
+          ],
+          "front": "arts/champion-spear-staff-on-disc/fino/frente.svg",
+          "back": "arts/champion-spear-staff-on-disc/fino/verso.svg",
+          "canvasMm": [
+            44.619,
+            51.477
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            51.3,
+            44.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fury-v1",
+      "candidateId": "a016",
+      "pdfLabel": "Fury (V1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "change-furies",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Fury",
+          "armyBook": "Change Furies"
+        }
+      ],
+      "notes": "Fury = Change Furies (nome no Skirmish: Change Fury)",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/fury-v1/fino/frente.svg",
+          "back": "arts/fury-v1/fino/verso.svg",
+          "canvasMm": [
+            59.182,
+            46.27
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            46.1,
+            58.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 25,
+          "rows": [
+            0
+          ],
+          "front": "arts/fury-v1/borda/frente.svg",
+          "back": "arts/fury-v1/borda/verso.svg",
+          "canvasMm": [
+            61.468,
+            47.964
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            47.8,
+            61.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fury-v2",
+      "candidateId": "a017",
+      "pdfLabel": "Fury (V2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "change-furies",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Fury",
+          "armyBook": "Change Furies"
+        }
+      ],
+      "notes": "Fury = Change Furies (nome no Skirmish: Change Fury)",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/fury-v2/fino/frente.svg",
+          "back": "arts/fury-v2/fino/verso.svg",
+          "canvasMm": [
+            47.752,
+            50.165
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            50.0,
+            47.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 25,
+          "rows": [
+            2
+          ],
+          "front": "arts/fury-v2/borda/frente.svg",
+          "back": "arts/fury-v2/borda/verso.svg",
+          "canvasMm": [
+            49.869,
+            51.858
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            51.7,
+            49.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scorcher",
+      "candidateId": "a018",
+      "pdfLabel": "Scorcher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scorchers",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Scorcher é o nome no Skirmish",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/scorcher/fino/frente.svg",
+          "back": "arts/scorcher/fino/verso.svg",
+          "canvasMm": [
+            50.419,
+            43.519
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            43.4,
+            50.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/scorcher/borda/frente.svg",
+          "back": "arts/scorcher/borda/verso.svg",
+          "canvasMm": [
+            53.806,
+            45.212
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            45.1,
+            53.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "schreecher",
+      "candidateId": "a019",
+      "pdfLabel": "Schreecher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "screechers",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Schreecher",
+          "armyBook": "Screechers"
+        }
+      ],
+      "notes": "grafia do PDF; unidade Screechers (Screecher no Skirmish). Só contorno fino: a versão borda grossa é a028",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/schreecher/fino/frente.svg",
+          "back": "arts/schreecher/fino/verso.svg",
+          "canvasMm": [
+            61.256,
+            32.978
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            32.8,
+            61.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horror-large",
+      "candidateId": "a020",
+      "pdfLabel": "Horror (Large)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "change-horrors",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Horror (Large)",
+          "armyBook": "Change Horrors"
+        }
+      ],
+      "notes": "três tamanhos de Horror = três unidades; Large = Change Horrors. Alternativa: Horror Champion of Change",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/horror-large/fino/frente.svg",
+          "back": "arts/horror-large/fino/verso.svg",
+          "canvasMm": [
+            46.101,
+            47.244
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            47.2,
+            45.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/horror-large/borda/frente.svg",
+          "back": "arts/horror-large/borda/verso.svg",
+          "canvasMm": [
+            49.488,
+            48.937
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            48.9,
+            49.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horror-medium",
+      "candidateId": "a021",
+      "pdfLabel": "Horror (Medium)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "lesser-change-horrors",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Horror (Medium)",
+          "armyBook": "Lesser Change Horrors"
+        }
+      ],
+      "notes": "Medium = Lesser Change Horrors (genericName Change Lesser Horrors)",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/horror-medium/fino/frente.svg",
+          "back": "arts/horror-medium/fino/verso.svg",
+          "canvasMm": [
+            38.1,
+            36.999
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            36.9,
+            37.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/horror-medium/borda/frente.svg",
+          "back": "arts/horror-medium/borda/verso.svg",
+          "canvasMm": [
+            41.487,
+            38.693
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            38.6,
+            41.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horror-small",
+      "candidateId": "a022",
+      "pdfLabel": "Horror (Small)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "changelings",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Horror (Small)",
+          "armyBook": "Changelings"
+        }
+      ],
+      "notes": "Small = Changelings (genericName Change Imp Horrors, base 25); a figura traz dois diabretes juntos",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/horror-small/fino/frente.svg",
+          "back": "arts/horror-small/fino/verso.svg",
+          "canvasMm": [
+            26.966,
+            27.009
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            26.9,
+            26.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 30,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/horror-small/borda/frente.svg",
+          "back": "arts/horror-small/borda/verso.svg",
+          "canvasMm": [
+            30.353,
+            28.702
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            28.6,
+            30.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-bolt-staff-on-disc-borda",
+      "candidateId": "a023",
+      "pdfLabel": "Champion Bolt Staff on Disc",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion-of-change",
+      "equipmentTags": [
+        "Disc of Change",
+        "Heavy Magic Bolt|Daemon Loremaster Staff"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Champion of Change"
+        },
+        {
+          "pdf": "on Disc",
+          "armyBook": "Disc of Change"
+        },
+        {
+          "pdf": "Bolt Staff",
+          "armyBook": [
+            "Heavy Magic Bolt",
+            "Daemon Loremaster Staff"
+          ]
+        }
+      ],
+      "notes": "Champion of Change com Disc of Change. Bolt Staff pode ser Heavy Magic Bolt ou Daemon Loremaster Staff; usuário escolhe. Só borda grossa: versão borda de a013 (pareamento falhou por causa da haste do disco) Arma ambígua: tag com alternativas (casa com qualquer uma).",
+      "styles": {
+        "borda": {
+          "page": 24,
+          "rows": [
+            0
+          ],
+          "front": "arts/champion-bolt-staff-on-disc-borda/borda/frente.svg",
+          "back": "arts/champion-bolt-staff-on-disc-borda/borda/verso.svg",
+          "canvasMm": [
+            55.668,
+            58.97
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            58.8,
+            55.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-power-staff-on-disc-borda",
+      "candidateId": "a024",
+      "pdfLabel": "Champion Power Staff on Disc",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion-of-change",
+      "equipmentTags": [
+        "Disc of Change",
+        "Power Staff"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Champion of Change"
+        },
+        {
+          "pdf": "on Disc",
+          "armyBook": "Disc of Change"
+        }
+      ],
+      "notes": "Champion of Change com Disc of Change. Só borda grossa: versão borda de a014",
+      "styles": {
+        "borda": {
+          "page": 24,
+          "rows": [
+            1
+          ],
+          "front": "arts/champion-power-staff-on-disc-borda/borda/frente.svg",
+          "back": "arts/champion-power-staff-on-disc-borda/borda/verso.svg",
+          "canvasMm": [
+            42.63,
+            69.13
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            69.0,
+            42.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-spear-staff-on-disc-borda",
+      "candidateId": "a025",
+      "pdfLabel": "Champion Spear Staff on Disc",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion-of-change",
+      "equipmentTags": [
+        "Disc of Change",
+        "Daemon Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Champion of Change"
+        },
+        {
+          "pdf": "on Disc",
+          "armyBook": "Disc of Change"
+        },
+        {
+          "pdf": "Spear Staff",
+          "armyBook": "Daemon Spear"
+        }
+      ],
+      "notes": "Champion of Change com Disc of Change. Só borda grossa: versão borda de a015",
+      "styles": {
+        "borda": {
+          "page": 24,
+          "rows": [
+            2
+          ],
+          "front": "arts/champion-spear-staff-on-disc-borda/borda/frente.svg",
+          "back": "arts/champion-spear-staff-on-disc-borda/borda/verso.svg",
+          "canvasMm": [
+            48.006,
+            67.395
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            67.3,
+            47.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fury-v1-so-borda",
+      "candidateId": "a026",
+      "pdfLabel": "Fury (V1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "change-furies",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Fury",
+          "armyBook": "Change Furies"
+        }
+      ],
+      "notes": "só borda grossa, sem par fino; mesmo desenho de a016 (cópia não agrupada). Fury = Change Furies (nome no Skirmish: Change Fury)",
+      "styles": {
+        "borda": {
+          "page": 25,
+          "rows": [
+            1
+          ],
+          "front": "arts/fury-v1-so-borda/borda/frente.svg",
+          "back": "arts/fury-v1-so-borda/borda/verso.svg",
+          "canvasMm": [
+            61.553,
+            47.964
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            47.8,
+            61.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fury-v2-so-borda",
+      "candidateId": "a027",
+      "pdfLabel": "Fury (V2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "change-furies",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Fury",
+          "armyBook": "Change Furies"
+        }
+      ],
+      "notes": "só borda grossa, sem par fino; mesmo desenho de a017 (cópias não agrupadas). Fury = Change Furies (nome no Skirmish: Change Fury)",
+      "styles": {
+        "borda": {
+          "page": 25,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/fury-v2-so-borda/borda/frente.svg",
+          "back": "arts/fury-v2-so-borda/borda/verso.svg",
+          "canvasMm": [
+            49.784,
+            51.858
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            51.7,
+            49.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "schreecher-borda",
+      "candidateId": "a028",
+      "pdfLabel": "Schreecher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "screechers",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Schreecher",
+          "armyBook": "Screechers"
+        }
+      ],
+      "notes": "grafia do PDF; unidade Screechers (Screecher no Skirmish). Só borda grossa: versão borda de a019",
+      "styles": {
+        "borda": {
+          "page": 27,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/schreecher-borda/borda/frente.svg",
+          "back": "arts/schreecher-borda/borda/verso.svg",
+          "canvasMm": [
+            64.643,
+            52.282
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            52.2,
+            64.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

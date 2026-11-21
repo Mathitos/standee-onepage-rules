@@ -43,3 +43,67 @@ describe('associação com o catálogo', () => {
     expect(modelosDoPlano(plano).modelos).toEqual([])
   })
 })
+
+describe('facção pelo sistema da lista', () => {
+  const f = (sistema: string, slug: string, faccao: string, exercitos?: string[]) =>
+    ({ sistema, slug, caminho: `${sistema}/${slug}`, faccao, artes: 1, manifesto: true, exercitos })
+  const indice = {
+    faccoes: [
+      f('aof', 'daemons-of-change', 'Daemons of Change'),
+      f('gff', 'daemons-of-change', 'Daemons of Change'),
+      f('gff', 'saurian-starhost', 'Saurian Starhost', ['Saurian Starhosts']),
+    ],
+  }
+  it('GF/GFF usam as artes de ficção científica; AOF/AOFS/AOFR, as de fantasia', () => {
+    expect(faccaoDaLista(indice, 'Daemons of Change', 'GFF')?.caminho).toBe('gff/daemons-of-change')
+    expect(faccaoDaLista(indice, 'Daemons of Change', 'GF')?.caminho).toBe('gff/daemons-of-change')
+    expect(faccaoDaLista(indice, 'Daemons of Change', 'AOF')?.caminho).toBe('aof/daemons-of-change')
+    expect(faccaoDaLista(indice, 'Daemons of Change', 'AOFS')?.caminho).toBe('aof/daemons-of-change')
+  })
+  it('lista com nome próprio ("Nome - Army book")', () => {
+    expect(faccaoDaLista(indice, 'Torneio de sábado - Saurian Starhosts', 'GFF')?.slug).toBe('saurian-starhost')
+  })
+  it('acha pelo nome do army book e não troca de sistema', () => {
+    expect(faccaoDaLista(indice, 'Saurian Starhosts', 'GFF')?.slug).toBe('saurian-starhost')
+    expect(faccaoDaLista(indice, 'Saurian Starhosts', 'AOF')).toBeNull()
+  })
+})
+
+describe('arte genérica da unidade e itens nas regras', () => {
+  const m = {
+    units: [
+      { unitKey: 'warriors', names: ['Warriors', 'Warrior'], base: { shape: 'round' as const, dimensionsMm: [32], raw: '32' } },
+      { unitKey: 'lord', names: ['Lord'], base: { shape: 'round' as const, dimensionsMm: [32], raw: '32' } },
+      { unitKey: 'brutes', names: ['Brutes'], base: { shape: 'round' as const, dimensionsMm: [40], raw: '40' } },
+    ],
+    arts: [
+      { artId: 'warrior-banner', pdfLabel: 'Warrior Banner', unitKey: 'warriors', equipmentTags: [], cosmetic: 'banner', mappingStatus: 'mapped' },
+      { artId: 'warrior-spear', pdfLabel: 'Warrior Spear', unitKey: 'warriors', equipmentTags: ['Spear'], cosmetic: null, mappingStatus: 'mapped' },
+      { artId: 'warrior', pdfLabel: 'Warrior', unitKey: 'warriors', equipmentTags: [], cosmetic: null, mappingStatus: 'alias-proposed' },
+      { artId: 'lord', pdfLabel: 'Lord', unitKey: 'lord', equipmentTags: [], cosmetic: null, mappingStatus: 'mapped' },
+      { artId: 'lord-boar', pdfLabel: 'Lord on Boar', unitKey: 'lord', equipmentTags: ['Great Boar'], cosmetic: null, mappingStatus: 'mapped' },
+      { artId: 'brute-axe', pdfLabel: 'Brute Axe', unitKey: 'brutes', equipmentTags: ['Great Axe'], cosmetic: null, mappingStatus: 'mapped' },
+    ],
+  }
+  const texto = [
+    '++ Beastmen (v3.6.0) [AOFS 300pts] [5 Units] ++', '',
+    'Warrior [3] Q5+ D5+ | 60pts | Furious', '3x Spear (A1, Counter)', '',
+    'Warrior [3] Q5+ D5+ | 60pts | Furious', '3x Hand Weapon (A1)', '',
+    'Lord [1] Q4+ D4+ | 60pts | Hero, Great Boar', 'Hand Weapon (A3)', '',
+    'Lord [1] Q4+ D4+ | 60pts | Hero', 'Hand Weapon (A3)', '',
+    'Brutes [3] Q4+ D4+ | 60pts | Tough(3)', '3x Hand Weapon (A2)',
+  ].join('\n')
+  const plano = sugerir(parseShareText(texto), m)
+  const arte = (i: number) => plano[i].variantes[0].arte
+  it('arma com arte própria vence; sem arte da arma, vale a genérica (nunca a de comando)', () => {
+    expect(arte(0)).toBe('warrior-spear')
+    expect(arte(1)).toBe('warrior')
+  })
+  it('montaria nas regras escolhe a arte montada', () => {
+    expect(arte(2)).toBe('lord-boar')
+    expect(arte(3)).toBe('lord')
+  })
+  it('só há arte de outra arma: fica para o usuário (D013)', () => {
+    expect(arte(4)).toBeNull()
+  })
+})

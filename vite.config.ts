@@ -21,9 +21,13 @@ function indiceCatalogo() {
       const arq = join(pasta, slug, 'artes.json')
       if (!existsSync(arq)) continue
       const a = JSON.parse(readFileSync(arq, 'utf8'))
+      const arqManifesto = join(pasta, slug, 'manifest.json')
+      const m = existsSync(arqManifesto) ? JSON.parse(readFileSync(arqManifesto, 'utf8')) : null
+      const livros: { name?: string }[] = m ? (m.armyBooks ?? [m.armyBook]) : []
       faccoes.push({
         sistema, slug, caminho: `${sistema}/${slug}`, faccao: a.faccao, artes: a.artes.length,
-        manifesto: existsSync(join(pasta, slug, 'manifest.json')),
+        manifesto: !!m,
+        exercitos: [...new Set(livros.map((l) => l?.name).filter(Boolean))],
       })
     }
   }

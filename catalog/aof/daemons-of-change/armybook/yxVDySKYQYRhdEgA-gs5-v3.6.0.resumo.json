@@ -1,0 +1,725 @@
+{
+  "armyBook": {
+    "id": "yxVDySKYQYRhdEgA",
+    "nome": "Daemons of Change",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:32.161Z",
+    "sistema": "age-of-fantasy-skirmish",
+    "sistemaId": 5
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "F0XvHTF",
+      "nome": "Harbinger of Change",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Daemon Hammers",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace 2x Daemon Hammer",
+          "ganha": [
+            "Daemon Loremaster Staff"
+          ]
+        },
+        {
+          "secao": "Replace 2x Daemon Hammer",
+          "ganha": [
+            "Heavy Hexed Chakram"
+          ]
+        },
+        {
+          "secao": "Replace 2x Daemon Hammer",
+          "ganha": [
+            "Heavy Magic Bolt"
+          ]
+        },
+        {
+          "secao": "Replace 2x Daemon Hammer",
+          "ganha": [
+            "Heavy Magic Blast",
+            "Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace any Daemon Hammer",
+          "ganha": [
+            "Power Staff"
+          ]
+        },
+        {
+          "secao": "Replace any Daemon Hammer",
+          "ganha": [
+            "Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace any Daemon Hammer",
+          "ganha": [
+            "Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Change Boon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Daemonic Incursion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Fury Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Change Favour"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Envoy of Change"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Lore of Change"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Symbol of Change"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Gift of Change"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MvLZSIo",
+      "nome": "Champion of Change",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Power Staff"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Daemon Loremaster Staff"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Magic Blast",
+            "Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Heavy Hexed Chakram",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Power Staff"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Hexed Chakram",
+          "ganha": [
+            "Heavy Magic Bolt"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Change Boon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Daemonic Incursion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Disc of Change"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Change Favour"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Lore of Change"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Icon of Change"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Envoy of Change"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Army Standard Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Symbol of Change"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MjmWJOF",
+      "nome": "Fury Champion of Change",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Power Staff"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Magic Blast",
+            "Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Heavy Hexed Chakram",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Power Staff"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Hexed Chakram",
+          "ganha": [
+            "Heavy Magic Bolt"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Icon of Change"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Envoy of Change"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Symbol of Change"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Gift of Change"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "y3HJghW",
+      "nome": "Horror Champion of Change",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Fireballs",
+        "Horror Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Change Boon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UMiqTdF",
+      "nome": "Change Warrior",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Power Sword"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Power Sword",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Power Sword",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Power Sword",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Power Sword",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Power Sword",
+          "ganha": [
+            "Dual Hand Weapons"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Change Boon"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Wizard"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Banner of Change"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "moiRRNr",
+      "nome": "Change Fury",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Power Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Power Claws",
+          "ganha": [
+            "Dual Armblades"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "snrSKgU",
+      "nome": "Change Hexer",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Hexed Chakram",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Hexed Chakram",
+          "ganha": [
+            "Magic Bolt"
+          ]
+        },
+        {
+          "secao": "Replace Hexed Chakram",
+          "ganha": [
+            "Magic Blast"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Change Boon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "60HBg7_",
+      "nome": "Hex-Fury",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Hexed Chakram",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Hexed Chakram",
+          "ganha": [
+            "Magic Bolt"
+          ]
+        },
+        {
+          "secao": "Replace Hexed Chakram",
+          "ganha": [
+            "Magic Blast"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9LtzG6R",
+      "nome": "Changelings",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Claws"
+      ],
+      "itens": [],
+      "opcoes": []
+    },
+    {
+      "id": "zt7BQGh",
+      "nome": "Lesser Change Horror",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Claws"
+      ],
+      "itens": [],
+      "opcoes": []
+    },
+    {
+      "id": "BzjTlSG",
+      "nome": "Change Horror",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Change Boon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P8kTKn6",
+      "nome": "Scorcher",
+      "tamanho": 1,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Spout Flames",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Spout Flame",
+          "ganha": [
+            "Hexed Flames"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IM104Sq",
+      "nome": "Change Soul Spawn",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Power Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Power Claws",
+          "ganha": [
+            "Heavy Magic Blast",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Power Claws",
+          "ganha": [
+            "Soul Claws"
+          ]
+        },
+        {
+          "secao": "Replace Power Claws",
+          "ganha": [
+            "Hexed Spikes",
+            "Claws"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2ElE6T",
+      "nome": "Screecher",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Sharp Beak"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Sharp Beak",
+          "ganha": [
+            "Heavy Beak"
+          ]
+        }
+      ]
+    }
+  ]
+}

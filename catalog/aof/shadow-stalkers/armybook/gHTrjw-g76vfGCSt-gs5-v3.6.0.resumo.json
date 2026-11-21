@@ -1,0 +1,1008 @@
+{
+  "armyBook": {
+    "id": "gHTrjw-g76vfGCSt",
+    "nome": "Shadow Stalkers",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:34.044Z",
+    "sistema": "age-of-fantasy-skirmish",
+    "sistemaId": 5
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "BzhKtzr",
+      "nome": "Butcher Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Butcher Great-Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Butcher Great-Axe"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Throwing Spears",
+            "Butcher Great-Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Butcher Great-Blade"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Butcher Great-Hammer",
+          "ganha": [
+            "Butcher Great-Blade"
+          ]
+        },
+        {
+          "secao": "Replace Butcher Great-Hammer",
+          "ganha": [
+            "Butcher Great-Axe"
+          ]
+        },
+        {
+          "secao": "Replace Butcher Great-Hammer",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Spear",
+          "ganha": [
+            "Hunting Harpoons"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Spear",
+          "ganha": [
+            "Combat Censer"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Spear",
+          "ganha": [
+            "Stalker Sling"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Dream Stalker"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Night Shade"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Maze Walker"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Shadow Master"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "y2ZMfy4",
+      "nome": "Reaper Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Master Reaper Great-Glaive"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Master Reaper Great-Glaive",
+          "ganha": [
+            "Master Reaper Great-Sword"
+          ]
+        },
+        {
+          "secao": "Replace Master Reaper Great-Glaive",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Master Reaper Great-Glaive",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Master Reaper Great-Glaive",
+          "ganha": [
+            "Dual Hand Weapons"
+          ]
+        },
+        {
+          "secao": "Replace Master Reaper Great-Glaive",
+          "ganha": [
+            "Throwing Spears",
+            "Reaper Great-Glaive"
+          ]
+        },
+        {
+          "secao": "Replace Master Reaper Great-Glaive",
+          "ganha": [
+            "Combat Censer",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Reaper Great-Glaive",
+          "ganha": [
+            "Reaper Great-Sword"
+          ]
+        },
+        {
+          "secao": "Replace Reaper Great-Glaive",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Reaper Great-Glaive",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Spear",
+          "ganha": [
+            "Stalker Sling"
+          ]
+        },
+        {
+          "secao": "Replace Combat Censer",
+          "ganha": [
+            "Hunting Harpoons"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Dream Stalker"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Night Shade"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Army Standard Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Maze Walker"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Shadow Master"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "np9c4GM",
+      "nome": "Phantom Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Throwing Spears",
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Combat Censer",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Halberd",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Spear",
+          "ganha": [
+            "Stalker Sling"
+          ]
+        },
+        {
+          "secao": "Replace Combat Censer",
+          "ganha": [
+            "Hunting Harpoons"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Umbral Horror"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Dream Stalker"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Night Shade"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Maze Walker"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hex Banshee"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7kPf9Hw",
+      "nome": "Spectre Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Master Stalker Wand",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Master Stalker Wand and Strike",
+          "ganha": [
+            "Hex Banshee Staff"
+          ]
+        },
+        {
+          "secao": "Replace Master Stalker Wand",
+          "ganha": [
+            "Master Shadow Wand"
+          ]
+        },
+        {
+          "secao": "Replace Master Stalker Wand",
+          "ganha": [
+            "Master Stalker Staff"
+          ]
+        },
+        {
+          "secao": "Replace Master Stalker Wand",
+          "ganha": [
+            "Master Shadow Staff"
+          ]
+        },
+        {
+          "secao": "Replace Master Stalker Wand",
+          "ganha": [
+            "Nightmare Wand"
+          ]
+        },
+        {
+          "secao": "Replace Master Stalker Wand",
+          "ganha": [
+            "Umbral Wand"
+          ]
+        },
+        {
+          "secao": "Replace Master Stalker Wand",
+          "ganha": [
+            "Umbral Staff"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Umbral Horror"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Dream Stalker"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Night Shade"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Maze Walker"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hex Banshee"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2WYathE",
+      "nome": "Scourge Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Throwing Spears",
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Combat Censer",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Spear",
+          "ganha": [
+            "Stalker Sling"
+          ]
+        },
+        {
+          "secao": "Replace Combat Censer",
+          "ganha": [
+            "Hunting Harpoons"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Great Hound"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Dream Stalker"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Night Shade"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Army Standard Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Maze Walker"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Shadow Master"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Oe3wD2F",
+      "nome": "Omoshu & Kothiz",
+      "tamanho": 1,
+      "bases": {
+        "round": "75x46",
+        "square": "75x50"
+      },
+      "armas": [
+        "Shadow Axe"
+      ],
+      "itens": [
+        {
+          "nome": "Kothiz",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Ensnaring Stalker"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "-gmfrKU",
+      "nome": "Scourge",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Scourging Censer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ndEHefB",
+      "nome": "Phantom",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Assault Daggers"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Assault Dagger",
+          "ganha": [
+            "Throwing Spears",
+            "Dagger"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Scourging Censer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taTBkkm",
+      "nome": "Shadow Hound",
+      "tamanho": 1,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Toxin Claws"
+      ],
+      "itens": [
+        {
+          "nome": "Hungry Beast",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Toxin Claws",
+          "ganha": [
+            "Jagged Teeth"
+          ]
+        },
+        {
+          "secao": "Replace Hungry Beast",
+          "ganha": [
+            "Leaping Advance"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Shadow Censer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dAqayhR",
+      "nome": "Spectre",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Stalker Staff",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Stalker Staff",
+          "ganha": [
+            "Shadow Staff"
+          ]
+        },
+        {
+          "secao": "Replace Stalker Staff",
+          "ganha": [
+            "Stalker Wand"
+          ]
+        },
+        {
+          "secao": "Replace Stalker Staff",
+          "ganha": [
+            "Shadow Wand"
+          ]
+        },
+        {
+          "secao": "Replace Stalker Staff",
+          "ganha": [
+            "Nightmare Wand"
+          ]
+        },
+        {
+          "secao": "Replace Stalker Staff",
+          "ganha": [
+            "Umbral Wand"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Soul-Hunter Censer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "My2uFJX",
+      "nome": "Tormentor",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Toxin Dagger"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Toxic Stinger"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Deadly Stinger"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Shadow Censer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "AbtEJXr",
+      "nome": "Reaper",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Halberd"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Halberd",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Halberd",
+          "ganha": [
+            "Reaper Great-Glaive"
+          ]
+        },
+        {
+          "secao": "Replace Halberd",
+          "ganha": [
+            "Reaper Great-Sword"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Soul-Hunter Censer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_v2ldwG",
+      "nome": "Flayer Cavalry",
+      "tamanho": 1,
+      "bases": {
+        "round": "75x46",
+        "square": "75x50"
+      },
+      "armas": [
+        "Lance"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Replace Lance",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Lance",
+          "ganha": [
+            "Reaper Great-Glaive"
+          ]
+        },
+        {
+          "secao": "Replace Lance",
+          "ganha": [
+            "Reaper Great-Sword"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Soul-Hunter Censer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PBz81Cw",
+      "nome": "Fang Swarm",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Toxin Fangs"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Toxin Fang",
+          "ganha": [
+            "Sharp Fangs"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Venom Sprayers"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Needle Sprayers"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Shadow Censer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fjKxvmF",
+      "nome": "Fiend",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Toxin Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Toxin Claws",
+          "ganha": [
+            "Jagged Claws"
+          ]
+        },
+        {
+          "secao": "Replace Toxin Claws",
+          "ganha": [
+            "Venom Spitters",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Toxin Claws",
+          "ganha": [
+            "Needle Spitters",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Venom Sprayers"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Needle Sprayers"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Shadow Censer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tGl68Tj",
+      "nome": "Butcher",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Butcher Great-Blade"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Butcher Great-Blade",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Butcher Great-Blade",
+          "ganha": [
+            "Butcher Great-Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Butcher Great-Blade",
+          "ganha": [
+            "Throwing Spears",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Butcher Great-Blade",
+          "ganha": [
+            "Butcher Great-Axe"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Soul-Hunter Censer"
+          ]
+        }
+      ]
+    }
+  ]
+}

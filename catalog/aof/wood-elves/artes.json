@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "wood-elves",
- "faccao": "Wood Elves",
+ "faccao": "Wood Elves\r",
  "sistema": "aof",
  "pdf": {
   "nome": "Wood_Elves_-_BW.pdf",
@@ -12,14 +12,16 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "army-standard",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Army Standard",
+   "rotuloImg": "arts/army-standard/rotulo.png",
+   "unitKey": "glade-leader",
+   "equipmentTags": [
+    "Army Standard Bearer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +53,16 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "glade-leader-bow",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Glade Leader Bow",
+   "rotuloImg": "arts/glade-leader-bow/rotulo.png",
+   "unitKey": "glade-leader",
+   "equipmentTags": [
+    "Rapid Bow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -90,14 +94,16 @@
    "pendencias": []
   },
   {
-   "id": "a003",
+   "id": "glade-leader-sword",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Glade Leader Sword",
+   "rotuloImg": "arts/glade-leader-sword/rotulo.png",
+   "unitKey": "glade-leader",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -129,14 +135,16 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "grove-champion-sword",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Grove Champion Sword",
+   "rotuloImg": "arts/grove-champion-sword/rotulo.png",
+   "unitKey": "grove-champion",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -168,14 +176,16 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "grove-champion-bow",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Grove Champion Bow",
+   "rotuloImg": "arts/grove-champion-bow/rotulo.png",
+   "unitKey": "grove-champion",
+   "equipmentTags": [
+    "Rapid Shortbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -207,14 +217,16 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "war-master",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "War Master",
+   "rotuloImg": "arts/war-master/rotulo.png",
+   "unitKey": "glade-leader",
+   "equipmentTags": [
+    "War Master"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -248,14 +260,16 @@
    ]
   },
   {
-   "id": "a007",
+   "id": "forest-warden",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Forest Warden",
+   "rotuloImg": "arts/forest-warden/rotulo.png",
+   "unitKey": "glade-leader",
+   "equipmentTags": [
+    "Forest Warden"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -287,14 +301,16 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "spell-weaver",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Spell Weaver",
+   "rotuloImg": "arts/spell-weaver/rotulo.png",
+   "unitKey": "glade-leader",
+   "equipmentTags": [
+    "Spell Weaver"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -326,14 +342,16 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "treemen-wraith",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Treemen Wraith",
+   "rotuloImg": "arts/treemen-wraith/rotulo.png",
+   "unitKey": "treeman-elder",
+   "equipmentTags": [
+    "Forest Wraith"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -365,14 +383,14 @@
    "pendencias": []
   },
   {
-   "id": "a010",
+   "id": "treemen-elder",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Treemen Elder",
+   "rotuloImg": "arts/treemen-elder/rotulo.png",
+   "unitKey": "treeman-elder",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -404,14 +422,17 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "deer-leader-lance",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Deer Leader Lance",
+   "rotuloImg": "arts/deer-leader-lance/rotulo.png",
+   "unitKey": "glade-leader",
+   "equipmentTags": [
+    "Lance",
+    "Swift Deer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -443,14 +464,17 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "deer-leader-sword",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Deer Leader Sword",
+   "rotuloImg": "arts/deer-leader-sword/rotulo.png",
+   "unitKey": "glade-leader",
+   "equipmentTags": [
+    "Hand Weapon",
+    "Swift Deer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -482,14 +506,16 @@
    "pendencias": []
   },
   {
-   "id": "a013",
+   "id": "dance-master",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Dance Master",
+   "rotuloImg": "arts/dance-master/rotulo.png",
+   "unitKey": "grove-champion",
+   "equipmentTags": [
+    "Dance Master"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -521,14 +547,16 @@
    "pendencias": []
   },
   {
-   "id": "a014",
+   "id": "champion-owl-rider",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Owl Rider",
+   "rotuloImg": "arts/champion-owl-rider/rotulo.png",
+   "unitKey": "grove-champion",
+   "equipmentTags": [
+    "Giant Owl"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -549,14 +577,16 @@
    ]
   },
   {
-   "id": "a015",
+   "id": "champion-great-stag",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Great Stag",
+   "rotuloImg": "arts/champion-great-stag/rotulo.png",
+   "unitKey": "grove-champion",
+   "equipmentTags": [
+    "Great Stag"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -588,14 +618,16 @@
    "pendencias": []
   },
   {
-   "id": "a016",
+   "id": "defenders-sword",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Defenders Sword",
+   "rotuloImg": "arts/defenders-sword/rotulo.png",
+   "unitKey": "glade-defenders",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -627,14 +659,16 @@
    "pendencias": []
   },
   {
-   "id": "a017",
+   "id": "defenders-spear",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Defenders Spear",
+   "rotuloImg": "arts/defenders-spear/rotulo.png",
+   "unitKey": "glade-defenders",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -666,14 +700,16 @@
    "pendencias": []
   },
   {
-   "id": "a018",
+   "id": "defenders-halberd",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Defenders Halberd",
+   "rotuloImg": "arts/defenders-halberd/rotulo.png",
+   "unitKey": "glade-defenders",
+   "equipmentTags": [
+    "Halberd"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -705,14 +741,14 @@
    "pendencias": []
   },
   {
-   "id": "a019",
+   "id": "defenders-sergeant",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Defenders Sergeant",
+   "rotuloImg": "arts/defenders-sergeant/rotulo.png",
+   "unitKey": "glade-defenders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -744,14 +780,14 @@
    "pendencias": []
   },
   {
-   "id": "a020",
+   "id": "defenders-musician",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Defenders Musician",
+   "rotuloImg": "arts/defenders-musician/rotulo.png",
+   "unitKey": "glade-defenders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -783,14 +819,14 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "defenders-banner",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Defenders Banner",
+   "rotuloImg": "arts/defenders-banner/rotulo.png",
+   "unitKey": "glade-defenders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -822,14 +858,14 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "warden",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warden",
+   "rotuloImg": "arts/warden/rotulo.png",
+   "unitKey": "grove-wardens",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -861,14 +897,14 @@
    "pendencias": []
   },
   {
-   "id": "a023",
+   "id": "warden-sergeant",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warden Sergeant",
+   "rotuloImg": "arts/warden-sergeant/rotulo.png",
+   "unitKey": "grove-wardens",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -900,14 +936,14 @@
    "pendencias": []
   },
   {
-   "id": "a024",
+   "id": "warden-musician",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warden Musician",
+   "rotuloImg": "arts/warden-musician/rotulo.png",
+   "unitKey": "grove-wardens",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -939,14 +975,14 @@
    "pendencias": []
   },
   {
-   "id": "a025",
+   "id": "warden-banner",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warden Banner",
+   "rotuloImg": "arts/warden-banner/rotulo.png",
+   "unitKey": "grove-wardens",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -978,14 +1014,14 @@
    "pendencias": []
   },
   {
-   "id": "a026",
+   "id": "guardian",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Guardian",
+   "rotuloImg": "arts/guardian/rotulo.png",
+   "unitKey": "glade-guardians",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1017,14 +1053,14 @@
    "pendencias": []
   },
   {
-   "id": "a027",
+   "id": "guardian-sergeant",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Guardian Sergeant",
+   "rotuloImg": "arts/guardian-sergeant/rotulo.png",
+   "unitKey": "glade-guardians",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1056,14 +1092,14 @@
    "pendencias": []
   },
   {
-   "id": "a028",
+   "id": "guardian-musician",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Guardian Musician",
+   "rotuloImg": "arts/guardian-musician/rotulo.png",
+   "unitKey": "glade-guardians",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1095,14 +1131,14 @@
    "pendencias": []
   },
   {
-   "id": "a029",
+   "id": "guardian-banner",
    "candidato": "a029",
-   "rotulo": null,
-   "rotuloImg": "arts/a029/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Guardian Banner",
+   "rotuloImg": "arts/guardian-banner/rotulo.png",
+   "unitKey": "glade-guardians",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1134,14 +1170,14 @@
    "pendencias": []
   },
   {
-   "id": "a030",
+   "id": "scout",
    "candidato": "a030",
-   "rotulo": null,
-   "rotuloImg": "arts/a030/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Scout",
+   "rotuloImg": "arts/scout/rotulo.png",
+   "unitKey": "glade-scouts",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1175,14 +1211,14 @@
    ]
   },
   {
-   "id": "a031",
+   "id": "forest-watch",
    "candidato": "a031",
-   "rotulo": null,
-   "rotuloImg": "arts/a031/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Forest Watch",
+   "rotuloImg": "arts/forest-watch/rotulo.png",
+   "unitKey": "forest-watch",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1214,14 +1250,16 @@
    "pendencias": []
   },
   {
-   "id": "a032",
+   "id": "deer-rider-bow",
    "candidato": "a032",
-   "rotulo": null,
-   "rotuloImg": "arts/a032/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Deer Rider Bow",
+   "rotuloImg": "arts/deer-rider-bow/rotulo.png",
+   "unitKey": "deer-riders",
+   "equipmentTags": [
+    "Bow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1253,14 +1291,16 @@
    "pendencias": []
   },
   {
-   "id": "a033",
+   "id": "deer-rider-lance",
    "candidato": "a033",
-   "rotulo": null,
-   "rotuloImg": "arts/a033/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Deer Rider Lance",
+   "rotuloImg": "arts/deer-rider-lance/rotulo.png",
+   "unitKey": "deer-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1292,14 +1332,14 @@
    "pendencias": []
   },
   {
-   "id": "a034",
+   "id": "deer-rider-sergeant",
    "candidato": "a034",
-   "rotulo": null,
-   "rotuloImg": "arts/a034/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Deer Rider Sergeant",
+   "rotuloImg": "arts/deer-rider-sergeant/rotulo.png",
+   "unitKey": "deer-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1331,14 +1371,14 @@
    "pendencias": []
   },
   {
-   "id": "a035",
+   "id": "deer-rider-musician",
    "candidato": "a035",
-   "rotulo": null,
-   "rotuloImg": "arts/a035/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Deer Rider Musician",
+   "rotuloImg": "arts/deer-rider-musician/rotulo.png",
+   "unitKey": "deer-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1370,14 +1410,14 @@
    "pendencias": []
   },
   {
-   "id": "a036",
+   "id": "deer-rider-banner",
    "candidato": "a036",
-   "rotulo": null,
-   "rotuloImg": "arts/a036/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Deer Rider Banner",
+   "rotuloImg": "arts/deer-rider-banner/rotulo.png",
+   "unitKey": "deer-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1409,14 +1449,14 @@
    "pendencias": []
   },
   {
-   "id": "a037",
+   "id": "lancer",
    "candidato": "a037",
-   "rotulo": null,
-   "rotuloImg": "arts/a037/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Lancer",
+   "rotuloImg": "arts/lancer/rotulo.png",
+   "unitKey": "grove-lancers",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1448,14 +1488,14 @@
    "pendencias": []
   },
   {
-   "id": "a038",
+   "id": "lancer-sergeant",
    "candidato": "a038",
-   "rotulo": null,
-   "rotuloImg": "arts/a038/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Lancer Sergeant",
+   "rotuloImg": "arts/lancer-sergeant/rotulo.png",
+   "unitKey": "grove-lancers",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1487,14 +1527,14 @@
    "pendencias": []
   },
   {
-   "id": "a039",
+   "id": "lancer-musician",
    "candidato": "a039",
-   "rotulo": null,
-   "rotuloImg": "arts/a039/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Lancer Musician",
+   "rotuloImg": "arts/lancer-musician/rotulo.png",
+   "unitKey": "grove-lancers",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1526,14 +1566,14 @@
    "pendencias": []
   },
   {
-   "id": "a040",
+   "id": "lancer-banner",
    "candidato": "a040",
-   "rotulo": null,
-   "rotuloImg": "arts/a040/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Lancer Banner",
+   "rotuloImg": "arts/lancer-banner/rotulo.png",
+   "unitKey": "grove-lancers",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1565,14 +1605,14 @@
    "pendencias": []
   },
   {
-   "id": "a041",
+   "id": "mounted-weaver",
    "candidato": "a041",
-   "rotulo": null,
-   "rotuloImg": "arts/a041/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Mounted Weaver",
+   "rotuloImg": "arts/mounted-weaver/rotulo.png",
+   "unitKey": "mounted-weavers",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1604,14 +1644,14 @@
    "pendencias": []
   },
   {
-   "id": "a042",
+   "id": "mounted-weaver-sergeant",
    "candidato": "a042",
-   "rotulo": null,
-   "rotuloImg": "arts/a042/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Mounted Weaver Sergeant",
+   "rotuloImg": "arts/mounted-weaver-sergeant/rotulo.png",
+   "unitKey": "mounted-weavers",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1643,14 +1683,14 @@
    "pendencias": []
   },
   {
-   "id": "a043",
+   "id": "mounted-weaver-musician",
    "candidato": "a043",
-   "rotulo": null,
-   "rotuloImg": "arts/a043/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Mounted Weaver Musician",
+   "rotuloImg": "arts/mounted-weaver-musician/rotulo.png",
+   "unitKey": "mounted-weavers",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1682,14 +1722,14 @@
    "pendencias": []
   },
   {
-   "id": "a044",
+   "id": "mounted-weaver-banner",
    "candidato": "a044",
-   "rotulo": null,
-   "rotuloImg": "arts/a044/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Mounted Weaver Banner",
+   "rotuloImg": "arts/mounted-weaver-banner/rotulo.png",
+   "unitKey": "mounted-weavers",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1721,14 +1761,14 @@
    "pendencias": []
   },
   {
-   "id": "a045",
+   "id": "war-dancer",
    "candidato": "a045",
-   "rotulo": null,
-   "rotuloImg": "arts/a045/rotulo.png",
-   "unitKey": null,
+   "rotulo": "War Dancer",
+   "rotuloImg": "arts/war-dancer/rotulo.png",
+   "unitKey": "war-dancers",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1760,14 +1800,14 @@
    "pendencias": []
   },
   {
-   "id": "a046",
+   "id": "war-dancer-sergeant",
    "candidato": "a046",
-   "rotulo": null,
-   "rotuloImg": "arts/a046/rotulo.png",
-   "unitKey": null,
+   "rotulo": "War Dancer Sergeant",
+   "rotuloImg": "arts/war-dancer-sergeant/rotulo.png",
+   "unitKey": "war-dancers",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1799,14 +1839,14 @@
    "pendencias": []
   },
   {
-   "id": "a047",
+   "id": "war-dancer-musician",
    "candidato": "a047",
-   "rotulo": null,
-   "rotuloImg": "arts/a047/rotulo.png",
-   "unitKey": null,
+   "rotulo": "War Dancer Musician",
+   "rotuloImg": "arts/war-dancer-musician/rotulo.png",
+   "unitKey": "war-dancers",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1838,14 +1878,14 @@
    "pendencias": []
   },
   {
-   "id": "a048",
+   "id": "war-dancer-banner",
    "candidato": "a048",
-   "rotulo": null,
-   "rotuloImg": "arts/a048/rotulo.png",
-   "unitKey": null,
+   "rotulo": "War Dancer Banner",
+   "rotuloImg": "arts/war-dancer-banner/rotulo.png",
+   "unitKey": "war-dancers",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1877,14 +1917,16 @@
    "pendencias": []
   },
   {
-   "id": "a049",
+   "id": "war-glider",
    "candidato": "a049",
-   "rotulo": null,
-   "rotuloImg": "arts/a049/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "War Glider",
+   "rotuloImg": "arts/war-glider/rotulo.png",
+   "unitKey": "war-dancers",
+   "equipmentTags": [
+    "Glider Wings"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1916,14 +1958,16 @@
    "pendencias": []
   },
   {
-   "id": "a050",
+   "id": "war-glider-sergeant",
    "candidato": "a050",
-   "rotulo": null,
-   "rotuloImg": "arts/a050/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "rotulo": "War Glider Sergeant",
+   "rotuloImg": "arts/war-glider-sergeant/rotulo.png",
+   "unitKey": "war-dancers",
+   "equipmentTags": [
+    "Glider Wings"
+   ],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1955,14 +1999,16 @@
    "pendencias": []
   },
   {
-   "id": "a051",
+   "id": "war-glider-musician",
    "candidato": "a051",
-   "rotulo": null,
-   "rotuloImg": "arts/a051/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "rotulo": "War Glider Musician",
+   "rotuloImg": "arts/war-glider-musician/rotulo.png",
+   "unitKey": "war-dancers",
+   "equipmentTags": [
+    "Glider Wings"
+   ],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1994,14 +2040,16 @@
    "pendencias": []
   },
   {
-   "id": "a052",
+   "id": "war-glider-banner",
    "candidato": "a052",
-   "rotulo": null,
-   "rotuloImg": "arts/a052/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "rotulo": "War Glider Banner",
+   "rotuloImg": "arts/war-glider-banner/rotulo.png",
+   "unitKey": "war-dancers",
+   "equipmentTags": [
+    "Glider Wings"
+   ],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2033,14 +2081,16 @@
    "pendencias": []
   },
   {
-   "id": "a053",
+   "id": "owl-rider-spear",
    "candidato": "a053",
-   "rotulo": null,
-   "rotuloImg": "arts/a053/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Owl Rider Spear",
+   "rotuloImg": "arts/owl-rider-spear/rotulo.png",
+   "unitKey": "owl-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2061,14 +2111,16 @@
    ]
   },
   {
-   "id": "a054",
+   "id": "owl-rider-bow",
    "candidato": "a054",
-   "rotulo": null,
-   "rotuloImg": "arts/a054/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Owl Rider Bow",
+   "rotuloImg": "arts/owl-rider-bow/rotulo.png",
+   "unitKey": "owl-riders",
+   "equipmentTags": [
+    "Rapid Shortbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2089,14 +2141,14 @@
    ]
   },
   {
-   "id": "a055",
+   "id": "giant-owl",
    "candidato": "a055",
-   "rotulo": null,
-   "rotuloImg": "arts/a055/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Giant Owl",
+   "rotuloImg": "arts/giant-owl/rotulo.png",
+   "unitKey": "giant-owls",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2117,14 +2169,14 @@
    ]
   },
   {
-   "id": "a056",
+   "id": "beetle-swarms",
    "candidato": "a056",
-   "rotulo": null,
-   "rotuloImg": "arts/a056/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Beetle Swarms",
+   "rotuloImg": "arts/beetle-swarms/rotulo.png",
+   "unitKey": "beetle-swarms",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2158,14 +2210,16 @@
    ]
   },
   {
-   "id": "a057",
+   "id": "treemen-claws",
    "candidato": "a057",
-   "rotulo": null,
-   "rotuloImg": "arts/a057/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Treemen Claws",
+   "rotuloImg": "arts/treemen-claws/rotulo.png",
+   "unitKey": "treemen",
+   "equipmentTags": [
+    "Branch Claws"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2197,14 +2251,16 @@
    "pendencias": []
   },
   {
-   "id": "a058",
+   "id": "treemen-weaver",
    "candidato": "a058",
-   "rotulo": null,
-   "rotuloImg": "arts/a058/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Treemen Weaver",
+   "rotuloImg": "arts/treemen-weaver/rotulo.png",
+   "unitKey": "treemen",
+   "equipmentTags": [
+    "Weaving Branch"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2236,14 +2292,16 @@
    "pendencias": []
   },
   {
-   "id": "a059",
+   "id": "treemen-brute-claw",
    "candidato": "a059",
-   "rotulo": null,
-   "rotuloImg": "arts/a059/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Treemen Brute Claw",
+   "rotuloImg": "arts/treemen-brute-claw/rotulo.png",
+   "unitKey": "treeman-brutes",
+   "equipmentTags": [
+    "Branch Claws"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2275,14 +2333,16 @@
    "pendencias": []
   },
   {
-   "id": "a060",
+   "id": "treemen-brute-mace",
    "candidato": "a060",
-   "rotulo": null,
-   "rotuloImg": "arts/a060/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Treemen Brute Mace",
+   "rotuloImg": "arts/treemen-brute-mace/rotulo.png",
+   "unitKey": "treeman-brutes",
+   "equipmentTags": [
+    "Branch Mace"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2314,14 +2374,16 @@
    "pendencias": []
   },
   {
-   "id": "a061",
+   "id": "eternal-claws",
    "candidato": "a061",
-   "rotulo": null,
-   "rotuloImg": "arts/a061/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Eternal Claws",
+   "rotuloImg": "arts/eternal-claws/rotulo.png",
+   "unitKey": "eternal-revenants",
+   "equipmentTags": [
+    "Razor Claws"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2353,14 +2415,16 @@
    "pendencias": []
   },
   {
-   "id": "a062",
+   "id": "eternal-blades",
    "candidato": "a062",
-   "rotulo": null,
-   "rotuloImg": "arts/a062/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Eternal Blades",
+   "rotuloImg": "arts/eternal-blades/rotulo.png",
+   "unitKey": "eternal-revenants",
+   "equipmentTags": [
+    "Spite Blades"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2392,14 +2456,16 @@
    "pendencias": []
   },
   {
-   "id": "a063",
+   "id": "eternal-bow",
    "candidato": "a063",
-   "rotulo": null,
-   "rotuloImg": "arts/a063/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Eternal Bow",
+   "rotuloImg": "arts/eternal-bow/rotulo.png",
+   "unitKey": "eternal-revenants",
+   "equipmentTags": [
+    "Spite Shortbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2431,14 +2497,16 @@
    "pendencias": []
   },
   {
-   "id": "a064",
+   "id": "eternal-elder-blades",
    "candidato": "a064",
-   "rotulo": null,
-   "rotuloImg": "arts/a064/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Eternal Elder Blades",
+   "rotuloImg": "arts/eternal-elder-blades/rotulo.png",
+   "unitKey": "eternal-elder",
+   "equipmentTags": [
+    "Spite Blades"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2472,14 +2540,16 @@
    ]
   },
   {
-   "id": "a065",
+   "id": "eternal-elder-bow",
    "candidato": "a065",
-   "rotulo": null,
-   "rotuloImg": "arts/a065/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Eternal Elder Bow",
+   "rotuloImg": "arts/eternal-elder-bow/rotulo.png",
+   "unitKey": "eternal-elder",
+   "equipmentTags": [
+    "Rapid Spite Shortbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2511,14 +2581,16 @@
    "pendencias": []
   },
   {
-   "id": "a066",
+   "id": "eternal-spell-weaver",
    "candidato": "a066",
-   "rotulo": null,
-   "rotuloImg": "arts/a066/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Eternal Spell Weaver",
+   "rotuloImg": "arts/eternal-spell-weaver/rotulo.png",
+   "unitKey": "eternal-elder",
+   "equipmentTags": [
+    "Spell Weaver"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2550,14 +2622,16 @@
    "pendencias": []
   },
   {
-   "id": "a067",
+   "id": "eternal-rider-lance",
    "candidato": "a067",
-   "rotulo": null,
-   "rotuloImg": "arts/a067/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Eternal Rider Lance",
+   "rotuloImg": "arts/eternal-rider-lance/rotulo.png",
+   "unitKey": "eternal-bug-riders",
+   "equipmentTags": [
+    "Lance Blade"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2589,14 +2663,16 @@
    "pendencias": []
   },
   {
-   "id": "a068",
+   "id": "eternal-rider-blades",
    "candidato": "a068",
-   "rotulo": null,
-   "rotuloImg": "arts/a068/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Eternal Rider Blades",
+   "rotuloImg": "arts/eternal-rider-blades/rotulo.png",
+   "unitKey": "eternal-bug-riders",
+   "equipmentTags": [
+    "Spite Blades"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2628,14 +2704,14 @@
    "pendencias": []
   },
   {
-   "id": "a072",
+   "id": "eternal-rider-banner",
    "candidato": "a072",
-   "rotulo": null,
-   "rotuloImg": "arts/a072/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Eternal Rider Banner",
+   "rotuloImg": "arts/eternal-rider-banner/rotulo.png",
+   "unitKey": "eternal-bug-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2667,14 +2743,14 @@
    "pendencias": []
   },
   {
-   "id": "a073",
+   "id": "eternal-rider-sergeant",
    "candidato": "a073",
-   "rotulo": null,
-   "rotuloImg": "arts/a073/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Eternal Rider Sergeant",
+   "rotuloImg": "arts/eternal-rider-sergeant/rotulo.png",
+   "unitKey": "eternal-bug-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2706,14 +2782,14 @@
    "pendencias": []
   },
   {
-   "id": "a074",
+   "id": "eternal-rider-musician",
    "candidato": "a074",
-   "rotulo": null,
-   "rotuloImg": "arts/a074/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Eternal Rider Musician",
+   "rotuloImg": "arts/eternal-rider-musician/rotulo.png",
+   "unitKey": "eternal-bug-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2745,14 +2821,16 @@
    "pendencias": []
   },
   {
-   "id": "a069",
+   "id": "eternal-hunter-scythe",
    "candidato": "a069",
-   "rotulo": null,
-   "rotuloImg": "arts/a069/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Eternal Hunter Scythe",
+   "rotuloImg": "arts/eternal-hunter-scythe/rotulo.png",
+   "unitKey": "eternal-hunters",
+   "equipmentTags": [
+    "Great Scythe"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2784,14 +2862,16 @@
    "pendencias": []
   },
   {
-   "id": "a070",
+   "id": "eternal-hunter-hook",
    "candidato": "a070",
-   "rotulo": null,
-   "rotuloImg": "arts/a070/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Eternal Hunter Hook",
+   "rotuloImg": "arts/eternal-hunter-hook/rotulo.png",
+   "unitKey": "eternal-hunters",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2823,14 +2903,16 @@
    "pendencias": []
   },
   {
-   "id": "a071",
+   "id": "eternal-hunter-bow",
    "candidato": "a071",
-   "rotulo": null,
-   "rotuloImg": "arts/a071/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Eternal Hunter Bow",
+   "rotuloImg": "arts/eternal-hunter-bow/rotulo.png",
+   "unitKey": "eternal-hunters",
+   "equipmentTags": [
+    "Rapid Bow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2862,14 +2944,16 @@
    "pendencias": []
   },
   {
-   "id": "a075",
+   "id": "champion-owl-rider-borda",
    "candidato": "a075",
-   "rotulo": null,
-   "rotuloImg": "arts/a075/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Owl Rider",
+   "rotuloImg": "arts/champion-owl-rider-borda/rotulo.png",
+   "unitKey": "grove-champion",
+   "equipmentTags": [
+    "Giant Owl"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2890,14 +2974,16 @@
    ]
   },
   {
-   "id": "a076",
+   "id": "owl-rider-spear-borda",
    "candidato": "a076",
-   "rotulo": null,
-   "rotuloImg": "arts/a076/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Owl Rider Spear",
+   "rotuloImg": "arts/owl-rider-spear-borda/rotulo.png",
+   "unitKey": "owl-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2918,14 +3004,16 @@
    ]
   },
   {
-   "id": "a077",
+   "id": "owl-rider-bow-borda",
    "candidato": "a077",
-   "rotulo": null,
-   "rotuloImg": "arts/a077/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Owl Rider Bow",
+   "rotuloImg": "arts/owl-rider-bow-borda/rotulo.png",
+   "unitKey": "owl-riders",
+   "equipmentTags": [
+    "Rapid Shortbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2946,14 +3034,14 @@
    ]
   },
   {
-   "id": "a078",
+   "id": "giant-owl-borda",
    "candidato": "a078",
-   "rotulo": null,
-   "rotuloImg": "arts/a078/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Giant Owl",
+   "rotuloImg": "arts/giant-owl-borda/rotulo.png",
+   "unitKey": "giant-owls",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2974,14 +3062,16 @@
    ]
   },
   {
-   "id": "a079",
+   "id": "eternal-hunter-hook-borda",
    "candidato": "a079",
-   "rotulo": null,
-   "rotuloImg": "arts/a079/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Eternal Hunter Hook",
+   "rotuloImg": "arts/eternal-hunter-hook-borda/rotulo.png",
+   "unitKey": "eternal-hunters",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [

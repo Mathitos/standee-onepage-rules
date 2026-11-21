@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "duchies-of-vinci",
- "faccao": "Duchies of Vinci",
+ "faccao": "Duchies of Vinci\r",
  "sistema": "aof",
  "pdf": {
   "nome": "Duchies_of_Vinci_-_BW.pdf",
@@ -12,14 +12,16 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "city-guard-crossbow-v1",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "City Guard Crossbow (V1)",
+   "rotuloImg": "arts/city-guard-crossbow-v1/rotulo.png",
+   "unitKey": "city-guard",
+   "equipmentTags": [
+    "Crossbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +53,16 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "city-guard-crossbow-v2",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "City Guard Crossbow (V2)",
+   "rotuloImg": "arts/city-guard-crossbow-v2/rotulo.png",
+   "unitKey": "city-guard",
+   "equipmentTags": [
+    "Crossbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -90,14 +94,17 @@
    "pendencias": []
   },
   {
-   "id": "a003",
+   "id": "captain-handbow",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Captain Handbow",
+   "rotuloImg": "arts/captain-handbow/rotulo.png",
+   "unitKey": "vinci-leader",
+   "equipmentTags": [
+    "Captain",
+    "Handbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -129,14 +136,17 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "captain-crossbow",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Captain Crossbow",
+   "rotuloImg": "arts/captain-crossbow/rotulo.png",
+   "unitKey": "vinci-leader",
+   "equipmentTags": [
+    "Captain",
+    "Rapid Crossbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -168,14 +178,17 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "captain-sword",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Captain Sword",
+   "rotuloImg": "arts/captain-sword/rotulo.png",
+   "unitKey": "vinci-leader",
+   "equipmentTags": [
+    "Captain",
+    "Master Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -207,14 +220,17 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "boar-captain",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Boar Captain",
+   "rotuloImg": "arts/boar-captain/rotulo.png",
+   "unitKey": "vinci-leader",
+   "equipmentTags": [
+    "Captain",
+    "Automa-Boar"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -246,14 +262,17 @@
    "pendencias": []
   },
   {
-   "id": "a007",
+   "id": "horse-captain",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Horse Captain",
+   "rotuloImg": "arts/horse-captain/rotulo.png",
+   "unitKey": "vinci-leader",
+   "equipmentTags": [
+    "Captain",
+    "Automa-Horse"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -285,14 +304,16 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "inventor-helper",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "rotulo": "Inventor Helper",
+   "rotuloImg": "arts/inventor-helper/rotulo.png",
+   "unitKey": "vinci-scholar",
+   "equipmentTags": [
+    "Automa Helper"
+   ],
+   "cosmetic": "companion",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -324,14 +345,16 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "inventor",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Inventor",
+   "rotuloImg": "arts/inventor/rotulo.png",
+   "unitKey": "vinci-scholar",
+   "equipmentTags": [
+    "Inventor"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -363,14 +386,16 @@
    "pendencias": []
   },
   {
-   "id": "a010",
+   "id": "alchemist",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Alchemist",
+   "rotuloImg": "arts/alchemist/rotulo.png",
+   "unitKey": "vinci-scholar",
+   "equipmentTags": [
+    "Alchemist"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -402,14 +427,17 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "horse-inventor",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Horse Inventor",
+   "rotuloImg": "arts/horse-inventor/rotulo.png",
+   "unitKey": "vinci-scholar",
+   "equipmentTags": [
+    "Inventor",
+    "Automa-Horse"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -441,14 +469,16 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "master-assassin-v1",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Master Assassin (V1)",
+   "rotuloImg": "arts/master-assassin-v1/rotulo.png",
+   "unitKey": "vinci-leader",
+   "equipmentTags": [
+    "Master Assassin"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -480,14 +510,16 @@
    "pendencias": []
   },
   {
-   "id": "a013",
+   "id": "masked-master-assassin-v2",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Masked Master Assassin (V2)",
+   "rotuloImg": "arts/masked-master-assassin-v2/rotulo.png",
+   "unitKey": "vinci-leader",
+   "equipmentTags": [
+    "Master Assassin"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -519,14 +551,16 @@
    "pendencias": []
   },
   {
-   "id": "a014",
+   "id": "sword-militia",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Sword Militia",
+   "rotuloImg": "arts/sword-militia/rotulo.png",
+   "unitKey": "militia",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -558,14 +592,16 @@
    "pendencias": []
   },
   {
-   "id": "a015",
+   "id": "spear-militia",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Spear Militia",
+   "rotuloImg": "arts/spear-militia/rotulo.png",
+   "unitKey": "militia",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -597,14 +633,14 @@
    "pendencias": []
   },
   {
-   "id": "a016",
+   "id": "militia-musician",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Militia Musician",
+   "rotuloImg": "arts/militia-musician/rotulo.png",
+   "unitKey": "militia",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -636,14 +672,14 @@
    "pendencias": []
   },
   {
-   "id": "a017",
+   "id": "militia-sargeant",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Militia Sargeant",
+   "rotuloImg": "arts/militia-sargeant/rotulo.png",
+   "unitKey": "militia",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -675,14 +711,14 @@
    "pendencias": []
   },
   {
-   "id": "a018",
+   "id": "militia-banner",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Militia Banner",
+   "rotuloImg": "arts/militia-banner/rotulo.png",
+   "unitKey": "militia",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -714,14 +750,16 @@
    "pendencias": []
   },
   {
-   "id": "a019",
+   "id": "city-guard-crossbow-v1-a019",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "City Guard Crossbow (V1)",
+   "rotuloImg": "arts/city-guard-crossbow-v1-a019/rotulo.png",
+   "unitKey": "city-guard",
+   "equipmentTags": [
+    "Crossbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -753,14 +791,16 @@
    "pendencias": []
   },
   {
-   "id": "a020",
+   "id": "city-guard-crossbow-v2-a020",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "City Guard Crossbow (V2)",
+   "rotuloImg": "arts/city-guard-crossbow-v2-a020/rotulo.png",
+   "unitKey": "city-guard",
+   "equipmentTags": [
+    "Crossbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -792,14 +832,16 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "city-guard-shotbow-v1",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "City Guard Shotbow (V1)",
+   "rotuloImg": "arts/city-guard-shotbow-v1/rotulo.png",
+   "unitKey": "city-guard",
+   "equipmentTags": [
+    "Shotbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -831,14 +873,16 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "city-guard-shotbow-v2",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "City Guard Shotbow (V2)",
+   "rotuloImg": "arts/city-guard-shotbow-v2/rotulo.png",
+   "unitKey": "city-guard",
+   "equipmentTags": [
+    "Shotbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -870,14 +914,14 @@
    "pendencias": []
   },
   {
-   "id": "a023",
+   "id": "automata-v1",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Automata (V1)",
+   "rotuloImg": "arts/automata-v1/rotulo.png",
+   "unitKey": "automa-guard",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -909,14 +953,14 @@
    "pendencias": []
   },
   {
-   "id": "a024",
+   "id": "automata-v2",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Automata (V2)",
+   "rotuloImg": "arts/automata-v2/rotulo.png",
+   "unitKey": "automa-guard",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -948,14 +992,14 @@
    "pendencias": []
   },
   {
-   "id": "a025",
+   "id": "scout",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Scout",
+   "rotuloImg": "arts/scout/rotulo.png",
+   "unitKey": "scouts",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -987,14 +1031,16 @@
    "pendencias": []
   },
   {
-   "id": "a026",
+   "id": "winged-scout",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Winged Scout",
+   "rotuloImg": "arts/winged-scout/rotulo.png",
+   "unitKey": "scouts",
+   "equipmentTags": [
+    "Wings"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1026,14 +1072,14 @@
    "pendencias": []
   },
   {
-   "id": "a027",
+   "id": "harlequin-v1",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Harlequin (V1)",
+   "rotuloImg": "arts/harlequin-v1/rotulo.png",
+   "unitKey": "harlequins",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1065,14 +1111,14 @@
    "pendencias": []
   },
   {
-   "id": "a028",
+   "id": "harlequin-v2",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Harlequin (V2)",
+   "rotuloImg": "arts/harlequin-v2/rotulo.png",
+   "unitKey": "harlequins",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1104,14 +1150,14 @@
    "pendencias": []
   },
   {
-   "id": "a029",
+   "id": "assassin-ver-1",
    "candidato": "a029",
-   "rotulo": null,
-   "rotuloImg": "arts/a029/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Assassin (Ver. 1)",
+   "rotuloImg": "arts/assassin-ver-1/rotulo.png",
+   "unitKey": "assassins",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1143,14 +1189,14 @@
    "pendencias": []
   },
   {
-   "id": "a030",
+   "id": "assassin-ver-2",
    "candidato": "a030",
-   "rotulo": null,
-   "rotuloImg": "arts/a030/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Assassin (Ver. 2)",
+   "rotuloImg": "arts/assassin-ver-2/rotulo.png",
+   "unitKey": "assassins",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1182,14 +1228,14 @@
    "pendencias": []
   },
   {
-   "id": "a031",
+   "id": "sniper-v2",
    "candidato": "a031",
-   "rotulo": null,
-   "rotuloImg": "arts/a031/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Sniper (V2)",
+   "rotuloImg": "arts/sniper-v2/rotulo.png",
+   "unitKey": "snipers",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1221,14 +1267,14 @@
    "pendencias": []
   },
   {
-   "id": "a032",
+   "id": "sniper-v1",
    "candidato": "a032",
-   "rotulo": null,
-   "rotuloImg": "arts/a032/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Sniper (V1)",
+   "rotuloImg": "arts/sniper-v1/rotulo.png",
+   "unitKey": "snipers",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1260,14 +1306,14 @@
    "pendencias": []
   },
   {
-   "id": "a033",
+   "id": "automata-brute",
    "candidato": "a033",
-   "rotulo": null,
-   "rotuloImg": "arts/a033/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Automata Brute",
+   "rotuloImg": "arts/automata-brute/rotulo.png",
+   "unitKey": "automa-brutes",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1299,14 +1345,16 @@
    "pendencias": []
   },
   {
-   "id": "a034",
+   "id": "cavalry-lance-ver-1",
    "candidato": "a034",
-   "rotulo": null,
-   "rotuloImg": "arts/a034/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Cavalry Lance (Ver. 1)",
+   "rotuloImg": "arts/cavalry-lance-ver-1/rotulo.png",
+   "unitKey": "automa-horse-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1338,14 +1386,16 @@
    "pendencias": []
   },
   {
-   "id": "a035",
+   "id": "cavalry-lance-ver-2",
    "candidato": "a035",
-   "rotulo": null,
-   "rotuloImg": "arts/a035/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Cavalry Lance (Ver. 2)",
+   "rotuloImg": "arts/cavalry-lance-ver-2/rotulo.png",
+   "unitKey": "automa-horse-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1377,14 +1427,16 @@
    "pendencias": []
   },
   {
-   "id": "a036",
+   "id": "cavalry-handbow-ver-1",
    "candidato": "a036",
-   "rotulo": null,
-   "rotuloImg": "arts/a036/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Cavalry Handbow (Ver. 1)",
+   "rotuloImg": "arts/cavalry-handbow-ver-1/rotulo.png",
+   "unitKey": "automa-horse-riders",
+   "equipmentTags": [
+    "Handbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1416,14 +1468,16 @@
    "pendencias": []
   },
   {
-   "id": "a037",
+   "id": "cavalry-handbow-ver-2",
    "candidato": "a037",
-   "rotulo": null,
-   "rotuloImg": "arts/a037/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Cavalry Handbow (Ver. 2)",
+   "rotuloImg": "arts/cavalry-handbow-ver-2/rotulo.png",
+   "unitKey": "automa-horse-riders",
+   "equipmentTags": [
+    "Handbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1455,14 +1509,14 @@
    "pendencias": []
   },
   {
-   "id": "a038",
+   "id": "heavy-cavalry",
    "candidato": "a038",
-   "rotulo": null,
-   "rotuloImg": "arts/a038/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Heavy Cavalry",
+   "rotuloImg": "arts/heavy-cavalry/rotulo.png",
+   "unitKey": "automa-boar-riders",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1494,14 +1548,16 @@
    "pendencias": []
   },
   {
-   "id": "a039",
+   "id": "aerea-guard-claws",
    "candidato": "a039",
-   "rotulo": null,
-   "rotuloImg": "arts/a039/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Aerea Guard Claws",
+   "rotuloImg": "arts/aerea-guard-claws/rotulo.png",
+   "unitKey": "aerea-guard",
+   "equipmentTags": [
+    "Dual Claws"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1533,14 +1589,16 @@
    "pendencias": []
   },
   {
-   "id": "a040",
+   "id": "aerea-guard-crossbow",
    "candidato": "a040",
-   "rotulo": null,
-   "rotuloImg": "arts/a040/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Aerea Guard Crossbow",
+   "rotuloImg": "arts/aerea-guard-crossbow/rotulo.png",
+   "unitKey": "aerea-guard",
+   "equipmentTags": [
+    "Rapid Crossbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1572,14 +1630,16 @@
    "pendencias": []
   },
   {
-   "id": "a041",
+   "id": "aerea-guard-shotbow",
    "candidato": "a041",
-   "rotulo": null,
-   "rotuloImg": "arts/a041/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Aerea Guard Shotbow",
+   "rotuloImg": "arts/aerea-guard-shotbow/rotulo.png",
+   "unitKey": "aerea-guard",
+   "equipmentTags": [
+    "Rapid Shortbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1611,14 +1671,16 @@
    "pendencias": []
   },
   {
-   "id": "a042",
+   "id": "sawblade-drone",
    "candidato": "a042",
-   "rotulo": null,
-   "rotuloImg": "arts/a042/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Sawblade Drone",
+   "rotuloImg": "arts/sawblade-drone/rotulo.png",
+   "unitKey": "automa-drones",
+   "equipmentTags": [
+    "Bot-Sawblades"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1639,14 +1701,16 @@
    ]
   },
   {
-   "id": "a043",
+   "id": "crossbow-drone",
    "candidato": "a043",
-   "rotulo": null,
-   "rotuloImg": "arts/a043/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Crossbow Drone",
+   "rotuloImg": "arts/crossbow-drone/rotulo.png",
+   "unitKey": "automa-drones",
+   "equipmentTags": [
+    "Bot-Bows"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1667,14 +1731,16 @@
    ]
   },
   {
-   "id": "a044",
+   "id": "spear-militia-a044",
    "candidato": "a044",
-   "rotulo": null,
-   "rotuloImg": "arts/a044/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Spear Militia",
+   "rotuloImg": "arts/spear-militia-a044/rotulo.png",
+   "unitKey": "militia",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1695,14 +1761,16 @@
    ]
   },
   {
-   "id": "a045",
+   "id": "spear-militia-a045",
    "candidato": "a045",
-   "rotulo": null,
-   "rotuloImg": "arts/a045/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Spear Militia",
+   "rotuloImg": "arts/spear-militia-a045/rotulo.png",
+   "unitKey": "militia",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1723,14 +1791,16 @@
    ]
   },
   {
-   "id": "a046",
+   "id": "spear-militia-a046",
    "candidato": "a046",
-   "rotulo": null,
-   "rotuloImg": "arts/a046/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Spear Militia",
+   "rotuloImg": "arts/spear-militia-a046/rotulo.png",
+   "unitKey": "militia",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1751,14 +1821,14 @@
    ]
   },
   {
-   "id": "a047",
+   "id": "scout-a047",
    "candidato": "a047",
-   "rotulo": null,
-   "rotuloImg": "arts/a047/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Scout",
+   "rotuloImg": "arts/scout-a047/rotulo.png",
+   "unitKey": "scouts",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1779,14 +1849,16 @@
    ]
   },
   {
-   "id": "a048",
+   "id": "winged-scout-a048",
    "candidato": "a048",
-   "rotulo": null,
-   "rotuloImg": "arts/a048/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Winged Scout",
+   "rotuloImg": "arts/winged-scout-a048/rotulo.png",
+   "unitKey": "scouts",
+   "equipmentTags": [
+    "Wings"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1807,14 +1879,14 @@
    ]
   },
   {
-   "id": "a049",
+   "id": "sniper-v1-a049",
    "candidato": "a049",
-   "rotulo": null,
-   "rotuloImg": "arts/a049/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Sniper (V1)",
+   "rotuloImg": "arts/sniper-v1-a049/rotulo.png",
+   "unitKey": "snipers",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1835,14 +1907,16 @@
    ]
   },
   {
-   "id": "a050",
+   "id": "sawblade-drone-a050",
    "candidato": "a050",
-   "rotulo": null,
-   "rotuloImg": "arts/a050/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Sawblade Drone",
+   "rotuloImg": "arts/sawblade-drone-a050/rotulo.png",
+   "unitKey": "automa-drones",
+   "equipmentTags": [
+    "Bot-Sawblades"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1863,14 +1937,16 @@
    ]
   },
   {
-   "id": "a051",
+   "id": "crossbow-drone-a051",
    "candidato": "a051",
-   "rotulo": null,
-   "rotuloImg": "arts/a051/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Crossbow Drone",
+   "rotuloImg": "arts/crossbow-drone-a051/rotulo.png",
+   "unitKey": "automa-drones",
+   "equipmentTags": [
+    "Bot-Bows"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [

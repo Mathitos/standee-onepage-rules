@@ -1,0 +1,879 @@
+{
+ "packId": "ratmen",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "AOF",
+   "slug": "age-of-fantasy",
+   "armyForgeId": 4
+  },
+  {
+   "code": "AOFS",
+   "slug": "age-of-fantasy-skirmish",
+   "armyForgeId": 5
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/tOWt5fgqK2nfpoBN-gs4-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/tOWt5fgqK2nfpoBN-gs5-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-*.png, army books v3.6.0 (os dois sistemas).",
+ "unidades": {
+  "battle-master": {
+   "armyForgeUnitId": "bl380Vc"
+  },
+  "champion": {
+   "armyForgeUnitId": "IDU9HOb"
+  },
+  "militia": {
+   "armyForgeUnitId": "L63ELXt"
+  },
+  "warriors": {
+   "armyForgeUnitId": "BUbrjeh"
+  },
+  "monks": {
+   "armyForgeUnitId": "b29Jcwm"
+  },
+  "grenadiers": {
+   "armyForgeUnitId": "ePqfxCc"
+  },
+  "storm-veterans": {
+   "armyForgeUnitId": "m4jaxg1"
+  },
+  "night-scouts": {
+   "armyForgeUnitId": "6vA1AhE"
+  },
+  "weapon-teams": {
+   "armyForgeUnitId": "wXtqtYK"
+  },
+  "rat-swarms": {
+   "armyForgeUnitId": "r2YUptC"
+  },
+  "giant-rats": {
+   "armyForgeUnitId": "etbxZuh"
+  },
+  "rat-ogres": {
+   "armyForgeUnitId": "UmMDMd0"
+  },
+  "storm-ogres": {
+   "armyForgeUnitId": "h2V8ceV"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "captain",
+   "rotulo": "Captain",
+   "confiancaRotulo": "alta",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Captain"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Captain",
+     "armyBook": "Battle Master + Captain"
+    }
+   ],
+   "notas": "Captain é só upgrade (Upgrade with one) do Battle Master; não existe unidade Captain"
+  },
+  "a002": {
+   "artId": "warlock",
+   "rotulo": "Warlock",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion",
+   "equipmentTags": [
+    "Warlock"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warlock",
+     "armyBook": "Champion + Warlock"
+    }
+   ],
+   "notas": "Warlock é upgrade do Champion e também do Battle Master (mesmo efeito); escolhi Champion, usuário decide"
+  },
+  "a003": {
+   "artId": "army-standard",
+   "rotulo": "Army Standard",
+   "confiancaRotulo": "alta",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Army Standard Bearer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Army Standard",
+     "armyBook": "Army Standard Bearer"
+    }
+   ],
+   "notas": "upgrade de herói do Battle Master (não é porta-estandarte de tropa), por isso tag e não cosmetic"
+  },
+  "a004": {
+   "artId": "priest",
+   "rotulo": "Priest",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion",
+   "equipmentTags": [
+    "Priest|Master Priest"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Priest",
+     "armyBook": [
+      "Priest",
+      "Master Priest"
+     ]
+    }
+   ],
+   "notas": "Priest e Master Priest são upgrades do Champion; o rótulo cabe nos dois"
+  },
+  "a005": {
+   "artId": "rat-master",
+   "rotulo": "Rat Master",
+   "confiancaRotulo": "alta",
+   "unitKey": "giant-rats",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "figura de mestre com ratos gigantes na coleira; o army book não tem modelo Rat Master, só os upgrades Combat Rat Master / Pathfinder Rat Master (Rat Swarms, Giant Rats, Rat Ogres), que valem para a unidade toda"
+  },
+  "a006": {
+   "artId": "engineer-drill",
+   "rotulo": "Engineer Drill",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion",
+   "equipmentTags": [
+    "Drill Engineer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Engineer Drill",
+     "armyBook": "Drill Engineer"
+    }
+   ],
+   "notas": "Drill Engineer é upgrade do Champion e também do Battle Master; deixei com os outros engenheiros no Champion"
+  },
+  "a007": {
+   "artId": "engineer-rocket",
+   "rotulo": "Engineer Rocket",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion",
+   "equipmentTags": [
+    "Engineer",
+    "Rocket Launcher"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Engineer",
+     "armyBook": "Champion + Engineer"
+    },
+    {
+     "pdf": "Rocket",
+     "armyBook": "Rocket Launcher"
+    }
+   ],
+   "notas": "Engineer e Rocket Launcher só existem no Champion"
+  },
+  "a008": {
+   "artId": "engineer-rifle",
+   "rotulo": "Engineer Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion",
+   "equipmentTags": [
+    "Engineer",
+    "Sniper Rifle|Overtuned Sniper Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Engineer",
+     "armyBook": "Champion + Engineer"
+    },
+    {
+     "pdf": "Rifle",
+     "armyBook": [
+      "Sniper Rifle",
+      "Overtuned Sniper Rifle"
+     ]
+    }
+   ],
+   "notas": "'Rifle' cabe em Sniper Rifle e Overtuned Sniper Rifle (deixei fora a Toxin Carbine, que é carabina)"
+  },
+  "a009": {
+   "artId": "assassin",
+   "rotulo": "Assassin",
+   "confiancaRotulo": "alta",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Master Assassin"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Assassin",
+     "armyBook": "Master Assassin"
+    }
+   ],
+   "notas": "Master Assassin é upgrade do Battle Master"
+  },
+  "a010": {
+   "artId": "ogre-captain",
+   "rotulo": "Ogre Captain",
+   "confiancaRotulo": "alta",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Rat Ogre"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Ogre Captain",
+     "armyBook": "Battle Master montado em Rat Ogre"
+    }
+   ],
+   "notas": "arte mostra capitão rato montado nas costas de um rat ogre; Battle Master tem a montaria Rat Ogre (Upgrade with one)"
+  },
+  "a011": {
+   "artId": "warrior-sword",
+   "rotulo": "Warrior Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "warriors",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "army book não tem 'Sword'; a arma padrão dos Warriors é Hand Weapon"
+  },
+  "a012": {
+   "artId": "warrior-spear",
+   "rotulo": "Warrior Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a013": {
+   "artId": "warrior-halberd",
+   "rotulo": "Warrior Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "warriors",
+   "equipmentTags": [
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a014": {
+   "artId": "warrior-sargeant",
+   "rotulo": "Warrior Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "warriors",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo impresso com erro de grafia (Sargeant)"
+  },
+  "a015": {
+   "artId": "warrior-banner",
+   "rotulo": "Warrior Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "warriors",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a016": {
+   "artId": "warrior-musician",
+   "rotulo": "Warrior Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "warriors",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a017": {
+   "artId": "driller-team",
+   "rotulo": "Driller Team",
+   "confiancaRotulo": "alta",
+   "unitKey": "weapon-teams",
+   "equipmentTags": [
+    "Heavy Drill"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Driller",
+     "armyBook": "Heavy Drill"
+    }
+   ],
+   "notas": "Team = Weapon Teams; broca = Heavy Drill"
+  },
+  "a018": {
+   "artId": "flamer-team",
+   "rotulo": "Flamer Team",
+   "confiancaRotulo": "alta",
+   "unitKey": "weapon-teams",
+   "equipmentTags": [
+    "Flamethrower"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Flamer",
+     "armyBook": "Flamethrower"
+    }
+   ],
+   "notas": ""
+  },
+  "a019": {
+   "artId": "gatling-team",
+   "rotulo": "Gatling Team",
+   "confiancaRotulo": "alta",
+   "unitKey": "weapon-teams",
+   "equipmentTags": [
+    "Gatling Gun|Overtuned Gatling Gun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gatling",
+     "armyBook": [
+      "Gatling Gun",
+      "Overtuned Gatling Gun"
+     ]
+    }
+   ],
+   "notas": "o rótulo cabe nas duas gatlings"
+  },
+  "a020": {
+   "artId": "mortar-team",
+   "rotulo": "Mortar Team",
+   "confiancaRotulo": "alta",
+   "unitKey": "weapon-teams",
+   "equipmentTags": [
+    "Toxin Mortar"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Mortar",
+     "armyBook": "Toxin Mortar"
+    }
+   ],
+   "notas": ""
+  },
+  "a021": {
+   "artId": "roller-biker",
+   "rotulo": "Roller Biker",
+   "confiancaRotulo": "alta",
+   "unitKey": "weapon-teams",
+   "equipmentTags": [
+    "Death Roller"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Roller Biker",
+     "armyBook": "Weapon Team com Death Roller"
+    }
+   ],
+   "notas": "rato pilotando roda com espetos; Death Roller é a arma padrão dos Weapon Teams. Alternativa: Great Death Roller (base 120x92, bem maior que a arte)"
+  },
+  "a022": {
+   "artId": "milita-v1",
+   "rotulo": "Milita V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "militia",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo impresso com erro de grafia (Milita = Militia)"
+  },
+  "a023": {
+   "artId": "milita-v2",
+   "rotulo": "Milita V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "militia",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo impresso com erro de grafia (Milita = Militia)"
+  },
+  "a024": {
+   "artId": "veteran-greatsword",
+   "rotulo": "Veteran Greatsword",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-veterans",
+   "equipmentTags": [
+    "Great Weapon|Siege-Breaker Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Veteran",
+     "armyBook": "Storm Veterans"
+    },
+    {
+     "pdf": "Greatsword",
+     "armyBook": [
+      "Great Weapon",
+      "Siege-Breaker Sword"
+     ]
+    }
+   ],
+   "notas": "Veteran = Storm Veterans (Elite Ratmen Warriors); espadão = Great Weapon (troca de todos) ou Siege-Breaker Sword (troca de um)"
+  },
+  "a025": {
+   "artId": "veteran-halberd",
+   "rotulo": "Veteran Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-veterans",
+   "equipmentTags": [
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Veteran",
+     "armyBook": "Storm Veterans"
+    }
+   ],
+   "notas": "Veteran = Storm Veterans; Halberd é a arma padrão"
+  },
+  "a026": {
+   "artId": "veteran-sargeant",
+   "rotulo": "Veteran Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-veterans",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Veteran",
+     "armyBook": "Storm Veterans"
+    }
+   ],
+   "notas": "Veteran = Storm Veterans; rótulo com erro de grafia (Sargeant)"
+  },
+  "a027": {
+   "artId": "veteran-banner",
+   "rotulo": "Veteran Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-veterans",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Veteran",
+     "armyBook": "Storm Veterans"
+    }
+   ],
+   "notas": "Veteran = Storm Veterans"
+  },
+  "a028": {
+   "artId": "veteran-musician",
+   "rotulo": "Veteran Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-veterans",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Veteran",
+     "armyBook": "Storm Veterans"
+    }
+   ],
+   "notas": "Veteran = Storm Veterans"
+  },
+  "a029": {
+   "artId": "censer-monk",
+   "rotulo": "Censer Monk",
+   "confiancaRotulo": "alta",
+   "unitKey": "monks",
+   "equipmentTags": [
+    "Censer Flail|Great Censer Flail"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Censer",
+     "armyBook": [
+      "Censer Flail",
+      "Great Censer Flail"
+     ]
+    }
+   ],
+   "notas": "Censer Flail é a padrão; Great Censer Flail troca um modelo"
+  },
+  "a030": {
+   "artId": "dagger-monk",
+   "rotulo": "Dagger Monk",
+   "confiancaRotulo": "alta",
+   "unitKey": "monks",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Dagger",
+     "armyBook": "Dual Hand Weapons"
+    }
+   ],
+   "notas": "arte mostra monge com duas lâminas curvas; a opção dos Monks é Dual Hand Weapons"
+  },
+  "a031": {
+   "artId": "monk-sargeant",
+   "rotulo": "Monk Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "monks",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo com erro de grafia (Sargeant)"
+  },
+  "a032": {
+   "artId": "monk-banner",
+   "rotulo": "Monk Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "monks",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a033": {
+   "artId": "monk-musician",
+   "rotulo": "Monk Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "monks",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a034": {
+   "artId": "scout",
+   "rotulo": "Scout",
+   "confiancaRotulo": "alta",
+   "unitKey": "night-scouts",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "genericName da unidade é Scouts"
+  },
+  "a035": {
+   "artId": "ranger",
+   "rotulo": "Ranger",
+   "confiancaRotulo": "alta",
+   "unitKey": "night-scouts",
+   "equipmentTags": [
+    "Ranger Bow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Ranger",
+     "armyBook": "Night Scouts + Ranger Bow"
+    }
+   ],
+   "notas": "arte com arco; Night Scouts podem trocar Dual Daggers por Ranger Bow"
+  },
+  "a036": {
+   "artId": "grenadier",
+   "rotulo": "Grenadier",
+   "confiancaRotulo": "alta",
+   "unitKey": "grenadiers",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a037": {
+   "artId": "swarm",
+   "rotulo": "Swarm",
+   "confiancaRotulo": "alta",
+   "unitKey": "rat-swarms",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Swarm",
+     "armyBook": "Rat Swarms"
+    }
+   ],
+   "notas": "pilha de ratos pequenos, ~35 mm de largura (base de 40 mm)"
+  },
+  "a038": {
+   "artId": "giant-rat-swarm",
+   "rotulo": "Giant Rat Swarm",
+   "confiancaRotulo": "alta",
+   "unitKey": "rat-swarms",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Giant Rat Swarm",
+     "armyBook": "Rat Swarms"
+    }
+   ],
+   "notas": "pilha de ratos gigantes com ~42 mm de largura, tamanho de base de enxame (40 mm). Alternativa: Giant Rats (base de 25 mm, modelo único)"
+  },
+  "a039": {
+   "artId": "giant-rat-v1",
+   "rotulo": "Giant Rat V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "giant-rats",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a040": {
+   "artId": "giant-rat-v2",
+   "rotulo": "Giant Rat V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "giant-rats",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a041": {
+   "artId": "ogre-great-weapon",
+   "rotulo": "Ogre Great Weapon",
+   "confiancaRotulo": "alta",
+   "unitKey": "rat-ogres",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Ogre",
+     "armyBook": "Rat Ogres"
+    }
+   ],
+   "notas": "Ogre = Rat Ogres (os Storm Ogres vêm rotulados como Storm Ogre)"
+  },
+  "a042": {
+   "artId": "ogre-spiked-knuckles",
+   "rotulo": "Ogre Spiked Knuckles",
+   "confiancaRotulo": "alta",
+   "unitKey": "rat-ogres",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "Rat Ogres não têm 'Spiked Knuckles'; armas: Sharp Claws (padrão), Great Weapon, Arm-Flamer"
+  },
+  "a043": {
+   "artId": "ogre-claws",
+   "rotulo": "Ogre Claws",
+   "confiancaRotulo": "alta",
+   "unitKey": "rat-ogres",
+   "equipmentTags": [
+    "Sharp Claws"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Ogre",
+     "armyBook": "Rat Ogres"
+    },
+    {
+     "pdf": "Claws",
+     "armyBook": "Sharp Claws"
+    }
+   ],
+   "notas": "Ogre = Rat Ogres; Sharp Claws é a arma padrão"
+  },
+  "a044": {
+   "artId": "storm-ogre-drills",
+   "rotulo": "Storm Ogre Drills",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-ogres",
+   "equipmentTags": [
+    "Drill-Fists"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Drills",
+     "armyBook": "Drill-Fists"
+    }
+   ],
+   "notas": ""
+  },
+  "a045": {
+   "artId": "storm-ogre-shock",
+   "rotulo": "Storm Ogre Shock",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-ogres",
+   "equipmentTags": [
+    "Shock-Fists"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shock",
+     "armyBook": "Shock-Fists"
+    }
+   ],
+   "notas": ""
+  },
+  "a046": {
+   "artId": "storm-ogre-rollers",
+   "rotulo": "Storm Ogre Rollers",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-ogres",
+   "equipmentTags": [
+    "Roller-Fists"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rollers",
+     "armyBook": "Roller-Fists"
+    }
+   ],
+   "notas": ""
+  },
+  "a047": {
+   "artId": "storm-ogre-fists",
+   "rotulo": "Storm Ogre Fists",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-ogres",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "arte com manoplas sem arma; o army book não tem punho simples (Flame/Shock/Roller/Drill/Gatling/Mortar-Fists)"
+  },
+  "a048": {
+   "artId": "storm-ogre-gatling",
+   "rotulo": "Storm Ogre Gatling",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-ogres",
+   "equipmentTags": [
+    "Gatling-Fists|Overtuned Gatling-Fists"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gatling",
+     "armyBook": [
+      "Gatling-Fists",
+      "Overtuned Gatling-Fists"
+     ]
+    }
+   ],
+   "notas": "o rótulo cabe nas duas"
+  },
+  "a049": {
+   "artId": "storm-ogre-mortar",
+   "rotulo": "Storm Ogre Mortar",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-ogres",
+   "equipmentTags": [
+    "Mortar-Fists"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Mortar",
+     "armyBook": "Mortar-Fists"
+    }
+   ],
+   "notas": ""
+  },
+  "a050": {
+   "artId": "storm-ogre-flamer",
+   "rotulo": "Storm Ogre Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "storm-ogres",
+   "equipmentTags": [
+    "Flame-Fists"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Flamer",
+     "armyBook": "Flame-Fists"
+    }
+   ],
+   "notas": "Flame-Fists é a arma padrão dos Storm Ogres"
+  }
+ }
+}

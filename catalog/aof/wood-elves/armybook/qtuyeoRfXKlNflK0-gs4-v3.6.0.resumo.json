@@ -1,0 +1,1767 @@
+{
+  "armyBook": {
+    "id": "qtuyeoRfXKlNflK0",
+    "nome": "Wood Elves",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:34.433Z",
+    "sistema": "age-of-fantasy",
+    "sistemaId": 4
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "J_QVrUH",
+      "nome": "Eternal Guardian Ancient",
+      "tamanho": 1,
+      "bases": {
+        "round": "105x70",
+        "square": "100x60"
+      },
+      "armas": [
+        "Master Great Hammer",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Master Great Hammer",
+          "ganha": [
+            "Spell Weaver Staff"
+          ]
+        },
+        {
+          "secao": "Replace Master Great Hammer",
+          "ganha": [
+            "Master Great Glaive"
+          ]
+        },
+        {
+          "secao": "Replace Master Great Hammer",
+          "ganha": [
+            "Venom-Dragonflies",
+            "Great Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Master Great Hammer",
+          "ganha": [
+            "Master Great Scythe"
+          ]
+        },
+        {
+          "secao": "Replace Great Hammer",
+          "ganha": [
+            "Great Glaive"
+          ]
+        },
+        {
+          "secao": "Replace Great Hammer",
+          "ganha": [
+            "Great Scythe"
+          ]
+        },
+        {
+          "secao": "Replace Venom-Dragonflies",
+          "ganha": [
+            "Stinger-Dragonflies"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "War Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Stalk Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Spell Weaver"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Heartwood Defender"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Spell Weaver"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DDfHPmh",
+      "nome": "Grove Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Lance"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Rapid Shortbow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Throwing Darts",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Spell Weaver Staff"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Darts",
+          "ganha": [
+            "Forest Blast"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Shortbow",
+          "ganha": [
+            "Hunting Harpoons"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Beast Companion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Tracker Deer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Glider Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Watch Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Swift Deer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Great Stag"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Giant Owl"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Forest Dragon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Stalk Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Dance Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Forest Warden"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Spell Weaver"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wild Hunter"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Spell Weaver"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p2InlnL",
+      "nome": "Eternal Elder",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Razor Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Razor Claws",
+          "ganha": [
+            "Master Great Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Razor Claws",
+          "ganha": [
+            "Master Spite Blades"
+          ]
+        },
+        {
+          "secao": "Replace Razor Claws",
+          "ganha": [
+            "Master Lance Blade"
+          ]
+        },
+        {
+          "secao": "Replace Razor Claws",
+          "ganha": [
+            "Master Great Scythe"
+          ]
+        },
+        {
+          "secao": "Replace Razor Claws",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Razor Claws",
+          "ganha": [
+            "Venom-Dragonfly",
+            "Great Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Razor Claws",
+          "ganha": [
+            "Spell Weaver Staff"
+          ]
+        },
+        {
+          "secao": "Replace Razor Claws",
+          "ganha": [
+            "Rapid Spite Shortbow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Great Hammer",
+          "ganha": [
+            "Spite Blades"
+          ]
+        },
+        {
+          "secao": "Replace Great Hammer",
+          "ganha": [
+            "Lance Blade"
+          ]
+        },
+        {
+          "secao": "Replace Great Hammer",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Great Hammer",
+          "ganha": [
+            "Great Scythe"
+          ]
+        },
+        {
+          "secao": "Replace Venom-Dragonfly",
+          "ganha": [
+            "Stinger-Dragonfly"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Spite Shortbow",
+          "ganha": [
+            "Great Rapid Hunting Shortbow"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Great Bug"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "War Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Stalk Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Spell Weaver"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wild Hunter"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Heartwood Defender"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Spell Weaver"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_ugzUsY",
+      "nome": "Treeman Elder",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Weaving Branch",
+        "Strangle-Root"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Weaving Branch and Strangle-Root",
+          "ganha": [
+            "Master Strangle-Root"
+          ]
+        },
+        {
+          "secao": "Replace Weaving Branch and Strangle-Root",
+          "ganha": [
+            "Master Branch Spike"
+          ]
+        },
+        {
+          "secao": "Replace Weaving Branch and Strangle-Root",
+          "ganha": [
+            "Master Branch Claws"
+          ]
+        },
+        {
+          "secao": "Replace Weaving Branch and Strangle-Root",
+          "ganha": [
+            "Master Branch Mace"
+          ]
+        },
+        {
+          "secao": "Replace Weaving Branch and Strangle-Root",
+          "ganha": [
+            "Whip-Root",
+            "Strangle-Root"
+          ]
+        },
+        {
+          "secao": "Replace Weaving Branch and Strangle-Root",
+          "ganha": [
+            "Forest Wraith Staff"
+          ]
+        },
+        {
+          "secao": "Replace Strangle-Root",
+          "ganha": [
+            "Branch Mace"
+          ]
+        },
+        {
+          "secao": "Replace Strangle-Root",
+          "ganha": [
+            "Branch Claws"
+          ]
+        },
+        {
+          "secao": "Replace Strangle-Root",
+          "ganha": [
+            "Branch Spike"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Branch Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Heartwood Icon Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Forest Warden"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Forest Wraith"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wild Weaver"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Heartwood Defender"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Forest Wraith"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2HF3Nnt",
+      "nome": "Glade Leader",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Lance"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Rapid Bow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Javelins",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Spell Weaver Staff"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Javelins",
+          "ganha": [
+            "Forest Blast"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Bow",
+          "ganha": [
+            "Rapid Longbow"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Bow",
+          "ganha": [
+            "Hunting Harpoons"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Beast Companion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Tracker Deer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Scout Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Swift Deer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Great Stag"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Giant Owl"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Giant Beetle"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Glade Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Army Standard Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "War Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Forest Warden"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Spell Weaver"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Heartwood Defender"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Spell Weaver"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GFRa6rq",
+      "nome": "Glade Defenders",
+      "tamanho": 10,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Spear"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pognt8d",
+      "nome": "Treemen",
+      "tamanho": 10,
+      "bases": {
+        "round": "25",
+        "square": "20"
+      },
+      "armas": [
+        "Branch Mace"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Branch Maces",
+          "ganha": [
+            "Branch Claws"
+          ]
+        },
+        {
+          "secao": "Replace all Branch Maces",
+          "ganha": [
+            "Weaving Branch",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace one Branch Maces",
+          "ganha": [
+            "Strangle-Root"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Glow-Fairy Dust"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "01F6ROv",
+      "nome": "Eternal Revenants",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Spite Blades"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Spite Blades",
+          "ganha": [
+            "Razor Claws"
+          ]
+        },
+        {
+          "secao": "Replace all Spite Blades",
+          "ganha": [
+            "Spite Shortbow",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace all Spite Blades",
+          "ganha": [
+            "Hunting Shortbow",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace one Spite Blade",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace one Spite Blade",
+          "ganha": [
+            "Great Scythe"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Wings"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IwSVor6",
+      "nome": "Grove Wardens",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Halberd"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Glow-Fairy Dust"
+          ]
+        },
+        {
+          "secao": "Replace all Halberds",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace one Halberd",
+          "ganha": [
+            "Headtaker Glaive"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2ZWcx2t",
+      "nome": "War Dancers",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Hand Weapons",
+          "ganha": [
+            "Throwing Darts",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Glider Wings"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qDAISiA",
+      "nome": "Treeman Brutes",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Branch Mace"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Branch Maces",
+          "ganha": [
+            "Branch Claws"
+          ]
+        },
+        {
+          "secao": "Replace one Branch Maces",
+          "ganha": [
+            "Strangle-Root"
+          ]
+        },
+        {
+          "secao": "Replace one Branch Maces",
+          "ganha": [
+            "Branch Spike"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Glow-Fairy Dust"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dEMaoBh",
+      "nome": "Eternal Hunters",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Great Hammer"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Great Hammers",
+          "ganha": [
+            "Rapid Bow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Great Hammers",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace all Great Hammers",
+          "ganha": [
+            "Great Scythe"
+          ]
+        },
+        {
+          "secao": "Replace all Great Hammers",
+          "ganha": [
+            "Rapid Hunting Bow",
+            "Strike"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yji6M1E",
+      "nome": "Glade Guardians",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Toxin-Arrow Longbow",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Toxin-Arrow Longbows",
+          "ganha": [
+            "Precision Longbow"
+          ]
+        },
+        {
+          "secao": "Replace all Toxin-Arrow Longbows",
+          "ganha": [
+            "Barb-Arrow Longbow"
+          ]
+        },
+        {
+          "secao": "Replace all Toxin-Arrow Longbows",
+          "ganha": [
+            "Longbow"
+          ]
+        },
+        {
+          "secao": "Replace all Toxin-Arrow Longbows",
+          "ganha": [
+            "Magic Longbow"
+          ]
+        },
+        {
+          "secao": "Replace all Toxin-Arrow Longbows",
+          "ganha": [
+            "Hunting Longbow"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R5d3t4g",
+      "nome": "Glade Scouts",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Bow",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Bows",
+          "ganha": [
+            "Precision Bow"
+          ]
+        },
+        {
+          "secao": "Replace all Bows",
+          "ganha": [
+            "Magic Bow"
+          ]
+        },
+        {
+          "secao": "Replace all Bows",
+          "ganha": [
+            "Hunting Bow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6DoZviX",
+      "nome": "Forest Watch",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Toxin-Arrow Shortbow",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Toxin-Arrow Shortbows",
+          "ganha": [
+            "Shortbow"
+          ]
+        },
+        {
+          "secao": "Replace all Toxin-Arrow Shortbows",
+          "ganha": [
+            "Hunting Shortbow"
+          ]
+        },
+        {
+          "secao": "Replace all Toxin-Arrow Shortbows",
+          "ganha": [
+            "Barb-Arrow Shortbow"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Glow-Fairy Dust"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7dxwe57",
+      "nome": "Deer Riders",
+      "tamanho": 5,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Bow",
+        "Strike"
+      ],
+      "itens": [
+        {
+          "nome": "Heartwood Tracker",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace all Bows and Strikes",
+          "ganha": [
+            "Hand Weapon",
+            "Trample"
+          ]
+        },
+        {
+          "secao": "Replace all Bows and Strikes",
+          "ganha": [
+            "Lance",
+            "Trample"
+          ]
+        },
+        {
+          "secao": "Replace all Bows and Strikes",
+          "ganha": [
+            "Hunting Bow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Bows and Strikes",
+          "ganha": [
+            "Javelins",
+            "Trample"
+          ]
+        },
+        {
+          "secao": "Replace all Heartwood Trackers",
+          "ganha": [
+            "Swift Defender"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uwbY7DS",
+      "nome": "Mounted Weavers",
+      "tamanho": 5,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Magic Staff",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Magic Staffs",
+          "ganha": [
+            "Magic Wand"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Handmaiden"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Da6iqpU",
+      "nome": "Grove Lancers",
+      "tamanho": 5,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Lance"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Glow-Fairy Dust"
+          ]
+        },
+        {
+          "secao": "Replace all Lances",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace one Lance",
+          "ganha": [
+            "Headtaker Glaive"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OheI5PK",
+      "nome": "Eternal Bug Riders",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Lance Blade",
+        "Sharp Horn"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Lance Blades",
+          "ganha": [
+            "Spite Blades"
+          ]
+        },
+        {
+          "secao": "Replace one Lance Blade",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace one Lance Blade",
+          "ganha": [
+            "Great Scythe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rcIn6wY",
+      "nome": "Beetle Swarms",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Toxin Jaws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Toxin Jaws",
+          "ganha": [
+            "Jagged Horns"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Wings"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KLI8cVe",
+      "nome": "Giant Owls",
+      "tamanho": 3,
+      "bases": {
+        "round": "75x46",
+        "square": "75x50"
+      },
+      "armas": [
+        "Sharp Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Sharp Claws",
+          "ganha": [
+            "Grasping Claws"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sOfgrnh",
+      "nome": "Owl Riders",
+      "tamanho": 3,
+      "bases": {
+        "round": "75x46",
+        "square": "75x50"
+      },
+      "armas": [
+        "Lance",
+        "Sharp Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Lances and Sharp Claws",
+          "ganha": [
+            "Rapid Hunting Shortbow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Lances and Sharp Claws",
+          "ganha": [
+            "Rapid Shortbow",
+            "Strike"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "-PxpnbM",
+      "nome": "Eternal Guardian",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Great Glaive",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Great Glaive",
+          "ganha": [
+            "Great Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Great Glaive",
+          "ganha": [
+            "Great Scythe"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hunting Lure"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wings"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "j6eudp0",
+      "nome": "Giant Beetle",
+      "tamanho": 1,
+      "bases": {
+        "round": "160x122",
+        "square": "150x100"
+      },
+      "armas": [
+        "Javelin Crew",
+        "Smashing Claws",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Javelin Crew and Smashing Claws",
+          "ganha": [
+            "Bow Crew"
+          ]
+        },
+        {
+          "secao": "Replace Javelin Crew and Smashing Claws",
+          "ganha": [
+            "Javelin Crew",
+            "Giant Horn"
+          ]
+        },
+        {
+          "secao": "Replace Javelin Crew and Smashing Claws",
+          "ganha": [
+            "Heavy Ballista"
+          ]
+        },
+        {
+          "secao": "Replace Javelin Crew and Smashing Claws",
+          "ganha": [
+            "Hunting Bow Crew"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hunting Lure"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Trample"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Beetle Nest"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TerGuIM",
+      "nome": "Tree Giant",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Giant Branch Claws",
+        "Giant Strangle-Root",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Giant Strangle-Root and Giant Branch Claws",
+          "ganha": [
+            "Giant Branch Claws",
+            "Giant Branch Mace"
+          ]
+        },
+        {
+          "secao": "Replace Giant Strangle-Root and Giant Branch Claws",
+          "ganha": [
+            "Branch Claws",
+            "Giant Branch Spike"
+          ]
+        },
+        {
+          "secao": "Replace Giant Strangle-Root and Giant Branch Claws",
+          "ganha": [
+            "Giant Whip-Root",
+            "Branch Claws"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Treeman Ancient"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Treeman Ancient"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Glow-Fairy Dust"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5g1vpS8",
+      "nome": "Eternal Guardian Titan",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Great Glaive",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": []
+    },
+    {
+      "id": "4iYPkqi",
+      "nome": "Great Owl Chimera",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Great Horns",
+        "Sharp Claws",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Sharp Claws",
+          "ganha": [
+            "Grasping Claws"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WkwWHKK",
+      "nome": "Forest Ancient",
+      "tamanho": 1,
+      "bases": {
+        "round": "160x122",
+        "square": "175x125"
+      },
+      "armas": [
+        "Stomp",
+        "Tail Strike",
+        "Titanic Pounding"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Titanic Pounding",
+          "ganha": [
+            "Titanic Crushing"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Ancient Breath"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7T7GYqY",
+      "nome": "Yrana",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Blightfang Staff",
+        "Strike"
+      ],
+      "itens": [
+        {
+          "nome": "Rot Touch",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Rot Touch",
+          "ganha": [
+            "Spell Weaver"
+          ]
+        }
+      ]
+    }
+  ]
+}

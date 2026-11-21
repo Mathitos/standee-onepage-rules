@@ -1,0 +1,1410 @@
+{
+  "armyBook": {
+    "id": "BubhE1kUpgYbqZvW",
+    "nome": "Saurians",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:33.972Z",
+    "sistema": "age-of-fantasy",
+    "sistemaId": 4
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "NWwd7ue",
+      "nome": "Frog-Mage",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Great Magic Pulse"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Great Magic Pulse",
+          "ganha": [
+            "Sorcerous Blast",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Great Magic Pulse",
+          "ganha": [
+            "Frog-Mage Staff"
+          ]
+        },
+        {
+          "secao": "Replace Great Magic Pulse",
+          "ganha": [
+            "Magic Blast",
+            "Magic Pulse"
+          ]
+        },
+        {
+          "secao": "Replace Magic Blast",
+          "ganha": [
+            "Magic Surge"
+          ]
+        },
+        {
+          "secao": "Replace Magic Blast",
+          "ganha": [
+            "Magic Spurt"
+          ]
+        },
+        {
+          "secao": "Replace Magic Blast",
+          "ganha": [
+            "Magic Shock"
+          ]
+        },
+        {
+          "secao": "Replace Sorcerous Blast",
+          "ganha": [
+            "Sorcerous Shock"
+          ]
+        },
+        {
+          "secao": "Replace Sorcerous Blast",
+          "ganha": [
+            "Sorcerous Beam"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sacred Destiny"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Ancient Palanquin"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Queztalcoatl"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Holy Spawn"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Enlightened Mage"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Primal Guidance"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Temple Guardian"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HdCoUob",
+      "nome": "Gator Veteran",
+      "tamanho": 1,
+      "bases": {
+        "round": "50",
+        "square": "50"
+      },
+      "armas": [
+        "Master Glaive of Serpents"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Master Glaive of Serpents",
+          "ganha": [
+            "Master Darkglass Mace"
+          ]
+        },
+        {
+          "secao": "Replace Master Glaive of Serpents",
+          "ganha": [
+            "Master Mace of Destiny"
+          ]
+        },
+        {
+          "secao": "Replace Master Glaive of Serpents",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Master Glaive of Serpents",
+          "ganha": [
+            "Dual Hand Weapons"
+          ]
+        },
+        {
+          "secao": "Replace Master Glaive of Serpents",
+          "ganha": [
+            "Serpent-God Strike",
+            "Glaive of Serpents"
+          ]
+        },
+        {
+          "secao": "Replace Glaive of Serpents",
+          "ganha": [
+            "Darkglass Mace"
+          ]
+        },
+        {
+          "secao": "Replace Glaive of Serpents",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Glaive of Serpents",
+          "ganha": [
+            "Mace of Destiny"
+          ]
+        },
+        {
+          "secao": "Replace Serpent-God Strike",
+          "ganha": [
+            "Dactyl-God Strike"
+          ]
+        },
+        {
+          "secao": "Replace Serpent-God Strike",
+          "ganha": [
+            "Piranha-God Strike"
+          ]
+        },
+        {
+          "secao": "Replace Serpent-God Strike",
+          "ganha": [
+            "Lizard-God Strike"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Sacred Destiny"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Holy Spawn"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Primal Roar"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Temple Guardian"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iPmkRyx",
+      "nome": "Saurian Veteran",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Lance"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Serpent-God Strike",
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Lance",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Lance",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Lance",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Lance",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Serpent-God Strike",
+          "ganha": [
+            "Lizard-God Strike"
+          ]
+        },
+        {
+          "secao": "Replace Serpent-God Strike",
+          "ganha": [
+            "Piranha-God Strike"
+          ]
+        },
+        {
+          "secao": "Replace Serpent-God Strike",
+          "ganha": [
+            "Dactyl-God Strike"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sacred Destiny"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Raptor"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Tyrannosaur"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Holy Spawn"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Army Standard Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Temple Guardian"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Chief"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pbodyqx",
+      "nome": "Gecko Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Toxin Club"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Lance"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Javelins",
+            "Toxin Club"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Rapid Toxin Blowpipe",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Priest Staff"
+          ]
+        },
+        {
+          "secao": "Replace Toxin Club",
+          "ganha": [
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace Toxin Club",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Javelins",
+          "ganha": [
+            "Fire Bolas"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Toxin Blowpipe",
+          "ganha": [
+            "Rapid Scatter Blowpipe"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sacred Destiny"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Deinonychus"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Chameleon Breed"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Starseer Palanquin"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Ripjawdactyl"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pterodactyl"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Skirmisher"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Primal Hunter"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Temple Guardian"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Priest"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Chief"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kpjfnHa",
+      "nome": "Saurian Warriors",
+      "tamanho": 10,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Sacred Destiny"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i3Iw5yl",
+      "nome": "Geckos",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Toxin Club"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Toxin Clubs",
+          "ganha": [
+            "Javelins"
+          ]
+        },
+        {
+          "secao": "Replace all Toxin Clubs",
+          "ganha": [
+            "Toxin Blowpipe",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Toxin Clubs",
+          "ganha": [
+            "Scatter Blowpipe",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Sacred Destiny"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0d7I4c6",
+      "nome": "Saurian Guardians",
+      "tamanho": 5,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Halberd"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Halberds",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace one Halberd",
+          "ganha": [
+            "Glaive of Serpents"
+          ]
+        },
+        {
+          "secao": "Replace one Halberd",
+          "ganha": [
+            "Darkglass Mace"
+          ]
+        },
+        {
+          "secao": "Replace one Halberd",
+          "ganha": [
+            "Mace of Destiny"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Sacred Destiny"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2AX2D13",
+      "nome": "Chameleons",
+      "tamanho": 5,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Toxin Blowpipe",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Toxin Blowpipes",
+          "ganha": [
+            "Fire Bolas"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JJaMJDn",
+      "nome": "Gators",
+      "tamanho": 3,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Darkglass Mace"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Darkglass Maces",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace all Darkglass Maces",
+          "ganha": [
+            "Mace of Destiny"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Sacred Destiny"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wJnwDI4",
+      "nome": "Deinonychus Riders",
+      "tamanho": 5,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Lance"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Lances",
+          "ganha": [
+            "Javelins"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VLpx9v4",
+      "nome": "Pterodactyl Riders",
+      "tamanho": 3,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Heavy Claws",
+        "Toxin Club"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Toxin Clubs",
+          "ganha": [
+            "Javelins"
+          ]
+        },
+        {
+          "secao": "Replace all Toxin Clubs",
+          "ganha": [
+            "Fire Bolas"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Rock Barrage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Bci6cb_",
+      "nome": "Ripjawdactyl Riders",
+      "tamanho": 3,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Toxin Club"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Toxin Clubs",
+          "ganha": [
+            "Javelins"
+          ]
+        },
+        {
+          "secao": "Replace all Toxin Clubs",
+          "ganha": [
+            "Fire Bolas"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Hunting Bait"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e3dqR3h",
+      "nome": "Raptor Riders",
+      "tamanho": 3,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Lance"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Lances",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace one Hand Weapon",
+          "ganha": [
+            "Glaive of Serpents"
+          ]
+        },
+        {
+          "secao": "Replace one Hand Weapon",
+          "ganha": [
+            "Darkglass Mace"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BKj0eiI",
+      "nome": "Snake Swarms",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Toxin Fangs"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Pathfinder Beast Handlers"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Combat Beast Handlers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Kg5ShBF",
+      "nome": "Vulturedactyls",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Jagged Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Pathfinder Beast Handlers"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Combat Beast Handlers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qSnKBnl",
+      "nome": "Dragon Lizard",
+      "tamanho": 1,
+      "bases": {
+        "round": "75x46",
+        "square": "75x50"
+      },
+      "armas": [
+        "Flame Burst",
+        "Heavy Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Vanguard Lizard Handlers"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Lizard Handlers"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Prophetic Vision"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Fire Blast"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uaDbgEQ",
+      "nome": "Spiked Lizard",
+      "tamanho": 1,
+      "bases": {
+        "round": "75x46",
+        "square": "50"
+      },
+      "armas": [
+        "Shoot Spikes",
+        "Heavy Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Vanguard Lizard Handlers"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Lizard Handlers"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Prophetic Vision"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cYx_v0-",
+      "nome": "Spinosaurus",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Stomp",
+        "Toxin Bite"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Spit Venom"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Primal Roar"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Priest Rider"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kcvHdip",
+      "nome": "Triceratops",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Heavy Horns",
+        "Stomp"
+      ],
+      "itens": [
+        {
+          "nome": "Carrier Platform",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Heavy Horns and Carrier Platform",
+          "ganha": [
+            "Javelin Crew",
+            "Great Horns"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Horns and Carrier Platform",
+          "ganha": [
+            "Giant Toxin Blowpipes"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Horns and Carrier Platform",
+          "ganha": [
+            "Javelin Crew",
+            "Heavy Horns",
+            "Godly Altar"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Horns and Carrier Platform",
+          "ganha": [
+            "Giant Scatter Blowpipes"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Horns and Carrier Platform",
+          "ganha": [
+            "Light Bolt Thrower"
+          ]
+        },
+        {
+          "secao": "Replace Javelin Crew",
+          "ganha": [
+            "Fire Bolas Crew"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Brutal Charge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fOR1eIh",
+      "nome": "Ankylosaurus",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Solar Beam",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Solar Beam",
+          "ganha": [
+            "Darkglass Beam"
+          ]
+        },
+        {
+          "secao": "Replace Solar Beam",
+          "ganha": [
+            "Lunar Beam"
+          ]
+        },
+        {
+          "secao": "Replace Solar Beam",
+          "ganha": [
+            "Jagged Claws",
+            "Serpent Ark"
+          ]
+        },
+        {
+          "secao": "Replace Stomp",
+          "ganha": [
+            "Mace Tail"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Prophetic Vision"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0wDWWMd",
+      "nome": "Dread Titan",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Great Dread Tail",
+        "Stomp",
+        "Vicious Jaws"
+      ],
+      "itens": [
+        {
+          "nome": "Dread Gator",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Vicious Jaws",
+          "ganha": [
+            "Dread Claws"
+          ]
+        },
+        {
+          "secao": "Replace Great Dread Tail",
+          "ganha": [
+            "Great Mace Tail"
+          ]
+        },
+        {
+          "secao": "Replace Dread Gator",
+          "ganha": [
+            "Dread Pterodactyl"
+          ]
+        },
+        {
+          "secao": "Replace Dread Gator",
+          "ganha": [
+            "Dread Behemoth Fighter"
+          ]
+        },
+        {
+          "secao": "Replace Dread Gator",
+          "ganha": [
+            "Dread Behemoth Carrier"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "As4rgNZ",
+      "nome": "Great Mage Satloxatle",
+      "tamanho": 1,
+      "bases": {
+        "round": "",
+        "square": ""
+      },
+      "armas": [
+        "Celestial Serpent",
+        "Magic Pulse"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Celestial Serpent",
+          "ganha": [
+            "Divine Serpent"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Snakespawn Potion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_SVQ3B-",
+      "nome": "Xakanu the Daemon Slayer",
+      "tamanho": 1,
+      "bases": {
+        "round": "75x46",
+        "square": "75x50"
+      },
+      "armas": [
+        "Bonesmasher Mace"
+      ],
+      "itens": [
+        {
+          "nome": "Daemon Skullhelm",
+          "bases": null
+        },
+        {
+          "nome": "Sika",
+          "bases": null
+        }
+      ],
+      "opcoes": []
+    },
+    {
+      "id": "asfGIyF",
+      "nome": "Hakatlo",
+      "tamanho": 1,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Sun Clubs"
+      ],
+      "itens": [
+        {
+          "nome": "Scarred Veteran",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Scarred Veteran",
+          "ganha": [
+            "Scarred Veteran - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cwhAyXw",
+      "nome": "Hana & Haki",
+      "tamanho": 1,
+      "bases": {
+        "round": "75x46",
+        "square": "75x50"
+      },
+      "armas": [
+        "Deathspitter Blowpipes",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Hana, Deadly Sniper"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Haki, Patient Spotter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qv1Qcrq",
+      "nome": "Kikatle",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Dual Axes of Lanaxiqi"
+      ],
+      "itens": [
+        {
+          "nome": "Twin Serpent Totems",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Twin Serpent Totems",
+          "ganha": [
+            "Twin Serpent Totems - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K4TfVDc",
+      "nome": "Teqi",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Celestial Staff"
+      ],
+      "itens": [
+        {
+          "nome": "Healing Bond",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Healing Bond",
+          "ganha": [
+            "Priest"
+          ]
+        }
+      ]
+    }
+  ]
+}

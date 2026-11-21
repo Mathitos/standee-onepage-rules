@@ -1,0 +1,660 @@
+{
+ "packId": "robot-legions",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "GF",
+   "slug": "grimdark-future",
+   "armyForgeId": 2
+  },
+  {
+   "code": "GFF",
+   "slug": "grimdark-future-firefight",
+   "armyForgeId": 3
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/4k5amkxoybdiqotm-gs3-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/4k5amkxoybdiqotm-gs2-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-*.png, army books v3.6.0 (os dois sistemas).",
+ "unidades": {
+  "warrior": {
+   "armyForgeUnitId": "njiIkJi"
+  },
+  "guardian": {
+   "armyForgeUnitId": "xVuwyHf"
+  },
+  "flesh-eater": {
+   "armyForgeUnitId": "6q8HvOZ"
+  },
+  "eternal": {
+   "armyForgeUnitId": "wvgi7_R"
+  },
+  "sniper": {
+   "armyForgeUnitId": "mEX6i0s"
+  },
+  "bot-swarm": {
+   "armyForgeUnitId": "yoeQi4m"
+  },
+  "robot-snake": {
+   "armyForgeUnitId": "0x2SCtg"
+  },
+  "destroyer-snake": {
+   "armyForgeUnitId": "gcoBL7U"
+  },
+  "annihilator": {
+   "armyForgeUnitId": "IMHCbyw"
+  },
+  "tri-scorpion": {
+   "armyForgeUnitId": "XgJtpyh"
+  },
+  "hover-bike": {
+   "armyForgeUnitId": "yhG8aeu"
+  },
+  "forge-spider": {
+   "armyForgeUnitId": "obCuik6"
+  },
+  "heavy-annihilator": {
+   "armyForgeUnitId": "if9G9o7"
+  },
+  "tri-scorpion-pistoleer": {
+   "armyForgeUnitId": "CjHMvNx"
+  },
+  "wraith-shard": {
+   "armyForgeUnitId": "dCXjC0x"
+  },
+  "robot-lord": {
+   "armyForgeUnitId": "lcEWPMS"
+  },
+  "annihilator-lord": {
+   "armyForgeUnitId": "y8xIlHV"
+  },
+  "tri-scorpion-lord": {
+   "armyForgeUnitId": "R2d8LeD"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "warrior-gauss",
+   "rotulo": "Warrior Gauss",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Ion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gauss",
+     "armyBook": "Ion Rifle"
+    }
+   ],
+   "notas": "Gauss é nome antigo; Ion Rifle é a arma padrão (5 cópias no PDF, o esquadrão todo)"
+  },
+  "a002": {
+   "artId": "snake",
+   "rotulo": "Snake",
+   "confiancaRotulo": "alta",
+   "unitKey": "robot-snake",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Robot Snake(s)"
+  },
+  "a003": {
+   "artId": "overseer",
+   "rotulo": "Overseer",
+   "confiancaRotulo": "alta",
+   "unitKey": "robot-lord",
+   "equipmentTags": [
+    "Overseer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Overseer",
+     "armyBook": "opção Overseer (Upgrade with one)"
+    }
+   ],
+   "notas": "Overseer é opção de Robot Lord, Annihilator Lord e Tri-Scorpion Lord; escolhido o Robot Lord (genericName Robot Leader). Figura com glaive. Sem a tag, seria a arte genérica do Robot Lord"
+  },
+  "a004": {
+   "artId": "warrior-flamer",
+   "rotulo": "Warrior Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Spark-Pulse Caster"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Flamer",
+     "armyBook": "Spark-Pulse Caster"
+    }
+   ],
+   "notas": "não há Flamer; Spark-Pulse Caster tem perfil de lança-chamas (12\", Blast(3), Reliable)"
+  },
+  "a005": {
+   "artId": "warrior-fusion",
+   "rotulo": "Warrior Fusion",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Fusion Caster"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fusion",
+     "armyBook": "Fusion Caster"
+    }
+   ],
+   "notas": ""
+  },
+  "a006": {
+   "artId": "warden",
+   "rotulo": "Warden",
+   "confiancaRotulo": "alta",
+   "unitKey": "robot-lord",
+   "equipmentTags": [
+    "Warden"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warden",
+     "armyBook": "opção Warden"
+    }
+   ],
+   "notas": "Warden é só opção de Robot Lord e Annihilator Lord; escolhido o Robot Lord"
+  },
+  "a007": {
+   "artId": "warrior-plasma",
+   "rotulo": "Warrior Plasma",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Plasma Caster"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Plasma",
+     "armyBook": "Plasma Caster"
+    }
+   ],
+   "notas": ""
+  },
+  "a008": {
+   "artId": "warrior-reaper",
+   "rotulo": "Warrior Reaper",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Radium Ray|Photon Gun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Reaper",
+     "armyBook": "Radium Ray | Photon Gun"
+    }
+   ],
+   "notas": "sem arma Reaper. Radium Ray por eliminação (Flamer/Fusion/Plasma/Reaper, 1 cópia cada, x as 4 trocas de um modelo); Photon Gun seria o 'gauss reaper' (troca de todos)"
+  },
+  "a009": {
+   "artId": "flesh-eater-type-1",
+   "rotulo": "Flesh Eater Type 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "flesh-eater",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a010": {
+   "artId": "flesh-eater-type-1-b",
+   "rotulo": "Flesh Eater Type 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "flesh-eater",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo repetido no PDF (provável erro, seria Type 2); pose diferente de a009 (lâminas longas)"
+  },
+  "a011": {
+   "artId": "guardian-sword-pose-1",
+   "rotulo": "Guardian Sword Pose 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardian",
+   "equipmentTags": [
+    "Atomizer Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Atomizer Sword"
+    }
+   ],
+   "notas": "a opção dá Atomizer Sword + Combat Shield (a figura tem escudo)"
+  },
+  "a012": {
+   "artId": "guardian-sword-pose-2",
+   "rotulo": "Guardian Sword Pose 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardian",
+   "equipmentTags": [
+    "Atomizer Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Atomizer Sword"
+    }
+   ],
+   "notas": "a opção dá Atomizer Sword + Combat Shield (a figura tem escudo)"
+  },
+  "a013": {
+   "artId": "guardian-spear-pose-1",
+   "rotulo": "Guardian Spear Pose 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardian",
+   "equipmentTags": [
+    "Doom Scythe"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spear",
+     "armyBook": "Doom Scythe"
+    }
+   ],
+   "notas": "não há Spear; a arma padrão Doom Scythe é uma haste com lâmina, como na figura"
+  },
+  "a014": {
+   "artId": "technomancer",
+   "rotulo": "Technomancer",
+   "confiancaRotulo": "alta",
+   "unitKey": "robot-lord",
+   "equipmentTags": [
+    "Technomancer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Technomancer",
+     "armyBook": "opção Technomancer"
+    }
+   ],
+   "notas": "Technomancer é opção de Robot Lord e Annihilator Lord (e regra do Echo-3G01); escolhido o Robot Lord"
+  },
+  "a015": {
+   "artId": "guardian-spear-pose-2",
+   "rotulo": "Guardian Spear Pose 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardian",
+   "equipmentTags": [
+    "Doom Scythe"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spear",
+     "armyBook": "Doom Scythe"
+    }
+   ],
+   "notas": "não há Spear; a arma padrão Doom Scythe é uma haste com lâmina, como na figura"
+  },
+  "a016": {
+   "artId": "sniper",
+   "rotulo": "Sniper",
+   "confiancaRotulo": "alta",
+   "unitKey": "sniper",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a017": {
+   "artId": "annihilator-cannon",
+   "rotulo": "Annihilator Cannon",
+   "confiancaRotulo": "alta",
+   "unitKey": "annihilator",
+   "equipmentTags": [
+    "Photon Cannon|Heavy Photon Cannon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Cannon",
+     "armyBook": "Photon Cannon | Heavy Photon Cannon"
+    }
+   ],
+   "notas": "3 cópias: Photon Cannon (troca de qualquer um); Heavy Photon Cannon é de um modelo"
+  },
+  "a018": {
+   "artId": "annihilator-sword",
+   "rotulo": "Annihilator Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "annihilator",
+   "equipmentTags": [
+    "Dual Atomizer Swords"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Dual Atomizer Swords"
+    }
+   ],
+   "notas": ""
+  },
+  "a019": {
+   "artId": "heavy-annihilator",
+   "rotulo": "Heavy Annihilator",
+   "confiancaRotulo": "alta",
+   "unitKey": "heavy-annihilator",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só no Grimdark Future (gs2)"
+  },
+  "a020": {
+   "artId": "annihilator-overseer-cannon",
+   "rotulo": "Annihilator Overseer Cannon",
+   "confiancaRotulo": "alta",
+   "unitKey": "annihilator-lord",
+   "equipmentTags": [
+    "Overseer",
+    "Photon Cannon|Heavy Photon Cannon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Annihilator Overseer",
+     "armyBook": "Annihilator Lord + opção Overseer"
+    },
+    {
+     "pdf": "Cannon",
+     "armyBook": "Photon Cannon | Heavy Photon Cannon"
+    }
+   ],
+   "notas": "genericName Terminator Robot Leader"
+  },
+  "a021": {
+   "artId": "annihilator-overseer-spear",
+   "rotulo": "Annihilator Overseer Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "annihilator-lord",
+   "equipmentTags": [
+    "Overseer",
+    "Legion Glaive|Great Doom Scythe|Power Staff|Technomancer Staff"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Annihilator Overseer",
+     "armyBook": "Annihilator Lord + opção Overseer"
+    },
+    {
+     "pdf": "Spear",
+     "armyBook": "Legion Glaive | Great Doom Scythe | Power Staff | Technomancer Staff"
+    }
+   ],
+   "notas": "não há Spear; as armas de haste do Annihilator Lord (Technomancer Staff é a padrão)"
+  },
+  "a022": {
+   "artId": "eternal-flux-pose-1",
+   "rotulo": "Eternal Flux Pose 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal",
+   "equipmentTags": [
+    "Transonic Carbine"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Flux",
+     "armyBook": "Transonic Carbine"
+    }
+   ],
+   "notas": "Flux é nome antigo; 5 cópias (3+2) = troca de todos, e Transonic Carbine é a única alternativa à Photon Rifle"
+  },
+  "a023": {
+   "artId": "eternal-flux-pose-2",
+   "rotulo": "Eternal Flux Pose 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal",
+   "equipmentTags": [
+    "Transonic Carbine"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Flux",
+     "armyBook": "Transonic Carbine"
+    }
+   ],
+   "notas": "Flux é nome antigo; 5 cópias (3+2) = troca de todos, e Transonic Carbine é a única alternativa à Photon Rifle"
+  },
+  "a024": {
+   "artId": "eternal-gauss-pose-1",
+   "rotulo": "Eternal Gauss Pose 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal",
+   "equipmentTags": [
+    "Photon Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gauss",
+     "armyBook": "Photon Rifle"
+    }
+   ],
+   "notas": "Gauss é nome antigo; Photon Rifle é a arma padrão (5 cópias)"
+  },
+  "a025": {
+   "artId": "eternal-gauss-pose-2",
+   "rotulo": "Eternal Gauss Pose 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal",
+   "equipmentTags": [
+    "Photon Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gauss",
+     "armyBook": "Photon Rifle"
+    }
+   ],
+   "notas": "Gauss é nome antigo; Photon Rifle é a arma padrão (5 cópias)"
+  },
+  "a026": {
+   "artId": "destroyer-snake-axe",
+   "rotulo": "Destroyer Snake Axe",
+   "confiancaRotulo": "alta",
+   "unitKey": "destroyer-snake",
+   "equipmentTags": [
+    "Heavy Ion Blade|Great Doom Scythe|Legion Glaive"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Axe",
+     "armyBook": "Heavy Ion Blade | Great Doom Scythe | Legion Glaive"
+    }
+   ],
+   "notas": "não há Axe; arma de duas mãos, 1 cópia (Heavy Ion Blade é troca de um modelo); Great Doom Scythe e Legion Glaive são as outras armas grandes"
+  },
+  "a027": {
+   "artId": "destroyer-snake-sword",
+   "rotulo": "Destroyer Snake Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "destroyer-snake",
+   "equipmentTags": [
+    "Dual Ion Blades"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Dual Ion Blades"
+    }
+   ],
+   "notas": "3 cópias, duas lâminas: arma padrão Dual Ion Blades"
+  },
+  "a028": {
+   "artId": "biker",
+   "rotulo": "Biker",
+   "confiancaRotulo": "alta",
+   "unitKey": "hover-bike",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Biker",
+     "armyBook": "Hover Bikes"
+    }
+   ],
+   "notas": "genericName Robot Jetbikers; única unidade de motos"
+  },
+  "a029": {
+   "artId": "wraith",
+   "rotulo": "Wraith",
+   "confiancaRotulo": "alta",
+   "unitKey": "wraith-shard",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Wraith",
+     "armyBook": "Wraith-Shard"
+    }
+   ],
+   "notas": "só no gs2; pode ser também a Great Wraith-Shard (mesma base de 60 mm)"
+  },
+  "a030": {
+   "artId": "tri-scorpion-type-1",
+   "rotulo": "Tri Scorpion Type 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "tri-scorpion",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a031": {
+   "artId": "tri-scorpion-type-2",
+   "rotulo": "Tri Scorpion Type 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "tri-scorpion",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a032": {
+   "artId": "swarm",
+   "rotulo": "Swarm",
+   "confiancaRotulo": "alta",
+   "unitKey": "bot-swarm",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Bot Swarm(s)"
+  },
+  "a033": {
+   "artId": "tri-scorpion-overseer",
+   "rotulo": "Tri Scorpion Overseer",
+   "confiancaRotulo": "alta",
+   "unitKey": "tri-scorpion-lord",
+   "equipmentTags": [
+    "Overseer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Tri Scorpion Overseer",
+     "armyBook": "Tri-Scorpion Lord + opção Overseer"
+    }
+   ],
+   "notas": "genericName Scorpion Robot Leader"
+  },
+  "a034": {
+   "artId": "tri-scorpion-pistoleer",
+   "rotulo": "Tri Scorpion Pistoleer",
+   "confiancaRotulo": "alta",
+   "unitKey": "tri-scorpion-pistoleer",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só no gs2"
+  },
+  "a035": {
+   "artId": "forge-spider-type-1",
+   "rotulo": "Forge Spider Type 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "forge-spider",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só no gs2; tamanho (~60 x 79 mm, 1 cópia) indica a Forge Spider e não as Forge Spiderlings"
+  },
+  "a036": {
+   "artId": "forge-spider-type-2",
+   "rotulo": "Forge Spider Type 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "forge-spider",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só no gs2; tamanho (~60 x 79 mm, 1 cópia) indica a Forge Spider e não as Forge Spiderlings"
+  }
+ }
+}

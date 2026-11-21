@@ -1,0 +1,3173 @@
+{
+  "schemaVersion": 1,
+  "packId": "jackals",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "GF",
+    "slug": "grimdark-future",
+    "armyForgeId": 2
+  },
+  "gameSystems": [
+    {
+      "code": "GF",
+      "slug": "grimdark-future",
+      "armyForgeId": 2
+    },
+    {
+      "code": "GFF",
+      "slug": "grimdark-future-firefight",
+      "armyForgeId": 3
+    }
+  ],
+  "armyBook": {
+    "id": "BKi_hJaJflN8ZorH",
+    "name": "Jackals",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "BKi_hJaJflN8ZorH",
+      "name": "Jackals",
+      "version": "3.6.0",
+      "gameSystemId": 3,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "BKi_hJaJflN8ZorH",
+      "name": "Jackals",
+      "version": "3.6.0",
+      "gameSystemId": 2,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Jackals_-_BW.pdf",
+    "pdfSha256": "f50774ed900b490eb2526834bd12d73d1863ba1c22143bbc69ac563b693a79ef",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "veteran",
+      "names": [
+        "Veteran"
+      ],
+      "armyForgeUnitId": "XhgyXd9",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "nomads",
+      "names": [
+        "Nomads"
+      ],
+      "armyForgeUnitId": "8LCt3JN",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "stalker",
+      "names": [
+        "Stalker",
+        "Stalkers"
+      ],
+      "armyForgeUnitId": "i38ZXSB",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "elite",
+      "names": [
+        "Elite",
+        "Elites"
+      ],
+      "armyForgeUnitId": "uF7noGn",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "vulture",
+      "names": [
+        "Vulture",
+        "Vultures"
+      ],
+      "armyForgeUnitId": "LutTMHw",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "tracker",
+      "names": [
+        "Tracker",
+        "Trackers"
+      ],
+      "armyForgeUnitId": "ARMiAVY",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "hounds",
+      "names": [
+        "Hounds"
+      ],
+      "armyForgeUnitId": "VEbHNRI",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "beast-rider",
+      "names": [
+        "Beast Rider",
+        "Beast Riders"
+      ],
+      "armyForgeUnitId": "1znOU_R",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "beast-gunner",
+      "names": [
+        "Beast Gunner",
+        "Beast Gunners"
+      ],
+      "armyForgeUnitId": "J6JUfNP",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "shaman",
+      "candidateId": "a001",
+      "pdfLabel": "Shaman",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veteran",
+      "equipmentTags": [
+        "Shaman"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shaman",
+          "armyBook": "Veteran + Shaman"
+        }
+      ],
+      "notes": "Shaman é upgrade do Veteran e também do Elite Veteran; escolhi Veteran, usuário decide",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0
+          ],
+          "front": "arts/shaman/fino/frente.svg",
+          "back": "arts/shaman/fino/verso.svg",
+          "canvasMm": [
+            30.311,
+            47.879
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            47.8,
+            30.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            0
+          ],
+          "front": "arts/shaman/borda/frente.svg",
+          "back": "arts/shaman/borda/verso.svg",
+          "canvasMm": [
+            33.697,
+            49.572
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            49.4,
+            33.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "beast-veteran-rifle",
+      "candidateId": "a002",
+      "pdfLabel": "Beast Veteran Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veteran",
+      "equipmentTags": [
+        "Assault Beast|Gunner Beast",
+        "Burst Scrap Rifle|Scrap Sniper Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Beast Veteran",
+          "armyBook": [
+            "Veteran + Assault Beast",
+            "Veteran + Gunner Beast"
+          ]
+        },
+        {
+          "pdf": "Rifle",
+          "armyBook": [
+            "Burst Scrap Rifle",
+            "Scrap Sniper Rifle"
+          ]
+        }
+      ],
+      "notes": "Veteran montado; montaria pode ser Assault Beast ou Gunner Beast; rifle = Burst Scrap Rifle ou Scrap Sniper Rifle",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            1
+          ],
+          "front": "arts/beast-veteran-rifle/fino/frente.svg",
+          "back": "arts/beast-veteran-rifle/fino/verso.svg",
+          "canvasMm": [
+            51.223,
+            61.722
+          ],
+          "frontBackIoU": 0.954,
+          "sizeMm": [
+            61.6,
+            51.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            1
+          ],
+          "front": "arts/beast-veteran-rifle/borda/frente.svg",
+          "back": "arts/beast-veteran-rifle/borda/verso.svg",
+          "canvasMm": [
+            53.763,
+            63.415
+          ],
+          "frontBackIoU": 0.965,
+          "sizeMm": [
+            63.3,
+            53.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "beast-veteran-spear",
+      "candidateId": "a003",
+      "pdfLabel": "Beast Veteran Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veteran",
+      "equipmentTags": [
+        "Assault Beast|Gunner Beast",
+        "Explosive Spear|Goad-Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Beast Veteran",
+          "armyBook": [
+            "Veteran + Assault Beast",
+            "Veteran + Gunner Beast"
+          ]
+        },
+        {
+          "pdf": "Spear",
+          "armyBook": [
+            "Explosive Spear",
+            "Goad-Spear"
+          ]
+        }
+      ],
+      "notes": "Veteran montado; a lança da arte parece Explosive Spear (ponta com carga), mas o rótulo cabe também em Goad-Spear",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            2
+          ],
+          "front": "arts/beast-veteran-spear/fino/frente.svg",
+          "back": "arts/beast-veteran-spear/fino/verso.svg",
+          "canvasMm": [
+            58.166,
+            58.674
+          ],
+          "frontBackIoU": 0.958,
+          "sizeMm": [
+            58.6,
+            57.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            2
+          ],
+          "front": "arts/beast-veteran-spear/borda/frente.svg",
+          "back": "arts/beast-veteran-spear/borda/verso.svg",
+          "canvasMm": [
+            60.621,
+            60.367
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            60.3,
+            60.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vulture-veteran-spear",
+      "candidateId": "a004",
+      "pdfLabel": "Vulture Veteran Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veteran",
+      "equipmentTags": [
+        "Jetpack|Raider Jetpack",
+        "Explosive Spear|Goad-Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Vulture Veteran",
+          "armyBook": [
+            "Veteran + Jetpack",
+            "Veteran + Raider Jetpack"
+          ]
+        },
+        {
+          "pdf": "Spear",
+          "armyBook": [
+            "Explosive Spear",
+            "Goad-Spear"
+          ]
+        }
+      ],
+      "notes": "Veteran com asas mecânicas como os Vultures = Jetpack ou Raider Jetpack; lança = Explosive Spear ou Goad-Spear",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            3
+          ],
+          "front": "arts/vulture-veteran-spear/fino/frente.svg",
+          "back": "arts/vulture-veteran-spear/fino/verso.svg",
+          "canvasMm": [
+            58.801,
+            67.691
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            67.6,
+            58.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            3
+          ],
+          "front": "arts/vulture-veteran-spear/borda/frente.svg",
+          "back": "arts/vulture-veteran-spear/borda/verso.svg",
+          "canvasMm": [
+            60.791,
+            69.384
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            69.3,
+            60.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vulture-veteran-rifle",
+      "candidateId": "a005",
+      "pdfLabel": "Vulture Veteran Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veteran",
+      "equipmentTags": [
+        "Jetpack|Raider Jetpack",
+        "Burst Scrap Rifle|Scrap Sniper Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Vulture Veteran",
+          "armyBook": [
+            "Veteran + Jetpack",
+            "Veteran + Raider Jetpack"
+          ]
+        },
+        {
+          "pdf": "Rifle",
+          "armyBook": [
+            "Burst Scrap Rifle",
+            "Scrap Sniper Rifle"
+          ]
+        }
+      ],
+      "notes": "Veteran com Jetpack ou Raider Jetpack; rifle = Burst Scrap Rifle ou Scrap Sniper Rifle",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            4
+          ],
+          "front": "arts/vulture-veteran-rifle/fino/frente.svg",
+          "back": "arts/vulture-veteran-rifle/fino/verso.svg",
+          "canvasMm": [
+            58.674,
+            67.733
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            67.6,
+            58.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            4
+          ],
+          "front": "arts/vulture-veteran-rifle/borda/frente.svg",
+          "back": "arts/vulture-veteran-rifle/borda/verso.svg",
+          "canvasMm": [
+            61.214,
+            69.427
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            69.3,
+            61.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "nomad-pistol",
+      "candidateId": "a006",
+      "pdfLabel": "Nomad Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "nomads",
+      "equipmentTags": [
+        "Scrap Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Pistol",
+          "armyBook": "Scrap Pistol"
+        }
+      ],
+      "notes": "única pistola dos Nomads",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/nomad-pistol/fino/frente.svg",
+          "back": "arts/nomad-pistol/fino/verso.svg",
+          "canvasMm": [
+            25.4,
+            36.661
+          ],
+          "frontBackIoU": 0.949,
+          "sizeMm": [
+            36.6,
+            25.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 25,
+          "rows": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "front": "arts/nomad-pistol/borda/frente.svg",
+          "back": "arts/nomad-pistol/borda/verso.svg",
+          "canvasMm": [
+            28.787,
+            38.354
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            38.3,
+            28.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "nomad-rifle",
+      "candidateId": "a007",
+      "pdfLabel": "Nomad Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "nomads",
+      "equipmentTags": [
+        "Scrap Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": "Scrap Rifle"
+        }
+      ],
+      "notes": "Scrap Rifle é a arma padrão dos Nomads",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/nomad-rifle/fino/frente.svg",
+          "back": "arts/nomad-rifle/fino/verso.svg",
+          "canvasMm": [
+            19.304,
+            36.491
+          ],
+          "frontBackIoU": 0.946,
+          "sizeMm": [
+            36.4,
+            19.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/nomad-rifle/borda/frente.svg",
+          "back": "arts/nomad-rifle/borda/verso.svg",
+          "canvasMm": [
+            22.691,
+            38.185
+          ],
+          "frontBackIoU": 0.961,
+          "sizeMm": [
+            38.1,
+            22.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran",
+      "candidateId": "a008",
+      "pdfLabel": "Veteran",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veteran",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0
+          ],
+          "front": "arts/veteran/fino/frente.svg",
+          "back": "arts/veteran/fino/verso.svg",
+          "canvasMm": [
+            31.073,
+            38.185
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            38.1,
+            30.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            0
+          ],
+          "front": "arts/veteran/borda/frente.svg",
+          "back": "arts/veteran/borda/verso.svg",
+          "canvasMm": [
+            34.459,
+            39.878
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            39.8,
+            34.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "nomad-rifle-satellite",
+      "candidateId": "a009",
+      "pdfLabel": "Nomad Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "nomads",
+      "equipmentTags": [
+        "Scrap Rifle",
+        "Satellite Backpack"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": "Scrap Rifle"
+        }
+      ],
+      "notes": "mesmo rótulo de a007, mas a arte tem antena parabólica na mochila: Satellite Backpack (upgrade de um modelo)",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            1
+          ],
+          "front": "arts/nomad-rifle-satellite/fino/frente.svg",
+          "back": "arts/nomad-rifle-satellite/fino/verso.svg",
+          "canvasMm": [
+            19.473,
+            36.703
+          ],
+          "frontBackIoU": 0.948,
+          "sizeMm": [
+            36.6,
+            19.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            1
+          ],
+          "front": "arts/nomad-rifle-satellite/borda/frente.svg",
+          "back": "arts/nomad-rifle-satellite/borda/verso.svg",
+          "canvasMm": [
+            22.86,
+            38.396
+          ],
+          "frontBackIoU": 0.966,
+          "sizeMm": [
+            38.3,
+            22.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "nomad-blaster",
+      "candidateId": "a010",
+      "pdfLabel": "Nomad Blaster",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "nomads",
+      "equipmentTags": [
+        "Force Blaster"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Blaster",
+          "armyBook": "Force Blaster"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            2
+          ],
+          "front": "arts/nomad-blaster/fino/frente.svg",
+          "back": "arts/nomad-blaster/fino/verso.svg",
+          "canvasMm": [
+            18.034,
+            36.491
+          ],
+          "frontBackIoU": 0.95,
+          "sizeMm": [
+            36.4,
+            17.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            2
+          ],
+          "front": "arts/nomad-blaster/borda/frente.svg",
+          "back": "arts/nomad-blaster/borda/verso.svg",
+          "canvasMm": [
+            21.505,
+            38.185
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            38.1,
+            21.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "nomad-zapper",
+      "candidateId": "a011",
+      "pdfLabel": "Nomad Zapper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "nomads",
+      "equipmentTags": [
+        "Zapper Gun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Zapper",
+          "armyBook": "Zapper Gun"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            3
+          ],
+          "front": "arts/nomad-zapper/fino/frente.svg",
+          "back": "arts/nomad-zapper/fino/verso.svg",
+          "canvasMm": [
+            18.203,
+            36.661
+          ],
+          "frontBackIoU": 0.949,
+          "sizeMm": [
+            36.6,
+            17.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            3
+          ],
+          "front": "arts/nomad-zapper/borda/frente.svg",
+          "back": "arts/nomad-zapper/borda/verso.svg",
+          "canvasMm": [
+            21.59,
+            38.354
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            38.3,
+            21.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "nomad-shotgun",
+      "candidateId": "a012",
+      "pdfLabel": "Nomad Shotgun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "nomads",
+      "equipmentTags": [
+        "Burst Shotgun|Hunting Shotgun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shotgun",
+          "armyBook": [
+            "Burst Shotgun",
+            "Hunting Shotgun"
+          ]
+        }
+      ],
+      "notes": "o rótulo cabe nas duas espingardas dos Nomads",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            4
+          ],
+          "front": "arts/nomad-shotgun/fino/frente.svg",
+          "back": "arts/nomad-shotgun/fino/verso.svg",
+          "canvasMm": [
+            20.659,
+            36.788
+          ],
+          "frontBackIoU": 0.949,
+          "sizeMm": [
+            36.7,
+            20.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            4
+          ],
+          "front": "arts/nomad-shotgun/borda/frente.svg",
+          "back": "arts/nomad-shotgun/borda/verso.svg",
+          "canvasMm": [
+            24.045,
+            38.481
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            38.4,
+            23.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "nomad-rocket",
+      "candidateId": "a013",
+      "pdfLabel": "Nomad Rocket",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "nomads",
+      "equipmentTags": [
+        "Rocket Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rocket",
+          "armyBook": "Rocket Launcher"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0
+          ],
+          "front": "arts/nomad-rocket/fino/frente.svg",
+          "back": "arts/nomad-rocket/fino/verso.svg",
+          "canvasMm": [
+            28.109,
+            36.534
+          ],
+          "frontBackIoU": 0.942,
+          "sizeMm": [
+            36.4,
+            27.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            0
+          ],
+          "front": "arts/nomad-rocket/borda/frente.svg",
+          "back": "arts/nomad-rocket/borda/verso.svg",
+          "canvasMm": [
+            31.496,
+            38.227
+          ],
+          "frontBackIoU": 0.966,
+          "sizeMm": [
+            38.1,
+            31.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "nomad-fumigator",
+      "candidateId": "a014",
+      "pdfLabel": "Nomad Fumigator",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "nomads",
+      "equipmentTags": [
+        "Fumigator"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            1
+          ],
+          "front": "arts/nomad-fumigator/fino/frente.svg",
+          "back": "arts/nomad-fumigator/fino/verso.svg",
+          "canvasMm": [
+            28.787,
+            36.661
+          ],
+          "frontBackIoU": 0.961,
+          "sizeMm": [
+            36.6,
+            28.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            1
+          ],
+          "front": "arts/nomad-fumigator/borda/frente.svg",
+          "back": "arts/nomad-fumigator/borda/verso.svg",
+          "canvasMm": [
+            32.173,
+            38.354
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            38.3,
+            31.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "nomad-spiker",
+      "candidateId": "a015",
+      "pdfLabel": "Nomad Spiker",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "nomads",
+      "equipmentTags": [
+        "Power Spiker"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Spiker",
+          "armyBook": "Power Spiker"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            2
+          ],
+          "front": "arts/nomad-spiker/fino/frente.svg",
+          "back": "arts/nomad-spiker/fino/verso.svg",
+          "canvasMm": [
+            19.008,
+            36.618
+          ],
+          "frontBackIoU": 0.945,
+          "sizeMm": [
+            36.5,
+            18.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            2
+          ],
+          "front": "arts/nomad-spiker/borda/frente.svg",
+          "back": "arts/nomad-spiker/borda/verso.svg",
+          "canvasMm": [
+            22.394,
+            38.312
+          ],
+          "frontBackIoU": 0.966,
+          "sizeMm": [
+            38.2,
+            22.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "nomad-sniper",
+      "candidateId": "a016",
+      "pdfLabel": "Nomad Sniper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "nomads",
+      "equipmentTags": [
+        "Marksman Carbine"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sniper",
+          "armyBook": "Marksman Carbine"
+        }
+      ],
+      "notes": "Nomads não têm arma com 'Sniper' no nome; a arma de precisão deles é Marksman Carbine (arte com mira)",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            3
+          ],
+          "front": "arts/nomad-sniper/fino/frente.svg",
+          "back": "arts/nomad-sniper/fino/verso.svg",
+          "canvasMm": [
+            22.013,
+            36.491
+          ],
+          "frontBackIoU": 0.95,
+          "sizeMm": [
+            36.4,
+            21.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            3
+          ],
+          "front": "arts/nomad-sniper/borda/frente.svg",
+          "back": "arts/nomad-sniper/borda/verso.svg",
+          "canvasMm": [
+            25.442,
+            38.185
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            38.1,
+            25.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "stalker-dual-knives",
+      "candidateId": "a017",
+      "pdfLabel": "Stalker Dual Knives",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "stalker",
+      "equipmentTags": [
+        "Dual Hand Weapons"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Dual Knives",
+          "armyBook": "Dual Hand Weapons"
+        }
+      ],
+      "notes": "facas = armas de mão comuns; as lâminas da arte são anguladas, poderiam passar por Dual Jagged Hooks",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/stalker-dual-knives/fino/frente.svg",
+          "back": "arts/stalker-dual-knives/fino/verso.svg",
+          "canvasMm": [
+            36.153,
+            37.804
+          ],
+          "frontBackIoU": 0.944,
+          "sizeMm": [
+            37.7,
+            35.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/stalker-dual-knives/borda/frente.svg",
+          "back": "arts/stalker-dual-knives/borda/verso.svg",
+          "canvasMm": [
+            39.539,
+            39.497
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            39.4,
+            39.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "stalker-berserker",
+      "candidateId": "a018",
+      "pdfLabel": "Stalker Berserker",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "stalker",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "rótulo sem arma (arte genérica); a figura tem duas espadas grandes (Dual Junk Swords?)",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/stalker-berserker/fino/frente.svg",
+          "back": "arts/stalker-berserker/fino/verso.svg",
+          "canvasMm": [
+            43.773,
+            37.634
+          ],
+          "frontBackIoU": 0.954,
+          "sizeMm": [
+            37.5,
+            43.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 30,
+          "rows": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "front": "arts/stalker-berserker/borda/frente.svg",
+          "back": "arts/stalker-berserker/borda/verso.svg",
+          "canvasMm": [
+            47.286,
+            39.328
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            39.2,
+            47.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-shotgun",
+      "candidateId": "a019",
+      "pdfLabel": "Elite Shotgun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite",
+      "equipmentTags": [
+        "Shotgun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/elite-shotgun/fino/frente.svg",
+          "back": "arts/elite-shotgun/fino/verso.svg",
+          "canvasMm": [
+            27.94,
+            36.999
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            36.9,
+            27.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 31,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/elite-shotgun/borda/frente.svg",
+          "back": "arts/elite-shotgun/borda/verso.svg",
+          "canvasMm": [
+            30.988,
+            38.566
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            38.4,
+            30.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-rifle",
+      "candidateId": "a020",
+      "pdfLabel": "Elite Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite",
+      "equipmentTags": [
+        "Energy Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": "Energy Rifle"
+        }
+      ],
+      "notes": "Energy Rifle é a arma padrão dos Elites",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/elite-rifle/fino/frente.svg",
+          "back": "arts/elite-rifle/fino/verso.svg",
+          "canvasMm": [
+            27.601,
+            36.872
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            36.7,
+            27.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/elite-rifle/borda/frente.svg",
+          "back": "arts/elite-rifle/borda/verso.svg",
+          "canvasMm": [
+            30.988,
+            38.566
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            38.4,
+            30.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-missile",
+      "candidateId": "a021",
+      "pdfLabel": "Elite Missile",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite",
+      "equipmentTags": [
+        "Missile Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Missile",
+          "armyBook": "Missile Launcher"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0
+          ],
+          "front": "arts/elite-missile/fino/frente.svg",
+          "back": "arts/elite-missile/fino/verso.svg",
+          "canvasMm": [
+            30.48,
+            37.507
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            37.4,
+            30.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            0
+          ],
+          "front": "arts/elite-missile/borda/frente.svg",
+          "back": "arts/elite-missile/borda/verso.svg",
+          "canvasMm": [
+            33.867,
+            39.201
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            39.1,
+            33.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-shred",
+      "candidateId": "a022",
+      "pdfLabel": "Elite Shred",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite",
+      "equipmentTags": [
+        "Shredder Cannon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shred",
+          "armyBook": "Shredder Cannon"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            1
+          ],
+          "front": "arts/elite-shred/fino/frente.svg",
+          "back": "arts/elite-shred/fino/verso.svg",
+          "canvasMm": [
+            26.585,
+            36.788
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            36.7,
+            26.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            1
+          ],
+          "front": "arts/elite-shred/borda/frente.svg",
+          "back": "arts/elite-shred/borda/verso.svg",
+          "canvasMm": [
+            29.972,
+            38.481
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            38.4,
+            29.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-plasma",
+      "candidateId": "a023",
+      "pdfLabel": "Elite Plasma",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite",
+      "equipmentTags": [
+        "Plasma Cannon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Plasma",
+          "armyBook": "Plasma Cannon"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            2
+          ],
+          "front": "arts/elite-plasma/fino/frente.svg",
+          "back": "arts/elite-plasma/fino/verso.svg",
+          "canvasMm": [
+            29.76,
+            36.788
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            36.7,
+            29.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            2
+          ],
+          "front": "arts/elite-plasma/borda/frente.svg",
+          "back": "arts/elite-plasma/borda/verso.svg",
+          "canvasMm": [
+            33.147,
+            38.481
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            38.4,
+            32.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-flamer",
+      "candidateId": "a024",
+      "pdfLabel": "Elite Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite",
+      "equipmentTags": [
+        "Heavy Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Flamer",
+          "armyBook": "Heavy Flamer"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            3
+          ],
+          "front": "arts/elite-flamer/fino/frente.svg",
+          "back": "arts/elite-flamer/fino/verso.svg",
+          "canvasMm": [
+            30.776,
+            36.788
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            36.7,
+            30.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            3
+          ],
+          "front": "arts/elite-flamer/borda/frente.svg",
+          "back": "arts/elite-flamer/borda/verso.svg",
+          "canvasMm": [
+            34.163,
+            38.481
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            38.4,
+            34.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vulture-explosive-spear",
+      "candidateId": "a025",
+      "pdfLabel": "Vulture Explosive Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vulture",
+      "equipmentTags": [
+        "Explosive Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/vulture-explosive-spear/fino/frente.svg",
+          "back": "arts/vulture-explosive-spear/fino/verso.svg",
+          "canvasMm": [
+            60.198,
+            45.508
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            45.4,
+            59.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/vulture-explosive-spear/borda/frente.svg",
+          "back": "arts/vulture-explosive-spear/borda/verso.svg",
+          "canvasMm": [
+            63.585,
+            47.202
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            47.1,
+            63.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vulture-claw-pistol",
+      "candidateId": "a026",
+      "pdfLabel": "Vulture Claw & Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vulture",
+      "equipmentTags": [
+        "Claw Gauntlet",
+        "Scrap Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Claw",
+          "armyBook": "Claw Gauntlet"
+        },
+        {
+          "pdf": "Pistol",
+          "armyBook": "Scrap Pistol"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/vulture-claw-pistol/fino/frente.svg",
+          "back": "arts/vulture-claw-pistol/fino/verso.svg",
+          "canvasMm": [
+            60.198,
+            45.593
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            45.5,
+            59.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/vulture-claw-pistol/borda/frente.svg",
+          "back": "arts/vulture-claw-pistol/borda/verso.svg",
+          "canvasMm": [
+            63.585,
+            47.286
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            47.2,
+            63.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vulture-rifle",
+      "candidateId": "a027",
+      "pdfLabel": "Vulture Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vulture",
+      "equipmentTags": [
+        "Energy Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": "Energy Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/vulture-rifle/fino/frente.svg",
+          "back": "arts/vulture-rifle/fino/verso.svg",
+          "canvasMm": [
+            60.325,
+            45.508
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            45.4,
+            60.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/vulture-rifle/borda/frente.svg",
+          "back": "arts/vulture-rifle/borda/verso.svg",
+          "canvasMm": [
+            63.712,
+            47.202
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            47.1,
+            63.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vulture-zapper",
+      "candidateId": "a028",
+      "pdfLabel": "Vulture Zapper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vulture",
+      "equipmentTags": [
+        "Zapper Gun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Zapper",
+          "armyBook": "Zapper Gun"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0
+          ],
+          "front": "arts/vulture-zapper/fino/frente.svg",
+          "back": "arts/vulture-zapper/fino/verso.svg",
+          "canvasMm": [
+            60.579,
+            45.678
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            45.6,
+            60.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            0
+          ],
+          "front": "arts/vulture-zapper/borda/frente.svg",
+          "back": "arts/vulture-zapper/borda/verso.svg",
+          "canvasMm": [
+            63.966,
+            47.371
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            47.2,
+            63.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vulture-shotgun",
+      "candidateId": "a029",
+      "pdfLabel": "Vulture Shotgun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vulture",
+      "equipmentTags": [
+        "Hunting Shotgun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shotgun",
+          "armyBook": "Hunting Shotgun"
+        }
+      ],
+      "notes": "única espingarda dos Vultures",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            1
+          ],
+          "front": "arts/vulture-shotgun/fino/frente.svg",
+          "back": "arts/vulture-shotgun/fino/verso.svg",
+          "canvasMm": [
+            60.283,
+            45.551
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            45.5,
+            60.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            1
+          ],
+          "front": "arts/vulture-shotgun/borda/frente.svg",
+          "back": "arts/vulture-shotgun/borda/verso.svg",
+          "canvasMm": [
+            63.669,
+            47.244
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            47.2,
+            63.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vulture-blaster",
+      "candidateId": "a030",
+      "pdfLabel": "Vulture Blaster",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vulture",
+      "equipmentTags": [
+        "Force Blaster"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Blaster",
+          "armyBook": "Force Blaster"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            2
+          ],
+          "front": "arts/vulture-blaster/fino/frente.svg",
+          "back": "arts/vulture-blaster/fino/verso.svg",
+          "canvasMm": [
+            60.198,
+            45.424
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            45.3,
+            59.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            2
+          ],
+          "front": "arts/vulture-blaster/borda/frente.svg",
+          "back": "arts/vulture-blaster/borda/verso.svg",
+          "canvasMm": [
+            63.585,
+            47.117
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            47.0,
+            63.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "tracker",
+      "candidateId": "a031",
+      "pdfLabel": "Tracker",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "tracker",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/tracker/fino/frente.svg",
+          "back": "arts/tracker/fino/verso.svg",
+          "canvasMm": [
+            32.766,
+            35.602
+          ],
+          "frontBackIoU": 0.946,
+          "sizeMm": [
+            35.5,
+            32.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            0,
+            1,
+            4
+          ],
+          "front": "arts/tracker/borda/frente.svg",
+          "back": "arts/tracker/borda/verso.svg",
+          "canvasMm": [
+            36.153,
+            37.296
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            37.2,
+            35.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hound",
+      "candidateId": "a032",
+      "pdfLabel": "Hound",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hounds",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/hound/fino/frente.svg",
+          "back": "arts/hound/fino/verso.svg",
+          "canvasMm": [
+            40.894,
+            28.406
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            28.3,
+            40.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/hound/borda/frente.svg",
+          "back": "arts/hound/borda/verso.svg",
+          "canvasMm": [
+            44.281,
+            30.099
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            30.0,
+            44.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gunner-beast-machine-gun",
+      "candidateId": "a033",
+      "pdfLabel": "Gunner Beast Machine Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "beast-gunner",
+      "equipmentTags": [
+        "Heavy Machinegun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gunner Beast",
+          "armyBook": "Beast Gunners"
+        },
+        {
+          "pdf": "Machine Gun",
+          "armyBook": "Heavy Machinegun"
+        }
+      ],
+      "notes": "Gunner Beast = Beast Gunners (genericName Support Beast Riders)",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/gunner-beast-machine-gun/fino/frente.svg",
+          "back": "arts/gunner-beast-machine-gun/fino/verso.svg",
+          "canvasMm": [
+            50.504,
+            55.499
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            55.4,
+            50.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/gunner-beast-machine-gun/borda/frente.svg",
+          "back": "arts/gunner-beast-machine-gun/borda/verso.svg",
+          "canvasMm": [
+            53.89,
+            57.192
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            57.1,
+            53.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gunner-beast-sniper",
+      "candidateId": "a034",
+      "pdfLabel": "Gunner Beast Sniper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "beast-gunner",
+      "equipmentTags": [
+        "Scrap Sniper Carbine"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gunner Beast",
+          "armyBook": "Beast Gunners"
+        },
+        {
+          "pdf": "Sniper",
+          "armyBook": "Scrap Sniper Carbine"
+        }
+      ],
+      "notes": "Gunner Beast = Beast Gunners",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/gunner-beast-sniper/fino/frente.svg",
+          "back": "arts/gunner-beast-sniper/fino/verso.svg",
+          "canvasMm": [
+            46.651,
+            55.795
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            55.7,
+            46.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/gunner-beast-sniper/borda/frente.svg",
+          "back": "arts/gunner-beast-sniper/borda/verso.svg",
+          "canvasMm": [
+            50.038,
+            57.489
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            57.4,
+            49.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "assault-beast-goad",
+      "candidateId": "a035",
+      "pdfLabel": "Assault Beast Goad",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "beast-rider",
+      "equipmentTags": [
+        "Goad-Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Assault Beast",
+          "armyBook": "Beast Riders"
+        },
+        {
+          "pdf": "Goad",
+          "armyBook": "Goad-Spear"
+        }
+      ],
+      "notes": "Assault Beast = Beast Riders (genericName Assault Beast Riders)",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/assault-beast-goad/fino/frente.svg",
+          "back": "arts/assault-beast-goad/fino/verso.svg",
+          "canvasMm": [
+            53.086,
+            56.727
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            56.6,
+            52.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/assault-beast-goad/borda/frente.svg",
+          "back": "arts/assault-beast-goad/borda/verso.svg",
+          "canvasMm": [
+            56.515,
+            58.42
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            58.3,
+            56.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "assault-beast-explosive-spear",
+      "candidateId": "a036",
+      "pdfLabel": "Assault Beast Explosive Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "beast-rider",
+      "equipmentTags": [
+        "Explosive Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Assault Beast",
+          "armyBook": "Beast Riders"
+        }
+      ],
+      "notes": "Assault Beast = Beast Riders (genericName Assault Beast Riders)",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/assault-beast-explosive-spear/fino/frente.svg",
+          "back": "arts/assault-beast-explosive-spear/fino/verso.svg",
+          "canvasMm": [
+            53.213,
+            56.811
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            56.7,
+            53.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/assault-beast-explosive-spear/borda/frente.svg",
+          "back": "arts/assault-beast-explosive-spear/borda/verso.svg",
+          "canvasMm": [
+            56.6,
+            58.505
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            58.4,
+            56.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "assault-beast-harpoom",
+      "candidateId": "a037",
+      "pdfLabel": "Assault Beast Harpoom",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "beast-rider",
+      "equipmentTags": [
+        "Barbed Harpoon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Assault Beast",
+          "armyBook": "Beast Riders"
+        },
+        {
+          "pdf": "Harpoom",
+          "armyBook": "Barbed Harpoon"
+        }
+      ],
+      "notes": "rótulo impresso com erro de grafia (Harpoom)",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/assault-beast-harpoom/fino/frente.svg",
+          "back": "arts/assault-beast-harpoom/fino/verso.svg",
+          "canvasMm": [
+            52.959,
+            56.557
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            56.5,
+            52.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            0,
+            2
+          ],
+          "front": "arts/assault-beast-harpoom/borda/frente.svg",
+          "back": "arts/assault-beast-harpoom/borda/verso.svg",
+          "canvasMm": [
+            56.346,
+            58.251
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            58.2,
+            56.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "assault-beast-hook",
+      "candidateId": "a038",
+      "pdfLabel": "Assault Beast Hook",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "beast-rider",
+      "equipmentTags": [
+        "Hunting Hook|Jagged Hook"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Assault Beast",
+          "armyBook": "Beast Riders"
+        },
+        {
+          "pdf": "Hook",
+          "armyBook": [
+            "Hunting Hook",
+            "Jagged Hook"
+          ]
+        }
+      ],
+      "notes": "o rótulo cabe em Hunting Hook e Jagged Hook",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/assault-beast-hook/fino/frente.svg",
+          "back": "arts/assault-beast-hook/fino/verso.svg",
+          "canvasMm": [
+            52.874,
+            56.43
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            56.3,
+            52.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/assault-beast-hook/borda/frente.svg",
+          "back": "arts/assault-beast-hook/borda/verso.svg",
+          "canvasMm": [
+            56.261,
+            58.124
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            58.0,
+            56.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "nomad-pistol-copia",
+      "candidateId": "a039",
+      "pdfLabel": "Nomad Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "nomads",
+      "equipmentTags": [
+        "Scrap Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Pistol",
+          "armyBook": "Scrap Pistol"
+        }
+      ],
+      "notes": "cópia de a006 que só aparece no estilo borda grossa (o recorte não juntou); mesmo mapeamento",
+      "styles": {
+        "borda": {
+          "page": 25,
+          "rows": [
+            2
+          ],
+          "front": "arts/nomad-pistol-copia/borda/frente.svg",
+          "back": "arts/nomad-pistol-copia/borda/verso.svg",
+          "canvasMm": [
+            28.787,
+            38.354
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            38.3,
+            28.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "nomad-rifle-copia",
+      "candidateId": "a040",
+      "pdfLabel": "Nomad Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "nomads",
+      "equipmentTags": [
+        "Scrap Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": "Scrap Rifle"
+        }
+      ],
+      "notes": "cópia de a007 que só aparece no estilo borda grossa (o recorte não juntou); mesmo mapeamento",
+      "styles": {
+        "borda": {
+          "page": 26,
+          "rows": [
+            4
+          ],
+          "front": "arts/nomad-rifle-copia/borda/frente.svg",
+          "back": "arts/nomad-rifle-copia/borda/verso.svg",
+          "canvasMm": [
+            22.691,
+            38.185
+          ],
+          "frontBackIoU": 0.961,
+          "sizeMm": [
+            38.1,
+            22.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "stalker-berserker-copia",
+      "candidateId": "a041",
+      "pdfLabel": "Stalker Berserker",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "stalker",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "cópia de a018 que só aparece no estilo borda grossa (o recorte não juntou); mesmo mapeamento",
+      "styles": {
+        "borda": {
+          "page": 30,
+          "rows": [
+            2
+          ],
+          "front": "arts/stalker-berserker-copia/borda/frente.svg",
+          "back": "arts/stalker-berserker-copia/borda/verso.svg",
+          "canvasMm": [
+            47.286,
+            39.328
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            39.2,
+            47.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "tracker-copia",
+      "candidateId": "a042",
+      "pdfLabel": "Tracker",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "tracker",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "cópia de a031 que só aparece no estilo borda grossa (o recorte não juntou); mesmo mapeamento",
+      "styles": {
+        "borda": {
+          "page": 38,
+          "rows": [
+            2,
+            3
+          ],
+          "front": "arts/tracker-copia/borda/frente.svg",
+          "back": "arts/tracker-copia/borda/verso.svg",
+          "canvasMm": [
+            36.153,
+            37.296
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            37.2,
+            35.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hound-copia",
+      "candidateId": "a043",
+      "pdfLabel": "Hound",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hounds",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "cópia de a032 que só aparece no estilo borda grossa (o recorte não juntou); mesmo mapeamento",
+      "styles": {
+        "borda": {
+          "page": 39,
+          "rows": [
+            4
+          ],
+          "front": "arts/hound-copia/borda/frente.svg",
+          "back": "arts/hound-copia/borda/verso.svg",
+          "canvasMm": [
+            44.281,
+            30.099
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            30.0,
+            44.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "assault-beast-harpoom-copia",
+      "candidateId": "a044",
+      "pdfLabel": "Assault Beast Harpoom",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "beast-rider",
+      "equipmentTags": [
+        "Barbed Harpoon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Assault Beast",
+          "armyBook": "Beast Riders"
+        },
+        {
+          "pdf": "Harpoom",
+          "armyBook": "Barbed Harpoon"
+        }
+      ],
+      "notes": "cópia de a037 que só aparece no estilo borda grossa (o recorte não juntou); mesmo mapeamento",
+      "styles": {
+        "borda": {
+          "page": 44,
+          "rows": [
+            1
+          ],
+          "front": "arts/assault-beast-harpoom-copia/borda/frente.svg",
+          "back": "arts/assault-beast-harpoom-copia/borda/verso.svg",
+          "canvasMm": [
+            56.346,
+            58.251
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            58.2,
+            56.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

@@ -1,0 +1,2244 @@
+{
+  "armyBook": {
+    "id": "z65fgu0l29i4lnlu",
+    "nome": "Human Defense Force",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:33.126Z",
+    "sistema": "grimdark-future",
+    "sistemaId": 2
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "f6aWdEK",
+      "nome": "Colonel Rixxon",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "20"
+      },
+      "armas": [
+        "Pistol",
+        "Energy Sword"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Intimidating Presence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CaGeZkh",
+      "nome": "Tank Company Leader",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Ion Cannon",
+        "Pintle Heavy Machinegun",
+        "Sponson Heavy Flamers",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Vehicle Radio"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Disposable Guided Missile"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Camouflage Netting"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Dozer Blade"
+          ]
+        },
+        {
+          "secao": "Replace Ion Cannon",
+          "ganha": [
+            "Battle Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Ion Cannon",
+          "ganha": [
+            "Plasma Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Ion Cannon",
+          "ganha": [
+            "Gatling Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Ion Cannon",
+          "ganha": [
+            "Siege Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Ion Cannon",
+          "ganha": [
+            "Anti-Tank Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Ion Cannon",
+          "ganha": [
+            "Wrecker-Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Ion Cannon",
+          "ganha": [
+            "Linked Autocannon"
+          ]
+        },
+        {
+          "secao": "Replace Sponson Heavy Flamers",
+          "ganha": [
+            "Sponson Heavy Machineguns"
+          ]
+        },
+        {
+          "secao": "Replace Sponson Heavy Flamers",
+          "ganha": [
+            "Sponson Plasma Cannons"
+          ]
+        },
+        {
+          "secao": "Replace Sponson Heavy Flamers",
+          "ganha": [
+            "Sponson Heavy Fusion Rifles"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hull Assault Heavy Flamer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hull Assault Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hull Assault Laser Cannon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Forward Observer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Commander"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "General"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dwJg2Bu",
+      "nome": "Storm Leader",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Heavy Pistol",
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Heavy Pistol and Hand Weapon",
+          "ganha": [
+            "Burst Heavy Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Pistol and Hand Weapon",
+          "ganha": [
+            "Sniper Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Pistol and Hand Weapon",
+          "ganha": [
+            "Burst Shotgun",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Pistol and Hand Weapon",
+          "ganha": [
+            "Burst Carbine",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Pistol and Hand Weapon",
+          "ganha": [
+            "Psy-Hacker Gear"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Pistol",
+          "ganha": [
+            "Shredder Drum-Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Axe"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Orbital Drop"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wolf-Dog Companion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Drill Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Forward Observer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Commander"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Munitioner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Psy-Hacker"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "General"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3Tk4911",
+      "nome": "Company Leader",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "20"
+      },
+      "armas": [
+        "Pistol",
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Pistol and Hand Weapon",
+          "ganha": [
+            "Burst Battle Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Pistol and Hand Weapon",
+          "ganha": [
+            "Sniper Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Pistol and Hand Weapon",
+          "ganha": [
+            "Psy-Hacker Gear"
+          ]
+        },
+        {
+          "secao": "Replace Pistol and Hand Weapon",
+          "ganha": [
+            "Burst Shotgun",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Pistol and Hand Weapon",
+          "ganha": [
+            "Burst Long Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Pistol",
+          "ganha": [
+            "Shredder Drum-Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Heavy Lance"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Hunting Lance"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Axe"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Ballistic Vest"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Demo Charge"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Camo Gear"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Bike"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Recon Training"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wolf-Dog Companion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sniper Leader"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Drill Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Forward Observer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Commander"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Munitioner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Enforcer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Psy-Hacker"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "General"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "97ShHAa",
+      "nome": "Recruits",
+      "tamanho": 10,
+      "bases": {
+        "round": "25",
+        "square": "20"
+      },
+      "armas": [
+        "Battle Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace one Battle Rifle and Strike",
+          "ganha": [
+            "Sgt. Pistol",
+            "Sgt. Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Shredder Drum-Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Axe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_nbz3zj",
+      "nome": "Infantry Squad",
+      "tamanho": 10,
+      "bases": {
+        "round": "25",
+        "square": "20"
+      },
+      "armas": [
+        "Battle Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace up to two Battle Rifles",
+          "ganha": [
+            "Grenade Launcher"
+          ]
+        },
+        {
+          "secao": "Replace up to two Battle Rifles",
+          "ganha": [
+            "Plasma Rifle"
+          ]
+        },
+        {
+          "secao": "Replace up to two Battle Rifles",
+          "ganha": [
+            "Flamer"
+          ]
+        },
+        {
+          "secao": "Replace up to two Battle Rifles",
+          "ganha": [
+            "Shredder Drum-Rifle"
+          ]
+        },
+        {
+          "secao": "Replace up to two Battle Rifles",
+          "ganha": [
+            "Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace up to two Battle Rifles",
+          "ganha": [
+            "Laser Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Weapon Team"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Weapon Team"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Weapon Team"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Weapon Team"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Weapon Team"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Weapon Team"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle and Strike",
+          "ganha": [
+            "Sgt. Pistol",
+            "Sgt. Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Shredder Drum-Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Axe"
+          ]
+        },
+        {
+          "secao": "Upgrade up to two models with one",
+          "ganha": [
+            "Company Standard"
+          ]
+        },
+        {
+          "secao": "Upgrade up to two models with one",
+          "ganha": [
+            "Field Radio"
+          ]
+        },
+        {
+          "secao": "Upgrade up to two models with one",
+          "ganha": [
+            "Medical Training"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UoYLgB-",
+      "nome": "Combat Bikers",
+      "tamanho": 5,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Battle Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Battle Rifles and Strikes",
+          "ganha": [
+            "Pistol",
+            "Heavy Lance"
+          ]
+        },
+        {
+          "secao": "Replace all Battle Rifles and Strikes",
+          "ganha": [
+            "Heavy Lance",
+            "Shock Charge"
+          ]
+        },
+        {
+          "secao": "Replace all Battle Rifles and Strikes",
+          "ganha": [
+            "Pistol",
+            "Hunting Lance"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle and Strike",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle and Strike",
+          "ganha": [
+            "Anti-Tank Lance"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Grenade Launcher"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Plasma Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Flamer"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Shredder Drum-Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Laser Rifle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kTKbTVs",
+      "nome": "GRUNT Robots",
+      "tamanho": 5,
+      "bases": {
+        "round": "32",
+        "square": "25"
+      },
+      "armas": [
+        "Battle Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Field Radio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SScXOqX",
+      "nome": "Veterans",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "20"
+      },
+      "armas": [
+        "Battle Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace any Battle Rifle",
+          "ganha": [
+            "Shotgun"
+          ]
+        },
+        {
+          "secao": "Replace any Battle Rifle",
+          "ganha": [
+            "Long Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Grenade Launcher"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Flamer"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Sniper Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Plasma Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Shredder Drum-Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Weapon Team"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Weapon Team"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Weapon Team"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Weapon Team"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Weapon Team"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Weapon Team"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Ballistic Vest"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Camo Gear"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Recon Training"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Demo Charge"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle and Strike",
+          "ganha": [
+            "Sgt. Pistol",
+            "Sgt. Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Shredder Drum-Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Axe"
+          ]
+        },
+        {
+          "secao": "Upgrade up to two models with one",
+          "ganha": [
+            "Company Standard"
+          ]
+        },
+        {
+          "secao": "Upgrade up to two models with one",
+          "ganha": [
+            "Field Radio"
+          ]
+        },
+        {
+          "secao": "Upgrade up to two models with one",
+          "ganha": [
+            "Medical Training"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Xuu-drz",
+      "nome": "Storm Troopers",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Heavy Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Heavy Rifles",
+          "ganha": [
+            "Carbine"
+          ]
+        },
+        {
+          "secao": "Replace all Heavy Rifles",
+          "ganha": [
+            "Shotgun"
+          ]
+        },
+        {
+          "secao": "Replace one Heavy Rifle",
+          "ganha": [
+            "Grenade Launcher"
+          ]
+        },
+        {
+          "secao": "Replace one Heavy Rifle",
+          "ganha": [
+            "Flamer"
+          ]
+        },
+        {
+          "secao": "Replace one Heavy Rifle",
+          "ganha": [
+            "Sniper Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Heavy Rifle",
+          "ganha": [
+            "Plasma Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Heavy Rifle",
+          "ganha": [
+            "Shredder Drum-Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Heavy Rifle",
+          "ganha": [
+            "Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Heavy Rifle",
+          "ganha": [
+            "Storm Machinegun"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Orbital Drop"
+          ]
+        },
+        {
+          "secao": "Replace one Heavy Rifle and Strike",
+          "ganha": [
+            "Sgt. Heavy Pistol",
+            "Sgt. Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Heavy Pistol",
+          "ganha": [
+            "Shredder Drum-Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Heavy Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Axe"
+          ]
+        },
+        {
+          "secao": "Upgrade up to two models with one",
+          "ganha": [
+            "Company Standard"
+          ]
+        },
+        {
+          "secao": "Upgrade up to two models with one",
+          "ganha": [
+            "Field Radio"
+          ]
+        },
+        {
+          "secao": "Upgrade up to two models with one",
+          "ganha": [
+            "Medical Training"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SG9cgFZ",
+      "nome": "Sappers",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Grenade Launcher",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace any Grenade Launcher",
+          "ganha": [
+            "Flamer"
+          ]
+        },
+        {
+          "secao": "Replace any Grenade Launcher",
+          "ganha": [
+            "Plasma Rifle"
+          ]
+        },
+        {
+          "secao": "Replace any Grenade Launcher",
+          "ganha": [
+            "Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace any Grenade Launcher",
+          "ganha": [
+            "Laser Rifle"
+          ]
+        },
+        {
+          "secao": "Replace any Grenade Launcher",
+          "ganha": [
+            "Shredder Drum-Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Demo Charge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "95wirM-",
+      "nome": "Snipers",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "20"
+      },
+      "armas": [
+        "Wrecker-Sniper Carbine",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Wrecker-Sniper Carbines",
+          "ganha": [
+            "Sniper Rifle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8jb141s",
+      "nome": "Weapon Teams",
+      "tamanho": 3,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Heavy Machinegun",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace any Heavy Machinegun",
+          "ganha": [
+            "Missile Launcher"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Machinegun",
+          "ganha": [
+            "Mortar"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Machinegun",
+          "ganha": [
+            "Wrecker-Cannon"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Machinegun",
+          "ganha": [
+            "Laser Cannon"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Machinegun",
+          "ganha": [
+            "Autocannon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "44TuRY_",
+      "nome": "OGRE Robots",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Shock Baton"
+      ],
+      "itens": [
+        {
+          "nome": "Combat Shield",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace all Shock Batons and Combat Shields",
+          "ganha": [
+            "Grenade Launcher",
+            "Strike",
+            "Combat Shield"
+          ]
+        },
+        {
+          "secao": "Replace all Shock Batons and Combat Shields",
+          "ganha": [
+            "Gatling Gun",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Shock Batons and Combat Shields",
+          "ganha": [
+            "Energy Axe",
+            "Combat Shield"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rQIWNXD",
+      "nome": "Light Walker",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Heavy Flamer",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Heavy Flamer",
+          "ganha": [
+            "Plasma Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Flamer",
+          "ganha": [
+            "Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Flamer",
+          "ganha": [
+            "Laser Machinegun"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Flamer",
+          "ganha": [
+            "Missile Launcher"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Flamer",
+          "ganha": [
+            "Wrecker-Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Flamer",
+          "ganha": [
+            "Autocannon"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Flamer",
+          "ganha": [
+            "Laser Cannon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Cluster Missiles"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Rocket Salvo"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "AA-Warheads"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Camouflage Netting"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Forward Observer"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Extra Armor"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Targeting Sights"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fNFXxmn",
+      "nome": "Armored Truck",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Sponson Assault Storm Machineguns",
+        "Overrun"
+      ],
+      "itens": [
+        {
+          "nome": "High-Speed Tires",
+          "bases": null
+        },
+        {
+          "nome": "Cargo Space",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Sponson Assault Storm Machineguns and Cargo Space",
+          "ganha": [
+            "Pintle Heavy Machinegun",
+            "Open Cargo Space"
+          ]
+        },
+        {
+          "secao": "Replace Sponson Assault Storm Machineguns and Cargo Space",
+          "ganha": [
+            "Siege Battle Cannon",
+            "Sponson Assault Storm Machineguns"
+          ]
+        },
+        {
+          "secao": "Replace Sponson Assault Storm Machineguns",
+          "ganha": [
+            "Sponson Assault Wrecker-Cannons"
+          ]
+        },
+        {
+          "secao": "Replace Sponson Assault Storm Machineguns",
+          "ganha": [
+            "Sponson Assault Autocannons"
+          ]
+        },
+        {
+          "secao": "Replace Siege Battle Cannon",
+          "ganha": [
+            "Gatling Gun"
+          ]
+        },
+        {
+          "secao": "Replace Siege Battle Cannon",
+          "ganha": [
+            "Siege Missile Battery"
+          ]
+        },
+        {
+          "secao": "Replace Siege Battle Cannon",
+          "ganha": [
+            "Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Replace High-Speed Tires",
+          "ganha": [
+            "Off-Road Tires"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Extra Armor"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Targeting Sights"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fOa_lx3",
+      "nome": "Light APC",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Heavy Flamer",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Heavy Flamer",
+          "ganha": [
+            "Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Flamer",
+          "ganha": [
+            "Laser Machinegun"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hull Heavy Flamer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hull Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Vehicle Radio"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Disposable Guided Missile"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Camouflage Netting"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Dozer Blade"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Extra Armor"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Pintle Heavy Machinegun"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "V_CYLnO",
+      "nome": "Attack Vehicle",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Acid Launcher",
+        "Hull Heavy Flamer",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Acid Launcher",
+          "ganha": [
+            "Siege Battle Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Acid Launcher",
+          "ganha": [
+            "Gatling Gun"
+          ]
+        },
+        {
+          "secao": "Replace Acid Launcher",
+          "ganha": [
+            "Dual Flamer Cannons"
+          ]
+        },
+        {
+          "secao": "Replace Acid Launcher",
+          "ganha": [
+            "Light Laser Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Acid Launcher",
+          "ganha": [
+            "Fusion Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Heavy Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Vehicle Radio"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Disposable Guided Missile"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Camouflage Netting"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Dozer Blade"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Extra Armor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2gQYnym",
+      "nome": "Combat Walker",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Stomp",
+        "Walker Sword"
+      ],
+      "itens": [
+        {
+          "nome": "Combat Shield",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace any Walker Sword",
+          "ganha": [
+            "Walker Axe"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Assault Grenade Launcher"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Walker Sword"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Assault Gatling Gun"
+          ]
+        },
+        {
+          "secao": "Replace Stomp",
+          "ganha": [
+            "Assault Heavy Flamer"
+          ]
+        },
+        {
+          "secao": "Replace Stomp",
+          "ganha": [
+            "Assault Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Replace Stomp",
+          "ganha": [
+            "Assault Heavy Fusion Rifle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coX3WxC",
+      "nome": "Tactical Walker",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Super-Heavy Flamer",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Heavy Plasma Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Heavy Missile Launcher"
+          ]
+        },
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Laser Machinegun"
+          ]
+        },
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Heavy Laser Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Wrecker-Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Autocannon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Cluster Missiles"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Rocket Salvo"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "AA-Warheads"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "W35Ba5E",
+      "nome": "Battle Tank",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Ion Cannon",
+        "Sponson Heavy Flamers",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Vehicle Radio"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Disposable Guided Missile"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Camouflage Netting"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Dozer Blade"
+          ]
+        },
+        {
+          "secao": "Replace Ion Cannon",
+          "ganha": [
+            "Battle Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Ion Cannon",
+          "ganha": [
+            "Plasma Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Ion Cannon",
+          "ganha": [
+            "Gatling Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Ion Cannon",
+          "ganha": [
+            "Siege Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Ion Cannon",
+          "ganha": [
+            "Anti-Tank Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Ion Cannon",
+          "ganha": [
+            "Wrecker-Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Ion Cannon",
+          "ganha": [
+            "Linked Autocannon"
+          ]
+        },
+        {
+          "secao": "Replace Sponson Heavy Flamers",
+          "ganha": [
+            "Sponson Heavy Machineguns"
+          ]
+        },
+        {
+          "secao": "Replace Sponson Heavy Flamers",
+          "ganha": [
+            "Sponson Plasma Cannons"
+          ]
+        },
+        {
+          "secao": "Replace Sponson Heavy Flamers",
+          "ganha": [
+            "Sponson Heavy Fusion Rifles"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hull Assault Heavy Flamer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hull Assault Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hull Assault Laser Cannon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "X8nYjuV",
+      "nome": "Heavy Battle Tank",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Heavy Machinegun Array",
+        "Linked Battle Cannon",
+        "Siege Gun",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Linked Battle Cannon",
+          "ganha": [
+            "Wrecker-Cannon",
+            "Heavy Anti-Tank Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Linked Battle Cannon",
+          "ganha": [
+            "Autocannon",
+            "Heavy Anti-Tank Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Siege Gun",
+          "ganha": [
+            "Gatling Gun"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Machinegun Array",
+          "ganha": [
+            "Heavy Fusion Rifle Array"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Pintle Heavy Machinegun"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B2dHJih",
+      "nome": "Field Artillery",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Field Cannon",
+        "Crew"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Field Cannon",
+          "ganha": [
+            "Shredder Mortar"
+          ]
+        },
+        {
+          "secao": "Replace Field Cannon",
+          "ganha": [
+            "Heavy AA-Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Field Cannon",
+          "ganha": [
+            "Laser Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Field Cannon",
+          "ganha": [
+            "Artillery Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Field Cannon",
+          "ganha": [
+            "Rocket Battery"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "08ymvzA",
+      "nome": "Support Vehicle",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Shredder Mortar",
+        "Hull Heavy Flamer",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Shredder Mortar",
+          "ganha": [
+            "Heavy AA-Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Shredder Mortar",
+          "ganha": [
+            "HE Ballistic Missile"
+          ]
+        },
+        {
+          "secao": "Replace Shredder Mortar",
+          "ganha": [
+            "Artillery Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Shredder Mortar",
+          "ganha": [
+            "AT Ballistic Missile"
+          ]
+        },
+        {
+          "secao": "Replace Shredder Mortar",
+          "ganha": [
+            "Rocket Battery"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Vehicle Radio"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Dozer Blade"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Camouflage Netting"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FI5HqPD",
+      "nome": "Tactical Titan",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Super-Heavy Flamer",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Heavy Plasma Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Heavy Missile Launcher"
+          ]
+        },
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Laser Machinegun"
+          ]
+        },
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Heavy Laser Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Wrecker-Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Autocannon"
+          ]
+        },
+        {
+          "secao": "Upgrade with up to two of any",
+          "ganha": [
+            "Cluster Missiles"
+          ]
+        },
+        {
+          "secao": "Upgrade with up to two of any",
+          "ganha": [
+            "Rocket Salvo"
+          ]
+        },
+        {
+          "secao": "Upgrade with up to two of any",
+          "ganha": [
+            "AA-Warheads"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shy3C64",
+      "nome": "Super Heavy Battle Tank",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Infernal Blaster Cannon",
+        "Siege Mortar",
+        "Hull Heavy Flamer",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Infernal Blaster Cannon and Siege Mortar",
+          "ganha": [
+            "Wrecker-Cannon",
+            "Blight Battle Cannon",
+            "Siege Mortar"
+          ]
+        },
+        {
+          "secao": "Replace Infernal Blaster Cannon and Siege Mortar",
+          "ganha": [
+            "Autocannon",
+            "Blight Battle Cannon",
+            "Siege Mortar"
+          ]
+        },
+        {
+          "secao": "Replace Infernal Blaster Cannon and Siege Mortar",
+          "ganha": [
+            "Sabre Plasma Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Infernal Blaster Cannon and Siege Mortar",
+          "ganha": [
+            "Ruin Laser Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Infernal Blaster Cannon and Siege Mortar",
+          "ganha": [
+            "Baron Gatling Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Infernal Blaster Cannon and Siege Mortar",
+          "ganha": [
+            "Umbral Anti-Tank Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Infernal Blaster Cannon and Siege Mortar",
+          "ganha": [
+            "Maul Artillery Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Infernal Blaster Cannon and Siege Mortar",
+          "ganha": [
+            "Tempest Artillery Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sponson-Array"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sponson-Array"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Cargo Hold"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Pintle Heavy Machinegun"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s42gz1M",
+      "nome": "Light Gunship",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Strafing Laser Machinegun",
+        "Strafing Rocket Pods"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Strafing Laser Machinegun",
+          "ganha": [
+            "Strafing Laser Cannons"
+          ]
+        },
+        {
+          "secao": "Replace Strafing Rocket Pods",
+          "ganha": [
+            "Strafing AA-Missiles"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Door Gunners"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Cargo Space"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RiIn09O",
+      "nome": "Heavy Gunship",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Strafing Laser Cannons",
+        "Strafing Missile Cannon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Strafing Missile Cannon",
+          "ganha": [
+            "Strafing Laser Cannons"
+          ]
+        },
+        {
+          "secao": "Replace Strafing Missile Cannon",
+          "ganha": [
+            "Strafing Laser Cannon",
+            "Cargo Space"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Door Gunners"
+          ]
+        }
+      ]
+    }
+  ]
+}

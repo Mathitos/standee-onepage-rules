@@ -7,6 +7,9 @@ uma arte: com revisão, usa o artId, o rótulo e o mapeamento; sem revisão, usa
 candidato e a imagem do rótulo impresso, para o usuário escolher no site pela figura (D013).
 Grava, versionados: arts/<id>/<estilo>/frente.svg e verso.svg (contrato em vetor.py),
 arts/<id>/rotulo.png e artes.json. Apaga artes de uma exportação anterior que não existem mais.
+Reaproveita os SVG da exportação anterior do mesmo PDF (mesmo SHA-256, contrato e dpi) pelo id do
+candidato: depois da revisão as artes só trocam de nome (a001 -> warrior-sword-1), sem traçar de novo.
+--revetorizar traça tudo de novo (use depois de mudar vetor.py ou a extração).
 """
 import argparse
 import hashlib
@@ -54,6 +57,7 @@ def main():
     ap.add_argument('--pdf', type=Path, required=True)
     ap.add_argument('--saida', type=Path, required=True)
     ap.add_argument('--faccao', help='nome de exibição (padrão: do nome do PDF)')
+    ap.add_argument('--revetorizar', action='store_true', help='não reaproveita SVG da exportação anterior')
     a = ap.parse_args()
     raiz, work = a.saida, a.saida / 'work'
     cand = json.loads((work / 'candidatos.json').read_text(encoding='utf-8'))
@@ -64,6 +68,12 @@ def main():
     rev = json.loads(rev_path.read_text(encoding='utf-8')) if rev_path.exists() else {}
     revisadas = rev.get('artes', {})
     grupos = {g['id']: g for g in cand['grupos']}
+    anterior = {}
+    if (raiz / 'artes.json').exists() and not a.revetorizar:
+        ant = json.loads((raiz / 'artes.json').read_text(encoding='utf-8'))
+        if ant.get('pdf', {}).get('sha256') == sha and ant.get('contrato') == V.VERSAO and ant.get('dpi') == V.DPI:
+            anterior = {x['candidato']: x for x in ant['artes']}
+    reaproveitados = 0
     doc = pymupdf.open(a.pdf)
     cache = {}
 
@@ -96,13 +106,22 @@ def main():
             gid = c['grupos'].get(estilo)
             if gid is None:
                 continue
+            pasta = tmp_arts / art_id / estilo
+            ant = anterior.get(c['id'])
+            velho = raiz / 'arts' / ant['id'] / estilo if ant else None
+            if ant and estilo in ant['estilos'] and all((velho / f'{l}.svg').exists() for l in ('frente', 'verso')):
+                pasta.mkdir(parents=True, exist_ok=True)
+                for lado in ('frente', 'verso'):
+                    shutil.copyfile(velho / f'{lado}.svg', pasta / f'{lado}.svg')
+                estilos[estilo] = ant['estilos'][estilo]
+                reaproveitados += 1
+                continue
             L = linha(gid)
             try:
                 vet = V.vetorizar(L.frente, L.verso, f'{art_id} {estilo}')
             except (ValueError, IndexError) as e:
                 erros.append(f'{c["id"]} {estilo}: {e}')
                 continue
-            pasta = tmp_arts / art_id / estilo
             pasta.mkdir(parents=True, exist_ok=True)
             for lado, texto in vet['svg'].items():
                 (pasta / f'{lado}.svg').write_text(texto, encoding='utf-8', newline='\n')
@@ -140,7 +159,7 @@ def main():
     (raiz / 'artes.json').write_text(json.dumps(indice, indent=1, ensure_ascii=False), encoding='utf-8', newline='\n')
     tamanho = sum(f.stat().st_size for f in (raiz / 'arts').rglob('*') if f.is_file())
     print(json.dumps({'faccao': nome, 'artes': len(artes), 'estilos': sum(len(x['estilos']) for x in artes),
-                      'mb': round(tamanho / 1e6, 1), 'erros': erros}, ensure_ascii=False))
+                      'reaproveitados': reaproveitados, 'mb': round(tamanho / 1e6, 1), 'erros': erros}, ensure_ascii=False))
 
 
 if __name__ == '__main__':

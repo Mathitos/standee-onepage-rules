@@ -1,0 +1,747 @@
+{
+  "armyBook": {
+    "id": "CuyCCyZTIHo5rc0Z",
+    "nome": "Daemons of Lust",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:32.177Z",
+    "sistema": "age-of-fantasy-skirmish",
+    "sistemaId": 5
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "x5U5JgA",
+      "nome": "Harbinger of Lust",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Daemon Hammers",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace 2x Daemon Hammer",
+          "ganha": [
+            "Daemon Loremaster Staff"
+          ]
+        },
+        {
+          "secao": "Replace 2x Daemon Hammer",
+          "ganha": [
+            "Heavy Fist-Crossbow",
+            "Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace 2x Daemon Hammer",
+          "ganha": [
+            "Heavy Arm-Crossbow"
+          ]
+        },
+        {
+          "secao": "Replace any Daemon Hammer",
+          "ganha": [
+            "Perfect Sword"
+          ]
+        },
+        {
+          "secao": "Replace any Daemon Hammer",
+          "ganha": [
+            "Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace any Daemon Hammer",
+          "ganha": [
+            "Ritual Blade"
+          ]
+        },
+        {
+          "secao": "Replace any Daemon Hammer",
+          "ganha": [
+            "Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Lust Boon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Daemonic Incursion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Fury Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Symbol of Lust"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Gift of Lust"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Lust Favour"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Lore of Lust"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Envoy of Lust"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E0VMxeY",
+      "nome": "Champion of Lust",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Perfect Sword"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Ritual Blade"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Daemon Loremaster Staff"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Fist-Crossbow",
+            "Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Heavy Arm-Crossbow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Perfect Sword"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Ritual Blade"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Lust Boon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Lust Beast"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Daemonic Incursion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Symbol of Lust"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Lust Favour"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Lore of Lust"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Army Standard Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Icon of Lust"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Envoy of Lust"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1Jztujo",
+      "nome": "Fury Champion of Lust",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Perfect Sword"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Ritual Blade"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Fist-Crossbow",
+            "Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Heavy Arm-Crossbow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Perfect Sword"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Ritual Blade"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Symbol of Lust"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Gift of Lust"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Icon of Lust"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Envoy of Lust"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Lq2_MvM",
+      "nome": "Infernal Siren",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Infernal Harp",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Song of Banishment"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Song of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Lust Boon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "n4QUatN",
+      "nome": "Moonmire",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Astral Serpent",
+        "Ritual Sword"
+      ],
+      "itens": [
+        {
+          "nome": "Lore of Lust",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Lore of Lust",
+          "ganha": [
+            "Dreamhelm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hEQOj9y",
+      "nome": "Lithenote",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Hypnotic Violin",
+        "Conductor's Dagger"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Mind-Shackle Song"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "57apip-",
+      "nome": "Lust Fury",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Perfect Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Perfect Claws",
+          "ganha": [
+            "Dual Armblades"
+          ]
+        },
+        {
+          "secao": "Replace Perfect Claws",
+          "ganha": [
+            "Ritual Claws"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2FywBB",
+      "nome": "Lust Warrior",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Perfect Sword"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Perfect Sword",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Perfect Sword",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Perfect Sword",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Perfect Sword",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Perfect Sword",
+          "ganha": [
+            "Dual Hand Weapons"
+          ]
+        },
+        {
+          "secao": "Replace Perfect Sword",
+          "ganha": [
+            "Ritual Sword"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Lust Boon"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Banner of Lust"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "x3csCb8",
+      "nome": "Lust Shooter",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Arm-Crossbow",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Arm-Crossbow",
+          "ganha": [
+            "Fist-Crossbow"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Lust Boon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1s7g5E-",
+      "nome": "Shooter-Fury",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Arm-Crossbow",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Arm-Crossbow",
+          "ganha": [
+            "Fist-Crossbow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MMUtjgY",
+      "nome": "Lust Beast Rider",
+      "tamanho": 1,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Perfect Sword",
+        "Toxin Jaws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Perfect Sword",
+          "ganha": [
+            "Ritual Sword"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Lust Boon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "YdpRhrw",
+      "nome": "Snake Swarm",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Toxin Fangs"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Snake Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Vanguard Snake Master"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VqaogKq",
+      "nome": "Lust Soul Spawn",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Perfect Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Perfect Claws",
+          "ganha": [
+            "Soul Claws"
+          ]
+        },
+        {
+          "secao": "Replace Perfect Claws",
+          "ganha": [
+            "Ritual Blade"
+          ]
+        }
+      ]
+    }
+  ]
+}

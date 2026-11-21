@@ -1,0 +1,5133 @@
+{
+  "schemaVersion": 1,
+  "packId": "dwarf-guilds",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "GF",
+    "slug": "grimdark-future",
+    "armyForgeId": 2
+  },
+  "gameSystems": [
+    {
+      "code": "GF",
+      "slug": "grimdark-future",
+      "armyForgeId": 2
+    },
+    {
+      "code": "GFF",
+      "slug": "grimdark-future-firefight",
+      "armyForgeId": 3
+    }
+  ],
+  "armyBook": {
+    "id": "fk1mkbp8apvltu0z",
+    "name": "Dwarf Guilds",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "fk1mkbp8apvltu0z",
+      "name": "Dwarf Guilds",
+      "version": "3.6.0",
+      "gameSystemId": 3,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "fk1mkbp8apvltu0z",
+      "name": "Dwarf Guilds",
+      "version": "3.6.0",
+      "gameSystemId": 2,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Dwarf_Guilds_-_BW.pdf",
+    "pdfSha256": "934be4554170b8866248950f1e56917706ac21d5aa6886d332df73e9b0b81e4b",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "dwarf-champion",
+      "names": [
+        "Dwarf Champion"
+      ],
+      "armyForgeUnitId": "ILXnjbU",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "powersuit-champion",
+      "names": [
+        "Powersuit Champion"
+      ],
+      "armyForgeUnitId": "5op34S_",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "berserker-veteran",
+      "names": [
+        "Berserker Veteran"
+      ],
+      "armyForgeUnitId": "NSdGbsg",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "dwarf-warriors",
+      "names": [
+        "Dwarf Warriors"
+      ],
+      "armyForgeUnitId": "mEzgxJr",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "guardians",
+      "names": [
+        "Guardians"
+      ],
+      "armyForgeUnitId": "OijrRWq",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "jetpack-warrior",
+      "names": [
+        "Jetpack Warrior",
+        "Jetpack Warriors"
+      ],
+      "armyForgeUnitId": "I4NB_Rk",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "thunder-support",
+      "names": [
+        "Thunder Support"
+      ],
+      "armyForgeUnitId": "7DfXFg9",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "berserker",
+      "names": [
+        "Berserker",
+        "Berserkers"
+      ],
+      "armyForgeUnitId": "nojZ6_b",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "elite",
+      "names": [
+        "Elite",
+        "Elites"
+      ],
+      "armyForgeUnitId": "PmhNMYW",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "iron-veteran",
+      "names": [
+        "Iron Veteran",
+        "Iron Veterans"
+      ],
+      "armyForgeUnitId": "cDk2wUI",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "miner",
+      "names": [
+        "Miner",
+        "Miners"
+      ],
+      "armyForgeUnitId": "BMDQBuG",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "sniper-team",
+      "names": [
+        "Sniper Team"
+      ],
+      "armyForgeUnitId": "WbdkmXl",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "powersuit-guard",
+      "names": [
+        "Powersuit Guard"
+      ],
+      "armyForgeUnitId": "Hodf3Bu",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "dwarf-biker",
+      "names": [
+        "Dwarf Biker",
+        "Dwarf Bikers"
+      ],
+      "armyForgeUnitId": "L7Cxnmn",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "guild-lord-hammer",
+      "candidateId": "a001",
+      "pdfLabel": "Guild Lord Hammer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-champion",
+      "equipmentTags": [
+        "Guild Lord",
+        "Shock Hammer|Great Heat Hammer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guild Lord",
+          "armyBook": "Dwarf Champion + Guild Lord"
+        },
+        {
+          "pdf": "Hammer",
+          "armyBook": [
+            "Shock Hammer",
+            "Great Heat Hammer"
+          ]
+        }
+      ],
+      "notes": "Guild Lord é upgrade do Dwarf Champion (figura sem powersuit). Hammer serve para Shock Hammer ou Great Heat Hammer",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0
+          ],
+          "front": "arts/guild-lord-hammer/fino/frente.svg",
+          "back": "arts/guild-lord-hammer/fino/verso.svg",
+          "canvasMm": [
+            46.694,
+            39.37
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            39.3,
+            46.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            0
+          ],
+          "front": "arts/guild-lord-hammer/borda/frente.svg",
+          "back": "arts/guild-lord-hammer/borda/verso.svg",
+          "canvasMm": [
+            51.35,
+            41.698
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            41.6,
+            51.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guild-lord-flamer",
+      "candidateId": "a002",
+      "pdfLabel": "Guild Lord Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-champion",
+      "equipmentTags": [
+        "Guild Lord",
+        "Flamer Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guild Lord",
+          "armyBook": "Dwarf Champion + Guild Lord"
+        },
+        {
+          "pdf": "Flamer",
+          "armyBook": "Flamer Pistol"
+        }
+      ],
+      "notes": "Guild Lord é upgrade do Dwarf Champion; o lança-chamas da figura é de mão (Flamer Pistol)",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            1
+          ],
+          "front": "arts/guild-lord-flamer/fino/frente.svg",
+          "back": "arts/guild-lord-flamer/fino/verso.svg",
+          "canvasMm": [
+            52.197,
+            34.629
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            34.5,
+            52.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            1
+          ],
+          "front": "arts/guild-lord-flamer/borda/frente.svg",
+          "back": "arts/guild-lord-flamer/borda/verso.svg",
+          "canvasMm": [
+            56.854,
+            36.957
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            36.8,
+            56.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-shield",
+      "candidateId": "a003",
+      "pdfLabel": "Champion Shield",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-champion",
+      "equipmentTags": [
+        "Combat Shield"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Dwarf Champion"
+        },
+        {
+          "pdf": "Shield",
+          "armyBook": "Combat Shield"
+        }
+      ],
+      "notes": "Champion sem prefixo = Dwarf Champion (genericName Elite Dwarf Leader); escudo padrão",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            2
+          ],
+          "front": "arts/champion-shield/fino/frente.svg",
+          "back": "arts/champion-shield/fino/verso.svg",
+          "canvasMm": [
+            52.62,
+            34.29
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            34.2,
+            52.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            2
+          ],
+          "front": "arts/champion-shield/borda/frente.svg",
+          "back": "arts/champion-shield/borda/verso.svg",
+          "canvasMm": [
+            56.346,
+            36.153
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            36.1,
+            56.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-shotgun",
+      "candidateId": "a004",
+      "pdfLabel": "Champion Shotgun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-champion",
+      "equipmentTags": [
+        "Burst Shotgun|Burst Iron-Slug Shotgun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Dwarf Champion"
+        },
+        {
+          "pdf": "Shotgun",
+          "armyBook": [
+            "Burst Shotgun",
+            "Burst Iron-Slug Shotgun"
+          ]
+        }
+      ],
+      "notes": "o herói só tem Burst Shotgun ou Burst Iron-Slug Shotgun",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            3
+          ],
+          "front": "arts/champion-shotgun/fino/frente.svg",
+          "back": "arts/champion-shotgun/fino/verso.svg",
+          "canvasMm": [
+            51.139,
+            30.311
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            30.2,
+            50.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            3
+          ],
+          "front": "arts/champion-shotgun/borda/frente.svg",
+          "back": "arts/champion-shotgun/borda/verso.svg",
+          "canvasMm": [
+            54.864,
+            32.173
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            32.1,
+            54.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "runemaster",
+      "candidateId": "a005",
+      "pdfLabel": "Runemaster",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-champion",
+      "equipmentTags": [
+        "Rune Master"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Runemaster",
+          "armyBook": "Dwarf Champion + Rune Master"
+        }
+      ],
+      "notes": "Rune Master é upgrade do Dwarf Champion (também do Powersuit Champion, mas a figura não é de powersuit); segura Rune Staff",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0
+          ],
+          "front": "arts/runemaster/fino/frente.svg",
+          "back": "arts/runemaster/fino/verso.svg",
+          "canvasMm": [
+            49.064,
+            41.656
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            41.5,
+            48.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            0
+          ],
+          "front": "arts/runemaster/borda/frente.svg",
+          "back": "arts/runemaster/borda/verso.svg",
+          "canvasMm": [
+            52.79,
+            43.519
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            43.4,
+            52.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "engineer",
+      "candidateId": "a006",
+      "pdfLabel": "Engineer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-champion",
+      "equipmentTags": [
+        "Engineer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Engineer",
+          "armyBook": "Dwarf Champion + Engineer"
+        }
+      ],
+      "notes": "Engineer é upgrade só do Dwarf Champion",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            1
+          ],
+          "front": "arts/engineer/fino/frente.svg",
+          "back": "arts/engineer/fino/verso.svg",
+          "canvasMm": [
+            36.83,
+            47.964
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            47.8,
+            36.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            1
+          ],
+          "front": "arts/engineer/borda/frente.svg",
+          "back": "arts/engineer/borda/verso.svg",
+          "canvasMm": [
+            40.217,
+            49.657
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            49.5,
+            40.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetpack-champion-glove-pistols",
+      "candidateId": "a007",
+      "pdfLabel": "Jetpack Champion Glove Pistols",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-champion",
+      "equipmentTags": [
+        "Jetpack|Airdrop Jetpack",
+        "Dual Glove-Pistols"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Jetpack Champion",
+          "armyBook": "Dwarf Champion + Jetpack/Airdrop Jetpack"
+        },
+        {
+          "pdf": "Glove Pistols",
+          "armyBook": "Dual Glove-Pistols"
+        }
+      ],
+      "notes": "Dwarf Champion com upgrade Jetpack ou Airdrop Jetpack",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            2
+          ],
+          "front": "arts/jetpack-champion-glove-pistols/fino/frente.svg",
+          "back": "arts/jetpack-champion-glove-pistols/fino/verso.svg",
+          "canvasMm": [
+            43.603,
+            53.763
+          ],
+          "frontBackIoU": 0.83,
+          "sizeMm": [
+            53.7,
+            43.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            2
+          ],
+          "front": "arts/jetpack-champion-glove-pistols/borda/frente.svg",
+          "back": "arts/jetpack-champion-glove-pistols/borda/verso.svg",
+          "canvasMm": [
+            48.26,
+            56.092
+          ],
+          "frontBackIoU": 0.891,
+          "sizeMm": [
+            56.0,
+            48.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetpack-champion-flamer-pistols",
+      "candidateId": "a008",
+      "pdfLabel": "Jetpack Champion Flamer Pistols",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-champion",
+      "equipmentTags": [
+        "Jetpack|Airdrop Jetpack",
+        "Flamer Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Jetpack Champion",
+          "armyBook": "Dwarf Champion + Jetpack/Airdrop Jetpack"
+        },
+        {
+          "pdf": "Flamer Pistols",
+          "armyBook": "Flamer Pistol"
+        }
+      ],
+      "notes": "rótulo no plural; o herói só leva uma Flamer Pistol (Burst Flamer Pistol é dos Jetpack Warriors)",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            3
+          ],
+          "front": "arts/jetpack-champion-flamer-pistols/fino/frente.svg",
+          "back": "arts/jetpack-champion-flamer-pistols/fino/verso.svg",
+          "canvasMm": [
+            54.906,
+            53.848
+          ],
+          "frontBackIoU": 0.866,
+          "sizeMm": [
+            53.8,
+            54.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            3
+          ],
+          "front": "arts/jetpack-champion-flamer-pistols/borda/frente.svg",
+          "back": "arts/jetpack-champion-flamer-pistols/borda/verso.svg",
+          "canvasMm": [
+            59.563,
+            56.176
+          ],
+          "frontBackIoU": 0.912,
+          "sizeMm": [
+            56.0,
+            59.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "power-suit-champion-storm-rifle",
+      "candidateId": "a009",
+      "pdfLabel": "Power Suit Champion Storm Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "powersuit-champion",
+      "equipmentTags": [
+        "Burst Cyclic Rifle|Assault Burst Cyclic Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Storm Rifle",
+          "armyBook": [
+            "Burst Cyclic Rifle",
+            "Assault Burst Cyclic Rifle"
+          ]
+        }
+      ],
+      "notes": "Storm Rifle (nome antigo) = rifle de dois canos da powersuit",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0
+          ],
+          "front": "arts/power-suit-champion-storm-rifle/fino/frente.svg",
+          "back": "arts/power-suit-champion-storm-rifle/fino/verso.svg",
+          "canvasMm": [
+            49.996,
+            40.979
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            40.9,
+            49.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            0
+          ],
+          "front": "arts/power-suit-champion-storm-rifle/borda/frente.svg",
+          "back": "arts/power-suit-champion-storm-rifle/borda/verso.svg",
+          "canvasMm": [
+            53.382,
+            42.672
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            42.6,
+            53.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "power-suit-champion-shield",
+      "candidateId": "a010",
+      "pdfLabel": "Power Suit Champion Shield",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "powersuit-champion",
+      "equipmentTags": [
+        "Combat Shield"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shield",
+          "armyBook": "Combat Shield"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            1
+          ],
+          "front": "arts/power-suit-champion-shield/fino/frente.svg",
+          "back": "arts/power-suit-champion-shield/fino/verso.svg",
+          "canvasMm": [
+            46.016,
+            40.979
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            40.9,
+            45.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            1
+          ],
+          "front": "arts/power-suit-champion-shield/borda/frente.svg",
+          "back": "arts/power-suit-champion-shield/borda/verso.svg",
+          "canvasMm": [
+            49.403,
+            42.672
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            42.6,
+            49.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "berserker-veteran-dual-axe",
+      "candidateId": "a011",
+      "pdfLabel": "Berserker Veteran Dual Axe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "berserker-veteran",
+      "equipmentTags": [
+        "Dual Heat Axes|Dual Hand Weapons"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Dual Axe",
+          "armyBook": [
+            "Dual Heat Axes",
+            "Dual Hand Weapons"
+          ]
+        }
+      ],
+      "notes": "Dual Hand Weapons é o padrão; Dual Heat Axes a opção com machados",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            2
+          ],
+          "front": "arts/berserker-veteran-dual-axe/fino/frente.svg",
+          "back": "arts/berserker-veteran-dual-axe/fino/verso.svg",
+          "canvasMm": [
+            37.719,
+            39.455
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            39.4,
+            37.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            2
+          ],
+          "front": "arts/berserker-veteran-dual-axe/borda/frente.svg",
+          "back": "arts/berserker-veteran-dual-axe/borda/verso.svg",
+          "canvasMm": [
+            41.106,
+            41.148
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            41.1,
+            40.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "berserker-veteran-great-axe",
+      "candidateId": "a012",
+      "pdfLabel": "Berserker Veteran Great Axe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "berserker-veteran",
+      "equipmentTags": [
+        "Great Heat Axe"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Great Axe",
+          "armyBook": "Great Heat Axe"
+        }
+      ],
+      "notes": "o herói não tem Great Axe simples",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            3
+          ],
+          "front": "arts/berserker-veteran-great-axe/fino/frente.svg",
+          "back": "arts/berserker-veteran-great-axe/fino/verso.svg",
+          "canvasMm": [
+            40.894,
+            44.577
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            44.4,
+            40.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            3
+          ],
+          "front": "arts/berserker-veteran-great-axe/borda/frente.svg",
+          "back": "arts/berserker-veteran-great-axe/borda/verso.svg",
+          "canvasMm": [
+            44.281,
+            46.27
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            46.1,
+            44.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "biker-champion-energy-fist",
+      "candidateId": "a013",
+      "pdfLabel": "Biker Champion Energy Fist",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-champion",
+      "equipmentTags": [
+        "Combat Bike|Pioneer Bike",
+        "Shock Fist"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Biker Champion",
+          "armyBook": "Dwarf Champion + Combat Bike/Pioneer Bike"
+        },
+        {
+          "pdf": "Energy Fist",
+          "armyBook": "Shock Fist"
+        }
+      ],
+      "notes": "Dwarf Champion com Combat Bike ou Pioneer Bike",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0
+          ],
+          "front": "arts/biker-champion-energy-fist/fino/frente.svg",
+          "back": "arts/biker-champion-energy-fist/fino/verso.svg",
+          "canvasMm": [
+            56.981,
+            36.83
+          ],
+          "frontBackIoU": 0.937,
+          "sizeMm": [
+            36.7,
+            56.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            0
+          ],
+          "front": "arts/biker-champion-energy-fist/borda/frente.svg",
+          "back": "arts/biker-champion-energy-fist/borda/verso.svg",
+          "canvasMm": [
+            60.367,
+            38.523
+          ],
+          "frontBackIoU": 0.939,
+          "sizeMm": [
+            38.4,
+            60.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "biker-champion-shotgun",
+      "candidateId": "a014",
+      "pdfLabel": "Biker Champion Shotgun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-champion",
+      "equipmentTags": [
+        "Combat Bike|Pioneer Bike",
+        "Burst Shotgun|Burst Iron-Slug Shotgun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Biker Champion",
+          "armyBook": "Dwarf Champion + Combat Bike/Pioneer Bike"
+        },
+        {
+          "pdf": "Shotgun",
+          "armyBook": [
+            "Burst Shotgun",
+            "Burst Iron-Slug Shotgun"
+          ]
+        }
+      ],
+      "notes": "Dwarf Champion com Combat Bike ou Pioneer Bike",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            1
+          ],
+          "front": "arts/biker-champion-shotgun/fino/frente.svg",
+          "back": "arts/biker-champion-shotgun/fino/verso.svg",
+          "canvasMm": [
+            57.7,
+            41.656
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            41.6,
+            57.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            1
+          ],
+          "front": "arts/biker-champion-shotgun/borda/frente.svg",
+          "back": "arts/biker-champion-shotgun/borda/verso.svg",
+          "canvasMm": [
+            61.087,
+            43.349
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            43.3,
+            60.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-rifle",
+      "candidateId": "a015",
+      "pdfLabel": "Warrior Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-warriors",
+      "equipmentTags": [
+        "Battle Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": "Battle Rifle"
+        }
+      ],
+      "notes": "arma padrão dos Dwarf Warriors",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-rifle/fino/frente.svg",
+          "back": "arts/warrior-rifle/fino/verso.svg",
+          "canvasMm": [
+            28.194,
+            29.464
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            29.4,
+            27.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-rifle/borda/frente.svg",
+          "back": "arts/warrior-rifle/borda/verso.svg",
+          "canvasMm": [
+            31.919,
+            31.327
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            31.2,
+            31.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-shotgun",
+      "candidateId": "a016",
+      "pdfLabel": "Warrior Shotgun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-warriors",
+      "equipmentTags": [
+        "Shotgun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-shotgun/fino/frente.svg",
+          "back": "arts/warrior-shotgun/fino/verso.svg",
+          "canvasMm": [
+            30.014,
+            29.21
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            29.1,
+            29.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-shotgun/borda/frente.svg",
+          "back": "arts/warrior-shotgun/borda/verso.svg",
+          "canvasMm": [
+            33.74,
+            31.75
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            31.0,
+            33.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-iron-blaster",
+      "candidateId": "a017",
+      "pdfLabel": "Warrior Iron Blaster",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-warriors",
+      "equipmentTags": [
+        "Iron-Slug Carbine"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Iron Blaster",
+          "armyBook": "Iron-Slug Carbine"
+        }
+      ],
+      "notes": "nome antigo; troca de todos os rifles, igual ao \"Veteran Iron Blaster\" (padrão dos Iron Veterans é Iron-Slug Carbine)",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-iron-blaster/fino/frente.svg",
+          "back": "arts/warrior-iron-blaster/fino/verso.svg",
+          "canvasMm": [
+            27.474,
+            29.464
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            29.4,
+            27.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-iron-blaster/borda/frente.svg",
+          "back": "arts/warrior-iron-blaster/borda/verso.svg",
+          "canvasMm": [
+            31.2,
+            31.327
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            31.2,
+            31.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-plasma-rifle",
+      "candidateId": "a018",
+      "pdfLabel": "Warrior Plasma Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-warriors",
+      "equipmentTags": [
+        "Plasma Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-plasma-rifle/fino/frente.svg",
+          "back": "arts/warrior-plasma-rifle/fino/verso.svg",
+          "canvasMm": [
+            30.649,
+            29.972
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            29.9,
+            30.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-plasma-rifle/borda/frente.svg",
+          "back": "arts/warrior-plasma-rifle/borda/verso.svg",
+          "canvasMm": [
+            34.375,
+            31.835
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            31.8,
+            34.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-h-rifle",
+      "candidateId": "a019",
+      "pdfLabel": "Warrior H-Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-warriors",
+      "equipmentTags": [
+        "Ore-Shredder Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "H-Rifle",
+          "armyBook": "Ore-Shredder Rifle"
+        }
+      ],
+      "notes": "só por eliminação: é a única arma especial dos Dwarf Warriors sem arte; o \"H\" não confirma. Conferir",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-h-rifle/fino/frente.svg",
+          "back": "arts/warrior-h-rifle/fino/verso.svg",
+          "canvasMm": [
+            30.946,
+            29.295
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            29.2,
+            30.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-h-rifle/borda/frente.svg",
+          "back": "arts/warrior-h-rifle/borda/verso.svg",
+          "canvasMm": [
+            34.671,
+            31.835
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            31.1,
+            34.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-fusion-rifle",
+      "candidateId": "a020",
+      "pdfLabel": "Warrior Fusion Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-warriors",
+      "equipmentTags": [
+        "Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-fusion-rifle/fino/frente.svg",
+          "back": "arts/warrior-fusion-rifle/fino/verso.svg",
+          "canvasMm": [
+            30.141,
+            29.337
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            29.2,
+            29.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-fusion-rifle/borda/frente.svg",
+          "back": "arts/warrior-fusion-rifle/borda/verso.svg",
+          "canvasMm": [
+            33.867,
+            31.2
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            31.1,
+            33.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-flamer",
+      "candidateId": "a021",
+      "pdfLabel": "Warrior Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-warriors",
+      "equipmentTags": [
+        "Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            3
+          ],
+          "front": "arts/warrior-flamer/fino/frente.svg",
+          "back": "arts/warrior-flamer/fino/verso.svg",
+          "canvasMm": [
+            33.655,
+            29.972
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            29.9,
+            33.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            3
+          ],
+          "front": "arts/warrior-flamer/borda/frente.svg",
+          "back": "arts/warrior-flamer/borda/verso.svg",
+          "canvasMm": [
+            37.38,
+            32.089
+          ],
+          "frontBackIoU": 0.972,
+          "sizeMm": [
+            31.8,
+            37.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-missile-launcher",
+      "candidateId": "a022",
+      "pdfLabel": "Warrior Missile Launcher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-warriors",
+      "equipmentTags": [
+        "Missile Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-missile-launcher/fino/frente.svg",
+          "back": "arts/warrior-missile-launcher/fino/verso.svg",
+          "canvasMm": [
+            28.617,
+            29.803
+          ],
+          "frontBackIoU": 0.957,
+          "sizeMm": [
+            29.7,
+            28.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-missile-launcher/borda/frente.svg",
+          "back": "arts/warrior-missile-launcher/borda/verso.svg",
+          "canvasMm": [
+            32.3,
+            31.665
+          ],
+          "frontBackIoU": 0.962,
+          "sizeMm": [
+            31.6,
+            32.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-heavy-machine-gun",
+      "candidateId": "a023",
+      "pdfLabel": "Warrior Heavy Machine Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-warriors",
+      "equipmentTags": [
+        "Heavy Machinegun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "army book escreve Machinegun junto",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-heavy-machine-gun/fino/frente.svg",
+          "back": "arts/warrior-heavy-machine-gun/fino/verso.svg",
+          "canvasMm": [
+            29.21,
+            30.522
+          ],
+          "frontBackIoU": 0.932,
+          "sizeMm": [
+            30.4,
+            29.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-heavy-machine-gun/borda/frente.svg",
+          "back": "arts/warrior-heavy-machine-gun/borda/verso.svg",
+          "canvasMm": [
+            32.935,
+            32.385
+          ],
+          "frontBackIoU": 0.946,
+          "sizeMm": [
+            32.3,
+            32.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-heavy-rail-m-rifle",
+      "candidateId": "a024",
+      "pdfLabel": "Warrior Heavy Rail M-Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-warriors",
+      "equipmentTags": [
+        "Heat-Railcannon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Heavy Rail M-Rifle",
+          "armyBook": "Heat-Railcannon"
+        }
+      ],
+      "notes": "arma pesada \"Rail\"; mesma lógica de Power Suit Heavy M-Rail Gun",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-heavy-rail-m-rifle/fino/frente.svg",
+          "back": "arts/warrior-heavy-rail-m-rifle/fino/verso.svg",
+          "canvasMm": [
+            32.427,
+            30.649
+          ],
+          "frontBackIoU": 0.953,
+          "sizeMm": [
+            30.6,
+            32.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-heavy-rail-m-rifle/borda/frente.svg",
+          "back": "arts/warrior-heavy-rail-m-rifle/borda/verso.svg",
+          "canvasMm": [
+            36.195,
+            32.512
+          ],
+          "frontBackIoU": 0.954,
+          "sizeMm": [
+            32.4,
+            35.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-medic",
+      "candidateId": "a025",
+      "pdfLabel": "Warrior Medic",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-warriors",
+      "equipmentTags": [],
+      "cosmetic": "medic",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose de médico; o army book tem o upgrade Medical Training (um modelo)",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            3
+          ],
+          "front": "arts/warrior-medic/fino/frente.svg",
+          "back": "arts/warrior-medic/fino/verso.svg",
+          "canvasMm": [
+            31.877,
+            34.375
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            34.3,
+            31.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            3
+          ],
+          "front": "arts/warrior-medic/borda/frente.svg",
+          "back": "arts/warrior-medic/borda/verso.svg",
+          "canvasMm": [
+            35.602,
+            36.28
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            36.2,
+            35.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sargeant",
+      "candidateId": "a026",
+      "pdfLabel": "Warrior Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-warriors",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "grafia do PDF \"Sargeant\"; o army book tem Sgt. Hand Weapon / Sgt. Pistol",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            4
+          ],
+          "front": "arts/warrior-sargeant/fino/frente.svg",
+          "back": "arts/warrior-sargeant/fino/verso.svg",
+          "canvasMm": [
+            38.523,
+            50.758
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            50.6,
+            38.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            4
+          ],
+          "front": "arts/warrior-sargeant/borda/frente.svg",
+          "back": "arts/warrior-sargeant/borda/verso.svg",
+          "canvasMm": [
+            42.249,
+            52.62
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            52.5,
+            42.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-spear",
+      "candidateId": "a027",
+      "pdfLabel": "Guardian Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardians",
+      "equipmentTags": [
+        "Energy Spear|Heat Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Spear",
+          "armyBook": [
+            "Energy Spear",
+            "Heat Spear"
+          ]
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/guardian-spear/fino/frente.svg",
+          "back": "arts/guardian-spear/fino/verso.svg",
+          "canvasMm": [
+            36.449,
+            37.169
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            37.1,
+            36.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/guardian-spear/borda/frente.svg",
+          "back": "arts/guardian-spear/borda/verso.svg",
+          "canvasMm": [
+            39.836,
+            38.862
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            38.8,
+            39.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-pistol",
+      "candidateId": "a028",
+      "pdfLabel": "Guardian Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardians",
+      "equipmentTags": [
+        "Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/guardian-pistol/fino/frente.svg",
+          "back": "arts/guardian-pistol/fino/verso.svg",
+          "canvasMm": [
+            34.375,
+            32.808
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            32.7,
+            34.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 50,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/guardian-pistol/borda/frente.svg",
+          "back": "arts/guardian-pistol/borda/verso.svg",
+          "canvasMm": [
+            37.761,
+            34.502
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            34.4,
+            37.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-pick",
+      "candidateId": "a029",
+      "pdfLabel": "Guardian Pick",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardians",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Pick",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "picareta = arma corpo a corpo padrão",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/guardian-pick/fino/frente.svg",
+          "back": "arts/guardian-pick/fino/verso.svg",
+          "canvasMm": [
+            37.677,
+            32.935
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            32.9,
+            37.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            0,
+            1,
+            4
+          ],
+          "front": "arts/guardian-pick/borda/frente.svg",
+          "back": "arts/guardian-pick/borda/verso.svg",
+          "canvasMm": [
+            40.555,
+            34.629
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            34.5,
+            40.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetpack-warrior-pick",
+      "candidateId": "a030",
+      "pdfLabel": "Jetpack Warrior Pick",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "jetpack-warrior",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Pick",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "picareta = Hand Weapon padrão (com Pistol)",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/jetpack-warrior-pick/fino/frente.svg",
+          "back": "arts/jetpack-warrior-pick/fino/verso.svg",
+          "canvasMm": [
+            46.609,
+            50.546
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            50.5,
+            46.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 52,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/jetpack-warrior-pick/borda/frente.svg",
+          "back": "arts/jetpack-warrior-pick/borda/verso.svg",
+          "canvasMm": [
+            51.35,
+            53.001
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            52.9,
+            51.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetpack-warrior-glove-pistols",
+      "candidateId": "a031",
+      "pdfLabel": "Jetpack Warrior Glove Pistols",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "jetpack-warrior",
+      "equipmentTags": [
+        "Dual Glove-Pistols"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Glove Pistols",
+          "armyBook": "Dual Glove-Pistols"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/jetpack-warrior-glove-pistols/fino/frente.svg",
+          "back": "arts/jetpack-warrior-glove-pistols/fino/verso.svg",
+          "canvasMm": [
+            40.344,
+            50.292
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            50.2,
+            40.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 53,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/jetpack-warrior-glove-pistols/borda/frente.svg",
+          "back": "arts/jetpack-warrior-glove-pistols/borda/verso.svg",
+          "canvasMm": [
+            45.0,
+            52.62
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            52.5,
+            44.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "support-mortar",
+      "candidateId": "a032",
+      "pdfLabel": "Support Mortar",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "thunder-support",
+      "equipmentTags": [
+        "Mortar"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Support = Thunder Support (genericName Support Warriors)",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-mortar/fino/frente.svg",
+          "back": "arts/support-mortar/fino/verso.svg",
+          "canvasMm": [
+            35.221,
+            34.629
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            34.5,
+            35.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-mortar/borda/frente.svg",
+          "back": "arts/support-mortar/borda/verso.svg",
+          "canvasMm": [
+            39.878,
+            36.957
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            36.8,
+            39.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "support-missile-launcher",
+      "candidateId": "a033",
+      "pdfLabel": "Support Missile Launcher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "thunder-support",
+      "equipmentTags": [
+        "Missile Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-missile-launcher/fino/frente.svg",
+          "back": "arts/support-missile-launcher/fino/verso.svg",
+          "canvasMm": [
+            35.856,
+            34.375
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            34.3,
+            35.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            0
+          ],
+          "front": "arts/support-missile-launcher/borda/frente.svg",
+          "back": "arts/support-missile-launcher/borda/verso.svg",
+          "canvasMm": [
+            41.317,
+            36.703
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            36.6,
+            41.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "support-machine-gun",
+      "candidateId": "a034",
+      "pdfLabel": "Support Machine Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "thunder-support",
+      "equipmentTags": [
+        "Heavy Machinegun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Machine Gun",
+          "armyBook": "Heavy Machinegun"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-machine-gun/fino/frente.svg",
+          "back": "arts/support-machine-gun/fino/verso.svg",
+          "canvasMm": [
+            38.777,
+            34.713
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            34.6,
+            38.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 56,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-machine-gun/borda/frente.svg",
+          "back": "arts/support-machine-gun/borda/verso.svg",
+          "canvasMm": [
+            43.307,
+            37.042
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            36.9,
+            43.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "support-gravity-cannon",
+      "candidateId": "a035",
+      "pdfLabel": "Support Gravity Cannon",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "thunder-support",
+      "equipmentTags": [
+        "Ore-Shredder Cannon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gravity Cannon",
+          "armyBook": "Ore-Shredder Cannon"
+        }
+      ],
+      "notes": "por eliminação: única arma do Thunder Support sem arte (as outras cinco batem). Conferir",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-gravity-cannon/fino/frente.svg",
+          "back": "arts/support-gravity-cannon/fino/verso.svg",
+          "canvasMm": [
+            34.84,
+            34.502
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            34.4,
+            34.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 57,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-gravity-cannon/borda/frente.svg",
+          "back": "arts/support-gravity-cannon/borda/verso.svg",
+          "canvasMm": [
+            39.497,
+            36.83
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            36.7,
+            39.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "support-c-beamer",
+      "candidateId": "a036",
+      "pdfLabel": "Support C-Beamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "thunder-support",
+      "equipmentTags": [
+        "Mining Beam-Cannon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "C-Beamer",
+          "armyBook": "Mining Beam-Cannon"
+        }
+      ],
+      "notes": "Beamer ~ Beam-Cannon; é a arma padrão da unidade",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-c-beamer/fino/frente.svg",
+          "back": "arts/support-c-beamer/fino/verso.svg",
+          "canvasMm": [
+            34.925,
+            34.629
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            34.5,
+            34.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 58,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-c-beamer/borda/frente.svg",
+          "back": "arts/support-c-beamer/borda/verso.svg",
+          "canvasMm": [
+            39.582,
+            36.957
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            36.8,
+            39.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "support-autocannon",
+      "candidateId": "a037",
+      "pdfLabel": "Support Autocannon",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "thunder-support",
+      "equipmentTags": [
+        "Autocannon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-autocannon/fino/frente.svg",
+          "back": "arts/support-autocannon/fino/verso.svg",
+          "canvasMm": [
+            34.883,
+            34.713
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            34.6,
+            34.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 59,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-autocannon/borda/frente.svg",
+          "back": "arts/support-autocannon/borda/verso.svg",
+          "canvasMm": [
+            39.539,
+            37.042
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            36.9,
+            39.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "berserker-dual-axes",
+      "candidateId": "a038",
+      "pdfLabel": "Berserker Dual Axes",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "berserker",
+      "equipmentTags": [
+        "Dual Hand Weapons"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Dual Axes",
+          "armyBook": "Dual Hand Weapons"
+        }
+      ],
+      "notes": "única opção dupla dos Berserkers",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/berserker-dual-axes/fino/frente.svg",
+          "back": "arts/berserker-dual-axes/fino/verso.svg",
+          "canvasMm": [
+            51.689,
+            33.528
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            33.4,
+            51.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 60,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/berserker-dual-axes/borda/frente.svg",
+          "back": "arts/berserker-dual-axes/borda/verso.svg",
+          "canvasMm": [
+            55.287,
+            35.221
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            35.1,
+            55.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "berserker-grenade-launcher",
+      "candidateId": "a039",
+      "pdfLabel": "Berserker Grenade Launcher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "berserker",
+      "equipmentTags": [
+        "Assault Grenade Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Grenade Launcher",
+          "armyBook": "Assault Grenade Launcher"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            0
+          ],
+          "front": "arts/berserker-grenade-launcher/fino/frente.svg",
+          "back": "arts/berserker-grenade-launcher/fino/verso.svg",
+          "canvasMm": [
+            34.84,
+            34.925
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            34.8,
+            34.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 61,
+          "rows": [
+            0
+          ],
+          "front": "arts/berserker-grenade-launcher/borda/frente.svg",
+          "back": "arts/berserker-grenade-launcher/borda/verso.svg",
+          "canvasMm": [
+            38.227,
+            36.618
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            36.5,
+            37.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "berserker-great-axe",
+      "candidateId": "a040",
+      "pdfLabel": "Berserker Great Axe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "berserker",
+      "equipmentTags": [
+        "Great Axe|Great Heat Axe"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Great Axe",
+          "armyBook": [
+            "Great Axe",
+            "Great Heat Axe"
+          ]
+        }
+      ],
+      "notes": "Great Axe existe igual; incluí Great Heat Axe (arma padrão, sem arte própria)",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/berserker-great-axe/fino/frente.svg",
+          "back": "arts/berserker-great-axe/fino/verso.svg",
+          "canvasMm": [
+            45.085,
+            33.401
+          ],
+          "frontBackIoU": 0.96,
+          "sizeMm": [
+            33.3,
+            44.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 61,
+          "rows": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/berserker-great-axe/borda/frente.svg",
+          "back": "arts/berserker-great-axe/borda/verso.svg",
+          "canvasMm": [
+            48.472,
+            35.094
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            35.0,
+            48.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-axe",
+      "candidateId": "a041",
+      "pdfLabel": "Elite Axe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite",
+      "equipmentTags": [
+        "Heat Axe"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Axe",
+          "armyBook": "Heat Axe"
+        }
+      ],
+      "notes": "arma padrão dos Elites",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/elite-axe/fino/frente.svg",
+          "back": "arts/elite-axe/fino/verso.svg",
+          "canvasMm": [
+            38.269,
+            32.978
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            32.9,
+            38.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 62,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/elite-axe/borda/frente.svg",
+          "back": "arts/elite-axe/borda/verso.svg",
+          "canvasMm": [
+            41.656,
+            34.671
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            34.5,
+            41.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-hammer",
+      "candidateId": "a042",
+      "pdfLabel": "Elite Hammer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite",
+      "equipmentTags": [
+        "Heat Hammer|Great Heat Hammer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hammer",
+          "armyBook": [
+            "Heat Hammer",
+            "Great Heat Hammer"
+          ]
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/elite-hammer/fino/frente.svg",
+          "back": "arts/elite-hammer/fino/verso.svg",
+          "canvasMm": [
+            41.19,
+            33.189
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            33.1,
+            40.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 63,
+          "rows": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "front": "arts/elite-hammer/borda/frente.svg",
+          "back": "arts/elite-hammer/borda/verso.svg",
+          "canvasMm": [
+            44.577,
+            35.179
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            35.1,
+            44.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-shotgun",
+      "candidateId": "a043",
+      "pdfLabel": "Veteran Shotgun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "iron-veteran",
+      "equipmentTags": [
+        "Iron-Slug Shotgun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Veteran",
+          "armyBook": "Iron Veterans"
+        },
+        {
+          "pdf": "Shotgun",
+          "armyBook": "Iron-Slug Shotgun"
+        }
+      ],
+      "notes": "Iron Veterans (genericName Elite Dwarf Warriors) só têm Iron-Slug Shotgun",
+      "styles": {
+        "fino": {
+          "page": 26,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/veteran-shotgun/fino/frente.svg",
+          "back": "arts/veteran-shotgun/fino/verso.svg",
+          "canvasMm": [
+            28.321,
+            34.205
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            34.1,
+            28.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 64,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/veteran-shotgun/borda/frente.svg",
+          "back": "arts/veteran-shotgun/borda/verso.svg",
+          "canvasMm": [
+            32.046,
+            36.068
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            36.0,
+            31.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-iron-blaster",
+      "candidateId": "a044",
+      "pdfLabel": "Veteran Iron Blaster",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "iron-veteran",
+      "equipmentTags": [
+        "Iron-Slug Carbine"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Iron Blaster",
+          "armyBook": "Iron-Slug Carbine"
+        }
+      ],
+      "notes": "arma padrão dos Iron Veterans",
+      "styles": {
+        "fino": {
+          "page": 27,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/veteran-iron-blaster/fino/frente.svg",
+          "back": "arts/veteran-iron-blaster/fino/verso.svg",
+          "canvasMm": [
+            28.067,
+            33.867
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            33.8,
+            27.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 65,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/veteran-iron-blaster/borda/frente.svg",
+          "back": "arts/veteran-iron-blaster/borda/verso.svg",
+          "canvasMm": [
+            31.792,
+            35.729
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            35.6,
+            31.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-heavy-plasma",
+      "candidateId": "a045",
+      "pdfLabel": "Veteran Heavy Plasma",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "iron-veteran",
+      "equipmentTags": [
+        "Plasma Cannon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Heavy Plasma",
+          "armyBook": "Plasma Cannon"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            0
+          ],
+          "front": "arts/veteran-heavy-plasma/fino/frente.svg",
+          "back": "arts/veteran-heavy-plasma/fino/verso.svg",
+          "canvasMm": [
+            31.835,
+            34.925
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            34.8,
+            31.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 66,
+          "rows": [
+            0
+          ],
+          "front": "arts/veteran-heavy-plasma/borda/frente.svg",
+          "back": "arts/veteran-heavy-plasma/borda/verso.svg",
+          "canvasMm": [
+            35.56,
+            36.788
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            36.7,
+            35.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-heavy-fusion",
+      "candidateId": "a046",
+      "pdfLabel": "Veteran Heavy Fusion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "iron-veteran",
+      "equipmentTags": [
+        "Heavy Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Heavy Fusion",
+          "armyBook": "Heavy Fusion Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            1
+          ],
+          "front": "arts/veteran-heavy-fusion/fino/frente.svg",
+          "back": "arts/veteran-heavy-fusion/fino/verso.svg",
+          "canvasMm": [
+            31.538,
+            34.883
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            34.8,
+            31.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 66,
+          "rows": [
+            1
+          ],
+          "front": "arts/veteran-heavy-fusion/borda/frente.svg",
+          "back": "arts/veteran-heavy-fusion/borda/verso.svg",
+          "canvasMm": [
+            35.264,
+            36.745
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            36.7,
+            35.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-heavy-flamer",
+      "candidateId": "a047",
+      "pdfLabel": "Veteran Heavy Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "iron-veteran",
+      "equipmentTags": [
+        "Heavy Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Veteran = Iron Veterans",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            2
+          ],
+          "front": "arts/veteran-heavy-flamer/fino/frente.svg",
+          "back": "arts/veteran-heavy-flamer/fino/verso.svg",
+          "canvasMm": [
+            30.649,
+            34.671
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            34.5,
+            30.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 66,
+          "rows": [
+            2
+          ],
+          "front": "arts/veteran-heavy-flamer/borda/frente.svg",
+          "back": "arts/veteran-heavy-flamer/borda/verso.svg",
+          "canvasMm": [
+            34.375,
+            36.534
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            36.4,
+            34.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-c-beamer",
+      "candidateId": "a048",
+      "pdfLabel": "Veteran C Beamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "iron-veteran",
+      "equipmentTags": [
+        "Mining Beam-Cannon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "C Beamer",
+          "armyBook": "Mining Beam-Cannon"
+        }
+      ],
+      "notes": "mesma arma do \"Support C-Beamer\"",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            3
+          ],
+          "front": "arts/veteran-c-beamer/fino/frente.svg",
+          "back": "arts/veteran-c-beamer/fino/verso.svg",
+          "canvasMm": [
+            29.422,
+            34.883
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            34.8,
+            29.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 66,
+          "rows": [
+            3
+          ],
+          "front": "arts/veteran-c-beamer/borda/frente.svg",
+          "back": "arts/veteran-c-beamer/borda/verso.svg",
+          "canvasMm": [
+            33.147,
+            36.745
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            36.7,
+            32.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-sargeant",
+      "candidateId": "a049",
+      "pdfLabel": "Veteran Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "iron-veteran",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "grafia do PDF \"Sargeant\"; o army book tem Sgt. Hand Weapon / Sgt. Ore-Shredder Pistol",
+      "styles": {
+        "fino": {
+          "page": 29,
+          "rows": [
+            0
+          ],
+          "front": "arts/veteran-sargeant/fino/frente.svg",
+          "back": "arts/veteran-sargeant/fino/verso.svg",
+          "canvasMm": [
+            37.973,
+            39.37
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            39.3,
+            37.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 67,
+          "rows": [
+            0
+          ],
+          "front": "arts/veteran-sargeant/borda/frente.svg",
+          "back": "arts/veteran-sargeant/borda/verso.svg",
+          "canvasMm": [
+            42.63,
+            41.698
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            41.6,
+            42.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-medic",
+      "candidateId": "a050",
+      "pdfLabel": "Veteran Medic",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "iron-veteran",
+      "equipmentTags": [],
+      "cosmetic": "medic",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose de médico; o army book tem o upgrade Medical Training (um modelo)",
+      "styles": {
+        "fino": {
+          "page": 29,
+          "rows": [
+            1
+          ],
+          "front": "arts/veteran-medic/fino/frente.svg",
+          "back": "arts/veteran-medic/fino/verso.svg",
+          "canvasMm": [
+            24.68,
+            31.623
+          ],
+          "frontBackIoU": 0.961,
+          "sizeMm": [
+            31.5,
+            24.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 67,
+          "rows": [
+            1
+          ],
+          "front": "arts/veteran-medic/borda/frente.svg",
+          "back": "arts/veteran-medic/borda/verso.svg",
+          "canvasMm": [
+            29.337,
+            33.951
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            33.9,
+            29.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "miner-pistol",
+      "candidateId": "a051",
+      "pdfLabel": "Miner Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "miner",
+      "equipmentTags": [
+        "Iron-Slug Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Pistol",
+          "armyBook": "Iron-Slug Pistol"
+        }
+      ],
+      "notes": "a pistola dos Miners é Iron-Slug Pistol",
+      "styles": {
+        "fino": {
+          "page": 30,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/miner-pistol/fino/frente.svg",
+          "back": "arts/miner-pistol/fino/verso.svg",
+          "canvasMm": [
+            43.138,
+            34.586
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            34.5,
+            42.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 68,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/miner-pistol/borda/frente.svg",
+          "back": "arts/miner-pistol/borda/verso.svg",
+          "canvasMm": [
+            46.863,
+            36.449
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            36.3,
+            46.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "miner-shotgun",
+      "candidateId": "a052",
+      "pdfLabel": "Miner Shotgun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "miner",
+      "equipmentTags": [
+        "Iron-Slug Shotgun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shotgun",
+          "armyBook": "Iron-Slug Shotgun"
+        }
+      ],
+      "notes": "arma padrão dos Miners",
+      "styles": {
+        "fino": {
+          "page": 31,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/miner-shotgun/fino/frente.svg",
+          "back": "arts/miner-shotgun/fino/verso.svg",
+          "canvasMm": [
+            49.699,
+            34.84
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            34.7,
+            49.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 69,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/miner-shotgun/borda/frente.svg",
+          "back": "arts/miner-shotgun/borda/verso.svg",
+          "canvasMm": [
+            53.425,
+            36.703
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            36.6,
+            53.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "miner-fusion",
+      "candidateId": "a053",
+      "pdfLabel": "Miner Fusion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "miner",
+      "equipmentTags": [
+        "Fusion Rifle|Assault Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Fusion",
+          "armyBook": [
+            "Fusion Rifle",
+            "Assault Fusion Rifle"
+          ]
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 32,
+          "rows": [
+            0
+          ],
+          "front": "arts/miner-fusion/fino/frente.svg",
+          "back": "arts/miner-fusion/fino/verso.svg",
+          "canvasMm": [
+            51.901,
+            35.179
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            35.1,
+            51.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 70,
+          "rows": [
+            0
+          ],
+          "front": "arts/miner-fusion/borda/frente.svg",
+          "back": "arts/miner-fusion/borda/verso.svg",
+          "canvasMm": [
+            55.626,
+            37.042
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            36.9,
+            55.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "miner-flamer",
+      "candidateId": "a054",
+      "pdfLabel": "Miner Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "miner",
+      "equipmentTags": [
+        "Flamer|Assault Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Flamer",
+          "armyBook": [
+            "Flamer",
+            "Assault Flamer"
+          ]
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 32,
+          "rows": [
+            1
+          ],
+          "front": "arts/miner-flamer/fino/frente.svg",
+          "back": "arts/miner-flamer/fino/verso.svg",
+          "canvasMm": [
+            52.07,
+            35.391
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            35.3,
+            51.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 70,
+          "rows": [
+            1
+          ],
+          "front": "arts/miner-flamer/borda/frente.svg",
+          "back": "arts/miner-flamer/borda/verso.svg",
+          "canvasMm": [
+            55.795,
+            37.253
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            37.2,
+            55.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "platform-m-rifle",
+      "candidateId": "a055",
+      "pdfLabel": "Platform M-Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "miner",
+      "equipmentTags": [
+        "Heat-Rifle Platform"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Platform M-Rifle",
+          "armyBook": "Heat-Rifle Platform"
+        }
+      ],
+      "notes": "plataformas são opções dos Miners; a outra é a Heat-Drill Platform",
+      "styles": {
+        "fino": {
+          "page": 32,
+          "rows": [
+            2
+          ],
+          "front": "arts/platform-m-rifle/fino/frente.svg",
+          "back": "arts/platform-m-rifle/fino/verso.svg",
+          "canvasMm": [
+            39.836,
+            35.729
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            35.6,
+            39.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 70,
+          "rows": [
+            2
+          ],
+          "front": "arts/platform-m-rifle/borda/frente.svg",
+          "back": "arts/platform-m-rifle/borda/verso.svg",
+          "canvasMm": [
+            43.519,
+            37.592
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            37.5,
+            43.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "platform-drill",
+      "candidateId": "a056",
+      "pdfLabel": "Platform Drill",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "miner",
+      "equipmentTags": [
+        "Heat-Drill Platform"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Platform Drill",
+          "armyBook": "Heat-Drill Platform"
+        }
+      ],
+      "notes": "opção dos Miners",
+      "styles": {
+        "fino": {
+          "page": 32,
+          "rows": [
+            3
+          ],
+          "front": "arts/platform-drill/fino/frente.svg",
+          "back": "arts/platform-drill/fino/verso.svg",
+          "canvasMm": [
+            39.539,
+            35.264
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            35.1,
+            39.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 70,
+          "rows": [
+            3
+          ],
+          "front": "arts/platform-drill/borda/frente.svg",
+          "back": "arts/platform-drill/borda/verso.svg",
+          "canvasMm": [
+            43.265,
+            37.126
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            37.0,
+            43.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sniper-v1",
+      "candidateId": "a057",
+      "pdfLabel": "Sniper V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "sniper-team",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Sniper = Sniper Team (genericName Snipers); pose 1",
+      "styles": {
+        "fino": {
+          "page": 33,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/sniper-v1/fino/frente.svg",
+          "back": "arts/sniper-v1/fino/verso.svg",
+          "canvasMm": [
+            27.94,
+            29.887
+          ],
+          "frontBackIoU": 0.953,
+          "sizeMm": [
+            29.8,
+            27.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 71,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/sniper-v1/borda/frente.svg",
+          "back": "arts/sniper-v1/borda/verso.svg",
+          "canvasMm": [
+            31.665,
+            31.75
+          ],
+          "frontBackIoU": 0.962,
+          "sizeMm": [
+            31.7,
+            31.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sniper-v2",
+      "candidateId": "a058",
+      "pdfLabel": "Sniper V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "sniper-team",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose 2",
+      "styles": {
+        "fino": {
+          "page": 33,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/sniper-v2/fino/frente.svg",
+          "back": "arts/sniper-v2/fino/verso.svg",
+          "canvasMm": [
+            28.025,
+            27.686
+          ],
+          "frontBackIoU": 0.953,
+          "sizeMm": [
+            27.6,
+            27.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 71,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/sniper-v2/borda/frente.svg",
+          "back": "arts/sniper-v2/borda/verso.svg",
+          "canvasMm": [
+            31.75,
+            29.549
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            29.5,
+            31.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "power-suit-storm-rifle",
+      "candidateId": "a059",
+      "pdfLabel": "Power Suit Storm Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "powersuit-guard",
+      "equipmentTags": [
+        "Burst Cyclic Rifle|Assault Cyclic Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Storm Rifle",
+          "armyBook": [
+            "Burst Cyclic Rifle",
+            "Assault Cyclic Rifle"
+          ]
+        }
+      ],
+      "notes": "Power Suit = Powersuit Guard (genericName Powersuit Dwarfs)",
+      "styles": {
+        "fino": {
+          "page": 34,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/power-suit-storm-rifle/fino/frente.svg",
+          "back": "arts/power-suit-storm-rifle/fino/verso.svg",
+          "canvasMm": [
+            47.921,
+            38.947
+          ],
+          "frontBackIoU": 0.954,
+          "sizeMm": [
+            38.9,
+            47.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 72,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/power-suit-storm-rifle/borda/frente.svg",
+          "back": "arts/power-suit-storm-rifle/borda/verso.svg",
+          "canvasMm": [
+            51.308,
+            40.64
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            40.6,
+            51.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "power-suit-plasma-pistol",
+      "candidateId": "a060",
+      "pdfLabel": "Power Suit Plasma Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "powersuit-guard",
+      "equipmentTags": [
+        "Plasma Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 35,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/power-suit-plasma-pistol/fino/frente.svg",
+          "back": "arts/power-suit-plasma-pistol/fino/verso.svg",
+          "canvasMm": [
+            44.408,
+            38.735
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            38.6,
+            44.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 73,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/power-suit-plasma-pistol/borda/frente.svg",
+          "back": "arts/power-suit-plasma-pistol/borda/verso.svg",
+          "canvasMm": [
+            47.879,
+            40.428
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            40.3,
+            47.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "power-suit-shield",
+      "candidateId": "a061",
+      "pdfLabel": "Power Suit Shield",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "powersuit-guard",
+      "equipmentTags": [
+        "Combat Shield"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shield",
+          "armyBook": "Combat Shield"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 36,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/power-suit-shield/fino/frente.svg",
+          "back": "arts/power-suit-shield/fino/verso.svg",
+          "canvasMm": [
+            46.99,
+            38.693
+          ],
+          "frontBackIoU": 0.95,
+          "sizeMm": [
+            38.6,
+            46.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 74,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/power-suit-shield/borda/frente.svg",
+          "back": "arts/power-suit-shield/borda/verso.svg",
+          "canvasMm": [
+            50.377,
+            40.386
+          ],
+          "frontBackIoU": 0.959,
+          "sizeMm": [
+            40.3,
+            50.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "power-suit-heavy-m-rail-gun",
+      "candidateId": "a062",
+      "pdfLabel": "Power Suit Heavy M-Rail Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "powersuit-guard",
+      "equipmentTags": [
+        "Heat-Railcannon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Heavy M-Rail Gun",
+          "armyBook": "Heat-Railcannon"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 37,
+          "rows": [
+            0
+          ],
+          "front": "arts/power-suit-heavy-m-rail-gun/fino/frente.svg",
+          "back": "arts/power-suit-heavy-m-rail-gun/fino/verso.svg",
+          "canvasMm": [
+            42.376,
+            36.534
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            36.4,
+            42.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 75,
+          "rows": [
+            0
+          ],
+          "front": "arts/power-suit-heavy-m-rail-gun/borda/frente.svg",
+          "back": "arts/power-suit-heavy-m-rail-gun/borda/verso.svg",
+          "canvasMm": [
+            45.762,
+            38.227
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            38.1,
+            45.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "power-suit-machine-gun",
+      "candidateId": "a063",
+      "pdfLabel": "Power Suit Machine Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "powersuit-guard",
+      "equipmentTags": [
+        "Heavy Machinegun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Machine Gun",
+          "armyBook": "Heavy Machinegun"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 37,
+          "rows": [
+            1
+          ],
+          "front": "arts/power-suit-machine-gun/fino/frente.svg",
+          "back": "arts/power-suit-machine-gun/fino/verso.svg",
+          "canvasMm": [
+            36.449,
+            36.534
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            36.4,
+            36.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 75,
+          "rows": [
+            1
+          ],
+          "front": "arts/power-suit-machine-gun/borda/frente.svg",
+          "back": "arts/power-suit-machine-gun/borda/verso.svg",
+          "canvasMm": [
+            39.836,
+            38.227
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            38.1,
+            39.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "power-suit-heavy-plasma",
+      "candidateId": "a064",
+      "pdfLabel": "Power Suit Heavy Plasma",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "powersuit-guard",
+      "equipmentTags": [
+        "Plasma Cannon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Heavy Plasma",
+          "armyBook": "Plasma Cannon"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 37,
+          "rows": [
+            2
+          ],
+          "front": "arts/power-suit-heavy-plasma/fino/frente.svg",
+          "back": "arts/power-suit-heavy-plasma/fino/verso.svg",
+          "canvasMm": [
+            38.1,
+            36.745
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            36.7,
+            37.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 75,
+          "rows": [
+            2
+          ],
+          "front": "arts/power-suit-heavy-plasma/borda/frente.svg",
+          "back": "arts/power-suit-heavy-plasma/borda/verso.svg",
+          "canvasMm": [
+            41.487,
+            38.439
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            38.4,
+            41.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "biker-pistol",
+      "candidateId": "a065",
+      "pdfLabel": "Biker Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-biker",
+      "equipmentTags": [
+        "Pistol|Iron-Slug Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Pistol",
+          "armyBook": [
+            "Pistol",
+            "Iron-Slug Pistol"
+          ]
+        }
+      ],
+      "notes": "Biker = Dwarf Bikers",
+      "styles": {
+        "fino": {
+          "page": 38,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/biker-pistol/fino/frente.svg",
+          "back": "arts/biker-pistol/fino/verso.svg",
+          "canvasMm": [
+            60.071,
+            37.634
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            37.5,
+            59.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 76,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/biker-pistol/borda/frente.svg",
+          "back": "arts/biker-pistol/borda/verso.svg",
+          "canvasMm": [
+            63.923,
+            39.328
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            39.2,
+            63.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "biker-shotgun",
+      "candidateId": "a066",
+      "pdfLabel": "Biker Shotgun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-biker",
+      "equipmentTags": [
+        "Shotgun|Iron-Slug Shotgun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shotgun",
+          "armyBook": [
+            "Shotgun",
+            "Iron-Slug Shotgun"
+          ]
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 39,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/biker-shotgun/fino/frente.svg",
+          "back": "arts/biker-shotgun/fino/verso.svg",
+          "canvasMm": [
+            49.149,
+            34.586
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            34.5,
+            48.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 77,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/biker-shotgun/borda/frente.svg",
+          "back": "arts/biker-shotgun/borda/verso.svg",
+          "canvasMm": [
+            52.536,
+            36.28
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            36.2,
+            52.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "biker-shotgun-2",
+      "candidateId": "a067",
+      "pdfLabel": "Biker Shotgun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dwarf-biker",
+      "equipmentTags": [
+        "Shotgun|Iron-Slug Shotgun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shotgun",
+          "armyBook": [
+            "Shotgun",
+            "Iron-Slug Shotgun"
+          ]
+        }
+      ],
+      "notes": "mesmo rótulo de a066 e figura quase igual (candidato separado, 1 cópia)",
+      "styles": {
+        "fino": {
+          "page": 39,
+          "rows": [
+            2
+          ],
+          "front": "arts/biker-shotgun-2/fino/frente.svg",
+          "back": "arts/biker-shotgun-2/fino/verso.svg",
+          "canvasMm": [
+            49.107,
+            35.094
+          ],
+          "frontBackIoU": 0.96,
+          "sizeMm": [
+            34.9,
+            48.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 77,
+          "rows": [
+            2
+          ],
+          "front": "arts/biker-shotgun-2/borda/frente.svg",
+          "back": "arts/biker-shotgun-2/borda/verso.svg",
+          "canvasMm": [
+            52.536,
+            37.042
+          ],
+          "frontBackIoU": 0.947,
+          "sizeMm": [
+            36.9,
+            52.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-pick-borda",
+      "candidateId": "a068",
+      "pdfLabel": "Guardian Pick",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardians",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Pick",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "só estilo borda; parece a mesma figura de a029 (cópias da borda separadas em dois grupos)",
+      "styles": {
+        "borda": {
+          "page": 51,
+          "rows": [
+            2,
+            3
+          ],
+          "front": "arts/guardian-pick-borda/borda/frente.svg",
+          "back": "arts/guardian-pick-borda/borda/verso.svg",
+          "canvasMm": [
+            40.259,
+            34.629
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            34.5,
+            40.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetpack-warrior-pick-borda",
+      "candidateId": "a069",
+      "pdfLabel": "Jetpack Warrior Pick",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "jetpack-warrior",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Pick",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "só estilo borda; parece a mesma figura de a030",
+      "styles": {
+        "borda": {
+          "page": 52,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/jetpack-warrior-pick-borda/borda/frente.svg",
+          "back": "arts/jetpack-warrior-pick-borda/borda/verso.svg",
+          "canvasMm": [
+            51.562,
+            53.001
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            52.9,
+            51.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo",
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "support-missile-launcher-borda",
+      "candidateId": "a070",
+      "pdfLabel": "Support Missile Launcher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "thunder-support",
+      "equipmentTags": [
+        "Missile Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só estilo borda; parece a mesma figura de a033",
+      "styles": {
+        "borda": {
+          "page": 55,
+          "rows": [
+            1,
+            2
+          ],
+          "front": "arts/support-missile-launcher-borda/borda/frente.svg",
+          "back": "arts/support-missile-launcher-borda/borda/verso.svg",
+          "canvasMm": [
+            40.979,
+            36.703
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            36.6,
+            40.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-hammer-borda",
+      "candidateId": "a071",
+      "pdfLabel": "Elite Hammer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite",
+      "equipmentTags": [
+        "Heat Hammer|Great Heat Hammer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hammer",
+          "armyBook": [
+            "Heat Hammer",
+            "Great Heat Hammer"
+          ]
+        }
+      ],
+      "notes": "só estilo borda; parece a mesma figura de a042",
+      "styles": {
+        "borda": {
+          "page": 63,
+          "rows": [
+            3
+          ],
+          "front": "arts/elite-hammer-borda/borda/frente.svg",
+          "back": "arts/elite-hammer-borda/borda/verso.svg",
+          "canvasMm": [
+            44.577,
+            35.179
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            35.1,
+            44.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

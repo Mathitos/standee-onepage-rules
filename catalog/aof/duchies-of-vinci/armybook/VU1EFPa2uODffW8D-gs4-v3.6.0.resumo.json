@@ -1,0 +1,1166 @@
+{
+  "armyBook": {
+    "id": "VU1EFPa2uODffW8D",
+    "nome": "Duchies of Vinci",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:32.454Z",
+    "sistema": "age-of-fantasy",
+    "sistemaId": 4
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "4xFAaqz",
+      "nome": "Vinci Leader",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Armblades"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Armblades",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Armblades",
+          "ganha": [
+            "Master Lance"
+          ]
+        },
+        {
+          "secao": "Replace Dual Armblades",
+          "ganha": [
+            "Poisoned Knives",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Armblades",
+          "ganha": [
+            "Rapid Flamebolt Crossbow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Dual Armblades",
+          "ganha": [
+            "Dual Handbows"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace Poisoned Knives",
+          "ganha": [
+            "Handbow"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Flamebolt Crossbow",
+          "ganha": [
+            "Rapid Shotbow"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Flamebolt Crossbow",
+          "ganha": [
+            "Rapid Crossbow"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Flamebolt Crossbow",
+          "ganha": [
+            "Rapid Slayerbolt Crossbow"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Flamebolt Crossbow",
+          "ganha": [
+            "Rapid Handbow"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Flamebolt Crossbow",
+          "ganha": [
+            "Automa Pigeon-Bombs"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Automa-Horse"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Automa Pet"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Stealth Assassin"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Automa-Boar"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Great Automa-Bird"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sawblade Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Bot-Bow Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Mindstone Protector"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Munitioner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "War Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Assassin"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Army Standard Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Captain"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "-9F1FDu",
+      "nome": "Vinci Scholar",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "30"
+      },
+      "armas": [
+        "Master Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Master Hand Weapon",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Master Hand Weapon",
+          "ganha": [
+            "Master Spear"
+          ]
+        },
+        {
+          "secao": "Replace Master Hand Weapon",
+          "ganha": [
+            "Sleeve-Shooter",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Master Hand Weapon",
+          "ganha": [
+            "Cog-Explosives",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Master Hand Weapon",
+          "ganha": [
+            "Alchemist Staff"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Sleeve-Shooter",
+          "ganha": [
+            "Handbow"
+          ]
+        },
+        {
+          "secao": "Replace Cog-Explosives",
+          "ganha": [
+            "Rapid Handbow"
+          ]
+        },
+        {
+          "secao": "Replace Cog-Explosives",
+          "ganha": [
+            "Automa Pigeon-Bombs"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Automa-Horse"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Automa Helper"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sawblade Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Bot-Bow Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Mindstone Protector"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Munitioner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Captain"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Alchemist"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Inventor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gh9JJOe",
+      "nome": "Militia",
+      "tamanho": 10,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Upgrade up to two models with one",
+          "ganha": [
+            "Sawblade Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade up to two models with one",
+          "ganha": [
+            "Markerflare Drone"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jVLKMIF",
+      "nome": "Harlequins",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Jester Club"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Jester Clubs",
+          "ganha": [
+            "Juggler Bombs",
+            "Strike",
+            "Juggler"
+          ]
+        },
+        {
+          "secao": "Replace one Jester Club",
+          "ganha": [
+            "Great Jester Club"
+          ]
+        },
+        {
+          "secao": "Replace one Juggler Bombs",
+          "ganha": [
+            "Great Juggler Bombs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gAsJjC8",
+      "nome": "Automa Drones",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Bot-Sawblades"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Bot-Sawblades",
+          "ganha": [
+            "Bot-Bows",
+            "Strike"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Zpo3LF7",
+      "nome": "Assassins",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Armblades"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Dual Armblades",
+          "ganha": [
+            "Poisoned Knives"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Assassin Handbow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "00sI1ix",
+      "nome": "Automa Guard",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "30"
+      },
+      "armas": [
+        "Arm-Bow",
+        "Automa Sword"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Self-Repairing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2I2swvL",
+      "nome": "Aerea Guard",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Dual Claws",
+          "ganha": [
+            "Rapid Flamebolt Crossbow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Claws",
+          "ganha": [
+            "Rapid Shortbow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Claws",
+          "ganha": [
+            "Rapid Slayerbolt Crossbow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Claws",
+          "ganha": [
+            "Rapid Crossbow",
+            "Strike"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Cfl-Phe",
+      "nome": "Automa Brutes",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Rapid Flamebolt Crossbow",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Rapid Flamebolt Crossbows and Strikes",
+          "ganha": [
+            "Handbow",
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace all Rapid Flamebolt Crossbows",
+          "ganha": [
+            "Rapid Shotbow"
+          ]
+        },
+        {
+          "secao": "Replace all Rapid Flamebolt Crossbows",
+          "ganha": [
+            "Rapid Crossbow"
+          ]
+        },
+        {
+          "secao": "Replace all Rapid Flamebolt Crossbows",
+          "ganha": [
+            "Rapid Slayerbolt Crossbow"
+          ]
+        },
+        {
+          "secao": "Replace all Rapid Flamebolt Crossbows",
+          "ganha": [
+            "Rapid Handbow"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Self-Repairing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OciwHsc",
+      "nome": "Scouts",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Handbow",
+        "Dagger"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Handbows and Daggers",
+          "ganha": [
+            "Dual Handbows"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Metal Spurs"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Metal Spurs"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Raider Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sawblade Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Bot-Bow Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Markerflare Drone"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2QC06M",
+      "nome": "City Guard",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Flamebolt Crossbow",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Flamebolt Crossbows",
+          "ganha": [
+            "Slayerbolt Crossbow"
+          ]
+        },
+        {
+          "secao": "Replace all Flamebolt Crossbows",
+          "ganha": [
+            "Crossbow"
+          ]
+        },
+        {
+          "secao": "Replace all Flamebolt Crossbows",
+          "ganha": [
+            "Shotbow"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Bot-Bow Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Markerflare Drone"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MAIEJ2g",
+      "nome": "Snipers",
+      "tamanho": 3,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Snipebow",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Snipebows",
+          "ganha": [
+            "Slayerbolt Snipebow"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Pavise Shield"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Markerflare Drone"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pRfAhrc",
+      "nome": "Automa-Horse Riders",
+      "tamanho": 5,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Lance"
+      ],
+      "itens": [
+        {
+          "nome": "Trample",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace all Lances and Tramples",
+          "ganha": [
+            "Flamebolt Crossbow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Lances and Tramples",
+          "ganha": [
+            "Crossbow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Lances and Tramples",
+          "ganha": [
+            "Slayerbolt Crossbow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Lances and Tramples",
+          "ganha": [
+            "Shotbow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Lances",
+          "ganha": [
+            "Handbow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tLjz9Ia",
+      "nome": "Automa-Boar Riders",
+      "tamanho": 3,
+      "bases": {
+        "round": "75x46",
+        "square": "75x50"
+      },
+      "armas": [
+        "Lance"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace one Lance",
+          "ganha": [
+            "Flametip Lance"
+          ]
+        },
+        {
+          "secao": "Replace one Lance",
+          "ganha": [
+            "Drilltip Lance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Un5rOt_",
+      "nome": "Support Wagon",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Support Crossbow",
+        "Hooves"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Support Crossbow",
+          "ganha": [
+            "Rapid Flamebolt Crossbow"
+          ]
+        },
+        {
+          "secao": "Replace Support Crossbow",
+          "ganha": [
+            "Light Mortar"
+          ]
+        },
+        {
+          "secao": "Replace Support Crossbow",
+          "ganha": [
+            "Rapid Crossbow"
+          ]
+        },
+        {
+          "secao": "Replace Support Crossbow",
+          "ganha": [
+            "Rapid Slayerbolt Crossbow"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Spotting Scope"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BVHvAzH",
+      "nome": "Vita Aerea",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Flamebolt Crossbow Crew",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Flamebolt Crossbow Crew",
+          "ganha": [
+            "Crossbow Crew"
+          ]
+        },
+        {
+          "secao": "Replace Flamebolt Crossbow Crew",
+          "ganha": [
+            "Slayerbolt Crossbow Crew"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Spotting Scope"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Forward Deployment"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Heavy Bombs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XKFnJyY",
+      "nome": "Carro Armato",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Cannon Battery",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Cannon Battery",
+          "ganha": [
+            "Heavy Cannon Battery"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Turret Flamebolt Crossbow"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Turret Crossbow"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Turret Slayerbolt Crossbow"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Iron Plow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bG1Baax",
+      "nome": "Vinci Titan",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Side-Cannon Array",
+        "Mouth-Cannon",
+        "Stomp"
+      ],
+      "itens": [
+        {
+          "nome": "Vulcolato Bull Titan",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Vulcolato Bull Titan",
+          "ganha": [
+            "Paretemi Bear Titan"
+          ]
+        },
+        {
+          "secao": "Replace Vulcolato Bull Titan",
+          "ganha": [
+            "Milfilumi Turtle Titan"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Cargo Hold"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B5FFpCx",
+      "nome": "Vinci Artillery",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Spingarde",
+        "Crew"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Spingarde",
+          "ganha": [
+            "Ribauldequin"
+          ]
+        },
+        {
+          "secao": "Replace Spingarde",
+          "ganha": [
+            "Scout-Bomber Slingshot"
+          ]
+        },
+        {
+          "secao": "Replace Spingarde",
+          "ganha": [
+            "Heavy Spingarde"
+          ]
+        },
+        {
+          "secao": "Replace Spingarde",
+          "ganha": [
+            "Heavy Mortar"
+          ]
+        },
+        {
+          "secao": "Replace Spingarde",
+          "ganha": [
+            "Scout-Shooter Slingshot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6yC90go",
+      "nome": "Gereppetto",
+      "tamanho": 1,
+      "bases": {
+        "round": "50",
+        "square": "50"
+      },
+      "armas": [
+        "Dual Rapid Handbows",
+        "Dual Brute Claws",
+        "Stomp"
+      ],
+      "itens": [
+        {
+          "nome": "Lie to Me",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Paternal Bond"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XolP2rO",
+      "nome": "Mambrecco",
+      "tamanho": 1,
+      "bases": {
+        "round": "75x46",
+        "square": "75x50"
+      },
+      "armas": [
+        "Bull Horns",
+        "Lance of Memory"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Ferrona's Revenge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wv6w7rH",
+      "nome": "Mantissa",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Eyebiter Snipebow",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": []
+    },
+    {
+      "id": "5hbo5g4",
+      "nome": "Lucrezza",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Carmia",
+        "Cressian Falchion"
+      ],
+      "itens": [
+        {
+          "nome": "Veteran Enforcer",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Veteran Enforcer",
+          "ganha": [
+            "Veteran Enforcer - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NaqcZmt",
+      "nome": "Zairetia",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Toxin Bellow",
+        "Strike"
+      ],
+      "itens": [
+        {
+          "nome": "Experimental Tinctures",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Experimental Tinctures",
+          "ganha": [
+            "Alchemist"
+          ]
+        },
+        {
+          "secao": "Replace Experimental Tinctures",
+          "ganha": [
+            "Experimental Tinctures - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0Is_TGd",
+      "nome": "Ignatio",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Sleeve-Shooter",
+        "Camping Shovel"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Mindstone Detector"
+          ]
+        }
+      ]
+    }
+  ]
+}

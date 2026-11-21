@@ -1,0 +1,430 @@
+{
+ "packId": "daemons-of-plague",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "AOF",
+   "slug": "age-of-fantasy",
+   "armyForgeId": 4
+  },
+  {
+   "code": "AOFS",
+   "slug": "age-of-fantasy-skirmish",
+   "armyForgeId": 5
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/vJuokTQpJWj3_MrJ-gs4-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/vJuokTQpJWj3_MrJ-gs5-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-*.png, army books v3.6.0 (os dois sistemas).",
+ "unidades": {
+  "champion-of-plague": {
+   "armyForgeUnitId": "7NfheZg"
+  },
+  "plague-warriors": {
+   "armyForgeUnitId": "atz33g2"
+  },
+  "plague-furies": {
+   "armyForgeUnitId": "1d1ydfq"
+  },
+  "plague-fly-riders": {
+   "armyForgeUnitId": "3d71gbH"
+  },
+  "plague-swarms": {
+   "armyForgeUnitId": "beTfybt"
+  },
+  "harbinger-of-plague": {
+   "armyForgeUnitId": "vB9x-hR"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "champion-gauntlet",
+   "rotulo": "Champion Gauntlet",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-plague",
+   "equipmentTags": [
+    "Daemon Gauntlet"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of Plague"
+    },
+    {
+     "pdf": "Gauntlet",
+     "armyBook": "Daemon Gauntlet"
+    }
+   ],
+   "notas": "figura de guerreiro (não Fury) = Champion of Plague"
+  },
+  "a002": {
+   "artId": "champion-spear",
+   "rotulo": "Champion Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-plague",
+   "equipmentTags": [
+    "Daemon Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of Plague"
+    },
+    {
+     "pdf": "Spear",
+     "armyBook": "Daemon Spear"
+    }
+   ],
+   "notas": ""
+  },
+  "a003": {
+   "artId": "champion-sword",
+   "rotulo": "Champion Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-plague",
+   "equipmentTags": [
+    "Plague Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of Plague"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Plague Sword"
+    }
+   ],
+   "notas": "espada da facção; poderia ser Infected Sword"
+  },
+  "a004": {
+   "artId": "warrior-sword",
+   "rotulo": "Warrior Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [
+    "Plague Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Plague Sword"
+    }
+   ],
+   "notas": "Warrior = Plague Warriors; Plague Sword é a arma padrão"
+  },
+  "a005": {
+   "artId": "warrior-sickle",
+   "rotulo": "Warrior Sickle",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sickle",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "foice de uma mão; o army book não tem foice; Hand Weapon (poderia ser Infected Sword)"
+  },
+  "a006": {
+   "artId": "warrior-greataxe",
+   "rotulo": "Warrior Greataxe",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Greataxe",
+     "armyBook": "Great Weapon"
+    }
+   ],
+   "notas": ""
+  },
+  "a007": {
+   "artId": "warrior-spear",
+   "rotulo": "Warrior Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Warrior = Plague Warriors"
+  },
+  "a008": {
+   "artId": "warrior-mace",
+   "rotulo": "Warrior Mace",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Mace",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "maça de uma mão; o army book não tem maça"
+  },
+  "a009": {
+   "artId": "warrior-halberd",
+   "rotulo": "Warrior Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Warrior = Plague Warriors"
+  },
+  "a010": {
+   "artId": "warrior-sargeant",
+   "rotulo": "Warrior Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "o PDF grafa Sargeant"
+  },
+  "a011": {
+   "artId": "warrior-musician",
+   "rotulo": "Warrior Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a012": {
+   "artId": "warrior-banner",
+   "rotulo": "Warrior Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a013": {
+   "artId": "fury-v1",
+   "rotulo": "Fury (V1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-furies",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Fury = Plague Furies"
+  },
+  "a014": {
+   "artId": "fury-v2",
+   "rotulo": "Fury (V2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-furies",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Fury = Plague Furies"
+  },
+  "a015": {
+   "artId": "fly-rider",
+   "rotulo": "Fly Rider",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-fly-riders",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só estilo fino; a024 é a versão borda"
+  },
+  "a016": {
+   "artId": "sargeant",
+   "rotulo": "Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-fly-riders",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sargeant",
+     "armyBook": "Plague Fly Riders (Sergeant)"
+    }
+   ],
+   "notas": "o rótulo não diz a unidade; a figura é um Fly Rider. Só estilo fino; a025 é a versão borda"
+  },
+  "a017": {
+   "artId": "banner",
+   "rotulo": "Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-fly-riders",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Banner",
+     "armyBook": "Plague Fly Riders (Banner)"
+    }
+   ],
+   "notas": "o rótulo não diz a unidade; a figura é um Fly Rider"
+  },
+  "a018": {
+   "artId": "musician",
+   "rotulo": "Musician",
+   "confiancaRotulo": "baixa",
+   "unitKey": "plague-fly-riders",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Musician",
+     "armyBook": "Plague Fly Riders (Musician)"
+    }
+   ],
+   "notas": "o quadro do rótulo traz também \"Banner\" (vazado do vizinho); a figura toca corneta, então Musician. Fly Rider; só estilo fino, a026 é a versão borda"
+  },
+  "a019": {
+   "artId": "swarm-v1",
+   "rotulo": "Swarm (V1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-swarms",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Swarm = Plague Swarms"
+  },
+  "a020": {
+   "artId": "swarm-v2",
+   "rotulo": "Swarm (V2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-swarms",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Swarm = Plague Swarms"
+  },
+  "a021": {
+   "artId": "swarm-v3",
+   "rotulo": "Swarm (V3)",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-swarms",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Swarm = Plague Swarms"
+  },
+  "a022": {
+   "artId": "harbinger",
+   "rotulo": "Harbinger",
+   "confiancaRotulo": "alta",
+   "unitKey": "harbinger-of-plague",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Harbinger = Harbinger of Plague (sem \"Ascended\"); tamanho compatível com a base 90x52 contando as asas"
+  },
+  "a023": {
+   "artId": "warrior-sword-borda",
+   "rotulo": "Warrior Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [
+    "Plague Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Plague Sword"
+    }
+   ],
+   "notas": "cópia borda extra de a004 (que já tem fino e borda); Plague Sword"
+  },
+  "a024": {
+   "artId": "fly-rider-borda",
+   "rotulo": "Fly Rider",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-fly-riders",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "versão borda de a015 (o pareamento falhou)"
+  },
+  "a025": {
+   "artId": "sargeant-borda",
+   "rotulo": "Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "plague-fly-riders",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sargeant",
+     "armyBook": "Plague Fly Riders (Sergeant)"
+    }
+   ],
+   "notas": "versão borda de a016 (o pareamento falhou); figura é Fly Rider"
+  },
+  "a026": {
+   "artId": "musician-borda",
+   "rotulo": "Musician",
+   "confiancaRotulo": "baixa",
+   "unitKey": "plague-fly-riders",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Musician",
+     "armyBook": "Plague Fly Riders (Musician)"
+    }
+   ],
+   "notas": "versão borda de a018 (o pareamento falhou); o quadro também traz \"Banner\" vazado; figura toca corneta"
+  }
+ }
+}

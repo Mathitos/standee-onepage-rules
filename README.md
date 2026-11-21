@@ -9,8 +9,8 @@ Transforma listas do [Army Forge](https://army-forge.onepagerules.com) (One Page
 | Parte | Situação |
 |---|---|
 | Importar lista ("Share as Text") | Site, com testes |
-| Catálogo de artes a partir do PDF | 22 facções (9 sci-fi, 13 de fantasia), 1137 artes em SVG a 600 dpi; só o HDF tem rótulos e unidades associados (8 artes) |
-| Escolha de arte e base | Site: automática onde há associação; nas outras facções, o usuário escolhe pela figura |
+| Catálogo de artes a partir do PDF | 22 facções (9 sci-fi, 13 de fantasia), 1135 artes em SVG a 600 dpi, todas associadas às unidades dos army books (GF, GFF, AoF e AoF Skirmish); aliases propostos aguardam aprovação |
+| Escolha de arte e base | Site: automática pela lista (facção pelo sistema, arte pelas armas e itens, base do army book); sem arte da arma, o usuário escolhe pela figura |
 | Geração no navegador | Site (Web Worker + manifold-3d): 3MF do Bambu com perfil da A1; lista piloto conferida contra o protótipo e fatiada pela CLI |
 | Geração 3MF/STL em Python | Protótipo de referência, validado no fatiador do Bambu (CLI) |
 

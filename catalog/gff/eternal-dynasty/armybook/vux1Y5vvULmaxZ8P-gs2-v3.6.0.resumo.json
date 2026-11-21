@@ -1,0 +1,1418 @@
+{
+  "armyBook": {
+    "id": "vux1Y5vvULmaxZ8P",
+    "nome": "Eternal Dynasty",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:32.629Z",
+    "sistema": "grimdark-future",
+    "sistemaId": 2
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "8sSO8Od",
+      "nome": "ONI Captain",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Flame-Fists",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Flame-Fists and Strike",
+          "ganha": [
+            "Great ONI Glaive"
+          ]
+        },
+        {
+          "secao": "Replace Dual Flame-Fists and Strike",
+          "ganha": [
+            "Great ONI Sword"
+          ]
+        },
+        {
+          "secao": "Replace Dual Flame-Fists and Strike",
+          "ganha": [
+            "Protector Drone",
+            "Great ONI Mace"
+          ]
+        },
+        {
+          "secao": "Replace Dual Flame-Fists and Strike",
+          "ganha": [
+            "ONI Sword",
+            "ONI Shield"
+          ]
+        },
+        {
+          "secao": "Replace Dual Flame-Fists and Strike",
+          "ganha": [
+            "Protector Drone",
+            "Dual Heavy ONI Fists"
+          ]
+        },
+        {
+          "secao": "Replace Dual Flame-Fists",
+          "ganha": [
+            "Dual Rocket-Fists"
+          ]
+        },
+        {
+          "secao": "Replace Dual Flame-Fists",
+          "ganha": [
+            "Dual Gun-Fists"
+          ]
+        },
+        {
+          "secao": "Replace Dual Flame-Fists",
+          "ganha": [
+            "Dual Shredder-Fists"
+          ]
+        },
+        {
+          "secao": "Replace Dual Flame-Fists",
+          "ganha": [
+            "Dual Fusion-Fists"
+          ]
+        },
+        {
+          "secao": "Replace Dual Flame-Fists",
+          "ganha": [
+            "Dual Missile-Fists"
+          ]
+        },
+        {
+          "secao": "Replace Dual Flame-Fists",
+          "ganha": [
+            "Dual Plasma-Fists"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Thrusters"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Airdrop Thrusters"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Attack Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Attack Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Spirit-Core Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sentinel"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Captain"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bEeuIws",
+      "nome": "Dynasty Leader",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "30"
+      },
+      "armas": [
+        "Dual Ninja Sickles"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Attack Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Attack Drone"
+          ]
+        },
+        {
+          "secao": "Replace Dual Ninja Sickles",
+          "ganha": [
+            "Flamer Pistol",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Ninja Sickles",
+          "ganha": [
+            "Burst Carbine",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Ninja Sickles",
+          "ganha": [
+            "Burst Shotgun",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Ninja Sickles",
+          "ganha": [
+            "Spear-Flame",
+            "Royal Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Ninja Sickles",
+          "ganha": [
+            "Sage Staff"
+          ]
+        },
+        {
+          "secao": "Replace Dual Ninja Sickles",
+          "ganha": [
+            "Burst Long Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Flamer Pistol",
+          "ganha": [
+            "Auto-Shredder"
+          ]
+        },
+        {
+          "secao": "Replace Flamer Pistol",
+          "ganha": [
+            "Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Flamer Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Flamer Pistol",
+          "ganha": [
+            "Fusion Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Ninja Sickle"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Dynasty Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Ninja Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Hook Sword"
+          ]
+        },
+        {
+          "secao": "Replace Dual Ninja Sickles",
+          "ganha": [
+            "Dual Dynasty Swords"
+          ]
+        },
+        {
+          "secao": "Replace Dual Ninja Sickles",
+          "ganha": [
+            "Dual Ninja Swords"
+          ]
+        },
+        {
+          "secao": "Replace Dual Ninja Sickles",
+          "ganha": [
+            "Dual Hook Swords"
+          ]
+        },
+        {
+          "secao": "Replace Dual Ninja Sickles",
+          "ganha": [
+            "Dual Burst Pistols"
+          ]
+        },
+        {
+          "secao": "Replace Spear-Flame",
+          "ganha": [
+            "Spear-Shredder"
+          ]
+        },
+        {
+          "secao": "Replace Spear-Flame",
+          "ganha": [
+            "Spear-Shot"
+          ]
+        },
+        {
+          "secao": "Replace Spear-Flame",
+          "ganha": [
+            "Spear-Plasma"
+          ]
+        },
+        {
+          "secao": "Replace Spear-Flame",
+          "ganha": [
+            "Spear-Fuse"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hover Alert-Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Ninja Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sentinel"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Captain"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Warlord"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tBFpCN2",
+      "nome": "Warriors",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "30"
+      },
+      "armas": [
+        "Long Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Energy Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Attack Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Attack Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Shield Drone"
+          ]
+        },
+        {
+          "secao": "Replace all Long Rifles",
+          "ganha": [
+            "Carbine"
+          ]
+        },
+        {
+          "secao": "Replace all Long Rifles",
+          "ganha": [
+            "Shotgun"
+          ]
+        },
+        {
+          "secao": "Replace one Long Rifle",
+          "ganha": [
+            "Flamer"
+          ]
+        },
+        {
+          "secao": "Replace one Long Rifle",
+          "ganha": [
+            "Shishi Turret"
+          ]
+        },
+        {
+          "secao": "Replace one Long Rifle",
+          "ganha": [
+            "Plasma Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Long Rifle",
+          "ganha": [
+            "Shredder Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Long Rifle",
+          "ganha": [
+            "Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Long Rifle",
+          "ganha": [
+            "Shishi Turret"
+          ]
+        },
+        {
+          "secao": "Replace one Long Rifle and Strike",
+          "ganha": [
+            "Sgt. Pistol",
+            "Sgt. Dynasty Sword"
+          ]
+        },
+        {
+          "secao": "Replace one Long Rifle and Strike",
+          "ganha": [
+            "Dual Pistols"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Shredder Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Dynasty Sword",
+          "ganha": [
+            "Hook Sword"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Honor-Bound"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kBJrV-w",
+      "nome": "Scouts",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Long Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Energy Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Attack Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Attack Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Shield Drone"
+          ]
+        },
+        {
+          "secao": "Replace all Long Rifles",
+          "ganha": [
+            "Carbine"
+          ]
+        },
+        {
+          "secao": "Replace one Long Rifle",
+          "ganha": [
+            "Sniper Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Long Rifle",
+          "ganha": [
+            "Energy Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Dynastic Triangulator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6S-Xqit",
+      "nome": "Ninja",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "30"
+      },
+      "armas": [
+        "Dual Ninja Sickles"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Dual Ninja Sickles",
+          "ganha": [
+            "Dual Ninja Swords"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Ninja Sickles",
+          "ganha": [
+            "Auto-Gun",
+            "Ninja Sickle"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Ninja Sickles",
+          "ganha": [
+            "Auto-Gun",
+            "Ninja Sword"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Ninja Sickles",
+          "ganha": [
+            "Dual Auto-Guns"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nT_lDKZ",
+      "nome": "Royal Guard",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Spear-Flame",
+        "Royal Spear"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Spear-Flames",
+          "ganha": [
+            "Spear-Shot"
+          ]
+        },
+        {
+          "secao": "Replace all Spear-Flames",
+          "ganha": [
+            "Spear-Shredder"
+          ]
+        },
+        {
+          "secao": "Replace all Spear-Flames",
+          "ganha": [
+            "Spear-Plasma"
+          ]
+        },
+        {
+          "secao": "Replace all Spear-Flames",
+          "ganha": [
+            "Spear-Fuse"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Honor-Bound"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CdkWnvx",
+      "nome": "Attack Drones",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Drone Toxin Gun",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Drone Toxin Guns",
+          "ganha": [
+            "Drone Laser Gun"
+          ]
+        },
+        {
+          "secao": "Replace all Drone Toxin Guns",
+          "ganha": [
+            "Drone Starjade Laser"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bILTbNt",
+      "nome": "ONIs",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Flame-Fists",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Dual Flame-Fists and Strikes",
+          "ganha": [
+            "ONI Glaive"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Flame-Fists and Strikes",
+          "ganha": [
+            "Dual ONI Fists"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Flame-Fists and Strikes",
+          "ganha": [
+            "ONI Sword",
+            "ONI Shield"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Flame-Fists",
+          "ganha": [
+            "Dual Rocket-Fists"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Flame-Fists",
+          "ganha": [
+            "Dual Gun-Fists"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Flame-Fists",
+          "ganha": [
+            "Dual Shredder-Fists"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Flame-Fists",
+          "ganha": [
+            "Dual Fusion-Fists"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Flame-Fists",
+          "ganha": [
+            "Dual Missile-Fists"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Flame-Fists",
+          "ganha": [
+            "Dual Plasma-Fists"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Thrusters"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Airdrop Thrusters"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Honor-Bound"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Attack Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Attack Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Shield Drone"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6LpK3Hi",
+      "nome": "Cyber Lizards",
+      "tamanho": 5,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Toxin Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Combat Hunt Master"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Vanguard Hunt Master"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e54b888",
+      "nome": "Cyber-Bird Swarms",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Sharp Beaks"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Combat Hunt Master"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Vanguard Hunt Master"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OaKZu-Y",
+      "nome": "Cyber Beast",
+      "tamanho": 1,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Heavy Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Combat Hunt Master"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Vanguard Hunt Master"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oIvvEaL",
+      "nome": "Dynasty APC",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Light Hull Heavy Flamer",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Light Hull Heavy Flamer",
+          "ganha": [
+            "Hull Heavy Flamer"
+          ]
+        },
+        {
+          "secao": "Replace Light Hull Heavy Flamer",
+          "ganha": [
+            "Hull Laser Gun"
+          ]
+        },
+        {
+          "secao": "Replace Light Hull Heavy Flamer",
+          "ganha": [
+            "Hull Auto-Shredder"
+          ]
+        },
+        {
+          "secao": "Replace Light Hull Heavy Flamer",
+          "ganha": [
+            "Hull Starjade Laser"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Extra Armor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cu0eIWL",
+      "nome": "Dragon Speeder",
+      "tamanho": 1,
+      "bases": {
+        "round": "105x70",
+        "square": "100x60"
+      },
+      "armas": [
+        "Hull Laser Gun",
+        "Linked Laser Gun Array",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Linked Laser Gun Array",
+          "ganha": [
+            "Linked Heavy Laser Gun"
+          ]
+        },
+        {
+          "secao": "Replace Linked Laser Gun Array",
+          "ganha": [
+            "Linked Heavy Starjade Laser"
+          ]
+        },
+        {
+          "secao": "Replace Linked Laser Gun Array",
+          "ganha": [
+            "Linked Starjade Laser Array"
+          ]
+        },
+        {
+          "secao": "Replace Hull Laser Gun",
+          "ganha": [
+            "Hull Assault Heavy Flamer"
+          ]
+        },
+        {
+          "secao": "Replace Hull Laser Gun",
+          "ganha": [
+            "Hull Assault Auto-Shredder"
+          ]
+        },
+        {
+          "secao": "Replace Hull Laser Gun",
+          "ganha": [
+            "Hull Assault Laser Gun"
+          ]
+        },
+        {
+          "secao": "Replace Hull Laser Gun",
+          "ganha": [
+            "Hull Assault Starjade Laser"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Targeting Beam"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Extra Armor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MTUdB9s",
+      "nome": "Dynasty Tank",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Battle Cannon",
+        "Hull Heavy Flamer",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Battle Cannon",
+          "ganha": [
+            "Artillery Gun"
+          ]
+        },
+        {
+          "secao": "Replace Battle Cannon",
+          "ganha": [
+            "Anti-Tank Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Battle Cannon",
+          "ganha": [
+            "Autocannon"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Laser Gun"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Auto-Shredder"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Starjade Laser"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0ql6EX3",
+      "nome": "Ninja Walker",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Ninja Sword",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Take one Ninja Sword attachment",
+          "ganha": [
+            "Laser Gun Mount"
+          ]
+        },
+        {
+          "secao": "Take one Ninja Sword attachment",
+          "ganha": [
+            "Starjade Laser Mount"
+          ]
+        },
+        {
+          "secao": "Replace Ninja Sword",
+          "ganha": [
+            "Burst Auto-Shredder"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Displacement Pack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Rope-Blade"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Rope-Sickle"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Targeting Beam"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aGmn975",
+      "nome": "ONI Walker",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Super-Heavy Flamer",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Heavy Rocket-Swarm Launcher"
+          ]
+        },
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Heavy Blast Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Heavy Missile-Swarm Launcher"
+          ]
+        },
+        {
+          "secao": "Replace Super-Heavy Flamer",
+          "ganha": [
+            "Heavy Strike Cannon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Attack Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Attack Drone"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Shield Drone"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "O1HU74Z",
+      "nome": "Samurai Titan",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Stomp",
+        "Titan Sword"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Titan Sword",
+          "ganha": [
+            "Titan Plasma Arm-Gun"
+          ]
+        },
+        {
+          "secao": "Replace Titan Sword",
+          "ganha": [
+            "Titan Shredder Arm-Gun"
+          ]
+        },
+        {
+          "secao": "Replace Titan Sword",
+          "ganha": [
+            "Titan Laser Arm-Gun"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Force Field"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5deb40E",
+      "nome": "Macaque Titan",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Stomp",
+        "Titan Heavy Fists"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Titan Heavy Fists",
+          "ganha": [
+            "Titan Fists"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Eye Laser Gun"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Starjade Eye Laser"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hWQCHhE",
+      "nome": "Artillery Titan",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Titan Blast Cannon",
+        "Rocket Pod",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Titan Blast Cannon",
+          "ganha": [
+            "Titan Strike Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Rocket Pod",
+          "ganha": [
+            "Missile Salvo"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Disposable Guided Rockets"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Disposable Guided Missiles"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XHJ8f1_",
+      "nome": "Dragon Titan",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Dynasty Strike",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dynasty Strike",
+          "ganha": [
+            "Dragon Bite"
+          ]
+        },
+        {
+          "secao": "Replace Dynasty Strike",
+          "ganha": [
+            "Jade Claws"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Flame Breath"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Amkoitz",
+      "nome": "Captain WuKaon",
+      "tamanho": 1,
+      "bases": {
+        "round": "50",
+        "square": "50"
+      },
+      "armas": [
+        "Relic Dual-Mace"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Saryu Armour"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UkOaKOI",
+      "nome": "Syen & Xaotyan",
+      "tamanho": 1,
+      "bases": {
+        "round": "75x46",
+        "square": "75x50"
+      },
+      "armas": [
+        "Stun Staff"
+      ],
+      "itens": [
+        {
+          "nome": "Xaotyan",
+          "bases": null
+        }
+      ],
+      "opcoes": []
+    },
+    {
+      "id": "9fAeLEX",
+      "nome": "Sergeant Wou",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Vine-Hook",
+        "Hwan Spear"
+      ],
+      "itens": [],
+      "opcoes": []
+    },
+    {
+      "id": "5G92a0s",
+      "nome": "Commander Xao",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "30"
+      },
+      "armas": [
+        "Dual Royal Swords"
+      ],
+      "itens": [
+        {
+          "nome": "Myushu992",
+          "bases": null
+        },
+        {
+          "nome": "Dynastic Banner",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Dynastic Banner",
+          "ganha": [
+            "Dynastic Banner - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uS-DM9n",
+      "nome": "Sage Myan",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Spirit Blast",
+        "Spirit Pulse"
+      ],
+      "itens": [
+        {
+          "nome": "Hover Alert-Drone",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Golden Avatar"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EjXfUOe",
+      "nome": "Captain Lyao",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "30"
+      },
+      "armas": [
+        "Twin Shotgun",
+        "Ironbane Swords"
+      ],
+      "itens": [
+        {
+          "nome": "Seasoned Captain",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Seasoned Captain",
+          "ganha": [
+            "Seasoned Captain - Leader"
+          ]
+        }
+      ]
+    }
+  ]
+}

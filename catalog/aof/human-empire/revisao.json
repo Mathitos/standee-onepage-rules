@@ -1,0 +1,1370 @@
+{
+ "packId": "human-empire",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "AOF",
+   "slug": "age-of-fantasy",
+   "armyForgeId": 4
+  },
+  {
+   "code": "AOFS",
+   "slug": "age-of-fantasy-skirmish",
+   "armyForgeId": 5
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/jZ02AVPLx_S48Mnb-gs4-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/jZ02AVPLx_S48Mnb-gs5-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-01..07.png, army books v3.6.0 (os dois sistemas). rotulos-08.png é sobra de uma extração anterior (a085-a090 não existem em candidatos.json) e foi desconsiderada. Heróis do PDF que no army book são upgrades: Captain/General/Cleric/Bounty Hunter/Army Standard -> Battle Master; Engineer -> Champion. Arma ambígua (ex. Pistol = Firepowder ou Matchlock): equipmentTags sem a arma e opções em aliases.",
+ "unidades": {
+  "battle-master": {
+   "armyForgeUnitId": "Vj0QX3_"
+  },
+  "champion": {
+   "armyForgeUnitId": "yYreRfL"
+  },
+  "mage-council": {
+   "armyForgeUnitId": "7xHcSJO"
+  },
+  "infantrymen": {
+   "armyForgeUnitId": "-ESvMWE"
+  },
+  "fanatics": {
+   "armyForgeUnitId": "ccY9OvL"
+  },
+  "mercenaries": {
+   "armyForgeUnitId": "dBSLa40"
+  },
+  "elite-weapon-masters": {
+   "armyForgeUnitId": "0IYBIDW"
+  },
+  "marksmen": {
+   "armyForgeUnitId": "kY9pOKT"
+  },
+  "mercenary-hunters": {
+   "armyForgeUnitId": "Nxj9qhc"
+  },
+  "horse-marksmen": {
+   "armyForgeUnitId": "vmcM4E8"
+  },
+  "knights": {
+   "armyForgeUnitId": "eXoFcRr"
+  },
+  "guard-knights": {
+   "armyForgeUnitId": "rKfk_hD"
+  },
+  "gryph-riders": {
+   "armyForgeUnitId": "hZjPpN-"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "knight-captain",
+   "rotulo": "Knight Captain",
+   "confiancaRotulo": "alta",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Captain",
+    "Horse"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Captain",
+     "armyBook": "Battle Master"
+    },
+    {
+     "pdf": "Knight",
+     "armyBook": "Horse"
+    }
+   ],
+   "notas": "Captain é upgrade do Battle Master (também existe no Champion); págs. 2-4 do PDF trazem só upgrades do Battle Master. Knight = montado a cavalo (Horse); figura com lança"
+  },
+  "a002": {
+   "artId": "captain-pistol",
+   "rotulo": "Captain Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Captain",
+    "Dual Firepowder Pistols|Dual Matchlock Pistols"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Captain",
+     "armyBook": "Battle Master"
+    },
+    {
+     "pdf": "Pistol",
+     "armyBook": [
+      "Dual Firepowder Pistols",
+      "Dual Matchlock Pistols"
+     ]
+    }
+   ],
+   "notas": "Captain é upgrade do Battle Master (também existe no Champion); págs. 2-4 do PDF trazem só upgrades do Battle Master. Figura com duas pistolas; Firepowder ou Matchlock, usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  },
+  "a003": {
+   "artId": "captain-sword",
+   "rotulo": "Captain Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Captain",
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Captain",
+     "armyBook": "Battle Master"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "Captain é upgrade do Battle Master (também existe no Champion); págs. 2-4 do PDF trazem só upgrades do Battle Master"
+  },
+  "a004": {
+   "artId": "captain-halberd",
+   "rotulo": "Captain Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Captain",
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Captain",
+     "armyBook": "Battle Master"
+    }
+   ],
+   "notas": "Captain é upgrade do Battle Master (também existe no Champion); págs. 2-4 do PDF trazem só upgrades do Battle Master"
+  },
+  "a005": {
+   "artId": "pegasus-captain",
+   "rotulo": "Pegasus Captain",
+   "confiancaRotulo": "alta",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Captain",
+    "Pegasus"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Captain",
+     "armyBook": "Battle Master"
+    }
+   ],
+   "notas": "Pegasus só existe no Battle Master; Captain é upgrade dele"
+  },
+  "a006": {
+   "artId": "general-pistol",
+   "rotulo": "General Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "General",
+    "Dual Firepowder Pistols|Dual Matchlock Pistols"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "General",
+     "armyBook": "Battle Master"
+    },
+    {
+     "pdf": "Pistol",
+     "armyBook": [
+      "Dual Firepowder Pistols",
+      "Dual Matchlock Pistols"
+     ]
+    }
+   ],
+   "notas": "General é upgrade só do Battle Master. Figura com duas pistolas; Firepowder ou Matchlock, usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  },
+  "a007": {
+   "artId": "general-halberd",
+   "rotulo": "General Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "General",
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "General",
+     "armyBook": "Battle Master"
+    }
+   ],
+   "notas": "General é upgrade só do Battle Master"
+  },
+  "a008": {
+   "artId": "general-sword",
+   "rotulo": "General Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "General",
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "General",
+     "armyBook": "Battle Master"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "General é upgrade só do Battle Master"
+  },
+  "a009": {
+   "artId": "cleric-flail",
+   "rotulo": "Cleric Flail",
+   "confiancaRotulo": "alta",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Cleric"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Cleric",
+     "armyBook": "Battle Master"
+    }
+   ],
+   "notas": "Cleric é upgrade do Battle Master e do Champion (escolhi Battle Master pela página do PDF); nenhum dos dois tem Flail no army book"
+  },
+  "a010": {
+   "artId": "bounty-hunter-v1",
+   "rotulo": "Bounty Hunter V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Bounty Hunter"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Bounty Hunter",
+     "armyBook": "Battle Master"
+    }
+   ],
+   "notas": "Bounty Hunter é upgrade só do Battle Master"
+  },
+  "a011": {
+   "artId": "bounty-hunter-v2",
+   "rotulo": "Bounty Hunter V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Bounty Hunter"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Bounty Hunter",
+     "armyBook": "Battle Master"
+    }
+   ],
+   "notas": "Bounty Hunter é upgrade só do Battle Master"
+  },
+  "a012": {
+   "artId": "army-standard",
+   "rotulo": "Army Standard",
+   "confiancaRotulo": "alta",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Army Standard Bearer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Army Standard",
+     "armyBook": "Battle Master (Army Standard Bearer)"
+    }
+   ],
+   "notas": "Army Standard Bearer é upgrade só do Battle Master; herói, não pose de comando"
+  },
+  "a013": {
+   "artId": "engineer-scope",
+   "rotulo": "Engineer Scope",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion",
+   "equipmentTags": [
+    "Engineer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Engineer",
+     "armyBook": "Champion"
+    }
+   ],
+   "notas": "Engineer é upgrade só do Champion; luneta não é arma"
+  },
+  "a014": {
+   "artId": "engineer-pistol",
+   "rotulo": "Engineer Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion",
+   "equipmentTags": [
+    "Engineer",
+    "Dual Gatling Pistols"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Engineer",
+     "armyBook": "Champion"
+    },
+    {
+     "pdf": "Pistol",
+     "armyBook": "Dual Gatling Pistols"
+    }
+   ],
+   "notas": "Engineer é upgrade só do Champion. Figura com duas pistolas de vários canos; Champion também tem Firepowder/Matchlock Pistol (uma só)"
+  },
+  "a015": {
+   "artId": "engineer-sniper",
+   "rotulo": "Engineer Sniper",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion",
+   "equipmentTags": [
+    "Engineer",
+    "Sniper Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Engineer",
+     "armyBook": "Champion"
+    },
+    {
+     "pdf": "Sniper",
+     "armyBook": "Sniper Rifle"
+    }
+   ],
+   "notas": "Engineer é upgrade só do Champion"
+  },
+  "a016": {
+   "artId": "horse-engineer-launcher",
+   "rotulo": "Horse Engineer Launcher",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion",
+   "equipmentTags": [
+    "Engineer",
+    "Horse",
+    "Grenade Launcher"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Engineer",
+     "armyBook": "Champion"
+    },
+    {
+     "pdf": "Launcher",
+     "armyBook": "Grenade Launcher"
+    }
+   ],
+   "notas": "Engineer é upgrade só do Champion. Champion também tem Marksman Horse e Robo-Frame Horse"
+  },
+  "a017": {
+   "artId": "horse-engineer-gatling",
+   "rotulo": "Horse Engineer Gatling",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion",
+   "equipmentTags": [
+    "Engineer",
+    "Horse",
+    "Gatling Rifle|Dual Gatling Pistols"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Engineer",
+     "armyBook": "Champion"
+    },
+    {
+     "pdf": "Gatling",
+     "armyBook": [
+      "Gatling Rifle",
+      "Dual Gatling Pistols"
+     ]
+    }
+   ],
+   "notas": "Engineer é upgrade só do Champion. Gatling pode ser Gatling Rifle ou Dual Gatling Pistols; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  },
+  "a018": {
+   "artId": "aether-mage",
+   "rotulo": "Aether Mage",
+   "confiancaRotulo": "alta",
+   "unitKey": "mage-council",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Aether Mage",
+     "armyBook": "Mage Council"
+    }
+   ],
+   "notas": "Mage é o nome da unidade no Skirmish (Mage Council no AoF, 5 modelos); o PDF traz 5 magos elementais. Alternativa: Champion com Battle Mage"
+  },
+  "a019": {
+   "artId": "air-mage",
+   "rotulo": "Air Mage",
+   "confiancaRotulo": "alta",
+   "unitKey": "mage-council",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Air Mage",
+     "armyBook": "Mage Council"
+    }
+   ],
+   "notas": "Mage é o nome da unidade no Skirmish (Mage Council no AoF, 5 modelos); o PDF traz 5 magos elementais. Alternativa: Champion com Battle Mage"
+  },
+  "a020": {
+   "artId": "earth-mage",
+   "rotulo": "Earth Mage",
+   "confiancaRotulo": "alta",
+   "unitKey": "mage-council",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Earth Mage",
+     "armyBook": "Mage Council"
+    }
+   ],
+   "notas": "Mage é o nome da unidade no Skirmish (Mage Council no AoF, 5 modelos); o PDF traz 5 magos elementais. Alternativa: Champion com Battle Mage"
+  },
+  "a021": {
+   "artId": "fire-mage",
+   "rotulo": "Fire Mage",
+   "confiancaRotulo": "alta",
+   "unitKey": "mage-council",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fire Mage",
+     "armyBook": "Mage Council"
+    }
+   ],
+   "notas": "Mage é o nome da unidade no Skirmish (Mage Council no AoF, 5 modelos); o PDF traz 5 magos elementais. Alternativa: Champion com Battle Mage"
+  },
+  "a022": {
+   "artId": "water-mage",
+   "rotulo": "Water Mage",
+   "confiancaRotulo": "alta",
+   "unitKey": "mage-council",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Water Mage",
+     "armyBook": "Mage Council"
+    }
+   ],
+   "notas": "Mage é o nome da unidade no Skirmish (Mage Council no AoF, 5 modelos); o PDF traz 5 magos elementais. Alternativa: Champion com Battle Mage"
+  },
+  "a023": {
+   "artId": "infantry-sword",
+   "rotulo": "Infantry Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantrymen",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "Infantry é o genericName de Infantrymen"
+  },
+  "a024": {
+   "artId": "infantry-halberd",
+   "rotulo": "Infantry Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantrymen",
+   "equipmentTags": [
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Infantry é o genericName de Infantrymen"
+  },
+  "a025": {
+   "artId": "infantry-spear",
+   "rotulo": "Infantry Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantrymen",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Infantry é o genericName de Infantrymen"
+  },
+  "a026": {
+   "artId": "infantry-musician",
+   "rotulo": "Infantry Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantrymen",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Infantry é o genericName de Infantrymen"
+  },
+  "a027": {
+   "artId": "infantry-sargeant",
+   "rotulo": "Infantry Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantrymen",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Infantry é o genericName de Infantrymen; PDF escreve Sargeant"
+  },
+  "a028": {
+   "artId": "infantry-banner",
+   "rotulo": "Infantry Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantrymen",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Infantry é o genericName de Infantrymen"
+  },
+  "a029": {
+   "artId": "elite-greatsword",
+   "rotulo": "Elite Greatsword",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite-weapon-masters",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Elite",
+     "armyBook": "Elite Weapon Masters"
+    },
+    {
+     "pdf": "Greatsword",
+     "armyBook": "Great Weapon"
+    }
+   ],
+   "notas": "Elite = Elite Weapon Masters (genericName Weapon Masters); figuras a pé"
+  },
+  "a030": {
+   "artId": "elite-hammer",
+   "rotulo": "Elite Hammer",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite-weapon-masters",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Elite",
+     "armyBook": "Elite Weapon Masters"
+    },
+    {
+     "pdf": "Hammer",
+     "armyBook": "Great Weapon"
+    }
+   ],
+   "notas": "Elite = Elite Weapon Masters (genericName Weapon Masters); figuras a pé. Martelo de duas mãos, 2 cópias no PDF como tropa; alternativa: Imperial Great Mace (só um modelo)"
+  },
+  "a031": {
+   "artId": "elite-sargeant",
+   "rotulo": "Elite Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite-weapon-masters",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Elite",
+     "armyBook": "Elite Weapon Masters"
+    }
+   ],
+   "notas": "Elite = Elite Weapon Masters (genericName Weapon Masters); figuras a pé; PDF escreve Sargeant"
+  },
+  "a032": {
+   "artId": "elite-musician",
+   "rotulo": "Elite Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite-weapon-masters",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Elite",
+     "armyBook": "Elite Weapon Masters"
+    }
+   ],
+   "notas": "Elite = Elite Weapon Masters (genericName Weapon Masters); figuras a pé"
+  },
+  "a033": {
+   "artId": "elite-banner",
+   "rotulo": "Elite Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite-weapon-masters",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Elite",
+     "armyBook": "Elite Weapon Masters"
+    }
+   ],
+   "notas": "Elite = Elite Weapon Masters (genericName Weapon Masters); figuras a pé"
+  },
+  "a034": {
+   "artId": "fanatic-v1",
+   "rotulo": "Fanatic V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "fanatics",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a035": {
+   "artId": "fanatic-v2",
+   "rotulo": "Fanatic V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "fanatics",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a036": {
+   "artId": "fanatic-sargeant",
+   "rotulo": "Fanatic Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "fanatics",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "PDF escreve Sargeant"
+  },
+  "a037": {
+   "artId": "fanatic-musician",
+   "rotulo": "Fanatic Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "fanatics",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a038": {
+   "artId": "fanatic-banner",
+   "rotulo": "Fanatic Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "fanatics",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a039": {
+   "artId": "mercenary-pistols",
+   "rotulo": "Mercenary Pistols",
+   "confiancaRotulo": "alta",
+   "unitKey": "mercenaries",
+   "equipmentTags": [
+    "Dual Firepowder Pistols|Dual Matchlock Pistols"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Pistols",
+     "armyBook": [
+      "Dual Firepowder Pistols",
+      "Dual Matchlock Pistols"
+     ]
+    }
+   ],
+   "notas": "Pistols pode ser Dual Firepowder ou Dual Matchlock Pistols; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  },
+  "a040": {
+   "artId": "mercenary-swords",
+   "rotulo": "Mercenary Swords",
+   "confiancaRotulo": "alta",
+   "unitKey": "mercenaries",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Swords",
+     "armyBook": "Dual Hand Weapons"
+    }
+   ],
+   "notas": ""
+  },
+  "a041": {
+   "artId": "hunter-v1",
+   "rotulo": "Hunter V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "mercenary-hunters",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunter",
+     "armyBook": "Mercenary Hunters"
+    }
+   ],
+   "notas": "Hunter = Mercenary Hunters (genericName Archers); figuras com arco"
+  },
+  "a042": {
+   "artId": "hunter-v2",
+   "rotulo": "Hunter V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "mercenary-hunters",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunter",
+     "armyBook": "Mercenary Hunters"
+    }
+   ],
+   "notas": "Hunter = Mercenary Hunters (genericName Archers); figuras com arco"
+  },
+  "a043": {
+   "artId": "marksman-rifle",
+   "rotulo": "Marksman Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "marksmen",
+   "equipmentTags": [
+    "Matchlock Rifle|Firepowder Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": [
+      "Matchlock Rifle",
+      "Firepowder Rifle"
+     ]
+    }
+   ],
+   "notas": "Rifle pode ser Matchlock Rifle (padrão) ou Firepowder Rifle; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  },
+  "a044": {
+   "artId": "marksman-crossbow",
+   "rotulo": "Marksman Crossbow",
+   "confiancaRotulo": "alta",
+   "unitKey": "marksmen",
+   "equipmentTags": [
+    "Crossbow"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a045": {
+   "artId": "marksman-sargeant-pistol",
+   "rotulo": "Marksman Sargeant Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "marksmen",
+   "equipmentTags": [
+    "Dual Firepowder Pistols|Dual Matchlock Pistols"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Pistol",
+     "armyBook": [
+      "Dual Firepowder Pistols",
+      "Dual Matchlock Pistols"
+     ]
+    }
+   ],
+   "notas": "pose de sargento com duas pistolas; Firepowder ou Matchlock, usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  },
+  "a046": {
+   "artId": "marksman-sargeant-gatling",
+   "rotulo": "Marksman Sargeant Gatling",
+   "confiancaRotulo": "alta",
+   "unitKey": "marksmen",
+   "equipmentTags": [
+    "Gatling Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gatling",
+     "armyBook": "Gatling Rifle"
+    }
+   ],
+   "notas": "pose de sargento com arma especial"
+  },
+  "a047": {
+   "artId": "marksman-sargeant-sniper",
+   "rotulo": "Marksman Sargeant Sniper",
+   "confiancaRotulo": "alta",
+   "unitKey": "marksmen",
+   "equipmentTags": [
+    "Sniper Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sniper",
+     "armyBook": "Sniper Rifle"
+    }
+   ],
+   "notas": "pose de sargento com arma especial"
+  },
+  "a048": {
+   "artId": "marksman-musician",
+   "rotulo": "Marksman Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "marksmen",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a049": {
+   "artId": "marksman-banner",
+   "rotulo": "Marksman Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "marksmen",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a050": {
+   "artId": "horse-pistoleer",
+   "rotulo": "Horse Pistoleer",
+   "confiancaRotulo": "alta",
+   "unitKey": "horse-marksmen",
+   "equipmentTags": [
+    "Dual Firepowder Pistols|Dual Matchlock Pistols"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Horse Pistoleer",
+     "armyBook": "Horse Marksmen"
+    },
+    {
+     "pdf": "Pistol",
+     "armyBook": [
+      "Dual Firepowder Pistols",
+      "Dual Matchlock Pistols"
+     ]
+    }
+   ],
+   "notas": "cavaleiro atirador com pistolas; Firepowder ou Matchlock, usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  },
+  "a051": {
+   "artId": "horse-rifleman",
+   "rotulo": "Horse Rifleman",
+   "confiancaRotulo": "alta",
+   "unitKey": "horse-marksmen",
+   "equipmentTags": [
+    "Matchlock Rifle|Firepowder Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Horse Rifleman",
+     "armyBook": "Horse Marksmen"
+    },
+    {
+     "pdf": "Rifle",
+     "armyBook": [
+      "Matchlock Rifle",
+      "Firepowder Rifle"
+     ]
+    }
+   ],
+   "notas": "Rifle pode ser Matchlock Rifle (padrão) ou Firepowder Rifle; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  },
+  "a052": {
+   "artId": "horse-marksman-sargeant-sniper",
+   "rotulo": "Horse Marksman Sargeant Sniper",
+   "confiancaRotulo": "alta",
+   "unitKey": "horse-marksmen",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "Horse Marksmen não tem Sniper Rifle no army book v3.6.0"
+  },
+  "a053": {
+   "artId": "horse-marksman-sargeant-gatling",
+   "rotulo": "Horse Marksman Sargeant Gatling",
+   "confiancaRotulo": "alta",
+   "unitKey": "horse-marksmen",
+   "equipmentTags": [
+    "Gatling Rifle|Dual Gatling Pistols"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gatling",
+     "armyBook": [
+      "Gatling Rifle",
+      "Dual Gatling Pistols"
+     ]
+    }
+   ],
+   "notas": "Gatling pode ser Gatling Rifle ou Dual Gatling Pistols; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  },
+  "a054": {
+   "artId": "horse-marksman-sargeant-pistol",
+   "rotulo": "Horse Marksman Sargeant Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "horse-marksmen",
+   "equipmentTags": [
+    "Dual Firepowder Pistols|Dual Matchlock Pistols"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Pistol",
+     "armyBook": [
+      "Dual Firepowder Pistols",
+      "Dual Matchlock Pistols"
+     ]
+    }
+   ],
+   "notas": "Firepowder ou Matchlock, usuário escolhe; na figura a arma parece ter vários canos (Dual Gatling Pistols?) Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  },
+  "a055": {
+   "artId": "horse-marksman-banner",
+   "rotulo": "Horse Marksman Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "horse-marksmen",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a056": {
+   "artId": "horse-marksman-musician",
+   "rotulo": "Horse Marksman Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "horse-marksmen",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a057": {
+   "artId": "knight-sword",
+   "rotulo": "Knight Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "knights",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": ""
+  },
+  "a058": {
+   "artId": "knight-lance",
+   "rotulo": "Knight Lance",
+   "confiancaRotulo": "alta",
+   "unitKey": "knights",
+   "equipmentTags": [
+    "Lance"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a059": {
+   "artId": "knight-sergeant",
+   "rotulo": "Knight Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "knights",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a060": {
+   "artId": "knight-musician",
+   "rotulo": "Knight Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "knights",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a061": {
+   "artId": "knight-banner",
+   "rotulo": "Knight Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "knights",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a062": {
+   "artId": "knight-lance-guard",
+   "rotulo": "Knight Lance",
+   "confiancaRotulo": "alta",
+   "unitKey": "guard-knights",
+   "equipmentTags": [
+    "Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Knight",
+     "armyBook": "Guard Knights"
+    }
+   ],
+   "notas": "rótulo diz Knight, mas o desenho segue os Guard Knight (gualdrapa em zigue-zague, a064-a066) e fica entre as páginas dos Knights e dos Guard Knight; Knights já tem Knight Lance (a058). Alternativa: Knights"
+  },
+  "a063": {
+   "artId": "knight-axe",
+   "rotulo": "Knight Axe",
+   "confiancaRotulo": "alta",
+   "unitKey": "guard-knights",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Knight",
+     "armyBook": "Guard Knights"
+    },
+    {
+     "pdf": "Axe",
+     "armyBook": "Great Weapon"
+    }
+   ],
+   "notas": "rótulo diz Knight, mas o desenho segue os Guard Knight (gualdrapa em zigue-zague, a064-a066) e fica entre as páginas dos Knights e dos Guard Knight. Machado de haste = Great Weapon; alternativa: Knights com Hand Weapon"
+  },
+  "a064": {
+   "artId": "guard-knight-sergeant",
+   "rotulo": "Guard Knight Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "guard-knights",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a065": {
+   "artId": "guard-knight-musician",
+   "rotulo": "Guard Knight Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "guard-knights",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a066": {
+   "artId": "guard-knight-banner",
+   "rotulo": "Guard Knight Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "guard-knights",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a067": {
+   "artId": "gryph-rider-lance",
+   "rotulo": "Gryph Rider Lance",
+   "confiancaRotulo": "alta",
+   "unitKey": "gryph-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a068": {
+   "artId": "gryph-rider-halberd",
+   "rotulo": "Gryph Rider Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "gryph-riders",
+   "equipmentTags": [
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a069": {
+   "artId": "gryph-rider-sergeant",
+   "rotulo": "Gryph Rider Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "gryph-riders",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a070": {
+   "artId": "gryph-rider-musician",
+   "rotulo": "Gryph Rider Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "gryph-riders",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a071": {
+   "artId": "gryph-rider-banner",
+   "rotulo": "Gryph Rider Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "gryph-riders",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a072": {
+   "artId": "infantry-sword-so-borda-1",
+   "rotulo": "Infantry Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantrymen",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "só borda grossa, sem par fino; mesmo desenho de a023. Infantry é o genericName de Infantrymen"
+  },
+  "a073": {
+   "artId": "infantry-sword-so-borda-2",
+   "rotulo": "Infantry Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantrymen",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "só borda grossa, sem par fino; mesmo desenho de a023. Infantry é o genericName de Infantrymen"
+  },
+  "a074": {
+   "artId": "infantry-halberd-so-borda-1",
+   "rotulo": "Infantry Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantrymen",
+   "equipmentTags": [
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só borda grossa, sem par fino; mesmo desenho de a024. Infantry é o genericName de Infantrymen"
+  },
+  "a075": {
+   "artId": "infantry-halberd-so-borda-2",
+   "rotulo": "Infantry Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantrymen",
+   "equipmentTags": [
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só borda grossa, sem par fino; mesmo desenho de a024. Infantry é o genericName de Infantrymen"
+  },
+  "a076": {
+   "artId": "infantry-spear-so-borda",
+   "rotulo": "Infantry Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "infantrymen",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só borda grossa, sem par fino; mesmo desenho de a025. Infantry é o genericName de Infantrymen"
+  },
+  "a077": {
+   "artId": "fanatic-v1-so-borda",
+   "rotulo": "Fanatic V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "fanatics",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só borda grossa, sem par fino; mesmo desenho de a034"
+  },
+  "a078": {
+   "artId": "marksman-rifle-so-borda-1",
+   "rotulo": "Marksman Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "marksmen",
+   "equipmentTags": [
+    "Matchlock Rifle|Firepowder Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": [
+      "Matchlock Rifle",
+      "Firepowder Rifle"
+     ]
+    }
+   ],
+   "notas": "só borda grossa, sem par fino; mesmo desenho de a043. Rifle pode ser Matchlock Rifle (padrão) ou Firepowder Rifle; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  },
+  "a079": {
+   "artId": "marksman-rifle-so-borda-2",
+   "rotulo": "Marksman Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "marksmen",
+   "equipmentTags": [
+    "Matchlock Rifle|Firepowder Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": [
+      "Matchlock Rifle",
+      "Firepowder Rifle"
+     ]
+    }
+   ],
+   "notas": "só borda grossa, sem par fino; mesmo desenho de a043. Rifle pode ser Matchlock Rifle (padrão) ou Firepowder Rifle; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  }
+ }
+}

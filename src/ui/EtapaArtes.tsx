@@ -34,8 +34,8 @@ export function EtapaArtes({ lista }: { lista: NormalizedArmyList }) {
 
   // facção pelo nome do exército da lista
   useEffect(() => {
-    if (indice) setFaccao(faccaoDaLista(indice, lista.header?.armyName))
-  }, [indice, lista.header?.armyName])
+    if (indice) setFaccao(faccaoDaLista(indice, lista.header?.armyName, lista.header?.systemCode))
+  }, [indice, lista.header?.armyName, lista.header?.systemCode])
 
   useEffect(() => {
     setArtes(null)

@@ -1,0 +1,416 @@
+{
+ "packId": "daemons-of-war",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "AOF",
+   "slug": "age-of-fantasy",
+   "armyForgeId": 4
+  },
+  {
+   "code": "AOFS",
+   "slug": "age-of-fantasy-skirmish",
+   "armyForgeId": 5
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/Q59-nh6A1AhRBrLR-gs4-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/Q59-nh6A1AhRBrLR-gs5-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-*.png, army books v3.6.0 (os dois sistemas).",
+ "unidades": {
+  "champion-of-war": {
+   "armyForgeUnitId": "pl2kj2o"
+  },
+  "blood-warriors": {
+   "armyForgeUnitId": "yBYbUK2"
+  },
+  "harbinger-of-war": {
+   "armyForgeUnitId": "_vrCvso"
+  },
+  "blood-hounds": {
+   "armyForgeUnitId": "exTlY0u"
+  },
+  "war-furies": {
+   "armyForgeUnitId": "JljoGNE"
+  },
+  "blood-beast-riders": {
+   "armyForgeUnitId": "sGax-Sg"
+  },
+  "tri-hound-champion": {
+   "armyForgeUnitId": "F-hxnBM"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "champion-whip",
+   "rotulo": "Champion Whip",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-war",
+   "equipmentTags": [
+    "War Whip"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of War"
+    },
+    {
+     "pdf": "Whip",
+     "armyBook": "War Whip"
+    }
+   ],
+   "notas": "figura com martelo e chicote; escolhi War Whip (há também Heavy Long Whip)"
+  },
+  "a002": {
+   "artId": "champion-spear",
+   "rotulo": "Champion Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-war",
+   "equipmentTags": [
+    "Daemon Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of War"
+    },
+    {
+     "pdf": "Spear",
+     "armyBook": "Daemon Spear"
+    }
+   ],
+   "notas": ""
+  },
+  "a003": {
+   "artId": "champion-mace",
+   "rotulo": "Champion Mace",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-war",
+   "equipmentTags": [
+    "Daemon Hammer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of War"
+    },
+    {
+     "pdf": "Mace",
+     "armyBook": "Daemon Hammer"
+    }
+   ],
+   "notas": "maça ~ martelo; Daemon Hammer é a arma contundente do Champion (alternativa: Hand Weapon)"
+  },
+  "a004": {
+   "artId": "warrior-sargeant",
+   "rotulo": "Warrior Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Warrior = Blood Warriors (genericName War Warriors); o PDF grafa Sargeant"
+  },
+  "a005": {
+   "artId": "warrior-banner",
+   "rotulo": "Warrior Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Warrior = Blood Warriors (genericName War Warriors)"
+  },
+  "a006": {
+   "artId": "warrior-musician",
+   "rotulo": "Warrior Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Warrior = Blood Warriors (genericName War Warriors)"
+  },
+  "a007": {
+   "artId": "warrior-sword",
+   "rotulo": "Warrior Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [
+    "Blood Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Blood Sword"
+    }
+   ],
+   "notas": "Warrior = Blood Warriors (genericName War Warriors); espada da facção"
+  },
+  "a008": {
+   "artId": "warrior-spear",
+   "rotulo": "Warrior Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Warrior = Blood Warriors (genericName War Warriors)"
+  },
+  "a009": {
+   "artId": "warrior-axes",
+   "rotulo": "Warrior Axes",
+   "confiancaRotulo": "alta",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [
+    "Flame Axe"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Axes",
+     "armyBook": "Flame Axe"
+    }
+   ],
+   "notas": "Warrior = Blood Warriors (genericName War Warriors); machado da facção; o plural pode indicar Dual Hand Weapons"
+  },
+  "a010": {
+   "artId": "warrior-halberd",
+   "rotulo": "Warrior Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Warrior = Blood Warriors (genericName War Warriors)"
+  },
+  "a011": {
+   "artId": "warrior-hammer",
+   "rotulo": "Warrior Hammer",
+   "confiancaRotulo": "alta",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hammer",
+     "armyBook": "Great Weapon"
+    }
+   ],
+   "notas": "Warrior = Blood Warriors (genericName War Warriors); martelo de duas mãos; a unidade não tem martelo no army book"
+  },
+  "a012": {
+   "artId": "warrior-hammer-fino",
+   "rotulo": "Warrior Hammer",
+   "confiancaRotulo": "alta",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hammer",
+     "armyBook": "Great Weapon"
+    }
+   ],
+   "notas": "cópia fino extra de a011 (que já tem fino e borda); martelo -> Great Weapon"
+  },
+  "a013": {
+   "artId": "harbinger",
+   "rotulo": "Harbinger",
+   "confiancaRotulo": "alta",
+   "unitKey": "harbinger-of-war",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Harbinger = Harbinger of War (sem \"Ascended\"); tamanho compatível com a base 50 contando as asas"
+  },
+  "a014": {
+   "artId": "hound-ver-1",
+   "rotulo": "Hound (Ver. 1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "blood-hounds",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Hound = Blood Hounds (genericName War Hounds)"
+  },
+  "a015": {
+   "artId": "hound-ver-2",
+   "rotulo": "Hound (Ver. 2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "blood-hounds",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Hound = Blood Hounds (genericName War Hounds)"
+  },
+  "a016": {
+   "artId": "fury-ver-1",
+   "rotulo": "Fury (Ver. 1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "war-furies",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Fury = War Furies"
+  },
+  "a017": {
+   "artId": "fury-ver-2",
+   "rotulo": "Fury (Ver. 2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "war-furies",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Fury = War Furies"
+  },
+  "a018": {
+   "artId": "beast-rider-spear",
+   "rotulo": "Beast Rider Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "blood-beast-riders",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "o army book não dá Spear aos Blood Beast Riders (opções: Blood Sword, Flame Axe, Great Weapon, Halberd); a haste lembra Halberd, se o usuário aceitar"
+  },
+  "a019": {
+   "artId": "beast-rider-axe",
+   "rotulo": "Beast Rider Axe",
+   "confiancaRotulo": "alta",
+   "unitKey": "blood-beast-riders",
+   "equipmentTags": [
+    "Flame Axe"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Axe",
+     "armyBook": "Flame Axe"
+    }
+   ],
+   "notas": "Beast Rider = Blood Beast Riders; machado da facção"
+  },
+  "a020": {
+   "artId": "beast-rider-hammer",
+   "rotulo": "Beast Rider Hammer",
+   "confiancaRotulo": "alta",
+   "unitKey": "blood-beast-riders",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hammer",
+     "armyBook": "Great Weapon"
+    }
+   ],
+   "notas": "a unidade não tem martelo no army book; Great Weapon é a arma pesada genérica"
+  },
+  "a021": {
+   "artId": "beast-champion",
+   "rotulo": "Beast Champion",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-war",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "o mesmo herói dos rótulos Champion (cabeça e colar iguais) montado na besta dos Beast Riders; o Champion of War não tem montaria no army book v3.6. Poderia servir de sargento dos Blood Beast Riders"
+  },
+  "a022": {
+   "artId": "cerberus",
+   "rotulo": "Cerberus",
+   "confiancaRotulo": "alta",
+   "unitKey": "tri-hound-champion",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Cerberus",
+     "armyBook": "Tri-Hound Champion"
+    }
+   ],
+   "notas": "cão de três cabeças; genericName War Cerberus Hound; tamanho (~48 mm de largura, igual aos Hounds) casa com base 50, não com o Giant Tri-Hound (105x70)"
+  },
+  "a023": {
+   "artId": "warrior-axes-borda",
+   "rotulo": "Warrior Axes",
+   "confiancaRotulo": "alta",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [
+    "Flame Axe"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Axes",
+     "armyBook": "Flame Axe"
+    }
+   ],
+   "notas": "cópia borda extra de a009 (que já tem fino e borda); Flame Axe"
+  },
+  "a024": {
+   "artId": "hound-ver-1-borda",
+   "rotulo": "Hound (Ver. 1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "blood-hounds",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "cópia borda extra de a014 (que já tem fino e borda)"
+  },
+  "a025": {
+   "artId": "fury-ver-2-borda",
+   "rotulo": "Fury (Ver. 2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "war-furies",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "cópia borda extra de a017 (que já tem fino e borda)"
+  }
+ }
+}

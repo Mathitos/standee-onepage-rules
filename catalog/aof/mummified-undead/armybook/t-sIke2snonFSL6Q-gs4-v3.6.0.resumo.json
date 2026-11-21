@@ -1,0 +1,1335 @@
+{
+  "armyBook": {
+    "id": "t-sIke2snonFSL6Q",
+    "nome": "Mummified Undead",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:33.430Z",
+    "sistema": "age-of-fantasy",
+    "sistemaId": 4
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "aC-AVCm",
+      "nome": "Rammit Den Geddul",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Crescent Blades"
+      ],
+      "itens": [
+        {
+          "nome": "Gleaming Armour",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Gleaming Armour",
+          "ganha": [
+            "Gleaming Armour - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "AfqFVor",
+      "nome": "Royal Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Lance"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Priest Staff"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Spirit Strike",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Spirit Strike",
+          "ganha": [
+            "Curse Strike"
+          ]
+        },
+        {
+          "secao": "Replace Spirit Strike",
+          "ganha": [
+            "Soul Strike"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Royal Beast"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Skeletal Steed"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Royal Snake"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Royal Chariot"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "War Sphinx"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Skeleton Dragon"
+          ]
+        },
+        {
+          "secao": "Upgrade Royal Snake with one",
+          "ganha": [
+            "Heavy Armor"
+          ]
+        },
+        {
+          "secao": "Upgrade Royal Snake with one",
+          "ganha": [
+            "Dune Hunter"
+          ]
+        },
+        {
+          "secao": "Upgrade Royal Snake with one",
+          "ganha": [
+            "Burrower"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Tomb Queen Icon Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Venom Expert"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Army Standard Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Soul-Gem Keeper"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Monarch"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Herald"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Priest"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Priest"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lmuO_K1",
+      "nome": "Skeleton Leader",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Lance"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Rapid Bow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Spirit Strike",
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Priest Staff"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Spirit Strike",
+          "ganha": [
+            "Soul Strike"
+          ]
+        },
+        {
+          "secao": "Replace Spirit Strike",
+          "ganha": [
+            "Curse Strike"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Bow",
+          "ganha": [
+            "Rapid Cursed Bow"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Bow",
+          "ganha": [
+            "Hunting Harpoons"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Skeletal Steed"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Venom Expert"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Nomad Hunter"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Soul-Gem Keeper"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Herald"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Priest"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Stone Shaper"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Priest"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T5hPi6m",
+      "nome": "Mummies",
+      "tamanho": 10,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Infected Bites"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Infected Bites",
+          "ganha": [
+            "Mummy Claws"
+          ]
+        },
+        {
+          "secao": "Replace all Infected Bites",
+          "ganha": [
+            "Grasping Claws"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IvDRlw5",
+      "nome": "Skeleton Warriors",
+      "tamanho": 10,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Spear"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SJevoE7",
+      "nome": "Skeleton Archers",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Bow",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Bows",
+          "ganha": [
+            "Cursed Bow"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Spotting Vulture"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6aipsh4",
+      "nome": "Skeleton Horsemen",
+      "tamanho": 5,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Bow",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Bows and Strikes",
+          "ganha": [
+            "Hand Weapon",
+            "Trample"
+          ]
+        },
+        {
+          "secao": "Replace all Bows and Strikes",
+          "ganha": [
+            "Lance",
+            "Trample"
+          ]
+        },
+        {
+          "secao": "Replace all Bows and Strikes",
+          "ganha": [
+            "Cursed Bow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Royal Vanguard"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Spotting Vulture"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g87PBrZ",
+      "nome": "Hunting Beasts",
+      "tamanho": 5,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Infected Bites"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Infected Bites",
+          "ganha": [
+            "Sharp Claws"
+          ]
+        },
+        {
+          "secao": "Replace all Infected Bites",
+          "ganha": [
+            "Razor Claws"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c14qXDf",
+      "nome": "Royal Guard",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace one Hand Weapon",
+          "ganha": [
+            "Royal Axe"
+          ]
+        },
+        {
+          "secao": "Replace one Hand Weapon",
+          "ganha": [
+            "Royal Scythe"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Spotting Vulture"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xCYqdWK",
+      "nome": "Beast Riders",
+      "tamanho": 5,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Hand Weapon",
+        "Heavy Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace one Hand Weapon",
+          "ganha": [
+            "Royal Axe"
+          ]
+        },
+        {
+          "secao": "Replace one Hand Weapon",
+          "ganha": [
+            "Royal Scythe"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Spotting Vulture"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fJ6qv3u",
+      "nome": "Scarab Swarms",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Toxin Jaws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Toxin Jaws",
+          "ganha": [
+            "Scarab Onslaught"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VO46CPB",
+      "nome": "Vultures",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Jagged Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Jagged Claws",
+          "ganha": [
+            "Sharp Beak"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5oQ5WS4",
+      "nome": "Great Snakes",
+      "tamanho": 3,
+      "bases": {
+        "round": "90x52",
+        "square": "75x50"
+      },
+      "armas": [
+        "Snake Fangs"
+      ],
+      "itens": [
+        {
+          "nome": "Dune Hunter",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace all Dune Hunters",
+          "ganha": [
+            "Heavy Armor"
+          ]
+        },
+        {
+          "secao": "Replace all Dune Hunters",
+          "ganha": [
+            "Burrower"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d1f_Kvo",
+      "nome": "Snake Riders",
+      "tamanho": 3,
+      "bases": {
+        "round": "90x52",
+        "square": "75x50"
+      },
+      "armas": [
+        "Dual Daggers Skeleton Rider"
+      ],
+      "itens": [
+        {
+          "nome": "Dune Hunter",
+          "bases": null
+        },
+        {
+          "nome": "Snake Charge",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Dune Hunters",
+          "ganha": [
+            "Heavy Armor"
+          ]
+        },
+        {
+          "secao": "Replace all Dune Hunters",
+          "ganha": [
+            "Burrower"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Daggers Skeleton Riders and Snake Charges",
+          "ganha": [
+            "Lance Skeleton Rider",
+            "Heavy Snake Charge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Dzx2JbZ",
+      "nome": "Guardian Statues",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Dual Hand Weapons",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Hand Weapons",
+          "ganha": [
+            "Great Bow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Hand Weapons",
+          "ganha": [
+            "Great Cursed Bow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Stone Shaper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xE4z4X9",
+      "nome": "Snakemen",
+      "tamanho": 3,
+      "bases": {
+        "round": "75x46",
+        "square": "75x50"
+      },
+      "armas": [
+        "Halberd"
+      ],
+      "itens": [
+        {
+          "nome": "Dune Hunter",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace all Halberds",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Death Gaze"
+          ]
+        },
+        {
+          "secao": "Replace all Dune Hunters",
+          "ganha": [
+            "Burrower"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Be6l2xH",
+      "nome": "Death Casket",
+      "tamanho": 1,
+      "bases": {
+        "round": "75x46",
+        "square": "75x50"
+      },
+      "armas": [
+        "Release Spirits",
+        "Casket Crew"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Release Spirits",
+          "ganha": [
+            "Unleash Souls"
+          ]
+        },
+        {
+          "secao": "Replace Release Spirits",
+          "ganha": [
+            "Radiate Curse"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Curse of Sand"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BfFa2ZP",
+      "nome": "Great Scorpion",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Infected Pincers",
+        "Infected Stinger"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Infected Pincers",
+          "ganha": [
+            "Heavy Pincers"
+          ]
+        },
+        {
+          "secao": "Replace Infected Stinger",
+          "ganha": [
+            "Piercing Stinger"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Venom Spurt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ixK72jI",
+      "nome": "Skeleton Chariot",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Hooves",
+        "Spear Crew"
+      ],
+      "itens": [
+        {
+          "nome": "Chariot Shock",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Spear Crew and Chariot Shock",
+          "ganha": [
+            "Bow Crew"
+          ]
+        },
+        {
+          "secao": "Replace Spear Crew and Chariot Shock",
+          "ganha": [
+            "Cursed Bow Crew"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Curse of Sand"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m42zRTL",
+      "nome": "Skeleton Giant",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Giant Sword",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Giant Sword",
+          "ganha": [
+            "Giant Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Giant Sword",
+          "ganha": [
+            "Dual Giant Swords"
+          ]
+        },
+        {
+          "secao": "Replace Giant Sword",
+          "ganha": [
+            "Giant Scatter-Bow"
+          ]
+        },
+        {
+          "secao": "Replace Giant Sword",
+          "ganha": [
+            "Giant Bow"
+          ]
+        },
+        {
+          "secao": "Replace Giant Sword",
+          "ganha": [
+            "Giant Cursed Bow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nHSYbM7",
+      "nome": "War Sphinx",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Skeleton Spear Crew",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Skeleton Spear Crew",
+          "ganha": [
+            "Skeleton Bow Crew"
+          ]
+        },
+        {
+          "secao": "Replace Skeleton Spear Crew",
+          "ganha": [
+            "Skeleton Cursed Bow Crew"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Flame Breath"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Toxic Stinger"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Stone Shaper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Wu1tVLY",
+      "nome": "Giant God-Statue",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Royal Axe",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Royal Axe",
+          "ganha": [
+            "Royal Scythe"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Stone Shaper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INP-p46",
+      "nome": "Sphinx Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Dual Sphinx Sickles",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Sphinx Sickles",
+          "ganha": [
+            "Sphinx Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Sphinx Sickles",
+          "ganha": [
+            "Sphinx Headtaker Blade"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Flame Breath"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Toxic Stinger"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Stone Shaper"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wings"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9asisuK",
+      "nome": "Skull Catapult",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Skull Barrage",
+        "Crew"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Skull Barrage",
+          "ganha": [
+            "Cursed Skull Barrage"
+          ]
+        },
+        {
+          "secao": "Replace Skull Barrage",
+          "ganha": [
+            "Great Skull Volley"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hkQVnnX",
+      "nome": "Desert Titan",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Stomp",
+        "Titanic Strike"
+      ],
+      "itens": [
+        {
+          "nome": "Ammut Titan",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Titanic Strike",
+          "ganha": [
+            "Titanic Bash"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Summon Spirits"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Summon Souls"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Summon Curse"
+          ]
+        },
+        {
+          "secao": "Replace Ammut Titan",
+          "ganha": [
+            "Scorpion Titan"
+          ]
+        },
+        {
+          "secao": "Replace Ammut Titan",
+          "ganha": [
+            "Skeleton Titan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ty-Aqfo",
+      "nome": "God-Titan",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Godly Battle-Axe",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Godly Battle-Axe",
+          "ganha": [
+            "Godly Spear"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Heavy Flame Breath"
+          ]
+        }
+      ]
+    }
+  ]
+}

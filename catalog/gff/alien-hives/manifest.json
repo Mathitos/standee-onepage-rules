@@ -1,0 +1,3148 @@
+{
+  "schemaVersion": 1,
+  "packId": "alien-hives",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "GF",
+    "slug": "grimdark-future",
+    "armyForgeId": 2
+  },
+  "gameSystems": [
+    {
+      "code": "GF",
+      "slug": "grimdark-future",
+      "armyForgeId": 2
+    },
+    {
+      "code": "GFF",
+      "slug": "grimdark-future-firefight",
+      "armyForgeId": 3
+    }
+  ],
+  "armyBook": {
+    "id": "w7qor7b2kuifcyvk",
+    "name": "Alien Hives",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "w7qor7b2kuifcyvk",
+      "name": "Alien Hives",
+      "version": "3.6.0",
+      "gameSystemId": 3,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "w7qor7b2kuifcyvk",
+      "name": "Alien Hives",
+      "version": "3.6.0",
+      "gameSystemId": 2,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Alien_Hives_-_BW.pdf",
+    "pdfSha256": "4a7e051c8bd8392dd3f71c009bb77ef614ad7cf991d55d42888331fbc1b5953a",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "prime-warrior",
+      "names": [
+        "Prime Warrior"
+      ],
+      "armyForgeUnitId": "jJP5jiL",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          60.0
+        ],
+        "raw": "60",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "snatcher-lord",
+      "names": [
+        "Snatcher Lord"
+      ],
+      "armyForgeUnitId": "qpW1fhD",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "soul-snatcher",
+      "names": [
+        "Soul-Snatcher",
+        "Soul-Snatchers"
+      ],
+      "armyForgeUnitId": "19W7XoU",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "hive-swarm",
+      "names": [
+        "Hive Swarm",
+        "Hive Swarms"
+      ],
+      "armyForgeUnitId": "rv0FY-K",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "assault-grunts",
+      "names": [
+        "Assault Grunts"
+      ],
+      "armyForgeUnitId": "_LXFoO9",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "shooter-grunts",
+      "names": [
+        "Shooter Grunts"
+      ],
+      "armyForgeUnitId": "CMADHYi",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "hive-warrior",
+      "names": [
+        "Hive Warrior",
+        "Hive Warriors"
+      ],
+      "armyForgeUnitId": "01LG2ML",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "hive-guardian",
+      "names": [
+        "Hive Guardian",
+        "Hive Guardians"
+      ],
+      "armyForgeUnitId": "jf0HjF0",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "ravenous-beast",
+      "names": [
+        "Ravenous Beast",
+        "Ravenous Beasts"
+      ],
+      "armyForgeUnitId": "tLoLwnZ",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "synapse-beast",
+      "names": [
+        "Synapse Beast",
+        "Synapse Beasts"
+      ],
+      "armyForgeUnitId": "Zcuz_wH",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "venom-beast",
+      "names": [
+        "Venom Beast",
+        "Venom Beasts"
+      ],
+      "armyForgeUnitId": "_nhe5Po",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "spores",
+      "names": [
+        "Spores"
+      ],
+      "armyForgeUnitId": "lWrYpK5",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "massive-spore",
+      "names": [
+        "Massive Spore",
+        "Massive Spores"
+      ],
+      "armyForgeUnitId": "wSkDwle",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "mortar-beast",
+      "names": [
+        "Mortar Beast"
+      ],
+      "armyForgeUnitId": "CXEkpHT",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          105.0,
+          70.0
+        ],
+        "raw": "105x70",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "flamer-beast",
+      "names": [
+        "Flamer Beast"
+      ],
+      "armyForgeUnitId": "wCTQj9q",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          105.0,
+          70.0
+        ],
+        "raw": "105x70",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "shadow-hunter",
+      "names": [
+        "Shadow Hunter"
+      ],
+      "armyForgeUnitId": "nETJZj-",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          60.0
+        ],
+        "raw": "60",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "assault-prime-whip",
+      "candidateId": "a001",
+      "pdfLabel": "Assault Prime Whip",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "prime-warrior",
+      "equipmentTags": [
+        "Toxin Whip|Heavy Toxin Whip"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Assault Prime",
+          "armyBook": "Prime Warrior"
+        },
+        {
+          "pdf": "Whip",
+          "armyBook": [
+            "Toxin Whip",
+            "Heavy Toxin Whip"
+          ]
+        }
+      ],
+      "notes": "Prime Warrior corpo a corpo; o rótulo cabe em Toxin Whip e Heavy Toxin Whip",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0
+          ],
+          "front": "arts/assault-prime-whip/fino/frente.svg",
+          "back": "arts/assault-prime-whip/fino/verso.svg",
+          "canvasMm": [
+            59.605,
+            77.301
+          ],
+          "frontBackIoU": 0.948,
+          "sizeMm": [
+            77.2,
+            59.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 31,
+          "rows": [
+            0
+          ],
+          "front": "arts/assault-prime-whip/borda/frente.svg",
+          "back": "arts/assault-prime-whip/borda/verso.svg",
+          "canvasMm": [
+            63.161,
+            79.163
+          ],
+          "frontBackIoU": 0.961,
+          "sizeMm": [
+            79.1,
+            63.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "assault-prime-club",
+      "candidateId": "a002",
+      "pdfLabel": "Assault Prime Club",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "prime-warrior",
+      "equipmentTags": [
+        "Smashing Club|Heavy Smashing Club"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Assault Prime",
+          "armyBook": "Prime Warrior"
+        },
+        {
+          "pdf": "Club",
+          "armyBook": [
+            "Smashing Club",
+            "Heavy Smashing Club"
+          ]
+        }
+      ],
+      "notes": "o rótulo cabe nas duas clavas",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            1
+          ],
+          "front": "arts/assault-prime-club/fino/frente.svg",
+          "back": "arts/assault-prime-club/fino/verso.svg",
+          "canvasMm": [
+            57.489,
+            71.374
+          ],
+          "frontBackIoU": 0.94,
+          "sizeMm": [
+            71.3,
+            57.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 31,
+          "rows": [
+            1
+          ],
+          "front": "arts/assault-prime-club/borda/frente.svg",
+          "back": "arts/assault-prime-club/borda/verso.svg",
+          "canvasMm": [
+            60.875,
+            73.237
+          ],
+          "frontBackIoU": 0.912,
+          "sizeMm": [
+            73.2,
+            60.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "assault-prime-sword",
+      "candidateId": "a003",
+      "pdfLabel": "Assault Prime Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "prime-warrior",
+      "equipmentTags": [
+        "Slashing Blade|Serrated Blade|Heavy Slashing Blade|Heavy Serrated Blade"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Assault Prime",
+          "armyBook": "Prime Warrior"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": [
+            "Slashing Blade",
+            "Serrated Blade",
+            "Heavy Slashing Blade",
+            "Heavy Serrated Blade"
+          ]
+        }
+      ],
+      "notes": "rótulo diz só 'Sword'; o army book tem Slashing e Serrated Blade (e versões Heavy)",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            2
+          ],
+          "front": "arts/assault-prime-sword/fino/frente.svg",
+          "back": "arts/assault-prime-sword/fino/verso.svg",
+          "canvasMm": [
+            60.833,
+            78.867
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            78.7,
+            60.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 31,
+          "rows": [
+            2
+          ],
+          "front": "arts/assault-prime-sword/borda/frente.svg",
+          "back": "arts/assault-prime-sword/borda/verso.svg",
+          "canvasMm": [
+            63.923,
+            81.068
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            80.9,
+            63.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "snatcher-lord",
+      "candidateId": "a004",
+      "pdfLabel": "Snatcher Lord",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "snatcher-lord",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0
+          ],
+          "front": "arts/snatcher-lord/fino/frente.svg",
+          "back": "arts/snatcher-lord/fino/verso.svg",
+          "canvasMm": [
+            42.46,
+            32.978
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            32.9,
+            42.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            0
+          ],
+          "front": "arts/snatcher-lord/borda/frente.svg",
+          "back": "arts/snatcher-lord/borda/verso.svg",
+          "canvasMm": [
+            45.847,
+            34.671
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            34.5,
+            45.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "swarm",
+      "candidateId": "a005",
+      "pdfLabel": "Swarm",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hive-swarm",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Swarm",
+          "armyBook": "Hive Swarms"
+        }
+      ],
+      "notes": "genericName Bug Swarms; arte ~40 mm de largura (base 40 mm)",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            1,
+            2,
+            3
+          ],
+          "front": "arts/swarm/fino/frente.svg",
+          "back": "arts/swarm/fino/verso.svg",
+          "canvasMm": [
+            40.005,
+            20.913
+          ],
+          "frontBackIoU": 0.942,
+          "sizeMm": [
+            20.8,
+            39.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            1,
+            2,
+            3
+          ],
+          "front": "arts/swarm/borda/frente.svg",
+          "back": "arts/swarm/borda/verso.svg",
+          "canvasMm": [
+            43.392,
+            22.606
+          ],
+          "frontBackIoU": 0.953,
+          "sizeMm": [
+            22.5,
+            43.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "assault-grunt-v1",
+      "candidateId": "a006",
+      "pdfLabel": "Assault Grunt V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "assault-grunts",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/assault-grunt-v1/fino/frente.svg",
+          "back": "arts/assault-grunt-v1/fino/verso.svg",
+          "canvasMm": [
+            32.597,
+            24.977
+          ],
+          "frontBackIoU": 0.945,
+          "sizeMm": [
+            24.9,
+            32.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/assault-grunt-v1/borda/frente.svg",
+          "back": "arts/assault-grunt-v1/borda/verso.svg",
+          "canvasMm": [
+            36.364,
+            26.839
+          ],
+          "frontBackIoU": 0.962,
+          "sizeMm": [
+            26.8,
+            36.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "assault-grunt-v2",
+      "candidateId": "a007",
+      "pdfLabel": "Assault Grunt V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "assault-grunts",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/assault-grunt-v2/fino/frente.svg",
+          "back": "arts/assault-grunt-v2/fino/verso.svg",
+          "canvasMm": [
+            32.258,
+            28.49
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            28.4,
+            32.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/assault-grunt-v2/borda/frente.svg",
+          "back": "arts/assault-grunt-v2/borda/verso.svg",
+          "canvasMm": [
+            35.983,
+            30.353
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            30.2,
+            35.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "shooter-grunt-v1",
+      "candidateId": "a008",
+      "pdfLabel": "Shooter Grunt V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "shooter-grunts",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/shooter-grunt-v1/fino/frente.svg",
+          "back": "arts/shooter-grunt-v1/fino/verso.svg",
+          "canvasMm": [
+            32.343,
+            22.437
+          ],
+          "frontBackIoU": 0.936,
+          "sizeMm": [
+            22.4,
+            32.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/shooter-grunt-v1/borda/frente.svg",
+          "back": "arts/shooter-grunt-v1/borda/verso.svg",
+          "canvasMm": [
+            36.11,
+            24.299
+          ],
+          "frontBackIoU": 0.954,
+          "sizeMm": [
+            24.2,
+            35.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "shooter-grunt-v2",
+      "candidateId": "a009",
+      "pdfLabel": "Shooter Grunt V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "shooter-grunts",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/shooter-grunt-v2/fino/frente.svg",
+          "back": "arts/shooter-grunt-v2/fino/verso.svg",
+          "canvasMm": [
+            32.131,
+            25.146
+          ],
+          "frontBackIoU": 0.946,
+          "sizeMm": [
+            25.1,
+            31.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/shooter-grunt-v2/borda/frente.svg",
+          "back": "arts/shooter-grunt-v2/borda/verso.svg",
+          "canvasMm": [
+            35.856,
+            27.009
+          ],
+          "frontBackIoU": 0.959,
+          "sizeMm": [
+            26.9,
+            35.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "winged-shooter-v1",
+      "candidateId": "a010",
+      "pdfLabel": "Winged Shooter V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "shooter-grunts",
+      "equipmentTags": [
+        "Wings|Raider Wings"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Winged Shooter",
+          "armyBook": [
+            "Shooter Grunts + Wings",
+            "Shooter Grunts + Raider Wings"
+          ]
+        }
+      ],
+      "notes": "Shooter Grunts com asas (Wings ou Raider Wings)",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/winged-shooter-v1/fino/frente.svg",
+          "back": "arts/winged-shooter-v1/fino/verso.svg",
+          "canvasMm": [
+            62.442,
+            40.767
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            40.6,
+            62.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/winged-shooter-v1/borda/frente.svg",
+          "back": "arts/winged-shooter-v1/borda/verso.svg",
+          "canvasMm": [
+            66.167,
+            42.63
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            42.5,
+            66.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "winged-shooter-v2",
+      "candidateId": "a011",
+      "pdfLabel": "Winged Shooter V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "shooter-grunts",
+      "equipmentTags": [
+        "Wings|Raider Wings"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Winged Shooter",
+          "armyBook": [
+            "Shooter Grunts + Wings",
+            "Shooter Grunts + Raider Wings"
+          ]
+        }
+      ],
+      "notes": "Shooter Grunts com asas (Wings ou Raider Wings)",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            2,
+            3
+          ],
+          "front": "arts/winged-shooter-v2/fino/frente.svg",
+          "back": "arts/winged-shooter-v2/fino/verso.svg",
+          "canvasMm": [
+            67.479,
+            44.154
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            44.0,
+            67.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            2,
+            3
+          ],
+          "front": "arts/winged-shooter-v2/borda/frente.svg",
+          "back": "arts/winged-shooter-v2/borda/verso.svg",
+          "canvasMm": [
+            71.205,
+            46.016
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            45.9,
+            71.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "snatcher-v1",
+      "candidateId": "a012",
+      "pdfLabel": "Snatcher V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "soul-snatcher",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Snatcher",
+          "armyBook": "Soul-Snatchers"
+        }
+      ],
+      "notes": "Snatcher = Soul-Snatchers (genericName Stalkers)",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/snatcher-v1/fino/frente.svg",
+          "back": "arts/snatcher-v1/fino/verso.svg",
+          "canvasMm": [
+            47.964,
+            28.829
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            28.7,
+            47.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/snatcher-v1/borda/frente.svg",
+          "back": "arts/snatcher-v1/borda/verso.svg",
+          "canvasMm": [
+            51.35,
+            30.522
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            30.4,
+            51.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "snatcher-v2",
+      "candidateId": "a013",
+      "pdfLabel": "Snatcher V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "soul-snatcher",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Snatcher",
+          "armyBook": "Soul-Snatchers"
+        }
+      ],
+      "notes": "Snatcher = Soul-Snatchers (genericName Stalkers)",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/snatcher-v2/fino/frente.svg",
+          "back": "arts/snatcher-v2/fino/verso.svg",
+          "canvasMm": [
+            51.054,
+            26.755
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            26.7,
+            50.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/snatcher-v2/borda/frente.svg",
+          "back": "arts/snatcher-v2/borda/verso.svg",
+          "canvasMm": [
+            54.483,
+            28.448
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            28.4,
+            54.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-ravager-gun",
+      "candidateId": "a014",
+      "pdfLabel": "Warrior Ravager Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hive-warrior",
+      "equipmentTags": [
+        "Ravager Gun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Warrior = Hive Warriors (genericName Warriors)",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/warrior-ravager-gun/fino/frente.svg",
+          "back": "arts/warrior-ravager-gun/fino/verso.svg",
+          "canvasMm": [
+            36.026,
+            50.08
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            50.0,
+            35.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/warrior-ravager-gun/borda/frente.svg",
+          "back": "arts/warrior-ravager-gun/borda/verso.svg",
+          "canvasMm": [
+            39.751,
+            51.943
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            51.8,
+            39.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-spitter-gun",
+      "candidateId": "a015",
+      "pdfLabel": "Warrior Spitter Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hive-warrior",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "Hive Warriors não têm 'Spitter Gun'; armas sem par no PDF: Bug-Spewer, Ripper Gun, Hook-Claw Launcher",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/warrior-spitter-gun/fino/frente.svg",
+          "back": "arts/warrior-spitter-gun/fino/verso.svg",
+          "canvasMm": [
+            36.153,
+            50.546
+          ],
+          "frontBackIoU": 0.917,
+          "sizeMm": [
+            50.5,
+            35.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/warrior-spitter-gun/borda/frente.svg",
+          "back": "arts/warrior-spitter-gun/borda/verso.svg",
+          "canvasMm": [
+            39.878,
+            52.409
+          ],
+          "frontBackIoU": 0.94,
+          "sizeMm": [
+            52.3,
+            39.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-spine-gun-1",
+      "candidateId": "a016",
+      "pdfLabel": "Warrior Spine Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hive-warrior",
+      "equipmentTags": [
+        "Dual Spike-Shooters"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Spine Gun",
+          "armyBook": "Dual Spike-Shooters"
+        }
+      ],
+      "notes": "arte com duas armas de espinhos nos braços; spine ~ spike. Mesmo rótulo que a017 (pose repetida)",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-spine-gun-1/fino/frente.svg",
+          "back": "arts/warrior-spine-gun-1/fino/verso.svg",
+          "canvasMm": [
+            57.023,
+            50.461
+          ],
+          "frontBackIoU": 0.926,
+          "sizeMm": [
+            50.4,
+            56.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-spine-gun-1/borda/frente.svg",
+          "back": "arts/warrior-spine-gun-1/borda/verso.svg",
+          "canvasMm": [
+            60.748,
+            52.324
+          ],
+          "frontBackIoU": 0.945,
+          "sizeMm": [
+            52.2,
+            60.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-spine-gun-2",
+      "candidateId": "a017",
+      "pdfLabel": "Warrior Spine Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hive-warrior",
+      "equipmentTags": [
+        "Dual Spike-Shooters"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Spine Gun",
+          "armyBook": "Dual Spike-Shooters"
+        }
+      ],
+      "notes": "mesmo rótulo e mesma figura de a016 (cópia no PDF); arte com duas armas de espinhos; spine ~ spike",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            1,
+            2
+          ],
+          "front": "arts/warrior-spine-gun-2/fino/frente.svg",
+          "back": "arts/warrior-spine-gun-2/fino/verso.svg",
+          "canvasMm": [
+            57.023,
+            50.038
+          ],
+          "frontBackIoU": 0.937,
+          "sizeMm": [
+            50.0,
+            56.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            1,
+            2
+          ],
+          "front": "arts/warrior-spine-gun-2/borda/frente.svg",
+          "back": "arts/warrior-spine-gun-2/borda/verso.svg",
+          "canvasMm": [
+            60.748,
+            51.901
+          ],
+          "frontBackIoU": 0.959,
+          "sizeMm": [
+            51.8,
+            60.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-barb-gun",
+      "candidateId": "a018",
+      "pdfLabel": "Warrior Barb Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hive-warrior",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "Hive Warriors não têm 'Barb Gun'; poderia ser Hook-Claw Launcher ou Ripper Gun, sem como decidir",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-barb-gun/fino/frente.svg",
+          "back": "arts/warrior-barb-gun/fino/verso.svg",
+          "canvasMm": [
+            35.983,
+            50.334
+          ],
+          "frontBackIoU": 0.918,
+          "sizeMm": [
+            50.2,
+            35.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-barb-gun/borda/frente.svg",
+          "back": "arts/warrior-barb-gun/borda/verso.svg",
+          "canvasMm": [
+            39.709,
+            52.197
+          ],
+          "frontBackIoU": 0.941,
+          "sizeMm": [
+            52.1,
+            39.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-acid-gun",
+      "candidateId": "a019",
+      "pdfLabel": "Warrior Acid Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hive-warrior",
+      "equipmentTags": [
+        "Acid Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Acid Gun",
+          "armyBook": "Acid Launcher"
+        }
+      ],
+      "notes": "única arma ácida dos Hive Warriors",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-acid-gun/fino/frente.svg",
+          "back": "arts/warrior-acid-gun/fino/verso.svg",
+          "canvasMm": [
+            38.65,
+            50.631
+          ],
+          "frontBackIoU": 0.924,
+          "sizeMm": [
+            50.5,
+            38.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-acid-gun/borda/frente.svg",
+          "back": "arts/warrior-acid-gun/borda/verso.svg",
+          "canvasMm": [
+            42.714,
+            52.493
+          ],
+          "frontBackIoU": 0.94,
+          "sizeMm": [
+            52.4,
+            42.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-heavy-ravager-gun",
+      "candidateId": "a020",
+      "pdfLabel": "Warrior Heavy Ravager Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hive-warrior",
+      "equipmentTags": [
+        "Heavy Ravager Gun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-heavy-ravager-gun/fino/frente.svg",
+          "back": "arts/warrior-heavy-ravager-gun/fino/verso.svg",
+          "canvasMm": [
+            36.322,
+            50.588
+          ],
+          "frontBackIoU": 0.924,
+          "sizeMm": [
+            50.5,
+            36.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-heavy-ravager-gun/borda/frente.svg",
+          "back": "arts/warrior-heavy-ravager-gun/borda/verso.svg",
+          "canvasMm": [
+            40.047,
+            52.451
+          ],
+          "frontBackIoU": 0.946,
+          "sizeMm": [
+            52.3,
+            39.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-shredder-gun",
+      "candidateId": "a021",
+      "pdfLabel": "Warrior Shredder Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hive-warrior",
+      "equipmentTags": [
+        "Shredder Gun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-shredder-gun/fino/frente.svg",
+          "back": "arts/warrior-shredder-gun/fino/verso.svg",
+          "canvasMm": [
+            35.391,
+            50.504
+          ],
+          "frontBackIoU": 0.921,
+          "sizeMm": [
+            50.4,
+            35.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-shredder-gun/borda/frente.svg",
+          "back": "arts/warrior-shredder-gun/borda/verso.svg",
+          "canvasMm": [
+            39.116,
+            52.366
+          ],
+          "frontBackIoU": 0.945,
+          "sizeMm": [
+            52.2,
+            38.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-club",
+      "candidateId": "a022",
+      "pdfLabel": "Warrior Club",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hive-warrior",
+      "equipmentTags": [
+        "Dual Smashing Clubs"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Club",
+          "armyBook": "Dual Smashing Clubs"
+        }
+      ],
+      "notes": "única clava dos Hive Warriors é Dual Smashing Clubs (padrão); a arte mostra clava e uma lâmina curva",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/warrior-club/fino/frente.svg",
+          "back": "arts/warrior-club/fino/verso.svg",
+          "canvasMm": [
+            55.668,
+            59.394
+          ],
+          "frontBackIoU": 0.946,
+          "sizeMm": [
+            59.3,
+            55.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/warrior-club/borda/frente.svg",
+          "back": "arts/warrior-club/borda/verso.svg",
+          "canvasMm": [
+            59.394,
+            61.256
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            61.1,
+            59.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-whip",
+      "candidateId": "a023",
+      "pdfLabel": "Warrior Whip",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hive-warrior",
+      "equipmentTags": [
+        "Toxin Whip & Slashing Blade|Toxin Whip & Serrated Blade|Dual Toxin Whips"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Whip",
+          "armyBook": [
+            "Toxin Whip & Slashing Blade",
+            "Toxin Whip & Serrated Blade",
+            "Dual Toxin Whips"
+          ]
+        }
+      ],
+      "notes": "arte mostra chicote e lâmina (combos Toxin Whip & Slashing/Serrated Blade); incluí Dual Toxin Whips, única outra arma corpo a corpo com chicote",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/warrior-whip/fino/frente.svg",
+          "back": "arts/warrior-whip/fino/verso.svg",
+          "canvasMm": [
+            57.319,
+            58.039
+          ],
+          "frontBackIoU": 0.945,
+          "sizeMm": [
+            57.9,
+            57.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/warrior-whip/borda/frente.svg",
+          "back": "arts/warrior-whip/borda/verso.svg",
+          "canvasMm": [
+            61.045,
+            59.902
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            59.8,
+            60.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guard-ravager",
+      "candidateId": "a024",
+      "pdfLabel": "Guard Ravager",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hive-guardian",
+      "equipmentTags": [
+        "Heavy Ravager Gun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guard",
+          "armyBook": "Hive Guardians"
+        },
+        {
+          "pdf": "Ravager",
+          "armyBook": "Heavy Ravager Gun"
+        }
+      ],
+      "notes": "Guard = Hive Guardians (genericName Guardian Warriors); a única Ravager deles é Heavy Ravager Gun",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/guard-ravager/fino/frente.svg",
+          "back": "arts/guard-ravager/fino/verso.svg",
+          "canvasMm": [
+            36.364,
+            53.044
+          ],
+          "frontBackIoU": 0.918,
+          "sizeMm": [
+            52.9,
+            36.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/guard-ravager/borda/frente.svg",
+          "back": "arts/guard-ravager/borda/verso.svg",
+          "canvasMm": [
+            40.09,
+            54.906
+          ],
+          "frontBackIoU": 0.935,
+          "sizeMm": [
+            54.8,
+            39.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guard-skewer-cannon",
+      "candidateId": "a025",
+      "pdfLabel": "Guard Skewer Cannon",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hive-guardian",
+      "equipmentTags": [
+        "Skewer Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guard",
+          "armyBook": "Hive Guardians"
+        },
+        {
+          "pdf": "Skewer Cannon",
+          "armyBook": "Skewer Launcher"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/guard-skewer-cannon/fino/frente.svg",
+          "back": "arts/guard-skewer-cannon/fino/verso.svg",
+          "canvasMm": [
+            36.534,
+            52.874
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            52.7,
+            36.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/guard-skewer-cannon/borda/frente.svg",
+          "back": "arts/guard-skewer-cannon/borda/verso.svg",
+          "canvasMm": [
+            40.259,
+            54.737
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            54.6,
+            40.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guard-harpoon",
+      "candidateId": "a026",
+      "pdfLabel": "Guard Harpoon",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hive-guardian",
+      "equipmentTags": [
+        "Bio-Harpoon Gun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guard",
+          "armyBook": "Hive Guardians"
+        },
+        {
+          "pdf": "Harpoon",
+          "armyBook": "Bio-Harpoon Gun"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/guard-harpoon/fino/frente.svg",
+          "back": "arts/guard-harpoon/fino/verso.svg",
+          "canvasMm": [
+            41.444,
+            53.34
+          ],
+          "frontBackIoU": 0.924,
+          "sizeMm": [
+            53.3,
+            41.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/guard-harpoon/borda/frente.svg",
+          "back": "arts/guard-harpoon/borda/verso.svg",
+          "canvasMm": [
+            45.17,
+            55.203
+          ],
+          "frontBackIoU": 0.942,
+          "sizeMm": [
+            55.1,
+            45.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guard-club",
+      "candidateId": "a027",
+      "pdfLabel": "Guard Club",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hive-guardian",
+      "equipmentTags": [
+        "Dual Smashing Clubs"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guard",
+          "armyBook": "Hive Guardians"
+        },
+        {
+          "pdf": "Club",
+          "armyBook": "Dual Smashing Clubs"
+        }
+      ],
+      "notes": "Dual Smashing Clubs é a arma padrão",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/guard-club/fino/frente.svg",
+          "back": "arts/guard-club/fino/verso.svg",
+          "canvasMm": [
+            45.127,
+            53.467
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            53.3,
+            44.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 50,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/guard-club/borda/frente.svg",
+          "back": "arts/guard-club/borda/verso.svg",
+          "canvasMm": [
+            48.853,
+            55.33
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            55.2,
+            48.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ravener-beast",
+      "candidateId": "a028",
+      "pdfLabel": "Ravener Beast",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ravenous-beast",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Ravener Beast",
+          "armyBook": "Ravenous Beasts"
+        }
+      ],
+      "notes": "nome parecido; arte serpentina com garras (genericName Combat Snakes)",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ravener-beast/fino/frente.svg",
+          "back": "arts/ravener-beast/fino/verso.svg",
+          "canvasMm": [
+            46.44,
+            49.445
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            49.4,
+            46.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ravener-beast/borda/frente.svg",
+          "back": "arts/ravener-beast/borda/verso.svg",
+          "canvasMm": [
+            49.826,
+            51.139
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            51.1,
+            49.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "synapse-beast",
+      "candidateId": "a029",
+      "pdfLabel": "Synapse Beast",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "synapse-beast",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/synapse-beast/fino/frente.svg",
+          "back": "arts/synapse-beast/fino/verso.svg",
+          "canvasMm": [
+            31.369,
+            48.98
+          ],
+          "frontBackIoU": 0.972,
+          "sizeMm": [
+            48.9,
+            31.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 52,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/synapse-beast/borda/frente.svg",
+          "back": "arts/synapse-beast/borda/verso.svg",
+          "canvasMm": [
+            34.756,
+            50.673
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            50.5,
+            34.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "venom-floater",
+      "candidateId": "a030",
+      "pdfLabel": "Venom Floater",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "venom-beast",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Venom Floater",
+          "armyBook": "Venom Beasts"
+        }
+      ],
+      "notes": "Venom + genericName Poison Floaters",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/venom-floater/fino/frente.svg",
+          "back": "arts/venom-floater/fino/verso.svg",
+          "canvasMm": [
+            37.888,
+            52.282
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            52.2,
+            37.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 53,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/venom-floater/borda/frente.svg",
+          "back": "arts/venom-floater/borda/verso.svg",
+          "canvasMm": [
+            41.275,
+            53.975
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            53.8,
+            41.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "spores",
+      "candidateId": "a031",
+      "pdfLabel": "Spores",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "spores",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 26,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/spores/fino/frente.svg",
+          "back": "arts/spores/fino/verso.svg",
+          "canvasMm": [
+            16.679,
+            37.804
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            37.7,
+            16.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/spores/borda/frente.svg",
+          "back": "arts/spores/borda/verso.svg",
+          "canvasMm": [
+            20.066,
+            39.497
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            39.4,
+            19.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "massive-spore",
+      "candidateId": "a032",
+      "pdfLabel": "Massive Spore",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "massive-spore",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 27,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/massive-spore/fino/frente.svg",
+          "back": "arts/massive-spore/fino/verso.svg",
+          "canvasMm": [
+            43.561,
+            48.768
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            48.7,
+            43.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/massive-spore/borda/frente.svg",
+          "back": "arts/massive-spore/borda/verso.svg",
+          "canvasMm": [
+            47.794,
+            50.461
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            50.4,
+            46.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "mortar-beast",
+      "candidateId": "a033",
+      "pdfLabel": "Mortar Beast",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "mortar-beast",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            1
+          ],
+          "front": "arts/mortar-beast/fino/frente.svg",
+          "back": "arts/mortar-beast/fino/verso.svg",
+          "canvasMm": [
+            103.082,
+            64.855
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            64.8,
+            102.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 56,
+          "rows": [
+            1
+          ],
+          "front": "arts/mortar-beast/borda/frente.svg",
+          "back": "arts/mortar-beast/borda/verso.svg",
+          "canvasMm": [
+            106.807,
+            66.717
+          ],
+          "frontBackIoU": 0.999,
+          "sizeMm": [
+            66.6,
+            106.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "winged-prime-spine-guns",
+      "candidateId": "a034",
+      "pdfLabel": "Winged Prime Spine Guns",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "prime-warrior",
+      "equipmentTags": [
+        "Wings|Raid Wings",
+        "Dual Spike-Shooters"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Winged Prime",
+          "armyBook": [
+            "Prime Warrior + Wings",
+            "Prime Warrior + Raid Wings"
+          ]
+        },
+        {
+          "pdf": "Spine Guns",
+          "armyBook": "Dual Spike-Shooters"
+        }
+      ],
+      "notes": "Prime Warrior com asas (Wings ou Raid Wings)",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0
+          ],
+          "front": "arts/winged-prime-spine-guns/fino/frente.svg",
+          "back": "arts/winged-prime-spine-guns/fino/verso.svg",
+          "canvasMm": [
+            135.636,
+            120.354
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            120.2,
+            135.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            0
+          ],
+          "front": "arts/winged-prime-spine-guns/borda/frente.svg",
+          "back": "arts/winged-prime-spine-guns/borda/verso.svg",
+          "canvasMm": [
+            139.361,
+            122.216
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            122.1,
+            139.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "winged-prime-ravager-gun",
+      "candidateId": "a035",
+      "pdfLabel": "Winged Prime Ravager Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "prime-warrior",
+      "equipmentTags": [
+        "Wings|Raid Wings",
+        "Heavy Ravager Gun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Winged Prime",
+          "armyBook": [
+            "Prime Warrior + Wings",
+            "Prime Warrior + Raid Wings"
+          ]
+        },
+        {
+          "pdf": "Ravager Gun",
+          "armyBook": "Heavy Ravager Gun"
+        }
+      ],
+      "notes": "Prime Warrior só tem Heavy Ravager Gun; asas = Wings ou Raid Wings",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0
+          ],
+          "front": "arts/winged-prime-ravager-gun/fino/frente.svg",
+          "back": "arts/winged-prime-ravager-gun/fino/verso.svg",
+          "canvasMm": [
+            135.509,
+            120.015
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            119.9,
+            135.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            0
+          ],
+          "front": "arts/winged-prime-ravager-gun/borda/frente.svg",
+          "back": "arts/winged-prime-ravager-gun/borda/verso.svg",
+          "canvasMm": [
+            139.234,
+            121.878
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            121.8,
+            138.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "winged-prime-whip",
+      "candidateId": "a036",
+      "pdfLabel": "Winged Prime Whip",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "prime-warrior",
+      "equipmentTags": [
+        "Wings|Raid Wings",
+        "Toxin Whip|Heavy Toxin Whip"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Winged Prime",
+          "armyBook": [
+            "Prime Warrior + Wings",
+            "Prime Warrior + Raid Wings"
+          ]
+        },
+        {
+          "pdf": "Whip",
+          "armyBook": [
+            "Toxin Whip",
+            "Heavy Toxin Whip"
+          ]
+        }
+      ],
+      "notes": "asas = Wings ou Raid Wings; chicote = Toxin Whip ou Heavy Toxin Whip",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0
+          ],
+          "front": "arts/winged-prime-whip/fino/frente.svg",
+          "back": "arts/winged-prime-whip/fino/verso.svg",
+          "canvasMm": [
+            135.297,
+            119.846
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            119.7,
+            135.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            0
+          ],
+          "front": "arts/winged-prime-whip/borda/frente.svg",
+          "back": "arts/winged-prime-whip/borda/verso.svg",
+          "canvasMm": [
+            139.023,
+            121.708
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            121.6,
+            138.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "flamer-beast",
+      "candidateId": "a037",
+      "pdfLabel": "Flamer Beast",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "flamer-beast",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            0
+          ],
+          "front": "arts/flamer-beast/fino/frente.svg",
+          "back": "arts/flamer-beast/fino/verso.svg",
+          "canvasMm": [
+            115.401,
+            53.848
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            53.8,
+            115.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 56,
+          "rows": [
+            0
+          ],
+          "front": "arts/flamer-beast/borda/frente.svg",
+          "back": "arts/flamer-beast/borda/verso.svg",
+          "canvasMm": [
+            119.168,
+            55.711
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            55.6,
+            118.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "prime-gunner-spitter-gun",
+      "candidateId": "a038",
+      "pdfLabel": "Prime Gunner Spitter Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "prime-warrior",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "Prime Warrior não tem 'Spitter Gun' (armas de tiro: Bug-Spewer, Ripper Gun, Shredder Gun, Heavy Ravager Gun, Hook-Claw Launcher, Acid Launcher)",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            1
+          ],
+          "front": "arts/prime-gunner-spitter-gun/fino/frente.svg",
+          "back": "arts/prime-gunner-spitter-gun/fino/verso.svg",
+          "canvasMm": [
+            69.681,
+            65.532
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            65.4,
+            69.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 30,
+          "rows": [
+            1
+          ],
+          "front": "arts/prime-gunner-spitter-gun/borda/frente.svg",
+          "back": "arts/prime-gunner-spitter-gun/borda/verso.svg",
+          "canvasMm": [
+            73.406,
+            67.395
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            67.3,
+            73.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "prime-gunner-ravager-gun",
+      "candidateId": "a039",
+      "pdfLabel": "Prime Gunner Ravager Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "prime-warrior",
+      "equipmentTags": [
+        "Heavy Ravager Gun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Prime Gunner",
+          "armyBook": "Prime Warrior"
+        },
+        {
+          "pdf": "Ravager Gun",
+          "armyBook": "Heavy Ravager Gun"
+        }
+      ],
+      "notes": "Prime Warrior só tem Heavy Ravager Gun",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0
+          ],
+          "front": "arts/prime-gunner-ravager-gun/fino/frente.svg",
+          "back": "arts/prime-gunner-ravager-gun/fino/verso.svg",
+          "canvasMm": [
+            62.484,
+            68.665
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            68.6,
+            62.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 30,
+          "rows": [
+            0
+          ],
+          "front": "arts/prime-gunner-ravager-gun/borda/frente.svg",
+          "back": "arts/prime-gunner-ravager-gun/borda/verso.svg",
+          "canvasMm": [
+            66.209,
+            70.527
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            70.4,
+            66.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "prime-gunner-acid-launcher",
+      "candidateId": "a040",
+      "pdfLabel": "Prime Gunner Acid Launcher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "prime-warrior",
+      "equipmentTags": [
+        "Acid Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Prime Gunner",
+          "armyBook": "Prime Warrior"
+        }
+      ],
+      "notes": "Prime Gunner = Prime Warrior armado; Acid Launcher existe com esse nome",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            2
+          ],
+          "front": "arts/prime-gunner-acid-launcher/fino/frente.svg",
+          "back": "arts/prime-gunner-acid-launcher/fino/verso.svg",
+          "canvasMm": [
+            56.938,
+            68.876
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            68.7,
+            56.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 30,
+          "rows": [
+            2
+          ],
+          "front": "arts/prime-gunner-acid-launcher/borda/frente.svg",
+          "back": "arts/prime-gunner-acid-launcher/borda/verso.svg",
+          "canvasMm": [
+            60.664,
+            70.739
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            70.6,
+            60.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunter",
+      "candidateId": "a041",
+      "pdfLabel": "Hunter",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "shadow-hunter",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunter",
+          "armyBook": "Shadow Hunter"
+        }
+      ],
+      "notes": "figura de quatro braços com lâminas, ~78 mm de largura (base 60 mm); genericName Shadow Assassin",
+      "styles": {
+        "fino": {
+          "page": 29,
+          "rows": [
+            0
+          ],
+          "front": "arts/hunter/fino/frente.svg",
+          "back": "arts/hunter/fino/verso.svg",
+          "canvasMm": [
+            78.147,
+            81.238
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            81.1,
+            77.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 57,
+          "rows": [
+            0
+          ],
+          "front": "arts/hunter/borda/frente.svg",
+          "back": "arts/hunter/borda/verso.svg",
+          "canvasMm": [
+            81.873,
+            83.1
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            83.0,
+            81.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

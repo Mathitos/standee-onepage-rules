@@ -1,0 +1,638 @@
+{
+ "packId": "shadow-stalkers",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "AOF",
+   "slug": "age-of-fantasy",
+   "armyForgeId": 4
+  },
+  {
+   "code": "AOFS",
+   "slug": "age-of-fantasy-skirmish",
+   "armyForgeId": 5
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/gHTrjw-g76vfGCSt-gs4-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/gHTrjw-g76vfGCSt-gs5-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-*.png, army books v3.6.0 (os dois sistemas).",
+ "unidades": {
+  "scourges": {
+   "armyForgeUnitId": "-gmfrKU"
+  },
+  "scourge-champion": {
+   "armyForgeUnitId": "2WYathE"
+  },
+  "reaper-champion": {
+   "armyForgeUnitId": "y2ZMfy4"
+  },
+  "spectre-champion": {
+   "armyForgeUnitId": "7kPf9Hw"
+  },
+  "phantom-champion": {
+   "armyForgeUnitId": "np9c4GM"
+  },
+  "butcher-champion": {
+   "armyForgeUnitId": "BzhKtzr"
+  },
+  "reapers": {
+   "armyForgeUnitId": "AbtEJXr"
+  },
+  "spectres": {
+   "armyForgeUnitId": "dAqayhR"
+  },
+  "flayer-cavalry": {
+   "armyForgeUnitId": "_v2ldwG"
+  },
+  "phantoms": {
+   "armyForgeUnitId": "ndEHefB"
+  },
+  "tormentors": {
+   "armyForgeUnitId": "My2uFJX"
+  },
+  "shadow-hounds": {
+   "armyForgeUnitId": "taTBkkm"
+  },
+  "butchers": {
+   "armyForgeUnitId": "tGl68Tj"
+  },
+  "fiends": {
+   "armyForgeUnitId": "fjKxvmF"
+  },
+  "fang-swarms": {
+   "armyForgeUnitId": "PBz81Cw"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "scourge-halberd",
+   "rotulo": "Scourge Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "scourges",
+   "equipmentTags": [
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Scourge = nome no Skirmish (Scourges no AoF)"
+  },
+  "a002": {
+   "artId": "scourge-champion",
+   "rotulo": "Scourge Champion",
+   "confiancaRotulo": "alta",
+   "unitKey": "scourge-champion",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a003": {
+   "artId": "reaper-champion",
+   "rotulo": "Reaper Champion",
+   "confiancaRotulo": "alta",
+   "unitKey": "reaper-champion",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a004": {
+   "artId": "spectre-champion",
+   "rotulo": "Spectre Champion",
+   "confiancaRotulo": "alta",
+   "unitKey": "spectre-champion",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a005": {
+   "artId": "phantom-champion",
+   "rotulo": "Phantom Champion",
+   "confiancaRotulo": "alta",
+   "unitKey": "phantom-champion",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a006": {
+   "artId": "army-standard",
+   "rotulo": "Army Standard",
+   "confiancaRotulo": "alta",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "porta-estandarte; a opção Army Standard Bearer existe no Reaper Champion e no Scourge Champion (o produto 'Army Standard' está ligado aos dois) e a figura não deixa decidir qual"
+  },
+  "a007": {
+   "artId": "scourge-sword",
+   "rotulo": "Scourge Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "scourges",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "espada = Hand Weapon (arma padrão)"
+  },
+  "a008": {
+   "artId": "scourge-spear",
+   "rotulo": "Scourge Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "scourges",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a009": {
+   "artId": "scourge-sergeant",
+   "rotulo": "Scourge Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "scourges",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose de comando (opção Sergeant)"
+  },
+  "a010": {
+   "artId": "scourge-musician",
+   "rotulo": "Scourge Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "scourges",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose de comando (opção Musician)"
+  },
+  "a011": {
+   "artId": "scourge-banner",
+   "rotulo": "Scourge Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "scourges",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose de comando (opção Banner)"
+  },
+  "a012": {
+   "artId": "reaper-greatsword",
+   "rotulo": "Reaper Greatsword",
+   "confiancaRotulo": "alta",
+   "unitKey": "reapers",
+   "equipmentTags": [
+    "Reaper Great-Sword"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Greatsword = Reaper Great-Sword"
+  },
+  "a013": {
+   "artId": "reaper-halberd",
+   "rotulo": "Reaper Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "reapers",
+   "equipmentTags": [
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Halberd é a arma padrão dos Reapers"
+  },
+  "a014": {
+   "artId": "spectre-wand",
+   "rotulo": "Spectre Wand",
+   "confiancaRotulo": "alta",
+   "unitKey": "spectres",
+   "equipmentTags": [
+    "Stalker Wand"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Wand",
+     "armyBook": "Stalker Wand"
+    }
+   ],
+   "notas": "Spectres têm Stalker Staff padrão; Wand = Stalker Wand (há também Shadow, Nightmare e Umbral Wand)"
+  },
+  "a015": {
+   "artId": "spectre-staff",
+   "rotulo": "Spectre Staff",
+   "confiancaRotulo": "alta",
+   "unitKey": "spectres",
+   "equipmentTags": [
+    "Stalker Staff"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Staff",
+     "armyBook": "Stalker Staff"
+    }
+   ],
+   "notas": "Staff = Stalker Staff, a arma padrão (há também Shadow Staff)"
+  },
+  "a016": {
+   "artId": "spectre-sergeant",
+   "rotulo": "Spectre Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "spectres",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose de comando (opção Sergeant)"
+  },
+  "a017": {
+   "artId": "spectre-musician",
+   "rotulo": "Spectre Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "spectres",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose de comando (opção Musician)"
+  },
+  "a018": {
+   "artId": "spectre-banner",
+   "rotulo": "Spectre Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "spectres",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose de comando (opção Banner)"
+  },
+  "a019": {
+   "artId": "flayer-spear",
+   "rotulo": "Flayer Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "flayer-cavalry",
+   "equipmentTags": [
+    "Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Flayer",
+     "armyBook": "Flayer Cavalry"
+    },
+    {
+     "pdf": "Spear",
+     "armyBook": "Lance"
+    }
+   ],
+   "notas": "lança do cavaleiro = Lance (arma padrão; Flayer Cavalry não tem Spear)"
+  },
+  "a020": {
+   "artId": "flayer-axe",
+   "rotulo": "Flayer Axe",
+   "confiancaRotulo": "alta",
+   "unitKey": "flayer-cavalry",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Flayer",
+     "armyBook": "Flayer Cavalry"
+    },
+    {
+     "pdf": "Axe",
+     "armyBook": "Great Weapon"
+    }
+   ],
+   "notas": "machado grande = Great Weapon (outras opções são Reaper Great-Glaive/Great-Sword)"
+  },
+  "a021": {
+   "artId": "flayer-sergeant",
+   "rotulo": "Flayer Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "flayer-cavalry",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Flayer",
+     "armyBook": "Flayer Cavalry"
+    }
+   ],
+   "notas": "pose de comando (opção Sergeant)"
+  },
+  "a022": {
+   "artId": "flayer-musician",
+   "rotulo": "Flayer Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "flayer-cavalry",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Flayer",
+     "armyBook": "Flayer Cavalry"
+    }
+   ],
+   "notas": "pose de comando (opção Musician)"
+  },
+  "a023": {
+   "artId": "flayer-banner",
+   "rotulo": "Flayer Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "flayer-cavalry",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Flayer",
+     "armyBook": "Flayer Cavalry"
+    }
+   ],
+   "notas": "pose de comando (opção Banner)"
+  },
+  "a024": {
+   "artId": "phantom-sword",
+   "rotulo": "Phantom Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "phantoms",
+   "equipmentTags": [
+    "Assault Daggers"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Assault Daggers"
+    }
+   ],
+   "notas": "arma corpo a corpo padrão dos Phantoms é Assault Daggers; a outra pose (Javelin) é a troca por Throwing Spears"
+  },
+  "a025": {
+   "artId": "phantom-javelin",
+   "rotulo": "Phantom Javelin",
+   "confiancaRotulo": "alta",
+   "unitKey": "phantoms",
+   "equipmentTags": [
+    "Throwing Spears"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Javelin",
+     "armyBook": "Throwing Spears"
+    }
+   ],
+   "notas": "dardo = Throwing Spears"
+  },
+  "a026": {
+   "artId": "tormentor-1",
+   "rotulo": "Tormentor 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "tormentors",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a027": {
+   "artId": "tormentor-2",
+   "rotulo": "Tormentor 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "tormentors",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a028": {
+   "artId": "hound-1",
+   "rotulo": "Hound 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "shadow-hounds",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hound",
+     "armyBook": "Shadow Hounds"
+    }
+   ],
+   "notas": "nome atual sem 'Shadow'; não é o Great Hound (montaria do Scourge Champion, rótulo a038)"
+  },
+  "a029": {
+   "artId": "hound-2",
+   "rotulo": "Hound 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "shadow-hounds",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hound",
+     "armyBook": "Shadow Hounds"
+    }
+   ],
+   "notas": "nome atual sem 'Shadow'"
+  },
+  "a030": {
+   "artId": "butcher-sword",
+   "rotulo": "Butcher Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "butchers",
+   "equipmentTags": [
+    "Butcher Great-Blade"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Butcher Great-Blade"
+    }
+   ],
+   "notas": "espada = Butcher Great-Blade (arma padrão)"
+  },
+  "a031": {
+   "artId": "butcher-mace",
+   "rotulo": "Butcher Mace",
+   "confiancaRotulo": "alta",
+   "unitKey": "butchers",
+   "equipmentTags": [
+    "Butcher Great-Hammer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Mace",
+     "armyBook": "Butcher Great-Hammer"
+    }
+   ],
+   "notas": "maça = Butcher Great-Hammer (única arma de impacto)"
+  },
+  "a032": {
+   "artId": "butcher-javelin",
+   "rotulo": "Butcher Javelin",
+   "confiancaRotulo": "alta",
+   "unitKey": "butchers",
+   "equipmentTags": [
+    "Throwing Spears"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Javelin",
+     "armyBook": "Throwing Spears"
+    }
+   ],
+   "notas": "dardo = Throwing Spears"
+  },
+  "a033": {
+   "artId": "fiend-1",
+   "rotulo": "Fiend 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "fiends",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a034": {
+   "artId": "fiend-2",
+   "rotulo": "Fiend 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "fiends",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a035": {
+   "artId": "swarm-1",
+   "rotulo": "Swarm 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "fang-swarms",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Swarm",
+     "armyBook": "Fang Swarms"
+    }
+   ],
+   "notas": "genericName Horror Swarms; única unidade de enxame"
+  },
+  "a036": {
+   "artId": "swarm-2",
+   "rotulo": "Swarm 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "fang-swarms",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Swarm",
+     "armyBook": "Fang Swarms"
+    }
+   ],
+   "notas": "genericName Horror Swarms; única unidade de enxame"
+  },
+  "a037": {
+   "artId": "butcher-champion",
+   "rotulo": "Butcher Champion",
+   "confiancaRotulo": "alta",
+   "unitKey": "butcher-champion",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a038": {
+   "artId": "scourge-great-hound",
+   "rotulo": "Scourge Great Hound",
+   "confiancaRotulo": "alta",
+   "unitKey": "scourge-champion",
+   "equipmentTags": [
+    "Great Hound"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Scourge Great Hound",
+     "armyBook": "Scourge Champion (Great Hound)"
+    }
+   ],
+   "notas": "Great Hound é montaria do Scourge Champion (produto 'Scourge Champion on Great Hound')"
+  },
+  "a039": {
+   "artId": "reaper-great-flayer",
+   "rotulo": "Reaper Great Flayer",
+   "confiancaRotulo": "alta",
+   "unitKey": "reaper-champion",
+   "equipmentTags": [
+    "Great Flayer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Reaper Great Flayer",
+     "armyBook": "Reaper Champion (Great Flayer)"
+    }
+   ],
+   "notas": "Great Flayer é montaria do Reaper Champion (produto 'Reaper on Great Flayer')"
+  }
+ }
+}

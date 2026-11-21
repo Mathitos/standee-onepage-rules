@@ -1,0 +1,5403 @@
+{
+  "schemaVersion": 1,
+  "packId": "human-empire",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "AOF",
+    "slug": "age-of-fantasy",
+    "armyForgeId": 4
+  },
+  "gameSystems": [
+    {
+      "code": "AOF",
+      "slug": "age-of-fantasy",
+      "armyForgeId": 4
+    },
+    {
+      "code": "AOFS",
+      "slug": "age-of-fantasy-skirmish",
+      "armyForgeId": 5
+    }
+  ],
+  "armyBook": {
+    "id": "jZ02AVPLx_S48Mnb",
+    "name": "Human Empire",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "jZ02AVPLx_S48Mnb",
+      "name": "Human Empire",
+      "version": "3.6.0",
+      "gameSystemId": 4,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "jZ02AVPLx_S48Mnb",
+      "name": "Human Empire",
+      "version": "3.6.0",
+      "gameSystemId": 5,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Human_Empire_-_BW.pdf",
+    "pdfSha256": "a27326b360a30d0f27b397f0ef8ef668ad52a8e331d7113ce655903741139fef",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "battle-master",
+      "names": [
+        "Battle Master"
+      ],
+      "armyForgeUnitId": "Vj0QX3_",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "champion",
+      "names": [
+        "Champion"
+      ],
+      "armyForgeUnitId": "yYreRfL",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "mage-council",
+      "names": [
+        "Mage Council",
+        "Mage"
+      ],
+      "armyForgeUnitId": "7xHcSJO",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "infantrymen",
+      "names": [
+        "Infantrymen"
+      ],
+      "armyForgeUnitId": "-ESvMWE",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "fanatics",
+      "names": [
+        "Fanatics"
+      ],
+      "armyForgeUnitId": "ccY9OvL",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "mercenaries",
+      "names": [
+        "Mercenaries"
+      ],
+      "armyForgeUnitId": "dBSLa40",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "elite-weapon-masters",
+      "names": [
+        "Elite Weapon Masters",
+        "Elite Weapon Master"
+      ],
+      "armyForgeUnitId": "0IYBIDW",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "marksmen",
+      "names": [
+        "Marksmen"
+      ],
+      "armyForgeUnitId": "kY9pOKT",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "mercenary-hunters",
+      "names": [
+        "Mercenary Hunters",
+        "Mercenary Hunter"
+      ],
+      "armyForgeUnitId": "Nxj9qhc",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "horse-marksmen",
+      "names": [
+        "Horse Marksmen",
+        "Horse Marksman"
+      ],
+      "armyForgeUnitId": "vmcM4E8",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "knights",
+      "names": [
+        "Knights",
+        "Knight"
+      ],
+      "armyForgeUnitId": "eXoFcRr",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "guard-knights",
+      "names": [
+        "Guard Knights",
+        "Guard Knight"
+      ],
+      "armyForgeUnitId": "rKfk_hD",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "gryph-riders",
+      "names": [
+        "Gryph Riders",
+        "Gryph Rider"
+      ],
+      "armyForgeUnitId": "hZjPpN-",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          75.0,
+          46.0
+        ],
+        "raw": "75x46",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "knight-captain",
+      "candidateId": "a001",
+      "pdfLabel": "Knight Captain",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "battle-master",
+      "equipmentTags": [
+        "Captain",
+        "Horse"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Captain",
+          "armyBook": "Battle Master"
+        },
+        {
+          "pdf": "Knight",
+          "armyBook": "Horse"
+        }
+      ],
+      "notes": "Captain é upgrade do Battle Master (também existe no Champion); págs. 2-4 do PDF trazem só upgrades do Battle Master. Knight = montado a cavalo (Horse); figura com lança",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0
+          ],
+          "front": "arts/knight-captain/fino/frente.svg",
+          "back": "arts/knight-captain/fino/verso.svg",
+          "canvasMm": [
+            57.743,
+            62.696
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            62.6,
+            57.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            0
+          ],
+          "front": "arts/knight-captain/borda/frente.svg",
+          "back": "arts/knight-captain/borda/verso.svg",
+          "canvasMm": [
+            61.468,
+            64.558
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            64.4,
+            61.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "captain-pistol",
+      "candidateId": "a002",
+      "pdfLabel": "Captain Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "battle-master",
+      "equipmentTags": [
+        "Captain",
+        "Dual Firepowder Pistols|Dual Matchlock Pistols"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Captain",
+          "armyBook": "Battle Master"
+        },
+        {
+          "pdf": "Pistol",
+          "armyBook": [
+            "Dual Firepowder Pistols",
+            "Dual Matchlock Pistols"
+          ]
+        }
+      ],
+      "notes": "Captain é upgrade do Battle Master (também existe no Champion); págs. 2-4 do PDF trazem só upgrades do Battle Master. Figura com duas pistolas; Firepowder ou Matchlock, usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma).",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            1
+          ],
+          "front": "arts/captain-pistol/fino/frente.svg",
+          "back": "arts/captain-pistol/fino/verso.svg",
+          "canvasMm": [
+            39.031,
+            34.713
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            34.6,
+            38.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            1
+          ],
+          "front": "arts/captain-pistol/borda/frente.svg",
+          "back": "arts/captain-pistol/borda/verso.svg",
+          "canvasMm": [
+            42.757,
+            36.576
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            36.5,
+            42.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "captain-sword",
+      "candidateId": "a003",
+      "pdfLabel": "Captain Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "battle-master",
+      "equipmentTags": [
+        "Captain",
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Captain",
+          "armyBook": "Battle Master"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "Captain é upgrade do Battle Master (também existe no Champion); págs. 2-4 do PDF trazem só upgrades do Battle Master",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            2
+          ],
+          "front": "arts/captain-sword/fino/frente.svg",
+          "back": "arts/captain-sword/fino/verso.svg",
+          "canvasMm": [
+            42.037,
+            36.237
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            36.2,
+            41.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            2
+          ],
+          "front": "arts/captain-sword/borda/frente.svg",
+          "back": "arts/captain-sword/borda/verso.svg",
+          "canvasMm": [
+            45.762,
+            38.1
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            38.0,
+            45.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "captain-halberd",
+      "candidateId": "a004",
+      "pdfLabel": "Captain Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "battle-master",
+      "equipmentTags": [
+        "Captain",
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Captain",
+          "armyBook": "Battle Master"
+        }
+      ],
+      "notes": "Captain é upgrade do Battle Master (também existe no Champion); págs. 2-4 do PDF trazem só upgrades do Battle Master",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            3
+          ],
+          "front": "arts/captain-halberd/fino/frente.svg",
+          "back": "arts/captain-halberd/fino/verso.svg",
+          "canvasMm": [
+            50.8,
+            41.148
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            41.1,
+            50.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            3
+          ],
+          "front": "arts/captain-halberd/borda/frente.svg",
+          "back": "arts/captain-halberd/borda/verso.svg",
+          "canvasMm": [
+            54.61,
+            43.011
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            42.9,
+            54.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "pegasus-captain",
+      "candidateId": "a005",
+      "pdfLabel": "Pegasus Captain",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "battle-master",
+      "equipmentTags": [
+        "Captain",
+        "Pegasus"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Captain",
+          "armyBook": "Battle Master"
+        }
+      ],
+      "notes": "Pegasus só existe no Battle Master; Captain é upgrade dele",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0
+          ],
+          "front": "arts/pegasus-captain/fino/frente.svg",
+          "back": "arts/pegasus-captain/fino/verso.svg",
+          "canvasMm": [
+            90.085,
+            92.117
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            92.0,
+            89.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            0
+          ],
+          "front": "arts/pegasus-captain/borda/frente.svg",
+          "back": "arts/pegasus-captain/borda/verso.svg",
+          "canvasMm": [
+            93.472,
+            93.98
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            93.9,
+            93.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "general-pistol",
+      "candidateId": "a006",
+      "pdfLabel": "General Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "battle-master",
+      "equipmentTags": [
+        "General",
+        "Dual Firepowder Pistols|Dual Matchlock Pistols"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "General",
+          "armyBook": "Battle Master"
+        },
+        {
+          "pdf": "Pistol",
+          "armyBook": [
+            "Dual Firepowder Pistols",
+            "Dual Matchlock Pistols"
+          ]
+        }
+      ],
+      "notes": "General é upgrade só do Battle Master. Figura com duas pistolas; Firepowder ou Matchlock, usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma).",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            1
+          ],
+          "front": "arts/general-pistol/fino/frente.svg",
+          "back": "arts/general-pistol/fino/verso.svg",
+          "canvasMm": [
+            32.978,
+            48.218
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            48.1,
+            32.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            1
+          ],
+          "front": "arts/general-pistol/borda/frente.svg",
+          "back": "arts/general-pistol/borda/verso.svg",
+          "canvasMm": [
+            34.121,
+            49.615
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            49.5,
+            34.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "general-halberd",
+      "candidateId": "a007",
+      "pdfLabel": "General Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "battle-master",
+      "equipmentTags": [
+        "General",
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "General",
+          "armyBook": "Battle Master"
+        }
+      ],
+      "notes": "General é upgrade só do Battle Master",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            2
+          ],
+          "front": "arts/general-halberd/fino/frente.svg",
+          "back": "arts/general-halberd/fino/verso.svg",
+          "canvasMm": [
+            37.084,
+            48.218
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            48.1,
+            36.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            2
+          ],
+          "front": "arts/general-halberd/borda/frente.svg",
+          "back": "arts/general-halberd/borda/verso.svg",
+          "canvasMm": [
+            37.592,
+            49.615
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            49.5,
+            37.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "general-sword",
+      "candidateId": "a008",
+      "pdfLabel": "General Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "battle-master",
+      "equipmentTags": [
+        "General",
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "General",
+          "armyBook": "Battle Master"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "General é upgrade só do Battle Master",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            3
+          ],
+          "front": "arts/general-sword/fino/frente.svg",
+          "back": "arts/general-sword/fino/verso.svg",
+          "canvasMm": [
+            35.475,
+            48.345
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            48.3,
+            35.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            3
+          ],
+          "front": "arts/general-sword/borda/frente.svg",
+          "back": "arts/general-sword/borda/verso.svg",
+          "canvasMm": [
+            36.153,
+            49.742
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            49.6,
+            36.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "cleric-flail",
+      "candidateId": "a009",
+      "pdfLabel": "Cleric Flail",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "battle-master",
+      "equipmentTags": [
+        "Cleric"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Cleric",
+          "armyBook": "Battle Master"
+        }
+      ],
+      "notes": "Cleric é upgrade do Battle Master e do Champion (escolhi Battle Master pela página do PDF); nenhum dos dois tem Flail no army book",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0
+          ],
+          "front": "arts/cleric-flail/fino/frente.svg",
+          "back": "arts/cleric-flail/fino/verso.svg",
+          "canvasMm": [
+            32.935,
+            34.205
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            34.1,
+            32.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            0
+          ],
+          "front": "arts/cleric-flail/borda/frente.svg",
+          "back": "arts/cleric-flail/borda/verso.svg",
+          "canvasMm": [
+            35.729,
+            35.602
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            35.5,
+            35.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "bounty-hunter-v1",
+      "candidateId": "a010",
+      "pdfLabel": "Bounty Hunter V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "battle-master",
+      "equipmentTags": [
+        "Bounty Hunter"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Bounty Hunter",
+          "armyBook": "Battle Master"
+        }
+      ],
+      "notes": "Bounty Hunter é upgrade só do Battle Master",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            1
+          ],
+          "front": "arts/bounty-hunter-v1/fino/frente.svg",
+          "back": "arts/bounty-hunter-v1/fino/verso.svg",
+          "canvasMm": [
+            41.571,
+            41.741
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            41.7,
+            41.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            1
+          ],
+          "front": "arts/bounty-hunter-v1/borda/frente.svg",
+          "back": "arts/bounty-hunter-v1/borda/verso.svg",
+          "canvasMm": [
+            44.365,
+            43.138
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            43.0,
+            44.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "bounty-hunter-v2",
+      "candidateId": "a011",
+      "pdfLabel": "Bounty Hunter V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "battle-master",
+      "equipmentTags": [
+        "Bounty Hunter"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Bounty Hunter",
+          "armyBook": "Battle Master"
+        }
+      ],
+      "notes": "Bounty Hunter é upgrade só do Battle Master",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            2
+          ],
+          "front": "arts/bounty-hunter-v2/fino/frente.svg",
+          "back": "arts/bounty-hunter-v2/fino/verso.svg",
+          "canvasMm": [
+            44.154,
+            37.888
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            37.8,
+            43.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            2
+          ],
+          "front": "arts/bounty-hunter-v2/borda/frente.svg",
+          "back": "arts/bounty-hunter-v2/borda/verso.svg",
+          "canvasMm": [
+            46.948,
+            39.285
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            39.2,
+            46.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "army-standard",
+      "candidateId": "a012",
+      "pdfLabel": "Army Standard",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "battle-master",
+      "equipmentTags": [
+        "Army Standard Bearer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Army Standard",
+          "armyBook": "Battle Master (Army Standard Bearer)"
+        }
+      ],
+      "notes": "Army Standard Bearer é upgrade só do Battle Master; herói, não pose de comando",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            3
+          ],
+          "front": "arts/army-standard/fino/frente.svg",
+          "back": "arts/army-standard/fino/verso.svg",
+          "canvasMm": [
+            65.024,
+            74.761
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            74.7,
+            64.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            3
+          ],
+          "front": "arts/army-standard/borda/frente.svg",
+          "back": "arts/army-standard/borda/verso.svg",
+          "canvasMm": [
+            67.818,
+            76.158
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            76.0,
+            67.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "engineer-scope",
+      "candidateId": "a013",
+      "pdfLabel": "Engineer Scope",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion",
+      "equipmentTags": [
+        "Engineer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Engineer",
+          "armyBook": "Champion"
+        }
+      ],
+      "notes": "Engineer é upgrade só do Champion; luneta não é arma",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0
+          ],
+          "front": "arts/engineer-scope/fino/frente.svg",
+          "back": "arts/engineer-scope/fino/verso.svg",
+          "canvasMm": [
+            22.818,
+            36.068
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            36.0,
+            22.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            0
+          ],
+          "front": "arts/engineer-scope/borda/frente.svg",
+          "back": "arts/engineer-scope/borda/verso.svg",
+          "canvasMm": [
+            26.543,
+            37.931
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            37.8,
+            26.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "engineer-pistol",
+      "candidateId": "a014",
+      "pdfLabel": "Engineer Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion",
+      "equipmentTags": [
+        "Engineer",
+        "Dual Gatling Pistols"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Engineer",
+          "armyBook": "Champion"
+        },
+        {
+          "pdf": "Pistol",
+          "armyBook": "Dual Gatling Pistols"
+        }
+      ],
+      "notes": "Engineer é upgrade só do Champion. Figura com duas pistolas de vários canos; Champion também tem Firepowder/Matchlock Pistol (uma só)",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            1
+          ],
+          "front": "arts/engineer-pistol/fino/frente.svg",
+          "back": "arts/engineer-pistol/fino/verso.svg",
+          "canvasMm": [
+            23.114,
+            39.37
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            39.3,
+            22.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            1
+          ],
+          "front": "arts/engineer-pistol/borda/frente.svg",
+          "back": "arts/engineer-pistol/borda/verso.svg",
+          "canvasMm": [
+            26.839,
+            41.233
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            41.1,
+            26.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "engineer-sniper",
+      "candidateId": "a015",
+      "pdfLabel": "Engineer Sniper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion",
+      "equipmentTags": [
+        "Engineer",
+        "Sniper Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Engineer",
+          "armyBook": "Champion"
+        },
+        {
+          "pdf": "Sniper",
+          "armyBook": "Sniper Rifle"
+        }
+      ],
+      "notes": "Engineer é upgrade só do Champion",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            2
+          ],
+          "front": "arts/engineer-sniper/fino/frente.svg",
+          "back": "arts/engineer-sniper/fino/verso.svg",
+          "canvasMm": [
+            39.92,
+            36.068
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            36.0,
+            39.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            2
+          ],
+          "front": "arts/engineer-sniper/borda/frente.svg",
+          "back": "arts/engineer-sniper/borda/verso.svg",
+          "canvasMm": [
+            43.646,
+            37.931
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            37.8,
+            43.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horse-engineer-launcher",
+      "candidateId": "a016",
+      "pdfLabel": "Horse Engineer Launcher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion",
+      "equipmentTags": [
+        "Engineer",
+        "Horse",
+        "Grenade Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Engineer",
+          "armyBook": "Champion"
+        },
+        {
+          "pdf": "Launcher",
+          "armyBook": "Grenade Launcher"
+        }
+      ],
+      "notes": "Engineer é upgrade só do Champion. Champion também tem Marksman Horse e Robo-Frame Horse",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            3
+          ],
+          "front": "arts/horse-engineer-launcher/fino/frente.svg",
+          "back": "arts/horse-engineer-launcher/fino/verso.svg",
+          "canvasMm": [
+            44.323,
+            55.626
+          ],
+          "frontBackIoU": 0.965,
+          "sizeMm": [
+            55.5,
+            44.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            3
+          ],
+          "front": "arts/horse-engineer-launcher/borda/frente.svg",
+          "back": "arts/horse-engineer-launcher/borda/verso.svg",
+          "canvasMm": [
+            48.048,
+            57.489
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            57.4,
+            47.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horse-engineer-gatling",
+      "candidateId": "a017",
+      "pdfLabel": "Horse Engineer Gatling",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion",
+      "equipmentTags": [
+        "Engineer",
+        "Horse",
+        "Gatling Rifle|Dual Gatling Pistols"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Engineer",
+          "armyBook": "Champion"
+        },
+        {
+          "pdf": "Gatling",
+          "armyBook": [
+            "Gatling Rifle",
+            "Dual Gatling Pistols"
+          ]
+        }
+      ],
+      "notes": "Engineer é upgrade só do Champion. Gatling pode ser Gatling Rifle ou Dual Gatling Pistols; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma).",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            4
+          ],
+          "front": "arts/horse-engineer-gatling/fino/frente.svg",
+          "back": "arts/horse-engineer-gatling/fino/verso.svg",
+          "canvasMm": [
+            44.196,
+            55.541
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            55.5,
+            43.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            4
+          ],
+          "front": "arts/horse-engineer-gatling/borda/frente.svg",
+          "back": "arts/horse-engineer-gatling/borda/verso.svg",
+          "canvasMm": [
+            47.921,
+            57.404
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            57.3,
+            47.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "aether-mage",
+      "candidateId": "a018",
+      "pdfLabel": "Aether Mage",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "mage-council",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Aether Mage",
+          "armyBook": "Mage Council"
+        }
+      ],
+      "notes": "Mage é o nome da unidade no Skirmish (Mage Council no AoF, 5 modelos); o PDF traz 5 magos elementais. Alternativa: Champion com Battle Mage",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0
+          ],
+          "front": "arts/aether-mage/fino/frente.svg",
+          "back": "arts/aether-mage/fino/verso.svg",
+          "canvasMm": [
+            36.534,
+            39.666
+          ],
+          "frontBackIoU": 0.952,
+          "sizeMm": [
+            39.5,
+            36.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            0
+          ],
+          "front": "arts/aether-mage/borda/frente.svg",
+          "back": "arts/aether-mage/borda/verso.svg",
+          "canvasMm": [
+            40.259,
+            41.571
+          ],
+          "frontBackIoU": 0.965,
+          "sizeMm": [
+            41.5,
+            40.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "air-mage",
+      "candidateId": "a019",
+      "pdfLabel": "Air Mage",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "mage-council",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Air Mage",
+          "armyBook": "Mage Council"
+        }
+      ],
+      "notes": "Mage é o nome da unidade no Skirmish (Mage Council no AoF, 5 modelos); o PDF traz 5 magos elementais. Alternativa: Champion com Battle Mage",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            1
+          ],
+          "front": "arts/air-mage/fino/frente.svg",
+          "back": "arts/air-mage/fino/verso.svg",
+          "canvasMm": [
+            46.059,
+            60.579
+          ],
+          "frontBackIoU": 0.914,
+          "sizeMm": [
+            60.5,
+            45.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            1
+          ],
+          "front": "arts/air-mage/borda/frente.svg",
+          "back": "arts/air-mage/borda/verso.svg",
+          "canvasMm": [
+            49.826,
+            62.442
+          ],
+          "frontBackIoU": 0.931,
+          "sizeMm": [
+            62.3,
+            49.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "earth-mage",
+      "candidateId": "a020",
+      "pdfLabel": "Earth Mage",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "mage-council",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Earth Mage",
+          "armyBook": "Mage Council"
+        }
+      ],
+      "notes": "Mage é o nome da unidade no Skirmish (Mage Council no AoF, 5 modelos); o PDF traz 5 magos elementais. Alternativa: Champion com Battle Mage",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            2
+          ],
+          "front": "arts/earth-mage/fino/frente.svg",
+          "back": "arts/earth-mage/fino/verso.svg",
+          "canvasMm": [
+            32.089,
+            51.858
+          ],
+          "frontBackIoU": 0.947,
+          "sizeMm": [
+            51.7,
+            31.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            2
+          ],
+          "front": "arts/earth-mage/borda/frente.svg",
+          "back": "arts/earth-mage/borda/verso.svg",
+          "canvasMm": [
+            35.856,
+            53.721
+          ],
+          "frontBackIoU": 0.959,
+          "sizeMm": [
+            53.6,
+            35.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fire-mage",
+      "candidateId": "a021",
+      "pdfLabel": "Fire Mage",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "mage-council",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Fire Mage",
+          "armyBook": "Mage Council"
+        }
+      ],
+      "notes": "Mage é o nome da unidade no Skirmish (Mage Council no AoF, 5 modelos); o PDF traz 5 magos elementais. Alternativa: Champion com Battle Mage",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            3
+          ],
+          "front": "arts/fire-mage/fino/frente.svg",
+          "back": "arts/fire-mage/fino/verso.svg",
+          "canvasMm": [
+            42.333,
+            44.45
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            44.4,
+            42.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            3
+          ],
+          "front": "arts/fire-mage/borda/frente.svg",
+          "back": "arts/fire-mage/borda/verso.svg",
+          "canvasMm": [
+            46.059,
+            46.313
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            46.2,
+            45.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "water-mage",
+      "candidateId": "a022",
+      "pdfLabel": "Water Mage",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "mage-council",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Water Mage",
+          "armyBook": "Mage Council"
+        }
+      ],
+      "notes": "Mage é o nome da unidade no Skirmish (Mage Council no AoF, 5 modelos); o PDF traz 5 magos elementais. Alternativa: Champion com Battle Mage",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            4
+          ],
+          "front": "arts/water-mage/fino/frente.svg",
+          "back": "arts/water-mage/fino/verso.svg",
+          "canvasMm": [
+            36.576,
+            50.123
+          ],
+          "frontBackIoU": 0.859,
+          "sizeMm": [
+            50.0,
+            36.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            4
+          ],
+          "front": "arts/water-mage/borda/frente.svg",
+          "back": "arts/water-mage/borda/verso.svg",
+          "canvasMm": [
+            40.301,
+            51.985
+          ],
+          "frontBackIoU": 0.888,
+          "sizeMm": [
+            51.9,
+            40.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-sword",
+      "candidateId": "a023",
+      "pdfLabel": "Infantry Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantrymen",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "Infantry é o genericName de Infantrymen",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/infantry-sword/fino/frente.svg",
+          "back": "arts/infantry-sword/fino/verso.svg",
+          "canvasMm": [
+            22.521,
+            34.29
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            34.2,
+            22.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            0
+          ],
+          "front": "arts/infantry-sword/borda/frente.svg",
+          "back": "arts/infantry-sword/borda/verso.svg",
+          "canvasMm": [
+            26.12,
+            36.068
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            36.0,
+            25.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-halberd",
+      "candidateId": "a024",
+      "pdfLabel": "Infantry Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantrymen",
+      "equipmentTags": [
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Infantry é o genericName de Infantrymen",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/infantry-halberd/fino/frente.svg",
+          "back": "arts/infantry-halberd/fino/verso.svg",
+          "canvasMm": [
+            42.587,
+            34.078
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            34.0,
+            42.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            0,
+            2
+          ],
+          "front": "arts/infantry-halberd/borda/frente.svg",
+          "back": "arts/infantry-halberd/borda/verso.svg",
+          "canvasMm": [
+            46.355,
+            35.856
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            35.7,
+            46.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-spear",
+      "candidateId": "a025",
+      "pdfLabel": "Infantry Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantrymen",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Infantry é o genericName de Infantrymen",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/infantry-spear/fino/frente.svg",
+          "back": "arts/infantry-spear/fino/verso.svg",
+          "canvasMm": [
+            43.222,
+            34.417
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            34.3,
+            43.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/infantry-spear/borda/frente.svg",
+          "back": "arts/infantry-spear/borda/verso.svg",
+          "canvasMm": [
+            46.821,
+            36.195
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            36.1,
+            46.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-musician",
+      "candidateId": "a026",
+      "pdfLabel": "Infantry Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantrymen",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Infantry é o genericName de Infantrymen",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0
+          ],
+          "front": "arts/infantry-musician/fino/frente.svg",
+          "back": "arts/infantry-musician/fino/verso.svg",
+          "canvasMm": [
+            25.4,
+            37.719
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            37.6,
+            25.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            0
+          ],
+          "front": "arts/infantry-musician/borda/frente.svg",
+          "back": "arts/infantry-musician/borda/verso.svg",
+          "canvasMm": [
+            28.956,
+            39.497
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            39.4,
+            28.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-sargeant",
+      "candidateId": "a027",
+      "pdfLabel": "Infantry Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantrymen",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Infantry é o genericName de Infantrymen; PDF escreve Sargeant",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            1
+          ],
+          "front": "arts/infantry-sargeant/fino/frente.svg",
+          "back": "arts/infantry-sargeant/fino/verso.svg",
+          "canvasMm": [
+            28.998,
+            57.743
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            57.6,
+            28.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            1
+          ],
+          "front": "arts/infantry-sargeant/borda/frente.svg",
+          "back": "arts/infantry-sargeant/borda/verso.svg",
+          "canvasMm": [
+            32.554,
+            59.563
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            59.4,
+            32.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-banner",
+      "candidateId": "a028",
+      "pdfLabel": "Infantry Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantrymen",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Infantry é o genericName de Infantrymen",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            2
+          ],
+          "front": "arts/infantry-banner/fino/frente.svg",
+          "back": "arts/infantry-banner/fino/verso.svg",
+          "canvasMm": [
+            48.853,
+            69.892
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            69.8,
+            48.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            2
+          ],
+          "front": "arts/infantry-banner/borda/frente.svg",
+          "back": "arts/infantry-banner/borda/verso.svg",
+          "canvasMm": [
+            52.409,
+            71.67
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            71.5,
+            52.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-greatsword",
+      "candidateId": "a029",
+      "pdfLabel": "Elite Greatsword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite-weapon-masters",
+      "equipmentTags": [
+        "Great Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Elite",
+          "armyBook": "Elite Weapon Masters"
+        },
+        {
+          "pdf": "Greatsword",
+          "armyBook": "Great Weapon"
+        }
+      ],
+      "notes": "Elite = Elite Weapon Masters (genericName Weapon Masters); figuras a pé",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/elite-greatsword/fino/frente.svg",
+          "back": "arts/elite-greatsword/fino/verso.svg",
+          "canvasMm": [
+            21.844,
+            44.789
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            44.7,
+            21.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/elite-greatsword/borda/frente.svg",
+          "back": "arts/elite-greatsword/borda/verso.svg",
+          "canvasMm": [
+            25.569,
+            46.651
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            46.6,
+            25.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-hammer",
+      "candidateId": "a030",
+      "pdfLabel": "Elite Hammer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite-weapon-masters",
+      "equipmentTags": [
+        "Great Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Elite",
+          "armyBook": "Elite Weapon Masters"
+        },
+        {
+          "pdf": "Hammer",
+          "armyBook": "Great Weapon"
+        }
+      ],
+      "notes": "Elite = Elite Weapon Masters (genericName Weapon Masters); figuras a pé. Martelo de duas mãos, 2 cópias no PDF como tropa; alternativa: Imperial Great Mace (só um modelo)",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/elite-hammer/fino/frente.svg",
+          "back": "arts/elite-hammer/fino/verso.svg",
+          "canvasMm": [
+            22.733,
+            42.587
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            42.5,
+            22.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/elite-hammer/borda/frente.svg",
+          "back": "arts/elite-hammer/borda/verso.svg",
+          "canvasMm": [
+            26.458,
+            44.45
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            44.4,
+            26.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-sargeant",
+      "candidateId": "a031",
+      "pdfLabel": "Elite Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite-weapon-masters",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Elite",
+          "armyBook": "Elite Weapon Masters"
+        }
+      ],
+      "notes": "Elite = Elite Weapon Masters (genericName Weapon Masters); figuras a pé; PDF escreve Sargeant",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0
+          ],
+          "front": "arts/elite-sargeant/fino/frente.svg",
+          "back": "arts/elite-sargeant/fino/verso.svg",
+          "canvasMm": [
+            33.274,
+            39.666
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            39.5,
+            33.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            0
+          ],
+          "front": "arts/elite-sargeant/borda/frente.svg",
+          "back": "arts/elite-sargeant/borda/verso.svg",
+          "canvasMm": [
+            36.999,
+            41.529
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            41.4,
+            36.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-musician",
+      "candidateId": "a032",
+      "pdfLabel": "Elite Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite-weapon-masters",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Elite",
+          "armyBook": "Elite Weapon Masters"
+        }
+      ],
+      "notes": "Elite = Elite Weapon Masters (genericName Weapon Masters); figuras a pé",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            1
+          ],
+          "front": "arts/elite-musician/fino/frente.svg",
+          "back": "arts/elite-musician/fino/verso.svg",
+          "canvasMm": [
+            27.009,
+            40.174
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            40.0,
+            26.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            1
+          ],
+          "front": "arts/elite-musician/borda/frente.svg",
+          "back": "arts/elite-musician/borda/verso.svg",
+          "canvasMm": [
+            30.734,
+            42.037
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            41.9,
+            30.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-banner",
+      "candidateId": "a033",
+      "pdfLabel": "Elite Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite-weapon-masters",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Elite",
+          "armyBook": "Elite Weapon Masters"
+        }
+      ],
+      "notes": "Elite = Elite Weapon Masters (genericName Weapon Masters); figuras a pé",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            2
+          ],
+          "front": "arts/elite-banner/fino/frente.svg",
+          "back": "arts/elite-banner/fino/verso.svg",
+          "canvasMm": [
+            35.899,
+            82.508
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            82.4,
+            35.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            2
+          ],
+          "front": "arts/elite-banner/borda/frente.svg",
+          "back": "arts/elite-banner/borda/verso.svg",
+          "canvasMm": [
+            39.582,
+            84.37
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            84.2,
+            39.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fanatic-v1",
+      "candidateId": "a034",
+      "pdfLabel": "Fanatic V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "fanatics",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/fanatic-v1/fino/frente.svg",
+          "back": "arts/fanatic-v1/fino/verso.svg",
+          "canvasMm": [
+            35.094,
+            33.867
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            33.8,
+            34.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            0,
+            2
+          ],
+          "front": "arts/fanatic-v1/borda/frente.svg",
+          "back": "arts/fanatic-v1/borda/verso.svg",
+          "canvasMm": [
+            38.777,
+            35.729
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            35.6,
+            38.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fanatic-v2",
+      "candidateId": "a035",
+      "pdfLabel": "Fanatic V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "fanatics",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/fanatic-v2/fino/frente.svg",
+          "back": "arts/fanatic-v2/fino/verso.svg",
+          "canvasMm": [
+            19.897,
+            37.042
+          ],
+          "frontBackIoU": 0.925,
+          "sizeMm": [
+            36.9,
+            19.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/fanatic-v2/borda/frente.svg",
+          "back": "arts/fanatic-v2/borda/verso.svg",
+          "canvasMm": [
+            23.622,
+            38.904
+          ],
+          "frontBackIoU": 0.953,
+          "sizeMm": [
+            38.8,
+            23.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fanatic-sargeant",
+      "candidateId": "a036",
+      "pdfLabel": "Fanatic Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "fanatics",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "PDF escreve Sargeant",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0
+          ],
+          "front": "arts/fanatic-sargeant/fino/frente.svg",
+          "back": "arts/fanatic-sargeant/fino/verso.svg",
+          "canvasMm": [
+            30.861,
+            36.999
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            36.9,
+            30.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            0
+          ],
+          "front": "arts/fanatic-sargeant/borda/frente.svg",
+          "back": "arts/fanatic-sargeant/borda/verso.svg",
+          "canvasMm": [
+            34.586,
+            38.862
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            38.8,
+            34.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fanatic-musician",
+      "candidateId": "a037",
+      "pdfLabel": "Fanatic Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "fanatics",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            1
+          ],
+          "front": "arts/fanatic-musician/fino/frente.svg",
+          "back": "arts/fanatic-musician/fino/verso.svg",
+          "canvasMm": [
+            37.253,
+            34.671
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            34.5,
+            37.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            1
+          ],
+          "front": "arts/fanatic-musician/borda/frente.svg",
+          "back": "arts/fanatic-musician/borda/verso.svg",
+          "canvasMm": [
+            40.979,
+            36.534
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            36.4,
+            40.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fanatic-banner",
+      "candidateId": "a038",
+      "pdfLabel": "Fanatic Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "fanatics",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            2
+          ],
+          "front": "arts/fanatic-banner/fino/frente.svg",
+          "back": "arts/fanatic-banner/fino/verso.svg",
+          "canvasMm": [
+            30.438,
+            53.975
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            53.8,
+            30.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            2
+          ],
+          "front": "arts/fanatic-banner/borda/frente.svg",
+          "back": "arts/fanatic-banner/borda/verso.svg",
+          "canvasMm": [
+            34.163,
+            55.838
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            55.7,
+            34.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "mercenary-pistols",
+      "candidateId": "a039",
+      "pdfLabel": "Mercenary Pistols",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "mercenaries",
+      "equipmentTags": [
+        "Dual Firepowder Pistols|Dual Matchlock Pistols"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Pistols",
+          "armyBook": [
+            "Dual Firepowder Pistols",
+            "Dual Matchlock Pistols"
+          ]
+        }
+      ],
+      "notes": "Pistols pode ser Dual Firepowder ou Dual Matchlock Pistols; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma).",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/mercenary-pistols/fino/frente.svg",
+          "back": "arts/mercenary-pistols/fino/verso.svg",
+          "canvasMm": [
+            31.2,
+            39.412
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            39.3,
+            30.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/mercenary-pistols/borda/frente.svg",
+          "back": "arts/mercenary-pistols/borda/verso.svg",
+          "canvasMm": [
+            34.586,
+            41.106
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            41.0,
+            34.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "mercenary-swords",
+      "candidateId": "a040",
+      "pdfLabel": "Mercenary Swords",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "mercenaries",
+      "equipmentTags": [
+        "Dual Hand Weapons"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Swords",
+          "armyBook": "Dual Hand Weapons"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/mercenary-swords/fino/frente.svg",
+          "back": "arts/mercenary-swords/fino/verso.svg",
+          "canvasMm": [
+            36.364,
+            37.296
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            37.2,
+            36.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/mercenary-swords/borda/frente.svg",
+          "back": "arts/mercenary-swords/borda/verso.svg",
+          "canvasMm": [
+            39.751,
+            38.989
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            38.9,
+            39.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunter-v1",
+      "candidateId": "a041",
+      "pdfLabel": "Hunter V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "mercenary-hunters",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunter",
+          "armyBook": "Mercenary Hunters"
+        }
+      ],
+      "notes": "Hunter = Mercenary Hunters (genericName Archers); figuras com arco",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/hunter-v1/fino/frente.svg",
+          "back": "arts/hunter-v1/fino/verso.svg",
+          "canvasMm": [
+            21.294,
+            32.131
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            32.0,
+            21.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/hunter-v1/borda/frente.svg",
+          "back": "arts/hunter-v1/borda/verso.svg",
+          "canvasMm": [
+            25.019,
+            33.994
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            33.9,
+            24.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunter-v2",
+      "candidateId": "a042",
+      "pdfLabel": "Hunter V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "mercenary-hunters",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunter",
+          "armyBook": "Mercenary Hunters"
+        }
+      ],
+      "notes": "Hunter = Mercenary Hunters (genericName Archers); figuras com arco",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/hunter-v2/fino/frente.svg",
+          "back": "arts/hunter-v2/fino/verso.svg",
+          "canvasMm": [
+            28.025,
+            43.18
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            43.1,
+            27.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/hunter-v2/borda/frente.svg",
+          "back": "arts/hunter-v2/borda/verso.svg",
+          "canvasMm": [
+            31.75,
+            45.043
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            45.0,
+            31.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "marksman-rifle",
+      "candidateId": "a043",
+      "pdfLabel": "Marksman Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "marksmen",
+      "equipmentTags": [
+        "Matchlock Rifle|Firepowder Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": [
+            "Matchlock Rifle",
+            "Firepowder Rifle"
+          ]
+        }
+      ],
+      "notes": "Rifle pode ser Matchlock Rifle (padrão) ou Firepowder Rifle; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma).",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/marksman-rifle/fino/frente.svg",
+          "back": "arts/marksman-rifle/fino/verso.svg",
+          "canvasMm": [
+            25.739,
+            35.983
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            35.9,
+            25.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            0,
+            2,
+            3
+          ],
+          "front": "arts/marksman-rifle/borda/frente.svg",
+          "back": "arts/marksman-rifle/borda/verso.svg",
+          "canvasMm": [
+            29.464,
+            37.846
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            37.8,
+            29.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "marksman-crossbow",
+      "candidateId": "a044",
+      "pdfLabel": "Marksman Crossbow",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "marksmen",
+      "equipmentTags": [
+        "Crossbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/marksman-crossbow/fino/frente.svg",
+          "back": "arts/marksman-crossbow/fino/verso.svg",
+          "canvasMm": [
+            25.612,
+            35.602
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            35.5,
+            25.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 50,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/marksman-crossbow/borda/frente.svg",
+          "back": "arts/marksman-crossbow/borda/verso.svg",
+          "canvasMm": [
+            29.337,
+            37.465
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            37.3,
+            29.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "marksman-sargeant-pistol",
+      "candidateId": "a045",
+      "pdfLabel": "Marksman Sargeant Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "marksmen",
+      "equipmentTags": [
+        "Dual Firepowder Pistols|Dual Matchlock Pistols"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Pistol",
+          "armyBook": [
+            "Dual Firepowder Pistols",
+            "Dual Matchlock Pistols"
+          ]
+        }
+      ],
+      "notes": "pose de sargento com duas pistolas; Firepowder ou Matchlock, usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma).",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0
+          ],
+          "front": "arts/marksman-sargeant-pistol/fino/frente.svg",
+          "back": "arts/marksman-sargeant-pistol/fino/verso.svg",
+          "canvasMm": [
+            41.868,
+            37.084
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            37.0,
+            41.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            0
+          ],
+          "front": "arts/marksman-sargeant-pistol/borda/frente.svg",
+          "back": "arts/marksman-sargeant-pistol/borda/verso.svg",
+          "canvasMm": [
+            45.805,
+            38.947
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            38.9,
+            45.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "marksman-sargeant-gatling",
+      "candidateId": "a046",
+      "pdfLabel": "Marksman Sargeant Gatling",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "marksmen",
+      "equipmentTags": [
+        "Gatling Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gatling",
+          "armyBook": "Gatling Rifle"
+        }
+      ],
+      "notes": "pose de sargento com arma especial",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            1
+          ],
+          "front": "arts/marksman-sargeant-gatling/fino/frente.svg",
+          "back": "arts/marksman-sargeant-gatling/fino/verso.svg",
+          "canvasMm": [
+            40.513,
+            37.042
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            36.9,
+            40.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            1
+          ],
+          "front": "arts/marksman-sargeant-gatling/borda/frente.svg",
+          "back": "arts/marksman-sargeant-gatling/borda/verso.svg",
+          "canvasMm": [
+            44.238,
+            38.904
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            38.8,
+            43.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "marksman-sargeant-sniper",
+      "candidateId": "a047",
+      "pdfLabel": "Marksman Sargeant Sniper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "marksmen",
+      "equipmentTags": [
+        "Sniper Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sniper",
+          "armyBook": "Sniper Rifle"
+        }
+      ],
+      "notes": "pose de sargento com arma especial",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            2
+          ],
+          "front": "arts/marksman-sargeant-sniper/fino/frente.svg",
+          "back": "arts/marksman-sargeant-sniper/fino/verso.svg",
+          "canvasMm": [
+            43.265,
+            38.1
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            38.0,
+            43.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            2
+          ],
+          "front": "arts/marksman-sargeant-sniper/borda/frente.svg",
+          "back": "arts/marksman-sargeant-sniper/borda/verso.svg",
+          "canvasMm": [
+            46.99,
+            39.963
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            39.9,
+            46.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "marksman-musician",
+      "candidateId": "a048",
+      "pdfLabel": "Marksman Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "marksmen",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            3
+          ],
+          "front": "arts/marksman-musician/fino/frente.svg",
+          "back": "arts/marksman-musician/fino/verso.svg",
+          "canvasMm": [
+            21.082,
+            37.126
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            37.0,
+            20.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            3
+          ],
+          "front": "arts/marksman-musician/borda/frente.svg",
+          "back": "arts/marksman-musician/borda/verso.svg",
+          "canvasMm": [
+            24.765,
+            38.904
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            38.8,
+            24.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "marksman-banner",
+      "candidateId": "a049",
+      "pdfLabel": "Marksman Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "marksmen",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            4
+          ],
+          "front": "arts/marksman-banner/fino/frente.svg",
+          "back": "arts/marksman-banner/fino/verso.svg",
+          "canvasMm": [
+            38.439,
+            69.384
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            69.3,
+            38.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            4
+          ],
+          "front": "arts/marksman-banner/borda/frente.svg",
+          "back": "arts/marksman-banner/borda/verso.svg",
+          "canvasMm": [
+            42.164,
+            71.247
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            71.1,
+            41.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horse-pistoleer",
+      "candidateId": "a050",
+      "pdfLabel": "Horse Pistoleer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "horse-marksmen",
+      "equipmentTags": [
+        "Dual Firepowder Pistols|Dual Matchlock Pistols"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Horse Pistoleer",
+          "armyBook": "Horse Marksmen"
+        },
+        {
+          "pdf": "Pistol",
+          "armyBook": [
+            "Dual Firepowder Pistols",
+            "Dual Matchlock Pistols"
+          ]
+        }
+      ],
+      "notes": "cavaleiro atirador com pistolas; Firepowder ou Matchlock, usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma).",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/horse-pistoleer/fino/frente.svg",
+          "back": "arts/horse-pistoleer/fino/verso.svg",
+          "canvasMm": [
+            54.356,
+            50.588
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            50.4,
+            54.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 52,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/horse-pistoleer/borda/frente.svg",
+          "back": "arts/horse-pistoleer/borda/verso.svg",
+          "canvasMm": [
+            58.081,
+            52.451
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            52.2,
+            57.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horse-rifleman",
+      "candidateId": "a051",
+      "pdfLabel": "Horse Rifleman",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "horse-marksmen",
+      "equipmentTags": [
+        "Matchlock Rifle|Firepowder Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Horse Rifleman",
+          "armyBook": "Horse Marksmen"
+        },
+        {
+          "pdf": "Rifle",
+          "armyBook": [
+            "Matchlock Rifle",
+            "Firepowder Rifle"
+          ]
+        }
+      ],
+      "notes": "Rifle pode ser Matchlock Rifle (padrão) ou Firepowder Rifle; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma).",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/horse-rifleman/fino/frente.svg",
+          "back": "arts/horse-rifleman/fino/verso.svg",
+          "canvasMm": [
+            54.568,
+            50.631
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            50.5,
+            54.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 53,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/horse-rifleman/borda/frente.svg",
+          "back": "arts/horse-rifleman/borda/verso.svg",
+          "canvasMm": [
+            58.293,
+            52.493
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            52.4,
+            58.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horse-marksman-sargeant-sniper",
+      "candidateId": "a052",
+      "pdfLabel": "Horse Marksman Sargeant Sniper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "horse-marksmen",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "Horse Marksmen não tem Sniper Rifle no army book v3.6.0",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            0
+          ],
+          "front": "arts/horse-marksman-sargeant-sniper/fino/frente.svg",
+          "back": "arts/horse-marksman-sargeant-sniper/fino/verso.svg",
+          "canvasMm": [
+            50.885,
+            54.144
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            54.0,
+            50.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            0
+          ],
+          "front": "arts/horse-marksman-sargeant-sniper/borda/frente.svg",
+          "back": "arts/horse-marksman-sargeant-sniper/borda/verso.svg",
+          "canvasMm": [
+            54.61,
+            56.007
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            55.9,
+            54.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horse-marksman-sargeant-gatling",
+      "candidateId": "a053",
+      "pdfLabel": "Horse Marksman Sargeant Gatling",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "horse-marksmen",
+      "equipmentTags": [
+        "Gatling Rifle|Dual Gatling Pistols"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gatling",
+          "armyBook": [
+            "Gatling Rifle",
+            "Dual Gatling Pistols"
+          ]
+        }
+      ],
+      "notes": "Gatling pode ser Gatling Rifle ou Dual Gatling Pistols; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma).",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            1
+          ],
+          "front": "arts/horse-marksman-sargeant-gatling/fino/frente.svg",
+          "back": "arts/horse-marksman-sargeant-gatling/fino/verso.svg",
+          "canvasMm": [
+            48.345,
+            54.229
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            54.1,
+            48.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            1
+          ],
+          "front": "arts/horse-marksman-sargeant-gatling/borda/frente.svg",
+          "back": "arts/horse-marksman-sargeant-gatling/borda/verso.svg",
+          "canvasMm": [
+            52.07,
+            56.092
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            56.0,
+            51.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horse-marksman-sargeant-pistol",
+      "candidateId": "a054",
+      "pdfLabel": "Horse Marksman Sargeant Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "horse-marksmen",
+      "equipmentTags": [
+        "Dual Firepowder Pistols|Dual Matchlock Pistols"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Pistol",
+          "armyBook": [
+            "Dual Firepowder Pistols",
+            "Dual Matchlock Pistols"
+          ]
+        }
+      ],
+      "notes": "Firepowder ou Matchlock, usuário escolhe; na figura a arma parece ter vários canos (Dual Gatling Pistols?) Arma ambígua: tag com alternativas (casa com qualquer uma).",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            2
+          ],
+          "front": "arts/horse-marksman-sargeant-pistol/fino/frente.svg",
+          "back": "arts/horse-marksman-sargeant-pistol/fino/verso.svg",
+          "canvasMm": [
+            48.514,
+            54.441
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            54.4,
+            48.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            2
+          ],
+          "front": "arts/horse-marksman-sargeant-pistol/borda/frente.svg",
+          "back": "arts/horse-marksman-sargeant-pistol/borda/verso.svg",
+          "canvasMm": [
+            52.239,
+            56.303
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            56.2,
+            52.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horse-marksman-banner",
+      "candidateId": "a055",
+      "pdfLabel": "Horse Marksman Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "horse-marksmen",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            0
+          ],
+          "front": "arts/horse-marksman-banner/fino/frente.svg",
+          "back": "arts/horse-marksman-banner/fino/verso.svg",
+          "canvasMm": [
+            63.627,
+            91.652
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            91.5,
+            63.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            0
+          ],
+          "front": "arts/horse-marksman-banner/borda/frente.svg",
+          "back": "arts/horse-marksman-banner/borda/verso.svg",
+          "canvasMm": [
+            67.437,
+            93.514
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            93.4,
+            67.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horse-marksman-musician",
+      "candidateId": "a056",
+      "pdfLabel": "Horse Marksman Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "horse-marksmen",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            1
+          ],
+          "front": "arts/horse-marksman-musician/fino/frente.svg",
+          "back": "arts/horse-marksman-musician/fino/verso.svg",
+          "canvasMm": [
+            45.466,
+            51.096
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            51.0,
+            45.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            1
+          ],
+          "front": "arts/horse-marksman-musician/borda/frente.svg",
+          "back": "arts/horse-marksman-musician/borda/verso.svg",
+          "canvasMm": [
+            49.191,
+            52.959
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            52.8,
+            48.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "knight-sword",
+      "candidateId": "a057",
+      "pdfLabel": "Knight Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "knights",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/knight-sword/fino/frente.svg",
+          "back": "arts/knight-sword/fino/verso.svg",
+          "canvasMm": [
+            58.928,
+            59.521
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            59.4,
+            58.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 56,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/knight-sword/borda/frente.svg",
+          "back": "arts/knight-sword/borda/verso.svg",
+          "canvasMm": [
+            62.653,
+            61.383
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            61.3,
+            62.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "knight-lance",
+      "candidateId": "a058",
+      "pdfLabel": "Knight Lance",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "knights",
+      "equipmentTags": [
+        "Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/knight-lance/fino/frente.svg",
+          "back": "arts/knight-lance/fino/verso.svg",
+          "canvasMm": [
+            84.667,
+            59.648
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            59.5,
+            84.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 57,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/knight-lance/borda/frente.svg",
+          "back": "arts/knight-lance/borda/verso.svg",
+          "canvasMm": [
+            88.392,
+            61.51
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            61.4,
+            88.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "knight-sergeant",
+      "candidateId": "a059",
+      "pdfLabel": "Knight Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "knights",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 26,
+          "rows": [
+            0
+          ],
+          "front": "arts/knight-sergeant/fino/frente.svg",
+          "back": "arts/knight-sergeant/fino/verso.svg",
+          "canvasMm": [
+            42.291,
+            71.628
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            71.5,
+            42.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 58,
+          "rows": [
+            0
+          ],
+          "front": "arts/knight-sergeant/borda/frente.svg",
+          "back": "arts/knight-sergeant/borda/verso.svg",
+          "canvasMm": [
+            46.016,
+            73.491
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            73.4,
+            45.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "knight-musician",
+      "candidateId": "a060",
+      "pdfLabel": "Knight Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "knights",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 26,
+          "rows": [
+            1
+          ],
+          "front": "arts/knight-musician/fino/frente.svg",
+          "back": "arts/knight-musician/fino/verso.svg",
+          "canvasMm": [
+            55.414,
+            57.954
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            57.8,
+            55.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 58,
+          "rows": [
+            1
+          ],
+          "front": "arts/knight-musician/borda/frente.svg",
+          "back": "arts/knight-musician/borda/verso.svg",
+          "canvasMm": [
+            59.14,
+            59.817
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            59.7,
+            58.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "knight-banner",
+      "candidateId": "a061",
+      "pdfLabel": "Knight Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "knights",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 26,
+          "rows": [
+            2
+          ],
+          "front": "arts/knight-banner/fino/frente.svg",
+          "back": "arts/knight-banner/fino/verso.svg",
+          "canvasMm": [
+            52.366,
+            97.748
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            97.6,
+            52.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 58,
+          "rows": [
+            2
+          ],
+          "front": "arts/knight-banner/borda/frente.svg",
+          "back": "arts/knight-banner/borda/verso.svg",
+          "canvasMm": [
+            56.092,
+            99.61
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            99.5,
+            55.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "knight-lance-guard",
+      "candidateId": "a062",
+      "pdfLabel": "Knight Lance",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guard-knights",
+      "equipmentTags": [
+        "Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Knight",
+          "armyBook": "Guard Knights"
+        }
+      ],
+      "notes": "rótulo diz Knight, mas o desenho segue os Guard Knight (gualdrapa em zigue-zague, a064-a066) e fica entre as páginas dos Knights e dos Guard Knight; Knights já tem Knight Lance (a058). Alternativa: Knights",
+      "styles": {
+        "fino": {
+          "page": 27,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/knight-lance-guard/fino/frente.svg",
+          "back": "arts/knight-lance-guard/fino/verso.svg",
+          "canvasMm": [
+            42.46,
+            56.219
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            56.1,
+            42.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 59,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/knight-lance-guard/borda/frente.svg",
+          "back": "arts/knight-lance-guard/borda/verso.svg",
+          "canvasMm": [
+            45.847,
+            57.912
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            57.8,
+            45.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "knight-axe",
+      "candidateId": "a063",
+      "pdfLabel": "Knight Axe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guard-knights",
+      "equipmentTags": [
+        "Great Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Knight",
+          "armyBook": "Guard Knights"
+        },
+        {
+          "pdf": "Axe",
+          "armyBook": "Great Weapon"
+        }
+      ],
+      "notes": "rótulo diz Knight, mas o desenho segue os Guard Knight (gualdrapa em zigue-zague, a064-a066) e fica entre as páginas dos Knights e dos Guard Knight. Machado de haste = Great Weapon; alternativa: Knights com Hand Weapon",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/knight-axe/fino/frente.svg",
+          "back": "arts/knight-axe/fino/verso.svg",
+          "canvasMm": [
+            42.714,
+            62.992
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            62.9,
+            42.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 60,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/knight-axe/borda/frente.svg",
+          "back": "arts/knight-axe/borda/verso.svg",
+          "canvasMm": [
+            46.101,
+            64.685
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            64.6,
+            45.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guard-knight-sergeant",
+      "candidateId": "a064",
+      "pdfLabel": "Guard Knight Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guard-knights",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 29,
+          "rows": [
+            0
+          ],
+          "front": "arts/guard-knight-sergeant/fino/frente.svg",
+          "back": "arts/guard-knight-sergeant/fino/verso.svg",
+          "canvasMm": [
+            44.577,
+            63.204
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            63.1,
+            44.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 61,
+          "rows": [
+            0
+          ],
+          "front": "arts/guard-knight-sergeant/borda/frente.svg",
+          "back": "arts/guard-knight-sergeant/borda/verso.svg",
+          "canvasMm": [
+            47.964,
+            64.897
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            64.8,
+            47.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guard-knight-musician",
+      "candidateId": "a065",
+      "pdfLabel": "Guard Knight Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guard-knights",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 29,
+          "rows": [
+            1
+          ],
+          "front": "arts/guard-knight-musician/fino/frente.svg",
+          "back": "arts/guard-knight-musician/fino/verso.svg",
+          "canvasMm": [
+            54.779,
+            55.711
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            55.6,
+            54.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 61,
+          "rows": [
+            1
+          ],
+          "front": "arts/guard-knight-musician/borda/frente.svg",
+          "back": "arts/guard-knight-musician/borda/verso.svg",
+          "canvasMm": [
+            58.166,
+            57.404
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            57.3,
+            57.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guard-knight-banner",
+      "candidateId": "a066",
+      "pdfLabel": "Guard Knight Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guard-knights",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 29,
+          "rows": [
+            2
+          ],
+          "front": "arts/guard-knight-banner/fino/frente.svg",
+          "back": "arts/guard-knight-banner/fino/verso.svg",
+          "canvasMm": [
+            58.208,
+            93.557
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            93.5,
+            57.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 61,
+          "rows": [
+            2
+          ],
+          "front": "arts/guard-knight-banner/borda/frente.svg",
+          "back": "arts/guard-knight-banner/borda/verso.svg",
+          "canvasMm": [
+            61.595,
+            95.25
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            95.2,
+            61.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gryph-rider-lance",
+      "candidateId": "a067",
+      "pdfLabel": "Gryph Rider Lance",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "gryph-riders",
+      "equipmentTags": [
+        "Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 30,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/gryph-rider-lance/fino/frente.svg",
+          "back": "arts/gryph-rider-lance/fino/verso.svg",
+          "canvasMm": [
+            87.757,
+            53.213
+          ],
+          "frontBackIoU": 0.839,
+          "sizeMm": [
+            53.1,
+            87.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 62,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/gryph-rider-lance/borda/frente.svg",
+          "back": "arts/gryph-rider-lance/borda/verso.svg",
+          "canvasMm": [
+            91.482,
+            55.076
+          ],
+          "frontBackIoU": 0.868,
+          "sizeMm": [
+            54.9,
+            91.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gryph-rider-halberd",
+      "candidateId": "a068",
+      "pdfLabel": "Gryph Rider Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "gryph-riders",
+      "equipmentTags": [
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 31,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/gryph-rider-halberd/fino/frente.svg",
+          "back": "arts/gryph-rider-halberd/fino/verso.svg",
+          "canvasMm": [
+            88.477,
+            53.679
+          ],
+          "frontBackIoU": 0.84,
+          "sizeMm": [
+            53.6,
+            88.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 63,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/gryph-rider-halberd/borda/frente.svg",
+          "back": "arts/gryph-rider-halberd/borda/verso.svg",
+          "canvasMm": [
+            92.202,
+            55.541
+          ],
+          "frontBackIoU": 0.867,
+          "sizeMm": [
+            55.5,
+            91.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gryph-rider-sergeant",
+      "candidateId": "a069",
+      "pdfLabel": "Gryph Rider Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "gryph-riders",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 32,
+          "rows": [
+            0
+          ],
+          "front": "arts/gryph-rider-sergeant/fino/frente.svg",
+          "back": "arts/gryph-rider-sergeant/fino/verso.svg",
+          "canvasMm": [
+            70.824,
+            72.898
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            72.8,
+            70.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 64,
+          "rows": [
+            0
+          ],
+          "front": "arts/gryph-rider-sergeant/borda/frente.svg",
+          "back": "arts/gryph-rider-sergeant/borda/verso.svg",
+          "canvasMm": [
+            74.549,
+            74.761
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            74.7,
+            74.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gryph-rider-musician",
+      "candidateId": "a070",
+      "pdfLabel": "Gryph Rider Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "gryph-riders",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 32,
+          "rows": [
+            1
+          ],
+          "front": "arts/gryph-rider-musician/fino/frente.svg",
+          "back": "arts/gryph-rider-musician/fino/verso.svg",
+          "canvasMm": [
+            89.916,
+            75.438
+          ],
+          "frontBackIoU": 0.946,
+          "sizeMm": [
+            75.4,
+            89.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 64,
+          "rows": [
+            1
+          ],
+          "front": "arts/gryph-rider-musician/borda/frente.svg",
+          "back": "arts/gryph-rider-musician/borda/verso.svg",
+          "canvasMm": [
+            93.641,
+            77.301
+          ],
+          "frontBackIoU": 0.96,
+          "sizeMm": [
+            77.2,
+            93.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gryph-rider-banner",
+      "candidateId": "a071",
+      "pdfLabel": "Gryph Rider Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "gryph-riders",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 33,
+          "rows": [
+            0
+          ],
+          "front": "arts/gryph-rider-banner/fino/frente.svg",
+          "back": "arts/gryph-rider-banner/fino/verso.svg",
+          "canvasMm": [
+            65.701,
+            96.393
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            96.3,
+            65.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 65,
+          "rows": [
+            0
+          ],
+          "front": "arts/gryph-rider-banner/borda/frente.svg",
+          "back": "arts/gryph-rider-banner/borda/verso.svg",
+          "canvasMm": [
+            69.427,
+            98.256
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            98.1,
+            69.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-sword-so-borda-1",
+      "candidateId": "a072",
+      "pdfLabel": "Infantry Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantrymen",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "só borda grossa, sem par fino; mesmo desenho de a023. Infantry é o genericName de Infantrymen",
+      "styles": {
+        "borda": {
+          "page": 39,
+          "rows": [
+            1,
+            3
+          ],
+          "front": "arts/infantry-sword-so-borda-1/borda/frente.svg",
+          "back": "arts/infantry-sword-so-borda-1/borda/verso.svg",
+          "canvasMm": [
+            26.12,
+            36.068
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            36.0,
+            25.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-sword-so-borda-2",
+      "candidateId": "a073",
+      "pdfLabel": "Infantry Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantrymen",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "só borda grossa, sem par fino; mesmo desenho de a023. Infantry é o genericName de Infantrymen",
+      "styles": {
+        "borda": {
+          "page": 39,
+          "rows": [
+            2,
+            4
+          ],
+          "front": "arts/infantry-sword-so-borda-2/borda/frente.svg",
+          "back": "arts/infantry-sword-so-borda-2/borda/verso.svg",
+          "canvasMm": [
+            26.12,
+            36.068
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            36.0,
+            25.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-halberd-so-borda-1",
+      "candidateId": "a074",
+      "pdfLabel": "Infantry Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantrymen",
+      "equipmentTags": [
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só borda grossa, sem par fino; mesmo desenho de a024. Infantry é o genericName de Infantrymen",
+      "styles": {
+        "borda": {
+          "page": 40,
+          "rows": [
+            1,
+            4
+          ],
+          "front": "arts/infantry-halberd-so-borda-1/borda/frente.svg",
+          "back": "arts/infantry-halberd-so-borda-1/borda/verso.svg",
+          "canvasMm": [
+            46.355,
+            35.856
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            35.7,
+            46.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-halberd-so-borda-2",
+      "candidateId": "a075",
+      "pdfLabel": "Infantry Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantrymen",
+      "equipmentTags": [
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só borda grossa, sem par fino; mesmo desenho de a024. Infantry é o genericName de Infantrymen",
+      "styles": {
+        "borda": {
+          "page": 40,
+          "rows": [
+            3
+          ],
+          "front": "arts/infantry-halberd-so-borda-2/borda/frente.svg",
+          "back": "arts/infantry-halberd-so-borda-2/borda/verso.svg",
+          "canvasMm": [
+            46.355,
+            35.856
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            35.7,
+            46.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-spear-so-borda",
+      "candidateId": "a076",
+      "pdfLabel": "Infantry Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantrymen",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só borda grossa, sem par fino; mesmo desenho de a025. Infantry é o genericName de Infantrymen",
+      "styles": {
+        "borda": {
+          "page": 41,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/infantry-spear-so-borda/borda/frente.svg",
+          "back": "arts/infantry-spear-so-borda/borda/verso.svg",
+          "canvasMm": [
+            46.821,
+            36.195
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            36.1,
+            46.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fanatic-v1-so-borda",
+      "candidateId": "a077",
+      "pdfLabel": "Fanatic V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "fanatics",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só borda grossa, sem par fino; mesmo desenho de a034",
+      "styles": {
+        "borda": {
+          "page": 45,
+          "rows": [
+            1
+          ],
+          "front": "arts/fanatic-v1-so-borda/borda/frente.svg",
+          "back": "arts/fanatic-v1-so-borda/borda/verso.svg",
+          "canvasMm": [
+            38.777,
+            35.729
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            35.6,
+            38.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "marksman-rifle-so-borda-1",
+      "candidateId": "a078",
+      "pdfLabel": "Marksman Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "marksmen",
+      "equipmentTags": [
+        "Matchlock Rifle|Firepowder Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": [
+            "Matchlock Rifle",
+            "Firepowder Rifle"
+          ]
+        }
+      ],
+      "notes": "só borda grossa, sem par fino; mesmo desenho de a043. Rifle pode ser Matchlock Rifle (padrão) ou Firepowder Rifle; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma).",
+      "styles": {
+        "borda": {
+          "page": 49,
+          "rows": [
+            1
+          ],
+          "front": "arts/marksman-rifle-so-borda-1/borda/frente.svg",
+          "back": "arts/marksman-rifle-so-borda-1/borda/verso.svg",
+          "canvasMm": [
+            29.464,
+            37.846
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            37.8,
+            29.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "marksman-rifle-so-borda-2",
+      "candidateId": "a079",
+      "pdfLabel": "Marksman Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "marksmen",
+      "equipmentTags": [
+        "Matchlock Rifle|Firepowder Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": [
+            "Matchlock Rifle",
+            "Firepowder Rifle"
+          ]
+        }
+      ],
+      "notes": "só borda grossa, sem par fino; mesmo desenho de a043. Rifle pode ser Matchlock Rifle (padrão) ou Firepowder Rifle; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma).",
+      "styles": {
+        "borda": {
+          "page": 49,
+          "rows": [
+            4
+          ],
+          "front": "arts/marksman-rifle-so-borda-2/borda/frente.svg",
+          "back": "arts/marksman-rifle-so-borda-2/borda/verso.svg",
+          "canvasMm": [
+            29.464,
+            37.846
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            37.8,
+            29.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

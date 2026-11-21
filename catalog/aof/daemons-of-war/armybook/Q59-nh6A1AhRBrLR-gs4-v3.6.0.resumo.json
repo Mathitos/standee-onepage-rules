@@ -1,0 +1,1164 @@
+{
+  "armyBook": {
+    "id": "Q59-nh6A1AhRBrLR",
+    "nome": "Daemons of War",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:32.273Z",
+    "sistema": "age-of-fantasy",
+    "sistemaId": 4
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "kpx73Pj",
+      "nome": "Avatar of War",
+      "tamanho": 1,
+      "bases": {
+        "round": "160x122",
+        "square": "150x100"
+      },
+      "armas": [
+        "Heavy Daemon Hammer",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace 2x Heavy Daemon Hammer",
+          "ganha": [
+            "Daemon Loremaster Staff"
+          ]
+        },
+        {
+          "secao": "Replace 2x Heavy Daemon Hammer",
+          "ganha": [
+            "Heavy War Whip",
+            "Heavy Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace 2x Heavy Daemon Hammer",
+          "ganha": [
+            "Heavy Long Whip"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Daemon Hammer",
+          "ganha": [
+            "Flame Axe"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Daemon Hammer",
+          "ganha": [
+            "Heavy Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Daemon Hammer",
+          "ganha": [
+            "Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Daemon Hammer",
+          "ganha": [
+            "Blood Sword"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Daemonic Incursion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "War Favour"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Envoy of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Storm of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Gift of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Lore of War"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kAlg5qy",
+      "nome": "Ascended Harbinger of War",
+      "tamanho": 1,
+      "bases": {
+        "round": "105x70",
+        "square": "100x60"
+      },
+      "armas": [
+        "Heavy Flame Axe",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace 2x Heavy Flame Axe",
+          "ganha": [
+            "Daemon Loremaster Staff"
+          ]
+        },
+        {
+          "secao": "Replace 2x Heavy Flame Axe",
+          "ganha": [
+            "Heavy War Whip",
+            "Heavy Flame Axe"
+          ]
+        },
+        {
+          "secao": "Replace 2x Heavy Flame Axe",
+          "ganha": [
+            "Heavy Long Whip"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Flame Axe",
+          "ganha": [
+            "Heavy Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Flame Axe",
+          "ganha": [
+            "Heavy Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Flame Axe",
+          "ganha": [
+            "Heavy Blood Sword"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Flame Axe",
+          "ganha": [
+            "Heavy Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Daemonic Incursion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "War Favour"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Symbol of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Curse of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Gift of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Lore of War"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_vrCvso",
+      "nome": "Harbinger of War",
+      "tamanho": 1,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Daemon Hammer",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace 2x Daemon Hammer",
+          "ganha": [
+            "Daemon Loremaster Staff"
+          ]
+        },
+        {
+          "secao": "Replace 2x Daemon Hammer",
+          "ganha": [
+            "Heavy War Whip",
+            "Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace 2x Daemon Hammer",
+          "ganha": [
+            "Heavy Long Whip"
+          ]
+        },
+        {
+          "secao": "Replace any Daemon Hammer",
+          "ganha": [
+            "Flame Axe"
+          ]
+        },
+        {
+          "secao": "Replace any Daemon Hammer",
+          "ganha": [
+            "Blood Sword"
+          ]
+        },
+        {
+          "secao": "Replace any Daemon Hammer",
+          "ganha": [
+            "Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace any Daemon Hammer",
+          "ganha": [
+            "Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "War Boon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Daemonic Incursion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Fury Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Symbol of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "War Favour"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Gift of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Envoy of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Lore of War"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pl2kj2o",
+      "nome": "Champion of War",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Blood Sword"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Flame Axe"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "War Whip",
+            "Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Daemon Loremaster Staff"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Heavy Long Whip",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Flame Axe"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Blood Sword"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "War Boon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Daemonic Incursion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Blood Beast"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Throne of Blood"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Symbol of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "War Favour"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Army Standard Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Envoy of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Lore of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Icon of War"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_wahk4u",
+      "nome": "Fury Champion of War",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Blood Sword"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Flame Axe"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "War Whip",
+            "Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Heavy Long Whip",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Flame Axe"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Blood Sword"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Symbol of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Gift of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Envoy of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Icon of War"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F-hxnBM",
+      "nome": "Tri-Hound Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Flame Claws"
+      ],
+      "itens": [
+        {
+          "nome": "Malicious Predator",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Malicious Predator",
+          "ganha": [
+            "Bounding Advance"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "War Boon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Spiked Collar"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Anti-Wizard Collar"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Guard Beast"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JljoGNE",
+      "nome": "War Furies",
+      "tamanho": 10,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Flame Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Flame Claws",
+          "ganha": [
+            "Blood Claws"
+          ]
+        },
+        {
+          "secao": "Replace all Flame Claws",
+          "ganha": [
+            "Dual Armblades"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yBYbUK2",
+      "nome": "Blood Warriors",
+      "tamanho": 5,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Flame Axe"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Blood Sword"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Dual Hand Weapons"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "War Boon"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Banner of War"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "j-hvctz",
+      "nome": "Whip-Furies",
+      "tamanho": 5,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Long Whip",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Long Whips",
+          "ganha": [
+            "War Whip"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tIp3o0o",
+      "nome": "Blood Whippers",
+      "tamanho": 5,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Long Whip",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Long Whips",
+          "ganha": [
+            "War Whip"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "War Boon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sGax-Sg",
+      "nome": "Blood Beast Riders",
+      "tamanho": 3,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [
+        {
+          "nome": "Trample",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Hand Weapons and Tramples",
+          "ganha": [
+            "Flame Axe",
+            "Heavy Trample"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Hand Weapons and Tramples",
+          "ganha": [
+            "Halberd",
+            "Heavy Trample"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Hand Weapons and Tramples",
+          "ganha": [
+            "Blood Sword",
+            "Heavy Trample"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Hand Weapons and Tramples",
+          "ganha": [
+            "Great Weapon",
+            "Heavy Trample"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "War Boon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exTlY0u",
+      "nome": "Blood Hounds",
+      "tamanho": 5,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Flame Claws"
+      ],
+      "itens": [
+        {
+          "nome": "Malicious Predator",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace all Malicious Predators",
+          "ganha": [
+            "Bounding Advance"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "War Boon"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Anti-Wizard Collar"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Spiked Collars"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gcvwDa8",
+      "nome": "War Soul Spawns",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Flame Axe"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Flame Axes",
+          "ganha": [
+            "Soul Claws"
+          ]
+        },
+        {
+          "secao": "Replace all Flame Axes",
+          "ganha": [
+            "Blood Sword"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Nehog41",
+      "nome": "Cannon Wagon",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Skull-Shot Cannon",
+        "Great Beasts"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Skull-Shot Cannon",
+          "ganha": [
+            "Horn-Shot Cannon"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Curse of War"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blh29sS",
+      "nome": "Giant Tri-Hound",
+      "tamanho": 1,
+      "bases": {
+        "round": "105x70",
+        "square": "100x60"
+      },
+      "armas": [
+        "Flame Claws",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "War Boon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Spiked Collars"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Anti-Wizard Collar"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Guard Beast"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Curse of War"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Flame Breath"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xOXi3BG",
+      "nome": "Soul Daemon of War",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Flame Axe",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace any Flame Axe",
+          "ganha": [
+            "Soul Sword"
+          ]
+        },
+        {
+          "secao": "Replace any Flame Axe",
+          "ganha": [
+            "Blood Sword"
+          ]
+        },
+        {
+          "secao": "Replace one Flame Axe",
+          "ganha": [
+            "Soul Cannon"
+          ]
+        },
+        {
+          "secao": "Replace one Flame Axe",
+          "ganha": [
+            "Flame Cannon"
+          ]
+        },
+        {
+          "secao": "Replace one Flame Axe",
+          "ganha": [
+            "Heavy Soul Cannon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2EU11qy",
+      "nome": "Cleaverfang",
+      "tamanho": 1,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Frenzied Bites"
+      ],
+      "itens": [
+        {
+          "nome": "Packmaster",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Packmaster",
+          "ganha": [
+            "Packmaster - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OUuyNGH",
+      "nome": "Ironpride",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Sharptongue"
+      ],
+      "itens": [
+        {
+          "nome": "Devious One",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Devious One",
+          "ganha": [
+            "Devious One - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R4Qg5dl",
+      "nome": "Chainrend",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Arcane Blast",
+        "Arcane Spear"
+      ],
+      "itens": [
+        {
+          "nome": "Pilfered Relics",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Pilfered Relics",
+          "ganha": [
+            "Pilfered Relics - Leader"
+          ]
+        }
+      ]
+    }
+  ]
+}

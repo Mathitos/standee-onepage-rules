@@ -7,6 +7,8 @@ export interface FaccaoIndice {
   faccao: string
   artes: number
   manifesto: boolean
+  /** nomes do exército no Army Forge (dos army books do manifesto), ex. "Saurian Starhosts" */
+  exercitos?: string[]
 }
 
 export interface IndiceCatalogo {

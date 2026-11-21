@@ -1,0 +1,1132 @@
+{
+  "armyBook": {
+    "id": "BKi_hJaJflN8ZorH",
+    "nome": "Jackals",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:33.234Z",
+    "sistema": "grimdark-future",
+    "sistemaId": 2
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "Nzc4pM6",
+      "nome": "Elite Veteran",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Energy Pistol",
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wasteland Survivor"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Warlord"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Shaman"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hunt Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Merchant"
+          ]
+        },
+        {
+          "secao": "Replace Energy Pistol and Hand Weapon",
+          "ganha": [
+            "Explosive Spear"
+          ]
+        },
+        {
+          "secao": "Replace Energy Pistol and Hand Weapon",
+          "ganha": [
+            "Burst Shotgun",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Energy Pistol and Hand Weapon",
+          "ganha": [
+            "Shaman Staff"
+          ]
+        },
+        {
+          "secao": "Replace Energy Pistol and Hand Weapon",
+          "ganha": [
+            "Burst Energy Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Energy Pistol",
+          "ganha": [
+            "Shred Long Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Energy Pistol",
+          "ganha": [
+            "Hunting Hook"
+          ]
+        },
+        {
+          "secao": "Replace Energy Pistol",
+          "ganha": [
+            "Burst Heavy Flamer Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Energy Pistol",
+          "ganha": [
+            "Plasma Long Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Energy Pistol",
+          "ganha": [
+            "Missile Long Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Barbed Harpoon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Goad-Spear"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Jetpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Satellite Backpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Raider Jetpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Gunner Beast"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Assault Beast"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XhgyXd9",
+      "nome": "Veteran",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Scrap Pistol",
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Scrap Pistol and Hand Weapon",
+          "ganha": [
+            "Explosive Spear"
+          ]
+        },
+        {
+          "secao": "Replace Scrap Pistol and Hand Weapon",
+          "ganha": [
+            "Burst Shotgun",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Scrap Pistol and Hand Weapon",
+          "ganha": [
+            "Burst Scrap Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Scrap Pistol and Hand Weapon",
+          "ganha": [
+            "Scrap Sniper Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Scrap Pistol and Hand Weapon",
+          "ganha": [
+            "Shaman Staff"
+          ]
+        },
+        {
+          "secao": "Replace Scrap Pistol",
+          "ganha": [
+            "Power Spiker Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Scrap Pistol",
+          "ganha": [
+            "Rocket Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Scrap Pistol",
+          "ganha": [
+            "Force Blaster Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Scrap Pistol",
+          "ganha": [
+            "Zapper Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Scrap Pistol",
+          "ganha": [
+            "Hunting Hook"
+          ]
+        },
+        {
+          "secao": "Replace Scrap Pistol",
+          "ganha": [
+            "Fumigator Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Scrap Club"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Barbed Harpoon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Claw Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Goad-Spear"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Junk Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Jagged Hook"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wasteland Survivor"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Warlord"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pathfinder"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Shaman"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hunt Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Jetpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Satellite Backpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Raider Jetpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Gunner Beast"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Assault Beast"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8LCt3JN",
+      "nome": "Nomads",
+      "tamanho": 10,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Scrap Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Scrap Rifles and Strikes",
+          "ganha": [
+            "Scrap Pistol",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace up to two Scrap Rifles",
+          "ganha": [
+            "Fumigator"
+          ]
+        },
+        {
+          "secao": "Replace up to two Scrap Rifles",
+          "ganha": [
+            "Burst Shotgun"
+          ]
+        },
+        {
+          "secao": "Replace up to two Scrap Rifles",
+          "ganha": [
+            "Force Blaster"
+          ]
+        },
+        {
+          "secao": "Replace up to two Scrap Rifles",
+          "ganha": [
+            "Zapper Gun"
+          ]
+        },
+        {
+          "secao": "Replace up to two Scrap Rifles",
+          "ganha": [
+            "Rocket Launcher"
+          ]
+        },
+        {
+          "secao": "Replace up to two Scrap Rifles",
+          "ganha": [
+            "Marksman Carbine"
+          ]
+        },
+        {
+          "secao": "Replace up to two Scrap Rifles",
+          "ganha": [
+            "Hunting Shotgun"
+          ]
+        },
+        {
+          "secao": "Replace up to two Scrap Rifles",
+          "ganha": [
+            "Power Spiker"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Satellite Backpack"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Hunter's Mark"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i38ZXSB",
+      "nome": "Stalkers",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Claw Gauntlets"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Dual Claw Gauntlets",
+          "ganha": [
+            "Dual Junk Swords"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Claw Gauntlets",
+          "ganha": [
+            "Dual Hand Weapons"
+          ]
+        },
+        {
+          "secao": "Replace one Dual Claw Gauntlets",
+          "ganha": [
+            "Dual Scrap Clubs"
+          ]
+        },
+        {
+          "secao": "Replace one Dual Claw Gauntlets",
+          "ganha": [
+            "Dual Jagged Hooks"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uF7noGn",
+      "nome": "Elites",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Energy Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Energy Rifles",
+          "ganha": [
+            "Shotgun"
+          ]
+        },
+        {
+          "secao": "Replace one Energy Rifle",
+          "ganha": [
+            "Heavy Flamer"
+          ]
+        },
+        {
+          "secao": "Replace one Energy Rifle",
+          "ganha": [
+            "Plasma Cannon"
+          ]
+        },
+        {
+          "secao": "Replace one Energy Rifle",
+          "ganha": [
+            "Shredder Cannon"
+          ]
+        },
+        {
+          "secao": "Replace one Energy Rifle",
+          "ganha": [
+            "Missile Launcher"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Satellite Backpack"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Hunter's Mark"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LutTMHw",
+      "nome": "Vultures",
+      "tamanho": 5,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Explosive Spear"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Explosive Spears",
+          "ganha": [
+            "Scrap Pistol",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace all Explosive Spears",
+          "ganha": [
+            "Energy Rifle",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace one Energy Rifle",
+          "ganha": [
+            "Force Blaster"
+          ]
+        },
+        {
+          "secao": "Replace one Energy Rifle",
+          "ganha": [
+            "Zapper Gun"
+          ]
+        },
+        {
+          "secao": "Replace one Energy Rifle",
+          "ganha": [
+            "Hunting Shotgun"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Junk Sword"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Claw Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace one Hand Weapon",
+          "ganha": [
+            "Scrap Club"
+          ]
+        },
+        {
+          "secao": "Replace one Hand Weapon",
+          "ganha": [
+            "Jagged Hook"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with any",
+          "ganha": [
+            "Sky Raider"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with any",
+          "ganha": [
+            "Vulture Nades"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ARMiAVY",
+      "nome": "Trackers",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Marksman Carbine",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Satellite Backpack"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Hunter's Mark"
+          ]
+        },
+        {
+          "secao": "Replace all Marksman Carbines",
+          "ganha": [
+            "Hunting Carbine"
+          ]
+        },
+        {
+          "secao": "Replace all Marksman Carbines",
+          "ganha": [
+            "Scrap Sniper Rifle"
+          ]
+        },
+        {
+          "secao": "Replace all Marksman Carbines",
+          "ganha": [
+            "Scrap Sniper Carbine"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Charged Ammo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VEbHNRI",
+      "nome": "Hounds",
+      "tamanho": 5,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Jagged Claws"
+      ],
+      "itens": [
+        {
+          "nome": "Territorial Beast",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace all Jagged Claws",
+          "ganha": [
+            "Hunting Claws"
+          ]
+        },
+        {
+          "secao": "Replace all Jagged Claws",
+          "ganha": [
+            "Razor Claws"
+          ]
+        },
+        {
+          "secao": "Replace all Territorial Beasts",
+          "ganha": [
+            "Hunting Hound"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Hunter Breed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1znOU_R",
+      "nome": "Beast Riders",
+      "tamanho": 3,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Explosive Spear"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Explosive Spears",
+          "ganha": [
+            "Barbed Harpoon"
+          ]
+        },
+        {
+          "secao": "Replace all Explosive Spears",
+          "ganha": [
+            "Scrap Pistol",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace all Explosive Spears",
+          "ganha": [
+            "Scrap Pistol",
+            "Junk Sword"
+          ]
+        },
+        {
+          "secao": "Replace all Explosive Spears",
+          "ganha": [
+            "Goad-Spear"
+          ]
+        },
+        {
+          "secao": "Replace all Explosive Spears",
+          "ganha": [
+            "Scrap Pistol",
+            "Claw Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace all Explosive Spears",
+          "ganha": [
+            "Hunting Hook"
+          ]
+        },
+        {
+          "secao": "Replace one Explosive Spear",
+          "ganha": [
+            "Scrap Pistol",
+            "Scrap Club"
+          ]
+        },
+        {
+          "secao": "Replace one Explosive Spear",
+          "ganha": [
+            "Scrap Pistol",
+            "Jagged Hook"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "J6JUfNP",
+      "nome": "Beast Gunners",
+      "tamanho": 3,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Fumigator",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace any Fumigator",
+          "ganha": [
+            "Scrap Sniper Carbine"
+          ]
+        },
+        {
+          "secao": "Replace any Fumigator",
+          "ganha": [
+            "Marksman Carbine"
+          ]
+        },
+        {
+          "secao": "Replace any Fumigator",
+          "ganha": [
+            "Burst Shotgun"
+          ]
+        },
+        {
+          "secao": "Replace any Fumigator",
+          "ganha": [
+            "Rocket Launcher"
+          ]
+        },
+        {
+          "secao": "Replace any Fumigator",
+          "ganha": [
+            "Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Replace any Fumigator",
+          "ganha": [
+            "Hunting Shotgun"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15DHLIb",
+      "nome": "Scavenger Beast",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Stomp"
+      ],
+      "itens": [
+        {
+          "nome": "Beast Gunner",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Beast Gunner",
+          "ganha": [
+            "Jagged Claws"
+          ]
+        },
+        {
+          "secao": "Replace Beast Gunner",
+          "ganha": [
+            "Hunting Claws"
+          ]
+        },
+        {
+          "secao": "Replace Fumigator",
+          "ganha": [
+            "Burst Shotgun"
+          ]
+        },
+        {
+          "secao": "Replace Fumigator",
+          "ganha": [
+            "Hunting Shotgun"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Death From Above"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UrmOEK-",
+      "nome": "Charger Beast",
+      "tamanho": 1,
+      "bases": {
+        "round": "105x70",
+        "square": "100x50"
+      },
+      "armas": [],
+      "itens": [
+        {
+          "nome": "Beast Rider",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Beast Rider",
+          "ganha": [
+            "Heavy Claws"
+          ]
+        },
+        {
+          "secao": "Replace Explosive Spear",
+          "ganha": [
+            "Barbed Harpoon"
+          ]
+        },
+        {
+          "secao": "Replace Explosive Spear",
+          "ganha": [
+            "Goad-Spear"
+          ]
+        },
+        {
+          "secao": "Replace Explosive Spear",
+          "ganha": [
+            "Hunting Hook"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0BlDrtr",
+      "nome": "Great Beast",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Heavy Jaws",
+        "Stomp"
+      ],
+      "itens": [
+        {
+          "nome": "Carrier Platform",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Heavy Jaws and Carrier Platform",
+          "ganha": [
+            "Spear Launcher"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Jaws and Carrier Platform",
+          "ganha": [
+            "Massive Jaws"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Jaws and Carrier Platform",
+          "ganha": [
+            "Assault Spear Launcher",
+            "Heavy Jaws"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Jaws and Carrier Platform",
+          "ganha": [
+            "Harpoon Launcher"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Jaws and Carrier Platform",
+          "ganha": [
+            "Assault Harpoon Launcher",
+            "Heavy Jaws"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Fearsome Roar"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Brutal Charge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RB1dBZj",
+      "nome": "Long Neck",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Heavy Railgun",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Heavy Railgun",
+          "ganha": [
+            "Heavy Rocket Array"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Railgun",
+          "ganha": [
+            "Heavy Energy Cannon"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Fearsome Roar"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "htslYRn",
+      "nome": "Mastodon",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Pipe Rockets",
+        "Scatter Cannon",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Scatter Cannon",
+          "ganha": [
+            "Piercing Cannon"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Fearsome Roar"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Carrier Platform"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Pintle Heavy Machinegun"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NbRQx-p",
+      "nome": "Ranjo \"Swiftsnare\"",
+      "tamanho": 1,
+      "bases": {
+        "round": "",
+        "square": ""
+      },
+      "armas": [
+        "Energy Pistol",
+        "Renegade Sword",
+        "Salvaged Charge"
+      ],
+      "itens": [
+        {
+          "nome": "Dazzle Cloak",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Dazzle Cloak",
+          "ganha": [
+            "Dazzle Cloak - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_eneM1Q",
+      "nome": "Ruyi \"Lonespear\"",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Photon Pistol",
+        "Explosive Spear"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Sky Raider"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Vengeful Warheads"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "-3oa5cD",
+      "nome": "Tayra \"Shipspeaker\"",
+      "tamanho": 1,
+      "bases": {
+        "round": "",
+        "square": ""
+      },
+      "armas": [
+        "Droideridoo",
+        "Strike"
+      ],
+      "itens": [
+        {
+          "nome": "Mechanical Whispers",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Mechanical Whispers",
+          "ganha": [
+            "Shaman"
+          ]
+        }
+      ]
+    }
+  ]
+}

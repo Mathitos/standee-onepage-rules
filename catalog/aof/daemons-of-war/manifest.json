@@ -1,0 +1,1772 @@
+{
+  "schemaVersion": 1,
+  "packId": "daemons-of-war",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "AOF",
+    "slug": "age-of-fantasy",
+    "armyForgeId": 4
+  },
+  "gameSystems": [
+    {
+      "code": "AOF",
+      "slug": "age-of-fantasy",
+      "armyForgeId": 4
+    },
+    {
+      "code": "AOFS",
+      "slug": "age-of-fantasy-skirmish",
+      "armyForgeId": 5
+    }
+  ],
+  "armyBook": {
+    "id": "Q59-nh6A1AhRBrLR",
+    "name": "Daemons of War",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "Q59-nh6A1AhRBrLR",
+      "name": "Daemons of War",
+      "version": "3.6.0",
+      "gameSystemId": 4,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "Q59-nh6A1AhRBrLR",
+      "name": "Daemons of War",
+      "version": "3.6.0",
+      "gameSystemId": 5,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Daemons_of_War_-_BW.pdf",
+    "pdfSha256": "c2a3eb488ed684a44efb23221dde5c441eb36edfb4872a92991cbd584eb91de6",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "champion-of-war",
+      "names": [
+        "Champion of War"
+      ],
+      "armyForgeUnitId": "pl2kj2o",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "blood-warriors",
+      "names": [
+        "Blood Warriors",
+        "Blood Warrior"
+      ],
+      "armyForgeUnitId": "yBYbUK2",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "harbinger-of-war",
+      "names": [
+        "Harbinger of War"
+      ],
+      "armyForgeUnitId": "_vrCvso",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          50.0
+        ],
+        "raw": "50",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "blood-hounds",
+      "names": [
+        "Blood Hounds",
+        "Blood Hound"
+      ],
+      "armyForgeUnitId": "exTlY0u",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "war-furies",
+      "names": [
+        "War Furies",
+        "War Fury"
+      ],
+      "armyForgeUnitId": "JljoGNE",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "blood-beast-riders",
+      "names": [
+        "Blood Beast Riders",
+        "Blood Beast Rider"
+      ],
+      "armyForgeUnitId": "sGax-Sg",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "tri-hound-champion",
+      "names": [
+        "Tri-Hound Champion"
+      ],
+      "armyForgeUnitId": "F-hxnBM",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          50.0
+        ],
+        "raw": "50",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "champion-whip",
+      "candidateId": "a001",
+      "pdfLabel": "Champion Whip",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion-of-war",
+      "equipmentTags": [
+        "War Whip"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Champion of War"
+        },
+        {
+          "pdf": "Whip",
+          "armyBook": "War Whip"
+        }
+      ],
+      "notes": "figura com martelo e chicote; escolhi War Whip (há também Heavy Long Whip)",
+      "styles": {
+        "fino": {
+          "page": 1,
+          "rows": [
+            0
+          ],
+          "front": "arts/champion-whip/fino/frente.svg",
+          "back": "arts/champion-whip/fino/verso.svg",
+          "canvasMm": [
+            39.709,
+            42.122
+          ],
+          "frontBackIoU": 0.956,
+          "sizeMm": [
+            42.0,
+            39.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 15,
+          "rows": [
+            0
+          ],
+          "front": "arts/champion-whip/borda/frente.svg",
+          "back": "arts/champion-whip/borda/verso.svg",
+          "canvasMm": [
+            43.095,
+            43.815
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            43.7,
+            42.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-spear",
+      "candidateId": "a002",
+      "pdfLabel": "Champion Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion-of-war",
+      "equipmentTags": [
+        "Daemon Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Champion of War"
+        },
+        {
+          "pdf": "Spear",
+          "armyBook": "Daemon Spear"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 1,
+          "rows": [
+            1
+          ],
+          "front": "arts/champion-spear/fino/frente.svg",
+          "back": "arts/champion-spear/fino/verso.svg",
+          "canvasMm": [
+            41.317,
+            54.441
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            54.4,
+            41.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 15,
+          "rows": [
+            1
+          ],
+          "front": "arts/champion-spear/borda/frente.svg",
+          "back": "arts/champion-spear/borda/verso.svg",
+          "canvasMm": [
+            44.704,
+            56.134
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            56.0,
+            44.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-mace",
+      "candidateId": "a003",
+      "pdfLabel": "Champion Mace",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion-of-war",
+      "equipmentTags": [
+        "Daemon Hammer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Champion of War"
+        },
+        {
+          "pdf": "Mace",
+          "armyBook": "Daemon Hammer"
+        }
+      ],
+      "notes": "maça ~ martelo; Daemon Hammer é a arma contundente do Champion (alternativa: Hand Weapon)",
+      "styles": {
+        "fino": {
+          "page": 1,
+          "rows": [
+            2
+          ],
+          "front": "arts/champion-mace/fino/frente.svg",
+          "back": "arts/champion-mace/fino/verso.svg",
+          "canvasMm": [
+            36.11,
+            41.741
+          ],
+          "frontBackIoU": 0.955,
+          "sizeMm": [
+            41.7,
+            35.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 15,
+          "rows": [
+            2
+          ],
+          "front": "arts/champion-mace/borda/frente.svg",
+          "back": "arts/champion-mace/borda/verso.svg",
+          "canvasMm": [
+            39.497,
+            43.434
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            43.3,
+            39.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sargeant",
+      "candidateId": "a004",
+      "pdfLabel": "Warrior Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "blood-warriors",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Warrior = Blood Warriors (genericName War Warriors); o PDF grafa Sargeant",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sargeant/fino/frente.svg",
+          "back": "arts/warrior-sargeant/fino/verso.svg",
+          "canvasMm": [
+            42.799,
+            39.92
+          ],
+          "frontBackIoU": 0.927,
+          "sizeMm": [
+            39.8,
+            42.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 16,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sargeant/borda/frente.svg",
+          "back": "arts/warrior-sargeant/borda/verso.svg",
+          "canvasMm": [
+            46.186,
+            41.614
+          ],
+          "frontBackIoU": 0.954,
+          "sizeMm": [
+            41.5,
+            46.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-banner",
+      "candidateId": "a005",
+      "pdfLabel": "Warrior Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "blood-warriors",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Warrior = Blood Warriors (genericName War Warriors)",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-banner/fino/frente.svg",
+          "back": "arts/warrior-banner/fino/verso.svg",
+          "canvasMm": [
+            39.751,
+            59.944
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            59.9,
+            39.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 16,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-banner/borda/frente.svg",
+          "back": "arts/warrior-banner/borda/verso.svg",
+          "canvasMm": [
+            43.138,
+            61.637
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            61.6,
+            42.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-musician",
+      "candidateId": "a006",
+      "pdfLabel": "Warrior Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "blood-warriors",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Warrior = Blood Warriors (genericName War Warriors)",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-musician/fino/frente.svg",
+          "back": "arts/warrior-musician/fino/verso.svg",
+          "canvasMm": [
+            35.052,
+            38.989
+          ],
+          "frontBackIoU": 0.966,
+          "sizeMm": [
+            38.9,
+            34.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 16,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-musician/borda/frente.svg",
+          "back": "arts/warrior-musician/borda/verso.svg",
+          "canvasMm": [
+            38.439,
+            40.682
+          ],
+          "frontBackIoU": 0.965,
+          "sizeMm": [
+            40.6,
+            38.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sword",
+      "candidateId": "a007",
+      "pdfLabel": "Warrior Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "blood-warriors",
+      "equipmentTags": [
+        "Blood Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Blood Sword"
+        }
+      ],
+      "notes": "Warrior = Blood Warriors (genericName War Warriors); espada da facção",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-sword/fino/frente.svg",
+          "back": "arts/warrior-sword/fino/verso.svg",
+          "canvasMm": [
+            30.988,
+            34.967
+          ],
+          "frontBackIoU": 0.943,
+          "sizeMm": [
+            34.9,
+            30.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-sword/borda/frente.svg",
+          "back": "arts/warrior-sword/borda/verso.svg",
+          "canvasMm": [
+            34.417,
+            36.661
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            36.6,
+            34.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-spear",
+      "candidateId": "a008",
+      "pdfLabel": "Warrior Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "blood-warriors",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Warrior = Blood Warriors (genericName War Warriors)",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-spear/fino/frente.svg",
+          "back": "arts/warrior-spear/fino/verso.svg",
+          "canvasMm": [
+            34.332,
+            34.798
+          ],
+          "frontBackIoU": 0.942,
+          "sizeMm": [
+            34.7,
+            34.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 18,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-spear/borda/frente.svg",
+          "back": "arts/warrior-spear/borda/verso.svg",
+          "canvasMm": [
+            37.719,
+            36.491
+          ],
+          "frontBackIoU": 0.966,
+          "sizeMm": [
+            36.4,
+            37.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-axes",
+      "candidateId": "a009",
+      "pdfLabel": "Warrior Axes",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "blood-warriors",
+      "equipmentTags": [
+        "Flame Axe"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Axes",
+          "armyBook": "Flame Axe"
+        }
+      ],
+      "notes": "Warrior = Blood Warriors (genericName War Warriors); machado da facção; o plural pode indicar Dual Hand Weapons",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-axes/fino/frente.svg",
+          "back": "arts/warrior-axes/fino/verso.svg",
+          "canvasMm": [
+            24.807,
+            35.052
+          ],
+          "frontBackIoU": 0.942,
+          "sizeMm": [
+            35.0,
+            24.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 19,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/warrior-axes/borda/frente.svg",
+          "back": "arts/warrior-axes/borda/verso.svg",
+          "canvasMm": [
+            28.194,
+            36.745
+          ],
+          "frontBackIoU": 0.961,
+          "sizeMm": [
+            36.7,
+            27.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-halberd",
+      "candidateId": "a010",
+      "pdfLabel": "Warrior Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "blood-warriors",
+      "equipmentTags": [
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Warrior = Blood Warriors (genericName War Warriors)",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-halberd/fino/frente.svg",
+          "back": "arts/warrior-halberd/fino/verso.svg",
+          "canvasMm": [
+            37.888,
+            34.671
+          ],
+          "frontBackIoU": 0.951,
+          "sizeMm": [
+            34.5,
+            37.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 20,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-halberd/borda/frente.svg",
+          "back": "arts/warrior-halberd/borda/verso.svg",
+          "canvasMm": [
+            41.275,
+            36.364
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            36.2,
+            41.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-hammer",
+      "candidateId": "a011",
+      "pdfLabel": "Warrior Hammer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "blood-warriors",
+      "equipmentTags": [
+        "Great Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hammer",
+          "armyBook": "Great Weapon"
+        }
+      ],
+      "notes": "Warrior = Blood Warriors (genericName War Warriors); martelo de duas mãos; a unidade não tem martelo no army book",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/warrior-hammer/fino/frente.svg",
+          "back": "arts/warrior-hammer/fino/verso.svg",
+          "canvasMm": [
+            27.432,
+            34.84
+          ],
+          "frontBackIoU": 0.944,
+          "sizeMm": [
+            34.7,
+            27.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 21,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-hammer/borda/frente.svg",
+          "back": "arts/warrior-hammer/borda/verso.svg",
+          "canvasMm": [
+            30.819,
+            36.534
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            36.4,
+            30.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-hammer-fino",
+      "candidateId": "a012",
+      "pdfLabel": "Warrior Hammer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "blood-warriors",
+      "equipmentTags": [
+        "Great Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hammer",
+          "armyBook": "Great Weapon"
+        }
+      ],
+      "notes": "cópia fino extra de a011 (que já tem fino e borda); martelo -> Great Weapon",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            4
+          ],
+          "front": "arts/warrior-hammer-fino/fino/frente.svg",
+          "back": "arts/warrior-hammer-fino/fino/verso.svg",
+          "canvasMm": [
+            27.432,
+            34.84
+          ],
+          "frontBackIoU": 0.943,
+          "sizeMm": [
+            34.7,
+            27.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo",
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "harbinger",
+      "candidateId": "a013",
+      "pdfLabel": "Harbinger",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "harbinger-of-war",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Harbinger = Harbinger of War (sem \"Ascended\"); tamanho compatível com a base 50 contando as asas",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0
+          ],
+          "front": "arts/harbinger/fino/frente.svg",
+          "back": "arts/harbinger/fino/verso.svg",
+          "canvasMm": [
+            94.065,
+            90.297
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            90.2,
+            93.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 22,
+          "rows": [
+            0
+          ],
+          "front": "arts/harbinger/borda/frente.svg",
+          "back": "arts/harbinger/borda/verso.svg",
+          "canvasMm": [
+            97.494,
+            91.99
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            91.9,
+            97.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hound-ver-1",
+      "candidateId": "a014",
+      "pdfLabel": "Hound (Ver. 1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "blood-hounds",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Hound = Blood Hounds (genericName War Hounds)",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/hound-ver-1/fino/frente.svg",
+          "back": "arts/hound-ver-1/fino/verso.svg",
+          "canvasMm": [
+            46.99,
+            26.247
+          ],
+          "frontBackIoU": 0.839,
+          "sizeMm": [
+            26.2,
+            46.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 23,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/hound-ver-1/borda/frente.svg",
+          "back": "arts/hound-ver-1/borda/verso.svg",
+          "canvasMm": [
+            50.165,
+            27.94
+          ],
+          "frontBackIoU": 0.883,
+          "sizeMm": [
+            27.9,
+            50.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hound-ver-2",
+      "candidateId": "a015",
+      "pdfLabel": "Hound (Ver. 2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "blood-hounds",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Hound = Blood Hounds (genericName War Hounds)",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/hound-ver-2/fino/frente.svg",
+          "back": "arts/hound-ver-2/fino/verso.svg",
+          "canvasMm": [
+            55.753,
+            26.331
+          ],
+          "frontBackIoU": 0.892,
+          "sizeMm": [
+            26.2,
+            55.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 23,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/hound-ver-2/borda/frente.svg",
+          "back": "arts/hound-ver-2/borda/verso.svg",
+          "canvasMm": [
+            59.013,
+            27.94
+          ],
+          "frontBackIoU": 0.926,
+          "sizeMm": [
+            27.9,
+            58.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fury-ver-1",
+      "candidateId": "a016",
+      "pdfLabel": "Fury (Ver. 1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "war-furies",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Fury = War Furies",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/fury-ver-1/fino/frente.svg",
+          "back": "arts/fury-ver-1/fino/verso.svg",
+          "canvasMm": [
+            61.68,
+            69.215
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            69.1,
+            61.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/fury-ver-1/borda/frente.svg",
+          "back": "arts/fury-ver-1/borda/verso.svg",
+          "canvasMm": [
+            64.093,
+            70.951
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            70.9,
+            64.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fury-ver-2",
+      "candidateId": "a017",
+      "pdfLabel": "Fury (Ver. 2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "war-furies",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Fury = War Furies",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            2,
+            3
+          ],
+          "front": "arts/fury-ver-2/fino/frente.svg",
+          "back": "arts/fury-ver-2/fino/verso.svg",
+          "canvasMm": [
+            67.649,
+            65.744
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            65.6,
+            67.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            2
+          ],
+          "front": "arts/fury-ver-2/borda/frente.svg",
+          "back": "arts/fury-ver-2/borda/verso.svg",
+          "canvasMm": [
+            69.088,
+            67.31
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            67.2,
+            69.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "beast-rider-spear",
+      "candidateId": "a018",
+      "pdfLabel": "Beast Rider Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "blood-beast-riders",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "o army book não dá Spear aos Blood Beast Riders (opções: Blood Sword, Flame Axe, Great Weapon, Halberd); a haste lembra Halberd, se o usuário aceitar",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/beast-rider-spear/fino/frente.svg",
+          "back": "arts/beast-rider-spear/fino/verso.svg",
+          "canvasMm": [
+            59.351,
+            62.315
+          ],
+          "frontBackIoU": 0.874,
+          "sizeMm": [
+            62.2,
+            59.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 25,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/beast-rider-spear/borda/frente.svg",
+          "back": "arts/beast-rider-spear/borda/verso.svg",
+          "canvasMm": [
+            62.738,
+            64.008
+          ],
+          "frontBackIoU": 0.906,
+          "sizeMm": [
+            63.9,
+            62.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "beast-rider-axe",
+      "candidateId": "a019",
+      "pdfLabel": "Beast Rider Axe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "blood-beast-riders",
+      "equipmentTags": [
+        "Flame Axe"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Axe",
+          "armyBook": "Flame Axe"
+        }
+      ],
+      "notes": "Beast Rider = Blood Beast Riders; machado da facção",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/beast-rider-axe/fino/frente.svg",
+          "back": "arts/beast-rider-axe/fino/verso.svg",
+          "canvasMm": [
+            59.224,
+            57.785
+          ],
+          "frontBackIoU": 0.842,
+          "sizeMm": [
+            57.7,
+            58.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/beast-rider-axe/borda/frente.svg",
+          "back": "arts/beast-rider-axe/borda/verso.svg",
+          "canvasMm": [
+            62.696,
+            59.478
+          ],
+          "frontBackIoU": 0.871,
+          "sizeMm": [
+            59.4,
+            62.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "beast-rider-hammer",
+      "candidateId": "a020",
+      "pdfLabel": "Beast Rider Hammer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "blood-beast-riders",
+      "equipmentTags": [
+        "Great Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hammer",
+          "armyBook": "Great Weapon"
+        }
+      ],
+      "notes": "a unidade não tem martelo no army book; Great Weapon é a arma pesada genérica",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/beast-rider-hammer/fino/frente.svg",
+          "back": "arts/beast-rider-hammer/fino/verso.svg",
+          "canvasMm": [
+            59.224,
+            59.182
+          ],
+          "frontBackIoU": 0.875,
+          "sizeMm": [
+            59.1,
+            59.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/beast-rider-hammer/borda/frente.svg",
+          "back": "arts/beast-rider-hammer/borda/verso.svg",
+          "canvasMm": [
+            62.611,
+            60.875
+          ],
+          "frontBackIoU": 0.897,
+          "sizeMm": [
+            60.8,
+            62.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "beast-champion",
+      "candidateId": "a021",
+      "pdfLabel": "Beast Champion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion-of-war",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "o mesmo herói dos rótulos Champion (cabeça e colar iguais) montado na besta dos Beast Riders; o Champion of War não tem montaria no army book v3.6. Poderia servir de sargento dos Blood Beast Riders",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0
+          ],
+          "front": "arts/beast-champion/fino/frente.svg",
+          "back": "arts/beast-champion/fino/verso.svg",
+          "canvasMm": [
+            65.617,
+            56.938
+          ],
+          "frontBackIoU": 0.934,
+          "sizeMm": [
+            56.8,
+            65.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            0
+          ],
+          "front": "arts/beast-champion/borda/frente.svg",
+          "back": "arts/beast-champion/borda/verso.svg",
+          "canvasMm": [
+            69.003,
+            58.632
+          ],
+          "frontBackIoU": 0.944,
+          "sizeMm": [
+            58.5,
+            68.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "cerberus",
+      "candidateId": "a022",
+      "pdfLabel": "Cerberus",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "tri-hound-champion",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Cerberus",
+          "armyBook": "Tri-Hound Champion"
+        }
+      ],
+      "notes": "cão de três cabeças; genericName War Cerberus Hound; tamanho (~48 mm de largura, igual aos Hounds) casa com base 50, não com o Giant Tri-Hound (105x70)",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            1
+          ],
+          "front": "arts/cerberus/fino/frente.svg",
+          "back": "arts/cerberus/fino/verso.svg",
+          "canvasMm": [
+            48.683,
+            36.83
+          ],
+          "frontBackIoU": 0.879,
+          "sizeMm": [
+            36.7,
+            48.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            1
+          ],
+          "front": "arts/cerberus/borda/frente.svg",
+          "back": "arts/cerberus/borda/verso.svg",
+          "canvasMm": [
+            52.028,
+            39.497
+          ],
+          "frontBackIoU": 0.896,
+          "sizeMm": [
+            38.4,
+            51.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-axes-borda",
+      "candidateId": "a023",
+      "pdfLabel": "Warrior Axes",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "blood-warriors",
+      "equipmentTags": [
+        "Flame Axe"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Axes",
+          "armyBook": "Flame Axe"
+        }
+      ],
+      "notes": "cópia borda extra de a009 (que já tem fino e borda); Flame Axe",
+      "styles": {
+        "borda": {
+          "page": 19,
+          "rows": [
+            4
+          ],
+          "front": "arts/warrior-axes-borda/borda/frente.svg",
+          "back": "arts/warrior-axes-borda/borda/verso.svg",
+          "canvasMm": [
+            28.194,
+            36.745
+          ],
+          "frontBackIoU": 0.961,
+          "sizeMm": [
+            36.7,
+            27.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hound-ver-1-borda",
+      "candidateId": "a024",
+      "pdfLabel": "Hound (Ver. 1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "blood-hounds",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "cópia borda extra de a014 (que já tem fino e borda)",
+      "styles": {
+        "borda": {
+          "page": 23,
+          "rows": [
+            2
+          ],
+          "front": "arts/hound-ver-1-borda/borda/frente.svg",
+          "back": "arts/hound-ver-1-borda/borda/verso.svg",
+          "canvasMm": [
+            49.869,
+            27.94
+          ],
+          "frontBackIoU": 0.883,
+          "sizeMm": [
+            27.9,
+            49.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo",
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fury-ver-2-borda",
+      "candidateId": "a025",
+      "pdfLabel": "Fury (Ver. 2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "war-furies",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "cópia borda extra de a017 (que já tem fino e borda)",
+      "styles": {
+        "borda": {
+          "page": 24,
+          "rows": [
+            3
+          ],
+          "front": "arts/fury-ver-2-borda/borda/frente.svg",
+          "back": "arts/fury-ver-2-borda/borda/verso.svg",
+          "canvasMm": [
+            69.173,
+            67.31
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            67.2,
+            69.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

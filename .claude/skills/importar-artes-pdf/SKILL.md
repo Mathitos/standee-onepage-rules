@@ -21,7 +21,7 @@ Especificação: `docs/PRD-04-skill-importacao-pdf.md`. Decisões: D012 (dois es
 ### 0. Preparar
 
 - Python: use `C:/Users/Matheus/AppData/Local/Python/pythoncore-3.14-64/python.exe` se existir (os aliases `python`/`py` não são confiáveis no PC Windows atual); senão teste `python`. Confirme com `-c "import numpy, cv2, scipy, pymupdf"`. Rode sempre com `-I`.
-- Pergunte o que faltar: o PDF (caminho) e a facção no Army Forge (link de lista compartilhada ou id do army book e sistema). Não adivinhe.
+- Pergunte o que faltar: o PDF (caminho) e a facção no Army Forge. Se o usuário pedir para você buscar, a listagem pública de army books oficiais serve (só leitura, sem login): `GET https://army-forge.onepagerules.com/api/army-books?filters=official&gameSystemSlug=<slug>&searchText=&page=1&unitCount=0&balanceValid=false&customRules=true&fans=false&sortBy=null`. Case pelo nome exato da facção; na dúvida, pergunte.
 - Pasta do pacote: `catalog/<sistema>/<faccao>`, ex.: `catalog/gff/human-defense-force`.
 
 Os scripts ficam em `.claude/skills/importar-artes-pdf/scripts/`; rode da raiz do repositório.
@@ -48,16 +48,20 @@ A grade aceita as variações vistas nos 22 PDFs (abas de 12 a 30 mm, figura de 
 PY -I .claude/skills/importar-artes-pdf/scripts/exportar_web.py --pdf "<pdf>" --saida catalog/<sistema>/<faccao>
 ```
 
-Grava os SVG de todas as artes (contrato v2 em `scripts/vetor.py`: 600 dpi, mesmo tratamento do gerador), a imagem do rótulo impresso e `artes.json`, que o site lê (D039). Sem revisão, cada arte tem o id do candidato e o usuário escolhe pela figura; rode de novo depois de mudar o `revisao.json`, para usar os `artId`.
+Grava os SVG de todas as artes (contrato v2 em `scripts/vetor.py`: 600 dpi, mesmo tratamento do gerador), a imagem do rótulo impresso e `artes.json`, que o site lê (D039). Sem revisão, cada arte tem o id do candidato e o usuário escolhe pela figura; rode de novo depois de mudar o `revisao.json`, para usar os `artId`. A segunda rodada reaproveita os SVG do mesmo PDF pelo id do candidato (segundos, não minutos); `--revetorizar` traça tudo de novo, depois de mudar `vetor.py` ou a extração.
 
 ### 2. Army book
 
+Baixe o army book nos dois sistemas do lado da facção: as listas podem vir de qualquer um. Ids conferidos (21/11): 2 Grimdark Future, 3 Firefight, 4 Age of Fantasy, 5 AoF Skirmish. O id da unidade é o mesmo nos sistemas e o nome pode mudar ("OGRE Robots" / "OGRE Robot"); GF e AoF têm unidades (veículos, monstros) que Firefight e Skirmish não têm.
+
 ```bash
-PY -I .claude/skills/importar-artes-pdf/scripts/armybook.py --share <id-da-lista> --saida catalog/<sistema>/<faccao>
-# ou: --army-book <id> --sistema <n>   (GFF = 3; outros: pergunte)
+PY -I .claude/skills/importar-artes-pdf/scripts/armybook.py --army-book <id> --sistema 3 --saida catalog/gff/<faccao>
+PY -I .claude/skills/importar-artes-pdf/scripts/armybook.py --army-book <id> --sistema 2 --saida catalog/gff/<faccao>
+# ou: --share <id-da-lista> (descobre army book e sistema; só GFF verificado)
+PY -I .claude/skills/importar-artes-pdf/scripts/unidades.py --saida catalog/<sistema>/<faccao>
 ```
 
-Leia o `.resumo.json`: unidades, tamanhos, bases (valor bruto), armas e opções de troca.
+O `unidades.py` junta as unidades dos livros baixados em `work/unidades-armybook.json`: nome em cada sistema, `genericName`, bases, armas, itens e opções. O `genericName` ajuda muito: os rótulos do PDF usam nomes antigos ou genéricos ("Brute Lord" para "Kemba Brute Boss", genericName "Brute Leader").
 
 ### 3. Ler rótulos e mapear
 
@@ -67,10 +71,12 @@ Leia cada `work/rotulos-NN.png` (Read). Cada quadro traz o id do candidato (`a00
 {
   "packId": "human-defense-force",
   "packVersion": "0.1.0",
-  "gameSystem": {"code": "GFF", "slug": "grimdark-future-firefight", "armyForgeId": 3},
-  "armyBook": {"arquivo": "armybook/z65fgu0l29i4lnlu-gs3-v3.6.0.json"},
+  "gameSystems": [{"code": "GF", "slug": "grimdark-future", "armyForgeId": 2},
+                  {"code": "GFF", "slug": "grimdark-future-firefight", "armyForgeId": 3}],
+  "armyBooks": [{"arquivo": "armybook/z65fgu0l29i4lnlu-gs3-v3.6.0.json"},
+                {"arquivo": "armybook/z65fgu0l29i4lnlu-gs2-v3.6.0.json"}],
   "unidades": {
-    "veterans": {"nomes": ["Veterans"], "armyForgeUnitId": "SScXOqX"}
+    "veterans": {"armyForgeUnitId": "SScXOqX"}
   },
   "artes": {
     "a034": {
@@ -88,12 +94,14 @@ Leia cada `work/rotulos-NN.png` (Read). Cada quadro traz o id do candidato (`a00
 }
 ```
 
-- `artId` e `unitKey`: minúsculas com hífen, únicos.
-- `equipmentTags`: nomes **como no army book** (ex.: rótulo "Rifle" → `"Battle Rifle"`, com `aliases: [{"pdf": "Rifle", "armyBook": "Battle Rifle"}]` e status `alias-proposed`).
+- `artId` e `unitKey`: minúsculas com hífen, únicos. Os nomes da unidade em todos os livros entram sozinhos em `names` pelo `armyForgeUnitId`; `nomes` só para algum extra.
+- `status`: `mapped` quando o rótulo nomeia a unidade pelo nome atual ou pelo `genericName`, sem interpretação; `alias-proposed` quando depende de interpretação justificável (registre em `aliases` e `notas`); `unmapped` sem justificativa.
+- `equipmentTags`: nomes **como no army book**, das armas, itens ou opções da unidade (o `montar.py` recusa outros; ex.: rótulo "Rifle" → `"Battle Rifle"`, com `aliases: [{"pdf": "Rifle", "armyBook": "Battle Rifle"}]` e status `alias-proposed`). Rótulo com arma, item ou montaria → a tag; rótulo sem arma → `[]`, a arte genérica da unidade. O site escolhe, por modelo, a arte com mais tags presentes no equipamento ou nas regras; sem nenhuma, a genérica; sem genérica, o usuário escolhe (D013).
 - Poses de comando/apoio sem arma própria (Sergeant, Banner, Medic, Radio): `"cosmetic": "sergeant"` etc.
 - Arte sem unidade ou arma correspondente (ex.: "OGRE Minigun" quando o army book só tem Gatling Gun): `"status": "unmapped"`, `unitKey` da unidade se ela existir; o site oferece a arte como substituta (D013).
 - Candidato que não é arte (falso positivo): `{"ignorar": true}`.
 - Pode revisar em partes; candidatos ainda não revisados ficam fora do manifesto e listados no relatório.
+- Confira enquanto escreve, sem gravar nada: `montar.py --saida … --so-validar` (aponta tags fora do army book, ids inexistentes, slugs repetidos e candidatos sem revisão).
 
 ### 4. Montar o pacote
 

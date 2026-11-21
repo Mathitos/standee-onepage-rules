@@ -1,0 +1,3566 @@
+{
+  "schemaVersion": 1,
+  "packId": "beastmen",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "AOF",
+    "slug": "age-of-fantasy",
+    "armyForgeId": 4
+  },
+  "gameSystems": [
+    {
+      "code": "AOF",
+      "slug": "age-of-fantasy",
+      "armyForgeId": 4
+    },
+    {
+      "code": "AOFS",
+      "slug": "age-of-fantasy-skirmish",
+      "armyForgeId": 5
+    }
+  ],
+  "armyBook": {
+    "id": "TciwNI3AOMXAM-dr",
+    "name": "Beastmen",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "TciwNI3AOMXAM-dr",
+      "name": "Beastmen",
+      "version": "3.6.0",
+      "gameSystemId": 4,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "TciwNI3AOMXAM-dr",
+      "name": "Beastmen",
+      "version": "3.6.0",
+      "gameSystemId": 5,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Beastmen_-_BW.pdf",
+    "pdfSha256": "a76e3d286f0efd7974e00acb975900c33075806f6c1120aca009161d433c1655",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "ndoli-beast-lord",
+      "names": [
+        "Ndoli Beast Lord"
+      ],
+      "armyForgeUnitId": "wdLZRL7",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "kemba-brute-boss",
+      "names": [
+        "Kemba Brute Boss"
+      ],
+      "armyForgeUnitId": "qt6GWWu",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "ndwari-centaur-boss",
+      "names": [
+        "Ndwari Centaur Boss"
+      ],
+      "armyForgeUnitId": "GfyrCwd",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "waheni-hunt-master",
+      "names": [
+        "Waheni Hunt Master"
+      ],
+      "armyForgeUnitId": "vCLM1-8",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "ndoli-warriors",
+      "names": [
+        "Ndoli Warriors",
+        "Ndoli Warrior"
+      ],
+      "armyForgeUnitId": "qexD7jM",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "ndoli-elites",
+      "names": [
+        "Ndoli Elites",
+        "Ndoli Elite"
+      ],
+      "armyForgeUnitId": "49PAMNU",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "waheni-hunters",
+      "names": [
+        "Waheni Hunters"
+      ],
+      "armyForgeUnitId": "ygSV4y6",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "waheni-raiders",
+      "names": [
+        "Waheni Raiders",
+        "Waheni Raider"
+      ],
+      "armyForgeUnitId": "8EzZLWg",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "kemba-brutes",
+      "names": [
+        "Kemba Brutes",
+        "Kemba Brute"
+      ],
+      "armyForgeUnitId": "r4tGNht",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "ndwari-centaurs",
+      "names": [
+        "Ndwari Centaurs",
+        "Ndwari Centaur"
+      ],
+      "armyForgeUnitId": "0OibnBL",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "hapari-harpies",
+      "names": [
+        "Hapari Harpies",
+        "Hapari Harpy"
+      ],
+      "armyForgeUnitId": "Ny-d4S5",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "sambari-hounds",
+      "names": [
+        "Sambari Hounds",
+        "Sambari Hound"
+      ],
+      "armyForgeUnitId": "SVFVgdJ",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "beast-lord",
+      "candidateId": "a001",
+      "pdfLabel": "Beast Lord",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndoli-beast-lord",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Beast Lord",
+          "armyBook": "Ndoli Beast Lord"
+        }
+      ],
+      "notes": "nome atual sem o prefixo Ndoli; genericName Beastman Leader",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0
+          ],
+          "front": "arts/beast-lord/fino/frente.svg",
+          "back": "arts/beast-lord/fino/verso.svg",
+          "canvasMm": [
+            44.662,
+            43.265
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            43.1,
+            44.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 23,
+          "rows": [
+            0
+          ],
+          "front": "arts/beast-lord/borda/frente.svg",
+          "back": "arts/beast-lord/borda/verso.svg",
+          "canvasMm": [
+            49.318,
+            45.593
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            45.5,
+            49.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "beast-pet",
+      "candidateId": "a002",
+      "pdfLabel": "Beast Pet",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndoli-beast-lord",
+      "equipmentTags": [
+        "Beast Companion"
+      ],
+      "cosmetic": "companion",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Beast Pet",
+          "armyBook": "Beast Companion"
+        }
+      ],
+      "notes": "o felino é o pet do Beast Lord (produto 'ndoli-beast-lord-pet'); no army book é a opção Beast Companion. cosmetic para o site não trocar o lorde pelo pet",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            1
+          ],
+          "front": "arts/beast-pet/fino/frente.svg",
+          "back": "arts/beast-pet/fino/verso.svg",
+          "canvasMm": [
+            40.259,
+            23.961
+          ],
+          "frontBackIoU": 0.965,
+          "sizeMm": [
+            23.8,
+            40.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 23,
+          "rows": [
+            1
+          ],
+          "front": "arts/beast-pet/borda/frente.svg",
+          "back": "arts/beast-pet/borda/verso.svg",
+          "canvasMm": [
+            44.916,
+            26.416
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            26.3,
+            44.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "brute-lord",
+      "candidateId": "a003",
+      "pdfLabel": "Brute Lord",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "kemba-brute-boss",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Brute Lord",
+          "armyBook": "Kemba Brute Boss"
+        }
+      ],
+      "notes": "genericName Brute Leader; Lord = líder dos Brutes",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            2
+          ],
+          "front": "arts/brute-lord/fino/frente.svg",
+          "back": "arts/brute-lord/fino/verso.svg",
+          "canvasMm": [
+            54.06,
+            51.308
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            51.1,
+            53.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 23,
+          "rows": [
+            2
+          ],
+          "front": "arts/brute-lord/borda/frente.svg",
+          "back": "arts/brute-lord/borda/verso.svg",
+          "canvasMm": [
+            58.716,
+            53.636
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            53.5,
+            58.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "centaur-lord",
+      "candidateId": "a004",
+      "pdfLabel": "Centaur Lord",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndwari-centaur-boss",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Centaur Lord",
+          "armyBook": "Ndwari Centaur Boss"
+        }
+      ],
+      "notes": "genericName Centaur Leader",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            3
+          ],
+          "front": "arts/centaur-lord/fino/frente.svg",
+          "back": "arts/centaur-lord/fino/verso.svg",
+          "canvasMm": [
+            40.852,
+            49.911
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            49.8,
+            40.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 23,
+          "rows": [
+            3
+          ],
+          "front": "arts/centaur-lord/borda/frente.svg",
+          "back": "arts/centaur-lord/borda/verso.svg",
+          "canvasMm": [
+            45.508,
+            52.239
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            52.2,
+            45.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunt-master-1",
+      "candidateId": "a005",
+      "pdfLabel": "Hunt Master 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunt-master",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunt Master",
+          "armyBook": "Waheni Hunt Master"
+        }
+      ],
+      "notes": "nome atual sem o prefixo Waheni; genericName Grunt Leader",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0
+          ],
+          "front": "arts/hunt-master-1/fino/frente.svg",
+          "back": "arts/hunt-master-1/fino/verso.svg",
+          "canvasMm": [
+            30.946,
+            31.708
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            31.6,
+            30.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            0
+          ],
+          "front": "arts/hunt-master-1/borda/frente.svg",
+          "back": "arts/hunt-master-1/borda/verso.svg",
+          "canvasMm": [
+            35.602,
+            34.036
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            34.0,
+            35.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunt-master-2",
+      "candidateId": "a006",
+      "pdfLabel": "Hunt Master 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunt-master",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunt Master",
+          "armyBook": "Waheni Hunt Master"
+        }
+      ],
+      "notes": "nome atual sem o prefixo Waheni; genericName Grunt Leader",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            1
+          ],
+          "front": "arts/hunt-master-2/fino/frente.svg",
+          "back": "arts/hunt-master-2/fino/verso.svg",
+          "canvasMm": [
+            28.66,
+            34.036
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            34.0,
+            28.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            1
+          ],
+          "front": "arts/hunt-master-2/borda/frente.svg",
+          "back": "arts/hunt-master-2/borda/verso.svg",
+          "canvasMm": [
+            33.316,
+            36.364
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            36.2,
+            33.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "raid-master-1",
+      "candidateId": "a007",
+      "pdfLabel": "Raid Master 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunt-master",
+      "equipmentTags": [
+        "Raider Cloak"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Raid Master",
+          "armyBook": "Waheni Hunt Master (Raider Cloak)"
+        }
+      ],
+      "notes": "arqueiro; no army book o produto da opção Raider Cloak do Hunt Master se chama 'Waheni Hunt Master (Raid Master)'",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            2
+          ],
+          "front": "arts/raid-master-1/fino/frente.svg",
+          "back": "arts/raid-master-1/fino/verso.svg",
+          "canvasMm": [
+            31.877,
+            32.173
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            32.1,
+            31.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            2
+          ],
+          "front": "arts/raid-master-1/borda/frente.svg",
+          "back": "arts/raid-master-1/borda/verso.svg",
+          "canvasMm": [
+            36.534,
+            34.502
+          ],
+          "frontBackIoU": 0.961,
+          "sizeMm": [
+            34.5,
+            36.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "raid-master-2",
+      "candidateId": "a008",
+      "pdfLabel": "Raid Master 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunt-master",
+      "equipmentTags": [
+        "Raider Cloak"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Raid Master",
+          "armyBook": "Waheni Hunt Master (Raider Cloak)"
+        }
+      ],
+      "notes": "arqueiro; no army book o produto da opção Raider Cloak do Hunt Master se chama 'Waheni Hunt Master (Raid Master)'",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            3
+          ],
+          "front": "arts/raid-master-2/fino/frente.svg",
+          "back": "arts/raid-master-2/fino/verso.svg",
+          "canvasMm": [
+            31.792,
+            32.173
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            32.1,
+            31.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            3
+          ],
+          "front": "arts/raid-master-2/borda/frente.svg",
+          "back": "arts/raid-master-2/borda/verso.svg",
+          "canvasMm": [
+            36.449,
+            34.502
+          ],
+          "frontBackIoU": 0.96,
+          "sizeMm": [
+            34.5,
+            36.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "shaman",
+      "candidateId": "a009",
+      "pdfLabel": "Shaman",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunt-master",
+      "equipmentTags": [
+        "Shaman"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shaman",
+          "armyBook": "Waheni Hunt Master (Shaman)"
+        }
+      ],
+      "notes": "Shaman é opção do Hunt Master (produto 'Waheni Hunt Master (Shaman)'); Hakemba e Centaur Boss também têm a opção, mas a figura é a pé e do porte dos Waheni",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            4
+          ],
+          "front": "arts/shaman/fino/frente.svg",
+          "back": "arts/shaman/fino/verso.svg",
+          "canvasMm": [
+            26.67,
+            33.316
+          ],
+          "frontBackIoU": 0.95,
+          "sizeMm": [
+            33.2,
+            26.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            4
+          ],
+          "front": "arts/shaman/borda/frente.svg",
+          "back": "arts/shaman/borda/verso.svg",
+          "canvasMm": [
+            31.411,
+            35.645
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            35.6,
+            31.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sword-1",
+      "candidateId": "a010",
+      "pdfLabel": "Warrior Sword 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndoli-warriors",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Ndoli Warriors"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "nome atual sem o prefixo Ndoli (genericName Beastmen); espada = Hand Weapon",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/warrior-sword-1/fino/frente.svg",
+          "back": "arts/warrior-sword-1/fino/verso.svg",
+          "canvasMm": [
+            33.02,
+            45.085
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            45.0,
+            32.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 25,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/warrior-sword-1/borda/frente.svg",
+          "back": "arts/warrior-sword-1/borda/verso.svg",
+          "canvasMm": [
+            38.608,
+            47.879
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            47.8,
+            38.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sword-2",
+      "candidateId": "a011",
+      "pdfLabel": "Warrior Sword 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndoli-warriors",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Ndoli Warriors"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "nome atual sem o prefixo Ndoli (genericName Beastmen); espada = Hand Weapon",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/warrior-sword-2/fino/frente.svg",
+          "back": "arts/warrior-sword-2/fino/verso.svg",
+          "canvasMm": [
+            33.105,
+            45.508
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            45.4,
+            32.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 25,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/warrior-sword-2/borda/frente.svg",
+          "back": "arts/warrior-sword-2/borda/verso.svg",
+          "canvasMm": [
+            38.693,
+            48.302
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            48.2,
+            38.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-spear-1",
+      "candidateId": "a012",
+      "pdfLabel": "Warrior Spear 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndoli-warriors",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Ndoli Warriors"
+        }
+      ],
+      "notes": "nome atual sem o prefixo Ndoli (genericName Beastmen)",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/warrior-spear-1/fino/frente.svg",
+          "back": "arts/warrior-spear-1/fino/verso.svg",
+          "canvasMm": [
+            52.197,
+            52.112
+          ],
+          "frontBackIoU": 0.918,
+          "sizeMm": [
+            52.0,
+            51.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/warrior-spear-1/borda/frente.svg",
+          "back": "arts/warrior-spear-1/borda/verso.svg",
+          "canvasMm": [
+            54.102,
+            54.017
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            53.9,
+            54.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-spear-2",
+      "candidateId": "a013",
+      "pdfLabel": "Warrior Spear 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndoli-warriors",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Ndoli Warriors"
+        }
+      ],
+      "notes": "nome atual sem o prefixo Ndoli (genericName Beastmen)",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            3
+          ],
+          "front": "arts/warrior-spear-2/fino/frente.svg",
+          "back": "arts/warrior-spear-2/fino/verso.svg",
+          "canvasMm": [
+            52.536,
+            52.282
+          ],
+          "frontBackIoU": 0.953,
+          "sizeMm": [
+            52.2,
+            52.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/warrior-spear-2/borda/frente.svg",
+          "back": "arts/warrior-spear-2/borda/verso.svg",
+          "canvasMm": [
+            54.187,
+            54.271
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            54.2,
+            54.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-spear-2-a014",
+      "candidateId": "a014",
+      "pdfLabel": "Warrior Spear 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndoli-warriors",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Ndoli Warriors"
+        }
+      ],
+      "notes": "só contorno fino (sem par); provável cópia de a013",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            4
+          ],
+          "front": "arts/warrior-spear-2-a014/fino/frente.svg",
+          "back": "arts/warrior-spear-2-a014/fino/verso.svg",
+          "canvasMm": [
+            52.324,
+            52.239
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            52.2,
+            52.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sergeant",
+      "candidateId": "a015",
+      "pdfLabel": "Warrior Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndoli-warriors",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Ndoli Warriors"
+        }
+      ],
+      "notes": "pose de comando (opção Sergeant)",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sergeant/fino/frente.svg",
+          "back": "arts/warrior-sergeant/fino/verso.svg",
+          "canvasMm": [
+            50.673,
+            37.507
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            37.3,
+            50.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sergeant/borda/frente.svg",
+          "back": "arts/warrior-sergeant/borda/verso.svg",
+          "canvasMm": [
+            54.017,
+            39.37
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            39.3,
+            53.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-banner",
+      "candidateId": "a016",
+      "pdfLabel": "Warrior Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndoli-warriors",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Ndoli Warriors"
+        }
+      ],
+      "notes": "pose de comando (opção Banner)",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-banner/fino/frente.svg",
+          "back": "arts/warrior-banner/fino/verso.svg",
+          "canvasMm": [
+            51.393,
+            50.038
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            49.9,
+            51.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-banner/borda/frente.svg",
+          "back": "arts/warrior-banner/borda/verso.svg",
+          "canvasMm": [
+            54.187,
+            51.901
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            51.8,
+            54.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-musician",
+      "candidateId": "a017",
+      "pdfLabel": "Warrior Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndoli-warriors",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warrior",
+          "armyBook": "Ndoli Warriors"
+        }
+      ],
+      "notes": "pose de comando (opção Musician)",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-musician/fino/frente.svg",
+          "back": "arts/warrior-musician/fino/verso.svg",
+          "canvasMm": [
+            34.629,
+            39.158
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            39.0,
+            34.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-musician/borda/frente.svg",
+          "back": "arts/warrior-musician/borda/verso.svg",
+          "canvasMm": [
+            38.354,
+            41.063
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            41.0,
+            38.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-sword",
+      "candidateId": "a018",
+      "pdfLabel": "Elite Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndoli-elites",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Elite",
+          "armyBook": "Ndoli Elites"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "nome atual sem o prefixo Ndoli (genericName Elite Beastmen); espada = Hand Weapon",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/elite-sword/fino/frente.svg",
+          "back": "arts/elite-sword/fino/verso.svg",
+          "canvasMm": [
+            46.101,
+            39.031
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            38.9,
+            45.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/elite-sword/borda/frente.svg",
+          "back": "arts/elite-sword/borda/verso.svg",
+          "canvasMm": [
+            50.588,
+            41.275
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            41.1,
+            50.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-spear",
+      "candidateId": "a019",
+      "pdfLabel": "Elite Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndoli-elites",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "lança com escudo; Ndoli Elites não têm Spear (só Hand Weapon, Great Weapon, Halberd, Headtaker Axe, Flameforged Weapon). Halberd seria a haste mais próxima, se o usuário aceitar",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/elite-spear/fino/frente.svg",
+          "back": "arts/elite-spear/fino/verso.svg",
+          "canvasMm": [
+            44.619,
+            39.158
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            39.0,
+            44.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/elite-spear/borda/frente.svg",
+          "back": "arts/elite-spear/borda/verso.svg",
+          "canvasMm": [
+            49.107,
+            41.402
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            41.3,
+            48.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-great-weapon",
+      "candidateId": "a020",
+      "pdfLabel": "Elite Great Weapon",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndoli-elites",
+      "equipmentTags": [
+        "Great Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Elite",
+          "armyBook": "Ndoli Elites"
+        }
+      ],
+      "notes": "nome atual sem o prefixo Ndoli (genericName Elite Beastmen)",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/elite-great-weapon/fino/frente.svg",
+          "back": "arts/elite-great-weapon/fino/verso.svg",
+          "canvasMm": [
+            38.481,
+            39.243
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            39.1,
+            38.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 30,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/elite-great-weapon/borda/frente.svg",
+          "back": "arts/elite-great-weapon/borda/verso.svg",
+          "canvasMm": [
+            42.968,
+            41.487
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            41.4,
+            42.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-champion",
+      "candidateId": "a021",
+      "pdfLabel": "Elite Champion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndoli-elites",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Elite",
+          "armyBook": "Ndoli Elites"
+        },
+        {
+          "pdf": "Champion",
+          "armyBook": "Sergeant"
+        }
+      ],
+      "notes": "pose de comando; Champion = opção Sergeant",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0
+          ],
+          "front": "arts/elite-champion/fino/frente.svg",
+          "back": "arts/elite-champion/fino/verso.svg",
+          "canvasMm": [
+            32.639,
+            45.297
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            45.2,
+            32.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 31,
+          "rows": [
+            0
+          ],
+          "front": "arts/elite-champion/borda/frente.svg",
+          "back": "arts/elite-champion/borda/verso.svg",
+          "canvasMm": [
+            37.126,
+            47.54
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            47.4,
+            36.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-musician",
+      "candidateId": "a022",
+      "pdfLabel": "Elite Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndoli-elites",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Elite",
+          "armyBook": "Ndoli Elites"
+        }
+      ],
+      "notes": "pose de comando (opção Musician)",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            1
+          ],
+          "front": "arts/elite-musician/fino/frente.svg",
+          "back": "arts/elite-musician/fino/verso.svg",
+          "canvasMm": [
+            36.026,
+            56.346
+          ],
+          "frontBackIoU": 0.956,
+          "sizeMm": [
+            56.2,
+            35.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 31,
+          "rows": [
+            1
+          ],
+          "front": "arts/elite-musician/borda/frente.svg",
+          "back": "arts/elite-musician/borda/verso.svg",
+          "canvasMm": [
+            40.513,
+            58.589
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            58.5,
+            40.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-banner",
+      "candidateId": "a023",
+      "pdfLabel": "Elite Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndoli-elites",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Elite",
+          "armyBook": "Ndoli Elites"
+        }
+      ],
+      "notes": "pose de comando (opção Banner)",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            2
+          ],
+          "front": "arts/elite-banner/fino/frente.svg",
+          "back": "arts/elite-banner/fino/verso.svg",
+          "canvasMm": [
+            48.81,
+            63.923
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            63.8,
+            48.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 31,
+          "rows": [
+            2
+          ],
+          "front": "arts/elite-banner/borda/frente.svg",
+          "back": "arts/elite-banner/borda/verso.svg",
+          "canvasMm": [
+            53.298,
+            66.167
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            66.0,
+            53.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunter-sword",
+      "candidateId": "a024",
+      "pdfLabel": "Hunter Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunters",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunter",
+          "armyBook": "Waheni Hunters"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "nome atual sem o prefixo Waheni (genericName Grunts); espada = Hand Weapon",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/hunter-sword/fino/frente.svg",
+          "back": "arts/hunter-sword/fino/verso.svg",
+          "canvasMm": [
+            25.993,
+            27.855
+          ],
+          "frontBackIoU": 0.937,
+          "sizeMm": [
+            27.8,
+            25.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            0,
+            2,
+            4
+          ],
+          "front": "arts/hunter-sword/borda/frente.svg",
+          "back": "arts/hunter-sword/borda/verso.svg",
+          "canvasMm": [
+            30.226,
+            29.93
+          ],
+          "frontBackIoU": 0.962,
+          "sizeMm": [
+            29.8,
+            30.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunter-spear",
+      "candidateId": "a025",
+      "pdfLabel": "Hunter Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunters",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunter",
+          "armyBook": "Waheni Hunters"
+        }
+      ],
+      "notes": "nome atual sem o prefixo Waheni (genericName Grunts)",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/hunter-spear/fino/frente.svg",
+          "back": "arts/hunter-spear/fino/verso.svg",
+          "canvasMm": [
+            26.035,
+            27.855
+          ],
+          "frontBackIoU": 0.935,
+          "sizeMm": [
+            27.8,
+            25.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            0
+          ],
+          "front": "arts/hunter-spear/borda/frente.svg",
+          "back": "arts/hunter-spear/borda/verso.svg",
+          "canvasMm": [
+            31.919,
+            30.819
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            30.7,
+            31.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunter-dual-claws",
+      "candidateId": "a026",
+      "pdfLabel": "Hunter Dual Claws",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunters",
+      "equipmentTags": [
+        "Dual Hand Weapons"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunter",
+          "armyBook": "Waheni Hunters"
+        },
+        {
+          "pdf": "Dual Claws",
+          "armyBook": "Dual Hand Weapons"
+        }
+      ],
+      "notes": "nome atual sem o prefixo Waheni; garras duplas = Dual Hand Weapons (única opção dupla)",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/hunter-dual-claws/fino/frente.svg",
+          "back": "arts/hunter-dual-claws/fino/verso.svg",
+          "canvasMm": [
+            18.034,
+            27.855
+          ],
+          "frontBackIoU": 0.929,
+          "sizeMm": [
+            27.8,
+            17.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            0,
+            2,
+            4
+          ],
+          "front": "arts/hunter-dual-claws/borda/frente.svg",
+          "back": "arts/hunter-dual-claws/borda/verso.svg",
+          "canvasMm": [
+            23.961,
+            30.819
+          ],
+          "frontBackIoU": 0.965,
+          "sizeMm": [
+            30.7,
+            23.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunter-sergeant",
+      "candidateId": "a027",
+      "pdfLabel": "Hunter Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunters",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunter",
+          "armyBook": "Waheni Hunters"
+        }
+      ],
+      "notes": "pose de comando (opção Sergeant)",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0
+          ],
+          "front": "arts/hunter-sergeant/fino/frente.svg",
+          "back": "arts/hunter-sergeant/fino/verso.svg",
+          "canvasMm": [
+            38.269,
+            33.147
+          ],
+          "frontBackIoU": 0.954,
+          "sizeMm": [
+            33.0,
+            38.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            0
+          ],
+          "front": "arts/hunter-sergeant/borda/frente.svg",
+          "back": "arts/hunter-sergeant/borda/verso.svg",
+          "canvasMm": [
+            41.317,
+            35.221
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            35.1,
+            41.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunter-musician",
+      "candidateId": "a028",
+      "pdfLabel": "Hunter Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunters",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunter",
+          "armyBook": "Waheni Hunters"
+        }
+      ],
+      "notes": "pose de comando (opção Musician)",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            1
+          ],
+          "front": "arts/hunter-musician/fino/frente.svg",
+          "back": "arts/hunter-musician/fino/verso.svg",
+          "canvasMm": [
+            28.363,
+            32.597
+          ],
+          "frontBackIoU": 0.944,
+          "sizeMm": [
+            32.4,
+            28.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            1
+          ],
+          "front": "arts/hunter-musician/borda/frente.svg",
+          "back": "arts/hunter-musician/borda/verso.svg",
+          "canvasMm": [
+            32.427,
+            34.586
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            34.5,
+            32.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunter-banner",
+      "candidateId": "a029",
+      "pdfLabel": "Hunter Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunters",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunter",
+          "armyBook": "Waheni Hunters"
+        }
+      ],
+      "notes": "pose de comando (opção Banner)",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            2
+          ],
+          "front": "arts/hunter-banner/fino/frente.svg",
+          "back": "arts/hunter-banner/fino/verso.svg",
+          "canvasMm": [
+            21.59,
+            49.361
+          ],
+          "frontBackIoU": 0.948,
+          "sizeMm": [
+            49.3,
+            21.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            2
+          ],
+          "front": "arts/hunter-banner/borda/frente.svg",
+          "back": "arts/hunter-banner/borda/verso.svg",
+          "canvasMm": [
+            25.696,
+            51.393
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            51.3,
+            25.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "raider-v1",
+      "candidateId": "a030",
+      "pdfLabel": "Raider V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-raiders",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Raider",
+          "armyBook": "Waheni Raiders"
+        }
+      ],
+      "notes": "nome atual sem o prefixo Waheni (genericName Grunt Archers)",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0,
+            2,
+            4
+          ],
+          "front": "arts/raider-v1/fino/frente.svg",
+          "back": "arts/raider-v1/fino/verso.svg",
+          "canvasMm": [
+            21.717,
+            30.311
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            30.2,
+            21.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            0,
+            2
+          ],
+          "front": "arts/raider-v1/borda/frente.svg",
+          "back": "arts/raider-v1/borda/verso.svg",
+          "canvasMm": [
+            27.051,
+            32.851
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            32.8,
+            26.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "raider-v2",
+      "candidateId": "a031",
+      "pdfLabel": "Raider V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-raiders",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Raider",
+          "armyBook": "Waheni Raiders"
+        }
+      ],
+      "notes": "nome atual sem o prefixo Waheni (genericName Grunt Archers)",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            1,
+            3
+          ],
+          "front": "arts/raider-v2/fino/frente.svg",
+          "back": "arts/raider-v2/fino/verso.svg",
+          "canvasMm": [
+            21.717,
+            30.311
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            30.2,
+            21.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            1,
+            3
+          ],
+          "front": "arts/raider-v2/borda/frente.svg",
+          "back": "arts/raider-v2/borda/verso.svg",
+          "canvasMm": [
+            27.051,
+            32.851
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            32.8,
+            26.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "brute-dual-axe",
+      "candidateId": "a032",
+      "pdfLabel": "Brute Dual Axe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "kemba-brutes",
+      "equipmentTags": [
+        "Dual Hand Weapons"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Dual Axe",
+          "armyBook": "Dual Hand Weapons"
+        }
+      ],
+      "notes": "Brute = genericName Brutes; machados duplos = Dual Hand Weapons",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/brute-dual-axe/fino/frente.svg",
+          "back": "arts/brute-dual-axe/fino/verso.svg",
+          "canvasMm": [
+            40.513,
+            41.19
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            41.1,
+            40.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/brute-dual-axe/borda/frente.svg",
+          "back": "arts/brute-dual-axe/borda/verso.svg",
+          "canvasMm": [
+            45.593,
+            43.73
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            43.6,
+            45.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "brute-great-axe",
+      "candidateId": "a033",
+      "pdfLabel": "Brute Great Axe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "kemba-brutes",
+      "equipmentTags": [
+        "Great Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Great Axe",
+          "armyBook": "Great Weapon"
+        }
+      ],
+      "notes": "Brute = genericName Brutes; machado grande = Great Weapon",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/brute-great-axe/fino/frente.svg",
+          "back": "arts/brute-great-axe/fino/verso.svg",
+          "canvasMm": [
+            39.412,
+            41.19
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            41.1,
+            39.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/brute-great-axe/borda/frente.svg",
+          "back": "arts/brute-great-axe/borda/verso.svg",
+          "canvasMm": [
+            44.535,
+            43.773
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            43.6,
+            44.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "brute-banner",
+      "candidateId": "a034",
+      "pdfLabel": "Brute Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "kemba-brutes",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Brute = genericName Brutes; pose de comando (opção Banner)",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            0
+          ],
+          "front": "arts/brute-banner/fino/frente.svg",
+          "back": "arts/brute-banner/fino/verso.svg",
+          "canvasMm": [
+            63.796,
+            50.419
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            50.3,
+            63.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            0
+          ],
+          "front": "arts/brute-banner/borda/frente.svg",
+          "back": "arts/brute-banner/borda/verso.svg",
+          "canvasMm": [
+            67.056,
+            52.493
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            52.4,
+            67.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "brute-sergeant",
+      "candidateId": "a035",
+      "pdfLabel": "Brute Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "kemba-brutes",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Brute = genericName Brutes; pose de comando (opção Sergeant)",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            1
+          ],
+          "front": "arts/brute-sergeant/fino/frente.svg",
+          "back": "arts/brute-sergeant/fino/verso.svg",
+          "canvasMm": [
+            48.387,
+            55.626
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            55.5,
+            48.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            1
+          ],
+          "front": "arts/brute-sergeant/borda/frente.svg",
+          "back": "arts/brute-sergeant/borda/verso.svg",
+          "canvasMm": [
+            52.409,
+            58.166
+          ],
+          "frontBackIoU": 0.96,
+          "sizeMm": [
+            58.1,
+            52.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "brute-musician",
+      "candidateId": "a036",
+      "pdfLabel": "Brute Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "kemba-brutes",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Brute = genericName Brutes; pose de comando (opção Musician)",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            2
+          ],
+          "front": "arts/brute-musician/fino/frente.svg",
+          "back": "arts/brute-musician/fino/verso.svg",
+          "canvasMm": [
+            47.032,
+            45.72
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            45.6,
+            46.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            2
+          ],
+          "front": "arts/brute-musician/borda/frente.svg",
+          "back": "arts/brute-musician/borda/verso.svg",
+          "canvasMm": [
+            51.096,
+            47.794
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            47.7,
+            50.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "centaur",
+      "candidateId": "a037",
+      "pdfLabel": "Centaur",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndwari-centaurs",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Centaur = genericName Centaurs",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/centaur/fino/frente.svg",
+          "back": "arts/centaur/fino/verso.svg",
+          "canvasMm": [
+            65.066,
+            44.662
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            44.5,
+            64.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/centaur/borda/frente.svg",
+          "back": "arts/centaur/borda/verso.svg",
+          "canvasMm": [
+            71.078,
+            48.514
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            47.6,
+            70.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "centaur-sergeant",
+      "candidateId": "a038",
+      "pdfLabel": "Centaur Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndwari-centaurs",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose de comando (opção Sergeant)",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0
+          ],
+          "front": "arts/centaur-sergeant/fino/frente.svg",
+          "back": "arts/centaur-sergeant/fino/verso.svg",
+          "canvasMm": [
+            56.896,
+            48.853
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            48.7,
+            56.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            0
+          ],
+          "front": "arts/centaur-sergeant/borda/frente.svg",
+          "back": "arts/centaur-sergeant/borda/verso.svg",
+          "canvasMm": [
+            62.907,
+            51.816
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            51.7,
+            62.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "centaur-musician",
+      "candidateId": "a039",
+      "pdfLabel": "Centaur Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndwari-centaurs",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose de comando (opção Musician)",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            1
+          ],
+          "front": "arts/centaur-musician/fino/frente.svg",
+          "back": "arts/centaur-musician/fino/verso.svg",
+          "canvasMm": [
+            40.64,
+            54.652
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            54.5,
+            40.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            1
+          ],
+          "front": "arts/centaur-musician/borda/frente.svg",
+          "back": "arts/centaur-musician/borda/verso.svg",
+          "canvasMm": [
+            46.651,
+            57.616
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            57.5,
+            46.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "centaur-banner",
+      "candidateId": "a040",
+      "pdfLabel": "Centaur Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ndwari-centaurs",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose de comando (opção Banner)",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            2
+          ],
+          "front": "arts/centaur-banner/fino/frente.svg",
+          "back": "arts/centaur-banner/fino/verso.svg",
+          "canvasMm": [
+            55.711,
+            64.643
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            64.5,
+            55.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            2
+          ],
+          "front": "arts/centaur-banner/borda/frente.svg",
+          "back": "arts/centaur-banner/borda/verso.svg",
+          "canvasMm": [
+            61.637,
+            67.606
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            67.5,
+            61.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "harpy",
+      "candidateId": "a041",
+      "pdfLabel": "Harpy",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hapari-harpies",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Harpy = genericName Harpies",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/harpy/fino/frente.svg",
+          "back": "arts/harpy/fino/verso.svg",
+          "canvasMm": [
+            43.011,
+            52.663
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            52.6,
+            42.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/harpy/borda/frente.svg",
+          "back": "arts/harpy/borda/verso.svg",
+          "canvasMm": [
+            48.429,
+            55.372
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            55.3,
+            48.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hound",
+      "candidateId": "a042",
+      "pdfLabel": "Hound",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "sambari-hounds",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hound",
+          "armyBook": "Sambari Hounds"
+        }
+      ],
+      "notes": "genericName Combat Hounds; produto do army book se chama 'Hounds'",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/hound/fino/frente.svg",
+          "back": "arts/hound/fino/verso.svg",
+          "canvasMm": [
+            41.106,
+            26.755
+          ],
+          "frontBackIoU": 0.966,
+          "sizeMm": [
+            26.7,
+            40.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/hound/borda/frente.svg",
+          "back": "arts/hound/borda/verso.svg",
+          "canvasMm": [
+            46.736,
+            29.76
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            29.6,
+            46.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunter-sword-a043",
+      "candidateId": "a043",
+      "pdfLabel": "Hunter Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunters",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunter",
+          "armyBook": "Waheni Hunters"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "só borda grossa (sem par); provável cópia de a024",
+      "styles": {
+        "borda": {
+          "page": 32,
+          "rows": [
+            1
+          ],
+          "front": "arts/hunter-sword-a043/borda/frente.svg",
+          "back": "arts/hunter-sword-a043/borda/verso.svg",
+          "canvasMm": [
+            30.226,
+            29.93
+          ],
+          "frontBackIoU": 0.962,
+          "sizeMm": [
+            29.8,
+            30.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunter-sword-a044",
+      "candidateId": "a044",
+      "pdfLabel": "Hunter Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunters",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunter",
+          "armyBook": "Waheni Hunters"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "só borda grossa (sem par); provável cópia de a024",
+      "styles": {
+        "borda": {
+          "page": 32,
+          "rows": [
+            3
+          ],
+          "front": "arts/hunter-sword-a044/borda/frente.svg",
+          "back": "arts/hunter-sword-a044/borda/verso.svg",
+          "canvasMm": [
+            30.226,
+            29.93
+          ],
+          "frontBackIoU": 0.962,
+          "sizeMm": [
+            29.8,
+            30.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunter-spear-a045",
+      "candidateId": "a045",
+      "pdfLabel": "Hunter Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunters",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunter",
+          "armyBook": "Waheni Hunters"
+        }
+      ],
+      "notes": "só borda grossa (sem par); provável cópia de a025",
+      "styles": {
+        "borda": {
+          "page": 33,
+          "rows": [
+            1,
+            3,
+            4
+          ],
+          "front": "arts/hunter-spear-a045/borda/frente.svg",
+          "back": "arts/hunter-spear-a045/borda/verso.svg",
+          "canvasMm": [
+            31.962,
+            30.819
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            30.7,
+            31.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunter-spear-a046",
+      "candidateId": "a046",
+      "pdfLabel": "Hunter Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunters",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunter",
+          "armyBook": "Waheni Hunters"
+        }
+      ],
+      "notes": "só borda grossa (sem par); provável cópia de a025",
+      "styles": {
+        "borda": {
+          "page": 33,
+          "rows": [
+            2
+          ],
+          "front": "arts/hunter-spear-a046/borda/frente.svg",
+          "back": "arts/hunter-spear-a046/borda/verso.svg",
+          "canvasMm": [
+            31.962,
+            30.819
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            30.7,
+            31.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunter-dual-claws-a047",
+      "candidateId": "a047",
+      "pdfLabel": "Hunter Dual Claws",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunters",
+      "equipmentTags": [
+        "Dual Hand Weapons"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunter",
+          "armyBook": "Waheni Hunters"
+        },
+        {
+          "pdf": "Dual Claws",
+          "armyBook": "Dual Hand Weapons"
+        }
+      ],
+      "notes": "só borda grossa (sem par); provável cópia de a026",
+      "styles": {
+        "borda": {
+          "page": 34,
+          "rows": [
+            1
+          ],
+          "front": "arts/hunter-dual-claws-a047/borda/frente.svg",
+          "back": "arts/hunter-dual-claws-a047/borda/verso.svg",
+          "canvasMm": [
+            23.918,
+            30.819
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            30.7,
+            23.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunter-dual-claws-a048",
+      "candidateId": "a048",
+      "pdfLabel": "Hunter Dual Claws",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-hunters",
+      "equipmentTags": [
+        "Dual Hand Weapons"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hunter",
+          "armyBook": "Waheni Hunters"
+        },
+        {
+          "pdf": "Dual Claws",
+          "armyBook": "Dual Hand Weapons"
+        }
+      ],
+      "notes": "só borda grossa (sem par); provável cópia de a026",
+      "styles": {
+        "borda": {
+          "page": 34,
+          "rows": [
+            3
+          ],
+          "front": "arts/hunter-dual-claws-a048/borda/frente.svg",
+          "back": "arts/hunter-dual-claws-a048/borda/verso.svg",
+          "canvasMm": [
+            23.918,
+            30.819
+          ],
+          "frontBackIoU": 0.965,
+          "sizeMm": [
+            30.7,
+            23.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "raider-v1-a049",
+      "candidateId": "a049",
+      "pdfLabel": "Raider V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "waheni-raiders",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Raider",
+          "armyBook": "Waheni Raiders"
+        }
+      ],
+      "notes": "só borda grossa (sem par); provável cópia de a030",
+      "styles": {
+        "borda": {
+          "page": 36,
+          "rows": [
+            4
+          ],
+          "front": "arts/raider-v1-a049/borda/frente.svg",
+          "back": "arts/raider-v1-a049/borda/verso.svg",
+          "canvasMm": [
+            27.051,
+            32.851
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            32.8,
+            26.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "brute-dual-axe-a050",
+      "candidateId": "a050",
+      "pdfLabel": "Brute Dual Axe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "kemba-brutes",
+      "equipmentTags": [
+        "Dual Hand Weapons"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Dual Axe",
+          "armyBook": "Dual Hand Weapons"
+        }
+      ],
+      "notes": "só borda grossa (sem par); provável cópia de a032",
+      "styles": {
+        "borda": {
+          "page": 37,
+          "rows": [
+            2
+          ],
+          "front": "arts/brute-dual-axe-a050/borda/frente.svg",
+          "back": "arts/brute-dual-axe-a050/borda/verso.svg",
+          "canvasMm": [
+            45.551,
+            43.73
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            43.6,
+            45.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "harpy-a051",
+      "candidateId": "a051",
+      "pdfLabel": "Harpy",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hapari-harpies",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só borda grossa (sem par); provável cópia de a041",
+      "styles": {
+        "borda": {
+          "page": 42,
+          "rows": [
+            4
+          ],
+          "front": "arts/harpy-a051/borda/frente.svg",
+          "back": "arts/harpy-a051/borda/verso.svg",
+          "canvasMm": [
+            48.429,
+            55.372
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            55.3,
+            48.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hound-a052",
+      "candidateId": "a052",
+      "pdfLabel": "Hound",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "sambari-hounds",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hound",
+          "armyBook": "Sambari Hounds"
+        }
+      ],
+      "notes": "só borda grossa (sem par); provável cópia de a042",
+      "styles": {
+        "borda": {
+          "page": 43,
+          "rows": [
+            4
+          ],
+          "front": "arts/hound-a052/borda/frente.svg",
+          "back": "arts/hound-a052/borda/verso.svg",
+          "canvasMm": [
+            46.694,
+            29.76
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            29.6,
+            46.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

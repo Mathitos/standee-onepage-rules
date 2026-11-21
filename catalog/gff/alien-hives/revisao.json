@@ -1,0 +1,777 @@
+{
+ "packId": "alien-hives",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "GF",
+   "slug": "grimdark-future",
+   "armyForgeId": 2
+  },
+  {
+   "code": "GFF",
+   "slug": "grimdark-future-firefight",
+   "armyForgeId": 3
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/w7qor7b2kuifcyvk-gs3-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/w7qor7b2kuifcyvk-gs2-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-*.png, army books v3.6.0 (os dois sistemas).",
+ "unidades": {
+  "prime-warrior": {
+   "armyForgeUnitId": "jJP5jiL"
+  },
+  "snatcher-lord": {
+   "armyForgeUnitId": "qpW1fhD"
+  },
+  "soul-snatcher": {
+   "armyForgeUnitId": "19W7XoU"
+  },
+  "hive-swarm": {
+   "armyForgeUnitId": "rv0FY-K"
+  },
+  "assault-grunts": {
+   "armyForgeUnitId": "_LXFoO9"
+  },
+  "shooter-grunts": {
+   "armyForgeUnitId": "CMADHYi"
+  },
+  "hive-warrior": {
+   "armyForgeUnitId": "01LG2ML"
+  },
+  "hive-guardian": {
+   "armyForgeUnitId": "jf0HjF0"
+  },
+  "ravenous-beast": {
+   "armyForgeUnitId": "tLoLwnZ"
+  },
+  "synapse-beast": {
+   "armyForgeUnitId": "Zcuz_wH"
+  },
+  "venom-beast": {
+   "armyForgeUnitId": "_nhe5Po"
+  },
+  "spores": {
+   "armyForgeUnitId": "lWrYpK5"
+  },
+  "massive-spore": {
+   "armyForgeUnitId": "wSkDwle"
+  },
+  "mortar-beast": {
+   "armyForgeUnitId": "CXEkpHT"
+  },
+  "flamer-beast": {
+   "armyForgeUnitId": "wCTQj9q"
+  },
+  "shadow-hunter": {
+   "armyForgeUnitId": "nETJZj-"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "assault-prime-whip",
+   "rotulo": "Assault Prime Whip",
+   "confiancaRotulo": "alta",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [
+    "Toxin Whip|Heavy Toxin Whip"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Assault Prime",
+     "armyBook": "Prime Warrior"
+    },
+    {
+     "pdf": "Whip",
+     "armyBook": [
+      "Toxin Whip",
+      "Heavy Toxin Whip"
+     ]
+    }
+   ],
+   "notas": "Prime Warrior corpo a corpo; o rótulo cabe em Toxin Whip e Heavy Toxin Whip"
+  },
+  "a002": {
+   "artId": "assault-prime-club",
+   "rotulo": "Assault Prime Club",
+   "confiancaRotulo": "alta",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [
+    "Smashing Club|Heavy Smashing Club"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Assault Prime",
+     "armyBook": "Prime Warrior"
+    },
+    {
+     "pdf": "Club",
+     "armyBook": [
+      "Smashing Club",
+      "Heavy Smashing Club"
+     ]
+    }
+   ],
+   "notas": "o rótulo cabe nas duas clavas"
+  },
+  "a003": {
+   "artId": "assault-prime-sword",
+   "rotulo": "Assault Prime Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [
+    "Slashing Blade|Serrated Blade|Heavy Slashing Blade|Heavy Serrated Blade"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Assault Prime",
+     "armyBook": "Prime Warrior"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": [
+      "Slashing Blade",
+      "Serrated Blade",
+      "Heavy Slashing Blade",
+      "Heavy Serrated Blade"
+     ]
+    }
+   ],
+   "notas": "rótulo diz só 'Sword'; o army book tem Slashing e Serrated Blade (e versões Heavy)"
+  },
+  "a004": {
+   "artId": "snatcher-lord",
+   "rotulo": "Snatcher Lord",
+   "confiancaRotulo": "alta",
+   "unitKey": "snatcher-lord",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a005": {
+   "artId": "swarm",
+   "rotulo": "Swarm",
+   "confiancaRotulo": "alta",
+   "unitKey": "hive-swarm",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Swarm",
+     "armyBook": "Hive Swarms"
+    }
+   ],
+   "notas": "genericName Bug Swarms; arte ~40 mm de largura (base 40 mm)"
+  },
+  "a006": {
+   "artId": "assault-grunt-v1",
+   "rotulo": "Assault Grunt V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "assault-grunts",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a007": {
+   "artId": "assault-grunt-v2",
+   "rotulo": "Assault Grunt V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "assault-grunts",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a008": {
+   "artId": "shooter-grunt-v1",
+   "rotulo": "Shooter Grunt V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "shooter-grunts",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a009": {
+   "artId": "shooter-grunt-v2",
+   "rotulo": "Shooter Grunt V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "shooter-grunts",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a010": {
+   "artId": "winged-shooter-v1",
+   "rotulo": "Winged Shooter V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "shooter-grunts",
+   "equipmentTags": [
+    "Wings|Raider Wings"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Winged Shooter",
+     "armyBook": [
+      "Shooter Grunts + Wings",
+      "Shooter Grunts + Raider Wings"
+     ]
+    }
+   ],
+   "notas": "Shooter Grunts com asas (Wings ou Raider Wings)"
+  },
+  "a011": {
+   "artId": "winged-shooter-v2",
+   "rotulo": "Winged Shooter V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "shooter-grunts",
+   "equipmentTags": [
+    "Wings|Raider Wings"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Winged Shooter",
+     "armyBook": [
+      "Shooter Grunts + Wings",
+      "Shooter Grunts + Raider Wings"
+     ]
+    }
+   ],
+   "notas": "Shooter Grunts com asas (Wings ou Raider Wings)"
+  },
+  "a012": {
+   "artId": "snatcher-v1",
+   "rotulo": "Snatcher V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "soul-snatcher",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Snatcher",
+     "armyBook": "Soul-Snatchers"
+    }
+   ],
+   "notas": "Snatcher = Soul-Snatchers (genericName Stalkers)"
+  },
+  "a013": {
+   "artId": "snatcher-v2",
+   "rotulo": "Snatcher V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "soul-snatcher",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Snatcher",
+     "armyBook": "Soul-Snatchers"
+    }
+   ],
+   "notas": "Snatcher = Soul-Snatchers (genericName Stalkers)"
+  },
+  "a014": {
+   "artId": "warrior-ravager-gun",
+   "rotulo": "Warrior Ravager Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [
+    "Ravager Gun"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Warrior = Hive Warriors (genericName Warriors)"
+  },
+  "a015": {
+   "artId": "warrior-spitter-gun",
+   "rotulo": "Warrior Spitter Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "Hive Warriors não têm 'Spitter Gun'; armas sem par no PDF: Bug-Spewer, Ripper Gun, Hook-Claw Launcher"
+  },
+  "a016": {
+   "artId": "warrior-spine-gun-1",
+   "rotulo": "Warrior Spine Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [
+    "Dual Spike-Shooters"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spine Gun",
+     "armyBook": "Dual Spike-Shooters"
+    }
+   ],
+   "notas": "arte com duas armas de espinhos nos braços; spine ~ spike. Mesmo rótulo que a017 (pose repetida)"
+  },
+  "a017": {
+   "artId": "warrior-spine-gun-2",
+   "rotulo": "Warrior Spine Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [
+    "Dual Spike-Shooters"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spine Gun",
+     "armyBook": "Dual Spike-Shooters"
+    }
+   ],
+   "notas": "mesmo rótulo e mesma figura de a016 (cópia no PDF); arte com duas armas de espinhos; spine ~ spike"
+  },
+  "a018": {
+   "artId": "warrior-barb-gun",
+   "rotulo": "Warrior Barb Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "Hive Warriors não têm 'Barb Gun'; poderia ser Hook-Claw Launcher ou Ripper Gun, sem como decidir"
+  },
+  "a019": {
+   "artId": "warrior-acid-gun",
+   "rotulo": "Warrior Acid Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [
+    "Acid Launcher"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Acid Gun",
+     "armyBook": "Acid Launcher"
+    }
+   ],
+   "notas": "única arma ácida dos Hive Warriors"
+  },
+  "a020": {
+   "artId": "warrior-heavy-ravager-gun",
+   "rotulo": "Warrior Heavy Ravager Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [
+    "Heavy Ravager Gun"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a021": {
+   "artId": "warrior-shredder-gun",
+   "rotulo": "Warrior Shredder Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [
+    "Shredder Gun"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a022": {
+   "artId": "warrior-club",
+   "rotulo": "Warrior Club",
+   "confiancaRotulo": "alta",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [
+    "Dual Smashing Clubs"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Club",
+     "armyBook": "Dual Smashing Clubs"
+    }
+   ],
+   "notas": "única clava dos Hive Warriors é Dual Smashing Clubs (padrão); a arte mostra clava e uma lâmina curva"
+  },
+  "a023": {
+   "artId": "warrior-whip",
+   "rotulo": "Warrior Whip",
+   "confiancaRotulo": "alta",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [
+    "Toxin Whip & Slashing Blade|Toxin Whip & Serrated Blade|Dual Toxin Whips"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Whip",
+     "armyBook": [
+      "Toxin Whip & Slashing Blade",
+      "Toxin Whip & Serrated Blade",
+      "Dual Toxin Whips"
+     ]
+    }
+   ],
+   "notas": "arte mostra chicote e lâmina (combos Toxin Whip & Slashing/Serrated Blade); incluí Dual Toxin Whips, única outra arma corpo a corpo com chicote"
+  },
+  "a024": {
+   "artId": "guard-ravager",
+   "rotulo": "Guard Ravager",
+   "confiancaRotulo": "alta",
+   "unitKey": "hive-guardian",
+   "equipmentTags": [
+    "Heavy Ravager Gun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guard",
+     "armyBook": "Hive Guardians"
+    },
+    {
+     "pdf": "Ravager",
+     "armyBook": "Heavy Ravager Gun"
+    }
+   ],
+   "notas": "Guard = Hive Guardians (genericName Guardian Warriors); a única Ravager deles é Heavy Ravager Gun"
+  },
+  "a025": {
+   "artId": "guard-skewer-cannon",
+   "rotulo": "Guard Skewer Cannon",
+   "confiancaRotulo": "alta",
+   "unitKey": "hive-guardian",
+   "equipmentTags": [
+    "Skewer Launcher"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guard",
+     "armyBook": "Hive Guardians"
+    },
+    {
+     "pdf": "Skewer Cannon",
+     "armyBook": "Skewer Launcher"
+    }
+   ],
+   "notas": ""
+  },
+  "a026": {
+   "artId": "guard-harpoon",
+   "rotulo": "Guard Harpoon",
+   "confiancaRotulo": "alta",
+   "unitKey": "hive-guardian",
+   "equipmentTags": [
+    "Bio-Harpoon Gun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guard",
+     "armyBook": "Hive Guardians"
+    },
+    {
+     "pdf": "Harpoon",
+     "armyBook": "Bio-Harpoon Gun"
+    }
+   ],
+   "notas": ""
+  },
+  "a027": {
+   "artId": "guard-club",
+   "rotulo": "Guard Club",
+   "confiancaRotulo": "alta",
+   "unitKey": "hive-guardian",
+   "equipmentTags": [
+    "Dual Smashing Clubs"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guard",
+     "armyBook": "Hive Guardians"
+    },
+    {
+     "pdf": "Club",
+     "armyBook": "Dual Smashing Clubs"
+    }
+   ],
+   "notas": "Dual Smashing Clubs é a arma padrão"
+  },
+  "a028": {
+   "artId": "ravener-beast",
+   "rotulo": "Ravener Beast",
+   "confiancaRotulo": "alta",
+   "unitKey": "ravenous-beast",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Ravener Beast",
+     "armyBook": "Ravenous Beasts"
+    }
+   ],
+   "notas": "nome parecido; arte serpentina com garras (genericName Combat Snakes)"
+  },
+  "a029": {
+   "artId": "synapse-beast",
+   "rotulo": "Synapse Beast",
+   "confiancaRotulo": "alta",
+   "unitKey": "synapse-beast",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a030": {
+   "artId": "venom-floater",
+   "rotulo": "Venom Floater",
+   "confiancaRotulo": "alta",
+   "unitKey": "venom-beast",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Venom Floater",
+     "armyBook": "Venom Beasts"
+    }
+   ],
+   "notas": "Venom + genericName Poison Floaters"
+  },
+  "a031": {
+   "artId": "spores",
+   "rotulo": "Spores",
+   "confiancaRotulo": "alta",
+   "unitKey": "spores",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a032": {
+   "artId": "massive-spore",
+   "rotulo": "Massive Spore",
+   "confiancaRotulo": "alta",
+   "unitKey": "massive-spore",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a033": {
+   "artId": "mortar-beast",
+   "rotulo": "Mortar Beast",
+   "confiancaRotulo": "alta",
+   "unitKey": "mortar-beast",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a034": {
+   "artId": "winged-prime-spine-guns",
+   "rotulo": "Winged Prime Spine Guns",
+   "confiancaRotulo": "alta",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [
+    "Wings|Raid Wings",
+    "Dual Spike-Shooters"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Winged Prime",
+     "armyBook": [
+      "Prime Warrior + Wings",
+      "Prime Warrior + Raid Wings"
+     ]
+    },
+    {
+     "pdf": "Spine Guns",
+     "armyBook": "Dual Spike-Shooters"
+    }
+   ],
+   "notas": "Prime Warrior com asas (Wings ou Raid Wings)"
+  },
+  "a035": {
+   "artId": "winged-prime-ravager-gun",
+   "rotulo": "Winged Prime Ravager Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [
+    "Wings|Raid Wings",
+    "Heavy Ravager Gun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Winged Prime",
+     "armyBook": [
+      "Prime Warrior + Wings",
+      "Prime Warrior + Raid Wings"
+     ]
+    },
+    {
+     "pdf": "Ravager Gun",
+     "armyBook": "Heavy Ravager Gun"
+    }
+   ],
+   "notas": "Prime Warrior só tem Heavy Ravager Gun; asas = Wings ou Raid Wings"
+  },
+  "a036": {
+   "artId": "winged-prime-whip",
+   "rotulo": "Winged Prime Whip",
+   "confiancaRotulo": "alta",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [
+    "Wings|Raid Wings",
+    "Toxin Whip|Heavy Toxin Whip"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Winged Prime",
+     "armyBook": [
+      "Prime Warrior + Wings",
+      "Prime Warrior + Raid Wings"
+     ]
+    },
+    {
+     "pdf": "Whip",
+     "armyBook": [
+      "Toxin Whip",
+      "Heavy Toxin Whip"
+     ]
+    }
+   ],
+   "notas": "asas = Wings ou Raid Wings; chicote = Toxin Whip ou Heavy Toxin Whip"
+  },
+  "a037": {
+   "artId": "flamer-beast",
+   "rotulo": "Flamer Beast",
+   "confiancaRotulo": "alta",
+   "unitKey": "flamer-beast",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a038": {
+   "artId": "prime-gunner-spitter-gun",
+   "rotulo": "Prime Gunner Spitter Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "Prime Warrior não tem 'Spitter Gun' (armas de tiro: Bug-Spewer, Ripper Gun, Shredder Gun, Heavy Ravager Gun, Hook-Claw Launcher, Acid Launcher)"
+  },
+  "a039": {
+   "artId": "prime-gunner-ravager-gun",
+   "rotulo": "Prime Gunner Ravager Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [
+    "Heavy Ravager Gun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Prime Gunner",
+     "armyBook": "Prime Warrior"
+    },
+    {
+     "pdf": "Ravager Gun",
+     "armyBook": "Heavy Ravager Gun"
+    }
+   ],
+   "notas": "Prime Warrior só tem Heavy Ravager Gun"
+  },
+  "a040": {
+   "artId": "prime-gunner-acid-launcher",
+   "rotulo": "Prime Gunner Acid Launcher",
+   "confiancaRotulo": "alta",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [
+    "Acid Launcher"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Prime Gunner",
+     "armyBook": "Prime Warrior"
+    }
+   ],
+   "notas": "Prime Gunner = Prime Warrior armado; Acid Launcher existe com esse nome"
+  },
+  "a041": {
+   "artId": "hunter",
+   "rotulo": "Hunter",
+   "confiancaRotulo": "alta",
+   "unitKey": "shadow-hunter",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hunter",
+     "armyBook": "Shadow Hunter"
+    }
+   ],
+   "notas": "figura de quatro braços com lâminas, ~78 mm de largura (base 60 mm); genericName Shadow Assassin"
+  }
+ }
+}

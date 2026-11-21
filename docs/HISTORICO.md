@@ -85,3 +85,7 @@ Um agente revisor independente, pedido pelo usuário, achou 23 artes perdidas: t
 ## 21/11/2026 — gerador de 3MF no site
 
 O usuário pediu para começar a página que gera o 3MF, para publicar no GitHub Pages. O caminho padrão do protótipo foi portado para TypeScript e roda no navegador com manifold-3d em WebAssembly (D039). O site lê a arte de SVG a 600 dpi exportados para todas as artes das 22 facções, não do PDF. Na lista piloto, o 3MF do site tem as mesmas medidas do protótipo e fatiou na CLI do Bambu. No navegador, 14 modelos levaram 6,7 s.
+
+## 21/11/2026 — associação pela lista do Army Forge
+
+O usuário pediu os army books das outras 21 facções, para o site gerar só a partir da lista do Army Forge. Os ids saíram da listagem pública de livros oficiais; cada livro foi baixado nos dois sistemas do seu lado, porque a mesma unidade muda de nome (singular no Firefight e no Skirmish) e o GF e o AoF têm unidades a mais. Nove agentes leram os rótulos das 22 facções em paralelo e casaram com o army book: os rótulos usam nomes antigos, então a maior parte ficou como alias proposto, com a justificativa (o `genericName` do army book e os links de produto ajudaram). O site passou a achar a facção pelo sistema da lista e a escolher a arte pelas armas, itens e montarias do modelo, com arte genérica quando o rótulo não tem arma (D040). Com as listas do army book no equipamento padrão, 492 das 581 unidades com arte saem prontas; o resto é quase todo herói cuja arte mostra uma melhoria.

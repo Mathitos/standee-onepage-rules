@@ -1,0 +1,1329 @@
+{
+ "packId": "dwarf-guilds",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "GF",
+   "slug": "grimdark-future",
+   "armyForgeId": 2
+  },
+  {
+   "code": "GFF",
+   "slug": "grimdark-future-firefight",
+   "armyForgeId": 3
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/fk1mkbp8apvltu0z-gs3-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/fk1mkbp8apvltu0z-gs2-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-01..06.png, army books v3.6.0 (os dois sistemas). Tags com \"|\" listam nomes alternativos do army book para a mesma arma.",
+ "unidades": {
+  "dwarf-champion": {
+   "armyForgeUnitId": "ILXnjbU"
+  },
+  "powersuit-champion": {
+   "armyForgeUnitId": "5op34S_"
+  },
+  "berserker-veteran": {
+   "armyForgeUnitId": "NSdGbsg"
+  },
+  "dwarf-warriors": {
+   "armyForgeUnitId": "mEzgxJr"
+  },
+  "guardians": {
+   "armyForgeUnitId": "OijrRWq"
+  },
+  "jetpack-warrior": {
+   "armyForgeUnitId": "I4NB_Rk"
+  },
+  "thunder-support": {
+   "armyForgeUnitId": "7DfXFg9"
+  },
+  "berserker": {
+   "armyForgeUnitId": "nojZ6_b"
+  },
+  "elite": {
+   "armyForgeUnitId": "PmhNMYW"
+  },
+  "iron-veteran": {
+   "armyForgeUnitId": "cDk2wUI"
+  },
+  "miner": {
+   "armyForgeUnitId": "BMDQBuG"
+  },
+  "sniper-team": {
+   "armyForgeUnitId": "WbdkmXl"
+  },
+  "powersuit-guard": {
+   "armyForgeUnitId": "Hodf3Bu"
+  },
+  "dwarf-biker": {
+   "armyForgeUnitId": "L7Cxnmn"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "guild-lord-hammer",
+   "rotulo": "Guild Lord Hammer",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Guild Lord",
+    "Shock Hammer|Great Heat Hammer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guild Lord",
+     "armyBook": "Dwarf Champion + Guild Lord"
+    },
+    {
+     "pdf": "Hammer",
+     "armyBook": [
+      "Shock Hammer",
+      "Great Heat Hammer"
+     ]
+    }
+   ],
+   "notas": "Guild Lord é upgrade do Dwarf Champion (figura sem powersuit). Hammer serve para Shock Hammer ou Great Heat Hammer"
+  },
+  "a002": {
+   "artId": "guild-lord-flamer",
+   "rotulo": "Guild Lord Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Guild Lord",
+    "Flamer Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guild Lord",
+     "armyBook": "Dwarf Champion + Guild Lord"
+    },
+    {
+     "pdf": "Flamer",
+     "armyBook": "Flamer Pistol"
+    }
+   ],
+   "notas": "Guild Lord é upgrade do Dwarf Champion; o lança-chamas da figura é de mão (Flamer Pistol)"
+  },
+  "a003": {
+   "artId": "champion-shield",
+   "rotulo": "Champion Shield",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Combat Shield"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Dwarf Champion"
+    },
+    {
+     "pdf": "Shield",
+     "armyBook": "Combat Shield"
+    }
+   ],
+   "notas": "Champion sem prefixo = Dwarf Champion (genericName Elite Dwarf Leader); escudo padrão"
+  },
+  "a004": {
+   "artId": "champion-shotgun",
+   "rotulo": "Champion Shotgun",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Burst Shotgun|Burst Iron-Slug Shotgun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Dwarf Champion"
+    },
+    {
+     "pdf": "Shotgun",
+     "armyBook": [
+      "Burst Shotgun",
+      "Burst Iron-Slug Shotgun"
+     ]
+    }
+   ],
+   "notas": "o herói só tem Burst Shotgun ou Burst Iron-Slug Shotgun"
+  },
+  "a005": {
+   "artId": "runemaster",
+   "rotulo": "Runemaster",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Rune Master"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Runemaster",
+     "armyBook": "Dwarf Champion + Rune Master"
+    }
+   ],
+   "notas": "Rune Master é upgrade do Dwarf Champion (também do Powersuit Champion, mas a figura não é de powersuit); segura Rune Staff"
+  },
+  "a006": {
+   "artId": "engineer",
+   "rotulo": "Engineer",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Engineer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Engineer",
+     "armyBook": "Dwarf Champion + Engineer"
+    }
+   ],
+   "notas": "Engineer é upgrade só do Dwarf Champion"
+  },
+  "a007": {
+   "artId": "jetpack-champion-glove-pistols",
+   "rotulo": "Jetpack Champion Glove Pistols",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Jetpack|Airdrop Jetpack",
+    "Dual Glove-Pistols"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Jetpack Champion",
+     "armyBook": "Dwarf Champion + Jetpack/Airdrop Jetpack"
+    },
+    {
+     "pdf": "Glove Pistols",
+     "armyBook": "Dual Glove-Pistols"
+    }
+   ],
+   "notas": "Dwarf Champion com upgrade Jetpack ou Airdrop Jetpack"
+  },
+  "a008": {
+   "artId": "jetpack-champion-flamer-pistols",
+   "rotulo": "Jetpack Champion Flamer Pistols",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Jetpack|Airdrop Jetpack",
+    "Flamer Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Jetpack Champion",
+     "armyBook": "Dwarf Champion + Jetpack/Airdrop Jetpack"
+    },
+    {
+     "pdf": "Flamer Pistols",
+     "armyBook": "Flamer Pistol"
+    }
+   ],
+   "notas": "rótulo no plural; o herói só leva uma Flamer Pistol (Burst Flamer Pistol é dos Jetpack Warriors)"
+  },
+  "a009": {
+   "artId": "power-suit-champion-storm-rifle",
+   "rotulo": "Power Suit Champion Storm Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "powersuit-champion",
+   "equipmentTags": [
+    "Burst Cyclic Rifle|Assault Burst Cyclic Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Storm Rifle",
+     "armyBook": [
+      "Burst Cyclic Rifle",
+      "Assault Burst Cyclic Rifle"
+     ]
+    }
+   ],
+   "notas": "Storm Rifle (nome antigo) = rifle de dois canos da powersuit"
+  },
+  "a010": {
+   "artId": "power-suit-champion-shield",
+   "rotulo": "Power Suit Champion Shield",
+   "confiancaRotulo": "alta",
+   "unitKey": "powersuit-champion",
+   "equipmentTags": [
+    "Combat Shield"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shield",
+     "armyBook": "Combat Shield"
+    }
+   ],
+   "notas": ""
+  },
+  "a011": {
+   "artId": "berserker-veteran-dual-axe",
+   "rotulo": "Berserker Veteran Dual Axe",
+   "confiancaRotulo": "alta",
+   "unitKey": "berserker-veteran",
+   "equipmentTags": [
+    "Dual Heat Axes|Dual Hand Weapons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Dual Axe",
+     "armyBook": [
+      "Dual Heat Axes",
+      "Dual Hand Weapons"
+     ]
+    }
+   ],
+   "notas": "Dual Hand Weapons é o padrão; Dual Heat Axes a opção com machados"
+  },
+  "a012": {
+   "artId": "berserker-veteran-great-axe",
+   "rotulo": "Berserker Veteran Great Axe",
+   "confiancaRotulo": "alta",
+   "unitKey": "berserker-veteran",
+   "equipmentTags": [
+    "Great Heat Axe"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Great Axe",
+     "armyBook": "Great Heat Axe"
+    }
+   ],
+   "notas": "o herói não tem Great Axe simples"
+  },
+  "a013": {
+   "artId": "biker-champion-energy-fist",
+   "rotulo": "Biker Champion Energy Fist",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Combat Bike|Pioneer Bike",
+    "Shock Fist"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Biker Champion",
+     "armyBook": "Dwarf Champion + Combat Bike/Pioneer Bike"
+    },
+    {
+     "pdf": "Energy Fist",
+     "armyBook": "Shock Fist"
+    }
+   ],
+   "notas": "Dwarf Champion com Combat Bike ou Pioneer Bike"
+  },
+  "a014": {
+   "artId": "biker-champion-shotgun",
+   "rotulo": "Biker Champion Shotgun",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Combat Bike|Pioneer Bike",
+    "Burst Shotgun|Burst Iron-Slug Shotgun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Biker Champion",
+     "armyBook": "Dwarf Champion + Combat Bike/Pioneer Bike"
+    },
+    {
+     "pdf": "Shotgun",
+     "armyBook": [
+      "Burst Shotgun",
+      "Burst Iron-Slug Shotgun"
+     ]
+    }
+   ],
+   "notas": "Dwarf Champion com Combat Bike ou Pioneer Bike"
+  },
+  "a015": {
+   "artId": "warrior-rifle",
+   "rotulo": "Warrior Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Battle Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Battle Rifle"
+    }
+   ],
+   "notas": "arma padrão dos Dwarf Warriors"
+  },
+  "a016": {
+   "artId": "warrior-shotgun",
+   "rotulo": "Warrior Shotgun",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Shotgun"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a017": {
+   "artId": "warrior-iron-blaster",
+   "rotulo": "Warrior Iron Blaster",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Iron-Slug Carbine"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Iron Blaster",
+     "armyBook": "Iron-Slug Carbine"
+    }
+   ],
+   "notas": "nome antigo; troca de todos os rifles, igual ao \"Veteran Iron Blaster\" (padrão dos Iron Veterans é Iron-Slug Carbine)"
+  },
+  "a018": {
+   "artId": "warrior-plasma-rifle",
+   "rotulo": "Warrior Plasma Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a019": {
+   "artId": "warrior-h-rifle",
+   "rotulo": "Warrior H-Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Ore-Shredder Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "H-Rifle",
+     "armyBook": "Ore-Shredder Rifle"
+    }
+   ],
+   "notas": "só por eliminação: é a única arma especial dos Dwarf Warriors sem arte; o \"H\" não confirma. Conferir"
+  },
+  "a020": {
+   "artId": "warrior-fusion-rifle",
+   "rotulo": "Warrior Fusion Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a021": {
+   "artId": "warrior-flamer",
+   "rotulo": "Warrior Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Flamer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a022": {
+   "artId": "warrior-missile-launcher",
+   "rotulo": "Warrior Missile Launcher",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Missile Launcher"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a023": {
+   "artId": "warrior-heavy-machine-gun",
+   "rotulo": "Warrior Heavy Machine Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Heavy Machinegun"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "army book escreve Machinegun junto"
+  },
+  "a024": {
+   "artId": "warrior-heavy-rail-m-rifle",
+   "rotulo": "Warrior Heavy Rail M-Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Heat-Railcannon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Heavy Rail M-Rifle",
+     "armyBook": "Heat-Railcannon"
+    }
+   ],
+   "notas": "arma pesada \"Rail\"; mesma lógica de Power Suit Heavy M-Rail Gun"
+  },
+  "a025": {
+   "artId": "warrior-medic",
+   "rotulo": "Warrior Medic",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [],
+   "cosmetic": "medic",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose de médico; o army book tem o upgrade Medical Training (um modelo)"
+  },
+  "a026": {
+   "artId": "warrior-sargeant",
+   "rotulo": "Warrior Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "grafia do PDF \"Sargeant\"; o army book tem Sgt. Hand Weapon / Sgt. Pistol"
+  },
+  "a027": {
+   "artId": "guardian-spear",
+   "rotulo": "Guardian Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardians",
+   "equipmentTags": [
+    "Energy Spear|Heat Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spear",
+     "armyBook": [
+      "Energy Spear",
+      "Heat Spear"
+     ]
+    }
+   ],
+   "notas": ""
+  },
+  "a028": {
+   "artId": "guardian-pistol",
+   "rotulo": "Guardian Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardians",
+   "equipmentTags": [
+    "Pistol"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a029": {
+   "artId": "guardian-pick",
+   "rotulo": "Guardian Pick",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardians",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Pick",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "picareta = arma corpo a corpo padrão"
+  },
+  "a030": {
+   "artId": "jetpack-warrior-pick",
+   "rotulo": "Jetpack Warrior Pick",
+   "confiancaRotulo": "alta",
+   "unitKey": "jetpack-warrior",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Pick",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "picareta = Hand Weapon padrão (com Pistol)"
+  },
+  "a031": {
+   "artId": "jetpack-warrior-glove-pistols",
+   "rotulo": "Jetpack Warrior Glove Pistols",
+   "confiancaRotulo": "alta",
+   "unitKey": "jetpack-warrior",
+   "equipmentTags": [
+    "Dual Glove-Pistols"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Glove Pistols",
+     "armyBook": "Dual Glove-Pistols"
+    }
+   ],
+   "notas": ""
+  },
+  "a032": {
+   "artId": "support-mortar",
+   "rotulo": "Support Mortar",
+   "confiancaRotulo": "alta",
+   "unitKey": "thunder-support",
+   "equipmentTags": [
+    "Mortar"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Support = Thunder Support (genericName Support Warriors)"
+  },
+  "a033": {
+   "artId": "support-missile-launcher",
+   "rotulo": "Support Missile Launcher",
+   "confiancaRotulo": "alta",
+   "unitKey": "thunder-support",
+   "equipmentTags": [
+    "Missile Launcher"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a034": {
+   "artId": "support-machine-gun",
+   "rotulo": "Support Machine Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "thunder-support",
+   "equipmentTags": [
+    "Heavy Machinegun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Machine Gun",
+     "armyBook": "Heavy Machinegun"
+    }
+   ],
+   "notas": ""
+  },
+  "a035": {
+   "artId": "support-gravity-cannon",
+   "rotulo": "Support Gravity Cannon",
+   "confiancaRotulo": "alta",
+   "unitKey": "thunder-support",
+   "equipmentTags": [
+    "Ore-Shredder Cannon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gravity Cannon",
+     "armyBook": "Ore-Shredder Cannon"
+    }
+   ],
+   "notas": "por eliminação: única arma do Thunder Support sem arte (as outras cinco batem). Conferir"
+  },
+  "a036": {
+   "artId": "support-c-beamer",
+   "rotulo": "Support C-Beamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "thunder-support",
+   "equipmentTags": [
+    "Mining Beam-Cannon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "C-Beamer",
+     "armyBook": "Mining Beam-Cannon"
+    }
+   ],
+   "notas": "Beamer ~ Beam-Cannon; é a arma padrão da unidade"
+  },
+  "a037": {
+   "artId": "support-autocannon",
+   "rotulo": "Support Autocannon",
+   "confiancaRotulo": "alta",
+   "unitKey": "thunder-support",
+   "equipmentTags": [
+    "Autocannon"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a038": {
+   "artId": "berserker-dual-axes",
+   "rotulo": "Berserker Dual Axes",
+   "confiancaRotulo": "alta",
+   "unitKey": "berserker",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Dual Axes",
+     "armyBook": "Dual Hand Weapons"
+    }
+   ],
+   "notas": "única opção dupla dos Berserkers"
+  },
+  "a039": {
+   "artId": "berserker-grenade-launcher",
+   "rotulo": "Berserker Grenade Launcher",
+   "confiancaRotulo": "alta",
+   "unitKey": "berserker",
+   "equipmentTags": [
+    "Assault Grenade Launcher"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Grenade Launcher",
+     "armyBook": "Assault Grenade Launcher"
+    }
+   ],
+   "notas": ""
+  },
+  "a040": {
+   "artId": "berserker-great-axe",
+   "rotulo": "Berserker Great Axe",
+   "confiancaRotulo": "alta",
+   "unitKey": "berserker",
+   "equipmentTags": [
+    "Great Axe|Great Heat Axe"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Great Axe",
+     "armyBook": [
+      "Great Axe",
+      "Great Heat Axe"
+     ]
+    }
+   ],
+   "notas": "Great Axe existe igual; incluí Great Heat Axe (arma padrão, sem arte própria)"
+  },
+  "a041": {
+   "artId": "elite-axe",
+   "rotulo": "Elite Axe",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Heat Axe"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Axe",
+     "armyBook": "Heat Axe"
+    }
+   ],
+   "notas": "arma padrão dos Elites"
+  },
+  "a042": {
+   "artId": "elite-hammer",
+   "rotulo": "Elite Hammer",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Heat Hammer|Great Heat Hammer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hammer",
+     "armyBook": [
+      "Heat Hammer",
+      "Great Heat Hammer"
+     ]
+    }
+   ],
+   "notas": ""
+  },
+  "a043": {
+   "artId": "veteran-shotgun",
+   "rotulo": "Veteran Shotgun",
+   "confiancaRotulo": "alta",
+   "unitKey": "iron-veteran",
+   "equipmentTags": [
+    "Iron-Slug Shotgun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Veteran",
+     "armyBook": "Iron Veterans"
+    },
+    {
+     "pdf": "Shotgun",
+     "armyBook": "Iron-Slug Shotgun"
+    }
+   ],
+   "notas": "Iron Veterans (genericName Elite Dwarf Warriors) só têm Iron-Slug Shotgun"
+  },
+  "a044": {
+   "artId": "veteran-iron-blaster",
+   "rotulo": "Veteran Iron Blaster",
+   "confiancaRotulo": "alta",
+   "unitKey": "iron-veteran",
+   "equipmentTags": [
+    "Iron-Slug Carbine"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Iron Blaster",
+     "armyBook": "Iron-Slug Carbine"
+    }
+   ],
+   "notas": "arma padrão dos Iron Veterans"
+  },
+  "a045": {
+   "artId": "veteran-heavy-plasma",
+   "rotulo": "Veteran Heavy Plasma",
+   "confiancaRotulo": "alta",
+   "unitKey": "iron-veteran",
+   "equipmentTags": [
+    "Plasma Cannon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Heavy Plasma",
+     "armyBook": "Plasma Cannon"
+    }
+   ],
+   "notas": ""
+  },
+  "a046": {
+   "artId": "veteran-heavy-fusion",
+   "rotulo": "Veteran Heavy Fusion",
+   "confiancaRotulo": "alta",
+   "unitKey": "iron-veteran",
+   "equipmentTags": [
+    "Heavy Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Heavy Fusion",
+     "armyBook": "Heavy Fusion Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a047": {
+   "artId": "veteran-heavy-flamer",
+   "rotulo": "Veteran Heavy Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "iron-veteran",
+   "equipmentTags": [
+    "Heavy Flamer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Veteran = Iron Veterans"
+  },
+  "a048": {
+   "artId": "veteran-c-beamer",
+   "rotulo": "Veteran C Beamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "iron-veteran",
+   "equipmentTags": [
+    "Mining Beam-Cannon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "C Beamer",
+     "armyBook": "Mining Beam-Cannon"
+    }
+   ],
+   "notas": "mesma arma do \"Support C-Beamer\""
+  },
+  "a049": {
+   "artId": "veteran-sargeant",
+   "rotulo": "Veteran Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "iron-veteran",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "grafia do PDF \"Sargeant\"; o army book tem Sgt. Hand Weapon / Sgt. Ore-Shredder Pistol"
+  },
+  "a050": {
+   "artId": "veteran-medic",
+   "rotulo": "Veteran Medic",
+   "confiancaRotulo": "alta",
+   "unitKey": "iron-veteran",
+   "equipmentTags": [],
+   "cosmetic": "medic",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose de médico; o army book tem o upgrade Medical Training (um modelo)"
+  },
+  "a051": {
+   "artId": "miner-pistol",
+   "rotulo": "Miner Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "miner",
+   "equipmentTags": [
+    "Iron-Slug Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Pistol",
+     "armyBook": "Iron-Slug Pistol"
+    }
+   ],
+   "notas": "a pistola dos Miners é Iron-Slug Pistol"
+  },
+  "a052": {
+   "artId": "miner-shotgun",
+   "rotulo": "Miner Shotgun",
+   "confiancaRotulo": "alta",
+   "unitKey": "miner",
+   "equipmentTags": [
+    "Iron-Slug Shotgun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shotgun",
+     "armyBook": "Iron-Slug Shotgun"
+    }
+   ],
+   "notas": "arma padrão dos Miners"
+  },
+  "a053": {
+   "artId": "miner-fusion",
+   "rotulo": "Miner Fusion",
+   "confiancaRotulo": "alta",
+   "unitKey": "miner",
+   "equipmentTags": [
+    "Fusion Rifle|Assault Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fusion",
+     "armyBook": [
+      "Fusion Rifle",
+      "Assault Fusion Rifle"
+     ]
+    }
+   ],
+   "notas": ""
+  },
+  "a054": {
+   "artId": "miner-flamer",
+   "rotulo": "Miner Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "miner",
+   "equipmentTags": [
+    "Flamer|Assault Flamer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Flamer",
+     "armyBook": [
+      "Flamer",
+      "Assault Flamer"
+     ]
+    }
+   ],
+   "notas": ""
+  },
+  "a055": {
+   "artId": "platform-m-rifle",
+   "rotulo": "Platform M-Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "miner",
+   "equipmentTags": [
+    "Heat-Rifle Platform"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Platform M-Rifle",
+     "armyBook": "Heat-Rifle Platform"
+    }
+   ],
+   "notas": "plataformas são opções dos Miners; a outra é a Heat-Drill Platform"
+  },
+  "a056": {
+   "artId": "platform-drill",
+   "rotulo": "Platform Drill",
+   "confiancaRotulo": "alta",
+   "unitKey": "miner",
+   "equipmentTags": [
+    "Heat-Drill Platform"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Platform Drill",
+     "armyBook": "Heat-Drill Platform"
+    }
+   ],
+   "notas": "opção dos Miners"
+  },
+  "a057": {
+   "artId": "sniper-v1",
+   "rotulo": "Sniper V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "sniper-team",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Sniper = Sniper Team (genericName Snipers); pose 1"
+  },
+  "a058": {
+   "artId": "sniper-v2",
+   "rotulo": "Sniper V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "sniper-team",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose 2"
+  },
+  "a059": {
+   "artId": "power-suit-storm-rifle",
+   "rotulo": "Power Suit Storm Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "powersuit-guard",
+   "equipmentTags": [
+    "Burst Cyclic Rifle|Assault Cyclic Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Storm Rifle",
+     "armyBook": [
+      "Burst Cyclic Rifle",
+      "Assault Cyclic Rifle"
+     ]
+    }
+   ],
+   "notas": "Power Suit = Powersuit Guard (genericName Powersuit Dwarfs)"
+  },
+  "a060": {
+   "artId": "power-suit-plasma-pistol",
+   "rotulo": "Power Suit Plasma Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "powersuit-guard",
+   "equipmentTags": [
+    "Plasma Pistol"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a061": {
+   "artId": "power-suit-shield",
+   "rotulo": "Power Suit Shield",
+   "confiancaRotulo": "alta",
+   "unitKey": "powersuit-guard",
+   "equipmentTags": [
+    "Combat Shield"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shield",
+     "armyBook": "Combat Shield"
+    }
+   ],
+   "notas": ""
+  },
+  "a062": {
+   "artId": "power-suit-heavy-m-rail-gun",
+   "rotulo": "Power Suit Heavy M-Rail Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "powersuit-guard",
+   "equipmentTags": [
+    "Heat-Railcannon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Heavy M-Rail Gun",
+     "armyBook": "Heat-Railcannon"
+    }
+   ],
+   "notas": ""
+  },
+  "a063": {
+   "artId": "power-suit-machine-gun",
+   "rotulo": "Power Suit Machine Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "powersuit-guard",
+   "equipmentTags": [
+    "Heavy Machinegun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Machine Gun",
+     "armyBook": "Heavy Machinegun"
+    }
+   ],
+   "notas": ""
+  },
+  "a064": {
+   "artId": "power-suit-heavy-plasma",
+   "rotulo": "Power Suit Heavy Plasma",
+   "confiancaRotulo": "alta",
+   "unitKey": "powersuit-guard",
+   "equipmentTags": [
+    "Plasma Cannon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Heavy Plasma",
+     "armyBook": "Plasma Cannon"
+    }
+   ],
+   "notas": ""
+  },
+  "a065": {
+   "artId": "biker-pistol",
+   "rotulo": "Biker Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-biker",
+   "equipmentTags": [
+    "Pistol|Iron-Slug Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Pistol",
+     "armyBook": [
+      "Pistol",
+      "Iron-Slug Pistol"
+     ]
+    }
+   ],
+   "notas": "Biker = Dwarf Bikers"
+  },
+  "a066": {
+   "artId": "biker-shotgun",
+   "rotulo": "Biker Shotgun",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-biker",
+   "equipmentTags": [
+    "Shotgun|Iron-Slug Shotgun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shotgun",
+     "armyBook": [
+      "Shotgun",
+      "Iron-Slug Shotgun"
+     ]
+    }
+   ],
+   "notas": ""
+  },
+  "a067": {
+   "artId": "biker-shotgun-2",
+   "rotulo": "Biker Shotgun",
+   "confiancaRotulo": "alta",
+   "unitKey": "dwarf-biker",
+   "equipmentTags": [
+    "Shotgun|Iron-Slug Shotgun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shotgun",
+     "armyBook": [
+      "Shotgun",
+      "Iron-Slug Shotgun"
+     ]
+    }
+   ],
+   "notas": "mesmo rótulo de a066 e figura quase igual (candidato separado, 1 cópia)"
+  },
+  "a068": {
+   "artId": "guardian-pick-borda",
+   "rotulo": "Guardian Pick",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardians",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Pick",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "só estilo borda; parece a mesma figura de a029 (cópias da borda separadas em dois grupos)"
+  },
+  "a069": {
+   "artId": "jetpack-warrior-pick-borda",
+   "rotulo": "Jetpack Warrior Pick",
+   "confiancaRotulo": "alta",
+   "unitKey": "jetpack-warrior",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Pick",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "só estilo borda; parece a mesma figura de a030"
+  },
+  "a070": {
+   "artId": "support-missile-launcher-borda",
+   "rotulo": "Support Missile Launcher",
+   "confiancaRotulo": "alta",
+   "unitKey": "thunder-support",
+   "equipmentTags": [
+    "Missile Launcher"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só estilo borda; parece a mesma figura de a033"
+  },
+  "a071": {
+   "artId": "elite-hammer-borda",
+   "rotulo": "Elite Hammer",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Heat Hammer|Great Heat Hammer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hammer",
+     "armyBook": [
+      "Heat Hammer",
+      "Great Heat Hammer"
+     ]
+    }
+   ],
+   "notas": "só estilo borda; parece a mesma figura de a042"
+  }
+ }
+}

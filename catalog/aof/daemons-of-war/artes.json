@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "daemons-of-war",
- "faccao": "Daemons of War",
+ "faccao": "Daemons of War\r",
  "sistema": "aof",
  "pdf": {
   "nome": "Daemons_of_War_-_BW.pdf",
@@ -12,14 +12,16 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "champion-whip",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Whip",
+   "rotuloImg": "arts/champion-whip/rotulo.png",
+   "unitKey": "champion-of-war",
+   "equipmentTags": [
+    "War Whip"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +53,16 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "champion-spear",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Spear",
+   "rotuloImg": "arts/champion-spear/rotulo.png",
+   "unitKey": "champion-of-war",
+   "equipmentTags": [
+    "Daemon Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -90,14 +94,16 @@
    "pendencias": []
   },
   {
-   "id": "a003",
+   "id": "champion-mace",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Mace",
+   "rotuloImg": "arts/champion-mace/rotulo.png",
+   "unitKey": "champion-of-war",
+   "equipmentTags": [
+    "Daemon Hammer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -129,14 +135,14 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "warrior-sargeant",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Sargeant",
+   "rotuloImg": "arts/warrior-sargeant/rotulo.png",
+   "unitKey": "blood-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -170,14 +176,14 @@
    ]
   },
   {
-   "id": "a005",
+   "id": "warrior-banner",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Banner",
+   "rotuloImg": "arts/warrior-banner/rotulo.png",
+   "unitKey": "blood-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -209,14 +215,14 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "warrior-musician",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Musician",
+   "rotuloImg": "arts/warrior-musician/rotulo.png",
+   "unitKey": "blood-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -250,14 +256,16 @@
    ]
   },
   {
-   "id": "a007",
+   "id": "warrior-sword",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Sword",
+   "rotuloImg": "arts/warrior-sword/rotulo.png",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [
+    "Blood Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -291,14 +299,16 @@
    ]
   },
   {
-   "id": "a008",
+   "id": "warrior-spear",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Spear",
+   "rotuloImg": "arts/warrior-spear/rotulo.png",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -330,14 +340,16 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "warrior-axes",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Axes",
+   "rotuloImg": "arts/warrior-axes/rotulo.png",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [
+    "Flame Axe"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -371,14 +383,16 @@
    ]
   },
   {
-   "id": "a010",
+   "id": "warrior-halberd",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Halberd",
+   "rotuloImg": "arts/warrior-halberd/rotulo.png",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [
+    "Halberd"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -410,14 +424,16 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "warrior-hammer",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Hammer",
+   "rotuloImg": "arts/warrior-hammer/rotulo.png",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -451,14 +467,16 @@
    ]
   },
   {
-   "id": "a012",
+   "id": "warrior-hammer-fino",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Hammer",
+   "rotuloImg": "arts/warrior-hammer-fino/rotulo.png",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -480,14 +498,14 @@
    ]
   },
   {
-   "id": "a013",
+   "id": "harbinger",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Harbinger",
+   "rotuloImg": "arts/harbinger/rotulo.png",
+   "unitKey": "harbinger-of-war",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -519,14 +537,14 @@
    "pendencias": []
   },
   {
-   "id": "a014",
+   "id": "hound-ver-1",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hound (Ver. 1)",
+   "rotuloImg": "arts/hound-ver-1/rotulo.png",
+   "unitKey": "blood-hounds",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -560,14 +578,14 @@
    ]
   },
   {
-   "id": "a015",
+   "id": "hound-ver-2",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hound (Ver. 2)",
+   "rotuloImg": "arts/hound-ver-2/rotulo.png",
+   "unitKey": "blood-hounds",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -601,14 +619,14 @@
    ]
   },
   {
-   "id": "a016",
+   "id": "fury-ver-1",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fury (Ver. 1)",
+   "rotuloImg": "arts/fury-ver-1/rotulo.png",
+   "unitKey": "war-furies",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -640,14 +658,14 @@
    "pendencias": []
   },
   {
-   "id": "a017",
+   "id": "fury-ver-2",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fury (Ver. 2)",
+   "rotuloImg": "arts/fury-ver-2/rotulo.png",
+   "unitKey": "war-furies",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -679,14 +697,14 @@
    "pendencias": []
   },
   {
-   "id": "a018",
+   "id": "beast-rider-spear",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Beast Rider Spear",
+   "rotuloImg": "arts/beast-rider-spear/rotulo.png",
+   "unitKey": "blood-beast-riders",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -720,14 +738,16 @@
    ]
   },
   {
-   "id": "a019",
+   "id": "beast-rider-axe",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Beast Rider Axe",
+   "rotuloImg": "arts/beast-rider-axe/rotulo.png",
+   "unitKey": "blood-beast-riders",
+   "equipmentTags": [
+    "Flame Axe"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -761,14 +781,16 @@
    ]
   },
   {
-   "id": "a020",
+   "id": "beast-rider-hammer",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Beast Rider Hammer",
+   "rotuloImg": "arts/beast-rider-hammer/rotulo.png",
+   "unitKey": "blood-beast-riders",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -800,14 +822,14 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "beast-champion",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Beast Champion",
+   "rotuloImg": "arts/beast-champion/rotulo.png",
+   "unitKey": "champion-of-war",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -841,14 +863,14 @@
    ]
   },
   {
-   "id": "a022",
+   "id": "cerberus",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Cerberus",
+   "rotuloImg": "arts/cerberus/rotulo.png",
+   "unitKey": "tri-hound-champion",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -882,14 +904,16 @@
    ]
   },
   {
-   "id": "a023",
+   "id": "warrior-axes-borda",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Axes",
+   "rotuloImg": "arts/warrior-axes-borda/rotulo.png",
+   "unitKey": "blood-warriors",
+   "equipmentTags": [
+    "Flame Axe"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -910,14 +934,14 @@
    ]
   },
   {
-   "id": "a024",
+   "id": "hound-ver-1-borda",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hound (Ver. 1)",
+   "rotuloImg": "arts/hound-ver-1-borda/rotulo.png",
+   "unitKey": "blood-hounds",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -939,14 +963,14 @@
    ]
   },
   {
-   "id": "a025",
+   "id": "fury-ver-2-borda",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fury (Ver. 2)",
+   "rotuloImg": "arts/fury-ver-2-borda/rotulo.png",
+   "unitKey": "war-furies",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [

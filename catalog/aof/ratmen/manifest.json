@@ -1,0 +1,3705 @@
+{
+  "schemaVersion": 1,
+  "packId": "ratmen",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "AOF",
+    "slug": "age-of-fantasy",
+    "armyForgeId": 4
+  },
+  "gameSystems": [
+    {
+      "code": "AOF",
+      "slug": "age-of-fantasy",
+      "armyForgeId": 4
+    },
+    {
+      "code": "AOFS",
+      "slug": "age-of-fantasy-skirmish",
+      "armyForgeId": 5
+    }
+  ],
+  "armyBook": {
+    "id": "tOWt5fgqK2nfpoBN",
+    "name": "Ratmen",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "tOWt5fgqK2nfpoBN",
+      "name": "Ratmen",
+      "version": "3.6.0",
+      "gameSystemId": 4,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "tOWt5fgqK2nfpoBN",
+      "name": "Ratmen",
+      "version": "3.6.0",
+      "gameSystemId": 5,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Ratmen_BW.pdf",
+    "pdfSha256": "36640b0594fd942cceba5c13fe1a9692a38770f5a7b181222455d0469e095f13",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "battle-master",
+      "names": [
+        "Battle Master"
+      ],
+      "armyForgeUnitId": "bl380Vc",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "champion",
+      "names": [
+        "Champion"
+      ],
+      "armyForgeUnitId": "IDU9HOb",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "militia",
+      "names": [
+        "Militia"
+      ],
+      "armyForgeUnitId": "L63ELXt",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "warriors",
+      "names": [
+        "Warriors"
+      ],
+      "armyForgeUnitId": "BUbrjeh",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "monks",
+      "names": [
+        "Monks"
+      ],
+      "armyForgeUnitId": "b29Jcwm",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "grenadiers",
+      "names": [
+        "Grenadiers"
+      ],
+      "armyForgeUnitId": "ePqfxCc",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "storm-veterans",
+      "names": [
+        "Storm Veterans",
+        "Storm Veteran"
+      ],
+      "armyForgeUnitId": "m4jaxg1",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "night-scouts",
+      "names": [
+        "Night Scouts",
+        "Night Scout"
+      ],
+      "armyForgeUnitId": "6vA1AhE",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "weapon-teams",
+      "names": [
+        "Weapon Teams",
+        "Weapon Team"
+      ],
+      "armyForgeUnitId": "wXtqtYK",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "rat-swarms",
+      "names": [
+        "Rat Swarms",
+        "Rat Swarm"
+      ],
+      "armyForgeUnitId": "r2YUptC",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "giant-rats",
+      "names": [
+        "Giant Rats",
+        "Giant Rat"
+      ],
+      "armyForgeUnitId": "etbxZuh",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "rat-ogres",
+      "names": [
+        "Rat Ogres",
+        "Rat Ogre"
+      ],
+      "armyForgeUnitId": "UmMDMd0",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "storm-ogres",
+      "names": [
+        "Storm Ogres",
+        "Storm Ogre"
+      ],
+      "armyForgeUnitId": "h2V8ceV",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          50.0
+        ],
+        "raw": "50",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "captain",
+      "candidateId": "a001",
+      "pdfLabel": "Captain",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "battle-master",
+      "equipmentTags": [
+        "Captain"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Captain",
+          "armyBook": "Battle Master + Captain"
+        }
+      ],
+      "notes": "Captain é só upgrade (Upgrade with one) do Battle Master; não existe unidade Captain",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0
+          ],
+          "front": "arts/captain/fino/frente.svg",
+          "back": "arts/captain/fino/verso.svg",
+          "canvasMm": [
+            36.618,
+            43.773
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            43.7,
+            36.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            0
+          ],
+          "front": "arts/captain/borda/frente.svg",
+          "back": "arts/captain/borda/verso.svg",
+          "canvasMm": [
+            40.005,
+            45.466
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            45.4,
+            39.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warlock",
+      "candidateId": "a002",
+      "pdfLabel": "Warlock",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion",
+      "equipmentTags": [
+        "Warlock"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warlock",
+          "armyBook": "Champion + Warlock"
+        }
+      ],
+      "notes": "Warlock é upgrade do Champion e também do Battle Master (mesmo efeito); escolhi Champion, usuário decide",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            1
+          ],
+          "front": "arts/warlock/fino/frente.svg",
+          "back": "arts/warlock/fino/verso.svg",
+          "canvasMm": [
+            37.169,
+            39.836
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            39.7,
+            36.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            1
+          ],
+          "front": "arts/warlock/borda/frente.svg",
+          "back": "arts/warlock/borda/verso.svg",
+          "canvasMm": [
+            40.513,
+            41.529
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            41.4,
+            40.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "army-standard",
+      "candidateId": "a003",
+      "pdfLabel": "Army Standard",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "battle-master",
+      "equipmentTags": [
+        "Army Standard Bearer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Army Standard",
+          "armyBook": "Army Standard Bearer"
+        }
+      ],
+      "notes": "upgrade de herói do Battle Master (não é porta-estandarte de tropa), por isso tag e não cosmetic",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            2
+          ],
+          "front": "arts/army-standard/fino/frente.svg",
+          "back": "arts/army-standard/fino/verso.svg",
+          "canvasMm": [
+            59.309,
+            61.468
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            61.4,
+            59.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            2
+          ],
+          "front": "arts/army-standard/borda/frente.svg",
+          "back": "arts/army-standard/borda/verso.svg",
+          "canvasMm": [
+            62.696,
+            63.161
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            63.1,
+            62.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "priest",
+      "candidateId": "a004",
+      "pdfLabel": "Priest",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion",
+      "equipmentTags": [
+        "Priest|Master Priest"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Priest",
+          "armyBook": [
+            "Priest",
+            "Master Priest"
+          ]
+        }
+      ],
+      "notes": "Priest e Master Priest são upgrades do Champion; o rótulo cabe nos dois",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            3
+          ],
+          "front": "arts/priest/fino/frente.svg",
+          "back": "arts/priest/fino/verso.svg",
+          "canvasMm": [
+            36.618,
+            38.481
+          ],
+          "frontBackIoU": 0.898,
+          "sizeMm": [
+            38.4,
+            36.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            3
+          ],
+          "front": "arts/priest/borda/frente.svg",
+          "back": "arts/priest/borda/verso.svg",
+          "canvasMm": [
+            40.344,
+            40.344
+          ],
+          "frontBackIoU": 0.929,
+          "sizeMm": [
+            40.2,
+            40.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "rat-master",
+      "candidateId": "a005",
+      "pdfLabel": "Rat Master",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "giant-rats",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "figura de mestre com ratos gigantes na coleira; o army book não tem modelo Rat Master, só os upgrades Combat Rat Master / Pathfinder Rat Master (Rat Swarms, Giant Rats, Rat Ogres), que valem para a unidade toda",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0
+          ],
+          "front": "arts/rat-master/fino/frente.svg",
+          "back": "arts/rat-master/fino/verso.svg",
+          "canvasMm": [
+            53.171,
+            30.057
+          ],
+          "frontBackIoU": 0.96,
+          "sizeMm": [
+            30.0,
+            52.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            0
+          ],
+          "front": "arts/rat-master/borda/frente.svg",
+          "back": "arts/rat-master/borda/verso.svg",
+          "canvasMm": [
+            56.896,
+            31.835
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            31.8,
+            56.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "engineer-drill",
+      "candidateId": "a006",
+      "pdfLabel": "Engineer Drill",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion",
+      "equipmentTags": [
+        "Drill Engineer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Engineer Drill",
+          "armyBook": "Drill Engineer"
+        }
+      ],
+      "notes": "Drill Engineer é upgrade do Champion e também do Battle Master; deixei com os outros engenheiros no Champion",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            1
+          ],
+          "front": "arts/engineer-drill/fino/frente.svg",
+          "back": "arts/engineer-drill/fino/verso.svg",
+          "canvasMm": [
+            41.106,
+            43.73
+          ],
+          "frontBackIoU": 0.972,
+          "sizeMm": [
+            43.6,
+            40.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            1
+          ],
+          "front": "arts/engineer-drill/borda/frente.svg",
+          "back": "arts/engineer-drill/borda/verso.svg",
+          "canvasMm": [
+            44.492,
+            45.424
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            45.3,
+            44.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "engineer-rocket",
+      "candidateId": "a007",
+      "pdfLabel": "Engineer Rocket",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion",
+      "equipmentTags": [
+        "Engineer",
+        "Rocket Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Engineer",
+          "armyBook": "Champion + Engineer"
+        },
+        {
+          "pdf": "Rocket",
+          "armyBook": "Rocket Launcher"
+        }
+      ],
+      "notes": "Engineer e Rocket Launcher só existem no Champion",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            2
+          ],
+          "front": "arts/engineer-rocket/fino/frente.svg",
+          "back": "arts/engineer-rocket/fino/verso.svg",
+          "canvasMm": [
+            30.734,
+            43.688
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            43.6,
+            30.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            2
+          ],
+          "front": "arts/engineer-rocket/borda/frente.svg",
+          "back": "arts/engineer-rocket/borda/verso.svg",
+          "canvasMm": [
+            34.121,
+            45.381
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            45.3,
+            33.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "engineer-rifle",
+      "candidateId": "a008",
+      "pdfLabel": "Engineer Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion",
+      "equipmentTags": [
+        "Engineer",
+        "Sniper Rifle|Overtuned Sniper Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Engineer",
+          "armyBook": "Champion + Engineer"
+        },
+        {
+          "pdf": "Rifle",
+          "armyBook": [
+            "Sniper Rifle",
+            "Overtuned Sniper Rifle"
+          ]
+        }
+      ],
+      "notes": "'Rifle' cabe em Sniper Rifle e Overtuned Sniper Rifle (deixei fora a Toxin Carbine, que é carabina)",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            3
+          ],
+          "front": "arts/engineer-rifle/fino/frente.svg",
+          "back": "arts/engineer-rifle/fino/verso.svg",
+          "canvasMm": [
+            49.488,
+            36.491
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            36.4,
+            49.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            3
+          ],
+          "front": "arts/engineer-rifle/borda/frente.svg",
+          "back": "arts/engineer-rifle/borda/verso.svg",
+          "canvasMm": [
+            52.874,
+            38.185
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            38.1,
+            52.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "assassin",
+      "candidateId": "a009",
+      "pdfLabel": "Assassin",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "battle-master",
+      "equipmentTags": [
+        "Master Assassin"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Assassin",
+          "armyBook": "Master Assassin"
+        }
+      ],
+      "notes": "Master Assassin é upgrade do Battle Master",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            4
+          ],
+          "front": "arts/assassin/fino/frente.svg",
+          "back": "arts/assassin/fino/verso.svg",
+          "canvasMm": [
+            37.296,
+            41.275
+          ],
+          "frontBackIoU": 0.962,
+          "sizeMm": [
+            41.1,
+            37.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            4
+          ],
+          "front": "arts/assassin/borda/frente.svg",
+          "back": "arts/assassin/borda/verso.svg",
+          "canvasMm": [
+            41.021,
+            43.138
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            43.0,
+            40.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ogre-captain",
+      "candidateId": "a010",
+      "pdfLabel": "Ogre Captain",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "battle-master",
+      "equipmentTags": [
+        "Rat Ogre"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Ogre Captain",
+          "armyBook": "Battle Master montado em Rat Ogre"
+        }
+      ],
+      "notes": "arte mostra capitão rato montado nas costas de um rat ogre; Battle Master tem a montaria Rat Ogre (Upgrade with one)",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0
+          ],
+          "front": "arts/ogre-captain/fino/frente.svg",
+          "back": "arts/ogre-captain/fino/verso.svg",
+          "canvasMm": [
+            83.82,
+            91.609
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            91.4,
+            83.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            0
+          ],
+          "front": "arts/ogre-captain/borda/frente.svg",
+          "back": "arts/ogre-captain/borda/verso.svg",
+          "canvasMm": [
+            87.545,
+            93.472
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            93.4,
+            87.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sword",
+      "candidateId": "a011",
+      "pdfLabel": "Warrior Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warriors",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "army book não tem 'Sword'; a arma padrão dos Warriors é Hand Weapon",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-sword/fino/frente.svg",
+          "back": "arts/warrior-sword/fino/verso.svg",
+          "canvasMm": [
+            32.3,
+            27.093
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            27.0,
+            32.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-sword/borda/frente.svg",
+          "back": "arts/warrior-sword/borda/verso.svg",
+          "canvasMm": [
+            35.687,
+            28.787
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            28.7,
+            35.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-spear",
+      "candidateId": "a012",
+      "pdfLabel": "Warrior Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warriors",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-spear/fino/frente.svg",
+          "back": "arts/warrior-spear/fino/verso.svg",
+          "canvasMm": [
+            41.571,
+            27.178
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            27.1,
+            41.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-spear/borda/frente.svg",
+          "back": "arts/warrior-spear/borda/verso.svg",
+          "canvasMm": [
+            43.773,
+            28.871
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            28.8,
+            43.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-halberd",
+      "candidateId": "a013",
+      "pdfLabel": "Warrior Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warriors",
+      "equipmentTags": [
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-halberd/fino/frente.svg",
+          "back": "arts/warrior-halberd/fino/verso.svg",
+          "canvasMm": [
+            43.773,
+            27.136
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            27.0,
+            43.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-halberd/borda/frente.svg",
+          "back": "arts/warrior-halberd/borda/verso.svg",
+          "canvasMm": [
+            45.466,
+            28.956
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            28.9,
+            45.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sargeant",
+      "candidateId": "a014",
+      "pdfLabel": "Warrior Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warriors",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "rótulo impresso com erro de grafia (Sargeant)",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sargeant/fino/frente.svg",
+          "back": "arts/warrior-sargeant/fino/verso.svg",
+          "canvasMm": [
+            30.861,
+            30.522
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            30.4,
+            30.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sargeant/borda/frente.svg",
+          "back": "arts/warrior-sargeant/borda/verso.svg",
+          "canvasMm": [
+            34.248,
+            32.216
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            32.1,
+            34.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-banner",
+      "candidateId": "a015",
+      "pdfLabel": "Warrior Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warriors",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-banner/fino/frente.svg",
+          "back": "arts/warrior-banner/fino/verso.svg",
+          "canvasMm": [
+            35.306,
+            49.361
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            49.3,
+            35.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-banner/borda/frente.svg",
+          "back": "arts/warrior-banner/borda/verso.svg",
+          "canvasMm": [
+            38.693,
+            51.054
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            51.0,
+            38.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-musician",
+      "candidateId": "a016",
+      "pdfLabel": "Warrior Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warriors",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-musician/fino/frente.svg",
+          "back": "arts/warrior-musician/fino/verso.svg",
+          "canvasMm": [
+            28.194,
+            29.083
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            29.0,
+            27.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-musician/borda/frente.svg",
+          "back": "arts/warrior-musician/borda/verso.svg",
+          "canvasMm": [
+            31.581,
+            30.819
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            30.6,
+            31.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "driller-team",
+      "candidateId": "a017",
+      "pdfLabel": "Driller Team",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "weapon-teams",
+      "equipmentTags": [
+        "Heavy Drill"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Driller",
+          "armyBook": "Heavy Drill"
+        }
+      ],
+      "notes": "Team = Weapon Teams; broca = Heavy Drill",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0
+          ],
+          "front": "arts/driller-team/fino/frente.svg",
+          "back": "arts/driller-team/fino/verso.svg",
+          "canvasMm": [
+            67.183,
+            39.031
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            38.9,
+            67.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            0
+          ],
+          "front": "arts/driller-team/borda/frente.svg",
+          "back": "arts/driller-team/borda/verso.svg",
+          "canvasMm": [
+            70.57,
+            40.809
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            40.7,
+            70.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "flamer-team",
+      "candidateId": "a018",
+      "pdfLabel": "Flamer Team",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "weapon-teams",
+      "equipmentTags": [
+        "Flamethrower"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Flamer",
+          "armyBook": "Flamethrower"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            1
+          ],
+          "front": "arts/flamer-team/fino/frente.svg",
+          "back": "arts/flamer-team/fino/verso.svg",
+          "canvasMm": [
+            60.071,
+            47.498
+          ],
+          "frontBackIoU": 0.958,
+          "sizeMm": [
+            47.4,
+            59.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            1
+          ],
+          "front": "arts/flamer-team/borda/frente.svg",
+          "back": "arts/flamer-team/borda/verso.svg",
+          "canvasMm": [
+            63.458,
+            49.191
+          ],
+          "frontBackIoU": 0.966,
+          "sizeMm": [
+            49.1,
+            63.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gatling-team",
+      "candidateId": "a019",
+      "pdfLabel": "Gatling Team",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "weapon-teams",
+      "equipmentTags": [
+        "Gatling Gun|Overtuned Gatling Gun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gatling",
+          "armyBook": [
+            "Gatling Gun",
+            "Overtuned Gatling Gun"
+          ]
+        }
+      ],
+      "notes": "o rótulo cabe nas duas gatlings",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            2
+          ],
+          "front": "arts/gatling-team/fino/frente.svg",
+          "back": "arts/gatling-team/fino/verso.svg",
+          "canvasMm": [
+            53.34,
+            28.025
+          ],
+          "frontBackIoU": 0.949,
+          "sizeMm": [
+            27.9,
+            53.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            2
+          ],
+          "front": "arts/gatling-team/borda/frente.svg",
+          "back": "arts/gatling-team/borda/verso.svg",
+          "canvasMm": [
+            56.727,
+            29.718
+          ],
+          "frontBackIoU": 0.961,
+          "sizeMm": [
+            29.6,
+            56.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "mortar-team",
+      "candidateId": "a020",
+      "pdfLabel": "Mortar Team",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "weapon-teams",
+      "equipmentTags": [
+        "Toxin Mortar"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Mortar",
+          "armyBook": "Toxin Mortar"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0
+          ],
+          "front": "arts/mortar-team/fino/frente.svg",
+          "back": "arts/mortar-team/fino/verso.svg",
+          "canvasMm": [
+            43.984,
+            45.043
+          ],
+          "frontBackIoU": 0.959,
+          "sizeMm": [
+            45.0,
+            43.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            0
+          ],
+          "front": "arts/mortar-team/borda/frente.svg",
+          "back": "arts/mortar-team/borda/verso.svg",
+          "canvasMm": [
+            47.371,
+            46.736
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            46.7,
+            47.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "roller-biker",
+      "candidateId": "a021",
+      "pdfLabel": "Roller Biker",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "weapon-teams",
+      "equipmentTags": [
+        "Death Roller"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Roller Biker",
+          "armyBook": "Weapon Team com Death Roller"
+        }
+      ],
+      "notes": "rato pilotando roda com espetos; Death Roller é a arma padrão dos Weapon Teams. Alternativa: Great Death Roller (base 120x92, bem maior que a arte)",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            1
+          ],
+          "front": "arts/roller-biker/fino/frente.svg",
+          "back": "arts/roller-biker/fino/verso.svg",
+          "canvasMm": [
+            76.073,
+            51.223
+          ],
+          "frontBackIoU": 0.952,
+          "sizeMm": [
+            51.1,
+            75.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            1
+          ],
+          "front": "arts/roller-biker/borda/frente.svg",
+          "back": "arts/roller-biker/borda/verso.svg",
+          "canvasMm": [
+            79.46,
+            52.917
+          ],
+          "frontBackIoU": 0.959,
+          "sizeMm": [
+            52.8,
+            79.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "milita-v1",
+      "candidateId": "a022",
+      "pdfLabel": "Milita V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "militia",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "rótulo impresso com erro de grafia (Milita = Militia)",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/milita-v1/fino/frente.svg",
+          "back": "arts/milita-v1/fino/verso.svg",
+          "canvasMm": [
+            32.893,
+            26.331
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            26.2,
+            32.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/milita-v1/borda/frente.svg",
+          "back": "arts/milita-v1/borda/verso.svg",
+          "canvasMm": [
+            36.28,
+            28.067
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            27.9,
+            36.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "milita-v2",
+      "candidateId": "a023",
+      "pdfLabel": "Milita V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "militia",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "rótulo impresso com erro de grafia (Milita = Militia)",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/milita-v2/fino/frente.svg",
+          "back": "arts/milita-v2/fino/verso.svg",
+          "canvasMm": [
+            26.289,
+            36.745
+          ],
+          "frontBackIoU": 0.94,
+          "sizeMm": [
+            36.7,
+            26.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/milita-v2/borda/frente.svg",
+          "back": "arts/milita-v2/borda/verso.svg",
+          "canvasMm": [
+            29.676,
+            38.439
+          ],
+          "frontBackIoU": 0.966,
+          "sizeMm": [
+            38.4,
+            29.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-greatsword",
+      "candidateId": "a024",
+      "pdfLabel": "Veteran Greatsword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-veterans",
+      "equipmentTags": [
+        "Great Weapon|Siege-Breaker Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Veteran",
+          "armyBook": "Storm Veterans"
+        },
+        {
+          "pdf": "Greatsword",
+          "armyBook": [
+            "Great Weapon",
+            "Siege-Breaker Sword"
+          ]
+        }
+      ],
+      "notes": "Veteran = Storm Veterans (Elite Ratmen Warriors); espadão = Great Weapon (troca de todos) ou Siege-Breaker Sword (troca de um)",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/veteran-greatsword/fino/frente.svg",
+          "back": "arts/veteran-greatsword/fino/verso.svg",
+          "canvasMm": [
+            33.655,
+            41.825
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            41.7,
+            33.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/veteran-greatsword/borda/frente.svg",
+          "back": "arts/veteran-greatsword/borda/verso.svg",
+          "canvasMm": [
+            37.042,
+            43.519
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            43.4,
+            36.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-halberd",
+      "candidateId": "a025",
+      "pdfLabel": "Veteran Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-veterans",
+      "equipmentTags": [
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Veteran",
+          "armyBook": "Storm Veterans"
+        }
+      ],
+      "notes": "Veteran = Storm Veterans; Halberd é a arma padrão",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/veteran-halberd/fino/frente.svg",
+          "back": "arts/veteran-halberd/fino/verso.svg",
+          "canvasMm": [
+            38.693,
+            46.143
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            46.1,
+            38.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/veteran-halberd/borda/frente.svg",
+          "back": "arts/veteran-halberd/borda/verso.svg",
+          "canvasMm": [
+            42.079,
+            47.837
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            47.8,
+            41.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-sargeant",
+      "candidateId": "a026",
+      "pdfLabel": "Veteran Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-veterans",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Veteran",
+          "armyBook": "Storm Veterans"
+        }
+      ],
+      "notes": "Veteran = Storm Veterans; rótulo com erro de grafia (Sargeant)",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0
+          ],
+          "front": "arts/veteran-sargeant/fino/frente.svg",
+          "back": "arts/veteran-sargeant/fino/verso.svg",
+          "canvasMm": [
+            22.437,
+            30.099
+          ],
+          "frontBackIoU": 0.944,
+          "sizeMm": [
+            30.0,
+            22.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            0
+          ],
+          "front": "arts/veteran-sargeant/borda/frente.svg",
+          "back": "arts/veteran-sargeant/borda/verso.svg",
+          "canvasMm": [
+            25.823,
+            31.792
+          ],
+          "frontBackIoU": 0.96,
+          "sizeMm": [
+            31.7,
+            25.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-banner",
+      "candidateId": "a027",
+      "pdfLabel": "Veteran Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-veterans",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Veteran",
+          "armyBook": "Storm Veterans"
+        }
+      ],
+      "notes": "Veteran = Storm Veterans",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            1
+          ],
+          "front": "arts/veteran-banner/fino/frente.svg",
+          "back": "arts/veteran-banner/fino/verso.svg",
+          "canvasMm": [
+            28.152,
+            54.652
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            54.5,
+            27.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            1
+          ],
+          "front": "arts/veteran-banner/borda/frente.svg",
+          "back": "arts/veteran-banner/borda/verso.svg",
+          "canvasMm": [
+            31.538,
+            56.346
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            56.2,
+            31.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-musician",
+      "candidateId": "a028",
+      "pdfLabel": "Veteran Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-veterans",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Veteran",
+          "armyBook": "Storm Veterans"
+        }
+      ],
+      "notes": "Veteran = Storm Veterans",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            2
+          ],
+          "front": "arts/veteran-musician/fino/frente.svg",
+          "back": "arts/veteran-musician/fino/verso.svg",
+          "canvasMm": [
+            26.543,
+            28.236
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            28.1,
+            26.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            2
+          ],
+          "front": "arts/veteran-musician/borda/frente.svg",
+          "back": "arts/veteran-musician/borda/verso.svg",
+          "canvasMm": [
+            29.93,
+            29.93
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            29.8,
+            29.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "censer-monk",
+      "candidateId": "a029",
+      "pdfLabel": "Censer Monk",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "monks",
+      "equipmentTags": [
+        "Censer Flail|Great Censer Flail"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Censer",
+          "armyBook": [
+            "Censer Flail",
+            "Great Censer Flail"
+          ]
+        }
+      ],
+      "notes": "Censer Flail é a padrão; Great Censer Flail troca um modelo",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/censer-monk/fino/frente.svg",
+          "back": "arts/censer-monk/fino/verso.svg",
+          "canvasMm": [
+            32.343,
+            28.956
+          ],
+          "frontBackIoU": 0.793,
+          "sizeMm": [
+            28.9,
+            32.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/censer-monk/borda/frente.svg",
+          "back": "arts/censer-monk/borda/verso.svg",
+          "canvasMm": [
+            36.068,
+            30.819
+          ],
+          "frontBackIoU": 0.854,
+          "sizeMm": [
+            30.7,
+            35.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "dagger-monk",
+      "candidateId": "a030",
+      "pdfLabel": "Dagger Monk",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "monks",
+      "equipmentTags": [
+        "Dual Hand Weapons"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Dagger",
+          "armyBook": "Dual Hand Weapons"
+        }
+      ],
+      "notes": "arte mostra monge com duas lâminas curvas; a opção dos Monks é Dual Hand Weapons",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/dagger-monk/fino/frente.svg",
+          "back": "arts/dagger-monk/fino/verso.svg",
+          "canvasMm": [
+            24.426,
+            29.168
+          ],
+          "frontBackIoU": 0.786,
+          "sizeMm": [
+            29.0,
+            24.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 50,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/dagger-monk/borda/frente.svg",
+          "back": "arts/dagger-monk/borda/verso.svg",
+          "canvasMm": [
+            28.152,
+            31.03
+          ],
+          "frontBackIoU": 0.857,
+          "sizeMm": [
+            30.9,
+            27.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "monk-sargeant",
+      "candidateId": "a031",
+      "pdfLabel": "Monk Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "monks",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "rótulo com erro de grafia (Sargeant)",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            0
+          ],
+          "front": "arts/monk-sargeant/fino/frente.svg",
+          "back": "arts/monk-sargeant/fino/verso.svg",
+          "canvasMm": [
+            29.76,
+            44.238
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            44.1,
+            29.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            0
+          ],
+          "front": "arts/monk-sargeant/borda/frente.svg",
+          "back": "arts/monk-sargeant/borda/verso.svg",
+          "canvasMm": [
+            33.486,
+            46.101
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            46.0,
+            33.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "monk-banner",
+      "candidateId": "a032",
+      "pdfLabel": "Monk Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "monks",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            1
+          ],
+          "front": "arts/monk-banner/fino/frente.svg",
+          "back": "arts/monk-banner/fino/verso.svg",
+          "canvasMm": [
+            29.633,
+            50.165
+          ],
+          "frontBackIoU": 0.937,
+          "sizeMm": [
+            50.0,
+            29.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            1
+          ],
+          "front": "arts/monk-banner/borda/frente.svg",
+          "back": "arts/monk-banner/borda/verso.svg",
+          "canvasMm": [
+            33.359,
+            52.028
+          ],
+          "frontBackIoU": 0.957,
+          "sizeMm": [
+            51.9,
+            33.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "monk-musician",
+      "candidateId": "a033",
+      "pdfLabel": "Monk Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "monks",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            2
+          ],
+          "front": "arts/monk-musician/fino/frente.svg",
+          "back": "arts/monk-musician/fino/verso.svg",
+          "canvasMm": [
+            31.454,
+            50.546
+          ],
+          "frontBackIoU": 0.942,
+          "sizeMm": [
+            50.5,
+            31.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            2
+          ],
+          "front": "arts/monk-musician/borda/frente.svg",
+          "back": "arts/monk-musician/borda/verso.svg",
+          "canvasMm": [
+            35.221,
+            52.409
+          ],
+          "frontBackIoU": 0.959,
+          "sizeMm": [
+            52.3,
+            35.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scout",
+      "candidateId": "a034",
+      "pdfLabel": "Scout",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "night-scouts",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "genericName da unidade é Scouts",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/scout/fino/frente.svg",
+          "back": "arts/scout/fino/verso.svg",
+          "canvasMm": [
+            31.411,
+            25.569
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            25.5,
+            31.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 52,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/scout/borda/frente.svg",
+          "back": "arts/scout/borda/verso.svg",
+          "canvasMm": [
+            34.798,
+            27.305
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            27.2,
+            34.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ranger",
+      "candidateId": "a035",
+      "pdfLabel": "Ranger",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "night-scouts",
+      "equipmentTags": [
+        "Ranger Bow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Ranger",
+          "armyBook": "Night Scouts + Ranger Bow"
+        }
+      ],
+      "notes": "arte com arco; Night Scouts podem trocar Dual Daggers por Ranger Bow",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/ranger/fino/frente.svg",
+          "back": "arts/ranger/fino/verso.svg",
+          "canvasMm": [
+            30.438,
+            28.617
+          ],
+          "frontBackIoU": 0.951,
+          "sizeMm": [
+            28.5,
+            30.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 53,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/ranger/borda/frente.svg",
+          "back": "arts/ranger/borda/verso.svg",
+          "canvasMm": [
+            33.824,
+            30.311
+          ],
+          "frontBackIoU": 0.965,
+          "sizeMm": [
+            30.2,
+            33.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "grenadier",
+      "candidateId": "a036",
+      "pdfLabel": "Grenadier",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "grenadiers",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/grenadier/fino/frente.svg",
+          "back": "arts/grenadier/fino/verso.svg",
+          "canvasMm": [
+            33.824,
+            25.781
+          ],
+          "frontBackIoU": 0.965,
+          "sizeMm": [
+            25.7,
+            33.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/grenadier/borda/frente.svg",
+          "back": "arts/grenadier/borda/verso.svg",
+          "canvasMm": [
+            37.211,
+            27.474
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            27.3,
+            36.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "swarm",
+      "candidateId": "a037",
+      "pdfLabel": "Swarm",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "rat-swarms",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Swarm",
+          "armyBook": "Rat Swarms"
+        }
+      ],
+      "notes": "pilha de ratos pequenos, ~35 mm de largura (base de 40 mm)",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/swarm/fino/frente.svg",
+          "back": "arts/swarm/fino/verso.svg",
+          "canvasMm": [
+            35.687,
+            13.377
+          ],
+          "frontBackIoU": 0.865,
+          "sizeMm": [
+            13.3,
+            35.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/swarm/borda/frente.svg",
+          "back": "arts/swarm/borda/verso.svg",
+          "canvasMm": [
+            39.031,
+            15.071
+          ],
+          "frontBackIoU": 0.902,
+          "sizeMm": [
+            15.0,
+            38.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "giant-rat-swarm",
+      "candidateId": "a038",
+      "pdfLabel": "Giant Rat Swarm",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "rat-swarms",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Giant Rat Swarm",
+          "armyBook": "Rat Swarms"
+        }
+      ],
+      "notes": "pilha de ratos gigantes com ~42 mm de largura, tamanho de base de enxame (40 mm). Alternativa: Giant Rats (base de 25 mm, modelo único)",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/giant-rat-swarm/fino/frente.svg",
+          "back": "arts/giant-rat-swarm/fino/verso.svg",
+          "canvasMm": [
+            42.46,
+            27.136
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            27.0,
+            42.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 56,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/giant-rat-swarm/borda/frente.svg",
+          "back": "arts/giant-rat-swarm/borda/verso.svg",
+          "canvasMm": [
+            46.186,
+            28.998
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            28.9,
+            46.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "giant-rat-v1",
+      "candidateId": "a039",
+      "pdfLabel": "Giant Rat V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "giant-rats",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/giant-rat-v1/fino/frente.svg",
+          "back": "arts/giant-rat-v1/fino/verso.svg",
+          "canvasMm": [
+            16.214,
+            10.16
+          ],
+          "frontBackIoU": 0.943,
+          "sizeMm": [
+            10.1,
+            16.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 57,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/giant-rat-v1/borda/frente.svg",
+          "back": "arts/giant-rat-v1/borda/verso.svg",
+          "canvasMm": [
+            19.939,
+            12.023
+          ],
+          "frontBackIoU": 0.96,
+          "sizeMm": [
+            11.9,
+            19.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "giant-rat-v2",
+      "candidateId": "a040",
+      "pdfLabel": "Giant Rat V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "giant-rats",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/giant-rat-v2/fino/frente.svg",
+          "back": "arts/giant-rat-v2/fino/verso.svg",
+          "canvasMm": [
+            12.446,
+            16.891
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            16.8,
+            12.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 57,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/giant-rat-v2/borda/frente.svg",
+          "back": "arts/giant-rat-v2/borda/verso.svg",
+          "canvasMm": [
+            16.214,
+            18.754
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            18.6,
+            15.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ogre-great-weapon",
+      "candidateId": "a041",
+      "pdfLabel": "Ogre Great Weapon",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "rat-ogres",
+      "equipmentTags": [
+        "Great Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Ogre",
+          "armyBook": "Rat Ogres"
+        }
+      ],
+      "notes": "Ogre = Rat Ogres (os Storm Ogres vêm rotulados como Storm Ogre)",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ogre-great-weapon/fino/frente.svg",
+          "back": "arts/ogre-great-weapon/fino/verso.svg",
+          "canvasMm": [
+            65.066,
+            49.869
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            49.8,
+            64.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 58,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ogre-great-weapon/borda/frente.svg",
+          "back": "arts/ogre-great-weapon/borda/verso.svg",
+          "canvasMm": [
+            68.792,
+            51.731
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            51.6,
+            68.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ogre-spiked-knuckles",
+      "candidateId": "a042",
+      "pdfLabel": "Ogre Spiked Knuckles",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "rat-ogres",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "Rat Ogres não têm 'Spiked Knuckles'; armas: Sharp Claws (padrão), Great Weapon, Arm-Flamer",
+      "styles": {
+        "fino": {
+          "page": 26,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ogre-spiked-knuckles/fino/frente.svg",
+          "back": "arts/ogre-spiked-knuckles/fino/verso.svg",
+          "canvasMm": [
+            58.674,
+            47.032
+          ],
+          "frontBackIoU": 0.958,
+          "sizeMm": [
+            46.9,
+            58.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 59,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ogre-spiked-knuckles/borda/frente.svg",
+          "back": "arts/ogre-spiked-knuckles/borda/verso.svg",
+          "canvasMm": [
+            62.399,
+            48.895
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            48.8,
+            62.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ogre-claws",
+      "candidateId": "a043",
+      "pdfLabel": "Ogre Claws",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "rat-ogres",
+      "equipmentTags": [
+        "Sharp Claws"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Ogre",
+          "armyBook": "Rat Ogres"
+        },
+        {
+          "pdf": "Claws",
+          "armyBook": "Sharp Claws"
+        }
+      ],
+      "notes": "Ogre = Rat Ogres; Sharp Claws é a arma padrão",
+      "styles": {
+        "fino": {
+          "page": 27,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ogre-claws/fino/frente.svg",
+          "back": "arts/ogre-claws/fino/verso.svg",
+          "canvasMm": [
+            54.822,
+            50.08
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            50.0,
+            54.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 60,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ogre-claws/borda/frente.svg",
+          "back": "arts/ogre-claws/borda/verso.svg",
+          "canvasMm": [
+            58.547,
+            51.943
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            51.8,
+            58.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-ogre-drills",
+      "candidateId": "a044",
+      "pdfLabel": "Storm Ogre Drills",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-ogres",
+      "equipmentTags": [
+        "Drill-Fists"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Drills",
+          "armyBook": "Drill-Fists"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/storm-ogre-drills/fino/frente.svg",
+          "back": "arts/storm-ogre-drills/fino/verso.svg",
+          "canvasMm": [
+            55.838,
+            61.256
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            61.1,
+            55.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 61,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/storm-ogre-drills/borda/frente.svg",
+          "back": "arts/storm-ogre-drills/borda/verso.svg",
+          "canvasMm": [
+            59.563,
+            63.119
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            63.0,
+            59.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-ogre-shock",
+      "candidateId": "a045",
+      "pdfLabel": "Storm Ogre Shock",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-ogres",
+      "equipmentTags": [
+        "Shock-Fists"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shock",
+          "armyBook": "Shock-Fists"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 29,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/storm-ogre-shock/fino/frente.svg",
+          "back": "arts/storm-ogre-shock/fino/verso.svg",
+          "canvasMm": [
+            62.357,
+            63.881
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            63.8,
+            62.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 62,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/storm-ogre-shock/borda/frente.svg",
+          "back": "arts/storm-ogre-shock/borda/verso.svg",
+          "canvasMm": [
+            66.082,
+            65.744
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            65.6,
+            65.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-ogre-rollers",
+      "candidateId": "a046",
+      "pdfLabel": "Storm Ogre Rollers",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-ogres",
+      "equipmentTags": [
+        "Roller-Fists"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rollers",
+          "armyBook": "Roller-Fists"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 30,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/storm-ogre-rollers/fino/frente.svg",
+          "back": "arts/storm-ogre-rollers/fino/verso.svg",
+          "canvasMm": [
+            61.256,
+            63.542
+          ],
+          "frontBackIoU": 0.966,
+          "sizeMm": [
+            63.4,
+            61.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 63,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/storm-ogre-rollers/borda/frente.svg",
+          "back": "arts/storm-ogre-rollers/borda/verso.svg",
+          "canvasMm": [
+            66.506,
+            66.167
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            66.0,
+            66.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-ogre-fists",
+      "candidateId": "a047",
+      "pdfLabel": "Storm Ogre Fists",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-ogres",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "arte com manoplas sem arma; o army book não tem punho simples (Flame/Shock/Roller/Drill/Gatling/Mortar-Fists)",
+      "styles": {
+        "fino": {
+          "page": 31,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/storm-ogre-fists/fino/frente.svg",
+          "back": "arts/storm-ogre-fists/fino/verso.svg",
+          "canvasMm": [
+            56.134,
+            56.769
+          ],
+          "frontBackIoU": 0.962,
+          "sizeMm": [
+            56.6,
+            55.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 64,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/storm-ogre-fists/borda/frente.svg",
+          "back": "arts/storm-ogre-fists/borda/verso.svg",
+          "canvasMm": [
+            59.859,
+            58.632
+          ],
+          "frontBackIoU": 0.966,
+          "sizeMm": [
+            58.5,
+            59.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-ogre-gatling",
+      "candidateId": "a048",
+      "pdfLabel": "Storm Ogre Gatling",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-ogres",
+      "equipmentTags": [
+        "Gatling-Fists|Overtuned Gatling-Fists"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gatling",
+          "armyBook": [
+            "Gatling-Fists",
+            "Overtuned Gatling-Fists"
+          ]
+        }
+      ],
+      "notes": "o rótulo cabe nas duas",
+      "styles": {
+        "fino": {
+          "page": 32,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/storm-ogre-gatling/fino/frente.svg",
+          "back": "arts/storm-ogre-gatling/fino/verso.svg",
+          "canvasMm": [
+            60.833,
+            57.531
+          ],
+          "frontBackIoU": 0.953,
+          "sizeMm": [
+            57.4,
+            60.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 65,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/storm-ogre-gatling/borda/frente.svg",
+          "back": "arts/storm-ogre-gatling/borda/verso.svg",
+          "canvasMm": [
+            64.516,
+            59.394
+          ],
+          "frontBackIoU": 0.962,
+          "sizeMm": [
+            59.3,
+            64.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-ogre-mortar",
+      "candidateId": "a049",
+      "pdfLabel": "Storm Ogre Mortar",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-ogres",
+      "equipmentTags": [
+        "Mortar-Fists"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Mortar",
+          "armyBook": "Mortar-Fists"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 33,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/storm-ogre-mortar/fino/frente.svg",
+          "back": "arts/storm-ogre-mortar/fino/verso.svg",
+          "canvasMm": [
+            77.301,
+            63.839
+          ],
+          "frontBackIoU": 0.951,
+          "sizeMm": [
+            63.8,
+            77.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 66,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/storm-ogre-mortar/borda/frente.svg",
+          "back": "arts/storm-ogre-mortar/borda/verso.svg",
+          "canvasMm": [
+            81.576,
+            65.701
+          ],
+          "frontBackIoU": 0.96,
+          "sizeMm": [
+            65.6,
+            80.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-ogre-flamer",
+      "candidateId": "a050",
+      "pdfLabel": "Storm Ogre Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-ogres",
+      "equipmentTags": [
+        "Flame-Fists"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Flamer",
+          "armyBook": "Flame-Fists"
+        }
+      ],
+      "notes": "Flame-Fists é a arma padrão dos Storm Ogres",
+      "styles": {
+        "fino": {
+          "page": 34,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/storm-ogre-flamer/fino/frente.svg",
+          "back": "arts/storm-ogre-flamer/fino/verso.svg",
+          "canvasMm": [
+            67.691,
+            64.685
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            64.6,
+            67.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 67,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/storm-ogre-flamer/borda/frente.svg",
+          "back": "arts/storm-ogre-flamer/borda/verso.svg",
+          "canvasMm": [
+            71.416,
+            66.548
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            66.5,
+            71.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

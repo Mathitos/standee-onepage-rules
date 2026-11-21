@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "beastmen",
- "faccao": "Beastmen",
+ "faccao": "Beastmen\r",
  "sistema": "aof",
  "pdf": {
   "nome": "Beastmen_-_BW.pdf",
@@ -12,14 +12,14 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "beast-lord",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Beast Lord",
+   "rotuloImg": "arts/beast-lord/rotulo.png",
+   "unitKey": "ndoli-beast-lord",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +51,16 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "beast-pet",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "rotulo": "Beast Pet",
+   "rotuloImg": "arts/beast-pet/rotulo.png",
+   "unitKey": "ndoli-beast-lord",
+   "equipmentTags": [
+    "Beast Companion"
+   ],
+   "cosmetic": "companion",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -90,14 +92,14 @@
    "pendencias": []
   },
   {
-   "id": "a003",
+   "id": "brute-lord",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Brute Lord",
+   "rotuloImg": "arts/brute-lord/rotulo.png",
+   "unitKey": "kemba-brute-boss",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -129,14 +131,14 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "centaur-lord",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Centaur Lord",
+   "rotuloImg": "arts/centaur-lord/rotulo.png",
+   "unitKey": "ndwari-centaur-boss",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -168,14 +170,14 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "hunt-master-1",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hunt Master 1",
+   "rotuloImg": "arts/hunt-master-1/rotulo.png",
+   "unitKey": "waheni-hunt-master",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -207,14 +209,14 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "hunt-master-2",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hunt Master 2",
+   "rotuloImg": "arts/hunt-master-2/rotulo.png",
+   "unitKey": "waheni-hunt-master",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -246,14 +248,16 @@
    "pendencias": []
   },
   {
-   "id": "a007",
+   "id": "raid-master-1",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Raid Master 1",
+   "rotuloImg": "arts/raid-master-1/rotulo.png",
+   "unitKey": "waheni-hunt-master",
+   "equipmentTags": [
+    "Raider Cloak"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -285,14 +289,16 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "raid-master-2",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Raid Master 2",
+   "rotuloImg": "arts/raid-master-2/rotulo.png",
+   "unitKey": "waheni-hunt-master",
+   "equipmentTags": [
+    "Raider Cloak"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -324,14 +330,16 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "shaman",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Shaman",
+   "rotuloImg": "arts/shaman/rotulo.png",
+   "unitKey": "waheni-hunt-master",
+   "equipmentTags": [
+    "Shaman"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -365,14 +373,16 @@
    ]
   },
   {
-   "id": "a010",
+   "id": "warrior-sword-1",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Sword 1",
+   "rotuloImg": "arts/warrior-sword-1/rotulo.png",
+   "unitKey": "ndoli-warriors",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -404,14 +414,16 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "warrior-sword-2",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Sword 2",
+   "rotuloImg": "arts/warrior-sword-2/rotulo.png",
+   "unitKey": "ndoli-warriors",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -443,14 +455,16 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "warrior-spear-1",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Spear 1",
+   "rotuloImg": "arts/warrior-spear-1/rotulo.png",
+   "unitKey": "ndoli-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -484,14 +498,16 @@
    ]
   },
   {
-   "id": "a013",
+   "id": "warrior-spear-2",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Spear 2",
+   "rotuloImg": "arts/warrior-spear-2/rotulo.png",
+   "unitKey": "ndoli-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -523,14 +539,16 @@
    "pendencias": []
   },
   {
-   "id": "a014",
+   "id": "warrior-spear-2-a014",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Spear 2",
+   "rotuloImg": "arts/warrior-spear-2-a014/rotulo.png",
+   "unitKey": "ndoli-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -551,14 +569,14 @@
    ]
   },
   {
-   "id": "a015",
+   "id": "warrior-sergeant",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Sergeant",
+   "rotuloImg": "arts/warrior-sergeant/rotulo.png",
+   "unitKey": "ndoli-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -590,14 +608,14 @@
    "pendencias": []
   },
   {
-   "id": "a016",
+   "id": "warrior-banner",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Banner",
+   "rotuloImg": "arts/warrior-banner/rotulo.png",
+   "unitKey": "ndoli-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -629,14 +647,14 @@
    "pendencias": []
   },
   {
-   "id": "a017",
+   "id": "warrior-musician",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Musician",
+   "rotuloImg": "arts/warrior-musician/rotulo.png",
+   "unitKey": "ndoli-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -668,14 +686,16 @@
    "pendencias": []
   },
   {
-   "id": "a018",
+   "id": "elite-sword",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elite Sword",
+   "rotuloImg": "arts/elite-sword/rotulo.png",
+   "unitKey": "ndoli-elites",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -707,14 +727,14 @@
    "pendencias": []
   },
   {
-   "id": "a019",
+   "id": "elite-spear",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Elite Spear",
+   "rotuloImg": "arts/elite-spear/rotulo.png",
+   "unitKey": "ndoli-elites",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -746,14 +766,16 @@
    "pendencias": []
   },
   {
-   "id": "a020",
+   "id": "elite-great-weapon",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elite Great Weapon",
+   "rotuloImg": "arts/elite-great-weapon/rotulo.png",
+   "unitKey": "ndoli-elites",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -785,14 +807,14 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "elite-champion",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Elite Champion",
+   "rotuloImg": "arts/elite-champion/rotulo.png",
+   "unitKey": "ndoli-elites",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -824,14 +846,14 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "elite-musician",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Elite Musician",
+   "rotuloImg": "arts/elite-musician/rotulo.png",
+   "unitKey": "ndoli-elites",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -863,14 +885,14 @@
    "pendencias": []
   },
   {
-   "id": "a023",
+   "id": "elite-banner",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Elite Banner",
+   "rotuloImg": "arts/elite-banner/rotulo.png",
+   "unitKey": "ndoli-elites",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -902,14 +924,16 @@
    "pendencias": []
   },
   {
-   "id": "a024",
+   "id": "hunter-sword",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Hunter Sword",
+   "rotuloImg": "arts/hunter-sword/rotulo.png",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -943,14 +967,16 @@
    ]
   },
   {
-   "id": "a025",
+   "id": "hunter-spear",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Hunter Spear",
+   "rotuloImg": "arts/hunter-spear/rotulo.png",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -984,14 +1010,16 @@
    ]
   },
   {
-   "id": "a026",
+   "id": "hunter-dual-claws",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Hunter Dual Claws",
+   "rotuloImg": "arts/hunter-dual-claws/rotulo.png",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1025,14 +1053,14 @@
    ]
   },
   {
-   "id": "a027",
+   "id": "hunter-sergeant",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hunter Sergeant",
+   "rotuloImg": "arts/hunter-sergeant/rotulo.png",
+   "unitKey": "waheni-hunters",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1066,14 +1094,14 @@
    ]
   },
   {
-   "id": "a028",
+   "id": "hunter-musician",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hunter Musician",
+   "rotuloImg": "arts/hunter-musician/rotulo.png",
+   "unitKey": "waheni-hunters",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1107,14 +1135,14 @@
    ]
   },
   {
-   "id": "a029",
+   "id": "hunter-banner",
    "candidato": "a029",
-   "rotulo": null,
-   "rotuloImg": "arts/a029/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hunter Banner",
+   "rotuloImg": "arts/hunter-banner/rotulo.png",
+   "unitKey": "waheni-hunters",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1148,14 +1176,14 @@
    ]
   },
   {
-   "id": "a030",
+   "id": "raider-v1",
    "candidato": "a030",
-   "rotulo": null,
-   "rotuloImg": "arts/a030/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Raider V1",
+   "rotuloImg": "arts/raider-v1/rotulo.png",
+   "unitKey": "waheni-raiders",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1187,14 +1215,14 @@
    "pendencias": []
   },
   {
-   "id": "a031",
+   "id": "raider-v2",
    "candidato": "a031",
-   "rotulo": null,
-   "rotuloImg": "arts/a031/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Raider V2",
+   "rotuloImg": "arts/raider-v2/rotulo.png",
+   "unitKey": "waheni-raiders",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1226,14 +1254,16 @@
    "pendencias": []
   },
   {
-   "id": "a032",
+   "id": "brute-dual-axe",
    "candidato": "a032",
-   "rotulo": null,
-   "rotuloImg": "arts/a032/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Brute Dual Axe",
+   "rotuloImg": "arts/brute-dual-axe/rotulo.png",
+   "unitKey": "kemba-brutes",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1265,14 +1295,16 @@
    "pendencias": []
   },
   {
-   "id": "a033",
+   "id": "brute-great-axe",
    "candidato": "a033",
-   "rotulo": null,
-   "rotuloImg": "arts/a033/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Brute Great Axe",
+   "rotuloImg": "arts/brute-great-axe/rotulo.png",
+   "unitKey": "kemba-brutes",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1304,14 +1336,14 @@
    "pendencias": []
   },
   {
-   "id": "a034",
+   "id": "brute-banner",
    "candidato": "a034",
-   "rotulo": null,
-   "rotuloImg": "arts/a034/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Brute Banner",
+   "rotuloImg": "arts/brute-banner/rotulo.png",
+   "unitKey": "kemba-brutes",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1343,14 +1375,14 @@
    "pendencias": []
   },
   {
-   "id": "a035",
+   "id": "brute-sergeant",
    "candidato": "a035",
-   "rotulo": null,
-   "rotuloImg": "arts/a035/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Brute Sergeant",
+   "rotuloImg": "arts/brute-sergeant/rotulo.png",
+   "unitKey": "kemba-brutes",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1382,14 +1414,14 @@
    "pendencias": []
   },
   {
-   "id": "a036",
+   "id": "brute-musician",
    "candidato": "a036",
-   "rotulo": null,
-   "rotuloImg": "arts/a036/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Brute Musician",
+   "rotuloImg": "arts/brute-musician/rotulo.png",
+   "unitKey": "kemba-brutes",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1421,14 +1453,14 @@
    "pendencias": []
   },
   {
-   "id": "a037",
+   "id": "centaur",
    "candidato": "a037",
-   "rotulo": null,
-   "rotuloImg": "arts/a037/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Centaur",
+   "rotuloImg": "arts/centaur/rotulo.png",
+   "unitKey": "ndwari-centaurs",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1460,14 +1492,14 @@
    "pendencias": []
   },
   {
-   "id": "a038",
+   "id": "centaur-sergeant",
    "candidato": "a038",
-   "rotulo": null,
-   "rotuloImg": "arts/a038/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Centaur Sergeant",
+   "rotuloImg": "arts/centaur-sergeant/rotulo.png",
+   "unitKey": "ndwari-centaurs",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1499,14 +1531,14 @@
    "pendencias": []
   },
   {
-   "id": "a039",
+   "id": "centaur-musician",
    "candidato": "a039",
-   "rotulo": null,
-   "rotuloImg": "arts/a039/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Centaur Musician",
+   "rotuloImg": "arts/centaur-musician/rotulo.png",
+   "unitKey": "ndwari-centaurs",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1538,14 +1570,14 @@
    "pendencias": []
   },
   {
-   "id": "a040",
+   "id": "centaur-banner",
    "candidato": "a040",
-   "rotulo": null,
-   "rotuloImg": "arts/a040/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Centaur Banner",
+   "rotuloImg": "arts/centaur-banner/rotulo.png",
+   "unitKey": "ndwari-centaurs",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1577,14 +1609,14 @@
    "pendencias": []
   },
   {
-   "id": "a041",
+   "id": "harpy",
    "candidato": "a041",
-   "rotulo": null,
-   "rotuloImg": "arts/a041/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Harpy",
+   "rotuloImg": "arts/harpy/rotulo.png",
+   "unitKey": "hapari-harpies",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1616,14 +1648,14 @@
    "pendencias": []
   },
   {
-   "id": "a042",
+   "id": "hound",
    "candidato": "a042",
-   "rotulo": null,
-   "rotuloImg": "arts/a042/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hound",
+   "rotuloImg": "arts/hound/rotulo.png",
+   "unitKey": "sambari-hounds",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1655,14 +1687,16 @@
    "pendencias": []
   },
   {
-   "id": "a043",
+   "id": "hunter-sword-a043",
    "candidato": "a043",
-   "rotulo": null,
-   "rotuloImg": "arts/a043/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Hunter Sword",
+   "rotuloImg": "arts/hunter-sword-a043/rotulo.png",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1683,14 +1717,16 @@
    ]
   },
   {
-   "id": "a044",
+   "id": "hunter-sword-a044",
    "candidato": "a044",
-   "rotulo": null,
-   "rotuloImg": "arts/a044/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Hunter Sword",
+   "rotuloImg": "arts/hunter-sword-a044/rotulo.png",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1711,14 +1747,16 @@
    ]
   },
   {
-   "id": "a045",
+   "id": "hunter-spear-a045",
    "candidato": "a045",
-   "rotulo": null,
-   "rotuloImg": "arts/a045/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Hunter Spear",
+   "rotuloImg": "arts/hunter-spear-a045/rotulo.png",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1739,14 +1777,16 @@
    ]
   },
   {
-   "id": "a046",
+   "id": "hunter-spear-a046",
    "candidato": "a046",
-   "rotulo": null,
-   "rotuloImg": "arts/a046/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Hunter Spear",
+   "rotuloImg": "arts/hunter-spear-a046/rotulo.png",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1767,14 +1807,16 @@
    ]
   },
   {
-   "id": "a047",
+   "id": "hunter-dual-claws-a047",
    "candidato": "a047",
-   "rotulo": null,
-   "rotuloImg": "arts/a047/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Hunter Dual Claws",
+   "rotuloImg": "arts/hunter-dual-claws-a047/rotulo.png",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1795,14 +1837,16 @@
    ]
   },
   {
-   "id": "a048",
+   "id": "hunter-dual-claws-a048",
    "candidato": "a048",
-   "rotulo": null,
-   "rotuloImg": "arts/a048/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Hunter Dual Claws",
+   "rotuloImg": "arts/hunter-dual-claws-a048/rotulo.png",
+   "unitKey": "waheni-hunters",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1823,14 +1867,14 @@
    ]
   },
   {
-   "id": "a049",
+   "id": "raider-v1-a049",
    "candidato": "a049",
-   "rotulo": null,
-   "rotuloImg": "arts/a049/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Raider V1",
+   "rotuloImg": "arts/raider-v1-a049/rotulo.png",
+   "unitKey": "waheni-raiders",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1851,14 +1895,16 @@
    ]
   },
   {
-   "id": "a050",
+   "id": "brute-dual-axe-a050",
    "candidato": "a050",
-   "rotulo": null,
-   "rotuloImg": "arts/a050/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Brute Dual Axe",
+   "rotuloImg": "arts/brute-dual-axe-a050/rotulo.png",
+   "unitKey": "kemba-brutes",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1879,14 +1925,14 @@
    ]
   },
   {
-   "id": "a051",
+   "id": "harpy-a051",
    "candidato": "a051",
-   "rotulo": null,
-   "rotuloImg": "arts/a051/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Harpy",
+   "rotuloImg": "arts/harpy-a051/rotulo.png",
+   "unitKey": "hapari-harpies",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1907,14 +1953,14 @@
    ]
   },
   {
-   "id": "a052",
+   "id": "hound-a052",
    "candidato": "a052",
-   "rotulo": null,
-   "rotuloImg": "arts/a052/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hound",
+   "rotuloImg": "arts/hound-a052/rotulo.png",
+   "unitKey": "sambari-hounds",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [

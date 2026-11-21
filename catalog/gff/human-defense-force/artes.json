@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "human-defense-force",
- "faccao": "Human Defense Force",
+ "faccao": "Human Defense Force\r",
  "sistema": "gff",
  "pdf": {
   "nome": "Human_Defense_Force_-_BW.pdf",
@@ -12,14 +12,16 @@
  "manifesto": "manifest.json",
  "artes": [
   {
-   "id": "a001",
+   "id": "company-leader-pistol",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Company Leader Pistol",
+   "rotuloImg": "arts/company-leader-pistol/rotulo.png",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +53,16 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "company-leader-rifle",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Company Leader Rifle",
+   "rotuloImg": "arts/company-leader-rifle/rotulo.png",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Burst Battle Rifle|Burst Long Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -90,14 +94,16 @@
    "pendencias": []
   },
   {
-   "id": "a003",
+   "id": "storm-leader-pistol",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Storm Leader Pistol",
+   "rotuloImg": "arts/storm-leader-pistol/rotulo.png",
+   "unitKey": "storm-leader",
+   "equipmentTags": [
+    "Heavy Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -129,14 +135,16 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "storm-leader-rifle",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Storm Leader Rifle",
+   "rotuloImg": "arts/storm-leader-rifle/rotulo.png",
+   "unitKey": "storm-leader",
+   "equipmentTags": [
+    "Burst Heavy Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -168,14 +176,17 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "biker-leader-pistol",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Biker Leader Pistol",
+   "rotuloImg": "arts/biker-leader-pistol/rotulo.png",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Combat Bike",
+    "Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -207,14 +218,17 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "biker-leader-lance",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Biker Leader Lance",
+   "rotuloImg": "arts/biker-leader-lance/rotulo.png",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Combat Bike",
+    "Heavy Lance|Hunting Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -246,14 +260,16 @@
    "pendencias": []
   },
   {
-   "id": "a007",
+   "id": "commander",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Commander",
+   "rotuloImg": "arts/commander/rotulo.png",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Commander"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -285,14 +301,16 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "drill-sergeant",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Drill Sergeant",
+   "rotuloImg": "arts/drill-sergeant/rotulo.png",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Drill Sergeant"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -324,14 +342,16 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "enforcer",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Enforcer",
+   "rotuloImg": "arts/enforcer/rotulo.png",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Enforcer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -363,14 +383,16 @@
    "pendencias": []
   },
   {
-   "id": "a010",
+   "id": "forward-observer",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Forward Observer",
+   "rotuloImg": "arts/forward-observer/rotulo.png",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Forward Observer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -402,14 +424,16 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "munitioner",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Munitioner",
+   "rotuloImg": "arts/munitioner/rotulo.png",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Munitioner"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -441,14 +465,16 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "psy-hacker",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Psy-Hacker",
+   "rotuloImg": "arts/psy-hacker/rotulo.png",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Psy-Hacker"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -480,14 +506,16 @@
    "pendencias": []
   },
   {
-   "id": "a013",
+   "id": "sniper-leader",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Sniper Leader",
+   "rotuloImg": "arts/sniper-leader/rotulo.png",
+   "unitKey": "company-leader",
+   "equipmentTags": [
+    "Sniper Leader"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -560,14 +588,16 @@
    "pendencias": []
   },
   {
-   "id": "a015",
+   "id": "infantry-drum-rifle",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Infantry Drum Rifle",
+   "rotuloImg": "arts/infantry-drum-rifle/rotulo.png",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [
+    "Shredder Drum-Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -599,14 +629,16 @@
    "pendencias": []
   },
   {
-   "id": "a016",
+   "id": "infantry-fusion-rifle",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Infantry Fusion Rifle",
+   "rotuloImg": "arts/infantry-fusion-rifle/rotulo.png",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -638,14 +670,16 @@
    "pendencias": []
   },
   {
-   "id": "a017",
+   "id": "infantry-flamer",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Infantry Flamer",
+   "rotuloImg": "arts/infantry-flamer/rotulo.png",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [
+    "Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -677,14 +711,16 @@
    "pendencias": []
   },
   {
-   "id": "a018",
+   "id": "infantry-laser-rifle",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Infantry Laser Rifle",
+   "rotuloImg": "arts/infantry-laser-rifle/rotulo.png",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [
+    "Laser Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -716,14 +752,16 @@
    "pendencias": []
   },
   {
-   "id": "a019",
+   "id": "infantry-grenade-launcher",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Infantry Grenade Launcher",
+   "rotuloImg": "arts/infantry-grenade-launcher/rotulo.png",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [
+    "Grenade Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -755,14 +793,16 @@
    "pendencias": []
   },
   {
-   "id": "a020",
+   "id": "infantry-plasma-rifle",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Infantry Plasma Rifle",
+   "rotuloImg": "arts/infantry-plasma-rifle/rotulo.png",
+   "unitKey": "infantry-squad",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -794,14 +834,14 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "infantry-sniper-rifle",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Infantry Sniper Rifle",
+   "rotuloImg": "arts/infantry-sniper-rifle/rotulo.png",
+   "unitKey": "infantry-squad",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -833,14 +873,14 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "infantry-sergeant",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Infantry Sergeant",
+   "rotuloImg": "arts/infantry-sergeant/rotulo.png",
+   "unitKey": "infantry-squad",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -872,14 +912,14 @@
    "pendencias": []
   },
   {
-   "id": "a023",
+   "id": "infantry-radio",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Infantry Radio",
+   "rotuloImg": "arts/infantry-radio/rotulo.png",
+   "unitKey": "infantry-squad",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "radio",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -911,14 +951,14 @@
    "pendencias": []
   },
   {
-   "id": "a024",
+   "id": "infantry-medic",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Infantry Medic",
+   "rotuloImg": "arts/infantry-medic/rotulo.png",
+   "unitKey": "infantry-squad",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "medic",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -950,14 +990,14 @@
    "pendencias": []
   },
   {
-   "id": "a025",
+   "id": "infantry-banner",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Infantry Banner",
+   "rotuloImg": "arts/infantry-banner/rotulo.png",
+   "unitKey": "infantry-squad",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -989,14 +1029,14 @@
    "pendencias": []
   },
   {
-   "id": "a026",
+   "id": "recruits",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Recruits",
+   "rotuloImg": "arts/recruits/rotulo.png",
+   "unitKey": "recruits",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1028,14 +1068,14 @@
    "pendencias": []
   },
   {
-   "id": "a027",
+   "id": "grunt",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
+   "rotulo": "GRUNT",
+   "rotuloImg": "arts/grunt/rotulo.png",
+   "unitKey": "grunt-robot",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1067,14 +1107,16 @@
    "pendencias": []
   },
   {
-   "id": "a028",
+   "id": "machine-gun-team",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Machine Gun Team",
+   "rotuloImg": "arts/machine-gun-team/rotulo.png",
+   "unitKey": "weapon-team",
+   "equipmentTags": [
+    "Heavy Machinegun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1106,14 +1148,16 @@
    "pendencias": []
   },
   {
-   "id": "a029",
+   "id": "mortar-team",
    "candidato": "a029",
-   "rotulo": null,
-   "rotuloImg": "arts/a029/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Mortar Team",
+   "rotuloImg": "arts/mortar-team/rotulo.png",
+   "unitKey": "weapon-team",
+   "equipmentTags": [
+    "Mortar"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1145,14 +1189,16 @@
    "pendencias": []
   },
   {
-   "id": "a030",
+   "id": "rocket-team",
    "candidato": "a030",
-   "rotulo": null,
-   "rotuloImg": "arts/a030/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Rocket Team",
+   "rotuloImg": "arts/rocket-team/rotulo.png",
+   "unitKey": "weapon-team",
+   "equipmentTags": [
+    "Missile Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1184,14 +1230,16 @@
    "pendencias": []
   },
   {
-   "id": "a031",
+   "id": "laser-cannon-team",
    "candidato": "a031",
-   "rotulo": null,
-   "rotuloImg": "arts/a031/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Laser Cannon Team",
+   "rotuloImg": "arts/laser-cannon-team/rotulo.png",
+   "unitKey": "weapon-team",
+   "equipmentTags": [
+    "Laser Cannon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1223,14 +1271,16 @@
    "pendencias": []
   },
   {
-   "id": "a032",
+   "id": "autocannon-team",
    "candidato": "a032",
-   "rotulo": null,
-   "rotuloImg": "arts/a032/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Autocannon Team",
+   "rotuloImg": "arts/autocannon-team/rotulo.png",
+   "unitKey": "weapon-team",
+   "equipmentTags": [
+    "Autocannon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1262,14 +1312,16 @@
    "pendencias": []
   },
   {
-   "id": "a033",
+   "id": "veteran-rifle",
    "candidato": "a033",
-   "rotulo": null,
-   "rotuloImg": "arts/a033/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Veteran Rifle",
+   "rotuloImg": "arts/veteran-rifle/rotulo.png",
+   "unitKey": "veterans",
+   "equipmentTags": [
+    "Battle Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1342,14 +1394,16 @@
    "pendencias": []
   },
   {
-   "id": "a035",
+   "id": "veteran-flamer",
    "candidato": "a035",
-   "rotulo": null,
-   "rotuloImg": "arts/a035/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Veteran Flamer",
+   "rotuloImg": "arts/veteran-flamer/rotulo.png",
+   "unitKey": "veterans",
+   "equipmentTags": [
+    "Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1381,14 +1435,16 @@
    "pendencias": []
   },
   {
-   "id": "a036",
+   "id": "veteran-drum-rifle",
    "candidato": "a036",
-   "rotulo": null,
-   "rotuloImg": "arts/a036/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Veteran Drum Rifle",
+   "rotuloImg": "arts/veteran-drum-rifle/rotulo.png",
+   "unitKey": "veterans",
+   "equipmentTags": [
+    "Shredder Drum-Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1420,14 +1476,16 @@
    "pendencias": []
   },
   {
-   "id": "a037",
+   "id": "veteran-plasma-rifle",
    "candidato": "a037",
-   "rotulo": null,
-   "rotuloImg": "arts/a037/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Veteran Plasma Rifle",
+   "rotuloImg": "arts/veteran-plasma-rifle/rotulo.png",
+   "unitKey": "veterans",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1459,14 +1517,16 @@
    "pendencias": []
   },
   {
-   "id": "a038",
+   "id": "veteran-fusion-rifle",
    "candidato": "a038",
-   "rotulo": null,
-   "rotuloImg": "arts/a038/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Veteran Fusion Rifle",
+   "rotuloImg": "arts/veteran-fusion-rifle/rotulo.png",
+   "unitKey": "veterans",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1498,14 +1558,16 @@
    "pendencias": []
   },
   {
-   "id": "a039",
+   "id": "veteran-grenade-launcher",
    "candidato": "a039",
-   "rotulo": null,
-   "rotuloImg": "arts/a039/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Veteran Grenade Launcher",
+   "rotuloImg": "arts/veteran-grenade-launcher/rotulo.png",
+   "unitKey": "veterans",
+   "equipmentTags": [
+    "Grenade Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1537,14 +1599,16 @@
    "pendencias": []
   },
   {
-   "id": "a040",
+   "id": "veteran-sniper-rifle",
    "candidato": "a040",
-   "rotulo": null,
-   "rotuloImg": "arts/a040/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Veteran Sniper Rifle",
+   "rotuloImg": "arts/veteran-sniper-rifle/rotulo.png",
+   "unitKey": "veterans",
+   "equipmentTags": [
+    "Sniper Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1576,14 +1640,14 @@
    "pendencias": []
   },
   {
-   "id": "a041",
+   "id": "veteran-banner",
    "candidato": "a041",
-   "rotulo": null,
-   "rotuloImg": "arts/a041/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Veteran Banner",
+   "rotuloImg": "arts/veteran-banner/rotulo.png",
+   "unitKey": "veterans",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1615,14 +1679,14 @@
    "pendencias": []
   },
   {
-   "id": "a042",
+   "id": "veteran-radio",
    "candidato": "a042",
-   "rotulo": null,
-   "rotuloImg": "arts/a042/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Veteran Radio",
+   "rotuloImg": "arts/veteran-radio/rotulo.png",
+   "unitKey": "veterans",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "radio",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1654,14 +1718,14 @@
    "pendencias": []
   },
   {
-   "id": "a043",
+   "id": "veteran-medic",
    "candidato": "a043",
-   "rotulo": null,
-   "rotuloImg": "arts/a043/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Veteran Medic",
+   "rotuloImg": "arts/veteran-medic/rotulo.png",
+   "unitKey": "veterans",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "medic",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1693,14 +1757,14 @@
    "pendencias": []
   },
   {
-   "id": "a044",
+   "id": "veteran-sergeant",
    "candidato": "a044",
-   "rotulo": null,
-   "rotuloImg": "arts/a044/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Veteran Sergeant",
+   "rotuloImg": "arts/veteran-sergeant/rotulo.png",
+   "unitKey": "veterans",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1732,14 +1796,16 @@
    "pendencias": []
   },
   {
-   "id": "a045",
+   "id": "storm-trooper-rifle",
    "candidato": "a045",
-   "rotulo": null,
-   "rotuloImg": "arts/a045/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Storm Trooper Rifle",
+   "rotuloImg": "arts/storm-trooper-rifle/rotulo.png",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [
+    "Heavy Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1773,14 +1839,16 @@
    ]
   },
   {
-   "id": "a046",
+   "id": "storm-trooper-flamer",
    "candidato": "a046",
-   "rotulo": null,
-   "rotuloImg": "arts/a046/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Storm Trooper Flamer",
+   "rotuloImg": "arts/storm-trooper-flamer/rotulo.png",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [
+    "Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1814,14 +1882,16 @@
    ]
   },
   {
-   "id": "a047",
+   "id": "storm-trooper-drum-rifle",
    "candidato": "a047",
-   "rotulo": null,
-   "rotuloImg": "arts/a047/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Storm Trooper Drum Rifle",
+   "rotuloImg": "arts/storm-trooper-drum-rifle/rotulo.png",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [
+    "Shredder Drum-Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1855,14 +1925,16 @@
    ]
   },
   {
-   "id": "a048",
+   "id": "storm-trooper-grenade-launcher",
    "candidato": "a048",
-   "rotulo": null,
-   "rotuloImg": "arts/a048/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Storm Trooper Grenade Launcher",
+   "rotuloImg": "arts/storm-trooper-grenade-launcher/rotulo.png",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [
+    "Grenade Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1896,14 +1968,16 @@
    ]
   },
   {
-   "id": "a049",
+   "id": "storm-trooper-machine-gun",
    "candidato": "a049",
-   "rotulo": null,
-   "rotuloImg": "arts/a049/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Storm Trooper Machine Gun",
+   "rotuloImg": "arts/storm-trooper-machine-gun/rotulo.png",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [
+    "Storm Machinegun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1937,14 +2011,16 @@
    ]
   },
   {
-   "id": "a050",
+   "id": "storm-trooper-fusion-rifle",
    "candidato": "a050",
-   "rotulo": null,
-   "rotuloImg": "arts/a050/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Storm Trooper Fusion Rifle",
+   "rotuloImg": "arts/storm-trooper-fusion-rifle/rotulo.png",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1978,14 +2054,16 @@
    ]
   },
   {
-   "id": "a051",
+   "id": "storm-trooper-plasma-rifle",
    "candidato": "a051",
-   "rotulo": null,
-   "rotuloImg": "arts/a051/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Storm Trooper Plasma Rifle",
+   "rotuloImg": "arts/storm-trooper-plasma-rifle/rotulo.png",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2019,14 +2097,16 @@
    ]
   },
   {
-   "id": "a052",
+   "id": "storm-trooper-sniper-rifle",
    "candidato": "a052",
-   "rotulo": null,
-   "rotuloImg": "arts/a052/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Storm Trooper Sniper Rifle",
+   "rotuloImg": "arts/storm-trooper-sniper-rifle/rotulo.png",
+   "unitKey": "storm-trooper",
+   "equipmentTags": [
+    "Sniper Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2060,14 +2140,14 @@
    ]
   },
   {
-   "id": "a053",
+   "id": "storm-trooper-banner",
    "candidato": "a053",
-   "rotulo": null,
-   "rotuloImg": "arts/a053/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Storm Trooper Banner",
+   "rotuloImg": "arts/storm-trooper-banner/rotulo.png",
+   "unitKey": "storm-trooper",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2099,14 +2179,14 @@
    "pendencias": []
   },
   {
-   "id": "a054",
+   "id": "storm-trooper-radio",
    "candidato": "a054",
-   "rotulo": null,
-   "rotuloImg": "arts/a054/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Storm Trooper Radio",
+   "rotuloImg": "arts/storm-trooper-radio/rotulo.png",
+   "unitKey": "storm-trooper",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "radio",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2138,14 +2218,14 @@
    "pendencias": []
   },
   {
-   "id": "a055",
+   "id": "storm-trooper-medic",
    "candidato": "a055",
-   "rotulo": null,
-   "rotuloImg": "arts/a055/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Storm Trooper Medic",
+   "rotuloImg": "arts/storm-trooper-medic/rotulo.png",
+   "unitKey": "storm-trooper",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "medic",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2177,14 +2257,14 @@
    "pendencias": []
   },
   {
-   "id": "a056",
+   "id": "storm-trooper-sergeant",
    "candidato": "a056",
-   "rotulo": null,
-   "rotuloImg": "arts/a056/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Storm Trooper Sergeant",
+   "rotuloImg": "arts/storm-trooper-sergeant/rotulo.png",
+   "unitKey": "storm-trooper",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2216,14 +2296,16 @@
    "pendencias": []
   },
   {
-   "id": "a057",
+   "id": "sappers-fusion-rifle",
    "candidato": "a057",
-   "rotulo": null,
-   "rotuloImg": "arts/a057/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Sappers Fusion Rifle",
+   "rotuloImg": "arts/sappers-fusion-rifle/rotulo.png",
+   "unitKey": "sapper",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2255,14 +2337,16 @@
    "pendencias": []
   },
   {
-   "id": "a058",
+   "id": "sappers-drum-rifle",
    "candidato": "a058",
-   "rotulo": null,
-   "rotuloImg": "arts/a058/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Sappers Drum Rifle",
+   "rotuloImg": "arts/sappers-drum-rifle/rotulo.png",
+   "unitKey": "sapper",
+   "equipmentTags": [
+    "Shredder Drum-Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2294,14 +2378,16 @@
    "pendencias": []
   },
   {
-   "id": "a059",
+   "id": "sappers-flamer",
    "candidato": "a059",
-   "rotulo": null,
-   "rotuloImg": "arts/a059/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Sappers Flamer",
+   "rotuloImg": "arts/sappers-flamer/rotulo.png",
+   "unitKey": "sapper",
+   "equipmentTags": [
+    "Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2333,14 +2419,16 @@
    "pendencias": []
   },
   {
-   "id": "a060",
+   "id": "sappers-grenade-launcher",
    "candidato": "a060",
-   "rotulo": null,
-   "rotuloImg": "arts/a060/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Sappers Grenade Launcher",
+   "rotuloImg": "arts/sappers-grenade-launcher/rotulo.png",
+   "unitKey": "sapper",
+   "equipmentTags": [
+    "Grenade Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2372,14 +2460,16 @@
    "pendencias": []
   },
   {
-   "id": "a061",
+   "id": "sappers-laser-rifle",
    "candidato": "a061",
-   "rotulo": null,
-   "rotuloImg": "arts/a061/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Sappers Laser Rifle",
+   "rotuloImg": "arts/sappers-laser-rifle/rotulo.png",
+   "unitKey": "sapper",
+   "equipmentTags": [
+    "Laser Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2411,14 +2501,16 @@
    "pendencias": []
   },
   {
-   "id": "a062",
+   "id": "sappers-plasma-rifle",
    "candidato": "a062",
-   "rotulo": null,
-   "rotuloImg": "arts/a062/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Sappers Plasma Rifle",
+   "rotuloImg": "arts/sappers-plasma-rifle/rotulo.png",
+   "unitKey": "sapper",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2450,14 +2542,14 @@
    "pendencias": []
   },
   {
-   "id": "a063",
+   "id": "sniper",
    "candidato": "a063",
-   "rotulo": null,
-   "rotuloImg": "arts/a063/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Sniper",
+   "rotuloImg": "arts/sniper/rotulo.png",
+   "unitKey": "sniper",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2537,7 +2629,9 @@
    "rotulo": "Biker Lance",
    "rotuloImg": "arts/biker-lance/rotulo.png",
    "unitKey": "combat-bikers",
-   "equipmentTags": [],
+   "equipmentTags": [
+    "Heavy Lance|Hunting Lance|Anti-Tank Lance"
+   ],
    "cosmetic": null,
    "status": "alias-proposed",
    "estilos": {

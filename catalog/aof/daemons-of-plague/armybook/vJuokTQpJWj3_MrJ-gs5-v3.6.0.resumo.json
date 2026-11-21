@@ -1,0 +1,696 @@
+{
+  "armyBook": {
+    "id": "vJuokTQpJWj3_MrJ",
+    "nome": "Daemons of Plague",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:32.237Z",
+    "sistema": "age-of-fantasy-skirmish",
+    "sistemaId": 5
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "vB9x-hR",
+      "nome": "Harbinger of Plague",
+      "tamanho": 1,
+      "bases": {
+        "round": "90x52",
+        "square": "75x50"
+      },
+      "armas": [
+        "Daemon Hammers",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace 2x Daemon Hammer",
+          "ganha": [
+            "Daemon Loremaster Staff"
+          ]
+        },
+        {
+          "secao": "Replace 2x Daemon Hammer",
+          "ganha": [
+            "Heavy Scatter-Sling",
+            "Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace 2x Daemon Hammer",
+          "ganha": [
+            "Heavy Long-Sling"
+          ]
+        },
+        {
+          "secao": "Replace any Daemon Hammer",
+          "ganha": [
+            "Plague Sword"
+          ]
+        },
+        {
+          "secao": "Replace any Daemon Hammer",
+          "ganha": [
+            "Infected Sword"
+          ]
+        },
+        {
+          "secao": "Replace any Daemon Hammer",
+          "ganha": [
+            "Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace any Daemon Hammer",
+          "ganha": [
+            "Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Plague Boon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Daemonic Incursion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Fury Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Symbol of Plague"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Lore of Plague"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Envoy of Plague"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Plague Favour"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Gift of Plague"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7NfheZg",
+      "nome": "Champion of Plague",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Plague Sword"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Infected Sword"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Daemon Loremaster Staff"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Scatter-Sling",
+            "Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Heavy Long-Sling",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Plague Sword"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Infected Sword"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Plague Boon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Daemonic Incursion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Throne of Plague"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Icon of Plague"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Army Standard Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Lore of Plague"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Symbol of Plague"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Envoy of Plague"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Plague Favour"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WUYnx9b",
+      "nome": "Fury Champion of Plague",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Plague Sword"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Infected Sword"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Scatter-Sling",
+            "Daemon Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Heavy Long-Sling",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Plague Sword"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Infected Sword"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Daemon Spear"
+          ]
+        },
+        {
+          "secao": "Replace Daemon Hammer",
+          "ganha": [
+            "Daemon Gauntlet"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Icon of Plague"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Symbol of Plague"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Envoy of Plague"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Gift of Plague"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rb_k13c",
+      "nome": "Plague Harvester",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Plague Scythe"
+      ],
+      "itens": [
+        {
+          "nome": "Power Shrooms",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Plague Boon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1d1ydfq",
+      "nome": "Plague Fury",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Plague Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Plague Claws",
+          "ganha": [
+            "Infected Claws"
+          ]
+        },
+        {
+          "secao": "Replace Plague Claws",
+          "ganha": [
+            "Dual Armblades"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atz33g2",
+      "nome": "Plague Warrior",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Plague Sword"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Plague Sword",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Plague Sword",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Plague Sword",
+          "ganha": [
+            "Infected Sword"
+          ]
+        },
+        {
+          "secao": "Replace Plague Sword",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Plague Sword",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Plague Sword",
+          "ganha": [
+            "Dual Hand Weapons"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Plague Boon"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Banner of Plague"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Lpp68fd",
+      "nome": "Plague Slinger",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Long-Sling",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Long-Sling",
+          "ganha": [
+            "Scatter-Sling"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Plague Boon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RdhS3yC",
+      "nome": "Sling-Fury",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Long-Sling",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Long-Sling",
+          "ganha": [
+            "Scatter-Sling"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beTfybt",
+      "nome": "Plague Swarm",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Spear Plaguelings"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Spear Plagueling",
+          "ganha": [
+            "Sling Plaguelings"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rLSYPnF",
+      "nome": "Plague Soul Spawn",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Plague Sword"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Plague Sword",
+          "ganha": [
+            "Infected Claws"
+          ]
+        },
+        {
+          "secao": "Replace Plague Sword",
+          "ganha": [
+            "Soul Claws"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3d71gbH",
+      "nome": "Plague Fly Rider",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Plague Sword",
+        "Toxin Stinger"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Plague Sword",
+          "ganha": [
+            "Infected Sword"
+          ]
+        },
+        {
+          "secao": "Replace Toxin Stinger",
+          "ganha": [
+            "Poisoned Spit"
+          ]
+        },
+        {
+          "secao": "Replace Toxin Stinger",
+          "ganha": [
+            "Heavy Stinger"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Plague Boon"
+          ]
+        }
+      ]
+    }
+  ]
+}

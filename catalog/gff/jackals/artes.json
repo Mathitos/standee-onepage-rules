@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "jackals",
- "faccao": "Jackals",
+ "faccao": "Jackals\r",
  "sistema": "gff",
  "pdf": {
   "nome": "Jackals_-_BW.pdf",
@@ -12,14 +12,16 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "shaman",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Shaman",
+   "rotuloImg": "arts/shaman/rotulo.png",
+   "unitKey": "veteran",
+   "equipmentTags": [
+    "Shaman"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +53,17 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "beast-veteran-rifle",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Beast Veteran Rifle",
+   "rotuloImg": "arts/beast-veteran-rifle/rotulo.png",
+   "unitKey": "veteran",
+   "equipmentTags": [
+    "Assault Beast|Gunner Beast",
+    "Burst Scrap Rifle|Scrap Sniper Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -90,14 +95,17 @@
    "pendencias": []
   },
   {
-   "id": "a003",
+   "id": "beast-veteran-spear",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Beast Veteran Spear",
+   "rotuloImg": "arts/beast-veteran-spear/rotulo.png",
+   "unitKey": "veteran",
+   "equipmentTags": [
+    "Assault Beast|Gunner Beast",
+    "Explosive Spear|Goad-Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -129,14 +137,17 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "vulture-veteran-spear",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vulture Veteran Spear",
+   "rotuloImg": "arts/vulture-veteran-spear/rotulo.png",
+   "unitKey": "veteran",
+   "equipmentTags": [
+    "Jetpack|Raider Jetpack",
+    "Explosive Spear|Goad-Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -168,14 +179,17 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "vulture-veteran-rifle",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vulture Veteran Rifle",
+   "rotuloImg": "arts/vulture-veteran-rifle/rotulo.png",
+   "unitKey": "veteran",
+   "equipmentTags": [
+    "Jetpack|Raider Jetpack",
+    "Burst Scrap Rifle|Scrap Sniper Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -207,14 +221,16 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "nomad-pistol",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Nomad Pistol",
+   "rotuloImg": "arts/nomad-pistol/rotulo.png",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Scrap Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -246,14 +262,16 @@
    "pendencias": []
   },
   {
-   "id": "a007",
+   "id": "nomad-rifle",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Nomad Rifle",
+   "rotuloImg": "arts/nomad-rifle/rotulo.png",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Scrap Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -287,14 +305,14 @@
    ]
   },
   {
-   "id": "a008",
+   "id": "veteran",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Veteran",
+   "rotuloImg": "arts/veteran/rotulo.png",
+   "unitKey": "veteran",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -326,14 +344,17 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "nomad-rifle-satellite",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Nomad Rifle",
+   "rotuloImg": "arts/nomad-rifle-satellite/rotulo.png",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Scrap Rifle",
+    "Satellite Backpack"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -365,14 +386,16 @@
    "pendencias": []
   },
   {
-   "id": "a010",
+   "id": "nomad-blaster",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Nomad Blaster",
+   "rotuloImg": "arts/nomad-blaster/rotulo.png",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Force Blaster"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -404,14 +427,16 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "nomad-zapper",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Nomad Zapper",
+   "rotuloImg": "arts/nomad-zapper/rotulo.png",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Zapper Gun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -445,14 +470,16 @@
    ]
   },
   {
-   "id": "a012",
+   "id": "nomad-shotgun",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Nomad Shotgun",
+   "rotuloImg": "arts/nomad-shotgun/rotulo.png",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Burst Shotgun|Hunting Shotgun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -484,14 +511,16 @@
    "pendencias": []
   },
   {
-   "id": "a013",
+   "id": "nomad-rocket",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Nomad Rocket",
+   "rotuloImg": "arts/nomad-rocket/rotulo.png",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Rocket Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -525,14 +554,16 @@
    ]
   },
   {
-   "id": "a014",
+   "id": "nomad-fumigator",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Nomad Fumigator",
+   "rotuloImg": "arts/nomad-fumigator/rotulo.png",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Fumigator"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -564,14 +595,16 @@
    "pendencias": []
   },
   {
-   "id": "a015",
+   "id": "nomad-spiker",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Nomad Spiker",
+   "rotuloImg": "arts/nomad-spiker/rotulo.png",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Power Spiker"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -603,14 +636,16 @@
    "pendencias": []
   },
   {
-   "id": "a016",
+   "id": "nomad-sniper",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Nomad Sniper",
+   "rotuloImg": "arts/nomad-sniper/rotulo.png",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Marksman Carbine"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -642,14 +677,16 @@
    "pendencias": []
   },
   {
-   "id": "a017",
+   "id": "stalker-dual-knives",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Stalker Dual Knives",
+   "rotuloImg": "arts/stalker-dual-knives/rotulo.png",
+   "unitKey": "stalker",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -683,14 +720,14 @@
    ]
   },
   {
-   "id": "a018",
+   "id": "stalker-berserker",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Stalker Berserker",
+   "rotuloImg": "arts/stalker-berserker/rotulo.png",
+   "unitKey": "stalker",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -724,14 +761,16 @@
    ]
   },
   {
-   "id": "a019",
+   "id": "elite-shotgun",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elite Shotgun",
+   "rotuloImg": "arts/elite-shotgun/rotulo.png",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Shotgun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -763,14 +802,16 @@
    "pendencias": []
   },
   {
-   "id": "a020",
+   "id": "elite-rifle",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elite Rifle",
+   "rotuloImg": "arts/elite-rifle/rotulo.png",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Energy Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -802,14 +843,16 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "elite-missile",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elite Missile",
+   "rotuloImg": "arts/elite-missile/rotulo.png",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Missile Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -841,14 +884,16 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "elite-shred",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elite Shred",
+   "rotuloImg": "arts/elite-shred/rotulo.png",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Shredder Cannon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -880,14 +925,16 @@
    "pendencias": []
   },
   {
-   "id": "a023",
+   "id": "elite-plasma",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elite Plasma",
+   "rotuloImg": "arts/elite-plasma/rotulo.png",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Plasma Cannon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -919,14 +966,16 @@
    "pendencias": []
   },
   {
-   "id": "a024",
+   "id": "elite-flamer",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elite Flamer",
+   "rotuloImg": "arts/elite-flamer/rotulo.png",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Heavy Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -958,14 +1007,16 @@
    "pendencias": []
   },
   {
-   "id": "a025",
+   "id": "vulture-explosive-spear",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vulture Explosive Spear",
+   "rotuloImg": "arts/vulture-explosive-spear/rotulo.png",
+   "unitKey": "vulture",
+   "equipmentTags": [
+    "Explosive Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -997,14 +1048,17 @@
    "pendencias": []
   },
   {
-   "id": "a026",
+   "id": "vulture-claw-pistol",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vulture Claw & Pistol",
+   "rotuloImg": "arts/vulture-claw-pistol/rotulo.png",
+   "unitKey": "vulture",
+   "equipmentTags": [
+    "Claw Gauntlet",
+    "Scrap Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1036,14 +1090,16 @@
    "pendencias": []
   },
   {
-   "id": "a027",
+   "id": "vulture-rifle",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vulture Rifle",
+   "rotuloImg": "arts/vulture-rifle/rotulo.png",
+   "unitKey": "vulture",
+   "equipmentTags": [
+    "Energy Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1075,14 +1131,16 @@
    "pendencias": []
   },
   {
-   "id": "a028",
+   "id": "vulture-zapper",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vulture Zapper",
+   "rotuloImg": "arts/vulture-zapper/rotulo.png",
+   "unitKey": "vulture",
+   "equipmentTags": [
+    "Zapper Gun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1114,14 +1172,16 @@
    "pendencias": []
   },
   {
-   "id": "a029",
+   "id": "vulture-shotgun",
    "candidato": "a029",
-   "rotulo": null,
-   "rotuloImg": "arts/a029/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vulture Shotgun",
+   "rotuloImg": "arts/vulture-shotgun/rotulo.png",
+   "unitKey": "vulture",
+   "equipmentTags": [
+    "Hunting Shotgun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1153,14 +1213,16 @@
    "pendencias": []
   },
   {
-   "id": "a030",
+   "id": "vulture-blaster",
    "candidato": "a030",
-   "rotulo": null,
-   "rotuloImg": "arts/a030/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vulture Blaster",
+   "rotuloImg": "arts/vulture-blaster/rotulo.png",
+   "unitKey": "vulture",
+   "equipmentTags": [
+    "Force Blaster"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1192,14 +1254,14 @@
    "pendencias": []
   },
   {
-   "id": "a031",
+   "id": "tracker",
    "candidato": "a031",
-   "rotulo": null,
-   "rotuloImg": "arts/a031/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Tracker",
+   "rotuloImg": "arts/tracker/rotulo.png",
+   "unitKey": "tracker",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1233,14 +1295,14 @@
    ]
   },
   {
-   "id": "a032",
+   "id": "hound",
    "candidato": "a032",
-   "rotulo": null,
-   "rotuloImg": "arts/a032/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hound",
+   "rotuloImg": "arts/hound/rotulo.png",
+   "unitKey": "hounds",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1272,14 +1334,16 @@
    "pendencias": []
   },
   {
-   "id": "a033",
+   "id": "gunner-beast-machine-gun",
    "candidato": "a033",
-   "rotulo": null,
-   "rotuloImg": "arts/a033/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gunner Beast Machine Gun",
+   "rotuloImg": "arts/gunner-beast-machine-gun/rotulo.png",
+   "unitKey": "beast-gunner",
+   "equipmentTags": [
+    "Heavy Machinegun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1311,14 +1375,16 @@
    "pendencias": []
   },
   {
-   "id": "a034",
+   "id": "gunner-beast-sniper",
    "candidato": "a034",
-   "rotulo": null,
-   "rotuloImg": "arts/a034/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gunner Beast Sniper",
+   "rotuloImg": "arts/gunner-beast-sniper/rotulo.png",
+   "unitKey": "beast-gunner",
+   "equipmentTags": [
+    "Scrap Sniper Carbine"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1350,14 +1416,16 @@
    "pendencias": []
   },
   {
-   "id": "a035",
+   "id": "assault-beast-goad",
    "candidato": "a035",
-   "rotulo": null,
-   "rotuloImg": "arts/a035/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Assault Beast Goad",
+   "rotuloImg": "arts/assault-beast-goad/rotulo.png",
+   "unitKey": "beast-rider",
+   "equipmentTags": [
+    "Goad-Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1389,14 +1457,16 @@
    "pendencias": []
   },
   {
-   "id": "a036",
+   "id": "assault-beast-explosive-spear",
    "candidato": "a036",
-   "rotulo": null,
-   "rotuloImg": "arts/a036/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Assault Beast Explosive Spear",
+   "rotuloImg": "arts/assault-beast-explosive-spear/rotulo.png",
+   "unitKey": "beast-rider",
+   "equipmentTags": [
+    "Explosive Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1428,14 +1498,16 @@
    "pendencias": []
   },
   {
-   "id": "a037",
+   "id": "assault-beast-harpoom",
    "candidato": "a037",
-   "rotulo": null,
-   "rotuloImg": "arts/a037/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Assault Beast Harpoom",
+   "rotuloImg": "arts/assault-beast-harpoom/rotulo.png",
+   "unitKey": "beast-rider",
+   "equipmentTags": [
+    "Barbed Harpoon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1467,14 +1539,16 @@
    "pendencias": []
   },
   {
-   "id": "a038",
+   "id": "assault-beast-hook",
    "candidato": "a038",
-   "rotulo": null,
-   "rotuloImg": "arts/a038/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Assault Beast Hook",
+   "rotuloImg": "arts/assault-beast-hook/rotulo.png",
+   "unitKey": "beast-rider",
+   "equipmentTags": [
+    "Hunting Hook|Jagged Hook"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1506,14 +1580,16 @@
    "pendencias": []
   },
   {
-   "id": "a039",
+   "id": "nomad-pistol-copia",
    "candidato": "a039",
-   "rotulo": null,
-   "rotuloImg": "arts/a039/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Nomad Pistol",
+   "rotuloImg": "arts/nomad-pistol-copia/rotulo.png",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Scrap Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1534,14 +1610,16 @@
    ]
   },
   {
-   "id": "a040",
+   "id": "nomad-rifle-copia",
    "candidato": "a040",
-   "rotulo": null,
-   "rotuloImg": "arts/a040/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Nomad Rifle",
+   "rotuloImg": "arts/nomad-rifle-copia/rotulo.png",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Scrap Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1562,14 +1640,14 @@
    ]
   },
   {
-   "id": "a041",
+   "id": "stalker-berserker-copia",
    "candidato": "a041",
-   "rotulo": null,
-   "rotuloImg": "arts/a041/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Stalker Berserker",
+   "rotuloImg": "arts/stalker-berserker-copia/rotulo.png",
+   "unitKey": "stalker",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1590,14 +1668,14 @@
    ]
   },
   {
-   "id": "a042",
+   "id": "tracker-copia",
    "candidato": "a042",
-   "rotulo": null,
-   "rotuloImg": "arts/a042/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Tracker",
+   "rotuloImg": "arts/tracker-copia/rotulo.png",
+   "unitKey": "tracker",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1618,14 +1696,14 @@
    ]
   },
   {
-   "id": "a043",
+   "id": "hound-copia",
    "candidato": "a043",
-   "rotulo": null,
-   "rotuloImg": "arts/a043/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hound",
+   "rotuloImg": "arts/hound-copia/rotulo.png",
+   "unitKey": "hounds",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1646,14 +1724,16 @@
    ]
   },
   {
-   "id": "a044",
+   "id": "assault-beast-harpoom-copia",
    "candidato": "a044",
-   "rotulo": null,
-   "rotuloImg": "arts/a044/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Assault Beast Harpoom",
+   "rotuloImg": "arts/assault-beast-harpoom-copia/rotulo.png",
+   "unitKey": "beast-rider",
+   "equipmentTags": [
+    "Barbed Harpoon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [

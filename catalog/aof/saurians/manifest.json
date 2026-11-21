@@ -1,0 +1,3470 @@
+{
+  "schemaVersion": 1,
+  "packId": "saurians",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "AOF",
+    "slug": "age-of-fantasy",
+    "armyForgeId": 4
+  },
+  "gameSystems": [
+    {
+      "code": "AOF",
+      "slug": "age-of-fantasy",
+      "armyForgeId": 4
+    },
+    {
+      "code": "AOFS",
+      "slug": "age-of-fantasy-skirmish",
+      "armyForgeId": 5
+    }
+  ],
+  "armyBook": {
+    "id": "BubhE1kUpgYbqZvW",
+    "name": "Saurians",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "BubhE1kUpgYbqZvW",
+      "name": "Saurians",
+      "version": "3.6.0",
+      "gameSystemId": 4,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "BubhE1kUpgYbqZvW",
+      "name": "Saurians",
+      "version": "3.6.0",
+      "gameSystemId": 5,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Saurians_-_BW.pdf",
+    "pdfSha256": "6eeb40510359def8de3e2068c8104f6e7ae5b3fee291a13d95eea2bb22438adb",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "saurian-veteran",
+      "names": [
+        "Saurian Veteran"
+      ],
+      "armyForgeUnitId": "iPmkRyx",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "gator-veteran",
+      "names": [
+        "Gator Veteran"
+      ],
+      "armyForgeUnitId": "HdCoUob",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          50.0
+        ],
+        "raw": "50",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "gecko-champion",
+      "names": [
+        "Gecko Champion"
+      ],
+      "armyForgeUnitId": "pbodyqx",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "frog-mage",
+      "names": [
+        "Frog-Mage"
+      ],
+      "armyForgeUnitId": "NWwd7ue",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          60.0
+        ],
+        "raw": "60",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "saurian-warriors",
+      "names": [
+        "Saurian Warriors",
+        "Saurian Warrior"
+      ],
+      "armyForgeUnitId": "kpjfnHa",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "geckos",
+      "names": [
+        "Geckos"
+      ],
+      "armyForgeUnitId": "i3Iw5yl",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "saurian-guardians",
+      "names": [
+        "Saurian Guardians",
+        "Saurian Guardian"
+      ],
+      "armyForgeUnitId": "0d7I4c6",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "chameleons",
+      "names": [
+        "Chameleons",
+        "Chameleon"
+      ],
+      "armyForgeUnitId": "2AX2D13",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "raptor-riders",
+      "names": [
+        "Raptor Riders",
+        "Raptor Rider"
+      ],
+      "armyForgeUnitId": "e3dqR3h",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "gators",
+      "names": [
+        "Gators",
+        "Gator"
+      ],
+      "armyForgeUnitId": "JJaMJDn",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          50.0
+        ],
+        "raw": "50",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "snake-swarms",
+      "names": [
+        "Snake Swarms",
+        "Snake Swarm"
+      ],
+      "armyForgeUnitId": "BKj0eiI",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "pterodactyl-riders",
+      "names": [
+        "Pterodactyl Riders",
+        "Pterodactyl Rider"
+      ],
+      "armyForgeUnitId": "VLpx9v4",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          50.0
+        ],
+        "raw": "50",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "ripjawdactyl-riders",
+      "names": [
+        "Ripjawdactyl Riders",
+        "Ripjawdactyl Rider"
+      ],
+      "armyForgeUnitId": "Bci6cb_",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          50.0
+        ],
+        "raw": "50",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "dragon-lizard",
+      "names": [
+        "Dragon Lizard"
+      ],
+      "armyForgeUnitId": "qSnKBnl",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          75.0,
+          46.0
+        ],
+        "raw": "75x46",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "spiked-lizard",
+      "names": [
+        "Spiked Lizard"
+      ],
+      "armyForgeUnitId": "uaDbgEQ",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          75.0,
+          46.0
+        ],
+        "raw": "75x46",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "raptor-veteran",
+      "candidateId": "a001",
+      "pdfLabel": "Raptor Veteran",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "saurian-veteran",
+      "equipmentTags": [
+        "Raptor"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Raptor Veteran",
+          "armyBook": "Saurian Veteran + Raptor"
+        }
+      ],
+      "notes": "só Saurian Veteran tem a montaria Raptor (loja 'Saurian Veteran on Raptor'); figura montada em raptor",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0
+          ],
+          "front": "arts/raptor-veteran/fino/frente.svg",
+          "back": "arts/raptor-veteran/fino/verso.svg",
+          "canvasMm": [
+            57.573,
+            64.643
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            64.5,
+            57.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            0
+          ],
+          "front": "arts/raptor-veteran/borda/frente.svg",
+          "back": "arts/raptor-veteran/borda/verso.svg",
+          "canvasMm": [
+            60.96,
+            66.336
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            66.2,
+            60.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "saurian-veteran",
+      "candidateId": "a002",
+      "pdfLabel": "Saurian Veteran",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "saurian-veteran",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            1
+          ],
+          "front": "arts/saurian-veteran/fino/frente.svg",
+          "back": "arts/saurian-veteran/fino/verso.svg",
+          "canvasMm": [
+            73.194,
+            41.571
+          ],
+          "frontBackIoU": 0.942,
+          "sizeMm": [
+            41.5,
+            73.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            1
+          ],
+          "front": "arts/saurian-veteran/borda/frente.svg",
+          "back": "arts/saurian-veteran/borda/verso.svg",
+          "canvasMm": [
+            77.004,
+            43.476
+          ],
+          "frontBackIoU": 0.961,
+          "sizeMm": [
+            43.3,
+            76.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gator-veteran",
+      "candidateId": "a003",
+      "pdfLabel": "Gator Veteran",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "gator-veteran",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            2
+          ],
+          "front": "arts/gator-veteran/fino/frente.svg",
+          "back": "arts/gator-veteran/fino/verso.svg",
+          "canvasMm": [
+            81.322,
+            54.991
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            54.9,
+            81.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            2
+          ],
+          "front": "arts/gator-veteran/borda/frente.svg",
+          "back": "arts/gator-veteran/borda/verso.svg",
+          "canvasMm": [
+            84.709,
+            56.684
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            56.6,
+            84.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-chief",
+      "candidateId": "a004",
+      "pdfLabel": "Gecko Chief",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "gecko-champion",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gecko Chief",
+          "armyBook": "Gecko Champion"
+        }
+      ],
+      "notes": "o army book chama o modelo básico de 'Gecko Champion (Chief)' (loja) e a descrição fala em Gecko Chiefs; existe a opção Chief, mas sem tag a arte serve de genérica do Gecko Champion",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0
+          ],
+          "front": "arts/gecko-chief/fino/frente.svg",
+          "back": "arts/gecko-chief/fino/verso.svg",
+          "canvasMm": [
+            26.755,
+            34.586
+          ],
+          "frontBackIoU": 0.954,
+          "sizeMm": [
+            34.5,
+            26.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            0
+          ],
+          "front": "arts/gecko-chief/borda/frente.svg",
+          "back": "arts/gecko-chief/borda/verso.svg",
+          "canvasMm": [
+            30.141,
+            36.28
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            36.2,
+            29.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-priest",
+      "candidateId": "a005",
+      "pdfLabel": "Gecko Priest",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "gecko-champion",
+      "equipmentTags": [
+        "Priest"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gecko Priest",
+          "armyBook": "Gecko Champion + Priest"
+        }
+      ],
+      "notes": "Priest é opção do Gecko Champion (loja 'Gecko Champion (Priest)')",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            1
+          ],
+          "front": "arts/gecko-priest/fino/frente.svg",
+          "back": "arts/gecko-priest/fino/verso.svg",
+          "canvasMm": [
+            30.819,
+            57.319
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            57.2,
+            30.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            1
+          ],
+          "front": "arts/gecko-priest/borda/frente.svg",
+          "back": "arts/gecko-priest/borda/verso.svg",
+          "canvasMm": [
+            34.629,
+            59.224
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            59.1,
+            34.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "starseer",
+      "candidateId": "a006",
+      "pdfLabel": "Starseer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "gecko-champion",
+      "equipmentTags": [
+        "Starseer Palanquin"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Starseer",
+          "armyBook": "Gecko Champion + Starseer Palanquin"
+        }
+      ],
+      "notes": "opção Starseer Palanquin do Gecko Champion (loja 'Gecko Champion on Palanquin (Priest) [Starseer]'); figura sobre palanquim",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            2
+          ],
+          "front": "arts/starseer/fino/frente.svg",
+          "back": "arts/starseer/fino/verso.svg",
+          "canvasMm": [
+            52.324,
+            70.316
+          ],
+          "frontBackIoU": 0.683,
+          "sizeMm": [
+            70.2,
+            52.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            2
+          ],
+          "front": "arts/starseer/borda/frente.svg",
+          "back": "arts/starseer/borda/verso.svg",
+          "canvasMm": [
+            55.711,
+            72.009
+          ],
+          "frontBackIoU": 0.732,
+          "sizeMm": [
+            71.9,
+            55.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "chameleon-chief",
+      "candidateId": "a007",
+      "pdfLabel": "Chameleon Chief",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "gecko-champion",
+      "equipmentTags": [
+        "Chameleon Breed"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Chameleon Chief",
+          "armyBook": "Gecko Champion + Chameleon Breed"
+        }
+      ],
+      "notes": "opção Chameleon Breed do Gecko Champion (loja 'Gecko Champion (Chameleon Chief)'); a unidade Chameleons não tem líder",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            3
+          ],
+          "front": "arts/chameleon-chief/fino/frente.svg",
+          "back": "arts/chameleon-chief/fino/verso.svg",
+          "canvasMm": [
+            34.713,
+            35.01
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            34.9,
+            34.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            3
+          ],
+          "front": "arts/chameleon-chief/borda/frente.svg",
+          "back": "arts/chameleon-chief/borda/verso.svg",
+          "canvasMm": [
+            38.1,
+            36.703
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            36.6,
+            37.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-chief-rider-pterodactyl",
+      "candidateId": "a008",
+      "pdfLabel": "Gecko Chief Rider Pterodactyl",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "gecko-champion",
+      "equipmentTags": [
+        "Pterodactyl"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gecko Chief Rider Pterodactyl",
+          "armyBook": "Gecko Champion + Pterodactyl"
+        }
+      ],
+      "notes": "montaria Pterodactyl do Gecko Champion (loja 'Gecko Champion on Pterodactyl (Chief)'); não é a unidade Pterodactyl Riders. Só contorno fino; a borda é a045",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0
+          ],
+          "front": "arts/gecko-chief-rider-pterodactyl/fino/frente.svg",
+          "back": "arts/gecko-chief-rider-pterodactyl/fino/verso.svg",
+          "canvasMm": [
+            75.438,
+            54.906
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            54.7,
+            75.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-chief-rider-ripjawdactyl",
+      "candidateId": "a009",
+      "pdfLabel": "Gecko Chief Rider Ripjawdactyl",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "gecko-champion",
+      "equipmentTags": [
+        "Ripjawdactyl"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gecko Chief Rider Ripjawdactyl",
+          "armyBook": "Gecko Champion + Ripjawdactyl"
+        }
+      ],
+      "notes": "montaria Ripjawdactyl do Gecko Champion (loja 'Gecko Champion Rider (Chief)'). Só contorno fino; a borda é a046",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            1
+          ],
+          "front": "arts/gecko-chief-rider-ripjawdactyl/fino/frente.svg",
+          "back": "arts/gecko-chief-rider-ripjawdactyl/fino/verso.svg",
+          "canvasMm": [
+            49.657,
+            54.695
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            54.5,
+            49.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "frog-mage",
+      "candidateId": "a010",
+      "pdfLabel": "Frog Mage",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "frog-mage",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Frog-Mage; a figura está num palanquim (opção Ancient Palanquin), mas o rótulo não diz",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0
+          ],
+          "front": "arts/frog-mage/fino/frente.svg",
+          "back": "arts/frog-mage/fino/verso.svg",
+          "canvasMm": [
+            96.943,
+            100.753
+          ],
+          "frontBackIoU": 0.921,
+          "sizeMm": [
+            100.7,
+            96.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            0
+          ],
+          "front": "arts/frog-mage/borda/frente.svg",
+          "back": "arts/frog-mage/borda/verso.svg",
+          "canvasMm": [
+            102.023,
+            103.293
+          ],
+          "frontBackIoU": 0.933,
+          "sizeMm": [
+            103.2,
+            101.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-club",
+      "candidateId": "a011",
+      "pdfLabel": "Warrior Club",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "saurian-warriors",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Club",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "army book não tem Club; Hand Weapon é a arma padrão (loja 'Saurian Warriors (Hand Weapon)'); 5 cópias",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-club/fino/frente.svg",
+          "back": "arts/warrior-club/fino/verso.svg",
+          "canvasMm": [
+            36.872,
+            44.662
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            44.5,
+            36.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 30,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-club/borda/frente.svg",
+          "back": "arts/warrior-club/borda/verso.svg",
+          "canvasMm": [
+            40.682,
+            46.567
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            46.5,
+            40.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-spear",
+      "candidateId": "a012",
+      "pdfLabel": "Warrior Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "saurian-warriors",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-spear/fino/frente.svg",
+          "back": "arts/warrior-spear/fino/verso.svg",
+          "canvasMm": [
+            39.624,
+            44.873
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            44.8,
+            39.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 31,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-spear/borda/frente.svg",
+          "back": "arts/warrior-spear/borda/verso.svg",
+          "canvasMm": [
+            43.392,
+            46.778
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            46.7,
+            43.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sergeant",
+      "candidateId": "a013",
+      "pdfLabel": "Warrior Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "saurian-warriors",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sergeant/fino/frente.svg",
+          "back": "arts/warrior-sergeant/fino/verso.svg",
+          "canvasMm": [
+            45.805,
+            49.742
+          ],
+          "frontBackIoU": 0.948,
+          "sizeMm": [
+            49.6,
+            45.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sergeant/borda/frente.svg",
+          "back": "arts/warrior-sergeant/borda/verso.svg",
+          "canvasMm": [
+            49.699,
+            51.647
+          ],
+          "frontBackIoU": 0.954,
+          "sizeMm": [
+            51.6,
+            49.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-musician",
+      "candidateId": "a014",
+      "pdfLabel": "Warrior Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "saurian-warriors",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-musician/fino/frente.svg",
+          "back": "arts/warrior-musician/fino/verso.svg",
+          "canvasMm": [
+            49.403,
+            37.634
+          ],
+          "frontBackIoU": 0.945,
+          "sizeMm": [
+            37.5,
+            49.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-musician/borda/frente.svg",
+          "back": "arts/warrior-musician/borda/verso.svg",
+          "canvasMm": [
+            53.213,
+            39.539
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            39.5,
+            53.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-banner",
+      "candidateId": "a015",
+      "pdfLabel": "Warrior Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "saurian-warriors",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-banner/fino/frente.svg",
+          "back": "arts/warrior-banner/fino/verso.svg",
+          "canvasMm": [
+            44.196,
+            63.288
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            63.2,
+            43.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-banner/borda/frente.svg",
+          "back": "arts/warrior-banner/borda/verso.svg",
+          "canvasMm": [
+            48.006,
+            65.193
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            65.1,
+            47.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-javelin",
+      "candidateId": "a016",
+      "pdfLabel": "Gecko Javelin",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "geckos",
+      "equipmentTags": [
+        "Javelins"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "army book usa o plural Javelins",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/gecko-javelin/fino/frente.svg",
+          "back": "arts/gecko-javelin/fino/verso.svg",
+          "canvasMm": [
+            42.079,
+            29.887
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            29.8,
+            41.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/gecko-javelin/borda/frente.svg",
+          "back": "arts/gecko-javelin/borda/verso.svg",
+          "canvasMm": [
+            45.466,
+            31.581
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            31.5,
+            45.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-blowpipe",
+      "candidateId": "a017",
+      "pdfLabel": "Gecko Blowpipe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "geckos",
+      "equipmentTags": [
+        "Toxin Blowpipe"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Blowpipe",
+          "armyBook": "Toxin Blowpipe"
+        }
+      ],
+      "notes": "há Toxin Blowpipe e Scatter Blowpipe; o rótulo não distingue, escolhida a Toxin (troca básica). Scatter fica sem arte automática",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/gecko-blowpipe/fino/frente.svg",
+          "back": "arts/gecko-blowpipe/fino/verso.svg",
+          "canvasMm": [
+            38.439,
+            29.803
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            29.7,
+            38.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/gecko-blowpipe/borda/frente.svg",
+          "back": "arts/gecko-blowpipe/borda/verso.svg",
+          "canvasMm": [
+            41.91,
+            31.496
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            31.4,
+            41.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-club",
+      "candidateId": "a018",
+      "pdfLabel": "Gecko Club",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "geckos",
+      "equipmentTags": [
+        "Toxin Club"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Club",
+          "armyBook": "Toxin Club"
+        }
+      ],
+      "notes": "Toxin Club é a arma padrão dos Geckos",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/gecko-club/fino/frente.svg",
+          "back": "arts/gecko-club/fino/verso.svg",
+          "canvasMm": [
+            41.698,
+            29.76
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            29.6,
+            41.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/gecko-club/borda/frente.svg",
+          "back": "arts/gecko-club/borda/verso.svg",
+          "canvasMm": [
+            45.085,
+            31.454
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            31.3,
+            44.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-sargeant",
+      "candidateId": "a019",
+      "pdfLabel": "Gecko Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "geckos",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "'Sargeant' está assim (erro de grafia) no PDF",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0
+          ],
+          "front": "arts/gecko-sargeant/fino/frente.svg",
+          "back": "arts/gecko-sargeant/fino/verso.svg",
+          "canvasMm": [
+            29.887,
+            45.0
+          ],
+          "frontBackIoU": 0.962,
+          "sizeMm": [
+            44.9,
+            29.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            0
+          ],
+          "front": "arts/gecko-sargeant/borda/frente.svg",
+          "back": "arts/gecko-sargeant/borda/verso.svg",
+          "canvasMm": [
+            33.486,
+            46.694
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            46.6,
+            33.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-banner",
+      "candidateId": "a020",
+      "pdfLabel": "Gecko Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "geckos",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            1
+          ],
+          "front": "arts/gecko-banner/fino/frente.svg",
+          "back": "arts/gecko-banner/fino/verso.svg",
+          "canvasMm": [
+            24.215,
+            67.818
+          ],
+          "frontBackIoU": 0.958,
+          "sizeMm": [
+            67.7,
+            24.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            1
+          ],
+          "front": "arts/gecko-banner/borda/frente.svg",
+          "back": "arts/gecko-banner/borda/verso.svg",
+          "canvasMm": [
+            27.601,
+            69.511
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            69.4,
+            27.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-musician",
+      "candidateId": "a021",
+      "pdfLabel": "Gecko Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "geckos",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            2
+          ],
+          "front": "arts/gecko-musician/fino/frente.svg",
+          "back": "arts/gecko-musician/fino/verso.svg",
+          "canvasMm": [
+            18.584,
+            30.48
+          ],
+          "frontBackIoU": 0.936,
+          "sizeMm": [
+            30.4,
+            18.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            2
+          ],
+          "front": "arts/gecko-musician/borda/frente.svg",
+          "back": "arts/gecko-musician/borda/verso.svg",
+          "canvasMm": [
+            21.971,
+            32.173
+          ],
+          "frontBackIoU": 0.956,
+          "sizeMm": [
+            32.1,
+            21.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-mace",
+      "candidateId": "a022",
+      "pdfLabel": "Guardian Mace",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "saurian-guardians",
+      "equipmentTags": [
+        "Great Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Mace",
+          "armyBook": "Great Weapon"
+        }
+      ],
+      "notes": "5 cópias = troca da unidade toda, e a única troca de todas as Halberds é Great Weapon (loja 'Saurian Guardians (Great Weapon)'); Darkglass Mace / Mace of Destiny são troca de um só modelo",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/guardian-mace/fino/frente.svg",
+          "back": "arts/guardian-mace/fino/verso.svg",
+          "canvasMm": [
+            38.1,
+            38.227
+          ],
+          "frontBackIoU": 0.946,
+          "sizeMm": [
+            38.1,
+            37.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/guardian-mace/borda/frente.svg",
+          "back": "arts/guardian-mace/borda/verso.svg",
+          "canvasMm": [
+            41.487,
+            39.92
+          ],
+          "frontBackIoU": 0.959,
+          "sizeMm": [
+            39.8,
+            41.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-halberd",
+      "candidateId": "a023",
+      "pdfLabel": "Guardian Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "saurian-guardians",
+      "equipmentTags": [
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/guardian-halberd/fino/frente.svg",
+          "back": "arts/guardian-halberd/fino/verso.svg",
+          "canvasMm": [
+            40.725,
+            38.354
+          ],
+          "frontBackIoU": 0.944,
+          "sizeMm": [
+            38.3,
+            40.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/guardian-halberd/borda/frente.svg",
+          "back": "arts/guardian-halberd/borda/verso.svg",
+          "canvasMm": [
+            44.111,
+            40.047
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            40.0,
+            43.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-sargeant",
+      "candidateId": "a024",
+      "pdfLabel": "Guardian Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "saurian-guardians",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "'Sargeant' está assim (erro de grafia) no PDF",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0
+          ],
+          "front": "arts/guardian-sargeant/fino/frente.svg",
+          "back": "arts/guardian-sargeant/fino/verso.svg",
+          "canvasMm": [
+            42.714,
+            43.688
+          ],
+          "frontBackIoU": 0.953,
+          "sizeMm": [
+            43.6,
+            42.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            0
+          ],
+          "front": "arts/guardian-sargeant/borda/frente.svg",
+          "back": "arts/guardian-sargeant/borda/verso.svg",
+          "canvasMm": [
+            46.101,
+            45.381
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            45.3,
+            45.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-musician",
+      "candidateId": "a025",
+      "pdfLabel": "Guardian Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "saurian-guardians",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            1
+          ],
+          "front": "arts/guardian-musician/fino/frente.svg",
+          "back": "arts/guardian-musician/fino/verso.svg",
+          "canvasMm": [
+            37.042,
+            46.736
+          ],
+          "frontBackIoU": 0.946,
+          "sizeMm": [
+            46.6,
+            36.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            1
+          ],
+          "front": "arts/guardian-musician/borda/frente.svg",
+          "back": "arts/guardian-musician/borda/verso.svg",
+          "canvasMm": [
+            40.428,
+            48.429
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            48.3,
+            40.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-banner",
+      "candidateId": "a026",
+      "pdfLabel": "Guardian Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "saurian-guardians",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            2
+          ],
+          "front": "arts/guardian-banner/fino/frente.svg",
+          "back": "arts/guardian-banner/fino/verso.svg",
+          "canvasMm": [
+            44.619,
+            60.367
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            60.3,
+            44.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            2
+          ],
+          "front": "arts/guardian-banner/borda/frente.svg",
+          "back": "arts/guardian-banner/borda/verso.svg",
+          "canvasMm": [
+            48.006,
+            62.061
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            62.0,
+            47.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "chameleon",
+      "candidateId": "a027",
+      "pdfLabel": "Chameleon",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "chameleons",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "nome da unidade no Skirmish",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/chameleon/fino/frente.svg",
+          "back": "arts/chameleon/fino/verso.svg",
+          "canvasMm": [
+            37.507,
+            45.932
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            45.8,
+            37.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/chameleon/borda/frente.svg",
+          "back": "arts/chameleon/borda/verso.svg",
+          "canvasMm": [
+            40.894,
+            47.625
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            47.5,
+            40.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "rider-club",
+      "candidateId": "a028",
+      "pdfLabel": "Rider Club",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "raptor-riders",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rider",
+          "armyBook": "Raptor Riders"
+        },
+        {
+          "pdf": "Club",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "rótulo não diz a montaria; Raptor Riders é a única unidade montada com Hand Weapon e tem links de loja 'Raptor Riders Command/(Hand Weapon)/(Lance)'; Deinonychus Riders (penas, só Lance/Javelins) não bate",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/rider-club/fino/frente.svg",
+          "back": "arts/rider-club/fino/verso.svg",
+          "canvasMm": [
+            63.669,
+            52.07
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            52.0,
+            63.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/rider-club/borda/frente.svg",
+          "back": "arts/rider-club/borda/verso.svg",
+          "canvasMm": [
+            66.59,
+            53.763
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            53.7,
+            66.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "rider-spear",
+      "candidateId": "a029",
+      "pdfLabel": "Rider Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "raptor-riders",
+      "equipmentTags": [
+        "Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rider",
+          "armyBook": "Raptor Riders"
+        },
+        {
+          "pdf": "Spear",
+          "armyBook": "Lance"
+        }
+      ],
+      "notes": "rótulo não diz a montaria; Raptor Riders é a única unidade montada com Hand Weapon e tem links de loja 'Raptor Riders Command/(Hand Weapon)/(Lance)'; Deinonychus Riders (penas, só Lance/Javelins) não bate",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/rider-spear/fino/frente.svg",
+          "back": "arts/rider-spear/fino/verso.svg",
+          "canvasMm": [
+            64.685,
+            51.562
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            51.5,
+            64.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            0,
+            2
+          ],
+          "front": "arts/rider-spear/borda/frente.svg",
+          "back": "arts/rider-spear/borda/verso.svg",
+          "canvasMm": [
+            67.141,
+            53.255
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            53.2,
+            67.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "rider-sergeant",
+      "candidateId": "a030",
+      "pdfLabel": "Rider Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "raptor-riders",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rider",
+          "armyBook": "Raptor Riders"
+        }
+      ],
+      "notes": "rótulo não diz a montaria; Raptor Riders é a única unidade montada com Hand Weapon e tem links de loja 'Raptor Riders Command/(Hand Weapon)/(Lance)'; Deinonychus Riders (penas, só Lance/Javelins) não bate",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0
+          ],
+          "front": "arts/rider-sergeant/fino/frente.svg",
+          "back": "arts/rider-sergeant/fino/verso.svg",
+          "canvasMm": [
+            57.531,
+            69.554
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            69.4,
+            57.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            0
+          ],
+          "front": "arts/rider-sergeant/borda/frente.svg",
+          "back": "arts/rider-sergeant/borda/verso.svg",
+          "canvasMm": [
+            60.918,
+            71.247
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            71.1,
+            60.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "rider-banner",
+      "candidateId": "a031",
+      "pdfLabel": "Rider Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "raptor-riders",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rider",
+          "armyBook": "Raptor Riders"
+        }
+      ],
+      "notes": "rótulo não diz a montaria; Raptor Riders é a única unidade montada com Hand Weapon e tem links de loja 'Raptor Riders Command/(Hand Weapon)/(Lance)'; Deinonychus Riders (penas, só Lance/Javelins) não bate",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            1
+          ],
+          "front": "arts/rider-banner/fino/frente.svg",
+          "back": "arts/rider-banner/fino/verso.svg",
+          "canvasMm": [
+            64.855,
+            76.92
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            76.8,
+            64.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            1
+          ],
+          "front": "arts/rider-banner/borda/frente.svg",
+          "back": "arts/rider-banner/borda/verso.svg",
+          "canvasMm": [
+            68.241,
+            78.613
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            78.5,
+            68.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "rider-musician",
+      "candidateId": "a032",
+      "pdfLabel": "Rider Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "raptor-riders",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rider",
+          "armyBook": "Raptor Riders"
+        }
+      ],
+      "notes": "a faixa do rótulo traz 'Rider Musician' e, solto embaixo, 'Rider Banner' em letra pequena; a figura toca tambor, então é o músico. rótulo não diz a montaria; Raptor Riders é a única unidade montada com Hand Weapon e tem links de loja 'Raptor Riders Command/(Hand Weapon)/(Lance)'; Deinonychus Riders (penas, só Lance/Javelins) não bate",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            2
+          ],
+          "front": "arts/rider-musician/fino/frente.svg",
+          "back": "arts/rider-musician/fino/verso.svg",
+          "canvasMm": [
+            62.738,
+            56.854
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            56.7,
+            62.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            2
+          ],
+          "front": "arts/rider-musician/borda/frente.svg",
+          "back": "arts/rider-musician/borda/verso.svg",
+          "canvasMm": [
+            66.167,
+            58.547
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            58.4,
+            65.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gator",
+      "candidateId": "a033",
+      "pdfLabel": "Gator",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "gators",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "nome da unidade no Skirmish",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/gator/fino/frente.svg",
+          "back": "arts/gator/fino/verso.svg",
+          "canvasMm": [
+            67.522,
+            49.445
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            49.4,
+            67.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/gator/borda/frente.svg",
+          "back": "arts/gator/borda/verso.svg",
+          "canvasMm": [
+            70.908,
+            51.139
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            51.1,
+            70.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "snake-swarm",
+      "candidateId": "a034",
+      "pdfLabel": "Snake Swarm",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "snake-swarms",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "nome da unidade no Skirmish",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/snake-swarm/fino/frente.svg",
+          "back": "arts/snake-swarm/fino/verso.svg",
+          "canvasMm": [
+            42.333,
+            20.574
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            20.5,
+            42.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/snake-swarm/borda/frente.svg",
+          "back": "arts/snake-swarm/borda/verso.svg",
+          "canvasMm": [
+            45.678,
+            22.267
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            22.2,
+            45.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "pterodactyl-rider",
+      "candidateId": "a035",
+      "pdfLabel": "Pterodactyl Rider",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "pterodactyl-riders",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "nome da unidade no Skirmish. Só contorno fino; a borda é a050",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/pterodactyl-rider/fino/frente.svg",
+          "back": "arts/pterodactyl-rider/fino/verso.svg",
+          "canvasMm": [
+            81.957,
+            90.128
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            89.9,
+            81.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ripjawdactyl-rider",
+      "candidateId": "a036",
+      "pdfLabel": "Ripjawdactyl Rider",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ripjawdactyl-riders",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "nome da unidade no Skirmish. Só contorno fino; a borda é a051",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ripjawdactyl-rider/fino/frente.svg",
+          "back": "arts/ripjawdactyl-rider/fino/verso.svg",
+          "canvasMm": [
+            66.04,
+            60.198
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            60.0,
+            65.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "dragon-lizard",
+      "candidateId": "a037",
+      "pdfLabel": "Dragon Lizard",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dragon-lizard",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            0
+          ],
+          "front": "arts/dragon-lizard/fino/frente.svg",
+          "back": "arts/dragon-lizard/fino/verso.svg",
+          "canvasMm": [
+            91.101,
+            34.417
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            34.3,
+            90.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            0
+          ],
+          "front": "arts/dragon-lizard/borda/frente.svg",
+          "back": "arts/dragon-lizard/borda/verso.svg",
+          "canvasMm": [
+            93.726,
+            35.899
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            35.8,
+            93.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-handler-1-dragon-lizard",
+      "candidateId": "a038",
+      "pdfLabel": "Gecko Handler 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dragon-lizard",
+      "equipmentTags": [],
+      "cosmetic": "handler",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gecko Handler",
+          "armyBook": "Lizard Handlers"
+        }
+      ],
+      "notes": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Dragon Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            1
+          ],
+          "front": "arts/gecko-handler-1-dragon-lizard/fino/frente.svg",
+          "back": "arts/gecko-handler-1-dragon-lizard/fino/verso.svg",
+          "canvasMm": [
+            61.002,
+            34.417
+          ],
+          "frontBackIoU": 0.946,
+          "sizeMm": [
+            34.3,
+            60.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            1
+          ],
+          "front": "arts/gecko-handler-1-dragon-lizard/borda/frente.svg",
+          "back": "arts/gecko-handler-1-dragon-lizard/borda/verso.svg",
+          "canvasMm": [
+            63.669,
+            35.899
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            35.8,
+            63.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-handler-2-dragon-lizard",
+      "candidateId": "a039",
+      "pdfLabel": "Gecko Handler 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dragon-lizard",
+      "equipmentTags": [],
+      "cosmetic": "handler",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gecko Handler",
+          "armyBook": "Lizard Handlers"
+        }
+      ],
+      "notes": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Dragon Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            2
+          ],
+          "front": "arts/gecko-handler-2-dragon-lizard/fino/frente.svg",
+          "back": "arts/gecko-handler-2-dragon-lizard/fino/verso.svg",
+          "canvasMm": [
+            52.324,
+            34.332
+          ],
+          "frontBackIoU": 0.962,
+          "sizeMm": [
+            34.2,
+            52.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            2
+          ],
+          "front": "arts/gecko-handler-2-dragon-lizard/borda/frente.svg",
+          "back": "arts/gecko-handler-2-dragon-lizard/borda/verso.svg",
+          "canvasMm": [
+            55.287,
+            35.899
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            35.8,
+            55.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-handler-3-dragon-lizard",
+      "candidateId": "a040",
+      "pdfLabel": "Gecko Handler 3",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dragon-lizard",
+      "equipmentTags": [],
+      "cosmetic": "handler",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gecko Handler",
+          "armyBook": "Lizard Handlers"
+        }
+      ],
+      "notes": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Dragon Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            3
+          ],
+          "front": "arts/gecko-handler-3-dragon-lizard/fino/frente.svg",
+          "back": "arts/gecko-handler-3-dragon-lizard/fino/verso.svg",
+          "canvasMm": [
+            66.04,
+            34.121
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            34.0,
+            65.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            3
+          ],
+          "front": "arts/gecko-handler-3-dragon-lizard/borda/frente.svg",
+          "back": "arts/gecko-handler-3-dragon-lizard/borda/verso.svg",
+          "canvasMm": [
+            66.887,
+            35.899
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            35.8,
+            66.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "spiked-lizard",
+      "candidateId": "a041",
+      "pdfLabel": "Spiked Lizard",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "spiked-lizard",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            0
+          ],
+          "front": "arts/spiked-lizard/fino/frente.svg",
+          "back": "arts/spiked-lizard/fino/verso.svg",
+          "canvasMm": [
+            94.996,
+            38.269
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            38.2,
+            94.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            0
+          ],
+          "front": "arts/spiked-lizard/borda/frente.svg",
+          "back": "arts/spiked-lizard/borda/verso.svg",
+          "canvasMm": [
+            97.705,
+            40.132
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            40.0,
+            97.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-handler-1-spiked-lizard",
+      "candidateId": "a042",
+      "pdfLabel": "Gecko Handler 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "spiked-lizard",
+      "equipmentTags": [],
+      "cosmetic": "handler",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gecko Handler",
+          "armyBook": "Lizard Handlers"
+        }
+      ],
+      "notes": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Spiked Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            1
+          ],
+          "front": "arts/gecko-handler-1-spiked-lizard/fino/frente.svg",
+          "back": "arts/gecko-handler-1-spiked-lizard/fino/verso.svg",
+          "canvasMm": [
+            61.002,
+            34.332
+          ],
+          "frontBackIoU": 0.947,
+          "sizeMm": [
+            34.2,
+            60.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            1
+          ],
+          "front": "arts/gecko-handler-1-spiked-lizard/borda/frente.svg",
+          "back": "arts/gecko-handler-1-spiked-lizard/borda/verso.svg",
+          "canvasMm": [
+            63.669,
+            35.899
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            35.8,
+            63.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-handler-2-spiked-lizard",
+      "candidateId": "a043",
+      "pdfLabel": "Gecko Handler 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "spiked-lizard",
+      "equipmentTags": [],
+      "cosmetic": "handler",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gecko Handler",
+          "armyBook": "Lizard Handlers"
+        }
+      ],
+      "notes": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Spiked Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            2
+          ],
+          "front": "arts/gecko-handler-2-spiked-lizard/fino/frente.svg",
+          "back": "arts/gecko-handler-2-spiked-lizard/fino/verso.svg",
+          "canvasMm": [
+            52.324,
+            34.248
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            34.1,
+            52.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            2
+          ],
+          "front": "arts/gecko-handler-2-spiked-lizard/borda/frente.svg",
+          "back": "arts/gecko-handler-2-spiked-lizard/borda/verso.svg",
+          "canvasMm": [
+            55.287,
+            35.899
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            35.8,
+            55.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-handler-3-spiked-lizard",
+      "candidateId": "a044",
+      "pdfLabel": "Gecko Handler 3",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "spiked-lizard",
+      "equipmentTags": [],
+      "cosmetic": "handler",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gecko Handler",
+          "armyBook": "Lizard Handlers"
+        }
+      ],
+      "notes": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Spiked Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            3
+          ],
+          "front": "arts/gecko-handler-3-spiked-lizard/fino/frente.svg",
+          "back": "arts/gecko-handler-3-spiked-lizard/fino/verso.svg",
+          "canvasMm": [
+            66.04,
+            34.036
+          ],
+          "frontBackIoU": 0.972,
+          "sizeMm": [
+            34.0,
+            65.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            3
+          ],
+          "front": "arts/gecko-handler-3-spiked-lizard/borda/frente.svg",
+          "back": "arts/gecko-handler-3-spiked-lizard/borda/verso.svg",
+          "canvasMm": [
+            66.887,
+            35.899
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            35.8,
+            66.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-chief-rider-pterodactyl-borda",
+      "candidateId": "a045",
+      "pdfLabel": "Gecko Chief Rider Pterodactyl",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "gecko-champion",
+      "equipmentTags": [
+        "Pterodactyl"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gecko Chief Rider Pterodactyl",
+          "armyBook": "Gecko Champion + Pterodactyl"
+        }
+      ],
+      "notes": "cópia só em borda grossa, sem par; mesma figura de a008. montaria Pterodactyl do Gecko Champion (loja 'Gecko Champion on Pterodactyl (Chief)'); não é a unidade Pterodactyl Riders",
+      "styles": {
+        "borda": {
+          "page": 28,
+          "rows": [
+            0
+          ],
+          "front": "arts/gecko-chief-rider-pterodactyl-borda/borda/frente.svg",
+          "back": "arts/gecko-chief-rider-pterodactyl-borda/borda/verso.svg",
+          "canvasMm": [
+            79.502,
+            71.247
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            71.1,
+            79.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "gecko-chief-rider-ripjawdactyl-borda",
+      "candidateId": "a046",
+      "pdfLabel": "Gecko Chief Rider Ripjawdactyl",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "gecko-champion",
+      "equipmentTags": [
+        "Ripjawdactyl"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gecko Chief Rider Ripjawdactyl",
+          "armyBook": "Gecko Champion + Ripjawdactyl"
+        }
+      ],
+      "notes": "cópia só em borda grossa, sem par; mesma figura de a009. montaria Ripjawdactyl do Gecko Champion (loja 'Gecko Champion Rider (Chief)')",
+      "styles": {
+        "borda": {
+          "page": 28,
+          "rows": [
+            1
+          ],
+          "front": "arts/gecko-chief-rider-ripjawdactyl-borda/borda/frente.svg",
+          "back": "arts/gecko-chief-rider-ripjawdactyl-borda/borda/verso.svg",
+          "canvasMm": [
+            53.721,
+            71.205
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            71.1,
+            53.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "rider-club-borda",
+      "candidateId": "a047",
+      "pdfLabel": "Rider Club",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "raptor-riders",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rider",
+          "armyBook": "Raptor Riders"
+        },
+        {
+          "pdf": "Club",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "cópia só em borda grossa, sem par; mesma figura de a028. rótulo não diz a montaria; Raptor Riders é a única unidade montada com Hand Weapon e tem links de loja 'Raptor Riders Command/(Hand Weapon)/(Lance)'; Deinonychus Riders (penas, só Lance/Javelins) não bate",
+      "styles": {
+        "borda": {
+          "page": 41,
+          "rows": [
+            3
+          ],
+          "front": "arts/rider-club-borda/borda/frente.svg",
+          "back": "arts/rider-club-borda/borda/verso.svg",
+          "canvasMm": [
+            66.717,
+            53.763
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            53.7,
+            66.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "rider-spear-borda",
+      "candidateId": "a048",
+      "pdfLabel": "Rider Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "raptor-riders",
+      "equipmentTags": [
+        "Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rider",
+          "armyBook": "Raptor Riders"
+        },
+        {
+          "pdf": "Spear",
+          "armyBook": "Lance"
+        }
+      ],
+      "notes": "cópia só em borda grossa, sem par; mesma figura de a029. rótulo não diz a montaria; Raptor Riders é a única unidade montada com Hand Weapon e tem links de loja 'Raptor Riders Command/(Hand Weapon)/(Lance)'; Deinonychus Riders (penas, só Lance/Javelins) não bate",
+      "styles": {
+        "borda": {
+          "page": 42,
+          "rows": [
+            1
+          ],
+          "front": "arts/rider-spear-borda/borda/frente.svg",
+          "back": "arts/rider-spear-borda/borda/verso.svg",
+          "canvasMm": [
+            67.141,
+            53.255
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            53.2,
+            67.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "rider-spear-borda-2",
+      "candidateId": "a049",
+      "pdfLabel": "Rider Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "raptor-riders",
+      "equipmentTags": [
+        "Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rider",
+          "armyBook": "Raptor Riders"
+        },
+        {
+          "pdf": "Spear",
+          "armyBook": "Lance"
+        }
+      ],
+      "notes": "cópia só em borda grossa, sem par; mesma figura de a029. rótulo não diz a montaria; Raptor Riders é a única unidade montada com Hand Weapon e tem links de loja 'Raptor Riders Command/(Hand Weapon)/(Lance)'; Deinonychus Riders (penas, só Lance/Javelins) não bate",
+      "styles": {
+        "borda": {
+          "page": 42,
+          "rows": [
+            3
+          ],
+          "front": "arts/rider-spear-borda-2/borda/frente.svg",
+          "back": "arts/rider-spear-borda-2/borda/verso.svg",
+          "canvasMm": [
+            67.141,
+            53.255
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            53.2,
+            67.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "pterodactyl-rider-borda",
+      "candidateId": "a050",
+      "pdfLabel": "Pterodactyl Rider",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "pterodactyl-riders",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "cópia só em borda grossa, sem par; mesma figura de a035. nome da unidade no Skirmish",
+      "styles": {
+        "borda": {
+          "page": 46,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/pterodactyl-rider-borda/borda/frente.svg",
+          "back": "arts/pterodactyl-rider-borda/borda/verso.svg",
+          "canvasMm": [
+            86.021,
+            106.384
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            106.3,
+            85.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ripjawdactyl-rider-borda",
+      "candidateId": "a051",
+      "pdfLabel": "Ripjawdactyl Rider",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ripjawdactyl-riders",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "cópia só em borda grossa, sem par; mesma figura de a036. nome da unidade no Skirmish",
+      "styles": {
+        "borda": {
+          "page": 47,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ripjawdactyl-rider-borda/borda/frente.svg",
+          "back": "arts/ripjawdactyl-rider-borda/borda/verso.svg",
+          "canvasMm": [
+            70.189,
+            76.877
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            76.8,
+            69.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

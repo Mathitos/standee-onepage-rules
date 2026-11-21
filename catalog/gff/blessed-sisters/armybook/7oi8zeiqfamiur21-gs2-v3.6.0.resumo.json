@@ -1,0 +1,2443 @@
+{
+  "armyBook": {
+    "id": "7oi8zeiqfamiur21",
+    "nome": "Blessed Sisters",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:31.956Z",
+    "sistema": "grimdark-future",
+    "sistemaId": 2
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "MbqCKb1",
+      "nome": "Constance",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Burst Blessed Flamer Pistol",
+        "Energy Sword"
+      ],
+      "itens": [
+        {
+          "nome": "Rangefinder Backpack",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Rangefinder Backpack",
+          "ganha": [
+            "Rangefinder Backpack - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JzHY_1g",
+      "nome": "Exo-Suit High Sister",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Energy Mace",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Energy Mace",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace Stomp",
+          "ganha": [
+            "Arm-Mounted Grenade Launcher"
+          ]
+        },
+        {
+          "secao": "Replace Stomp",
+          "ganha": [
+            "Arm-Mounted Cyclic Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Assault Heavy Flamer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Assault Blessed Flamer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Assault Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Assault Heavy Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Disposable Backpack Missiles"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Superior"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Priestess"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Abbess"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Reverend"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Witch"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Witch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sF4ltO_",
+      "nome": "Destroyer High Sister",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [
+        {
+          "nome": "Combat Shield",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Witch Staff"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Assault Burst Cyclic Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Burst Cyclic Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Dual Energy Claws"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Mace"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Fist"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Chain-Fist"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Orbital Drop"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Superior"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Abbess"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Priestess"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Canoness"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Witch"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Witch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "W-crN7f",
+      "nome": "Celestial High Sister",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [
+        {
+          "nome": "Combat Shield",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Reverend"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Superior"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Priestess"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Canoness"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Witch"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Witch"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Burst Battle Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Great Chain-Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Plasma Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Burst Cyclic Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Burst Shotgun",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Holy Spear"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Witch Staff"
+          ]
+        },
+        {
+          "secao": "Take one Burst Battle Rifle attachment",
+          "ganha": [
+            "Flamer-Mod"
+          ]
+        },
+        {
+          "secao": "Take one Burst Battle Rifle attachment",
+          "ganha": [
+            "Crossbow-Mod"
+          ]
+        },
+        {
+          "secao": "Take one Burst Battle Rifle attachment",
+          "ganha": [
+            "Plasma-Mod"
+          ]
+        },
+        {
+          "secao": "Take one Burst Battle Rifle attachment",
+          "ganha": [
+            "Fusion-Mod"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Flamer Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Shredder Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Fusion Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Mace"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Procession Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Fist"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Chain-Fist"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Jetpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Airdrop Jetpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Bike"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Assault Bike"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Holy Wings"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2TXWi3B",
+      "nome": "High Sister",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Pistol",
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Pistol and Hand Weapon",
+          "ganha": [
+            "Great Chain-Sword"
+          ]
+        },
+        {
+          "secao": "Replace Pistol and Hand Weapon",
+          "ganha": [
+            "Burst Battle Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Pistol and Hand Weapon",
+          "ganha": [
+            "Sniper Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Pistol and Hand Weapon",
+          "ganha": [
+            "Plasma Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Pistol and Hand Weapon",
+          "ganha": [
+            "Burst Cyclic Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Pistol and Hand Weapon",
+          "ganha": [
+            "Burst Shotgun",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Pistol and Hand Weapon",
+          "ganha": [
+            "Witch Staff"
+          ]
+        },
+        {
+          "secao": "Take one Burst Battle Rifle attachment",
+          "ganha": [
+            "Flamer-Mod"
+          ]
+        },
+        {
+          "secao": "Take one Burst Battle Rifle attachment",
+          "ganha": [
+            "Crossbow-Mod"
+          ]
+        },
+        {
+          "secao": "Take one Burst Battle Rifle attachment",
+          "ganha": [
+            "Plasma-Mod"
+          ]
+        },
+        {
+          "secao": "Take one Burst Battle Rifle attachment",
+          "ganha": [
+            "Fusion-Mod"
+          ]
+        },
+        {
+          "secao": "Replace Pistol",
+          "ganha": [
+            "Shredder Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Pistol",
+          "ganha": [
+            "Flamer Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Pistol",
+          "ganha": [
+            "Fusion Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Mace"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Procession Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Fist"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Chain-Fist"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Jetpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Vanguard"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Airdrop Jetpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Bike"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Assault Bike"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Reverend"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Superior"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Priestess"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Canoness"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Witch"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Witch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BT_-pdh",
+      "nome": "Fanatic Superior",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Whip-Blast",
+        "Dual Shock-Whips"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Shock-Whips and Whip-Blast",
+          "ganha": [
+            "Great Chain-Sword"
+          ]
+        },
+        {
+          "secao": "Replace Dual Shock-Whips and Whip-Blast",
+          "ganha": [
+            "Whip-Blast",
+            "Dual Plasma-Whips"
+          ]
+        },
+        {
+          "secao": "Replace Dual Shock-Whips and Whip-Blast",
+          "ganha": [
+            "Whip-Blast",
+            "Dual Force-Whips"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Flagellant"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Reverend"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Deacon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Superior"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Abbess"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Priestess"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_nVdDbE",
+      "nome": "Novice Leader",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Reverend"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Deacon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Abbess"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Priestess"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Canoness"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Witch"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Pistol",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Great Chain-Sword"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Burst Battle Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Witch Staff"
+          ]
+        },
+        {
+          "secao": "Replace Pistol",
+          "ganha": [
+            "Shredder Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Pistol",
+          "ganha": [
+            "Flamer Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Pistol",
+          "ganha": [
+            "Fusion Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Mace"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Fist"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fi5ZHtl",
+      "nome": "Novice Sisters",
+      "tamanho": 10,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Energy Club"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Energy Clubs",
+          "ganha": [
+            "Dual Hand Weapons"
+          ]
+        },
+        {
+          "secao": "Replace all Energy Clubs",
+          "ganha": [
+            "Battle Rifle",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Energy Clubs",
+          "ganha": [
+            "Pistol",
+            "Dagger"
+          ]
+        },
+        {
+          "secao": "Replace up to two Energy Clubs",
+          "ganha": [
+            "Flamer"
+          ]
+        },
+        {
+          "secao": "Replace up to two Energy Clubs",
+          "ganha": [
+            "Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sacred Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Canticle Megaphone"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Medical Training"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R3sC7UX",
+      "nome": "Fanatic Sisters",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "30"
+      },
+      "armas": [
+        "Chain-Sword"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Chain-Swords",
+          "ganha": [
+            "Dual Arc-Flails"
+          ]
+        },
+        {
+          "secao": "Replace one Chain-Sword",
+          "ganha": [
+            "Dual Shock-Whips"
+          ]
+        },
+        {
+          "secao": "Replace one Chain-Sword",
+          "ganha": [
+            "Great Chain-Sword"
+          ]
+        },
+        {
+          "secao": "Replace one Chain-Sword",
+          "ganha": [
+            "Dual Plasma-Whips"
+          ]
+        },
+        {
+          "secao": "Replace one Chain-Sword",
+          "ganha": [
+            "Dual Force-Whips"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Flagellants"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0Bc4px2",
+      "nome": "Warrior Sisters",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Battle Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Flamer"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Heavy Flamer"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Plasma Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Burst Cyclic Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Shredder Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Blessed Flamer"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Heavy Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle and Strike",
+          "ganha": [
+            "Sgt. Pistol",
+            "Sgt. Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Shredder Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Fist"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sacred Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Canticle Megaphone"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Medical Training"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zCo2G8c",
+      "nome": "Protector Sisters",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Procession Sword"
+      ],
+      "itens": [
+        {
+          "nome": "Combat Shield",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace all Procession Swords",
+          "ganha": [
+            "Pistol",
+            "Energy Halberd"
+          ]
+        },
+        {
+          "secao": "Replace all Procession Swords",
+          "ganha": [
+            "Pistol",
+            "Energy Spear"
+          ]
+        },
+        {
+          "secao": "Replace all Procession Swords",
+          "ganha": [
+            "Pistol",
+            "Energy Club"
+          ]
+        },
+        {
+          "secao": "Replace one Procession Sword",
+          "ganha": [
+            "Burst Flamer Pistol",
+            "Energy Halberd"
+          ]
+        },
+        {
+          "secao": "Replace one Procession Sword",
+          "ganha": [
+            "Burst Flamer Pistol",
+            "Energy Spear"
+          ]
+        },
+        {
+          "secao": "Replace one Procession Sword",
+          "ganha": [
+            "Burst Flamer Pistol",
+            "Energy Club"
+          ]
+        },
+        {
+          "secao": "Replace one Procession Sword",
+          "ganha": [
+            "Sacred Spear"
+          ]
+        },
+        {
+          "secao": "Replace Burst Flamer Pistol",
+          "ganha": [
+            "Burst Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Burst Flamer Pistol",
+          "ganha": [
+            "Burst Fusion Pistol"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Procession Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sacred Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Canticle Megaphone"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Medical Training"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VHKN-IZ",
+      "nome": "Vanguard Sisters",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Battle Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Battle Rifles",
+          "ganha": [
+            "Shotgun"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Flamer"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Sniper Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Plasma Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Burst Cyclic Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Shredder Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Blessed Flame-Sniper Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle and Strike",
+          "ganha": [
+            "Sgt. Pistol",
+            "Sgt. Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Shredder Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Fist"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qgESKb_",
+      "nome": "Pistoleer Sisters",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Pistols"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace one Dual Pistols",
+          "ganha": [
+            "Dual Burst Flamer Pistols"
+          ]
+        },
+        {
+          "secao": "Replace one Dual Pistols",
+          "ganha": [
+            "Dual Burst Fusion Pistols"
+          ]
+        },
+        {
+          "secao": "Replace one Dual Pistols",
+          "ganha": [
+            "Dual Burst Plasma Pistols"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Aerial Drop"
+          ]
+        },
+        {
+          "secao": "Replace one Dual Pistols",
+          "ganha": [
+            "Sgt. Pistol",
+            "Sgt. Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Shredder Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Flamer Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Fist"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S9Oua8O",
+      "nome": "Assault Sisters",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Pistol",
+        "Energy Sword"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace one Pistol",
+          "ganha": [
+            "Burst Flamer Pistol"
+          ]
+        },
+        {
+          "secao": "Replace one Pistol",
+          "ganha": [
+            "Burst Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace one Pistol",
+          "ganha": [
+            "Burst Fusion Pistol"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Aerial Drop"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_MWEPTm",
+      "nome": "Celestial Warrior Sisters",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Flamer",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace any Flamer",
+          "ganha": [
+            "Burst Battle Rifle"
+          ]
+        },
+        {
+          "secao": "Replace any Flamer",
+          "ganha": [
+            "Burst Cyclic Rifle"
+          ]
+        },
+        {
+          "secao": "Replace any Flamer",
+          "ganha": [
+            "Plasma Rifle"
+          ]
+        },
+        {
+          "secao": "Replace any Flamer",
+          "ganha": [
+            "Shredder Rifle"
+          ]
+        },
+        {
+          "secao": "Replace any Flamer",
+          "ganha": [
+            "Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sacred Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Canticle Megaphone"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Medical Training"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N9SDZqF",
+      "nome": "Support Sisters",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Heavy Flamer",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace any Heavy Flamer",
+          "ganha": [
+            "Blessed Flamer"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Flamer",
+          "ganha": [
+            "Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Flamer",
+          "ganha": [
+            "Heavy Fusion Rifle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tsHlz0v",
+      "nome": "Vanguard Snipers",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Sniper Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Sniper Rifles",
+          "ganha": [
+            "Flame-Sniper Carbine"
+          ]
+        },
+        {
+          "secao": "Replace all Sniper Rifles",
+          "ganha": [
+            "Blessed Flame-Sniper Rifle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1oucreF",
+      "nome": "Destroyer Sisters",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [
+        {
+          "nome": "Combat Shield",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace all Hand Weapons and Combat Shields",
+          "ganha": [
+            "Assault Cyclic Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons and Combat Shields",
+          "ganha": [
+            "Burst Cyclic Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons and Combat Shields",
+          "ganha": [
+            "Dual Energy Claws"
+          ]
+        },
+        {
+          "secao": "Replace any Hand Weapon",
+          "ganha": [
+            "Energy Mace"
+          ]
+        },
+        {
+          "secao": "Replace any Hand Weapon",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace any Hand Weapon",
+          "ganha": [
+            "Energy Fist"
+          ]
+        },
+        {
+          "secao": "Replace any Hand Weapon",
+          "ganha": [
+            "Chain-Fist"
+          ]
+        },
+        {
+          "secao": "Replace one Burst Cyclic Rifle",
+          "ganha": [
+            "Heavy Flamer"
+          ]
+        },
+        {
+          "secao": "Replace one Burst Cyclic Rifle",
+          "ganha": [
+            "Blessed Flamer"
+          ]
+        },
+        {
+          "secao": "Replace one Burst Cyclic Rifle",
+          "ganha": [
+            "Heavy Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Orbital Drop"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sacred Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Canticle Megaphone"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Medical Training"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oN45C-p",
+      "nome": "Biker Sisters",
+      "tamanho": 3,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Bike-Rifle",
+        "Energy Lance"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Bike-Rifles",
+          "ganha": [
+            "Assault Bike-Rifle"
+          ]
+        },
+        {
+          "secao": "Replace all Energy Lances",
+          "ganha": [
+            "Battle Rifle",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Energy Lances",
+          "ganha": [
+            "Pistol",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Flamer"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Plasma Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Energy Lance",
+          "ganha": [
+            "Sgt. Pistol",
+            "Sgt. Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Shredder Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Lance"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Energy Fist"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8LxKCD7",
+      "nome": "Biker Fanatics",
+      "tamanho": 3,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Assault Bike-Rifle",
+        "Chain-Sword"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Chain-Swords",
+          "ganha": [
+            "Plasma-Whip"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Flagellants"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G-oYVEJ",
+      "nome": "Exo-Suit",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Energy Mace",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Energy Mace",
+          "ganha": [
+            "Energy Sword"
+          ]
+        },
+        {
+          "secao": "Replace Stomp",
+          "ganha": [
+            "Arm-Mounted Grenade Launcher"
+          ]
+        },
+        {
+          "secao": "Replace Stomp",
+          "ganha": [
+            "Arm-Mounted Cyclic Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Assault Heavy Flamer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Assault Blessed Flamer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Assault Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Assault Heavy Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "God-Queen's Curse"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Extra Armor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cCAAsx3",
+      "nome": "APC",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Hull Burst Cyclic Rifle",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pintle Flamer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pintle Burst Cyclic Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pintle Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Disposable Guided Missile"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Dozer Blade"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Extra Armor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p9JSkj0",
+      "nome": "Procession Altar",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Holy Statue's Flame Strikes",
+        "Overrun"
+      ],
+      "itens": [
+        {
+          "nome": "Angelic Aura",
+          "bases": null
+        },
+        {
+          "nome": "Protective Aura",
+          "bases": null
+        },
+        {
+          "nome": "Holy Statue of Judgment",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Holy Statue's Flame Strikes and Holy Statue of Judgment",
+          "ganha": [
+            "Holy Statue's Flame Blasts",
+            "Holy Statue of Retribution"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "God-Queen's Curse"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Extra Cargo Space"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Extra Armor"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Angelic High Sister"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LdiGRSV",
+      "nome": "Infernal Attack Vehicle",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Dual Heavy Flamers",
+        "Hull Heavy Flamer",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pintle Flamer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pintle Burst Cyclic Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pintle Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Dual Heavy Flamers",
+          "ganha": [
+            "Dual Flamer Cannons"
+          ]
+        },
+        {
+          "secao": "Replace Dual Heavy Flamers",
+          "ganha": [
+            "Dual Heavy Machineguns"
+          ]
+        },
+        {
+          "secao": "Replace Dual Heavy Flamers",
+          "ganha": [
+            "Dual Blessed Flamer Cannons"
+          ]
+        },
+        {
+          "secao": "Replace Dual Heavy Flamers",
+          "ganha": [
+            "Dual Linked Heavy Fusion Rifles"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Disposable Guided Missile"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Cargo Space"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Dozer Blade"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Extra Armor"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Burst Cyclic Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Blessed Flamer"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Heavy Machinegun"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QPkxzTG",
+      "nome": "Organ Tank",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Organ Mortar Array",
+        "Hull Heavy Flamer",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Organ Mortar Array",
+          "ganha": [
+            "Organ Missile Array"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "God-Queen's Curse"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Burst Cyclic Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Blessed Flamer"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Disposable Guided Missile"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Dozer Blade"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L9w8jGp",
+      "nome": "Battle Tank",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Battle Cannon",
+        "Hull Heavy Flamer",
+        "Sponson Heavy Flamers",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pintle Flamer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pintle Burst Cyclic Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pintle Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Battle Cannon",
+          "ganha": [
+            "Anti-Tank Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Battle Cannon",
+          "ganha": [
+            "Linked Autocannon"
+          ]
+        },
+        {
+          "secao": "Replace Sponson Heavy Flamers",
+          "ganha": [
+            "Sponson Blessed Flamers"
+          ]
+        },
+        {
+          "secao": "Replace Sponson Heavy Flamers",
+          "ganha": [
+            "Sponson Heavy Machineguns"
+          ]
+        },
+        {
+          "secao": "Replace Sponson Heavy Flamers",
+          "ganha": [
+            "Sponson Heavy Fusion Rifles"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Burst Cyclic Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Blessed Flamer"
+          ]
+        },
+        {
+          "secao": "Replace Hull Heavy Flamer",
+          "ganha": [
+            "Hull Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Disposable Guided Missile"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Dozer Blade"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2K2sl7L",
+      "nome": "Assault Walker",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Dual Walker Flails",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Walker Flails",
+          "ganha": [
+            "Dual Walker Fists"
+          ]
+        },
+        {
+          "secao": "Replace Dual Walker Flails",
+          "ganha": [
+            "Dual Walker Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Walker Flails",
+          "ganha": [
+            "Dual Walker Chainsaws"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Dual Assault Heavy Flamers"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Dual Assault Blessed Flamers"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Dual Assault Heavy Machineguns"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Extra Armor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_kFjasX",
+      "nome": "Support Walker",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Dual Heavy Flamers",
+        "Dual Light Walker Flails"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Heavy Flamers",
+          "ganha": [
+            "Dual Blessed Flamers"
+          ]
+        },
+        {
+          "secao": "Replace Dual Heavy Flamers",
+          "ganha": [
+            "Dual Heavy Machineguns"
+          ]
+        },
+        {
+          "secao": "Replace Dual Light Walker Flails",
+          "ganha": [
+            "Dual Light Walker Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Light Walker Flails",
+          "ganha": [
+            "Dual Light Walker Fists"
+          ]
+        },
+        {
+          "secao": "Replace Dual Light Walker Flails",
+          "ganha": [
+            "Dual Light Walker Chainsaws"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Extra Armor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QaVPlBh",
+      "nome": "Blessed Titan",
+      "tamanho": 1,
+      "bases": {
+        "round": "160x122",
+        "square": "150x100"
+      },
+      "armas": [
+        "Stomp",
+        "Titan Flail"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace 2x Titan Flail",
+          "ganha": [
+            "Assault Battle Cannon",
+            "Titan Flail"
+          ]
+        },
+        {
+          "secao": "Replace 2x Titan Flail",
+          "ganha": [
+            "Assault Missile Array",
+            "Titan Flail"
+          ]
+        },
+        {
+          "secao": "Replace 2x Titan Flail",
+          "ganha": [
+            "Heavy Proximity Missile Array"
+          ]
+        },
+        {
+          "secao": "Replace 2x Titan Flail",
+          "ganha": [
+            "Assault Anti-Tank Cannon",
+            "Titan Flail"
+          ]
+        },
+        {
+          "secao": "Replace 2x Titan Flail",
+          "ganha": [
+            "Assault Autocannon",
+            "Titan Flail"
+          ]
+        },
+        {
+          "secao": "Replace any Titan Flail",
+          "ganha": [
+            "Titan Claw"
+          ]
+        },
+        {
+          "secao": "Replace any Titan Flail",
+          "ganha": [
+            "Titan Fist"
+          ]
+        },
+        {
+          "secao": "Replace any Titan Flail",
+          "ganha": [
+            "Titan Chainsaw"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Proximity Missile Array",
+          "ganha": [
+            "Heavy Battle Cannon"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Proximity Missile Array",
+          "ganha": [
+            "Heavy Anti-Tank Cannon"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Proximity Missile Array",
+          "ganha": [
+            "Autocannon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Chest Assault Heavy Flamers"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Chest Assault Blessed Flamers"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Chest Assault Heavy Machineguns"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Chest Assault Heavy Fusion Rifles"
+          ]
+        }
+      ]
+    }
+  ]
+}

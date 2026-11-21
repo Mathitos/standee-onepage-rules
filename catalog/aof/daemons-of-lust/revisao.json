@@ -1,0 +1,459 @@
+{
+ "packId": "daemons-of-lust",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "AOF",
+   "slug": "age-of-fantasy",
+   "armyForgeId": 4
+  },
+  {
+   "code": "AOFS",
+   "slug": "age-of-fantasy-skirmish",
+   "armyForgeId": 5
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/CuyCCyZTIHo5rc0Z-gs4-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/CuyCCyZTIHo5rc0Z-gs5-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-01..02.png, army books v3.6.0 (os dois sistemas). Arma ambígua: equipmentTags sem a arma e opções em aliases.",
+ "unidades": {
+  "lust-warriors": {
+   "armyForgeUnitId": "a2FywBB"
+  },
+  "champion-of-lust": {
+   "armyForgeUnitId": "E0VMxeY"
+  },
+  "lust-furies": {
+   "armyForgeUnitId": "57apip-"
+  },
+  "lust-beast-riders": {
+   "armyForgeUnitId": "MMUtjgY"
+  },
+  "infernal-siren": {
+   "armyForgeUnitId": "Lq2_MvM"
+  },
+  "harbinger-of-lust": {
+   "armyForgeUnitId": "x5U5JgA"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "warrior-axe",
+   "rotulo": "Warrior Axe",
+   "confiancaRotulo": "alta",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Lust Warriors"
+    },
+    {
+     "pdf": "Axe",
+     "armyBook": "Great Weapon"
+    }
+   ],
+   "notas": "Warrior = Lust Warriors. Machado de cabo longo; as 5 artes de tropa batem com as trocas de arma (Dual Sword, Halberd, Spear, Sword, Axe). Alternativa: Hand Weapon"
+  },
+  "a002": {
+   "artId": "warrior-axe-copia",
+   "rotulo": "Warrior Axe",
+   "confiancaRotulo": "alta",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Lust Warriors"
+    },
+    {
+     "pdf": "Axe",
+     "armyBook": "Great Weapon"
+    }
+   ],
+   "notas": "mesmo rótulo e mesmo desenho de a001 (cópia não agrupada). Warrior = Lust Warriors. Machado de cabo longo; as 5 artes de tropa batem com as trocas de arma (Dual Sword, Halberd, Spear, Sword, Axe). Alternativa: Hand Weapon"
+  },
+  "a003": {
+   "artId": "warrior-dual-sword",
+   "rotulo": "Warrior Dual Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Lust Warriors"
+    },
+    {
+     "pdf": "Dual Sword",
+     "armyBook": "Dual Hand Weapons"
+    }
+   ],
+   "notas": "Warrior = Lust Warriors"
+  },
+  "a004": {
+   "artId": "warrior-halberd",
+   "rotulo": "Warrior Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Lust Warriors"
+    }
+   ],
+   "notas": "Warrior = Lust Warriors"
+  },
+  "a005": {
+   "artId": "warrior-spear",
+   "rotulo": "Warrior Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Lust Warriors"
+    }
+   ],
+   "notas": "Warrior = Lust Warriors"
+  },
+  "a006": {
+   "artId": "warrior-sword",
+   "rotulo": "Warrior Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [
+    "Perfect Sword|Ritual Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Lust Warriors"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": [
+      "Perfect Sword",
+      "Ritual Sword"
+     ]
+    }
+   ],
+   "notas": "Warrior = Lust Warriors. Sword pode ser Perfect Sword (padrão) ou Ritual Sword; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  },
+  "a007": {
+   "artId": "warrior-sargeant",
+   "rotulo": "Warrior Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Lust Warriors"
+    }
+   ],
+   "notas": "Warrior = Lust Warriors; PDF escreve Sargeant"
+  },
+  "a008": {
+   "artId": "warrior-banner",
+   "rotulo": "Warrior Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Lust Warriors"
+    }
+   ],
+   "notas": "Warrior = Lust Warriors"
+  },
+  "a009": {
+   "artId": "warrior-musician",
+   "rotulo": "Warrior Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Lust Warriors"
+    }
+   ],
+   "notas": "Warrior = Lust Warriors"
+  },
+  "a010": {
+   "artId": "champion-sword",
+   "rotulo": "Champion Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-lust",
+   "equipmentTags": [
+    "Perfect Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of Lust"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Perfect Sword"
+    }
+   ],
+   "notas": "Champion = Champion of Lust (sem asas). Alternativa: Master Perfect Sword ou Hand Weapon"
+  },
+  "a011": {
+   "artId": "champion-crossbow",
+   "rotulo": "Champion Crossbow",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-lust",
+   "equipmentTags": [
+    "Fist-Crossbow|Heavy Arm-Crossbow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of Lust"
+    },
+    {
+     "pdf": "Crossbow",
+     "armyBook": [
+      "Fist-Crossbow",
+      "Heavy Arm-Crossbow"
+     ]
+    }
+   ],
+   "notas": "Champion = Champion of Lust (sem asas). Crossbow pode ser Fist-Crossbow ou Heavy Arm-Crossbow; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  },
+  "a012": {
+   "artId": "champion-spear",
+   "rotulo": "Champion Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-lust",
+   "equipmentTags": [
+    "Daemon Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of Lust"
+    },
+    {
+     "pdf": "Spear",
+     "armyBook": "Daemon Spear"
+    }
+   ],
+   "notas": "Champion = Champion of Lust (sem asas). Alternativa: Master Daemon Spear"
+  },
+  "a013": {
+   "artId": "fury-ver-1",
+   "rotulo": "Fury (Ver. 1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "lust-furies",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fury",
+     "armyBook": "Lust Furies"
+    }
+   ],
+   "notas": "Fury = Lust Furies (nome no Skirmish: Lust Fury)"
+  },
+  "a014": {
+   "artId": "fury-ver-2",
+   "rotulo": "Fury (Ver. 2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "lust-furies",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fury",
+     "armyBook": "Lust Furies"
+    }
+   ],
+   "notas": "Fury = Lust Furies (nome no Skirmish: Lust Fury)"
+  },
+  "a015": {
+   "artId": "beast-rider",
+   "rotulo": "Beast Rider",
+   "confiancaRotulo": "alta",
+   "unitKey": "lust-beast-riders",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Beast Rider",
+     "armyBook": "Lust Beast Riders"
+    }
+   ],
+   "notas": "genericName Lust Beast Riders"
+  },
+  "a016": {
+   "artId": "rider-sargeant",
+   "rotulo": "Rider Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "lust-beast-riders",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rider",
+     "armyBook": "Lust Beast Riders"
+    }
+   ],
+   "notas": "Rider = Lust Beast Riders; PDF escreve Sargeant"
+  },
+  "a017": {
+   "artId": "rider-banner",
+   "rotulo": "Rider Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "lust-beast-riders",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rider",
+     "armyBook": "Lust Beast Riders"
+    }
+   ],
+   "notas": "Rider = Lust Beast Riders"
+  },
+  "a018": {
+   "artId": "rider-musician",
+   "rotulo": "Rider Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "lust-beast-riders",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rider",
+     "armyBook": "Lust Beast Riders"
+    }
+   ],
+   "notas": "Rider = Lust Beast Riders"
+  },
+  "a019": {
+   "artId": "harpist",
+   "rotulo": "Harpist",
+   "confiancaRotulo": "alta",
+   "unitKey": "infernal-siren",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Harpist",
+     "armyBook": "Infernal Siren"
+    }
+   ],
+   "notas": "genericName Lust Infernal Harpist; arma Infernal Harp"
+  },
+  "a020": {
+   "artId": "rider-champion",
+   "rotulo": "Rider Champion",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-lust",
+   "equipmentTags": [
+    "Lust Beast"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rider Champion",
+     "armyBook": "Champion of Lust (Lust Beast)"
+    }
+   ],
+   "notas": "Champion of Lust montado (opção Lust Beast); a unidade já tem Rider Sargeant. Alternativa: pose de comando dos Lust Beast Riders"
+  },
+  "a021": {
+   "artId": "harbinger",
+   "rotulo": "Harbinger",
+   "confiancaRotulo": "alta",
+   "unitKey": "harbinger-of-lust",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Harbinger",
+     "armyBook": "Harbinger of Lust"
+    }
+   ],
+   "notas": "figura alada grande (~105 mm); alternativa: Ascended Harbinger of Lust"
+  },
+  "a022": {
+   "artId": "warrior-dual-sword-so-borda",
+   "rotulo": "Warrior Dual Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Lust Warriors"
+    },
+    {
+     "pdf": "Dual Sword",
+     "armyBook": "Dual Hand Weapons"
+    }
+   ],
+   "notas": "só borda grossa, sem par fino; mesmo desenho de a003 (cópias não agrupadas). Warrior = Lust Warriors"
+  }
+ }
+}

@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "daemons-of-lust",
- "faccao": "Daemons of Lust",
+ "faccao": "Daemons of Lust\r",
  "sistema": "aof",
  "pdf": {
   "nome": "Daemons_of_Lust_-_BW.pdf",
@@ -12,14 +12,16 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "warrior-axe",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Axe",
+   "rotuloImg": "arts/warrior-axe/rotulo.png",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +53,16 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "warrior-axe-copia",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Axe",
+   "rotuloImg": "arts/warrior-axe-copia/rotulo.png",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -90,14 +94,16 @@
    "pendencias": []
   },
   {
-   "id": "a003",
+   "id": "warrior-dual-sword",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Dual Sword",
+   "rotuloImg": "arts/warrior-dual-sword/rotulo.png",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -129,14 +135,16 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "warrior-halberd",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Halberd",
+   "rotuloImg": "arts/warrior-halberd/rotulo.png",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [
+    "Halberd"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -168,14 +176,16 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "warrior-spear",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Spear",
+   "rotuloImg": "arts/warrior-spear/rotulo.png",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -207,14 +217,16 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "warrior-sword",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Sword",
+   "rotuloImg": "arts/warrior-sword/rotulo.png",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [
+    "Perfect Sword|Ritual Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -246,14 +258,14 @@
    "pendencias": []
   },
   {
-   "id": "a007",
+   "id": "warrior-sargeant",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Sargeant",
+   "rotuloImg": "arts/warrior-sargeant/rotulo.png",
+   "unitKey": "lust-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -285,14 +297,14 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "warrior-banner",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Banner",
+   "rotuloImg": "arts/warrior-banner/rotulo.png",
+   "unitKey": "lust-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -324,14 +336,14 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "warrior-musician",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Musician",
+   "rotuloImg": "arts/warrior-musician/rotulo.png",
+   "unitKey": "lust-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -363,14 +375,16 @@
    "pendencias": []
   },
   {
-   "id": "a010",
+   "id": "champion-sword",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Sword",
+   "rotuloImg": "arts/champion-sword/rotulo.png",
+   "unitKey": "champion-of-lust",
+   "equipmentTags": [
+    "Perfect Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -402,14 +416,16 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "champion-crossbow",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Crossbow",
+   "rotuloImg": "arts/champion-crossbow/rotulo.png",
+   "unitKey": "champion-of-lust",
+   "equipmentTags": [
+    "Fist-Crossbow|Heavy Arm-Crossbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -441,14 +457,16 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "champion-spear",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Spear",
+   "rotuloImg": "arts/champion-spear/rotulo.png",
+   "unitKey": "champion-of-lust",
+   "equipmentTags": [
+    "Daemon Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -480,14 +498,14 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "harbinger",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Harbinger",
+   "rotuloImg": "arts/harbinger/rotulo.png",
+   "unitKey": "harbinger-of-lust",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -519,14 +537,14 @@
    "pendencias": []
   },
   {
-   "id": "a013",
+   "id": "fury-ver-1",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fury (Ver. 1)",
+   "rotuloImg": "arts/fury-ver-1/rotulo.png",
+   "unitKey": "lust-furies",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -558,14 +576,14 @@
    "pendencias": []
   },
   {
-   "id": "a014",
+   "id": "fury-ver-2",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fury (Ver. 2)",
+   "rotuloImg": "arts/fury-ver-2/rotulo.png",
+   "unitKey": "lust-furies",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -597,14 +615,14 @@
    "pendencias": []
   },
   {
-   "id": "a015",
+   "id": "beast-rider",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Beast Rider",
+   "rotuloImg": "arts/beast-rider/rotulo.png",
+   "unitKey": "lust-beast-riders",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -636,14 +654,14 @@
    "pendencias": []
   },
   {
-   "id": "a016",
+   "id": "rider-sargeant",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Rider Sargeant",
+   "rotuloImg": "arts/rider-sargeant/rotulo.png",
+   "unitKey": "lust-beast-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -677,14 +695,14 @@
    ]
   },
   {
-   "id": "a017",
+   "id": "rider-banner",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Rider Banner",
+   "rotuloImg": "arts/rider-banner/rotulo.png",
+   "unitKey": "lust-beast-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -718,14 +736,14 @@
    ]
   },
   {
-   "id": "a018",
+   "id": "rider-musician",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Rider Musician",
+   "rotuloImg": "arts/rider-musician/rotulo.png",
+   "unitKey": "lust-beast-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -757,14 +775,14 @@
    "pendencias": []
   },
   {
-   "id": "a019",
+   "id": "harpist",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Harpist",
+   "rotuloImg": "arts/harpist/rotulo.png",
+   "unitKey": "infernal-siren",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -796,14 +814,16 @@
    "pendencias": []
   },
   {
-   "id": "a020",
+   "id": "rider-champion",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Rider Champion",
+   "rotuloImg": "arts/rider-champion/rotulo.png",
+   "unitKey": "champion-of-lust",
+   "equipmentTags": [
+    "Lust Beast"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -835,14 +855,16 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "warrior-dual-sword-so-borda",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Dual Sword",
+   "rotuloImg": "arts/warrior-dual-sword-so-borda/rotulo.png",
+   "unitKey": "lust-warriors",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [

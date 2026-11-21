@@ -1,0 +1,5940 @@
+{
+  "schemaVersion": 1,
+  "packId": "blessed-sisters",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "GF",
+    "slug": "grimdark-future",
+    "armyForgeId": 2
+  },
+  "gameSystems": [
+    {
+      "code": "GF",
+      "slug": "grimdark-future",
+      "armyForgeId": 2
+    },
+    {
+      "code": "GFF",
+      "slug": "grimdark-future-firefight",
+      "armyForgeId": 3
+    }
+  ],
+  "armyBook": {
+    "id": "7oi8zeiqfamiur21",
+    "name": "Blessed Sisters",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "7oi8zeiqfamiur21",
+      "name": "Blessed Sisters",
+      "version": "3.6.0",
+      "gameSystemId": 3,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "7oi8zeiqfamiur21",
+      "name": "Blessed Sisters",
+      "version": "3.6.0",
+      "gameSystemId": 2,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Blessed_Sisters_-_BW.pdf",
+    "pdfSha256": "4352c069255a9cc44966326dac9803dfcc5d88646bf6bca451cc4f8023627b77",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "high-sister",
+      "names": [
+        "High Sister"
+      ],
+      "armyForgeUnitId": "2TXWi3B",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "novice-leader",
+      "names": [
+        "Novice Leader"
+      ],
+      "armyForgeUnitId": "_nVdDbE",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "fanatic-superior",
+      "names": [
+        "Fanatic Superior"
+      ],
+      "armyForgeUnitId": "BT_-pdh",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "destroyer-high-sister",
+      "names": [
+        "Destroyer High Sister"
+      ],
+      "armyForgeUnitId": "sF4ltO_",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "exo-suit-high-sister",
+      "names": [
+        "Exo-Suit High Sister"
+      ],
+      "armyForgeUnitId": "JzHY_1g",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          60.0
+        ],
+        "raw": "60",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "warrior-sister",
+      "names": [
+        "Warrior Sister",
+        "Warrior Sisters"
+      ],
+      "armyForgeUnitId": "0Bc4px2",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "novice-sisters",
+      "names": [
+        "Novice Sisters"
+      ],
+      "armyForgeUnitId": "fi5ZHtl",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "vanguard-sister",
+      "names": [
+        "Vanguard Sister",
+        "Vanguard Sisters"
+      ],
+      "armyForgeUnitId": "VHKN-IZ",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "vanguard-sniper",
+      "names": [
+        "Vanguard Sniper",
+        "Vanguard Snipers"
+      ],
+      "armyForgeUnitId": "tsHlz0v",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "fanatic-sisters",
+      "names": [
+        "Fanatic Sisters"
+      ],
+      "armyForgeUnitId": "R3sC7UX",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "protector-sister",
+      "names": [
+        "Protector Sister",
+        "Protector Sisters"
+      ],
+      "armyForgeUnitId": "zCo2G8c",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "assault-sister",
+      "names": [
+        "Assault Sister",
+        "Assault Sisters"
+      ],
+      "armyForgeUnitId": "S9Oua8O",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "pistoleer-sister",
+      "names": [
+        "Pistoleer Sister",
+        "Pistoleer Sisters"
+      ],
+      "armyForgeUnitId": "qgESKb_",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "celestial-warrior-sister",
+      "names": [
+        "Celestial Warrior Sister",
+        "Celestial Warrior Sisters"
+      ],
+      "armyForgeUnitId": "_MWEPTm",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "support-sister",
+      "names": [
+        "Support Sister",
+        "Support Sisters"
+      ],
+      "armyForgeUnitId": "N9SDZqF",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "destroyer-sister",
+      "names": [
+        "Destroyer Sister",
+        "Destroyer Sisters"
+      ],
+      "armyForgeUnitId": "1oucreF",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "biker-sister",
+      "names": [
+        "Biker Sister",
+        "Biker Sisters"
+      ],
+      "armyForgeUnitId": "oN45C-p",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "biker-fanatic",
+      "names": [
+        "Biker Fanatic",
+        "Biker Fanatics"
+      ],
+      "armyForgeUnitId": "8LxKCD7",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "jetpack-superior",
+      "candidateId": "a001",
+      "pdfLabel": "Jetpack Superior",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "high-sister",
+      "equipmentTags": [
+        "Superior",
+        "Jetpack|Airdrop Jetpack"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Superior",
+          "armyBook": "opção Superior (Upgrade with one)"
+        },
+        {
+          "pdf": "Jetpack",
+          "armyBook": "Jetpack | Airdrop Jetpack"
+        }
+      ],
+      "notes": "herói Superior hoje é opção da High Sister (genericName Sister Leader), que tem Jetpack; Celestial High Sister também tem Superior, Jetpack e Holy Wings (a figura tem asas)",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0
+          ],
+          "front": "arts/jetpack-superior/fino/frente.svg",
+          "back": "arts/jetpack-superior/fino/verso.svg",
+          "canvasMm": [
+            44.746,
+            46.44
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            46.3,
+            44.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            0
+          ],
+          "front": "arts/jetpack-superior/borda/frente.svg",
+          "back": "arts/jetpack-superior/borda/verso.svg",
+          "canvasMm": [
+            48.133,
+            48.133
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            48.0,
+            47.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "biker-superior",
+      "candidateId": "a002",
+      "pdfLabel": "Biker Superior",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "high-sister",
+      "equipmentTags": [
+        "Superior",
+        "Combat Bike|Assault Bike"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Superior",
+          "armyBook": "opção Superior (Upgrade with one)"
+        },
+        {
+          "pdf": "Biker",
+          "armyBook": "Combat Bike | Assault Bike"
+        }
+      ],
+      "notes": "as duas motos da High Sister; Celestial High Sister tem as mesmas opções",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            1
+          ],
+          "front": "arts/biker-superior/fino/frente.svg",
+          "back": "arts/biker-superior/fino/verso.svg",
+          "canvasMm": [
+            46.863,
+            41.614
+          ],
+          "frontBackIoU": 0.961,
+          "sizeMm": [
+            41.5,
+            46.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            1
+          ],
+          "front": "arts/biker-superior/borda/frente.svg",
+          "back": "arts/biker-superior/borda/verso.svg",
+          "canvasMm": [
+            50.25,
+            43.307
+          ],
+          "frontBackIoU": 0.965,
+          "sizeMm": [
+            43.2,
+            50.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "superior",
+      "candidateId": "a003",
+      "pdfLabel": "Superior",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "high-sister",
+      "equipmentTags": [
+        "Superior"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Superior",
+          "armyBook": "opção Superior (Upgrade with one)"
+        }
+      ],
+      "notes": "Superior virou opção da High Sister (genericName Sister Leader). Sem a tag, seria a arte genérica da High Sister",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            2
+          ],
+          "front": "arts/superior/fino/frente.svg",
+          "back": "arts/superior/fino/verso.svg",
+          "canvasMm": [
+            31.835,
+            46.694
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            46.6,
+            31.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            2
+          ],
+          "front": "arts/superior/borda/frente.svg",
+          "back": "arts/superior/borda/verso.svg",
+          "canvasMm": [
+            35.221,
+            48.387
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            48.3,
+            35.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "novice-superior",
+      "candidateId": "a004",
+      "pdfLabel": "Novice Superior",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "novice-leader",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Novice Superior",
+          "armyBook": "Novice Leader"
+        }
+      ],
+      "notes": "líder das Novice (genericName Recruit Leader); Novice Leader não tem opção Superior",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            3
+          ],
+          "front": "arts/novice-superior/fino/frente.svg",
+          "back": "arts/novice-superior/fino/verso.svg",
+          "canvasMm": [
+            25.146,
+            55.372
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            55.3,
+            24.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            3
+          ],
+          "front": "arts/novice-superior/borda/frente.svg",
+          "back": "arts/novice-superior/borda/verso.svg",
+          "canvasMm": [
+            28.533,
+            57.065
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            57.0,
+            28.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vanguard-superior",
+      "candidateId": "a005",
+      "pdfLabel": "Vanguard Superior",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "high-sister",
+      "equipmentTags": [
+        "Superior",
+        "Vanguard"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Superior",
+          "armyBook": "opção Superior (Upgrade with one)"
+        },
+        {
+          "pdf": "Vanguard",
+          "armyBook": "Vanguard (Scout, Strider)"
+        }
+      ],
+      "notes": "não há herói Vanguard; a High Sister tem as opções Vanguard e Superior. A figura usa rifle longo (High Sister tem Sniper Rifle)",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            4
+          ],
+          "front": "arts/vanguard-superior/fino/frente.svg",
+          "back": "arts/vanguard-superior/fino/verso.svg",
+          "canvasMm": [
+            34.883,
+            39.666
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            39.5,
+            34.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            4
+          ],
+          "front": "arts/vanguard-superior/borda/frente.svg",
+          "back": "arts/vanguard-superior/borda/verso.svg",
+          "canvasMm": [
+            38.269,
+            41.36
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            41.2,
+            38.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "witch",
+      "candidateId": "a006",
+      "pdfLabel": "Witch",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "high-sister",
+      "equipmentTags": [
+        "Witch|Master Witch"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Witch",
+          "armyBook": "opção Witch | Master Witch"
+        }
+      ],
+      "notes": "Witch é só opção de heróis (High Sister, Celestial/Destroyer/Exo-Suit High Sister, Novice Leader); escolhida a High Sister, a genérica",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0
+          ],
+          "front": "arts/witch/fino/frente.svg",
+          "back": "arts/witch/fino/verso.svg",
+          "canvasMm": [
+            36.28,
+            50.038
+          ],
+          "frontBackIoU": 0.949,
+          "sizeMm": [
+            50.0,
+            36.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            0
+          ],
+          "front": "arts/witch/borda/frente.svg",
+          "back": "arts/witch/borda/verso.svg",
+          "canvasMm": [
+            39.666,
+            51.731
+          ],
+          "frontBackIoU": 0.96,
+          "sizeMm": [
+            51.6,
+            39.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fanatic-superior-v1",
+      "candidateId": "a007",
+      "pdfLabel": "Fanatic Superior V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "fanatic-superior",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            1
+          ],
+          "front": "arts/fanatic-superior-v1/fino/frente.svg",
+          "back": "arts/fanatic-superior-v1/fino/verso.svg",
+          "canvasMm": [
+            33.401,
+            39.285
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            39.2,
+            33.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            1
+          ],
+          "front": "arts/fanatic-superior-v1/borda/frente.svg",
+          "back": "arts/fanatic-superior-v1/borda/verso.svg",
+          "canvasMm": [
+            36.788,
+            40.979
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            40.9,
+            36.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fanatic-superior-v2",
+      "candidateId": "a008",
+      "pdfLabel": "Fanatic Superior V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "fanatic-superior",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            2
+          ],
+          "front": "arts/fanatic-superior-v2/fino/frente.svg",
+          "back": "arts/fanatic-superior-v2/fino/verso.svg",
+          "canvasMm": [
+            30.565,
+            39.709
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            39.6,
+            30.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            2
+          ],
+          "front": "arts/fanatic-superior-v2/borda/frente.svg",
+          "back": "arts/fanatic-superior-v2/borda/verso.svg",
+          "canvasMm": [
+            33.951,
+            41.402
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            41.3,
+            33.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "priestess-v1",
+      "candidateId": "a009",
+      "pdfLabel": "Priestess V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "high-sister",
+      "equipmentTags": [
+        "Priestess"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Priestess",
+          "armyBook": "opção Priestess"
+        }
+      ],
+      "notes": "Priestess é só opção de heróis (High Sister, Fanatic Superior, Novice Leader e outros); escolhida a High Sister",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            3
+          ],
+          "front": "arts/priestess-v1/fino/frente.svg",
+          "back": "arts/priestess-v1/fino/verso.svg",
+          "canvasMm": [
+            40.428,
+            44.365
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            44.3,
+            40.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            3
+          ],
+          "front": "arts/priestess-v1/borda/frente.svg",
+          "back": "arts/priestess-v1/borda/verso.svg",
+          "canvasMm": [
+            43.815,
+            46.059
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            46.0,
+            43.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "priestess-v2",
+      "candidateId": "a010",
+      "pdfLabel": "Priestess V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "high-sister",
+      "equipmentTags": [
+        "Priestess"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Priestess",
+          "armyBook": "opção Priestess"
+        }
+      ],
+      "notes": "Priestess é só opção de heróis (High Sister, Fanatic Superior, Novice Leader e outros); escolhida a High Sister",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            4
+          ],
+          "front": "arts/priestess-v2/fino/frente.svg",
+          "back": "arts/priestess-v2/fino/verso.svg",
+          "canvasMm": [
+            46.905,
+            45.974
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            45.9,
+            46.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            4
+          ],
+          "front": "arts/priestess-v2/borda/frente.svg",
+          "back": "arts/priestess-v2/borda/verso.svg",
+          "canvasMm": [
+            50.334,
+            47.667
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            47.6,
+            50.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "canoness",
+      "candidateId": "a011",
+      "pdfLabel": "Canoness",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "high-sister",
+      "equipmentTags": [
+        "Canoness"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Canoness",
+          "armyBook": "opção Canoness"
+        }
+      ],
+      "notes": "Canoness é só opção de heróis (High Sister, Celestial/Destroyer High Sister, Novice Leader); escolhida a High Sister",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0
+          ],
+          "front": "arts/canoness/fino/frente.svg",
+          "back": "arts/canoness/fino/verso.svg",
+          "canvasMm": [
+            51.266,
+            78.02
+          ],
+          "frontBackIoU": 0.953,
+          "sizeMm": [
+            77.9,
+            51.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            0
+          ],
+          "front": "arts/canoness/borda/frente.svg",
+          "back": "arts/canoness/borda/verso.svg",
+          "canvasMm": [
+            54.991,
+            79.883
+          ],
+          "frontBackIoU": 0.962,
+          "sizeMm": [
+            79.8,
+            54.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "destroyer-superior-claws",
+      "candidateId": "a012",
+      "pdfLabel": "Destroyer Superior Claws",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "destroyer-high-sister",
+      "equipmentTags": [
+        "Superior",
+        "Dual Energy Claws"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Destroyer Superior",
+          "armyBook": "Destroyer High Sister + opção Superior"
+        },
+        {
+          "pdf": "Claws",
+          "armyBook": "Dual Energy Claws"
+        }
+      ],
+      "notes": "genericName Exo-Suit Leader",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            1
+          ],
+          "front": "arts/destroyer-superior-claws/fino/frente.svg",
+          "back": "arts/destroyer-superior-claws/fino/verso.svg",
+          "canvasMm": [
+            30.48,
+            36.026
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            35.9,
+            30.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            1
+          ],
+          "front": "arts/destroyer-superior-claws/borda/frente.svg",
+          "back": "arts/destroyer-superior-claws/borda/verso.svg",
+          "canvasMm": [
+            34.205,
+            37.888
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            37.8,
+            34.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "destroyer-superior-mace-shield",
+      "candidateId": "a013",
+      "pdfLabel": "Destroyer Superior Mace & Shield",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "destroyer-high-sister",
+      "equipmentTags": [
+        "Superior",
+        "Energy Mace",
+        "Combat Shield"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Destroyer Superior",
+          "armyBook": "Destroyer High Sister + opção Superior"
+        },
+        {
+          "pdf": "Mace",
+          "armyBook": "Energy Mace"
+        },
+        {
+          "pdf": "Shield",
+          "armyBook": "Combat Shield"
+        }
+      ],
+      "notes": "genericName Exo-Suit Leader",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            2
+          ],
+          "front": "arts/destroyer-superior-mace-shield/fino/frente.svg",
+          "back": "arts/destroyer-superior-mace-shield/fino/verso.svg",
+          "canvasMm": [
+            36.068,
+            36.745
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            36.7,
+            35.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            2
+          ],
+          "front": "arts/destroyer-superior-mace-shield/borda/frente.svg",
+          "back": "arts/destroyer-superior-mace-shield/borda/verso.svg",
+          "canvasMm": [
+            39.793,
+            38.608
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            38.5,
+            39.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "destroyer-superior-storm-rifle",
+      "candidateId": "a014",
+      "pdfLabel": "Destroyer Superior Storm Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "destroyer-high-sister",
+      "equipmentTags": [
+        "Superior",
+        "Burst Cyclic Rifle|Assault Burst Cyclic Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Destroyer Superior",
+          "armyBook": "Destroyer High Sister + opção Superior"
+        },
+        {
+          "pdf": "Storm Rifle",
+          "armyBook": "Burst Cyclic Rifle | Assault Burst Cyclic Rifle"
+        }
+      ],
+      "notes": "não existe Storm Rifle; os fuzis cíclicos da unidade; a figura também tem espada",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            3
+          ],
+          "front": "arts/destroyer-superior-storm-rifle/fino/frente.svg",
+          "back": "arts/destroyer-superior-storm-rifle/fino/verso.svg",
+          "canvasMm": [
+            44.577,
+            37.042
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            36.9,
+            44.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            3
+          ],
+          "front": "arts/destroyer-superior-storm-rifle/borda/frente.svg",
+          "back": "arts/destroyer-superior-storm-rifle/borda/verso.svg",
+          "canvasMm": [
+            48.641,
+            38.904
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            38.8,
+            48.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "exosuit-superior",
+      "candidateId": "a015",
+      "pdfLabel": "Exosuit Superior",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "exo-suit-high-sister",
+      "equipmentTags": [
+        "Superior"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Exosuit Superior",
+          "armyBook": "Exo-Suit High Sister + opção Superior"
+        }
+      ],
+      "notes": "genericName Heavy Exo-Suit Leader; unidade só no Grimdark Future (gs2); figura grande (~106 mm)",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0
+          ],
+          "front": "arts/exosuit-superior/fino/frente.svg",
+          "back": "arts/exosuit-superior/fino/verso.svg",
+          "canvasMm": [
+            54.356,
+            106.045
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            105.9,
+            54.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            0
+          ],
+          "front": "arts/exosuit-superior/borda/frente.svg",
+          "back": "arts/exosuit-superior/borda/verso.svg",
+          "canvasMm": [
+            58.081,
+            107.908
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            107.8,
+            57.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-rifle-v2",
+      "candidateId": "a016",
+      "pdfLabel": "Warrior Rifle V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior-sister",
+      "equipmentTags": [
+        "Battle Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": "Battle Rifle"
+        }
+      ],
+      "notes": "army book não tem arma chamada só 'Rifle'; a arma padrão é Battle Rifle",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-rifle-v2/fino/frente.svg",
+          "back": "arts/warrior-rifle-v2/fino/verso.svg",
+          "canvasMm": [
+            22.267,
+            33.613
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            33.4,
+            22.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-rifle-v2/borda/frente.svg",
+          "back": "arts/warrior-rifle-v2/borda/verso.svg",
+          "canvasMm": [
+            25.654,
+            35.264
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            35.1,
+            25.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-rifle-v1",
+      "candidateId": "a017",
+      "pdfLabel": "Warrior Rifle V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior-sister",
+      "equipmentTags": [
+        "Battle Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": "Battle Rifle"
+        }
+      ],
+      "notes": "army book não tem arma chamada só 'Rifle'; a arma padrão é Battle Rifle",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-rifle-v1/fino/frente.svg",
+          "back": "arts/warrior-rifle-v1/fino/verso.svg",
+          "canvasMm": [
+            22.352,
+            32.173
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            32.1,
+            22.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-rifle-v1/borda/frente.svg",
+          "back": "arts/warrior-rifle-v1/borda/verso.svg",
+          "canvasMm": [
+            25.739,
+            33.909
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            33.8,
+            25.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-rifle-v3",
+      "candidateId": "a018",
+      "pdfLabel": "Warrior Rifle V3",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior-sister",
+      "equipmentTags": [
+        "Battle Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": "Battle Rifle"
+        }
+      ],
+      "notes": "army book não tem arma chamada só 'Rifle'; a arma padrão é Battle Rifle",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-rifle-v3/fino/frente.svg",
+          "back": "arts/warrior-rifle-v3/fino/verso.svg",
+          "canvasMm": [
+            22.225,
+            33.613
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            33.5,
+            21.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-rifle-v3/borda/frente.svg",
+          "back": "arts/warrior-rifle-v3/borda/verso.svg",
+          "canvasMm": [
+            25.612,
+            35.306
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            35.2,
+            25.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-plasma-rifle",
+      "candidateId": "a019",
+      "pdfLabel": "Warrior Plasma Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior-sister",
+      "equipmentTags": [
+        "Plasma Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-plasma-rifle/fino/frente.svg",
+          "back": "arts/warrior-plasma-rifle/fino/verso.svg",
+          "canvasMm": [
+            22.648,
+            33.359
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            33.3,
+            22.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-plasma-rifle/borda/frente.svg",
+          "back": "arts/warrior-plasma-rifle/borda/verso.svg",
+          "canvasMm": [
+            26.035,
+            35.052
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            35.0,
+            25.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-fusion-rifle",
+      "candidateId": "a020",
+      "pdfLabel": "Warrior Fusion Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior-sister",
+      "equipmentTags": [
+        "Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-fusion-rifle/fino/frente.svg",
+          "back": "arts/warrior-fusion-rifle/fino/verso.svg",
+          "canvasMm": [
+            20.659,
+            33.189
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            33.1,
+            20.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-fusion-rifle/borda/frente.svg",
+          "back": "arts/warrior-fusion-rifle/borda/verso.svg",
+          "canvasMm": [
+            24.045,
+            35.264
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            35.1,
+            23.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-flamer",
+      "candidateId": "a021",
+      "pdfLabel": "Warrior Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior-sister",
+      "equipmentTags": [
+        "Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-flamer/fino/frente.svg",
+          "back": "arts/warrior-flamer/fino/verso.svg",
+          "canvasMm": [
+            21.251,
+            33.105
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            33.0,
+            21.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-flamer/borda/frente.svg",
+          "back": "arts/warrior-flamer/borda/verso.svg",
+          "canvasMm": [
+            24.638,
+            34.798
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            34.7,
+            24.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-storm-rifle",
+      "candidateId": "a022",
+      "pdfLabel": "Warrior Storm Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior-sister",
+      "equipmentTags": [
+        "Burst Cyclic Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Storm Rifle",
+          "armyBook": "Burst Cyclic Rifle"
+        }
+      ],
+      "notes": "não existe Storm Rifle; Burst Cyclic Rifle é o fuzil de rajada da unidade",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            3
+          ],
+          "front": "arts/warrior-storm-rifle/fino/frente.svg",
+          "back": "arts/warrior-storm-rifle/fino/verso.svg",
+          "canvasMm": [
+            20.405,
+            33.062
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            32.9,
+            20.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            3
+          ],
+          "front": "arts/warrior-storm-rifle/borda/frente.svg",
+          "back": "arts/warrior-storm-rifle/borda/verso.svg",
+          "canvasMm": [
+            23.791,
+            34.756
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            34.6,
+            23.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-shred-rifle",
+      "candidateId": "a023",
+      "pdfLabel": "Warrior Shred Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior-sister",
+      "equipmentTags": [
+        "Shredder Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shred Rifle",
+          "armyBook": "Shredder Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            4
+          ],
+          "front": "arts/warrior-shred-rifle/fino/frente.svg",
+          "back": "arts/warrior-shred-rifle/fino/verso.svg",
+          "canvasMm": [
+            20.447,
+            32.935
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            32.9,
+            20.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            4
+          ],
+          "front": "arts/warrior-shred-rifle/borda/frente.svg",
+          "back": "arts/warrior-shred-rifle/borda/verso.svg",
+          "canvasMm": [
+            23.834,
+            34.629
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            34.5,
+            23.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-heavy-flamer",
+      "candidateId": "a024",
+      "pdfLabel": "Warrior Heavy Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior-sister",
+      "equipmentTags": [
+        "Heavy Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-heavy-flamer/fino/frente.svg",
+          "back": "arts/warrior-heavy-flamer/fino/verso.svg",
+          "canvasMm": [
+            30.776,
+            32.639
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            32.5,
+            30.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-heavy-flamer/borda/frente.svg",
+          "back": "arts/warrior-heavy-flamer/borda/verso.svg",
+          "canvasMm": [
+            34.163,
+            34.332
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            34.2,
+            33.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-heavy-machine-gun",
+      "candidateId": "a025",
+      "pdfLabel": "Warrior Heavy Machine Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior-sister",
+      "equipmentTags": [
+        "Heavy Machinegun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só grafia: Heavy Machinegun no army book",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-heavy-machine-gun/fino/frente.svg",
+          "back": "arts/warrior-heavy-machine-gun/fino/verso.svg",
+          "canvasMm": [
+            26.204,
+            34.375
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            34.3,
+            25.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-heavy-machine-gun/borda/frente.svg",
+          "back": "arts/warrior-heavy-machine-gun/borda/verso.svg",
+          "canvasMm": [
+            29.591,
+            36.068
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            36.0,
+            29.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-heavy-fusion",
+      "candidateId": "a026",
+      "pdfLabel": "Warrior Heavy Fusion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior-sister",
+      "equipmentTags": [
+        "Heavy Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Heavy Fusion",
+          "armyBook": "Heavy Fusion Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-heavy-fusion/fino/frente.svg",
+          "back": "arts/warrior-heavy-fusion/fino/verso.svg",
+          "canvasMm": [
+            29.633,
+            34.248
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            34.1,
+            29.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-heavy-fusion/borda/frente.svg",
+          "back": "arts/warrior-heavy-fusion/borda/verso.svg",
+          "canvasMm": [
+            33.02,
+            35.941
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            35.8,
+            32.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sargeant",
+      "candidateId": "a027",
+      "pdfLabel": "Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior-sister",
+      "equipmentTags": [
+        "Sgt. Pistol",
+        "Sgt. Hand Weapon"
+      ],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sargeant",
+          "armyBook": "Sgt. Pistol + Sgt. Hand Weapon"
+        }
+      ],
+      "notes": "grafado 'Sargeant' no PDF; na seção Warrior, figura com pistola e espada (opção de sargento das Warrior Sisters)",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0
+          ],
+          "front": "arts/sargeant/fino/frente.svg",
+          "back": "arts/sargeant/fino/verso.svg",
+          "canvasMm": [
+            40.132,
+            35.391
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            35.3,
+            39.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 50,
+          "rows": [
+            0
+          ],
+          "front": "arts/sargeant/borda/frente.svg",
+          "back": "arts/sargeant/borda/verso.svg",
+          "canvasMm": [
+            43.519,
+            37.084
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            37.0,
+            43.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "megaphone",
+      "candidateId": "a028",
+      "pdfLabel": "Megaphone",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior-sister",
+      "equipmentTags": [
+        "Canticle Megaphone"
+      ],
+      "cosmetic": "megaphone",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Megaphone",
+          "armyBook": "Canticle Megaphone"
+        }
+      ],
+      "notes": "na seção Warrior do PDF; pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            1
+          ],
+          "front": "arts/megaphone/fino/frente.svg",
+          "back": "arts/megaphone/fino/verso.svg",
+          "canvasMm": [
+            30.776,
+            33.486
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            33.4,
+            30.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 50,
+          "rows": [
+            1
+          ],
+          "front": "arts/megaphone/borda/frente.svg",
+          "back": "arts/megaphone/borda/verso.svg",
+          "canvasMm": [
+            34.163,
+            35.179
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            35.1,
+            34.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "banner",
+      "candidateId": "a029",
+      "pdfLabel": "Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior-sister",
+      "equipmentTags": [
+        "Sacred Banner"
+      ],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Banner",
+          "armyBook": "Sacred Banner"
+        }
+      ],
+      "notes": "na seção Warrior do PDF; pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            2
+          ],
+          "front": "arts/banner/fino/frente.svg",
+          "back": "arts/banner/fino/verso.svg",
+          "canvasMm": [
+            28.575,
+            56.473
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            56.4,
+            28.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 50,
+          "rows": [
+            2
+          ],
+          "front": "arts/banner/borda/frente.svg",
+          "back": "arts/banner/borda/verso.svg",
+          "canvasMm": [
+            31.962,
+            58.166
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            58.1,
+            31.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "medic",
+      "candidateId": "a030",
+      "pdfLabel": "Medic",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior-sister",
+      "equipmentTags": [
+        "Medical Training"
+      ],
+      "cosmetic": "medic",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Medic",
+          "armyBook": "Medical Training"
+        }
+      ],
+      "notes": "na seção Warrior do PDF; pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            3
+          ],
+          "front": "arts/medic/fino/frente.svg",
+          "back": "arts/medic/fino/verso.svg",
+          "canvasMm": [
+            20.066,
+            24.765
+          ],
+          "frontBackIoU": 0.972,
+          "sizeMm": [
+            24.6,
+            19.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 50,
+          "rows": [
+            3
+          ],
+          "front": "arts/medic/borda/frente.svg",
+          "back": "arts/medic/borda/verso.svg",
+          "canvasMm": [
+            23.453,
+            26.458
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            26.3,
+            23.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "novice-pistol",
+      "candidateId": "a031",
+      "pdfLabel": "Novice Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "novice-sisters",
+      "equipmentTags": [
+        "Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "opção dá Pistol + Dagger",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/novice-pistol/fino/frente.svg",
+          "back": "arts/novice-pistol/fino/verso.svg",
+          "canvasMm": [
+            28.194,
+            33.274
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            33.2,
+            27.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/novice-pistol/borda/frente.svg",
+          "back": "arts/novice-pistol/borda/verso.svg",
+          "canvasMm": [
+            31.581,
+            34.967
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            34.8,
+            31.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "novice-rifle",
+      "candidateId": "a032",
+      "pdfLabel": "Novice Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "novice-sisters",
+      "equipmentTags": [
+        "Battle Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": "Battle Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/novice-rifle/fino/frente.svg",
+          "back": "arts/novice-rifle/fino/verso.svg",
+          "canvasMm": [
+            30.692,
+            33.232
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            33.1,
+            30.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 52,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/novice-rifle/borda/frente.svg",
+          "back": "arts/novice-rifle/borda/verso.svg",
+          "canvasMm": [
+            34.078,
+            34.925
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            34.8,
+            33.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "novice-dagger",
+      "candidateId": "a033",
+      "pdfLabel": "Novice Dagger",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "novice-sisters",
+      "equipmentTags": [
+        "Dagger"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "opção dá Pistol + Dagger",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/novice-dagger/fino/frente.svg",
+          "back": "arts/novice-dagger/fino/verso.svg",
+          "canvasMm": [
+            25.104,
+            33.02
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            32.8,
+            24.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 53,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/novice-dagger/borda/frente.svg",
+          "back": "arts/novice-dagger/borda/verso.svg",
+          "canvasMm": [
+            28.49,
+            34.713
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            34.5,
+            28.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "novice-mace",
+      "candidateId": "a034",
+      "pdfLabel": "Novice Mace",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "novice-sisters",
+      "equipmentTags": [
+        "Energy Club"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Mace",
+          "armyBook": "Energy Club"
+        }
+      ],
+      "notes": "arma padrão Energy Club; a figura segura uma maça",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/novice-mace/fino/frente.svg",
+          "back": "arts/novice-mace/fino/verso.svg",
+          "canvasMm": [
+            18.669,
+            33.697
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            33.6,
+            18.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/novice-mace/borda/frente.svg",
+          "back": "arts/novice-mace/borda/verso.svg",
+          "canvasMm": [
+            22.225,
+            35.391
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            35.3,
+            21.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "novice-fusion",
+      "candidateId": "a035",
+      "pdfLabel": "Novice Fusion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "novice-sisters",
+      "equipmentTags": [
+        "Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Fusion",
+          "armyBook": "Fusion Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0
+          ],
+          "front": "arts/novice-fusion/fino/frente.svg",
+          "back": "arts/novice-fusion/fino/verso.svg",
+          "canvasMm": [
+            35.221,
+            33.401
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            33.3,
+            35.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            0
+          ],
+          "front": "arts/novice-fusion/borda/frente.svg",
+          "back": "arts/novice-fusion/borda/verso.svg",
+          "canvasMm": [
+            38.608,
+            35.094
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            35.0,
+            38.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "novice-flamer",
+      "candidateId": "a036",
+      "pdfLabel": "Novice Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "novice-sisters",
+      "equipmentTags": [
+        "Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            1
+          ],
+          "front": "arts/novice-flamer/fino/frente.svg",
+          "back": "arts/novice-flamer/fino/verso.svg",
+          "canvasMm": [
+            33.655,
+            33.316
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            33.2,
+            33.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            1
+          ],
+          "front": "arts/novice-flamer/borda/frente.svg",
+          "back": "arts/novice-flamer/borda/verso.svg",
+          "canvasMm": [
+            37.338,
+            35.01
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            34.9,
+            36.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "novice-banner",
+      "candidateId": "a037",
+      "pdfLabel": "Novice Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "novice-sisters",
+      "equipmentTags": [
+        "Sacred Banner"
+      ],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Banner",
+          "armyBook": "Sacred Banner"
+        }
+      ],
+      "notes": "pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            2
+          ],
+          "front": "arts/novice-banner/fino/frente.svg",
+          "back": "arts/novice-banner/fino/verso.svg",
+          "canvasMm": [
+            35.729,
+            50.673
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            50.5,
+            35.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            2
+          ],
+          "front": "arts/novice-banner/borda/frente.svg",
+          "back": "arts/novice-banner/borda/verso.svg",
+          "canvasMm": [
+            39.074,
+            52.366
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            52.2,
+            38.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "novice-megaphone",
+      "candidateId": "a038",
+      "pdfLabel": "Novice Megaphone",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "novice-sisters",
+      "equipmentTags": [
+        "Canticle Megaphone"
+      ],
+      "cosmetic": "megaphone",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Megaphone",
+          "armyBook": "Canticle Megaphone"
+        }
+      ],
+      "notes": "pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            3
+          ],
+          "front": "arts/novice-megaphone/fino/frente.svg",
+          "back": "arts/novice-megaphone/fino/verso.svg",
+          "canvasMm": [
+            23.791,
+            36.449
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            36.3,
+            23.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            3
+          ],
+          "front": "arts/novice-megaphone/borda/frente.svg",
+          "back": "arts/novice-megaphone/borda/verso.svg",
+          "canvasMm": [
+            27.178,
+            38.142
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            38.0,
+            26.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "novice-medic",
+      "candidateId": "a039",
+      "pdfLabel": "Novice Medic",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "novice-sisters",
+      "equipmentTags": [
+        "Medical Training"
+      ],
+      "cosmetic": "medic",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Medic",
+          "armyBook": "Medical Training"
+        }
+      ],
+      "notes": "pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            4
+          ],
+          "front": "arts/novice-medic/fino/frente.svg",
+          "back": "arts/novice-medic/fino/verso.svg",
+          "canvasMm": [
+            31.03,
+            34.544
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            34.5,
+            30.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            4
+          ],
+          "front": "arts/novice-medic/borda/frente.svg",
+          "back": "arts/novice-medic/borda/verso.svg",
+          "canvasMm": [
+            34.417,
+            36.237
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            36.2,
+            34.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vanguard-rifle",
+      "candidateId": "a040",
+      "pdfLabel": "Vanguard Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vanguard-sister",
+      "equipmentTags": [
+        "Battle Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": "Battle Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/vanguard-rifle/fino/frente.svg",
+          "back": "arts/vanguard-rifle/fino/verso.svg",
+          "canvasMm": [
+            26.331,
+            33.316
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            33.2,
+            26.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 56,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/vanguard-rifle/borda/frente.svg",
+          "back": "arts/vanguard-rifle/borda/verso.svg",
+          "canvasMm": [
+            29.718,
+            35.01
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            34.9,
+            29.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vanguard-shotgun",
+      "candidateId": "a041",
+      "pdfLabel": "Vanguard Shotgun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vanguard-sister",
+      "equipmentTags": [
+        "Shotgun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/vanguard-shotgun/fino/frente.svg",
+          "back": "arts/vanguard-shotgun/fino/verso.svg",
+          "canvasMm": [
+            26.204,
+            33.189
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            33.1,
+            25.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 57,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/vanguard-shotgun/borda/frente.svg",
+          "back": "arts/vanguard-shotgun/borda/verso.svg",
+          "canvasMm": [
+            29.591,
+            34.883
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            34.8,
+            29.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vanguard-shred-rifle",
+      "candidateId": "a042",
+      "pdfLabel": "Vanguard Shred Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vanguard-sister",
+      "equipmentTags": [
+        "Shredder Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shred Rifle",
+          "armyBook": "Shredder Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0
+          ],
+          "front": "arts/vanguard-shred-rifle/fino/frente.svg",
+          "back": "arts/vanguard-shred-rifle/fino/verso.svg",
+          "canvasMm": [
+            28.66,
+            33.57
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            33.4,
+            28.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 58,
+          "rows": [
+            0
+          ],
+          "front": "arts/vanguard-shred-rifle/borda/frente.svg",
+          "back": "arts/vanguard-shred-rifle/borda/verso.svg",
+          "canvasMm": [
+            32.046,
+            35.264
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            35.1,
+            31.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vanguard-storm-rifle",
+      "candidateId": "a043",
+      "pdfLabel": "Vanguard Storm Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vanguard-sister",
+      "equipmentTags": [
+        "Burst Cyclic Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Storm Rifle",
+          "armyBook": "Burst Cyclic Rifle"
+        }
+      ],
+      "notes": "não existe Storm Rifle; Burst Cyclic Rifle é o fuzil de rajada da unidade",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            1
+          ],
+          "front": "arts/vanguard-storm-rifle/fino/frente.svg",
+          "back": "arts/vanguard-storm-rifle/fino/verso.svg",
+          "canvasMm": [
+            29.803,
+            33.486
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            33.4,
+            29.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 58,
+          "rows": [
+            1
+          ],
+          "front": "arts/vanguard-storm-rifle/borda/frente.svg",
+          "back": "arts/vanguard-storm-rifle/borda/verso.svg",
+          "canvasMm": [
+            33.189,
+            35.179
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            35.1,
+            32.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vanguard-plasma-rifle",
+      "candidateId": "a044",
+      "pdfLabel": "Vanguard Plasma Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vanguard-sister",
+      "equipmentTags": [
+        "Plasma Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            2
+          ],
+          "front": "arts/vanguard-plasma-rifle/fino/frente.svg",
+          "back": "arts/vanguard-plasma-rifle/fino/verso.svg",
+          "canvasMm": [
+            29.422,
+            33.486
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            33.4,
+            29.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 58,
+          "rows": [
+            2
+          ],
+          "front": "arts/vanguard-plasma-rifle/borda/frente.svg",
+          "back": "arts/vanguard-plasma-rifle/borda/verso.svg",
+          "canvasMm": [
+            32.808,
+            35.179
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            35.1,
+            32.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vanguard-fusion-rifle",
+      "candidateId": "a045",
+      "pdfLabel": "Vanguard Fusion Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vanguard-sister",
+      "equipmentTags": [
+        "Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            3
+          ],
+          "front": "arts/vanguard-fusion-rifle/fino/frente.svg",
+          "back": "arts/vanguard-fusion-rifle/fino/verso.svg",
+          "canvasMm": [
+            28.448,
+            33.528
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            33.4,
+            28.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 58,
+          "rows": [
+            3
+          ],
+          "front": "arts/vanguard-fusion-rifle/borda/frente.svg",
+          "back": "arts/vanguard-fusion-rifle/borda/verso.svg",
+          "canvasMm": [
+            31.835,
+            35.221
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            35.1,
+            31.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vanguard-flamer",
+      "candidateId": "a046",
+      "pdfLabel": "Vanguard Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vanguard-sister",
+      "equipmentTags": [
+        "Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            4
+          ],
+          "front": "arts/vanguard-flamer/fino/frente.svg",
+          "back": "arts/vanguard-flamer/fino/verso.svg",
+          "canvasMm": [
+            29.506,
+            33.57
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            33.4,
+            29.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 58,
+          "rows": [
+            4
+          ],
+          "front": "arts/vanguard-flamer/borda/frente.svg",
+          "back": "arts/vanguard-flamer/borda/verso.svg",
+          "canvasMm": [
+            32.893,
+            35.264
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            35.1,
+            32.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vanguard-sniper",
+      "candidateId": "a047",
+      "pdfLabel": "Vanguard Sniper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vanguard-sniper",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "nome da unidade no Firefight; também serviria à Vanguard Sister com Sniper Rifle",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            5
+          ],
+          "front": "arts/vanguard-sniper/fino/frente.svg",
+          "back": "arts/vanguard-sniper/fino/verso.svg",
+          "canvasMm": [
+            28.871,
+            25.358
+          ],
+          "frontBackIoU": 0.933,
+          "sizeMm": [
+            25.2,
+            28.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 58,
+          "rows": [
+            5
+          ],
+          "front": "arts/vanguard-sniper/borda/frente.svg",
+          "back": "arts/vanguard-sniper/borda/verso.svg",
+          "canvasMm": [
+            32.258,
+            27.051
+          ],
+          "frontBackIoU": 0.952,
+          "sizeMm": [
+            26.9,
+            32.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fanatic-v1",
+      "candidateId": "a048",
+      "pdfLabel": "Fanatic V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "fanatic-sisters",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/fanatic-v1/fino/frente.svg",
+          "back": "arts/fanatic-v1/fino/verso.svg",
+          "canvasMm": [
+            28.49,
+            44.577
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            44.4,
+            28.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 59,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/fanatic-v1/borda/frente.svg",
+          "back": "arts/fanatic-v1/borda/verso.svg",
+          "canvasMm": [
+            31.157,
+            46.228
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            46.1,
+            31.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fanatic-v2",
+      "candidateId": "a049",
+      "pdfLabel": "Fanatic V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "fanatic-sisters",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/fanatic-v2/fino/frente.svg",
+          "back": "arts/fanatic-v2/fino/verso.svg",
+          "canvasMm": [
+            39.074,
+            33.655
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            33.5,
+            38.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 59,
+          "rows": [
+            3
+          ],
+          "front": "arts/fanatic-v2/borda/frente.svg",
+          "back": "arts/fanatic-v2/borda/verso.svg",
+          "canvasMm": [
+            41.91,
+            35.306
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            35.2,
+            41.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "flagellant-v1",
+      "candidateId": "a050",
+      "pdfLabel": "Flagellant V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "fanatic-sisters",
+      "equipmentTags": [
+        "Flagellants"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Flagellant",
+          "armyBook": "Fanatic Sisters + Flagellants"
+        }
+      ],
+      "notes": "Flagellants é upgrade de todas as Fanatic Sisters (existe também em Biker Fanatics e, como Flagellant, no Fanatic Superior)",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/flagellant-v1/fino/frente.svg",
+          "back": "arts/flagellant-v1/fino/verso.svg",
+          "canvasMm": [
+            40.471,
+            36.237
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            36.2,
+            40.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 60,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/flagellant-v1/borda/frente.svg",
+          "back": "arts/flagellant-v1/borda/verso.svg",
+          "canvasMm": [
+            43.857,
+            37.931
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            37.8,
+            43.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "flagellant-v2",
+      "candidateId": "a051",
+      "pdfLabel": "Flagellant V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "fanatic-sisters",
+      "equipmentTags": [
+        "Flagellants"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Flagellant",
+          "armyBook": "Fanatic Sisters + Flagellants"
+        }
+      ],
+      "notes": "Flagellants é upgrade de todas as Fanatic Sisters (existe também em Biker Fanatics e, como Flagellant, no Fanatic Superior)",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/flagellant-v2/fino/frente.svg",
+          "back": "arts/flagellant-v2/fino/verso.svg",
+          "canvasMm": [
+            32.893,
+            44.873
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            44.8,
+            32.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 60,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/flagellant-v2/borda/frente.svg",
+          "back": "arts/flagellant-v2/borda/verso.svg",
+          "canvasMm": [
+            36.237,
+            46.567
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            46.5,
+            36.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "protector-spear",
+      "candidateId": "a052",
+      "pdfLabel": "Protector Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "protector-sister",
+      "equipmentTags": [
+        "Energy Spear|Sacred Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Spear",
+          "armyBook": "Energy Spear | Sacred Spear"
+        }
+      ],
+      "notes": "as duas lanças da unidade (5 cópias no PDF sugerem Energy Spear, troca de todas)",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/protector-spear/fino/frente.svg",
+          "back": "arts/protector-spear/fino/verso.svg",
+          "canvasMm": [
+            31.835,
+            36.788
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            36.7,
+            31.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 61,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/protector-spear/borda/frente.svg",
+          "back": "arts/protector-spear/borda/verso.svg",
+          "canvasMm": [
+            35.221,
+            38.481
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            38.4,
+            35.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "protector-mace",
+      "candidateId": "a053",
+      "pdfLabel": "Protector Mace",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "protector-sister",
+      "equipmentTags": [
+        "Energy Club"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Mace",
+          "armyBook": "Energy Club"
+        }
+      ],
+      "notes": "troca de todas: Pistol + Energy Club",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/protector-mace/fino/frente.svg",
+          "back": "arts/protector-mace/fino/verso.svg",
+          "canvasMm": [
+            24.596,
+            36.703
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            36.6,
+            24.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 62,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/protector-mace/borda/frente.svg",
+          "back": "arts/protector-mace/borda/verso.svg",
+          "canvasMm": [
+            27.982,
+            38.396
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            38.3,
+            27.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "protector-halberd",
+      "candidateId": "a054",
+      "pdfLabel": "Protector Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "protector-sister",
+      "equipmentTags": [
+        "Energy Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Halberd",
+          "armyBook": "Energy Halberd"
+        }
+      ],
+      "notes": "troca de todas: Pistol + Energy Halberd",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/protector-halberd/fino/frente.svg",
+          "back": "arts/protector-halberd/fino/verso.svg",
+          "canvasMm": [
+            30.141,
+            36.576
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            36.5,
+            29.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 63,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/protector-halberd/borda/frente.svg",
+          "back": "arts/protector-halberd/borda/verso.svg",
+          "canvasMm": [
+            33.528,
+            38.269
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            38.2,
+            33.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetpack-assault-v1",
+      "candidateId": "a055",
+      "pdfLabel": "Jetpack Assault V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "assault-sister",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "genericName Jetpack Assault Sisters",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/jetpack-assault-v1/fino/frente.svg",
+          "back": "arts/jetpack-assault-v1/fino/verso.svg",
+          "canvasMm": [
+            43.392,
+            50.25
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            50.1,
+            43.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 64,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/jetpack-assault-v1/borda/frente.svg",
+          "back": "arts/jetpack-assault-v1/borda/verso.svg",
+          "canvasMm": [
+            46.778,
+            51.943
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            51.8,
+            46.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetpack-assault-v2",
+      "candidateId": "a056",
+      "pdfLabel": "Jetpack Assault V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "assault-sister",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "genericName Jetpack Assault Sisters",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/jetpack-assault-v2/fino/frente.svg",
+          "back": "arts/jetpack-assault-v2/fino/verso.svg",
+          "canvasMm": [
+            43.222,
+            50.038
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            50.0,
+            42.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 64,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/jetpack-assault-v2/borda/frente.svg",
+          "back": "arts/jetpack-assault-v2/borda/verso.svg",
+          "canvasMm": [
+            46.609,
+            51.731
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            51.6,
+            46.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetpack-pistoleer-v1",
+      "candidateId": "a057",
+      "pdfLabel": "Jetpack Pistoleer V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "pistoleer-sister",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "genericName Jetpack Pistoleer Sisters",
+      "styles": {
+        "fino": {
+          "page": 26,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/jetpack-pistoleer-v1/fino/frente.svg",
+          "back": "arts/jetpack-pistoleer-v1/fino/verso.svg",
+          "canvasMm": [
+            37.126,
+            35.052
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            34.9,
+            36.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 65,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/jetpack-pistoleer-v1/borda/frente.svg",
+          "back": "arts/jetpack-pistoleer-v1/borda/verso.svg",
+          "canvasMm": [
+            40.513,
+            36.872
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            36.6,
+            40.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetpack-pistoleer-v2",
+      "candidateId": "a058",
+      "pdfLabel": "Jetpack Pistoleer V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "pistoleer-sister",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "genericName Jetpack Pistoleer Sisters",
+      "styles": {
+        "fino": {
+          "page": 26,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/jetpack-pistoleer-v2/fino/frente.svg",
+          "back": "arts/jetpack-pistoleer-v2/fino/verso.svg",
+          "canvasMm": [
+            36.957,
+            35.221
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            35.1,
+            36.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 65,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/jetpack-pistoleer-v2/borda/frente.svg",
+          "back": "arts/jetpack-pistoleer-v2/borda/verso.svg",
+          "canvasMm": [
+            40.386,
+            36.957
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            36.7,
+            40.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "celestial-rifle",
+      "candidateId": "a059",
+      "pdfLabel": "Celestial Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "celestial-warrior-sister",
+      "equipmentTags": [
+        "Burst Battle Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": "Burst Battle Rifle"
+        }
+      ],
+      "notes": "Celestial Warrior Sisters não têm Battle Rifle; o fuzil delas é Burst Battle Rifle",
+      "styles": {
+        "fino": {
+          "page": 27,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/celestial-rifle/fino/frente.svg",
+          "back": "arts/celestial-rifle/fino/verso.svg",
+          "canvasMm": [
+            22.86,
+            38.65
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            38.5,
+            22.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 66,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/celestial-rifle/borda/frente.svg",
+          "back": "arts/celestial-rifle/borda/verso.svg",
+          "canvasMm": [
+            26.755,
+            40.513
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            40.4,
+            26.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "celestial-shred-rifle",
+      "candidateId": "a060",
+      "pdfLabel": "Celestial Shred Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "celestial-warrior-sister",
+      "equipmentTags": [
+        "Shredder Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shred Rifle",
+          "armyBook": "Shredder Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            0
+          ],
+          "front": "arts/celestial-shred-rifle/fino/frente.svg",
+          "back": "arts/celestial-shred-rifle/fino/verso.svg",
+          "canvasMm": [
+            23.664,
+            38.481
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            38.4,
+            23.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 67,
+          "rows": [
+            0
+          ],
+          "front": "arts/celestial-shred-rifle/borda/frente.svg",
+          "back": "arts/celestial-shred-rifle/borda/verso.svg",
+          "canvasMm": [
+            27.982,
+            40.344
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            40.2,
+            27.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "celestial-storm-rifle",
+      "candidateId": "a061",
+      "pdfLabel": "Celestial Storm Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "celestial-warrior-sister",
+      "equipmentTags": [
+        "Burst Cyclic Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Storm Rifle",
+          "armyBook": "Burst Cyclic Rifle"
+        }
+      ],
+      "notes": "não existe Storm Rifle; Burst Cyclic Rifle é o fuzil de rajada da unidade",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            1
+          ],
+          "front": "arts/celestial-storm-rifle/fino/frente.svg",
+          "back": "arts/celestial-storm-rifle/fino/verso.svg",
+          "canvasMm": [
+            23.707,
+            38.481
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            38.4,
+            23.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 67,
+          "rows": [
+            1
+          ],
+          "front": "arts/celestial-storm-rifle/borda/frente.svg",
+          "back": "arts/celestial-storm-rifle/borda/verso.svg",
+          "canvasMm": [
+            28.025,
+            40.344
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            40.2,
+            27.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "celestial-plasma-rifle",
+      "candidateId": "a062",
+      "pdfLabel": "Celestial Plasma Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "celestial-warrior-sister",
+      "equipmentTags": [
+        "Plasma Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            2
+          ],
+          "front": "arts/celestial-plasma-rifle/fino/frente.svg",
+          "back": "arts/celestial-plasma-rifle/fino/verso.svg",
+          "canvasMm": [
+            23.58,
+            38.312
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            38.2,
+            23.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 67,
+          "rows": [
+            2
+          ],
+          "front": "arts/celestial-plasma-rifle/borda/frente.svg",
+          "back": "arts/celestial-plasma-rifle/borda/verso.svg",
+          "canvasMm": [
+            27.898,
+            40.174
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            40.0,
+            27.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "celestial-fusion-rifle",
+      "candidateId": "a063",
+      "pdfLabel": "Celestial Fusion Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "celestial-warrior-sister",
+      "equipmentTags": [
+        "Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            3
+          ],
+          "front": "arts/celestial-fusion-rifle/fino/frente.svg",
+          "back": "arts/celestial-fusion-rifle/fino/verso.svg",
+          "canvasMm": [
+            23.58,
+            38.396
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            38.3,
+            23.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 67,
+          "rows": [
+            3
+          ],
+          "front": "arts/celestial-fusion-rifle/borda/frente.svg",
+          "back": "arts/celestial-fusion-rifle/borda/verso.svg",
+          "canvasMm": [
+            27.898,
+            40.259
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            40.1,
+            27.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "celestial-flamer",
+      "candidateId": "a064",
+      "pdfLabel": "Celestial Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "celestial-warrior-sister",
+      "equipmentTags": [
+        "Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            4
+          ],
+          "front": "arts/celestial-flamer/fino/frente.svg",
+          "back": "arts/celestial-flamer/fino/verso.svg",
+          "canvasMm": [
+            23.622,
+            38.439
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            38.4,
+            23.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 67,
+          "rows": [
+            4
+          ],
+          "front": "arts/celestial-flamer/borda/frente.svg",
+          "back": "arts/celestial-flamer/borda/verso.svg",
+          "canvasMm": [
+            27.94,
+            40.301
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            40.2,
+            27.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "celestial-heavy-machine-gun",
+      "candidateId": "a065",
+      "pdfLabel": "Celestial Heavy Machine Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "celestial-warrior-sister",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "Celestial Warrior Sisters não têm armas pesadas na v3.6.0 (Heavy Machinegun existe em Warrior/Support Sisters)",
+      "styles": {
+        "fino": {
+          "page": 29,
+          "rows": [
+            0
+          ],
+          "front": "arts/celestial-heavy-machine-gun/fino/frente.svg",
+          "back": "arts/celestial-heavy-machine-gun/fino/verso.svg",
+          "canvasMm": [
+            25.781,
+            38.439
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            38.4,
+            25.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 68,
+          "rows": [
+            0
+          ],
+          "front": "arts/celestial-heavy-machine-gun/borda/frente.svg",
+          "back": "arts/celestial-heavy-machine-gun/borda/verso.svg",
+          "canvasMm": [
+            29.506,
+            40.301
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            40.2,
+            29.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "celestial-heavy-fusion",
+      "candidateId": "a066",
+      "pdfLabel": "Celestial Heavy Fusion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "celestial-warrior-sister",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "Celestial Warrior Sisters não têm armas pesadas na v3.6.0 (Heavy Fusion Rifle existe em Warrior/Support Sisters)",
+      "styles": {
+        "fino": {
+          "page": 29,
+          "rows": [
+            1
+          ],
+          "front": "arts/celestial-heavy-fusion/fino/frente.svg",
+          "back": "arts/celestial-heavy-fusion/fino/verso.svg",
+          "canvasMm": [
+            28.66,
+            38.354
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            38.3,
+            28.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 68,
+          "rows": [
+            1
+          ],
+          "front": "arts/celestial-heavy-fusion/borda/frente.svg",
+          "back": "arts/celestial-heavy-fusion/borda/verso.svg",
+          "canvasMm": [
+            32.385,
+            40.217
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            40.1,
+            32.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "celestial-heavy-flamer",
+      "candidateId": "a067",
+      "pdfLabel": "Celestial Heavy Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "celestial-warrior-sister",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "Celestial Warrior Sisters não têm armas pesadas na v3.6.0 (Heavy Flamer existe em Warrior/Support Sisters)",
+      "styles": {
+        "fino": {
+          "page": 29,
+          "rows": [
+            2
+          ],
+          "front": "arts/celestial-heavy-flamer/fino/frente.svg",
+          "back": "arts/celestial-heavy-flamer/fino/verso.svg",
+          "canvasMm": [
+            30.141,
+            38.608
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            38.5,
+            29.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 68,
+          "rows": [
+            2
+          ],
+          "front": "arts/celestial-heavy-flamer/borda/frente.svg",
+          "back": "arts/celestial-heavy-flamer/borda/verso.svg",
+          "canvasMm": [
+            33.867,
+            40.471
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            40.4,
+            33.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "celestial-banner",
+      "candidateId": "a068",
+      "pdfLabel": "Celestial Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "celestial-warrior-sister",
+      "equipmentTags": [
+        "Sacred Banner"
+      ],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Banner",
+          "armyBook": "Sacred Banner"
+        }
+      ],
+      "notes": "pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)",
+      "styles": {
+        "fino": {
+          "page": 30,
+          "rows": [
+            0
+          ],
+          "front": "arts/celestial-banner/fino/frente.svg",
+          "back": "arts/celestial-banner/fino/verso.svg",
+          "canvasMm": [
+            35.56,
+            58.081
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            58.0,
+            35.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 69,
+          "rows": [
+            0
+          ],
+          "front": "arts/celestial-banner/borda/frente.svg",
+          "back": "arts/celestial-banner/borda/verso.svg",
+          "canvasMm": [
+            39.285,
+            59.944
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            59.9,
+            39.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "celestial-medic",
+      "candidateId": "a069",
+      "pdfLabel": "Celestial Medic",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "celestial-warrior-sister",
+      "equipmentTags": [
+        "Medical Training"
+      ],
+      "cosmetic": "medic",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Medic",
+          "armyBook": "Medical Training"
+        }
+      ],
+      "notes": "pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)",
+      "styles": {
+        "fino": {
+          "page": 30,
+          "rows": [
+            1
+          ],
+          "front": "arts/celestial-medic/fino/frente.svg",
+          "back": "arts/celestial-medic/fino/verso.svg",
+          "canvasMm": [
+            25.019,
+            38.777
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            38.7,
+            24.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 69,
+          "rows": [
+            1
+          ],
+          "front": "arts/celestial-medic/borda/frente.svg",
+          "back": "arts/celestial-medic/borda/verso.svg",
+          "canvasMm": [
+            28.744,
+            40.64
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            40.6,
+            28.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "celestial-sargeant",
+      "candidateId": "a070",
+      "pdfLabel": "Celestial Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "celestial-warrior-sister",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "grafado 'Sargeant' no PDF; a unidade não tem opção de sargento",
+      "styles": {
+        "fino": {
+          "page": 30,
+          "rows": [
+            2
+          ],
+          "front": "arts/celestial-sargeant/fino/frente.svg",
+          "back": "arts/celestial-sargeant/fino/verso.svg",
+          "canvasMm": [
+            43.561,
+            38.735
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            38.6,
+            43.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 69,
+          "rows": [
+            2
+          ],
+          "front": "arts/celestial-sargeant/borda/frente.svg",
+          "back": "arts/celestial-sargeant/borda/verso.svg",
+          "canvasMm": [
+            47.286,
+            40.598
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            40.5,
+            47.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "celestial-megaphone",
+      "candidateId": "a071",
+      "pdfLabel": "Celestial Megaphone",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "celestial-warrior-sister",
+      "equipmentTags": [
+        "Canticle Megaphone"
+      ],
+      "cosmetic": "megaphone",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Megaphone",
+          "armyBook": "Canticle Megaphone"
+        }
+      ],
+      "notes": "pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)",
+      "styles": {
+        "fino": {
+          "page": 30,
+          "rows": [
+            3
+          ],
+          "front": "arts/celestial-megaphone/fino/frente.svg",
+          "back": "arts/celestial-megaphone/fino/verso.svg",
+          "canvasMm": [
+            31.835,
+            38.523
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            38.4,
+            31.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 69,
+          "rows": [
+            3
+          ],
+          "front": "arts/celestial-megaphone/borda/frente.svg",
+          "back": "arts/celestial-megaphone/borda/verso.svg",
+          "canvasMm": [
+            35.56,
+            40.386
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            40.3,
+            35.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "support-machine-gun",
+      "candidateId": "a072",
+      "pdfLabel": "Support Machine Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "support-sister",
+      "equipmentTags": [
+        "Heavy Machinegun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Machine Gun",
+          "armyBook": "Heavy Machinegun"
+        }
+      ],
+      "notes": "única metralhadora das Support Sisters",
+      "styles": {
+        "fino": {
+          "page": 31,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-machine-gun/fino/frente.svg",
+          "back": "arts/support-machine-gun/fino/verso.svg",
+          "canvasMm": [
+            29.422,
+            35.391
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            35.3,
+            29.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 70,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-machine-gun/borda/frente.svg",
+          "back": "arts/support-machine-gun/borda/verso.svg",
+          "canvasMm": [
+            32.808,
+            37.084
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            37.0,
+            32.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "support-fusion",
+      "candidateId": "a073",
+      "pdfLabel": "Support Fusion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "support-sister",
+      "equipmentTags": [
+        "Heavy Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Fusion",
+          "armyBook": "Heavy Fusion Rifle"
+        }
+      ],
+      "notes": "única arma de fusão das Support Sisters",
+      "styles": {
+        "fino": {
+          "page": 32,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-fusion/fino/frente.svg",
+          "back": "arts/support-fusion/fino/verso.svg",
+          "canvasMm": [
+            32.512,
+            35.433
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            35.3,
+            32.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 71,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-fusion/borda/frente.svg",
+          "back": "arts/support-fusion/borda/verso.svg",
+          "canvasMm": [
+            35.899,
+            37.126
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            37.0,
+            35.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "support-heavy-flamer",
+      "candidateId": "a074",
+      "pdfLabel": "Support Heavy Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "support-sister",
+      "equipmentTags": [
+        "Heavy Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 33,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-heavy-flamer/fino/frente.svg",
+          "back": "arts/support-heavy-flamer/fino/verso.svg",
+          "canvasMm": [
+            33.57,
+            34.078
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            34.0,
+            33.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 72,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/support-heavy-flamer/borda/frente.svg",
+          "back": "arts/support-heavy-flamer/borda/verso.svg",
+          "canvasMm": [
+            36.957,
+            35.772
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            35.6,
+            36.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "destroyer-storm-rifle",
+      "candidateId": "a075",
+      "pdfLabel": "Destroyer Storm Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "destroyer-sister",
+      "equipmentTags": [
+        "Burst Cyclic Rifle|Assault Cyclic Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Storm Rifle",
+          "armyBook": "Burst Cyclic Rifle | Assault Cyclic Rifle"
+        }
+      ],
+      "notes": "não existe Storm Rifle; os fuzis cíclicos da unidade",
+      "styles": {
+        "fino": {
+          "page": 34,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/destroyer-storm-rifle/fino/frente.svg",
+          "back": "arts/destroyer-storm-rifle/fino/verso.svg",
+          "canvasMm": [
+            29.083,
+            36.703
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            36.6,
+            28.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 73,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/destroyer-storm-rifle/borda/frente.svg",
+          "back": "arts/destroyer-storm-rifle/borda/verso.svg",
+          "canvasMm": [
+            32.808,
+            38.566
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            38.4,
+            32.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "destroyer-mace-shield",
+      "candidateId": "a076",
+      "pdfLabel": "Destroyer Mace & Shield",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "destroyer-sister",
+      "equipmentTags": [
+        "Energy Mace",
+        "Combat Shield"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Mace",
+          "armyBook": "Energy Mace"
+        },
+        {
+          "pdf": "Shield",
+          "armyBook": "Combat Shield"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 35,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/destroyer-mace-shield/fino/frente.svg",
+          "back": "arts/destroyer-mace-shield/fino/verso.svg",
+          "canvasMm": [
+            35.052,
+            36.788
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            36.7,
+            34.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 74,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/destroyer-mace-shield/borda/frente.svg",
+          "back": "arts/destroyer-mace-shield/borda/verso.svg",
+          "canvasMm": [
+            38.777,
+            38.65
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            38.5,
+            38.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "destroyer-dual-claws",
+      "candidateId": "a077",
+      "pdfLabel": "Destroyer Dual Claws",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "destroyer-sister",
+      "equipmentTags": [
+        "Dual Energy Claws"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Dual Claws",
+          "armyBook": "Dual Energy Claws"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 36,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/destroyer-dual-claws/fino/frente.svg",
+          "back": "arts/destroyer-dual-claws/fino/verso.svg",
+          "canvasMm": [
+            30.311,
+            37.042
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            36.9,
+            30.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 75,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/destroyer-dual-claws/borda/frente.svg",
+          "back": "arts/destroyer-dual-claws/borda/verso.svg",
+          "canvasMm": [
+            34.036,
+            38.904
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            38.8,
+            33.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "destroyer-heavy-fusion",
+      "candidateId": "a078",
+      "pdfLabel": "Destroyer Heavy Fusion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "destroyer-sister",
+      "equipmentTags": [
+        "Heavy Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Heavy Fusion",
+          "armyBook": "Heavy Fusion Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 37,
+          "rows": [
+            0
+          ],
+          "front": "arts/destroyer-heavy-fusion/fino/frente.svg",
+          "back": "arts/destroyer-heavy-fusion/fino/verso.svg",
+          "canvasMm": [
+            36.068,
+            35.687
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            35.6,
+            35.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 76,
+          "rows": [
+            0
+          ],
+          "front": "arts/destroyer-heavy-fusion/borda/frente.svg",
+          "back": "arts/destroyer-heavy-fusion/borda/verso.svg",
+          "canvasMm": [
+            39.793,
+            37.55
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            37.4,
+            39.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "destroyer-heavy-flamer",
+      "candidateId": "a079",
+      "pdfLabel": "Destroyer Heavy Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "destroyer-sister",
+      "equipmentTags": [
+        "Heavy Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "no PDF a palavra 'Flamer' está em negrito",
+      "styles": {
+        "fino": {
+          "page": 37,
+          "rows": [
+            1
+          ],
+          "front": "arts/destroyer-heavy-flamer/fino/frente.svg",
+          "back": "arts/destroyer-heavy-flamer/fino/verso.svg",
+          "canvasMm": [
+            36.872,
+            38.142
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            38.0,
+            36.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 76,
+          "rows": [
+            1
+          ],
+          "front": "arts/destroyer-heavy-flamer/borda/frente.svg",
+          "back": "arts/destroyer-heavy-flamer/borda/verso.svg",
+          "canvasMm": [
+            40.598,
+            40.005
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            39.9,
+            40.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "biker-fanatic-v1",
+      "candidateId": "a080",
+      "pdfLabel": "Biker Fanatic V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "biker-fanatic",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 38,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/biker-fanatic-v1/fino/frente.svg",
+          "back": "arts/biker-fanatic-v1/fino/verso.svg",
+          "canvasMm": [
+            45.424,
+            35.094
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            35.0,
+            45.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 77,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/biker-fanatic-v1/borda/frente.svg",
+          "back": "arts/biker-fanatic-v1/borda/verso.svg",
+          "canvasMm": [
+            48.81,
+            36.788
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            36.7,
+            48.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "biker-fanatic-v2",
+      "candidateId": "a081",
+      "pdfLabel": "Biker Fanatic V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "biker-fanatic",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 38,
+          "rows": [
+            2
+          ],
+          "front": "arts/biker-fanatic-v2/fino/frente.svg",
+          "back": "arts/biker-fanatic-v2/fino/verso.svg",
+          "canvasMm": [
+            45.17,
+            34.967
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            34.9,
+            44.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 77,
+          "rows": [
+            2
+          ],
+          "front": "arts/biker-fanatic-v2/borda/frente.svg",
+          "back": "arts/biker-fanatic-v2/borda/verso.svg",
+          "canvasMm": [
+            48.556,
+            36.661
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            36.6,
+            48.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "biker-warrior-spear",
+      "candidateId": "a082",
+      "pdfLabel": "Biker Warrior Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "biker-sister",
+      "equipmentTags": [
+        "Energy Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Biker Warrior",
+          "armyBook": "Biker Sisters"
+        },
+        {
+          "pdf": "Spear",
+          "armyBook": "Energy Lance"
+        }
+      ],
+      "notes": "arma padrão das Biker Sisters é Energy Lance",
+      "styles": {
+        "fino": {
+          "page": 39,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/biker-warrior-spear/fino/frente.svg",
+          "back": "arts/biker-warrior-spear/fino/verso.svg",
+          "canvasMm": [
+            58.039,
+            37.084
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            37.0,
+            57.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 78,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/biker-warrior-spear/borda/frente.svg",
+          "back": "arts/biker-warrior-spear/borda/verso.svg",
+          "canvasMm": [
+            61.426,
+            38.777
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            38.7,
+            61.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "biker-warrior-pistoleer",
+      "candidateId": "a083",
+      "pdfLabel": "Biker Warrior Pistoleer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "biker-sister",
+      "equipmentTags": [
+        "Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Biker Warrior",
+          "armyBook": "Biker Sisters"
+        },
+        {
+          "pdf": "Pistoleer",
+          "armyBook": "Pistol"
+        }
+      ],
+      "notes": "opção 'Replace all Energy Lances: Pistol'",
+      "styles": {
+        "fino": {
+          "page": 40,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/biker-warrior-pistoleer/fino/frente.svg",
+          "back": "arts/biker-warrior-pistoleer/fino/verso.svg",
+          "canvasMm": [
+            45.593,
+            37.931
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            37.8,
+            45.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 79,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/biker-warrior-pistoleer/borda/frente.svg",
+          "back": "arts/biker-warrior-pistoleer/borda/verso.svg",
+          "canvasMm": [
+            48.98,
+            39.624
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            39.5,
+            48.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

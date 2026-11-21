@@ -1,0 +1,1293 @@
+{
+ "packId": "wood-elves",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "AOF",
+   "slug": "age-of-fantasy",
+   "armyForgeId": 4
+  },
+  {
+   "code": "AOFS",
+   "slug": "age-of-fantasy-skirmish",
+   "armyForgeId": 5
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/qtuyeoRfXKlNflK0-gs4-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/qtuyeoRfXKlNflK0-gs5-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-*.png, army books v3.6.0 (os dois sistemas). work/rotulos-08.png é de uma rodada anterior (ids a085-a094, que não existem em candidatos.json) e foi desconsiderada.",
+ "unidades": {
+  "glade-leader": {
+   "armyForgeUnitId": "2HF3Nnt"
+  },
+  "grove-champion": {
+   "armyForgeUnitId": "DDfHPmh"
+  },
+  "treeman-elder": {
+   "armyForgeUnitId": "_ugzUsY"
+  },
+  "eternal-elder": {
+   "armyForgeUnitId": "p2InlnL"
+  },
+  "glade-defenders": {
+   "armyForgeUnitId": "GFRa6rq"
+  },
+  "grove-wardens": {
+   "armyForgeUnitId": "IwSVor6"
+  },
+  "glade-guardians": {
+   "armyForgeUnitId": "yji6M1E"
+  },
+  "glade-scouts": {
+   "armyForgeUnitId": "R5d3t4g"
+  },
+  "forest-watch": {
+   "armyForgeUnitId": "6DoZviX"
+  },
+  "deer-riders": {
+   "armyForgeUnitId": "7dxwe57"
+  },
+  "grove-lancers": {
+   "armyForgeUnitId": "Da6iqpU"
+  },
+  "mounted-weavers": {
+   "armyForgeUnitId": "uwbY7DS"
+  },
+  "war-dancers": {
+   "armyForgeUnitId": "2ZWcx2t"
+  },
+  "owl-riders": {
+   "armyForgeUnitId": "sOfgrnh"
+  },
+  "giant-owls": {
+   "armyForgeUnitId": "KLI8cVe"
+  },
+  "beetle-swarms": {
+   "armyForgeUnitId": "rcIn6wY"
+  },
+  "treemen": {
+   "armyForgeUnitId": "pognt8d"
+  },
+  "treeman-brutes": {
+   "armyForgeUnitId": "qDAISiA"
+  },
+  "eternal-revenants": {
+   "armyForgeUnitId": "01F6ROv"
+  },
+  "eternal-hunters": {
+   "armyForgeUnitId": "dEMaoBh"
+  },
+  "eternal-bug-riders": {
+   "armyForgeUnitId": "OheI5PK"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "army-standard",
+   "rotulo": "Army Standard",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-leader",
+   "equipmentTags": [
+    "Army Standard Bearer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Army Standard",
+     "armyBook": "Glade Leader (Army Standard Bearer)"
+    }
+   ],
+   "notas": "herói elfo com estandarte; Army Standard Bearer é opção só do Glade Leader"
+  },
+  "a002": {
+   "artId": "glade-leader-bow",
+   "rotulo": "Glade Leader Bow",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-leader",
+   "equipmentTags": [
+    "Rapid Bow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Bow",
+     "armyBook": "Rapid Bow"
+    }
+   ],
+   "notas": "o arco do Glade Leader é Rapid Bow (Rapid Longbow é troca dele)"
+  },
+  "a003": {
+   "artId": "glade-leader-sword",
+   "rotulo": "Glade Leader Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-leader",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "figura com uma espada; o padrão da unidade é Dual Hand Weapons, então o modelo padrão não casa com esta arte"
+  },
+  "a004": {
+   "artId": "grove-champion-sword",
+   "rotulo": "Grove Champion Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "grove-champion",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "espada e escudo; o padrão do Grove Champion é Dual Hand Weapons, então o modelo padrão não casa com esta arte"
+  },
+  "a005": {
+   "artId": "grove-champion-bow",
+   "rotulo": "Grove Champion Bow",
+   "confiancaRotulo": "alta",
+   "unitKey": "grove-champion",
+   "equipmentTags": [
+    "Rapid Shortbow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Bow",
+     "armyBook": "Rapid Shortbow"
+    }
+   ],
+   "notas": "único arco do Grove Champion"
+  },
+  "a006": {
+   "artId": "war-master",
+   "rotulo": "War Master",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-leader",
+   "equipmentTags": [
+    "War Master"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "War Master",
+     "armyBook": "Glade Leader (War Master)"
+    }
+   ],
+   "notas": "herói elfo com lança; entre os elfos só o Glade Leader tem War Master (Eternal Elder e Eternal Guardian Ancient também têm, mas a figura é elfo)"
+  },
+  "a007": {
+   "artId": "forest-warden",
+   "rotulo": "Forest Warden",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-leader",
+   "equipmentTags": [
+    "Forest Warden"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Forest Warden",
+     "armyBook": "Glade Leader (Forest Warden)"
+    }
+   ],
+   "notas": "herói elfo com cajado de galhos e escudo; Forest Warden também é opção do Grove Champion e do Treeman Elder"
+  },
+  "a008": {
+   "artId": "spell-weaver",
+   "rotulo": "Spell Weaver",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-leader",
+   "equipmentTags": [
+    "Spell Weaver"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spell Weaver",
+     "armyBook": "Glade Leader (Spell Weaver)"
+    }
+   ],
+   "notas": "elfo com cajado e manto de penas; Spell Weaver também é opção do Grove Champion (e de Eternal Elder, Eternal Guardian Ancient e Yrana)"
+  },
+  "a009": {
+   "artId": "treemen-wraith",
+   "rotulo": "Treemen Wraith",
+   "confiancaRotulo": "alta",
+   "unitKey": "treeman-elder",
+   "equipmentTags": [
+    "Forest Wraith"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Treemen Wraith",
+     "armyBook": "Treeman Elder (Forest Wraith)"
+    }
+   ],
+   "notas": "homem-árvore com cajado (caster); Forest Wraith é opção do Treeman Elder"
+  },
+  "a010": {
+   "artId": "treemen-elder",
+   "rotulo": "Treemen Elder",
+   "confiancaRotulo": "alta",
+   "unitKey": "treeman-elder",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "o PDF grafa Treemen; unidade Treeman Elder"
+  },
+  "a011": {
+   "artId": "deer-leader-lance",
+   "rotulo": "Deer Leader Lance",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-leader",
+   "equipmentTags": [
+    "Lance",
+    "Swift Deer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Deer Leader",
+     "armyBook": "Glade Leader (Swift Deer)"
+    }
+   ],
+   "notas": "líder elfo montado em cervo; a montaria pode ser Swift Deer ou Tracker Deer (escolhi Swift Deer); Great Stag tem arte própria"
+  },
+  "a012": {
+   "artId": "deer-leader-sword",
+   "rotulo": "Deer Leader Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-leader",
+   "equipmentTags": [
+    "Hand Weapon",
+    "Swift Deer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Deer Leader",
+     "armyBook": "Glade Leader (Swift Deer)"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "líder elfo em cervo com uma espada; montaria Swift Deer ou Tracker Deer (escolhi Swift Deer); padrão do líder é Dual Hand Weapons"
+  },
+  "a013": {
+   "artId": "dance-master",
+   "rotulo": "Dance Master",
+   "confiancaRotulo": "alta",
+   "unitKey": "grove-champion",
+   "equipmentTags": [
+    "Dance Master"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Dance Master",
+     "armyBook": "Grove Champion (Dance Master)"
+    }
+   ],
+   "notas": "Dance Master só existe como opção do Grove Champion"
+  },
+  "a014": {
+   "artId": "champion-owl-rider",
+   "rotulo": "Champion Owl Rider",
+   "confiancaRotulo": "alta",
+   "unitKey": "grove-champion",
+   "equipmentTags": [
+    "Giant Owl"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Grove Champion"
+    },
+    {
+     "pdf": "Owl Rider",
+     "armyBook": "Giant Owl"
+    }
+   ],
+   "notas": "campeão montado em coruja (montaria Giant Owl do Grove Champion); só estilo fino, a075 é a versão borda"
+  },
+  "a015": {
+   "artId": "champion-great-stag",
+   "rotulo": "Champion Great Stag",
+   "confiancaRotulo": "alta",
+   "unitKey": "grove-champion",
+   "equipmentTags": [
+    "Great Stag"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Champion = Grove Champion (única unidade Champion); Great Stag é a montaria"
+  },
+  "a016": {
+   "artId": "defenders-sword",
+   "rotulo": "Defenders Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-defenders",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "Hand Weapon é a arma padrão dos Glade Defenders"
+  },
+  "a017": {
+   "artId": "defenders-spear",
+   "rotulo": "Defenders Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-defenders",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a018": {
+   "artId": "defenders-halberd",
+   "rotulo": "Defenders Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-defenders",
+   "equipmentTags": [
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a019": {
+   "artId": "defenders-sergeant",
+   "rotulo": "Defenders Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-defenders",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a020": {
+   "artId": "defenders-musician",
+   "rotulo": "Defenders Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-defenders",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a021": {
+   "artId": "defenders-banner",
+   "rotulo": "Defenders Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-defenders",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a022": {
+   "artId": "warden",
+   "rotulo": "Warden",
+   "confiancaRotulo": "alta",
+   "unitKey": "grove-wardens",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "figura com espadão; o padrão da unidade é Halberd"
+  },
+  "a023": {
+   "artId": "warden-sergeant",
+   "rotulo": "Warden Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "grove-wardens",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a024": {
+   "artId": "warden-musician",
+   "rotulo": "Warden Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "grove-wardens",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a025": {
+   "artId": "warden-banner",
+   "rotulo": "Warden Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "grove-wardens",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a026": {
+   "artId": "guardian",
+   "rotulo": "Guardian",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-guardians",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "arqueiro elfo = Glade Guardians (não o Eternal Guardian, que é monstro)"
+  },
+  "a027": {
+   "artId": "guardian-sergeant",
+   "rotulo": "Guardian Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-guardians",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a028": {
+   "artId": "guardian-musician",
+   "rotulo": "Guardian Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-guardians",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a029": {
+   "artId": "guardian-banner",
+   "rotulo": "Guardian Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-guardians",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a030": {
+   "artId": "scout",
+   "rotulo": "Scout",
+   "confiancaRotulo": "alta",
+   "unitKey": "glade-scouts",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a031": {
+   "artId": "forest-watch",
+   "rotulo": "Forest Watch",
+   "confiancaRotulo": "alta",
+   "unitKey": "forest-watch",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a032": {
+   "artId": "deer-rider-bow",
+   "rotulo": "Deer Rider Bow",
+   "confiancaRotulo": "alta",
+   "unitKey": "deer-riders",
+   "equipmentTags": [
+    "Bow"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a033": {
+   "artId": "deer-rider-lance",
+   "rotulo": "Deer Rider Lance",
+   "confiancaRotulo": "alta",
+   "unitKey": "deer-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a034": {
+   "artId": "deer-rider-sergeant",
+   "rotulo": "Deer Rider Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "deer-riders",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a035": {
+   "artId": "deer-rider-musician",
+   "rotulo": "Deer Rider Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "deer-riders",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a036": {
+   "artId": "deer-rider-banner",
+   "rotulo": "Deer Rider Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "deer-riders",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a037": {
+   "artId": "lancer",
+   "rotulo": "Lancer",
+   "confiancaRotulo": "alta",
+   "unitKey": "grove-lancers",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a038": {
+   "artId": "lancer-sergeant",
+   "rotulo": "Lancer Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "grove-lancers",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a039": {
+   "artId": "lancer-musician",
+   "rotulo": "Lancer Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "grove-lancers",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a040": {
+   "artId": "lancer-banner",
+   "rotulo": "Lancer Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "grove-lancers",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a041": {
+   "artId": "mounted-weaver",
+   "rotulo": "Mounted Weaver",
+   "confiancaRotulo": "alta",
+   "unitKey": "mounted-weavers",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a042": {
+   "artId": "mounted-weaver-sergeant",
+   "rotulo": "Mounted Weaver Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "mounted-weavers",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a043": {
+   "artId": "mounted-weaver-musician",
+   "rotulo": "Mounted Weaver Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "mounted-weavers",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a044": {
+   "artId": "mounted-weaver-banner",
+   "rotulo": "Mounted Weaver Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "mounted-weavers",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a045": {
+   "artId": "war-dancer",
+   "rotulo": "War Dancer",
+   "confiancaRotulo": "alta",
+   "unitKey": "war-dancers",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a046": {
+   "artId": "war-dancer-sergeant",
+   "rotulo": "War Dancer Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "war-dancers",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a047": {
+   "artId": "war-dancer-musician",
+   "rotulo": "War Dancer Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "war-dancers",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a048": {
+   "artId": "war-dancer-banner",
+   "rotulo": "War Dancer Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "war-dancers",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a049": {
+   "artId": "war-glider",
+   "rotulo": "War Glider",
+   "confiancaRotulo": "alta",
+   "unitKey": "war-dancers",
+   "equipmentTags": [
+    "Glider Wings"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "War Glider",
+     "armyBook": "War Dancers (Glider Wings)"
+    }
+   ],
+   "notas": "dançarino alado; War Dancers com a opção Glider Wings"
+  },
+  "a050": {
+   "artId": "war-glider-sergeant",
+   "rotulo": "War Glider Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "war-dancers",
+   "equipmentTags": [
+    "Glider Wings"
+   ],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "War Glider",
+     "armyBook": "War Dancers (Glider Wings)"
+    }
+   ],
+   "notas": "comando dos War Dancers com Glider Wings"
+  },
+  "a051": {
+   "artId": "war-glider-musician",
+   "rotulo": "War Glider Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "war-dancers",
+   "equipmentTags": [
+    "Glider Wings"
+   ],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "War Glider",
+     "armyBook": "War Dancers (Glider Wings)"
+    }
+   ],
+   "notas": "comando dos War Dancers com Glider Wings"
+  },
+  "a052": {
+   "artId": "war-glider-banner",
+   "rotulo": "War Glider Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "war-dancers",
+   "equipmentTags": [
+    "Glider Wings"
+   ],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "War Glider",
+     "armyBook": "War Dancers (Glider Wings)"
+    }
+   ],
+   "notas": "comando dos War Dancers com Glider Wings"
+  },
+  "a053": {
+   "artId": "owl-rider-spear",
+   "rotulo": "Owl Rider Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "owl-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spear",
+     "armyBook": "Lance"
+    }
+   ],
+   "notas": "a arma de haste padrão dos Owl Riders é Lance; só estilo fino, a076 é a versão borda"
+  },
+  "a054": {
+   "artId": "owl-rider-bow",
+   "rotulo": "Owl Rider Bow",
+   "confiancaRotulo": "alta",
+   "unitKey": "owl-riders",
+   "equipmentTags": [
+    "Rapid Shortbow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Bow",
+     "armyBook": "Rapid Shortbow"
+    }
+   ],
+   "notas": "escolhi Rapid Shortbow (há também Rapid Hunting Shortbow); só estilo fino, a077 é a versão borda"
+  },
+  "a055": {
+   "artId": "giant-owl",
+   "rotulo": "Giant Owl",
+   "confiancaRotulo": "alta",
+   "unitKey": "giant-owls",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só estilo fino; a078 é a versão borda"
+  },
+  "a056": {
+   "artId": "beetle-swarms",
+   "rotulo": "Beetle Swarms",
+   "confiancaRotulo": "alta",
+   "unitKey": "beetle-swarms",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a057": {
+   "artId": "treemen-claws",
+   "rotulo": "Treemen Claws",
+   "confiancaRotulo": "alta",
+   "unitKey": "treemen",
+   "equipmentTags": [
+    "Branch Claws"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Claws",
+     "armyBook": "Branch Claws"
+    }
+   ],
+   "notas": "\"Claws\" no army book vem junto do Weaving Branch; a arma de garras é Branch Claws"
+  },
+  "a058": {
+   "artId": "treemen-weaver",
+   "rotulo": "Treemen Weaver",
+   "confiancaRotulo": "alta",
+   "unitKey": "treemen",
+   "equipmentTags": [
+    "Weaving Branch"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Weaver",
+     "armyBook": "Weaving Branch"
+    }
+   ],
+   "notas": "5 cópias (tropa); Treemen com Weaving Branch (Wild Weaver do Treeman Elder é herói)"
+  },
+  "a059": {
+   "artId": "treemen-brute-claw",
+   "rotulo": "Treemen Brute Claw",
+   "confiancaRotulo": "alta",
+   "unitKey": "treeman-brutes",
+   "equipmentTags": [
+    "Branch Claws"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Claw",
+     "armyBook": "Branch Claws"
+    }
+   ],
+   "notas": ""
+  },
+  "a060": {
+   "artId": "treemen-brute-mace",
+   "rotulo": "Treemen Brute Mace",
+   "confiancaRotulo": "alta",
+   "unitKey": "treeman-brutes",
+   "equipmentTags": [
+    "Branch Mace"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Mace",
+     "armyBook": "Branch Mace"
+    }
+   ],
+   "notas": "Branch Mace é a arma padrão"
+  },
+  "a061": {
+   "artId": "eternal-claws",
+   "rotulo": "Eternal Claws",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal-revenants",
+   "equipmentTags": [
+    "Razor Claws"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Eternal",
+     "armyBook": "Eternal Revenants"
+    },
+    {
+     "pdf": "Claws",
+     "armyBook": "Razor Claws"
+    }
+   ],
+   "notas": "série Eternal Claws/Blades/Bow com 5 cópias = tropa Eternal Revenants; \"Claws\" simples vem junto dos arcos"
+  },
+  "a062": {
+   "artId": "eternal-blades",
+   "rotulo": "Eternal Blades",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal-revenants",
+   "equipmentTags": [
+    "Spite Blades"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Eternal",
+     "armyBook": "Eternal Revenants"
+    },
+    {
+     "pdf": "Blades",
+     "armyBook": "Spite Blades"
+    }
+   ],
+   "notas": "Spite Blades é a arma padrão"
+  },
+  "a063": {
+   "artId": "eternal-bow",
+   "rotulo": "Eternal Bow",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal-revenants",
+   "equipmentTags": [
+    "Spite Shortbow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Eternal",
+     "armyBook": "Eternal Revenants"
+    },
+    {
+     "pdf": "Bow",
+     "armyBook": "Spite Shortbow"
+    }
+   ],
+   "notas": "escolhi Spite Shortbow (há também Hunting Shortbow)"
+  },
+  "a064": {
+   "artId": "eternal-elder-blades",
+   "rotulo": "Eternal Elder Blades",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal-elder",
+   "equipmentTags": [
+    "Spite Blades"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Blades",
+     "armyBook": "Spite Blades"
+    }
+   ],
+   "notas": ""
+  },
+  "a065": {
+   "artId": "eternal-elder-bow",
+   "rotulo": "Eternal Elder Bow",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal-elder",
+   "equipmentTags": [
+    "Rapid Spite Shortbow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Bow",
+     "armyBook": "Rapid Spite Shortbow"
+    }
+   ],
+   "notas": "escolhi Rapid Spite Shortbow (Great Rapid Hunting Shortbow é troca dele)"
+  },
+  "a066": {
+   "artId": "eternal-spell-weaver",
+   "rotulo": "Eternal Spell Weaver",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal-elder",
+   "equipmentTags": [
+    "Spell Weaver"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Eternal Spell Weaver",
+     "armyBook": "Eternal Elder (Spell Weaver)"
+    }
+   ],
+   "notas": "mesma página do Eternal Elder e figura no mesmo estilo; Spell Weaver é opção dele"
+  },
+  "a067": {
+   "artId": "eternal-rider-lance",
+   "rotulo": "Eternal Rider Lance",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal-bug-riders",
+   "equipmentTags": [
+    "Lance Blade"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Eternal Rider",
+     "armyBook": "Eternal Bug Riders"
+    },
+    {
+     "pdf": "Lance",
+     "armyBook": "Lance Blade"
+    }
+   ],
+   "notas": "Lance Blade é a arma padrão"
+  },
+  "a068": {
+   "artId": "eternal-rider-blades",
+   "rotulo": "Eternal Rider Blades",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal-bug-riders",
+   "equipmentTags": [
+    "Spite Blades"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Eternal Rider",
+     "armyBook": "Eternal Bug Riders"
+    },
+    {
+     "pdf": "Blades",
+     "armyBook": "Spite Blades"
+    }
+   ],
+   "notas": ""
+  },
+  "a069": {
+   "artId": "eternal-hunter-scythe",
+   "rotulo": "Eternal Hunter Scythe",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal-hunters",
+   "equipmentTags": [
+    "Great Scythe"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Scythe",
+     "armyBook": "Great Scythe"
+    }
+   ],
+   "notas": ""
+  },
+  "a070": {
+   "artId": "eternal-hunter-hook",
+   "rotulo": "Eternal Hunter Hook",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal-hunters",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hook",
+     "armyBook": "Great Weapon"
+    }
+   ],
+   "notas": "haste com lâmina em gancho; o army book não tem gancho, Great Weapon é a arma pesada genérica (padrão é Great Hammer)"
+  },
+  "a071": {
+   "artId": "eternal-hunter-bow",
+   "rotulo": "Eternal Hunter Bow",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal-hunters",
+   "equipmentTags": [
+    "Rapid Bow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Bow",
+     "armyBook": "Rapid Bow"
+    }
+   ],
+   "notas": "escolhi Rapid Bow (há também Rapid Hunting Bow)"
+  },
+  "a072": {
+   "artId": "eternal-rider-banner",
+   "rotulo": "Eternal Rider Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal-bug-riders",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Eternal Rider",
+     "armyBook": "Eternal Bug Riders"
+    }
+   ],
+   "notas": ""
+  },
+  "a073": {
+   "artId": "eternal-rider-sergeant",
+   "rotulo": "Eternal Rider Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal-bug-riders",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Eternal Rider",
+     "armyBook": "Eternal Bug Riders"
+    }
+   ],
+   "notas": ""
+  },
+  "a074": {
+   "artId": "eternal-rider-musician",
+   "rotulo": "Eternal Rider Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal-bug-riders",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Eternal Rider",
+     "armyBook": "Eternal Bug Riders"
+    }
+   ],
+   "notas": ""
+  },
+  "a075": {
+   "artId": "champion-owl-rider-borda",
+   "rotulo": "Champion Owl Rider",
+   "confiancaRotulo": "alta",
+   "unitKey": "grove-champion",
+   "equipmentTags": [
+    "Giant Owl"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Grove Champion"
+    },
+    {
+     "pdf": "Owl Rider",
+     "armyBook": "Giant Owl"
+    }
+   ],
+   "notas": "versão borda de a014 (o pareamento falhou); campeão em coruja = Grove Champion com Giant Owl"
+  },
+  "a076": {
+   "artId": "owl-rider-spear-borda",
+   "rotulo": "Owl Rider Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "owl-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spear",
+     "armyBook": "Lance"
+    }
+   ],
+   "notas": "versão borda de a053 (o pareamento falhou); arma padrão Lance"
+  },
+  "a077": {
+   "artId": "owl-rider-bow-borda",
+   "rotulo": "Owl Rider Bow",
+   "confiancaRotulo": "alta",
+   "unitKey": "owl-riders",
+   "equipmentTags": [
+    "Rapid Shortbow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Bow",
+     "armyBook": "Rapid Shortbow"
+    }
+   ],
+   "notas": "versão borda de a054 (o pareamento falhou); Rapid Shortbow"
+  },
+  "a078": {
+   "artId": "giant-owl-borda",
+   "rotulo": "Giant Owl",
+   "confiancaRotulo": "alta",
+   "unitKey": "giant-owls",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "versão borda de a055 (o pareamento falhou)"
+  },
+  "a079": {
+   "artId": "eternal-hunter-hook-borda",
+   "rotulo": "Eternal Hunter Hook",
+   "confiancaRotulo": "alta",
+   "unitKey": "eternal-hunters",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Hook",
+     "armyBook": "Great Weapon"
+    }
+   ],
+   "notas": "cópia borda extra de a070 (que já tem fino e borda), provavelmente redundante; gancho -> Great Weapon"
+  }
+ }
+}

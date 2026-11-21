@@ -1,0 +1,2785 @@
+{
+  "schemaVersion": 1,
+  "packId": "robot-legions",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "GF",
+    "slug": "grimdark-future",
+    "armyForgeId": 2
+  },
+  "gameSystems": [
+    {
+      "code": "GF",
+      "slug": "grimdark-future",
+      "armyForgeId": 2
+    },
+    {
+      "code": "GFF",
+      "slug": "grimdark-future-firefight",
+      "armyForgeId": 3
+    }
+  ],
+  "armyBook": {
+    "id": "4k5amkxoybdiqotm",
+    "name": "Robot Legions",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "4k5amkxoybdiqotm",
+      "name": "Robot Legions",
+      "version": "3.6.0",
+      "gameSystemId": 3,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "4k5amkxoybdiqotm",
+      "name": "Robot Legions",
+      "version": "3.6.0",
+      "gameSystemId": 2,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Robot_Legions_-_BW.pdf",
+    "pdfSha256": "64e66a68d8e9a56acf777d590aa80718423c73e0fecdd7d93069b62287c52ac3",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "warrior",
+      "names": [
+        "Warrior",
+        "Warriors"
+      ],
+      "armyForgeUnitId": "njiIkJi",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "guardian",
+      "names": [
+        "Guardian",
+        "Guardians"
+      ],
+      "armyForgeUnitId": "xVuwyHf",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "flesh-eater",
+      "names": [
+        "Flesh-Eater",
+        "Flesh-Eaters"
+      ],
+      "armyForgeUnitId": "6q8HvOZ",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "eternal",
+      "names": [
+        "Eternal",
+        "Eternals"
+      ],
+      "armyForgeUnitId": "wvgi7_R",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "sniper",
+      "names": [
+        "Sniper",
+        "Snipers"
+      ],
+      "armyForgeUnitId": "mEX6i0s",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "bot-swarm",
+      "names": [
+        "Bot Swarm",
+        "Bot Swarms"
+      ],
+      "armyForgeUnitId": "yoeQi4m",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "robot-snake",
+      "names": [
+        "Robot Snake",
+        "Robot Snakes"
+      ],
+      "armyForgeUnitId": "0x2SCtg",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "destroyer-snake",
+      "names": [
+        "Destroyer Snake",
+        "Destroyer Snakes"
+      ],
+      "armyForgeUnitId": "gcoBL7U",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "annihilator",
+      "names": [
+        "Annihilator",
+        "Annihilators"
+      ],
+      "armyForgeUnitId": "IMHCbyw",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "tri-scorpion",
+      "names": [
+        "Tri-Scorpion",
+        "Tri-Scorpions"
+      ],
+      "armyForgeUnitId": "XgJtpyh",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          50.0
+        ],
+        "raw": "50",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "hover-bike",
+      "names": [
+        "Hover Bike",
+        "Hover Bikes"
+      ],
+      "armyForgeUnitId": "yhG8aeu",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "forge-spider",
+      "names": [
+        "Forge Spider"
+      ],
+      "armyForgeUnitId": "obCuik6",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          120.0,
+          92.0
+        ],
+        "raw": "120x92",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "heavy-annihilator",
+      "names": [
+        "Heavy Annihilator"
+      ],
+      "armyForgeUnitId": "if9G9o7",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          60.0
+        ],
+        "raw": "60",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "tri-scorpion-pistoleer",
+      "names": [
+        "Tri-Scorpion Pistoleer"
+      ],
+      "armyForgeUnitId": "CjHMvNx",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          50.0
+        ],
+        "raw": "50",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "wraith-shard",
+      "names": [
+        "Wraith-Shard"
+      ],
+      "armyForgeUnitId": "dCXjC0x",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          60.0
+        ],
+        "raw": "60",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "robot-lord",
+      "names": [
+        "Robot Lord"
+      ],
+      "armyForgeUnitId": "lcEWPMS",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "annihilator-lord",
+      "names": [
+        "Annihilator Lord"
+      ],
+      "armyForgeUnitId": "y8xIlHV",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "tri-scorpion-lord",
+      "names": [
+        "Tri-Scorpion Lord"
+      ],
+      "armyForgeUnitId": "R2d8LeD",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          50.0
+        ],
+        "raw": "50",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "warrior-gauss",
+      "candidateId": "a001",
+      "pdfLabel": "Warrior Gauss",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Ion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gauss",
+          "armyBook": "Ion Rifle"
+        }
+      ],
+      "notes": "Gauss é nome antigo; Ion Rifle é a arma padrão (5 cópias no PDF, o esquadrão todo)",
+      "styles": {
+        "fino": {
+          "page": 1,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-gauss/fino/frente.svg",
+          "back": "arts/warrior-gauss/fino/verso.svg",
+          "canvasMm": [
+            33.57,
+            34.713
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            34.6,
+            33.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 22,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-gauss/borda/frente.svg",
+          "back": "arts/warrior-gauss/borda/verso.svg",
+          "canvasMm": [
+            36.449,
+            36.153
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            36.1,
+            36.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "snake",
+      "candidateId": "a002",
+      "pdfLabel": "Snake",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "robot-snake",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Robot Snake(s)",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/snake/fino/frente.svg",
+          "back": "arts/snake/fino/verso.svg",
+          "canvasMm": [
+            56.43,
+            46.694
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            46.6,
+            56.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 23,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/snake/borda/frente.svg",
+          "back": "arts/snake/borda/verso.svg",
+          "canvasMm": [
+            59.351,
+            48.133
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            48.0,
+            59.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "overseer",
+      "candidateId": "a003",
+      "pdfLabel": "Overseer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "robot-lord",
+      "equipmentTags": [
+        "Overseer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Overseer",
+          "armyBook": "opção Overseer (Upgrade with one)"
+        }
+      ],
+      "notes": "Overseer é opção de Robot Lord, Annihilator Lord e Tri-Scorpion Lord; escolhido o Robot Lord (genericName Robot Leader). Figura com glaive. Sem a tag, seria a arte genérica do Robot Lord",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0
+          ],
+          "front": "arts/overseer/fino/frente.svg",
+          "back": "arts/overseer/fino/verso.svg",
+          "canvasMm": [
+            55.668,
+            38.82
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            38.7,
+            55.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            0
+          ],
+          "front": "arts/overseer/borda/frente.svg",
+          "back": "arts/overseer/borda/verso.svg",
+          "canvasMm": [
+            58.547,
+            40.301
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            40.1,
+            58.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-flamer",
+      "candidateId": "a004",
+      "pdfLabel": "Warrior Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Spark-Pulse Caster"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Flamer",
+          "armyBook": "Spark-Pulse Caster"
+        }
+      ],
+      "notes": "não há Flamer; Spark-Pulse Caster tem perfil de lança-chamas (12\", Blast(3), Reliable)",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-flamer/fino/frente.svg",
+          "back": "arts/warrior-flamer/fino/verso.svg",
+          "canvasMm": [
+            27.559,
+            35.983
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            35.9,
+            27.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-flamer/borda/frente.svg",
+          "back": "arts/warrior-flamer/borda/verso.svg",
+          "canvasMm": [
+            30.438,
+            37.465
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            37.3,
+            30.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-fusion",
+      "candidateId": "a005",
+      "pdfLabel": "Warrior Fusion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Fusion Caster"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Fusion",
+          "armyBook": "Fusion Caster"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-fusion/fino/frente.svg",
+          "back": "arts/warrior-fusion/fino/verso.svg",
+          "canvasMm": [
+            37.126,
+            36.237
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            36.1,
+            36.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-fusion/borda/frente.svg",
+          "back": "arts/warrior-fusion/borda/verso.svg",
+          "canvasMm": [
+            40.005,
+            37.677
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            37.6,
+            39.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warden",
+      "candidateId": "a006",
+      "pdfLabel": "Warden",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "robot-lord",
+      "equipmentTags": [
+        "Warden"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Warden",
+          "armyBook": "opção Warden"
+        }
+      ],
+      "notes": "Warden é só opção de Robot Lord e Annihilator Lord; escolhido o Robot Lord",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0
+          ],
+          "front": "arts/warden/fino/frente.svg",
+          "back": "arts/warden/fino/verso.svg",
+          "canvasMm": [
+            32.343,
+            41.106
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            41.1,
+            32.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 25,
+          "rows": [
+            0
+          ],
+          "front": "arts/warden/borda/frente.svg",
+          "back": "arts/warden/borda/verso.svg",
+          "canvasMm": [
+            35.264,
+            42.587
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            42.5,
+            35.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-plasma",
+      "candidateId": "a007",
+      "pdfLabel": "Warrior Plasma",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Plasma Caster"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Plasma",
+          "armyBook": "Plasma Caster"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-plasma/fino/frente.svg",
+          "back": "arts/warrior-plasma/fino/verso.svg",
+          "canvasMm": [
+            33.951,
+            35.856
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            35.7,
+            33.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 25,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-plasma/borda/frente.svg",
+          "back": "arts/warrior-plasma/borda/verso.svg",
+          "canvasMm": [
+            36.872,
+            37.296
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            37.2,
+            36.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-reaper",
+      "candidateId": "a008",
+      "pdfLabel": "Warrior Reaper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Radium Ray|Photon Gun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Reaper",
+          "armyBook": "Radium Ray | Photon Gun"
+        }
+      ],
+      "notes": "sem arma Reaper. Radium Ray por eliminação (Flamer/Fusion/Plasma/Reaper, 1 cópia cada, x as 4 trocas de um modelo); Photon Gun seria o 'gauss reaper' (troca de todos)",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-reaper/fino/frente.svg",
+          "back": "arts/warrior-reaper/fino/verso.svg",
+          "canvasMm": [
+            32.851,
+            36.364
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            36.2,
+            32.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 25,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-reaper/borda/frente.svg",
+          "back": "arts/warrior-reaper/borda/verso.svg",
+          "canvasMm": [
+            35.772,
+            37.804
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            37.7,
+            35.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "flesh-eater-type-1",
+      "candidateId": "a009",
+      "pdfLabel": "Flesh Eater Type 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "flesh-eater",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/flesh-eater-type-1/fino/frente.svg",
+          "back": "arts/flesh-eater-type-1/fino/verso.svg",
+          "canvasMm": [
+            39.963,
+            41.868
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            41.7,
+            39.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/flesh-eater-type-1/borda/frente.svg",
+          "back": "arts/flesh-eater-type-1/borda/verso.svg",
+          "canvasMm": [
+            43.773,
+            43.773
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            43.7,
+            43.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "flesh-eater-type-1-b",
+      "candidateId": "a010",
+      "pdfLabel": "Flesh Eater Type 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "flesh-eater",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "rótulo repetido no PDF (provável erro, seria Type 2); pose diferente de a009 (lâminas longas)",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/flesh-eater-type-1-b/fino/frente.svg",
+          "back": "arts/flesh-eater-type-1-b/fino/verso.svg",
+          "canvasMm": [
+            52.112,
+            41.656
+          ],
+          "frontBackIoU": 0.96,
+          "sizeMm": [
+            41.6,
+            51.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/flesh-eater-type-1-b/borda/frente.svg",
+          "back": "arts/flesh-eater-type-1-b/borda/verso.svg",
+          "canvasMm": [
+            55.922,
+            43.561
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            43.4,
+            55.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-sword-pose-1",
+      "candidateId": "a011",
+      "pdfLabel": "Guardian Sword Pose 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardian",
+      "equipmentTags": [
+        "Atomizer Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Atomizer Sword"
+        }
+      ],
+      "notes": "a opção dá Atomizer Sword + Combat Shield (a figura tem escudo)",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/guardian-sword-pose-1/fino/frente.svg",
+          "back": "arts/guardian-sword-pose-1/fino/verso.svg",
+          "canvasMm": [
+            40.852,
+            37.592
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            37.5,
+            40.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/guardian-sword-pose-1/borda/frente.svg",
+          "back": "arts/guardian-sword-pose-1/borda/verso.svg",
+          "canvasMm": [
+            44.662,
+            39.497
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            39.4,
+            44.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-sword-pose-2",
+      "candidateId": "a012",
+      "pdfLabel": "Guardian Sword Pose 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardian",
+      "equipmentTags": [
+        "Atomizer Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Atomizer Sword"
+        }
+      ],
+      "notes": "a opção dá Atomizer Sword + Combat Shield (a figura tem escudo)",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/guardian-sword-pose-2/fino/frente.svg",
+          "back": "arts/guardian-sword-pose-2/fino/verso.svg",
+          "canvasMm": [
+            42.968,
+            44.958
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            44.9,
+            42.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/guardian-sword-pose-2/borda/frente.svg",
+          "back": "arts/guardian-sword-pose-2/borda/verso.svg",
+          "canvasMm": [
+            46.778,
+            46.863
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            46.7,
+            46.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-spear-pose-1",
+      "candidateId": "a013",
+      "pdfLabel": "Guardian Spear Pose 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardian",
+      "equipmentTags": [
+        "Doom Scythe"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Spear",
+          "armyBook": "Doom Scythe"
+        }
+      ],
+      "notes": "não há Spear; a arma padrão Doom Scythe é uma haste com lâmina, como na figura",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/guardian-spear-pose-1/fino/frente.svg",
+          "back": "arts/guardian-spear-pose-1/fino/verso.svg",
+          "canvasMm": [
+            56.261,
+            35.602
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            35.5,
+            56.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/guardian-spear-pose-1/borda/frente.svg",
+          "back": "arts/guardian-spear-pose-1/borda/verso.svg",
+          "canvasMm": [
+            60.071,
+            37.507
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            37.4,
+            59.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "technomancer",
+      "candidateId": "a014",
+      "pdfLabel": "Technomancer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "robot-lord",
+      "equipmentTags": [
+        "Technomancer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Technomancer",
+          "armyBook": "opção Technomancer"
+        }
+      ],
+      "notes": "Technomancer é opção de Robot Lord e Annihilator Lord (e regra do Echo-3G01); escolhido o Robot Lord",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0
+          ],
+          "front": "arts/technomancer/fino/frente.svg",
+          "back": "arts/technomancer/fino/verso.svg",
+          "canvasMm": [
+            44.789,
+            49.488
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            49.4,
+            44.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            0
+          ],
+          "front": "arts/technomancer/borda/frente.svg",
+          "back": "arts/technomancer/borda/verso.svg",
+          "canvasMm": [
+            48.387,
+            51.393
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            51.3,
+            48.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-spear-pose-2",
+      "candidateId": "a015",
+      "pdfLabel": "Guardian Spear Pose 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "guardian",
+      "equipmentTags": [
+        "Doom Scythe"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Spear",
+          "armyBook": "Doom Scythe"
+        }
+      ],
+      "notes": "não há Spear; a arma padrão Doom Scythe é uma haste com lâmina, como na figura",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            1,
+            2,
+            3
+          ],
+          "front": "arts/guardian-spear-pose-2/fino/frente.svg",
+          "back": "arts/guardian-spear-pose-2/fino/verso.svg",
+          "canvasMm": [
+            52.874,
+            37.931
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            37.8,
+            52.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            1,
+            2,
+            3
+          ],
+          "front": "arts/guardian-spear-pose-2/borda/frente.svg",
+          "back": "arts/guardian-spear-pose-2/borda/verso.svg",
+          "canvasMm": [
+            56.684,
+            39.836
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            39.7,
+            56.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sniper",
+      "candidateId": "a016",
+      "pdfLabel": "Sniper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "sniper",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/sniper/fino/frente.svg",
+          "back": "arts/sniper/fino/verso.svg",
+          "canvasMm": [
+            19.981,
+            35.518
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            35.4,
+            19.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 30,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/sniper/borda/frente.svg",
+          "back": "arts/sniper/borda/verso.svg",
+          "canvasMm": [
+            23.368,
+            37.211
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            37.1,
+            23.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "annihilator-cannon",
+      "candidateId": "a017",
+      "pdfLabel": "Annihilator Cannon",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "annihilator",
+      "equipmentTags": [
+        "Photon Cannon|Heavy Photon Cannon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Cannon",
+          "armyBook": "Photon Cannon | Heavy Photon Cannon"
+        }
+      ],
+      "notes": "3 cópias: Photon Cannon (troca de qualquer um); Heavy Photon Cannon é de um modelo",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/annihilator-cannon/fino/frente.svg",
+          "back": "arts/annihilator-cannon/fino/verso.svg",
+          "canvasMm": [
+            40.047,
+            41.656
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            41.5,
+            39.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 31,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/annihilator-cannon/borda/frente.svg",
+          "back": "arts/annihilator-cannon/borda/verso.svg",
+          "canvasMm": [
+            43.603,
+            43.349
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            43.2,
+            43.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "annihilator-sword",
+      "candidateId": "a018",
+      "pdfLabel": "Annihilator Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "annihilator",
+      "equipmentTags": [
+        "Dual Atomizer Swords"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Dual Atomizer Swords"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/annihilator-sword/fino/frente.svg",
+          "back": "arts/annihilator-sword/fino/verso.svg",
+          "canvasMm": [
+            57.192,
+            41.529
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            41.4,
+            57.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/annihilator-sword/borda/frente.svg",
+          "back": "arts/annihilator-sword/borda/verso.svg",
+          "canvasMm": [
+            60.579,
+            43.222
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            43.1,
+            60.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "heavy-annihilator",
+      "candidateId": "a019",
+      "pdfLabel": "Heavy Annihilator",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "heavy-annihilator",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só no Grimdark Future (gs2)",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0
+          ],
+          "front": "arts/heavy-annihilator/fino/frente.svg",
+          "back": "arts/heavy-annihilator/fino/verso.svg",
+          "canvasMm": [
+            44.281,
+            46.651
+          ],
+          "frontBackIoU": 0.909,
+          "sizeMm": [
+            46.6,
+            44.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            0
+          ],
+          "front": "arts/heavy-annihilator/borda/frente.svg",
+          "back": "arts/heavy-annihilator/borda/verso.svg",
+          "canvasMm": [
+            47.625,
+            48.345
+          ],
+          "frontBackIoU": 0.942,
+          "sizeMm": [
+            48.3,
+            47.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "annihilator-overseer-cannon",
+      "candidateId": "a020",
+      "pdfLabel": "Annihilator Overseer Cannon",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "annihilator-lord",
+      "equipmentTags": [
+        "Overseer",
+        "Photon Cannon|Heavy Photon Cannon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Annihilator Overseer",
+          "armyBook": "Annihilator Lord + opção Overseer"
+        },
+        {
+          "pdf": "Cannon",
+          "armyBook": "Photon Cannon | Heavy Photon Cannon"
+        }
+      ],
+      "notes": "genericName Terminator Robot Leader",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            1
+          ],
+          "front": "arts/annihilator-overseer-cannon/fino/frente.svg",
+          "back": "arts/annihilator-overseer-cannon/fino/verso.svg",
+          "canvasMm": [
+            44.069,
+            42.122
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            42.0,
+            43.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            1
+          ],
+          "front": "arts/annihilator-overseer-cannon/borda/frente.svg",
+          "back": "arts/annihilator-overseer-cannon/borda/verso.svg",
+          "canvasMm": [
+            47.456,
+            43.815
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            43.7,
+            47.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "annihilator-overseer-spear",
+      "candidateId": "a021",
+      "pdfLabel": "Annihilator Overseer Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "annihilator-lord",
+      "equipmentTags": [
+        "Overseer",
+        "Legion Glaive|Great Doom Scythe|Power Staff|Technomancer Staff"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Annihilator Overseer",
+          "armyBook": "Annihilator Lord + opção Overseer"
+        },
+        {
+          "pdf": "Spear",
+          "armyBook": "Legion Glaive | Great Doom Scythe | Power Staff | Technomancer Staff"
+        }
+      ],
+      "notes": "não há Spear; as armas de haste do Annihilator Lord (Technomancer Staff é a padrão)",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            2
+          ],
+          "front": "arts/annihilator-overseer-spear/fino/frente.svg",
+          "back": "arts/annihilator-overseer-spear/fino/verso.svg",
+          "canvasMm": [
+            66.971,
+            42.333
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            42.2,
+            66.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            2
+          ],
+          "front": "arts/annihilator-overseer-spear/borda/frente.svg",
+          "back": "arts/annihilator-overseer-spear/borda/verso.svg",
+          "canvasMm": [
+            70.4,
+            44.027
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            43.9,
+            70.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-flux-pose-1",
+      "candidateId": "a022",
+      "pdfLabel": "Eternal Flux Pose 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal",
+      "equipmentTags": [
+        "Transonic Carbine"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Flux",
+          "armyBook": "Transonic Carbine"
+        }
+      ],
+      "notes": "Flux é nome antigo; 5 cópias (3+2) = troca de todos, e Transonic Carbine é a única alternativa à Photon Rifle",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0,
+            2,
+            4
+          ],
+          "front": "arts/eternal-flux-pose-1/fino/frente.svg",
+          "back": "arts/eternal-flux-pose-1/fino/verso.svg",
+          "canvasMm": [
+            34.84,
+            39.793
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            39.7,
+            34.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            0,
+            2,
+            4
+          ],
+          "front": "arts/eternal-flux-pose-1/borda/frente.svg",
+          "back": "arts/eternal-flux-pose-1/borda/verso.svg",
+          "canvasMm": [
+            38.227,
+            41.487
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            41.4,
+            37.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-flux-pose-2",
+      "candidateId": "a023",
+      "pdfLabel": "Eternal Flux Pose 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal",
+      "equipmentTags": [
+        "Transonic Carbine"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Flux",
+          "armyBook": "Transonic Carbine"
+        }
+      ],
+      "notes": "Flux é nome antigo; 5 cópias (3+2) = troca de todos, e Transonic Carbine é a única alternativa à Photon Rifle",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            1,
+            3
+          ],
+          "front": "arts/eternal-flux-pose-2/fino/frente.svg",
+          "back": "arts/eternal-flux-pose-2/fino/verso.svg",
+          "canvasMm": [
+            28.533,
+            37.084
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            37.0,
+            28.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            1,
+            3
+          ],
+          "front": "arts/eternal-flux-pose-2/borda/frente.svg",
+          "back": "arts/eternal-flux-pose-2/borda/verso.svg",
+          "canvasMm": [
+            31.919,
+            38.777
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            38.7,
+            31.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-gauss-pose-1",
+      "candidateId": "a024",
+      "pdfLabel": "Eternal Gauss Pose 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal",
+      "equipmentTags": [
+        "Photon Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gauss",
+          "armyBook": "Photon Rifle"
+        }
+      ],
+      "notes": "Gauss é nome antigo; Photon Rifle é a arma padrão (5 cópias)",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0,
+            2,
+            4
+          ],
+          "front": "arts/eternal-gauss-pose-1/fino/frente.svg",
+          "back": "arts/eternal-gauss-pose-1/fino/verso.svg",
+          "canvasMm": [
+            32.004,
+            39.92
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            39.8,
+            31.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            0,
+            2,
+            4
+          ],
+          "front": "arts/eternal-gauss-pose-1/borda/frente.svg",
+          "back": "arts/eternal-gauss-pose-1/borda/verso.svg",
+          "canvasMm": [
+            35.391,
+            41.614
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            41.5,
+            35.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-gauss-pose-2",
+      "candidateId": "a025",
+      "pdfLabel": "Eternal Gauss Pose 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal",
+      "equipmentTags": [
+        "Photon Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Gauss",
+          "armyBook": "Photon Rifle"
+        }
+      ],
+      "notes": "Gauss é nome antigo; Photon Rifle é a arma padrão (5 cópias)",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            1,
+            3
+          ],
+          "front": "arts/eternal-gauss-pose-2/fino/frente.svg",
+          "back": "arts/eternal-gauss-pose-2/fino/verso.svg",
+          "canvasMm": [
+            26.077,
+            37.253
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            37.2,
+            25.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            1,
+            3
+          ],
+          "front": "arts/eternal-gauss-pose-2/borda/frente.svg",
+          "back": "arts/eternal-gauss-pose-2/borda/verso.svg",
+          "canvasMm": [
+            29.464,
+            38.947
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            38.9,
+            29.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "destroyer-snake-axe",
+      "candidateId": "a026",
+      "pdfLabel": "Destroyer Snake Axe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "destroyer-snake",
+      "equipmentTags": [
+        "Heavy Ion Blade|Great Doom Scythe|Legion Glaive"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Axe",
+          "armyBook": "Heavy Ion Blade | Great Doom Scythe | Legion Glaive"
+        }
+      ],
+      "notes": "não há Axe; arma de duas mãos, 1 cópia (Heavy Ion Blade é troca de um modelo); Great Doom Scythe e Legion Glaive são as outras armas grandes",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0
+          ],
+          "front": "arts/destroyer-snake-axe/fino/frente.svg",
+          "back": "arts/destroyer-snake-axe/fino/verso.svg",
+          "canvasMm": [
+            59.309,
+            49.699
+          ],
+          "frontBackIoU": 0.96,
+          "sizeMm": [
+            49.6,
+            59.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            0
+          ],
+          "front": "arts/destroyer-snake-axe/borda/frente.svg",
+          "back": "arts/destroyer-snake-axe/borda/verso.svg",
+          "canvasMm": [
+            62.696,
+            51.393
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            51.3,
+            62.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "destroyer-snake-sword",
+      "candidateId": "a027",
+      "pdfLabel": "Destroyer Snake Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "destroyer-snake",
+      "equipmentTags": [
+        "Dual Ion Blades"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Dual Ion Blades"
+        }
+      ],
+      "notes": "3 cópias, duas lâminas: arma padrão Dual Ion Blades",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            1,
+            2,
+            3
+          ],
+          "front": "arts/destroyer-snake-sword/fino/frente.svg",
+          "back": "arts/destroyer-snake-sword/fino/verso.svg",
+          "canvasMm": [
+            49.107,
+            49.53
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            49.4,
+            48.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            1,
+            2,
+            3
+          ],
+          "front": "arts/destroyer-snake-sword/borda/frente.svg",
+          "back": "arts/destroyer-snake-sword/borda/verso.svg",
+          "canvasMm": [
+            52.493,
+            51.223
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            51.1,
+            52.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "biker",
+      "candidateId": "a028",
+      "pdfLabel": "Biker",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "hover-bike",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Biker",
+          "armyBook": "Hover Bikes"
+        }
+      ],
+      "notes": "genericName Robot Jetbikers; única unidade de motos",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/biker/fino/frente.svg",
+          "back": "arts/biker/fino/verso.svg",
+          "canvasMm": [
+            60.833,
+            62.696
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            62.5,
+            60.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/biker/borda/frente.svg",
+          "back": "arts/biker/borda/verso.svg",
+          "canvasMm": [
+            65.236,
+            68.284
+          ],
+          "frontBackIoU": 0.935,
+          "sizeMm": [
+            67.1,
+            64.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "wraith",
+      "candidateId": "a029",
+      "pdfLabel": "Wraith",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "wraith-shard",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Wraith",
+          "armyBook": "Wraith-Shard"
+        }
+      ],
+      "notes": "só no gs2; pode ser também a Great Wraith-Shard (mesma base de 60 mm)",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0
+          ],
+          "front": "arts/wraith/fino/frente.svg",
+          "back": "arts/wraith/fino/verso.svg",
+          "canvasMm": [
+            64.601,
+            90.466
+          ],
+          "frontBackIoU": 0.909,
+          "sizeMm": [
+            90.3,
+            64.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            0
+          ],
+          "front": "arts/wraith/borda/frente.svg",
+          "back": "arts/wraith/borda/verso.svg",
+          "canvasMm": [
+            69.681,
+            93.006
+          ],
+          "frontBackIoU": 0.93,
+          "sizeMm": [
+            92.9,
+            69.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "tri-scorpion-type-1",
+      "candidateId": "a030",
+      "pdfLabel": "Tri Scorpion Type 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "tri-scorpion",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            0
+          ],
+          "front": "arts/tri-scorpion-type-1/fino/frente.svg",
+          "back": "arts/tri-scorpion-type-1/fino/verso.svg",
+          "canvasMm": [
+            51.223,
+            41.487
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            41.4,
+            51.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            0
+          ],
+          "front": "arts/tri-scorpion-type-1/borda/frente.svg",
+          "back": "arts/tri-scorpion-type-1/borda/verso.svg",
+          "canvasMm": [
+            54.652,
+            43.18
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            43.1,
+            54.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "tri-scorpion-type-2",
+      "candidateId": "a031",
+      "pdfLabel": "Tri Scorpion Type 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "tri-scorpion",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            1,
+            2
+          ],
+          "front": "arts/tri-scorpion-type-2/fino/frente.svg",
+          "back": "arts/tri-scorpion-type-2/fino/verso.svg",
+          "canvasMm": [
+            50.969,
+            44.535
+          ],
+          "frontBackIoU": 0.966,
+          "sizeMm": [
+            44.4,
+            50.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            1,
+            2
+          ],
+          "front": "arts/tri-scorpion-type-2/borda/frente.svg",
+          "back": "arts/tri-scorpion-type-2/borda/verso.svg",
+          "canvasMm": [
+            54.356,
+            46.228
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            46.1,
+            54.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "swarm",
+      "candidateId": "a032",
+      "pdfLabel": "Swarm",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "bot-swarm",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Bot Swarm(s)",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/swarm/fino/frente.svg",
+          "back": "arts/swarm/fino/verso.svg",
+          "canvasMm": [
+            34.629,
+            19.981
+          ],
+          "frontBackIoU": 0.905,
+          "sizeMm": [
+            19.8,
+            34.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/swarm/borda/frente.svg",
+          "back": "arts/swarm/borda/verso.svg",
+          "canvasMm": [
+            38.142,
+            21.675
+          ],
+          "frontBackIoU": 0.925,
+          "sizeMm": [
+            21.5,
+            37.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "tri-scorpion-overseer",
+      "candidateId": "a033",
+      "pdfLabel": "Tri Scorpion Overseer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "tri-scorpion-lord",
+      "equipmentTags": [
+        "Overseer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Tri Scorpion Overseer",
+          "armyBook": "Tri-Scorpion Lord + opção Overseer"
+        }
+      ],
+      "notes": "genericName Scorpion Robot Leader",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0
+          ],
+          "front": "arts/tri-scorpion-overseer/fino/frente.svg",
+          "back": "arts/tri-scorpion-overseer/fino/verso.svg",
+          "canvasMm": [
+            69.088,
+            48.218
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            48.1,
+            68.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            0
+          ],
+          "front": "arts/tri-scorpion-overseer/borda/frente.svg",
+          "back": "arts/tri-scorpion-overseer/borda/verso.svg",
+          "canvasMm": [
+            72.475,
+            49.911
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            49.8,
+            72.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "tri-scorpion-pistoleer",
+      "candidateId": "a034",
+      "pdfLabel": "Tri Scorpion Pistoleer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "tri-scorpion-pistoleer",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só no gs2",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            1
+          ],
+          "front": "arts/tri-scorpion-pistoleer/fino/frente.svg",
+          "back": "arts/tri-scorpion-pistoleer/fino/verso.svg",
+          "canvasMm": [
+            56.303,
+            45.72
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            45.6,
+            56.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            1
+          ],
+          "front": "arts/tri-scorpion-pistoleer/borda/frente.svg",
+          "back": "arts/tri-scorpion-pistoleer/borda/verso.svg",
+          "canvasMm": [
+            59.69,
+            47.413
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            47.3,
+            59.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "forge-spider-type-1",
+      "candidateId": "a035",
+      "pdfLabel": "Forge Spider Type 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "forge-spider",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só no gs2; tamanho (~60 x 79 mm, 1 cópia) indica a Forge Spider e não as Forge Spiderlings",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0
+          ],
+          "front": "arts/forge-spider-type-1/fino/frente.svg",
+          "back": "arts/forge-spider-type-1/fino/verso.svg",
+          "canvasMm": [
+            79.121,
+            57.743
+          ],
+          "frontBackIoU": 0.951,
+          "sizeMm": [
+            57.7,
+            78.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            0
+          ],
+          "front": "arts/forge-spider-type-1/borda/frente.svg",
+          "back": "arts/forge-spider-type-1/borda/verso.svg",
+          "canvasMm": [
+            82.846,
+            59.182
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            59.1,
+            82.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "forge-spider-type-2",
+      "candidateId": "a036",
+      "pdfLabel": "Forge Spider Type 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "forge-spider",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só no gs2; tamanho (~60 x 79 mm, 1 cópia) indica a Forge Spider e não as Forge Spiderlings",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            1
+          ],
+          "front": "arts/forge-spider-type-2/fino/frente.svg",
+          "back": "arts/forge-spider-type-2/fino/verso.svg",
+          "canvasMm": [
+            79.46,
+            61.341
+          ],
+          "frontBackIoU": 0.946,
+          "sizeMm": [
+            61.2,
+            79.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            1
+          ],
+          "front": "arts/forge-spider-type-2/borda/frente.svg",
+          "back": "arts/forge-spider-type-2/borda/verso.svg",
+          "canvasMm": [
+            82.846,
+            62.865
+          ],
+          "frontBackIoU": 0.957,
+          "sizeMm": [
+            62.7,
+            82.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

@@ -10,6 +10,11 @@ SVG (contrato v2, 600 dpi; rode-o antes, depois de mudar a revisão). Gera:
   build/<packId>-<versao>.zip            (manifest + arts, para levar o pacote sem o repositório)
 Candidatos sem revisão ficam fora do manifesto e listados como pendência. Nada é inventado:
 base sem dado vira "unknown"; rótulo vazio é erro.
+
+Army books: "armyBooks" (lista) aceita o mesmo livro em vários sistemas (GF e GFF, AoF e AoF
+Skirmish). As unidades têm o mesmo id nos sistemas e o nome muda (OGRE Robot / OGRE Robots):
+os nomes de todos os livros entram sozinhos em "names". "armyBook" (um só) continua valendo.
+--so-validar confere a revisão sem exportação nem arquivos gravados (para quem está mapeando).
 """
 import argparse
 import json
@@ -51,29 +56,62 @@ def main():
     ap.add_argument('--saida', type=Path, required=True)
     ap.add_argument('--aprovado', action='store_true',
                     help='só depois que o usuário aprovar o relatório na conversa')
+    ap.add_argument('--so-validar', action='store_true',
+                    help='só confere revisao.json contra candidatos e army books; não grava nada')
     a = ap.parse_args()
     raiz, work = a.saida, a.saida / 'work'
     cand = json.loads((work / 'candidatos.json').read_text(encoding='utf-8'))
     rev = json.loads((raiz / 'revisao.json').read_text(encoding='utf-8'))
     erros = []
 
-    livro, baixado = None, None
-    if rev.get('armyBook', {}).get('arquivo'):
-        livro = json.loads((raiz / rev['armyBook']['arquivo']).read_text(encoding='utf-8'))
-        resumo_path = raiz / rev['armyBook']['arquivo'].replace('.json', '.resumo.json')
-        baixado = json.loads(resumo_path.read_text(encoding='utf-8'))['baixadoEm'] if resumo_path.exists() else None
-    por_id = {u['id']: u for u in (livro or {}).get('units', [])}
+    refs = rev.get('armyBooks') or ([rev['armyBook']] if rev.get('armyBook', {}).get('arquivo') else [])
+    livros = []                                # (livro, baixadoEm), na ordem da revisão
+    for ref in refs:
+        lv = json.loads((raiz / ref['arquivo']).read_text(encoding='utf-8'))
+        resumo_path = raiz / ref['arquivo'].replace('.json', '.resumo.json')
+        bx = json.loads(resumo_path.read_text(encoding='utf-8'))['baixadoEm'] if resumo_path.exists() else None
+        livros.append((lv, bx))
+    livro, baixado = livros[0] if livros else (None, None)
+    por_id = {}                                # id da unidade -> [(livro, unidade, baixadoEm)]
+    for lv, bx in livros:
+        for u in lv.get('units', []):
+            por_id.setdefault(u['id'], []).append((lv, u, bx))
 
-    unidades = []
+    def vocabulario(lv, u):
+        pk = {p['uid']: p for p in lv.get('upgradePackages', [])}
+        nomes = {w['name'] for w in u.get('weapons', [])} | {i['name'] for i in u.get('items', [])}
+        for uid in u.get('upgrades', []):
+            for sec in pk.get(uid, {}).get('sections', []):
+                for op in sec.get('options', []):
+                    nomes |= {g.get('name') for g in op.get('gains', []) if g.get('name')}
+        return nomes
+
+    unidades, vocab = [], {}
     for chave, u in rev.get('unidades', {}).items():
         if not SLUG.match(chave):
             erros.append(f'unitKey inválida: {chave}')
-        af = por_id.get(u.get('armyForgeUnitId'))
-        if u.get('armyForgeUnitId') and af is None:
-            erros.append(f'{chave}: armyForgeUnitId {u["armyForgeUnitId"]} não está no army book')
-        base = base_de((af or {}).get('bases', {}).get('round')) if af else base_de(None)
-        base.update(source=f'army-forge v{livro.get("versionString")}' if af else None, retrievedAt=baixado if af else None)
-        unidades.append({'unitKey': chave, 'names': u.get('nomes', []), 'armyForgeUnitId': u.get('armyForgeUnitId'),
+        ids = u.get('armyForgeUnitId')
+        ids = [ids] if isinstance(ids, str) else list(ids or [])
+        achadas = []
+        for i in ids:
+            if i not in por_id:
+                erros.append(f'{chave}: armyForgeUnitId {i} não está nos army books')
+            achadas += por_id.get(i, [])
+        nomes = list(dict.fromkeys(list(u.get('nomes', [])) + [x[1]['name'] for x in achadas]))
+        if not nomes:
+            erros.append(f'{chave}: sem nome (declare "nomes" ou "armyForgeUnitId")')
+        bases = {json.dumps((x[1].get('bases') or {}).get('round')) for x in achadas}
+        if len(bases) > 1:
+            erros.append(f'{chave}: bases diferentes entre os army books ({", ".join(sorted(bases))})')
+        if achadas:
+            lv0, u0, bx0 = achadas[0]
+            base = base_de((u0.get('bases') or {}).get('round'))
+            base.update(source=f'army-forge v{lv0.get("versionString")}', retrievedAt=bx0)
+        else:
+            base = base_de(None)
+            base.update(source=None, retrievedAt=None)
+        vocab[chave] = set().union(*[vocabulario(x[0], x[1]) for x in achadas]) if achadas else None
+        unidades.append({'unitKey': chave, 'names': nomes, 'armyForgeUnitId': ids[0] if len(ids) == 1 else (ids or None),
                          'base': base})
     chaves_unidade = {u['unitKey'] for u in unidades}
 
@@ -101,6 +139,16 @@ def main():
             erros.append(f'{cid}: status inválido ({status!r})')
         if status != 'unmapped' and r.get('unitKey') not in chaves_unidade:
             erros.append(f'{cid}: unitKey {r.get("unitKey")!r} não declarada em "unidades"')
+        if status == 'unmapped' and r.get('unitKey') and r.get('unitKey') not in chaves_unidade:
+            erros.append(f'{cid}: unitKey {r.get("unitKey")!r} não declarada em "unidades"')
+        voc = vocab.get(r.get('unitKey'))
+        if voc is not None:
+            # "A|B": a arte serve para qualquer uma das alternativas (rótulo "Pistol" com duas pistolas no livro)
+            fora = [t for t in r.get('equipmentTags', []) if not all(x.strip() in voc for x in t.split('|'))]
+            if fora:
+                erros.append(f'{cid}: equipmentTags fora das armas/itens/opções de {r["unitKey"]}: {fora}')
+        if a.so_validar:
+            continue
         estilos = {}
         exp = exportadas.get(art_id)
         if exp is None:
@@ -129,12 +177,24 @@ def main():
     if erros:
         print(json.dumps({'situacao': 'erro', 'erros': erros}, ensure_ascii=False, indent=2))
         sys.exit(1)
+    if a.so_validar:
+        nao_rev = [cid for cid in candidatos if cid not in revisadas]
+        cont = {}
+        for r in revisadas.values():
+            k = 'ignorar' if r.get('ignorar') else r.get('status')
+            cont[k] = cont.get(k, 0) + 1
+        print(json.dumps({'situacao': 'ok', 'unidades': len(unidades), 'revisadas': len(revisadas), 'status': cont,
+                          'nao_revisados': nao_rev}, ensure_ascii=False))
+        return
 
     manifesto = {
         'schemaVersion': 1, 'packId': rev['packId'], 'packVersion': rev['packVersion'],
-        'gameSystem': rev.get('gameSystem'),
+        'gameSystem': (rev.get('gameSystems') or [rev.get('gameSystem')])[0],
+        'gameSystems': rev.get('gameSystems') or [rev.get('gameSystem')],
         'armyBook': {'id': (livro or {}).get('uid'), 'name': (livro or {}).get('name'),
                      'version': (livro or {}).get('versionString'), 'retrievedAt': baixado if livro else None},
+        'armyBooks': [{'id': lv.get('uid'), 'name': lv.get('name'), 'version': lv.get('versionString'),
+                       'gameSystemId': lv.get('gameSystemId'), 'retrievedAt': bx} for lv, bx in livros],
         'source': {'pdfName': cand['pdf']['nome'], 'pdfSha256': cand['pdf']['sha256'], 'dpi': cand['pdf']['dpi'],
                    'mmPerPx': round(25.4 / cand['pdf']['dpi'], 6)},
         'reviewStatus': 'approved' if a.aprovado else 'agent-proposed',

@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "saurian-starhost",
- "faccao": "Saurian Starhost",
+ "faccao": "Saurian Starhost\r",
  "sistema": "gff",
  "pdf": {
   "nome": "Saurian_Starhost_-_BW.pdf",
@@ -12,14 +12,16 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "warrior-rifle",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Rifle",
+   "rotuloImg": "arts/warrior-rifle/rotulo.png",
+   "unitKey": "saurian-warrior",
+   "equipmentTags": [
+    "Carbine"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -53,14 +55,16 @@
    ]
   },
   {
-   "id": "a002",
+   "id": "warrior-pistol",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Pistol",
+   "rotuloImg": "arts/warrior-pistol/rotulo.png",
+   "unitKey": "saurian-warrior",
+   "equipmentTags": [
+    "Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -94,14 +98,16 @@
    ]
   },
   {
-   "id": "a003",
+   "id": "warrior-shock",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Shock",
+   "rotuloImg": "arts/warrior-shock/rotulo.png",
+   "unitKey": "saurian-warrior",
+   "equipmentTags": [
+    "Shock Charger"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -133,14 +139,16 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "warrior-spike",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Spike",
+   "rotuloImg": "arts/warrior-spike/rotulo.png",
+   "unitKey": "saurian-warrior",
+   "equipmentTags": [
+    "Spike Shooter"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -172,14 +180,16 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "warrior-flamer",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Flamer",
+   "rotuloImg": "arts/warrior-flamer/rotulo.png",
+   "unitKey": "saurian-warrior",
+   "equipmentTags": [
+    "Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -213,14 +223,16 @@
    ]
   },
   {
-   "id": "a006",
+   "id": "warrior-blast",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Blast",
+   "rotuloImg": "arts/warrior-blast/rotulo.png",
+   "unitKey": "saurian-warrior",
+   "equipmentTags": [
+    "Fusion-Blaster Gun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -254,14 +266,16 @@
    ]
   },
   {
-   "id": "a007",
+   "id": "gecko-psychic",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gecko Psychic",
+   "rotuloImg": "arts/gecko-psychic/rotulo.png",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Sacred Priest"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -293,14 +307,16 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "veteran-mace",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Veteran Mace",
+   "rotuloImg": "arts/veteran-mace/rotulo.png",
+   "unitKey": "saurian-veteran",
+   "equipmentTags": [
+    "Power Mace"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -332,14 +348,16 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "veteran-claw",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Veteran Claw",
+   "rotuloImg": "arts/veteran-claw/rotulo.png",
+   "unitKey": "saurian-veteran",
+   "equipmentTags": [
+    "Power Claw"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -371,14 +389,16 @@
    "pendencias": []
   },
   {
-   "id": "a010",
+   "id": "guardian-hammer",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guardian Hammer",
+   "rotuloImg": "arts/guardian-hammer/rotulo.png",
+   "unitKey": "saurian-guardian",
+   "equipmentTags": [
+    "Hammer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -410,14 +430,16 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "guardian-staff",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guardian Staff",
+   "rotuloImg": "arts/guardian-staff/rotulo.png",
+   "unitKey": "saurian-guardian",
+   "equipmentTags": [
+    "Energy Mace-Staff"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -449,14 +471,14 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "chameleon",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Chameleon",
+   "rotuloImg": "arts/chameleon/rotulo.png",
+   "unitKey": "chameleon",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -490,14 +512,16 @@
    ]
   },
   {
-   "id": "a013",
+   "id": "chameleon-chief",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Chameleon Chief",
+   "rotuloImg": "arts/chameleon-chief/rotulo.png",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Chameleon Breed"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -529,14 +553,14 @@
    "pendencias": []
   },
   {
-   "id": "a014",
+   "id": "swarm",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Swarm",
+   "rotuloImg": "arts/swarm/rotulo.png",
+   "unitKey": "cyber-beast-swarm",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -570,14 +594,16 @@
    ]
   },
   {
-   "id": "a015",
+   "id": "raptor-rider-spear",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Raptor Rider Spear",
+   "rotuloImg": "arts/raptor-rider-spear/rotulo.png",
+   "unitKey": "raptor-rider",
+   "equipmentTags": [
+    "Power Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -609,14 +635,16 @@
    "pendencias": []
   },
   {
-   "id": "a016",
+   "id": "raptor-rider-club",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Raptor Rider Club",
+   "rotuloImg": "arts/raptor-rider-club/rotulo.png",
+   "unitKey": "raptor-rider",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -648,14 +676,16 @@
    "pendencias": []
   },
   {
-   "id": "a017",
+   "id": "raptor-veteran",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Raptor Veteran",
+   "rotuloImg": "arts/raptor-veteran/rotulo.png",
+   "unitKey": "saurian-veteran",
+   "equipmentTags": [
+    "Raptor"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -687,14 +717,14 @@
    "pendencias": []
   },
   {
-   "id": "a018",
+   "id": "frog-mage",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Frog Mage",
+   "rotuloImg": "arts/frog-mage/rotulo.png",
+   "unitKey": "frog-mage",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -726,14 +756,16 @@
    "pendencias": []
   },
   {
-   "id": "a019",
+   "id": "starseer",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Starseer",
+   "rotuloImg": "arts/starseer/rotulo.png",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Starseer Palanquin"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -765,14 +797,16 @@
    "pendencias": []
   },
   {
-   "id": "a020",
+   "id": "gecko-pistol",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gecko Pistol",
+   "rotuloImg": "arts/gecko-pistol/rotulo.png",
+   "unitKey": "gecko-cohort",
+   "equipmentTags": [
+    "Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -804,14 +838,16 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "gecko-pistol-2",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gecko Pistol",
+   "rotuloImg": "arts/gecko-pistol-2/rotulo.png",
+   "unitKey": "gecko-cohort",
+   "equipmentTags": [
+    "Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -843,14 +879,17 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "gecko-dagger",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gecko Dagger",
+   "rotuloImg": "arts/gecko-dagger/rotulo.png",
+   "unitKey": "gecko-cohort",
+   "equipmentTags": [
+    "Pistol",
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -882,14 +921,14 @@
    "pendencias": []
   },
   {
-   "id": "a023",
+   "id": "gecko-sniper",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Gecko Sniper",
+   "rotuloImg": "arts/gecko-sniper/rotulo.png",
+   "unitKey": "gecko-sniper",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -921,14 +960,14 @@
    "pendencias": []
   },
   {
-   "id": "a024",
+   "id": "gator-veteran",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Gator Veteran",
+   "rotuloImg": "arts/gator-veteran/rotulo.png",
+   "unitKey": "gator-veteran",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -960,14 +999,16 @@
    "pendencias": []
   },
   {
-   "id": "a025",
+   "id": "gecko-chief-sniper",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gecko Chief Sniper",
+   "rotuloImg": "arts/gecko-chief-sniper/rotulo.png",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Sniper Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -999,14 +1040,16 @@
    "pendencias": []
   },
   {
-   "id": "a026",
+   "id": "gecko-chief-pistol",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gecko Chief Pistol",
+   "rotuloImg": "arts/gecko-chief-pistol/rotulo.png",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Flechette Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1038,14 +1081,16 @@
    "pendencias": []
   },
   {
-   "id": "a027",
+   "id": "gator-guns",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gator Guns",
+   "rotuloImg": "arts/gator-guns/rotulo.png",
+   "unitKey": "gator",
+   "equipmentTags": [
+    "Dual Heavy Shooters"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1077,14 +1122,16 @@
    "pendencias": []
   },
   {
-   "id": "a028",
+   "id": "gator-fist",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gator Fist",
+   "rotuloImg": "arts/gator-fist/rotulo.png",
+   "unitKey": "gator",
+   "equipmentTags": [
+    "Dual Power Knuckles"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1116,14 +1163,16 @@
    "pendencias": []
   },
   {
-   "id": "a029",
+   "id": "gator-claws",
    "candidato": "a029",
-   "rotulo": null,
-   "rotuloImg": "arts/a029/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gator Claws",
+   "rotuloImg": "arts/gator-claws/rotulo.png",
+   "unitKey": "gator",
+   "equipmentTags": [
+    "Dual Power Claws"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1155,14 +1204,16 @@
    "pendencias": []
   },
   {
-   "id": "a030",
+   "id": "gator-bludgeons",
    "candidato": "a030",
-   "rotulo": null,
-   "rotuloImg": "arts/a030/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gator Bludgeons",
+   "rotuloImg": "arts/gator-bludgeons/rotulo.png",
+   "unitKey": "gator",
+   "equipmentTags": [
+    "Dual Heavy Bludgeons"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1194,14 +1245,14 @@
    "pendencias": []
   },
   {
-   "id": "a031",
+   "id": "dragon-lizard",
    "candidato": "a031",
-   "rotulo": null,
-   "rotuloImg": "arts/a031/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Dragon Lizard",
+   "rotuloImg": "arts/dragon-lizard/rotulo.png",
+   "unitKey": "dragon-lizard",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1233,14 +1284,14 @@
    "pendencias": []
   },
   {
-   "id": "a032",
+   "id": "lizard-handler-v1-dragon-lizard",
    "candidato": "a032",
-   "rotulo": null,
-   "rotuloImg": "arts/a032/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Lizard Handler V1",
+   "rotuloImg": "arts/lizard-handler-v1-dragon-lizard/rotulo.png",
+   "unitKey": "dragon-lizard",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "handler",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1272,14 +1323,14 @@
    "pendencias": []
   },
   {
-   "id": "a033",
+   "id": "lizard-handler-v2-dragon-lizard",
    "candidato": "a033",
-   "rotulo": null,
-   "rotuloImg": "arts/a033/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Lizard Handler V2",
+   "rotuloImg": "arts/lizard-handler-v2-dragon-lizard/rotulo.png",
+   "unitKey": "dragon-lizard",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "handler",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1311,14 +1362,14 @@
    "pendencias": []
   },
   {
-   "id": "a034",
+   "id": "lizard-handler-v3-dragon-lizard",
    "candidato": "a034",
-   "rotulo": null,
-   "rotuloImg": "arts/a034/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Lizard Handler V3",
+   "rotuloImg": "arts/lizard-handler-v3-dragon-lizard/rotulo.png",
+   "unitKey": "dragon-lizard",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "handler",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1350,14 +1401,14 @@
    "pendencias": []
   },
   {
-   "id": "a035",
+   "id": "spiked-lizard",
    "candidato": "a035",
-   "rotulo": null,
-   "rotuloImg": "arts/a035/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Spiked Lizard",
+   "rotuloImg": "arts/spiked-lizard/rotulo.png",
+   "unitKey": "spiked-lizard",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1389,14 +1440,14 @@
    "pendencias": []
   },
   {
-   "id": "a036",
+   "id": "lizard-handler-v1-spiked-lizard",
    "candidato": "a036",
-   "rotulo": null,
-   "rotuloImg": "arts/a036/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Lizard Handler V1",
+   "rotuloImg": "arts/lizard-handler-v1-spiked-lizard/rotulo.png",
+   "unitKey": "spiked-lizard",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "handler",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1428,14 +1479,14 @@
    "pendencias": []
   },
   {
-   "id": "a037",
+   "id": "lizard-handler-v2-spiked-lizard",
    "candidato": "a037",
-   "rotulo": null,
-   "rotuloImg": "arts/a037/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Lizard Handler V2",
+   "rotuloImg": "arts/lizard-handler-v2-spiked-lizard/rotulo.png",
+   "unitKey": "spiked-lizard",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "handler",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1467,14 +1518,14 @@
    "pendencias": []
   },
   {
-   "id": "a038",
+   "id": "lizard-handler-v3-spiked-lizard",
    "candidato": "a038",
-   "rotulo": null,
-   "rotuloImg": "arts/a038/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Lizard Handler V3",
+   "rotuloImg": "arts/lizard-handler-v3-spiked-lizard/rotulo.png",
+   "unitKey": "spiked-lizard",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "handler",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1508,14 +1559,14 @@
    ]
   },
   {
-   "id": "a039",
+   "id": "pterodactyl",
    "candidato": "a039",
-   "rotulo": null,
-   "rotuloImg": "arts/a039/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Pterodactyl",
+   "rotuloImg": "arts/pterodactyl/rotulo.png",
+   "unitKey": "pterodactyl-rider",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1536,14 +1587,14 @@
    ]
   },
   {
-   "id": "a040",
+   "id": "ripjawdactyl",
    "candidato": "a040",
-   "rotulo": null,
-   "rotuloImg": "arts/a040/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Ripjawdactyl",
+   "rotuloImg": "arts/ripjawdactyl/rotulo.png",
+   "unitKey": "ripjawdactyl-rider",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1564,14 +1615,16 @@
    ]
   },
   {
-   "id": "a041",
+   "id": "gecko-chief-pterodactyl",
    "candidato": "a041",
-   "rotulo": null,
-   "rotuloImg": "arts/a041/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gecko Chief Pterodactyl",
+   "rotuloImg": "arts/gecko-chief-pterodactyl/rotulo.png",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Pterodactyl"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1592,14 +1645,16 @@
    ]
   },
   {
-   "id": "a042",
+   "id": "gecko-chief-ripjawdactyl",
    "candidato": "a042",
-   "rotulo": null,
-   "rotuloImg": "arts/a042/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gecko Chief Ripjawdactyl",
+   "rotuloImg": "arts/gecko-chief-ripjawdactyl/rotulo.png",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Ripjawdactyl"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1620,14 +1675,14 @@
    ]
   },
   {
-   "id": "a043",
+   "id": "pterodactyl-borda",
    "candidato": "a043",
-   "rotulo": null,
-   "rotuloImg": "arts/a043/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Pterodactyl",
+   "rotuloImg": "arts/pterodactyl-borda/rotulo.png",
+   "unitKey": "pterodactyl-rider",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1648,14 +1703,14 @@
    ]
   },
   {
-   "id": "a044",
+   "id": "ripjawdactyl-borda",
    "candidato": "a044",
-   "rotulo": null,
-   "rotuloImg": "arts/a044/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Ripjawdactyl",
+   "rotuloImg": "arts/ripjawdactyl-borda/rotulo.png",
+   "unitKey": "ripjawdactyl-rider",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1676,14 +1731,16 @@
    ]
   },
   {
-   "id": "a045",
+   "id": "gecko-chief-pterodactyl-borda",
    "candidato": "a045",
-   "rotulo": null,
-   "rotuloImg": "arts/a045/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gecko Chief Pterodactyl",
+   "rotuloImg": "arts/gecko-chief-pterodactyl-borda/rotulo.png",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Pterodactyl"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1704,14 +1761,16 @@
    ]
   },
   {
-   "id": "a046",
+   "id": "gecko-chief-ripjawdactyl-borda",
    "candidato": "a046",
-   "rotulo": null,
-   "rotuloImg": "arts/a046/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gecko Chief Ripjawdactyl",
+   "rotuloImg": "arts/gecko-chief-ripjawdactyl-borda/rotulo.png",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Ripjawdactyl"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [

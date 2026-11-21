@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "alien-hives",
- "faccao": "Alien Hives",
+ "faccao": "Alien Hives\r",
  "sistema": "gff",
  "pdf": {
   "nome": "Alien_Hives_-_BW.pdf",
@@ -12,14 +12,14 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a038",
+   "id": "prime-gunner-spitter-gun",
    "candidato": "a038",
-   "rotulo": null,
-   "rotuloImg": "arts/a038/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Prime Gunner Spitter Gun",
+   "rotuloImg": "arts/prime-gunner-spitter-gun/rotulo.png",
+   "unitKey": "prime-warrior",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +51,16 @@
    "pendencias": []
   },
   {
-   "id": "a039",
+   "id": "prime-gunner-ravager-gun",
    "candidato": "a039",
-   "rotulo": null,
-   "rotuloImg": "arts/a039/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Prime Gunner Ravager Gun",
+   "rotuloImg": "arts/prime-gunner-ravager-gun/rotulo.png",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [
+    "Heavy Ravager Gun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -90,14 +92,16 @@
    "pendencias": []
   },
   {
-   "id": "a040",
+   "id": "prime-gunner-acid-launcher",
    "candidato": "a040",
-   "rotulo": null,
-   "rotuloImg": "arts/a040/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Prime Gunner Acid Launcher",
+   "rotuloImg": "arts/prime-gunner-acid-launcher/rotulo.png",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [
+    "Acid Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -129,14 +133,16 @@
    "pendencias": []
   },
   {
-   "id": "a001",
+   "id": "assault-prime-whip",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Assault Prime Whip",
+   "rotuloImg": "arts/assault-prime-whip/rotulo.png",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [
+    "Toxin Whip|Heavy Toxin Whip"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -170,14 +176,16 @@
    ]
   },
   {
-   "id": "a002",
+   "id": "assault-prime-club",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Assault Prime Club",
+   "rotuloImg": "arts/assault-prime-club/rotulo.png",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [
+    "Smashing Club|Heavy Smashing Club"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -211,14 +219,16 @@
    ]
   },
   {
-   "id": "a003",
+   "id": "assault-prime-sword",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Assault Prime Sword",
+   "rotuloImg": "arts/assault-prime-sword/rotulo.png",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [
+    "Slashing Blade|Serrated Blade|Heavy Slashing Blade|Heavy Serrated Blade"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -250,14 +260,17 @@
    "pendencias": []
   },
   {
-   "id": "a034",
+   "id": "winged-prime-spine-guns",
    "candidato": "a034",
-   "rotulo": null,
-   "rotuloImg": "arts/a034/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Winged Prime Spine Guns",
+   "rotuloImg": "arts/winged-prime-spine-guns/rotulo.png",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [
+    "Wings|Raid Wings",
+    "Dual Spike-Shooters"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -289,14 +302,17 @@
    "pendencias": []
   },
   {
-   "id": "a036",
+   "id": "winged-prime-whip",
    "candidato": "a036",
-   "rotulo": null,
-   "rotuloImg": "arts/a036/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Winged Prime Whip",
+   "rotuloImg": "arts/winged-prime-whip/rotulo.png",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [
+    "Wings|Raid Wings",
+    "Toxin Whip|Heavy Toxin Whip"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -328,14 +344,17 @@
    "pendencias": []
   },
   {
-   "id": "a035",
+   "id": "winged-prime-ravager-gun",
    "candidato": "a035",
-   "rotulo": null,
-   "rotuloImg": "arts/a035/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Winged Prime Ravager Gun",
+   "rotuloImg": "arts/winged-prime-ravager-gun/rotulo.png",
+   "unitKey": "prime-warrior",
+   "equipmentTags": [
+    "Wings|Raid Wings",
+    "Heavy Ravager Gun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -367,14 +386,14 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "snatcher-lord",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Snatcher Lord",
+   "rotuloImg": "arts/snatcher-lord/rotulo.png",
+   "unitKey": "snatcher-lord",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -406,14 +425,14 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "swarm",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Swarm",
+   "rotuloImg": "arts/swarm/rotulo.png",
+   "unitKey": "hive-swarm",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -447,14 +466,14 @@
    ]
   },
   {
-   "id": "a006",
+   "id": "assault-grunt-v1",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Assault Grunt V1",
+   "rotuloImg": "arts/assault-grunt-v1/rotulo.png",
+   "unitKey": "assault-grunts",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -488,14 +507,14 @@
    ]
   },
   {
-   "id": "a007",
+   "id": "assault-grunt-v2",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Assault Grunt V2",
+   "rotuloImg": "arts/assault-grunt-v2/rotulo.png",
+   "unitKey": "assault-grunts",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -527,14 +546,14 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "shooter-grunt-v1",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Shooter Grunt V1",
+   "rotuloImg": "arts/shooter-grunt-v1/rotulo.png",
+   "unitKey": "shooter-grunts",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -568,14 +587,14 @@
    ]
   },
   {
-   "id": "a009",
+   "id": "shooter-grunt-v2",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Shooter Grunt V2",
+   "rotuloImg": "arts/shooter-grunt-v2/rotulo.png",
+   "unitKey": "shooter-grunts",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -609,14 +628,16 @@
    ]
   },
   {
-   "id": "a010",
+   "id": "winged-shooter-v1",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Winged Shooter V1",
+   "rotuloImg": "arts/winged-shooter-v1/rotulo.png",
+   "unitKey": "shooter-grunts",
+   "equipmentTags": [
+    "Wings|Raider Wings"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -648,14 +669,16 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "winged-shooter-v2",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Winged Shooter V2",
+   "rotuloImg": "arts/winged-shooter-v2/rotulo.png",
+   "unitKey": "shooter-grunts",
+   "equipmentTags": [
+    "Wings|Raider Wings"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -687,14 +710,14 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "snatcher-v1",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Snatcher V1",
+   "rotuloImg": "arts/snatcher-v1/rotulo.png",
+   "unitKey": "soul-snatcher",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -726,14 +749,14 @@
    "pendencias": []
   },
   {
-   "id": "a013",
+   "id": "snatcher-v2",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Snatcher V2",
+   "rotuloImg": "arts/snatcher-v2/rotulo.png",
+   "unitKey": "soul-snatcher",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -765,14 +788,16 @@
    "pendencias": []
   },
   {
-   "id": "a014",
+   "id": "warrior-ravager-gun",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Ravager Gun",
+   "rotuloImg": "arts/warrior-ravager-gun/rotulo.png",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [
+    "Ravager Gun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -804,14 +829,14 @@
    "pendencias": []
   },
   {
-   "id": "a015",
+   "id": "warrior-spitter-gun",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Spitter Gun",
+   "rotuloImg": "arts/warrior-spitter-gun/rotulo.png",
+   "unitKey": "hive-warrior",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -845,14 +870,16 @@
    ]
   },
   {
-   "id": "a016",
+   "id": "warrior-spine-gun-1",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Spine Gun",
+   "rotuloImg": "arts/warrior-spine-gun-1/rotulo.png",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [
+    "Dual Spike-Shooters"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -886,14 +913,16 @@
    ]
   },
   {
-   "id": "a017",
+   "id": "warrior-spine-gun-2",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Spine Gun",
+   "rotuloImg": "arts/warrior-spine-gun-2/rotulo.png",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [
+    "Dual Spike-Shooters"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -927,14 +956,14 @@
    ]
   },
   {
-   "id": "a018",
+   "id": "warrior-barb-gun",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Barb Gun",
+   "rotuloImg": "arts/warrior-barb-gun/rotulo.png",
+   "unitKey": "hive-warrior",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -968,14 +997,16 @@
    ]
   },
   {
-   "id": "a019",
+   "id": "warrior-acid-gun",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Acid Gun",
+   "rotuloImg": "arts/warrior-acid-gun/rotulo.png",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [
+    "Acid Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1007,14 +1038,16 @@
    "pendencias": []
   },
   {
-   "id": "a020",
+   "id": "warrior-heavy-ravager-gun",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Heavy Ravager Gun",
+   "rotuloImg": "arts/warrior-heavy-ravager-gun/rotulo.png",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [
+    "Heavy Ravager Gun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1048,14 +1081,16 @@
    ]
   },
   {
-   "id": "a021",
+   "id": "warrior-shredder-gun",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Shredder Gun",
+   "rotuloImg": "arts/warrior-shredder-gun/rotulo.png",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [
+    "Shredder Gun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1089,14 +1124,16 @@
    ]
   },
   {
-   "id": "a022",
+   "id": "warrior-club",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Club",
+   "rotuloImg": "arts/warrior-club/rotulo.png",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [
+    "Dual Smashing Clubs"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1130,14 +1167,16 @@
    ]
   },
   {
-   "id": "a023",
+   "id": "warrior-whip",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Whip",
+   "rotuloImg": "arts/warrior-whip/rotulo.png",
+   "unitKey": "hive-warrior",
+   "equipmentTags": [
+    "Toxin Whip & Slashing Blade|Toxin Whip & Serrated Blade|Dual Toxin Whips"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1171,14 +1210,16 @@
    ]
   },
   {
-   "id": "a024",
+   "id": "guard-ravager",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guard Ravager",
+   "rotuloImg": "arts/guard-ravager/rotulo.png",
+   "unitKey": "hive-guardian",
+   "equipmentTags": [
+    "Heavy Ravager Gun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1212,14 +1253,16 @@
    ]
   },
   {
-   "id": "a025",
+   "id": "guard-skewer-cannon",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guard Skewer Cannon",
+   "rotuloImg": "arts/guard-skewer-cannon/rotulo.png",
+   "unitKey": "hive-guardian",
+   "equipmentTags": [
+    "Skewer Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1251,14 +1294,16 @@
    "pendencias": []
   },
   {
-   "id": "a026",
+   "id": "guard-harpoon",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guard Harpoon",
+   "rotuloImg": "arts/guard-harpoon/rotulo.png",
+   "unitKey": "hive-guardian",
+   "equipmentTags": [
+    "Bio-Harpoon Gun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1292,14 +1337,16 @@
    ]
   },
   {
-   "id": "a027",
+   "id": "guard-club",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guard Club",
+   "rotuloImg": "arts/guard-club/rotulo.png",
+   "unitKey": "hive-guardian",
+   "equipmentTags": [
+    "Dual Smashing Clubs"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1331,14 +1378,14 @@
    "pendencias": []
   },
   {
-   "id": "a028",
+   "id": "ravener-beast",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Ravener Beast",
+   "rotuloImg": "arts/ravener-beast/rotulo.png",
+   "unitKey": "ravenous-beast",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1370,14 +1417,14 @@
    "pendencias": []
   },
   {
-   "id": "a029",
+   "id": "synapse-beast",
    "candidato": "a029",
-   "rotulo": null,
-   "rotuloImg": "arts/a029/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Synapse Beast",
+   "rotuloImg": "arts/synapse-beast/rotulo.png",
+   "unitKey": "synapse-beast",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1409,14 +1456,14 @@
    "pendencias": []
   },
   {
-   "id": "a030",
+   "id": "venom-floater",
    "candidato": "a030",
-   "rotulo": null,
-   "rotuloImg": "arts/a030/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Venom Floater",
+   "rotuloImg": "arts/venom-floater/rotulo.png",
+   "unitKey": "venom-beast",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1448,14 +1495,14 @@
    "pendencias": []
   },
   {
-   "id": "a031",
+   "id": "spores",
    "candidato": "a031",
-   "rotulo": null,
-   "rotuloImg": "arts/a031/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Spores",
+   "rotuloImg": "arts/spores/rotulo.png",
+   "unitKey": "spores",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1487,14 +1534,14 @@
    "pendencias": []
   },
   {
-   "id": "a032",
+   "id": "massive-spore",
    "candidato": "a032",
-   "rotulo": null,
-   "rotuloImg": "arts/a032/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Massive Spore",
+   "rotuloImg": "arts/massive-spore/rotulo.png",
+   "unitKey": "massive-spore",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1526,14 +1573,14 @@
    "pendencias": []
   },
   {
-   "id": "a033",
+   "id": "mortar-beast",
    "candidato": "a033",
-   "rotulo": null,
-   "rotuloImg": "arts/a033/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Mortar Beast",
+   "rotuloImg": "arts/mortar-beast/rotulo.png",
+   "unitKey": "mortar-beast",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1565,14 +1612,14 @@
    "pendencias": []
   },
   {
-   "id": "a037",
+   "id": "flamer-beast",
    "candidato": "a037",
-   "rotulo": null,
-   "rotuloImg": "arts/a037/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Flamer Beast",
+   "rotuloImg": "arts/flamer-beast/rotulo.png",
+   "unitKey": "flamer-beast",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1604,14 +1651,14 @@
    "pendencias": []
   },
   {
-   "id": "a041",
+   "id": "hunter",
    "candidato": "a041",
-   "rotulo": null,
-   "rotuloImg": "arts/a041/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hunter",
+   "rotuloImg": "arts/hunter/rotulo.png",
+   "unitKey": "shadow-hunter",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [

@@ -1,0 +1,1346 @@
+{
+  "armyBook": {
+    "id": "jZ02AVPLx_S48Mnb",
+    "nome": "Human Empire",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:33.146Z",
+    "sistema": "age-of-fantasy",
+    "sistemaId": 4
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "Vj0QX3_",
+      "nome": "Battle Master",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Lance"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Rapid Firepowder Rifle",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Throwing Knives",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Dual Firepowder Pistols"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Dual Matchlock Pistols"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Dual Handbows"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Knives",
+          "ganha": [
+            "Firepowder Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Knives",
+          "ganha": [
+            "Matchlock Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Firepowder Rifle",
+          "ganha": [
+            "Rapid Crossbow"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Firepowder Rifle",
+          "ganha": [
+            "Rapid Matchlock Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Horse"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pet Companion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pegasus"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Royal Griffon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Imperial Dragon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Great Empire Icon Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Captain"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Army Standard Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Cleric"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Bounty Hunter"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Logistics Officer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "General"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yYreRfL",
+      "nome": "Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Lance"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Grenade Launcher",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Throwing Knives",
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Dual Gatling Pistols"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapons",
+          "ganha": [
+            "Battle Mage Staff"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Knives",
+          "ganha": [
+            "Firepowder Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Knives",
+          "ganha": [
+            "Matchlock Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Grenade Launcher",
+          "ganha": [
+            "Rapid Bow"
+          ]
+        },
+        {
+          "secao": "Replace Grenade Launcher",
+          "ganha": [
+            "Rapid Shortbow"
+          ]
+        },
+        {
+          "secao": "Replace Grenade Launcher",
+          "ganha": [
+            "Rapid Matchlock Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Grenade Launcher",
+          "ganha": [
+            "Rapid Firepowder Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Grenade Launcher",
+          "ganha": [
+            "Rapid Crossbow"
+          ]
+        },
+        {
+          "secao": "Replace Grenade Launcher",
+          "ganha": [
+            "Gatling Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Grenade Launcher",
+          "ganha": [
+            "Sniper Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Horse"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Robo-Frame Horse"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pet Companion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Marksman Horse"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Robo-Hulk"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Giant Robo-Hulk"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Captain"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Cleric"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Logistics Officer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Surgeon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Engineer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Battle Mage"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Battle Mage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7xHcSJO",
+      "nome": "Mage Council",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Magic Staff"
+      ],
+      "itens": [],
+      "opcoes": []
+    },
+    {
+      "id": "-ESvMWE",
+      "nome": "Infantrymen",
+      "tamanho": 10,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Message Runner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ccY9OvL",
+      "nome": "Fanatics",
+      "tamanho": 10,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Sharp Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Sharp Weapons",
+          "ganha": [
+            "Flail"
+          ]
+        },
+        {
+          "secao": "Replace up to two Sharp Weapons",
+          "ganha": [
+            "Great Scythe"
+          ]
+        },
+        {
+          "secao": "Replace up to two Sharp Weapons",
+          "ganha": [
+            "Great Weapon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dBSLa40",
+      "nome": "Mercenaries",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Dual Hand Weapons",
+          "ganha": [
+            "Firepowder Pistol",
+            "Dagger"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Hand Weapons",
+          "ganha": [
+            "Matchlock Pistol",
+            "Dagger"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Hand Weapons",
+          "ganha": [
+            "Dual Firepowder Pistols"
+          ]
+        },
+        {
+          "secao": "Replace all Dual Hand Weapons",
+          "ganha": [
+            "Dual Matchlock Pistols"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0IYBIDW",
+      "nome": "Elite Weapon Masters",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Message Runner"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace one Hand Weapon",
+          "ganha": [
+            "Dual Hand Weapons"
+          ]
+        },
+        {
+          "secao": "Replace one Hand Weapon",
+          "ganha": [
+            "Imperial Great Flail"
+          ]
+        },
+        {
+          "secao": "Replace one Hand Weapon",
+          "ganha": [
+            "Imperial Great Mace"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cLpguvc",
+      "nome": "Hunting Hounds",
+      "tamanho": 5,
+      "bases": {
+        "round": "",
+        "square": ""
+      },
+      "armas": [
+        "Heavy Bites"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Heavy Bites",
+          "ganha": [
+            "Frenzied Bites"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Trailblazer Dog Handler"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kY9pOKT",
+      "nome": "Marksmen",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Matchlock Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Matchlock Rifles",
+          "ganha": [
+            "Firepowder Rifle"
+          ]
+        },
+        {
+          "secao": "Replace all Matchlock Rifles",
+          "ganha": [
+            "Crossbow"
+          ]
+        },
+        {
+          "secao": "Replace one Matchlock Rifle and Strike",
+          "ganha": [
+            "Dual Matchlock Pistols"
+          ]
+        },
+        {
+          "secao": "Replace one Matchlock Rifle and Strike",
+          "ganha": [
+            "Dual Firepowder Pistols"
+          ]
+        },
+        {
+          "secao": "Replace one Matchlock Rifle and Strike",
+          "ganha": [
+            "Flamethrower",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace one Matchlock Rifle and Strike",
+          "ganha": [
+            "Gatling Rifle",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace one Matchlock Rifle and Strike",
+          "ganha": [
+            "Sniper Rifle",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Pavise Shield"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Message Runner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Nxj9qhc",
+      "nome": "Mercenary Hunters",
+      "tamanho": 5,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Bow",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Bows",
+          "ganha": [
+            "Shortbow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vmcM4E8",
+      "nome": "Horse Marksmen",
+      "tamanho": 5,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Matchlock Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Matchlock Rifles and Strikes",
+          "ganha": [
+            "Firepowder Rifle",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Matchlock Rifles and Strikes",
+          "ganha": [
+            "Dual Firepowder Pistols"
+          ]
+        },
+        {
+          "secao": "Replace all Matchlock Rifles and Strikes",
+          "ganha": [
+            "Dual Matchlock Pistols"
+          ]
+        },
+        {
+          "secao": "Replace one Matchlock Rifle and Strike",
+          "ganha": [
+            "Gatling Rifle",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace one Matchlock Rifle and Strike",
+          "ganha": [
+            "Dual Gatling Pistols"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Message Runner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eXoFcRr",
+      "nome": "Knights",
+      "tamanho": 5,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Message Runner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rKfk_hD",
+      "nome": "Guard Knights",
+      "tamanho": 5,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Lance"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Lances",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace one Lance",
+          "ganha": [
+            "Imperial Great Flail"
+          ]
+        },
+        {
+          "secao": "Replace one Lance",
+          "ganha": [
+            "Imperial Great Mace"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Message Runner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hZjPpN-",
+      "nome": "Gryph Riders",
+      "tamanho": 3,
+      "bases": {
+        "round": "75x46",
+        "square": "75x50"
+      },
+      "armas": [
+        "Lance"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade up to three models with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Replace all Lances",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace one Lance",
+          "ganha": [
+            "Imperial Great Flail"
+          ]
+        },
+        {
+          "secao": "Replace one Lance",
+          "ganha": [
+            "Imperial Great Mace"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cevXrfE",
+      "nome": "War Wagon of Earth",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Hooves",
+        "Spear Crew"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Spear Crew",
+          "ganha": [
+            "Crossbow Crew"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Empire Bounty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "k7mhta9",
+      "nome": "Hurricane Wagon of Air ",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Summon Storm",
+        "Hooves"
+      ],
+      "itens": [
+        {
+          "nome": "Battle Aura",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Summon Storm",
+          "ganha": [
+            "Summon Blizzard"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MVYJ1_4",
+      "nome": "Beamer Wagon of Fire",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Searing Beam",
+        "Hooves"
+      ],
+      "itens": [
+        {
+          "nome": "Protective Aura",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Searing Beam",
+          "ganha": [
+            "Melting Beam"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sz3tKpf",
+      "nome": "Altar Wagon of Aether",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Anguishing Aether",
+        "Hooves"
+      ],
+      "itens": [
+        {
+          "nome": "Aura of Fury",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Anguishing Aether",
+          "ganha": [
+            "Banishing Aether"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v7FIEfQ",
+      "nome": "Steam Tank of Water",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Tank Cannon",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Tank Cannon",
+          "ganha": [
+            "Heavy Tank Cannon"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Turret Gunner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IwNgwa3",
+      "nome": "Robo-Hulk Titan",
+      "tamanho": 1,
+      "bases": {
+        "round": "160x122",
+        "square": "175x125"
+      },
+      "armas": [
+        "Great Cannon",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Great Cannon",
+          "ganha": [
+            "Cannon",
+            "Hull Siege Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Great Cannon",
+          "ganha": [
+            "Cannon",
+            "Hull Siege Heavy Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Great Cannon",
+          "ganha": [
+            "Great Flame Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Great Cannon",
+          "ganha": [
+            "Great Heavy Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Cannon",
+          "ganha": [
+            "Flame Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Cannon",
+          "ganha": [
+            "Heavy Cannon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Firepowder Volley Gun Crew"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Volley Gun Crew"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Transport Deck"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0RUh3Gd",
+      "nome": "Elemental Titan",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "150x100"
+      },
+      "armas": [
+        "Stomp",
+        "Sweeping Titan Strike"
+      ],
+      "itens": [
+        {
+          "nome": "Aether Elemental",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Sweeping Titan Strike",
+          "ganha": [
+            "Heavy Titan Strike"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Master Battle Mage Rider"
+          ]
+        },
+        {
+          "secao": "Replace Aether Elemental",
+          "ganha": [
+            "Air Elemental"
+          ]
+        },
+        {
+          "secao": "Replace Aether Elemental",
+          "ganha": [
+            "Fire Elemental"
+          ]
+        },
+        {
+          "secao": "Replace Aether Elemental",
+          "ganha": [
+            "Earth Elemental"
+          ]
+        },
+        {
+          "secao": "Replace Aether Elemental",
+          "ganha": [
+            "Water Elemental"
+          ]
+        },
+        {
+          "secao": "Replace Aether Elemental",
+          "ganha": [
+            "Elemental Chimera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9M00fD4",
+      "nome": "Empire Artillery",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Firepowder Volley Gun",
+        "Crew"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Firepowder Volley Gun",
+          "ganha": [
+            "Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Firepowder Volley Gun",
+          "ganha": [
+            "Volley Gun"
+          ]
+        },
+        {
+          "secao": "Replace Firepowder Volley Gun",
+          "ganha": [
+            "Rocket Battery"
+          ]
+        },
+        {
+          "secao": "Replace Firepowder Volley Gun",
+          "ganha": [
+            "Heavy Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Firepowder Volley Gun",
+          "ganha": [
+            "Heavy Mortar"
+          ]
+        }
+      ]
+    }
+  ]
+}

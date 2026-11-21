@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "high-elf-fleets",
- "faccao": "High Elf Fleets",
+ "faccao": "High Elf Fleets\r",
  "sistema": "gff",
  "pdf": {
   "nome": "High_Elf_Fleets_-_BW.pdf",
@@ -12,14 +12,16 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "elite-protector-spear",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elite Protector Spear",
+   "rotuloImg": "arts/elite-protector-spear/rotulo.png",
+   "unitKey": "elite-protector",
+   "equipmentTags": [
+    "Ancient Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +53,16 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "elite-protector-axe",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elite Protector Axe",
+   "rotuloImg": "arts/elite-protector-axe/rotulo.png",
+   "unitKey": "elite-protector",
+   "equipmentTags": [
+    "Killing Axe"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -92,14 +96,16 @@
    ]
   },
   {
-   "id": "a003",
+   "id": "apprentice",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Apprentice",
+   "rotuloImg": "arts/apprentice/rotulo.png",
+   "unitKey": "elite-protector",
+   "equipmentTags": [
+    "Acolyte Psy-Seer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -131,14 +137,16 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "striker-fusion",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Striker Fusion",
+   "rotuloImg": "arts/striker-fusion/rotulo.png",
+   "unitKey": "striker",
+   "equipmentTags": [
+    "Assault Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -170,14 +178,16 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "striker-flamer",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Striker Flamer",
+   "rotuloImg": "arts/striker-flamer/rotulo.png",
+   "unitKey": "striker",
+   "equipmentTags": [
+    "Assault Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -209,14 +219,14 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "striker",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Striker",
+   "rotuloImg": "arts/striker/rotulo.png",
+   "unitKey": "striker",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -248,14 +258,14 @@
    "pendencias": []
   },
   {
-   "id": "a007",
+   "id": "protector-v1",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Protector V1",
+   "rotuloImg": "arts/protector-v1/rotulo.png",
+   "unitKey": "protector",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -287,14 +297,14 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "protector-v2",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Protector V2",
+   "rotuloImg": "arts/protector-v2/rotulo.png",
+   "unitKey": "protector",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -326,14 +336,16 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "stealth-platform",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Stealth Platform",
+   "rotuloImg": "arts/stealth-platform/rotulo.png",
+   "unitKey": "striker",
+   "equipmentTags": [
+    "Hologram Platform"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -367,14 +379,16 @@
    ]
   },
   {
-   "id": "a010",
+   "id": "protector-turret-shatter-cannon",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Protector Turret Shatter Cannon",
+   "rotuloImg": "arts/protector-turret-shatter-cannon/rotulo.png",
+   "unitKey": "protector",
+   "equipmentTags": [
+    "Gun Platform"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -408,14 +422,16 @@
    ]
   },
   {
-   "id": "a011",
+   "id": "protector-turret-shard-cannon",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Protector Turret Shard Cannon",
+   "rotuloImg": "arts/protector-turret-shard-cannon/rotulo.png",
+   "unitKey": "protector",
+   "equipmentTags": [
+    "Gun Platform"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -447,14 +463,16 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "protector-turret-missile-launcher",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Protector Turret Missile Launcher",
+   "rotuloImg": "arts/protector-turret-missile-launcher/rotulo.png",
+   "unitKey": "protector",
+   "equipmentTags": [
+    "Gun Platform"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -488,14 +506,16 @@
    ]
   },
   {
-   "id": "a013",
+   "id": "protector-turret-laser-cannon",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Protector Turret Laser Cannon",
+   "rotuloImg": "arts/protector-turret-laser-cannon/rotulo.png",
+   "unitKey": "protector",
+   "equipmentTags": [
+    "Gun Platform"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -529,14 +549,16 @@
    ]
   },
   {
-   "id": "a014",
+   "id": "protector-turret-burst-laser",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Protector Turret Burst Laser",
+   "rotuloImg": "arts/protector-turret-burst-laser/rotulo.png",
+   "unitKey": "protector",
+   "equipmentTags": [
+    "Gun Platform"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -570,14 +592,16 @@
    ]
   },
   {
-   "id": "a015",
+   "id": "retributor-shardgun",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Retributor Shardgun",
+   "rotuloImg": "arts/retributor-shardgun/rotulo.png",
+   "unitKey": "retributor",
+   "equipmentTags": [
+    "Shard Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -609,14 +633,16 @@
    "pendencias": []
   },
   {
-   "id": "a016",
+   "id": "retributor-energy-sword",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Retributor Energy Sword",
+   "rotuloImg": "arts/retributor-energy-sword/rotulo.png",
+   "unitKey": "retributor",
+   "equipmentTags": [
+    "Ancient Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -648,14 +674,16 @@
    "pendencias": []
   },
   {
-   "id": "a017",
+   "id": "retributor-energy-sword-b",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Retributor Energy Sword",
+   "rotuloImg": "arts/retributor-energy-sword-b/rotulo.png",
+   "unitKey": "retributor",
+   "equipmentTags": [
+    "Ancient Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -676,14 +704,16 @@
    ]
   },
   {
-   "id": "a018",
+   "id": "ancient-commander",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Ancient Commander",
+   "rotuloImg": "arts/ancient-commander/rotulo.png",
+   "unitKey": "elven-noble",
+   "equipmentTags": [
+    "Ancient Commander"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -717,14 +747,16 @@
    ]
   },
   {
-   "id": "a019",
+   "id": "retributor-sergeant-pistol",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Retributor Sergeant Pistol",
+   "rotuloImg": "arts/retributor-sergeant-pistol/rotulo.png",
+   "unitKey": "retributor",
+   "equipmentTags": [
+    "Sgt. Shard Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -756,14 +788,16 @@
    "pendencias": []
   },
   {
-   "id": "a020",
+   "id": "retributor-sergeant-shield",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Retributor Sergeant Shield",
+   "rotuloImg": "arts/retributor-sergeant-shield/rotulo.png",
+   "unitKey": "retributor",
+   "equipmentTags": [
+    "Flicker Shield"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -795,14 +829,16 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "noble-glider",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Noble Glider",
+   "rotuloImg": "arts/noble-glider/rotulo.png",
+   "unitKey": "elven-noble",
+   "equipmentTags": [
+    "Glider Jetpack"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -834,14 +870,16 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "glider-sword",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Glider Sword",
+   "rotuloImg": "arts/glider-sword/rotulo.png",
+   "unitKey": "glider",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -873,14 +911,16 @@
    "pendencias": []
   },
   {
-   "id": "a023",
+   "id": "glider-heavy-laser-rifle",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Glider Heavy Laser Rifle",
+   "rotuloImg": "arts/glider-heavy-laser-rifle/rotulo.png",
+   "unitKey": "glider",
+   "equipmentTags": [
+    "Heavy Laser Carbine"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -912,14 +952,16 @@
    "pendencias": []
   },
   {
-   "id": "a024",
+   "id": "glider-laser-blaster",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Glider Laser Blaster",
+   "rotuloImg": "arts/glider-laser-blaster/rotulo.png",
+   "unitKey": "glider",
+   "equipmentTags": [
+    "Laser Carbine"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -951,14 +993,16 @@
    "pendencias": []
   },
   {
-   "id": "a025",
+   "id": "glider-shred-blaster",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Glider Shred Blaster",
+   "rotuloImg": "arts/glider-shred-blaster/rotulo.png",
+   "unitKey": "glider",
+   "equipmentTags": [
+    "Shred-Blaster Gun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -990,14 +1034,16 @@
    "pendencias": []
   },
   {
-   "id": "a026",
+   "id": "glider-pistol",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Glider Pistol",
+   "rotuloImg": "arts/glider-pistol/rotulo.png",
+   "unitKey": "glider",
+   "equipmentTags": [
+    "Laser Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1029,14 +1075,14 @@
    "pendencias": []
   },
   {
-   "id": "a027",
+   "id": "revenant-champion",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Revenant Champion",
+   "rotuloImg": "arts/revenant-champion/rotulo.png",
+   "unitKey": "revenant",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1068,14 +1114,16 @@
    "pendencias": []
   },
   {
-   "id": "a028",
+   "id": "scorcher-fusion-pike",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Scorcher Fusion Pike",
+   "rotuloImg": "arts/scorcher-fusion-pike/rotulo.png",
+   "unitKey": "scorcher",
+   "equipmentTags": [
+    "Fusion Lance-Gun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1107,14 +1155,14 @@
    "pendencias": []
   },
   {
-   "id": "a029",
+   "id": "sniper",
    "candidato": "a029",
-   "rotulo": null,
-   "rotuloImg": "arts/a029/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Sniper",
+   "rotuloImg": "arts/sniper/rotulo.png",
+   "unitKey": "sniper",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1148,14 +1196,16 @@
    ]
   },
   {
-   "id": "a030",
+   "id": "shifter-carbine",
    "candidato": "a030",
-   "rotulo": null,
-   "rotuloImg": "arts/a030/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Shifter Carbine",
+   "rotuloImg": "arts/shifter-carbine/rotulo.png",
+   "unitKey": "shifter",
+   "equipmentTags": [
+    "Phaser Carbine"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1187,14 +1237,16 @@
    "pendencias": []
   },
   {
-   "id": "a031",
+   "id": "shifter-heavy-spinner",
    "candidato": "a031",
-   "rotulo": null,
-   "rotuloImg": "arts/a031/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Shifter Heavy Spinner",
+   "rotuloImg": "arts/shifter-heavy-spinner/rotulo.png",
+   "unitKey": "shifter",
+   "equipmentTags": [
+    "Heavy Phaser Blaster"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1226,14 +1278,14 @@
    "pendencias": []
   },
   {
-   "id": "a032",
+   "id": "shifter",
    "candidato": "a032",
-   "rotulo": null,
-   "rotuloImg": "arts/a032/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Shifter",
+   "rotuloImg": "arts/shifter/rotulo.png",
+   "unitKey": "shifter",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1265,14 +1317,14 @@
    "pendencias": []
   },
   {
-   "id": "a033",
+   "id": "revenant",
    "candidato": "a033",
-   "rotulo": null,
-   "rotuloImg": "arts/a033/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Revenant",
+   "rotuloImg": "arts/revenant/rotulo.png",
+   "unitKey": "revenant",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1304,14 +1356,16 @@
    "pendencias": []
   },
   {
-   "id": "a034",
+   "id": "scorcher-fusion",
    "candidato": "a034",
-   "rotulo": null,
-   "rotuloImg": "arts/a034/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Scorcher Fusion",
+   "rotuloImg": "arts/scorcher-fusion/rotulo.png",
+   "unitKey": "scorcher",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1343,14 +1397,16 @@
    "pendencias": []
   },
   {
-   "id": "a035",
+   "id": "scorcher-heavy-flamer",
    "candidato": "a035",
-   "rotulo": null,
-   "rotuloImg": "arts/a035/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Scorcher Heavy Flamer",
+   "rotuloImg": "arts/scorcher-heavy-flamer/rotulo.png",
+   "unitKey": "scorcher",
+   "equipmentTags": [
+    "Heavy Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1382,14 +1438,16 @@
    "pendencias": []
   },
   {
-   "id": "a036",
+   "id": "noble-shifter",
    "candidato": "a036",
-   "rotulo": null,
-   "rotuloImg": "arts/a036/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Noble Shifter",
+   "rotuloImg": "arts/noble-shifter/rotulo.png",
+   "unitKey": "elven-noble",
+   "equipmentTags": [
+    "Shifter Backpack|Shifter Jumpgate Backpack"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1421,14 +1479,16 @@
    "pendencias": []
   },
   {
-   "id": "a037",
+   "id": "noble-sniper",
    "candidato": "a037",
-   "rotulo": null,
-   "rotuloImg": "arts/a037/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Noble Sniper",
+   "rotuloImg": "arts/noble-sniper/rotulo.png",
+   "unitKey": "elven-noble",
+   "equipmentTags": [
+    "Sniper Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1460,14 +1520,16 @@
    "pendencias": []
   },
   {
-   "id": "a038",
+   "id": "noble-scorcher",
    "candidato": "a038",
-   "rotulo": null,
-   "rotuloImg": "arts/a038/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Noble Scorcher",
+   "rotuloImg": "arts/noble-scorcher/rotulo.png",
+   "unitKey": "elven-noble",
+   "equipmentTags": [
+    "Scorcher Fusion-Axe|Scorcher Flamer-Axe"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1499,14 +1561,16 @@
    "pendencias": []
   },
   {
-   "id": "a039",
+   "id": "noble-revenant",
    "candidato": "a039",
-   "rotulo": null,
-   "rotuloImg": "arts/a039/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Noble Revenant",
+   "rotuloImg": "arts/noble-revenant/rotulo.png",
+   "unitKey": "elven-noble",
+   "equipmentTags": [
+    "Revenant Mask"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1540,14 +1604,16 @@
    ]
   },
   {
-   "id": "a040",
+   "id": "high-oracle",
    "candidato": "a040",
-   "rotulo": null,
-   "rotuloImg": "arts/a040/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "High Oracle",
+   "rotuloImg": "arts/high-oracle/rotulo.png",
+   "unitKey": "elite-protector",
+   "equipmentTags": [
+    "High Oracle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1579,14 +1645,16 @@
    "pendencias": []
   },
   {
-   "id": "a041",
+   "id": "acolyte-sword",
    "candidato": "a041",
-   "rotulo": null,
-   "rotuloImg": "arts/a041/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Acolyte Sword",
+   "rotuloImg": "arts/acolyte-sword/rotulo.png",
+   "unitKey": "acolyte",
+   "equipmentTags": [
+    "Ancient Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1618,14 +1686,16 @@
    "pendencias": []
   },
   {
-   "id": "a042",
+   "id": "jetbike-elite",
    "candidato": "a042",
-   "rotulo": null,
-   "rotuloImg": "arts/a042/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetbike Elite",
+   "rotuloImg": "arts/jetbike-elite/rotulo.png",
+   "unitKey": "elite-protector",
+   "equipmentTags": [
+    "Assault Jetbike|Combat Jetbike"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1646,14 +1716,16 @@
    ]
   },
   {
-   "id": "a043",
+   "id": "acolyte-spear",
    "candidato": "a043",
-   "rotulo": null,
-   "rotuloImg": "arts/a043/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Acolyte Spear",
+   "rotuloImg": "arts/acolyte-spear/rotulo.png",
+   "unitKey": "acolyte",
+   "equipmentTags": [
+    "Ancient Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1685,14 +1757,17 @@
    "pendencias": []
   },
   {
-   "id": "a044",
+   "id": "jetbike-acolyte-pistol",
    "candidato": "a044",
-   "rotulo": null,
-   "rotuloImg": "arts/a044/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetbike Acolyte Pistol",
+   "rotuloImg": "arts/jetbike-acolyte-pistol/rotulo.png",
+   "unitKey": "acolyte",
+   "equipmentTags": [
+    "Assault Jetbike",
+    "Shard Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1713,14 +1788,17 @@
    ]
   },
   {
-   "id": "a045",
+   "id": "jetbike-acolyte-sword",
    "candidato": "a045",
-   "rotulo": null,
-   "rotuloImg": "arts/a045/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetbike Acolyte Sword",
+   "rotuloImg": "arts/jetbike-acolyte-sword/rotulo.png",
+   "unitKey": "acolyte",
+   "equipmentTags": [
+    "Assault Jetbike",
+    "Ancient Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1741,14 +1819,16 @@
    ]
   },
   {
-   "id": "a046",
+   "id": "jetbike-striker-sword",
    "candidato": "a046",
-   "rotulo": null,
-   "rotuloImg": "arts/a046/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetbike Striker Sword",
+   "rotuloImg": "arts/jetbike-striker-sword/rotulo.png",
+   "unitKey": "jetbike-striker",
+   "equipmentTags": [
+    "Ancient Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1769,14 +1849,16 @@
    ]
   },
   {
-   "id": "a047",
+   "id": "jetbike-striker-lance",
    "candidato": "a047",
-   "rotulo": null,
-   "rotuloImg": "arts/a047/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetbike Striker Lance",
+   "rotuloImg": "arts/jetbike-striker-lance/rotulo.png",
+   "unitKey": "jetbike-striker",
+   "equipmentTags": [
+    "Ancient Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1797,14 +1879,14 @@
    ]
   },
   {
-   "id": "a048",
+   "id": "jetbike-protector",
    "candidato": "a048",
-   "rotulo": null,
-   "rotuloImg": "arts/a048/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Jetbike Protector",
+   "rotuloImg": "arts/jetbike-protector/rotulo.png",
+   "unitKey": "jetbike-protector",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1825,14 +1907,16 @@
    ]
   },
   {
-   "id": "a049",
+   "id": "jetbike-protector-turret",
    "candidato": "a049",
-   "rotulo": null,
-   "rotuloImg": "arts/a049/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetbike Protector Turret",
+   "rotuloImg": "arts/jetbike-protector-turret/rotulo.png",
+   "unitKey": "jetbike-protector",
+   "equipmentTags": [
+    "Shard Cannon|Burst Laser"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1853,14 +1937,16 @@
    ]
   },
   {
-   "id": "a050",
+   "id": "jetbike-protector-sniper",
    "candidato": "a050",
-   "rotulo": null,
-   "rotuloImg": "arts/a050/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetbike Protector Sniper",
+   "rotuloImg": "arts/jetbike-protector-sniper/rotulo.png",
+   "unitKey": "jetbike-protector",
+   "equipmentTags": [
+    "Sniper Rifle|Shard-Sniper Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1881,14 +1967,14 @@
    ]
   },
   {
-   "id": "a051",
+   "id": "stinger",
    "candidato": "a051",
-   "rotulo": null,
-   "rotuloImg": "arts/a051/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Stinger",
+   "rotuloImg": "arts/stinger/rotulo.png",
+   "unitKey": "stinger",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1920,14 +2006,16 @@
    "pendencias": []
   },
   {
-   "id": "a052",
+   "id": "vanquisher-cannon",
    "candidato": "a052",
-   "rotulo": null,
-   "rotuloImg": "arts/a052/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vanquisher Cannon",
+   "rotuloImg": "arts/vanquisher-cannon/rotulo.png",
+   "unitKey": "vanquisher",
+   "equipmentTags": [
+    "Shard Cannon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1959,14 +2047,16 @@
    "pendencias": []
   },
   {
-   "id": "a053",
+   "id": "vanquisher-missile",
    "candidato": "a053",
-   "rotulo": null,
-   "rotuloImg": "arts/a053/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vanquisher Missile",
+   "rotuloImg": "arts/vanquisher-missile/rotulo.png",
+   "unitKey": "vanquisher",
+   "equipmentTags": [
+    "Heat-Rocket Launcher|Dart-Rocket Launcher|Arc-Rocket Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1998,14 +2088,16 @@
    "pendencias": []
   },
   {
-   "id": "a054",
+   "id": "guardian",
    "candidato": "a054",
-   "rotulo": null,
-   "rotuloImg": "arts/a054/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guardian",
+   "rotuloImg": "arts/guardian/rotulo.png",
+   "unitKey": "elite-protector",
+   "equipmentTags": [
+    "Guardian Cleric"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2037,14 +2129,14 @@
    "pendencias": []
   },
   {
-   "id": "a055",
+   "id": "noble",
    "candidato": "a055",
-   "rotulo": null,
-   "rotuloImg": "arts/a055/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Noble",
+   "rotuloImg": "arts/noble/rotulo.png",
+   "unitKey": "elven-noble",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2076,14 +2168,16 @@
    "pendencias": []
   },
   {
-   "id": "a056",
+   "id": "noble-stinger",
    "candidato": "a056",
-   "rotulo": null,
-   "rotuloImg": "arts/a056/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Noble Stinger",
+   "rotuloImg": "arts/noble-stinger/rotulo.png",
+   "unitKey": "elven-noble",
+   "equipmentTags": [
+    "Master Stinger|Dual Stinger Blades"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2115,14 +2209,16 @@
    "pendencias": []
   },
   {
-   "id": "a057",
+   "id": "noble-vanquisher",
    "candidato": "a057",
-   "rotulo": null,
-   "rotuloImg": "arts/a057/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Noble Vanquisher",
+   "rotuloImg": "arts/noble-vanquisher/rotulo.png",
+   "unitKey": "elven-noble",
+   "equipmentTags": [
+    "Vanquisher Rocket Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2154,14 +2250,16 @@
    "pendencias": []
   },
   {
-   "id": "a058",
+   "id": "elemental-striker-axe",
    "candidato": "a058",
-   "rotulo": null,
-   "rotuloImg": "arts/a058/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elemental Striker Axe",
+   "rotuloImg": "arts/elemental-striker-axe/rotulo.png",
+   "unitKey": "elemental-striker",
+   "equipmentTags": [
+    "Killing Axe"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2193,14 +2291,16 @@
    "pendencias": []
   },
   {
-   "id": "a059",
+   "id": "elemental-striker-spear",
    "candidato": "a059",
-   "rotulo": null,
-   "rotuloImg": "arts/a059/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elemental Striker Spear",
+   "rotuloImg": "arts/elemental-striker-spear/rotulo.png",
+   "unitKey": "elemental-striker",
+   "equipmentTags": [
+    "Ancient Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2232,14 +2332,16 @@
    "pendencias": []
   },
   {
-   "id": "a060",
+   "id": "elemental-striker-sword",
    "candidato": "a060",
-   "rotulo": null,
-   "rotuloImg": "arts/a060/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elemental Striker Sword",
+   "rotuloImg": "arts/elemental-striker-sword/rotulo.png",
+   "unitKey": "elemental-striker",
+   "equipmentTags": [
+    "Ancient Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2271,14 +2373,16 @@
    "pendencias": []
   },
   {
-   "id": "a061",
+   "id": "elemental-striker-distortion-gun",
    "candidato": "a061",
-   "rotulo": null,
-   "rotuloImg": "arts/a061/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elemental Striker Distortion Gun",
+   "rotuloImg": "arts/elemental-striker-distortion-gun/rotulo.png",
+   "unitKey": "elemental-protector",
+   "equipmentTags": [
+    "Warp-Blast Gun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2310,14 +2414,16 @@
    "pendencias": []
   },
   {
-   "id": "a062",
+   "id": "elemental-striker-wraith-cannon",
    "candidato": "a062",
-   "rotulo": null,
-   "rotuloImg": "arts/a062/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elemental Striker Wraith Cannon",
+   "rotuloImg": "arts/elemental-striker-wraith-cannon/rotulo.png",
+   "unitKey": "elemental-protector",
+   "equipmentTags": [
+    "Elemental Cannon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2349,14 +2455,16 @@
    "pendencias": []
   },
   {
-   "id": "a063",
+   "id": "jetbike-elite-borda",
    "candidato": "a063",
-   "rotulo": null,
-   "rotuloImg": "arts/a063/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetbike Elite",
+   "rotuloImg": "arts/jetbike-elite-borda/rotulo.png",
+   "unitKey": "elite-protector",
+   "equipmentTags": [
+    "Assault Jetbike|Combat Jetbike"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2377,14 +2485,17 @@
    ]
   },
   {
-   "id": "a064",
+   "id": "jetbike-acolyte-pistol-borda",
    "candidato": "a064",
-   "rotulo": null,
-   "rotuloImg": "arts/a064/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetbike Acolyte Pistol",
+   "rotuloImg": "arts/jetbike-acolyte-pistol-borda/rotulo.png",
+   "unitKey": "acolyte",
+   "equipmentTags": [
+    "Assault Jetbike",
+    "Shard Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2406,14 +2517,17 @@
    ]
   },
   {
-   "id": "a065",
+   "id": "jetbike-acolyte-sword-borda",
    "candidato": "a065",
-   "rotulo": null,
-   "rotuloImg": "arts/a065/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetbike Acolyte Sword",
+   "rotuloImg": "arts/jetbike-acolyte-sword-borda/rotulo.png",
+   "unitKey": "acolyte",
+   "equipmentTags": [
+    "Assault Jetbike",
+    "Ancient Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2434,14 +2548,16 @@
    ]
   },
   {
-   "id": "a066",
+   "id": "jetbike-striker-sword-borda",
    "candidato": "a066",
-   "rotulo": null,
-   "rotuloImg": "arts/a066/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetbike Striker Sword",
+   "rotuloImg": "arts/jetbike-striker-sword-borda/rotulo.png",
+   "unitKey": "jetbike-striker",
+   "equipmentTags": [
+    "Ancient Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2462,14 +2578,16 @@
    ]
   },
   {
-   "id": "a067",
+   "id": "jetbike-striker-lance-borda",
    "candidato": "a067",
-   "rotulo": null,
-   "rotuloImg": "arts/a067/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetbike Striker Lance",
+   "rotuloImg": "arts/jetbike-striker-lance-borda/rotulo.png",
+   "unitKey": "jetbike-striker",
+   "equipmentTags": [
+    "Ancient Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2490,14 +2608,14 @@
    ]
   },
   {
-   "id": "a068",
+   "id": "jetbike-protector-borda",
    "candidato": "a068",
-   "rotulo": null,
-   "rotuloImg": "arts/a068/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Jetbike Protector",
+   "rotuloImg": "arts/jetbike-protector-borda/rotulo.png",
+   "unitKey": "jetbike-protector",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2518,14 +2636,16 @@
    ]
   },
   {
-   "id": "a069",
+   "id": "jetbike-protector-turret-borda",
    "candidato": "a069",
-   "rotulo": null,
-   "rotuloImg": "arts/a069/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetbike Protector Turret",
+   "rotuloImg": "arts/jetbike-protector-turret-borda/rotulo.png",
+   "unitKey": "jetbike-protector",
+   "equipmentTags": [
+    "Shard Cannon|Burst Laser"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2546,14 +2666,16 @@
    ]
   },
   {
-   "id": "a070",
+   "id": "jetbike-protector-sniper-borda",
    "candidato": "a070",
-   "rotulo": null,
-   "rotuloImg": "arts/a070/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetbike Protector Sniper",
+   "rotuloImg": "arts/jetbike-protector-sniper-borda/rotulo.png",
+   "unitKey": "jetbike-protector",
+   "equipmentTags": [
+    "Sniper Rifle|Shard-Sniper Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [

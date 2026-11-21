@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "mummified-undead",
- "faccao": "Mummified Undead",
+ "faccao": "Mummified Undead\r",
  "sistema": "aof",
  "pdf": {
   "nome": "Mummified_Undead_-_BW.pdf",
@@ -12,14 +12,16 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "king",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "King",
+   "rotuloImg": "arts/king/rotulo.png",
+   "unitKey": "royal-champion",
+   "equipmentTags": [
+    "Monarch"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +53,16 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "queen",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Queen",
+   "rotuloImg": "arts/queen/rotulo.png",
+   "unitKey": "royal-champion",
+   "equipmentTags": [
+    "Monarch"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -92,14 +96,16 @@
    ]
   },
   {
-   "id": "a003",
+   "id": "priest",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Priest",
+   "rotuloImg": "arts/priest/rotulo.png",
+   "unitKey": "skeleton-leader",
+   "equipmentTags": [
+    "Priest"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -131,14 +137,16 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "stone-shaper",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Stone Shaper",
+   "rotuloImg": "arts/stone-shaper/rotulo.png",
+   "unitKey": "skeleton-leader",
+   "equipmentTags": [
+    "Master Stone Shaper"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -170,14 +178,17 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "horse-king",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Horse King",
+   "rotuloImg": "arts/horse-king/rotulo.png",
+   "unitKey": "royal-champion",
+   "equipmentTags": [
+    "Monarch",
+    "Skeletal Steed"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -209,14 +220,17 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "beast-rider-king",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Beast Rider King",
+   "rotuloImg": "arts/beast-rider-king/rotulo.png",
+   "unitKey": "royal-champion",
+   "equipmentTags": [
+    "Monarch",
+    "Royal Beast"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -250,14 +264,17 @@
    ]
   },
   {
-   "id": "a007",
+   "id": "snake-king",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Snake King",
+   "rotuloImg": "arts/snake-king/rotulo.png",
+   "unitKey": "royal-champion",
+   "equipmentTags": [
+    "Monarch",
+    "Royal Snake"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -289,14 +306,16 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "warrior-sword",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Sword",
+   "rotuloImg": "arts/warrior-sword/rotulo.png",
+   "unitKey": "skeleton-warriors",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -328,14 +347,16 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "warrior-sword-copia-2",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Sword",
+   "rotuloImg": "arts/warrior-sword-copia-2/rotulo.png",
+   "unitKey": "skeleton-warriors",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -367,14 +388,16 @@
    "pendencias": []
   },
   {
-   "id": "a010",
+   "id": "warrior-spear",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Spear",
+   "rotuloImg": "arts/warrior-spear/rotulo.png",
+   "unitKey": "skeleton-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -406,14 +429,14 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "warrior-sergeant",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Sergeant",
+   "rotuloImg": "arts/warrior-sergeant/rotulo.png",
+   "unitKey": "skeleton-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -445,14 +468,14 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "warrior-musician",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Musician",
+   "rotuloImg": "arts/warrior-musician/rotulo.png",
+   "unitKey": "skeleton-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -484,14 +507,14 @@
    "pendencias": []
   },
   {
-   "id": "a013",
+   "id": "warrior-banner",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Banner",
+   "rotuloImg": "arts/warrior-banner/rotulo.png",
+   "unitKey": "skeleton-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -523,14 +546,16 @@
    "pendencias": []
   },
   {
-   "id": "a014",
+   "id": "kings-guard-sword",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "King’s Guard Sword",
+   "rotuloImg": "arts/kings-guard-sword/rotulo.png",
+   "unitKey": "royal-guard",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -562,14 +587,14 @@
    "pendencias": []
   },
   {
-   "id": "a015",
+   "id": "kings-guard-spear",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
+   "rotulo": "King’s Guard Spear",
+   "rotuloImg": "arts/kings-guard-spear/rotulo.png",
+   "unitKey": "royal-guard",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -601,14 +626,14 @@
    "pendencias": []
   },
   {
-   "id": "a016",
+   "id": "kings-guard-sergeant",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
+   "rotulo": "King’s Guard Sergeant",
+   "rotuloImg": "arts/kings-guard-sergeant/rotulo.png",
+   "unitKey": "royal-guard",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -640,14 +665,14 @@
    "pendencias": []
   },
   {
-   "id": "a017",
+   "id": "kings-guard-musician",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
+   "rotulo": "King’s Guard Musician",
+   "rotuloImg": "arts/kings-guard-musician/rotulo.png",
+   "unitKey": "royal-guard",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -679,14 +704,14 @@
    "pendencias": []
   },
   {
-   "id": "a018",
+   "id": "kings-guard-banner",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
+   "rotulo": "King’s Guard Banner",
+   "rotuloImg": "arts/kings-guard-banner/rotulo.png",
+   "unitKey": "royal-guard",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -718,14 +743,14 @@
    "pendencias": []
   },
   {
-   "id": "a019",
+   "id": "archer",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Archer",
+   "rotuloImg": "arts/archer/rotulo.png",
+   "unitKey": "skeleton-archers",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -757,14 +782,14 @@
    "pendencias": []
   },
   {
-   "id": "a020",
+   "id": "mummy",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Mummy",
+   "rotuloImg": "arts/mummy/rotulo.png",
+   "unitKey": "mummies",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -796,14 +821,16 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "horseman-sword",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Horseman Sword",
+   "rotuloImg": "arts/horseman-sword/rotulo.png",
+   "unitKey": "skeleton-horsemen",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -835,14 +862,16 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "horseman-spear",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Horseman Spear",
+   "rotuloImg": "arts/horseman-spear/rotulo.png",
+   "unitKey": "skeleton-horsemen",
+   "equipmentTags": [
+    "Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -874,14 +903,14 @@
    "pendencias": []
   },
   {
-   "id": "a023",
+   "id": "horseman-sergeant",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Horseman Sergeant",
+   "rotuloImg": "arts/horseman-sergeant/rotulo.png",
+   "unitKey": "skeleton-horsemen",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -913,14 +942,14 @@
    "pendencias": []
   },
   {
-   "id": "a024",
+   "id": "horseman-musician",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Horseman Musican",
+   "rotuloImg": "arts/horseman-musician/rotulo.png",
+   "unitKey": "skeleton-horsemen",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -952,14 +981,14 @@
    "pendencias": []
   },
   {
-   "id": "a025",
+   "id": "horseman-banner",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Horseman Banner",
+   "rotuloImg": "arts/horseman-banner/rotulo.png",
+   "unitKey": "skeleton-horsemen",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -991,14 +1020,16 @@
    "pendencias": []
   },
   {
-   "id": "a026",
+   "id": "horseman-archer",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Horseman Archer",
+   "rotuloImg": "arts/horseman-archer/rotulo.png",
+   "unitKey": "skeleton-horsemen",
+   "equipmentTags": [
+    "Bow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1030,14 +1061,16 @@
    "pendencias": []
   },
   {
-   "id": "a027",
+   "id": "beast-rider-sword",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Beast Rider Sword",
+   "rotuloImg": "arts/beast-rider-sword/rotulo.png",
+   "unitKey": "beast-riders",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1069,14 +1102,16 @@
    "pendencias": []
   },
   {
-   "id": "a028",
+   "id": "beast-rider-spear",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Beast Rider Spear",
+   "rotuloImg": "arts/beast-rider-spear/rotulo.png",
+   "unitKey": "beast-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1108,14 +1143,14 @@
    "pendencias": []
   },
   {
-   "id": "a029",
+   "id": "beast-rider-sergeant",
    "candidato": "a029",
-   "rotulo": null,
-   "rotuloImg": "arts/a029/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Beast Rider Sergeant",
+   "rotuloImg": "arts/beast-rider-sergeant/rotulo.png",
+   "unitKey": "beast-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1147,14 +1182,14 @@
    "pendencias": []
   },
   {
-   "id": "a030",
+   "id": "beast-rider-musician",
    "candidato": "a030",
-   "rotulo": null,
-   "rotuloImg": "arts/a030/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Beast Rider Musican",
+   "rotuloImg": "arts/beast-rider-musician/rotulo.png",
+   "unitKey": "beast-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1186,14 +1221,14 @@
    "pendencias": []
   },
   {
-   "id": "a031",
+   "id": "beast-rider-banner",
    "candidato": "a031",
-   "rotulo": null,
-   "rotuloImg": "arts/a031/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Beast Rider Banner",
+   "rotuloImg": "arts/beast-rider-banner/rotulo.png",
+   "unitKey": "beast-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1225,14 +1260,16 @@
    "pendencias": []
   },
   {
-   "id": "a032",
+   "id": "guardian-sword-1",
    "candidato": "a032",
-   "rotulo": null,
-   "rotuloImg": "arts/a032/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guardian Sword 1",
+   "rotuloImg": "arts/guardian-sword-1/rotulo.png",
+   "unitKey": "guardian-statues",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1264,14 +1301,16 @@
    "pendencias": []
   },
   {
-   "id": "a033",
+   "id": "guardian-sword-2",
    "candidato": "a033",
-   "rotulo": null,
-   "rotuloImg": "arts/a033/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guardian Sword 2",
+   "rotuloImg": "arts/guardian-sword-2/rotulo.png",
+   "unitKey": "guardian-statues",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1303,14 +1342,16 @@
    "pendencias": []
   },
   {
-   "id": "a034",
+   "id": "guardian-sword-3",
    "candidato": "a034",
-   "rotulo": null,
-   "rotuloImg": "arts/a034/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guardian Sword 3",
+   "rotuloImg": "arts/guardian-sword-3/rotulo.png",
+   "unitKey": "guardian-statues",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1342,14 +1383,14 @@
    "pendencias": []
   },
   {
-   "id": "a035",
+   "id": "guardian-spear-1",
    "candidato": "a035",
-   "rotulo": null,
-   "rotuloImg": "arts/a035/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Guardian Spear 1",
+   "rotuloImg": "arts/guardian-spear-1/rotulo.png",
+   "unitKey": "guardian-statues",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1381,14 +1422,14 @@
    "pendencias": []
   },
   {
-   "id": "a036",
+   "id": "guardian-spear-2",
    "candidato": "a036",
-   "rotulo": null,
-   "rotuloImg": "arts/a036/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Guardian Spear 2",
+   "rotuloImg": "arts/guardian-spear-2/rotulo.png",
+   "unitKey": "guardian-statues",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1420,14 +1461,14 @@
    "pendencias": []
   },
   {
-   "id": "a037",
+   "id": "guardian-spear-3",
    "candidato": "a037",
-   "rotulo": null,
-   "rotuloImg": "arts/a037/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Guardian Spear 3",
+   "rotuloImg": "arts/guardian-spear-3/rotulo.png",
+   "unitKey": "guardian-statues",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1459,14 +1500,16 @@
    "pendencias": []
   },
   {
-   "id": "a038",
+   "id": "guardian-bow-1",
    "candidato": "a038",
-   "rotulo": null,
-   "rotuloImg": "arts/a038/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guardian Bow 1",
+   "rotuloImg": "arts/guardian-bow-1/rotulo.png",
+   "unitKey": "guardian-statues",
+   "equipmentTags": [
+    "Great Bow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1498,14 +1541,16 @@
    "pendencias": []
   },
   {
-   "id": "a039",
+   "id": "guardian-bow-2",
    "candidato": "a039",
-   "rotulo": null,
-   "rotuloImg": "arts/a039/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guardian Bow 2",
+   "rotuloImg": "arts/guardian-bow-2/rotulo.png",
+   "unitKey": "guardian-statues",
+   "equipmentTags": [
+    "Great Bow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1537,14 +1582,14 @@
    "pendencias": []
   },
   {
-   "id": "a040",
+   "id": "guardian-bow-3",
    "candidato": "a040",
-   "rotulo": null,
-   "rotuloImg": "arts/a040/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Guardian Bow 3",
+   "rotuloImg": "arts/guardian-bow-3/rotulo.png",
+   "unitKey": "guardian-statues",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1578,14 +1623,14 @@
    ]
   },
   {
-   "id": "a041",
+   "id": "snakeman",
    "candidato": "a041",
-   "rotulo": null,
-   "rotuloImg": "arts/a041/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Snakeman",
+   "rotuloImg": "arts/snakeman/rotulo.png",
+   "unitKey": "snakemen",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1619,14 +1664,14 @@
    ]
   },
   {
-   "id": "a042",
+   "id": "snake-rider",
    "candidato": "a042",
-   "rotulo": null,
-   "rotuloImg": "arts/a042/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Snake Rider",
+   "rotuloImg": "arts/snake-rider/rotulo.png",
+   "unitKey": "snake-riders",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1658,14 +1703,14 @@
    "pendencias": []
   },
   {
-   "id": "a043",
+   "id": "snake-rider-sergeant",
    "candidato": "a043",
-   "rotulo": null,
-   "rotuloImg": "arts/a043/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Snake Rider Sergeant",
+   "rotuloImg": "arts/snake-rider-sergeant/rotulo.png",
+   "unitKey": "snake-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1699,14 +1744,14 @@
    ]
   },
   {
-   "id": "a044",
+   "id": "snake-rider-musician",
    "candidato": "a044",
-   "rotulo": null,
-   "rotuloImg": "arts/a044/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Snake Rider Musician",
+   "rotuloImg": "arts/snake-rider-musician/rotulo.png",
+   "unitKey": "snake-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1738,14 +1783,14 @@
    "pendencias": []
   },
   {
-   "id": "a045",
+   "id": "snake-rider-banner",
    "candidato": "a045",
-   "rotulo": null,
-   "rotuloImg": "arts/a045/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Snake Rider Banner",
+   "rotuloImg": "arts/snake-rider-banner/rotulo.png",
+   "unitKey": "snake-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1779,14 +1824,14 @@
    ]
   },
   {
-   "id": "a046",
+   "id": "hunting-beast",
    "candidato": "a046",
-   "rotulo": null,
-   "rotuloImg": "arts/a046/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hunting Beast",
+   "rotuloImg": "arts/hunting-beast/rotulo.png",
+   "unitKey": "hunting-beasts",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1808,14 +1853,14 @@
    ]
   },
   {
-   "id": "a047",
+   "id": "swarm",
    "candidato": "a047",
-   "rotulo": null,
-   "rotuloImg": "arts/a047/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Swarm",
+   "rotuloImg": "arts/swarm/rotulo.png",
+   "unitKey": "scarab-swarms",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1849,14 +1894,14 @@
    ]
   },
   {
-   "id": "a048",
+   "id": "vulture",
    "candidato": "a048",
-   "rotulo": null,
-   "rotuloImg": "arts/a048/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Vulture",
+   "rotuloImg": "arts/vulture/rotulo.png",
+   "unitKey": "vultures",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1877,14 +1922,14 @@
    ]
   },
   {
-   "id": "a049",
+   "id": "death-casket",
    "candidato": "a049",
-   "rotulo": null,
-   "rotuloImg": "arts/a049/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Death Casket",
+   "rotuloImg": "arts/death-casket/rotulo.png",
+   "unitKey": "death-casket",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1916,14 +1961,14 @@
    "pendencias": []
   },
   {
-   "id": "a050",
+   "id": "scorpion",
    "candidato": "a050",
-   "rotulo": null,
-   "rotuloImg": "arts/a050/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Scorpion",
+   "rotuloImg": "arts/scorpion/rotulo.png",
+   "unitKey": "great-scorpion",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1955,14 +2000,16 @@
    "pendencias": []
   },
   {
-   "id": "a051",
+   "id": "warrior-sword-borda",
    "candidato": "a051",
-   "rotulo": null,
-   "rotuloImg": "arts/a051/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Sword",
+   "rotuloImg": "arts/warrior-sword-borda/rotulo.png",
+   "unitKey": "skeleton-warriors",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1983,14 +2030,16 @@
    ]
   },
   {
-   "id": "a052",
+   "id": "horseman-sword-borda",
    "candidato": "a052",
-   "rotulo": null,
-   "rotuloImg": "arts/a052/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Horseman Sword",
+   "rotuloImg": "arts/horseman-sword-borda/rotulo.png",
+   "unitKey": "skeleton-horsemen",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2011,14 +2060,16 @@
    ]
   },
   {
-   "id": "a053",
+   "id": "beast-rider-spear-borda",
    "candidato": "a053",
-   "rotulo": null,
-   "rotuloImg": "arts/a053/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Beast Rider Spear",
+   "rotuloImg": "arts/beast-rider-spear-borda/rotulo.png",
+   "unitKey": "beast-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2039,14 +2090,14 @@
    ]
   },
   {
-   "id": "a054",
+   "id": "hunting-beast-borda",
    "candidato": "a054",
-   "rotulo": null,
-   "rotuloImg": "arts/a054/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hunting Beast",
+   "rotuloImg": "arts/hunting-beast-borda/rotulo.png",
+   "unitKey": "hunting-beasts",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2068,14 +2119,14 @@
    ]
   },
   {
-   "id": "a055",
+   "id": "hunting-beast-borda-2",
    "candidato": "a055",
-   "rotulo": null,
-   "rotuloImg": "arts/a055/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hunting Beast",
+   "rotuloImg": "arts/hunting-beast-borda-2/rotulo.png",
+   "unitKey": "hunting-beasts",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2097,14 +2148,14 @@
    ]
   },
   {
-   "id": "a056",
+   "id": "vulture-borda",
    "candidato": "a056",
-   "rotulo": null,
-   "rotuloImg": "arts/a056/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Vulture",
+   "rotuloImg": "arts/vulture-borda/rotulo.png",
+   "unitKey": "vultures",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [

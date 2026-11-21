@@ -1,0 +1,1093 @@
+{
+ "packId": "eternal-dynasty",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "GF",
+   "slug": "grimdark-future",
+   "armyForgeId": 2
+  },
+  {
+   "code": "GFF",
+   "slug": "grimdark-future-firefight",
+   "armyForgeId": 3
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/vux1Y5vvULmaxZ8P-gs3-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/vux1Y5vvULmaxZ8P-gs2-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-*.png, army books v3.6.0 (os dois sistemas). Variantes com o mesmo rótulo e cabeça diferente recebem sufixo -a/-b/-c; candidatos que só têm um estilo e repetem uma figura já listada recebem sufixo -borda. Tags com \"|\" listam nomes alternativos do army book.",
+ "unidades": {
+  "dynasty-leader": {
+   "armyForgeUnitId": "bEeuIws"
+  },
+  "oni-captain": {
+   "armyForgeUnitId": "8sSO8Od"
+  },
+  "warrior": {
+   "armyForgeUnitId": "tBFpCN2"
+  },
+  "scout": {
+   "armyForgeUnitId": "kBJrV-w"
+  },
+  "ninja": {
+   "armyForgeUnitId": "6S-Xqit"
+  },
+  "royal-guard": {
+   "armyForgeUnitId": "nT_lDKZ"
+  },
+  "attack-drone": {
+   "armyForgeUnitId": "CdkWnvx"
+  },
+  "oni": {
+   "armyForgeUnitId": "bILTbNt"
+  },
+  "cyber-lizards": {
+   "armyForgeUnitId": "6LpK3Hi"
+  },
+  "cyber-bird-swarm": {
+   "armyForgeUnitId": "e54b888"
+  },
+  "cyber-beast": {
+   "armyForgeUnitId": "OaKZu-Y"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "captain-pistol-katana",
+   "rotulo": "Captain Pistol Katana",
+   "confiancaRotulo": "alta",
+   "unitKey": "dynasty-leader",
+   "equipmentTags": [
+    "Captain",
+    "Pistol",
+    "Dynasty Sword|Ninja Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Captain",
+     "armyBook": "Dynasty Leader + Captain"
+    },
+    {
+     "pdf": "Katana",
+     "armyBook": [
+      "Dynasty Sword",
+      "Ninja Sword"
+     ]
+    }
+   ],
+   "notas": "Captain é upgrade do Dynasty Leader (estandarte nas costas). Katana: Dynasty Sword ou Ninja Sword"
+  },
+  "a002": {
+   "artId": "captain-hook-pistol",
+   "rotulo": "Captain Hook Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "dynasty-leader",
+   "equipmentTags": [
+    "Captain",
+    "Hook Sword",
+    "Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Captain",
+     "armyBook": "Dynasty Leader + Captain"
+    },
+    {
+     "pdf": "Hook",
+     "armyBook": "Hook Sword"
+    }
+   ],
+   "notas": "Captain é upgrade do Dynasty Leader (estandarte nas costas)."
+  },
+  "a003": {
+   "artId": "captain-hook-katana",
+   "rotulo": "Captain Hook Katana",
+   "confiancaRotulo": "alta",
+   "unitKey": "dynasty-leader",
+   "equipmentTags": [
+    "Captain",
+    "Hook Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Captain",
+     "armyBook": "Dynasty Leader + Captain"
+    },
+    {
+     "pdf": "Hook",
+     "armyBook": "Hook Sword"
+    },
+    {
+     "pdf": "Katana",
+     "armyBook": [
+      "Dynasty Sword",
+      "Ninja Sword"
+     ]
+    }
+   ],
+   "notas": "Captain é upgrade do Dynasty Leader (estandarte nas costas). o army book não permite Hook Sword + espada juntas (só Dual Hook Swords / Dual Dynasty Swords); tag só da Hook Sword. Cabeça diferente (chapéu)"
+  },
+  "a004": {
+   "artId": "captain-pistols",
+   "rotulo": "Captain Pistols",
+   "confiancaRotulo": "alta",
+   "unitKey": "dynasty-leader",
+   "equipmentTags": [
+    "Captain",
+    "Dual Burst Pistols"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Captain",
+     "armyBook": "Dynasty Leader + Captain"
+    },
+    {
+     "pdf": "Pistols",
+     "armyBook": "Dual Burst Pistols"
+    }
+   ],
+   "notas": "Captain é upgrade do Dynasty Leader (estandarte nas costas)."
+  },
+  "a005": {
+   "artId": "captain-hook-pistol-2",
+   "rotulo": "Captain Hook Pistol 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "dynasty-leader",
+   "equipmentTags": [
+    "Captain",
+    "Hook Sword",
+    "Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Captain",
+     "armyBook": "Dynasty Leader + Captain"
+    },
+    {
+     "pdf": "Hook",
+     "armyBook": "Hook Sword"
+    }
+   ],
+   "notas": "Captain é upgrade do Dynasty Leader (estandarte nas costas). mesma pose de a002 com outra cabeça"
+  },
+  "a006": {
+   "artId": "drone-sage",
+   "rotulo": "Drone Sage",
+   "confiancaRotulo": "alta",
+   "unitKey": "dynasty-leader",
+   "equipmentTags": [
+    "Sage",
+    "Hover Alert-Drone"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Drone Sage",
+     "armyBook": "Dynasty Leader + Sage + Hover Alert-Drone"
+    }
+   ],
+   "notas": "sábio sobre plataforma flutuante. Só estilo fino; a052 é a mesma figura no estilo borda. Sage Myan (herói nomeado) também tem Hover Alert-Drone"
+  },
+  "a007": {
+   "artId": "sage",
+   "rotulo": "Sage",
+   "confiancaRotulo": "baixa",
+   "unitKey": "dynasty-leader",
+   "equipmentTags": [
+    "Sage"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sage",
+     "armyBook": "Dynasty Leader + Sage"
+    }
+   ],
+   "notas": "o recorte do rótulo tem \"Sage\" e, mais abaixo, \"Drone Sage\" (provavelmente o rótulo vizinho de a006); a figura é o sábio a pé"
+  },
+  "a008": {
+   "artId": "hunter",
+   "rotulo": "Hunter",
+   "confiancaRotulo": "alta",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "figura com lança e pistola, parece montada/ajoelhada (recorte cortado embaixo). Talvez o Hunt Master (Combat/Vanguard Hunt Master), upgrade de Cyber Lizards, Cyber-Bird Swarms e Cyber Beast; unidade ambígua"
+  },
+  "a009": {
+   "artId": "cyber-beast",
+   "rotulo": "Cyber Beast",
+   "confiancaRotulo": "alta",
+   "unitKey": "cyber-beast",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "besta robô grande (só no GF)"
+  },
+  "a010": {
+   "artId": "oni-captain-samurai",
+   "rotulo": "Oni Captain Samurai",
+   "confiancaRotulo": "alta",
+   "unitKey": "oni-captain",
+   "equipmentTags": [
+    "Great ONI Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Samurai",
+     "armyBook": "Great ONI Sword"
+    }
+   ],
+   "notas": "rótulo não nomeia arma; a figura segura uma espada longa (Great ONI Sword)"
+  },
+  "a011": {
+   "artId": "oni-captain-mace",
+   "rotulo": "Oni Captain Mace",
+   "confiancaRotulo": "alta",
+   "unitKey": "oni-captain",
+   "equipmentTags": [
+    "Great ONI Mace"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Mace",
+     "armyBook": "Great ONI Mace"
+    }
+   ],
+   "notas": ""
+  },
+  "a012": {
+   "artId": "oni-captain-guns",
+   "rotulo": "Oni Captain Guns",
+   "confiancaRotulo": "alta",
+   "unitKey": "oni-captain",
+   "equipmentTags": [
+    "Dual Gun-Fists"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guns",
+     "armyBook": "Dual Gun-Fists"
+    }
+   ],
+   "notas": "armas nos punhos; o padrão Dual Flame-Fists e os outros punhos (Rocket, Shredder etc.) ficam sem arte"
+  },
+  "a013": {
+   "artId": "warrior-sniper-rifle-a",
+   "rotulo": "Warrior Sniper Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Long Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sniper Rifle",
+     "armyBook": "Long Rifle"
+    }
+   ],
+   "notas": "Warriors não têm Sniper Rifle; a arma padrão (e com mais cópias no PDF) é Long Rifle. Variante de cabeça A"
+  },
+  "a014": {
+   "artId": "warrior-sniper-rifle-b",
+   "rotulo": "Warrior Sniper Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Long Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sniper Rifle",
+     "armyBook": "Long Rifle"
+    }
+   ],
+   "notas": "Warriors não têm Sniper Rifle; a arma padrão (e com mais cópias no PDF) é Long Rifle. Variante de cabeça B"
+  },
+  "a015": {
+   "artId": "warrior-carbine-a",
+   "rotulo": "Warrior Carbine",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Carbine"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "variante de cabeça A"
+  },
+  "a016": {
+   "artId": "warrior-carbine-b",
+   "rotulo": "Warrior Carbine",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Carbine"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "variante de cabeça B"
+  },
+  "a017": {
+   "artId": "warrior-shotgun-a",
+   "rotulo": "Warrior Shotgun",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Shotgun"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "variante de cabeça A"
+  },
+  "a018": {
+   "artId": "warrior-shotgun-b",
+   "rotulo": "Warrior Shotgun",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Shotgun"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "variante de cabeça B"
+  },
+  "a019": {
+   "artId": "warrior-plasma-1",
+   "rotulo": "Warrior Plasma 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Plasma",
+     "armyBook": "Plasma Rifle"
+    }
+   ],
+   "notas": "pose 1"
+  },
+  "a020": {
+   "artId": "warrior-plasma-2",
+   "rotulo": "Warrior Plasma 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Plasma",
+     "armyBook": "Plasma Rifle"
+    }
+   ],
+   "notas": "pose 2"
+  },
+  "a021": {
+   "artId": "warrior-flamer",
+   "rotulo": "Warrior Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Flamer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a022": {
+   "artId": "warrior-splinter-shot",
+   "rotulo": "Warrior Splinter Shot",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Shredder Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Splinter Shot",
+     "armyBook": "Shredder Rifle"
+    }
+   ],
+   "notas": "splinter ~ shredder; é a única arma especial dos Warriors que sobra"
+  },
+  "a023": {
+   "artId": "warrior-fusion",
+   "rotulo": "Warrior Fusion",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fusion",
+     "armyBook": "Fusion Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a024": {
+   "artId": "drone-a",
+   "rotulo": "Drone A",
+   "confiancaRotulo": "alta",
+   "unitKey": "attack-drone",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Drone",
+     "armyBook": "Attack Drones"
+    }
+   ],
+   "notas": "drone pequeno com haste; Attack Drones é a única unidade de drones. Também pode ser um dos drones de upgrade (Attack/Energy/Shield Drone) de outras unidades. Só estilo fino (a055 = borda)"
+  },
+  "a025": {
+   "artId": "drone-b",
+   "rotulo": "Drone B",
+   "confiancaRotulo": "alta",
+   "unitKey": "attack-drone",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Drone",
+     "armyBook": "Attack Drones"
+    }
+   ],
+   "notas": "drone pequeno com haste; Attack Drones é a única unidade de drones. Também pode ser um dos drones de upgrade (Attack/Energy/Shield Drone) de outras unidades. Só estilo fino (a056 = borda)"
+  },
+  "a026": {
+   "artId": "drone-c",
+   "rotulo": "Drone C",
+   "confiancaRotulo": "alta",
+   "unitKey": "attack-drone",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Drone",
+     "armyBook": "Attack Drones"
+    }
+   ],
+   "notas": "drone pequeno com haste; Attack Drones é a única unidade de drones. Também pode ser um dos drones de upgrade (Attack/Energy/Shield Drone) de outras unidades. Só estilo fino (a057 = borda)"
+  },
+  "a027": {
+   "artId": "turret",
+   "rotulo": "Turret",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Shishi Turret"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Turret",
+     "armyBook": "Shishi Turret"
+    }
+   ],
+   "notas": "torreta com cabeça de leão (shishi); opção de um modelo dos Warriors"
+  },
+  "a028": {
+   "artId": "royal-guard-v1",
+   "rotulo": "Royal Guard V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "royal-guard",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose 1"
+  },
+  "a029": {
+   "artId": "royal-guard-v2",
+   "rotulo": "Royal Guard V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "royal-guard",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose 2"
+  },
+  "a030": {
+   "artId": "scout-energy-rifle-a",
+   "rotulo": "Scout Energy Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "scout",
+   "equipmentTags": [
+    "Energy Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "variante de cabeça A"
+  },
+  "a031": {
+   "artId": "scout-energy-rifle-b",
+   "rotulo": "Scout Energy Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "scout",
+   "equipmentTags": [
+    "Energy Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "variante de cabeça B"
+  },
+  "a032": {
+   "artId": "scout-sniper-a",
+   "rotulo": "Scout Sniper",
+   "confiancaRotulo": "alta",
+   "unitKey": "scout",
+   "equipmentTags": [
+    "Sniper Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sniper",
+     "armyBook": "Sniper Rifle"
+    }
+   ],
+   "notas": "variante de cabeça A"
+  },
+  "a033": {
+   "artId": "scout-sniper-b",
+   "rotulo": "Scout Sniper",
+   "confiancaRotulo": "alta",
+   "unitKey": "scout",
+   "equipmentTags": [
+    "Sniper Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sniper",
+     "armyBook": "Sniper Rifle"
+    }
+   ],
+   "notas": "variante de cabeça B"
+  },
+  "a034": {
+   "artId": "ninja-sword-a",
+   "rotulo": "Ninja Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Dual Ninja Swords"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Dual Ninja Swords"
+    }
+   ],
+   "notas": "duas espadas na figura; variante de cabeça A"
+  },
+  "a035": {
+   "artId": "ninja-sword-b",
+   "rotulo": "Ninja Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Dual Ninja Swords"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Dual Ninja Swords"
+    }
+   ],
+   "notas": "duas espadas na figura; variante de cabeça B"
+  },
+  "a036": {
+   "artId": "ninja-sword-c",
+   "rotulo": "Ninja Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Dual Ninja Swords"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Dual Ninja Swords"
+    }
+   ],
+   "notas": "duas espadas na figura; variante de cabeça C"
+  },
+  "a037": {
+   "artId": "ninja-guns-a",
+   "rotulo": "Ninja Guns",
+   "confiancaRotulo": "alta",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Dual Auto-Guns"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guns",
+     "armyBook": "Dual Auto-Guns"
+    }
+   ],
+   "notas": "variante de cabeça A"
+  },
+  "a038": {
+   "artId": "ninja-guns-b",
+   "rotulo": "Ninja Guns",
+   "confiancaRotulo": "alta",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Dual Auto-Guns"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guns",
+     "armyBook": "Dual Auto-Guns"
+    }
+   ],
+   "notas": "variante de cabeça B"
+  },
+  "a039": {
+   "artId": "ninja-guns-c",
+   "rotulo": "Ninja Guns",
+   "confiancaRotulo": "alta",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Dual Auto-Guns"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guns",
+     "armyBook": "Dual Auto-Guns"
+    }
+   ],
+   "notas": "variante de cabeça C"
+  },
+  "a040": {
+   "artId": "ninja-sword-gun-a",
+   "rotulo": "Ninja Sword & Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Auto-Gun",
+    "Ninja Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword & Gun",
+     "armyBook": "Auto-Gun + Ninja Sword"
+    }
+   ],
+   "notas": "variante de cabeça A"
+  },
+  "a041": {
+   "artId": "ninja-sword-gun-b",
+   "rotulo": "Ninja Sword & Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Auto-Gun",
+    "Ninja Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword & Gun",
+     "armyBook": "Auto-Gun + Ninja Sword"
+    }
+   ],
+   "notas": "variante de cabeça B"
+  },
+  "a042": {
+   "artId": "ninja-sword-gun-c",
+   "rotulo": "Ninja Sword & Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Auto-Gun",
+    "Ninja Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword & Gun",
+     "armyBook": "Auto-Gun + Ninja Sword"
+    }
+   ],
+   "notas": "variante de cabeça C"
+  },
+  "a043": {
+   "artId": "oni-guns",
+   "rotulo": "ONI Guns",
+   "confiancaRotulo": "alta",
+   "unitKey": "oni",
+   "equipmentTags": [
+    "Dual Gun-Fists"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guns",
+     "armyBook": "Dual Gun-Fists"
+    }
+   ],
+   "notas": "armas nos punhos; o padrão Dual Flame-Fists e os outros punhos ficam sem arte"
+  },
+  "a044": {
+   "artId": "oni-sword-a",
+   "rotulo": "ONI Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "oni",
+   "equipmentTags": [
+    "ONI Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "ONI Sword"
+    }
+   ],
+   "notas": "com ONI Shield; variante de cabeça A"
+  },
+  "a045": {
+   "artId": "oni-sword-b",
+   "rotulo": "ONI Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "oni",
+   "equipmentTags": [
+    "ONI Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "ONI Sword"
+    }
+   ],
+   "notas": "com ONI Shield; variante de cabeça B"
+  },
+  "a046": {
+   "artId": "oni-glaive-a",
+   "rotulo": "ONI Glaive",
+   "confiancaRotulo": "alta",
+   "unitKey": "oni",
+   "equipmentTags": [
+    "ONI Glaive"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Glaive",
+     "armyBook": "ONI Glaive"
+    }
+   ],
+   "notas": "variante de cabeça A"
+  },
+  "a047": {
+   "artId": "oni-glaive-b",
+   "rotulo": "ONI Glaive",
+   "confiancaRotulo": "alta",
+   "unitKey": "oni",
+   "equipmentTags": [
+    "ONI Glaive"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Glaive",
+     "armyBook": "ONI Glaive"
+    }
+   ],
+   "notas": "variante de cabeça B (máscara oni)"
+  },
+  "a048": {
+   "artId": "oni-fists-a",
+   "rotulo": "ONI Fists",
+   "confiancaRotulo": "alta",
+   "unitKey": "oni",
+   "equipmentTags": [
+    "Dual ONI Fists"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fists",
+     "armyBook": "Dual ONI Fists"
+    }
+   ],
+   "notas": "variante de cabeça A"
+  },
+  "a049": {
+   "artId": "oni-fists-b",
+   "rotulo": "ONI Fists",
+   "confiancaRotulo": "alta",
+   "unitKey": "oni",
+   "equipmentTags": [
+    "Dual ONI Fists"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fists",
+     "armyBook": "Dual ONI Fists"
+    }
+   ],
+   "notas": "variante de cabeça B"
+  },
+  "a050": {
+   "artId": "cyber-birds",
+   "rotulo": "Cyber Birds",
+   "confiancaRotulo": "alta",
+   "unitKey": "cyber-bird-swarm",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Cyber-Bird Swarms. Só estilo fino; a061 é a mesma figura no estilo borda"
+  },
+  "a051": {
+   "artId": "cyber-beast-lizard",
+   "rotulo": "Cyber Beast",
+   "confiancaRotulo": "alta",
+   "unitKey": "cyber-lizards",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Cyber Beast",
+     "armyBook": "Cyber Lizards"
+    }
+   ],
+   "notas": "rótulo diz Cyber Beast, mas a figura é um lagarto robô com 5 cópias (Cyber Lizards: 5 modelos, base 60x35); o Cyber Beast de verdade é a009"
+  },
+  "a052": {
+   "artId": "drone-sage-borda",
+   "rotulo": "Drone Sage",
+   "confiancaRotulo": "alta",
+   "unitKey": "dynasty-leader",
+   "equipmentTags": [
+    "Sage",
+    "Hover Alert-Drone"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Drone Sage",
+     "armyBook": "Dynasty Leader + Sage + Hover Alert-Drone"
+    }
+   ],
+   "notas": "só estilo borda; mesma figura de a006 (só fino)"
+  },
+  "a053": {
+   "artId": "warrior-sniper-rifle-b-borda",
+   "rotulo": "Warrior Sniper Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Long Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sniper Rifle",
+     "armyBook": "Long Rifle"
+    }
+   ],
+   "notas": "Warriors não têm Sniper Rifle; a arma padrão (e com mais cópias no PDF) é Long Rifle. Só borda; mesma cabeça de a014"
+  },
+  "a054": {
+   "artId": "warrior-shotgun-b-borda",
+   "rotulo": "Warrior Shotgun",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Shotgun"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só borda; mesma cabeça de a018"
+  },
+  "a055": {
+   "artId": "drone-a-borda",
+   "rotulo": "Drone A",
+   "confiancaRotulo": "alta",
+   "unitKey": "attack-drone",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Drone",
+     "armyBook": "Attack Drones"
+    }
+   ],
+   "notas": "drone pequeno com haste; Attack Drones é a única unidade de drones. Também pode ser um dos drones de upgrade (Attack/Energy/Shield Drone) de outras unidades. Só borda; mesma figura de a024"
+  },
+  "a056": {
+   "artId": "drone-b-borda",
+   "rotulo": "Drone B",
+   "confiancaRotulo": "alta",
+   "unitKey": "attack-drone",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Drone",
+     "armyBook": "Attack Drones"
+    }
+   ],
+   "notas": "drone pequeno com haste; Attack Drones é a única unidade de drones. Também pode ser um dos drones de upgrade (Attack/Energy/Shield Drone) de outras unidades. Só borda; mesma figura de a025"
+  },
+  "a057": {
+   "artId": "drone-c-borda",
+   "rotulo": "Drone C",
+   "confiancaRotulo": "alta",
+   "unitKey": "attack-drone",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Drone",
+     "armyBook": "Attack Drones"
+    }
+   ],
+   "notas": "drone pequeno com haste; Attack Drones é a única unidade de drones. Também pode ser um dos drones de upgrade (Attack/Energy/Shield Drone) de outras unidades. Só borda; mesma figura de a026"
+  },
+  "a058": {
+   "artId": "royal-guard-v1-borda",
+   "rotulo": "Royal Guard V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "royal-guard",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só borda; mesma figura de a028"
+  },
+  "a059": {
+   "artId": "royal-guard-v2-borda",
+   "rotulo": "Royal Guard V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "royal-guard",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só borda; mesma figura de a029"
+  },
+  "a060": {
+   "artId": "oni-glaive-a-borda",
+   "rotulo": "ONI Glaive",
+   "confiancaRotulo": "alta",
+   "unitKey": "oni",
+   "equipmentTags": [
+    "ONI Glaive"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Glaive",
+     "armyBook": "ONI Glaive"
+    }
+   ],
+   "notas": "só borda; mesma cabeça de a046"
+  },
+  "a061": {
+   "artId": "cyber-birds-borda",
+   "rotulo": "Cyber Birds",
+   "confiancaRotulo": "alta",
+   "unitKey": "cyber-bird-swarm",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só borda; mesma figura de a050"
+  }
+ }
+}

@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "daemons-of-plague",
- "faccao": "Daemons of Plague",
+ "faccao": "Daemons of Plague\r",
  "sistema": "aof",
  "pdf": {
   "nome": "Daemons_of_Plague_BW.pdf",
@@ -12,14 +12,16 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "champion-gauntlet",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Gauntlet",
+   "rotuloImg": "arts/champion-gauntlet/rotulo.png",
+   "unitKey": "champion-of-plague",
+   "equipmentTags": [
+    "Daemon Gauntlet"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +53,16 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "champion-spear",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Spear",
+   "rotuloImg": "arts/champion-spear/rotulo.png",
+   "unitKey": "champion-of-plague",
+   "equipmentTags": [
+    "Daemon Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -90,14 +94,16 @@
    "pendencias": []
   },
   {
-   "id": "a003",
+   "id": "champion-sword",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Sword",
+   "rotuloImg": "arts/champion-sword/rotulo.png",
+   "unitKey": "champion-of-plague",
+   "equipmentTags": [
+    "Plague Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -129,14 +135,16 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "warrior-sword",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Sword",
+   "rotuloImg": "arts/warrior-sword/rotulo.png",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [
+    "Plague Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -168,14 +176,16 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "warrior-sickle",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Sickle",
+   "rotuloImg": "arts/warrior-sickle/rotulo.png",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -207,14 +217,16 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "warrior-greataxe",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Greataxe",
+   "rotuloImg": "arts/warrior-greataxe/rotulo.png",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -246,14 +258,16 @@
    "pendencias": []
   },
   {
-   "id": "a007",
+   "id": "warrior-spear",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Spear",
+   "rotuloImg": "arts/warrior-spear/rotulo.png",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -285,14 +299,16 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "warrior-mace",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Mace",
+   "rotuloImg": "arts/warrior-mace/rotulo.png",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -324,14 +340,16 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "warrior-halberd",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Halberd",
+   "rotuloImg": "arts/warrior-halberd/rotulo.png",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [
+    "Halberd"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -363,14 +381,14 @@
    "pendencias": []
   },
   {
-   "id": "a010",
+   "id": "warrior-sargeant",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Sargeant",
+   "rotuloImg": "arts/warrior-sargeant/rotulo.png",
+   "unitKey": "plague-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -402,14 +420,14 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "warrior-musician",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Musician",
+   "rotuloImg": "arts/warrior-musician/rotulo.png",
+   "unitKey": "plague-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -441,14 +459,14 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "warrior-banner",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Banner",
+   "rotuloImg": "arts/warrior-banner/rotulo.png",
+   "unitKey": "plague-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -480,14 +498,14 @@
    "pendencias": []
   },
   {
-   "id": "a013",
+   "id": "fury-v1",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fury (V1)",
+   "rotuloImg": "arts/fury-v1/rotulo.png",
+   "unitKey": "plague-furies",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -519,14 +537,14 @@
    "pendencias": []
   },
   {
-   "id": "a014",
+   "id": "fury-v2",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fury (V2)",
+   "rotuloImg": "arts/fury-v2/rotulo.png",
+   "unitKey": "plague-furies",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -558,14 +576,14 @@
    "pendencias": []
   },
   {
-   "id": "a015",
+   "id": "fly-rider",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fly Rider",
+   "rotuloImg": "arts/fly-rider/rotulo.png",
+   "unitKey": "plague-fly-riders",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -586,14 +604,14 @@
    ]
   },
   {
-   "id": "a016",
+   "id": "sargeant",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Sargeant",
+   "rotuloImg": "arts/sargeant/rotulo.png",
+   "unitKey": "plague-fly-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -614,14 +632,14 @@
    ]
   },
   {
-   "id": "a017",
+   "id": "banner",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Banner",
+   "rotuloImg": "arts/banner/rotulo.png",
+   "unitKey": "plague-fly-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -653,14 +671,14 @@
    "pendencias": []
   },
   {
-   "id": "a018",
+   "id": "musician",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Musician",
+   "rotuloImg": "arts/musician/rotulo.png",
+   "unitKey": "plague-fly-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -681,14 +699,14 @@
    ]
   },
   {
-   "id": "a019",
+   "id": "swarm-v1",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Swarm (V1)",
+   "rotuloImg": "arts/swarm-v1/rotulo.png",
+   "unitKey": "plague-swarms",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -720,14 +738,14 @@
    "pendencias": []
   },
   {
-   "id": "a020",
+   "id": "swarm-v2",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Swarm (V2)",
+   "rotuloImg": "arts/swarm-v2/rotulo.png",
+   "unitKey": "plague-swarms",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -759,14 +777,14 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "swarm-v3",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Swarm (V3)",
+   "rotuloImg": "arts/swarm-v3/rotulo.png",
+   "unitKey": "plague-swarms",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -798,14 +816,14 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "harbinger",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Harbinger",
+   "rotuloImg": "arts/harbinger/rotulo.png",
+   "unitKey": "harbinger-of-plague",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -837,14 +855,16 @@
    "pendencias": []
   },
   {
-   "id": "a023",
+   "id": "warrior-sword-borda",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Sword",
+   "rotuloImg": "arts/warrior-sword-borda/rotulo.png",
+   "unitKey": "plague-warriors",
+   "equipmentTags": [
+    "Plague Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -865,14 +885,14 @@
    ]
   },
   {
-   "id": "a024",
+   "id": "fly-rider-borda",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fly Rider",
+   "rotuloImg": "arts/fly-rider-borda/rotulo.png",
+   "unitKey": "plague-fly-riders",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -893,14 +913,14 @@
    ]
   },
   {
-   "id": "a025",
+   "id": "sargeant-borda",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Sargeant",
+   "rotuloImg": "arts/sargeant-borda/rotulo.png",
+   "unitKey": "plague-fly-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -921,14 +941,14 @@
    ]
   },
   {
-   "id": "a026",
+   "id": "musician-borda",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Musician",
+   "rotuloImg": "arts/musician-borda/rotulo.png",
+   "unitKey": "plague-fly-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [

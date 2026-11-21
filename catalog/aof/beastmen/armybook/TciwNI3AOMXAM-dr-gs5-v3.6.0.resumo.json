@@ -1,0 +1,945 @@
+{
+  "armyBook": {
+    "id": "TciwNI3AOMXAM-dr",
+    "nome": "Beastmen",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-09T01:58:19.787Z",
+    "sistema": "age-of-fantasy-skirmish",
+    "sistemaId": 5
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "ctRPUzS",
+      "nome": "Hakemba",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Mabalo Dual Staves"
+      ],
+      "itens": [
+        {
+          "nome": "Buried Hatred",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Buried Hatred",
+          "ganha": [
+            "Buried Hatred - Leader"
+          ]
+        },
+        {
+          "secao": "Replace Buried Hatred",
+          "ganha": [
+            "Shaman"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qt6GWWu",
+      "nome": "Kemba Brute Boss",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Flame Bombs",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Flameforged Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Flameforged Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Flame Bomb",
+          "ganha": [
+            "Throwing Axes"
+          ]
+        },
+        {
+          "secao": "Replace Flame Bomb",
+          "ganha": [
+            "Hunting Harpoons"
+          ]
+        },
+        {
+          "secao": "Replace Flame Bomb",
+          "ganha": [
+            "Barbed Net"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Brute Charge"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pride Captain"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Legacy Defender"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Great Despoiler"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wdLZRL7",
+      "nome": "Ndoli Beast Lord",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Flameforged Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Flame Bombs",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Throwing Axes",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Flameforged Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Axe",
+          "ganha": [
+            "Barbed Net"
+          ]
+        },
+        {
+          "secao": "Replace Flame Bomb",
+          "ganha": [
+            "Hunting Harpoons"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Beast Companion"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pride Captain"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Army Standard Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Legacy Defender"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Great Despoiler"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pathfinder"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GfyrCwd",
+      "nome": "Ndwari Centaur Boss",
+      "tamanho": 1,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Lance"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Flameforged Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Shaman Staff"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Throwing Axes",
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Flame Bombs",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Lance",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Lance",
+          "ganha": [
+            "Flameforged Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Axe",
+          "ganha": [
+            "Barbed Net"
+          ]
+        },
+        {
+          "secao": "Replace Flame Bomb",
+          "ganha": [
+            "Hunting Harpoons"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pride Captain"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Holy Tree's Avenger"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Legacy Defender"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Shaman"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Shaman"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pathfinder"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vCLM1-8",
+      "nome": "Waheni Hunt Master",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Flameforged Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Triple Shortbow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Throwing Axes",
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Shaman Staff"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Flameforged Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Axe",
+          "ganha": [
+            "Barbed Net"
+          ]
+        },
+        {
+          "secao": "Replace Triple Shortbow",
+          "ganha": [
+            "Heavy Kill-Bow"
+          ]
+        },
+        {
+          "secao": "Replace Triple Shortbow",
+          "ganha": [
+            "Hunting Harpoons"
+          ]
+        },
+        {
+          "secao": "Replace Triple Shortbow",
+          "ganha": [
+            "Flame Bombs"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Raider Cloak"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pride Captain"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Holy Tree's Avenger"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Shaman"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Great Despoiler"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pathfinder"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Shaman"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Ny-d4S5",
+      "nome": "Hapari Harpy",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Razor Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Razor Claws",
+          "ganha": [
+            "Throwing Axes",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Coordinated Hunt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qexD7jM",
+      "nome": "Ndoli Warrior",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Dual Hand Weapons"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SVFVgdJ",
+      "nome": "Sambari Hound",
+      "tamanho": 1,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Jagged Teeth"
+      ],
+      "itens": [
+        {
+          "nome": "Bounding Advance",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Jagged Teeth",
+          "ganha": [
+            "Sharp Claws"
+          ]
+        },
+        {
+          "secao": "Replace Jagged Teeth",
+          "ganha": [
+            "Razor Claws"
+          ]
+        },
+        {
+          "secao": "Replace Bounding Advance",
+          "ganha": [
+            "Pursuit Predator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8EzZLWg",
+      "nome": "Waheni Raider",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Shortbow",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Shortbow",
+          "ganha": [
+            "Triple Shortbow"
+          ]
+        },
+        {
+          "secao": "Replace Shortbow",
+          "ganha": [
+            "Heavy Kill-Bow"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Coordinated Hunt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "49PAMNU",
+      "nome": "Ndoli Elite",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Flameforged Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Headtaker Axe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0OibnBL",
+      "nome": "Ndwari Centaur",
+      "tamanho": 1,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Lance"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Lance",
+          "ganha": [
+            "Throwing Axes"
+          ]
+        },
+        {
+          "secao": "Replace Lance",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Lance",
+          "ganha": [
+            "Flameforged Weapon"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Wandering Shaman"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Coordinated Hunt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ygSV4y6",
+      "nome": "Waheni Hunters",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Dual Hand Weapons"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Coordinated Hunt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wFBMdqe",
+      "nome": "Crazed Boar",
+      "tamanho": 1,
+      "bases": {
+        "round": "75x46",
+        "square": "75x50"
+      },
+      "armas": [
+        "Jagged Tusks"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Jagged Tusk",
+          "ganha": [
+            "Great Heavy Tusks"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r4tGNht",
+      "nome": "Kemba Brute",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Throwing Axes",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Flameforged Weapon"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Brute Charge"
+          ]
+        }
+      ]
+    }
+  ]
+}

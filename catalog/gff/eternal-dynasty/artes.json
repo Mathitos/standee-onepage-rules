@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "eternal-dynasty",
- "faccao": "Eternal Dynasty",
+ "faccao": "Eternal Dynasty\r",
  "sistema": "gff",
  "pdf": {
   "nome": "Eternal_Dynasty_-_BW.pdf",
@@ -12,14 +12,18 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "captain-pistol-katana",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Captain Pistol Katana",
+   "rotuloImg": "arts/captain-pistol-katana/rotulo.png",
+   "unitKey": "dynasty-leader",
+   "equipmentTags": [
+    "Captain",
+    "Pistol",
+    "Dynasty Sword|Ninja Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +55,18 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "captain-hook-pistol",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Captain Hook Pistol",
+   "rotuloImg": "arts/captain-hook-pistol/rotulo.png",
+   "unitKey": "dynasty-leader",
+   "equipmentTags": [
+    "Captain",
+    "Hook Sword",
+    "Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -90,14 +98,17 @@
    "pendencias": []
   },
   {
-   "id": "a003",
+   "id": "captain-hook-katana",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Captain Hook Katana",
+   "rotuloImg": "arts/captain-hook-katana/rotulo.png",
+   "unitKey": "dynasty-leader",
+   "equipmentTags": [
+    "Captain",
+    "Hook Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -129,14 +140,17 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "captain-pistols",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Captain Pistols",
+   "rotuloImg": "arts/captain-pistols/rotulo.png",
+   "unitKey": "dynasty-leader",
+   "equipmentTags": [
+    "Captain",
+    "Dual Burst Pistols"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -168,14 +182,18 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "captain-hook-pistol-2",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Captain Hook Pistol 2",
+   "rotuloImg": "arts/captain-hook-pistol-2/rotulo.png",
+   "unitKey": "dynasty-leader",
+   "equipmentTags": [
+    "Captain",
+    "Hook Sword",
+    "Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -207,14 +225,17 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "drone-sage",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Drone Sage",
+   "rotuloImg": "arts/drone-sage/rotulo.png",
+   "unitKey": "dynasty-leader",
+   "equipmentTags": [
+    "Sage",
+    "Hover Alert-Drone"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -235,14 +256,16 @@
    ]
   },
   {
-   "id": "a007",
+   "id": "sage",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Sage",
+   "rotuloImg": "arts/sage/rotulo.png",
+   "unitKey": "dynasty-leader",
+   "equipmentTags": [
+    "Sage"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -274,14 +297,14 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "hunter",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
+   "rotulo": "Hunter",
+   "rotuloImg": "arts/hunter/rotulo.png",
    "unitKey": null,
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -315,14 +338,14 @@
    ]
   },
   {
-   "id": "a009",
+   "id": "cyber-beast",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Cyber Beast",
+   "rotuloImg": "arts/cyber-beast/rotulo.png",
+   "unitKey": "cyber-beast",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -354,14 +377,16 @@
    "pendencias": []
   },
   {
-   "id": "a010",
+   "id": "oni-captain-samurai",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Oni Captain Samurai",
+   "rotuloImg": "arts/oni-captain-samurai/rotulo.png",
+   "unitKey": "oni-captain",
+   "equipmentTags": [
+    "Great ONI Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -393,14 +418,16 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "oni-captain-mace",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Oni Captain Mace",
+   "rotuloImg": "arts/oni-captain-mace/rotulo.png",
+   "unitKey": "oni-captain",
+   "equipmentTags": [
+    "Great ONI Mace"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -432,14 +459,16 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "oni-captain-guns",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Oni Captain Guns",
+   "rotuloImg": "arts/oni-captain-guns/rotulo.png",
+   "unitKey": "oni-captain",
+   "equipmentTags": [
+    "Dual Gun-Fists"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -471,14 +500,16 @@
    "pendencias": []
   },
   {
-   "id": "a013",
+   "id": "warrior-sniper-rifle-a",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Sniper Rifle",
+   "rotuloImg": "arts/warrior-sniper-rifle-a/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Long Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -510,14 +541,16 @@
    "pendencias": []
   },
   {
-   "id": "a014",
+   "id": "warrior-sniper-rifle-b",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Sniper Rifle",
+   "rotuloImg": "arts/warrior-sniper-rifle-b/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Long Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -549,14 +582,16 @@
    "pendencias": []
   },
   {
-   "id": "a015",
+   "id": "warrior-carbine-a",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Carbine",
+   "rotuloImg": "arts/warrior-carbine-a/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Carbine"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -588,14 +623,16 @@
    "pendencias": []
   },
   {
-   "id": "a016",
+   "id": "warrior-carbine-b",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Carbine",
+   "rotuloImg": "arts/warrior-carbine-b/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Carbine"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -627,14 +664,16 @@
    "pendencias": []
   },
   {
-   "id": "a017",
+   "id": "warrior-shotgun-a",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Shotgun",
+   "rotuloImg": "arts/warrior-shotgun-a/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Shotgun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -666,14 +705,16 @@
    "pendencias": []
   },
   {
-   "id": "a018",
+   "id": "warrior-shotgun-b",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Shotgun",
+   "rotuloImg": "arts/warrior-shotgun-b/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Shotgun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -705,14 +746,16 @@
    "pendencias": []
   },
   {
-   "id": "a019",
+   "id": "warrior-plasma-1",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Plasma 1",
+   "rotuloImg": "arts/warrior-plasma-1/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -744,14 +787,16 @@
    "pendencias": []
   },
   {
-   "id": "a020",
+   "id": "warrior-plasma-2",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Plasma 2",
+   "rotuloImg": "arts/warrior-plasma-2/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -783,14 +828,16 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "warrior-flamer",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Flamer",
+   "rotuloImg": "arts/warrior-flamer/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -822,14 +869,16 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "warrior-splinter-shot",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Splinter Shot",
+   "rotuloImg": "arts/warrior-splinter-shot/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Shredder Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -861,14 +910,16 @@
    "pendencias": []
   },
   {
-   "id": "a023",
+   "id": "warrior-fusion",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Fusion",
+   "rotuloImg": "arts/warrior-fusion/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -900,14 +951,14 @@
    "pendencias": []
   },
   {
-   "id": "a024",
+   "id": "drone-a",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Drone A",
+   "rotuloImg": "arts/drone-a/rotulo.png",
+   "unitKey": "attack-drone",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -928,14 +979,14 @@
    ]
   },
   {
-   "id": "a025",
+   "id": "drone-b",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Drone B",
+   "rotuloImg": "arts/drone-b/rotulo.png",
+   "unitKey": "attack-drone",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -956,14 +1007,14 @@
    ]
   },
   {
-   "id": "a026",
+   "id": "drone-c",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Drone C",
+   "rotuloImg": "arts/drone-c/rotulo.png",
+   "unitKey": "attack-drone",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -984,14 +1035,16 @@
    ]
   },
   {
-   "id": "a027",
+   "id": "turret",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Turret",
+   "rotuloImg": "arts/turret/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Shishi Turret"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1025,14 +1078,14 @@
    ]
   },
   {
-   "id": "a028",
+   "id": "royal-guard-v1",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Royal Guard V1",
+   "rotuloImg": "arts/royal-guard-v1/rotulo.png",
+   "unitKey": "royal-guard",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1066,14 +1119,14 @@
    ]
   },
   {
-   "id": "a029",
+   "id": "royal-guard-v2",
    "candidato": "a029",
-   "rotulo": null,
-   "rotuloImg": "arts/a029/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Royal Guard V2",
+   "rotuloImg": "arts/royal-guard-v2/rotulo.png",
+   "unitKey": "royal-guard",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1107,14 +1160,16 @@
    ]
   },
   {
-   "id": "a030",
+   "id": "scout-energy-rifle-a",
    "candidato": "a030",
-   "rotulo": null,
-   "rotuloImg": "arts/a030/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Scout Energy Rifle",
+   "rotuloImg": "arts/scout-energy-rifle-a/rotulo.png",
+   "unitKey": "scout",
+   "equipmentTags": [
+    "Energy Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1148,14 +1203,16 @@
    ]
   },
   {
-   "id": "a031",
+   "id": "scout-energy-rifle-b",
    "candidato": "a031",
-   "rotulo": null,
-   "rotuloImg": "arts/a031/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Scout Energy Rifle",
+   "rotuloImg": "arts/scout-energy-rifle-b/rotulo.png",
+   "unitKey": "scout",
+   "equipmentTags": [
+    "Energy Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1189,14 +1246,16 @@
    ]
   },
   {
-   "id": "a032",
+   "id": "scout-sniper-a",
    "candidato": "a032",
-   "rotulo": null,
-   "rotuloImg": "arts/a032/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Scout Sniper",
+   "rotuloImg": "arts/scout-sniper-a/rotulo.png",
+   "unitKey": "scout",
+   "equipmentTags": [
+    "Sniper Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1230,14 +1289,16 @@
    ]
   },
   {
-   "id": "a033",
+   "id": "scout-sniper-b",
    "candidato": "a033",
-   "rotulo": null,
-   "rotuloImg": "arts/a033/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Scout Sniper",
+   "rotuloImg": "arts/scout-sniper-b/rotulo.png",
+   "unitKey": "scout",
+   "equipmentTags": [
+    "Sniper Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1271,14 +1332,16 @@
    ]
   },
   {
-   "id": "a034",
+   "id": "ninja-sword-a",
    "candidato": "a034",
-   "rotulo": null,
-   "rotuloImg": "arts/a034/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Ninja Sword",
+   "rotuloImg": "arts/ninja-sword-a/rotulo.png",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Dual Ninja Swords"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1310,14 +1373,16 @@
    "pendencias": []
   },
   {
-   "id": "a035",
+   "id": "ninja-sword-b",
    "candidato": "a035",
-   "rotulo": null,
-   "rotuloImg": "arts/a035/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Ninja Sword",
+   "rotuloImg": "arts/ninja-sword-b/rotulo.png",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Dual Ninja Swords"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1351,14 +1416,16 @@
    ]
   },
   {
-   "id": "a036",
+   "id": "ninja-sword-c",
    "candidato": "a036",
-   "rotulo": null,
-   "rotuloImg": "arts/a036/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Ninja Sword",
+   "rotuloImg": "arts/ninja-sword-c/rotulo.png",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Dual Ninja Swords"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1390,14 +1457,16 @@
    "pendencias": []
   },
   {
-   "id": "a037",
+   "id": "ninja-guns-a",
    "candidato": "a037",
-   "rotulo": null,
-   "rotuloImg": "arts/a037/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Ninja Guns",
+   "rotuloImg": "arts/ninja-guns-a/rotulo.png",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Dual Auto-Guns"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1429,14 +1498,16 @@
    "pendencias": []
   },
   {
-   "id": "a038",
+   "id": "ninja-guns-b",
    "candidato": "a038",
-   "rotulo": null,
-   "rotuloImg": "arts/a038/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Ninja Guns",
+   "rotuloImg": "arts/ninja-guns-b/rotulo.png",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Dual Auto-Guns"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1468,14 +1539,16 @@
    "pendencias": []
   },
   {
-   "id": "a039",
+   "id": "ninja-guns-c",
    "candidato": "a039",
-   "rotulo": null,
-   "rotuloImg": "arts/a039/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Ninja Guns",
+   "rotuloImg": "arts/ninja-guns-c/rotulo.png",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Dual Auto-Guns"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1507,14 +1580,17 @@
    "pendencias": []
   },
   {
-   "id": "a040",
+   "id": "ninja-sword-gun-a",
    "candidato": "a040",
-   "rotulo": null,
-   "rotuloImg": "arts/a040/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Ninja Sword & Gun",
+   "rotuloImg": "arts/ninja-sword-gun-a/rotulo.png",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Auto-Gun",
+    "Ninja Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1546,14 +1622,17 @@
    "pendencias": []
   },
   {
-   "id": "a041",
+   "id": "ninja-sword-gun-b",
    "candidato": "a041",
-   "rotulo": null,
-   "rotuloImg": "arts/a041/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Ninja Sword & Gun",
+   "rotuloImg": "arts/ninja-sword-gun-b/rotulo.png",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Auto-Gun",
+    "Ninja Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1585,14 +1664,17 @@
    "pendencias": []
   },
   {
-   "id": "a042",
+   "id": "ninja-sword-gun-c",
    "candidato": "a042",
-   "rotulo": null,
-   "rotuloImg": "arts/a042/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Ninja Sword & Gun",
+   "rotuloImg": "arts/ninja-sword-gun-c/rotulo.png",
+   "unitKey": "ninja",
+   "equipmentTags": [
+    "Auto-Gun",
+    "Ninja Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1624,14 +1706,16 @@
    "pendencias": []
   },
   {
-   "id": "a043",
+   "id": "oni-guns",
    "candidato": "a043",
-   "rotulo": null,
-   "rotuloImg": "arts/a043/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "ONI Guns",
+   "rotuloImg": "arts/oni-guns/rotulo.png",
+   "unitKey": "oni",
+   "equipmentTags": [
+    "Dual Gun-Fists"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1663,14 +1747,16 @@
    "pendencias": []
   },
   {
-   "id": "a044",
+   "id": "oni-sword-a",
    "candidato": "a044",
-   "rotulo": null,
-   "rotuloImg": "arts/a044/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "ONI Sword",
+   "rotuloImg": "arts/oni-sword-a/rotulo.png",
+   "unitKey": "oni",
+   "equipmentTags": [
+    "ONI Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1702,14 +1788,16 @@
    "pendencias": []
   },
   {
-   "id": "a045",
+   "id": "oni-sword-b",
    "candidato": "a045",
-   "rotulo": null,
-   "rotuloImg": "arts/a045/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "ONI Sword",
+   "rotuloImg": "arts/oni-sword-b/rotulo.png",
+   "unitKey": "oni",
+   "equipmentTags": [
+    "ONI Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1741,14 +1829,16 @@
    "pendencias": []
   },
   {
-   "id": "a046",
+   "id": "oni-glaive-a",
    "candidato": "a046",
-   "rotulo": null,
-   "rotuloImg": "arts/a046/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "ONI Glaive",
+   "rotuloImg": "arts/oni-glaive-a/rotulo.png",
+   "unitKey": "oni",
+   "equipmentTags": [
+    "ONI Glaive"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1780,14 +1870,16 @@
    "pendencias": []
   },
   {
-   "id": "a047",
+   "id": "oni-glaive-b",
    "candidato": "a047",
-   "rotulo": null,
-   "rotuloImg": "arts/a047/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "ONI Glaive",
+   "rotuloImg": "arts/oni-glaive-b/rotulo.png",
+   "unitKey": "oni",
+   "equipmentTags": [
+    "ONI Glaive"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1819,14 +1911,16 @@
    "pendencias": []
   },
   {
-   "id": "a048",
+   "id": "oni-fists-a",
    "candidato": "a048",
-   "rotulo": null,
-   "rotuloImg": "arts/a048/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "ONI Fists",
+   "rotuloImg": "arts/oni-fists-a/rotulo.png",
+   "unitKey": "oni",
+   "equipmentTags": [
+    "Dual ONI Fists"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1858,14 +1952,16 @@
    "pendencias": []
   },
   {
-   "id": "a049",
+   "id": "oni-fists-b",
    "candidato": "a049",
-   "rotulo": null,
-   "rotuloImg": "arts/a049/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "ONI Fists",
+   "rotuloImg": "arts/oni-fists-b/rotulo.png",
+   "unitKey": "oni",
+   "equipmentTags": [
+    "Dual ONI Fists"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1897,14 +1993,14 @@
    "pendencias": []
   },
   {
-   "id": "a050",
+   "id": "cyber-birds",
    "candidato": "a050",
-   "rotulo": null,
-   "rotuloImg": "arts/a050/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Cyber Birds",
+   "rotuloImg": "arts/cyber-birds/rotulo.png",
+   "unitKey": "cyber-bird-swarm",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1925,14 +2021,14 @@
    ]
   },
   {
-   "id": "a051",
+   "id": "cyber-beast-lizard",
    "candidato": "a051",
-   "rotulo": null,
-   "rotuloImg": "arts/a051/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Cyber Beast",
+   "rotuloImg": "arts/cyber-beast-lizard/rotulo.png",
+   "unitKey": "cyber-lizards",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1966,14 +2062,17 @@
    ]
   },
   {
-   "id": "a052",
+   "id": "drone-sage-borda",
    "candidato": "a052",
-   "rotulo": null,
-   "rotuloImg": "arts/a052/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Drone Sage",
+   "rotuloImg": "arts/drone-sage-borda/rotulo.png",
+   "unitKey": "dynasty-leader",
+   "equipmentTags": [
+    "Sage",
+    "Hover Alert-Drone"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -1994,14 +2093,16 @@
    ]
   },
   {
-   "id": "a053",
+   "id": "warrior-sniper-rifle-b-borda",
    "candidato": "a053",
-   "rotulo": null,
-   "rotuloImg": "arts/a053/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Sniper Rifle",
+   "rotuloImg": "arts/warrior-sniper-rifle-b-borda/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Long Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2022,14 +2123,16 @@
    ]
   },
   {
-   "id": "a054",
+   "id": "warrior-shotgun-b-borda",
    "candidato": "a054",
-   "rotulo": null,
-   "rotuloImg": "arts/a054/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Shotgun",
+   "rotuloImg": "arts/warrior-shotgun-b-borda/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Shotgun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2050,14 +2153,14 @@
    ]
   },
   {
-   "id": "a055",
+   "id": "drone-a-borda",
    "candidato": "a055",
-   "rotulo": null,
-   "rotuloImg": "arts/a055/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Drone A",
+   "rotuloImg": "arts/drone-a-borda/rotulo.png",
+   "unitKey": "attack-drone",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2078,14 +2181,14 @@
    ]
   },
   {
-   "id": "a056",
+   "id": "drone-b-borda",
    "candidato": "a056",
-   "rotulo": null,
-   "rotuloImg": "arts/a056/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Drone B",
+   "rotuloImg": "arts/drone-b-borda/rotulo.png",
+   "unitKey": "attack-drone",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2106,14 +2209,14 @@
    ]
   },
   {
-   "id": "a057",
+   "id": "drone-c-borda",
    "candidato": "a057",
-   "rotulo": null,
-   "rotuloImg": "arts/a057/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Drone C",
+   "rotuloImg": "arts/drone-c-borda/rotulo.png",
+   "unitKey": "attack-drone",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2134,14 +2237,14 @@
    ]
   },
   {
-   "id": "a058",
+   "id": "royal-guard-v1-borda",
    "candidato": "a058",
-   "rotulo": null,
-   "rotuloImg": "arts/a058/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Royal Guard V1",
+   "rotuloImg": "arts/royal-guard-v1-borda/rotulo.png",
+   "unitKey": "royal-guard",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2162,14 +2265,14 @@
    ]
   },
   {
-   "id": "a059",
+   "id": "royal-guard-v2-borda",
    "candidato": "a059",
-   "rotulo": null,
-   "rotuloImg": "arts/a059/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Royal Guard V2",
+   "rotuloImg": "arts/royal-guard-v2-borda/rotulo.png",
+   "unitKey": "royal-guard",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2190,14 +2293,16 @@
    ]
   },
   {
-   "id": "a060",
+   "id": "oni-glaive-a-borda",
    "candidato": "a060",
-   "rotulo": null,
-   "rotuloImg": "arts/a060/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "ONI Glaive",
+   "rotuloImg": "arts/oni-glaive-a-borda/rotulo.png",
+   "unitKey": "oni",
+   "equipmentTags": [
+    "ONI Glaive"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2218,14 +2323,14 @@
    ]
   },
   {
-   "id": "a061",
+   "id": "cyber-birds-borda",
    "candidato": "a061",
-   "rotulo": null,
-   "rotuloImg": "arts/a061/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Cyber Birds",
+   "rotuloImg": "arts/cyber-birds-borda/rotulo.png",
+   "unitKey": "cyber-bird-swarm",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [

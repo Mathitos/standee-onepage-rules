@@ -1,0 +1,1386 @@
+{
+  "armyBook": {
+    "id": "w7qor7b2kuifcyvk",
+    "nome": "Alien Hives",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-18T11:53:04.046Z",
+    "sistema": "grimdark-future-firefight",
+    "sistemaId": 3
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "CDDYotz",
+      "nome": "Ksi'adoz Smokeborn",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Bio-Smoke Guns",
+        "Shadow Daggers"
+      ],
+      "itens": [
+        {
+          "nome": "Shadow Synapses",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Bio-Smoke Pustules"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OdAlf_R",
+      "nome": "Trosei",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Bile-Burner",
+        "Acidic Claws"
+      ],
+      "itens": [
+        {
+          "nome": "Mutated Bulk",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Khīkhī the Spore"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lkLtZ_j",
+      "nome": "Vradhez",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Ripper Stingers",
+        "Neural Claws"
+      ],
+      "itens": [
+        {
+          "nome": "Adrenaline Fueled",
+          "bases": null
+        },
+        {
+          "nome": "For the Hive!",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace For the Hive!",
+          "ganha": [
+            "Psychic Synapses"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dMuWjpJ",
+      "nome": "Druzhak",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Carapace Fist",
+        "Fierceclaw Sword"
+      ],
+      "itens": [
+        {
+          "nome": "Molded by War",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Molded by War",
+          "ganha": [
+            "Molded by War - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uTDXWPS",
+      "nome": "Nisuv",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Unbroken Claws"
+      ],
+      "itens": [
+        {
+          "nome": "Steady Vanguard",
+          "bases": null
+        },
+        {
+          "nome": "Pacification Spores",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Pacification Spore",
+          "ganha": [
+            "Psychic Synapses"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jJP5jiL",
+      "nome": "Prime Warrior",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Claws",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace 2x Claws and Stomp",
+          "ganha": [
+            "Bug-Spewer",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace 2x Claws and Stomp",
+          "ganha": [
+            "Flame-Shooter",
+            "Heavy Smashing Club"
+          ]
+        },
+        {
+          "secao": "Replace 2x Claws and Stomp",
+          "ganha": [
+            "Dual Spike-Shooters"
+          ]
+        },
+        {
+          "secao": "Replace Bug-Spewer",
+          "ganha": [
+            "Ripper Gun"
+          ]
+        },
+        {
+          "secao": "Replace Bug-Spewer",
+          "ganha": [
+            "Acid Launcher"
+          ]
+        },
+        {
+          "secao": "Replace Bug-Spewer",
+          "ganha": [
+            "Shredder Gun"
+          ]
+        },
+        {
+          "secao": "Replace Bug-Spewer",
+          "ganha": [
+            "Heavy Ravager Gun"
+          ]
+        },
+        {
+          "secao": "Replace Bug-Spewer",
+          "ganha": [
+            "Hook-Claw Launcher"
+          ]
+        },
+        {
+          "secao": "Replace Flame-Shooter",
+          "ganha": [
+            "Spike-Shooter"
+          ]
+        },
+        {
+          "secao": "Replace Flame-Shooter",
+          "ganha": [
+            "Plasma-Shooter"
+          ]
+        },
+        {
+          "secao": "Replace Flame-Shooter",
+          "ganha": [
+            "Fusion-Shooter"
+          ]
+        },
+        {
+          "secao": "Replace Flame-Shooter",
+          "ganha": [
+            "Shredder-Shooter"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Smashing Club",
+          "ganha": [
+            "Heavy Toxin Whip"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Smashing Club",
+          "ganha": [
+            "Heavy Piercing Spike"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Smashing Club",
+          "ganha": [
+            "Heavy Slashing Blade"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Smashing Club",
+          "ganha": [
+            "Heavy Serrated Blade"
+          ]
+        },
+        {
+          "secao": "Replace any Claws",
+          "ganha": [
+            "Smashing Club"
+          ]
+        },
+        {
+          "secao": "Replace any Claws",
+          "ganha": [
+            "Toxin Whip"
+          ]
+        },
+        {
+          "secao": "Replace any Claws",
+          "ganha": [
+            "Piercing Spike"
+          ]
+        },
+        {
+          "secao": "Replace any Claws",
+          "ganha": [
+            "Slashing Blade"
+          ]
+        },
+        {
+          "secao": "Replace any Claws",
+          "ganha": [
+            "Serrated Blade"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Raid Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pheromone Host"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Bio-Tech Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Brood Leader"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Psychic Synapses"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Bio-Engineer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qpW1fhD",
+      "nome": "Snatcher Lord",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Razor Claws"
+      ],
+      "itens": [
+        {
+          "nome": "Patient Stalker",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Brood Leader"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Bio-Engineer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Psychic Synapses"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hive Protector"
+          ]
+        },
+        {
+          "secao": "Replace Razor Claws",
+          "ganha": [
+            "Channeling Horns"
+          ]
+        },
+        {
+          "secao": "Replace Razor Claws",
+          "ganha": [
+            "Synaptic Psy-Burst",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Razor Claws",
+          "ganha": [
+            "Neural Psy-Burst",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Razor Claws",
+          "ganha": [
+            "Ripper Psy-Burst",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Smashing Claws"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Toxin Claws"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Slashing Claws"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Piercing Claws"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Serrated Claws"
+          ]
+        },
+        {
+          "secao": "Replace Patient Stalker",
+          "ganha": [
+            "Adrenaline Fueled"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lezKVcK",
+      "nome": "Grunt Veteran",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Spike-Shooter",
+        "Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Spike-Shooter and Claws",
+          "ganha": [
+            "Bio-Seeker",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Spike-Shooter and Claws",
+          "ganha": [
+            "Burst Bio-Ravager",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Spike-Shooter and Claws",
+          "ganha": [
+            "Burst Bio-Spitter",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Spike-Shooter and Claws",
+          "ganha": [
+            "Dual Spike-Shooters"
+          ]
+        },
+        {
+          "secao": "Replace Spike-Shooter",
+          "ganha": [
+            "Shredder-Shooter"
+          ]
+        },
+        {
+          "secao": "Replace Spike-Shooter",
+          "ganha": [
+            "Plasma-Shooter"
+          ]
+        },
+        {
+          "secao": "Replace Spike-Shooter",
+          "ganha": [
+            "Flame-Shooter"
+          ]
+        },
+        {
+          "secao": "Replace Spike-Shooter",
+          "ganha": [
+            "Fusion-Shooter"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Smashing Club"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Toxin Whip"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Piercing Spike"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Serrated Blade"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Slashing Blade"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Psy-Brain"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Raider Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Mutations"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Adrenaline Fueled"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Bio-Tech Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Brood Leader"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Bio-Engineer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hive Protector"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19W7XoU",
+      "nome": "Soul-Snatcher",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Serrated Claws"
+      ],
+      "itens": [
+        {
+          "nome": "Patient Stalker",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Serrated Claws",
+          "ganha": [
+            "Razor Claws"
+          ]
+        },
+        {
+          "secao": "Replace Patient Stalker",
+          "ganha": [
+            "Adrenaline Fueled"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Mind Snatcher"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_c1518l",
+      "nome": "Support Grunt",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Bug-Spewer Bio-Mortar",
+        "Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Adrenaline Fueled"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Combat Mutations"
+          ]
+        },
+        {
+          "secao": "Replace any Bug-Spewer Bio-Mortar",
+          "ganha": [
+            "Ripper Bio-Mortar"
+          ]
+        },
+        {
+          "secao": "Replace any Bug-Spewer Bio-Mortar",
+          "ganha": [
+            "Ravager Bio-Mortar"
+          ]
+        },
+        {
+          "secao": "Replace any Bug-Spewer Bio-Mortar",
+          "ganha": [
+            "Plasma Bio-Mortar"
+          ]
+        },
+        {
+          "secao": "Replace any Bug-Spewer Bio-Mortar",
+          "ganha": [
+            "Shredder Bio-Mortar"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rv0FY-K",
+      "nome": "Hive Swarm",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Toxin Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Toxin Claws",
+          "ganha": [
+            "Burst Bio-Spitter",
+            "Claws"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_LXFoO9",
+      "nome": "Assault Grunts",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Toxin Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Toxin Claws",
+          "ganha": [
+            "Razor Claws"
+          ]
+        },
+        {
+          "secao": "Replace all Toxin Claws",
+          "ganha": [
+            "Slashing Claws"
+          ]
+        },
+        {
+          "secao": "Replace one Toxin Claws",
+          "ganha": [
+            "Smashing Claws"
+          ]
+        },
+        {
+          "secao": "Replace one Toxin Claws",
+          "ganha": [
+            "Piercing Stinger"
+          ]
+        },
+        {
+          "secao": "Replace one Toxin Claws",
+          "ganha": [
+            "Serrated Claws"
+          ]
+        },
+        {
+          "secao": "Replace one Toxin Claws",
+          "ganha": [
+            "Slashing Claws"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Adrenaline Fueled"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Raider Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Combat Mutations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "01LG2ML",
+      "nome": "Hive Warrior",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Smashing Clubs"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Dual Razor Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Bug-Spewer",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Dual Toxin Whips"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Toxin Whip & Slashing Blade"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Toxin Whip & Serrated Blade"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Dual Piercing Spikes"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Dual Slashing Blades"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Dual Serrated Blades"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Ravager Gun",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Dual Spike-Shooters"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Ripper Gun",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Acid Launcher",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Shredder Gun",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Heavy Ravager Gun",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Hook-Claw Launcher",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Toxin Whip"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Slashing Blade"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Piercing Spike"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Serrated Blade"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Toxin Whip & Slashing Blade"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Toxin Whip & Serrated Blade"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Razor Claws"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Raider Wings"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lWrYpK5",
+      "nome": "Spores",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": []
+    },
+    {
+      "id": "wSkDwle",
+      "nome": "Massive Spore",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": []
+    },
+    {
+      "id": "6oOZMAA",
+      "nome": "Psycho-Grunts",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Neural Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Adrenaline Fueled"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Combat Mutations"
+          ]
+        },
+        {
+          "secao": "Replace all Neural Claws",
+          "ganha": [
+            "Toxin Claws"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Synaptic Relay"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMADHYi",
+      "nome": "Shooter Grunts",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Bio-Ravager",
+        "Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Bio-Ravagers and Claws",
+          "ganha": [
+            "Bio-Spitter",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace all Bio-Ravagers and Claws",
+          "ganha": [
+            "Dual Bio-Spikers"
+          ]
+        },
+        {
+          "secao": "Replace one Bio-Ravager",
+          "ganha": [
+            "Bio-Seeker"
+          ]
+        },
+        {
+          "secao": "Replace one Bio-Ravager",
+          "ganha": [
+            "Bio-Fuser"
+          ]
+        },
+        {
+          "secao": "Replace one Bio-Ravager",
+          "ganha": [
+            "Bio-Plasma"
+          ]
+        },
+        {
+          "secao": "Replace one Bio-Ravager",
+          "ganha": [
+            "Bio-Flamer"
+          ]
+        },
+        {
+          "secao": "Replace one Bio-Ravager",
+          "ganha": [
+            "Bio-Shredder"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Adrenaline Fueled"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Raider Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Combat Mutations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_nhe5Po",
+      "nome": "Venom Beast",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Heavy Toxin Whip-Limbs"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Heavy Toxin Whip-Limb",
+          "ganha": [
+            "Venom Spurt",
+            "Toxin Whip-Limbs"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Shrouding Mist"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tLoLwnZ",
+      "nome": "Ravenous Beast",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Smashing Claws"
+      ],
+      "itens": [
+        {
+          "nome": "Burrowing Strike",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Smashing Claws",
+          "ganha": [
+            "Dual Razor Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Claws",
+          "ganha": [
+            "Dual Toxin Whip-Limbs"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Claws",
+          "ganha": [
+            "Dual Piercing Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Claws",
+          "ganha": [
+            "Dual Slashing Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Claws",
+          "ganha": [
+            "Dual Serrated Claws"
+          ]
+        },
+        {
+          "secao": "Replace Burrowing Strike",
+          "ganha": [
+            "Adrenaline Fueled"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jf0HjF0",
+      "nome": "Hive Guardian",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Smashing Clubs"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Bio-Harpoon Gun",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Ripper Gun",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Heavy Ravager Gun",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Club",
+          "ganha": [
+            "Skewer Launcher",
+            "Claws"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Smashing Club",
+          "ganha": [
+            "Dual Razor Claws"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Smashing Club",
+          "ganha": [
+            "Dual Toxin Whips"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Smashing Club",
+          "ganha": [
+            "Toxin Whip & Slashing Blade"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Smashing Club",
+          "ganha": [
+            "Dual Slashing Blades"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Smashing Club",
+          "ganha": [
+            "Toxin Whip & Serrated Blade"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Smashing Club",
+          "ganha": [
+            "Dual Piercing Spikes"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Smashing Club",
+          "ganha": [
+            "Dual Serrated Blades"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Toxin Whip"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Slashing Blade"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Toxin Whip & Slashing Blade"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Toxin Whip & Serrated Blade"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Serrated Blade"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Piercing Spike"
+          ]
+        },
+        {
+          "secao": "Replace Claws",
+          "ganha": [
+            "Razor Claws"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Zcuz_wH",
+      "nome": "Synapse Beast",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Synaptic Psy-Blast",
+        "Neural Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Synaptic Psy-Blast",
+          "ganha": [
+            "Neural Psy-Blast"
+          ]
+        },
+        {
+          "secao": "Replace Synaptic Psy-Blast",
+          "ganha": [
+            "Ripper Psy-Blast"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tbvpeyi",
+      "nome": "Shadow Leaper",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Smashing Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Smashing Claws",
+          "ganha": [
+            "Dual Razor Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Claws",
+          "ganha": [
+            "Dual Toxin Whip-Limbs"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Claws",
+          "ganha": [
+            "Dual Slashing Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Claws",
+          "ganha": [
+            "Dual Piercing Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Smashing Claws",
+          "ganha": [
+            "Dual Serrated Claws"
+          ]
+        }
+      ]
+    }
+  ]
+}

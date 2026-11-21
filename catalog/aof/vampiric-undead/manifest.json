@@ -1,0 +1,4027 @@
+{
+  "schemaVersion": 1,
+  "packId": "vampiric-undead",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "AOF",
+    "slug": "age-of-fantasy",
+    "armyForgeId": 4
+  },
+  "gameSystems": [
+    {
+      "code": "AOF",
+      "slug": "age-of-fantasy",
+      "armyForgeId": 4
+    },
+    {
+      "code": "AOFS",
+      "slug": "age-of-fantasy-skirmish",
+      "armyForgeId": 5
+    }
+  ],
+  "armyBook": {
+    "id": "qABIfXYbYxmA75yL",
+    "name": "Vampiric Undead",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "qABIfXYbYxmA75yL",
+      "name": "Vampiric Undead",
+      "version": "3.6.0",
+      "gameSystemId": 4,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "qABIfXYbYxmA75yL",
+      "name": "Vampiric Undead",
+      "version": "3.6.0",
+      "gameSystemId": 5,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Vampiric_Undead_-_BW.pdf",
+    "pdfSha256": "14e35f3696109ed6cd8fdb2f2bec343d8f141f9de52004cf149551126cb3079b",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "vampire-master",
+      "names": [
+        "Vampire Master"
+      ],
+      "armyForgeUnitId": "hYgOS5j",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "skeleton-champion",
+      "names": [
+        "Skeleton Champion"
+      ],
+      "armyForgeUnitId": "IFoiX6E",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "drained-leader",
+      "names": [
+        "Drained Leader"
+      ],
+      "armyForgeUnitId": "tcFt2jt",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "ghoul-champion",
+      "names": [
+        "Ghoul Champion"
+      ],
+      "armyForgeUnitId": "ounVlif",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "werewolf-champion",
+      "names": [
+        "Werewolf Champion"
+      ],
+      "armyForgeUnitId": "DmUheiD",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          50.0
+        ],
+        "raw": "50",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "drained-soldiers",
+      "names": [
+        "Drained Soldiers",
+        "Drained Soldier"
+      ],
+      "armyForgeUnitId": "feVlWGg",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "drained-archers",
+      "names": [
+        "Drained Archers",
+        "Drained Archer"
+      ],
+      "armyForgeUnitId": "nbfcBdh",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "skeleton-guard",
+      "names": [
+        "Skeleton Guard"
+      ],
+      "armyForgeUnitId": "uZbIBgP",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "skeleton-watch",
+      "names": [
+        "Skeleton Watch"
+      ],
+      "armyForgeUnitId": "t7GGspb",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "stitched-zombies",
+      "names": [
+        "Stitched Zombies"
+      ],
+      "armyForgeUnitId": "ywA6N1i",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "stitched-butchers",
+      "names": [
+        "Stitched Butchers",
+        "Stitched Butcher"
+      ],
+      "armyForgeUnitId": "EcmqnZb",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "ghouls",
+      "names": [
+        "Ghouls",
+        "Ghoul"
+      ],
+      "armyForgeUnitId": "ga8M8Bg",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "ghoul-horrors",
+      "names": [
+        "Ghoul Horrors",
+        "Ghoul Horror"
+      ],
+      "armyForgeUnitId": "QpKQzOb",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "bat-swarms",
+      "names": [
+        "Bat Swarms",
+        "Bat Swarm"
+      ],
+      "armyForgeUnitId": "IiE46QX",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "giant-bats",
+      "names": [
+        "Giant Bats",
+        "Giant Bat"
+      ],
+      "armyForgeUnitId": "AxauQas",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "bat-horrors",
+      "names": [
+        "Bat Horrors",
+        "Bat Horror"
+      ],
+      "armyForgeUnitId": "nb-80_H",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "zombie-wolves",
+      "names": [
+        "Zombie Wolves",
+        "Zombie Wolf"
+      ],
+      "armyForgeUnitId": "WN-xulZ",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "werewolves",
+      "names": [
+        "Werewolves",
+        "Werewolf"
+      ],
+      "armyForgeUnitId": "K2QdNmm",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "skeleton-knights",
+      "names": [
+        "Skeleton Knights",
+        "Skeleton Knight"
+      ],
+      "armyForgeUnitId": "VYTV8S4",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "vampire-knights",
+      "names": [
+        "Vampire Knights",
+        "Vampire Knight"
+      ],
+      "armyForgeUnitId": "9x1rCWH",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "vampire-lord",
+      "candidateId": "a001",
+      "pdfLabel": "Vampire Lord",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vampire-master",
+      "equipmentTags": [
+        "Lord"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Vampire Lord",
+          "armyBook": "Vampire Master"
+        }
+      ],
+      "notes": "herói vampiro com espada; no army book é o Vampire Master (genericName Vampire Leader) com a opção Lord",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0
+          ],
+          "front": "arts/vampire-lord/fino/frente.svg",
+          "back": "arts/vampire-lord/fino/verso.svg",
+          "canvasMm": [
+            38.185,
+            44.831
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            44.7,
+            37.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            0
+          ],
+          "front": "arts/vampire-lord/borda/frente.svg",
+          "back": "arts/vampire-lord/borda/verso.svg",
+          "canvasMm": [
+            42.884,
+            47.159
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            47.1,
+            42.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vampire-lady",
+      "candidateId": "a002",
+      "pdfLabel": "Vampire Lady",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vampire-master",
+      "equipmentTags": [
+        "Lord"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Vampire Lady",
+          "armyBook": "Vampire Master"
+        },
+        {
+          "pdf": "Lady",
+          "armyBook": "Lord"
+        }
+      ],
+      "notes": "versão feminina do Vampire Lord (arma de haste e cálice); usei a mesma opção Lord",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            1
+          ],
+          "front": "arts/vampire-lady/fino/frente.svg",
+          "back": "arts/vampire-lady/fino/verso.svg",
+          "canvasMm": [
+            40.047,
+            42.799
+          ],
+          "frontBackIoU": 0.926,
+          "sizeMm": [
+            42.7,
+            39.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            1
+          ],
+          "front": "arts/vampire-lady/borda/frente.svg",
+          "back": "arts/vampire-lady/borda/verso.svg",
+          "canvasMm": [
+            44.704,
+            45.127
+          ],
+          "frontBackIoU": 0.953,
+          "sizeMm": [
+            45.0,
+            44.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "lord-steed",
+      "candidateId": "a003",
+      "pdfLabel": "Lord Steed",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vampire-master",
+      "equipmentTags": [
+        "Lord",
+        "Steed"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Lord",
+          "armyBook": "Vampire Master"
+        }
+      ],
+      "notes": "Vampire Lord montado: Vampire Master com Lord e montaria Steed (cavalo sem asas, não Winged Steed)",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            2
+          ],
+          "front": "arts/lord-steed/fino/frente.svg",
+          "back": "arts/lord-steed/fino/verso.svg",
+          "canvasMm": [
+            60.113,
+            71.162
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            71.0,
+            59.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            2
+          ],
+          "front": "arts/lord-steed/borda/frente.svg",
+          "back": "arts/lord-steed/borda/verso.svg",
+          "canvasMm": [
+            63.839,
+            73.025
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            72.9,
+            63.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "lady-steed",
+      "candidateId": "a004",
+      "pdfLabel": "Lady Steed",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vampire-master",
+      "equipmentTags": [
+        "Lord",
+        "Steed"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Lady",
+          "armyBook": "Vampire Master"
+        },
+        {
+          "pdf": "Lady",
+          "armyBook": "Lord"
+        }
+      ],
+      "notes": "Vampire Lady montada no mesmo cavalo de a003: Lord e Steed",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            3
+          ],
+          "front": "arts/lady-steed/fino/frente.svg",
+          "back": "arts/lady-steed/fino/verso.svg",
+          "canvasMm": [
+            59.817,
+            70.824
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            70.7,
+            59.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            3
+          ],
+          "front": "arts/lady-steed/borda/frente.svg",
+          "back": "arts/lady-steed/borda/verso.svg",
+          "canvasMm": [
+            63.542,
+            72.686
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            72.6,
+            63.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-commander",
+      "candidateId": "a005",
+      "pdfLabel": "Skeleton Commander",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-champion",
+      "equipmentTags": [
+        "Commander"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Skeleton Commander",
+          "armyBook": "Skeleton Champion"
+        }
+      ],
+      "notes": "herói esqueleto com lâmina grande e capa: Skeleton Champion (Elite Skeleton Leader) com a opção Commander",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0
+          ],
+          "front": "arts/skeleton-commander/fino/frente.svg",
+          "back": "arts/skeleton-commander/fino/verso.svg",
+          "canvasMm": [
+            40.682,
+            56.219
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            56.1,
+            40.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            0
+          ],
+          "front": "arts/skeleton-commander/borda/frente.svg",
+          "back": "arts/skeleton-commander/borda/verso.svg",
+          "canvasMm": [
+            45.424,
+            58.589
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            58.5,
+            45.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-champion",
+      "candidateId": "a006",
+      "pdfLabel": "Skeleton Champion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-champion",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            1
+          ],
+          "front": "arts/skeleton-champion/fino/frente.svg",
+          "back": "arts/skeleton-champion/fino/verso.svg",
+          "canvasMm": [
+            27.432,
+            51.52
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            51.4,
+            27.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            1
+          ],
+          "front": "arts/skeleton-champion/borda/frente.svg",
+          "back": "arts/skeleton-champion/borda/verso.svg",
+          "canvasMm": [
+            32.173,
+            53.89
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            53.8,
+            31.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "army-standard",
+      "candidateId": "a007",
+      "pdfLabel": "Army Standard",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-champion",
+      "equipmentTags": [
+        "Army Standard Bearer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Army Standard",
+          "armyBook": "Army Standard Bearer"
+        }
+      ],
+      "notes": "esqueleto com estandarte do exército; Army Standard Bearer só existe no Skeleton Champion",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            2
+          ],
+          "front": "arts/army-standard/fino/frente.svg",
+          "back": "arts/army-standard/fino/verso.svg",
+          "canvasMm": [
+            41.19,
+            71.586
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            71.5,
+            40.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            2
+          ],
+          "front": "arts/army-standard/borda/frente.svg",
+          "back": "arts/army-standard/borda/verso.svg",
+          "canvasMm": [
+            45.932,
+            73.956
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            73.8,
+            45.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-steed",
+      "candidateId": "a008",
+      "pdfLabel": "Champion Steed",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-champion",
+      "equipmentTags": [
+        "Skeletal Steed"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Skeleton Champion"
+        },
+        {
+          "pdf": "Steed",
+          "armyBook": "Skeletal Steed"
+        }
+      ],
+      "notes": "cavaleiro com cara de caveira em cavalo com barda: Skeleton Champion com Skeletal Steed",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            3
+          ],
+          "front": "arts/champion-steed/fino/frente.svg",
+          "back": "arts/champion-steed/fino/verso.svg",
+          "canvasMm": [
+            59.224,
+            53.975
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            53.8,
+            58.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            3
+          ],
+          "front": "arts/champion-steed/borda/frente.svg",
+          "back": "arts/champion-steed/borda/verso.svg",
+          "canvasMm": [
+            64.812,
+            56.769
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            56.6,
+            64.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "necromaster",
+      "candidateId": "a009",
+      "pdfLabel": "Necromaster",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "drained-leader",
+      "equipmentTags": [
+        "Master Necromancer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Necromaster",
+          "armyBook": "Master Necromancer"
+        }
+      ],
+      "notes": "necromante humano com cajado; Master Necromancer existe no Drained Leader e no Vampire Master, e a figura não é vampiro. A lápide ao lado lembra Latmyir The Mad (Skeletal Gravestone, Pet Experiment)",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0
+          ],
+          "front": "arts/necromaster/fino/frente.svg",
+          "back": "arts/necromaster/fino/verso.svg",
+          "canvasMm": [
+            39.878,
+            40.598
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            40.5,
+            39.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            0
+          ],
+          "front": "arts/necromaster/borda/frente.svg",
+          "back": "arts/necromaster/borda/verso.svg",
+          "canvasMm": [
+            43.434,
+            42.376
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            42.2,
+            43.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ghoul-champion",
+      "candidateId": "a010",
+      "pdfLabel": "Ghoul Champion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ghoul-champion",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            1
+          ],
+          "front": "arts/ghoul-champion/fino/frente.svg",
+          "back": "arts/ghoul-champion/fino/verso.svg",
+          "canvasMm": [
+            30.353,
+            45.085
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            45.0,
+            30.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            1
+          ],
+          "front": "arts/ghoul-champion/borda/frente.svg",
+          "back": "arts/ghoul-champion/borda/verso.svg",
+          "canvasMm": [
+            33.909,
+            46.863
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            46.7,
+            33.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "corpse-master",
+      "candidateId": "a011",
+      "pdfLabel": "Corpse Master",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "drained-leader",
+      "equipmentTags": [
+        "Corpse Master"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Corpse Master",
+          "armyBook": "Drained Leader"
+        }
+      ],
+      "notes": "herói a pé com haste de cadáveres pendurados: opção Corpse Master do Drained Leader (Corpse Master também é item do Corpse Wagon)",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            2
+          ],
+          "front": "arts/corpse-master/fino/frente.svg",
+          "back": "arts/corpse-master/fino/verso.svg",
+          "canvasMm": [
+            34.29,
+            69.384
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            69.3,
+            34.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            2
+          ],
+          "front": "arts/corpse-master/borda/frente.svg",
+          "back": "arts/corpse-master/borda/verso.svg",
+          "canvasMm": [
+            37.846,
+            71.162
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            71.0,
+            37.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "werewolf-champion",
+      "candidateId": "a012",
+      "pdfLabel": "Werewolf Champion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "werewolf-champion",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            3
+          ],
+          "front": "arts/werewolf-champion/fino/frente.svg",
+          "back": "arts/werewolf-champion/fino/verso.svg",
+          "canvasMm": [
+            78.867,
+            65.151
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            65.0,
+            78.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            3
+          ],
+          "front": "arts/werewolf-champion/borda/frente.svg",
+          "back": "arts/werewolf-champion/borda/verso.svg",
+          "canvasMm": [
+            84.455,
+            67.945
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            67.8,
+            84.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drained-soldier-sickle",
+      "candidateId": "a013",
+      "pdfLabel": "Drained Soldier Sickle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "drained-soldiers",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sickle",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "foice de mão; arma padrão Hand Weapon",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/drained-soldier-sickle/fino/frente.svg",
+          "back": "arts/drained-soldier-sickle/fino/verso.svg",
+          "canvasMm": [
+            29.041,
+            31.962
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            31.8,
+            28.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/drained-soldier-sickle/borda/frente.svg",
+          "back": "arts/drained-soldier-sickle/borda/verso.svg",
+          "canvasMm": [
+            33.697,
+            34.29
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            34.2,
+            33.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drained-soldier-spear",
+      "candidateId": "a014",
+      "pdfLabel": "Drained Soldier Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "drained-soldiers",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/drained-soldier-spear/fino/frente.svg",
+          "back": "arts/drained-soldier-spear/fino/verso.svg",
+          "canvasMm": [
+            20.997,
+            44.662
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            44.5,
+            20.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/drained-soldier-spear/borda/frente.svg",
+          "back": "arts/drained-soldier-spear/borda/verso.svg",
+          "canvasMm": [
+            25.654,
+            46.99
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            46.9,
+            25.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drained-soldier-halberd",
+      "candidateId": "a015",
+      "pdfLabel": "Drained Soldier Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "drained-soldiers",
+      "equipmentTags": [
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/drained-soldier-halberd/fino/frente.svg",
+          "back": "arts/drained-soldier-halberd/fino/verso.svg",
+          "canvasMm": [
+            22.14,
+            47.456
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            47.3,
+            21.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/drained-soldier-halberd/borda/frente.svg",
+          "back": "arts/drained-soldier-halberd/borda/verso.svg",
+          "canvasMm": [
+            26.797,
+            49.784
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            49.7,
+            26.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drained-archer-sergeant",
+      "candidateId": "a016",
+      "pdfLabel": "Drained Archer Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "drained-archers",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0
+          ],
+          "front": "arts/drained-archer-sergeant/fino/frente.svg",
+          "back": "arts/drained-archer-sergeant/fino/verso.svg",
+          "canvasMm": [
+            30.946,
+            40.936
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            40.8,
+            30.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            0
+          ],
+          "front": "arts/drained-archer-sergeant/borda/frente.svg",
+          "back": "arts/drained-archer-sergeant/borda/verso.svg",
+          "canvasMm": [
+            35.56,
+            43.265
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            43.2,
+            35.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drained-archer-banner",
+      "candidateId": "a017",
+      "pdfLabel": "Drained Archer Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "drained-archers",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            1
+          ],
+          "front": "arts/drained-archer-banner/fino/frente.svg",
+          "back": "arts/drained-archer-banner/fino/verso.svg",
+          "canvasMm": [
+            25.273,
+            62.315
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            62.2,
+            25.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            1
+          ],
+          "front": "arts/drained-archer-banner/borda/frente.svg",
+          "back": "arts/drained-archer-banner/borda/verso.svg",
+          "canvasMm": [
+            29.93,
+            64.643
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            64.5,
+            29.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drained-archer-musician",
+      "candidateId": "a018",
+      "pdfLabel": "Drained Archer Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "drained-archers",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            2
+          ],
+          "front": "arts/drained-archer-musician/fino/frente.svg",
+          "back": "arts/drained-archer-musician/fino/verso.svg",
+          "canvasMm": [
+            21.378,
+            36.788
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            36.7,
+            21.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            2
+          ],
+          "front": "arts/drained-archer-musician/borda/frente.svg",
+          "back": "arts/drained-archer-musician/borda/verso.svg",
+          "canvasMm": [
+            26.035,
+            39.116
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            39.0,
+            25.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drained-archer",
+      "candidateId": "a019",
+      "pdfLabel": "Drained Archer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "drained-archers",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/drained-archer/fino/frente.svg",
+          "back": "arts/drained-archer/fino/verso.svg",
+          "canvasMm": [
+            26.204,
+            32.089
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            32.0,
+            25.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            0
+          ],
+          "front": "arts/drained-archer/borda/frente.svg",
+          "back": "arts/drained-archer/borda/verso.svg",
+          "canvasMm": [
+            30.057,
+            34.417
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            34.3,
+            29.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drained-soldier-sergeant",
+      "candidateId": "a020",
+      "pdfLabel": "Drained Soldier Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "drained-soldiers",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0
+          ],
+          "front": "arts/drained-soldier-sergeant/fino/frente.svg",
+          "back": "arts/drained-soldier-sergeant/fino/verso.svg",
+          "canvasMm": [
+            35.01,
+            43.646
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            43.5,
+            34.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            0
+          ],
+          "front": "arts/drained-soldier-sergeant/borda/frente.svg",
+          "back": "arts/drained-soldier-sergeant/borda/verso.svg",
+          "canvasMm": [
+            39.666,
+            45.974
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            45.9,
+            39.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drained-soldier-musician",
+      "candidateId": "a021",
+      "pdfLabel": "Drained Soldier Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "drained-soldiers",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            1
+          ],
+          "front": "arts/drained-soldier-musician/fino/frente.svg",
+          "back": "arts/drained-soldier-musician/fino/verso.svg",
+          "canvasMm": [
+            18.965,
+            40.979
+          ],
+          "frontBackIoU": 0.959,
+          "sizeMm": [
+            40.9,
+            18.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            1
+          ],
+          "front": "arts/drained-soldier-musician/borda/frente.svg",
+          "back": "arts/drained-soldier-musician/borda/verso.svg",
+          "canvasMm": [
+            23.622,
+            43.307
+          ],
+          "frontBackIoU": 0.972,
+          "sizeMm": [
+            43.2,
+            23.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drained-soldier-banner",
+      "candidateId": "a022",
+      "pdfLabel": "Drained Soldier Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "drained-soldiers",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            2
+          ],
+          "front": "arts/drained-soldier-banner/fino/frente.svg",
+          "back": "arts/drained-soldier-banner/fino/verso.svg",
+          "canvasMm": [
+            39.582,
+            52.112
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            52.0,
+            39.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            2
+          ],
+          "front": "arts/drained-soldier-banner/borda/frente.svg",
+          "back": "arts/drained-soldier-banner/borda/verso.svg",
+          "canvasMm": [
+            44.238,
+            54.441
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            54.4,
+            43.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-guard-sword",
+      "candidateId": "a023",
+      "pdfLabel": "Skeleton Guard Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-guard",
+      "equipmentTags": [
+        "Cursed Blade"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Cursed Blade"
+        }
+      ],
+      "notes": "espada; a lâmina padrão da unidade é Cursed Blade (a maça ficou com Hand Weapon)",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/skeleton-guard-sword/fino/frente.svg",
+          "back": "arts/skeleton-guard-sword/fino/verso.svg",
+          "canvasMm": [
+            29.125,
+            31.157
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            31.1,
+            28.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/skeleton-guard-sword/borda/frente.svg",
+          "back": "arts/skeleton-guard-sword/borda/verso.svg",
+          "canvasMm": [
+            33.867,
+            33.528
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            33.4,
+            33.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-guard-mace",
+      "candidateId": "a024",
+      "pdfLabel": "Skeleton Guard Mace",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-guard",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Mace",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "maça de uma mão; Hand Weapon",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/skeleton-guard-mace/fino/frente.svg",
+          "back": "arts/skeleton-guard-mace/fino/verso.svg",
+          "canvasMm": [
+            31.2,
+            32.681
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            32.6,
+            31.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/skeleton-guard-mace/borda/frente.svg",
+          "back": "arts/skeleton-guard-mace/borda/verso.svg",
+          "canvasMm": [
+            35.941,
+            35.052
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            35.0,
+            35.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-guard-spear",
+      "candidateId": "a025",
+      "pdfLabel": "Skeleton Guard Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-guard",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/skeleton-guard-spear/fino/frente.svg",
+          "back": "arts/skeleton-guard-spear/fino/verso.svg",
+          "canvasMm": [
+            36.068,
+            32.512
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            32.4,
+            35.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/skeleton-guard-spear/borda/frente.svg",
+          "back": "arts/skeleton-guard-spear/borda/verso.svg",
+          "canvasMm": [
+            40.809,
+            34.883
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            34.8,
+            40.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-guard-halberd",
+      "candidateId": "a026",
+      "pdfLabel": "Skeleton Guard Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-guard",
+      "equipmentTags": [
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/skeleton-guard-halberd/fino/frente.svg",
+          "back": "arts/skeleton-guard-halberd/fino/verso.svg",
+          "canvasMm": [
+            36.915,
+            33.02
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            32.9,
+            36.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/skeleton-guard-halberd/borda/frente.svg",
+          "back": "arts/skeleton-guard-halberd/borda/verso.svg",
+          "canvasMm": [
+            41.656,
+            35.391
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            35.3,
+            41.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-guard-sergeant",
+      "candidateId": "a027",
+      "pdfLabel": "Skeleton Guard Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-guard",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0
+          ],
+          "front": "arts/skeleton-guard-sergeant/fino/frente.svg",
+          "back": "arts/skeleton-guard-sergeant/fino/verso.svg",
+          "canvasMm": [
+            40.682,
+            34.29
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            34.2,
+            40.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            0
+          ],
+          "front": "arts/skeleton-guard-sergeant/borda/frente.svg",
+          "back": "arts/skeleton-guard-sergeant/borda/verso.svg",
+          "canvasMm": [
+            45.466,
+            36.661
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            36.6,
+            45.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-guard-musician",
+      "candidateId": "a028",
+      "pdfLabel": "Skeleton Guard Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-guard",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            1
+          ],
+          "front": "arts/skeleton-guard-musician/fino/frente.svg",
+          "back": "arts/skeleton-guard-musician/fino/verso.svg",
+          "canvasMm": [
+            26.035,
+            36.576
+          ],
+          "frontBackIoU": 0.962,
+          "sizeMm": [
+            36.5,
+            25.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            1
+          ],
+          "front": "arts/skeleton-guard-musician/borda/frente.svg",
+          "back": "arts/skeleton-guard-musician/borda/verso.svg",
+          "canvasMm": [
+            30.226,
+            38.947
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            38.9,
+            30.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-guard-banner",
+      "candidateId": "a029",
+      "pdfLabel": "Skeleton Guard Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-guard",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            2
+          ],
+          "front": "arts/skeleton-guard-banner/fino/frente.svg",
+          "back": "arts/skeleton-guard-banner/fino/verso.svg",
+          "canvasMm": [
+            44.789,
+            54.271
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            54.2,
+            44.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            2
+          ],
+          "front": "arts/skeleton-guard-banner/borda/frente.svg",
+          "back": "arts/skeleton-guard-banner/borda/verso.svg",
+          "canvasMm": [
+            49.53,
+            56.642
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            56.6,
+            49.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-watch",
+      "candidateId": "a030",
+      "pdfLabel": "Skeleton Watch",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-watch",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/skeleton-watch/fino/frente.svg",
+          "back": "arts/skeleton-watch/fino/verso.svg",
+          "canvasMm": [
+            26.458,
+            32.258
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            32.2,
+            26.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/skeleton-watch/borda/frente.svg",
+          "back": "arts/skeleton-watch/borda/verso.svg",
+          "canvasMm": [
+            31.2,
+            34.629
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            34.5,
+            30.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-watch-sergeant",
+      "candidateId": "a031",
+      "pdfLabel": "Skeleton Watch Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-watch",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0
+          ],
+          "front": "arts/skeleton-watch-sergeant/fino/frente.svg",
+          "back": "arts/skeleton-watch-sergeant/fino/verso.svg",
+          "canvasMm": [
+            38.354,
+            41.741
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            41.7,
+            38.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            0
+          ],
+          "front": "arts/skeleton-watch-sergeant/borda/frente.svg",
+          "back": "arts/skeleton-watch-sergeant/borda/verso.svg",
+          "canvasMm": [
+            43.095,
+            44.111
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            44.0,
+            42.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-watch-banner",
+      "candidateId": "a032",
+      "pdfLabel": "Skeleton Watch Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-watch",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            1
+          ],
+          "front": "arts/skeleton-watch-banner/fino/frente.svg",
+          "back": "arts/skeleton-watch-banner/fino/verso.svg",
+          "canvasMm": [
+            36.957,
+            54.779
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            54.7,
+            36.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            1
+          ],
+          "front": "arts/skeleton-watch-banner/borda/frente.svg",
+          "back": "arts/skeleton-watch-banner/borda/verso.svg",
+          "canvasMm": [
+            41.698,
+            57.15
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            57.1,
+            41.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-watch-musician",
+      "candidateId": "a033",
+      "pdfLabel": "Skeleton Watch Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-watch",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            2
+          ],
+          "front": "arts/skeleton-watch-musician/fino/frente.svg",
+          "back": "arts/skeleton-watch-musician/fino/verso.svg",
+          "canvasMm": [
+            25.146,
+            36.788
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            36.7,
+            24.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            2
+          ],
+          "front": "arts/skeleton-watch-musician/borda/frente.svg",
+          "back": "arts/skeleton-watch-musician/borda/verso.svg",
+          "canvasMm": [
+            29.887,
+            39.158
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            39.0,
+            29.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "stitched",
+      "candidateId": "a034",
+      "pdfLabel": "Stitched",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "stitched-zombies",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Stitched",
+          "armyBook": "Stitched Zombies"
+        }
+      ],
+      "notes": "zumbi costurado de tamanho humano; Stitched Butchers é ogro e tem arte própria (a038)",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/stitched/fino/frente.svg",
+          "back": "arts/stitched/fino/verso.svg",
+          "canvasMm": [
+            24.003,
+            32.47
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            32.3,
+            23.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 50,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/stitched/borda/frente.svg",
+          "back": "arts/stitched/borda/verso.svg",
+          "canvasMm": [
+            27.559,
+            34.248
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            34.1,
+            27.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "stitched-sergeant",
+      "candidateId": "a035",
+      "pdfLabel": "Stitched Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "stitched-zombies",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Stitched",
+          "armyBook": "Stitched Zombies"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0
+          ],
+          "front": "arts/stitched-sergeant/fino/frente.svg",
+          "back": "arts/stitched-sergeant/fino/verso.svg",
+          "canvasMm": [
+            29.337,
+            46.736
+          ],
+          "frontBackIoU": 0.958,
+          "sizeMm": [
+            46.7,
+            29.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            0
+          ],
+          "front": "arts/stitched-sergeant/borda/frente.svg",
+          "back": "arts/stitched-sergeant/borda/verso.svg",
+          "canvasMm": [
+            32.893,
+            48.514
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            48.4,
+            32.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "stitched-musician",
+      "candidateId": "a036",
+      "pdfLabel": "Stitched Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "stitched-zombies",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Stitched",
+          "armyBook": "Stitched Zombies"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            1
+          ],
+          "front": "arts/stitched-musician/fino/frente.svg",
+          "back": "arts/stitched-musician/fino/verso.svg",
+          "canvasMm": [
+            33.062,
+            29.718
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            29.6,
+            32.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            1
+          ],
+          "front": "arts/stitched-musician/borda/frente.svg",
+          "back": "arts/stitched-musician/borda/verso.svg",
+          "canvasMm": [
+            36.618,
+            31.496
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            31.4,
+            36.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "stitched-banner",
+      "candidateId": "a037",
+      "pdfLabel": "Stitched Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "stitched-zombies",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Stitched",
+          "armyBook": "Stitched Zombies"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            2
+          ],
+          "front": "arts/stitched-banner/fino/frente.svg",
+          "back": "arts/stitched-banner/fino/verso.svg",
+          "canvasMm": [
+            34.205,
+            58.42
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            58.3,
+            34.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            2
+          ],
+          "front": "arts/stitched-banner/borda/frente.svg",
+          "back": "arts/stitched-banner/borda/verso.svg",
+          "canvasMm": [
+            37.761,
+            60.198
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            60.1,
+            37.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "stitched-butcher",
+      "candidateId": "a038",
+      "pdfLabel": "Stitched Butcher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "stitched-butchers",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Stitched Butcher é o nome no Skirmish",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/stitched-butcher/fino/frente.svg",
+          "back": "arts/stitched-butcher/fino/verso.svg",
+          "canvasMm": [
+            50.08,
+            56.684
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            56.6,
+            49.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 52,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/stitched-butcher/borda/frente.svg",
+          "back": "arts/stitched-butcher/borda/verso.svg",
+          "canvasMm": [
+            53.636,
+            58.462
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            58.3,
+            53.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ghoul",
+      "candidateId": "a039",
+      "pdfLabel": "Ghoul",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ghouls",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/ghoul/fino/frente.svg",
+          "back": "arts/ghoul/fino/verso.svg",
+          "canvasMm": [
+            37.338,
+            26.374
+          ],
+          "frontBackIoU": 0.958,
+          "sizeMm": [
+            26.2,
+            37.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 53,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/ghoul/borda/frente.svg",
+          "back": "arts/ghoul/borda/verso.svg",
+          "canvasMm": [
+            40.894,
+            28.152
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            28.0,
+            40.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ghoul-horror",
+      "candidateId": "a040",
+      "pdfLabel": "Ghoul Horror",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ghoul-horrors",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ghoul-horror/fino/frente.svg",
+          "back": "arts/ghoul-horror/fino/verso.svg",
+          "canvasMm": [
+            59.732,
+            49.572
+          ],
+          "frontBackIoU": 0.966,
+          "sizeMm": [
+            49.4,
+            59.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/ghoul-horror/borda/frente.svg",
+          "back": "arts/ghoul-horror/borda/verso.svg",
+          "canvasMm": [
+            63.288,
+            51.35
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            51.2,
+            63.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "bat-swarm",
+      "candidateId": "a041",
+      "pdfLabel": "Bat Swarm",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "bat-swarms",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/bat-swarm/fino/frente.svg",
+          "back": "arts/bat-swarm/fino/verso.svg",
+          "canvasMm": [
+            45.0,
+            35.391
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            35.3,
+            44.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/bat-swarm/borda/frente.svg",
+          "back": "arts/bat-swarm/borda/verso.svg",
+          "canvasMm": [
+            48.726,
+            37.253
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            37.2,
+            48.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "giant-bat",
+      "candidateId": "a042",
+      "pdfLabel": "Giant Bat",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "giant-bats",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/giant-bat/fino/frente.svg",
+          "back": "arts/giant-bat/fino/verso.svg",
+          "canvasMm": [
+            60.537,
+            55.16
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            55.0,
+            60.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 56,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/giant-bat/borda/frente.svg",
+          "back": "arts/giant-bat/borda/verso.svg",
+          "canvasMm": [
+            64.262,
+            57.023
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            56.9,
+            64.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "bat-horror",
+      "candidateId": "a043",
+      "pdfLabel": "Bat Horror",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "bat-horrors",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/bat-horror/fino/frente.svg",
+          "back": "arts/bat-horror/fino/verso.svg",
+          "canvasMm": [
+            64.516,
+            55.414
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            55.3,
+            64.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 57,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/bat-horror/borda/frente.svg",
+          "back": "arts/bat-horror/borda/verso.svg",
+          "canvasMm": [
+            68.241,
+            57.277
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            57.2,
+            68.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "zombie-wolf",
+      "candidateId": "a044",
+      "pdfLabel": "Zombie Wolf",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "zombie-wolves",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 26,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/zombie-wolf/fino/frente.svg",
+          "back": "arts/zombie-wolf/fino/verso.svg",
+          "canvasMm": [
+            46.736,
+            28.787
+          ],
+          "frontBackIoU": 0.922,
+          "sizeMm": [
+            28.7,
+            46.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 58,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/zombie-wolf/borda/frente.svg",
+          "back": "arts/zombie-wolf/borda/verso.svg",
+          "canvasMm": [
+            52.324,
+            31.581
+          ],
+          "frontBackIoU": 0.955,
+          "sizeMm": [
+            31.5,
+            52.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "werewolf-claws",
+      "candidateId": "a045",
+      "pdfLabel": "Werewolf Claws",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "werewolves",
+      "equipmentTags": [
+        "Sharp Claws"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Claws",
+          "armyBook": "Sharp Claws"
+        }
+      ],
+      "notes": "arma padrão da unidade é Sharp Claws",
+      "styles": {
+        "fino": {
+          "page": 27,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/werewolf-claws/fino/frente.svg",
+          "back": "arts/werewolf-claws/fino/verso.svg",
+          "canvasMm": [
+            47.667,
+            45.254
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            45.1,
+            47.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 59,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/werewolf-claws/borda/frente.svg",
+          "back": "arts/werewolf-claws/borda/verso.svg",
+          "canvasMm": [
+            53.213,
+            48.048
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            47.9,
+            53.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "werewolf-sword",
+      "candidateId": "a046",
+      "pdfLabel": "Werewolf Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "werewolves",
+      "equipmentTags": [
+        "Great Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Great Weapon"
+        }
+      ],
+      "notes": "lâmina grande; a única arma da unidade além das garras é Great Weapon",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/werewolf-sword/fino/frente.svg",
+          "back": "arts/werewolf-sword/fino/verso.svg",
+          "canvasMm": [
+            57.954,
+            44.916
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            44.8,
+            57.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 60,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/werewolf-sword/borda/frente.svg",
+          "back": "arts/werewolf-sword/borda/verso.svg",
+          "canvasMm": [
+            63.542,
+            47.71
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            47.6,
+            63.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-knight",
+      "candidateId": "a047",
+      "pdfLabel": "Skeleton Kinght",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-knights",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "rótulo impresso com erro de grafia (Kinght); artId com a grafia correta",
+      "styles": {
+        "fino": {
+          "page": 29,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/skeleton-knight/fino/frente.svg",
+          "back": "arts/skeleton-knight/fino/verso.svg",
+          "canvasMm": [
+            57.912,
+            50.927
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            50.8,
+            57.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 61,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/skeleton-knight/borda/frente.svg",
+          "back": "arts/skeleton-knight/borda/verso.svg",
+          "canvasMm": [
+            63.5,
+            53.721
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            53.6,
+            63.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-knight-sergeant",
+      "candidateId": "a048",
+      "pdfLabel": "Skeleton Kinght Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-knights",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "rótulo impresso com erro de grafia (Kinght); artId com a grafia correta",
+      "styles": {
+        "fino": {
+          "page": 30,
+          "rows": [
+            0
+          ],
+          "front": "arts/skeleton-knight-sergeant/fino/frente.svg",
+          "back": "arts/skeleton-knight-sergeant/fino/verso.svg",
+          "canvasMm": [
+            55.499,
+            73.66
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            73.6,
+            55.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 62,
+          "rows": [
+            0
+          ],
+          "front": "arts/skeleton-knight-sergeant/borda/frente.svg",
+          "back": "arts/skeleton-knight-sergeant/borda/verso.svg",
+          "canvasMm": [
+            61.087,
+            76.454
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            76.4,
+            60.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-knight-musician",
+      "candidateId": "a049",
+      "pdfLabel": "Skeleton Kinght Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-knights",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "rótulo impresso com erro de grafia (Kinght); artId com a grafia correta",
+      "styles": {
+        "fino": {
+          "page": 30,
+          "rows": [
+            1
+          ],
+          "front": "arts/skeleton-knight-musician/fino/frente.svg",
+          "back": "arts/skeleton-knight-musician/fino/verso.svg",
+          "canvasMm": [
+            58.208,
+            55.118
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            55.0,
+            57.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 62,
+          "rows": [
+            1
+          ],
+          "front": "arts/skeleton-knight-musician/borda/frente.svg",
+          "back": "arts/skeleton-knight-musician/borda/verso.svg",
+          "canvasMm": [
+            63.796,
+            57.912
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            57.8,
+            63.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "skeleton-knight-banner",
+      "candidateId": "a050",
+      "pdfLabel": "Skeleton Kinght Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "skeleton-knights",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "rótulo impresso com erro de grafia (Kinght); artId com a grafia correta",
+      "styles": {
+        "fino": {
+          "page": 30,
+          "rows": [
+            2
+          ],
+          "front": "arts/skeleton-knight-banner/fino/frente.svg",
+          "back": "arts/skeleton-knight-banner/fino/verso.svg",
+          "canvasMm": [
+            51.604,
+            83.862
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            83.7,
+            51.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 62,
+          "rows": [
+            2
+          ],
+          "front": "arts/skeleton-knight-banner/borda/frente.svg",
+          "back": "arts/skeleton-knight-banner/borda/verso.svg",
+          "canvasMm": [
+            57.192,
+            86.656
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            86.5,
+            57.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vampire-knight-sword",
+      "candidateId": "a051",
+      "pdfLabel": "Vampire Kinght Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vampire-knights",
+      "equipmentTags": [
+        "Cursed Blade"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Cursed Blade"
+        }
+      ],
+      "notes": "espada; a lâmina padrão da unidade é Cursed Blade. rótulo impresso com erro de grafia (Kinght); artId com a grafia correta",
+      "styles": {
+        "fino": {
+          "page": 31,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/vampire-knight-sword/fino/frente.svg",
+          "back": "arts/vampire-knight-sword/fino/verso.svg",
+          "canvasMm": [
+            64.22,
+            50.927
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            50.8,
+            63.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 63,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/vampire-knight-sword/borda/frente.svg",
+          "back": "arts/vampire-knight-sword/borda/verso.svg",
+          "canvasMm": [
+            67.945,
+            52.79
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            52.7,
+            67.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vampire-knight-spear",
+      "candidateId": "a052",
+      "pdfLabel": "Vampire Kinght Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vampire-knights",
+      "equipmentTags": [
+        "Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Spear",
+          "armyBook": "Lance"
+        }
+      ],
+      "notes": "lança de cavaleiro; a unidade não tem Spear. rótulo impresso com erro de grafia (Kinght); artId com a grafia correta",
+      "styles": {
+        "fino": {
+          "page": 32,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/vampire-knight-spear/fino/frente.svg",
+          "back": "arts/vampire-knight-spear/fino/verso.svg",
+          "canvasMm": [
+            68.665,
+            53.763
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            53.7,
+            68.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 64,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/vampire-knight-spear/borda/frente.svg",
+          "back": "arts/vampire-knight-spear/borda/verso.svg",
+          "canvasMm": [
+            72.39,
+            55.626
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            55.5,
+            72.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vampire-knight-sergeant",
+      "candidateId": "a053",
+      "pdfLabel": "Vampire Kinght Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vampire-knights",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "rótulo impresso com erro de grafia (Kinght); artId com a grafia correta",
+      "styles": {
+        "fino": {
+          "page": 33,
+          "rows": [
+            0
+          ],
+          "front": "arts/vampire-knight-sergeant/fino/frente.svg",
+          "back": "arts/vampire-knight-sergeant/fino/verso.svg",
+          "canvasMm": [
+            48.895,
+            74.507
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            74.4,
+            48.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 65,
+          "rows": [
+            0
+          ],
+          "front": "arts/vampire-knight-sergeant/borda/frente.svg",
+          "back": "arts/vampire-knight-sergeant/borda/verso.svg",
+          "canvasMm": [
+            52.62,
+            76.369
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            76.3,
+            52.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vampire-knight-musician",
+      "candidateId": "a054",
+      "pdfLabel": "Vampire Kinght Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vampire-knights",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "rótulo impresso com erro de grafia (Kinght); artId com a grafia correta",
+      "styles": {
+        "fino": {
+          "page": 33,
+          "rows": [
+            1
+          ],
+          "front": "arts/vampire-knight-musician/fino/frente.svg",
+          "back": "arts/vampire-knight-musician/fino/verso.svg",
+          "canvasMm": [
+            59.732,
+            66.463
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            66.4,
+            59.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 65,
+          "rows": [
+            1
+          ],
+          "front": "arts/vampire-knight-musician/borda/frente.svg",
+          "back": "arts/vampire-knight-musician/borda/verso.svg",
+          "canvasMm": [
+            63.458,
+            68.326
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            68.2,
+            63.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vampire-knight-banner",
+      "candidateId": "a055",
+      "pdfLabel": "Vampire Kinght Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vampire-knights",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "rótulo impresso com erro de grafia (Kinght); artId com a grafia correta",
+      "styles": {
+        "fino": {
+          "page": 33,
+          "rows": [
+            2
+          ],
+          "front": "arts/vampire-knight-banner/fino/frente.svg",
+          "back": "arts/vampire-knight-banner/fino/verso.svg",
+          "canvasMm": [
+            47.71,
+            95.419
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            95.3,
+            47.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 65,
+          "rows": [
+            2
+          ],
+          "front": "arts/vampire-knight-banner/borda/frente.svg",
+          "back": "arts/vampire-knight-banner/borda/verso.svg",
+          "canvasMm": [
+            51.435,
+            97.282
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            97.2,
+            51.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drained-archer-borda",
+      "candidateId": "a056",
+      "pdfLabel": "Drained Archer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "drained-archers",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "mesma arte de a019, só no estilo borda (cópia que o recorte não juntou)",
+      "styles": {
+        "borda": {
+          "page": 41,
+          "rows": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/drained-archer-borda/borda/frente.svg",
+          "back": "arts/drained-archer-borda/borda/verso.svg",
+          "canvasMm": [
+            30.861,
+            34.417
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            34.3,
+            30.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

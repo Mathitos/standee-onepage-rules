@@ -1,0 +1,1442 @@
+{
+ "packId": "blessed-sisters",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "GF",
+   "slug": "grimdark-future",
+   "armyForgeId": 2
+  },
+  {
+   "code": "GFF",
+   "slug": "grimdark-future-firefight",
+   "armyForgeId": 3
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/7oi8zeiqfamiur21-gs3-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/7oi8zeiqfamiur21-gs2-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-*.png, army books v3.6.0 (os dois sistemas). a084 e a085 ignorados: cópias borda de a048/a049 que não juntaram ao par.",
+ "unidades": {
+  "high-sister": {
+   "armyForgeUnitId": "2TXWi3B"
+  },
+  "novice-leader": {
+   "armyForgeUnitId": "_nVdDbE"
+  },
+  "fanatic-superior": {
+   "armyForgeUnitId": "BT_-pdh"
+  },
+  "destroyer-high-sister": {
+   "armyForgeUnitId": "sF4ltO_"
+  },
+  "exo-suit-high-sister": {
+   "armyForgeUnitId": "JzHY_1g"
+  },
+  "warrior-sister": {
+   "armyForgeUnitId": "0Bc4px2"
+  },
+  "novice-sisters": {
+   "armyForgeUnitId": "fi5ZHtl"
+  },
+  "vanguard-sister": {
+   "armyForgeUnitId": "VHKN-IZ"
+  },
+  "vanguard-sniper": {
+   "armyForgeUnitId": "tsHlz0v"
+  },
+  "fanatic-sisters": {
+   "armyForgeUnitId": "R3sC7UX"
+  },
+  "protector-sister": {
+   "armyForgeUnitId": "zCo2G8c"
+  },
+  "assault-sister": {
+   "armyForgeUnitId": "S9Oua8O"
+  },
+  "pistoleer-sister": {
+   "armyForgeUnitId": "qgESKb_"
+  },
+  "celestial-warrior-sister": {
+   "armyForgeUnitId": "_MWEPTm"
+  },
+  "support-sister": {
+   "armyForgeUnitId": "N9SDZqF"
+  },
+  "destroyer-sister": {
+   "armyForgeUnitId": "1oucreF"
+  },
+  "biker-sister": {
+   "armyForgeUnitId": "oN45C-p"
+  },
+  "biker-fanatic": {
+   "armyForgeUnitId": "8LxKCD7"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "jetpack-superior",
+   "rotulo": "Jetpack Superior",
+   "confiancaRotulo": "alta",
+   "unitKey": "high-sister",
+   "equipmentTags": [
+    "Superior",
+    "Jetpack|Airdrop Jetpack"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Superior",
+     "armyBook": "opção Superior (Upgrade with one)"
+    },
+    {
+     "pdf": "Jetpack",
+     "armyBook": "Jetpack | Airdrop Jetpack"
+    }
+   ],
+   "notas": "herói Superior hoje é opção da High Sister (genericName Sister Leader), que tem Jetpack; Celestial High Sister também tem Superior, Jetpack e Holy Wings (a figura tem asas)"
+  },
+  "a002": {
+   "artId": "biker-superior",
+   "rotulo": "Biker Superior",
+   "confiancaRotulo": "alta",
+   "unitKey": "high-sister",
+   "equipmentTags": [
+    "Superior",
+    "Combat Bike|Assault Bike"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Superior",
+     "armyBook": "opção Superior (Upgrade with one)"
+    },
+    {
+     "pdf": "Biker",
+     "armyBook": "Combat Bike | Assault Bike"
+    }
+   ],
+   "notas": "as duas motos da High Sister; Celestial High Sister tem as mesmas opções"
+  },
+  "a003": {
+   "artId": "superior",
+   "rotulo": "Superior",
+   "confiancaRotulo": "alta",
+   "unitKey": "high-sister",
+   "equipmentTags": [
+    "Superior"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Superior",
+     "armyBook": "opção Superior (Upgrade with one)"
+    }
+   ],
+   "notas": "Superior virou opção da High Sister (genericName Sister Leader). Sem a tag, seria a arte genérica da High Sister"
+  },
+  "a004": {
+   "artId": "novice-superior",
+   "rotulo": "Novice Superior",
+   "confiancaRotulo": "alta",
+   "unitKey": "novice-leader",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Novice Superior",
+     "armyBook": "Novice Leader"
+    }
+   ],
+   "notas": "líder das Novice (genericName Recruit Leader); Novice Leader não tem opção Superior"
+  },
+  "a005": {
+   "artId": "vanguard-superior",
+   "rotulo": "Vanguard Superior",
+   "confiancaRotulo": "alta",
+   "unitKey": "high-sister",
+   "equipmentTags": [
+    "Superior",
+    "Vanguard"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Superior",
+     "armyBook": "opção Superior (Upgrade with one)"
+    },
+    {
+     "pdf": "Vanguard",
+     "armyBook": "Vanguard (Scout, Strider)"
+    }
+   ],
+   "notas": "não há herói Vanguard; a High Sister tem as opções Vanguard e Superior. A figura usa rifle longo (High Sister tem Sniper Rifle)"
+  },
+  "a006": {
+   "artId": "witch",
+   "rotulo": "Witch",
+   "confiancaRotulo": "alta",
+   "unitKey": "high-sister",
+   "equipmentTags": [
+    "Witch|Master Witch"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Witch",
+     "armyBook": "opção Witch | Master Witch"
+    }
+   ],
+   "notas": "Witch é só opção de heróis (High Sister, Celestial/Destroyer/Exo-Suit High Sister, Novice Leader); escolhida a High Sister, a genérica"
+  },
+  "a007": {
+   "artId": "fanatic-superior-v1",
+   "rotulo": "Fanatic Superior V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "fanatic-superior",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a008": {
+   "artId": "fanatic-superior-v2",
+   "rotulo": "Fanatic Superior V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "fanatic-superior",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a009": {
+   "artId": "priestess-v1",
+   "rotulo": "Priestess V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "high-sister",
+   "equipmentTags": [
+    "Priestess"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Priestess",
+     "armyBook": "opção Priestess"
+    }
+   ],
+   "notas": "Priestess é só opção de heróis (High Sister, Fanatic Superior, Novice Leader e outros); escolhida a High Sister"
+  },
+  "a010": {
+   "artId": "priestess-v2",
+   "rotulo": "Priestess V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "high-sister",
+   "equipmentTags": [
+    "Priestess"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Priestess",
+     "armyBook": "opção Priestess"
+    }
+   ],
+   "notas": "Priestess é só opção de heróis (High Sister, Fanatic Superior, Novice Leader e outros); escolhida a High Sister"
+  },
+  "a011": {
+   "artId": "canoness",
+   "rotulo": "Canoness",
+   "confiancaRotulo": "alta",
+   "unitKey": "high-sister",
+   "equipmentTags": [
+    "Canoness"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Canoness",
+     "armyBook": "opção Canoness"
+    }
+   ],
+   "notas": "Canoness é só opção de heróis (High Sister, Celestial/Destroyer High Sister, Novice Leader); escolhida a High Sister"
+  },
+  "a012": {
+   "artId": "destroyer-superior-claws",
+   "rotulo": "Destroyer Superior Claws",
+   "confiancaRotulo": "alta",
+   "unitKey": "destroyer-high-sister",
+   "equipmentTags": [
+    "Superior",
+    "Dual Energy Claws"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Destroyer Superior",
+     "armyBook": "Destroyer High Sister + opção Superior"
+    },
+    {
+     "pdf": "Claws",
+     "armyBook": "Dual Energy Claws"
+    }
+   ],
+   "notas": "genericName Exo-Suit Leader"
+  },
+  "a013": {
+   "artId": "destroyer-superior-mace-shield",
+   "rotulo": "Destroyer Superior Mace & Shield",
+   "confiancaRotulo": "alta",
+   "unitKey": "destroyer-high-sister",
+   "equipmentTags": [
+    "Superior",
+    "Energy Mace",
+    "Combat Shield"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Destroyer Superior",
+     "armyBook": "Destroyer High Sister + opção Superior"
+    },
+    {
+     "pdf": "Mace",
+     "armyBook": "Energy Mace"
+    },
+    {
+     "pdf": "Shield",
+     "armyBook": "Combat Shield"
+    }
+   ],
+   "notas": "genericName Exo-Suit Leader"
+  },
+  "a014": {
+   "artId": "destroyer-superior-storm-rifle",
+   "rotulo": "Destroyer Superior Storm Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "destroyer-high-sister",
+   "equipmentTags": [
+    "Superior",
+    "Burst Cyclic Rifle|Assault Burst Cyclic Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Destroyer Superior",
+     "armyBook": "Destroyer High Sister + opção Superior"
+    },
+    {
+     "pdf": "Storm Rifle",
+     "armyBook": "Burst Cyclic Rifle | Assault Burst Cyclic Rifle"
+    }
+   ],
+   "notas": "não existe Storm Rifle; os fuzis cíclicos da unidade; a figura também tem espada"
+  },
+  "a015": {
+   "artId": "exosuit-superior",
+   "rotulo": "Exosuit Superior",
+   "confiancaRotulo": "alta",
+   "unitKey": "exo-suit-high-sister",
+   "equipmentTags": [
+    "Superior"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Exosuit Superior",
+     "armyBook": "Exo-Suit High Sister + opção Superior"
+    }
+   ],
+   "notas": "genericName Heavy Exo-Suit Leader; unidade só no Grimdark Future (gs2); figura grande (~106 mm)"
+  },
+  "a016": {
+   "artId": "warrior-rifle-v2",
+   "rotulo": "Warrior Rifle V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Battle Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Battle Rifle"
+    }
+   ],
+   "notas": "army book não tem arma chamada só 'Rifle'; a arma padrão é Battle Rifle"
+  },
+  "a017": {
+   "artId": "warrior-rifle-v1",
+   "rotulo": "Warrior Rifle V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Battle Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Battle Rifle"
+    }
+   ],
+   "notas": "army book não tem arma chamada só 'Rifle'; a arma padrão é Battle Rifle"
+  },
+  "a018": {
+   "artId": "warrior-rifle-v3",
+   "rotulo": "Warrior Rifle V3",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Battle Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Battle Rifle"
+    }
+   ],
+   "notas": "army book não tem arma chamada só 'Rifle'; a arma padrão é Battle Rifle"
+  },
+  "a019": {
+   "artId": "warrior-plasma-rifle",
+   "rotulo": "Warrior Plasma Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a020": {
+   "artId": "warrior-fusion-rifle",
+   "rotulo": "Warrior Fusion Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a021": {
+   "artId": "warrior-flamer",
+   "rotulo": "Warrior Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Flamer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a022": {
+   "artId": "warrior-storm-rifle",
+   "rotulo": "Warrior Storm Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Burst Cyclic Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Storm Rifle",
+     "armyBook": "Burst Cyclic Rifle"
+    }
+   ],
+   "notas": "não existe Storm Rifle; Burst Cyclic Rifle é o fuzil de rajada da unidade"
+  },
+  "a023": {
+   "artId": "warrior-shred-rifle",
+   "rotulo": "Warrior Shred Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Shredder Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shred Rifle",
+     "armyBook": "Shredder Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a024": {
+   "artId": "warrior-heavy-flamer",
+   "rotulo": "Warrior Heavy Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Heavy Flamer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a025": {
+   "artId": "warrior-heavy-machine-gun",
+   "rotulo": "Warrior Heavy Machine Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Heavy Machinegun"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só grafia: Heavy Machinegun no army book"
+  },
+  "a026": {
+   "artId": "warrior-heavy-fusion",
+   "rotulo": "Warrior Heavy Fusion",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Heavy Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Heavy Fusion",
+     "armyBook": "Heavy Fusion Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a027": {
+   "artId": "sargeant",
+   "rotulo": "Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Sgt. Pistol",
+    "Sgt. Hand Weapon"
+   ],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sargeant",
+     "armyBook": "Sgt. Pistol + Sgt. Hand Weapon"
+    }
+   ],
+   "notas": "grafado 'Sargeant' no PDF; na seção Warrior, figura com pistola e espada (opção de sargento das Warrior Sisters)"
+  },
+  "a028": {
+   "artId": "megaphone",
+   "rotulo": "Megaphone",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Canticle Megaphone"
+   ],
+   "cosmetic": "megaphone",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Megaphone",
+     "armyBook": "Canticle Megaphone"
+    }
+   ],
+   "notas": "na seção Warrior do PDF; pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)"
+  },
+  "a029": {
+   "artId": "banner",
+   "rotulo": "Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Sacred Banner"
+   ],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Banner",
+     "armyBook": "Sacred Banner"
+    }
+   ],
+   "notas": "na seção Warrior do PDF; pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)"
+  },
+  "a030": {
+   "artId": "medic",
+   "rotulo": "Medic",
+   "confiancaRotulo": "alta",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Medical Training"
+   ],
+   "cosmetic": "medic",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Medic",
+     "armyBook": "Medical Training"
+    }
+   ],
+   "notas": "na seção Warrior do PDF; pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)"
+  },
+  "a031": {
+   "artId": "novice-pistol",
+   "rotulo": "Novice Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Pistol"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "opção dá Pistol + Dagger"
+  },
+  "a032": {
+   "artId": "novice-rifle",
+   "rotulo": "Novice Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Battle Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Battle Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a033": {
+   "artId": "novice-dagger",
+   "rotulo": "Novice Dagger",
+   "confiancaRotulo": "alta",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Dagger"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "opção dá Pistol + Dagger"
+  },
+  "a034": {
+   "artId": "novice-mace",
+   "rotulo": "Novice Mace",
+   "confiancaRotulo": "alta",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Energy Club"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Mace",
+     "armyBook": "Energy Club"
+    }
+   ],
+   "notas": "arma padrão Energy Club; a figura segura uma maça"
+  },
+  "a035": {
+   "artId": "novice-fusion",
+   "rotulo": "Novice Fusion",
+   "confiancaRotulo": "alta",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fusion",
+     "armyBook": "Fusion Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a036": {
+   "artId": "novice-flamer",
+   "rotulo": "Novice Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Flamer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a037": {
+   "artId": "novice-banner",
+   "rotulo": "Novice Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Sacred Banner"
+   ],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Banner",
+     "armyBook": "Sacred Banner"
+    }
+   ],
+   "notas": "pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)"
+  },
+  "a038": {
+   "artId": "novice-megaphone",
+   "rotulo": "Novice Megaphone",
+   "confiancaRotulo": "alta",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Canticle Megaphone"
+   ],
+   "cosmetic": "megaphone",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Megaphone",
+     "armyBook": "Canticle Megaphone"
+    }
+   ],
+   "notas": "pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)"
+  },
+  "a039": {
+   "artId": "novice-medic",
+   "rotulo": "Novice Medic",
+   "confiancaRotulo": "alta",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Medical Training"
+   ],
+   "cosmetic": "medic",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Medic",
+     "armyBook": "Medical Training"
+    }
+   ],
+   "notas": "pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)"
+  },
+  "a040": {
+   "artId": "vanguard-rifle",
+   "rotulo": "Vanguard Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "vanguard-sister",
+   "equipmentTags": [
+    "Battle Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Battle Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a041": {
+   "artId": "vanguard-shotgun",
+   "rotulo": "Vanguard Shotgun",
+   "confiancaRotulo": "alta",
+   "unitKey": "vanguard-sister",
+   "equipmentTags": [
+    "Shotgun"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a042": {
+   "artId": "vanguard-shred-rifle",
+   "rotulo": "Vanguard Shred Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "vanguard-sister",
+   "equipmentTags": [
+    "Shredder Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shred Rifle",
+     "armyBook": "Shredder Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a043": {
+   "artId": "vanguard-storm-rifle",
+   "rotulo": "Vanguard Storm Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "vanguard-sister",
+   "equipmentTags": [
+    "Burst Cyclic Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Storm Rifle",
+     "armyBook": "Burst Cyclic Rifle"
+    }
+   ],
+   "notas": "não existe Storm Rifle; Burst Cyclic Rifle é o fuzil de rajada da unidade"
+  },
+  "a044": {
+   "artId": "vanguard-plasma-rifle",
+   "rotulo": "Vanguard Plasma Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "vanguard-sister",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a045": {
+   "artId": "vanguard-fusion-rifle",
+   "rotulo": "Vanguard Fusion Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "vanguard-sister",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a046": {
+   "artId": "vanguard-flamer",
+   "rotulo": "Vanguard Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "vanguard-sister",
+   "equipmentTags": [
+    "Flamer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a047": {
+   "artId": "vanguard-sniper",
+   "rotulo": "Vanguard Sniper",
+   "confiancaRotulo": "alta",
+   "unitKey": "vanguard-sniper",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "nome da unidade no Firefight; também serviria à Vanguard Sister com Sniper Rifle"
+  },
+  "a048": {
+   "artId": "fanatic-v1",
+   "rotulo": "Fanatic V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "fanatic-sisters",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a049": {
+   "artId": "fanatic-v2",
+   "rotulo": "Fanatic V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "fanatic-sisters",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a050": {
+   "artId": "flagellant-v1",
+   "rotulo": "Flagellant V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "fanatic-sisters",
+   "equipmentTags": [
+    "Flagellants"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Flagellant",
+     "armyBook": "Fanatic Sisters + Flagellants"
+    }
+   ],
+   "notas": "Flagellants é upgrade de todas as Fanatic Sisters (existe também em Biker Fanatics e, como Flagellant, no Fanatic Superior)"
+  },
+  "a051": {
+   "artId": "flagellant-v2",
+   "rotulo": "Flagellant V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "fanatic-sisters",
+   "equipmentTags": [
+    "Flagellants"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Flagellant",
+     "armyBook": "Fanatic Sisters + Flagellants"
+    }
+   ],
+   "notas": "Flagellants é upgrade de todas as Fanatic Sisters (existe também em Biker Fanatics e, como Flagellant, no Fanatic Superior)"
+  },
+  "a052": {
+   "artId": "protector-spear",
+   "rotulo": "Protector Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "protector-sister",
+   "equipmentTags": [
+    "Energy Spear|Sacred Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spear",
+     "armyBook": "Energy Spear | Sacred Spear"
+    }
+   ],
+   "notas": "as duas lanças da unidade (5 cópias no PDF sugerem Energy Spear, troca de todas)"
+  },
+  "a053": {
+   "artId": "protector-mace",
+   "rotulo": "Protector Mace",
+   "confiancaRotulo": "alta",
+   "unitKey": "protector-sister",
+   "equipmentTags": [
+    "Energy Club"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Mace",
+     "armyBook": "Energy Club"
+    }
+   ],
+   "notas": "troca de todas: Pistol + Energy Club"
+  },
+  "a054": {
+   "artId": "protector-halberd",
+   "rotulo": "Protector Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "protector-sister",
+   "equipmentTags": [
+    "Energy Halberd"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Halberd",
+     "armyBook": "Energy Halberd"
+    }
+   ],
+   "notas": "troca de todas: Pistol + Energy Halberd"
+  },
+  "a055": {
+   "artId": "jetpack-assault-v1",
+   "rotulo": "Jetpack Assault V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "assault-sister",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "genericName Jetpack Assault Sisters"
+  },
+  "a056": {
+   "artId": "jetpack-assault-v2",
+   "rotulo": "Jetpack Assault V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "assault-sister",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "genericName Jetpack Assault Sisters"
+  },
+  "a057": {
+   "artId": "jetpack-pistoleer-v1",
+   "rotulo": "Jetpack Pistoleer V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "pistoleer-sister",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "genericName Jetpack Pistoleer Sisters"
+  },
+  "a058": {
+   "artId": "jetpack-pistoleer-v2",
+   "rotulo": "Jetpack Pistoleer V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "pistoleer-sister",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "genericName Jetpack Pistoleer Sisters"
+  },
+  "a059": {
+   "artId": "celestial-rifle",
+   "rotulo": "Celestial Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Burst Battle Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Burst Battle Rifle"
+    }
+   ],
+   "notas": "Celestial Warrior Sisters não têm Battle Rifle; o fuzil delas é Burst Battle Rifle"
+  },
+  "a060": {
+   "artId": "celestial-shred-rifle",
+   "rotulo": "Celestial Shred Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Shredder Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shred Rifle",
+     "armyBook": "Shredder Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a061": {
+   "artId": "celestial-storm-rifle",
+   "rotulo": "Celestial Storm Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Burst Cyclic Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Storm Rifle",
+     "armyBook": "Burst Cyclic Rifle"
+    }
+   ],
+   "notas": "não existe Storm Rifle; Burst Cyclic Rifle é o fuzil de rajada da unidade"
+  },
+  "a062": {
+   "artId": "celestial-plasma-rifle",
+   "rotulo": "Celestial Plasma Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a063": {
+   "artId": "celestial-fusion-rifle",
+   "rotulo": "Celestial Fusion Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a064": {
+   "artId": "celestial-flamer",
+   "rotulo": "Celestial Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Flamer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a065": {
+   "artId": "celestial-heavy-machine-gun",
+   "rotulo": "Celestial Heavy Machine Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "Celestial Warrior Sisters não têm armas pesadas na v3.6.0 (Heavy Machinegun existe em Warrior/Support Sisters)"
+  },
+  "a066": {
+   "artId": "celestial-heavy-fusion",
+   "rotulo": "Celestial Heavy Fusion",
+   "confiancaRotulo": "alta",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "Celestial Warrior Sisters não têm armas pesadas na v3.6.0 (Heavy Fusion Rifle existe em Warrior/Support Sisters)"
+  },
+  "a067": {
+   "artId": "celestial-heavy-flamer",
+   "rotulo": "Celestial Heavy Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [],
+   "notas": "Celestial Warrior Sisters não têm armas pesadas na v3.6.0 (Heavy Flamer existe em Warrior/Support Sisters)"
+  },
+  "a068": {
+   "artId": "celestial-banner",
+   "rotulo": "Celestial Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Sacred Banner"
+   ],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Banner",
+     "armyBook": "Sacred Banner"
+    }
+   ],
+   "notas": "pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)"
+  },
+  "a069": {
+   "artId": "celestial-medic",
+   "rotulo": "Celestial Medic",
+   "confiancaRotulo": "alta",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Medical Training"
+   ],
+   "cosmetic": "medic",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Medic",
+     "armyBook": "Medical Training"
+    }
+   ],
+   "notas": "pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)"
+  },
+  "a070": {
+   "artId": "celestial-sargeant",
+   "rotulo": "Celestial Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "grafado 'Sargeant' no PDF; a unidade não tem opção de sargento"
+  },
+  "a071": {
+   "artId": "celestial-megaphone",
+   "rotulo": "Celestial Megaphone",
+   "confiancaRotulo": "alta",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Canticle Megaphone"
+   ],
+   "cosmetic": "megaphone",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Megaphone",
+     "armyBook": "Canticle Megaphone"
+    }
+   ],
+   "notas": "pose de comando: cosmetic; a tag registra o item do army book (Upgrade one model with one)"
+  },
+  "a072": {
+   "artId": "support-machine-gun",
+   "rotulo": "Support Machine Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "support-sister",
+   "equipmentTags": [
+    "Heavy Machinegun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Machine Gun",
+     "armyBook": "Heavy Machinegun"
+    }
+   ],
+   "notas": "única metralhadora das Support Sisters"
+  },
+  "a073": {
+   "artId": "support-fusion",
+   "rotulo": "Support Fusion",
+   "confiancaRotulo": "alta",
+   "unitKey": "support-sister",
+   "equipmentTags": [
+    "Heavy Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fusion",
+     "armyBook": "Heavy Fusion Rifle"
+    }
+   ],
+   "notas": "única arma de fusão das Support Sisters"
+  },
+  "a074": {
+   "artId": "support-heavy-flamer",
+   "rotulo": "Support Heavy Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "support-sister",
+   "equipmentTags": [
+    "Heavy Flamer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a075": {
+   "artId": "destroyer-storm-rifle",
+   "rotulo": "Destroyer Storm Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "destroyer-sister",
+   "equipmentTags": [
+    "Burst Cyclic Rifle|Assault Cyclic Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Storm Rifle",
+     "armyBook": "Burst Cyclic Rifle | Assault Cyclic Rifle"
+    }
+   ],
+   "notas": "não existe Storm Rifle; os fuzis cíclicos da unidade"
+  },
+  "a076": {
+   "artId": "destroyer-mace-shield",
+   "rotulo": "Destroyer Mace & Shield",
+   "confiancaRotulo": "alta",
+   "unitKey": "destroyer-sister",
+   "equipmentTags": [
+    "Energy Mace",
+    "Combat Shield"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Mace",
+     "armyBook": "Energy Mace"
+    },
+    {
+     "pdf": "Shield",
+     "armyBook": "Combat Shield"
+    }
+   ],
+   "notas": ""
+  },
+  "a077": {
+   "artId": "destroyer-dual-claws",
+   "rotulo": "Destroyer Dual Claws",
+   "confiancaRotulo": "alta",
+   "unitKey": "destroyer-sister",
+   "equipmentTags": [
+    "Dual Energy Claws"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Dual Claws",
+     "armyBook": "Dual Energy Claws"
+    }
+   ],
+   "notas": ""
+  },
+  "a078": {
+   "artId": "destroyer-heavy-fusion",
+   "rotulo": "Destroyer Heavy Fusion",
+   "confiancaRotulo": "alta",
+   "unitKey": "destroyer-sister",
+   "equipmentTags": [
+    "Heavy Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Heavy Fusion",
+     "armyBook": "Heavy Fusion Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a079": {
+   "artId": "destroyer-heavy-flamer",
+   "rotulo": "Destroyer Heavy Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "destroyer-sister",
+   "equipmentTags": [
+    "Heavy Flamer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "no PDF a palavra 'Flamer' está em negrito"
+  },
+  "a080": {
+   "artId": "biker-fanatic-v1",
+   "rotulo": "Biker Fanatic V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "biker-fanatic",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a081": {
+   "artId": "biker-fanatic-v2",
+   "rotulo": "Biker Fanatic V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "biker-fanatic",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a082": {
+   "artId": "biker-warrior-spear",
+   "rotulo": "Biker Warrior Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "biker-sister",
+   "equipmentTags": [
+    "Energy Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Biker Warrior",
+     "armyBook": "Biker Sisters"
+    },
+    {
+     "pdf": "Spear",
+     "armyBook": "Energy Lance"
+    }
+   ],
+   "notas": "arma padrão das Biker Sisters é Energy Lance"
+  },
+  "a083": {
+   "artId": "biker-warrior-pistoleer",
+   "rotulo": "Biker Warrior Pistoleer",
+   "confiancaRotulo": "alta",
+   "unitKey": "biker-sister",
+   "equipmentTags": [
+    "Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Biker Warrior",
+     "armyBook": "Biker Sisters"
+    },
+    {
+     "pdf": "Pistoleer",
+     "armyBook": "Pistol"
+    }
+   ],
+   "notas": "opção 'Replace all Energy Lances: Pistol'"
+  },
+  "a084": {
+   "ignorar": true,
+   "notas": "cópia borda de a048 (Fanatic V1) que não juntou ao par: mesmo tamanho (46,1 x 31,1 mm), mesma pose"
+  },
+  "a085": {
+   "ignorar": true,
+   "notas": "cópia borda de a049 (Fanatic V2) que não juntou ao par: mesmo tamanho (35,2 x 41,8 mm), mesma pose"
+  }
+ }
+}

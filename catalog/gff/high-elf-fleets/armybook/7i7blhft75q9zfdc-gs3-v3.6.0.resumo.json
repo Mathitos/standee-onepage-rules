@@ -1,0 +1,1131 @@
+{
+  "armyBook": {
+    "id": "7i7blhft75q9zfdc",
+    "nome": "High Elf Fleets",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:33.039Z",
+    "sistema": "grimdark-future-firefight",
+    "sistemaId": 3
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "80L-Rbh",
+      "nome": "Trasara Ioncrinius",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Burst Shred-Blaster Pistol",
+        "Ancient Sword"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Orbital Bombardment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9zCsahE",
+      "nome": "Elven Noble",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [
+        {
+          "nome": "Combat Shield",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Sniper Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Oracle Staff"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Dual Stinger Blades"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Burst Phaser Shooters"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Vanquisher Rocket Launcher",
+            "Strike",
+            "Vanquisher Leader"
+          ]
+        },
+        {
+          "secao": "Replace Sniper Rifle",
+          "ganha": [
+            "Burst Shard Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Sniper Rifle",
+          "ganha": [
+            "Burst Laser Carbine"
+          ]
+        },
+        {
+          "secao": "Replace Sniper Rifle",
+          "ganha": [
+            "Burst Phaser Blasters"
+          ]
+        },
+        {
+          "secao": "Replace Sniper Rifle",
+          "ganha": [
+            "Scorcher Flamer-Axe"
+          ]
+        },
+        {
+          "secao": "Replace Sniper Rifle",
+          "ganha": [
+            "Scorcher Fusion-Axe"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Shard Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Shred-Blaster Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Laser Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Sweeping Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Ancient Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Killing Axe"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Ancient Spear"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Shifter Backpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Jetpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Shield Projector"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Shifter Jumpgate Backpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Revenant Mask"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Stinger"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Glider Jetpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Jetbike"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Assault Jetbike"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Ancient Commander"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "High Avenger"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Elemental Hexer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "High Oracle"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master High Oracle"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Guardian Cleric"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Uvc9UHr",
+      "nome": "Elite Protector",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [
+        {
+          "nome": "Combat Shield",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Sniper Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Oracle Staff"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Burst Shard Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Shard Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Shred-Blaster Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Laser Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Sweeping Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Killing Axe"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Ancient Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Ancient Spear"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Striker Leader"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Shield Projector"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Sniper Leader"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Jetbike"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Assault Jetbike"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Acolyte Psy-Seer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "High Avenger"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Elemental Hexer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Psy-Weaver"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "High Oracle"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Guardian Cleric"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qfnk-JU",
+      "nome": "Protector",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "50x25"
+      },
+      "armas": [
+        "Shardgun",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Shardgun",
+          "ganha": [
+            "Gun Platform"
+          ]
+        },
+        {
+          "secao": "Replace Shardgun",
+          "ganha": [
+            "Gun Platform"
+          ]
+        },
+        {
+          "secao": "Replace Shardgun",
+          "ganha": [
+            "Gun Platform"
+          ]
+        },
+        {
+          "secao": "Replace Shardgun",
+          "ganha": [
+            "Gun Platform"
+          ]
+        },
+        {
+          "secao": "Replace Shardgun",
+          "ganha": [
+            "Gun Platform"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b-mChYC",
+      "nome": "Retributor",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Ancient Sword"
+      ],
+      "itens": [
+        {
+          "nome": "Combat Shield",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Ancient Swords and Combat Shield",
+          "ganha": [
+            "Shard Rifle",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Ancient Sword and Combat Shield",
+          "ganha": [
+            "Sgt. Shard Pistol",
+            "Sgt. Hand Weapon",
+            "Sgt. Armor"
+          ]
+        },
+        {
+          "secao": "Replace Ancient Sword and Combat Shield",
+          "ganha": [
+            "Burst Shard Rifle",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Shard Pistol",
+          "ganha": [
+            "Shred-Blaster Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Shard Pistol",
+          "ganha": [
+            "Laser Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Shard Pistol",
+          "ganha": [
+            "Flicker Shield"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Sweeping Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Ancient Sword"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Psy-Marker"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BPcH3j1",
+      "nome": "Striker",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "50x25"
+      },
+      "armas": [
+        "Shard Pistol",
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Shard Pistol and Hand Weapon",
+          "ganha": [
+            "Sgt. Shard Pistol",
+            "Sgt. Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Shard Pistol and Hand Weapon",
+          "ganha": [
+            "Assault Flamer",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Shard Pistol and Hand Weapon",
+          "ganha": [
+            "Assault Fusion Rifle",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Shard Pistol",
+          "ganha": [
+            "Shred-Blaster Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Shard Pistol",
+          "ganha": [
+            "Laser Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Ancient Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Ancient Spear"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Hologram Platform"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vQBMFLU",
+      "nome": "Shifter",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Phaser Shooters"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Phaser Shooter",
+          "ganha": [
+            "Phaser Blaster",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Phaser Blaster",
+          "ganha": [
+            "Heavy Phaser Blaster"
+          ]
+        },
+        {
+          "secao": "Replace Phaser Blaster",
+          "ganha": [
+            "Phaser Carbine"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Jumpgate Ingress"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Dual Shifter Picks"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FmIGYwF",
+      "nome": "Sniper",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Shard-Sniper Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Shard-Sniper Rifle",
+          "ganha": [
+            "Sniper Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Psy-Marker"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ERIGLS2",
+      "nome": "Glider",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Laser Carbine",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Laser Carbines and Strike",
+          "ganha": [
+            "Laser Pistol",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Grenade Packs"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Sky Glider"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Psy-Marker"
+          ]
+        },
+        {
+          "secao": "Replace Laser Carbine and Strike",
+          "ganha": [
+            "Sgt. Laser Pistol",
+            "Sgt. Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Laser Carbine and Strike",
+          "ganha": [
+            "Heavy Laser Carbine",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Laser Carbine and Strike",
+          "ganha": [
+            "Shred-Blaster Gun",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Laser Pistol",
+          "ganha": [
+            "Burst Shard Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Laser Pistol",
+          "ganha": [
+            "Burst Shred-Blaster Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Ancient Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Ancient Spear"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VM7l-RU",
+      "nome": "Revenant",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "50x25"
+      },
+      "armas": [
+        "Shard Pistol",
+        "Ancient Sword"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Shard Pistol and Ancient Sword",
+          "ganha": [
+            "Sgt. Shard Pistol",
+            "Sgt. Ancient Sword"
+          ]
+        },
+        {
+          "secao": "Replace Shard Pistol and Ancient Sword",
+          "ganha": [
+            "Revenant Scythe"
+          ]
+        },
+        {
+          "secao": "Replace Shard Pistol and Ancient Sword",
+          "ganha": [
+            "Revenant Chakram",
+            "Ancient Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Shard Pistol",
+          "ganha": [
+            "Shred-Blaster Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Shard Pistol",
+          "ganha": [
+            "Laser Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Ancient Sword",
+          "ganha": [
+            "Ancient Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Ancient Sword",
+          "ganha": [
+            "Killing Axe"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Ghostly Howl"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yVZh2Ch",
+      "nome": "Scorcher",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Heavy Flamer",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Heavy Flamer",
+          "ganha": [
+            "Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Flamer",
+          "ganha": [
+            "Fusion Lance-Gun"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G02X_NY",
+      "nome": "Stinger",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Shard Pistol",
+        "Stinger Blade"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Shard Pistol and Stinger Blade",
+          "ganha": [
+            "Sgt. Shard Pistol",
+            "Sgt. Stinger Blade"
+          ]
+        },
+        {
+          "secao": "Replace Shard Pistol and Stinger Blade",
+          "ganha": [
+            "Shard Pistol",
+            "Stinger Dagger"
+          ]
+        },
+        {
+          "secao": "Replace Shard Pistol and Stinger Blade",
+          "ganha": [
+            "Dual Ancient Swords"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Shard Pistol",
+          "ganha": [
+            "Stinger Fist-Gun"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Shard Pistol",
+          "ganha": [
+            "Burst Shred-Blaster Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Stinger Blade",
+          "ganha": [
+            "Ancient Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Stinger Blade",
+          "ganha": [
+            "Ancient Spear"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "25J4jTN",
+      "nome": "Vanquisher",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Heat-Rocket Launcher",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Heat-Rocket Launcher",
+          "ganha": [
+            "Dart-Rocket Launcher"
+          ]
+        },
+        {
+          "secao": "Replace Heat-Rocket Launcher",
+          "ganha": [
+            "Shard Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Heat-Rocket Launcher",
+          "ganha": [
+            "Arc-Rocket Launcher"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Psy-Marker"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OzZw7JY",
+      "nome": "Acolyte",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "30"
+      },
+      "armas": [
+        "Shard Pistol",
+        "Ancient Sword"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Ancient Sword",
+          "ganha": [
+            "Ancient Spear"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p50sgkI",
+      "nome": "Elemental Protector",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Warp-Blast Gun",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Warp-Blast Gun",
+          "ganha": [
+            "Elemental Cannon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xE7ljJF",
+      "nome": "Elemental Striker",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Ancient Swords"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Ancient Sword",
+          "ganha": [
+            "Killing Axe",
+            "Combat Shield"
+          ]
+        },
+        {
+          "secao": "Replace Dual Ancient Sword",
+          "ganha": [
+            "Ancient Spear",
+            "Combat Shield"
+          ]
+        },
+        {
+          "secao": "Replace Dual Ancient Sword",
+          "ganha": [
+            "Ancient Sword",
+            "Combat Shield"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c2SKcZS",
+      "nome": "Jetbike Striker",
+      "tamanho": 1,
+      "bases": {
+        "round": "60x35",
+        "square": "60x30"
+      },
+      "armas": [
+        "Assault Bike-Shardguns",
+        "Ancient Lance"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Ancient Lance",
+          "ganha": [
+            "Shard Pistol",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Assault Bike-Shardguns and Ancient Lance",
+          "ganha": [
+            "Shard Pistol",
+            "Ancient Sword"
+          ]
+        },
+        {
+          "secao": "Replace Ancient Sword",
+          "ganha": [
+            "Killing Axe"
+          ]
+        },
+        {
+          "secao": "Replace Ancient Sword",
+          "ganha": [
+            "Ancient Spear"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hologram Field"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master-Crafted Engines"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aMQa9nT",
+      "nome": "Jetbike Protector",
+      "tamanho": 1,
+      "bases": {
+        "round": "60x35",
+        "square": "60x30"
+      },
+      "armas": [
+        "Burst Bike-Shardguns",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Burst Bike-Shardgun",
+          "ganha": [
+            "Sniper Rifle",
+            "Bike-Shardguns"
+          ]
+        },
+        {
+          "secao": "Replace Burst Bike-Shardgun",
+          "ganha": [
+            "Shard-Sniper Rifle",
+            "Bike-Shardguns"
+          ]
+        },
+        {
+          "secao": "Replace Burst Bike-Shardgun",
+          "ganha": [
+            "Shard Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Burst Bike-Shardgun",
+          "ganha": [
+            "Burst Laser"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hologram Field"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Flicker Shield"
+          ]
+        }
+      ]
+    }
+  ]
+}

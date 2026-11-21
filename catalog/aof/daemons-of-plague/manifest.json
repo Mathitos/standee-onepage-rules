@@ -1,0 +1,1736 @@
+{
+  "schemaVersion": 1,
+  "packId": "daemons-of-plague",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "AOF",
+    "slug": "age-of-fantasy",
+    "armyForgeId": 4
+  },
+  "gameSystems": [
+    {
+      "code": "AOF",
+      "slug": "age-of-fantasy",
+      "armyForgeId": 4
+    },
+    {
+      "code": "AOFS",
+      "slug": "age-of-fantasy-skirmish",
+      "armyForgeId": 5
+    }
+  ],
+  "armyBook": {
+    "id": "vJuokTQpJWj3_MrJ",
+    "name": "Daemons of Plague",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "vJuokTQpJWj3_MrJ",
+      "name": "Daemons of Plague",
+      "version": "3.6.0",
+      "gameSystemId": 4,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "vJuokTQpJWj3_MrJ",
+      "name": "Daemons of Plague",
+      "version": "3.6.0",
+      "gameSystemId": 5,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Daemons_of_Plague_BW.pdf",
+    "pdfSha256": "efa12f2e3f4514e97cd063fe398fa52a4c761912c50ac164787e0adf01b1be06",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "champion-of-plague",
+      "names": [
+        "Champion of Plague"
+      ],
+      "armyForgeUnitId": "7NfheZg",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "plague-warriors",
+      "names": [
+        "Plague Warriors",
+        "Plague Warrior"
+      ],
+      "armyForgeUnitId": "atz33g2",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "plague-furies",
+      "names": [
+        "Plague Furies",
+        "Plague Fury"
+      ],
+      "armyForgeUnitId": "1d1ydfq",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "plague-fly-riders",
+      "names": [
+        "Plague Fly Riders",
+        "Plague Fly Rider"
+      ],
+      "armyForgeUnitId": "3d71gbH",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          60.0
+        ],
+        "raw": "60",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "plague-swarms",
+      "names": [
+        "Plague Swarms",
+        "Plague Swarm"
+      ],
+      "armyForgeUnitId": "beTfybt",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "harbinger-of-plague",
+      "names": [
+        "Harbinger of Plague"
+      ],
+      "armyForgeUnitId": "vB9x-hR",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          90.0,
+          52.0
+        ],
+        "raw": "90x52",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "champion-gauntlet",
+      "candidateId": "a001",
+      "pdfLabel": "Champion Gauntlet",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion-of-plague",
+      "equipmentTags": [
+        "Daemon Gauntlet"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Champion of Plague"
+        },
+        {
+          "pdf": "Gauntlet",
+          "armyBook": "Daemon Gauntlet"
+        }
+      ],
+      "notes": "figura de guerreiro (não Fury) = Champion of Plague",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0
+          ],
+          "front": "arts/champion-gauntlet/fino/frente.svg",
+          "back": "arts/champion-gauntlet/fino/verso.svg",
+          "canvasMm": [
+            47.159,
+            36.872
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            36.7,
+            46.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 15,
+          "rows": [
+            0
+          ],
+          "front": "arts/champion-gauntlet/borda/frente.svg",
+          "back": "arts/champion-gauntlet/borda/verso.svg",
+          "canvasMm": [
+            50.546,
+            38.566
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            38.4,
+            50.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-spear",
+      "candidateId": "a002",
+      "pdfLabel": "Champion Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion-of-plague",
+      "equipmentTags": [
+        "Daemon Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Champion of Plague"
+        },
+        {
+          "pdf": "Spear",
+          "armyBook": "Daemon Spear"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            1
+          ],
+          "front": "arts/champion-spear/fino/frente.svg",
+          "back": "arts/champion-spear/fino/verso.svg",
+          "canvasMm": [
+            43.73,
+            35.306
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            35.2,
+            43.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 15,
+          "rows": [
+            1
+          ],
+          "front": "arts/champion-spear/borda/frente.svg",
+          "back": "arts/champion-spear/borda/verso.svg",
+          "canvasMm": [
+            47.117,
+            36.999
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            36.9,
+            46.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-sword",
+      "candidateId": "a003",
+      "pdfLabel": "Champion Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "champion-of-plague",
+      "equipmentTags": [
+        "Plague Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Champion of Plague"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Plague Sword"
+        }
+      ],
+      "notes": "espada da facção; poderia ser Infected Sword",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            2
+          ],
+          "front": "arts/champion-sword/fino/frente.svg",
+          "back": "arts/champion-sword/fino/verso.svg",
+          "canvasMm": [
+            35.941,
+            35.264
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            35.1,
+            35.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 15,
+          "rows": [
+            2
+          ],
+          "front": "arts/champion-sword/borda/frente.svg",
+          "back": "arts/champion-sword/borda/verso.svg",
+          "canvasMm": [
+            39.328,
+            36.957
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            36.8,
+            39.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sword",
+      "candidateId": "a004",
+      "pdfLabel": "Warrior Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-warriors",
+      "equipmentTags": [
+        "Plague Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Plague Sword"
+        }
+      ],
+      "notes": "Warrior = Plague Warriors; Plague Sword é a arma padrão",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-sword/fino/frente.svg",
+          "back": "arts/warrior-sword/fino/verso.svg",
+          "canvasMm": [
+            22.352,
+            32.3
+          ],
+          "frontBackIoU": 0.965,
+          "sizeMm": [
+            32.2,
+            22.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 16,
+          "rows": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-sword/borda/frente.svg",
+          "back": "arts/warrior-sword/borda/verso.svg",
+          "canvasMm": [
+            25.739,
+            33.994
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            33.9,
+            25.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sickle",
+      "candidateId": "a005",
+      "pdfLabel": "Warrior Sickle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-warriors",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sickle",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "foice de uma mão; o army book não tem foice; Hand Weapon (poderia ser Infected Sword)",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-sickle/fino/frente.svg",
+          "back": "arts/warrior-sickle/fino/verso.svg",
+          "canvasMm": [
+            22.225,
+            32.089
+          ],
+          "frontBackIoU": 0.965,
+          "sizeMm": [
+            32.0,
+            22.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-sickle/borda/frente.svg",
+          "back": "arts/warrior-sickle/borda/verso.svg",
+          "canvasMm": [
+            25.612,
+            33.782
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            33.7,
+            25.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-greataxe",
+      "candidateId": "a006",
+      "pdfLabel": "Warrior Greataxe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-warriors",
+      "equipmentTags": [
+        "Great Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Greataxe",
+          "armyBook": "Great Weapon"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-greataxe/fino/frente.svg",
+          "back": "arts/warrior-greataxe/fino/verso.svg",
+          "canvasMm": [
+            40.471,
+            32.173
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            32.1,
+            40.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 18,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-greataxe/borda/frente.svg",
+          "back": "arts/warrior-greataxe/borda/verso.svg",
+          "canvasMm": [
+            43.857,
+            33.867
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            33.8,
+            43.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-spear",
+      "candidateId": "a007",
+      "pdfLabel": "Warrior Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-warriors",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Warrior = Plague Warriors",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-spear/fino/frente.svg",
+          "back": "arts/warrior-spear/fino/verso.svg",
+          "canvasMm": [
+            41.995,
+            32.216
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            32.1,
+            41.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 19,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-spear/borda/frente.svg",
+          "back": "arts/warrior-spear/borda/verso.svg",
+          "canvasMm": [
+            45.381,
+            33.909
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            33.8,
+            45.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-mace",
+      "candidateId": "a008",
+      "pdfLabel": "Warrior Mace",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-warriors",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Mace",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "maça de uma mão; o army book não tem maça",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-mace/fino/frente.svg",
+          "back": "arts/warrior-mace/fino/verso.svg",
+          "canvasMm": [
+            24.511,
+            32.343
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            32.3,
+            24.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 20,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-mace/borda/frente.svg",
+          "back": "arts/warrior-mace/borda/verso.svg",
+          "canvasMm": [
+            27.898,
+            34.036
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            34.0,
+            27.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-halberd",
+      "candidateId": "a009",
+      "pdfLabel": "Warrior Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-warriors",
+      "equipmentTags": [
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Warrior = Plague Warriors",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-halberd/fino/frente.svg",
+          "back": "arts/warrior-halberd/fino/verso.svg",
+          "canvasMm": [
+            41.783,
+            32.046
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            31.9,
+            41.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 21,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-halberd/borda/frente.svg",
+          "back": "arts/warrior-halberd/borda/verso.svg",
+          "canvasMm": [
+            45.17,
+            33.74
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            33.6,
+            45.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sargeant",
+      "candidateId": "a010",
+      "pdfLabel": "Warrior Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-warriors",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "o PDF grafa Sargeant",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sargeant/fino/frente.svg",
+          "back": "arts/warrior-sargeant/fino/verso.svg",
+          "canvasMm": [
+            40.767,
+            34.078
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            34.0,
+            40.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 22,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sargeant/borda/frente.svg",
+          "back": "arts/warrior-sargeant/borda/verso.svg",
+          "canvasMm": [
+            44.154,
+            35.772
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            35.6,
+            43.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-musician",
+      "candidateId": "a011",
+      "pdfLabel": "Warrior Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-warriors",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-musician/fino/frente.svg",
+          "back": "arts/warrior-musician/fino/verso.svg",
+          "canvasMm": [
+            22.437,
+            41.825
+          ],
+          "frontBackIoU": 0.966,
+          "sizeMm": [
+            41.7,
+            22.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 22,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-musician/borda/frente.svg",
+          "back": "arts/warrior-musician/borda/verso.svg",
+          "canvasMm": [
+            25.823,
+            43.519
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            43.4,
+            25.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-banner",
+      "candidateId": "a012",
+      "pdfLabel": "Warrior Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-warriors",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-banner/fino/frente.svg",
+          "back": "arts/warrior-banner/fino/verso.svg",
+          "canvasMm": [
+            27.093,
+            55.965
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            55.9,
+            26.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 22,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-banner/borda/frente.svg",
+          "back": "arts/warrior-banner/borda/verso.svg",
+          "canvasMm": [
+            30.48,
+            57.658
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            57.6,
+            30.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fury-v1",
+      "candidateId": "a013",
+      "pdfLabel": "Fury (V1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-furies",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Fury = Plague Furies",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/fury-v1/fino/frente.svg",
+          "back": "arts/fury-v1/fino/verso.svg",
+          "canvasMm": [
+            69.511,
+            51.435
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            51.3,
+            69.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 23,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/fury-v1/borda/frente.svg",
+          "back": "arts/fury-v1/borda/verso.svg",
+          "canvasMm": [
+            72.898,
+            53.128
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            53.0,
+            72.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fury-v2",
+      "candidateId": "a014",
+      "pdfLabel": "Fury (V2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-furies",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Fury = Plague Furies",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            2,
+            3
+          ],
+          "front": "arts/fury-v2/fino/frente.svg",
+          "back": "arts/fury-v2/fino/verso.svg",
+          "canvasMm": [
+            62.992,
+            54.187
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            54.1,
+            62.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 23,
+          "rows": [
+            2,
+            3
+          ],
+          "front": "arts/fury-v2/borda/frente.svg",
+          "back": "arts/fury-v2/borda/verso.svg",
+          "canvasMm": [
+            66.379,
+            55.88
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            55.8,
+            66.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fly-rider",
+      "candidateId": "a015",
+      "pdfLabel": "Fly Rider",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-fly-riders",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só estilo fino; a024 é a versão borda",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/fly-rider/fino/frente.svg",
+          "back": "arts/fly-rider/fino/verso.svg",
+          "canvasMm": [
+            59.097,
+            59.69
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            59.4,
+            58.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sargeant",
+      "candidateId": "a016",
+      "pdfLabel": "Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-fly-riders",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sargeant",
+          "armyBook": "Plague Fly Riders (Sergeant)"
+        }
+      ],
+      "notes": "o rótulo não diz a unidade; a figura é um Fly Rider. Só estilo fino; a025 é a versão borda",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0
+          ],
+          "front": "arts/sargeant/fino/frente.svg",
+          "back": "arts/sargeant/fino/verso.svg",
+          "canvasMm": [
+            73.152,
+            58.632
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            58.4,
+            72.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "banner",
+      "candidateId": "a017",
+      "pdfLabel": "Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-fly-riders",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Banner",
+          "armyBook": "Plague Fly Riders (Banner)"
+        }
+      ],
+      "notes": "o rótulo não diz a unidade; a figura é um Fly Rider",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            1
+          ],
+          "front": "arts/banner/fino/frente.svg",
+          "back": "arts/banner/fino/verso.svg",
+          "canvasMm": [
+            83.143,
+            78.825
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            78.7,
+            82.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 25,
+          "rows": [
+            1
+          ],
+          "front": "arts/banner/borda/frente.svg",
+          "back": "arts/banner/borda/verso.svg",
+          "canvasMm": [
+            85.683,
+            80.518
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            80.4,
+            85.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "musician",
+      "candidateId": "a018",
+      "pdfLabel": "Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "baixa",
+      "unitKey": "plague-fly-riders",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Musician",
+          "armyBook": "Plague Fly Riders (Musician)"
+        }
+      ],
+      "notes": "o quadro do rótulo traz também \"Banner\" (vazado do vizinho); a figura toca corneta, então Musician. Fly Rider; só estilo fino, a026 é a versão borda",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            2
+          ],
+          "front": "arts/musician/fino/frente.svg",
+          "back": "arts/musician/fino/verso.svg",
+          "canvasMm": [
+            59.605,
+            49.234
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            49.0,
+            59.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "swarm-v1",
+      "candidateId": "a019",
+      "pdfLabel": "Swarm (V1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-swarms",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Swarm = Plague Swarms",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0
+          ],
+          "front": "arts/swarm-v1/fino/frente.svg",
+          "back": "arts/swarm-v1/fino/verso.svg",
+          "canvasMm": [
+            46.694,
+            38.735
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            38.6,
+            46.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            0
+          ],
+          "front": "arts/swarm-v1/borda/frente.svg",
+          "back": "arts/swarm-v1/borda/verso.svg",
+          "canvasMm": [
+            50.08,
+            40.428
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            40.3,
+            49.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "swarm-v2",
+      "candidateId": "a020",
+      "pdfLabel": "Swarm (V2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-swarms",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Swarm = Plague Swarms",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            1
+          ],
+          "front": "arts/swarm-v2/fino/frente.svg",
+          "back": "arts/swarm-v2/fino/verso.svg",
+          "canvasMm": [
+            37.507,
+            44.323
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            44.2,
+            37.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            1
+          ],
+          "front": "arts/swarm-v2/borda/frente.svg",
+          "back": "arts/swarm-v2/borda/verso.svg",
+          "canvasMm": [
+            40.894,
+            46.101
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            45.9,
+            40.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "swarm-v3",
+      "candidateId": "a021",
+      "pdfLabel": "Swarm (V3)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-swarms",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Swarm = Plague Swarms",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            2
+          ],
+          "front": "arts/swarm-v3/fino/frente.svg",
+          "back": "arts/swarm-v3/fino/verso.svg",
+          "canvasMm": [
+            46.905,
+            38.608
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            38.5,
+            46.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            2
+          ],
+          "front": "arts/swarm-v3/borda/frente.svg",
+          "back": "arts/swarm-v3/borda/verso.svg",
+          "canvasMm": [
+            50.292,
+            40.344
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            40.2,
+            50.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "harbinger",
+      "candidateId": "a022",
+      "pdfLabel": "Harbinger",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "harbinger-of-plague",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Harbinger = Harbinger of Plague (sem \"Ascended\"); tamanho compatível com a base 90x52 contando as asas",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0
+          ],
+          "front": "arts/harbinger/fino/frente.svg",
+          "back": "arts/harbinger/fino/verso.svg",
+          "canvasMm": [
+            133.392,
+            110.278
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            110.2,
+            133.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            0
+          ],
+          "front": "arts/harbinger/borda/frente.svg",
+          "back": "arts/harbinger/borda/verso.svg",
+          "canvasMm": [
+            140.166,
+            113.665
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            113.5,
+            140.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sword-borda",
+      "candidateId": "a023",
+      "pdfLabel": "Warrior Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-warriors",
+      "equipmentTags": [
+        "Plague Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Plague Sword"
+        }
+      ],
+      "notes": "cópia borda extra de a004 (que já tem fino e borda); Plague Sword",
+      "styles": {
+        "borda": {
+          "page": 16,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-sword-borda/borda/frente.svg",
+          "back": "arts/warrior-sword-borda/borda/verso.svg",
+          "canvasMm": [
+            25.739,
+            33.994
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            33.9,
+            25.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fly-rider-borda",
+      "candidateId": "a024",
+      "pdfLabel": "Fly Rider",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-fly-riders",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "versão borda de a015 (o pareamento falhou)",
+      "styles": {
+        "borda": {
+          "page": 24,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/fly-rider-borda/borda/frente.svg",
+          "back": "arts/fly-rider-borda/borda/verso.svg",
+          "canvasMm": [
+            62.484,
+            75.48
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            75.4,
+            62.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sargeant-borda",
+      "candidateId": "a025",
+      "pdfLabel": "Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "plague-fly-riders",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sargeant",
+          "armyBook": "Plague Fly Riders (Sergeant)"
+        }
+      ],
+      "notes": "versão borda de a016 (o pareamento falhou); figura é Fly Rider",
+      "styles": {
+        "borda": {
+          "page": 25,
+          "rows": [
+            0
+          ],
+          "front": "arts/sargeant-borda/borda/frente.svg",
+          "back": "arts/sargeant-borda/borda/verso.svg",
+          "canvasMm": [
+            76.539,
+            74.507
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            74.4,
+            76.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "musician-borda",
+      "candidateId": "a026",
+      "pdfLabel": "Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "baixa",
+      "unitKey": "plague-fly-riders",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Musician",
+          "armyBook": "Plague Fly Riders (Musician)"
+        }
+      ],
+      "notes": "versão borda de a018 (o pareamento falhou); o quadro também traz \"Banner\" vazado; figura toca corneta",
+      "styles": {
+        "borda": {
+          "page": 25,
+          "rows": [
+            2
+          ],
+          "front": "arts/musician-borda/borda/frente.svg",
+          "back": "arts/musician-borda/borda/verso.svg",
+          "canvasMm": [
+            62.315,
+            65.617
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            65.5,
+            62.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

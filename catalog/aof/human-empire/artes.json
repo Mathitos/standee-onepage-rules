@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "human-empire",
- "faccao": "Human Empire",
+ "faccao": "Human Empire\r",
  "sistema": "aof",
  "pdf": {
   "nome": "Human_Empire_-_BW.pdf",
@@ -12,14 +12,17 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "knight-captain",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Knight Captain",
+   "rotuloImg": "arts/knight-captain/rotulo.png",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Captain",
+    "Horse"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +54,17 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "captain-pistol",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Captain Pistol",
+   "rotuloImg": "arts/captain-pistol/rotulo.png",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Captain",
+    "Dual Firepowder Pistols|Dual Matchlock Pistols"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -90,14 +96,17 @@
    "pendencias": []
   },
   {
-   "id": "a003",
+   "id": "captain-sword",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Captain Sword",
+   "rotuloImg": "arts/captain-sword/rotulo.png",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Captain",
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -129,14 +138,17 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "captain-halberd",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Captain Halberd",
+   "rotuloImg": "arts/captain-halberd/rotulo.png",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Captain",
+    "Halberd"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -168,14 +180,17 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "pegasus-captain",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Pegasus Captain",
+   "rotuloImg": "arts/pegasus-captain/rotulo.png",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Captain",
+    "Pegasus"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -207,14 +222,17 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "general-pistol",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "General Pistol",
+   "rotuloImg": "arts/general-pistol/rotulo.png",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "General",
+    "Dual Firepowder Pistols|Dual Matchlock Pistols"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -246,14 +264,17 @@
    "pendencias": []
   },
   {
-   "id": "a007",
+   "id": "general-halberd",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "General Halberd",
+   "rotuloImg": "arts/general-halberd/rotulo.png",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "General",
+    "Halberd"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -285,14 +306,17 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "general-sword",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "General Sword",
+   "rotuloImg": "arts/general-sword/rotulo.png",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "General",
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -324,14 +348,16 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "cleric-flail",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Cleric Flail",
+   "rotuloImg": "arts/cleric-flail/rotulo.png",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Cleric"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -363,14 +389,16 @@
    "pendencias": []
   },
   {
-   "id": "a010",
+   "id": "bounty-hunter-v1",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Bounty Hunter V1",
+   "rotuloImg": "arts/bounty-hunter-v1/rotulo.png",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Bounty Hunter"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -402,14 +430,16 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "bounty-hunter-v2",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Bounty Hunter V2",
+   "rotuloImg": "arts/bounty-hunter-v2/rotulo.png",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Bounty Hunter"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -441,14 +471,16 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "army-standard",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Army Standard",
+   "rotuloImg": "arts/army-standard/rotulo.png",
+   "unitKey": "battle-master",
+   "equipmentTags": [
+    "Army Standard Bearer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -480,14 +512,16 @@
    "pendencias": []
   },
   {
-   "id": "a013",
+   "id": "engineer-scope",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Engineer Scope",
+   "rotuloImg": "arts/engineer-scope/rotulo.png",
+   "unitKey": "champion",
+   "equipmentTags": [
+    "Engineer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -519,14 +553,17 @@
    "pendencias": []
   },
   {
-   "id": "a014",
+   "id": "engineer-pistol",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Engineer Pistol",
+   "rotuloImg": "arts/engineer-pistol/rotulo.png",
+   "unitKey": "champion",
+   "equipmentTags": [
+    "Engineer",
+    "Dual Gatling Pistols"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -558,14 +595,17 @@
    "pendencias": []
   },
   {
-   "id": "a015",
+   "id": "engineer-sniper",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Engineer Sniper",
+   "rotuloImg": "arts/engineer-sniper/rotulo.png",
+   "unitKey": "champion",
+   "equipmentTags": [
+    "Engineer",
+    "Sniper Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -597,14 +637,18 @@
    "pendencias": []
   },
   {
-   "id": "a016",
+   "id": "horse-engineer-launcher",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Horse Engineer Launcher",
+   "rotuloImg": "arts/horse-engineer-launcher/rotulo.png",
+   "unitKey": "champion",
+   "equipmentTags": [
+    "Engineer",
+    "Horse",
+    "Grenade Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -636,14 +680,18 @@
    "pendencias": []
   },
   {
-   "id": "a017",
+   "id": "horse-engineer-gatling",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Horse Engineer Gatling",
+   "rotuloImg": "arts/horse-engineer-gatling/rotulo.png",
+   "unitKey": "champion",
+   "equipmentTags": [
+    "Engineer",
+    "Horse",
+    "Gatling Rifle|Dual Gatling Pistols"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -675,14 +723,14 @@
    "pendencias": []
   },
   {
-   "id": "a018",
+   "id": "aether-mage",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Aether Mage",
+   "rotuloImg": "arts/aether-mage/rotulo.png",
+   "unitKey": "mage-council",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -714,14 +762,14 @@
    "pendencias": []
   },
   {
-   "id": "a019",
+   "id": "air-mage",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Air Mage",
+   "rotuloImg": "arts/air-mage/rotulo.png",
+   "unitKey": "mage-council",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -755,14 +803,14 @@
    ]
   },
   {
-   "id": "a020",
+   "id": "earth-mage",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Earth Mage",
+   "rotuloImg": "arts/earth-mage/rotulo.png",
+   "unitKey": "mage-council",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -796,14 +844,14 @@
    ]
   },
   {
-   "id": "a021",
+   "id": "fire-mage",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fire Mage",
+   "rotuloImg": "arts/fire-mage/rotulo.png",
+   "unitKey": "mage-council",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -835,14 +883,14 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "water-mage",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Water Mage",
+   "rotuloImg": "arts/water-mage/rotulo.png",
+   "unitKey": "mage-council",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -876,14 +924,16 @@
    ]
   },
   {
-   "id": "a023",
+   "id": "infantry-sword",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Infantry Sword",
+   "rotuloImg": "arts/infantry-sword/rotulo.png",
+   "unitKey": "infantrymen",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -915,14 +965,16 @@
    "pendencias": []
   },
   {
-   "id": "a024",
+   "id": "infantry-halberd",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Infantry Halberd",
+   "rotuloImg": "arts/infantry-halberd/rotulo.png",
+   "unitKey": "infantrymen",
+   "equipmentTags": [
+    "Halberd"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -954,14 +1006,16 @@
    "pendencias": []
   },
   {
-   "id": "a025",
+   "id": "infantry-spear",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Infantry Spear",
+   "rotuloImg": "arts/infantry-spear/rotulo.png",
+   "unitKey": "infantrymen",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -993,14 +1047,14 @@
    "pendencias": []
   },
   {
-   "id": "a026",
+   "id": "infantry-musician",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Infantry Musician",
+   "rotuloImg": "arts/infantry-musician/rotulo.png",
+   "unitKey": "infantrymen",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1032,14 +1086,14 @@
    "pendencias": []
   },
   {
-   "id": "a027",
+   "id": "infantry-sargeant",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Infantry Sargeant",
+   "rotuloImg": "arts/infantry-sargeant/rotulo.png",
+   "unitKey": "infantrymen",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1071,14 +1125,14 @@
    "pendencias": []
   },
   {
-   "id": "a028",
+   "id": "infantry-banner",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Infantry Banner",
+   "rotuloImg": "arts/infantry-banner/rotulo.png",
+   "unitKey": "infantrymen",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1110,14 +1164,16 @@
    "pendencias": []
   },
   {
-   "id": "a029",
+   "id": "elite-greatsword",
    "candidato": "a029",
-   "rotulo": null,
-   "rotuloImg": "arts/a029/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elite Greatsword",
+   "rotuloImg": "arts/elite-greatsword/rotulo.png",
+   "unitKey": "elite-weapon-masters",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1149,14 +1205,16 @@
    "pendencias": []
   },
   {
-   "id": "a030",
+   "id": "elite-hammer",
    "candidato": "a030",
-   "rotulo": null,
-   "rotuloImg": "arts/a030/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elite Hammer",
+   "rotuloImg": "arts/elite-hammer/rotulo.png",
+   "unitKey": "elite-weapon-masters",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1188,14 +1246,14 @@
    "pendencias": []
   },
   {
-   "id": "a031",
+   "id": "elite-sargeant",
    "candidato": "a031",
-   "rotulo": null,
-   "rotuloImg": "arts/a031/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Elite Sargeant",
+   "rotuloImg": "arts/elite-sargeant/rotulo.png",
+   "unitKey": "elite-weapon-masters",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1227,14 +1285,14 @@
    "pendencias": []
   },
   {
-   "id": "a032",
+   "id": "elite-musician",
    "candidato": "a032",
-   "rotulo": null,
-   "rotuloImg": "arts/a032/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Elite Musician",
+   "rotuloImg": "arts/elite-musician/rotulo.png",
+   "unitKey": "elite-weapon-masters",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1266,14 +1324,14 @@
    "pendencias": []
   },
   {
-   "id": "a033",
+   "id": "elite-banner",
    "candidato": "a033",
-   "rotulo": null,
-   "rotuloImg": "arts/a033/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Elite Banner",
+   "rotuloImg": "arts/elite-banner/rotulo.png",
+   "unitKey": "elite-weapon-masters",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1305,14 +1363,14 @@
    "pendencias": []
   },
   {
-   "id": "a034",
+   "id": "fanatic-v1",
    "candidato": "a034",
-   "rotulo": null,
-   "rotuloImg": "arts/a034/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fanatic V1",
+   "rotuloImg": "arts/fanatic-v1/rotulo.png",
+   "unitKey": "fanatics",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1344,14 +1402,14 @@
    "pendencias": []
   },
   {
-   "id": "a035",
+   "id": "fanatic-v2",
    "candidato": "a035",
-   "rotulo": null,
-   "rotuloImg": "arts/a035/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fanatic V2",
+   "rotuloImg": "arts/fanatic-v2/rotulo.png",
+   "unitKey": "fanatics",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1385,14 +1443,14 @@
    ]
   },
   {
-   "id": "a036",
+   "id": "fanatic-sargeant",
    "candidato": "a036",
-   "rotulo": null,
-   "rotuloImg": "arts/a036/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fanatic Sargeant",
+   "rotuloImg": "arts/fanatic-sargeant/rotulo.png",
+   "unitKey": "fanatics",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1424,14 +1482,14 @@
    "pendencias": []
   },
   {
-   "id": "a037",
+   "id": "fanatic-musician",
    "candidato": "a037",
-   "rotulo": null,
-   "rotuloImg": "arts/a037/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fanatic Musician",
+   "rotuloImg": "arts/fanatic-musician/rotulo.png",
+   "unitKey": "fanatics",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1463,14 +1521,14 @@
    "pendencias": []
   },
   {
-   "id": "a038",
+   "id": "fanatic-banner",
    "candidato": "a038",
-   "rotulo": null,
-   "rotuloImg": "arts/a038/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fanatic Banner",
+   "rotuloImg": "arts/fanatic-banner/rotulo.png",
+   "unitKey": "fanatics",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1502,14 +1560,16 @@
    "pendencias": []
   },
   {
-   "id": "a039",
+   "id": "mercenary-pistols",
    "candidato": "a039",
-   "rotulo": null,
-   "rotuloImg": "arts/a039/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Mercenary Pistols",
+   "rotuloImg": "arts/mercenary-pistols/rotulo.png",
+   "unitKey": "mercenaries",
+   "equipmentTags": [
+    "Dual Firepowder Pistols|Dual Matchlock Pistols"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1541,14 +1601,16 @@
    "pendencias": []
   },
   {
-   "id": "a040",
+   "id": "mercenary-swords",
    "candidato": "a040",
-   "rotulo": null,
-   "rotuloImg": "arts/a040/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Mercenary Swords",
+   "rotuloImg": "arts/mercenary-swords/rotulo.png",
+   "unitKey": "mercenaries",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1580,14 +1642,14 @@
    "pendencias": []
   },
   {
-   "id": "a041",
+   "id": "hunter-v1",
    "candidato": "a041",
-   "rotulo": null,
-   "rotuloImg": "arts/a041/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hunter V1",
+   "rotuloImg": "arts/hunter-v1/rotulo.png",
+   "unitKey": "mercenary-hunters",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1619,14 +1681,14 @@
    "pendencias": []
   },
   {
-   "id": "a042",
+   "id": "hunter-v2",
    "candidato": "a042",
-   "rotulo": null,
-   "rotuloImg": "arts/a042/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hunter V2",
+   "rotuloImg": "arts/hunter-v2/rotulo.png",
+   "unitKey": "mercenary-hunters",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1658,14 +1720,16 @@
    "pendencias": []
   },
   {
-   "id": "a043",
+   "id": "marksman-rifle",
    "candidato": "a043",
-   "rotulo": null,
-   "rotuloImg": "arts/a043/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Marksman Rifle",
+   "rotuloImg": "arts/marksman-rifle/rotulo.png",
+   "unitKey": "marksmen",
+   "equipmentTags": [
+    "Matchlock Rifle|Firepowder Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1697,14 +1761,16 @@
    "pendencias": []
   },
   {
-   "id": "a044",
+   "id": "marksman-crossbow",
    "candidato": "a044",
-   "rotulo": null,
-   "rotuloImg": "arts/a044/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Marksman Crossbow",
+   "rotuloImg": "arts/marksman-crossbow/rotulo.png",
+   "unitKey": "marksmen",
+   "equipmentTags": [
+    "Crossbow"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1736,14 +1802,16 @@
    "pendencias": []
   },
   {
-   "id": "a045",
+   "id": "marksman-sargeant-pistol",
    "candidato": "a045",
-   "rotulo": null,
-   "rotuloImg": "arts/a045/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Marksman Sargeant Pistol",
+   "rotuloImg": "arts/marksman-sargeant-pistol/rotulo.png",
+   "unitKey": "marksmen",
+   "equipmentTags": [
+    "Dual Firepowder Pistols|Dual Matchlock Pistols"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1775,14 +1843,16 @@
    "pendencias": []
   },
   {
-   "id": "a046",
+   "id": "marksman-sargeant-gatling",
    "candidato": "a046",
-   "rotulo": null,
-   "rotuloImg": "arts/a046/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Marksman Sargeant Gatling",
+   "rotuloImg": "arts/marksman-sargeant-gatling/rotulo.png",
+   "unitKey": "marksmen",
+   "equipmentTags": [
+    "Gatling Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1814,14 +1884,16 @@
    "pendencias": []
   },
   {
-   "id": "a047",
+   "id": "marksman-sargeant-sniper",
    "candidato": "a047",
-   "rotulo": null,
-   "rotuloImg": "arts/a047/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Marksman Sargeant Sniper",
+   "rotuloImg": "arts/marksman-sargeant-sniper/rotulo.png",
+   "unitKey": "marksmen",
+   "equipmentTags": [
+    "Sniper Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1853,14 +1925,14 @@
    "pendencias": []
   },
   {
-   "id": "a048",
+   "id": "marksman-musician",
    "candidato": "a048",
-   "rotulo": null,
-   "rotuloImg": "arts/a048/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Marksman Musician",
+   "rotuloImg": "arts/marksman-musician/rotulo.png",
+   "unitKey": "marksmen",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1892,14 +1964,14 @@
    "pendencias": []
   },
   {
-   "id": "a049",
+   "id": "marksman-banner",
    "candidato": "a049",
-   "rotulo": null,
-   "rotuloImg": "arts/a049/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Marksman Banner",
+   "rotuloImg": "arts/marksman-banner/rotulo.png",
+   "unitKey": "marksmen",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1931,14 +2003,16 @@
    "pendencias": []
   },
   {
-   "id": "a050",
+   "id": "horse-pistoleer",
    "candidato": "a050",
-   "rotulo": null,
-   "rotuloImg": "arts/a050/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Horse Pistoleer",
+   "rotuloImg": "arts/horse-pistoleer/rotulo.png",
+   "unitKey": "horse-marksmen",
+   "equipmentTags": [
+    "Dual Firepowder Pistols|Dual Matchlock Pistols"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1970,14 +2044,16 @@
    "pendencias": []
   },
   {
-   "id": "a051",
+   "id": "horse-rifleman",
    "candidato": "a051",
-   "rotulo": null,
-   "rotuloImg": "arts/a051/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Horse Rifleman",
+   "rotuloImg": "arts/horse-rifleman/rotulo.png",
+   "unitKey": "horse-marksmen",
+   "equipmentTags": [
+    "Matchlock Rifle|Firepowder Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2009,14 +2085,14 @@
    "pendencias": []
   },
   {
-   "id": "a052",
+   "id": "horse-marksman-sargeant-sniper",
    "candidato": "a052",
-   "rotulo": null,
-   "rotuloImg": "arts/a052/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Horse Marksman Sargeant Sniper",
+   "rotuloImg": "arts/horse-marksman-sargeant-sniper/rotulo.png",
+   "unitKey": "horse-marksmen",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2048,14 +2124,16 @@
    "pendencias": []
   },
   {
-   "id": "a053",
+   "id": "horse-marksman-sargeant-gatling",
    "candidato": "a053",
-   "rotulo": null,
-   "rotuloImg": "arts/a053/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Horse Marksman Sargeant Gatling",
+   "rotuloImg": "arts/horse-marksman-sargeant-gatling/rotulo.png",
+   "unitKey": "horse-marksmen",
+   "equipmentTags": [
+    "Gatling Rifle|Dual Gatling Pistols"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2087,14 +2165,16 @@
    "pendencias": []
   },
   {
-   "id": "a054",
+   "id": "horse-marksman-sargeant-pistol",
    "candidato": "a054",
-   "rotulo": null,
-   "rotuloImg": "arts/a054/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Horse Marksman Sargeant Pistol",
+   "rotuloImg": "arts/horse-marksman-sargeant-pistol/rotulo.png",
+   "unitKey": "horse-marksmen",
+   "equipmentTags": [
+    "Dual Firepowder Pistols|Dual Matchlock Pistols"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2126,14 +2206,14 @@
    "pendencias": []
   },
   {
-   "id": "a055",
+   "id": "horse-marksman-banner",
    "candidato": "a055",
-   "rotulo": null,
-   "rotuloImg": "arts/a055/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Horse Marksman Banner",
+   "rotuloImg": "arts/horse-marksman-banner/rotulo.png",
+   "unitKey": "horse-marksmen",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2165,14 +2245,14 @@
    "pendencias": []
   },
   {
-   "id": "a056",
+   "id": "horse-marksman-musician",
    "candidato": "a056",
-   "rotulo": null,
-   "rotuloImg": "arts/a056/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Horse Marksman Musician",
+   "rotuloImg": "arts/horse-marksman-musician/rotulo.png",
+   "unitKey": "horse-marksmen",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2204,14 +2284,16 @@
    "pendencias": []
   },
   {
-   "id": "a057",
+   "id": "knight-sword",
    "candidato": "a057",
-   "rotulo": null,
-   "rotuloImg": "arts/a057/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Knight Sword",
+   "rotuloImg": "arts/knight-sword/rotulo.png",
+   "unitKey": "knights",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2243,14 +2325,16 @@
    "pendencias": []
   },
   {
-   "id": "a058",
+   "id": "knight-lance",
    "candidato": "a058",
-   "rotulo": null,
-   "rotuloImg": "arts/a058/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Knight Lance",
+   "rotuloImg": "arts/knight-lance/rotulo.png",
+   "unitKey": "knights",
+   "equipmentTags": [
+    "Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2282,14 +2366,14 @@
    "pendencias": []
   },
   {
-   "id": "a059",
+   "id": "knight-sergeant",
    "candidato": "a059",
-   "rotulo": null,
-   "rotuloImg": "arts/a059/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Knight Sergeant",
+   "rotuloImg": "arts/knight-sergeant/rotulo.png",
+   "unitKey": "knights",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2321,14 +2405,14 @@
    "pendencias": []
   },
   {
-   "id": "a060",
+   "id": "knight-musician",
    "candidato": "a060",
-   "rotulo": null,
-   "rotuloImg": "arts/a060/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Knight Musician",
+   "rotuloImg": "arts/knight-musician/rotulo.png",
+   "unitKey": "knights",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2360,14 +2444,14 @@
    "pendencias": []
   },
   {
-   "id": "a061",
+   "id": "knight-banner",
    "candidato": "a061",
-   "rotulo": null,
-   "rotuloImg": "arts/a061/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Knight Banner",
+   "rotuloImg": "arts/knight-banner/rotulo.png",
+   "unitKey": "knights",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2399,14 +2483,16 @@
    "pendencias": []
   },
   {
-   "id": "a062",
+   "id": "knight-lance-guard",
    "candidato": "a062",
-   "rotulo": null,
-   "rotuloImg": "arts/a062/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Knight Lance",
+   "rotuloImg": "arts/knight-lance-guard/rotulo.png",
+   "unitKey": "guard-knights",
+   "equipmentTags": [
+    "Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2438,14 +2524,16 @@
    "pendencias": []
   },
   {
-   "id": "a063",
+   "id": "knight-axe",
    "candidato": "a063",
-   "rotulo": null,
-   "rotuloImg": "arts/a063/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Knight Axe",
+   "rotuloImg": "arts/knight-axe/rotulo.png",
+   "unitKey": "guard-knights",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2477,14 +2565,14 @@
    "pendencias": []
   },
   {
-   "id": "a064",
+   "id": "guard-knight-sergeant",
    "candidato": "a064",
-   "rotulo": null,
-   "rotuloImg": "arts/a064/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Guard Knight Sergeant",
+   "rotuloImg": "arts/guard-knight-sergeant/rotulo.png",
+   "unitKey": "guard-knights",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2516,14 +2604,14 @@
    "pendencias": []
   },
   {
-   "id": "a065",
+   "id": "guard-knight-musician",
    "candidato": "a065",
-   "rotulo": null,
-   "rotuloImg": "arts/a065/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Guard Knight Musician",
+   "rotuloImg": "arts/guard-knight-musician/rotulo.png",
+   "unitKey": "guard-knights",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2555,14 +2643,14 @@
    "pendencias": []
   },
   {
-   "id": "a066",
+   "id": "guard-knight-banner",
    "candidato": "a066",
-   "rotulo": null,
-   "rotuloImg": "arts/a066/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Guard Knight Banner",
+   "rotuloImg": "arts/guard-knight-banner/rotulo.png",
+   "unitKey": "guard-knights",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2594,14 +2682,16 @@
    "pendencias": []
   },
   {
-   "id": "a067",
+   "id": "gryph-rider-lance",
    "candidato": "a067",
-   "rotulo": null,
-   "rotuloImg": "arts/a067/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gryph Rider Lance",
+   "rotuloImg": "arts/gryph-rider-lance/rotulo.png",
+   "unitKey": "gryph-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2635,14 +2725,16 @@
    ]
   },
   {
-   "id": "a068",
+   "id": "gryph-rider-halberd",
    "candidato": "a068",
-   "rotulo": null,
-   "rotuloImg": "arts/a068/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Gryph Rider Halberd",
+   "rotuloImg": "arts/gryph-rider-halberd/rotulo.png",
+   "unitKey": "gryph-riders",
+   "equipmentTags": [
+    "Halberd"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2676,14 +2768,14 @@
    ]
   },
   {
-   "id": "a069",
+   "id": "gryph-rider-sergeant",
    "candidato": "a069",
-   "rotulo": null,
-   "rotuloImg": "arts/a069/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Gryph Rider Sergeant",
+   "rotuloImg": "arts/gryph-rider-sergeant/rotulo.png",
+   "unitKey": "gryph-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2715,14 +2807,14 @@
    "pendencias": []
   },
   {
-   "id": "a070",
+   "id": "gryph-rider-musician",
    "candidato": "a070",
-   "rotulo": null,
-   "rotuloImg": "arts/a070/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Gryph Rider Musician",
+   "rotuloImg": "arts/gryph-rider-musician/rotulo.png",
+   "unitKey": "gryph-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2756,14 +2848,14 @@
    ]
   },
   {
-   "id": "a071",
+   "id": "gryph-rider-banner",
    "candidato": "a071",
-   "rotulo": null,
-   "rotuloImg": "arts/a071/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Gryph Rider Banner",
+   "rotuloImg": "arts/gryph-rider-banner/rotulo.png",
+   "unitKey": "gryph-riders",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2795,14 +2887,16 @@
    "pendencias": []
   },
   {
-   "id": "a072",
+   "id": "infantry-sword-so-borda-1",
    "candidato": "a072",
-   "rotulo": null,
-   "rotuloImg": "arts/a072/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Infantry Sword",
+   "rotuloImg": "arts/infantry-sword-so-borda-1/rotulo.png",
+   "unitKey": "infantrymen",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2823,14 +2917,16 @@
    ]
   },
   {
-   "id": "a073",
+   "id": "infantry-sword-so-borda-2",
    "candidato": "a073",
-   "rotulo": null,
-   "rotuloImg": "arts/a073/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Infantry Sword",
+   "rotuloImg": "arts/infantry-sword-so-borda-2/rotulo.png",
+   "unitKey": "infantrymen",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2851,14 +2947,16 @@
    ]
   },
   {
-   "id": "a074",
+   "id": "infantry-halberd-so-borda-1",
    "candidato": "a074",
-   "rotulo": null,
-   "rotuloImg": "arts/a074/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Infantry Halberd",
+   "rotuloImg": "arts/infantry-halberd-so-borda-1/rotulo.png",
+   "unitKey": "infantrymen",
+   "equipmentTags": [
+    "Halberd"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2879,14 +2977,16 @@
    ]
   },
   {
-   "id": "a075",
+   "id": "infantry-halberd-so-borda-2",
    "candidato": "a075",
-   "rotulo": null,
-   "rotuloImg": "arts/a075/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Infantry Halberd",
+   "rotuloImg": "arts/infantry-halberd-so-borda-2/rotulo.png",
+   "unitKey": "infantrymen",
+   "equipmentTags": [
+    "Halberd"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2907,14 +3007,16 @@
    ]
   },
   {
-   "id": "a076",
+   "id": "infantry-spear-so-borda",
    "candidato": "a076",
-   "rotulo": null,
-   "rotuloImg": "arts/a076/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Infantry Spear",
+   "rotuloImg": "arts/infantry-spear-so-borda/rotulo.png",
+   "unitKey": "infantrymen",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2935,14 +3037,14 @@
    ]
   },
   {
-   "id": "a077",
+   "id": "fanatic-v1-so-borda",
    "candidato": "a077",
-   "rotulo": null,
-   "rotuloImg": "arts/a077/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fanatic V1",
+   "rotuloImg": "arts/fanatic-v1-so-borda/rotulo.png",
+   "unitKey": "fanatics",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2963,14 +3065,16 @@
    ]
   },
   {
-   "id": "a078",
+   "id": "marksman-rifle-so-borda-1",
    "candidato": "a078",
-   "rotulo": null,
-   "rotuloImg": "arts/a078/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Marksman Rifle",
+   "rotuloImg": "arts/marksman-rifle-so-borda-1/rotulo.png",
+   "unitKey": "marksmen",
+   "equipmentTags": [
+    "Matchlock Rifle|Firepowder Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2991,14 +3095,16 @@
    ]
   },
   {
-   "id": "a079",
+   "id": "marksman-rifle-so-borda-2",
    "candidato": "a079",
-   "rotulo": null,
-   "rotuloImg": "arts/a079/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Marksman Rifle",
+   "rotuloImg": "arts/marksman-rifle-so-borda-2/rotulo.png",
+   "unitKey": "marksmen",
+   "equipmentTags": [
+    "Matchlock Rifle|Firepowder Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [

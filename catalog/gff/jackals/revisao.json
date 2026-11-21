@@ -1,0 +1,864 @@
+{
+ "packId": "jackals",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "GF",
+   "slug": "grimdark-future",
+   "armyForgeId": 2
+  },
+  {
+   "code": "GFF",
+   "slug": "grimdark-future-firefight",
+   "armyForgeId": 3
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/BKi_hJaJflN8ZorH-gs3-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/BKi_hJaJflN8ZorH-gs2-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-*.png, army books v3.6.0 (os dois sistemas).",
+ "unidades": {
+  "veteran": {
+   "armyForgeUnitId": "XhgyXd9"
+  },
+  "nomads": {
+   "armyForgeUnitId": "8LCt3JN"
+  },
+  "stalker": {
+   "armyForgeUnitId": "i38ZXSB"
+  },
+  "elite": {
+   "armyForgeUnitId": "uF7noGn"
+  },
+  "vulture": {
+   "armyForgeUnitId": "LutTMHw"
+  },
+  "tracker": {
+   "armyForgeUnitId": "ARMiAVY"
+  },
+  "hounds": {
+   "armyForgeUnitId": "VEbHNRI"
+  },
+  "beast-rider": {
+   "armyForgeUnitId": "1znOU_R"
+  },
+  "beast-gunner": {
+   "armyForgeUnitId": "J6JUfNP"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "shaman",
+   "rotulo": "Shaman",
+   "confiancaRotulo": "alta",
+   "unitKey": "veteran",
+   "equipmentTags": [
+    "Shaman"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shaman",
+     "armyBook": "Veteran + Shaman"
+    }
+   ],
+   "notas": "Shaman é upgrade do Veteran e também do Elite Veteran; escolhi Veteran, usuário decide"
+  },
+  "a002": {
+   "artId": "beast-veteran-rifle",
+   "rotulo": "Beast Veteran Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "veteran",
+   "equipmentTags": [
+    "Assault Beast|Gunner Beast",
+    "Burst Scrap Rifle|Scrap Sniper Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Beast Veteran",
+     "armyBook": [
+      "Veteran + Assault Beast",
+      "Veteran + Gunner Beast"
+     ]
+    },
+    {
+     "pdf": "Rifle",
+     "armyBook": [
+      "Burst Scrap Rifle",
+      "Scrap Sniper Rifle"
+     ]
+    }
+   ],
+   "notas": "Veteran montado; montaria pode ser Assault Beast ou Gunner Beast; rifle = Burst Scrap Rifle ou Scrap Sniper Rifle"
+  },
+  "a003": {
+   "artId": "beast-veteran-spear",
+   "rotulo": "Beast Veteran Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "veteran",
+   "equipmentTags": [
+    "Assault Beast|Gunner Beast",
+    "Explosive Spear|Goad-Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Beast Veteran",
+     "armyBook": [
+      "Veteran + Assault Beast",
+      "Veteran + Gunner Beast"
+     ]
+    },
+    {
+     "pdf": "Spear",
+     "armyBook": [
+      "Explosive Spear",
+      "Goad-Spear"
+     ]
+    }
+   ],
+   "notas": "Veteran montado; a lança da arte parece Explosive Spear (ponta com carga), mas o rótulo cabe também em Goad-Spear"
+  },
+  "a004": {
+   "artId": "vulture-veteran-spear",
+   "rotulo": "Vulture Veteran Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "veteran",
+   "equipmentTags": [
+    "Jetpack|Raider Jetpack",
+    "Explosive Spear|Goad-Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Vulture Veteran",
+     "armyBook": [
+      "Veteran + Jetpack",
+      "Veteran + Raider Jetpack"
+     ]
+    },
+    {
+     "pdf": "Spear",
+     "armyBook": [
+      "Explosive Spear",
+      "Goad-Spear"
+     ]
+    }
+   ],
+   "notas": "Veteran com asas mecânicas como os Vultures = Jetpack ou Raider Jetpack; lança = Explosive Spear ou Goad-Spear"
+  },
+  "a005": {
+   "artId": "vulture-veteran-rifle",
+   "rotulo": "Vulture Veteran Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "veteran",
+   "equipmentTags": [
+    "Jetpack|Raider Jetpack",
+    "Burst Scrap Rifle|Scrap Sniper Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Vulture Veteran",
+     "armyBook": [
+      "Veteran + Jetpack",
+      "Veteran + Raider Jetpack"
+     ]
+    },
+    {
+     "pdf": "Rifle",
+     "armyBook": [
+      "Burst Scrap Rifle",
+      "Scrap Sniper Rifle"
+     ]
+    }
+   ],
+   "notas": "Veteran com Jetpack ou Raider Jetpack; rifle = Burst Scrap Rifle ou Scrap Sniper Rifle"
+  },
+  "a006": {
+   "artId": "nomad-pistol",
+   "rotulo": "Nomad Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Scrap Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Pistol",
+     "armyBook": "Scrap Pistol"
+    }
+   ],
+   "notas": "única pistola dos Nomads"
+  },
+  "a007": {
+   "artId": "nomad-rifle",
+   "rotulo": "Nomad Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Scrap Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Scrap Rifle"
+    }
+   ],
+   "notas": "Scrap Rifle é a arma padrão dos Nomads"
+  },
+  "a008": {
+   "artId": "veteran",
+   "rotulo": "Veteran",
+   "confiancaRotulo": "alta",
+   "unitKey": "veteran",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a009": {
+   "artId": "nomad-rifle-satellite",
+   "rotulo": "Nomad Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Scrap Rifle",
+    "Satellite Backpack"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Scrap Rifle"
+    }
+   ],
+   "notas": "mesmo rótulo de a007, mas a arte tem antena parabólica na mochila: Satellite Backpack (upgrade de um modelo)"
+  },
+  "a010": {
+   "artId": "nomad-blaster",
+   "rotulo": "Nomad Blaster",
+   "confiancaRotulo": "alta",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Force Blaster"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Blaster",
+     "armyBook": "Force Blaster"
+    }
+   ],
+   "notas": ""
+  },
+  "a011": {
+   "artId": "nomad-zapper",
+   "rotulo": "Nomad Zapper",
+   "confiancaRotulo": "alta",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Zapper Gun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Zapper",
+     "armyBook": "Zapper Gun"
+    }
+   ],
+   "notas": ""
+  },
+  "a012": {
+   "artId": "nomad-shotgun",
+   "rotulo": "Nomad Shotgun",
+   "confiancaRotulo": "alta",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Burst Shotgun|Hunting Shotgun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shotgun",
+     "armyBook": [
+      "Burst Shotgun",
+      "Hunting Shotgun"
+     ]
+    }
+   ],
+   "notas": "o rótulo cabe nas duas espingardas dos Nomads"
+  },
+  "a013": {
+   "artId": "nomad-rocket",
+   "rotulo": "Nomad Rocket",
+   "confiancaRotulo": "alta",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Rocket Launcher"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rocket",
+     "armyBook": "Rocket Launcher"
+    }
+   ],
+   "notas": ""
+  },
+  "a014": {
+   "artId": "nomad-fumigator",
+   "rotulo": "Nomad Fumigator",
+   "confiancaRotulo": "alta",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Fumigator"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a015": {
+   "artId": "nomad-spiker",
+   "rotulo": "Nomad Spiker",
+   "confiancaRotulo": "alta",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Power Spiker"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spiker",
+     "armyBook": "Power Spiker"
+    }
+   ],
+   "notas": ""
+  },
+  "a016": {
+   "artId": "nomad-sniper",
+   "rotulo": "Nomad Sniper",
+   "confiancaRotulo": "alta",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Marksman Carbine"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sniper",
+     "armyBook": "Marksman Carbine"
+    }
+   ],
+   "notas": "Nomads não têm arma com 'Sniper' no nome; a arma de precisão deles é Marksman Carbine (arte com mira)"
+  },
+  "a017": {
+   "artId": "stalker-dual-knives",
+   "rotulo": "Stalker Dual Knives",
+   "confiancaRotulo": "alta",
+   "unitKey": "stalker",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Dual Knives",
+     "armyBook": "Dual Hand Weapons"
+    }
+   ],
+   "notas": "facas = armas de mão comuns; as lâminas da arte são anguladas, poderiam passar por Dual Jagged Hooks"
+  },
+  "a018": {
+   "artId": "stalker-berserker",
+   "rotulo": "Stalker Berserker",
+   "confiancaRotulo": "alta",
+   "unitKey": "stalker",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo sem arma (arte genérica); a figura tem duas espadas grandes (Dual Junk Swords?)"
+  },
+  "a019": {
+   "artId": "elite-shotgun",
+   "rotulo": "Elite Shotgun",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Shotgun"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a020": {
+   "artId": "elite-rifle",
+   "rotulo": "Elite Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Energy Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Energy Rifle"
+    }
+   ],
+   "notas": "Energy Rifle é a arma padrão dos Elites"
+  },
+  "a021": {
+   "artId": "elite-missile",
+   "rotulo": "Elite Missile",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Missile Launcher"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Missile",
+     "armyBook": "Missile Launcher"
+    }
+   ],
+   "notas": ""
+  },
+  "a022": {
+   "artId": "elite-shred",
+   "rotulo": "Elite Shred",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Shredder Cannon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shred",
+     "armyBook": "Shredder Cannon"
+    }
+   ],
+   "notas": ""
+  },
+  "a023": {
+   "artId": "elite-plasma",
+   "rotulo": "Elite Plasma",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Plasma Cannon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Plasma",
+     "armyBook": "Plasma Cannon"
+    }
+   ],
+   "notas": ""
+  },
+  "a024": {
+   "artId": "elite-flamer",
+   "rotulo": "Elite Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Heavy Flamer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Flamer",
+     "armyBook": "Heavy Flamer"
+    }
+   ],
+   "notas": ""
+  },
+  "a025": {
+   "artId": "vulture-explosive-spear",
+   "rotulo": "Vulture Explosive Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "vulture",
+   "equipmentTags": [
+    "Explosive Spear"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a026": {
+   "artId": "vulture-claw-pistol",
+   "rotulo": "Vulture Claw & Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "vulture",
+   "equipmentTags": [
+    "Claw Gauntlet",
+    "Scrap Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Claw",
+     "armyBook": "Claw Gauntlet"
+    },
+    {
+     "pdf": "Pistol",
+     "armyBook": "Scrap Pistol"
+    }
+   ],
+   "notas": ""
+  },
+  "a027": {
+   "artId": "vulture-rifle",
+   "rotulo": "Vulture Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "vulture",
+   "equipmentTags": [
+    "Energy Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Energy Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a028": {
+   "artId": "vulture-zapper",
+   "rotulo": "Vulture Zapper",
+   "confiancaRotulo": "alta",
+   "unitKey": "vulture",
+   "equipmentTags": [
+    "Zapper Gun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Zapper",
+     "armyBook": "Zapper Gun"
+    }
+   ],
+   "notas": ""
+  },
+  "a029": {
+   "artId": "vulture-shotgun",
+   "rotulo": "Vulture Shotgun",
+   "confiancaRotulo": "alta",
+   "unitKey": "vulture",
+   "equipmentTags": [
+    "Hunting Shotgun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shotgun",
+     "armyBook": "Hunting Shotgun"
+    }
+   ],
+   "notas": "única espingarda dos Vultures"
+  },
+  "a030": {
+   "artId": "vulture-blaster",
+   "rotulo": "Vulture Blaster",
+   "confiancaRotulo": "alta",
+   "unitKey": "vulture",
+   "equipmentTags": [
+    "Force Blaster"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Blaster",
+     "armyBook": "Force Blaster"
+    }
+   ],
+   "notas": ""
+  },
+  "a031": {
+   "artId": "tracker",
+   "rotulo": "Tracker",
+   "confiancaRotulo": "alta",
+   "unitKey": "tracker",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a032": {
+   "artId": "hound",
+   "rotulo": "Hound",
+   "confiancaRotulo": "alta",
+   "unitKey": "hounds",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a033": {
+   "artId": "gunner-beast-machine-gun",
+   "rotulo": "Gunner Beast Machine Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "beast-gunner",
+   "equipmentTags": [
+    "Heavy Machinegun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gunner Beast",
+     "armyBook": "Beast Gunners"
+    },
+    {
+     "pdf": "Machine Gun",
+     "armyBook": "Heavy Machinegun"
+    }
+   ],
+   "notas": "Gunner Beast = Beast Gunners (genericName Support Beast Riders)"
+  },
+  "a034": {
+   "artId": "gunner-beast-sniper",
+   "rotulo": "Gunner Beast Sniper",
+   "confiancaRotulo": "alta",
+   "unitKey": "beast-gunner",
+   "equipmentTags": [
+    "Scrap Sniper Carbine"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gunner Beast",
+     "armyBook": "Beast Gunners"
+    },
+    {
+     "pdf": "Sniper",
+     "armyBook": "Scrap Sniper Carbine"
+    }
+   ],
+   "notas": "Gunner Beast = Beast Gunners"
+  },
+  "a035": {
+   "artId": "assault-beast-goad",
+   "rotulo": "Assault Beast Goad",
+   "confiancaRotulo": "alta",
+   "unitKey": "beast-rider",
+   "equipmentTags": [
+    "Goad-Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Assault Beast",
+     "armyBook": "Beast Riders"
+    },
+    {
+     "pdf": "Goad",
+     "armyBook": "Goad-Spear"
+    }
+   ],
+   "notas": "Assault Beast = Beast Riders (genericName Assault Beast Riders)"
+  },
+  "a036": {
+   "artId": "assault-beast-explosive-spear",
+   "rotulo": "Assault Beast Explosive Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "beast-rider",
+   "equipmentTags": [
+    "Explosive Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Assault Beast",
+     "armyBook": "Beast Riders"
+    }
+   ],
+   "notas": "Assault Beast = Beast Riders (genericName Assault Beast Riders)"
+  },
+  "a037": {
+   "artId": "assault-beast-harpoom",
+   "rotulo": "Assault Beast Harpoom",
+   "confiancaRotulo": "alta",
+   "unitKey": "beast-rider",
+   "equipmentTags": [
+    "Barbed Harpoon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Assault Beast",
+     "armyBook": "Beast Riders"
+    },
+    {
+     "pdf": "Harpoom",
+     "armyBook": "Barbed Harpoon"
+    }
+   ],
+   "notas": "rótulo impresso com erro de grafia (Harpoom)"
+  },
+  "a038": {
+   "artId": "assault-beast-hook",
+   "rotulo": "Assault Beast Hook",
+   "confiancaRotulo": "alta",
+   "unitKey": "beast-rider",
+   "equipmentTags": [
+    "Hunting Hook|Jagged Hook"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Assault Beast",
+     "armyBook": "Beast Riders"
+    },
+    {
+     "pdf": "Hook",
+     "armyBook": [
+      "Hunting Hook",
+      "Jagged Hook"
+     ]
+    }
+   ],
+   "notas": "o rótulo cabe em Hunting Hook e Jagged Hook"
+  },
+  "a039": {
+   "artId": "nomad-pistol-copia",
+   "rotulo": "Nomad Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Scrap Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Pistol",
+     "armyBook": "Scrap Pistol"
+    }
+   ],
+   "notas": "cópia de a006 que só aparece no estilo borda grossa (o recorte não juntou); mesmo mapeamento"
+  },
+  "a040": {
+   "artId": "nomad-rifle-copia",
+   "rotulo": "Nomad Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "nomads",
+   "equipmentTags": [
+    "Scrap Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rifle",
+     "armyBook": "Scrap Rifle"
+    }
+   ],
+   "notas": "cópia de a007 que só aparece no estilo borda grossa (o recorte não juntou); mesmo mapeamento"
+  },
+  "a041": {
+   "artId": "stalker-berserker-copia",
+   "rotulo": "Stalker Berserker",
+   "confiancaRotulo": "alta",
+   "unitKey": "stalker",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "cópia de a018 que só aparece no estilo borda grossa (o recorte não juntou); mesmo mapeamento"
+  },
+  "a042": {
+   "artId": "tracker-copia",
+   "rotulo": "Tracker",
+   "confiancaRotulo": "alta",
+   "unitKey": "tracker",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "cópia de a031 que só aparece no estilo borda grossa (o recorte não juntou); mesmo mapeamento"
+  },
+  "a043": {
+   "artId": "hound-copia",
+   "rotulo": "Hound",
+   "confiancaRotulo": "alta",
+   "unitKey": "hounds",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "cópia de a032 que só aparece no estilo borda grossa (o recorte não juntou); mesmo mapeamento"
+  },
+  "a044": {
+   "artId": "assault-beast-harpoom-copia",
+   "rotulo": "Assault Beast Harpoom",
+   "confiancaRotulo": "alta",
+   "unitKey": "beast-rider",
+   "equipmentTags": [
+    "Barbed Harpoon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Assault Beast",
+     "armyBook": "Beast Riders"
+    },
+    {
+     "pdf": "Harpoom",
+     "armyBook": "Barbed Harpoon"
+    }
+   ],
+   "notas": "cópia de a037 que só aparece no estilo borda grossa (o recorte não juntou); mesmo mapeamento"
+  }
+ }
+}

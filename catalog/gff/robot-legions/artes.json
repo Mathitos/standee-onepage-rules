@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "robot-legions",
- "faccao": "Robot Legions",
+ "faccao": "Robot Legions\r",
  "sistema": "gff",
  "pdf": {
   "nome": "Robot_Legions_-_BW.pdf",
@@ -12,14 +12,16 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "warrior-gauss",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Gauss",
+   "rotuloImg": "arts/warrior-gauss/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Ion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +53,14 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "snake",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Snake",
+   "rotuloImg": "arts/snake/rotulo.png",
+   "unitKey": "robot-snake",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -90,14 +92,16 @@
    "pendencias": []
   },
   {
-   "id": "a003",
+   "id": "overseer",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Overseer",
+   "rotuloImg": "arts/overseer/rotulo.png",
+   "unitKey": "robot-lord",
+   "equipmentTags": [
+    "Overseer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -129,14 +133,16 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "warrior-flamer",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Flamer",
+   "rotuloImg": "arts/warrior-flamer/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Spark-Pulse Caster"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -168,14 +174,16 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "warrior-fusion",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Fusion",
+   "rotuloImg": "arts/warrior-fusion/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Fusion Caster"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -207,14 +215,16 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "warden",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warden",
+   "rotuloImg": "arts/warden/rotulo.png",
+   "unitKey": "robot-lord",
+   "equipmentTags": [
+    "Warden"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -246,14 +256,16 @@
    "pendencias": []
   },
   {
-   "id": "a007",
+   "id": "warrior-plasma",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Plasma",
+   "rotuloImg": "arts/warrior-plasma/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Plasma Caster"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -285,14 +297,16 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "warrior-reaper",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Reaper",
+   "rotuloImg": "arts/warrior-reaper/rotulo.png",
+   "unitKey": "warrior",
+   "equipmentTags": [
+    "Radium Ray|Photon Gun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -324,14 +338,14 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "flesh-eater-type-1",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Flesh Eater Type 1",
+   "rotuloImg": "arts/flesh-eater-type-1/rotulo.png",
+   "unitKey": "flesh-eater",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -363,14 +377,14 @@
    "pendencias": []
   },
   {
-   "id": "a010",
+   "id": "flesh-eater-type-1-b",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Flesh Eater Type 1",
+   "rotuloImg": "arts/flesh-eater-type-1-b/rotulo.png",
+   "unitKey": "flesh-eater",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -402,14 +416,16 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "guardian-sword-pose-1",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guardian Sword Pose 1",
+   "rotuloImg": "arts/guardian-sword-pose-1/rotulo.png",
+   "unitKey": "guardian",
+   "equipmentTags": [
+    "Atomizer Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -441,14 +457,16 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "guardian-sword-pose-2",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guardian Sword Pose 2",
+   "rotuloImg": "arts/guardian-sword-pose-2/rotulo.png",
+   "unitKey": "guardian",
+   "equipmentTags": [
+    "Atomizer Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -480,14 +498,16 @@
    "pendencias": []
   },
   {
-   "id": "a013",
+   "id": "guardian-spear-pose-1",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guardian Spear Pose 1",
+   "rotuloImg": "arts/guardian-spear-pose-1/rotulo.png",
+   "unitKey": "guardian",
+   "equipmentTags": [
+    "Doom Scythe"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -519,14 +539,16 @@
    "pendencias": []
   },
   {
-   "id": "a014",
+   "id": "technomancer",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Technomancer",
+   "rotuloImg": "arts/technomancer/rotulo.png",
+   "unitKey": "robot-lord",
+   "equipmentTags": [
+    "Technomancer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -558,14 +580,16 @@
    "pendencias": []
   },
   {
-   "id": "a015",
+   "id": "guardian-spear-pose-2",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guardian Spear Pose 2",
+   "rotuloImg": "arts/guardian-spear-pose-2/rotulo.png",
+   "unitKey": "guardian",
+   "equipmentTags": [
+    "Doom Scythe"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -597,14 +621,14 @@
    "pendencias": []
   },
   {
-   "id": "a016",
+   "id": "sniper",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Sniper",
+   "rotuloImg": "arts/sniper/rotulo.png",
+   "unitKey": "sniper",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -636,14 +660,16 @@
    "pendencias": []
   },
   {
-   "id": "a017",
+   "id": "annihilator-cannon",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Annihilator Cannon",
+   "rotuloImg": "arts/annihilator-cannon/rotulo.png",
+   "unitKey": "annihilator",
+   "equipmentTags": [
+    "Photon Cannon|Heavy Photon Cannon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -675,14 +701,16 @@
    "pendencias": []
   },
   {
-   "id": "a018",
+   "id": "annihilator-sword",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Annihilator Sword",
+   "rotuloImg": "arts/annihilator-sword/rotulo.png",
+   "unitKey": "annihilator",
+   "equipmentTags": [
+    "Dual Atomizer Swords"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -714,14 +742,14 @@
    "pendencias": []
   },
   {
-   "id": "a019",
+   "id": "heavy-annihilator",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Heavy Annihilator",
+   "rotuloImg": "arts/heavy-annihilator/rotulo.png",
+   "unitKey": "heavy-annihilator",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -755,14 +783,17 @@
    ]
   },
   {
-   "id": "a020",
+   "id": "annihilator-overseer-cannon",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Annihilator Overseer Cannon",
+   "rotuloImg": "arts/annihilator-overseer-cannon/rotulo.png",
+   "unitKey": "annihilator-lord",
+   "equipmentTags": [
+    "Overseer",
+    "Photon Cannon|Heavy Photon Cannon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -794,14 +825,17 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "annihilator-overseer-spear",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Annihilator Overseer Spear",
+   "rotuloImg": "arts/annihilator-overseer-spear/rotulo.png",
+   "unitKey": "annihilator-lord",
+   "equipmentTags": [
+    "Overseer",
+    "Legion Glaive|Great Doom Scythe|Power Staff|Technomancer Staff"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -833,14 +867,16 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "eternal-flux-pose-1",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Eternal Flux Pose 1",
+   "rotuloImg": "arts/eternal-flux-pose-1/rotulo.png",
+   "unitKey": "eternal",
+   "equipmentTags": [
+    "Transonic Carbine"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -872,14 +908,16 @@
    "pendencias": []
   },
   {
-   "id": "a023",
+   "id": "eternal-flux-pose-2",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Eternal Flux Pose 2",
+   "rotuloImg": "arts/eternal-flux-pose-2/rotulo.png",
+   "unitKey": "eternal",
+   "equipmentTags": [
+    "Transonic Carbine"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -911,14 +949,16 @@
    "pendencias": []
   },
   {
-   "id": "a024",
+   "id": "eternal-gauss-pose-1",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Eternal Gauss Pose 1",
+   "rotuloImg": "arts/eternal-gauss-pose-1/rotulo.png",
+   "unitKey": "eternal",
+   "equipmentTags": [
+    "Photon Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -950,14 +990,16 @@
    "pendencias": []
   },
   {
-   "id": "a025",
+   "id": "eternal-gauss-pose-2",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Eternal Gauss Pose 2",
+   "rotuloImg": "arts/eternal-gauss-pose-2/rotulo.png",
+   "unitKey": "eternal",
+   "equipmentTags": [
+    "Photon Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -989,14 +1031,16 @@
    "pendencias": []
   },
   {
-   "id": "a026",
+   "id": "destroyer-snake-axe",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Destroyer Snake Axe",
+   "rotuloImg": "arts/destroyer-snake-axe/rotulo.png",
+   "unitKey": "destroyer-snake",
+   "equipmentTags": [
+    "Heavy Ion Blade|Great Doom Scythe|Legion Glaive"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1028,14 +1072,16 @@
    "pendencias": []
   },
   {
-   "id": "a027",
+   "id": "destroyer-snake-sword",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Destroyer Snake Sword",
+   "rotuloImg": "arts/destroyer-snake-sword/rotulo.png",
+   "unitKey": "destroyer-snake",
+   "equipmentTags": [
+    "Dual Ion Blades"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1067,14 +1113,14 @@
    "pendencias": []
   },
   {
-   "id": "a028",
+   "id": "biker",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Biker",
+   "rotuloImg": "arts/biker/rotulo.png",
+   "unitKey": "hover-bike",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1108,14 +1154,14 @@
    ]
   },
   {
-   "id": "a029",
+   "id": "wraith",
    "candidato": "a029",
-   "rotulo": null,
-   "rotuloImg": "arts/a029/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Wraith",
+   "rotuloImg": "arts/wraith/rotulo.png",
+   "unitKey": "wraith-shard",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1149,14 +1195,14 @@
    ]
   },
   {
-   "id": "a030",
+   "id": "tri-scorpion-type-1",
    "candidato": "a030",
-   "rotulo": null,
-   "rotuloImg": "arts/a030/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Tri Scorpion Type 1",
+   "rotuloImg": "arts/tri-scorpion-type-1/rotulo.png",
+   "unitKey": "tri-scorpion",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1188,14 +1234,14 @@
    "pendencias": []
   },
   {
-   "id": "a031",
+   "id": "tri-scorpion-type-2",
    "candidato": "a031",
-   "rotulo": null,
-   "rotuloImg": "arts/a031/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Tri Scorpion Type 2",
+   "rotuloImg": "arts/tri-scorpion-type-2/rotulo.png",
+   "unitKey": "tri-scorpion",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1227,14 +1273,14 @@
    "pendencias": []
   },
   {
-   "id": "a032",
+   "id": "swarm",
    "candidato": "a032",
-   "rotulo": null,
-   "rotuloImg": "arts/a032/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Swarm",
+   "rotuloImg": "arts/swarm/rotulo.png",
+   "unitKey": "bot-swarm",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1268,14 +1314,16 @@
    ]
   },
   {
-   "id": "a033",
+   "id": "tri-scorpion-overseer",
    "candidato": "a033",
-   "rotulo": null,
-   "rotuloImg": "arts/a033/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Tri Scorpion Overseer",
+   "rotuloImg": "arts/tri-scorpion-overseer/rotulo.png",
+   "unitKey": "tri-scorpion-lord",
+   "equipmentTags": [
+    "Overseer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1307,14 +1355,14 @@
    "pendencias": []
   },
   {
-   "id": "a034",
+   "id": "tri-scorpion-pistoleer",
    "candidato": "a034",
-   "rotulo": null,
-   "rotuloImg": "arts/a034/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Tri Scorpion Pistoleer",
+   "rotuloImg": "arts/tri-scorpion-pistoleer/rotulo.png",
+   "unitKey": "tri-scorpion-pistoleer",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1346,14 +1394,14 @@
    "pendencias": []
   },
   {
-   "id": "a035",
+   "id": "forge-spider-type-1",
    "candidato": "a035",
-   "rotulo": null,
-   "rotuloImg": "arts/a035/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Forge Spider Type 1",
+   "rotuloImg": "arts/forge-spider-type-1/rotulo.png",
+   "unitKey": "forge-spider",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1385,14 +1433,14 @@
    "pendencias": []
   },
   {
-   "id": "a036",
+   "id": "forge-spider-type-2",
    "candidato": "a036",
-   "rotulo": null,
-   "rotuloImg": "arts/a036/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Forge Spider Type 2",
+   "rotuloImg": "arts/forge-spider-type-2/rotulo.png",
+   "unitKey": "forge-spider",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [

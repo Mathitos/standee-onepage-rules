@@ -1,0 +1,4070 @@
+{
+  "schemaVersion": 1,
+  "packId": "eternal-dynasty",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "GF",
+    "slug": "grimdark-future",
+    "armyForgeId": 2
+  },
+  "gameSystems": [
+    {
+      "code": "GF",
+      "slug": "grimdark-future",
+      "armyForgeId": 2
+    },
+    {
+      "code": "GFF",
+      "slug": "grimdark-future-firefight",
+      "armyForgeId": 3
+    }
+  ],
+  "armyBook": {
+    "id": "vux1Y5vvULmaxZ8P",
+    "name": "Eternal Dynasty",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "vux1Y5vvULmaxZ8P",
+      "name": "Eternal Dynasty",
+      "version": "3.6.0",
+      "gameSystemId": 3,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "vux1Y5vvULmaxZ8P",
+      "name": "Eternal Dynasty",
+      "version": "3.6.0",
+      "gameSystemId": 2,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Eternal_Dynasty_-_BW.pdf",
+    "pdfSha256": "652d1a6acb1ed79c0ef299d33045f537161d9a21b3434865ef251b1c8fc52f84",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "dynasty-leader",
+      "names": [
+        "Dynasty Leader"
+      ],
+      "armyForgeUnitId": "bEeuIws",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "oni-captain",
+      "names": [
+        "ONI Captain"
+      ],
+      "armyForgeUnitId": "8sSO8Od",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "warrior",
+      "names": [
+        "Warrior",
+        "Warriors"
+      ],
+      "armyForgeUnitId": "tBFpCN2",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "scout",
+      "names": [
+        "Scout",
+        "Scouts"
+      ],
+      "armyForgeUnitId": "kBJrV-w",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "ninja",
+      "names": [
+        "Ninja"
+      ],
+      "armyForgeUnitId": "6S-Xqit",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "royal-guard",
+      "names": [
+        "Royal Guard"
+      ],
+      "armyForgeUnitId": "nT_lDKZ",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "attack-drone",
+      "names": [
+        "Attack Drone",
+        "Attack Drones"
+      ],
+      "armyForgeUnitId": "CdkWnvx",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "oni",
+      "names": [
+        "ONI",
+        "ONIs"
+      ],
+      "armyForgeUnitId": "bILTbNt",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "cyber-lizards",
+      "names": [
+        "Cyber Lizards"
+      ],
+      "armyForgeUnitId": "6LpK3Hi",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "cyber-bird-swarm",
+      "names": [
+        "Cyber-Bird Swarm",
+        "Cyber-Bird Swarms"
+      ],
+      "armyForgeUnitId": "e54b888",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "cyber-beast",
+      "names": [
+        "Cyber Beast"
+      ],
+      "armyForgeUnitId": "OaKZu-Y",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          50.0
+        ],
+        "raw": "50",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "captain-pistol-katana",
+      "candidateId": "a001",
+      "pdfLabel": "Captain Pistol Katana",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dynasty-leader",
+      "equipmentTags": [
+        "Captain",
+        "Pistol",
+        "Dynasty Sword|Ninja Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Captain",
+          "armyBook": "Dynasty Leader + Captain"
+        },
+        {
+          "pdf": "Katana",
+          "armyBook": [
+            "Dynasty Sword",
+            "Ninja Sword"
+          ]
+        }
+      ],
+      "notes": "Captain é upgrade do Dynasty Leader (estandarte nas costas). Katana: Dynasty Sword ou Ninja Sword",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0
+          ],
+          "front": "arts/captain-pistol-katana/fino/frente.svg",
+          "back": "arts/captain-pistol-katana/fino/verso.svg",
+          "canvasMm": [
+            39.243,
+            49.445
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            49.4,
+            38.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 23,
+          "rows": [
+            0
+          ],
+          "front": "arts/captain-pistol-katana/borda/frente.svg",
+          "back": "arts/captain-pistol-katana/borda/verso.svg",
+          "canvasMm": [
+            41.783,
+            50.715
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            50.6,
+            41.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "captain-hook-pistol",
+      "candidateId": "a002",
+      "pdfLabel": "Captain Hook Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dynasty-leader",
+      "equipmentTags": [
+        "Captain",
+        "Hook Sword",
+        "Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Captain",
+          "armyBook": "Dynasty Leader + Captain"
+        },
+        {
+          "pdf": "Hook",
+          "armyBook": "Hook Sword"
+        }
+      ],
+      "notes": "Captain é upgrade do Dynasty Leader (estandarte nas costas).",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            1
+          ],
+          "front": "arts/captain-hook-pistol/fino/frente.svg",
+          "back": "arts/captain-hook-pistol/fino/verso.svg",
+          "canvasMm": [
+            42.333,
+            49.445
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            49.4,
+            42.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 23,
+          "rows": [
+            1
+          ],
+          "front": "arts/captain-hook-pistol/borda/frente.svg",
+          "back": "arts/captain-hook-pistol/borda/verso.svg",
+          "canvasMm": [
+            44.916,
+            50.715
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            50.6,
+            44.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "captain-hook-katana",
+      "candidateId": "a003",
+      "pdfLabel": "Captain Hook Katana",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dynasty-leader",
+      "equipmentTags": [
+        "Captain",
+        "Hook Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Captain",
+          "armyBook": "Dynasty Leader + Captain"
+        },
+        {
+          "pdf": "Hook",
+          "armyBook": "Hook Sword"
+        },
+        {
+          "pdf": "Katana",
+          "armyBook": [
+            "Dynasty Sword",
+            "Ninja Sword"
+          ]
+        }
+      ],
+      "notes": "Captain é upgrade do Dynasty Leader (estandarte nas costas). o army book não permite Hook Sword + espada juntas (só Dual Hook Swords / Dual Dynasty Swords); tag só da Hook Sword. Cabeça diferente (chapéu)",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            2
+          ],
+          "front": "arts/captain-hook-katana/fino/frente.svg",
+          "back": "arts/captain-hook-katana/fino/verso.svg",
+          "canvasMm": [
+            43.984,
+            49.445
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            49.4,
+            43.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 23,
+          "rows": [
+            2
+          ],
+          "front": "arts/captain-hook-katana/borda/frente.svg",
+          "back": "arts/captain-hook-katana/borda/verso.svg",
+          "canvasMm": [
+            46.567,
+            50.715
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            50.6,
+            46.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "captain-pistols",
+      "candidateId": "a004",
+      "pdfLabel": "Captain Pistols",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dynasty-leader",
+      "equipmentTags": [
+        "Captain",
+        "Dual Burst Pistols"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Captain",
+          "armyBook": "Dynasty Leader + Captain"
+        },
+        {
+          "pdf": "Pistols",
+          "armyBook": "Dual Burst Pistols"
+        }
+      ],
+      "notes": "Captain é upgrade do Dynasty Leader (estandarte nas costas).",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            3
+          ],
+          "front": "arts/captain-pistols/fino/frente.svg",
+          "back": "arts/captain-pistols/fino/verso.svg",
+          "canvasMm": [
+            37.592,
+            49.445
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            49.4,
+            37.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 23,
+          "rows": [
+            3
+          ],
+          "front": "arts/captain-pistols/borda/frente.svg",
+          "back": "arts/captain-pistols/borda/verso.svg",
+          "canvasMm": [
+            40.132,
+            50.715
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            50.6,
+            39.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "captain-hook-pistol-2",
+      "candidateId": "a005",
+      "pdfLabel": "Captain Hook Pistol 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dynasty-leader",
+      "equipmentTags": [
+        "Captain",
+        "Hook Sword",
+        "Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Captain",
+          "armyBook": "Dynasty Leader + Captain"
+        },
+        {
+          "pdf": "Hook",
+          "armyBook": "Hook Sword"
+        }
+      ],
+      "notes": "Captain é upgrade do Dynasty Leader (estandarte nas costas). mesma pose de a002 com outra cabeça",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            4
+          ],
+          "front": "arts/captain-hook-pistol-2/fino/frente.svg",
+          "back": "arts/captain-hook-pistol-2/fino/verso.svg",
+          "canvasMm": [
+            42.333,
+            49.445
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            49.4,
+            42.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 23,
+          "rows": [
+            4
+          ],
+          "front": "arts/captain-hook-pistol-2/borda/frente.svg",
+          "back": "arts/captain-hook-pistol-2/borda/verso.svg",
+          "canvasMm": [
+            44.916,
+            50.715
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            50.6,
+            44.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drone-sage",
+      "candidateId": "a006",
+      "pdfLabel": "Drone Sage",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dynasty-leader",
+      "equipmentTags": [
+        "Sage",
+        "Hover Alert-Drone"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Drone Sage",
+          "armyBook": "Dynasty Leader + Sage + Hover Alert-Drone"
+        }
+      ],
+      "notes": "sábio sobre plataforma flutuante. Só estilo fino; a052 é a mesma figura no estilo borda. Sage Myan (herói nomeado) também tem Hover Alert-Drone",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0
+          ],
+          "front": "arts/drone-sage/fino/frente.svg",
+          "back": "arts/drone-sage/fino/verso.svg",
+          "canvasMm": [
+            29.337,
+            67.268
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            67.0,
+            29.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sage",
+      "candidateId": "a007",
+      "pdfLabel": "Sage",
+      "labelSource": "agent-vision",
+      "labelConfidence": "baixa",
+      "unitKey": "dynasty-leader",
+      "equipmentTags": [
+        "Sage"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sage",
+          "armyBook": "Dynasty Leader + Sage"
+        }
+      ],
+      "notes": "o recorte do rótulo tem \"Sage\" e, mais abaixo, \"Drone Sage\" (provavelmente o rótulo vizinho de a006); a figura é o sábio a pé",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            1
+          ],
+          "front": "arts/sage/fino/frente.svg",
+          "back": "arts/sage/fino/verso.svg",
+          "canvasMm": [
+            24.172,
+            54.949
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            54.9,
+            23.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            1
+          ],
+          "front": "arts/sage/borda/frente.svg",
+          "back": "arts/sage/borda/verso.svg",
+          "canvasMm": [
+            26.331,
+            56.092
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            56.0,
+            26.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hunter",
+      "candidateId": "a008",
+      "pdfLabel": "Hunter",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": null,
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "figura com lança e pistola, parece montada/ajoelhada (recorte cortado embaixo). Talvez o Hunt Master (Combat/Vanguard Hunt Master), upgrade de Cyber Lizards, Cyber-Bird Swarms e Cyber Beast; unidade ambígua",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            2
+          ],
+          "front": "arts/hunter/fino/frente.svg",
+          "back": "arts/hunter/fino/verso.svg",
+          "canvasMm": [
+            26.712,
+            52.832
+          ],
+          "frontBackIoU": 0.956,
+          "sizeMm": [
+            52.7,
+            26.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            2
+          ],
+          "front": "arts/hunter/borda/frente.svg",
+          "back": "arts/hunter/borda/verso.svg",
+          "canvasMm": [
+            28.956,
+            53.975
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            53.8,
+            28.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "cyber-beast",
+      "candidateId": "a009",
+      "pdfLabel": "Cyber Beast",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "cyber-beast",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "besta robô grande (só no GF)",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            3
+          ],
+          "front": "arts/cyber-beast/fino/frente.svg",
+          "back": "arts/cyber-beast/fino/verso.svg",
+          "canvasMm": [
+            67.522,
+            39.497
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            39.4,
+            67.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 24,
+          "rows": [
+            3
+          ],
+          "front": "arts/cyber-beast/borda/frente.svg",
+          "back": "arts/cyber-beast/borda/verso.svg",
+          "canvasMm": [
+            69.808,
+            40.64
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            40.6,
+            69.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "oni-captain-samurai",
+      "candidateId": "a010",
+      "pdfLabel": "Oni Captain Samurai",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "oni-captain",
+      "equipmentTags": [
+        "Great ONI Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Samurai",
+          "armyBook": "Great ONI Sword"
+        }
+      ],
+      "notes": "rótulo não nomeia arma; a figura segura uma espada longa (Great ONI Sword)",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0
+          ],
+          "front": "arts/oni-captain-samurai/fino/frente.svg",
+          "back": "arts/oni-captain-samurai/fino/verso.svg",
+          "canvasMm": [
+            101.558,
+            53.255
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            53.1,
+            101.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 25,
+          "rows": [
+            0
+          ],
+          "front": "arts/oni-captain-samurai/borda/frente.svg",
+          "back": "arts/oni-captain-samurai/borda/verso.svg",
+          "canvasMm": [
+            103.801,
+            54.568
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            54.4,
+            103.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "oni-captain-mace",
+      "candidateId": "a011",
+      "pdfLabel": "Oni Captain Mace",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "oni-captain",
+      "equipmentTags": [
+        "Great ONI Mace"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Mace",
+          "armyBook": "Great ONI Mace"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            1
+          ],
+          "front": "arts/oni-captain-mace/fino/frente.svg",
+          "back": "arts/oni-captain-mace/fino/verso.svg",
+          "canvasMm": [
+            73.067,
+            55.922
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            55.8,
+            72.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 25,
+          "rows": [
+            1
+          ],
+          "front": "arts/oni-captain-mace/borda/frente.svg",
+          "back": "arts/oni-captain-mace/borda/verso.svg",
+          "canvasMm": [
+            75.311,
+            57.108
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            57.0,
+            75.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "oni-captain-guns",
+      "candidateId": "a012",
+      "pdfLabel": "Oni Captain Guns",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "oni-captain",
+      "equipmentTags": [
+        "Dual Gun-Fists"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guns",
+          "armyBook": "Dual Gun-Fists"
+        }
+      ],
+      "notes": "armas nos punhos; o padrão Dual Flame-Fists e os outros punhos (Rocket, Shredder etc.) ficam sem arte",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            2
+          ],
+          "front": "arts/oni-captain-guns/fino/frente.svg",
+          "back": "arts/oni-captain-guns/fino/verso.svg",
+          "canvasMm": [
+            55.414,
+            53.467
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            53.3,
+            55.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 25,
+          "rows": [
+            2
+          ],
+          "front": "arts/oni-captain-guns/borda/frente.svg",
+          "back": "arts/oni-captain-guns/borda/verso.svg",
+          "canvasMm": [
+            57.573,
+            54.61
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            54.5,
+            57.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sniper-rifle-a",
+      "candidateId": "a013",
+      "pdfLabel": "Warrior Sniper Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Long Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sniper Rifle",
+          "armyBook": "Long Rifle"
+        }
+      ],
+      "notes": "Warriors não têm Sniper Rifle; a arma padrão (e com mais cópias no PDF) é Long Rifle. Variante de cabeça A",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sniper-rifle-a/fino/frente.svg",
+          "back": "arts/warrior-sniper-rifle-a/fino/verso.svg",
+          "canvasMm": [
+            24.511,
+            33.316
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            33.2,
+            24.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-sniper-rifle-a/borda/frente.svg",
+          "back": "arts/warrior-sniper-rifle-a/borda/verso.svg",
+          "canvasMm": [
+            30.141,
+            36.11
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            36.0,
+            29.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sniper-rifle-b",
+      "candidateId": "a014",
+      "pdfLabel": "Warrior Sniper Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Long Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sniper Rifle",
+          "armyBook": "Long Rifle"
+        }
+      ],
+      "notes": "Warriors não têm Sniper Rifle; a arma padrão (e com mais cópias no PDF) é Long Rifle. Variante de cabeça B",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-sniper-rifle-b/fino/frente.svg",
+          "back": "arts/warrior-sniper-rifle-b/fino/verso.svg",
+          "canvasMm": [
+            24.511,
+            32.512
+          ],
+          "frontBackIoU": 0.972,
+          "sizeMm": [
+            32.3,
+            24.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            1,
+            2,
+            4
+          ],
+          "front": "arts/warrior-sniper-rifle-b/borda/frente.svg",
+          "back": "arts/warrior-sniper-rifle-b/borda/verso.svg",
+          "canvasMm": [
+            30.141,
+            36.11
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            36.0,
+            29.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-carbine-a",
+      "candidateId": "a015",
+      "pdfLabel": "Warrior Carbine",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Carbine"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "variante de cabeça A",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-carbine-a/fino/frente.svg",
+          "back": "arts/warrior-carbine-a/fino/verso.svg",
+          "canvasMm": [
+            20.955,
+            33.232
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            33.1,
+            20.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-carbine-a/borda/frente.svg",
+          "back": "arts/warrior-carbine-a/borda/verso.svg",
+          "canvasMm": [
+            26.628,
+            36.026
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            35.9,
+            26.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-carbine-b",
+      "candidateId": "a016",
+      "pdfLabel": "Warrior Carbine",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Carbine"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "variante de cabeça B",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-carbine-b/fino/frente.svg",
+          "back": "arts/warrior-carbine-b/fino/verso.svg",
+          "canvasMm": [
+            20.997,
+            32.512
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            32.3,
+            20.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-carbine-b/borda/frente.svg",
+          "back": "arts/warrior-carbine-b/borda/verso.svg",
+          "canvasMm": [
+            26.628,
+            35.264
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            35.1,
+            26.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-shotgun-a",
+      "candidateId": "a017",
+      "pdfLabel": "Warrior Shotgun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Shotgun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "variante de cabeça A",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-shotgun-a/fino/frente.svg",
+          "back": "arts/warrior-shotgun-a/fino/verso.svg",
+          "canvasMm": [
+            19.304,
+            33.232
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            33.1,
+            19.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-shotgun-a/borda/frente.svg",
+          "back": "arts/warrior-shotgun-a/borda/verso.svg",
+          "canvasMm": [
+            24.977,
+            36.026
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            35.9,
+            24.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-shotgun-b",
+      "candidateId": "a018",
+      "pdfLabel": "Warrior Shotgun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Shotgun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "variante de cabeça B",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warrior-shotgun-b/fino/frente.svg",
+          "back": "arts/warrior-shotgun-b/fino/verso.svg",
+          "canvasMm": [
+            19.346,
+            31.835
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            31.8,
+            19.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            1,
+            2,
+            4
+          ],
+          "front": "arts/warrior-shotgun-b/borda/frente.svg",
+          "back": "arts/warrior-shotgun-b/borda/verso.svg",
+          "canvasMm": [
+            24.977,
+            34.671
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            34.5,
+            24.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-plasma-1",
+      "candidateId": "a019",
+      "pdfLabel": "Warrior Plasma 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Plasma Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Plasma",
+          "armyBook": "Plasma Rifle"
+        }
+      ],
+      "notes": "pose 1",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-plasma-1/fino/frente.svg",
+          "back": "arts/warrior-plasma-1/fino/verso.svg",
+          "canvasMm": [
+            20.362,
+            33.232
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            33.1,
+            20.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            0
+          ],
+          "front": "arts/warrior-plasma-1/borda/frente.svg",
+          "back": "arts/warrior-plasma-1/borda/verso.svg",
+          "canvasMm": [
+            25.993,
+            36.026
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            35.9,
+            25.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-plasma-2",
+      "candidateId": "a020",
+      "pdfLabel": "Warrior Plasma 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Plasma Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Plasma",
+          "armyBook": "Plasma Rifle"
+        }
+      ],
+      "notes": "pose 2",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-plasma-2/fino/frente.svg",
+          "back": "arts/warrior-plasma-2/fino/verso.svg",
+          "canvasMm": [
+            20.362,
+            31.835
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            31.8,
+            20.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            1
+          ],
+          "front": "arts/warrior-plasma-2/borda/frente.svg",
+          "back": "arts/warrior-plasma-2/borda/verso.svg",
+          "canvasMm": [
+            25.993,
+            34.671
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            34.5,
+            25.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-flamer",
+      "candidateId": "a021",
+      "pdfLabel": "Warrior Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-flamer/fino/frente.svg",
+          "back": "arts/warrior-flamer/fino/verso.svg",
+          "canvasMm": [
+            20.32,
+            31.835
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            31.8,
+            20.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            2
+          ],
+          "front": "arts/warrior-flamer/borda/frente.svg",
+          "back": "arts/warrior-flamer/borda/verso.svg",
+          "canvasMm": [
+            25.993,
+            34.671
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            34.5,
+            25.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-splinter-shot",
+      "candidateId": "a022",
+      "pdfLabel": "Warrior Splinter Shot",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Shredder Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Splinter Shot",
+          "armyBook": "Shredder Rifle"
+        }
+      ],
+      "notes": "splinter ~ shredder; é a única arma especial dos Warriors que sobra",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            3
+          ],
+          "front": "arts/warrior-splinter-shot/fino/frente.svg",
+          "back": "arts/warrior-splinter-shot/fino/verso.svg",
+          "canvasMm": [
+            19.346,
+            31.877
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            31.8,
+            19.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            3
+          ],
+          "front": "arts/warrior-splinter-shot/borda/frente.svg",
+          "back": "arts/warrior-splinter-shot/borda/verso.svg",
+          "canvasMm": [
+            24.977,
+            34.713
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            34.6,
+            24.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-fusion",
+      "candidateId": "a023",
+      "pdfLabel": "Warrior Fusion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Fusion",
+          "armyBook": "Fusion Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            4
+          ],
+          "front": "arts/warrior-fusion/fino/frente.svg",
+          "back": "arts/warrior-fusion/fino/verso.svg",
+          "canvasMm": [
+            19.346,
+            31.919
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            31.8,
+            19.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            4
+          ],
+          "front": "arts/warrior-fusion/borda/frente.svg",
+          "back": "arts/warrior-fusion/borda/verso.svg",
+          "canvasMm": [
+            24.934,
+            34.713
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            34.6,
+            24.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drone-a",
+      "candidateId": "a024",
+      "pdfLabel": "Drone A",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "attack-drone",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Drone",
+          "armyBook": "Attack Drones"
+        }
+      ],
+      "notes": "drone pequeno com haste; Attack Drones é a única unidade de drones. Também pode ser um dos drones de upgrade (Attack/Energy/Shield Drone) de outras unidades. Só estilo fino (a055 = borda)",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0
+          ],
+          "front": "arts/drone-a/fino/frente.svg",
+          "back": "arts/drone-a/fino/verso.svg",
+          "canvasMm": [
+            25.146,
+            14.859
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            14.6,
+            24.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drone-b",
+      "candidateId": "a025",
+      "pdfLabel": "Drone B",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "attack-drone",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Drone",
+          "armyBook": "Attack Drones"
+        }
+      ],
+      "notes": "drone pequeno com haste; Attack Drones é a única unidade de drones. Também pode ser um dos drones de upgrade (Attack/Energy/Shield Drone) de outras unidades. Só estilo fino (a056 = borda)",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            1
+          ],
+          "front": "arts/drone-b/fino/frente.svg",
+          "back": "arts/drone-b/fino/verso.svg",
+          "canvasMm": [
+            25.146,
+            14.859
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            14.6,
+            24.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drone-c",
+      "candidateId": "a026",
+      "pdfLabel": "Drone C",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "attack-drone",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Drone",
+          "armyBook": "Attack Drones"
+        }
+      ],
+      "notes": "drone pequeno com haste; Attack Drones é a única unidade de drones. Também pode ser um dos drones de upgrade (Attack/Energy/Shield Drone) de outras unidades. Só estilo fino (a057 = borda)",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            2
+          ],
+          "front": "arts/drone-c/fino/frente.svg",
+          "back": "arts/drone-c/fino/verso.svg",
+          "canvasMm": [
+            25.146,
+            18.288
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            18.0,
+            24.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "turret",
+      "candidateId": "a027",
+      "pdfLabel": "Turret",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Shishi Turret"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Turret",
+          "armyBook": "Shishi Turret"
+        }
+      ],
+      "notes": "torreta com cabeça de leão (shishi); opção de um modelo dos Warriors",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/turret/fino/frente.svg",
+          "back": "arts/turret/fino/verso.svg",
+          "canvasMm": [
+            36.915,
+            27.771
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            27.7,
+            36.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 30,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/turret/borda/frente.svg",
+          "back": "arts/turret/borda/verso.svg",
+          "canvasMm": [
+            42.545,
+            30.565
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            30.5,
+            42.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "royal-guard-v1",
+      "candidateId": "a028",
+      "pdfLabel": "Royal Guard V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "royal-guard",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose 1",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/royal-guard-v1/fino/frente.svg",
+          "back": "arts/royal-guard-v1/fino/verso.svg",
+          "canvasMm": [
+            28.829,
+            54.102
+          ],
+          "frontBackIoU": 0.865,
+          "sizeMm": [
+            54.0,
+            28.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 31,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/royal-guard-v1/borda/frente.svg",
+          "back": "arts/royal-guard-v1/borda/verso.svg",
+          "canvasMm": [
+            34.417,
+            56.896
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            56.8,
+            34.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "royal-guard-v2",
+      "candidateId": "a029",
+      "pdfLabel": "Royal Guard V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "royal-guard",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose 2",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/royal-guard-v2/fino/frente.svg",
+          "back": "arts/royal-guard-v2/fino/verso.svg",
+          "canvasMm": [
+            28.702,
+            54.144
+          ],
+          "frontBackIoU": 0.948,
+          "sizeMm": [
+            54.0,
+            28.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "front": "arts/royal-guard-v2/borda/frente.svg",
+          "back": "arts/royal-guard-v2/borda/verso.svg",
+          "canvasMm": [
+            33.697,
+            56.642
+          ],
+          "frontBackIoU": 0.972,
+          "sizeMm": [
+            56.5,
+            33.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scout-energy-rifle-a",
+      "candidateId": "a030",
+      "pdfLabel": "Scout Energy Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scout",
+      "equipmentTags": [
+        "Energy Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "variante de cabeça A",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0,
+            2,
+            4
+          ],
+          "front": "arts/scout-energy-rifle-a/fino/frente.svg",
+          "back": "arts/scout-energy-rifle-a/fino/verso.svg",
+          "canvasMm": [
+            40.301,
+            34.671
+          ],
+          "frontBackIoU": 0.928,
+          "sizeMm": [
+            34.5,
+            40.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            0,
+            2,
+            4
+          ],
+          "front": "arts/scout-energy-rifle-a/borda/frente.svg",
+          "back": "arts/scout-energy-rifle-a/borda/verso.svg",
+          "canvasMm": [
+            45.254,
+            37.169
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            37.1,
+            45.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scout-energy-rifle-b",
+      "candidateId": "a031",
+      "pdfLabel": "Scout Energy Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scout",
+      "equipmentTags": [
+        "Energy Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "variante de cabeça B",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            1,
+            3
+          ],
+          "front": "arts/scout-energy-rifle-b/fino/frente.svg",
+          "back": "arts/scout-energy-rifle-b/fino/verso.svg",
+          "canvasMm": [
+            40.259,
+            32.851
+          ],
+          "frontBackIoU": 0.927,
+          "sizeMm": [
+            32.8,
+            40.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            1,
+            3
+          ],
+          "front": "arts/scout-energy-rifle-b/borda/frente.svg",
+          "back": "arts/scout-energy-rifle-b/borda/verso.svg",
+          "canvasMm": [
+            45.212,
+            35.348
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            35.2,
+            44.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scout-sniper-a",
+      "candidateId": "a032",
+      "pdfLabel": "Scout Sniper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scout",
+      "equipmentTags": [
+        "Sniper Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sniper",
+          "armyBook": "Sniper Rifle"
+        }
+      ],
+      "notes": "variante de cabeça A",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0,
+            2,
+            4
+          ],
+          "front": "arts/scout-sniper-a/fino/frente.svg",
+          "back": "arts/scout-sniper-a/fino/verso.svg",
+          "canvasMm": [
+            40.386,
+            34.798
+          ],
+          "frontBackIoU": 0.932,
+          "sizeMm": [
+            34.6,
+            40.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            0,
+            2,
+            4
+          ],
+          "front": "arts/scout-sniper-a/borda/frente.svg",
+          "back": "arts/scout-sniper-a/borda/verso.svg",
+          "canvasMm": [
+            45.381,
+            37.253
+          ],
+          "frontBackIoU": 0.966,
+          "sizeMm": [
+            37.2,
+            45.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scout-sniper-b",
+      "candidateId": "a033",
+      "pdfLabel": "Scout Sniper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scout",
+      "equipmentTags": [
+        "Sniper Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sniper",
+          "armyBook": "Sniper Rifle"
+        }
+      ],
+      "notes": "variante de cabeça B",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            1,
+            3
+          ],
+          "front": "arts/scout-sniper-b/fino/frente.svg",
+          "back": "arts/scout-sniper-b/fino/verso.svg",
+          "canvasMm": [
+            40.344,
+            32.935
+          ],
+          "frontBackIoU": 0.921,
+          "sizeMm": [
+            32.9,
+            40.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            1,
+            3
+          ],
+          "front": "arts/scout-sniper-b/borda/frente.svg",
+          "back": "arts/scout-sniper-b/borda/verso.svg",
+          "canvasMm": [
+            45.339,
+            35.433
+          ],
+          "frontBackIoU": 0.96,
+          "sizeMm": [
+            35.3,
+            45.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ninja-sword-a",
+      "candidateId": "a034",
+      "pdfLabel": "Ninja Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ninja",
+      "equipmentTags": [
+        "Dual Ninja Swords"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Dual Ninja Swords"
+        }
+      ],
+      "notes": "duas espadas na figura; variante de cabeça A",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0
+          ],
+          "front": "arts/ninja-sword-a/fino/frente.svg",
+          "back": "arts/ninja-sword-a/fino/verso.svg",
+          "canvasMm": [
+            34.883,
+            29.803
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            29.7,
+            34.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            0
+          ],
+          "front": "arts/ninja-sword-a/borda/frente.svg",
+          "back": "arts/ninja-sword-a/borda/verso.svg",
+          "canvasMm": [
+            39.878,
+            32.3
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            32.2,
+            39.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ninja-sword-b",
+      "candidateId": "a035",
+      "pdfLabel": "Ninja Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ninja",
+      "equipmentTags": [
+        "Dual Ninja Swords"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Dual Ninja Swords"
+        }
+      ],
+      "notes": "duas espadas na figura; variante de cabeça B",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            1
+          ],
+          "front": "arts/ninja-sword-b/fino/frente.svg",
+          "back": "arts/ninja-sword-b/fino/verso.svg",
+          "canvasMm": [
+            34.84,
+            29.803
+          ],
+          "frontBackIoU": 0.955,
+          "sizeMm": [
+            29.7,
+            34.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            1
+          ],
+          "front": "arts/ninja-sword-b/borda/frente.svg",
+          "back": "arts/ninja-sword-b/borda/verso.svg",
+          "canvasMm": [
+            39.836,
+            32.3
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            32.2,
+            39.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ninja-sword-c",
+      "candidateId": "a036",
+      "pdfLabel": "Ninja Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ninja",
+      "equipmentTags": [
+        "Dual Ninja Swords"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Dual Ninja Swords"
+        }
+      ],
+      "notes": "duas espadas na figura; variante de cabeça C",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/ninja-sword-c/fino/frente.svg",
+          "back": "arts/ninja-sword-c/fino/verso.svg",
+          "canvasMm": [
+            34.925,
+            30.48
+          ],
+          "frontBackIoU": 0.954,
+          "sizeMm": [
+            30.4,
+            34.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/ninja-sword-c/borda/frente.svg",
+          "back": "arts/ninja-sword-c/borda/verso.svg",
+          "canvasMm": [
+            39.836,
+            32.978
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            32.9,
+            39.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ninja-guns-a",
+      "candidateId": "a037",
+      "pdfLabel": "Ninja Guns",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ninja",
+      "equipmentTags": [
+        "Dual Auto-Guns"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guns",
+          "armyBook": "Dual Auto-Guns"
+        }
+      ],
+      "notes": "variante de cabeça A",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0
+          ],
+          "front": "arts/ninja-guns-a/fino/frente.svg",
+          "back": "arts/ninja-guns-a/fino/verso.svg",
+          "canvasMm": [
+            29.76,
+            30.014
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            29.9,
+            29.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            0
+          ],
+          "front": "arts/ninja-guns-a/borda/frente.svg",
+          "back": "arts/ninja-guns-a/borda/verso.svg",
+          "canvasMm": [
+            34.756,
+            32.512
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            32.4,
+            34.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ninja-guns-b",
+      "candidateId": "a038",
+      "pdfLabel": "Ninja Guns",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ninja",
+      "equipmentTags": [
+        "Dual Auto-Guns"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guns",
+          "armyBook": "Dual Auto-Guns"
+        }
+      ],
+      "notes": "variante de cabeça B",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            1
+          ],
+          "front": "arts/ninja-guns-b/fino/frente.svg",
+          "back": "arts/ninja-guns-b/fino/verso.svg",
+          "canvasMm": [
+            29.76,
+            30.014
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            29.9,
+            29.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            1
+          ],
+          "front": "arts/ninja-guns-b/borda/frente.svg",
+          "back": "arts/ninja-guns-b/borda/verso.svg",
+          "canvasMm": [
+            34.713,
+            32.512
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            32.3,
+            34.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ninja-guns-c",
+      "candidateId": "a039",
+      "pdfLabel": "Ninja Guns",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ninja",
+      "equipmentTags": [
+        "Dual Auto-Guns"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guns",
+          "armyBook": "Dual Auto-Guns"
+        }
+      ],
+      "notes": "variante de cabeça C",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/ninja-guns-c/fino/frente.svg",
+          "back": "arts/ninja-guns-c/fino/verso.svg",
+          "canvasMm": [
+            29.76,
+            30.565
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            30.1,
+            29.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/ninja-guns-c/borda/frente.svg",
+          "back": "arts/ninja-guns-c/borda/verso.svg",
+          "canvasMm": [
+            34.756,
+            33.062
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            32.6,
+            34.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ninja-sword-gun-a",
+      "candidateId": "a040",
+      "pdfLabel": "Ninja Sword & Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ninja",
+      "equipmentTags": [
+        "Auto-Gun",
+        "Ninja Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword & Gun",
+          "armyBook": "Auto-Gun + Ninja Sword"
+        }
+      ],
+      "notes": "variante de cabeça A",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0
+          ],
+          "front": "arts/ninja-sword-gun-a/fino/frente.svg",
+          "back": "arts/ninja-sword-gun-a/fino/verso.svg",
+          "canvasMm": [
+            38.269,
+            29.887
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            29.8,
+            38.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            0
+          ],
+          "front": "arts/ninja-sword-gun-a/borda/frente.svg",
+          "back": "arts/ninja-sword-gun-a/borda/verso.svg",
+          "canvasMm": [
+            43.222,
+            32.385
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            32.3,
+            42.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ninja-sword-gun-b",
+      "candidateId": "a041",
+      "pdfLabel": "Ninja Sword & Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ninja",
+      "equipmentTags": [
+        "Auto-Gun",
+        "Ninja Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword & Gun",
+          "armyBook": "Auto-Gun + Ninja Sword"
+        }
+      ],
+      "notes": "variante de cabeça B",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            1
+          ],
+          "front": "arts/ninja-sword-gun-b/fino/frente.svg",
+          "back": "arts/ninja-sword-gun-b/fino/verso.svg",
+          "canvasMm": [
+            38.269,
+            29.887
+          ],
+          "frontBackIoU": 0.962,
+          "sizeMm": [
+            29.8,
+            38.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            1
+          ],
+          "front": "arts/ninja-sword-gun-b/borda/frente.svg",
+          "back": "arts/ninja-sword-gun-b/borda/verso.svg",
+          "canvasMm": [
+            43.222,
+            32.385
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            32.3,
+            42.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ninja-sword-gun-c",
+      "candidateId": "a042",
+      "pdfLabel": "Ninja Sword & Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "ninja",
+      "equipmentTags": [
+        "Auto-Gun",
+        "Ninja Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword & Gun",
+          "armyBook": "Auto-Gun + Ninja Sword"
+        }
+      ],
+      "notes": "variante de cabeça C",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/ninja-sword-gun-c/fino/frente.svg",
+          "back": "arts/ninja-sword-gun-c/fino/verso.svg",
+          "canvasMm": [
+            38.227,
+            30.438
+          ],
+          "frontBackIoU": 0.956,
+          "sizeMm": [
+            30.2,
+            38.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/ninja-sword-gun-c/borda/frente.svg",
+          "back": "arts/ninja-sword-gun-c/borda/verso.svg",
+          "canvasMm": [
+            43.222,
+            32.935
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            32.8,
+            42.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "oni-guns",
+      "candidateId": "a043",
+      "pdfLabel": "ONI Guns",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "oni",
+      "equipmentTags": [
+        "Dual Gun-Fists"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guns",
+          "armyBook": "Dual Gun-Fists"
+        }
+      ],
+      "notes": "armas nos punhos; o padrão Dual Flame-Fists e os outros punhos ficam sem arte",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/oni-guns/fino/frente.svg",
+          "back": "arts/oni-guns/fino/verso.svg",
+          "canvasMm": [
+            64.347,
+            53.933
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            53.8,
+            64.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/oni-guns/borda/frente.svg",
+          "back": "arts/oni-guns/borda/verso.svg",
+          "canvasMm": [
+            69.3,
+            56.43
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            56.3,
+            69.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "oni-sword-a",
+      "candidateId": "a044",
+      "pdfLabel": "ONI Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "oni",
+      "equipmentTags": [
+        "ONI Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "ONI Sword"
+        }
+      ],
+      "notes": "com ONI Shield; variante de cabeça A",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            0,
+            2
+          ],
+          "front": "arts/oni-sword-a/fino/frente.svg",
+          "back": "arts/oni-sword-a/fino/verso.svg",
+          "canvasMm": [
+            60.96,
+            54.102
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            54.0,
+            60.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            0,
+            2
+          ],
+          "front": "arts/oni-sword-a/borda/frente.svg",
+          "back": "arts/oni-sword-a/borda/verso.svg",
+          "canvasMm": [
+            65.913,
+            56.6
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            56.5,
+            65.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "oni-sword-b",
+      "candidateId": "a045",
+      "pdfLabel": "ONI Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "oni",
+      "equipmentTags": [
+        "ONI Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "ONI Sword"
+        }
+      ],
+      "notes": "com ONI Shield; variante de cabeça B",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            1
+          ],
+          "front": "arts/oni-sword-b/fino/frente.svg",
+          "back": "arts/oni-sword-b/fino/verso.svg",
+          "canvasMm": [
+            60.96,
+            54.102
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            54.0,
+            60.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            1
+          ],
+          "front": "arts/oni-sword-b/borda/frente.svg",
+          "back": "arts/oni-sword-b/borda/verso.svg",
+          "canvasMm": [
+            65.955,
+            56.6
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            56.5,
+            65.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "oni-glaive-a",
+      "candidateId": "a046",
+      "pdfLabel": "ONI Glaive",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "oni",
+      "equipmentTags": [
+        "ONI Glaive"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Glaive",
+          "armyBook": "ONI Glaive"
+        }
+      ],
+      "notes": "variante de cabeça A",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0,
+            2
+          ],
+          "front": "arts/oni-glaive-a/fino/frente.svg",
+          "back": "arts/oni-glaive-a/fino/verso.svg",
+          "canvasMm": [
+            90.763,
+            53.848
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            53.7,
+            90.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            0
+          ],
+          "front": "arts/oni-glaive-a/borda/frente.svg",
+          "back": "arts/oni-glaive-a/borda/verso.svg",
+          "canvasMm": [
+            93.641,
+            56.346
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            56.2,
+            93.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "oni-glaive-b",
+      "candidateId": "a047",
+      "pdfLabel": "ONI Glaive",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "oni",
+      "equipmentTags": [
+        "ONI Glaive"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Glaive",
+          "armyBook": "ONI Glaive"
+        }
+      ],
+      "notes": "variante de cabeça B (máscara oni)",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            1
+          ],
+          "front": "arts/oni-glaive-b/fino/frente.svg",
+          "back": "arts/oni-glaive-b/fino/verso.svg",
+          "canvasMm": [
+            90.763,
+            53.933
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            53.8,
+            90.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            1
+          ],
+          "front": "arts/oni-glaive-b/borda/frente.svg",
+          "back": "arts/oni-glaive-b/borda/verso.svg",
+          "canvasMm": [
+            93.726,
+            56.388
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            56.3,
+            93.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "oni-fists-a",
+      "candidateId": "a048",
+      "pdfLabel": "ONI Fists",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "oni",
+      "equipmentTags": [
+        "Dual ONI Fists"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Fists",
+          "armyBook": "Dual ONI Fists"
+        }
+      ],
+      "notes": "variante de cabeça A",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0,
+            2
+          ],
+          "front": "arts/oni-fists-a/fino/frente.svg",
+          "back": "arts/oni-fists-a/fino/verso.svg",
+          "canvasMm": [
+            58.039,
+            53.848
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            53.8,
+            57.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            0,
+            2
+          ],
+          "front": "arts/oni-fists-a/borda/frente.svg",
+          "back": "arts/oni-fists-a/borda/verso.svg",
+          "canvasMm": [
+            62.95,
+            56.346
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            56.2,
+            62.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "oni-fists-b",
+      "candidateId": "a049",
+      "pdfLabel": "ONI Fists",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "oni",
+      "equipmentTags": [
+        "Dual ONI Fists"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Fists",
+          "armyBook": "Dual ONI Fists"
+        }
+      ],
+      "notes": "variante de cabeça B",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            1
+          ],
+          "front": "arts/oni-fists-b/fino/frente.svg",
+          "back": "arts/oni-fists-b/fino/verso.svg",
+          "canvasMm": [
+            57.912,
+            53.933
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            53.8,
+            57.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            1
+          ],
+          "front": "arts/oni-fists-b/borda/frente.svg",
+          "back": "arts/oni-fists-b/borda/verso.svg",
+          "canvasMm": [
+            62.907,
+            56.43
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            56.3,
+            62.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "cyber-birds",
+      "candidateId": "a050",
+      "pdfLabel": "Cyber Birds",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "cyber-bird-swarm",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Cyber-Bird Swarms. Só estilo fino; a061 é a mesma figura no estilo borda",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/cyber-birds/fino/frente.svg",
+          "back": "arts/cyber-birds/fino/verso.svg",
+          "canvasMm": [
+            50.419,
+            32.216
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            32.0,
+            50.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "cyber-beast-lizard",
+      "candidateId": "a051",
+      "pdfLabel": "Cyber Beast",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "cyber-lizards",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Cyber Beast",
+          "armyBook": "Cyber Lizards"
+        }
+      ],
+      "notes": "rótulo diz Cyber Beast, mas a figura é um lagarto robô com 5 cópias (Cyber Lizards: 5 modelos, base 60x35); o Cyber Beast de verdade é a009",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/cyber-beast-lizard/fino/frente.svg",
+          "back": "arts/cyber-beast-lizard/fino/verso.svg",
+          "canvasMm": [
+            43.688,
+            19.727
+          ],
+          "frontBackIoU": 0.959,
+          "sizeMm": [
+            19.6,
+            43.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/cyber-beast-lizard/borda/frente.svg",
+          "back": "arts/cyber-beast-lizard/borda/verso.svg",
+          "canvasMm": [
+            47.879,
+            21.844
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            21.7,
+            47.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drone-sage-borda",
+      "candidateId": "a052",
+      "pdfLabel": "Drone Sage",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "dynasty-leader",
+      "equipmentTags": [
+        "Sage",
+        "Hover Alert-Drone"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Drone Sage",
+          "armyBook": "Dynasty Leader + Sage + Hover Alert-Drone"
+        }
+      ],
+      "notes": "só estilo borda; mesma figura de a006 (só fino)",
+      "styles": {
+        "borda": {
+          "page": 24,
+          "rows": [
+            0
+          ],
+          "front": "arts/drone-sage-borda/borda/frente.svg",
+          "back": "arts/drone-sage-borda/borda/verso.svg",
+          "canvasMm": [
+            31.623,
+            77.639
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            77.6,
+            31.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-sniper-rifle-b-borda",
+      "candidateId": "a053",
+      "pdfLabel": "Warrior Sniper Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Long Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sniper Rifle",
+          "armyBook": "Long Rifle"
+        }
+      ],
+      "notes": "Warriors não têm Sniper Rifle; a arma padrão (e com mais cópias no PDF) é Long Rifle. Só borda; mesma cabeça de a014",
+      "styles": {
+        "borda": {
+          "page": 26,
+          "rows": [
+            3
+          ],
+          "front": "arts/warrior-sniper-rifle-b-borda/borda/frente.svg",
+          "back": "arts/warrior-sniper-rifle-b-borda/borda/verso.svg",
+          "canvasMm": [
+            30.141,
+            36.11
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            36.0,
+            29.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warrior-shotgun-b-borda",
+      "candidateId": "a054",
+      "pdfLabel": "Warrior Shotgun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "warrior",
+      "equipmentTags": [
+        "Shotgun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só borda; mesma cabeça de a018",
+      "styles": {
+        "borda": {
+          "page": 28,
+          "rows": [
+            3
+          ],
+          "front": "arts/warrior-shotgun-b-borda/borda/frente.svg",
+          "back": "arts/warrior-shotgun-b-borda/borda/verso.svg",
+          "canvasMm": [
+            24.934,
+            34.671
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            34.5,
+            24.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drone-a-borda",
+      "candidateId": "a055",
+      "pdfLabel": "Drone A",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "attack-drone",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Drone",
+          "armyBook": "Attack Drones"
+        }
+      ],
+      "notes": "drone pequeno com haste; Attack Drones é a única unidade de drones. Também pode ser um dos drones de upgrade (Attack/Energy/Shield Drone) de outras unidades. Só borda; mesma figura de a024",
+      "styles": {
+        "borda": {
+          "page": 30,
+          "rows": [
+            0
+          ],
+          "front": "arts/drone-a-borda/borda/frente.svg",
+          "back": "arts/drone-a-borda/borda/verso.svg",
+          "canvasMm": [
+            30.776,
+            30.946
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            30.8,
+            30.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drone-b-borda",
+      "candidateId": "a056",
+      "pdfLabel": "Drone B",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "attack-drone",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Drone",
+          "armyBook": "Attack Drones"
+        }
+      ],
+      "notes": "drone pequeno com haste; Attack Drones é a única unidade de drones. Também pode ser um dos drones de upgrade (Attack/Energy/Shield Drone) de outras unidades. Só borda; mesma figura de a025",
+      "styles": {
+        "borda": {
+          "page": 30,
+          "rows": [
+            1
+          ],
+          "front": "arts/drone-b-borda/borda/frente.svg",
+          "back": "arts/drone-b-borda/borda/verso.svg",
+          "canvasMm": [
+            30.776,
+            30.946
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            30.8,
+            30.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drone-c-borda",
+      "candidateId": "a057",
+      "pdfLabel": "Drone C",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "attack-drone",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Drone",
+          "armyBook": "Attack Drones"
+        }
+      ],
+      "notes": "drone pequeno com haste; Attack Drones é a única unidade de drones. Também pode ser um dos drones de upgrade (Attack/Energy/Shield Drone) de outras unidades. Só borda; mesma figura de a026",
+      "styles": {
+        "borda": {
+          "page": 30,
+          "rows": [
+            2
+          ],
+          "front": "arts/drone-c-borda/borda/frente.svg",
+          "back": "arts/drone-c-borda/borda/verso.svg",
+          "canvasMm": [
+            30.776,
+            34.375
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            34.3,
+            30.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "royal-guard-v1-borda",
+      "candidateId": "a058",
+      "pdfLabel": "Royal Guard V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "royal-guard",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só borda; mesma figura de a028",
+      "styles": {
+        "borda": {
+          "page": 31,
+          "rows": [
+            4
+          ],
+          "front": "arts/royal-guard-v1-borda/borda/frente.svg",
+          "back": "arts/royal-guard-v1-borda/borda/verso.svg",
+          "canvasMm": [
+            34.417,
+            56.896
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            56.8,
+            34.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "royal-guard-v2-borda",
+      "candidateId": "a059",
+      "pdfLabel": "Royal Guard V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "royal-guard",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só borda; mesma figura de a029",
+      "styles": {
+        "borda": {
+          "page": 32,
+          "rows": [
+            2
+          ],
+          "front": "arts/royal-guard-v2-borda/borda/frente.svg",
+          "back": "arts/royal-guard-v2-borda/borda/verso.svg",
+          "canvasMm": [
+            33.697,
+            56.642
+          ],
+          "frontBackIoU": 0.972,
+          "sizeMm": [
+            56.5,
+            33.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "oni-glaive-a-borda",
+      "candidateId": "a060",
+      "pdfLabel": "ONI Glaive",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "oni",
+      "equipmentTags": [
+        "ONI Glaive"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Glaive",
+          "armyBook": "ONI Glaive"
+        }
+      ],
+      "notes": "só borda; mesma cabeça de a046",
+      "styles": {
+        "borda": {
+          "page": 40,
+          "rows": [
+            2
+          ],
+          "front": "arts/oni-glaive-a-borda/borda/frente.svg",
+          "back": "arts/oni-glaive-a-borda/borda/verso.svg",
+          "canvasMm": [
+            93.726,
+            56.346
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            56.2,
+            93.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "cyber-birds-borda",
+      "candidateId": "a061",
+      "pdfLabel": "Cyber Birds",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "cyber-bird-swarm",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só borda; mesma figura de a050",
+      "styles": {
+        "borda": {
+          "page": 42,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/cyber-birds-borda/borda/frente.svg",
+          "back": "arts/cyber-birds-borda/borda/verso.svg",
+          "canvasMm": [
+            55.711,
+            54.398
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            54.3,
+            55.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

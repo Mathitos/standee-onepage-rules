@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "vampiric-undead",
- "faccao": "Vampiric Undead",
+ "faccao": "Vampiric Undead\r",
  "sistema": "aof",
  "pdf": {
   "nome": "Vampiric_Undead_-_BW.pdf",
@@ -12,14 +12,16 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "vampire-lord",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vampire Lord",
+   "rotuloImg": "arts/vampire-lord/rotulo.png",
+   "unitKey": "vampire-master",
+   "equipmentTags": [
+    "Lord"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +53,16 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "vampire-lady",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vampire Lady",
+   "rotuloImg": "arts/vampire-lady/rotulo.png",
+   "unitKey": "vampire-master",
+   "equipmentTags": [
+    "Lord"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -92,14 +96,17 @@
    ]
   },
   {
-   "id": "a003",
+   "id": "lord-steed",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Lord Steed",
+   "rotuloImg": "arts/lord-steed/rotulo.png",
+   "unitKey": "vampire-master",
+   "equipmentTags": [
+    "Lord",
+    "Steed"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -131,14 +138,17 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "lady-steed",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Lady Steed",
+   "rotuloImg": "arts/lady-steed/rotulo.png",
+   "unitKey": "vampire-master",
+   "equipmentTags": [
+    "Lord",
+    "Steed"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -170,14 +180,16 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "skeleton-commander",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Skeleton Commander",
+   "rotuloImg": "arts/skeleton-commander/rotulo.png",
+   "unitKey": "skeleton-champion",
+   "equipmentTags": [
+    "Commander"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -209,14 +221,14 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "skeleton-champion",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Skeleton Champion",
+   "rotuloImg": "arts/skeleton-champion/rotulo.png",
+   "unitKey": "skeleton-champion",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -248,14 +260,16 @@
    "pendencias": []
   },
   {
-   "id": "a007",
+   "id": "army-standard",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Army Standard",
+   "rotuloImg": "arts/army-standard/rotulo.png",
+   "unitKey": "skeleton-champion",
+   "equipmentTags": [
+    "Army Standard Bearer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -287,14 +301,16 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "champion-steed",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Steed",
+   "rotuloImg": "arts/champion-steed/rotulo.png",
+   "unitKey": "skeleton-champion",
+   "equipmentTags": [
+    "Skeletal Steed"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -326,14 +342,16 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "necromaster",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Necromaster",
+   "rotuloImg": "arts/necromaster/rotulo.png",
+   "unitKey": "drained-leader",
+   "equipmentTags": [
+    "Master Necromancer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -365,14 +383,14 @@
    "pendencias": []
   },
   {
-   "id": "a010",
+   "id": "ghoul-champion",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Ghoul Champion",
+   "rotuloImg": "arts/ghoul-champion/rotulo.png",
+   "unitKey": "ghoul-champion",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -404,14 +422,16 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "corpse-master",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Corpse Master",
+   "rotuloImg": "arts/corpse-master/rotulo.png",
+   "unitKey": "drained-leader",
+   "equipmentTags": [
+    "Corpse Master"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -443,14 +463,14 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "werewolf-champion",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Werewolf Champion",
+   "rotuloImg": "arts/werewolf-champion/rotulo.png",
+   "unitKey": "werewolf-champion",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -482,14 +502,16 @@
    "pendencias": []
   },
   {
-   "id": "a013",
+   "id": "drained-soldier-sickle",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Drained Soldier Sickle",
+   "rotuloImg": "arts/drained-soldier-sickle/rotulo.png",
+   "unitKey": "drained-soldiers",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -521,14 +543,16 @@
    "pendencias": []
   },
   {
-   "id": "a014",
+   "id": "drained-soldier-spear",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Drained Soldier Spear",
+   "rotuloImg": "arts/drained-soldier-spear/rotulo.png",
+   "unitKey": "drained-soldiers",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -560,14 +584,16 @@
    "pendencias": []
   },
   {
-   "id": "a015",
+   "id": "drained-soldier-halberd",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Drained Soldier Halberd",
+   "rotuloImg": "arts/drained-soldier-halberd/rotulo.png",
+   "unitKey": "drained-soldiers",
+   "equipmentTags": [
+    "Halberd"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -599,14 +625,14 @@
    "pendencias": []
   },
   {
-   "id": "a016",
+   "id": "drained-archer-sergeant",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Drained Archer Sergeant",
+   "rotuloImg": "arts/drained-archer-sergeant/rotulo.png",
+   "unitKey": "drained-archers",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -638,14 +664,14 @@
    "pendencias": []
   },
   {
-   "id": "a017",
+   "id": "drained-archer-banner",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Drained Archer Banner",
+   "rotuloImg": "arts/drained-archer-banner/rotulo.png",
+   "unitKey": "drained-archers",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -677,14 +703,14 @@
    "pendencias": []
   },
   {
-   "id": "a018",
+   "id": "drained-archer-musician",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Drained Archer Musician",
+   "rotuloImg": "arts/drained-archer-musician/rotulo.png",
+   "unitKey": "drained-archers",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -716,14 +742,14 @@
    "pendencias": []
   },
   {
-   "id": "a019",
+   "id": "drained-archer",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Drained Archer",
+   "rotuloImg": "arts/drained-archer/rotulo.png",
+   "unitKey": "drained-archers",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -755,14 +781,14 @@
    "pendencias": []
   },
   {
-   "id": "a020",
+   "id": "drained-soldier-sergeant",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Drained Soldier Sergeant",
+   "rotuloImg": "arts/drained-soldier-sergeant/rotulo.png",
+   "unitKey": "drained-soldiers",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -794,14 +820,14 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "drained-soldier-musician",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Drained Soldier Musician",
+   "rotuloImg": "arts/drained-soldier-musician/rotulo.png",
+   "unitKey": "drained-soldiers",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -833,14 +859,14 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "drained-soldier-banner",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Drained Soldier Banner",
+   "rotuloImg": "arts/drained-soldier-banner/rotulo.png",
+   "unitKey": "drained-soldiers",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -872,14 +898,16 @@
    "pendencias": []
   },
   {
-   "id": "a023",
+   "id": "skeleton-guard-sword",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Skeleton Guard Sword",
+   "rotuloImg": "arts/skeleton-guard-sword/rotulo.png",
+   "unitKey": "skeleton-guard",
+   "equipmentTags": [
+    "Cursed Blade"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -911,14 +939,16 @@
    "pendencias": []
   },
   {
-   "id": "a024",
+   "id": "skeleton-guard-mace",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Skeleton Guard Mace",
+   "rotuloImg": "arts/skeleton-guard-mace/rotulo.png",
+   "unitKey": "skeleton-guard",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -950,14 +980,16 @@
    "pendencias": []
   },
   {
-   "id": "a025",
+   "id": "skeleton-guard-spear",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Skeleton Guard Spear",
+   "rotuloImg": "arts/skeleton-guard-spear/rotulo.png",
+   "unitKey": "skeleton-guard",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -989,14 +1021,16 @@
    "pendencias": []
   },
   {
-   "id": "a026",
+   "id": "skeleton-guard-halberd",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Skeleton Guard Halberd",
+   "rotuloImg": "arts/skeleton-guard-halberd/rotulo.png",
+   "unitKey": "skeleton-guard",
+   "equipmentTags": [
+    "Halberd"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1028,14 +1062,14 @@
    "pendencias": []
   },
   {
-   "id": "a027",
+   "id": "skeleton-guard-sergeant",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Skeleton Guard Sergeant",
+   "rotuloImg": "arts/skeleton-guard-sergeant/rotulo.png",
+   "unitKey": "skeleton-guard",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1067,14 +1101,14 @@
    "pendencias": []
   },
   {
-   "id": "a028",
+   "id": "skeleton-guard-musician",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Skeleton Guard Musician",
+   "rotuloImg": "arts/skeleton-guard-musician/rotulo.png",
+   "unitKey": "skeleton-guard",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1106,14 +1140,14 @@
    "pendencias": []
   },
   {
-   "id": "a029",
+   "id": "skeleton-guard-banner",
    "candidato": "a029",
-   "rotulo": null,
-   "rotuloImg": "arts/a029/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Skeleton Guard Banner",
+   "rotuloImg": "arts/skeleton-guard-banner/rotulo.png",
+   "unitKey": "skeleton-guard",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1145,14 +1179,14 @@
    "pendencias": []
   },
   {
-   "id": "a030",
+   "id": "skeleton-watch",
    "candidato": "a030",
-   "rotulo": null,
-   "rotuloImg": "arts/a030/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Skeleton Watch",
+   "rotuloImg": "arts/skeleton-watch/rotulo.png",
+   "unitKey": "skeleton-watch",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1184,14 +1218,14 @@
    "pendencias": []
   },
   {
-   "id": "a031",
+   "id": "skeleton-watch-sergeant",
    "candidato": "a031",
-   "rotulo": null,
-   "rotuloImg": "arts/a031/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Skeleton Watch Sergeant",
+   "rotuloImg": "arts/skeleton-watch-sergeant/rotulo.png",
+   "unitKey": "skeleton-watch",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1223,14 +1257,14 @@
    "pendencias": []
   },
   {
-   "id": "a032",
+   "id": "skeleton-watch-banner",
    "candidato": "a032",
-   "rotulo": null,
-   "rotuloImg": "arts/a032/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Skeleton Watch Banner",
+   "rotuloImg": "arts/skeleton-watch-banner/rotulo.png",
+   "unitKey": "skeleton-watch",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1262,14 +1296,14 @@
    "pendencias": []
   },
   {
-   "id": "a033",
+   "id": "skeleton-watch-musician",
    "candidato": "a033",
-   "rotulo": null,
-   "rotuloImg": "arts/a033/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Skeleton Watch Musician",
+   "rotuloImg": "arts/skeleton-watch-musician/rotulo.png",
+   "unitKey": "skeleton-watch",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1301,14 +1335,14 @@
    "pendencias": []
   },
   {
-   "id": "a034",
+   "id": "stitched",
    "candidato": "a034",
-   "rotulo": null,
-   "rotuloImg": "arts/a034/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Stitched",
+   "rotuloImg": "arts/stitched/rotulo.png",
+   "unitKey": "stitched-zombies",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1340,14 +1374,14 @@
    "pendencias": []
   },
   {
-   "id": "a035",
+   "id": "stitched-sergeant",
    "candidato": "a035",
-   "rotulo": null,
-   "rotuloImg": "arts/a035/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Stitched Sergeant",
+   "rotuloImg": "arts/stitched-sergeant/rotulo.png",
+   "unitKey": "stitched-zombies",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1379,14 +1413,14 @@
    "pendencias": []
   },
   {
-   "id": "a036",
+   "id": "stitched-musician",
    "candidato": "a036",
-   "rotulo": null,
-   "rotuloImg": "arts/a036/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Stitched Musician",
+   "rotuloImg": "arts/stitched-musician/rotulo.png",
+   "unitKey": "stitched-zombies",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1418,14 +1452,14 @@
    "pendencias": []
   },
   {
-   "id": "a037",
+   "id": "stitched-banner",
    "candidato": "a037",
-   "rotulo": null,
-   "rotuloImg": "arts/a037/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Stitched Banner",
+   "rotuloImg": "arts/stitched-banner/rotulo.png",
+   "unitKey": "stitched-zombies",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1457,14 +1491,14 @@
    "pendencias": []
   },
   {
-   "id": "a038",
+   "id": "stitched-butcher",
    "candidato": "a038",
-   "rotulo": null,
-   "rotuloImg": "arts/a038/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Stitched Butcher",
+   "rotuloImg": "arts/stitched-butcher/rotulo.png",
+   "unitKey": "stitched-butchers",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1496,14 +1530,14 @@
    "pendencias": []
   },
   {
-   "id": "a039",
+   "id": "ghoul",
    "candidato": "a039",
-   "rotulo": null,
-   "rotuloImg": "arts/a039/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Ghoul",
+   "rotuloImg": "arts/ghoul/rotulo.png",
+   "unitKey": "ghouls",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1535,14 +1569,14 @@
    "pendencias": []
   },
   {
-   "id": "a040",
+   "id": "ghoul-horror",
    "candidato": "a040",
-   "rotulo": null,
-   "rotuloImg": "arts/a040/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Ghoul Horror",
+   "rotuloImg": "arts/ghoul-horror/rotulo.png",
+   "unitKey": "ghoul-horrors",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1574,14 +1608,14 @@
    "pendencias": []
   },
   {
-   "id": "a041",
+   "id": "bat-swarm",
    "candidato": "a041",
-   "rotulo": null,
-   "rotuloImg": "arts/a041/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Bat Swarm",
+   "rotuloImg": "arts/bat-swarm/rotulo.png",
+   "unitKey": "bat-swarms",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1613,14 +1647,14 @@
    "pendencias": []
   },
   {
-   "id": "a042",
+   "id": "giant-bat",
    "candidato": "a042",
-   "rotulo": null,
-   "rotuloImg": "arts/a042/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Giant Bat",
+   "rotuloImg": "arts/giant-bat/rotulo.png",
+   "unitKey": "giant-bats",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1652,14 +1686,14 @@
    "pendencias": []
   },
   {
-   "id": "a043",
+   "id": "bat-horror",
    "candidato": "a043",
-   "rotulo": null,
-   "rotuloImg": "arts/a043/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Bat Horror",
+   "rotuloImg": "arts/bat-horror/rotulo.png",
+   "unitKey": "bat-horrors",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1691,14 +1725,14 @@
    "pendencias": []
   },
   {
-   "id": "a044",
+   "id": "zombie-wolf",
    "candidato": "a044",
-   "rotulo": null,
-   "rotuloImg": "arts/a044/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Zombie Wolf",
+   "rotuloImg": "arts/zombie-wolf/rotulo.png",
+   "unitKey": "zombie-wolves",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1732,14 +1766,16 @@
    ]
   },
   {
-   "id": "a045",
+   "id": "werewolf-claws",
    "candidato": "a045",
-   "rotulo": null,
-   "rotuloImg": "arts/a045/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Werewolf Claws",
+   "rotuloImg": "arts/werewolf-claws/rotulo.png",
+   "unitKey": "werewolves",
+   "equipmentTags": [
+    "Sharp Claws"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1771,14 +1807,16 @@
    "pendencias": []
   },
   {
-   "id": "a046",
+   "id": "werewolf-sword",
    "candidato": "a046",
-   "rotulo": null,
-   "rotuloImg": "arts/a046/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Werewolf Sword",
+   "rotuloImg": "arts/werewolf-sword/rotulo.png",
+   "unitKey": "werewolves",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1810,14 +1848,14 @@
    "pendencias": []
   },
   {
-   "id": "a047",
+   "id": "skeleton-knight",
    "candidato": "a047",
-   "rotulo": null,
-   "rotuloImg": "arts/a047/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Skeleton Kinght",
+   "rotuloImg": "arts/skeleton-knight/rotulo.png",
+   "unitKey": "skeleton-knights",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1849,14 +1887,14 @@
    "pendencias": []
   },
   {
-   "id": "a048",
+   "id": "skeleton-knight-sergeant",
    "candidato": "a048",
-   "rotulo": null,
-   "rotuloImg": "arts/a048/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Skeleton Kinght Sergeant",
+   "rotuloImg": "arts/skeleton-knight-sergeant/rotulo.png",
+   "unitKey": "skeleton-knights",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1888,14 +1926,14 @@
    "pendencias": []
   },
   {
-   "id": "a049",
+   "id": "skeleton-knight-musician",
    "candidato": "a049",
-   "rotulo": null,
-   "rotuloImg": "arts/a049/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Skeleton Kinght Musician",
+   "rotuloImg": "arts/skeleton-knight-musician/rotulo.png",
+   "unitKey": "skeleton-knights",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1927,14 +1965,14 @@
    "pendencias": []
   },
   {
-   "id": "a050",
+   "id": "skeleton-knight-banner",
    "candidato": "a050",
-   "rotulo": null,
-   "rotuloImg": "arts/a050/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Skeleton Kinght Banner",
+   "rotuloImg": "arts/skeleton-knight-banner/rotulo.png",
+   "unitKey": "skeleton-knights",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1966,14 +2004,16 @@
    "pendencias": []
   },
   {
-   "id": "a051",
+   "id": "vampire-knight-sword",
    "candidato": "a051",
-   "rotulo": null,
-   "rotuloImg": "arts/a051/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vampire Kinght Sword",
+   "rotuloImg": "arts/vampire-knight-sword/rotulo.png",
+   "unitKey": "vampire-knights",
+   "equipmentTags": [
+    "Cursed Blade"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2005,14 +2045,16 @@
    "pendencias": []
   },
   {
-   "id": "a052",
+   "id": "vampire-knight-spear",
    "candidato": "a052",
-   "rotulo": null,
-   "rotuloImg": "arts/a052/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vampire Kinght Spear",
+   "rotuloImg": "arts/vampire-knight-spear/rotulo.png",
+   "unitKey": "vampire-knights",
+   "equipmentTags": [
+    "Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2044,14 +2086,14 @@
    "pendencias": []
   },
   {
-   "id": "a053",
+   "id": "vampire-knight-sergeant",
    "candidato": "a053",
-   "rotulo": null,
-   "rotuloImg": "arts/a053/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Vampire Kinght Sergeant",
+   "rotuloImg": "arts/vampire-knight-sergeant/rotulo.png",
+   "unitKey": "vampire-knights",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2083,14 +2125,14 @@
    "pendencias": []
   },
   {
-   "id": "a054",
+   "id": "vampire-knight-musician",
    "candidato": "a054",
-   "rotulo": null,
-   "rotuloImg": "arts/a054/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Vampire Kinght Musician",
+   "rotuloImg": "arts/vampire-knight-musician/rotulo.png",
+   "unitKey": "vampire-knights",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2122,14 +2164,14 @@
    "pendencias": []
   },
   {
-   "id": "a055",
+   "id": "vampire-knight-banner",
    "candidato": "a055",
-   "rotulo": null,
-   "rotuloImg": "arts/a055/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Vampire Kinght Banner",
+   "rotuloImg": "arts/vampire-knight-banner/rotulo.png",
+   "unitKey": "vampire-knights",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2161,14 +2203,14 @@
    "pendencias": []
   },
   {
-   "id": "a056",
+   "id": "drained-archer-borda",
    "candidato": "a056",
-   "rotulo": null,
-   "rotuloImg": "arts/a056/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Drained Archer",
+   "rotuloImg": "arts/drained-archer-borda/rotulo.png",
+   "unitKey": "drained-archers",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [

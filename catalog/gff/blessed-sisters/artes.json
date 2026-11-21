@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "blessed-sisters",
- "faccao": "Blessed Sisters",
+ "faccao": "Blessed Sisters\r",
  "sistema": "gff",
  "pdf": {
   "nome": "Blessed_Sisters_-_BW.pdf",
@@ -12,14 +12,17 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "jetpack-superior",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetpack Superior",
+   "rotuloImg": "arts/jetpack-superior/rotulo.png",
+   "unitKey": "high-sister",
+   "equipmentTags": [
+    "Superior",
+    "Jetpack|Airdrop Jetpack"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +54,17 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "biker-superior",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Biker Superior",
+   "rotuloImg": "arts/biker-superior/rotulo.png",
+   "unitKey": "high-sister",
+   "equipmentTags": [
+    "Superior",
+    "Combat Bike|Assault Bike"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -90,14 +96,16 @@
    "pendencias": []
   },
   {
-   "id": "a003",
+   "id": "superior",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Superior",
+   "rotuloImg": "arts/superior/rotulo.png",
+   "unitKey": "high-sister",
+   "equipmentTags": [
+    "Superior"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -129,14 +137,14 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "novice-superior",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Novice Superior",
+   "rotuloImg": "arts/novice-superior/rotulo.png",
+   "unitKey": "novice-leader",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -168,14 +176,17 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "vanguard-superior",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vanguard Superior",
+   "rotuloImg": "arts/vanguard-superior/rotulo.png",
+   "unitKey": "high-sister",
+   "equipmentTags": [
+    "Superior",
+    "Vanguard"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -207,14 +218,16 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "witch",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Witch",
+   "rotuloImg": "arts/witch/rotulo.png",
+   "unitKey": "high-sister",
+   "equipmentTags": [
+    "Witch|Master Witch"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -248,14 +261,14 @@
    ]
   },
   {
-   "id": "a007",
+   "id": "fanatic-superior-v1",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fanatic Superior V1",
+   "rotuloImg": "arts/fanatic-superior-v1/rotulo.png",
+   "unitKey": "fanatic-superior",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -287,14 +300,14 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "fanatic-superior-v2",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fanatic Superior V2",
+   "rotuloImg": "arts/fanatic-superior-v2/rotulo.png",
+   "unitKey": "fanatic-superior",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -326,14 +339,16 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "priestess-v1",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Priestess V1",
+   "rotuloImg": "arts/priestess-v1/rotulo.png",
+   "unitKey": "high-sister",
+   "equipmentTags": [
+    "Priestess"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -365,14 +380,16 @@
    "pendencias": []
   },
   {
-   "id": "a010",
+   "id": "priestess-v2",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Priestess V2",
+   "rotuloImg": "arts/priestess-v2/rotulo.png",
+   "unitKey": "high-sister",
+   "equipmentTags": [
+    "Priestess"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -404,14 +421,16 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "canoness",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Canoness",
+   "rotuloImg": "arts/canoness/rotulo.png",
+   "unitKey": "high-sister",
+   "equipmentTags": [
+    "Canoness"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -443,14 +462,17 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "destroyer-superior-claws",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Destroyer Superior Claws",
+   "rotuloImg": "arts/destroyer-superior-claws/rotulo.png",
+   "unitKey": "destroyer-high-sister",
+   "equipmentTags": [
+    "Superior",
+    "Dual Energy Claws"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -482,14 +504,18 @@
    "pendencias": []
   },
   {
-   "id": "a013",
+   "id": "destroyer-superior-mace-shield",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Destroyer Superior Mace & Shield",
+   "rotuloImg": "arts/destroyer-superior-mace-shield/rotulo.png",
+   "unitKey": "destroyer-high-sister",
+   "equipmentTags": [
+    "Superior",
+    "Energy Mace",
+    "Combat Shield"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -521,14 +547,17 @@
    "pendencias": []
   },
   {
-   "id": "a014",
+   "id": "destroyer-superior-storm-rifle",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Destroyer Superior Storm Rifle",
+   "rotuloImg": "arts/destroyer-superior-storm-rifle/rotulo.png",
+   "unitKey": "destroyer-high-sister",
+   "equipmentTags": [
+    "Superior",
+    "Burst Cyclic Rifle|Assault Burst Cyclic Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -560,14 +589,16 @@
    "pendencias": []
   },
   {
-   "id": "a015",
+   "id": "exosuit-superior",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Exosuit Superior",
+   "rotuloImg": "arts/exosuit-superior/rotulo.png",
+   "unitKey": "exo-suit-high-sister",
+   "equipmentTags": [
+    "Superior"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -599,14 +630,16 @@
    "pendencias": []
   },
   {
-   "id": "a016",
+   "id": "warrior-rifle-v2",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Rifle V2",
+   "rotuloImg": "arts/warrior-rifle-v2/rotulo.png",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Battle Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -638,14 +671,16 @@
    "pendencias": []
   },
   {
-   "id": "a017",
+   "id": "warrior-rifle-v1",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Rifle V1",
+   "rotuloImg": "arts/warrior-rifle-v1/rotulo.png",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Battle Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -677,14 +712,16 @@
    "pendencias": []
   },
   {
-   "id": "a018",
+   "id": "warrior-rifle-v3",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Rifle V3",
+   "rotuloImg": "arts/warrior-rifle-v3/rotulo.png",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Battle Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -716,14 +753,16 @@
    "pendencias": []
   },
   {
-   "id": "a019",
+   "id": "warrior-plasma-rifle",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Plasma Rifle",
+   "rotuloImg": "arts/warrior-plasma-rifle/rotulo.png",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -755,14 +794,16 @@
    "pendencias": []
   },
   {
-   "id": "a020",
+   "id": "warrior-fusion-rifle",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Fusion Rifle",
+   "rotuloImg": "arts/warrior-fusion-rifle/rotulo.png",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -794,14 +835,16 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "warrior-flamer",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Flamer",
+   "rotuloImg": "arts/warrior-flamer/rotulo.png",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -833,14 +876,16 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "warrior-storm-rifle",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Storm Rifle",
+   "rotuloImg": "arts/warrior-storm-rifle/rotulo.png",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Burst Cyclic Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -872,14 +917,16 @@
    "pendencias": []
   },
   {
-   "id": "a023",
+   "id": "warrior-shred-rifle",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Shred Rifle",
+   "rotuloImg": "arts/warrior-shred-rifle/rotulo.png",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Shredder Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -911,14 +958,16 @@
    "pendencias": []
   },
   {
-   "id": "a024",
+   "id": "warrior-heavy-flamer",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Heavy Flamer",
+   "rotuloImg": "arts/warrior-heavy-flamer/rotulo.png",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Heavy Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -950,14 +999,16 @@
    "pendencias": []
   },
   {
-   "id": "a025",
+   "id": "warrior-heavy-machine-gun",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Heavy Machine Gun",
+   "rotuloImg": "arts/warrior-heavy-machine-gun/rotulo.png",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Heavy Machinegun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -989,14 +1040,16 @@
    "pendencias": []
   },
   {
-   "id": "a026",
+   "id": "warrior-heavy-fusion",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Heavy Fusion",
+   "rotuloImg": "arts/warrior-heavy-fusion/rotulo.png",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Heavy Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1028,14 +1081,17 @@
    "pendencias": []
   },
   {
-   "id": "a027",
+   "id": "sargeant",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "rotulo": "Sargeant",
+   "rotuloImg": "arts/sargeant/rotulo.png",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Sgt. Pistol",
+    "Sgt. Hand Weapon"
+   ],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1067,14 +1123,16 @@
    "pendencias": []
   },
   {
-   "id": "a028",
+   "id": "megaphone",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "rotulo": "Megaphone",
+   "rotuloImg": "arts/megaphone/rotulo.png",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Canticle Megaphone"
+   ],
+   "cosmetic": "megaphone",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1106,14 +1164,16 @@
    "pendencias": []
   },
   {
-   "id": "a029",
+   "id": "banner",
    "candidato": "a029",
-   "rotulo": null,
-   "rotuloImg": "arts/a029/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "rotulo": "Banner",
+   "rotuloImg": "arts/banner/rotulo.png",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Sacred Banner"
+   ],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1145,14 +1205,16 @@
    "pendencias": []
   },
   {
-   "id": "a030",
+   "id": "medic",
    "candidato": "a030",
-   "rotulo": null,
-   "rotuloImg": "arts/a030/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "rotulo": "Medic",
+   "rotuloImg": "arts/medic/rotulo.png",
+   "unitKey": "warrior-sister",
+   "equipmentTags": [
+    "Medical Training"
+   ],
+   "cosmetic": "medic",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1184,14 +1246,16 @@
    "pendencias": []
   },
   {
-   "id": "a031",
+   "id": "novice-pistol",
    "candidato": "a031",
-   "rotulo": null,
-   "rotuloImg": "arts/a031/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Novice Pistol",
+   "rotuloImg": "arts/novice-pistol/rotulo.png",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1223,14 +1287,16 @@
    "pendencias": []
   },
   {
-   "id": "a032",
+   "id": "novice-rifle",
    "candidato": "a032",
-   "rotulo": null,
-   "rotuloImg": "arts/a032/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Novice Rifle",
+   "rotuloImg": "arts/novice-rifle/rotulo.png",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Battle Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1262,14 +1328,16 @@
    "pendencias": []
   },
   {
-   "id": "a033",
+   "id": "novice-dagger",
    "candidato": "a033",
-   "rotulo": null,
-   "rotuloImg": "arts/a033/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Novice Dagger",
+   "rotuloImg": "arts/novice-dagger/rotulo.png",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Dagger"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1301,14 +1369,16 @@
    "pendencias": []
   },
   {
-   "id": "a034",
+   "id": "novice-mace",
    "candidato": "a034",
-   "rotulo": null,
-   "rotuloImg": "arts/a034/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Novice Mace",
+   "rotuloImg": "arts/novice-mace/rotulo.png",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Energy Club"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1340,14 +1410,16 @@
    "pendencias": []
   },
   {
-   "id": "a035",
+   "id": "novice-fusion",
    "candidato": "a035",
-   "rotulo": null,
-   "rotuloImg": "arts/a035/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Novice Fusion",
+   "rotuloImg": "arts/novice-fusion/rotulo.png",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1379,14 +1451,16 @@
    "pendencias": []
   },
   {
-   "id": "a036",
+   "id": "novice-flamer",
    "candidato": "a036",
-   "rotulo": null,
-   "rotuloImg": "arts/a036/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Novice Flamer",
+   "rotuloImg": "arts/novice-flamer/rotulo.png",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1418,14 +1492,16 @@
    "pendencias": []
   },
   {
-   "id": "a037",
+   "id": "novice-banner",
    "candidato": "a037",
-   "rotulo": null,
-   "rotuloImg": "arts/a037/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "rotulo": "Novice Banner",
+   "rotuloImg": "arts/novice-banner/rotulo.png",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Sacred Banner"
+   ],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1457,14 +1533,16 @@
    "pendencias": []
   },
   {
-   "id": "a038",
+   "id": "novice-megaphone",
    "candidato": "a038",
-   "rotulo": null,
-   "rotuloImg": "arts/a038/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "rotulo": "Novice Megaphone",
+   "rotuloImg": "arts/novice-megaphone/rotulo.png",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Canticle Megaphone"
+   ],
+   "cosmetic": "megaphone",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1496,14 +1574,16 @@
    "pendencias": []
   },
   {
-   "id": "a039",
+   "id": "novice-medic",
    "candidato": "a039",
-   "rotulo": null,
-   "rotuloImg": "arts/a039/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "rotulo": "Novice Medic",
+   "rotuloImg": "arts/novice-medic/rotulo.png",
+   "unitKey": "novice-sisters",
+   "equipmentTags": [
+    "Medical Training"
+   ],
+   "cosmetic": "medic",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1535,14 +1615,16 @@
    "pendencias": []
   },
   {
-   "id": "a040",
+   "id": "vanguard-rifle",
    "candidato": "a040",
-   "rotulo": null,
-   "rotuloImg": "arts/a040/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vanguard Rifle",
+   "rotuloImg": "arts/vanguard-rifle/rotulo.png",
+   "unitKey": "vanguard-sister",
+   "equipmentTags": [
+    "Battle Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1574,14 +1656,16 @@
    "pendencias": []
   },
   {
-   "id": "a041",
+   "id": "vanguard-shotgun",
    "candidato": "a041",
-   "rotulo": null,
-   "rotuloImg": "arts/a041/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vanguard Shotgun",
+   "rotuloImg": "arts/vanguard-shotgun/rotulo.png",
+   "unitKey": "vanguard-sister",
+   "equipmentTags": [
+    "Shotgun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1613,14 +1697,16 @@
    "pendencias": []
   },
   {
-   "id": "a042",
+   "id": "vanguard-shred-rifle",
    "candidato": "a042",
-   "rotulo": null,
-   "rotuloImg": "arts/a042/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vanguard Shred Rifle",
+   "rotuloImg": "arts/vanguard-shred-rifle/rotulo.png",
+   "unitKey": "vanguard-sister",
+   "equipmentTags": [
+    "Shredder Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1652,14 +1738,16 @@
    "pendencias": []
   },
   {
-   "id": "a043",
+   "id": "vanguard-storm-rifle",
    "candidato": "a043",
-   "rotulo": null,
-   "rotuloImg": "arts/a043/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vanguard Storm Rifle",
+   "rotuloImg": "arts/vanguard-storm-rifle/rotulo.png",
+   "unitKey": "vanguard-sister",
+   "equipmentTags": [
+    "Burst Cyclic Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1691,14 +1779,16 @@
    "pendencias": []
   },
   {
-   "id": "a044",
+   "id": "vanguard-plasma-rifle",
    "candidato": "a044",
-   "rotulo": null,
-   "rotuloImg": "arts/a044/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vanguard Plasma Rifle",
+   "rotuloImg": "arts/vanguard-plasma-rifle/rotulo.png",
+   "unitKey": "vanguard-sister",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1730,14 +1820,16 @@
    "pendencias": []
   },
   {
-   "id": "a045",
+   "id": "vanguard-fusion-rifle",
    "candidato": "a045",
-   "rotulo": null,
-   "rotuloImg": "arts/a045/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vanguard Fusion Rifle",
+   "rotuloImg": "arts/vanguard-fusion-rifle/rotulo.png",
+   "unitKey": "vanguard-sister",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1769,14 +1861,16 @@
    "pendencias": []
   },
   {
-   "id": "a046",
+   "id": "vanguard-flamer",
    "candidato": "a046",
-   "rotulo": null,
-   "rotuloImg": "arts/a046/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Vanguard Flamer",
+   "rotuloImg": "arts/vanguard-flamer/rotulo.png",
+   "unitKey": "vanguard-sister",
+   "equipmentTags": [
+    "Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1808,14 +1902,14 @@
    "pendencias": []
   },
   {
-   "id": "a047",
+   "id": "vanguard-sniper",
    "candidato": "a047",
-   "rotulo": null,
-   "rotuloImg": "arts/a047/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Vanguard Sniper",
+   "rotuloImg": "arts/vanguard-sniper/rotulo.png",
+   "unitKey": "vanguard-sniper",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1849,14 +1943,14 @@
    ]
   },
   {
-   "id": "a048",
+   "id": "fanatic-v1",
    "candidato": "a048",
-   "rotulo": null,
-   "rotuloImg": "arts/a048/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fanatic V1",
+   "rotuloImg": "arts/fanatic-v1/rotulo.png",
+   "unitKey": "fanatic-sisters",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1888,14 +1982,14 @@
    "pendencias": []
   },
   {
-   "id": "a049",
+   "id": "fanatic-v2",
    "candidato": "a049",
-   "rotulo": null,
-   "rotuloImg": "arts/a049/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fanatic V2",
+   "rotuloImg": "arts/fanatic-v2/rotulo.png",
+   "unitKey": "fanatic-sisters",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1927,14 +2021,16 @@
    "pendencias": []
   },
   {
-   "id": "a050",
+   "id": "flagellant-v1",
    "candidato": "a050",
-   "rotulo": null,
-   "rotuloImg": "arts/a050/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Flagellant V1",
+   "rotuloImg": "arts/flagellant-v1/rotulo.png",
+   "unitKey": "fanatic-sisters",
+   "equipmentTags": [
+    "Flagellants"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1966,14 +2062,16 @@
    "pendencias": []
   },
   {
-   "id": "a051",
+   "id": "flagellant-v2",
    "candidato": "a051",
-   "rotulo": null,
-   "rotuloImg": "arts/a051/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Flagellant V2",
+   "rotuloImg": "arts/flagellant-v2/rotulo.png",
+   "unitKey": "fanatic-sisters",
+   "equipmentTags": [
+    "Flagellants"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2005,14 +2103,16 @@
    "pendencias": []
   },
   {
-   "id": "a052",
+   "id": "protector-spear",
    "candidato": "a052",
-   "rotulo": null,
-   "rotuloImg": "arts/a052/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Protector Spear",
+   "rotuloImg": "arts/protector-spear/rotulo.png",
+   "unitKey": "protector-sister",
+   "equipmentTags": [
+    "Energy Spear|Sacred Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2044,14 +2144,16 @@
    "pendencias": []
   },
   {
-   "id": "a053",
+   "id": "protector-mace",
    "candidato": "a053",
-   "rotulo": null,
-   "rotuloImg": "arts/a053/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Protector Mace",
+   "rotuloImg": "arts/protector-mace/rotulo.png",
+   "unitKey": "protector-sister",
+   "equipmentTags": [
+    "Energy Club"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2083,14 +2185,16 @@
    "pendencias": []
   },
   {
-   "id": "a054",
+   "id": "protector-halberd",
    "candidato": "a054",
-   "rotulo": null,
-   "rotuloImg": "arts/a054/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Protector Halberd",
+   "rotuloImg": "arts/protector-halberd/rotulo.png",
+   "unitKey": "protector-sister",
+   "equipmentTags": [
+    "Energy Halberd"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2122,14 +2226,14 @@
    "pendencias": []
   },
   {
-   "id": "a055",
+   "id": "jetpack-assault-v1",
    "candidato": "a055",
-   "rotulo": null,
-   "rotuloImg": "arts/a055/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Jetpack Assault V1",
+   "rotuloImg": "arts/jetpack-assault-v1/rotulo.png",
+   "unitKey": "assault-sister",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2161,14 +2265,14 @@
    "pendencias": []
   },
   {
-   "id": "a056",
+   "id": "jetpack-assault-v2",
    "candidato": "a056",
-   "rotulo": null,
-   "rotuloImg": "arts/a056/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Jetpack Assault V2",
+   "rotuloImg": "arts/jetpack-assault-v2/rotulo.png",
+   "unitKey": "assault-sister",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2200,14 +2304,14 @@
    "pendencias": []
   },
   {
-   "id": "a057",
+   "id": "jetpack-pistoleer-v1",
    "candidato": "a057",
-   "rotulo": null,
-   "rotuloImg": "arts/a057/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Jetpack Pistoleer V1",
+   "rotuloImg": "arts/jetpack-pistoleer-v1/rotulo.png",
+   "unitKey": "pistoleer-sister",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2239,14 +2343,14 @@
    "pendencias": []
   },
   {
-   "id": "a058",
+   "id": "jetpack-pistoleer-v2",
    "candidato": "a058",
-   "rotulo": null,
-   "rotuloImg": "arts/a058/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Jetpack Pistoleer V2",
+   "rotuloImg": "arts/jetpack-pistoleer-v2/rotulo.png",
+   "unitKey": "pistoleer-sister",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2278,14 +2382,16 @@
    "pendencias": []
   },
   {
-   "id": "a059",
+   "id": "celestial-rifle",
    "candidato": "a059",
-   "rotulo": null,
-   "rotuloImg": "arts/a059/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Celestial Rifle",
+   "rotuloImg": "arts/celestial-rifle/rotulo.png",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Burst Battle Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2317,14 +2423,16 @@
    "pendencias": []
   },
   {
-   "id": "a060",
+   "id": "celestial-shred-rifle",
    "candidato": "a060",
-   "rotulo": null,
-   "rotuloImg": "arts/a060/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Celestial Shred Rifle",
+   "rotuloImg": "arts/celestial-shred-rifle/rotulo.png",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Shredder Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2356,14 +2464,16 @@
    "pendencias": []
   },
   {
-   "id": "a061",
+   "id": "celestial-storm-rifle",
    "candidato": "a061",
-   "rotulo": null,
-   "rotuloImg": "arts/a061/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Celestial Storm Rifle",
+   "rotuloImg": "arts/celestial-storm-rifle/rotulo.png",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Burst Cyclic Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2395,14 +2505,16 @@
    "pendencias": []
   },
   {
-   "id": "a062",
+   "id": "celestial-plasma-rifle",
    "candidato": "a062",
-   "rotulo": null,
-   "rotuloImg": "arts/a062/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Celestial Plasma Rifle",
+   "rotuloImg": "arts/celestial-plasma-rifle/rotulo.png",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2434,14 +2546,16 @@
    "pendencias": []
   },
   {
-   "id": "a063",
+   "id": "celestial-fusion-rifle",
    "candidato": "a063",
-   "rotulo": null,
-   "rotuloImg": "arts/a063/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Celestial Fusion Rifle",
+   "rotuloImg": "arts/celestial-fusion-rifle/rotulo.png",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2473,14 +2587,16 @@
    "pendencias": []
   },
   {
-   "id": "a064",
+   "id": "celestial-flamer",
    "candidato": "a064",
-   "rotulo": null,
-   "rotuloImg": "arts/a064/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Celestial Flamer",
+   "rotuloImg": "arts/celestial-flamer/rotulo.png",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2512,14 +2628,14 @@
    "pendencias": []
   },
   {
-   "id": "a065",
+   "id": "celestial-heavy-machine-gun",
    "candidato": "a065",
-   "rotulo": null,
-   "rotuloImg": "arts/a065/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Celestial Heavy Machine Gun",
+   "rotuloImg": "arts/celestial-heavy-machine-gun/rotulo.png",
+   "unitKey": "celestial-warrior-sister",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2551,14 +2667,14 @@
    "pendencias": []
   },
   {
-   "id": "a066",
+   "id": "celestial-heavy-fusion",
    "candidato": "a066",
-   "rotulo": null,
-   "rotuloImg": "arts/a066/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Celestial Heavy Fusion",
+   "rotuloImg": "arts/celestial-heavy-fusion/rotulo.png",
+   "unitKey": "celestial-warrior-sister",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2590,14 +2706,14 @@
    "pendencias": []
   },
   {
-   "id": "a067",
+   "id": "celestial-heavy-flamer",
    "candidato": "a067",
-   "rotulo": null,
-   "rotuloImg": "arts/a067/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Celestial Heavy Flamer",
+   "rotuloImg": "arts/celestial-heavy-flamer/rotulo.png",
+   "unitKey": "celestial-warrior-sister",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2629,14 +2745,16 @@
    "pendencias": []
   },
   {
-   "id": "a068",
+   "id": "celestial-banner",
    "candidato": "a068",
-   "rotulo": null,
-   "rotuloImg": "arts/a068/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "rotulo": "Celestial Banner",
+   "rotuloImg": "arts/celestial-banner/rotulo.png",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Sacred Banner"
+   ],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2668,14 +2786,16 @@
    "pendencias": []
   },
   {
-   "id": "a069",
+   "id": "celestial-medic",
    "candidato": "a069",
-   "rotulo": null,
-   "rotuloImg": "arts/a069/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "rotulo": "Celestial Medic",
+   "rotuloImg": "arts/celestial-medic/rotulo.png",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Medical Training"
+   ],
+   "cosmetic": "medic",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2707,14 +2827,14 @@
    "pendencias": []
   },
   {
-   "id": "a070",
+   "id": "celestial-sargeant",
    "candidato": "a070",
-   "rotulo": null,
-   "rotuloImg": "arts/a070/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Celestial Sargeant",
+   "rotuloImg": "arts/celestial-sargeant/rotulo.png",
+   "unitKey": "celestial-warrior-sister",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2746,14 +2866,16 @@
    "pendencias": []
   },
   {
-   "id": "a071",
+   "id": "celestial-megaphone",
    "candidato": "a071",
-   "rotulo": null,
-   "rotuloImg": "arts/a071/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "rotulo": "Celestial Megaphone",
+   "rotuloImg": "arts/celestial-megaphone/rotulo.png",
+   "unitKey": "celestial-warrior-sister",
+   "equipmentTags": [
+    "Canticle Megaphone"
+   ],
+   "cosmetic": "megaphone",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2785,14 +2907,16 @@
    "pendencias": []
   },
   {
-   "id": "a072",
+   "id": "support-machine-gun",
    "candidato": "a072",
-   "rotulo": null,
-   "rotuloImg": "arts/a072/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Support Machine Gun",
+   "rotuloImg": "arts/support-machine-gun/rotulo.png",
+   "unitKey": "support-sister",
+   "equipmentTags": [
+    "Heavy Machinegun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2824,14 +2948,16 @@
    "pendencias": []
   },
   {
-   "id": "a073",
+   "id": "support-fusion",
    "candidato": "a073",
-   "rotulo": null,
-   "rotuloImg": "arts/a073/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Support Fusion",
+   "rotuloImg": "arts/support-fusion/rotulo.png",
+   "unitKey": "support-sister",
+   "equipmentTags": [
+    "Heavy Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2863,14 +2989,16 @@
    "pendencias": []
   },
   {
-   "id": "a074",
+   "id": "support-heavy-flamer",
    "candidato": "a074",
-   "rotulo": null,
-   "rotuloImg": "arts/a074/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Support Heavy Flamer",
+   "rotuloImg": "arts/support-heavy-flamer/rotulo.png",
+   "unitKey": "support-sister",
+   "equipmentTags": [
+    "Heavy Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2902,14 +3030,16 @@
    "pendencias": []
   },
   {
-   "id": "a075",
+   "id": "destroyer-storm-rifle",
    "candidato": "a075",
-   "rotulo": null,
-   "rotuloImg": "arts/a075/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Destroyer Storm Rifle",
+   "rotuloImg": "arts/destroyer-storm-rifle/rotulo.png",
+   "unitKey": "destroyer-sister",
+   "equipmentTags": [
+    "Burst Cyclic Rifle|Assault Cyclic Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2941,14 +3071,17 @@
    "pendencias": []
   },
   {
-   "id": "a076",
+   "id": "destroyer-mace-shield",
    "candidato": "a076",
-   "rotulo": null,
-   "rotuloImg": "arts/a076/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Destroyer Mace & Shield",
+   "rotuloImg": "arts/destroyer-mace-shield/rotulo.png",
+   "unitKey": "destroyer-sister",
+   "equipmentTags": [
+    "Energy Mace",
+    "Combat Shield"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2980,14 +3113,16 @@
    "pendencias": []
   },
   {
-   "id": "a077",
+   "id": "destroyer-dual-claws",
    "candidato": "a077",
-   "rotulo": null,
-   "rotuloImg": "arts/a077/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Destroyer Dual Claws",
+   "rotuloImg": "arts/destroyer-dual-claws/rotulo.png",
+   "unitKey": "destroyer-sister",
+   "equipmentTags": [
+    "Dual Energy Claws"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -3019,14 +3154,16 @@
    "pendencias": []
   },
   {
-   "id": "a078",
+   "id": "destroyer-heavy-fusion",
    "candidato": "a078",
-   "rotulo": null,
-   "rotuloImg": "arts/a078/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Destroyer Heavy Fusion",
+   "rotuloImg": "arts/destroyer-heavy-fusion/rotulo.png",
+   "unitKey": "destroyer-sister",
+   "equipmentTags": [
+    "Heavy Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -3058,14 +3195,16 @@
    "pendencias": []
   },
   {
-   "id": "a079",
+   "id": "destroyer-heavy-flamer",
    "candidato": "a079",
-   "rotulo": null,
-   "rotuloImg": "arts/a079/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Destroyer Heavy Flamer",
+   "rotuloImg": "arts/destroyer-heavy-flamer/rotulo.png",
+   "unitKey": "destroyer-sister",
+   "equipmentTags": [
+    "Heavy Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -3097,14 +3236,14 @@
    "pendencias": []
   },
   {
-   "id": "a080",
+   "id": "biker-fanatic-v1",
    "candidato": "a080",
-   "rotulo": null,
-   "rotuloImg": "arts/a080/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Biker Fanatic V1",
+   "rotuloImg": "arts/biker-fanatic-v1/rotulo.png",
+   "unitKey": "biker-fanatic",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -3136,14 +3275,14 @@
    "pendencias": []
   },
   {
-   "id": "a081",
+   "id": "biker-fanatic-v2",
    "candidato": "a081",
-   "rotulo": null,
-   "rotuloImg": "arts/a081/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Biker Fanatic V2",
+   "rotuloImg": "arts/biker-fanatic-v2/rotulo.png",
+   "unitKey": "biker-fanatic",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -3175,14 +3314,16 @@
    "pendencias": []
   },
   {
-   "id": "a082",
+   "id": "biker-warrior-spear",
    "candidato": "a082",
-   "rotulo": null,
-   "rotuloImg": "arts/a082/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Biker Warrior Spear",
+   "rotuloImg": "arts/biker-warrior-spear/rotulo.png",
+   "unitKey": "biker-sister",
+   "equipmentTags": [
+    "Energy Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -3214,14 +3355,16 @@
    "pendencias": []
   },
   {
-   "id": "a083",
+   "id": "biker-warrior-pistoleer",
    "candidato": "a083",
-   "rotulo": null,
-   "rotuloImg": "arts/a083/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Biker Warrior Pistoleer",
+   "rotuloImg": "arts/biker-warrior-pistoleer/rotulo.png",
+   "unitKey": "biker-sister",
+   "equipmentTags": [
+    "Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -3251,62 +3394,6 @@
     }
    },
    "pendencias": []
-  },
-  {
-   "id": "a084",
-   "candidato": "a084",
-   "rotulo": null,
-   "rotuloImg": "arts/a084/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
-   "estilos": {
-    "borda": {
-     "telaMm": [
-      31.157,
-      46.228
-     ],
-     "tamanhoMm": [
-      31.16,
-      46.23
-     ],
-     "iouFrenteVerso": 0.993,
-     "pagina": 59,
-     "copias": 1
-    }
-   },
-   "pendencias": [
-    "sem par no outro estilo"
-   ]
-  },
-  {
-   "id": "a085",
-   "candidato": "a085",
-   "rotulo": null,
-   "rotuloImg": "arts/a085/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
-   "estilos": {
-    "borda": {
-     "telaMm": [
-      41.91,
-      35.306
-     ],
-     "tamanhoMm": [
-      41.91,
-      35.31
-     ],
-     "iouFrenteVerso": 0.989,
-     "pagina": 59,
-     "copias": 1
-    }
-   },
-   "pendencias": [
-    "sem par no outro estilo"
-   ]
   }
  ]
 }

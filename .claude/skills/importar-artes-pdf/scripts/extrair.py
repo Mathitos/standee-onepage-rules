@@ -238,6 +238,8 @@ def main():
         tiles.append(tile(cid, ref['L'].rotulo, imgs))
 
     folhas = []
+    for velha in work.glob('rotulos-*.png'):        # folhas de uma extração anterior com mais candidatos
+        velha.unlink()
     for n, i in enumerate(range(0, len(tiles), POR_FOLHA), 1):
         caminho = work / f'rotulos-{n:02d}.png'
         png(caminho, folha(tiles[i:i + POR_FOLHA]))

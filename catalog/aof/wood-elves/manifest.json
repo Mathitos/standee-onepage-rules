@@ -1,0 +1,5505 @@
+{
+  "schemaVersion": 1,
+  "packId": "wood-elves",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "AOF",
+    "slug": "age-of-fantasy",
+    "armyForgeId": 4
+  },
+  "gameSystems": [
+    {
+      "code": "AOF",
+      "slug": "age-of-fantasy",
+      "armyForgeId": 4
+    },
+    {
+      "code": "AOFS",
+      "slug": "age-of-fantasy-skirmish",
+      "armyForgeId": 5
+    }
+  ],
+  "armyBook": {
+    "id": "qtuyeoRfXKlNflK0",
+    "name": "Wood Elves",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "qtuyeoRfXKlNflK0",
+      "name": "Wood Elves",
+      "version": "3.6.0",
+      "gameSystemId": 4,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "qtuyeoRfXKlNflK0",
+      "name": "Wood Elves",
+      "version": "3.6.0",
+      "gameSystemId": 5,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Wood_Elves_-_BW.pdf",
+    "pdfSha256": "8b394daf565bdd6ce8163328a17d9befafdc5766eb87a8e0839cc8e7d5d50f08",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "glade-leader",
+      "names": [
+        "Glade Leader"
+      ],
+      "armyForgeUnitId": "2HF3Nnt",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "grove-champion",
+      "names": [
+        "Grove Champion"
+      ],
+      "armyForgeUnitId": "DDfHPmh",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "treeman-elder",
+      "names": [
+        "Treeman Elder"
+      ],
+      "armyForgeUnitId": "_ugzUsY",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "eternal-elder",
+      "names": [
+        "Eternal Elder"
+      ],
+      "armyForgeUnitId": "p2InlnL",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "glade-defenders",
+      "names": [
+        "Glade Defenders",
+        "Glade Defender"
+      ],
+      "armyForgeUnitId": "GFRa6rq",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "grove-wardens",
+      "names": [
+        "Grove Wardens",
+        "Grove Warden"
+      ],
+      "armyForgeUnitId": "IwSVor6",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "glade-guardians",
+      "names": [
+        "Glade Guardians",
+        "Glade Guardian"
+      ],
+      "armyForgeUnitId": "yji6M1E",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "glade-scouts",
+      "names": [
+        "Glade Scouts",
+        "Glade Scout"
+      ],
+      "armyForgeUnitId": "R5d3t4g",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "forest-watch",
+      "names": [
+        "Forest Watch"
+      ],
+      "armyForgeUnitId": "6DoZviX",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "deer-riders",
+      "names": [
+        "Deer Riders",
+        "Deer Rider"
+      ],
+      "armyForgeUnitId": "7dxwe57",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "grove-lancers",
+      "names": [
+        "Grove Lancers",
+        "Grove Lancer"
+      ],
+      "armyForgeUnitId": "Da6iqpU",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "mounted-weavers",
+      "names": [
+        "Mounted Weavers",
+        "Mounted Weaver"
+      ],
+      "armyForgeUnitId": "uwbY7DS",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "war-dancers",
+      "names": [
+        "War Dancers",
+        "War Dancer"
+      ],
+      "armyForgeUnitId": "2ZWcx2t",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "owl-riders",
+      "names": [
+        "Owl Riders",
+        "Owl Rider"
+      ],
+      "armyForgeUnitId": "sOfgrnh",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          75.0,
+          46.0
+        ],
+        "raw": "75x46",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "giant-owls",
+      "names": [
+        "Giant Owls",
+        "Giant Owl"
+      ],
+      "armyForgeUnitId": "KLI8cVe",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          75.0,
+          46.0
+        ],
+        "raw": "75x46",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "beetle-swarms",
+      "names": [
+        "Beetle Swarms",
+        "Beetle Swarm"
+      ],
+      "armyForgeUnitId": "rcIn6wY",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "treemen",
+      "names": [
+        "Treemen",
+        "Treeman"
+      ],
+      "armyForgeUnitId": "pognt8d",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "treeman-brutes",
+      "names": [
+        "Treeman Brutes",
+        "Treeman Brute"
+      ],
+      "armyForgeUnitId": "qDAISiA",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "eternal-revenants",
+      "names": [
+        "Eternal Revenants",
+        "Eternal Revenant"
+      ],
+      "armyForgeUnitId": "01F6ROv",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "eternal-hunters",
+      "names": [
+        "Eternal Hunters",
+        "Eternal Hunter"
+      ],
+      "armyForgeUnitId": "dEMaoBh",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "eternal-bug-riders",
+      "names": [
+        "Eternal Bug Riders",
+        "Eternal Bug Rider"
+      ],
+      "armyForgeUnitId": "OheI5PK",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "army-standard",
+      "candidateId": "a001",
+      "pdfLabel": "Army Standard",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-leader",
+      "equipmentTags": [
+        "Army Standard Bearer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Army Standard",
+          "armyBook": "Glade Leader (Army Standard Bearer)"
+        }
+      ],
+      "notes": "herói elfo com estandarte; Army Standard Bearer é opção só do Glade Leader",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0
+          ],
+          "front": "arts/army-standard/fino/frente.svg",
+          "back": "arts/army-standard/fino/verso.svg",
+          "canvasMm": [
+            50.207,
+            72.178
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            72.1,
+            50.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            0
+          ],
+          "front": "arts/army-standard/borda/frente.svg",
+          "back": "arts/army-standard/borda/verso.svg",
+          "canvasMm": [
+            54.017,
+            74.083
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            74.0,
+            53.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "glade-leader-bow",
+      "candidateId": "a002",
+      "pdfLabel": "Glade Leader Bow",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-leader",
+      "equipmentTags": [
+        "Rapid Bow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Bow",
+          "armyBook": "Rapid Bow"
+        }
+      ],
+      "notes": "o arco do Glade Leader é Rapid Bow (Rapid Longbow é troca dele)",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            1
+          ],
+          "front": "arts/glade-leader-bow/fino/frente.svg",
+          "back": "arts/glade-leader-bow/fino/verso.svg",
+          "canvasMm": [
+            36.068,
+            38.396
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            38.3,
+            35.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            1
+          ],
+          "front": "arts/glade-leader-bow/borda/frente.svg",
+          "back": "arts/glade-leader-bow/borda/verso.svg",
+          "canvasMm": [
+            39.878,
+            40.301
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            40.2,
+            39.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "glade-leader-sword",
+      "candidateId": "a003",
+      "pdfLabel": "Glade Leader Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-leader",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "figura com uma espada; o padrão da unidade é Dual Hand Weapons, então o modelo padrão não casa com esta arte",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            2
+          ],
+          "front": "arts/glade-leader-sword/fino/frente.svg",
+          "back": "arts/glade-leader-sword/fino/verso.svg",
+          "canvasMm": [
+            41.317,
+            38.312
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            38.2,
+            41.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            2
+          ],
+          "front": "arts/glade-leader-sword/borda/frente.svg",
+          "back": "arts/glade-leader-sword/borda/verso.svg",
+          "canvasMm": [
+            45.127,
+            40.217
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            40.1,
+            44.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "grove-champion-sword",
+      "candidateId": "a004",
+      "pdfLabel": "Grove Champion Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "grove-champion",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "espada e escudo; o padrão do Grove Champion é Dual Hand Weapons, então o modelo padrão não casa com esta arte",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            3
+          ],
+          "front": "arts/grove-champion-sword/fino/frente.svg",
+          "back": "arts/grove-champion-sword/fino/verso.svg",
+          "canvasMm": [
+            34.163,
+            59.013
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            58.9,
+            34.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            3
+          ],
+          "front": "arts/grove-champion-sword/borda/frente.svg",
+          "back": "arts/grove-champion-sword/borda/verso.svg",
+          "canvasMm": [
+            37.846,
+            60.875
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            60.8,
+            37.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "grove-champion-bow",
+      "candidateId": "a005",
+      "pdfLabel": "Grove Champion Bow",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "grove-champion",
+      "equipmentTags": [
+        "Rapid Shortbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Bow",
+          "armyBook": "Rapid Shortbow"
+        }
+      ],
+      "notes": "único arco do Grove Champion",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            4
+          ],
+          "front": "arts/grove-champion-bow/fino/frente.svg",
+          "back": "arts/grove-champion-bow/fino/verso.svg",
+          "canvasMm": [
+            40.386,
+            58.801
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            58.7,
+            40.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            4
+          ],
+          "front": "arts/grove-champion-bow/borda/frente.svg",
+          "back": "arts/grove-champion-bow/borda/verso.svg",
+          "canvasMm": [
+            44.111,
+            60.664
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            60.5,
+            43.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "war-master",
+      "candidateId": "a006",
+      "pdfLabel": "War Master",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-leader",
+      "equipmentTags": [
+        "War Master"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "War Master",
+          "armyBook": "Glade Leader (War Master)"
+        }
+      ],
+      "notes": "herói elfo com lança; entre os elfos só o Glade Leader tem War Master (Eternal Elder e Eternal Guardian Ancient também têm, mas a figura é elfo)",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0
+          ],
+          "front": "arts/war-master/fino/frente.svg",
+          "back": "arts/war-master/fino/verso.svg",
+          "canvasMm": [
+            46.44,
+            39.92
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            39.8,
+            46.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            0
+          ],
+          "front": "arts/war-master/borda/frente.svg",
+          "back": "arts/war-master/borda/verso.svg",
+          "canvasMm": [
+            51.139,
+            42.291
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            42.2,
+            51.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "forest-warden",
+      "candidateId": "a007",
+      "pdfLabel": "Forest Warden",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-leader",
+      "equipmentTags": [
+        "Forest Warden"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Forest Warden",
+          "armyBook": "Glade Leader (Forest Warden)"
+        }
+      ],
+      "notes": "herói elfo com cajado de galhos e escudo; Forest Warden também é opção do Grove Champion e do Treeman Elder",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            1
+          ],
+          "front": "arts/forest-warden/fino/frente.svg",
+          "back": "arts/forest-warden/fino/verso.svg",
+          "canvasMm": [
+            45.551,
+            44.535
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            44.4,
+            45.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            1
+          ],
+          "front": "arts/forest-warden/borda/frente.svg",
+          "back": "arts/forest-warden/borda/verso.svg",
+          "canvasMm": [
+            50.292,
+            46.905
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            46.8,
+            50.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "spell-weaver",
+      "candidateId": "a008",
+      "pdfLabel": "Spell Weaver",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-leader",
+      "equipmentTags": [
+        "Spell Weaver"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Spell Weaver",
+          "armyBook": "Glade Leader (Spell Weaver)"
+        }
+      ],
+      "notes": "elfo com cajado e manto de penas; Spell Weaver também é opção do Grove Champion (e de Eternal Elder, Eternal Guardian Ancient e Yrana)",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            2
+          ],
+          "front": "arts/spell-weaver/fino/frente.svg",
+          "back": "arts/spell-weaver/fino/verso.svg",
+          "canvasMm": [
+            42.122,
+            42.164
+          ],
+          "frontBackIoU": 0.939,
+          "sizeMm": [
+            42.1,
+            41.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            2
+          ],
+          "front": "arts/spell-weaver/borda/frente.svg",
+          "back": "arts/spell-weaver/borda/verso.svg",
+          "canvasMm": [
+            46.863,
+            44.535
+          ],
+          "frontBackIoU": 0.957,
+          "sizeMm": [
+            44.4,
+            46.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "treemen-wraith",
+      "candidateId": "a009",
+      "pdfLabel": "Treemen Wraith",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "treeman-elder",
+      "equipmentTags": [
+        "Forest Wraith"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Treemen Wraith",
+          "armyBook": "Treeman Elder (Forest Wraith)"
+        }
+      ],
+      "notes": "homem-árvore com cajado (caster); Forest Wraith é opção do Treeman Elder",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            3
+          ],
+          "front": "arts/treemen-wraith/fino/frente.svg",
+          "back": "arts/treemen-wraith/fino/verso.svg",
+          "canvasMm": [
+            45.127,
+            54.144
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            54.0,
+            44.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            3
+          ],
+          "front": "arts/treemen-wraith/borda/frente.svg",
+          "back": "arts/treemen-wraith/borda/verso.svg",
+          "canvasMm": [
+            49.869,
+            56.515
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            56.4,
+            49.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "treemen-elder",
+      "candidateId": "a010",
+      "pdfLabel": "Treemen Elder",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "treeman-elder",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "o PDF grafa Treemen; unidade Treeman Elder",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            4
+          ],
+          "front": "arts/treemen-elder/fino/frente.svg",
+          "back": "arts/treemen-elder/fino/verso.svg",
+          "canvasMm": [
+            43.18,
+            49.911
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            49.8,
+            42.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            4
+          ],
+          "front": "arts/treemen-elder/borda/frente.svg",
+          "back": "arts/treemen-elder/borda/verso.svg",
+          "canvasMm": [
+            47.921,
+            52.282
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            52.2,
+            47.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "deer-leader-lance",
+      "candidateId": "a011",
+      "pdfLabel": "Deer Leader Lance",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-leader",
+      "equipmentTags": [
+        "Lance",
+        "Swift Deer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Deer Leader",
+          "armyBook": "Glade Leader (Swift Deer)"
+        }
+      ],
+      "notes": "líder elfo montado em cervo; a montaria pode ser Swift Deer ou Tracker Deer (escolhi Swift Deer); Great Stag tem arte própria",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0
+          ],
+          "front": "arts/deer-leader-lance/fino/frente.svg",
+          "back": "arts/deer-leader-lance/fino/verso.svg",
+          "canvasMm": [
+            51.054,
+            69.808
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            69.7,
+            50.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            0
+          ],
+          "front": "arts/deer-leader-lance/borda/frente.svg",
+          "back": "arts/deer-leader-lance/borda/verso.svg",
+          "canvasMm": [
+            54.779,
+            71.67
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            71.5,
+            54.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "deer-leader-sword",
+      "candidateId": "a012",
+      "pdfLabel": "Deer Leader Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-leader",
+      "equipmentTags": [
+        "Hand Weapon",
+        "Swift Deer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Deer Leader",
+          "armyBook": "Glade Leader (Swift Deer)"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "líder elfo em cervo com uma espada; montaria Swift Deer ou Tracker Deer (escolhi Swift Deer); padrão do líder é Dual Hand Weapons",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            1
+          ],
+          "front": "arts/deer-leader-sword/fino/frente.svg",
+          "back": "arts/deer-leader-sword/fino/verso.svg",
+          "canvasMm": [
+            44.577,
+            66.379
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            66.3,
+            44.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            1
+          ],
+          "front": "arts/deer-leader-sword/borda/frente.svg",
+          "back": "arts/deer-leader-sword/borda/verso.svg",
+          "canvasMm": [
+            48.302,
+            68.241
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            68.2,
+            48.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "dance-master",
+      "candidateId": "a013",
+      "pdfLabel": "Dance Master",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "grove-champion",
+      "equipmentTags": [
+        "Dance Master"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Dance Master",
+          "armyBook": "Grove Champion (Dance Master)"
+        }
+      ],
+      "notes": "Dance Master só existe como opção do Grove Champion",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            2
+          ],
+          "front": "arts/dance-master/fino/frente.svg",
+          "back": "arts/dance-master/fino/verso.svg",
+          "canvasMm": [
+            38.65,
+            37.677
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            37.6,
+            38.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            2
+          ],
+          "front": "arts/dance-master/borda/frente.svg",
+          "back": "arts/dance-master/borda/verso.svg",
+          "canvasMm": [
+            43.392,
+            40.047
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            40.0,
+            43.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-owl-rider",
+      "candidateId": "a014",
+      "pdfLabel": "Champion Owl Rider",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "grove-champion",
+      "equipmentTags": [
+        "Giant Owl"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Grove Champion"
+        },
+        {
+          "pdf": "Owl Rider",
+          "armyBook": "Giant Owl"
+        }
+      ],
+      "notes": "campeão montado em coruja (montaria Giant Owl do Grove Champion); só estilo fino, a075 é a versão borda",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0
+          ],
+          "front": "arts/champion-owl-rider/fino/frente.svg",
+          "back": "arts/champion-owl-rider/fino/verso.svg",
+          "canvasMm": [
+            68.241,
+            75.523
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            75.4,
+            68.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-great-stag",
+      "candidateId": "a015",
+      "pdfLabel": "Champion Great Stag",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "grove-champion",
+      "equipmentTags": [
+        "Great Stag"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Champion = Grove Champion (única unidade Champion); Great Stag é a montaria",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            1
+          ],
+          "front": "arts/champion-great-stag/fino/frente.svg",
+          "back": "arts/champion-great-stag/fino/verso.svg",
+          "canvasMm": [
+            50.885,
+            68.792
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            68.7,
+            50.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            1
+          ],
+          "front": "arts/champion-great-stag/borda/frente.svg",
+          "back": "arts/champion-great-stag/borda/verso.svg",
+          "canvasMm": [
+            54.61,
+            70.654
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            70.5,
+            54.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "defenders-sword",
+      "candidateId": "a016",
+      "pdfLabel": "Defenders Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-defenders",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "Hand Weapon é a arma padrão dos Glade Defenders",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/defenders-sword/fino/frente.svg",
+          "back": "arts/defenders-sword/fino/verso.svg",
+          "canvasMm": [
+            33.867,
+            34.967
+          ],
+          "frontBackIoU": 0.961,
+          "sizeMm": [
+            34.9,
+            33.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/defenders-sword/borda/frente.svg",
+          "back": "arts/defenders-sword/borda/verso.svg",
+          "canvasMm": [
+            37.677,
+            36.872
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            36.7,
+            37.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "defenders-spear",
+      "candidateId": "a017",
+      "pdfLabel": "Defenders Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-defenders",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/defenders-spear/fino/frente.svg",
+          "back": "arts/defenders-spear/fino/verso.svg",
+          "canvasMm": [
+            36.745,
+            44.154
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            44.0,
+            36.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 50,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/defenders-spear/borda/frente.svg",
+          "back": "arts/defenders-spear/borda/verso.svg",
+          "canvasMm": [
+            40.555,
+            46.016
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            45.9,
+            40.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "defenders-halberd",
+      "candidateId": "a018",
+      "pdfLabel": "Defenders Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-defenders",
+      "equipmentTags": [
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/defenders-halberd/fino/frente.svg",
+          "back": "arts/defenders-halberd/fino/verso.svg",
+          "canvasMm": [
+            38.566,
+            45.508
+          ],
+          "frontBackIoU": 0.965,
+          "sizeMm": [
+            45.4,
+            38.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/defenders-halberd/borda/frente.svg",
+          "back": "arts/defenders-halberd/borda/verso.svg",
+          "canvasMm": [
+            42.376,
+            47.413
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            47.3,
+            42.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "defenders-sergeant",
+      "candidateId": "a019",
+      "pdfLabel": "Defenders Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-defenders",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0
+          ],
+          "front": "arts/defenders-sergeant/fino/frente.svg",
+          "back": "arts/defenders-sergeant/fino/verso.svg",
+          "canvasMm": [
+            40.217,
+            37.423
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            37.3,
+            40.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 52,
+          "rows": [
+            0
+          ],
+          "front": "arts/defenders-sergeant/borda/frente.svg",
+          "back": "arts/defenders-sergeant/borda/verso.svg",
+          "canvasMm": [
+            44.027,
+            39.328
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            39.2,
+            43.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "defenders-musician",
+      "candidateId": "a020",
+      "pdfLabel": "Defenders Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-defenders",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            1
+          ],
+          "front": "arts/defenders-musician/fino/frente.svg",
+          "back": "arts/defenders-musician/fino/verso.svg",
+          "canvasMm": [
+            27.263,
+            38.523
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            38.4,
+            27.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 52,
+          "rows": [
+            1
+          ],
+          "front": "arts/defenders-musician/borda/frente.svg",
+          "back": "arts/defenders-musician/borda/verso.svg",
+          "canvasMm": [
+            31.073,
+            40.428
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            40.3,
+            30.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "defenders-banner",
+      "candidateId": "a021",
+      "pdfLabel": "Defenders Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-defenders",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            2
+          ],
+          "front": "arts/defenders-banner/fino/frente.svg",
+          "back": "arts/defenders-banner/fino/verso.svg",
+          "canvasMm": [
+            45.466,
+            54.652
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            54.5,
+            45.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 52,
+          "rows": [
+            2
+          ],
+          "front": "arts/defenders-banner/borda/frente.svg",
+          "back": "arts/defenders-banner/borda/verso.svg",
+          "canvasMm": [
+            49.276,
+            56.557
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            56.5,
+            49.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warden",
+      "candidateId": "a022",
+      "pdfLabel": "Warden",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "grove-wardens",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "figura com espadão; o padrão da unidade é Halberd",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warden/fino/frente.svg",
+          "back": "arts/warden/fino/verso.svg",
+          "canvasMm": [
+            23.241,
+            53.89
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            53.8,
+            22.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 53,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/warden/borda/frente.svg",
+          "back": "arts/warden/borda/verso.svg",
+          "canvasMm": [
+            25.104,
+            54.822
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            54.7,
+            24.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warden-sergeant",
+      "candidateId": "a023",
+      "pdfLabel": "Warden Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "grove-wardens",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0
+          ],
+          "front": "arts/warden-sergeant/fino/frente.svg",
+          "back": "arts/warden-sergeant/fino/verso.svg",
+          "canvasMm": [
+            23.029,
+            40.725
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            40.6,
+            22.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            0
+          ],
+          "front": "arts/warden-sergeant/borda/frente.svg",
+          "back": "arts/warden-sergeant/borda/verso.svg",
+          "canvasMm": [
+            26.797,
+            42.587
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            42.5,
+            26.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warden-musician",
+      "candidateId": "a024",
+      "pdfLabel": "Warden Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "grove-wardens",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            1
+          ],
+          "front": "arts/warden-musician/fino/frente.svg",
+          "back": "arts/warden-musician/fino/verso.svg",
+          "canvasMm": [
+            29.803,
+            39.878
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            39.8,
+            29.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            1
+          ],
+          "front": "arts/warden-musician/borda/frente.svg",
+          "back": "arts/warden-musician/borda/verso.svg",
+          "canvasMm": [
+            33.528,
+            41.741
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            41.7,
+            33.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "warden-banner",
+      "candidateId": "a025",
+      "pdfLabel": "Warden Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "grove-wardens",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            2
+          ],
+          "front": "arts/warden-banner/fino/frente.svg",
+          "back": "arts/warden-banner/fino/verso.svg",
+          "canvasMm": [
+            36.153,
+            64.982
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            64.9,
+            35.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            2
+          ],
+          "front": "arts/warden-banner/borda/frente.svg",
+          "back": "arts/warden-banner/borda/verso.svg",
+          "canvasMm": [
+            39.878,
+            66.844
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            66.7,
+            39.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian",
+      "candidateId": "a026",
+      "pdfLabel": "Guardian",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-guardians",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "arqueiro elfo = Glade Guardians (não o Eternal Guardian, que é monstro)",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/guardian/fino/frente.svg",
+          "back": "arts/guardian/fino/verso.svg",
+          "canvasMm": [
+            36.237,
+            53.763
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            53.7,
+            35.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/guardian/borda/frente.svg",
+          "back": "arts/guardian/borda/verso.svg",
+          "canvasMm": [
+            40.047,
+            55.668
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            55.5,
+            39.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-sergeant",
+      "candidateId": "a027",
+      "pdfLabel": "Guardian Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-guardians",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0
+          ],
+          "front": "arts/guardian-sergeant/fino/frente.svg",
+          "back": "arts/guardian-sergeant/fino/verso.svg",
+          "canvasMm": [
+            42.884,
+            42.587
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            42.5,
+            42.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 56,
+          "rows": [
+            0
+          ],
+          "front": "arts/guardian-sergeant/borda/frente.svg",
+          "back": "arts/guardian-sergeant/borda/verso.svg",
+          "canvasMm": [
+            46.694,
+            44.535
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            44.4,
+            46.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-musician",
+      "candidateId": "a028",
+      "pdfLabel": "Guardian Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-guardians",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            1
+          ],
+          "front": "arts/guardian-musician/fino/frente.svg",
+          "back": "arts/guardian-musician/fino/verso.svg",
+          "canvasMm": [
+            44.365,
+            39.793
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            39.7,
+            44.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 56,
+          "rows": [
+            1
+          ],
+          "front": "arts/guardian-musician/borda/frente.svg",
+          "back": "arts/guardian-musician/borda/verso.svg",
+          "canvasMm": [
+            48.175,
+            41.698
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            41.6,
+            47.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian-banner",
+      "candidateId": "a029",
+      "pdfLabel": "Guardian Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-guardians",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            2
+          ],
+          "front": "arts/guardian-banner/fino/frente.svg",
+          "back": "arts/guardian-banner/fino/verso.svg",
+          "canvasMm": [
+            39.158,
+            56.219
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            56.1,
+            38.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 56,
+          "rows": [
+            2
+          ],
+          "front": "arts/guardian-banner/borda/frente.svg",
+          "back": "arts/guardian-banner/borda/verso.svg",
+          "canvasMm": [
+            42.968,
+            58.124
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            58.0,
+            42.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scout",
+      "candidateId": "a030",
+      "pdfLabel": "Scout",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glade-scouts",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/scout/fino/frente.svg",
+          "back": "arts/scout/fino/verso.svg",
+          "canvasMm": [
+            28.025,
+            32.935
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            32.9,
+            27.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 57,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/scout/borda/frente.svg",
+          "back": "arts/scout/borda/verso.svg",
+          "canvasMm": [
+            32.766,
+            35.306
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            35.2,
+            32.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "forest-watch",
+      "candidateId": "a031",
+      "pdfLabel": "Forest Watch",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "forest-watch",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/forest-watch/fino/frente.svg",
+          "back": "arts/forest-watch/fino/verso.svg",
+          "canvasMm": [
+            27.686,
+            39.666
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            39.5,
+            27.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 58,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/forest-watch/borda/frente.svg",
+          "back": "arts/forest-watch/borda/verso.svg",
+          "canvasMm": [
+            31.411,
+            41.529
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            41.4,
+            31.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "deer-rider-bow",
+      "candidateId": "a032",
+      "pdfLabel": "Deer Rider Bow",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "deer-riders",
+      "equipmentTags": [
+        "Bow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/deer-rider-bow/fino/frente.svg",
+          "back": "arts/deer-rider-bow/fino/verso.svg",
+          "canvasMm": [
+            50.377,
+            48.387
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            48.3,
+            50.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 59,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/deer-rider-bow/borda/frente.svg",
+          "back": "arts/deer-rider-bow/borda/verso.svg",
+          "canvasMm": [
+            54.102,
+            50.25
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            50.1,
+            53.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "deer-rider-lance",
+      "candidateId": "a033",
+      "pdfLabel": "Deer Rider Lance",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "deer-riders",
+      "equipmentTags": [
+        "Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/deer-rider-lance/fino/frente.svg",
+          "back": "arts/deer-rider-lance/fino/verso.svg",
+          "canvasMm": [
+            53.467,
+            48.345
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            48.3,
+            53.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 60,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/deer-rider-lance/borda/frente.svg",
+          "back": "arts/deer-rider-lance/borda/verso.svg",
+          "canvasMm": [
+            57.192,
+            50.207
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            50.1,
+            57.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "deer-rider-sergeant",
+      "candidateId": "a034",
+      "pdfLabel": "Deer Rider Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "deer-riders",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            0
+          ],
+          "front": "arts/deer-rider-sergeant/fino/frente.svg",
+          "back": "arts/deer-rider-sergeant/fino/verso.svg",
+          "canvasMm": [
+            59.394,
+            54.864
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            54.8,
+            59.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 61,
+          "rows": [
+            0
+          ],
+          "front": "arts/deer-rider-sergeant/borda/frente.svg",
+          "back": "arts/deer-rider-sergeant/borda/verso.svg",
+          "canvasMm": [
+            63.119,
+            56.727
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            56.6,
+            62.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "deer-rider-musician",
+      "candidateId": "a035",
+      "pdfLabel": "Deer Rider Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "deer-riders",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            1
+          ],
+          "front": "arts/deer-rider-musician/fino/frente.svg",
+          "back": "arts/deer-rider-musician/fino/verso.svg",
+          "canvasMm": [
+            32.512,
+            56.092
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            56.0,
+            32.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 61,
+          "rows": [
+            1
+          ],
+          "front": "arts/deer-rider-musician/borda/frente.svg",
+          "back": "arts/deer-rider-musician/borda/verso.svg",
+          "canvasMm": [
+            36.237,
+            57.954
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            57.8,
+            36.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "deer-rider-banner",
+      "candidateId": "a036",
+      "pdfLabel": "Deer Rider Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "deer-riders",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            2
+          ],
+          "front": "arts/deer-rider-banner/fino/frente.svg",
+          "back": "arts/deer-rider-banner/fino/verso.svg",
+          "canvasMm": [
+            42.545,
+            83.651
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            83.6,
+            42.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 61,
+          "rows": [
+            2
+          ],
+          "front": "arts/deer-rider-banner/borda/frente.svg",
+          "back": "arts/deer-rider-banner/borda/verso.svg",
+          "canvasMm": [
+            46.27,
+            85.513
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            85.4,
+            46.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "lancer",
+      "candidateId": "a037",
+      "pdfLabel": "Lancer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "grove-lancers",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/lancer/fino/frente.svg",
+          "back": "arts/lancer/fino/verso.svg",
+          "canvasMm": [
+            52.663,
+            64.431
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            64.3,
+            52.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 62,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/lancer/borda/frente.svg",
+          "back": "arts/lancer/borda/verso.svg",
+          "canvasMm": [
+            56.388,
+            66.294
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            66.2,
+            56.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "lancer-sergeant",
+      "candidateId": "a038",
+      "pdfLabel": "Lancer Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "grove-lancers",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0
+          ],
+          "front": "arts/lancer-sergeant/fino/frente.svg",
+          "back": "arts/lancer-sergeant/fino/verso.svg",
+          "canvasMm": [
+            61.087,
+            65.363
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            65.3,
+            60.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 63,
+          "rows": [
+            0
+          ],
+          "front": "arts/lancer-sergeant/borda/frente.svg",
+          "back": "arts/lancer-sergeant/borda/verso.svg",
+          "canvasMm": [
+            64.812,
+            67.225
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            67.1,
+            64.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "lancer-musician",
+      "candidateId": "a039",
+      "pdfLabel": "Lancer Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "grove-lancers",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            1
+          ],
+          "front": "arts/lancer-musician/fino/frente.svg",
+          "back": "arts/lancer-musician/fino/verso.svg",
+          "canvasMm": [
+            54.06,
+            61.383
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            61.3,
+            53.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 63,
+          "rows": [
+            1
+          ],
+          "front": "arts/lancer-musician/borda/frente.svg",
+          "back": "arts/lancer-musician/borda/verso.svg",
+          "canvasMm": [
+            57.785,
+            63.246
+          ],
+          "frontBackIoU": 0.999,
+          "sizeMm": [
+            63.2,
+            57.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "lancer-banner",
+      "candidateId": "a040",
+      "pdfLabel": "Lancer Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "grove-lancers",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            2
+          ],
+          "front": "arts/lancer-banner/fino/frente.svg",
+          "back": "arts/lancer-banner/fino/verso.svg",
+          "canvasMm": [
+            53.255,
+            83.693
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            83.6,
+            53.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 63,
+          "rows": [
+            2
+          ],
+          "front": "arts/lancer-banner/borda/frente.svg",
+          "back": "arts/lancer-banner/borda/verso.svg",
+          "canvasMm": [
+            56.981,
+            85.556
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            85.4,
+            56.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "mounted-weaver",
+      "candidateId": "a041",
+      "pdfLabel": "Mounted Weaver",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "mounted-weavers",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/mounted-weaver/fino/frente.svg",
+          "back": "arts/mounted-weaver/fino/verso.svg",
+          "canvasMm": [
+            62.823,
+            48.218
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            48.1,
+            62.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 64,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/mounted-weaver/borda/frente.svg",
+          "back": "arts/mounted-weaver/borda/verso.svg",
+          "canvasMm": [
+            66.548,
+            50.08
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            50.0,
+            66.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "mounted-weaver-sergeant",
+      "candidateId": "a042",
+      "pdfLabel": "Mounted Weaver Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "mounted-weavers",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            0
+          ],
+          "front": "arts/mounted-weaver-sergeant/fino/frente.svg",
+          "back": "arts/mounted-weaver-sergeant/fino/verso.svg",
+          "canvasMm": [
+            58.462,
+            55.033
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            54.9,
+            58.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 65,
+          "rows": [
+            0
+          ],
+          "front": "arts/mounted-weaver-sergeant/borda/frente.svg",
+          "back": "arts/mounted-weaver-sergeant/borda/verso.svg",
+          "canvasMm": [
+            62.188,
+            56.896
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            56.8,
+            61.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "mounted-weaver-musician",
+      "candidateId": "a043",
+      "pdfLabel": "Mounted Weaver Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "mounted-weavers",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            1
+          ],
+          "front": "arts/mounted-weaver-musician/fino/frente.svg",
+          "back": "arts/mounted-weaver-musician/fino/verso.svg",
+          "canvasMm": [
+            63.923,
+            46.397
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            46.3,
+            63.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 65,
+          "rows": [
+            1
+          ],
+          "front": "arts/mounted-weaver-musician/borda/frente.svg",
+          "back": "arts/mounted-weaver-musician/borda/verso.svg",
+          "canvasMm": [
+            67.649,
+            48.26
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            48.2,
+            67.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "mounted-weaver-banner",
+      "candidateId": "a044",
+      "pdfLabel": "Mounted Weaver Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "mounted-weavers",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            2
+          ],
+          "front": "arts/mounted-weaver-banner/fino/frente.svg",
+          "back": "arts/mounted-weaver-banner/fino/verso.svg",
+          "canvasMm": [
+            57.7,
+            78.401
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            78.3,
+            57.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 65,
+          "rows": [
+            2
+          ],
+          "front": "arts/mounted-weaver-banner/borda/frente.svg",
+          "back": "arts/mounted-weaver-banner/borda/verso.svg",
+          "canvasMm": [
+            61.426,
+            80.264
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            80.2,
+            61.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "war-dancer",
+      "candidateId": "a045",
+      "pdfLabel": "War Dancer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "war-dancers",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/war-dancer/fino/frente.svg",
+          "back": "arts/war-dancer/fino/verso.svg",
+          "canvasMm": [
+            29.76,
+            37.042
+          ],
+          "frontBackIoU": 0.962,
+          "sizeMm": [
+            36.9,
+            29.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 66,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/war-dancer/borda/frente.svg",
+          "back": "arts/war-dancer/borda/verso.svg",
+          "canvasMm": [
+            34.502,
+            39.412
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            39.3,
+            34.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "war-dancer-sergeant",
+      "candidateId": "a046",
+      "pdfLabel": "War Dancer Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "war-dancers",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            0
+          ],
+          "front": "arts/war-dancer-sergeant/fino/frente.svg",
+          "back": "arts/war-dancer-sergeant/fino/verso.svg",
+          "canvasMm": [
+            33.951,
+            37.507
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            37.4,
+            33.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 67,
+          "rows": [
+            0
+          ],
+          "front": "arts/war-dancer-sergeant/borda/frente.svg",
+          "back": "arts/war-dancer-sergeant/borda/verso.svg",
+          "canvasMm": [
+            38.693,
+            39.878
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            39.8,
+            38.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "war-dancer-musician",
+      "candidateId": "a047",
+      "pdfLabel": "War Dancer Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "war-dancers",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            1
+          ],
+          "front": "arts/war-dancer-musician/fino/frente.svg",
+          "back": "arts/war-dancer-musician/fino/verso.svg",
+          "canvasMm": [
+            21.886,
+            38.142
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            38.0,
+            21.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 67,
+          "rows": [
+            1
+          ],
+          "front": "arts/war-dancer-musician/borda/frente.svg",
+          "back": "arts/war-dancer-musician/borda/verso.svg",
+          "canvasMm": [
+            26.628,
+            40.513
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            40.4,
+            26.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "war-dancer-banner",
+      "candidateId": "a048",
+      "pdfLabel": "War Dancer Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "war-dancers",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            2
+          ],
+          "front": "arts/war-dancer-banner/fino/frente.svg",
+          "back": "arts/war-dancer-banner/fino/verso.svg",
+          "canvasMm": [
+            39.539,
+            54.822
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            54.7,
+            39.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 67,
+          "rows": [
+            2
+          ],
+          "front": "arts/war-dancer-banner/borda/frente.svg",
+          "back": "arts/war-dancer-banner/borda/verso.svg",
+          "canvasMm": [
+            44.281,
+            57.192
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            57.1,
+            44.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "war-glider",
+      "candidateId": "a049",
+      "pdfLabel": "War Glider",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "war-dancers",
+      "equipmentTags": [
+        "Glider Wings"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "War Glider",
+          "armyBook": "War Dancers (Glider Wings)"
+        }
+      ],
+      "notes": "dançarino alado; War Dancers com a opção Glider Wings",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/war-glider/fino/frente.svg",
+          "back": "arts/war-glider/fino/verso.svg",
+          "canvasMm": [
+            35.941,
+            46.44
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            46.3,
+            35.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 68,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/war-glider/borda/frente.svg",
+          "back": "arts/war-glider/borda/verso.svg",
+          "canvasMm": [
+            40.682,
+            48.81
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            48.7,
+            40.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "war-glider-sergeant",
+      "candidateId": "a050",
+      "pdfLabel": "War Glider Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "war-dancers",
+      "equipmentTags": [
+        "Glider Wings"
+      ],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "War Glider",
+          "armyBook": "War Dancers (Glider Wings)"
+        }
+      ],
+      "notes": "comando dos War Dancers com Glider Wings",
+      "styles": {
+        "fino": {
+          "page": 26,
+          "rows": [
+            0
+          ],
+          "front": "arts/war-glider-sergeant/fino/frente.svg",
+          "back": "arts/war-glider-sergeant/fino/verso.svg",
+          "canvasMm": [
+            30.057,
+            49.361
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            49.3,
+            29.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 69,
+          "rows": [
+            0
+          ],
+          "front": "arts/war-glider-sergeant/borda/frente.svg",
+          "back": "arts/war-glider-sergeant/borda/verso.svg",
+          "canvasMm": [
+            34.84,
+            51.731
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            51.6,
+            34.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "war-glider-musician",
+      "candidateId": "a051",
+      "pdfLabel": "War Glider Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "war-dancers",
+      "equipmentTags": [
+        "Glider Wings"
+      ],
+      "cosmetic": "musician",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "War Glider",
+          "armyBook": "War Dancers (Glider Wings)"
+        }
+      ],
+      "notes": "comando dos War Dancers com Glider Wings",
+      "styles": {
+        "fino": {
+          "page": 26,
+          "rows": [
+            1
+          ],
+          "front": "arts/war-glider-musician/fino/frente.svg",
+          "back": "arts/war-glider-musician/fino/verso.svg",
+          "canvasMm": [
+            36.026,
+            42.46
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            42.3,
+            35.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 69,
+          "rows": [
+            1
+          ],
+          "front": "arts/war-glider-musician/borda/frente.svg",
+          "back": "arts/war-glider-musician/borda/verso.svg",
+          "canvasMm": [
+            40.767,
+            44.831
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            44.7,
+            40.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "war-glider-banner",
+      "candidateId": "a052",
+      "pdfLabel": "War Glider Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "war-dancers",
+      "equipmentTags": [
+        "Glider Wings"
+      ],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "War Glider",
+          "armyBook": "War Dancers (Glider Wings)"
+        }
+      ],
+      "notes": "comando dos War Dancers com Glider Wings",
+      "styles": {
+        "fino": {
+          "page": 26,
+          "rows": [
+            2
+          ],
+          "front": "arts/war-glider-banner/fino/frente.svg",
+          "back": "arts/war-glider-banner/fino/verso.svg",
+          "canvasMm": [
+            54.822,
+            64.982
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            64.9,
+            54.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 69,
+          "rows": [
+            2
+          ],
+          "front": "arts/war-glider-banner/borda/frente.svg",
+          "back": "arts/war-glider-banner/borda/verso.svg",
+          "canvasMm": [
+            59.563,
+            67.352
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            67.2,
+            59.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "owl-rider-spear",
+      "candidateId": "a053",
+      "pdfLabel": "Owl Rider Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "owl-riders",
+      "equipmentTags": [
+        "Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Spear",
+          "armyBook": "Lance"
+        }
+      ],
+      "notes": "a arma de haste padrão dos Owl Riders é Lance; só estilo fino, a076 é a versão borda",
+      "styles": {
+        "fino": {
+          "page": 27,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/owl-rider-spear/fino/frente.svg",
+          "back": "arts/owl-rider-spear/fino/verso.svg",
+          "canvasMm": [
+            77.047,
+            58.801
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            58.6,
+            76.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "owl-rider-bow",
+      "candidateId": "a054",
+      "pdfLabel": "Owl Rider Bow",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "owl-riders",
+      "equipmentTags": [
+        "Rapid Shortbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Bow",
+          "armyBook": "Rapid Shortbow"
+        }
+      ],
+      "notes": "escolhi Rapid Shortbow (há também Rapid Hunting Shortbow); só estilo fino, a077 é a versão borda",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/owl-rider-bow/fino/frente.svg",
+          "back": "arts/owl-rider-bow/fino/verso.svg",
+          "canvasMm": [
+            77.004,
+            59.351
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            59.1,
+            76.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "giant-owl",
+      "candidateId": "a055",
+      "pdfLabel": "Giant Owl",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "giant-owls",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só estilo fino; a078 é a versão borda",
+      "styles": {
+        "fino": {
+          "page": 29,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/giant-owl/fino/frente.svg",
+          "back": "arts/giant-owl/fino/verso.svg",
+          "canvasMm": [
+            67.225,
+            48.768
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            48.6,
+            67.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "beetle-swarms",
+      "candidateId": "a056",
+      "pdfLabel": "Beetle Swarms",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "beetle-swarms",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 30,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/beetle-swarms/fino/frente.svg",
+          "back": "arts/beetle-swarms/fino/verso.svg",
+          "canvasMm": [
+            43.688,
+            26.712
+          ],
+          "frontBackIoU": 0.922,
+          "sizeMm": [
+            26.6,
+            43.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 73,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/beetle-swarms/borda/frente.svg",
+          "back": "arts/beetle-swarms/borda/verso.svg",
+          "canvasMm": [
+            47.413,
+            28.575
+          ],
+          "frontBackIoU": 0.94,
+          "sizeMm": [
+            28.4,
+            47.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "treemen-claws",
+      "candidateId": "a057",
+      "pdfLabel": "Treemen Claws",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "treemen",
+      "equipmentTags": [
+        "Branch Claws"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Claws",
+          "armyBook": "Branch Claws"
+        }
+      ],
+      "notes": "\"Claws\" no army book vem junto do Weaving Branch; a arma de garras é Branch Claws",
+      "styles": {
+        "fino": {
+          "page": 31,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/treemen-claws/fino/frente.svg",
+          "back": "arts/treemen-claws/fino/verso.svg",
+          "canvasMm": [
+            22.013,
+            37.253
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            37.2,
+            21.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 74,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/treemen-claws/borda/frente.svg",
+          "back": "arts/treemen-claws/borda/verso.svg",
+          "canvasMm": [
+            25.739,
+            39.116
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            39.0,
+            25.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "treemen-weaver",
+      "candidateId": "a058",
+      "pdfLabel": "Treemen Weaver",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "treemen",
+      "equipmentTags": [
+        "Weaving Branch"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Weaver",
+          "armyBook": "Weaving Branch"
+        }
+      ],
+      "notes": "5 cópias (tropa); Treemen com Weaving Branch (Wild Weaver do Treeman Elder é herói)",
+      "styles": {
+        "fino": {
+          "page": 32,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/treemen-weaver/fino/frente.svg",
+          "back": "arts/treemen-weaver/fino/verso.svg",
+          "canvasMm": [
+            22.564,
+            31.454
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            31.3,
+            22.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 75,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/treemen-weaver/borda/frente.svg",
+          "back": "arts/treemen-weaver/borda/verso.svg",
+          "canvasMm": [
+            26.289,
+            33.316
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            33.2,
+            26.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "treemen-brute-claw",
+      "candidateId": "a059",
+      "pdfLabel": "Treemen Brute Claw",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "treeman-brutes",
+      "equipmentTags": [
+        "Branch Claws"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Claw",
+          "armyBook": "Branch Claws"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 33,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/treemen-brute-claw/fino/frente.svg",
+          "back": "arts/treemen-brute-claw/fino/verso.svg",
+          "canvasMm": [
+            60.875,
+            59.902
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            59.8,
+            60.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 76,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/treemen-brute-claw/borda/frente.svg",
+          "back": "arts/treemen-brute-claw/borda/verso.svg",
+          "canvasMm": [
+            65.532,
+            62.23
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            62.1,
+            65.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "treemen-brute-mace",
+      "candidateId": "a060",
+      "pdfLabel": "Treemen Brute Mace",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "treeman-brutes",
+      "equipmentTags": [
+        "Branch Mace"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Mace",
+          "armyBook": "Branch Mace"
+        }
+      ],
+      "notes": "Branch Mace é a arma padrão",
+      "styles": {
+        "fino": {
+          "page": 34,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/treemen-brute-mace/fino/frente.svg",
+          "back": "arts/treemen-brute-mace/fino/verso.svg",
+          "canvasMm": [
+            61.087,
+            59.902
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            59.8,
+            60.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 77,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/treemen-brute-mace/borda/frente.svg",
+          "back": "arts/treemen-brute-mace/borda/verso.svg",
+          "canvasMm": [
+            65.744,
+            62.23
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            62.1,
+            65.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-claws",
+      "candidateId": "a061",
+      "pdfLabel": "Eternal Claws",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal-revenants",
+      "equipmentTags": [
+        "Razor Claws"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Eternal",
+          "armyBook": "Eternal Revenants"
+        },
+        {
+          "pdf": "Claws",
+          "armyBook": "Razor Claws"
+        }
+      ],
+      "notes": "série Eternal Claws/Blades/Bow com 5 cópias = tropa Eternal Revenants; \"Claws\" simples vem junto dos arcos",
+      "styles": {
+        "fino": {
+          "page": 35,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/eternal-claws/fino/frente.svg",
+          "back": "arts/eternal-claws/fino/verso.svg",
+          "canvasMm": [
+            34.248,
+            38.142
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            38.0,
+            34.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 78,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/eternal-claws/borda/frente.svg",
+          "back": "arts/eternal-claws/borda/verso.svg",
+          "canvasMm": [
+            38.904,
+            40.471
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            40.4,
+            38.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-blades",
+      "candidateId": "a062",
+      "pdfLabel": "Eternal Blades",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal-revenants",
+      "equipmentTags": [
+        "Spite Blades"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Eternal",
+          "armyBook": "Eternal Revenants"
+        },
+        {
+          "pdf": "Blades",
+          "armyBook": "Spite Blades"
+        }
+      ],
+      "notes": "Spite Blades é a arma padrão",
+      "styles": {
+        "fino": {
+          "page": 36,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/eternal-blades/fino/frente.svg",
+          "back": "arts/eternal-blades/fino/verso.svg",
+          "canvasMm": [
+            37.169,
+            38.1
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            38.0,
+            36.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 79,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/eternal-blades/borda/frente.svg",
+          "back": "arts/eternal-blades/borda/verso.svg",
+          "canvasMm": [
+            41.868,
+            40.344
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            40.2,
+            41.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-bow",
+      "candidateId": "a063",
+      "pdfLabel": "Eternal Bow",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal-revenants",
+      "equipmentTags": [
+        "Spite Shortbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Eternal",
+          "armyBook": "Eternal Revenants"
+        },
+        {
+          "pdf": "Bow",
+          "armyBook": "Spite Shortbow"
+        }
+      ],
+      "notes": "escolhi Spite Shortbow (há também Hunting Shortbow)",
+      "styles": {
+        "fino": {
+          "page": 37,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/eternal-bow/fino/frente.svg",
+          "back": "arts/eternal-bow/fino/verso.svg",
+          "canvasMm": [
+            35.856,
+            38.566
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            38.4,
+            35.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 80,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/eternal-bow/borda/frente.svg",
+          "back": "arts/eternal-bow/borda/verso.svg",
+          "canvasMm": [
+            40.428,
+            40.809
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            40.7,
+            40.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-elder-blades",
+      "candidateId": "a064",
+      "pdfLabel": "Eternal Elder Blades",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal-elder",
+      "equipmentTags": [
+        "Spite Blades"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Blades",
+          "armyBook": "Spite Blades"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 38,
+          "rows": [
+            0
+          ],
+          "front": "arts/eternal-elder-blades/fino/frente.svg",
+          "back": "arts/eternal-elder-blades/fino/verso.svg",
+          "canvasMm": [
+            39.243,
+            38.523
+          ],
+          "frontBackIoU": 0.954,
+          "sizeMm": [
+            38.4,
+            38.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 81,
+          "rows": [
+            0
+          ],
+          "front": "arts/eternal-elder-blades/borda/frente.svg",
+          "back": "arts/eternal-elder-blades/borda/verso.svg",
+          "canvasMm": [
+            43.984,
+            40.894
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            40.8,
+            43.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-elder-bow",
+      "candidateId": "a065",
+      "pdfLabel": "Eternal Elder Bow",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal-elder",
+      "equipmentTags": [
+        "Rapid Spite Shortbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Bow",
+          "armyBook": "Rapid Spite Shortbow"
+        }
+      ],
+      "notes": "escolhi Rapid Spite Shortbow (Great Rapid Hunting Shortbow é troca dele)",
+      "styles": {
+        "fino": {
+          "page": 38,
+          "rows": [
+            1
+          ],
+          "front": "arts/eternal-elder-bow/fino/frente.svg",
+          "back": "arts/eternal-elder-bow/fino/verso.svg",
+          "canvasMm": [
+            35.348,
+            38.777
+          ],
+          "frontBackIoU": 0.96,
+          "sizeMm": [
+            38.7,
+            35.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 81,
+          "rows": [
+            1
+          ],
+          "front": "arts/eternal-elder-bow/borda/frente.svg",
+          "back": "arts/eternal-elder-bow/borda/verso.svg",
+          "canvasMm": [
+            40.09,
+            41.148
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            41.1,
+            39.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-spell-weaver",
+      "candidateId": "a066",
+      "pdfLabel": "Eternal Spell Weaver",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal-elder",
+      "equipmentTags": [
+        "Spell Weaver"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Eternal Spell Weaver",
+          "armyBook": "Eternal Elder (Spell Weaver)"
+        }
+      ],
+      "notes": "mesma página do Eternal Elder e figura no mesmo estilo; Spell Weaver é opção dele",
+      "styles": {
+        "fino": {
+          "page": 38,
+          "rows": [
+            2
+          ],
+          "front": "arts/eternal-spell-weaver/fino/frente.svg",
+          "back": "arts/eternal-spell-weaver/fino/verso.svg",
+          "canvasMm": [
+            45.805,
+            37.169
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            37.1,
+            45.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 81,
+          "rows": [
+            2
+          ],
+          "front": "arts/eternal-spell-weaver/borda/frente.svg",
+          "back": "arts/eternal-spell-weaver/borda/verso.svg",
+          "canvasMm": [
+            50.546,
+            39.539
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            39.5,
+            50.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-rider-lance",
+      "candidateId": "a067",
+      "pdfLabel": "Eternal Rider Lance",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal-bug-riders",
+      "equipmentTags": [
+        "Lance Blade"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Eternal Rider",
+          "armyBook": "Eternal Bug Riders"
+        },
+        {
+          "pdf": "Lance",
+          "armyBook": "Lance Blade"
+        }
+      ],
+      "notes": "Lance Blade é a arma padrão",
+      "styles": {
+        "fino": {
+          "page": 39,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/eternal-rider-lance/fino/frente.svg",
+          "back": "arts/eternal-rider-lance/fino/verso.svg",
+          "canvasMm": [
+            58.081,
+            69.765
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            69.7,
+            57.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 82,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/eternal-rider-lance/borda/frente.svg",
+          "back": "arts/eternal-rider-lance/borda/verso.svg",
+          "canvasMm": [
+            62.823,
+            72.136
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            72.1,
+            62.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-rider-blades",
+      "candidateId": "a068",
+      "pdfLabel": "Eternal Rider Blades",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal-bug-riders",
+      "equipmentTags": [
+        "Spite Blades"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Eternal Rider",
+          "armyBook": "Eternal Bug Riders"
+        },
+        {
+          "pdf": "Blades",
+          "armyBook": "Spite Blades"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 40,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/eternal-rider-blades/fino/frente.svg",
+          "back": "arts/eternal-rider-blades/fino/verso.svg",
+          "canvasMm": [
+            56.896,
+            66.675
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            66.5,
+            56.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 83,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/eternal-rider-blades/borda/frente.svg",
+          "back": "arts/eternal-rider-blades/borda/verso.svg",
+          "canvasMm": [
+            61.637,
+            69.046
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            68.9,
+            61.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-hunter-scythe",
+      "candidateId": "a069",
+      "pdfLabel": "Eternal Hunter Scythe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal-hunters",
+      "equipmentTags": [
+        "Great Scythe"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Scythe",
+          "armyBook": "Great Scythe"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 42,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/eternal-hunter-scythe/fino/frente.svg",
+          "back": "arts/eternal-hunter-scythe/fino/verso.svg",
+          "canvasMm": [
+            67.945,
+            50.969
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            50.9,
+            67.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 85,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/eternal-hunter-scythe/borda/frente.svg",
+          "back": "arts/eternal-hunter-scythe/borda/verso.svg",
+          "canvasMm": [
+            72.686,
+            53.34
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            53.3,
+            72.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-hunter-hook",
+      "candidateId": "a070",
+      "pdfLabel": "Eternal Hunter Hook",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal-hunters",
+      "equipmentTags": [
+        "Great Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hook",
+          "armyBook": "Great Weapon"
+        }
+      ],
+      "notes": "haste com lâmina em gancho; o army book não tem gancho, Great Weapon é a arma pesada genérica (padrão é Great Hammer)",
+      "styles": {
+        "fino": {
+          "page": 43,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/eternal-hunter-hook/fino/frente.svg",
+          "back": "arts/eternal-hunter-hook/fino/verso.svg",
+          "canvasMm": [
+            76.327,
+            58.42
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            58.3,
+            76.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 86,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/eternal-hunter-hook/borda/frente.svg",
+          "back": "arts/eternal-hunter-hook/borda/verso.svg",
+          "canvasMm": [
+            81.068,
+            60.791
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            60.7,
+            80.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-hunter-bow",
+      "candidateId": "a071",
+      "pdfLabel": "Eternal Hunter Bow",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal-hunters",
+      "equipmentTags": [
+        "Rapid Bow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Bow",
+          "armyBook": "Rapid Bow"
+        }
+      ],
+      "notes": "escolhi Rapid Bow (há também Rapid Hunting Bow)",
+      "styles": {
+        "fino": {
+          "page": 44,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/eternal-hunter-bow/fino/frente.svg",
+          "back": "arts/eternal-hunter-bow/fino/verso.svg",
+          "canvasMm": [
+            48.387,
+            51.435
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            51.3,
+            48.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 87,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/eternal-hunter-bow/borda/frente.svg",
+          "back": "arts/eternal-hunter-bow/borda/verso.svg",
+          "canvasMm": [
+            53.128,
+            53.806
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            53.7,
+            52.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-rider-banner",
+      "candidateId": "a072",
+      "pdfLabel": "Eternal Rider Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal-bug-riders",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Eternal Rider",
+          "armyBook": "Eternal Bug Riders"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 41,
+          "rows": [
+            2
+          ],
+          "front": "arts/eternal-rider-banner/fino/frente.svg",
+          "back": "arts/eternal-rider-banner/fino/verso.svg",
+          "canvasMm": [
+            59.859,
+            88.096
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            88.0,
+            59.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 84,
+          "rows": [
+            2
+          ],
+          "front": "arts/eternal-rider-banner/borda/frente.svg",
+          "back": "arts/eternal-rider-banner/borda/verso.svg",
+          "canvasMm": [
+            63.246,
+            89.916
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            89.8,
+            63.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-rider-sergeant",
+      "candidateId": "a073",
+      "pdfLabel": "Eternal Rider Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal-bug-riders",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Eternal Rider",
+          "armyBook": "Eternal Bug Riders"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 41,
+          "rows": [
+            0
+          ],
+          "front": "arts/eternal-rider-sergeant/fino/frente.svg",
+          "back": "arts/eternal-rider-sergeant/fino/verso.svg",
+          "canvasMm": [
+            70.697,
+            68.411
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            68.3,
+            70.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 84,
+          "rows": [
+            0
+          ],
+          "front": "arts/eternal-rider-sergeant/borda/frente.svg",
+          "back": "arts/eternal-rider-sergeant/borda/verso.svg",
+          "canvasMm": [
+            73.321,
+            70.104
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            70.0,
+            73.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-rider-musician",
+      "candidateId": "a074",
+      "pdfLabel": "Eternal Rider Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal-bug-riders",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Eternal Rider",
+          "armyBook": "Eternal Bug Riders"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 41,
+          "rows": [
+            1
+          ],
+          "front": "arts/eternal-rider-musician/fino/frente.svg",
+          "back": "arts/eternal-rider-musician/fino/verso.svg",
+          "canvasMm": [
+            62.103,
+            70.019
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            69.9,
+            61.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 84,
+          "rows": [
+            1
+          ],
+          "front": "arts/eternal-rider-musician/borda/frente.svg",
+          "back": "arts/eternal-rider-musician/borda/verso.svg",
+          "canvasMm": [
+            65.024,
+            71.713
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            71.6,
+            64.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "champion-owl-rider-borda",
+      "candidateId": "a075",
+      "pdfLabel": "Champion Owl Rider",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "grove-champion",
+      "equipmentTags": [
+        "Giant Owl"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Champion",
+          "armyBook": "Grove Champion"
+        },
+        {
+          "pdf": "Owl Rider",
+          "armyBook": "Giant Owl"
+        }
+      ],
+      "notes": "versão borda de a014 (o pareamento falhou); campeão em coruja = Grove Champion com Giant Owl",
+      "styles": {
+        "borda": {
+          "page": 48,
+          "rows": [
+            0
+          ],
+          "front": "arts/champion-owl-rider-borda/borda/frente.svg",
+          "back": "arts/champion-owl-rider-borda/borda/verso.svg",
+          "canvasMm": [
+            72.983,
+            92.371
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            92.3,
+            72.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "owl-rider-spear-borda",
+      "candidateId": "a076",
+      "pdfLabel": "Owl Rider Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "owl-riders",
+      "equipmentTags": [
+        "Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Spear",
+          "armyBook": "Lance"
+        }
+      ],
+      "notes": "versão borda de a053 (o pareamento falhou); arma padrão Lance",
+      "styles": {
+        "borda": {
+          "page": 70,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/owl-rider-spear-borda/borda/frente.svg",
+          "back": "arts/owl-rider-spear-borda/borda/verso.svg",
+          "canvasMm": [
+            81.788,
+            78.825
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            78.7,
+            81.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "owl-rider-bow-borda",
+      "candidateId": "a077",
+      "pdfLabel": "Owl Rider Bow",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "owl-riders",
+      "equipmentTags": [
+        "Rapid Shortbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Bow",
+          "armyBook": "Rapid Shortbow"
+        }
+      ],
+      "notes": "versão borda de a054 (o pareamento falhou); Rapid Shortbow",
+      "styles": {
+        "borda": {
+          "page": 71,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/owl-rider-bow-borda/borda/frente.svg",
+          "back": "arts/owl-rider-bow-borda/borda/verso.svg",
+          "canvasMm": [
+            81.746,
+            78.105
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            78.0,
+            81.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "giant-owl-borda",
+      "candidateId": "a078",
+      "pdfLabel": "Giant Owl",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "giant-owls",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "versão borda de a055 (o pareamento falhou)",
+      "styles": {
+        "borda": {
+          "page": 72,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/giant-owl-borda/borda/frente.svg",
+          "back": "arts/giant-owl-borda/borda/verso.svg",
+          "canvasMm": [
+            71.967,
+            65.701
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            65.6,
+            71.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "eternal-hunter-hook-borda",
+      "candidateId": "a079",
+      "pdfLabel": "Eternal Hunter Hook",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "eternal-hunters",
+      "equipmentTags": [
+        "Great Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hook",
+          "armyBook": "Great Weapon"
+        }
+      ],
+      "notes": "cópia borda extra de a070 (que já tem fino e borda), provavelmente redundante; gancho -> Great Weapon",
+      "styles": {
+        "borda": {
+          "page": 86,
+          "rows": [
+            2
+          ],
+          "front": "arts/eternal-hunter-hook-borda/borda/frente.svg",
+          "back": "arts/eternal-hunter-hook-borda/borda/verso.svg",
+          "canvasMm": [
+            80.391,
+            60.791
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            60.7,
+            80.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

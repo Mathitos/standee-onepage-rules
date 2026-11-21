@@ -1,0 +1,2911 @@
+{
+  "schemaVersion": 1,
+  "packId": "shadow-stalkers",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "AOF",
+    "slug": "age-of-fantasy",
+    "armyForgeId": 4
+  },
+  "gameSystems": [
+    {
+      "code": "AOF",
+      "slug": "age-of-fantasy",
+      "armyForgeId": 4
+    },
+    {
+      "code": "AOFS",
+      "slug": "age-of-fantasy-skirmish",
+      "armyForgeId": 5
+    }
+  ],
+  "armyBook": {
+    "id": "gHTrjw-g76vfGCSt",
+    "name": "Shadow Stalkers",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "gHTrjw-g76vfGCSt",
+      "name": "Shadow Stalkers",
+      "version": "3.6.0",
+      "gameSystemId": 4,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "gHTrjw-g76vfGCSt",
+      "name": "Shadow Stalkers",
+      "version": "3.6.0",
+      "gameSystemId": 5,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Shadow_Stalkers_-_BW.pdf",
+    "pdfSha256": "8b45ba5c7d973bf65e74b3e4e5bb8ba3aeefc09d2d3a3e0572cbb7b02002776e",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "scourges",
+      "names": [
+        "Scourges",
+        "Scourge"
+      ],
+      "armyForgeUnitId": "-gmfrKU",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "scourge-champion",
+      "names": [
+        "Scourge Champion"
+      ],
+      "armyForgeUnitId": "2WYathE",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "reaper-champion",
+      "names": [
+        "Reaper Champion"
+      ],
+      "armyForgeUnitId": "y2ZMfy4",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "spectre-champion",
+      "names": [
+        "Spectre Champion"
+      ],
+      "armyForgeUnitId": "7kPf9Hw",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "phantom-champion",
+      "names": [
+        "Phantom Champion"
+      ],
+      "armyForgeUnitId": "np9c4GM",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "butcher-champion",
+      "names": [
+        "Butcher Champion"
+      ],
+      "armyForgeUnitId": "BzhKtzr",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "reapers",
+      "names": [
+        "Reapers",
+        "Reaper"
+      ],
+      "armyForgeUnitId": "AbtEJXr",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "spectres",
+      "names": [
+        "Spectres",
+        "Spectre"
+      ],
+      "armyForgeUnitId": "dAqayhR",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "flayer-cavalry",
+      "names": [
+        "Flayer Cavalry"
+      ],
+      "armyForgeUnitId": "_v2ldwG",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          75.0,
+          46.0
+        ],
+        "raw": "75x46",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "phantoms",
+      "names": [
+        "Phantoms",
+        "Phantom"
+      ],
+      "armyForgeUnitId": "ndEHefB",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "tormentors",
+      "names": [
+        "Tormentors",
+        "Tormentor"
+      ],
+      "armyForgeUnitId": "My2uFJX",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "shadow-hounds",
+      "names": [
+        "Shadow Hounds",
+        "Shadow Hound"
+      ],
+      "armyForgeUnitId": "taTBkkm",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "butchers",
+      "names": [
+        "Butchers",
+        "Butcher"
+      ],
+      "armyForgeUnitId": "tGl68Tj",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "fiends",
+      "names": [
+        "Fiends",
+        "Fiend"
+      ],
+      "armyForgeUnitId": "fjKxvmF",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "fang-swarms",
+      "names": [
+        "Fang Swarms",
+        "Fang Swarm"
+      ],
+      "armyForgeUnitId": "PBz81Cw",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "scourge-halberd",
+      "candidateId": "a001",
+      "pdfLabel": "Scourge Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scourges",
+      "equipmentTags": [
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Scourge = nome no Skirmish (Scourges no AoF)",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/scourge-halberd/fino/frente.svg",
+          "back": "arts/scourge-halberd/fino/verso.svg",
+          "canvasMm": [
+            39.455,
+            35.306
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            35.2,
+            39.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 31,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/scourge-halberd/borda/frente.svg",
+          "back": "arts/scourge-halberd/borda/verso.svg",
+          "canvasMm": [
+            43.18,
+            37.169
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            37.1,
+            42.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scourge-champion",
+      "candidateId": "a002",
+      "pdfLabel": "Scourge Champion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scourge-champion",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0
+          ],
+          "front": "arts/scourge-champion/fino/frente.svg",
+          "back": "arts/scourge-champion/fino/verso.svg",
+          "canvasMm": [
+            55.88,
+            38.608
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            38.5,
+            55.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            0
+          ],
+          "front": "arts/scourge-champion/borda/frente.svg",
+          "back": "arts/scourge-champion/borda/verso.svg",
+          "canvasMm": [
+            60.537,
+            40.936
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            40.8,
+            60.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "reaper-champion",
+      "candidateId": "a003",
+      "pdfLabel": "Reaper Champion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "reaper-champion",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            1
+          ],
+          "front": "arts/reaper-champion/fino/frente.svg",
+          "back": "arts/reaper-champion/fino/verso.svg",
+          "canvasMm": [
+            54.144,
+            58.293
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            58.2,
+            53.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            1
+          ],
+          "front": "arts/reaper-champion/borda/frente.svg",
+          "back": "arts/reaper-champion/borda/verso.svg",
+          "canvasMm": [
+            58.801,
+            60.621
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            60.5,
+            58.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "spectre-champion",
+      "candidateId": "a004",
+      "pdfLabel": "Spectre Champion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "spectre-champion",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            2
+          ],
+          "front": "arts/spectre-champion/fino/frente.svg",
+          "back": "arts/spectre-champion/fino/verso.svg",
+          "canvasMm": [
+            46.016,
+            69.215
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            69.1,
+            45.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            2
+          ],
+          "front": "arts/spectre-champion/borda/frente.svg",
+          "back": "arts/spectre-champion/borda/verso.svg",
+          "canvasMm": [
+            50.673,
+            71.543
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            71.5,
+            50.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "phantom-champion",
+      "candidateId": "a005",
+      "pdfLabel": "Phantom Champion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "phantom-champion",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0
+          ],
+          "front": "arts/phantom-champion/fino/frente.svg",
+          "back": "arts/phantom-champion/fino/verso.svg",
+          "canvasMm": [
+            39.37,
+            60.875
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            60.8,
+            39.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            0
+          ],
+          "front": "arts/phantom-champion/borda/frente.svg",
+          "back": "arts/phantom-champion/borda/verso.svg",
+          "canvasMm": [
+            44.027,
+            63.204
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            63.1,
+            43.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "army-standard",
+      "candidateId": "a006",
+      "pdfLabel": "Army Standard",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": null,
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "porta-estandarte; a opção Army Standard Bearer existe no Reaper Champion e no Scourge Champion (o produto 'Army Standard' está ligado aos dois) e a figura não deixa decidir qual",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            1
+          ],
+          "front": "arts/army-standard/fino/frente.svg",
+          "back": "arts/army-standard/fino/verso.svg",
+          "canvasMm": [
+            40.852,
+            82.084
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            82.0,
+            40.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            1
+          ],
+          "front": "arts/army-standard/borda/frente.svg",
+          "back": "arts/army-standard/borda/verso.svg",
+          "canvasMm": [
+            45.551,
+            84.455
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            84.3,
+            45.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scourge-sword",
+      "candidateId": "a007",
+      "pdfLabel": "Scourge Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scourges",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "espada = Hand Weapon (arma padrão)",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/scourge-sword/fino/frente.svg",
+          "back": "arts/scourge-sword/fino/verso.svg",
+          "canvasMm": [
+            29.041,
+            35.391
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            35.3,
+            28.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/scourge-sword/borda/frente.svg",
+          "back": "arts/scourge-sword/borda/verso.svg",
+          "canvasMm": [
+            32.766,
+            37.253
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            37.2,
+            32.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scourge-spear",
+      "candidateId": "a008",
+      "pdfLabel": "Scourge Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scourges",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/scourge-spear/fino/frente.svg",
+          "back": "arts/scourge-spear/fino/verso.svg",
+          "canvasMm": [
+            38.777,
+            35.391
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            35.3,
+            38.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 30,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/scourge-spear/borda/frente.svg",
+          "back": "arts/scourge-spear/borda/verso.svg",
+          "canvasMm": [
+            42.503,
+            37.253
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            37.2,
+            42.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scourge-sergeant",
+      "candidateId": "a009",
+      "pdfLabel": "Scourge Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scourges",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose de comando (opção Sergeant)",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0
+          ],
+          "front": "arts/scourge-sergeant/fino/frente.svg",
+          "back": "arts/scourge-sergeant/fino/verso.svg",
+          "canvasMm": [
+            34.544,
+            36.872
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            36.7,
+            34.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            0
+          ],
+          "front": "arts/scourge-sergeant/borda/frente.svg",
+          "back": "arts/scourge-sergeant/borda/verso.svg",
+          "canvasMm": [
+            39.201,
+            39.201
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            39.1,
+            38.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scourge-musician",
+      "candidateId": "a010",
+      "pdfLabel": "Scourge Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scourges",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose de comando (opção Musician)",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            1
+          ],
+          "front": "arts/scourge-musician/fino/frente.svg",
+          "back": "arts/scourge-musician/fino/verso.svg",
+          "canvasMm": [
+            32.131,
+            35.772
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            35.6,
+            31.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            1
+          ],
+          "front": "arts/scourge-musician/borda/frente.svg",
+          "back": "arts/scourge-musician/borda/verso.svg",
+          "canvasMm": [
+            36.788,
+            38.1
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            38.0,
+            36.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scourge-banner",
+      "candidateId": "a011",
+      "pdfLabel": "Scourge Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scourges",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose de comando (opção Banner)",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            2
+          ],
+          "front": "arts/scourge-banner/fino/frente.svg",
+          "back": "arts/scourge-banner/fino/verso.svg",
+          "canvasMm": [
+            26.966,
+            67.395
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            67.3,
+            26.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            2
+          ],
+          "front": "arts/scourge-banner/borda/frente.svg",
+          "back": "arts/scourge-banner/borda/verso.svg",
+          "canvasMm": [
+            31.623,
+            69.723
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            69.6,
+            31.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "reaper-greatsword",
+      "candidateId": "a012",
+      "pdfLabel": "Reaper Greatsword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "reapers",
+      "equipmentTags": [
+        "Reaper Great-Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Greatsword = Reaper Great-Sword",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/reaper-greatsword/fino/frente.svg",
+          "back": "arts/reaper-greatsword/fino/verso.svg",
+          "canvasMm": [
+            42.757,
+            43.603
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            43.5,
+            42.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/reaper-greatsword/borda/frente.svg",
+          "back": "arts/reaper-greatsword/borda/verso.svg",
+          "canvasMm": [
+            47.413,
+            45.932
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            45.8,
+            47.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "reaper-halberd",
+      "candidateId": "a013",
+      "pdfLabel": "Reaper Halberd",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "reapers",
+      "equipmentTags": [
+        "Halberd"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Halberd é a arma padrão dos Reapers",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/reaper-halberd/fino/frente.svg",
+          "back": "arts/reaper-halberd/fino/verso.svg",
+          "canvasMm": [
+            38.523,
+            45.127
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            45.0,
+            38.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/reaper-halberd/borda/frente.svg",
+          "back": "arts/reaper-halberd/borda/verso.svg",
+          "canvasMm": [
+            43.18,
+            47.456
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            47.3,
+            42.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "spectre-wand",
+      "candidateId": "a014",
+      "pdfLabel": "Spectre Wand",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "spectres",
+      "equipmentTags": [
+        "Stalker Wand"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Wand",
+          "armyBook": "Stalker Wand"
+        }
+      ],
+      "notes": "Spectres têm Stalker Staff padrão; Wand = Stalker Wand (há também Shadow, Nightmare e Umbral Wand)",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/spectre-wand/fino/frente.svg",
+          "back": "arts/spectre-wand/fino/verso.svg",
+          "canvasMm": [
+            27.178,
+            38.777
+          ],
+          "frontBackIoU": 0.924,
+          "sizeMm": [
+            38.7,
+            26.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/spectre-wand/borda/frente.svg",
+          "back": "arts/spectre-wand/borda/verso.svg",
+          "canvasMm": [
+            30.903,
+            40.64
+          ],
+          "frontBackIoU": 0.947,
+          "sizeMm": [
+            40.6,
+            30.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "spectre-staff",
+      "candidateId": "a015",
+      "pdfLabel": "Spectre Staff",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "spectres",
+      "equipmentTags": [
+        "Stalker Staff"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Staff",
+          "armyBook": "Stalker Staff"
+        }
+      ],
+      "notes": "Staff = Stalker Staff, a arma padrão (há também Shadow Staff)",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/spectre-staff/fino/frente.svg",
+          "back": "arts/spectre-staff/fino/verso.svg",
+          "canvasMm": [
+            26.755,
+            45.508
+          ],
+          "frontBackIoU": 0.935,
+          "sizeMm": [
+            45.4,
+            26.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/spectre-staff/borda/frente.svg",
+          "back": "arts/spectre-staff/borda/verso.svg",
+          "canvasMm": [
+            30.48,
+            47.371
+          ],
+          "frontBackIoU": 0.957,
+          "sizeMm": [
+            47.2,
+            30.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "spectre-sergeant",
+      "candidateId": "a016",
+      "pdfLabel": "Spectre Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "spectres",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose de comando (opção Sergeant)",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0
+          ],
+          "front": "arts/spectre-sergeant/fino/frente.svg",
+          "back": "arts/spectre-sergeant/fino/verso.svg",
+          "canvasMm": [
+            49.064,
+            40.132
+          ],
+          "frontBackIoU": 0.873,
+          "sizeMm": [
+            40.0,
+            48.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            0
+          ],
+          "front": "arts/spectre-sergeant/borda/frente.svg",
+          "back": "arts/spectre-sergeant/borda/verso.svg",
+          "canvasMm": [
+            53.721,
+            42.46
+          ],
+          "frontBackIoU": 0.916,
+          "sizeMm": [
+            42.3,
+            53.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "spectre-musician",
+      "candidateId": "a017",
+      "pdfLabel": "Spectre Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "spectres",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose de comando (opção Musician)",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            1
+          ],
+          "front": "arts/spectre-musician/fino/frente.svg",
+          "back": "arts/spectre-musician/fino/verso.svg",
+          "canvasMm": [
+            31.538,
+            34.417
+          ],
+          "frontBackIoU": 0.869,
+          "sizeMm": [
+            34.3,
+            31.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            1
+          ],
+          "front": "arts/spectre-musician/borda/frente.svg",
+          "back": "arts/spectre-musician/borda/verso.svg",
+          "canvasMm": [
+            36.195,
+            36.745
+          ],
+          "frontBackIoU": 0.917,
+          "sizeMm": [
+            36.7,
+            35.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "spectre-banner",
+      "candidateId": "a018",
+      "pdfLabel": "Spectre Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "spectres",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose de comando (opção Banner)",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            2
+          ],
+          "front": "arts/spectre-banner/fino/frente.svg",
+          "back": "arts/spectre-banner/fino/verso.svg",
+          "canvasMm": [
+            39.455,
+            61.129
+          ],
+          "frontBackIoU": 0.965,
+          "sizeMm": [
+            61.0,
+            39.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            2
+          ],
+          "front": "arts/spectre-banner/borda/frente.svg",
+          "back": "arts/spectre-banner/borda/verso.svg",
+          "canvasMm": [
+            44.111,
+            63.458
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            63.3,
+            43.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "flayer-spear",
+      "candidateId": "a019",
+      "pdfLabel": "Flayer Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "flayer-cavalry",
+      "equipmentTags": [
+        "Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Flayer",
+          "armyBook": "Flayer Cavalry"
+        },
+        {
+          "pdf": "Spear",
+          "armyBook": "Lance"
+        }
+      ],
+      "notes": "lança do cavaleiro = Lance (arma padrão; Flayer Cavalry não tem Spear)",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/flayer-spear/fino/frente.svg",
+          "back": "arts/flayer-spear/fino/verso.svg",
+          "canvasMm": [
+            53.636,
+            45.254
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            45.1,
+            53.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/flayer-spear/borda/frente.svg",
+          "back": "arts/flayer-spear/borda/verso.svg",
+          "canvasMm": [
+            58.293,
+            47.583
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            47.5,
+            58.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "flayer-axe",
+      "candidateId": "a020",
+      "pdfLabel": "Flayer Axe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "flayer-cavalry",
+      "equipmentTags": [
+        "Great Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Flayer",
+          "armyBook": "Flayer Cavalry"
+        },
+        {
+          "pdf": "Axe",
+          "armyBook": "Great Weapon"
+        }
+      ],
+      "notes": "machado grande = Great Weapon (outras opções são Reaper Great-Glaive/Great-Sword)",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/flayer-axe/fino/frente.svg",
+          "back": "arts/flayer-axe/fino/verso.svg",
+          "canvasMm": [
+            53.34,
+            45.043
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            45.0,
+            53.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/flayer-axe/borda/frente.svg",
+          "back": "arts/flayer-axe/borda/verso.svg",
+          "canvasMm": [
+            57.997,
+            47.371
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            47.2,
+            57.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "flayer-sergeant",
+      "candidateId": "a021",
+      "pdfLabel": "Flayer Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "flayer-cavalry",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Flayer",
+          "armyBook": "Flayer Cavalry"
+        }
+      ],
+      "notes": "pose de comando (opção Sergeant)",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0
+          ],
+          "front": "arts/flayer-sergeant/fino/frente.svg",
+          "back": "arts/flayer-sergeant/fino/verso.svg",
+          "canvasMm": [
+            49.488,
+            77.766
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            77.6,
+            49.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            0
+          ],
+          "front": "arts/flayer-sergeant/borda/frente.svg",
+          "back": "arts/flayer-sergeant/borda/verso.svg",
+          "canvasMm": [
+            54.144,
+            80.095
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            80.0,
+            53.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "flayer-musician",
+      "candidateId": "a022",
+      "pdfLabel": "Flayer Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "flayer-cavalry",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Flayer",
+          "armyBook": "Flayer Cavalry"
+        }
+      ],
+      "notes": "pose de comando (opção Musician)",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            1
+          ],
+          "front": "arts/flayer-musician/fino/frente.svg",
+          "back": "arts/flayer-musician/fino/verso.svg",
+          "canvasMm": [
+            49.826,
+            46.694
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            46.6,
+            49.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            1
+          ],
+          "front": "arts/flayer-musician/borda/frente.svg",
+          "back": "arts/flayer-musician/borda/verso.svg",
+          "canvasMm": [
+            54.483,
+            49.022
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            48.9,
+            54.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "flayer-banner",
+      "candidateId": "a023",
+      "pdfLabel": "Flayer Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "flayer-cavalry",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Flayer",
+          "armyBook": "Flayer Cavalry"
+        }
+      ],
+      "notes": "pose de comando (opção Banner)",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            2
+          ],
+          "front": "arts/flayer-banner/fino/frente.svg",
+          "back": "arts/flayer-banner/fino/verso.svg",
+          "canvasMm": [
+            53.552,
+            68.411
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            68.3,
+            53.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            2
+          ],
+          "front": "arts/flayer-banner/borda/frente.svg",
+          "back": "arts/flayer-banner/borda/verso.svg",
+          "canvasMm": [
+            58.251,
+            70.781
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            70.7,
+            58.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "phantom-sword",
+      "candidateId": "a024",
+      "pdfLabel": "Phantom Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "phantoms",
+      "equipmentTags": [
+        "Assault Daggers"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Assault Daggers"
+        }
+      ],
+      "notes": "arma corpo a corpo padrão dos Phantoms é Assault Daggers; a outra pose (Javelin) é a troca por Throwing Spears",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/phantom-sword/fino/frente.svg",
+          "back": "arts/phantom-sword/fino/verso.svg",
+          "canvasMm": [
+            49.445,
+            46.482
+          ],
+          "frontBackIoU": 0.931,
+          "sizeMm": [
+            46.4,
+            49.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/phantom-sword/borda/frente.svg",
+          "back": "arts/phantom-sword/borda/verso.svg",
+          "canvasMm": [
+            54.102,
+            48.81
+          ],
+          "frontBackIoU": 0.954,
+          "sizeMm": [
+            48.7,
+            53.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "phantom-javelin",
+      "candidateId": "a025",
+      "pdfLabel": "Phantom Javelin",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "phantoms",
+      "equipmentTags": [
+        "Throwing Spears"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Javelin",
+          "armyBook": "Throwing Spears"
+        }
+      ],
+      "notes": "dardo = Throwing Spears",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/phantom-javelin/fino/frente.svg",
+          "back": "arts/phantom-javelin/fino/verso.svg",
+          "canvasMm": [
+            45.17,
+            46.694
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            46.6,
+            45.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/phantom-javelin/borda/frente.svg",
+          "back": "arts/phantom-javelin/borda/verso.svg",
+          "canvasMm": [
+            49.826,
+            49.022
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            48.9,
+            49.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "tormentor-1",
+      "candidateId": "a026",
+      "pdfLabel": "Tormentor 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "tormentors",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/tormentor-1/fino/frente.svg",
+          "back": "arts/tormentor-1/fino/verso.svg",
+          "canvasMm": [
+            36.28,
+            29.506
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            29.4,
+            36.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/tormentor-1/borda/frente.svg",
+          "back": "arts/tormentor-1/borda/verso.svg",
+          "canvasMm": [
+            40.513,
+            31.623
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            31.5,
+            40.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "tormentor-2",
+      "candidateId": "a027",
+      "pdfLabel": "Tormentor 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "tormentors",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/tormentor-2/fino/frente.svg",
+          "back": "arts/tormentor-2/fino/verso.svg",
+          "canvasMm": [
+            39.328,
+            31.369
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            31.2,
+            39.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/tormentor-2/borda/frente.svg",
+          "back": "arts/tormentor-2/borda/verso.svg",
+          "canvasMm": [
+            43.519,
+            33.486
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            33.4,
+            43.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hound-1",
+      "candidateId": "a028",
+      "pdfLabel": "Hound 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "shadow-hounds",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hound",
+          "armyBook": "Shadow Hounds"
+        }
+      ],
+      "notes": "nome atual sem 'Shadow'; não é o Great Hound (montaria do Scourge Champion, rótulo a038)",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/hound-1/fino/frente.svg",
+          "back": "arts/hound-1/fino/verso.svg",
+          "canvasMm": [
+            59.309,
+            32.131
+          ],
+          "frontBackIoU": 0.953,
+          "sizeMm": [
+            32.0,
+            59.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/hound-1/borda/frente.svg",
+          "back": "arts/hound-1/borda/verso.svg",
+          "canvasMm": [
+            63.966,
+            34.459
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            34.4,
+            63.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "hound-2",
+      "candidateId": "a029",
+      "pdfLabel": "Hound 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "shadow-hounds",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Hound",
+          "armyBook": "Shadow Hounds"
+        }
+      ],
+      "notes": "nome atual sem 'Shadow'",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            2,
+            3
+          ],
+          "front": "arts/hound-2/fino/frente.svg",
+          "back": "arts/hound-2/fino/verso.svg",
+          "canvasMm": [
+            59.394,
+            32.427
+          ],
+          "frontBackIoU": 0.882,
+          "sizeMm": [
+            32.3,
+            59.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            2,
+            3
+          ],
+          "front": "arts/hound-2/borda/frente.svg",
+          "back": "arts/hound-2/borda/verso.svg",
+          "canvasMm": [
+            64.05,
+            34.756
+          ],
+          "frontBackIoU": 0.923,
+          "sizeMm": [
+            34.6,
+            63.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "butcher-sword",
+      "candidateId": "a030",
+      "pdfLabel": "Butcher Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "butchers",
+      "equipmentTags": [
+        "Butcher Great-Blade"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Butcher Great-Blade"
+        }
+      ],
+      "notes": "espada = Butcher Great-Blade (arma padrão)",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/butcher-sword/fino/frente.svg",
+          "back": "arts/butcher-sword/fino/verso.svg",
+          "canvasMm": [
+            38.269,
+            54.779
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            54.7,
+            38.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/butcher-sword/borda/frente.svg",
+          "back": "arts/butcher-sword/borda/verso.svg",
+          "canvasMm": [
+            42.926,
+            57.108
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            57.0,
+            42.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "butcher-mace",
+      "candidateId": "a031",
+      "pdfLabel": "Butcher Mace",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "butchers",
+      "equipmentTags": [
+        "Butcher Great-Hammer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Mace",
+          "armyBook": "Butcher Great-Hammer"
+        }
+      ],
+      "notes": "maça = Butcher Great-Hammer (única arma de impacto)",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/butcher-mace/fino/frente.svg",
+          "back": "arts/butcher-mace/fino/verso.svg",
+          "canvasMm": [
+            42.333,
+            50.758
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            50.6,
+            42.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/butcher-mace/borda/frente.svg",
+          "back": "arts/butcher-mace/borda/verso.svg",
+          "canvasMm": [
+            46.99,
+            53.086
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            53.0,
+            46.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "butcher-javelin",
+      "candidateId": "a032",
+      "pdfLabel": "Butcher Javelin",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "butchers",
+      "equipmentTags": [
+        "Throwing Spears"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Javelin",
+          "armyBook": "Throwing Spears"
+        }
+      ],
+      "notes": "dardo = Throwing Spears",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/butcher-javelin/fino/frente.svg",
+          "back": "arts/butcher-javelin/fino/verso.svg",
+          "canvasMm": [
+            41.148,
+            51.689
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            51.6,
+            40.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/butcher-javelin/borda/frente.svg",
+          "back": "arts/butcher-javelin/borda/verso.svg",
+          "canvasMm": [
+            45.805,
+            54.017
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            53.9,
+            45.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fiend-1",
+      "candidateId": "a033",
+      "pdfLabel": "Fiend 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "fiends",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            0
+          ],
+          "front": "arts/fiend-1/fino/frente.svg",
+          "back": "arts/fiend-1/fino/verso.svg",
+          "canvasMm": [
+            78.613,
+            58.039
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            57.9,
+            78.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            0
+          ],
+          "front": "arts/fiend-1/borda/frente.svg",
+          "back": "arts/fiend-1/borda/verso.svg",
+          "canvasMm": [
+            83.27,
+            60.367
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            60.3,
+            83.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "fiend-2",
+      "candidateId": "a034",
+      "pdfLabel": "Fiend 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "fiends",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            1,
+            2
+          ],
+          "front": "arts/fiend-2/fino/frente.svg",
+          "back": "arts/fiend-2/fino/verso.svg",
+          "canvasMm": [
+            65.617,
+            57.446
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            57.3,
+            65.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            1,
+            2
+          ],
+          "front": "arts/fiend-2/borda/frente.svg",
+          "back": "arts/fiend-2/borda/verso.svg",
+          "canvasMm": [
+            70.273,
+            59.775
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            59.7,
+            70.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "swarm-1",
+      "candidateId": "a035",
+      "pdfLabel": "Swarm 1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "fang-swarms",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Swarm",
+          "armyBook": "Fang Swarms"
+        }
+      ],
+      "notes": "genericName Horror Swarms; única unidade de enxame",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            0
+          ],
+          "front": "arts/swarm-1/fino/frente.svg",
+          "back": "arts/swarm-1/fino/verso.svg",
+          "canvasMm": [
+            39.412,
+            28.956
+          ],
+          "frontBackIoU": 0.939,
+          "sizeMm": [
+            28.9,
+            39.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            0
+          ],
+          "front": "arts/swarm-1/borda/frente.svg",
+          "back": "arts/swarm-1/borda/verso.svg",
+          "canvasMm": [
+            44.027,
+            31.284
+          ],
+          "frontBackIoU": 0.944,
+          "sizeMm": [
+            31.2,
+            43.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "swarm-2",
+      "candidateId": "a036",
+      "pdfLabel": "Swarm 2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "fang-swarms",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Swarm",
+          "armyBook": "Fang Swarms"
+        }
+      ],
+      "notes": "genericName Horror Swarms; única unidade de enxame",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            1,
+            2
+          ],
+          "front": "arts/swarm-2/fino/frente.svg",
+          "back": "arts/swarm-2/fino/verso.svg",
+          "canvasMm": [
+            39.666,
+            34.671
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            34.5,
+            39.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            1,
+            2
+          ],
+          "front": "arts/swarm-2/borda/frente.svg",
+          "back": "arts/swarm-2/borda/verso.svg",
+          "canvasMm": [
+            44.111,
+            36.915
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            36.8,
+            43.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "butcher-champion",
+      "candidateId": "a037",
+      "pdfLabel": "Butcher Champion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "butcher-champion",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            2
+          ],
+          "front": "arts/butcher-champion/fino/frente.svg",
+          "back": "arts/butcher-champion/fino/verso.svg",
+          "canvasMm": [
+            56.684,
+            69.554
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            69.4,
+            56.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            2
+          ],
+          "front": "arts/butcher-champion/borda/frente.svg",
+          "back": "arts/butcher-champion/borda/verso.svg",
+          "canvasMm": [
+            61.341,
+            71.882
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            71.8,
+            61.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scourge-great-hound",
+      "candidateId": "a038",
+      "pdfLabel": "Scourge Great Hound",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scourge-champion",
+      "equipmentTags": [
+        "Great Hound"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Scourge Great Hound",
+          "armyBook": "Scourge Champion (Great Hound)"
+        }
+      ],
+      "notes": "Great Hound é montaria do Scourge Champion (produto 'Scourge Champion on Great Hound')",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            1
+          ],
+          "front": "arts/scourge-great-hound/fino/frente.svg",
+          "back": "arts/scourge-great-hound/fino/verso.svg",
+          "canvasMm": [
+            64.177,
+            42.63
+          ],
+          "frontBackIoU": 0.867,
+          "sizeMm": [
+            42.5,
+            63.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            1
+          ],
+          "front": "arts/scourge-great-hound/borda/frente.svg",
+          "back": "arts/scourge-great-hound/borda/verso.svg",
+          "canvasMm": [
+            68.834,
+            44.619
+          ],
+          "frontBackIoU": 0.911,
+          "sizeMm": [
+            44.5,
+            68.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "reaper-great-flayer",
+      "candidateId": "a039",
+      "pdfLabel": "Reaper Great Flayer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "reaper-champion",
+      "equipmentTags": [
+        "Great Flayer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Reaper Great Flayer",
+          "armyBook": "Reaper Champion (Great Flayer)"
+        }
+      ],
+      "notes": "Great Flayer é montaria do Reaper Champion (produto 'Reaper on Great Flayer')",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0
+          ],
+          "front": "arts/reaper-great-flayer/fino/frente.svg",
+          "back": "arts/reaper-great-flayer/fino/verso.svg",
+          "canvasMm": [
+            63.458,
+            61.807
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            61.7,
+            63.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            0
+          ],
+          "front": "arts/reaper-great-flayer/borda/frente.svg",
+          "back": "arts/reaper-great-flayer/borda/verso.svg",
+          "canvasMm": [
+            67.691,
+            64.135
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            64.0,
+            67.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

@@ -18,6 +18,9 @@ from pathlib import Path
 API = 'https://army-forge.onepagerules.com/api'
 # código do share -> id do sistema na API; só o que foi verificado (17/11/2026)
 SISTEMAS = {'gff': 3}
+# ids para --sistema conferidos pelo gameSystemId/gameSystemSlug da resposta (21/11/2026):
+# 2 grimdark-future, 3 grimdark-future-firefight, 4 age-of-fantasy, 5 age-of-fantasy-skirmish.
+# Baixe os dois de cada lado (GF e GFF; AoF e AoF Skirmish): as listas podem vir de qualquer um.
 
 
 def baixar(url):

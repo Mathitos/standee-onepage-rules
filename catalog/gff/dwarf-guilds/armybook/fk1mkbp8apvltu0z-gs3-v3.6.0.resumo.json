@@ -1,0 +1,1265 @@
+{
+  "armyBook": {
+    "id": "fk1mkbp8apvltu0z",
+    "nome": "Dwarf Guilds",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-07T03:02:42.252Z",
+    "sistema": "grimdark-future-firefight",
+    "sistemaId": 3
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "19jHTYi",
+      "nome": "Hadrund oth Irnwuld",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Boulderbreaker"
+      ],
+      "itens": [
+        {
+          "nome": "Depth Prospector",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Depth Prospector",
+          "ganha": [
+            "Depth Prospector - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5op34S_",
+      "nome": "Powersuit Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Rune Staff"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Rune Staff",
+          "ganha": [
+            "Hand Weapon",
+            "Combat Shield"
+          ]
+        },
+        {
+          "secao": "Replace Rune Staff",
+          "ganha": [
+            "Burst Cyclic Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Assault Burst Cyclic Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Burst Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Burst Iron-Slug Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Burst Ore-Shredder Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Shock Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Magma Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Magma Axe"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Shock Fist"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Disposable Exo-GL"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Orbital Drop"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Forge Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Rune Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Guild Lord"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Runesmith"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Foreman"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ILXnjbU",
+      "nome": "Dwarf Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [
+        {
+          "nome": "Combat Shield",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Rune Staff"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Burst Battle Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Burst Iron-Slug Shotgun",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Burst Iron-Slug Carbine",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Burst Shotgun",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Combat Shield",
+          "ganha": [
+            "Dual Glove-Pistols"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Flamer Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Iron-Slug Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Ore-Shredder Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Combat Shield",
+          "ganha": [
+            "Fusion Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Great Heat Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Shock Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Energy Spear"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Heat Spear"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Magma Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Magma Axe"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Shock Fist"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Guild Bounty"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Elite"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Jetpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Mining Gear"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Airdrop Jetpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Bike"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pioneer Bike"
+          ]
+        },
+        {
+          "secao": "Replace Bike-Rifle",
+          "ganha": [
+            "Assault Bike-Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Forge Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Guild Lord"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Rune Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Engineer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Foreman"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Rage Lord"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NSdGbsg",
+      "nome": "Berserker Veteran",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Throwing Axes",
+            "Great Heat Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Throwing Axes",
+            "Dual Heat Axes"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Throwing Axes",
+            "Great Heat Axe"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Guild Bounty"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Cyber-Augments"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Guild Lord"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Runesmith"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Foreman"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Rage Lord"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nojZ6_b",
+      "nome": "Berserker",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Great Heat Axe"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Great Heat Axe",
+          "ganha": [
+            "Great Axe"
+          ]
+        },
+        {
+          "secao": "Replace Great Heat Axe",
+          "ganha": [
+            "Dual Hand Weapons"
+          ]
+        },
+        {
+          "secao": "Replace Great Heat Axe",
+          "ganha": [
+            "Assault Grenade Launcher",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Cyber-Augments"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Guild Bounty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WbdkmXl",
+      "nome": "Sniper Team",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Mining Beam-Sniper Carbine",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Mining Beam-Sniper Carbine",
+          "ganha": [
+            "Sniper Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Mining Beam-Sniper Carbine",
+          "ganha": [
+            "Heavy Sniper Heat-Carbine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BMDQBuG",
+      "nome": "Miner",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Iron-Slug Shotgun",
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Iron-Slug Shotgun",
+          "ganha": [
+            "Iron-Slug Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Iron-Slug Shotgun",
+          "ganha": [
+            "Heat-Drill Platform"
+          ]
+        },
+        {
+          "secao": "Replace Iron-Slug Shotgun",
+          "ganha": [
+            "Flamer"
+          ]
+        },
+        {
+          "secao": "Replace Iron-Slug Shotgun",
+          "ganha": [
+            "Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Iron-Slug Shotgun",
+          "ganha": [
+            "Heat-Rifle Platform"
+          ]
+        },
+        {
+          "secao": "Replace Iron-Slug Shotgun",
+          "ganha": [
+            "Assault Flamer"
+          ]
+        },
+        {
+          "secao": "Replace Iron-Slug Shotgun",
+          "ganha": [
+            "Assault Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Iron-Slug Shotgun and Hand Weapon",
+          "ganha": [
+            "Sgt. Iron-Slug Pistol",
+            "Sgt. Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Iron-Slug Pistol",
+          "ganha": [
+            "Ore-Shredder Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Iron-Slug Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Magma Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Shock Fist"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Guild Bounty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PmhNMYW",
+      "nome": "Elite",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Heat Axe"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Heat Axe",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Heat Axe",
+          "ganha": [
+            "Heat Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Heat Axe",
+          "ganha": [
+            "Great Heat Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Heat Axe",
+          "ganha": [
+            "Elite Great Weapon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "I4NB_Rk",
+      "nome": "Jetpack Warrior",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Pistol",
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Pistols and Hand Weapon",
+          "ganha": [
+            "Iron-Slug Pistol",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Pistols and Hand Weapon",
+          "ganha": [
+            "Dual Glove-Pistols"
+          ]
+        },
+        {
+          "secao": "Replace Pistols and Hand Weapon",
+          "ganha": [
+            "Plasma Pistol",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Magma Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Shock Fist"
+          ]
+        },
+        {
+          "secao": "Replace Pistol and Hand Weapon",
+          "ganha": [
+            "Pistol",
+            "Shock Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Pistol and Hand Weapon",
+          "ganha": [
+            "Burst Flamer Pistol",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Pistol and Hand Weapon",
+          "ganha": [
+            "Pistol",
+            "Magma Axe"
+          ]
+        },
+        {
+          "secao": "Replace Pistol and Hand Weapon",
+          "ganha": [
+            "Assault Iron-Slug Shotgun",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Aerial Drop"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Guild Bounty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cDk2wUI",
+      "nome": "Iron Veteran",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Iron-Slug Carbine",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Iron-Slug Carbine",
+          "ganha": [
+            "Iron-Slug Shotgun"
+          ]
+        },
+        {
+          "secao": "Replace Iron-Slug Carbine",
+          "ganha": [
+            "Heavy Flamer"
+          ]
+        },
+        {
+          "secao": "Replace Iron-Slug Carbine",
+          "ganha": [
+            "Mining Beam-Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Iron-Slug Carbine",
+          "ganha": [
+            "Heavy Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Iron-Slug Carbine",
+          "ganha": [
+            "Plasma Cannon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Ore-Scanner"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Medical Training"
+          ]
+        },
+        {
+          "secao": "Replace Iron-Slug Carbine and Strike",
+          "ganha": [
+            "Sgt. Ore-Shredder Pistol",
+            "Sgt. Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Ore-Shredder Pistol",
+          "ganha": [
+            "Iron-Slug Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Ore-Shredder Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Magma Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Shock Fist"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OijrRWq",
+      "nome": "Guardians",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [
+        {
+          "nome": "Combat Shield",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Energy Spear"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Heat Spear"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Pistol"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mEzgxJr",
+      "nome": "Dwarf Warriors",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Battle Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Battle Rifles",
+          "ganha": [
+            "Iron-Slug Carbine"
+          ]
+        },
+        {
+          "secao": "Replace all Battle Rifles",
+          "ganha": [
+            "Shotgun"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Flamer"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Fusion Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Heat-Railcannon"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Plasma Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Missile Launcher"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Ore-Shredder Rifle"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle",
+          "ganha": [
+            "Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Ore-Scanner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Medical Training"
+          ]
+        },
+        {
+          "secao": "Replace one Battle Rifle and Strike",
+          "ganha": [
+            "Sgt. Pistol",
+            "Sgt. Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Iron-Slug Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Ore-Shredder Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Pistol",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Magma Sword"
+          ]
+        },
+        {
+          "secao": "Replace Sgt. Hand Weapon",
+          "ganha": [
+            "Shock Fist"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7DfXFg9",
+      "nome": "Thunder Support",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Mining Beam-Cannon",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace any Mining Beam-Cannon",
+          "ganha": [
+            "Missile Launcher"
+          ]
+        },
+        {
+          "secao": "Replace any Mining Beam-Cannon",
+          "ganha": [
+            "Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Replace any Mining Beam-Cannon",
+          "ganha": [
+            "Ore-Shredder Cannon"
+          ]
+        },
+        {
+          "secao": "Replace any Mining Beam-Cannon",
+          "ganha": [
+            "Mortar"
+          ]
+        },
+        {
+          "secao": "Replace any Mining Beam-Cannon",
+          "ganha": [
+            "Autocannon"
+          ]
+        },
+        {
+          "secao": "Replace Mining Beam-Cannon",
+          "ganha": [
+            "Heavy Machinegun",
+            "Ore-Scanner"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Machinegun and Ore-Scanner",
+          "ganha": [
+            "Missile Launcher",
+            "Ore-Scanner"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Machinegun and Ore-Scanner",
+          "ganha": [
+            "Ore-Shredder Cannon",
+            "Ore-Scanner"
+          ]
+        },
+        {
+          "secao": "Replace any Heavy Machinegun and Ore-Scanner",
+          "ganha": [
+            "Autocannon",
+            "Ore-Scanner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L7Cxnmn",
+      "nome": "Dwarf Biker",
+      "tamanho": 1,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Bike-Rifle",
+        "Pistol",
+        "Hand Weapon"
+      ],
+      "itens": [
+        {
+          "nome": "Lead Foot",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Bike-Rifle",
+          "ganha": [
+            "Assault Bike-Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Pistols and Hand Weapon",
+          "ganha": [
+            "Iron-Slug Shotgun",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Pistols and Hand Weapon",
+          "ganha": [
+            "Iron-Slug Pistol",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Pistols and Hand Weapon",
+          "ganha": [
+            "Shotgun",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Lead Foot",
+          "ganha": [
+            "Pioneer"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Guild Bounty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Hodf3Bu",
+      "nome": "Powersuit Guard",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [
+        {
+          "nome": "Combat Shield",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Hand Weapons and Combat Shield",
+          "ganha": [
+            "Assault Cyclic Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapons and Combat Shield",
+          "ganha": [
+            "Burst Cyclic Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace any Assault Cyclic Rifle",
+          "ganha": [
+            "Ore-Shredder Pistol"
+          ]
+        },
+        {
+          "secao": "Replace any Assault Cyclic Rifle",
+          "ganha": [
+            "Iron-Slug Pistol"
+          ]
+        },
+        {
+          "secao": "Replace any Assault Cyclic Rifle",
+          "ganha": [
+            "Plasma Pistol"
+          ]
+        },
+        {
+          "secao": "Replace any Hand Weapon",
+          "ganha": [
+            "Shock Hammer"
+          ]
+        },
+        {
+          "secao": "Replace any Hand Weapon",
+          "ganha": [
+            "Magma Sword"
+          ]
+        },
+        {
+          "secao": "Replace any Hand Weapon",
+          "ganha": [
+            "Magma Axe"
+          ]
+        },
+        {
+          "secao": "Replace any Hand Weapon",
+          "ganha": [
+            "Shock Fist"
+          ]
+        },
+        {
+          "secao": "Replace Burst Cyclic Rifle",
+          "ganha": [
+            "Heat-Railcannon"
+          ]
+        },
+        {
+          "secao": "Replace Burst Cyclic Rifle",
+          "ganha": [
+            "Plasma Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Burst Cyclic Rifle",
+          "ganha": [
+            "Heavy Machinegun"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Disposable Exo-GL"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Orbital Drop"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_Ze77H-",
+      "nome": "Mine-Bot Guard",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Light Iron-Slug Cannon",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Light Iron-Slug Cannons and Strike",
+          "ganha": [
+            "Burst Pistol",
+            "Magma Sword"
+          ]
+        },
+        {
+          "secao": "Replace Light Iron-Slug Cannons and Strike",
+          "ganha": [
+            "Burst Pistol",
+            "Shock Fist"
+          ]
+        }
+      ]
+    }
+  ]
+}

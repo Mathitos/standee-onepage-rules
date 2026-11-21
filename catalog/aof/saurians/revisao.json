@@ -1,0 +1,830 @@
+{
+ "packId": "saurians",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "AOF",
+   "slug": "age-of-fantasy",
+   "armyForgeId": 4
+  },
+  {
+   "code": "AOFS",
+   "slug": "age-of-fantasy-skirmish",
+   "armyForgeId": 5
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/BubhE1kUpgYbqZvW-gs4-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/BubhE1kUpgYbqZvW-gs5-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-*.png, army books v3.6.0 (os dois sistemas). Montarias e opções de herói conferidas no army book bruto (gains e links de loja), porque o resumo work/unidades-armybook.json perde seções com o mesmo rótulo (ex. 'Upgrade with one' com Raptor, Pterodactyl, Starseer Palanquin). a045–a051 são cópias só em borda grossa que ficaram sem par; mapeadas como as artes de origem.",
+ "unidades": {
+  "saurian-veteran": {
+   "armyForgeUnitId": "iPmkRyx"
+  },
+  "gator-veteran": {
+   "armyForgeUnitId": "HdCoUob"
+  },
+  "gecko-champion": {
+   "armyForgeUnitId": "pbodyqx"
+  },
+  "frog-mage": {
+   "armyForgeUnitId": "NWwd7ue"
+  },
+  "saurian-warriors": {
+   "armyForgeUnitId": "kpjfnHa"
+  },
+  "geckos": {
+   "armyForgeUnitId": "i3Iw5yl"
+  },
+  "saurian-guardians": {
+   "armyForgeUnitId": "0d7I4c6"
+  },
+  "chameleons": {
+   "armyForgeUnitId": "2AX2D13"
+  },
+  "raptor-riders": {
+   "armyForgeUnitId": "e3dqR3h"
+  },
+  "gators": {
+   "armyForgeUnitId": "JJaMJDn"
+  },
+  "snake-swarms": {
+   "armyForgeUnitId": "BKj0eiI"
+  },
+  "pterodactyl-riders": {
+   "armyForgeUnitId": "VLpx9v4"
+  },
+  "ripjawdactyl-riders": {
+   "armyForgeUnitId": "Bci6cb_"
+  },
+  "dragon-lizard": {
+   "armyForgeUnitId": "qSnKBnl"
+  },
+  "spiked-lizard": {
+   "armyForgeUnitId": "uaDbgEQ"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "raptor-veteran",
+   "rotulo": "Raptor Veteran",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-veteran",
+   "equipmentTags": [
+    "Raptor"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Raptor Veteran",
+     "armyBook": "Saurian Veteran + Raptor"
+    }
+   ],
+   "notas": "só Saurian Veteran tem a montaria Raptor (loja 'Saurian Veteran on Raptor'); figura montada em raptor"
+  },
+  "a002": {
+   "artId": "saurian-veteran",
+   "rotulo": "Saurian Veteran",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-veteran",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a003": {
+   "artId": "gator-veteran",
+   "rotulo": "Gator Veteran",
+   "confiancaRotulo": "alta",
+   "unitKey": "gator-veteran",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a004": {
+   "artId": "gecko-chief",
+   "rotulo": "Gecko Chief",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Chief",
+     "armyBook": "Gecko Champion"
+    }
+   ],
+   "notas": "o army book chama o modelo básico de 'Gecko Champion (Chief)' (loja) e a descrição fala em Gecko Chiefs; existe a opção Chief, mas sem tag a arte serve de genérica do Gecko Champion"
+  },
+  "a005": {
+   "artId": "gecko-priest",
+   "rotulo": "Gecko Priest",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Priest"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Priest",
+     "armyBook": "Gecko Champion + Priest"
+    }
+   ],
+   "notas": "Priest é opção do Gecko Champion (loja 'Gecko Champion (Priest)')"
+  },
+  "a006": {
+   "artId": "starseer",
+   "rotulo": "Starseer",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Starseer Palanquin"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Starseer",
+     "armyBook": "Gecko Champion + Starseer Palanquin"
+    }
+   ],
+   "notas": "opção Starseer Palanquin do Gecko Champion (loja 'Gecko Champion on Palanquin (Priest) [Starseer]'); figura sobre palanquim"
+  },
+  "a007": {
+   "artId": "chameleon-chief",
+   "rotulo": "Chameleon Chief",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Chameleon Breed"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Chameleon Chief",
+     "armyBook": "Gecko Champion + Chameleon Breed"
+    }
+   ],
+   "notas": "opção Chameleon Breed do Gecko Champion (loja 'Gecko Champion (Chameleon Chief)'); a unidade Chameleons não tem líder"
+  },
+  "a008": {
+   "artId": "gecko-chief-rider-pterodactyl",
+   "rotulo": "Gecko Chief Rider Pterodactyl",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Pterodactyl"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Chief Rider Pterodactyl",
+     "armyBook": "Gecko Champion + Pterodactyl"
+    }
+   ],
+   "notas": "montaria Pterodactyl do Gecko Champion (loja 'Gecko Champion on Pterodactyl (Chief)'); não é a unidade Pterodactyl Riders. Só contorno fino; a borda é a045"
+  },
+  "a009": {
+   "artId": "gecko-chief-rider-ripjawdactyl",
+   "rotulo": "Gecko Chief Rider Ripjawdactyl",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Ripjawdactyl"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Chief Rider Ripjawdactyl",
+     "armyBook": "Gecko Champion + Ripjawdactyl"
+    }
+   ],
+   "notas": "montaria Ripjawdactyl do Gecko Champion (loja 'Gecko Champion Rider (Chief)'). Só contorno fino; a borda é a046"
+  },
+  "a010": {
+   "artId": "frog-mage",
+   "rotulo": "Frog Mage",
+   "confiancaRotulo": "alta",
+   "unitKey": "frog-mage",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Frog-Mage; a figura está num palanquim (opção Ancient Palanquin), mas o rótulo não diz"
+  },
+  "a011": {
+   "artId": "warrior-club",
+   "rotulo": "Warrior Club",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-warriors",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Club",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "army book não tem Club; Hand Weapon é a arma padrão (loja 'Saurian Warriors (Hand Weapon)'); 5 cópias"
+  },
+  "a012": {
+   "artId": "warrior-spear",
+   "rotulo": "Warrior Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a013": {
+   "artId": "warrior-sergeant",
+   "rotulo": "Warrior Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-warriors",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a014": {
+   "artId": "warrior-musician",
+   "rotulo": "Warrior Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-warriors",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a015": {
+   "artId": "warrior-banner",
+   "rotulo": "Warrior Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-warriors",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a016": {
+   "artId": "gecko-javelin",
+   "rotulo": "Gecko Javelin",
+   "confiancaRotulo": "alta",
+   "unitKey": "geckos",
+   "equipmentTags": [
+    "Javelins"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "army book usa o plural Javelins"
+  },
+  "a017": {
+   "artId": "gecko-blowpipe",
+   "rotulo": "Gecko Blowpipe",
+   "confiancaRotulo": "alta",
+   "unitKey": "geckos",
+   "equipmentTags": [
+    "Toxin Blowpipe"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Blowpipe",
+     "armyBook": "Toxin Blowpipe"
+    }
+   ],
+   "notas": "há Toxin Blowpipe e Scatter Blowpipe; o rótulo não distingue, escolhida a Toxin (troca básica). Scatter fica sem arte automática"
+  },
+  "a018": {
+   "artId": "gecko-club",
+   "rotulo": "Gecko Club",
+   "confiancaRotulo": "alta",
+   "unitKey": "geckos",
+   "equipmentTags": [
+    "Toxin Club"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Club",
+     "armyBook": "Toxin Club"
+    }
+   ],
+   "notas": "Toxin Club é a arma padrão dos Geckos"
+  },
+  "a019": {
+   "artId": "gecko-sargeant",
+   "rotulo": "Gecko Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "geckos",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "'Sargeant' está assim (erro de grafia) no PDF"
+  },
+  "a020": {
+   "artId": "gecko-banner",
+   "rotulo": "Gecko Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "geckos",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a021": {
+   "artId": "gecko-musician",
+   "rotulo": "Gecko Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "geckos",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a022": {
+   "artId": "guardian-mace",
+   "rotulo": "Guardian Mace",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-guardians",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Mace",
+     "armyBook": "Great Weapon"
+    }
+   ],
+   "notas": "5 cópias = troca da unidade toda, e a única troca de todas as Halberds é Great Weapon (loja 'Saurian Guardians (Great Weapon)'); Darkglass Mace / Mace of Destiny são troca de um só modelo"
+  },
+  "a023": {
+   "artId": "guardian-halberd",
+   "rotulo": "Guardian Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-guardians",
+   "equipmentTags": [
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a024": {
+   "artId": "guardian-sargeant",
+   "rotulo": "Guardian Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-guardians",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "'Sargeant' está assim (erro de grafia) no PDF"
+  },
+  "a025": {
+   "artId": "guardian-musician",
+   "rotulo": "Guardian Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-guardians",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a026": {
+   "artId": "guardian-banner",
+   "rotulo": "Guardian Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "saurian-guardians",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a027": {
+   "artId": "chameleon",
+   "rotulo": "Chameleon",
+   "confiancaRotulo": "alta",
+   "unitKey": "chameleons",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "nome da unidade no Skirmish"
+  },
+  "a028": {
+   "artId": "rider-club",
+   "rotulo": "Rider Club",
+   "confiancaRotulo": "alta",
+   "unitKey": "raptor-riders",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rider",
+     "armyBook": "Raptor Riders"
+    },
+    {
+     "pdf": "Club",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "rótulo não diz a montaria; Raptor Riders é a única unidade montada com Hand Weapon e tem links de loja 'Raptor Riders Command/(Hand Weapon)/(Lance)'; Deinonychus Riders (penas, só Lance/Javelins) não bate"
+  },
+  "a029": {
+   "artId": "rider-spear",
+   "rotulo": "Rider Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "raptor-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rider",
+     "armyBook": "Raptor Riders"
+    },
+    {
+     "pdf": "Spear",
+     "armyBook": "Lance"
+    }
+   ],
+   "notas": "rótulo não diz a montaria; Raptor Riders é a única unidade montada com Hand Weapon e tem links de loja 'Raptor Riders Command/(Hand Weapon)/(Lance)'; Deinonychus Riders (penas, só Lance/Javelins) não bate"
+  },
+  "a030": {
+   "artId": "rider-sergeant",
+   "rotulo": "Rider Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "raptor-riders",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rider",
+     "armyBook": "Raptor Riders"
+    }
+   ],
+   "notas": "rótulo não diz a montaria; Raptor Riders é a única unidade montada com Hand Weapon e tem links de loja 'Raptor Riders Command/(Hand Weapon)/(Lance)'; Deinonychus Riders (penas, só Lance/Javelins) não bate"
+  },
+  "a031": {
+   "artId": "rider-banner",
+   "rotulo": "Rider Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "raptor-riders",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rider",
+     "armyBook": "Raptor Riders"
+    }
+   ],
+   "notas": "rótulo não diz a montaria; Raptor Riders é a única unidade montada com Hand Weapon e tem links de loja 'Raptor Riders Command/(Hand Weapon)/(Lance)'; Deinonychus Riders (penas, só Lance/Javelins) não bate"
+  },
+  "a032": {
+   "artId": "rider-musician",
+   "rotulo": "Rider Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "raptor-riders",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rider",
+     "armyBook": "Raptor Riders"
+    }
+   ],
+   "notas": "a faixa do rótulo traz 'Rider Musician' e, solto embaixo, 'Rider Banner' em letra pequena; a figura toca tambor, então é o músico. rótulo não diz a montaria; Raptor Riders é a única unidade montada com Hand Weapon e tem links de loja 'Raptor Riders Command/(Hand Weapon)/(Lance)'; Deinonychus Riders (penas, só Lance/Javelins) não bate"
+  },
+  "a033": {
+   "artId": "gator",
+   "rotulo": "Gator",
+   "confiancaRotulo": "alta",
+   "unitKey": "gators",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "nome da unidade no Skirmish"
+  },
+  "a034": {
+   "artId": "snake-swarm",
+   "rotulo": "Snake Swarm",
+   "confiancaRotulo": "alta",
+   "unitKey": "snake-swarms",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "nome da unidade no Skirmish"
+  },
+  "a035": {
+   "artId": "pterodactyl-rider",
+   "rotulo": "Pterodactyl Rider",
+   "confiancaRotulo": "alta",
+   "unitKey": "pterodactyl-riders",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "nome da unidade no Skirmish. Só contorno fino; a borda é a050"
+  },
+  "a036": {
+   "artId": "ripjawdactyl-rider",
+   "rotulo": "Ripjawdactyl Rider",
+   "confiancaRotulo": "alta",
+   "unitKey": "ripjawdactyl-riders",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "nome da unidade no Skirmish. Só contorno fino; a borda é a051"
+  },
+  "a037": {
+   "artId": "dragon-lizard",
+   "rotulo": "Dragon Lizard",
+   "confiancaRotulo": "alta",
+   "unitKey": "dragon-lizard",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a038": {
+   "artId": "gecko-handler-1-dragon-lizard",
+   "rotulo": "Gecko Handler 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "dragon-lizard",
+   "equipmentTags": [],
+   "cosmetic": "handler",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Handler",
+     "armyBook": "Lizard Handlers"
+    }
+   ],
+   "notas": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Dragon Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto"
+  },
+  "a039": {
+   "artId": "gecko-handler-2-dragon-lizard",
+   "rotulo": "Gecko Handler 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "dragon-lizard",
+   "equipmentTags": [],
+   "cosmetic": "handler",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Handler",
+     "armyBook": "Lizard Handlers"
+    }
+   ],
+   "notas": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Dragon Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto"
+  },
+  "a040": {
+   "artId": "gecko-handler-3-dragon-lizard",
+   "rotulo": "Gecko Handler 3",
+   "confiancaRotulo": "alta",
+   "unitKey": "dragon-lizard",
+   "equipmentTags": [],
+   "cosmetic": "handler",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Handler",
+     "armyBook": "Lizard Handlers"
+    }
+   ],
+   "notas": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Dragon Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto"
+  },
+  "a041": {
+   "artId": "spiked-lizard",
+   "rotulo": "Spiked Lizard",
+   "confiancaRotulo": "alta",
+   "unitKey": "spiked-lizard",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a042": {
+   "artId": "gecko-handler-1-spiked-lizard",
+   "rotulo": "Gecko Handler 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "spiked-lizard",
+   "equipmentTags": [],
+   "cosmetic": "handler",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Handler",
+     "armyBook": "Lizard Handlers"
+    }
+   ],
+   "notas": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Spiked Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto"
+  },
+  "a043": {
+   "artId": "gecko-handler-2-spiked-lizard",
+   "rotulo": "Gecko Handler 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "spiked-lizard",
+   "equipmentTags": [],
+   "cosmetic": "handler",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Handler",
+     "armyBook": "Lizard Handlers"
+    }
+   ],
+   "notas": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Spiked Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto"
+  },
+  "a044": {
+   "artId": "gecko-handler-3-spiked-lizard",
+   "rotulo": "Gecko Handler 3",
+   "confiancaRotulo": "alta",
+   "unitKey": "spiked-lizard",
+   "equipmentTags": [],
+   "cosmetic": "handler",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Handler",
+     "armyBook": "Lizard Handlers"
+    }
+   ],
+   "notas": "tratador da opção Vanguard/Combat Lizard Handlers (o rótulo não diz qual); figura de acompanhamento, não o modelo, por isso cosmetic. Ligado ao Spiked Lizard por estar na mesma página do PDF; o mesmo desenho aparece com o outro lagarto"
+  },
+  "a045": {
+   "artId": "gecko-chief-rider-pterodactyl-borda",
+   "rotulo": "Gecko Chief Rider Pterodactyl",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Pterodactyl"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Chief Rider Pterodactyl",
+     "armyBook": "Gecko Champion + Pterodactyl"
+    }
+   ],
+   "notas": "cópia só em borda grossa, sem par; mesma figura de a008. montaria Pterodactyl do Gecko Champion (loja 'Gecko Champion on Pterodactyl (Chief)'); não é a unidade Pterodactyl Riders"
+  },
+  "a046": {
+   "artId": "gecko-chief-rider-ripjawdactyl-borda",
+   "rotulo": "Gecko Chief Rider Ripjawdactyl",
+   "confiancaRotulo": "alta",
+   "unitKey": "gecko-champion",
+   "equipmentTags": [
+    "Ripjawdactyl"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Gecko Chief Rider Ripjawdactyl",
+     "armyBook": "Gecko Champion + Ripjawdactyl"
+    }
+   ],
+   "notas": "cópia só em borda grossa, sem par; mesma figura de a009. montaria Ripjawdactyl do Gecko Champion (loja 'Gecko Champion Rider (Chief)')"
+  },
+  "a047": {
+   "artId": "rider-club-borda",
+   "rotulo": "Rider Club",
+   "confiancaRotulo": "alta",
+   "unitKey": "raptor-riders",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rider",
+     "armyBook": "Raptor Riders"
+    },
+    {
+     "pdf": "Club",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "cópia só em borda grossa, sem par; mesma figura de a028. rótulo não diz a montaria; Raptor Riders é a única unidade montada com Hand Weapon e tem links de loja 'Raptor Riders Command/(Hand Weapon)/(Lance)'; Deinonychus Riders (penas, só Lance/Javelins) não bate"
+  },
+  "a048": {
+   "artId": "rider-spear-borda",
+   "rotulo": "Rider Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "raptor-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rider",
+     "armyBook": "Raptor Riders"
+    },
+    {
+     "pdf": "Spear",
+     "armyBook": "Lance"
+    }
+   ],
+   "notas": "cópia só em borda grossa, sem par; mesma figura de a029. rótulo não diz a montaria; Raptor Riders é a única unidade montada com Hand Weapon e tem links de loja 'Raptor Riders Command/(Hand Weapon)/(Lance)'; Deinonychus Riders (penas, só Lance/Javelins) não bate"
+  },
+  "a049": {
+   "artId": "rider-spear-borda-2",
+   "rotulo": "Rider Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "raptor-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Rider",
+     "armyBook": "Raptor Riders"
+    },
+    {
+     "pdf": "Spear",
+     "armyBook": "Lance"
+    }
+   ],
+   "notas": "cópia só em borda grossa, sem par; mesma figura de a029. rótulo não diz a montaria; Raptor Riders é a única unidade montada com Hand Weapon e tem links de loja 'Raptor Riders Command/(Hand Weapon)/(Lance)'; Deinonychus Riders (penas, só Lance/Javelins) não bate"
+  },
+  "a050": {
+   "artId": "pterodactyl-rider-borda",
+   "rotulo": "Pterodactyl Rider",
+   "confiancaRotulo": "alta",
+   "unitKey": "pterodactyl-riders",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "cópia só em borda grossa, sem par; mesma figura de a035. nome da unidade no Skirmish"
+  },
+  "a051": {
+   "artId": "ripjawdactyl-rider-borda",
+   "rotulo": "Ripjawdactyl Rider",
+   "confiancaRotulo": "alta",
+   "unitKey": "ripjawdactyl-riders",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "cópia só em borda grossa, sem par; mesma figura de a036. nome da unidade no Skirmish"
+  }
+ }
+}

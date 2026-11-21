@@ -1,0 +1,1016 @@
+{
+ "packId": "mummified-undead",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "AOF",
+   "slug": "age-of-fantasy",
+   "armyForgeId": 4
+  },
+  {
+   "code": "AOFS",
+   "slug": "age-of-fantasy-skirmish",
+   "armyForgeId": 5
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/t-sIke2snonFSL6Q-gs4-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/t-sIke2snonFSL6Q-gs5-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-01..05.png, army books v3.6.0 (os dois sistemas). rotulos-06.png é de uma execução anterior (ids a061+ que não existem em candidatos.json) e foi desconsiderada.",
+ "unidades": {
+  "royal-champion": {
+   "armyForgeUnitId": "AfqFVor"
+  },
+  "skeleton-leader": {
+   "armyForgeUnitId": "lmuO_K1"
+  },
+  "skeleton-warriors": {
+   "armyForgeUnitId": "IvDRlw5"
+  },
+  "royal-guard": {
+   "armyForgeUnitId": "c14qXDf"
+  },
+  "skeleton-archers": {
+   "armyForgeUnitId": "SJevoE7"
+  },
+  "mummies": {
+   "armyForgeUnitId": "T5hPi6m"
+  },
+  "skeleton-horsemen": {
+   "armyForgeUnitId": "6aipsh4"
+  },
+  "beast-riders": {
+   "armyForgeUnitId": "xCYqdWK"
+  },
+  "guardian-statues": {
+   "armyForgeUnitId": "Dzx2JbZ"
+  },
+  "snakemen": {
+   "armyForgeUnitId": "xE4z4X9"
+  },
+  "snake-riders": {
+   "armyForgeUnitId": "d1f_Kvo"
+  },
+  "hunting-beasts": {
+   "armyForgeUnitId": "g87PBrZ"
+  },
+  "scarab-swarms": {
+   "armyForgeUnitId": "fJ6qv3u"
+  },
+  "vultures": {
+   "armyForgeUnitId": "VO46CPB"
+  },
+  "death-casket": {
+   "armyForgeUnitId": "Be6l2xH"
+  },
+  "great-scorpion": {
+   "armyForgeUnitId": "BfFa2ZP"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "king",
+   "rotulo": "King",
+   "confiancaRotulo": "alta",
+   "unitKey": "royal-champion",
+   "equipmentTags": [
+    "Monarch"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "King",
+     "armyBook": "Royal Champion"
+    },
+    {
+     "pdf": "King",
+     "armyBook": "Monarch"
+    }
+   ],
+   "notas": "herói rei; no army book v3.6.0 é o Royal Champion (Elite Skeleton Leader) com a opção Monarch"
+  },
+  "a002": {
+   "artId": "queen",
+   "rotulo": "Queen",
+   "confiancaRotulo": "alta",
+   "unitKey": "royal-champion",
+   "equipmentTags": [
+    "Monarch"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Queen",
+     "armyBook": "Royal Champion"
+    },
+    {
+     "pdf": "Queen",
+     "armyBook": "Monarch"
+    }
+   ],
+   "notas": "rainha com cetro; Monarch (rei ou rainha) do Royal Champion. Alternativa: Tomb Queen Icon Bearer, mas a figura não carrega ícone"
+  },
+  "a003": {
+   "artId": "priest",
+   "rotulo": "Priest",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-leader",
+   "equipmentTags": [
+    "Priest"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Priest",
+     "armyBook": "Skeleton Leader"
+    }
+   ],
+   "notas": "opção Priest existe no Skeleton Leader e no Royal Champion; figura é um esqueleto simples com cajado, escolhi Skeleton Leader"
+  },
+  "a004": {
+   "artId": "stone-shaper",
+   "rotulo": "Stone Shaper",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-leader",
+   "equipmentTags": [
+    "Master Stone Shaper"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Stone Shaper",
+     "armyBook": "Master Stone Shaper"
+    }
+   ],
+   "notas": "herói a pé; só o Skeleton Leader tem Master Stone Shaper (Stone Shaper simples é upgrade de constructos)"
+  },
+  "a005": {
+   "artId": "horse-king",
+   "rotulo": "Horse King",
+   "confiancaRotulo": "alta",
+   "unitKey": "royal-champion",
+   "equipmentTags": [
+    "Monarch",
+    "Skeletal Steed"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "King",
+     "armyBook": "Monarch"
+    },
+    {
+     "pdf": "Horse",
+     "armyBook": "Skeletal Steed"
+    }
+   ],
+   "notas": "rei em cavalo esquelético: Royal Champion com Monarch e montaria Skeletal Steed"
+  },
+  "a006": {
+   "artId": "beast-rider-king",
+   "rotulo": "Beast Rider King",
+   "confiancaRotulo": "alta",
+   "unitKey": "royal-champion",
+   "equipmentTags": [
+    "Monarch",
+    "Royal Beast"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "King",
+     "armyBook": "Monarch"
+    },
+    {
+     "pdf": "Beast Rider",
+     "armyBook": "Royal Beast"
+    }
+   ],
+   "notas": "rei montado na fera dos Beast Riders: Royal Champion com Monarch e montaria Royal Beast"
+  },
+  "a007": {
+   "artId": "snake-king",
+   "rotulo": "Snake King",
+   "confiancaRotulo": "alta",
+   "unitKey": "royal-champion",
+   "equipmentTags": [
+    "Monarch",
+    "Royal Snake"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "King",
+     "armyBook": "Monarch"
+    },
+    {
+     "pdf": "Snake",
+     "armyBook": "Royal Snake"
+    }
+   ],
+   "notas": "rei sobre serpente gigante: Royal Champion com Monarch e montaria Royal Snake"
+  },
+  "a008": {
+   "artId": "warrior-sword",
+   "rotulo": "Warrior Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-warriors",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Skeleton Warriors"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "esqueleto com espada e escudo; Warrior = Skeleton Warriors (genericName igual), arma padrão Hand Weapon"
+  },
+  "a009": {
+   "artId": "warrior-sword-copia-2",
+   "rotulo": "Warrior Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-warriors",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Skeleton Warriors"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "mesma arte de a008 (cópia que o recorte não juntou)"
+  },
+  "a010": {
+   "artId": "warrior-spear",
+   "rotulo": "Warrior Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Skeleton Warriors"
+    }
+   ],
+   "notas": "Warrior = Skeleton Warriors (genericName igual)"
+  },
+  "a011": {
+   "artId": "warrior-sergeant",
+   "rotulo": "Warrior Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-warriors",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Skeleton Warriors"
+    }
+   ],
+   "notas": ""
+  },
+  "a012": {
+   "artId": "warrior-musician",
+   "rotulo": "Warrior Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-warriors",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Skeleton Warriors"
+    }
+   ],
+   "notas": ""
+  },
+  "a013": {
+   "artId": "warrior-banner",
+   "rotulo": "Warrior Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-warriors",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Skeleton Warriors"
+    }
+   ],
+   "notas": ""
+  },
+  "a014": {
+   "artId": "kings-guard-sword",
+   "rotulo": "King’s Guard Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "royal-guard",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "King’s Guard",
+     "armyBook": "Royal Guard"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "guarda de elite com escudo grande: Royal Guard (genericName Elite Skeleton Warriors); arma padrão Hand Weapon"
+  },
+  "a015": {
+   "artId": "kings-guard-spear",
+   "rotulo": "King’s Guard Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "royal-guard",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [
+    {
+     "pdf": "King’s Guard",
+     "armyBook": "Royal Guard"
+    }
+   ],
+   "notas": "Royal Guard v3.6.0 não tem Spear (só Hand Weapon, Halberd, Great Weapon, Royal Axe, Royal Scythe); usuário decide se serve para Halberd"
+  },
+  "a016": {
+   "artId": "kings-guard-sergeant",
+   "rotulo": "King’s Guard Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "royal-guard",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "King’s Guard",
+     "armyBook": "Royal Guard"
+    }
+   ],
+   "notas": ""
+  },
+  "a017": {
+   "artId": "kings-guard-musician",
+   "rotulo": "King’s Guard Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "royal-guard",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "King’s Guard",
+     "armyBook": "Royal Guard"
+    }
+   ],
+   "notas": ""
+  },
+  "a018": {
+   "artId": "kings-guard-banner",
+   "rotulo": "King’s Guard Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "royal-guard",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "King’s Guard",
+     "armyBook": "Royal Guard"
+    }
+   ],
+   "notas": ""
+  },
+  "a019": {
+   "artId": "archer",
+   "rotulo": "Archer",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-archers",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "genericName da unidade é Archers"
+  },
+  "a020": {
+   "artId": "mummy",
+   "rotulo": "Mummy",
+   "confiancaRotulo": "alta",
+   "unitKey": "mummies",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a021": {
+   "artId": "horseman-sword",
+   "rotulo": "Horseman Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-horsemen",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Horseman",
+     "armyBook": "Skeleton Horsemen"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "cavaleiro esqueleto; no Skirmish a unidade é Skeleton Horseman (genericName Cavalry)"
+  },
+  "a022": {
+   "artId": "horseman-spear",
+   "rotulo": "Horseman Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-horsemen",
+   "equipmentTags": [
+    "Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Horseman",
+     "armyBook": "Skeleton Horsemen"
+    },
+    {
+     "pdf": "Spear",
+     "armyBook": "Lance"
+    }
+   ],
+   "notas": "a unidade não tem Spear; a arma de haste da cavalaria é Lance"
+  },
+  "a023": {
+   "artId": "horseman-sergeant",
+   "rotulo": "Horseman Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-horsemen",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Horseman",
+     "armyBook": "Skeleton Horsemen"
+    }
+   ],
+   "notas": ""
+  },
+  "a024": {
+   "artId": "horseman-musician",
+   "rotulo": "Horseman Musican",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-horsemen",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Horseman",
+     "armyBook": "Skeleton Horsemen"
+    }
+   ],
+   "notas": "rótulo impresso com erro de grafia (Musican); artId com a grafia correta"
+  },
+  "a025": {
+   "artId": "horseman-banner",
+   "rotulo": "Horseman Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-horsemen",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Horseman",
+     "armyBook": "Skeleton Horsemen"
+    }
+   ],
+   "notas": ""
+  },
+  "a026": {
+   "artId": "horseman-archer",
+   "rotulo": "Horseman Archer",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-horsemen",
+   "equipmentTags": [
+    "Bow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Horseman",
+     "armyBook": "Skeleton Horsemen"
+    },
+    {
+     "pdf": "Archer",
+     "armyBook": "Bow"
+    }
+   ],
+   "notas": "arqueiro montado; Bow é a arma padrão da unidade"
+  },
+  "a027": {
+   "artId": "beast-rider-sword",
+   "rotulo": "Beast Rider Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "beast-riders",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "Beast Rider é o nome no Skirmish; arma padrão Hand Weapon"
+  },
+  "a028": {
+   "artId": "beast-rider-spear",
+   "rotulo": "Beast Rider Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "beast-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spear",
+     "armyBook": "Lance"
+    }
+   ],
+   "notas": "a unidade não tem Spear; Lance é a opção de haste"
+  },
+  "a029": {
+   "artId": "beast-rider-sergeant",
+   "rotulo": "Beast Rider Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "beast-riders",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a030": {
+   "artId": "beast-rider-musician",
+   "rotulo": "Beast Rider Musican",
+   "confiancaRotulo": "alta",
+   "unitKey": "beast-riders",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo impresso com erro de grafia (Musican); artId com a grafia correta"
+  },
+  "a031": {
+   "artId": "beast-rider-banner",
+   "rotulo": "Beast Rider Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "beast-riders",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a032": {
+   "artId": "guardian-sword-1",
+   "rotulo": "Guardian Sword 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardian-statues",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guardian",
+     "armyBook": "Guardian Statues"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Dual Hand Weapons"
+    }
+   ],
+   "notas": "estátua com cabeça de falcão e uma khopesh; a arma corpo a corpo padrão é Dual Hand Weapons"
+  },
+  "a033": {
+   "artId": "guardian-sword-2",
+   "rotulo": "Guardian Sword 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardian-statues",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guardian",
+     "armyBook": "Guardian Statues"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Dual Hand Weapons"
+    }
+   ],
+   "notas": "duas lâminas curvas; Dual Hand Weapons"
+  },
+  "a034": {
+   "artId": "guardian-sword-3",
+   "rotulo": "Guardian Sword 3",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardian-statues",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guardian",
+     "armyBook": "Guardian Statues"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Dual Hand Weapons"
+    }
+   ],
+   "notas": "estátua de chacal com espada reta; Dual Hand Weapons"
+  },
+  "a035": {
+   "artId": "guardian-spear-1",
+   "rotulo": "Guardian Spear 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardian-statues",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [
+    {
+     "pdf": "Guardian",
+     "armyBook": "Guardian Statues"
+    }
+   ],
+   "notas": "army book não tem Spear para Guardian Statues; e a figura segura uma lâmina larga de cabo curto, não lança (rótulo e figura não batem)"
+  },
+  "a036": {
+   "artId": "guardian-spear-2",
+   "rotulo": "Guardian Spear 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardian-statues",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [
+    {
+     "pdf": "Guardian",
+     "armyBook": "Guardian Statues"
+    }
+   ],
+   "notas": "army book não tem Spear (opções: Dual Hand Weapons, Great Weapon, Great Bow, Great Cursed Bow); usuário decide se a lança serve para Great Weapon"
+  },
+  "a037": {
+   "artId": "guardian-spear-3",
+   "rotulo": "Guardian Spear 3",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardian-statues",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [
+    {
+     "pdf": "Guardian",
+     "armyBook": "Guardian Statues"
+    }
+   ],
+   "notas": "army book não tem Spear para Guardian Statues; usuário decide se serve para Great Weapon"
+  },
+  "a038": {
+   "artId": "guardian-bow-1",
+   "rotulo": "Guardian Bow 1",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardian-statues",
+   "equipmentTags": [
+    "Great Bow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guardian",
+     "armyBook": "Guardian Statues"
+    },
+    {
+     "pdf": "Bow",
+     "armyBook": "Great Bow"
+    }
+   ],
+   "notas": "army book só tem Great Bow e Great Cursed Bow"
+  },
+  "a039": {
+   "artId": "guardian-bow-2",
+   "rotulo": "Guardian Bow 2",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardian-statues",
+   "equipmentTags": [
+    "Great Bow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guardian",
+     "armyBook": "Guardian Statues"
+    },
+    {
+     "pdf": "Bow",
+     "armyBook": "Great Bow"
+    }
+   ],
+   "notas": "army book só tem Great Bow e Great Cursed Bow"
+  },
+  "a040": {
+   "artId": "guardian-bow-3",
+   "rotulo": "Guardian Bow 3",
+   "confiancaRotulo": "alta",
+   "unitKey": "guardian-statues",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "unmapped",
+   "aliases": [
+    {
+     "pdf": "Guardian",
+     "armyBook": "Guardian Statues"
+    }
+   ],
+   "notas": "rótulo diz Bow, mas a figura segura uma haste longa com ponta (lança ou cajado), sem arco; sem tag para não ser escolhida para arqueiros"
+  },
+  "a041": {
+   "artId": "snakeman",
+   "rotulo": "Snakeman",
+   "confiancaRotulo": "alta",
+   "unitKey": "snakemen",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Snakeman é o nome no Skirmish"
+  },
+  "a042": {
+   "artId": "snake-rider",
+   "rotulo": "Snake Rider",
+   "confiancaRotulo": "alta",
+   "unitKey": "snake-riders",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a043": {
+   "artId": "snake-rider-sergeant",
+   "rotulo": "Snake Rider Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "snake-riders",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a044": {
+   "artId": "snake-rider-musician",
+   "rotulo": "Snake Rider Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "snake-riders",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a045": {
+   "artId": "snake-rider-banner",
+   "rotulo": "Snake Rider Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "snake-riders",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a046": {
+   "artId": "hunting-beast",
+   "rotulo": "Hunting Beast",
+   "confiancaRotulo": "alta",
+   "unitKey": "hunting-beasts",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só estilo fino; o estilo borda da mesma arte saiu separado em a054 e a055"
+  },
+  "a047": {
+   "artId": "swarm",
+   "rotulo": "Swarm",
+   "confiancaRotulo": "alta",
+   "unitKey": "scarab-swarms",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Swarm",
+     "armyBook": "Scarab Swarms"
+    }
+   ],
+   "notas": "enxame de escaravelhos; única unidade de enxame (genericName Scorpion Swarms)"
+  },
+  "a048": {
+   "artId": "vulture",
+   "rotulo": "Vulture",
+   "confiancaRotulo": "alta",
+   "unitKey": "vultures",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só estilo fino; o estilo borda da mesma arte saiu separado em a056"
+  },
+  "a049": {
+   "artId": "death-casket",
+   "rotulo": "Death Casket",
+   "confiancaRotulo": "alta",
+   "unitKey": "death-casket",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a050": {
+   "artId": "scorpion",
+   "rotulo": "Scorpion",
+   "confiancaRotulo": "alta",
+   "unitKey": "great-scorpion",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Scorpion",
+     "armyBook": "Great Scorpion"
+    }
+   ],
+   "notas": "escorpião grande sozinho; nome e genericName da unidade são Great Scorpion"
+  },
+  "a051": {
+   "artId": "warrior-sword-borda",
+   "rotulo": "Warrior Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-warriors",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Skeleton Warriors"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "mesma arte de a008, só no estilo borda (cópia que o recorte não juntou)"
+  },
+  "a052": {
+   "artId": "horseman-sword-borda",
+   "rotulo": "Horseman Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-horsemen",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Horseman",
+     "armyBook": "Skeleton Horsemen"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "mesma arte de a021, só no estilo borda (cópia que o recorte não juntou)"
+  },
+  "a053": {
+   "artId": "beast-rider-spear-borda",
+   "rotulo": "Beast Rider Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "beast-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spear",
+     "armyBook": "Lance"
+    }
+   ],
+   "notas": "mesma arte de a028, só no estilo borda (cópia que o recorte não juntou)"
+  },
+  "a054": {
+   "artId": "hunting-beast-borda",
+   "rotulo": "Hunting Beast",
+   "confiancaRotulo": "alta",
+   "unitKey": "hunting-beasts",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "mesma arte de a046, só no estilo borda (recorte não pareou)"
+  },
+  "a055": {
+   "artId": "hunting-beast-borda-2",
+   "rotulo": "Hunting Beast",
+   "confiancaRotulo": "alta",
+   "unitKey": "hunting-beasts",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "mesma arte de a046 e a054, só no estilo borda (cópia que o recorte não juntou)"
+  },
+  "a056": {
+   "artId": "vulture-borda",
+   "rotulo": "Vulture",
+   "confiancaRotulo": "alta",
+   "unitKey": "vultures",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "mesma arte de a048, só no estilo borda (recorte não pareou)"
+  }
+ }
+}

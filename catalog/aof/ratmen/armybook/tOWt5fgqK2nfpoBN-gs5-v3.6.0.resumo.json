@@ -1,0 +1,880 @@
+{
+  "armyBook": {
+    "id": "tOWt5fgqK2nfpoBN",
+    "nome": "Ratmen",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-04T19:18:33.680Z",
+    "sistema": "age-of-fantasy-skirmish",
+    "sistemaId": 5
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "bl380Vc",
+      "nome": "Battle Master",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Censer Flail"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Overtuned Sniper Rifle",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Throwing Knives",
+            "Censer Flail"
+          ]
+        },
+        {
+          "secao": "Replace Censer Flail",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Censer Flail",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Censer Flail",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Censer Flail",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Knife",
+          "ganha": [
+            "Toxin Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Overtuned Sniper Rifle",
+          "ganha": [
+            "Sniper Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Overtuned Sniper Rifle",
+          "ganha": [
+            "Rapid Bow"
+          ]
+        },
+        {
+          "secao": "Replace Overtuned Sniper Rifle",
+          "ganha": [
+            "Toxin Carbine"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pet Giant Rat"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Scout Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "War Throne"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "War Beast"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Rat Ogre"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Assassin"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Captain"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Army Standard Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Warlock"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Drill Engineer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IDU9HOb",
+      "nome": "Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Censer Flail"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Priest Staff"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Throwing Knives",
+            "Censer Flail"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Toxin Carbine",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Censer Flail",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Censer Flail",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Censer Flail",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Censer Flail",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Knife",
+          "ganha": [
+            "Toxin Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Toxin Carbine",
+          "ganha": [
+            "Sniper Rifle"
+          ]
+        },
+        {
+          "secao": "Replace Toxin Carbine",
+          "ganha": [
+            "Rocket Launcher"
+          ]
+        },
+        {
+          "secao": "Replace Toxin Carbine",
+          "ganha": [
+            "Overtuned Sniper Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Pet Giant Rat"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "God-Mother's Envoy"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Priest"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Engineer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Warlock"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Priest"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Drill Engineer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NUsVj4Q",
+      "nome": "Captain Kedseit",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Havocfall"
+      ],
+      "itens": [
+        {
+          "nome": "Great Defender",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Great Defender",
+          "ganha": [
+            "Great Defender - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nTMlNBn",
+      "nome": "Getrie Veikasip",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Artificer Bombs",
+        "Overtuned Halberd"
+      ],
+      "itens": [
+        {
+          "nome": "Tinkering Inventor",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Tinkering Inventor",
+          "ganha": [
+            "Tinkering Inventor - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "YCqSF5j",
+      "nome": "Brother Hepalit",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Blight Staff",
+        "Relic Dagger"
+      ],
+      "itens": [
+        {
+          "nome": "God-Mother's Blight",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace God-Mother's Blight",
+          "ganha": [
+            "Priest"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "etbxZuh",
+      "nome": "Giant Rat",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Vicious Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Rat Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pathfinder Rat Master"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Horde of Rats"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m4jaxg1",
+      "nome": "Storm Veteran",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Halberd"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Replace Halberd",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Halberd",
+          "ganha": [
+            "Siege-Breaker Hammer"
+          ]
+        },
+        {
+          "secao": "Replace Halberd",
+          "ganha": [
+            "Siege-Breaker Sword"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6vA1AhE",
+      "nome": "Night Scout",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Daggers"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Dagger",
+          "ganha": [
+            "Ranger Bow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Dual Dagger",
+          "ganha": [
+            "Throwing Knives",
+            "Dagger"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Smoke Bombs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bC8eBcR",
+      "nome": "Sniper",
+      "tamanho": 1,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Overtuned Sniper Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Overtuned Sniper Rifle",
+          "ganha": [
+            "Sniper Rifle"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Pavise Shield"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L63ELXt",
+      "nome": "Militia",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Horde of Rats"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Sling"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r2YUptC",
+      "nome": "Rat Swarm",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Overwhelming Swarm"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Rat Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pathfinder Rat Master"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Horde of Rats"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BUbrjeh",
+      "nome": "Warriors",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace all Hand Weapons",
+          "ganha": [
+            "Halberd"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b29Jcwm",
+      "nome": "Monks",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Censer Flail"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Replace all Censer Flails",
+          "ganha": [
+            "Dual Hand Weapons"
+          ]
+        },
+        {
+          "secao": "Replace one Censer Flail",
+          "ganha": [
+            "Great Censer Flail"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wXtqtYK",
+      "nome": "Weapon Team",
+      "tamanho": 1,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Crew",
+        "Death Roller"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace any Death Roller",
+          "ganha": [
+            "Heavy Drill"
+          ]
+        },
+        {
+          "secao": "Replace any Death Roller",
+          "ganha": [
+            "Flamethrower"
+          ]
+        },
+        {
+          "secao": "Replace any Death Roller",
+          "ganha": [
+            "Overtuned Gatling Gun"
+          ]
+        },
+        {
+          "secao": "Replace any Death Roller",
+          "ganha": [
+            "Gatling Gun"
+          ]
+        },
+        {
+          "secao": "Replace any Death Roller",
+          "ganha": [
+            "Toxin Mortar"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ePqfxCc",
+      "nome": "Grenadiers",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Toxin Bombs",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Toxin Bombs",
+          "ganha": [
+            "Overtuned Bombs"
+          ]
+        },
+        {
+          "secao": "Replace all Toxin Bombs",
+          "ganha": [
+            "Fire Bombs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UmMDMd0",
+      "nome": "Rat Ogre",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Sharp Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Combat Rat Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pathfinder Rat Master"
+          ]
+        },
+        {
+          "secao": "Replace Sharp Claws",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Arm-Flamer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h2V8ceV",
+      "nome": "Storm Ogre",
+      "tamanho": 1,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Flame-Fists",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace any Flame-Fists and Strike",
+          "ganha": [
+            "Roller-Fists"
+          ]
+        },
+        {
+          "secao": "Replace any Flame-Fists and Strike",
+          "ganha": [
+            "Drill-Fists"
+          ]
+        },
+        {
+          "secao": "Replace any Flame-Fists and Strike",
+          "ganha": [
+            "Overtuned Gatling-Fists",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace any Flame-Fists and Strike",
+          "ganha": [
+            "Gatling-Fists",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace any Flame-Fists and Strike",
+          "ganha": [
+            "Shock-Fists"
+          ]
+        },
+        {
+          "secao": "Replace any Flame-Fists and Strike",
+          "ganha": [
+            "Mortar-Fists",
+            "Strike"
+          ]
+        }
+      ]
+    }
+  ]
+}

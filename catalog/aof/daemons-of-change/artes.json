@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "daemons-of-change",
- "faccao": "Daemons of Change",
+ "faccao": "Daemons of Change\r",
  "sistema": "aof",
  "pdf": {
   "nome": "Daemons_of_Change_-_BW.pdf",
@@ -12,14 +12,16 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "warrior-sword",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Sword",
+   "rotuloImg": "arts/warrior-sword/rotulo.png",
+   "unitKey": "change-warriors",
+   "equipmentTags": [
+    "Power Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -53,14 +55,16 @@
    ]
   },
   {
-   "id": "a002",
+   "id": "warrior-greatsword",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Greatsword",
+   "rotuloImg": "arts/warrior-greatsword/rotulo.png",
+   "unitKey": "change-warriors",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -92,14 +96,16 @@
    "pendencias": []
   },
   {
-   "id": "a003",
+   "id": "warrior-double-chakram",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Double Chakram",
+   "rotuloImg": "arts/warrior-double-chakram/rotulo.png",
+   "unitKey": "change-warriors",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -131,14 +137,16 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "warrior-halberd",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Halberd",
+   "rotuloImg": "arts/warrior-halberd/rotulo.png",
+   "unitKey": "change-warriors",
+   "equipmentTags": [
+    "Halberd"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -170,14 +178,16 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "warrior-spear",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Spear",
+   "rotuloImg": "arts/warrior-spear/rotulo.png",
+   "unitKey": "change-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -211,14 +221,14 @@
    ]
   },
   {
-   "id": "a006",
+   "id": "warrior-sargeant",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Sargeant",
+   "rotuloImg": "arts/warrior-sargeant/rotulo.png",
+   "unitKey": "change-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -250,14 +260,14 @@
    "pendencias": []
   },
   {
-   "id": "a007",
+   "id": "warrior-musician",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Musician",
+   "rotuloImg": "arts/warrior-musician/rotulo.png",
+   "unitKey": "change-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -289,14 +299,14 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "warrior-banner",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Banner",
+   "rotuloImg": "arts/warrior-banner/rotulo.png",
+   "unitKey": "change-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -328,14 +338,16 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "champion-bolt-staff",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Bolt Staff",
+   "rotuloImg": "arts/champion-bolt-staff/rotulo.png",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Heavy Magic Bolt|Daemon Loremaster Staff"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -367,14 +379,16 @@
    "pendencias": []
   },
   {
-   "id": "a010",
+   "id": "champion-spear-staff",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Spear Staff",
+   "rotuloImg": "arts/champion-spear-staff/rotulo.png",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Daemon Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -406,14 +420,16 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "champion-power-staff",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Power Staff",
+   "rotuloImg": "arts/champion-power-staff/rotulo.png",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Power Staff"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -445,14 +461,14 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "harbinger",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Harbinger",
+   "rotuloImg": "arts/harbinger/rotulo.png",
+   "unitKey": "harbinger-of-change",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -484,14 +500,17 @@
    "pendencias": []
   },
   {
-   "id": "a013",
+   "id": "champion-bolt-staff-on-disc",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Bolt Staff on Disc",
+   "rotuloImg": "arts/champion-bolt-staff-on-disc/rotulo.png",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Disc of Change",
+    "Heavy Magic Bolt|Daemon Loremaster Staff"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -512,14 +531,17 @@
    ]
   },
   {
-   "id": "a014",
+   "id": "champion-power-staff-on-disc",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Power Staff on Disc",
+   "rotuloImg": "arts/champion-power-staff-on-disc/rotulo.png",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Disc of Change",
+    "Power Staff"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -540,14 +562,17 @@
    ]
   },
   {
-   "id": "a015",
+   "id": "champion-spear-staff-on-disc",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Spear Staff on Disc",
+   "rotuloImg": "arts/champion-spear-staff-on-disc/rotulo.png",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Disc of Change",
+    "Daemon Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -568,14 +593,14 @@
    ]
   },
   {
-   "id": "a016",
+   "id": "fury-v1",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fury (V1)",
+   "rotuloImg": "arts/fury-v1/rotulo.png",
+   "unitKey": "change-furies",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -607,14 +632,14 @@
    "pendencias": []
   },
   {
-   "id": "a017",
+   "id": "fury-v2",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fury (V2)",
+   "rotuloImg": "arts/fury-v2/rotulo.png",
+   "unitKey": "change-furies",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -646,14 +671,14 @@
    "pendencias": []
   },
   {
-   "id": "a018",
+   "id": "scorcher",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Scorcher",
+   "rotuloImg": "arts/scorcher/rotulo.png",
+   "unitKey": "scorchers",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -685,14 +710,14 @@
    "pendencias": []
   },
   {
-   "id": "a019",
+   "id": "schreecher",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Schreecher",
+   "rotuloImg": "arts/schreecher/rotulo.png",
+   "unitKey": "screechers",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -713,14 +738,14 @@
    ]
   },
   {
-   "id": "a020",
+   "id": "horror-large",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Horror (Large)",
+   "rotuloImg": "arts/horror-large/rotulo.png",
+   "unitKey": "change-horrors",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -752,14 +777,14 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "horror-medium",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Horror (Medium)",
+   "rotuloImg": "arts/horror-medium/rotulo.png",
+   "unitKey": "lesser-change-horrors",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -793,14 +818,14 @@
    ]
   },
   {
-   "id": "a022",
+   "id": "horror-small",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Horror (Small)",
+   "rotuloImg": "arts/horror-small/rotulo.png",
+   "unitKey": "changelings",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -832,14 +857,17 @@
    "pendencias": []
   },
   {
-   "id": "a023",
+   "id": "champion-bolt-staff-on-disc-borda",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Bolt Staff on Disc",
+   "rotuloImg": "arts/champion-bolt-staff-on-disc-borda/rotulo.png",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Disc of Change",
+    "Heavy Magic Bolt|Daemon Loremaster Staff"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -860,14 +888,17 @@
    ]
   },
   {
-   "id": "a024",
+   "id": "champion-power-staff-on-disc-borda",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Power Staff on Disc",
+   "rotuloImg": "arts/champion-power-staff-on-disc-borda/rotulo.png",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Disc of Change",
+    "Power Staff"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -888,14 +919,17 @@
    ]
   },
   {
-   "id": "a025",
+   "id": "champion-spear-staff-on-disc-borda",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Spear Staff on Disc",
+   "rotuloImg": "arts/champion-spear-staff-on-disc-borda/rotulo.png",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Disc of Change",
+    "Daemon Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -916,14 +950,14 @@
    ]
   },
   {
-   "id": "a026",
+   "id": "fury-v1-so-borda",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fury (V1)",
+   "rotuloImg": "arts/fury-v1-so-borda/rotulo.png",
+   "unitKey": "change-furies",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -944,14 +978,14 @@
    ]
   },
   {
-   "id": "a027",
+   "id": "fury-v2-so-borda",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fury (V2)",
+   "rotuloImg": "arts/fury-v2-so-borda/rotulo.png",
+   "unitKey": "change-furies",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -972,14 +1006,14 @@
    ]
   },
   {
-   "id": "a028",
+   "id": "schreecher-borda",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Schreecher",
+   "rotuloImg": "arts/schreecher-borda/rotulo.png",
+   "unitKey": "screechers",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [

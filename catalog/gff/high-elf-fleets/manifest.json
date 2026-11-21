@@ -1,0 +1,4868 @@
+{
+  "schemaVersion": 1,
+  "packId": "high-elf-fleets",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "GF",
+    "slug": "grimdark-future",
+    "armyForgeId": 2
+  },
+  "gameSystems": [
+    {
+      "code": "GF",
+      "slug": "grimdark-future",
+      "armyForgeId": 2
+    },
+    {
+      "code": "GFF",
+      "slug": "grimdark-future-firefight",
+      "armyForgeId": 3
+    }
+  ],
+  "armyBook": {
+    "id": "7i7blhft75q9zfdc",
+    "name": "High Elf Fleets",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "7i7blhft75q9zfdc",
+      "name": "High Elf Fleets",
+      "version": "3.6.0",
+      "gameSystemId": 3,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "7i7blhft75q9zfdc",
+      "name": "High Elf Fleets",
+      "version": "3.6.0",
+      "gameSystemId": 2,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "High_Elf_Fleets_-_BW.pdf",
+    "pdfSha256": "8134d9f700a8e7a461eea1249c7504857e82938bb08d22d132a322144ac78d6e",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "elite-protector",
+      "names": [
+        "Elite Protector"
+      ],
+      "armyForgeUnitId": "Uvc9UHr",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "elven-noble",
+      "names": [
+        "Elven Noble"
+      ],
+      "armyForgeUnitId": "9zCsahE",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "acolyte",
+      "names": [
+        "Acolyte",
+        "Acolytes"
+      ],
+      "armyForgeUnitId": "OzZw7JY",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "retributor",
+      "names": [
+        "Retributor",
+        "Retributors"
+      ],
+      "armyForgeUnitId": "b-mChYC",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "protector",
+      "names": [
+        "Protector",
+        "Protectors"
+      ],
+      "armyForgeUnitId": "qfnk-JU",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "striker",
+      "names": [
+        "Striker",
+        "Strikers"
+      ],
+      "armyForgeUnitId": "BPcH3j1",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "revenant",
+      "names": [
+        "Revenant",
+        "Revenants"
+      ],
+      "armyForgeUnitId": "VM7l-RU",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "shifter",
+      "names": [
+        "Shifter",
+        "Shifters"
+      ],
+      "armyForgeUnitId": "vQBMFLU",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "glider",
+      "names": [
+        "Glider",
+        "Gliders"
+      ],
+      "armyForgeUnitId": "ERIGLS2",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "stinger",
+      "names": [
+        "Stinger",
+        "Stingers"
+      ],
+      "armyForgeUnitId": "G02X_NY",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "sniper",
+      "names": [
+        "Sniper",
+        "Snipers"
+      ],
+      "armyForgeUnitId": "FmIGYwF",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "scorcher",
+      "names": [
+        "Scorcher",
+        "Scorchers"
+      ],
+      "armyForgeUnitId": "yVZh2Ch",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "vanquisher",
+      "names": [
+        "Vanquisher",
+        "Vanquishers"
+      ],
+      "armyForgeUnitId": "25J4jTN",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "elemental-striker",
+      "names": [
+        "Elemental Striker",
+        "Elemental Strikers"
+      ],
+      "armyForgeUnitId": "xE7ljJF",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "elemental-protector",
+      "names": [
+        "Elemental Protector",
+        "Elemental Protectors"
+      ],
+      "armyForgeUnitId": "p50sgkI",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "jetbike-striker",
+      "names": [
+        "Jetbike Striker",
+        "Jetbike Strikers"
+      ],
+      "armyForgeUnitId": "c2SKcZS",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "jetbike-protector",
+      "names": [
+        "Jetbike Protector",
+        "Jetbike Protectors"
+      ],
+      "armyForgeUnitId": "aMQa9nT",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "elite-protector-spear",
+      "candidateId": "a001",
+      "pdfLabel": "Elite Protector Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite-protector",
+      "equipmentTags": [
+        "Ancient Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Spear",
+          "armyBook": "Ancient Spear"
+        }
+      ],
+      "notes": "a única lança do Elite Protector é Ancient Spear",
+      "styles": {
+        "fino": {
+          "page": 1,
+          "rows": [
+            0
+          ],
+          "front": "arts/elite-protector-spear/fino/frente.svg",
+          "back": "arts/elite-protector-spear/fino/verso.svg",
+          "canvasMm": [
+            45.0,
+            49.064
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            48.9,
+            44.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            0
+          ],
+          "front": "arts/elite-protector-spear/borda/frente.svg",
+          "back": "arts/elite-protector-spear/borda/verso.svg",
+          "canvasMm": [
+            49.615,
+            51.393
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            51.3,
+            49.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elite-protector-axe",
+      "candidateId": "a002",
+      "pdfLabel": "Elite Protector Axe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite-protector",
+      "equipmentTags": [
+        "Killing Axe"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Axe",
+          "armyBook": "Killing Axe"
+        }
+      ],
+      "notes": "o único machado do Elite Protector é Killing Axe",
+      "styles": {
+        "fino": {
+          "page": 1,
+          "rows": [
+            1
+          ],
+          "front": "arts/elite-protector-axe/fino/frente.svg",
+          "back": "arts/elite-protector-axe/fino/verso.svg",
+          "canvasMm": [
+            42.926,
+            39.666
+          ],
+          "frontBackIoU": 0.937,
+          "sizeMm": [
+            39.5,
+            42.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            1
+          ],
+          "front": "arts/elite-protector-axe/borda/frente.svg",
+          "back": "arts/elite-protector-axe/borda/verso.svg",
+          "canvasMm": [
+            47.583,
+            41.995
+          ],
+          "frontBackIoU": 0.962,
+          "sizeMm": [
+            41.9,
+            47.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "apprentice",
+      "candidateId": "a003",
+      "pdfLabel": "Apprentice",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite-protector",
+      "equipmentTags": [
+        "Acolyte Psy-Seer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Apprentice",
+          "armyBook": "Acolyte Psy-Seer"
+        }
+      ],
+      "notes": "apprentice ~ acolyte; 1 cópia no PDF (herói) e mesmo traje dos Acolytes (a041/a043). Acolyte Psy-Seer só existe no Elite Protector; alternativa: unidade Acolyte",
+      "styles": {
+        "fino": {
+          "page": 1,
+          "rows": [
+            2
+          ],
+          "front": "arts/apprentice/fino/frente.svg",
+          "back": "arts/apprentice/fino/verso.svg",
+          "canvasMm": [
+            26.712,
+            34.375
+          ],
+          "frontBackIoU": 0.965,
+          "sizeMm": [
+            34.3,
+            26.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            2
+          ],
+          "front": "arts/apprentice/borda/frente.svg",
+          "back": "arts/apprentice/borda/verso.svg",
+          "canvasMm": [
+            31.369,
+            36.703
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            36.6,
+            31.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "striker-fusion",
+      "candidateId": "a004",
+      "pdfLabel": "Striker Fusion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "striker",
+      "equipmentTags": [
+        "Assault Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Fusion",
+          "armyBook": "Assault Fusion Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 1,
+          "rows": [
+            3
+          ],
+          "front": "arts/striker-fusion/fino/frente.svg",
+          "back": "arts/striker-fusion/fino/verso.svg",
+          "canvasMm": [
+            26.543,
+            34.417
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            34.3,
+            26.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            3
+          ],
+          "front": "arts/striker-fusion/borda/frente.svg",
+          "back": "arts/striker-fusion/borda/verso.svg",
+          "canvasMm": [
+            31.2,
+            36.745
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            36.7,
+            30.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "striker-flamer",
+      "candidateId": "a005",
+      "pdfLabel": "Striker Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "striker",
+      "equipmentTags": [
+        "Assault Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Flamer",
+          "armyBook": "Assault Flamer"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 1,
+          "rows": [
+            4
+          ],
+          "front": "arts/striker-flamer/fino/frente.svg",
+          "back": "arts/striker-flamer/fino/verso.svg",
+          "canvasMm": [
+            26.247,
+            34.756
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            34.6,
+            26.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            4
+          ],
+          "front": "arts/striker-flamer/borda/frente.svg",
+          "back": "arts/striker-flamer/borda/verso.svg",
+          "canvasMm": [
+            30.903,
+            37.084
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            37.0,
+            30.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "striker",
+      "candidateId": "a006",
+      "pdfLabel": "Striker",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "striker",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/striker/fino/frente.svg",
+          "back": "arts/striker/fino/verso.svg",
+          "canvasMm": [
+            46.355,
+            36.237
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            36.2,
+            46.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/striker/borda/frente.svg",
+          "back": "arts/striker/borda/verso.svg",
+          "canvasMm": [
+            51.012,
+            38.566
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            38.4,
+            50.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "protector-v1",
+      "candidateId": "a007",
+      "pdfLabel": "Protector V1",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "protector",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose 1 do modelo básico",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/protector-v1/fino/frente.svg",
+          "back": "arts/protector-v1/fino/verso.svg",
+          "canvasMm": [
+            21.59,
+            37.296
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            37.2,
+            21.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/protector-v1/borda/frente.svg",
+          "back": "arts/protector-v1/borda/verso.svg",
+          "canvasMm": [
+            26.247,
+            39.624
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            39.5,
+            26.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "protector-v2",
+      "candidateId": "a008",
+      "pdfLabel": "Protector V2",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "protector",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose 2 do modelo básico",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/protector-v2/fino/frente.svg",
+          "back": "arts/protector-v2/fino/verso.svg",
+          "canvasMm": [
+            21.04,
+            32.893
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            32.8,
+            20.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/protector-v2/borda/frente.svg",
+          "back": "arts/protector-v2/borda/verso.svg",
+          "canvasMm": [
+            25.696,
+            35.221
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            35.1,
+            25.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "stealth-platform",
+      "candidateId": "a009",
+      "pdfLabel": "Stealth Platform",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "striker",
+      "equipmentTags": [
+        "Hologram Platform"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Stealth Platform",
+          "armyBook": "Hologram Platform"
+        }
+      ],
+      "notes": "Hologram Platform dá Stealth Aura; plataforma sem arma (as com arma são as Gun Platform dos Protectors)",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0
+          ],
+          "front": "arts/stealth-platform/fino/frente.svg",
+          "back": "arts/stealth-platform/fino/verso.svg",
+          "canvasMm": [
+            35.137,
+            29.76
+          ],
+          "frontBackIoU": 0.928,
+          "sizeMm": [
+            29.6,
+            34.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            0
+          ],
+          "front": "arts/stealth-platform/borda/frente.svg",
+          "back": "arts/stealth-platform/borda/verso.svg",
+          "canvasMm": [
+            38.82,
+            31.623
+          ],
+          "frontBackIoU": 0.949,
+          "sizeMm": [
+            31.5,
+            38.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "protector-turret-shatter-cannon",
+      "candidateId": "a010",
+      "pdfLabel": "Protector Turret Shatter Cannon",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "protector",
+      "equipmentTags": [
+        "Gun Platform"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Protector Turret",
+          "armyBook": "Gun Platform"
+        }
+      ],
+      "notes": "Gun Platform troca o Shardgun de um Protector; arma da plataforma: Shatter Cannon. O validador só aceita a tag Gun Platform (a arma é conteúdo do item), então as 5 torres não se distinguem pela tag",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            1
+          ],
+          "front": "arts/protector-turret-shatter-cannon/fino/frente.svg",
+          "back": "arts/protector-turret-shatter-cannon/fino/verso.svg",
+          "canvasMm": [
+            35.772,
+            31.581
+          ],
+          "frontBackIoU": 0.938,
+          "sizeMm": [
+            31.5,
+            35.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            1
+          ],
+          "front": "arts/protector-turret-shatter-cannon/borda/frente.svg",
+          "back": "arts/protector-turret-shatter-cannon/borda/verso.svg",
+          "canvasMm": [
+            39.497,
+            33.443
+          ],
+          "frontBackIoU": 0.959,
+          "sizeMm": [
+            33.4,
+            39.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "protector-turret-shard-cannon",
+      "candidateId": "a011",
+      "pdfLabel": "Protector Turret Shard Cannon",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "protector",
+      "equipmentTags": [
+        "Gun Platform"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Protector Turret",
+          "armyBook": "Gun Platform"
+        }
+      ],
+      "notes": "Gun Platform troca o Shardgun de um Protector; arma da plataforma: Shard Cannon. O validador só aceita a tag Gun Platform (a arma é conteúdo do item), então as 5 torres não se distinguem pela tag",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            2
+          ],
+          "front": "arts/protector-turret-shard-cannon/fino/frente.svg",
+          "back": "arts/protector-turret-shard-cannon/fino/verso.svg",
+          "canvasMm": [
+            35.094,
+            31.792
+          ],
+          "frontBackIoU": 0.963,
+          "sizeMm": [
+            31.7,
+            34.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            2
+          ],
+          "front": "arts/protector-turret-shard-cannon/borda/frente.svg",
+          "back": "arts/protector-turret-shard-cannon/borda/verso.svg",
+          "canvasMm": [
+            38.82,
+            33.655
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            33.5,
+            38.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "protector-turret-missile-launcher",
+      "candidateId": "a012",
+      "pdfLabel": "Protector Turret Missile Launcher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "protector",
+      "equipmentTags": [
+        "Gun Platform"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Protector Turret",
+          "armyBook": "Gun Platform"
+        }
+      ],
+      "notes": "Gun Platform troca o Shardgun de um Protector; arma da plataforma: Missile Launcher. O validador só aceita a tag Gun Platform (a arma é conteúdo do item), então as 5 torres não se distinguem pela tag",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0
+          ],
+          "front": "arts/protector-turret-missile-launcher/fino/frente.svg",
+          "back": "arts/protector-turret-missile-launcher/fino/verso.svg",
+          "canvasMm": [
+            35.475,
+            31.538
+          ],
+          "frontBackIoU": 0.943,
+          "sizeMm": [
+            31.4,
+            35.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            0
+          ],
+          "front": "arts/protector-turret-missile-launcher/borda/frente.svg",
+          "back": "arts/protector-turret-missile-launcher/borda/verso.svg",
+          "canvasMm": [
+            39.158,
+            33.401
+          ],
+          "frontBackIoU": 0.955,
+          "sizeMm": [
+            33.3,
+            38.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "protector-turret-laser-cannon",
+      "candidateId": "a013",
+      "pdfLabel": "Protector Turret Laser Cannon",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "protector",
+      "equipmentTags": [
+        "Gun Platform"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Protector Turret",
+          "armyBook": "Gun Platform"
+        },
+        {
+          "pdf": "Laser Cannon",
+          "armyBook": "High-Energy Cannon"
+        }
+      ],
+      "notes": "army book não tem Laser Cannon na Gun Platform; por eliminação das 5 opções (as outras 4 batem com a010-a014) é a High-Energy Cannon. Gun Platform troca o Shardgun de um Protector; arma da plataforma: High-Energy Cannon. O validador só aceita a tag Gun Platform (a arma é conteúdo do item), então as 5 torres não se distinguem pela tag",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            1
+          ],
+          "front": "arts/protector-turret-laser-cannon/fino/frente.svg",
+          "back": "arts/protector-turret-laser-cannon/fino/verso.svg",
+          "canvasMm": [
+            39.455,
+            31.962
+          ],
+          "frontBackIoU": 0.93,
+          "sizeMm": [
+            31.8,
+            39.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            1
+          ],
+          "front": "arts/protector-turret-laser-cannon/borda/frente.svg",
+          "back": "arts/protector-turret-laser-cannon/borda/verso.svg",
+          "canvasMm": [
+            43.349,
+            33.824
+          ],
+          "frontBackIoU": 0.941,
+          "sizeMm": [
+            33.7,
+            42.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "protector-turret-burst-laser",
+      "candidateId": "a014",
+      "pdfLabel": "Protector Turret Burst Laser",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "protector",
+      "equipmentTags": [
+        "Gun Platform"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Protector Turret",
+          "armyBook": "Gun Platform"
+        }
+      ],
+      "notes": "Gun Platform troca o Shardgun de um Protector; arma da plataforma: Burst Laser. O validador só aceita a tag Gun Platform (a arma é conteúdo do item), então as 5 torres não se distinguem pela tag",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            2
+          ],
+          "front": "arts/protector-turret-burst-laser/fino/frente.svg",
+          "back": "arts/protector-turret-burst-laser/fino/verso.svg",
+          "canvasMm": [
+            34.967,
+            31.581
+          ],
+          "frontBackIoU": 0.935,
+          "sizeMm": [
+            31.5,
+            34.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            2
+          ],
+          "front": "arts/protector-turret-burst-laser/borda/frente.svg",
+          "back": "arts/protector-turret-burst-laser/borda/verso.svg",
+          "canvasMm": [
+            38.693,
+            33.443
+          ],
+          "frontBackIoU": 0.957,
+          "sizeMm": [
+            33.4,
+            38.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "retributor-shardgun",
+      "candidateId": "a015",
+      "pdfLabel": "Retributor Shardgun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "retributor",
+      "equipmentTags": [
+        "Shard Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shardgun",
+          "armyBook": "Shard Rifle"
+        }
+      ],
+      "notes": "Retributor não tem Shardgun; a arma de tiro da unidade toda é Shard Rifle",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/retributor-shardgun/fino/frente.svg",
+          "back": "arts/retributor-shardgun/fino/verso.svg",
+          "canvasMm": [
+            30.565,
+            39.624
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            39.5,
+            30.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/retributor-shardgun/borda/frente.svg",
+          "back": "arts/retributor-shardgun/borda/verso.svg",
+          "canvasMm": [
+            34.29,
+            41.487
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            41.4,
+            34.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "retributor-energy-sword",
+      "candidateId": "a016",
+      "pdfLabel": "Retributor Energy Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "retributor",
+      "equipmentTags": [
+        "Ancient Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Energy Sword",
+          "armyBook": "Ancient Sword"
+        }
+      ],
+      "notes": "equipamento padrão: Ancient Sword + Combat Shield",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0,
+            1,
+            4
+          ],
+          "front": "arts/retributor-energy-sword/fino/frente.svg",
+          "back": "arts/retributor-energy-sword/fino/verso.svg",
+          "canvasMm": [
+            22.437,
+            34.205
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            34.1,
+            22.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/retributor-energy-sword/borda/frente.svg",
+          "back": "arts/retributor-energy-sword/borda/verso.svg",
+          "canvasMm": [
+            26.12,
+            36.068
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            36.0,
+            25.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "retributor-energy-sword-b",
+      "candidateId": "a017",
+      "pdfLabel": "Retributor Energy Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "retributor",
+      "equipmentTags": [
+        "Ancient Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Energy Sword",
+          "armyBook": "Ancient Sword"
+        }
+      ],
+      "notes": "parece a mesma arte de a016 (só estilo fino, 2 cópias; a016 tem fino 3 + borda 5): provável divisão do grupo",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            2,
+            3
+          ],
+          "front": "arts/retributor-energy-sword-b/fino/frente.svg",
+          "back": "arts/retributor-energy-sword-b/fino/verso.svg",
+          "canvasMm": [
+            22.437,
+            34.205
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            34.1,
+            22.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "ancient-commander",
+      "candidateId": "a018",
+      "pdfLabel": "Ancient Commander",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elven-noble",
+      "equipmentTags": [
+        "Ancient Commander"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Ancient Commander",
+          "armyBook": "Elven Noble + Ancient Commander"
+        }
+      ],
+      "notes": "Ancient Commander é opção só do Elven Noble",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0
+          ],
+          "front": "arts/ancient-commander/fino/frente.svg",
+          "back": "arts/ancient-commander/fino/verso.svg",
+          "canvasMm": [
+            48.641,
+            45.678
+          ],
+          "frontBackIoU": 0.924,
+          "sizeMm": [
+            45.6,
+            48.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            0
+          ],
+          "front": "arts/ancient-commander/borda/frente.svg",
+          "back": "arts/ancient-commander/borda/verso.svg",
+          "canvasMm": [
+            52.366,
+            47.54
+          ],
+          "frontBackIoU": 0.947,
+          "sizeMm": [
+            47.4,
+            52.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "retributor-sergeant-pistol",
+      "candidateId": "a019",
+      "pdfLabel": "Retributor Sergeant Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "retributor",
+      "equipmentTags": [
+        "Sgt. Shard Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sergeant Pistol",
+          "armyBook": "Sgt. Shard Pistol"
+        }
+      ],
+      "notes": "sargento com espada e pistola (Sgt. Hand Weapon + Sgt. Shard Pistol)",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            1
+          ],
+          "front": "arts/retributor-sergeant-pistol/fino/frente.svg",
+          "back": "arts/retributor-sergeant-pistol/fino/verso.svg",
+          "canvasMm": [
+            31.411,
+            47.286
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            47.2,
+            31.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            1
+          ],
+          "front": "arts/retributor-sergeant-pistol/borda/frente.svg",
+          "back": "arts/retributor-sergeant-pistol/borda/verso.svg",
+          "canvasMm": [
+            35.137,
+            49.149
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            49.0,
+            34.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "retributor-sergeant-shield",
+      "candidateId": "a020",
+      "pdfLabel": "Retributor Sergeant Shield",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "retributor",
+      "equipmentTags": [
+        "Flicker Shield"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sergeant Shield",
+          "armyBook": "Flicker Shield"
+        }
+      ],
+      "notes": "o único escudo do sargento é Flicker Shield (troca a Sgt. Shard Pistol)",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            2
+          ],
+          "front": "arts/retributor-sergeant-shield/fino/frente.svg",
+          "back": "arts/retributor-sergeant-shield/fino/verso.svg",
+          "canvasMm": [
+            29.93,
+            49.022
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            48.9,
+            29.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            2
+          ],
+          "front": "arts/retributor-sergeant-shield/borda/frente.svg",
+          "back": "arts/retributor-sergeant-shield/borda/verso.svg",
+          "canvasMm": [
+            33.655,
+            50.885
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            50.8,
+            33.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "noble-glider",
+      "candidateId": "a021",
+      "pdfLabel": "Noble Glider",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elven-noble",
+      "equipmentTags": [
+        "Glider Jetpack"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Noble Glider",
+          "armyBook": "Elven Noble + Glider Jetpack"
+        }
+      ],
+      "notes": "Noble com asas. \"Noble X\" = Elven Noble equipado como o aspecto X (o PDF tem sargentos/campeões à parte)",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            3
+          ],
+          "front": "arts/noble-glider/fino/frente.svg",
+          "back": "arts/noble-glider/fino/verso.svg",
+          "canvasMm": [
+            66.082,
+            66.421
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            66.3,
+            65.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            3
+          ],
+          "front": "arts/noble-glider/borda/frente.svg",
+          "back": "arts/noble-glider/borda/verso.svg",
+          "canvasMm": [
+            69.808,
+            68.284
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            68.2,
+            69.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "glider-sword",
+      "candidateId": "a022",
+      "pdfLabel": "Glider Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glider",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "pistola e espada: opção da unidade toda Laser Pistol + Hand Weapon (5 cópias). Empata com a026 nessa opção",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/glider-sword/fino/frente.svg",
+          "back": "arts/glider-sword/fino/verso.svg",
+          "canvasMm": [
+            46.143,
+            54.906
+          ],
+          "frontBackIoU": 0.947,
+          "sizeMm": [
+            54.8,
+            45.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/glider-sword/borda/frente.svg",
+          "back": "arts/glider-sword/borda/verso.svg",
+          "canvasMm": [
+            49.869,
+            56.769
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            56.6,
+            49.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "glider-heavy-laser-rifle",
+      "candidateId": "a023",
+      "pdfLabel": "Glider Heavy Laser Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glider",
+      "equipmentTags": [
+        "Heavy Laser Carbine"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Heavy Laser Rifle",
+          "armyBook": "Heavy Laser Carbine"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0
+          ],
+          "front": "arts/glider-heavy-laser-rifle/fino/frente.svg",
+          "back": "arts/glider-heavy-laser-rifle/fino/verso.svg",
+          "canvasMm": [
+            42.164,
+            54.695
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            54.6,
+            41.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            0
+          ],
+          "front": "arts/glider-heavy-laser-rifle/borda/frente.svg",
+          "back": "arts/glider-heavy-laser-rifle/borda/verso.svg",
+          "canvasMm": [
+            45.889,
+            56.557
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            56.5,
+            45.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "glider-laser-blaster",
+      "candidateId": "a024",
+      "pdfLabel": "Glider Laser Blaster",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glider",
+      "equipmentTags": [
+        "Laser Carbine"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Laser Blaster",
+          "armyBook": "Laser Carbine"
+        }
+      ],
+      "notes": "arma de duas mãos; por eliminação com a023/a025 é a Laser Carbine padrão",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            1
+          ],
+          "front": "arts/glider-laser-blaster/fino/frente.svg",
+          "back": "arts/glider-laser-blaster/fino/verso.svg",
+          "canvasMm": [
+            38.735,
+            55.033
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            54.9,
+            38.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            1
+          ],
+          "front": "arts/glider-laser-blaster/borda/frente.svg",
+          "back": "arts/glider-laser-blaster/borda/verso.svg",
+          "canvasMm": [
+            42.46,
+            56.896
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            56.8,
+            42.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "glider-shred-blaster",
+      "candidateId": "a025",
+      "pdfLabel": "Glider Shred Blaster",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glider",
+      "equipmentTags": [
+        "Shred-Blaster Gun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shred Blaster",
+          "armyBook": "Shred-Blaster Gun"
+        }
+      ],
+      "notes": "arma de duas mãos (não a Burst Shred-Blaster Pistol do sargento)",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            2
+          ],
+          "front": "arts/glider-shred-blaster/fino/frente.svg",
+          "back": "arts/glider-shred-blaster/fino/verso.svg",
+          "canvasMm": [
+            38.735,
+            54.949
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            54.9,
+            38.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            2
+          ],
+          "front": "arts/glider-shred-blaster/borda/frente.svg",
+          "back": "arts/glider-shred-blaster/borda/verso.svg",
+          "canvasMm": [
+            42.46,
+            56.811
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            56.7,
+            42.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "glider-pistol",
+      "candidateId": "a026",
+      "pdfLabel": "Glider Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "glider",
+      "equipmentTags": [
+        "Laser Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Pistol",
+          "armyBook": "Laser Pistol"
+        }
+      ],
+      "notes": "mesma pose de a022 (pistola e espada), com capacete; 1 cópia",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            3
+          ],
+          "front": "arts/glider-pistol/fino/frente.svg",
+          "back": "arts/glider-pistol/fino/verso.svg",
+          "canvasMm": [
+            46.905,
+            54.737
+          ],
+          "frontBackIoU": 0.954,
+          "sizeMm": [
+            54.6,
+            46.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            3
+          ],
+          "front": "arts/glider-pistol/borda/frente.svg",
+          "back": "arts/glider-pistol/borda/verso.svg",
+          "canvasMm": [
+            50.377,
+            56.684
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            56.6,
+            50.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "revenant-champion",
+      "candidateId": "a027",
+      "pdfLabel": "Revenant Champion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "revenant",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "campeão = sargento (Sgt.); figura com chakram e lâmina",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0
+          ],
+          "front": "arts/revenant-champion/fino/frente.svg",
+          "back": "arts/revenant-champion/fino/verso.svg",
+          "canvasMm": [
+            41.233,
+            40.767
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            40.6,
+            41.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            0
+          ],
+          "front": "arts/revenant-champion/borda/frente.svg",
+          "back": "arts/revenant-champion/borda/verso.svg",
+          "canvasMm": [
+            45.974,
+            43.138
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            43.0,
+            45.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scorcher-fusion-pike",
+      "candidateId": "a028",
+      "pdfLabel": "Scorcher Fusion Pike",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scorcher",
+      "equipmentTags": [
+        "Fusion Lance-Gun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Fusion Pike",
+          "armyBook": "Fusion Lance-Gun"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            1
+          ],
+          "front": "arts/scorcher-fusion-pike/fino/frente.svg",
+          "back": "arts/scorcher-fusion-pike/fino/verso.svg",
+          "canvasMm": [
+            50.461,
+            40.725
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            40.6,
+            50.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            1
+          ],
+          "front": "arts/scorcher-fusion-pike/borda/frente.svg",
+          "back": "arts/scorcher-fusion-pike/borda/verso.svg",
+          "canvasMm": [
+            55.203,
+            43.095
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            43.0,
+            54.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sniper",
+      "candidateId": "a029",
+      "pdfLabel": "Sniper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "sniper",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/sniper/fino/frente.svg",
+          "back": "arts/sniper/fino/verso.svg",
+          "canvasMm": [
+            31.496,
+            34.84
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            34.7,
+            31.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/sniper/borda/frente.svg",
+          "back": "arts/sniper/borda/verso.svg",
+          "canvasMm": [
+            36.237,
+            37.211
+          ],
+          "frontBackIoU": 0.932,
+          "sizeMm": [
+            37.1,
+            36.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "shifter-carbine",
+      "candidateId": "a030",
+      "pdfLabel": "Shifter Carbine",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "shifter",
+      "equipmentTags": [
+        "Phaser Carbine"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Carbine",
+          "armyBook": "Phaser Carbine"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            3
+          ],
+          "front": "arts/shifter-carbine/fino/frente.svg",
+          "back": "arts/shifter-carbine/fino/verso.svg",
+          "canvasMm": [
+            33.867,
+            36.28
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            36.2,
+            33.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            3
+          ],
+          "front": "arts/shifter-carbine/borda/frente.svg",
+          "back": "arts/shifter-carbine/borda/verso.svg",
+          "canvasMm": [
+            38.608,
+            38.65
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            38.5,
+            38.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "shifter-heavy-spinner",
+      "candidateId": "a031",
+      "pdfLabel": "Shifter Heavy Spinner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "shifter",
+      "equipmentTags": [
+        "Heavy Phaser Blaster"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Heavy Spinner",
+          "armyBook": "Heavy Phaser Blaster"
+        }
+      ],
+      "notes": "nome antigo; a única arma pesada dos Shifters é Heavy Phaser Blaster",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            4
+          ],
+          "front": "arts/shifter-heavy-spinner/fino/frente.svg",
+          "back": "arts/shifter-heavy-spinner/fino/verso.svg",
+          "canvasMm": [
+            32.512,
+            39.031
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            38.9,
+            32.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            4
+          ],
+          "front": "arts/shifter-heavy-spinner/borda/frente.svg",
+          "back": "arts/shifter-heavy-spinner/borda/verso.svg",
+          "canvasMm": [
+            37.253,
+            41.402
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            41.3,
+            37.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "shifter",
+      "candidateId": "a032",
+      "pdfLabel": "Shifter",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "shifter",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/shifter/fino/frente.svg",
+          "back": "arts/shifter/fino/verso.svg",
+          "canvasMm": [
+            32.554,
+            37.338
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            37.3,
+            32.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 50,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/shifter/borda/frente.svg",
+          "back": "arts/shifter/borda/verso.svg",
+          "canvasMm": [
+            37.296,
+            39.709
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            39.6,
+            37.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "revenant",
+      "candidateId": "a033",
+      "pdfLabel": "Revenant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "revenant",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/revenant/fino/frente.svg",
+          "back": "arts/revenant/fino/verso.svg",
+          "canvasMm": [
+            41.233,
+            39.709
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            39.6,
+            41.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/revenant/borda/frente.svg",
+          "back": "arts/revenant/borda/verso.svg",
+          "canvasMm": [
+            45.974,
+            42.079
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            42.0,
+            45.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scorcher-fusion",
+      "candidateId": "a034",
+      "pdfLabel": "Scorcher Fusion",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scorcher",
+      "equipmentTags": [
+        "Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Fusion",
+          "armyBook": "Fusion Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/scorcher-fusion/fino/frente.svg",
+          "back": "arts/scorcher-fusion/fino/verso.svg",
+          "canvasMm": [
+            29.887,
+            34.925
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            34.8,
+            29.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 52,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/scorcher-fusion/borda/frente.svg",
+          "back": "arts/scorcher-fusion/borda/verso.svg",
+          "canvasMm": [
+            34.629,
+            37.296
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            37.2,
+            34.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scorcher-heavy-flamer",
+      "candidateId": "a035",
+      "pdfLabel": "Scorcher Heavy Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scorcher",
+      "equipmentTags": [
+        "Heavy Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/scorcher-heavy-flamer/fino/frente.svg",
+          "back": "arts/scorcher-heavy-flamer/fino/verso.svg",
+          "canvasMm": [
+            33.359,
+            41.529
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            41.4,
+            33.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 53,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/scorcher-heavy-flamer/borda/frente.svg",
+          "back": "arts/scorcher-heavy-flamer/borda/verso.svg",
+          "canvasMm": [
+            38.1,
+            43.9
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            43.8,
+            37.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "noble-shifter",
+      "candidateId": "a036",
+      "pdfLabel": "Noble Shifter",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elven-noble",
+      "equipmentTags": [
+        "Shifter Backpack|Shifter Jumpgate Backpack"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Noble Shifter",
+          "armyBook": [
+            "Elven Noble + Shifter Backpack",
+            "Shifter Jumpgate Backpack"
+          ]
+        }
+      ],
+      "notes": "figura com picareta e arma de phaser; tag aceita as duas mochilas de Shifter",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            0
+          ],
+          "front": "arts/noble-shifter/fino/frente.svg",
+          "back": "arts/noble-shifter/fino/verso.svg",
+          "canvasMm": [
+            41.91,
+            40.047
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            40.0,
+            41.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            0
+          ],
+          "front": "arts/noble-shifter/borda/frente.svg",
+          "back": "arts/noble-shifter/borda/verso.svg",
+          "canvasMm": [
+            46.651,
+            42.418
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            42.3,
+            46.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "noble-sniper",
+      "candidateId": "a037",
+      "pdfLabel": "Noble Sniper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elven-noble",
+      "equipmentTags": [
+        "Sniper Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Noble Sniper",
+          "armyBook": "Elven Noble + Sniper Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            1
+          ],
+          "front": "arts/noble-sniper/fino/frente.svg",
+          "back": "arts/noble-sniper/fino/verso.svg",
+          "canvasMm": [
+            44.789,
+            38.608
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            38.5,
+            44.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            1
+          ],
+          "front": "arts/noble-sniper/borda/frente.svg",
+          "back": "arts/noble-sniper/borda/verso.svg",
+          "canvasMm": [
+            49.53,
+            40.979
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            40.9,
+            49.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "noble-scorcher",
+      "candidateId": "a038",
+      "pdfLabel": "Noble Scorcher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elven-noble",
+      "equipmentTags": [
+        "Scorcher Fusion-Axe|Scorcher Flamer-Axe"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Noble Scorcher",
+          "armyBook": [
+            "Scorcher Fusion-Axe",
+            "Scorcher Flamer-Axe"
+          ]
+        }
+      ],
+      "notes": "machado com cano; a imagem não diz se é Fusion-Axe ou Flamer-Axe, a tag aceita os dois",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            2
+          ],
+          "front": "arts/noble-scorcher/fino/frente.svg",
+          "back": "arts/noble-scorcher/fino/verso.svg",
+          "canvasMm": [
+            51.393,
+            41.19
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            41.1,
+            51.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            2
+          ],
+          "front": "arts/noble-scorcher/borda/frente.svg",
+          "back": "arts/noble-scorcher/borda/verso.svg",
+          "canvasMm": [
+            56.134,
+            43.561
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            43.4,
+            55.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "noble-revenant",
+      "candidateId": "a039",
+      "pdfLabel": "Noble Revenant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elven-noble",
+      "equipmentTags": [
+        "Revenant Mask"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Noble Revenant",
+          "armyBook": "Elven Noble + Revenant Mask"
+        }
+      ],
+      "notes": "glaive dupla; o item de aspecto do Noble é Revenant Mask",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            3
+          ],
+          "front": "arts/noble-revenant/fino/frente.svg",
+          "back": "arts/noble-revenant/fino/verso.svg",
+          "canvasMm": [
+            51.35,
+            42.841
+          ],
+          "frontBackIoU": 0.918,
+          "sizeMm": [
+            42.8,
+            51.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            3
+          ],
+          "front": "arts/noble-revenant/borda/frente.svg",
+          "back": "arts/noble-revenant/borda/verso.svg",
+          "canvasMm": [
+            56.134,
+            45.212
+          ],
+          "frontBackIoU": 0.953,
+          "sizeMm": [
+            45.1,
+            55.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "high-oracle",
+      "candidateId": "a040",
+      "pdfLabel": "High Oracle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite-protector",
+      "equipmentTags": [
+        "High Oracle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "High Oracle",
+          "armyBook": "Elite Protector + High Oracle"
+        }
+      ],
+      "notes": "High Oracle é opção do Elite Protector e também do Elven Noble; escolhido o Elite Protector (usuário confirma)",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0
+          ],
+          "front": "arts/high-oracle/fino/frente.svg",
+          "back": "arts/high-oracle/fino/verso.svg",
+          "canvasMm": [
+            41.402,
+            40.852
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            40.7,
+            41.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            0
+          ],
+          "front": "arts/high-oracle/borda/frente.svg",
+          "back": "arts/high-oracle/borda/verso.svg",
+          "canvasMm": [
+            44.958,
+            42.63
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            42.5,
+            44.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "acolyte-sword",
+      "candidateId": "a041",
+      "pdfLabel": "Acolyte Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "acolyte",
+      "equipmentTags": [
+        "Ancient Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Ancient Sword"
+        }
+      ],
+      "notes": "pistola e espada (padrão do Acolyte)",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            1,
+            2,
+            3
+          ],
+          "front": "arts/acolyte-sword/fino/frente.svg",
+          "back": "arts/acolyte-sword/fino/verso.svg",
+          "canvasMm": [
+            24.215,
+            43.688
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            43.6,
+            24.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            1,
+            2,
+            3
+          ],
+          "front": "arts/acolyte-sword/borda/frente.svg",
+          "back": "arts/acolyte-sword/borda/verso.svg",
+          "canvasMm": [
+            27.728,
+            45.466
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            45.4,
+            27.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetbike-elite",
+      "candidateId": "a042",
+      "pdfLabel": "Jetbike Elite",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite-protector",
+      "equipmentTags": [
+        "Assault Jetbike|Combat Jetbike"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Jetbike Elite",
+          "armyBook": [
+            "Elite Protector + Assault Jetbike",
+            "Combat Jetbike"
+          ]
+        }
+      ],
+      "notes": "herói (1 cópia) em jetbike; \"Elite\" como em Elite Protector (a001/a002). Tag aceita as duas jetbikes; o Elven Noble também tem as duas (alternativa de unidade). sem par de estilo: a063 é a mesma arte no estilo borda (pareamento falhou)",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0
+          ],
+          "front": "arts/jetbike-elite/fino/frente.svg",
+          "back": "arts/jetbike-elite/fino/verso.svg",
+          "canvasMm": [
+            62.78,
+            37.253
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            37.1,
+            62.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "acolyte-spear",
+      "candidateId": "a043",
+      "pdfLabel": "Acolyte Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "acolyte",
+      "equipmentTags": [
+        "Ancient Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Spear",
+          "armyBook": "Ancient Spear"
+        }
+      ],
+      "notes": "rótulo impresso em negrito",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            1,
+            2,
+            3
+          ],
+          "front": "arts/acolyte-spear/fino/frente.svg",
+          "back": "arts/acolyte-spear/fino/verso.svg",
+          "canvasMm": [
+            28.49,
+            43.603
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            43.5,
+            28.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 56,
+          "rows": [
+            1,
+            2,
+            3
+          ],
+          "front": "arts/acolyte-spear/borda/frente.svg",
+          "back": "arts/acolyte-spear/borda/verso.svg",
+          "canvasMm": [
+            32.046,
+            45.381
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            45.3,
+            31.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetbike-acolyte-pistol",
+      "candidateId": "a044",
+      "pdfLabel": "Jetbike Acolyte Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "acolyte",
+      "equipmentTags": [
+        "Assault Jetbike",
+        "Shard Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Jetbike",
+          "armyBook": "Assault Jetbike"
+        }
+      ],
+      "notes": "Acolyte na opção Assault Jetbike com Shard Pistol + Ancient Sword. sem par de estilo: a064 é a mesma arte no estilo borda (pareamento falhou)",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/jetbike-acolyte-pistol/fino/frente.svg",
+          "back": "arts/jetbike-acolyte-pistol/fino/verso.svg",
+          "canvasMm": [
+            60.833,
+            31.877
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            31.7,
+            60.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetbike-acolyte-sword",
+      "candidateId": "a045",
+      "pdfLabel": "Jetbike Acolyte Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "acolyte",
+      "equipmentTags": [
+        "Assault Jetbike",
+        "Ancient Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Jetbike",
+          "armyBook": "Assault Jetbike"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Ancient Sword"
+        }
+      ],
+      "notes": "empata com a044 na opção de jetbike com pistola. sem par de estilo: a065 é a mesma arte no estilo borda (pareamento falhou)",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/jetbike-acolyte-sword/fino/frente.svg",
+          "back": "arts/jetbike-acolyte-sword/fino/verso.svg",
+          "canvasMm": [
+            65.701,
+            30.522
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            30.3,
+            65.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetbike-striker-sword",
+      "candidateId": "a046",
+      "pdfLabel": "Jetbike Striker Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "jetbike-striker",
+      "equipmentTags": [
+        "Ancient Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Ancient Sword"
+        }
+      ],
+      "notes": "sem par de estilo: a066 é a mesma arte no estilo borda (pareamento falhou)",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/jetbike-striker-sword/fino/frente.svg",
+          "back": "arts/jetbike-striker-sword/fino/verso.svg",
+          "canvasMm": [
+            59.097,
+            39.539
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            39.4,
+            58.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetbike-striker-lance",
+      "candidateId": "a047",
+      "pdfLabel": "Jetbike Striker Lance",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "jetbike-striker",
+      "equipmentTags": [
+        "Ancient Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Lance",
+          "armyBook": "Ancient Lance"
+        }
+      ],
+      "notes": "arma padrão. sem par de estilo: a067 é a mesma arte no estilo borda (pareamento falhou)",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/jetbike-striker-lance/fino/frente.svg",
+          "back": "arts/jetbike-striker-lance/fino/verso.svg",
+          "canvasMm": [
+            58.801,
+            39.37
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            39.1,
+            58.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetbike-protector",
+      "candidateId": "a048",
+      "pdfLabel": "Jetbike Protector",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "jetbike-protector",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "sem par de estilo: a068 é a mesma arte no estilo borda (pareamento falhou)",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/jetbike-protector/fino/frente.svg",
+          "back": "arts/jetbike-protector/fino/verso.svg",
+          "canvasMm": [
+            56.684,
+            31.75
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            31.5,
+            56.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetbike-protector-turret",
+      "candidateId": "a049",
+      "pdfLabel": "Jetbike Protector Turret",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "jetbike-protector",
+      "equipmentTags": [
+        "Shard Cannon|Burst Laser"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Turret",
+          "armyBook": [
+            "Shard Cannon",
+            "Burst Laser"
+          ]
+        }
+      ],
+      "notes": "jetbike com artilheiro e canhão; o rótulo não diz qual arma pesada, a tag aceita as duas. sem par de estilo: a069 é a mesma arte no estilo borda (pareamento falhou)",
+      "styles": {
+        "fino": {
+          "page": 26,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/jetbike-protector-turret/fino/frente.svg",
+          "back": "arts/jetbike-protector-turret/fino/verso.svg",
+          "canvasMm": [
+            72.983,
+            47.625
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            47.4,
+            72.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetbike-protector-sniper",
+      "candidateId": "a050",
+      "pdfLabel": "Jetbike Protector Sniper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "jetbike-protector",
+      "equipmentTags": [
+        "Sniper Rifle|Shard-Sniper Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sniper",
+          "armyBook": [
+            "Sniper Rifle",
+            "Shard-Sniper Rifle"
+          ]
+        }
+      ],
+      "notes": "duas opções de sniper (ambas com Bike-Shardguns), a tag aceita as duas. sem par de estilo: a070 é a mesma arte no estilo borda (pareamento falhou)",
+      "styles": {
+        "fino": {
+          "page": 27,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/jetbike-protector-sniper/fino/frente.svg",
+          "back": "arts/jetbike-protector-sniper/fino/verso.svg",
+          "canvasMm": [
+            62.272,
+            47.329
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            47.1,
+            62.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "stinger",
+      "candidateId": "a051",
+      "pdfLabel": "Stinger",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "stinger",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 28,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/stinger/fino/frente.svg",
+          "back": "arts/stinger/fino/verso.svg",
+          "canvasMm": [
+            28.152,
+            36.026
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            35.9,
+            27.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 64,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/stinger/borda/frente.svg",
+          "back": "arts/stinger/borda/verso.svg",
+          "canvasMm": [
+            31.877,
+            37.888
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            37.8,
+            31.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vanquisher-cannon",
+      "candidateId": "a052",
+      "pdfLabel": "Vanquisher Cannon",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vanquisher",
+      "equipmentTags": [
+        "Shard Cannon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Cannon",
+          "armyBook": "Shard Cannon"
+        }
+      ],
+      "notes": "único canhão dos Vanquishers",
+      "styles": {
+        "fino": {
+          "page": 29,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/vanquisher-cannon/fino/frente.svg",
+          "back": "arts/vanquisher-cannon/fino/verso.svg",
+          "canvasMm": [
+            42.587,
+            34.84
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            34.7,
+            42.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 65,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/vanquisher-cannon/borda/frente.svg",
+          "back": "arts/vanquisher-cannon/borda/verso.svg",
+          "canvasMm": [
+            46.313,
+            36.703
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            36.6,
+            46.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "vanquisher-missile",
+      "candidateId": "a053",
+      "pdfLabel": "Vanquisher Missile",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vanquisher",
+      "equipmentTags": [
+        "Heat-Rocket Launcher|Dart-Rocket Launcher|Arc-Rocket Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Missile",
+          "armyBook": [
+            "Heat-Rocket Launcher",
+            "Dart-Rocket Launcher",
+            "Arc-Rocket Launcher"
+          ]
+        }
+      ],
+      "notes": "três lançadores de foguete no army book, a tag aceita os três (padrão: Heat-Rocket Launcher)",
+      "styles": {
+        "fino": {
+          "page": 30,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/vanquisher-missile/fino/frente.svg",
+          "back": "arts/vanquisher-missile/fino/verso.svg",
+          "canvasMm": [
+            43.688,
+            40.894
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            40.8,
+            43.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 66,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/vanquisher-missile/borda/frente.svg",
+          "back": "arts/vanquisher-missile/borda/verso.svg",
+          "canvasMm": [
+            47.413,
+            42.757
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            42.7,
+            47.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "guardian",
+      "candidateId": "a054",
+      "pdfLabel": "Guardian",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite-protector",
+      "equipmentTags": [
+        "Guardian Cleric"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Guardian",
+          "armyBook": "Guardian Cleric"
+        }
+      ],
+      "notes": "Guardian Cleric é opção do Elite Protector e também do Elven Noble; escolhido o Elite Protector (usuário confirma)",
+      "styles": {
+        "fino": {
+          "page": 31,
+          "rows": [
+            0
+          ],
+          "front": "arts/guardian/fino/frente.svg",
+          "back": "arts/guardian/fino/verso.svg",
+          "canvasMm": [
+            29.549,
+            48.302
+          ],
+          "frontBackIoU": 0.948,
+          "sizeMm": [
+            48.2,
+            29.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 67,
+          "rows": [
+            0
+          ],
+          "front": "arts/guardian/borda/frente.svg",
+          "back": "arts/guardian/borda/verso.svg",
+          "canvasMm": [
+            33.274,
+            50.165
+          ],
+          "frontBackIoU": 0.958,
+          "sizeMm": [
+            50.0,
+            33.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "noble",
+      "candidateId": "a055",
+      "pdfLabel": "Noble",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elven-noble",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "arte genérica do Elven Noble",
+      "styles": {
+        "fino": {
+          "page": 31,
+          "rows": [
+            1
+          ],
+          "front": "arts/noble/fino/frente.svg",
+          "back": "arts/noble/fino/verso.svg",
+          "canvasMm": [
+            45.551,
+            46.609
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            46.5,
+            45.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 67,
+          "rows": [
+            1
+          ],
+          "front": "arts/noble/borda/frente.svg",
+          "back": "arts/noble/borda/verso.svg",
+          "canvasMm": [
+            49.276,
+            48.472
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            48.3,
+            49.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "noble-stinger",
+      "candidateId": "a056",
+      "pdfLabel": "Noble Stinger",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elven-noble",
+      "equipmentTags": [
+        "Master Stinger|Dual Stinger Blades"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Noble Stinger",
+          "armyBook": [
+            "Elven Noble + Master Stinger",
+            "Dual Stinger Blades"
+          ]
+        }
+      ],
+      "notes": "figura com duas lâminas curvas (Dual Stinger Blades); tag aceita a lâmina ou o item de aspecto Master Stinger",
+      "styles": {
+        "fino": {
+          "page": 31,
+          "rows": [
+            2
+          ],
+          "front": "arts/noble-stinger/fino/frente.svg",
+          "back": "arts/noble-stinger/fino/verso.svg",
+          "canvasMm": [
+            32.554,
+            47.879
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            47.8,
+            32.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 67,
+          "rows": [
+            2
+          ],
+          "front": "arts/noble-stinger/borda/frente.svg",
+          "back": "arts/noble-stinger/borda/verso.svg",
+          "canvasMm": [
+            36.28,
+            49.742
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            49.6,
+            36.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "noble-vanquisher",
+      "candidateId": "a057",
+      "pdfLabel": "Noble Vanquisher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elven-noble",
+      "equipmentTags": [
+        "Vanquisher Rocket Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Noble Vanquisher",
+          "armyBook": "Elven Noble + Vanquisher Rocket Launcher"
+        }
+      ],
+      "notes": "a opção vem com Vanquisher Leader",
+      "styles": {
+        "fino": {
+          "page": 31,
+          "rows": [
+            3
+          ],
+          "front": "arts/noble-vanquisher/fino/frente.svg",
+          "back": "arts/noble-vanquisher/fino/verso.svg",
+          "canvasMm": [
+            40.471,
+            41.317
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            41.2,
+            40.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 67,
+          "rows": [
+            3
+          ],
+          "front": "arts/noble-vanquisher/borda/frente.svg",
+          "back": "arts/noble-vanquisher/borda/verso.svg",
+          "canvasMm": [
+            44.196,
+            43.18
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            43.1,
+            43.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elemental-striker-axe",
+      "candidateId": "a058",
+      "pdfLabel": "Elemental Striker Axe",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elemental-striker",
+      "equipmentTags": [
+        "Killing Axe"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Axe",
+          "armyBook": "Killing Axe"
+        }
+      ],
+      "notes": "machado e escudo (Killing Axe + Combat Shield)",
+      "styles": {
+        "fino": {
+          "page": 32,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/elemental-striker-axe/fino/frente.svg",
+          "back": "arts/elemental-striker-axe/fino/verso.svg",
+          "canvasMm": [
+            42.63,
+            51.985
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            51.9,
+            42.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 68,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/elemental-striker-axe/borda/frente.svg",
+          "back": "arts/elemental-striker-axe/borda/verso.svg",
+          "canvasMm": [
+            46.355,
+            53.848
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            53.8,
+            46.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elemental-striker-spear",
+      "candidateId": "a059",
+      "pdfLabel": "Elemental Striker Spear",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elemental-striker",
+      "equipmentTags": [
+        "Ancient Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Spear",
+          "armyBook": "Ancient Spear"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 33,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/elemental-striker-spear/fino/frente.svg",
+          "back": "arts/elemental-striker-spear/fino/verso.svg",
+          "canvasMm": [
+            61.849,
+            53.933
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            53.8,
+            61.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 69,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/elemental-striker-spear/borda/frente.svg",
+          "back": "arts/elemental-striker-spear/borda/verso.svg",
+          "canvasMm": [
+            65.574,
+            55.795
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            55.7,
+            65.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elemental-striker-sword",
+      "candidateId": "a060",
+      "pdfLabel": "Elemental Striker Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elemental-striker",
+      "equipmentTags": [
+        "Ancient Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Ancient Sword"
+        }
+      ],
+      "notes": "uma espada (opção Ancient Sword + Combat Shield); o padrão Dual Ancient Swords não tem arte",
+      "styles": {
+        "fino": {
+          "page": 34,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/elemental-striker-sword/fino/frente.svg",
+          "back": "arts/elemental-striker-sword/fino/verso.svg",
+          "canvasMm": [
+            59.817,
+            50.334
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            50.2,
+            59.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 70,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/elemental-striker-sword/borda/frente.svg",
+          "back": "arts/elemental-striker-sword/borda/verso.svg",
+          "canvasMm": [
+            63.542,
+            52.197
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            52.1,
+            63.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elemental-striker-distortion-gun",
+      "candidateId": "a061",
+      "pdfLabel": "Elemental Striker Distortion Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elemental-protector",
+      "equipmentTags": [
+        "Warp-Blast Gun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Elemental Striker",
+          "armyBook": "Elemental Protector"
+        },
+        {
+          "pdf": "Distortion Gun",
+          "armyBook": "Warp-Blast Gun"
+        }
+      ],
+      "notes": "rótulo diz Elemental Striker, mas armas de tiro só existem nos Elemental Protectors; distortion ~ warp (arma padrão)",
+      "styles": {
+        "fino": {
+          "page": 35,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/elemental-striker-distortion-gun/fino/frente.svg",
+          "back": "arts/elemental-striker-distortion-gun/fino/verso.svg",
+          "canvasMm": [
+            37.423,
+            51.435
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            51.3,
+            37.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 71,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/elemental-striker-distortion-gun/borda/frente.svg",
+          "back": "arts/elemental-striker-distortion-gun/borda/verso.svg",
+          "canvasMm": [
+            41.148,
+            53.298
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            53.2,
+            40.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "elemental-striker-wraith-cannon",
+      "candidateId": "a062",
+      "pdfLabel": "Elemental Striker Wraith Cannon",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elemental-protector",
+      "equipmentTags": [
+        "Elemental Cannon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Elemental Striker",
+          "armyBook": "Elemental Protector"
+        },
+        {
+          "pdf": "Wraith Cannon",
+          "armyBook": "Elemental Cannon"
+        }
+      ],
+      "notes": "rótulo diz Elemental Striker, mas o canhão só existe nos Elemental Protectors",
+      "styles": {
+        "fino": {
+          "page": 36,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/elemental-striker-wraith-cannon/fino/frente.svg",
+          "back": "arts/elemental-striker-wraith-cannon/fino/verso.svg",
+          "canvasMm": [
+            40.936,
+            51.731
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            51.6,
+            40.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 72,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/elemental-striker-wraith-cannon/borda/frente.svg",
+          "back": "arts/elemental-striker-wraith-cannon/borda/verso.svg",
+          "canvasMm": [
+            44.662,
+            53.594
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            53.5,
+            44.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetbike-elite-borda",
+      "candidateId": "a063",
+      "pdfLabel": "Jetbike Elite",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "elite-protector",
+      "equipmentTags": [
+        "Assault Jetbike|Combat Jetbike"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Jetbike Elite",
+          "armyBook": [
+            "Elite Protector + Assault Jetbike",
+            "Combat Jetbike"
+          ]
+        }
+      ],
+      "notes": "herói (1 cópia) em jetbike; \"Elite\" como em Elite Protector (a001/a002). Tag aceita as duas jetbikes; o Elven Noble também tem as duas (alternativa de unidade). só estilo borda; mesma arte de a042 (fino), pareamento falhou",
+      "styles": {
+        "borda": {
+          "page": 56,
+          "rows": [
+            0
+          ],
+          "front": "arts/jetbike-elite-borda/borda/frente.svg",
+          "back": "arts/jetbike-elite-borda/borda/verso.svg",
+          "canvasMm": [
+            66.336,
+            45.805
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            45.7,
+            66.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetbike-acolyte-pistol-borda",
+      "candidateId": "a064",
+      "pdfLabel": "Jetbike Acolyte Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "acolyte",
+      "equipmentTags": [
+        "Assault Jetbike",
+        "Shard Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Jetbike",
+          "armyBook": "Assault Jetbike"
+        }
+      ],
+      "notes": "Acolyte na opção Assault Jetbike com Shard Pistol + Ancient Sword. só estilo borda; mesma arte de a044 (fino), pareamento falhou",
+      "styles": {
+        "borda": {
+          "page": 57,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/jetbike-acolyte-pistol-borda/borda/frente.svg",
+          "back": "arts/jetbike-acolyte-pistol-borda/borda/verso.svg",
+          "canvasMm": [
+            64.347,
+            43.646
+          ],
+          "frontBackIoU": 0.759,
+          "sizeMm": [
+            43.5,
+            64.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo",
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetbike-acolyte-sword-borda",
+      "candidateId": "a065",
+      "pdfLabel": "Jetbike Acolyte Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "acolyte",
+      "equipmentTags": [
+        "Assault Jetbike",
+        "Ancient Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Jetbike",
+          "armyBook": "Assault Jetbike"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Ancient Sword"
+        }
+      ],
+      "notes": "empata com a044 na opção de jetbike com pistola. só estilo borda; mesma arte de a045 (fino), pareamento falhou",
+      "styles": {
+        "borda": {
+          "page": 58,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/jetbike-acolyte-sword-borda/borda/frente.svg",
+          "back": "arts/jetbike-acolyte-sword-borda/borda/verso.svg",
+          "canvasMm": [
+            69.257,
+            43.773
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            43.7,
+            69.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetbike-striker-sword-borda",
+      "candidateId": "a066",
+      "pdfLabel": "Jetbike Striker Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "jetbike-striker",
+      "equipmentTags": [
+        "Ancient Sword"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Ancient Sword"
+        }
+      ],
+      "notes": "só estilo borda; mesma arte de a046 (fino), pareamento falhou",
+      "styles": {
+        "borda": {
+          "page": 59,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/jetbike-striker-sword-borda/borda/frente.svg",
+          "back": "arts/jetbike-striker-sword-borda/borda/verso.svg",
+          "canvasMm": [
+            62.653,
+            47.921
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            47.8,
+            62.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetbike-striker-lance-borda",
+      "candidateId": "a067",
+      "pdfLabel": "Jetbike Striker Lance",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "jetbike-striker",
+      "equipmentTags": [
+        "Ancient Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Lance",
+          "armyBook": "Ancient Lance"
+        }
+      ],
+      "notes": "arma padrão. só estilo borda; mesma arte de a047 (fino), pareamento falhou",
+      "styles": {
+        "borda": {
+          "page": 60,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/jetbike-striker-lance-borda/borda/frente.svg",
+          "back": "arts/jetbike-striker-lance-borda/borda/verso.svg",
+          "canvasMm": [
+            62.357,
+            47.964
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            47.8,
+            62.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetbike-protector-borda",
+      "candidateId": "a068",
+      "pdfLabel": "Jetbike Protector",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "jetbike-protector",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só estilo borda; mesma arte de a048 (fino), pareamento falhou",
+      "styles": {
+        "borda": {
+          "page": 61,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/jetbike-protector-borda/borda/frente.svg",
+          "back": "arts/jetbike-protector-borda/borda/verso.svg",
+          "canvasMm": [
+            60.198,
+            46.694
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            46.6,
+            60.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetbike-protector-turret-borda",
+      "candidateId": "a069",
+      "pdfLabel": "Jetbike Protector Turret",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "jetbike-protector",
+      "equipmentTags": [
+        "Shard Cannon|Burst Laser"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Turret",
+          "armyBook": [
+            "Shard Cannon",
+            "Burst Laser"
+          ]
+        }
+      ],
+      "notes": "jetbike com artilheiro e canhão; o rótulo não diz qual arma pesada, a tag aceita as duas. só estilo borda; mesma arte de a049 (fino), pareamento falhou",
+      "styles": {
+        "borda": {
+          "page": 62,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/jetbike-protector-turret-borda/borda/frente.svg",
+          "back": "arts/jetbike-protector-turret-borda/borda/verso.svg",
+          "canvasMm": [
+            76.496,
+            62.823
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            62.7,
+            76.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "jetbike-protector-sniper-borda",
+      "candidateId": "a070",
+      "pdfLabel": "Jetbike Protector Sniper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "jetbike-protector",
+      "equipmentTags": [
+        "Sniper Rifle|Shard-Sniper Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sniper",
+          "armyBook": [
+            "Sniper Rifle",
+            "Shard-Sniper Rifle"
+          ]
+        }
+      ],
+      "notes": "duas opções de sniper (ambas com Bike-Shardguns), a tag aceita as duas. só estilo borda; mesma arte de a050 (fino), pareamento falhou",
+      "styles": {
+        "borda": {
+          "page": 63,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/jetbike-protector-sniper-borda/borda/frente.svg",
+          "back": "arts/jetbike-protector-sniper-borda/borda/verso.svg",
+          "canvasMm": [
+            65.828,
+            62.611
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            62.5,
+            65.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

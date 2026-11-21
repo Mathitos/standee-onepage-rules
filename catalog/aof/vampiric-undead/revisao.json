@@ -1,0 +1,859 @@
+{
+ "packId": "vampiric-undead",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "AOF",
+   "slug": "age-of-fantasy",
+   "armyForgeId": 4
+  },
+  {
+   "code": "AOFS",
+   "slug": "age-of-fantasy-skirmish",
+   "armyForgeId": 5
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/qABIfXYbYxmA75yL-gs4-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/qABIfXYbYxmA75yL-gs5-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-01..05.png, army books v3.6.0 (os dois sistemas). rotulos-06.png é de uma execução anterior (ids a061+ que não existem em candidatos.json) e foi desconsiderada.",
+ "unidades": {
+  "vampire-master": {
+   "armyForgeUnitId": "hYgOS5j"
+  },
+  "skeleton-champion": {
+   "armyForgeUnitId": "IFoiX6E"
+  },
+  "drained-leader": {
+   "armyForgeUnitId": "tcFt2jt"
+  },
+  "ghoul-champion": {
+   "armyForgeUnitId": "ounVlif"
+  },
+  "werewolf-champion": {
+   "armyForgeUnitId": "DmUheiD"
+  },
+  "drained-soldiers": {
+   "armyForgeUnitId": "feVlWGg"
+  },
+  "drained-archers": {
+   "armyForgeUnitId": "nbfcBdh"
+  },
+  "skeleton-guard": {
+   "armyForgeUnitId": "uZbIBgP"
+  },
+  "skeleton-watch": {
+   "armyForgeUnitId": "t7GGspb"
+  },
+  "stitched-zombies": {
+   "armyForgeUnitId": "ywA6N1i"
+  },
+  "stitched-butchers": {
+   "armyForgeUnitId": "EcmqnZb"
+  },
+  "ghouls": {
+   "armyForgeUnitId": "ga8M8Bg"
+  },
+  "ghoul-horrors": {
+   "armyForgeUnitId": "QpKQzOb"
+  },
+  "bat-swarms": {
+   "armyForgeUnitId": "IiE46QX"
+  },
+  "giant-bats": {
+   "armyForgeUnitId": "AxauQas"
+  },
+  "bat-horrors": {
+   "armyForgeUnitId": "nb-80_H"
+  },
+  "zombie-wolves": {
+   "armyForgeUnitId": "WN-xulZ"
+  },
+  "werewolves": {
+   "armyForgeUnitId": "K2QdNmm"
+  },
+  "skeleton-knights": {
+   "armyForgeUnitId": "VYTV8S4"
+  },
+  "vampire-knights": {
+   "armyForgeUnitId": "9x1rCWH"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "vampire-lord",
+   "rotulo": "Vampire Lord",
+   "confiancaRotulo": "alta",
+   "unitKey": "vampire-master",
+   "equipmentTags": [
+    "Lord"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Vampire Lord",
+     "armyBook": "Vampire Master"
+    }
+   ],
+   "notas": "herói vampiro com espada; no army book é o Vampire Master (genericName Vampire Leader) com a opção Lord"
+  },
+  "a002": {
+   "artId": "vampire-lady",
+   "rotulo": "Vampire Lady",
+   "confiancaRotulo": "alta",
+   "unitKey": "vampire-master",
+   "equipmentTags": [
+    "Lord"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Vampire Lady",
+     "armyBook": "Vampire Master"
+    },
+    {
+     "pdf": "Lady",
+     "armyBook": "Lord"
+    }
+   ],
+   "notas": "versão feminina do Vampire Lord (arma de haste e cálice); usei a mesma opção Lord"
+  },
+  "a003": {
+   "artId": "lord-steed",
+   "rotulo": "Lord Steed",
+   "confiancaRotulo": "alta",
+   "unitKey": "vampire-master",
+   "equipmentTags": [
+    "Lord",
+    "Steed"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Lord",
+     "armyBook": "Vampire Master"
+    }
+   ],
+   "notas": "Vampire Lord montado: Vampire Master com Lord e montaria Steed (cavalo sem asas, não Winged Steed)"
+  },
+  "a004": {
+   "artId": "lady-steed",
+   "rotulo": "Lady Steed",
+   "confiancaRotulo": "alta",
+   "unitKey": "vampire-master",
+   "equipmentTags": [
+    "Lord",
+    "Steed"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Lady",
+     "armyBook": "Vampire Master"
+    },
+    {
+     "pdf": "Lady",
+     "armyBook": "Lord"
+    }
+   ],
+   "notas": "Vampire Lady montada no mesmo cavalo de a003: Lord e Steed"
+  },
+  "a005": {
+   "artId": "skeleton-commander",
+   "rotulo": "Skeleton Commander",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-champion",
+   "equipmentTags": [
+    "Commander"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Skeleton Commander",
+     "armyBook": "Skeleton Champion"
+    }
+   ],
+   "notas": "herói esqueleto com lâmina grande e capa: Skeleton Champion (Elite Skeleton Leader) com a opção Commander"
+  },
+  "a006": {
+   "artId": "skeleton-champion",
+   "rotulo": "Skeleton Champion",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-champion",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a007": {
+   "artId": "army-standard",
+   "rotulo": "Army Standard",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-champion",
+   "equipmentTags": [
+    "Army Standard Bearer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Army Standard",
+     "armyBook": "Army Standard Bearer"
+    }
+   ],
+   "notas": "esqueleto com estandarte do exército; Army Standard Bearer só existe no Skeleton Champion"
+  },
+  "a008": {
+   "artId": "champion-steed",
+   "rotulo": "Champion Steed",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-champion",
+   "equipmentTags": [
+    "Skeletal Steed"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Skeleton Champion"
+    },
+    {
+     "pdf": "Steed",
+     "armyBook": "Skeletal Steed"
+    }
+   ],
+   "notas": "cavaleiro com cara de caveira em cavalo com barda: Skeleton Champion com Skeletal Steed"
+  },
+  "a009": {
+   "artId": "necromaster",
+   "rotulo": "Necromaster",
+   "confiancaRotulo": "alta",
+   "unitKey": "drained-leader",
+   "equipmentTags": [
+    "Master Necromancer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Necromaster",
+     "armyBook": "Master Necromancer"
+    }
+   ],
+   "notas": "necromante humano com cajado; Master Necromancer existe no Drained Leader e no Vampire Master, e a figura não é vampiro. A lápide ao lado lembra Latmyir The Mad (Skeletal Gravestone, Pet Experiment)"
+  },
+  "a010": {
+   "artId": "ghoul-champion",
+   "rotulo": "Ghoul Champion",
+   "confiancaRotulo": "alta",
+   "unitKey": "ghoul-champion",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a011": {
+   "artId": "corpse-master",
+   "rotulo": "Corpse Master",
+   "confiancaRotulo": "alta",
+   "unitKey": "drained-leader",
+   "equipmentTags": [
+    "Corpse Master"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Corpse Master",
+     "armyBook": "Drained Leader"
+    }
+   ],
+   "notas": "herói a pé com haste de cadáveres pendurados: opção Corpse Master do Drained Leader (Corpse Master também é item do Corpse Wagon)"
+  },
+  "a012": {
+   "artId": "werewolf-champion",
+   "rotulo": "Werewolf Champion",
+   "confiancaRotulo": "alta",
+   "unitKey": "werewolf-champion",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a013": {
+   "artId": "drained-soldier-sickle",
+   "rotulo": "Drained Soldier Sickle",
+   "confiancaRotulo": "alta",
+   "unitKey": "drained-soldiers",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sickle",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "foice de mão; arma padrão Hand Weapon"
+  },
+  "a014": {
+   "artId": "drained-soldier-spear",
+   "rotulo": "Drained Soldier Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "drained-soldiers",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a015": {
+   "artId": "drained-soldier-halberd",
+   "rotulo": "Drained Soldier Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "drained-soldiers",
+   "equipmentTags": [
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a016": {
+   "artId": "drained-archer-sergeant",
+   "rotulo": "Drained Archer Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "drained-archers",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a017": {
+   "artId": "drained-archer-banner",
+   "rotulo": "Drained Archer Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "drained-archers",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a018": {
+   "artId": "drained-archer-musician",
+   "rotulo": "Drained Archer Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "drained-archers",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a019": {
+   "artId": "drained-archer",
+   "rotulo": "Drained Archer",
+   "confiancaRotulo": "alta",
+   "unitKey": "drained-archers",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a020": {
+   "artId": "drained-soldier-sergeant",
+   "rotulo": "Drained Soldier Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "drained-soldiers",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a021": {
+   "artId": "drained-soldier-musician",
+   "rotulo": "Drained Soldier Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "drained-soldiers",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a022": {
+   "artId": "drained-soldier-banner",
+   "rotulo": "Drained Soldier Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "drained-soldiers",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a023": {
+   "artId": "skeleton-guard-sword",
+   "rotulo": "Skeleton Guard Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-guard",
+   "equipmentTags": [
+    "Cursed Blade"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Cursed Blade"
+    }
+   ],
+   "notas": "espada; a lâmina padrão da unidade é Cursed Blade (a maça ficou com Hand Weapon)"
+  },
+  "a024": {
+   "artId": "skeleton-guard-mace",
+   "rotulo": "Skeleton Guard Mace",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-guard",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Mace",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "maça de uma mão; Hand Weapon"
+  },
+  "a025": {
+   "artId": "skeleton-guard-spear",
+   "rotulo": "Skeleton Guard Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-guard",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a026": {
+   "artId": "skeleton-guard-halberd",
+   "rotulo": "Skeleton Guard Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-guard",
+   "equipmentTags": [
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a027": {
+   "artId": "skeleton-guard-sergeant",
+   "rotulo": "Skeleton Guard Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-guard",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a028": {
+   "artId": "skeleton-guard-musician",
+   "rotulo": "Skeleton Guard Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-guard",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a029": {
+   "artId": "skeleton-guard-banner",
+   "rotulo": "Skeleton Guard Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-guard",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a030": {
+   "artId": "skeleton-watch",
+   "rotulo": "Skeleton Watch",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-watch",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a031": {
+   "artId": "skeleton-watch-sergeant",
+   "rotulo": "Skeleton Watch Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-watch",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a032": {
+   "artId": "skeleton-watch-banner",
+   "rotulo": "Skeleton Watch Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-watch",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a033": {
+   "artId": "skeleton-watch-musician",
+   "rotulo": "Skeleton Watch Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-watch",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a034": {
+   "artId": "stitched",
+   "rotulo": "Stitched",
+   "confiancaRotulo": "alta",
+   "unitKey": "stitched-zombies",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Stitched",
+     "armyBook": "Stitched Zombies"
+    }
+   ],
+   "notas": "zumbi costurado de tamanho humano; Stitched Butchers é ogro e tem arte própria (a038)"
+  },
+  "a035": {
+   "artId": "stitched-sergeant",
+   "rotulo": "Stitched Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "stitched-zombies",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Stitched",
+     "armyBook": "Stitched Zombies"
+    }
+   ],
+   "notas": ""
+  },
+  "a036": {
+   "artId": "stitched-musician",
+   "rotulo": "Stitched Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "stitched-zombies",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Stitched",
+     "armyBook": "Stitched Zombies"
+    }
+   ],
+   "notas": ""
+  },
+  "a037": {
+   "artId": "stitched-banner",
+   "rotulo": "Stitched Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "stitched-zombies",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Stitched",
+     "armyBook": "Stitched Zombies"
+    }
+   ],
+   "notas": ""
+  },
+  "a038": {
+   "artId": "stitched-butcher",
+   "rotulo": "Stitched Butcher",
+   "confiancaRotulo": "alta",
+   "unitKey": "stitched-butchers",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Stitched Butcher é o nome no Skirmish"
+  },
+  "a039": {
+   "artId": "ghoul",
+   "rotulo": "Ghoul",
+   "confiancaRotulo": "alta",
+   "unitKey": "ghouls",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a040": {
+   "artId": "ghoul-horror",
+   "rotulo": "Ghoul Horror",
+   "confiancaRotulo": "alta",
+   "unitKey": "ghoul-horrors",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a041": {
+   "artId": "bat-swarm",
+   "rotulo": "Bat Swarm",
+   "confiancaRotulo": "alta",
+   "unitKey": "bat-swarms",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a042": {
+   "artId": "giant-bat",
+   "rotulo": "Giant Bat",
+   "confiancaRotulo": "alta",
+   "unitKey": "giant-bats",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a043": {
+   "artId": "bat-horror",
+   "rotulo": "Bat Horror",
+   "confiancaRotulo": "alta",
+   "unitKey": "bat-horrors",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a044": {
+   "artId": "zombie-wolf",
+   "rotulo": "Zombie Wolf",
+   "confiancaRotulo": "alta",
+   "unitKey": "zombie-wolves",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a045": {
+   "artId": "werewolf-claws",
+   "rotulo": "Werewolf Claws",
+   "confiancaRotulo": "alta",
+   "unitKey": "werewolves",
+   "equipmentTags": [
+    "Sharp Claws"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Claws",
+     "armyBook": "Sharp Claws"
+    }
+   ],
+   "notas": "arma padrão da unidade é Sharp Claws"
+  },
+  "a046": {
+   "artId": "werewolf-sword",
+   "rotulo": "Werewolf Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "werewolves",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Great Weapon"
+    }
+   ],
+   "notas": "lâmina grande; a única arma da unidade além das garras é Great Weapon"
+  },
+  "a047": {
+   "artId": "skeleton-knight",
+   "rotulo": "Skeleton Kinght",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-knights",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo impresso com erro de grafia (Kinght); artId com a grafia correta"
+  },
+  "a048": {
+   "artId": "skeleton-knight-sergeant",
+   "rotulo": "Skeleton Kinght Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-knights",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo impresso com erro de grafia (Kinght); artId com a grafia correta"
+  },
+  "a049": {
+   "artId": "skeleton-knight-musician",
+   "rotulo": "Skeleton Kinght Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-knights",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo impresso com erro de grafia (Kinght); artId com a grafia correta"
+  },
+  "a050": {
+   "artId": "skeleton-knight-banner",
+   "rotulo": "Skeleton Kinght Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "skeleton-knights",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo impresso com erro de grafia (Kinght); artId com a grafia correta"
+  },
+  "a051": {
+   "artId": "vampire-knight-sword",
+   "rotulo": "Vampire Kinght Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "vampire-knights",
+   "equipmentTags": [
+    "Cursed Blade"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Cursed Blade"
+    }
+   ],
+   "notas": "espada; a lâmina padrão da unidade é Cursed Blade. rótulo impresso com erro de grafia (Kinght); artId com a grafia correta"
+  },
+  "a052": {
+   "artId": "vampire-knight-spear",
+   "rotulo": "Vampire Kinght Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "vampire-knights",
+   "equipmentTags": [
+    "Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spear",
+     "armyBook": "Lance"
+    }
+   ],
+   "notas": "lança de cavaleiro; a unidade não tem Spear. rótulo impresso com erro de grafia (Kinght); artId com a grafia correta"
+  },
+  "a053": {
+   "artId": "vampire-knight-sergeant",
+   "rotulo": "Vampire Kinght Sergeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "vampire-knights",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo impresso com erro de grafia (Kinght); artId com a grafia correta"
+  },
+  "a054": {
+   "artId": "vampire-knight-musician",
+   "rotulo": "Vampire Kinght Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "vampire-knights",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo impresso com erro de grafia (Kinght); artId com a grafia correta"
+  },
+  "a055": {
+   "artId": "vampire-knight-banner",
+   "rotulo": "Vampire Kinght Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "vampire-knights",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "rótulo impresso com erro de grafia (Kinght); artId com a grafia correta"
+  },
+  "a056": {
+   "artId": "drained-archer-borda",
+   "rotulo": "Drained Archer",
+   "confiancaRotulo": "alta",
+   "unitKey": "drained-archers",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "mesma arte de a019, só no estilo borda (cópia que o recorte não juntou)"
+  }
+ }
+}

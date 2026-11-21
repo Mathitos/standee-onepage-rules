@@ -1,0 +1,1505 @@
+{
+  "armyBook": {
+    "id": "4k5amkxoybdiqotm",
+    "nome": "Robot Legions",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-05T08:56:02.941Z",
+    "sistema": "grimdark-future",
+    "sistemaId": 2
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "R2d8LeD",
+      "nome": "Tri-Scorpion Lord",
+      "tamanho": 1,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Heavy Ion Blades"
+      ],
+      "itens": [
+        {
+          "nome": "Deadly Stinger",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Controller"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Psychomancer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Re-Animator"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Overseer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Chronomancer"
+          ]
+        },
+        {
+          "secao": "Replace Dual Heavy Ion Blades",
+          "ganha": [
+            "Radium Pulse Gun",
+            "Dual Ion Blades"
+          ]
+        },
+        {
+          "secao": "Replace Dual Heavy Ion Blades",
+          "ganha": [
+            "Fusion Pulse Gun",
+            "Dual Ion Blades"
+          ]
+        },
+        {
+          "secao": "Replace Dual Heavy Ion Blades",
+          "ganha": [
+            "Radium Pulse Gun",
+            "Heavy Ion Scythe"
+          ]
+        },
+        {
+          "secao": "Replace Dual Heavy Ion Blades",
+          "ganha": [
+            "Fusion Pulse Gun",
+            "Heavy Ion Scythe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "y8xIlHV",
+      "nome": "Annihilator Lord",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Technomancer Staff"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Technomancer Staff",
+          "ganha": [
+            "Burst Wrist-Spark",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Technomancer Staff",
+          "ganha": [
+            "Dual Atomizer Swords"
+          ]
+        },
+        {
+          "secao": "Replace Technomancer Staff",
+          "ganha": [
+            "Power Staff"
+          ]
+        },
+        {
+          "secao": "Replace Technomancer Staff",
+          "ganha": [
+            "Photon Cannon",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Technomancer Staff",
+          "ganha": [
+            "Heavy Photon Cannon",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Burst Wrist-Spark",
+          "ganha": [
+            "Burst Wrist-Plasma"
+          ]
+        },
+        {
+          "secao": "Replace Burst Wrist-Spark",
+          "ganha": [
+            "Burst Photon Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Uranium Dagger"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Atomizer Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Legion Glaive"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Great Doom Scythe"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Phase Core"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Controller"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Psychomancer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Re-Animator"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Warden"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Overseer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Technomancer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lcEWPMS",
+      "nome": "Robot Lord",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Wrist-Spark",
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Hand Weapon and Wrist-Spark",
+          "ganha": [
+            "Burst Ion Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Wrist-Spark",
+          "ganha": [
+            "Burst Photon Rifle",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Wrist-Spark",
+          "ganha": [
+            "Technomancer Staff"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Wrist-Spark",
+          "ganha": [
+            "Burst Photon Gun",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon and Wrist-Spark",
+          "ganha": [
+            "Power Staff"
+          ]
+        },
+        {
+          "secao": "Replace Wrist-Spark",
+          "ganha": [
+            "Combat Shield"
+          ]
+        },
+        {
+          "secao": "Replace Wrist-Spark",
+          "ganha": [
+            "Photon Pistol"
+          ]
+        },
+        {
+          "secao": "Replace Wrist-Spark",
+          "ganha": [
+            "Wrist-Plasma"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Uranium Dagger"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Atomizer Sword"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Legion Glaive"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Great Doom Scythe"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Pet Technoaide"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Jetpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Teleport Jetpack"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Thruster Bike"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Skimmer Bike"
+          ]
+        },
+        {
+          "secao": "Replace Radium Cannon",
+          "ganha": [
+            "Burst Transonic Carbine"
+          ]
+        },
+        {
+          "secao": "Replace Radium Cannon",
+          "ganha": [
+            "Burst Photon Gun"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Psychomancer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Re-Animator"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Warden"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Overseer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Chronomancer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Technomancer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "njiIkJi",
+      "nome": "Warriors",
+      "tamanho": 5,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Ion Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Ion Rifles",
+          "ganha": [
+            "Photon Gun"
+          ]
+        },
+        {
+          "secao": "Replace one Ion Rifle",
+          "ganha": [
+            "Spark-Pulse Caster"
+          ]
+        },
+        {
+          "secao": "Replace one Ion Rifle",
+          "ganha": [
+            "Plasma Caster"
+          ]
+        },
+        {
+          "secao": "Replace one Ion Rifle",
+          "ganha": [
+            "Fusion Caster"
+          ]
+        },
+        {
+          "secao": "Replace one Ion Rifle",
+          "ganha": [
+            "Radium Ray"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xVuwyHf",
+      "nome": "Guardians",
+      "tamanho": 5,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Doom Scythe"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Doom Scythes",
+          "ganha": [
+            "Atomizer Sword",
+            "Combat Shield"
+          ]
+        },
+        {
+          "secao": "Replace all Doom Scythes",
+          "ganha": [
+            "Radium Pistol",
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace all Doom Scythes",
+          "ganha": [
+            "Power Staff"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Jetpack"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with one",
+          "ganha": [
+            "Teleport Jetpack"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6q8HvOZ",
+      "nome": "Flesh-Eaters",
+      "tamanho": 5,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Rusted Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Rusted Claws",
+          "ganha": [
+            "Spiked Claws"
+          ]
+        },
+        {
+          "secao": "Replace all Rusted Claws",
+          "ganha": [
+            "Razor Claws"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with",
+          "ganha": [
+            "Machine-Horror"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wvgi7_R",
+      "nome": "Eternals",
+      "tamanho": 5,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Photon Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Photon Rifles",
+          "ganha": [
+            "Transonic Carbine"
+          ]
+        },
+        {
+          "secao": "Replace one Photon Rifle",
+          "ganha": [
+            "Heavy Spark-Pulse Caster"
+          ]
+        },
+        {
+          "secao": "Replace one Photon Rifle",
+          "ganha": [
+            "Fusion Ray"
+          ]
+        },
+        {
+          "secao": "Replace one Photon Rifle",
+          "ganha": [
+            "Photon Cannon"
+          ]
+        },
+        {
+          "secao": "Replace one Photon Rifle",
+          "ganha": [
+            "Heavy Photon Cannon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mEX6i0s",
+      "nome": "Snipers",
+      "tamanho": 3,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Reaper Sniper Rifle",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Reaper Sniper Rifles",
+          "ganha": [
+            "Spark-Sniper Carbine"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Voidspace Reapers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yoeQi4m",
+      "nome": "Bot Swarms",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Bot Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Bot Claws",
+          "ganha": [
+            "Atomizer Beams",
+            "Claws"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wRE0Ibs",
+      "nome": "Forge Spiderlings",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Burst Ion Rifle",
+        "Spider Fangs"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Burst Ion Rifles",
+          "ganha": [
+            "Burst Photon Gun"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Widowmaker"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0x2SCtg",
+      "nome": "Robot Snakes",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Metal Fangs"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Metal Fangs",
+          "ganha": [
+            "Transonic Scourges"
+          ]
+        },
+        {
+          "secao": "Replace all Metal Fangs",
+          "ganha": [
+            "Spiked Scourges"
+          ]
+        },
+        {
+          "secao": "Replace all Metal Fangs",
+          "ganha": [
+            "Death Gaze",
+            "Tail Strike"
+          ]
+        },
+        {
+          "secao": "Replace all Metal Fangs",
+          "ganha": [
+            "Dual Radium Pistols",
+            "Tail Strike"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gcoBL7U",
+      "nome": "Destroyer Snakes",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Ion Blades"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace any Dual Ion Blades",
+          "ganha": [
+            "Legion Glaive"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Ion Blades",
+          "ganha": [
+            "Great Doom Scythe"
+          ]
+        },
+        {
+          "secao": "Replace one Dual Ion Blades",
+          "ganha": [
+            "Heavy Ion Blade"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with any",
+          "ganha": [
+            "Plasmabot"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with any",
+          "ganha": [
+            "Elite Vanguard"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IMHCbyw",
+      "nome": "Annihilators",
+      "tamanho": 3,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Uranium Daggers"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace all Dual Uranium Daggers",
+          "ganha": [
+            "Fusion Ray",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Uranium Daggers",
+          "ganha": [
+            "Dual Atomizer Swords"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Uranium Daggers",
+          "ganha": [
+            "Legion Glaive"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Uranium Daggers",
+          "ganha": [
+            "Great Doom Scythe"
+          ]
+        },
+        {
+          "secao": "Replace any Fusion Ray",
+          "ganha": [
+            "Photon Cannon"
+          ]
+        },
+        {
+          "secao": "Replace one Fusion Ray",
+          "ganha": [
+            "Radium Ray"
+          ]
+        },
+        {
+          "secao": "Replace one Fusion Ray",
+          "ganha": [
+            "Heavy Fusion Ray"
+          ]
+        },
+        {
+          "secao": "Replace one Fusion Ray",
+          "ganha": [
+            "Heavy Photon Cannon"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Phase Core"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XgJtpyh",
+      "nome": "Tri-Scorpions",
+      "tamanho": 3,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Uranium Daggers"
+      ],
+      "itens": [
+        {
+          "nome": "Deadly Stinger",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace any Dual Uranium Daggers",
+          "ganha": [
+            "Dual Atomizer Swords"
+          ]
+        },
+        {
+          "secao": "Replace any Dual Uranium Daggers",
+          "ganha": [
+            "Dual Ion Blades"
+          ]
+        },
+        {
+          "secao": "Replace one Dual Uranium Daggers",
+          "ganha": [
+            "Heavy Ion Blade"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "Plasmabot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yhG8aeu",
+      "nome": "Hover Bikes",
+      "tamanho": 3,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Radium Cannon",
+        "Strike"
+      ],
+      "itens": [
+        {
+          "nome": "Rapid Skimmer Module",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace all Radium Cannons",
+          "ganha": [
+            "Burst Transonic Carbine"
+          ]
+        },
+        {
+          "secao": "Replace all Radium Cannons",
+          "ganha": [
+            "Burst Photon Gun"
+          ]
+        },
+        {
+          "secao": "Replace all Rapid Skimmer Modules",
+          "ganha": [
+            "Advanced Jet Thrusters"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "obCuik6",
+      "nome": "Forge Spider",
+      "tamanho": 1,
+      "bases": {
+        "round": "120x92",
+        "square": "100x60"
+      },
+      "armas": [
+        "Radium Cannon",
+        "Spider Fangs"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Radium Cannon and Spider Fangs",
+          "ganha": [
+            "Assault Radium Cannon",
+            "Great Spider Fangs"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Widowmaker"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Repair Nanobots"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Cyber-Palps"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Bot Fabricator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "if9G9o7",
+      "nome": "Heavy Annihilator",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Plasma Ray Cannon",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Plasma Ray Cannon",
+          "ganha": [
+            "Radium Ray Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Plasma Ray Cannon",
+          "ganha": [
+            "Fusion Ray Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Plasma Ray Cannon",
+          "ganha": [
+            "Heavy Photon Cannon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Phase Core"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Networked Target Lock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CjHMvNx",
+      "nome": "Tri-Scorpion Pistoleer",
+      "tamanho": 1,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Hunting Reaper Pistols"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Hunting Reaper Pistols",
+          "ganha": [
+            "Dueling Reaper Pistols"
+          ]
+        },
+        {
+          "secao": "Replace Hunting Reaper Pistols",
+          "ganha": [
+            "Dueling Transonic Pistols"
+          ]
+        },
+        {
+          "secao": "Replace Hunting Reaper Pistols",
+          "ganha": [
+            "Hunting Transonic Pistols"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Networked Target Lock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sCI2_zX",
+      "nome": "Transport Tank",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Burst Photon Gun",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Burst Photon Gun",
+          "ganha": [
+            "Photon Gun Array"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Repair Nanobots"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Extra Armor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8pPhbp8",
+      "nome": "Support Platform",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Heavy Transonic Cannon",
+        "Radium Ray",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Heavy Transonic Cannon",
+          "ganha": [
+            "Overseer Pilot"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Transonic Cannon",
+          "ganha": [
+            "Photon Artillery Gun"
+          ]
+        },
+        {
+          "secao": "Replace Radium Ray",
+          "ganha": [
+            "Transonic Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Radium Ray",
+          "ganha": [
+            "Photon Cannon"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Repair Nanobots"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Networked Target Lock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LObigTp",
+      "nome": "Doom Tank",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Uranium Blaster Cannon",
+        "Photon Gun Array",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Uranium Blaster Cannon",
+          "ganha": [
+            "Fusion Pulse Cannon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17TaNC2",
+      "nome": "Tripod Walker",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Heavy Spark-Pulse Caster",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Heavy Spark-Pulse Caster",
+          "ganha": [
+            "Uranium Blaster"
+          ]
+        },
+        {
+          "secao": "Replace Heavy Spark-Pulse Caster",
+          "ganha": [
+            "Radium Ray"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Tripod Queen"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Assault Photon Array"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Repair Nanobots"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Extra Armor"
+          ]
+        },
+        {
+          "secao": "Upgrade with any",
+          "ganha": [
+            "Networked Target Lock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "n9nkDBw",
+      "nome": "Spider Walker",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Linked Heavy Fusion Ray",
+        "Stomp"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Linked Heavy Fusion Ray",
+          "ganha": [
+            "Linked Heavy Plasma Ray Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Linked Heavy Fusion Ray",
+          "ganha": [
+            "Linked Radium Autocannon"
+          ]
+        },
+        {
+          "secao": "Replace Linked Heavy Fusion Ray",
+          "ganha": [
+            "Linked Heavy Photon Cannon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dCXjC0x",
+      "nome": "Wraith-Shard",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Stomp",
+        "Wraith Staff"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Wraith Staff",
+          "ganha": [
+            "Wraith Strike"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Uranium Shards"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Nanobot Shards"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "YGwsxBN",
+      "nome": "Death Fortress",
+      "tamanho": 1,
+      "bases": {
+        "round": "none",
+        "square": "none"
+      },
+      "armas": [
+        "Heavy Radium Pulse Cannon",
+        "Transonic Turret-Array",
+        "Overrun"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Heavy Radium Pulse Cannon",
+          "ganha": [
+            "Heavy Fusion Pulse Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Transonic Turret-Array",
+          "ganha": [
+            "Photon Turret-Array"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Warp Gate"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wraith-Shard Vault"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t-fjiKb",
+      "nome": "Great Monolith",
+      "tamanho": 1,
+      "bases": {
+        "round": "160x122",
+        "square": "150x100"
+      },
+      "armas": [
+        "Monolith Blast",
+        "Stomp",
+        "Technomancer Staff"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Monolith Blast",
+          "ganha": [
+            "Monolith Beam"
+          ]
+        },
+        {
+          "secao": "Replace Technomancer Staff",
+          "ganha": [
+            "Crushing Legs"
+          ]
+        },
+        {
+          "secao": "Upgrade with up to two",
+          "ganha": [
+            "Technoward"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pV6ndhZ",
+      "nome": "Great Wraith-Shard",
+      "tamanho": 1,
+      "bases": {
+        "round": "60",
+        "square": "50"
+      },
+      "armas": [
+        "Great Wraith Strike",
+        "Stomp"
+      ],
+      "itens": [
+        {
+          "nome": "Wraith Seer",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Great Wraith Strike",
+          "ganha": [
+            "Wraith Staff"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Uranium Shards"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Nanobot Shards"
+          ]
+        },
+        {
+          "secao": "Replace Wraith Seer",
+          "ganha": [
+            "Great Wraith"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xRIfeJR",
+      "nome": "Doom Fighter",
+      "tamanho": 1,
+      "bases": {
+        "round": "160x122",
+        "square": "150x100"
+      },
+      "armas": [
+        "Strafing Transonic Cannons",
+        "Strafing Uranium Blaster"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Strafing Uranium Blaster",
+          "ganha": [
+            "Strafing Radium Ray Cannon"
+          ]
+        },
+        {
+          "secao": "Replace Strafing Transonic Cannons",
+          "ganha": [
+            "Strafing Photon Cannons"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "YG8hLT4",
+      "nome": "Night Gunship",
+      "tamanho": 1,
+      "bases": {
+        "round": "160x122",
+        "square": "175x125"
+      },
+      "armas": [
+        "Strafing Transonic Cannons",
+        "Strafing Ion Rifle Array"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Strafing Ion Rifle Array",
+          "ganha": [
+            "Strafing Photon Gun Array"
+          ]
+        },
+        {
+          "secao": "Replace Strafing Ion Rifle Array",
+          "ganha": [
+            "Cargo Space"
+          ]
+        },
+        {
+          "secao": "Replace Strafing Transonic Cannons",
+          "ganha": [
+            "Strafing Photon Cannons"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C2HucSq",
+      "nome": "Oath-U7X1",
+      "tamanho": 1,
+      "bases": {
+        "round": "",
+        "square": ""
+      },
+      "armas": [
+        "Enforcement Blades"
+      ],
+      "itens": [
+        {
+          "nome": "Mission Critical",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Mission Critical",
+          "ganha": [
+            "Mission Critical - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pCsuMm9",
+      "nome": "Xyros-Z320",
+      "tamanho": 1,
+      "bases": {
+        "round": "",
+        "square": ""
+      },
+      "armas": [
+        "Experimental Arms"
+      ],
+      "itens": [
+        {
+          "nome": "Optimized Optics",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Optimized Optics",
+          "ganha": [
+            "Optimized Optics - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PkAB3lE",
+      "nome": "Echo-3G01",
+      "tamanho": 1,
+      "bases": {
+        "round": "32",
+        "square": "30"
+      },
+      "armas": [
+        "Panoptic Staff",
+        "Strike"
+      ],
+      "itens": [
+        {
+          "nome": "Paradox Shielding Device",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Paradox Shielding Device",
+          "ganha": [
+            "Technomancer"
+          ]
+        }
+      ]
+    }
+  ]
+}

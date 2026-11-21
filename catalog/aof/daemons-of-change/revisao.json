@@ -1,0 +1,602 @@
+{
+ "packId": "daemons-of-change",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "AOF",
+   "slug": "age-of-fantasy",
+   "armyForgeId": 4
+  },
+  {
+   "code": "AOFS",
+   "slug": "age-of-fantasy-skirmish",
+   "armyForgeId": 5
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/yxVDySKYQYRhdEgA-gs4-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/yxVDySKYQYRhdEgA-gs5-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-01..03.png, army books v3.6.0 (os dois sistemas). Artes \"on Disc\" e Schreecher ficaram sem par entre os estilos (a013-a015 x a023-a025, a019 x a028): cada estilo virou uma arte. Arma ambígua: equipmentTags sem a arma e opções em aliases.",
+ "unidades": {
+  "change-warriors": {
+   "armyForgeUnitId": "UMiqTdF"
+  },
+  "champion-of-change": {
+   "armyForgeUnitId": "MvLZSIo"
+  },
+  "harbinger-of-change": {
+   "armyForgeUnitId": "F0XvHTF"
+  },
+  "change-furies": {
+   "armyForgeUnitId": "moiRRNr"
+  },
+  "scorchers": {
+   "armyForgeUnitId": "P8kTKn6"
+  },
+  "screechers": {
+   "armyForgeUnitId": "s2ElE6T"
+  },
+  "change-horrors": {
+   "armyForgeUnitId": "BzjTlSG"
+  },
+  "lesser-change-horrors": {
+   "armyForgeUnitId": "zt7BQGh"
+  },
+  "changelings": {
+   "armyForgeUnitId": "9LtzG6R"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "warrior-sword",
+   "rotulo": "Warrior Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "change-warriors",
+   "equipmentTags": [
+    "Power Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Change Warriors"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Power Sword"
+    }
+   ],
+   "notas": "Warrior = Change Warriors. Power Sword é a arma padrão; alternativa: Hand Weapon"
+  },
+  "a002": {
+   "artId": "warrior-greatsword",
+   "rotulo": "Warrior Greatsword",
+   "confiancaRotulo": "alta",
+   "unitKey": "change-warriors",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Change Warriors"
+    },
+    {
+     "pdf": "Greatsword",
+     "armyBook": "Great Weapon"
+    }
+   ],
+   "notas": "Warrior = Change Warriors"
+  },
+  "a003": {
+   "artId": "warrior-double-chakram",
+   "rotulo": "Warrior Double Chakram",
+   "confiancaRotulo": "alta",
+   "unitKey": "change-warriors",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Change Warriors"
+    },
+    {
+     "pdf": "Double Chakram",
+     "armyBook": "Dual Hand Weapons"
+    }
+   ],
+   "notas": "Warrior = Change Warriors. Dois chakras usados em corpo a corpo; as 5 artes de tropa (págs. 1-5, 5 cópias cada) batem com as 5 armas dos Change Warriors. Alternativa: Change Hexers (Hexed Chakram, tiro)"
+  },
+  "a004": {
+   "artId": "warrior-halberd",
+   "rotulo": "Warrior Halberd",
+   "confiancaRotulo": "alta",
+   "unitKey": "change-warriors",
+   "equipmentTags": [
+    "Halberd"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Change Warriors"
+    }
+   ],
+   "notas": "Warrior = Change Warriors"
+  },
+  "a005": {
+   "artId": "warrior-spear",
+   "rotulo": "Warrior Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "change-warriors",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Change Warriors"
+    }
+   ],
+   "notas": "Warrior = Change Warriors"
+  },
+  "a006": {
+   "artId": "warrior-sargeant",
+   "rotulo": "Warrior Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "change-warriors",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Change Warriors"
+    }
+   ],
+   "notas": "Warrior = Change Warriors; PDF escreve Sargeant"
+  },
+  "a007": {
+   "artId": "warrior-musician",
+   "rotulo": "Warrior Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "change-warriors",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Change Warriors"
+    }
+   ],
+   "notas": "Warrior = Change Warriors"
+  },
+  "a008": {
+   "artId": "warrior-banner",
+   "rotulo": "Warrior Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "change-warriors",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Warrior",
+     "armyBook": "Change Warriors"
+    }
+   ],
+   "notas": "Warrior = Change Warriors"
+  },
+  "a009": {
+   "artId": "champion-bolt-staff",
+   "rotulo": "Champion Bolt Staff",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Heavy Magic Bolt|Daemon Loremaster Staff"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of Change"
+    },
+    {
+     "pdf": "Bolt Staff",
+     "armyBook": [
+      "Heavy Magic Bolt",
+      "Daemon Loremaster Staff"
+     ]
+    }
+   ],
+   "notas": "Champion = Champion of Change (a pé, sem asas). Bolt Staff pode ser Heavy Magic Bolt ou Daemon Loremaster Staff; usuário escolhe Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  },
+  "a010": {
+   "artId": "champion-spear-staff",
+   "rotulo": "Champion Spear Staff",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Daemon Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of Change"
+    },
+    {
+     "pdf": "Spear Staff",
+     "armyBook": "Daemon Spear"
+    }
+   ],
+   "notas": "Champion = Champion of Change (a pé, sem asas). Alternativa: Master Daemon Spear"
+  },
+  "a011": {
+   "artId": "champion-power-staff",
+   "rotulo": "Champion Power Staff",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Power Staff"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of Change"
+    }
+   ],
+   "notas": "Champion = Champion of Change (a pé, sem asas). Alternativa: Master Power Staff"
+  },
+  "a012": {
+   "artId": "harbinger",
+   "rotulo": "Harbinger",
+   "confiancaRotulo": "alta",
+   "unitKey": "harbinger-of-change",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Harbinger",
+     "armyBook": "Harbinger of Change"
+    }
+   ],
+   "notas": "figura alada grande (~118 mm); alternativa: Ascended Harbinger of Change"
+  },
+  "a013": {
+   "artId": "champion-bolt-staff-on-disc",
+   "rotulo": "Champion Bolt Staff on Disc",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Disc of Change",
+    "Heavy Magic Bolt|Daemon Loremaster Staff"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of Change"
+    },
+    {
+     "pdf": "on Disc",
+     "armyBook": "Disc of Change"
+    },
+    {
+     "pdf": "Bolt Staff",
+     "armyBook": [
+      "Heavy Magic Bolt",
+      "Daemon Loremaster Staff"
+     ]
+    }
+   ],
+   "notas": "Champion of Change com Disc of Change. Bolt Staff pode ser Heavy Magic Bolt ou Daemon Loremaster Staff; usuário escolhe. Só contorno fino: a versão borda grossa é a023 (pareamento falhou por causa da haste do disco) Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  },
+  "a014": {
+   "artId": "champion-power-staff-on-disc",
+   "rotulo": "Champion Power Staff on Disc",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Disc of Change",
+    "Power Staff"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of Change"
+    },
+    {
+     "pdf": "on Disc",
+     "armyBook": "Disc of Change"
+    }
+   ],
+   "notas": "Champion of Change com Disc of Change. Só contorno fino: a versão borda grossa é a024"
+  },
+  "a015": {
+   "artId": "champion-spear-staff-on-disc",
+   "rotulo": "Champion Spear Staff on Disc",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Disc of Change",
+    "Daemon Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of Change"
+    },
+    {
+     "pdf": "on Disc",
+     "armyBook": "Disc of Change"
+    },
+    {
+     "pdf": "Spear Staff",
+     "armyBook": "Daemon Spear"
+    }
+   ],
+   "notas": "Champion of Change com Disc of Change. Só contorno fino: a versão borda grossa é a025"
+  },
+  "a016": {
+   "artId": "fury-v1",
+   "rotulo": "Fury (V1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "change-furies",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fury",
+     "armyBook": "Change Furies"
+    }
+   ],
+   "notas": "Fury = Change Furies (nome no Skirmish: Change Fury)"
+  },
+  "a017": {
+   "artId": "fury-v2",
+   "rotulo": "Fury (V2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "change-furies",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fury",
+     "armyBook": "Change Furies"
+    }
+   ],
+   "notas": "Fury = Change Furies (nome no Skirmish: Change Fury)"
+  },
+  "a018": {
+   "artId": "scorcher",
+   "rotulo": "Scorcher",
+   "confiancaRotulo": "alta",
+   "unitKey": "scorchers",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "Scorcher é o nome no Skirmish"
+  },
+  "a019": {
+   "artId": "schreecher",
+   "rotulo": "Schreecher",
+   "confiancaRotulo": "alta",
+   "unitKey": "screechers",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Schreecher",
+     "armyBook": "Screechers"
+    }
+   ],
+   "notas": "grafia do PDF; unidade Screechers (Screecher no Skirmish). Só contorno fino: a versão borda grossa é a028"
+  },
+  "a020": {
+   "artId": "horror-large",
+   "rotulo": "Horror (Large)",
+   "confiancaRotulo": "alta",
+   "unitKey": "change-horrors",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Horror (Large)",
+     "armyBook": "Change Horrors"
+    }
+   ],
+   "notas": "três tamanhos de Horror = três unidades; Large = Change Horrors. Alternativa: Horror Champion of Change"
+  },
+  "a021": {
+   "artId": "horror-medium",
+   "rotulo": "Horror (Medium)",
+   "confiancaRotulo": "alta",
+   "unitKey": "lesser-change-horrors",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Horror (Medium)",
+     "armyBook": "Lesser Change Horrors"
+    }
+   ],
+   "notas": "Medium = Lesser Change Horrors (genericName Change Lesser Horrors)"
+  },
+  "a022": {
+   "artId": "horror-small",
+   "rotulo": "Horror (Small)",
+   "confiancaRotulo": "alta",
+   "unitKey": "changelings",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Horror (Small)",
+     "armyBook": "Changelings"
+    }
+   ],
+   "notas": "Small = Changelings (genericName Change Imp Horrors, base 25); a figura traz dois diabretes juntos"
+  },
+  "a023": {
+   "artId": "champion-bolt-staff-on-disc-borda",
+   "rotulo": "Champion Bolt Staff on Disc",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Disc of Change",
+    "Heavy Magic Bolt|Daemon Loremaster Staff"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of Change"
+    },
+    {
+     "pdf": "on Disc",
+     "armyBook": "Disc of Change"
+    },
+    {
+     "pdf": "Bolt Staff",
+     "armyBook": [
+      "Heavy Magic Bolt",
+      "Daemon Loremaster Staff"
+     ]
+    }
+   ],
+   "notas": "Champion of Change com Disc of Change. Bolt Staff pode ser Heavy Magic Bolt ou Daemon Loremaster Staff; usuário escolhe. Só borda grossa: versão borda de a013 (pareamento falhou por causa da haste do disco) Arma ambígua: tag com alternativas (casa com qualquer uma)."
+  },
+  "a024": {
+   "artId": "champion-power-staff-on-disc-borda",
+   "rotulo": "Champion Power Staff on Disc",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Disc of Change",
+    "Power Staff"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of Change"
+    },
+    {
+     "pdf": "on Disc",
+     "armyBook": "Disc of Change"
+    }
+   ],
+   "notas": "Champion of Change com Disc of Change. Só borda grossa: versão borda de a014"
+  },
+  "a025": {
+   "artId": "champion-spear-staff-on-disc-borda",
+   "rotulo": "Champion Spear Staff on Disc",
+   "confiancaRotulo": "alta",
+   "unitKey": "champion-of-change",
+   "equipmentTags": [
+    "Disc of Change",
+    "Daemon Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Champion",
+     "armyBook": "Champion of Change"
+    },
+    {
+     "pdf": "on Disc",
+     "armyBook": "Disc of Change"
+    },
+    {
+     "pdf": "Spear Staff",
+     "armyBook": "Daemon Spear"
+    }
+   ],
+   "notas": "Champion of Change com Disc of Change. Só borda grossa: versão borda de a015"
+  },
+  "a026": {
+   "artId": "fury-v1-so-borda",
+   "rotulo": "Fury (V1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "change-furies",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fury",
+     "armyBook": "Change Furies"
+    }
+   ],
+   "notas": "só borda grossa, sem par fino; mesmo desenho de a016 (cópia não agrupada). Fury = Change Furies (nome no Skirmish: Change Fury)"
+  },
+  "a027": {
+   "artId": "fury-v2-so-borda",
+   "rotulo": "Fury (V2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "change-furies",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fury",
+     "armyBook": "Change Furies"
+    }
+   ],
+   "notas": "só borda grossa, sem par fino; mesmo desenho de a017 (cópias não agrupadas). Fury = Change Furies (nome no Skirmish: Change Fury)"
+  },
+  "a028": {
+   "artId": "schreecher-borda",
+   "rotulo": "Schreecher",
+   "confiancaRotulo": "alta",
+   "unitKey": "screechers",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Schreecher",
+     "armyBook": "Screechers"
+    }
+   ],
+   "notas": "grafia do PDF; unidade Screechers (Screecher no Skirmish). Só borda grossa: versão borda de a019"
+  }
+ }
+}

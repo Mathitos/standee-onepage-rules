@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "dwarf-guilds",
- "faccao": "Dwarf Guilds",
+ "faccao": "Dwarf Guilds\r",
  "sistema": "gff",
  "pdf": {
   "nome": "Dwarf_Guilds_-_BW.pdf",
@@ -12,14 +12,17 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "guild-lord-hammer",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guild Lord Hammer",
+   "rotuloImg": "arts/guild-lord-hammer/rotulo.png",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Guild Lord",
+    "Shock Hammer|Great Heat Hammer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +54,17 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "guild-lord-flamer",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guild Lord Flamer",
+   "rotuloImg": "arts/guild-lord-flamer/rotulo.png",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Guild Lord",
+    "Flamer Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -90,14 +96,16 @@
    "pendencias": []
   },
   {
-   "id": "a003",
+   "id": "champion-shield",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Shield",
+   "rotuloImg": "arts/champion-shield/rotulo.png",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Combat Shield"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -129,14 +137,16 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "champion-shotgun",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Champion Shotgun",
+   "rotuloImg": "arts/champion-shotgun/rotulo.png",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Burst Shotgun|Burst Iron-Slug Shotgun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -168,14 +178,16 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "runemaster",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Runemaster",
+   "rotuloImg": "arts/runemaster/rotulo.png",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Rune Master"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -207,14 +219,16 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "engineer",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Engineer",
+   "rotuloImg": "arts/engineer/rotulo.png",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Engineer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -246,14 +260,17 @@
    "pendencias": []
   },
   {
-   "id": "a007",
+   "id": "jetpack-champion-glove-pistols",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetpack Champion Glove Pistols",
+   "rotuloImg": "arts/jetpack-champion-glove-pistols/rotulo.png",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Jetpack|Airdrop Jetpack",
+    "Dual Glove-Pistols"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -287,14 +304,17 @@
    ]
   },
   {
-   "id": "a008",
+   "id": "jetpack-champion-flamer-pistols",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetpack Champion Flamer Pistols",
+   "rotuloImg": "arts/jetpack-champion-flamer-pistols/rotulo.png",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Jetpack|Airdrop Jetpack",
+    "Flamer Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -328,14 +348,16 @@
    ]
   },
   {
-   "id": "a009",
+   "id": "power-suit-champion-storm-rifle",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Power Suit Champion Storm Rifle",
+   "rotuloImg": "arts/power-suit-champion-storm-rifle/rotulo.png",
+   "unitKey": "powersuit-champion",
+   "equipmentTags": [
+    "Burst Cyclic Rifle|Assault Burst Cyclic Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -367,14 +389,16 @@
    "pendencias": []
   },
   {
-   "id": "a010",
+   "id": "power-suit-champion-shield",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Power Suit Champion Shield",
+   "rotuloImg": "arts/power-suit-champion-shield/rotulo.png",
+   "unitKey": "powersuit-champion",
+   "equipmentTags": [
+    "Combat Shield"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -406,14 +430,16 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "berserker-veteran-dual-axe",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Berserker Veteran Dual Axe",
+   "rotuloImg": "arts/berserker-veteran-dual-axe/rotulo.png",
+   "unitKey": "berserker-veteran",
+   "equipmentTags": [
+    "Dual Heat Axes|Dual Hand Weapons"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -445,14 +471,16 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "berserker-veteran-great-axe",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Berserker Veteran Great Axe",
+   "rotuloImg": "arts/berserker-veteran-great-axe/rotulo.png",
+   "unitKey": "berserker-veteran",
+   "equipmentTags": [
+    "Great Heat Axe"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -484,14 +512,17 @@
    "pendencias": []
   },
   {
-   "id": "a013",
+   "id": "biker-champion-energy-fist",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Biker Champion Energy Fist",
+   "rotuloImg": "arts/biker-champion-energy-fist/rotulo.png",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Combat Bike|Pioneer Bike",
+    "Shock Fist"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -525,14 +556,17 @@
    ]
   },
   {
-   "id": "a014",
+   "id": "biker-champion-shotgun",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Biker Champion Shotgun",
+   "rotuloImg": "arts/biker-champion-shotgun/rotulo.png",
+   "unitKey": "dwarf-champion",
+   "equipmentTags": [
+    "Combat Bike|Pioneer Bike",
+    "Burst Shotgun|Burst Iron-Slug Shotgun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -564,14 +598,16 @@
    "pendencias": []
   },
   {
-   "id": "a015",
+   "id": "warrior-rifle",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Rifle",
+   "rotuloImg": "arts/warrior-rifle/rotulo.png",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Battle Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -603,14 +639,16 @@
    "pendencias": []
   },
   {
-   "id": "a016",
+   "id": "warrior-shotgun",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Shotgun",
+   "rotuloImg": "arts/warrior-shotgun/rotulo.png",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Shotgun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -642,14 +680,16 @@
    "pendencias": []
   },
   {
-   "id": "a017",
+   "id": "warrior-iron-blaster",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Iron Blaster",
+   "rotuloImg": "arts/warrior-iron-blaster/rotulo.png",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Iron-Slug Carbine"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -681,14 +721,16 @@
    "pendencias": []
   },
   {
-   "id": "a018",
+   "id": "warrior-plasma-rifle",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Plasma Rifle",
+   "rotuloImg": "arts/warrior-plasma-rifle/rotulo.png",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Plasma Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -720,14 +762,16 @@
    "pendencias": []
   },
   {
-   "id": "a019",
+   "id": "warrior-h-rifle",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior H-Rifle",
+   "rotuloImg": "arts/warrior-h-rifle/rotulo.png",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Ore-Shredder Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -759,14 +803,16 @@
    "pendencias": []
   },
   {
-   "id": "a020",
+   "id": "warrior-fusion-rifle",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Fusion Rifle",
+   "rotuloImg": "arts/warrior-fusion-rifle/rotulo.png",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -798,14 +844,16 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "warrior-flamer",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Flamer",
+   "rotuloImg": "arts/warrior-flamer/rotulo.png",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -837,14 +885,16 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "warrior-missile-launcher",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Missile Launcher",
+   "rotuloImg": "arts/warrior-missile-launcher/rotulo.png",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Missile Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -876,14 +926,16 @@
    "pendencias": []
   },
   {
-   "id": "a023",
+   "id": "warrior-heavy-machine-gun",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Heavy Machine Gun",
+   "rotuloImg": "arts/warrior-heavy-machine-gun/rotulo.png",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Heavy Machinegun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -917,14 +969,16 @@
    ]
   },
   {
-   "id": "a024",
+   "id": "warrior-heavy-rail-m-rifle",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Warrior Heavy Rail M-Rifle",
+   "rotuloImg": "arts/warrior-heavy-rail-m-rifle/rotulo.png",
+   "unitKey": "dwarf-warriors",
+   "equipmentTags": [
+    "Heat-Railcannon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -958,14 +1012,14 @@
    ]
   },
   {
-   "id": "a025",
+   "id": "warrior-medic",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Medic",
+   "rotuloImg": "arts/warrior-medic/rotulo.png",
+   "unitKey": "dwarf-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "medic",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -997,14 +1051,14 @@
    "pendencias": []
   },
   {
-   "id": "a026",
+   "id": "warrior-sargeant",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Warrior Sargeant",
+   "rotuloImg": "arts/warrior-sargeant/rotulo.png",
+   "unitKey": "dwarf-warriors",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1036,14 +1090,16 @@
    "pendencias": []
   },
   {
-   "id": "a027",
+   "id": "guardian-spear",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guardian Spear",
+   "rotuloImg": "arts/guardian-spear/rotulo.png",
+   "unitKey": "guardians",
+   "equipmentTags": [
+    "Energy Spear|Heat Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1075,14 +1131,16 @@
    "pendencias": []
   },
   {
-   "id": "a028",
+   "id": "guardian-pistol",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guardian Pistol",
+   "rotuloImg": "arts/guardian-pistol/rotulo.png",
+   "unitKey": "guardians",
+   "equipmentTags": [
+    "Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1114,14 +1172,16 @@
    "pendencias": []
   },
   {
-   "id": "a029",
+   "id": "guardian-pick",
    "candidato": "a029",
-   "rotulo": null,
-   "rotuloImg": "arts/a029/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guardian Pick",
+   "rotuloImg": "arts/guardian-pick/rotulo.png",
+   "unitKey": "guardians",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1153,14 +1213,16 @@
    "pendencias": []
   },
   {
-   "id": "a030",
+   "id": "jetpack-warrior-pick",
    "candidato": "a030",
-   "rotulo": null,
-   "rotuloImg": "arts/a030/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetpack Warrior Pick",
+   "rotuloImg": "arts/jetpack-warrior-pick/rotulo.png",
+   "unitKey": "jetpack-warrior",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1194,14 +1256,16 @@
    ]
   },
   {
-   "id": "a031",
+   "id": "jetpack-warrior-glove-pistols",
    "candidato": "a031",
-   "rotulo": null,
-   "rotuloImg": "arts/a031/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetpack Warrior Glove Pistols",
+   "rotuloImg": "arts/jetpack-warrior-glove-pistols/rotulo.png",
+   "unitKey": "jetpack-warrior",
+   "equipmentTags": [
+    "Dual Glove-Pistols"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1235,14 +1299,16 @@
    ]
   },
   {
-   "id": "a032",
+   "id": "support-mortar",
    "candidato": "a032",
-   "rotulo": null,
-   "rotuloImg": "arts/a032/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Support Mortar",
+   "rotuloImg": "arts/support-mortar/rotulo.png",
+   "unitKey": "thunder-support",
+   "equipmentTags": [
+    "Mortar"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1274,14 +1340,16 @@
    "pendencias": []
   },
   {
-   "id": "a033",
+   "id": "support-missile-launcher",
    "candidato": "a033",
-   "rotulo": null,
-   "rotuloImg": "arts/a033/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Support Missile Launcher",
+   "rotuloImg": "arts/support-missile-launcher/rotulo.png",
+   "unitKey": "thunder-support",
+   "equipmentTags": [
+    "Missile Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1313,14 +1381,16 @@
    "pendencias": []
   },
   {
-   "id": "a034",
+   "id": "support-machine-gun",
    "candidato": "a034",
-   "rotulo": null,
-   "rotuloImg": "arts/a034/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Support Machine Gun",
+   "rotuloImg": "arts/support-machine-gun/rotulo.png",
+   "unitKey": "thunder-support",
+   "equipmentTags": [
+    "Heavy Machinegun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1352,14 +1422,16 @@
    "pendencias": []
   },
   {
-   "id": "a035",
+   "id": "support-gravity-cannon",
    "candidato": "a035",
-   "rotulo": null,
-   "rotuloImg": "arts/a035/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Support Gravity Cannon",
+   "rotuloImg": "arts/support-gravity-cannon/rotulo.png",
+   "unitKey": "thunder-support",
+   "equipmentTags": [
+    "Ore-Shredder Cannon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1391,14 +1463,16 @@
    "pendencias": []
   },
   {
-   "id": "a036",
+   "id": "support-c-beamer",
    "candidato": "a036",
-   "rotulo": null,
-   "rotuloImg": "arts/a036/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Support C-Beamer",
+   "rotuloImg": "arts/support-c-beamer/rotulo.png",
+   "unitKey": "thunder-support",
+   "equipmentTags": [
+    "Mining Beam-Cannon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1430,14 +1504,16 @@
    "pendencias": []
   },
   {
-   "id": "a037",
+   "id": "support-autocannon",
    "candidato": "a037",
-   "rotulo": null,
-   "rotuloImg": "arts/a037/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Support Autocannon",
+   "rotuloImg": "arts/support-autocannon/rotulo.png",
+   "unitKey": "thunder-support",
+   "equipmentTags": [
+    "Autocannon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1469,14 +1545,16 @@
    "pendencias": []
   },
   {
-   "id": "a038",
+   "id": "berserker-dual-axes",
    "candidato": "a038",
-   "rotulo": null,
-   "rotuloImg": "arts/a038/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Berserker Dual Axes",
+   "rotuloImg": "arts/berserker-dual-axes/rotulo.png",
+   "unitKey": "berserker",
+   "equipmentTags": [
+    "Dual Hand Weapons"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1508,14 +1586,16 @@
    "pendencias": []
   },
   {
-   "id": "a039",
+   "id": "berserker-grenade-launcher",
    "candidato": "a039",
-   "rotulo": null,
-   "rotuloImg": "arts/a039/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Berserker Grenade Launcher",
+   "rotuloImg": "arts/berserker-grenade-launcher/rotulo.png",
+   "unitKey": "berserker",
+   "equipmentTags": [
+    "Assault Grenade Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1547,14 +1627,16 @@
    "pendencias": []
   },
   {
-   "id": "a040",
+   "id": "berserker-great-axe",
    "candidato": "a040",
-   "rotulo": null,
-   "rotuloImg": "arts/a040/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Berserker Great Axe",
+   "rotuloImg": "arts/berserker-great-axe/rotulo.png",
+   "unitKey": "berserker",
+   "equipmentTags": [
+    "Great Axe|Great Heat Axe"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1586,14 +1668,16 @@
    "pendencias": []
   },
   {
-   "id": "a041",
+   "id": "elite-axe",
    "candidato": "a041",
-   "rotulo": null,
-   "rotuloImg": "arts/a041/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elite Axe",
+   "rotuloImg": "arts/elite-axe/rotulo.png",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Heat Axe"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1625,14 +1709,16 @@
    "pendencias": []
   },
   {
-   "id": "a042",
+   "id": "elite-hammer",
    "candidato": "a042",
-   "rotulo": null,
-   "rotuloImg": "arts/a042/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elite Hammer",
+   "rotuloImg": "arts/elite-hammer/rotulo.png",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Heat Hammer|Great Heat Hammer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1664,14 +1750,16 @@
    "pendencias": []
   },
   {
-   "id": "a043",
+   "id": "veteran-shotgun",
    "candidato": "a043",
-   "rotulo": null,
-   "rotuloImg": "arts/a043/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Veteran Shotgun",
+   "rotuloImg": "arts/veteran-shotgun/rotulo.png",
+   "unitKey": "iron-veteran",
+   "equipmentTags": [
+    "Iron-Slug Shotgun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1703,14 +1791,16 @@
    "pendencias": []
   },
   {
-   "id": "a044",
+   "id": "veteran-iron-blaster",
    "candidato": "a044",
-   "rotulo": null,
-   "rotuloImg": "arts/a044/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Veteran Iron Blaster",
+   "rotuloImg": "arts/veteran-iron-blaster/rotulo.png",
+   "unitKey": "iron-veteran",
+   "equipmentTags": [
+    "Iron-Slug Carbine"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1742,14 +1832,16 @@
    "pendencias": []
   },
   {
-   "id": "a045",
+   "id": "veteran-heavy-plasma",
    "candidato": "a045",
-   "rotulo": null,
-   "rotuloImg": "arts/a045/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Veteran Heavy Plasma",
+   "rotuloImg": "arts/veteran-heavy-plasma/rotulo.png",
+   "unitKey": "iron-veteran",
+   "equipmentTags": [
+    "Plasma Cannon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1781,14 +1873,16 @@
    "pendencias": []
   },
   {
-   "id": "a046",
+   "id": "veteran-heavy-fusion",
    "candidato": "a046",
-   "rotulo": null,
-   "rotuloImg": "arts/a046/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Veteran Heavy Fusion",
+   "rotuloImg": "arts/veteran-heavy-fusion/rotulo.png",
+   "unitKey": "iron-veteran",
+   "equipmentTags": [
+    "Heavy Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1820,14 +1914,16 @@
    "pendencias": []
   },
   {
-   "id": "a047",
+   "id": "veteran-heavy-flamer",
    "candidato": "a047",
-   "rotulo": null,
-   "rotuloImg": "arts/a047/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Veteran Heavy Flamer",
+   "rotuloImg": "arts/veteran-heavy-flamer/rotulo.png",
+   "unitKey": "iron-veteran",
+   "equipmentTags": [
+    "Heavy Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1859,14 +1955,16 @@
    "pendencias": []
   },
   {
-   "id": "a048",
+   "id": "veteran-c-beamer",
    "candidato": "a048",
-   "rotulo": null,
-   "rotuloImg": "arts/a048/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Veteran C Beamer",
+   "rotuloImg": "arts/veteran-c-beamer/rotulo.png",
+   "unitKey": "iron-veteran",
+   "equipmentTags": [
+    "Mining Beam-Cannon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1898,14 +1996,14 @@
    "pendencias": []
   },
   {
-   "id": "a049",
+   "id": "veteran-sargeant",
    "candidato": "a049",
-   "rotulo": null,
-   "rotuloImg": "arts/a049/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Veteran Sargeant",
+   "rotuloImg": "arts/veteran-sargeant/rotulo.png",
+   "unitKey": "iron-veteran",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1937,14 +2035,14 @@
    "pendencias": []
   },
   {
-   "id": "a050",
+   "id": "veteran-medic",
    "candidato": "a050",
-   "rotulo": null,
-   "rotuloImg": "arts/a050/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Veteran Medic",
+   "rotuloImg": "arts/veteran-medic/rotulo.png",
+   "unitKey": "iron-veteran",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "medic",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1976,14 +2074,16 @@
    "pendencias": []
   },
   {
-   "id": "a051",
+   "id": "miner-pistol",
    "candidato": "a051",
-   "rotulo": null,
-   "rotuloImg": "arts/a051/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Miner Pistol",
+   "rotuloImg": "arts/miner-pistol/rotulo.png",
+   "unitKey": "miner",
+   "equipmentTags": [
+    "Iron-Slug Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2015,14 +2115,16 @@
    "pendencias": []
   },
   {
-   "id": "a052",
+   "id": "miner-shotgun",
    "candidato": "a052",
-   "rotulo": null,
-   "rotuloImg": "arts/a052/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Miner Shotgun",
+   "rotuloImg": "arts/miner-shotgun/rotulo.png",
+   "unitKey": "miner",
+   "equipmentTags": [
+    "Iron-Slug Shotgun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2054,14 +2156,16 @@
    "pendencias": []
   },
   {
-   "id": "a053",
+   "id": "miner-fusion",
    "candidato": "a053",
-   "rotulo": null,
-   "rotuloImg": "arts/a053/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Miner Fusion",
+   "rotuloImg": "arts/miner-fusion/rotulo.png",
+   "unitKey": "miner",
+   "equipmentTags": [
+    "Fusion Rifle|Assault Fusion Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2093,14 +2197,16 @@
    "pendencias": []
   },
   {
-   "id": "a054",
+   "id": "miner-flamer",
    "candidato": "a054",
-   "rotulo": null,
-   "rotuloImg": "arts/a054/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Miner Flamer",
+   "rotuloImg": "arts/miner-flamer/rotulo.png",
+   "unitKey": "miner",
+   "equipmentTags": [
+    "Flamer|Assault Flamer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2132,14 +2238,16 @@
    "pendencias": []
   },
   {
-   "id": "a055",
+   "id": "platform-m-rifle",
    "candidato": "a055",
-   "rotulo": null,
-   "rotuloImg": "arts/a055/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Platform M-Rifle",
+   "rotuloImg": "arts/platform-m-rifle/rotulo.png",
+   "unitKey": "miner",
+   "equipmentTags": [
+    "Heat-Rifle Platform"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2171,14 +2279,16 @@
    "pendencias": []
   },
   {
-   "id": "a056",
+   "id": "platform-drill",
    "candidato": "a056",
-   "rotulo": null,
-   "rotuloImg": "arts/a056/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Platform Drill",
+   "rotuloImg": "arts/platform-drill/rotulo.png",
+   "unitKey": "miner",
+   "equipmentTags": [
+    "Heat-Drill Platform"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2210,14 +2320,14 @@
    "pendencias": []
   },
   {
-   "id": "a057",
+   "id": "sniper-v1",
    "candidato": "a057",
-   "rotulo": null,
-   "rotuloImg": "arts/a057/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Sniper V1",
+   "rotuloImg": "arts/sniper-v1/rotulo.png",
+   "unitKey": "sniper-team",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2249,14 +2359,14 @@
    "pendencias": []
   },
   {
-   "id": "a058",
+   "id": "sniper-v2",
    "candidato": "a058",
-   "rotulo": null,
-   "rotuloImg": "arts/a058/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Sniper V2",
+   "rotuloImg": "arts/sniper-v2/rotulo.png",
+   "unitKey": "sniper-team",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2288,14 +2398,16 @@
    "pendencias": []
   },
   {
-   "id": "a059",
+   "id": "power-suit-storm-rifle",
    "candidato": "a059",
-   "rotulo": null,
-   "rotuloImg": "arts/a059/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Power Suit Storm Rifle",
+   "rotuloImg": "arts/power-suit-storm-rifle/rotulo.png",
+   "unitKey": "powersuit-guard",
+   "equipmentTags": [
+    "Burst Cyclic Rifle|Assault Cyclic Rifle"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2327,14 +2439,16 @@
    "pendencias": []
   },
   {
-   "id": "a060",
+   "id": "power-suit-plasma-pistol",
    "candidato": "a060",
-   "rotulo": null,
-   "rotuloImg": "arts/a060/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Power Suit Plasma Pistol",
+   "rotuloImg": "arts/power-suit-plasma-pistol/rotulo.png",
+   "unitKey": "powersuit-guard",
+   "equipmentTags": [
+    "Plasma Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2366,14 +2480,16 @@
    "pendencias": []
   },
   {
-   "id": "a061",
+   "id": "power-suit-shield",
    "candidato": "a061",
-   "rotulo": null,
-   "rotuloImg": "arts/a061/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Power Suit Shield",
+   "rotuloImg": "arts/power-suit-shield/rotulo.png",
+   "unitKey": "powersuit-guard",
+   "equipmentTags": [
+    "Combat Shield"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2405,14 +2521,16 @@
    "pendencias": []
   },
   {
-   "id": "a062",
+   "id": "power-suit-heavy-m-rail-gun",
    "candidato": "a062",
-   "rotulo": null,
-   "rotuloImg": "arts/a062/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Power Suit Heavy M-Rail Gun",
+   "rotuloImg": "arts/power-suit-heavy-m-rail-gun/rotulo.png",
+   "unitKey": "powersuit-guard",
+   "equipmentTags": [
+    "Heat-Railcannon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2444,14 +2562,16 @@
    "pendencias": []
   },
   {
-   "id": "a063",
+   "id": "power-suit-machine-gun",
    "candidato": "a063",
-   "rotulo": null,
-   "rotuloImg": "arts/a063/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Power Suit Machine Gun",
+   "rotuloImg": "arts/power-suit-machine-gun/rotulo.png",
+   "unitKey": "powersuit-guard",
+   "equipmentTags": [
+    "Heavy Machinegun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2483,14 +2603,16 @@
    "pendencias": []
   },
   {
-   "id": "a064",
+   "id": "power-suit-heavy-plasma",
    "candidato": "a064",
-   "rotulo": null,
-   "rotuloImg": "arts/a064/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Power Suit Heavy Plasma",
+   "rotuloImg": "arts/power-suit-heavy-plasma/rotulo.png",
+   "unitKey": "powersuit-guard",
+   "equipmentTags": [
+    "Plasma Cannon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2522,14 +2644,16 @@
    "pendencias": []
   },
   {
-   "id": "a065",
+   "id": "biker-pistol",
    "candidato": "a065",
-   "rotulo": null,
-   "rotuloImg": "arts/a065/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Biker Pistol",
+   "rotuloImg": "arts/biker-pistol/rotulo.png",
+   "unitKey": "dwarf-biker",
+   "equipmentTags": [
+    "Pistol|Iron-Slug Pistol"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2561,14 +2685,16 @@
    "pendencias": []
   },
   {
-   "id": "a066",
+   "id": "biker-shotgun",
    "candidato": "a066",
-   "rotulo": null,
-   "rotuloImg": "arts/a066/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Biker Shotgun",
+   "rotuloImg": "arts/biker-shotgun/rotulo.png",
+   "unitKey": "dwarf-biker",
+   "equipmentTags": [
+    "Shotgun|Iron-Slug Shotgun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2600,14 +2726,16 @@
    "pendencias": []
   },
   {
-   "id": "a067",
+   "id": "biker-shotgun-2",
    "candidato": "a067",
-   "rotulo": null,
-   "rotuloImg": "arts/a067/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Biker Shotgun",
+   "rotuloImg": "arts/biker-shotgun-2/rotulo.png",
+   "unitKey": "dwarf-biker",
+   "equipmentTags": [
+    "Shotgun|Iron-Slug Shotgun"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -2641,14 +2769,16 @@
    ]
   },
   {
-   "id": "a068",
+   "id": "guardian-pick-borda",
    "candidato": "a068",
-   "rotulo": null,
-   "rotuloImg": "arts/a068/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Guardian Pick",
+   "rotuloImg": "arts/guardian-pick-borda/rotulo.png",
+   "unitKey": "guardians",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2669,14 +2799,16 @@
    ]
   },
   {
-   "id": "a069",
+   "id": "jetpack-warrior-pick-borda",
    "candidato": "a069",
-   "rotulo": null,
-   "rotuloImg": "arts/a069/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Jetpack Warrior Pick",
+   "rotuloImg": "arts/jetpack-warrior-pick-borda/rotulo.png",
+   "unitKey": "jetpack-warrior",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2698,14 +2830,16 @@
    ]
   },
   {
-   "id": "a070",
+   "id": "support-missile-launcher-borda",
    "candidato": "a070",
-   "rotulo": null,
-   "rotuloImg": "arts/a070/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Support Missile Launcher",
+   "rotuloImg": "arts/support-missile-launcher-borda/rotulo.png",
+   "unitKey": "thunder-support",
+   "equipmentTags": [
+    "Missile Launcher"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "borda": {
      "telaMm": [
@@ -2726,14 +2860,16 @@
    ]
   },
   {
-   "id": "a071",
+   "id": "elite-hammer-borda",
    "candidato": "a071",
-   "rotulo": null,
-   "rotuloImg": "arts/a071/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Elite Hammer",
+   "rotuloImg": "arts/elite-hammer-borda/rotulo.png",
+   "unitKey": "elite",
+   "equipmentTags": [
+    "Heat Hammer|Great Heat Hammer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "borda": {
      "telaMm": [

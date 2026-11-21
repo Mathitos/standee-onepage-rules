@@ -1,0 +1,861 @@
+{
+ "packId": "duchies-of-vinci",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "AOF",
+   "slug": "age-of-fantasy",
+   "armyForgeId": 4
+  },
+  {
+   "code": "AOFS",
+   "slug": "age-of-fantasy-skirmish",
+   "armyForgeId": 5
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/VU1EFPa2uODffW8D-gs4-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/VU1EFPa2uODffW8D-gs5-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-*.png, army books v3.6.0 (os dois sistemas).",
+ "unidades": {
+  "vinci-leader": {
+   "armyForgeUnitId": "4xFAaqz"
+  },
+  "vinci-scholar": {
+   "armyForgeUnitId": "-9F1FDu"
+  },
+  "militia": {
+   "armyForgeUnitId": "gh9JJOe"
+  },
+  "city-guard": {
+   "armyForgeUnitId": "s2QC06M"
+  },
+  "automa-drones": {
+   "armyForgeUnitId": "gAsJjC8"
+  },
+  "automa-guard": {
+   "armyForgeUnitId": "00sI1ix"
+  },
+  "automa-brutes": {
+   "armyForgeUnitId": "Cfl-Phe"
+  },
+  "scouts": {
+   "armyForgeUnitId": "OciwHsc"
+  },
+  "harlequins": {
+   "armyForgeUnitId": "jVLKMIF"
+  },
+  "assassins": {
+   "armyForgeUnitId": "Zpo3LF7"
+  },
+  "snipers": {
+   "armyForgeUnitId": "MAIEJ2g"
+  },
+  "automa-horse-riders": {
+   "armyForgeUnitId": "pRfAhrc"
+  },
+  "automa-boar-riders": {
+   "armyForgeUnitId": "tLjz9Ia"
+  },
+  "aerea-guard": {
+   "armyForgeUnitId": "2I2swvL"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "city-guard-crossbow-v1",
+   "rotulo": "City Guard Crossbow (V1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "city-guard",
+   "equipmentTags": [
+    "Crossbow"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a002": {
+   "artId": "city-guard-crossbow-v2",
+   "rotulo": "City Guard Crossbow (V2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "city-guard",
+   "equipmentTags": [
+    "Crossbow"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a003": {
+   "artId": "captain-handbow",
+   "rotulo": "Captain Handbow",
+   "confiancaRotulo": "alta",
+   "unitKey": "vinci-leader",
+   "equipmentTags": [
+    "Captain",
+    "Handbow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Captain",
+     "armyBook": "Vinci Leader (Captain)"
+    }
+   ],
+   "notas": "Captain é opção do Vinci Leader (produto 'Vinci Leader Captain')"
+  },
+  "a004": {
+   "artId": "captain-crossbow",
+   "rotulo": "Captain Crossbow",
+   "confiancaRotulo": "alta",
+   "unitKey": "vinci-leader",
+   "equipmentTags": [
+    "Captain",
+    "Rapid Crossbow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Captain",
+     "armyBook": "Vinci Leader (Captain)"
+    },
+    {
+     "pdf": "Crossbow",
+     "armyBook": "Rapid Crossbow"
+    }
+   ],
+   "notas": "Captain é opção do Vinci Leader; a besta do líder é Rapid Crossbow"
+  },
+  "a005": {
+   "artId": "captain-sword",
+   "rotulo": "Captain Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "vinci-leader",
+   "equipmentTags": [
+    "Captain",
+    "Master Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Captain",
+     "armyBook": "Vinci Leader (Captain)"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Master Hand Weapon"
+    }
+   ],
+   "notas": "Captain é opção do Vinci Leader; espada sozinha = Master Hand Weapon (Hand Weapon do livro vem junto de Poisoned Knives/Handbow)"
+  },
+  "a006": {
+   "artId": "boar-captain",
+   "rotulo": "Boar Captain",
+   "confiancaRotulo": "alta",
+   "unitKey": "vinci-leader",
+   "equipmentTags": [
+    "Captain",
+    "Automa-Boar"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Boar Captain",
+     "armyBook": "Vinci Leader (Captain, Automa-Boar)"
+    }
+   ],
+   "notas": "produto 'Vinci Leader Captain on Automa Boar'"
+  },
+  "a007": {
+   "artId": "horse-captain",
+   "rotulo": "Horse Captain",
+   "confiancaRotulo": "alta",
+   "unitKey": "vinci-leader",
+   "equipmentTags": [
+    "Captain",
+    "Automa-Horse"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Horse Captain",
+     "armyBook": "Vinci Leader (Captain, Automa-Horse)"
+    }
+   ],
+   "notas": "produto 'Vinci Leader Captain on Automa Horse'"
+  },
+  "a008": {
+   "artId": "inventor-helper",
+   "rotulo": "Inventor Helper",
+   "confiancaRotulo": "alta",
+   "unitKey": "vinci-scholar",
+   "equipmentTags": [
+    "Automa Helper"
+   ],
+   "cosmetic": "companion",
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Inventor Helper",
+     "armyBook": "Automa Helper"
+    }
+   ],
+   "notas": "robozinho do Inventor (produto 'Vinci Scholar (Inventor & Helper)'); no army book é a opção Automa Helper. cosmetic para o site não trocar o Scholar pelo ajudante"
+  },
+  "a009": {
+   "artId": "inventor",
+   "rotulo": "Inventor",
+   "confiancaRotulo": "alta",
+   "unitKey": "vinci-scholar",
+   "equipmentTags": [
+    "Inventor"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Inventor",
+     "armyBook": "Vinci Scholar (Inventor)"
+    }
+   ],
+   "notas": "Inventor é opção do Vinci Scholar (produto 'Vinci Scholar (Inventor & Helper)')"
+  },
+  "a010": {
+   "artId": "alchemist",
+   "rotulo": "Alchemist",
+   "confiancaRotulo": "alta",
+   "unitKey": "vinci-scholar",
+   "equipmentTags": [
+    "Alchemist"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Alchemist",
+     "armyBook": "Vinci Scholar (Alchemist)"
+    }
+   ],
+   "notas": "Alchemist é opção do Vinci Scholar (produto 'Vinci Scholar Alchemist'); Zairetia também tem a opção, mas é herói nomeado"
+  },
+  "a011": {
+   "artId": "horse-inventor",
+   "rotulo": "Horse Inventor",
+   "confiancaRotulo": "alta",
+   "unitKey": "vinci-scholar",
+   "equipmentTags": [
+    "Inventor",
+    "Automa-Horse"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Horse Inventor",
+     "armyBook": "Vinci Scholar (Inventor, Automa-Horse)"
+    }
+   ],
+   "notas": "produto 'Vinci Scholar Inventor on Automa Horse'"
+  },
+  "a012": {
+   "artId": "master-assassin-v1",
+   "rotulo": "Master Assassin (V1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "vinci-leader",
+   "equipmentTags": [
+    "Master Assassin"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Master Assassin",
+     "armyBook": "Vinci Leader (Master Assassin)"
+    }
+   ],
+   "notas": "Master Assassin é opção do Vinci Leader (produto 'Vinci Leader Master Assassin')"
+  },
+  "a013": {
+   "artId": "masked-master-assassin-v2",
+   "rotulo": "Masked Master Assassin (V2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "vinci-leader",
+   "equipmentTags": [
+    "Master Assassin"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Masked Master Assassin",
+     "armyBook": "Vinci Leader (Master Assassin)"
+    }
+   ],
+   "notas": "segunda pose do Master Assassin (opção do Vinci Leader)"
+  },
+  "a014": {
+   "artId": "sword-militia",
+   "rotulo": "Sword Militia",
+   "confiancaRotulo": "alta",
+   "unitKey": "militia",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "espada = Hand Weapon"
+  },
+  "a015": {
+   "artId": "spear-militia",
+   "rotulo": "Spear Militia",
+   "confiancaRotulo": "alta",
+   "unitKey": "militia",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a016": {
+   "artId": "militia-musician",
+   "rotulo": "Militia Musician",
+   "confiancaRotulo": "alta",
+   "unitKey": "militia",
+   "equipmentTags": [],
+   "cosmetic": "musician",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose de comando (opção Musician)"
+  },
+  "a017": {
+   "artId": "militia-sargeant",
+   "rotulo": "Militia Sargeant",
+   "confiancaRotulo": "alta",
+   "unitKey": "militia",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "grafia 'Sargeant' está assim no PDF; pose de comando (opção Sergeant)"
+  },
+  "a018": {
+   "artId": "militia-banner",
+   "rotulo": "Militia Banner",
+   "confiancaRotulo": "alta",
+   "unitKey": "militia",
+   "equipmentTags": [],
+   "cosmetic": "banner",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose de comando (opção Banner)"
+  },
+  "a019": {
+   "artId": "city-guard-crossbow-v1-a019",
+   "rotulo": "City Guard Crossbow (V1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "city-guard",
+   "equipmentTags": [
+    "Crossbow"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "repetida no PDF (pág. 8); mesmo tamanho e cópias de a001"
+  },
+  "a020": {
+   "artId": "city-guard-crossbow-v2-a020",
+   "rotulo": "City Guard Crossbow (V2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "city-guard",
+   "equipmentTags": [
+    "Crossbow"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "repetida no PDF (pág. 8); mesmo tamanho e cópias de a002"
+  },
+  "a021": {
+   "artId": "city-guard-shotbow-v1",
+   "rotulo": "City Guard Shotbow (V1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "city-guard",
+   "equipmentTags": [
+    "Shotbow"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a022": {
+   "artId": "city-guard-shotbow-v2",
+   "rotulo": "City Guard Shotbow (V2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "city-guard",
+   "equipmentTags": [
+    "Shotbow"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a023": {
+   "artId": "automata-v1",
+   "rotulo": "Automata (V1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "automa-guard",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Automata",
+     "armyBook": "Automa Guard"
+    }
+   ],
+   "notas": "robô humanoide com arm-bow e espada (armas da Automa Guard, genericName Combat Robots); Automata Brute é rótulo à parte"
+  },
+  "a024": {
+   "artId": "automata-v2",
+   "rotulo": "Automata (V2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "automa-guard",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Automata",
+     "armyBook": "Automa Guard"
+    }
+   ],
+   "notas": "robô humanoide com arm-bow e espada (armas da Automa Guard, genericName Combat Robots)"
+  },
+  "a025": {
+   "artId": "scout",
+   "rotulo": "Scout",
+   "confiancaRotulo": "alta",
+   "unitKey": "scouts",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a026": {
+   "artId": "winged-scout",
+   "rotulo": "Winged Scout",
+   "confiancaRotulo": "alta",
+   "unitKey": "scouts",
+   "equipmentTags": [
+    "Wings"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Winged",
+     "armyBook": "Wings"
+    }
+   ],
+   "notas": "asas = opção Wings (há também Raider Wings)"
+  },
+  "a027": {
+   "artId": "harlequin-v1",
+   "rotulo": "Harlequin (V1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "harlequins",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a028": {
+   "artId": "harlequin-v2",
+   "rotulo": "Harlequin (V2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "harlequins",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a029": {
+   "artId": "assassin-ver-1",
+   "rotulo": "Assassin (Ver. 1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "assassins",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a030": {
+   "artId": "assassin-ver-2",
+   "rotulo": "Assassin (Ver. 2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "assassins",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a031": {
+   "artId": "sniper-v2",
+   "rotulo": "Sniper (V2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "snipers",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "figura com pavise (rótulo não nomeia arma)"
+  },
+  "a032": {
+   "artId": "sniper-v1",
+   "rotulo": "Sniper (V1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "snipers",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "figura com pavise (rótulo não nomeia arma)"
+  },
+  "a033": {
+   "artId": "automata-brute",
+   "rotulo": "Automata Brute",
+   "confiancaRotulo": "alta",
+   "unitKey": "automa-brutes",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Automata Brute",
+     "armyBook": "Automa Brutes"
+    }
+   ],
+   "notas": "Automata = Automa; genericName Heavy Robots"
+  },
+  "a034": {
+   "artId": "cavalry-lance-ver-1",
+   "rotulo": "Cavalry Lance (Ver. 1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "automa-horse-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Cavalry",
+     "armyBook": "Automa-Horse Riders"
+    }
+   ],
+   "notas": "genericName Robot Cavalry; produto do army book se chama 'Automa Cavalry'"
+  },
+  "a035": {
+   "artId": "cavalry-lance-ver-2",
+   "rotulo": "Cavalry Lance (Ver. 2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "automa-horse-riders",
+   "equipmentTags": [
+    "Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Cavalry",
+     "armyBook": "Automa-Horse Riders"
+    }
+   ],
+   "notas": "genericName Robot Cavalry; produto do army book se chama 'Automa Cavalry'"
+  },
+  "a036": {
+   "artId": "cavalry-handbow-ver-1",
+   "rotulo": "Cavalry Handbow (Ver. 1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "automa-horse-riders",
+   "equipmentTags": [
+    "Handbow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Cavalry",
+     "armyBook": "Automa-Horse Riders"
+    }
+   ],
+   "notas": "genericName Robot Cavalry; produto do army book se chama 'Automa Cavalry'"
+  },
+  "a037": {
+   "artId": "cavalry-handbow-ver-2",
+   "rotulo": "Cavalry Handbow (Ver. 2)",
+   "confiancaRotulo": "alta",
+   "unitKey": "automa-horse-riders",
+   "equipmentTags": [
+    "Handbow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Cavalry",
+     "armyBook": "Automa-Horse Riders"
+    }
+   ],
+   "notas": "genericName Robot Cavalry; produto do army book se chama 'Automa Cavalry'"
+  },
+  "a038": {
+   "artId": "heavy-cavalry",
+   "rotulo": "Heavy Cavalry",
+   "confiancaRotulo": "alta",
+   "unitKey": "automa-boar-riders",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Heavy Cavalry",
+     "armyBook": "Automa-Boar Riders"
+    }
+   ],
+   "notas": "genericName Heavy Robot Cavalry; produto do army book se chama 'Heavy Cavalry'"
+  },
+  "a039": {
+   "artId": "aerea-guard-claws",
+   "rotulo": "Aerea Guard Claws",
+   "confiancaRotulo": "alta",
+   "unitKey": "aerea-guard",
+   "equipmentTags": [
+    "Dual Claws"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Claws",
+     "armyBook": "Dual Claws"
+    }
+   ],
+   "notas": "arma padrão Dual Claws"
+  },
+  "a040": {
+   "artId": "aerea-guard-crossbow",
+   "rotulo": "Aerea Guard Crossbow",
+   "confiancaRotulo": "alta",
+   "unitKey": "aerea-guard",
+   "equipmentTags": [
+    "Rapid Crossbow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Crossbow",
+     "armyBook": "Rapid Crossbow"
+    }
+   ],
+   "notas": "a besta da Aerea Guard é Rapid Crossbow"
+  },
+  "a041": {
+   "artId": "aerea-guard-shotbow",
+   "rotulo": "Aerea Guard Shotbow",
+   "confiancaRotulo": "alta",
+   "unitKey": "aerea-guard",
+   "equipmentTags": [
+    "Rapid Shortbow"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shotbow",
+     "armyBook": "Rapid Shortbow"
+    }
+   ],
+   "notas": "army book da Aerea Guard só tem 'Rapid Shortbow' (provável grafia de Shotbow, arma comum da facção)"
+  },
+  "a042": {
+   "artId": "sawblade-drone",
+   "rotulo": "Sawblade Drone",
+   "confiancaRotulo": "alta",
+   "unitKey": "automa-drones",
+   "equipmentTags": [
+    "Bot-Sawblades"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sawblade Drone",
+     "armyBook": "Automa Drones (Bot-Sawblades)"
+    }
+   ],
+   "notas": "genericName Drones; 5 cópias no PDF = unidade de 5. Pode ser também a opção Sawblade Drone de heróis/Militia/Scouts. Só contorno fino (o par de borda é a050)"
+  },
+  "a043": {
+   "artId": "crossbow-drone",
+   "rotulo": "Crossbow Drone",
+   "confiancaRotulo": "alta",
+   "unitKey": "automa-drones",
+   "equipmentTags": [
+    "Bot-Bows"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Crossbow Drone",
+     "armyBook": "Automa Drones (Bot-Bows)"
+    }
+   ],
+   "notas": "genericName Drones; 5 cópias no PDF = unidade de 5. Pode ser também a opção Bot-Bow Drone. Só contorno fino (o par de borda é a051)"
+  },
+  "a044": {
+   "artId": "spear-militia-a044",
+   "rotulo": "Spear Militia",
+   "confiancaRotulo": "alta",
+   "unitKey": "militia",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só borda grossa (sem par); provável cópia de a015"
+  },
+  "a045": {
+   "artId": "spear-militia-a045",
+   "rotulo": "Spear Militia",
+   "confiancaRotulo": "alta",
+   "unitKey": "militia",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só borda grossa (sem par); provável cópia de a015"
+  },
+  "a046": {
+   "artId": "spear-militia-a046",
+   "rotulo": "Spear Militia",
+   "confiancaRotulo": "alta",
+   "unitKey": "militia",
+   "equipmentTags": [
+    "Spear"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só borda grossa (sem par); provável cópia de a015"
+  },
+  "a047": {
+   "artId": "scout-a047",
+   "rotulo": "Scout",
+   "confiancaRotulo": "alta",
+   "unitKey": "scouts",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só borda grossa (sem par); provável cópia de a025"
+  },
+  "a048": {
+   "artId": "winged-scout-a048",
+   "rotulo": "Winged Scout",
+   "confiancaRotulo": "alta",
+   "unitKey": "scouts",
+   "equipmentTags": [
+    "Wings"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Winged",
+     "armyBook": "Wings"
+    }
+   ],
+   "notas": "só borda grossa (sem par); provável cópia de a026"
+  },
+  "a049": {
+   "artId": "sniper-v1-a049",
+   "rotulo": "Sniper (V1)",
+   "confiancaRotulo": "alta",
+   "unitKey": "snipers",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só borda grossa (sem par); provável cópia de a032"
+  },
+  "a050": {
+   "artId": "sawblade-drone-a050",
+   "rotulo": "Sawblade Drone",
+   "confiancaRotulo": "alta",
+   "unitKey": "automa-drones",
+   "equipmentTags": [
+    "Bot-Sawblades"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sawblade Drone",
+     "armyBook": "Automa Drones (Bot-Sawblades)"
+    }
+   ],
+   "notas": "só borda grossa, com barra preta embaixo; par de a042"
+  },
+  "a051": {
+   "artId": "crossbow-drone-a051",
+   "rotulo": "Crossbow Drone",
+   "confiancaRotulo": "alta",
+   "unitKey": "automa-drones",
+   "equipmentTags": [
+    "Bot-Bows"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Crossbow Drone",
+     "armyBook": "Automa Drones (Bot-Bows)"
+    }
+   ],
+   "notas": "só borda grossa, com barra preta embaixo; par de a043"
+  }
+ }
+}

@@ -3,16 +3,44 @@
   "packId": "human-defense-force",
   "packVersion": "0.1.0",
   "gameSystem": {
-    "code": "GFF",
-    "slug": "grimdark-future-firefight",
-    "armyForgeId": 3
+    "code": "GF",
+    "slug": "grimdark-future",
+    "armyForgeId": 2
   },
+  "gameSystems": [
+    {
+      "code": "GF",
+      "slug": "grimdark-future",
+      "armyForgeId": 2
+    },
+    {
+      "code": "GFF",
+      "slug": "grimdark-future-firefight",
+      "armyForgeId": 3
+    }
+  ],
   "armyBook": {
     "id": "z65fgu0l29i4lnlu",
     "name": "Human Defense Force",
     "version": "3.6.0",
     "retrievedAt": "2026-11-17"
   },
+  "armyBooks": [
+    {
+      "id": "z65fgu0l29i4lnlu",
+      "name": "Human Defense Force",
+      "version": "3.6.0",
+      "gameSystemId": 3,
+      "retrievedAt": "2026-11-17"
+    },
+    {
+      "id": "z65fgu0l29i4lnlu",
+      "name": "Human Defense Force",
+      "version": "3.6.0",
+      "gameSystemId": 2,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
   "source": {
     "pdfName": "Human_Defense_Force_-_BW.pdf",
     "pdfSha256": "b17c9ba4f73f8f5c1a2aca045526f3e7009b06e8113b653f6f4cf3a0ddd719fc",
@@ -87,9 +115,1022 @@
         "source": "army-forge v3.6.0",
         "retrievedAt": "2026-11-17"
       }
+    },
+    {
+      "unitKey": "company-leader",
+      "names": [
+        "Company Leader"
+      ],
+      "armyForgeUnitId": "3Tk4911",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-17"
+      }
+    },
+    {
+      "unitKey": "storm-leader",
+      "names": [
+        "Storm Leader"
+      ],
+      "armyForgeUnitId": "dwJg2Bu",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-17"
+      }
+    },
+    {
+      "unitKey": "recruits",
+      "names": [
+        "Recruits"
+      ],
+      "armyForgeUnitId": "97ShHAa",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-17"
+      }
+    },
+    {
+      "unitKey": "grunt-robot",
+      "names": [
+        "GRUNT Robot",
+        "GRUNT Robots"
+      ],
+      "armyForgeUnitId": "kTKbTVs",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          32.0
+        ],
+        "raw": "32",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-17"
+      }
+    },
+    {
+      "unitKey": "storm-trooper",
+      "names": [
+        "Storm Trooper",
+        "Storm Troopers"
+      ],
+      "armyForgeUnitId": "Xuu-drz",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-17"
+      }
+    },
+    {
+      "unitKey": "sapper",
+      "names": [
+        "Sapper",
+        "Sappers"
+      ],
+      "armyForgeUnitId": "SG9cgFZ",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-17"
+      }
+    },
+    {
+      "unitKey": "sniper",
+      "names": [
+        "Sniper",
+        "Snipers"
+      ],
+      "armyForgeUnitId": "95wirM-",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-17"
+      }
+    },
+    {
+      "unitKey": "weapon-team",
+      "names": [
+        "Weapon Team",
+        "Weapon Teams"
+      ],
+      "armyForgeUnitId": "8jb141s",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-17"
+      }
     }
   ],
   "arts": [
+    {
+      "artId": "company-leader-pistol",
+      "candidateId": "a001",
+      "pdfLabel": "Company Leader Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "company-leader",
+      "equipmentTags": [
+        "Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pistola e espada (padrão: Pistol + Hand Weapon)",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0
+          ],
+          "front": "arts/company-leader-pistol/fino/frente.svg",
+          "back": "arts/company-leader-pistol/fino/verso.svg",
+          "canvasMm": [
+            24.553,
+            49.488
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            49.4,
+            24.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            0
+          ],
+          "front": "arts/company-leader-pistol/borda/frente.svg",
+          "back": "arts/company-leader-pistol/borda/verso.svg",
+          "canvasMm": [
+            29.21,
+            51.816
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            51.7,
+            29.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "company-leader-rifle",
+      "candidateId": "a002",
+      "pdfLabel": "Company Leader Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "company-leader",
+      "equipmentTags": [
+        "Burst Battle Rifle|Burst Long Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": [
+            "Burst Battle Rifle",
+            "Burst Long Rifle"
+          ]
+        }
+      ],
+      "notes": "como em a014 (Rifle -> Battle Rifle); Burst Long Rifle também é fuzil, a tag aceita os dois",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            1
+          ],
+          "front": "arts/company-leader-rifle/fino/frente.svg",
+          "back": "arts/company-leader-rifle/fino/verso.svg",
+          "canvasMm": [
+            29.972,
+            49.022
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            48.9,
+            29.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            1
+          ],
+          "front": "arts/company-leader-rifle/borda/frente.svg",
+          "back": "arts/company-leader-rifle/borda/verso.svg",
+          "canvasMm": [
+            34.629,
+            51.35
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            51.2,
+            34.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-leader-pistol",
+      "candidateId": "a003",
+      "pdfLabel": "Storm Leader Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-leader",
+      "equipmentTags": [
+        "Heavy Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Pistol",
+          "armyBook": "Heavy Pistol"
+        }
+      ],
+      "notes": "a pistola do Storm Leader é Heavy Pistol",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            2
+          ],
+          "front": "arts/storm-leader-pistol/fino/frente.svg",
+          "back": "arts/storm-leader-pistol/fino/verso.svg",
+          "canvasMm": [
+            42.376,
+            35.983
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            35.9,
+            42.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            2
+          ],
+          "front": "arts/storm-leader-pistol/borda/frente.svg",
+          "back": "arts/storm-leader-pistol/borda/verso.svg",
+          "canvasMm": [
+            47.032,
+            38.312
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            38.2,
+            46.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-leader-rifle",
+      "candidateId": "a004",
+      "pdfLabel": "Storm Leader Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-leader",
+      "equipmentTags": [
+        "Burst Heavy Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": "Burst Heavy Rifle"
+        }
+      ],
+      "notes": "o único fuzil do Storm Leader é Burst Heavy Rifle",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            3
+          ],
+          "front": "arts/storm-leader-rifle/fino/frente.svg",
+          "back": "arts/storm-leader-rifle/fino/verso.svg",
+          "canvasMm": [
+            43.984,
+            42.164
+          ],
+          "frontBackIoU": 0.956,
+          "sizeMm": [
+            42.1,
+            43.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            3
+          ],
+          "front": "arts/storm-leader-rifle/borda/frente.svg",
+          "back": "arts/storm-leader-rifle/borda/verso.svg",
+          "canvasMm": [
+            48.599,
+            44.492
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            44.4,
+            48.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "biker-leader-pistol",
+      "candidateId": "a005",
+      "pdfLabel": "Biker Leader Pistol",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "company-leader",
+      "equipmentTags": [
+        "Combat Bike",
+        "Pistol"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Biker Leader",
+          "armyBook": "Company Leader + Combat Bike"
+        }
+      ],
+      "notes": "Combat Bikers não têm líder; o herói que monta moto é o Company Leader (upgrade Combat Bike)",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0
+          ],
+          "front": "arts/biker-leader-pistol/fino/frente.svg",
+          "back": "arts/biker-leader-pistol/fino/verso.svg",
+          "canvasMm": [
+            45.932,
+            36.195
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            36.1,
+            45.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            0
+          ],
+          "front": "arts/biker-leader-pistol/borda/frente.svg",
+          "back": "arts/biker-leader-pistol/borda/verso.svg",
+          "canvasMm": [
+            50.588,
+            38.523
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            38.4,
+            50.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "biker-leader-lance",
+      "candidateId": "a006",
+      "pdfLabel": "Biker Leader Lance",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "company-leader",
+      "equipmentTags": [
+        "Combat Bike",
+        "Heavy Lance|Hunting Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Biker Leader",
+          "armyBook": "Company Leader + Combat Bike"
+        },
+        {
+          "pdf": "Lance",
+          "armyBook": [
+            "Heavy Lance",
+            "Hunting Lance"
+          ]
+        }
+      ],
+      "notes": "rótulo diz só Lance; a tag aceita Heavy Lance e Hunting Lance. Com lança o modelo mantém a Pistol: empata com a005 (2 tags) e o site fica com a005",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            1
+          ],
+          "front": "arts/biker-leader-lance/fino/frente.svg",
+          "back": "arts/biker-leader-lance/fino/verso.svg",
+          "canvasMm": [
+            46.27,
+            59.182
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            59.1,
+            46.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            1
+          ],
+          "front": "arts/biker-leader-lance/borda/frente.svg",
+          "back": "arts/biker-leader-lance/borda/verso.svg",
+          "canvasMm": [
+            50.927,
+            61.51
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            61.4,
+            50.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "commander",
+      "candidateId": "a007",
+      "pdfLabel": "Commander",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "company-leader",
+      "equipmentTags": [
+        "Commander"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Commander",
+          "armyBook": "Company Leader + Commander"
+        }
+      ],
+      "notes": "herói que é opção; opção também do Storm Leader e do Tank Company Leader",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0
+          ],
+          "front": "arts/commander/fino/frente.svg",
+          "back": "arts/commander/fino/verso.svg",
+          "canvasMm": [
+            38.82,
+            34.84
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            34.7,
+            38.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            0
+          ],
+          "front": "arts/commander/borda/frente.svg",
+          "back": "arts/commander/borda/verso.svg",
+          "canvasMm": [
+            43.603,
+            37.169
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            37.1,
+            42.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "drill-sergeant",
+      "candidateId": "a008",
+      "pdfLabel": "Drill Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "company-leader",
+      "equipmentTags": [
+        "Drill Sergeant"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Drill Sergeant",
+          "armyBook": "Company Leader + Drill Sergeant"
+        }
+      ],
+      "notes": "herói que é opção; opção também do Storm Leader",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            1
+          ],
+          "front": "arts/drill-sergeant/fino/frente.svg",
+          "back": "arts/drill-sergeant/fino/verso.svg",
+          "canvasMm": [
+            26.966,
+            34.375
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            34.3,
+            26.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            1
+          ],
+          "front": "arts/drill-sergeant/borda/frente.svg",
+          "back": "arts/drill-sergeant/borda/verso.svg",
+          "canvasMm": [
+            31.623,
+            36.703
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            36.6,
+            31.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "enforcer",
+      "candidateId": "a009",
+      "pdfLabel": "Enforcer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "company-leader",
+      "equipmentTags": [
+        "Enforcer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Enforcer",
+          "armyBook": "Company Leader + Enforcer"
+        }
+      ],
+      "notes": "Enforcer é opção só do Company Leader",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            2
+          ],
+          "front": "arts/enforcer/fino/frente.svg",
+          "back": "arts/enforcer/fino/verso.svg",
+          "canvasMm": [
+            23.072,
+            35.687
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            35.6,
+            22.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            2
+          ],
+          "front": "arts/enforcer/borda/frente.svg",
+          "back": "arts/enforcer/borda/verso.svg",
+          "canvasMm": [
+            27.728,
+            38.015
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            37.9,
+            27.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "forward-observer",
+      "candidateId": "a010",
+      "pdfLabel": "Forward Observer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "company-leader",
+      "equipmentTags": [
+        "Forward Observer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Forward Observer",
+          "armyBook": "Company Leader + Forward Observer"
+        }
+      ],
+      "notes": "herói que é opção; opção também do Storm Leader (e de veículos)",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            3
+          ],
+          "front": "arts/forward-observer/fino/frente.svg",
+          "back": "arts/forward-observer/fino/verso.svg",
+          "canvasMm": [
+            25.4,
+            38.227
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            38.1,
+            25.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            3
+          ],
+          "front": "arts/forward-observer/borda/frente.svg",
+          "back": "arts/forward-observer/borda/verso.svg",
+          "canvasMm": [
+            30.057,
+            40.555
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            40.5,
+            29.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "munitioner",
+      "candidateId": "a011",
+      "pdfLabel": "Munitioner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "company-leader",
+      "equipmentTags": [
+        "Munitioner"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Munitioner",
+          "armyBook": "Company Leader + Munitioner"
+        }
+      ],
+      "notes": "herói que é opção; opção também do Storm Leader",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0
+          ],
+          "front": "arts/munitioner/fino/frente.svg",
+          "back": "arts/munitioner/fino/verso.svg",
+          "canvasMm": [
+            23.156,
+            34.883
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            34.8,
+            22.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            0
+          ],
+          "front": "arts/munitioner/borda/frente.svg",
+          "back": "arts/munitioner/borda/verso.svg",
+          "canvasMm": [
+            27.813,
+            37.211
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            37.1,
+            27.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "psy-hacker",
+      "candidateId": "a012",
+      "pdfLabel": "Psy-Hacker",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "company-leader",
+      "equipmentTags": [
+        "Psy-Hacker"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Psy-Hacker",
+          "armyBook": "Company Leader + Psy-Hacker"
+        }
+      ],
+      "notes": "herói que é opção; opção também do Storm Leader",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            1
+          ],
+          "front": "arts/psy-hacker/fino/frente.svg",
+          "back": "arts/psy-hacker/fino/verso.svg",
+          "canvasMm": [
+            24.257,
+            41.402
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            41.3,
+            24.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            1
+          ],
+          "front": "arts/psy-hacker/borda/frente.svg",
+          "back": "arts/psy-hacker/borda/verso.svg",
+          "canvasMm": [
+            28.956,
+            43.73
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            43.6,
+            28.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sniper-leader",
+      "candidateId": "a013",
+      "pdfLabel": "Sniper Leader",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "company-leader",
+      "equipmentTags": [
+        "Sniper Leader"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sniper Leader",
+          "armyBook": "Company Leader + Sniper Leader"
+        }
+      ],
+      "notes": "Sniper Leader é opção só do Company Leader; figura com fuzil de precisão",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            2
+          ],
+          "front": "arts/sniper-leader/fino/frente.svg",
+          "back": "arts/sniper-leader/fino/verso.svg",
+          "canvasMm": [
+            25.4,
+            60.875
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            60.8,
+            25.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            2
+          ],
+          "front": "arts/sniper-leader/borda/frente.svg",
+          "back": "arts/sniper-leader/borda/verso.svg",
+          "canvasMm": [
+            30.057,
+            63.204
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            63.1,
+            29.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
     {
       "artId": "infantry-rifle",
       "candidateId": "a014",
@@ -154,6 +1195,1214 @@
           "sizeMm": [
             36.9,
             23.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-drum-rifle",
+      "candidateId": "a015",
+      "pdfLabel": "Infantry Drum Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantry-squad",
+      "equipmentTags": [
+        "Shredder Drum-Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Drum Rifle",
+          "armyBook": "Shredder Drum-Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0
+          ],
+          "front": "arts/infantry-drum-rifle/fino/frente.svg",
+          "back": "arts/infantry-drum-rifle/fino/verso.svg",
+          "canvasMm": [
+            18.923,
+            34.459
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            34.4,
+            18.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            0
+          ],
+          "front": "arts/infantry-drum-rifle/borda/frente.svg",
+          "back": "arts/infantry-drum-rifle/borda/verso.svg",
+          "canvasMm": [
+            24.003,
+            36.999
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            36.9,
+            23.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-fusion-rifle",
+      "candidateId": "a016",
+      "pdfLabel": "Infantry Fusion Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantry-squad",
+      "equipmentTags": [
+        "Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            1
+          ],
+          "front": "arts/infantry-fusion-rifle/fino/frente.svg",
+          "back": "arts/infantry-fusion-rifle/fino/verso.svg",
+          "canvasMm": [
+            18.838,
+            34.459
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            34.4,
+            18.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            1
+          ],
+          "front": "arts/infantry-fusion-rifle/borda/frente.svg",
+          "back": "arts/infantry-fusion-rifle/borda/verso.svg",
+          "canvasMm": [
+            23.918,
+            36.999
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            36.9,
+            23.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-flamer",
+      "candidateId": "a017",
+      "pdfLabel": "Infantry Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantry-squad",
+      "equipmentTags": [
+        "Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            2
+          ],
+          "front": "arts/infantry-flamer/fino/frente.svg",
+          "back": "arts/infantry-flamer/fino/verso.svg",
+          "canvasMm": [
+            22.056,
+            34.459
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            34.4,
+            21.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            2
+          ],
+          "front": "arts/infantry-flamer/borda/frente.svg",
+          "back": "arts/infantry-flamer/borda/verso.svg",
+          "canvasMm": [
+            27.136,
+            36.999
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            36.9,
+            26.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-laser-rifle",
+      "candidateId": "a018",
+      "pdfLabel": "Infantry Laser Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantry-squad",
+      "equipmentTags": [
+        "Laser Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            3
+          ],
+          "front": "arts/infantry-laser-rifle/fino/frente.svg",
+          "back": "arts/infantry-laser-rifle/fino/verso.svg",
+          "canvasMm": [
+            25.315,
+            34.459
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            34.4,
+            25.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            3
+          ],
+          "front": "arts/infantry-laser-rifle/borda/frente.svg",
+          "back": "arts/infantry-laser-rifle/borda/verso.svg",
+          "canvasMm": [
+            30.395,
+            36.999
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            36.9,
+            30.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-grenade-launcher",
+      "candidateId": "a019",
+      "pdfLabel": "Infantry Grenade Launcher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantry-squad",
+      "equipmentTags": [
+        "Grenade Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0
+          ],
+          "front": "arts/infantry-grenade-launcher/fino/frente.svg",
+          "back": "arts/infantry-grenade-launcher/fino/verso.svg",
+          "canvasMm": [
+            21.505,
+            34.713
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            34.6,
+            21.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            0
+          ],
+          "front": "arts/infantry-grenade-launcher/borda/frente.svg",
+          "back": "arts/infantry-grenade-launcher/borda/verso.svg",
+          "canvasMm": [
+            26.585,
+            37.253
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            37.2,
+            26.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-plasma-rifle",
+      "candidateId": "a020",
+      "pdfLabel": "Infantry Plasma Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantry-squad",
+      "equipmentTags": [
+        "Plasma Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            1
+          ],
+          "front": "arts/infantry-plasma-rifle/fino/frente.svg",
+          "back": "arts/infantry-plasma-rifle/fino/verso.svg",
+          "canvasMm": [
+            22.013,
+            34.713
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            34.6,
+            21.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            1
+          ],
+          "front": "arts/infantry-plasma-rifle/borda/frente.svg",
+          "back": "arts/infantry-plasma-rifle/borda/verso.svg",
+          "canvasMm": [
+            27.093,
+            37.253
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            37.2,
+            26.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-sniper-rifle",
+      "candidateId": "a021",
+      "pdfLabel": "Infantry Sniper Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantry-squad",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "unmapped",
+      "aliases": [],
+      "notes": "Infantry Squad v3.6.0 não tem Sniper Rifle (Veterans e Storm Troopers têm)",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            2
+          ],
+          "front": "arts/infantry-sniper-rifle/fino/frente.svg",
+          "back": "arts/infantry-sniper-rifle/fino/verso.svg",
+          "canvasMm": [
+            22.098,
+            34.629
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            34.5,
+            21.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            2
+          ],
+          "front": "arts/infantry-sniper-rifle/borda/frente.svg",
+          "back": "arts/infantry-sniper-rifle/borda/verso.svg",
+          "canvasMm": [
+            27.178,
+            37.169
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            37.1,
+            26.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-sergeant",
+      "candidateId": "a022",
+      "pdfLabel": "Infantry Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantry-squad",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "sargento (Sgt. Pistol + Sgt. Hand Weapon)",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0
+          ],
+          "front": "arts/infantry-sergeant/fino/frente.svg",
+          "back": "arts/infantry-sergeant/fino/verso.svg",
+          "canvasMm": [
+            24.723,
+            37.296
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            37.2,
+            24.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            0
+          ],
+          "front": "arts/infantry-sergeant/borda/frente.svg",
+          "back": "arts/infantry-sergeant/borda/verso.svg",
+          "canvasMm": [
+            29.803,
+            39.836
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            39.7,
+            29.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-radio",
+      "candidateId": "a023",
+      "pdfLabel": "Infantry Radio",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantry-squad",
+      "equipmentTags": [],
+      "cosmetic": "radio",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Radio = Field Radio",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            1
+          ],
+          "front": "arts/infantry-radio/fino/frente.svg",
+          "back": "arts/infantry-radio/fino/verso.svg",
+          "canvasMm": [
+            23.199,
+            32.724
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            32.6,
+            22.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            1
+          ],
+          "front": "arts/infantry-radio/borda/frente.svg",
+          "back": "arts/infantry-radio/borda/verso.svg",
+          "canvasMm": [
+            28.279,
+            35.264
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            35.1,
+            28.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-medic",
+      "candidateId": "a024",
+      "pdfLabel": "Infantry Medic",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantry-squad",
+      "equipmentTags": [],
+      "cosmetic": "medic",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Medic = Medical Training",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            2
+          ],
+          "front": "arts/infantry-medic/fino/frente.svg",
+          "back": "arts/infantry-medic/fino/verso.svg",
+          "canvasMm": [
+            24.342,
+            27.644
+          ],
+          "frontBackIoU": 0.953,
+          "sizeMm": [
+            27.5,
+            24.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            2
+          ],
+          "front": "arts/infantry-medic/borda/frente.svg",
+          "back": "arts/infantry-medic/borda/verso.svg",
+          "canvasMm": [
+            29.379,
+            30.268
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            30.1,
+            29.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "infantry-banner",
+      "candidateId": "a025",
+      "pdfLabel": "Infantry Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "infantry-squad",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Banner = Company Standard",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            3
+          ],
+          "front": "arts/infantry-banner/fino/frente.svg",
+          "back": "arts/infantry-banner/fino/verso.svg",
+          "canvasMm": [
+            36.491,
+            52.832
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            52.7,
+            36.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            3
+          ],
+          "front": "arts/infantry-banner/borda/frente.svg",
+          "back": "arts/infantry-banner/borda/verso.svg",
+          "canvasMm": [
+            41.571,
+            55.372
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            55.3,
+            41.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "recruits",
+      "candidateId": "a026",
+      "pdfLabel": "Recruits",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "recruits",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/recruits/fino/frente.svg",
+          "back": "arts/recruits/fino/verso.svg",
+          "canvasMm": [
+            24.977,
+            32.766
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            32.7,
+            24.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/recruits/borda/frente.svg",
+          "back": "arts/recruits/borda/verso.svg",
+          "canvasMm": [
+            30.057,
+            35.306
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            35.2,
+            29.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "grunt",
+      "candidateId": "a027",
+      "pdfLabel": "GRUNT",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "grunt-robot",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "GRUNT Robots (GF) / GRUNT Robot (Firefight)",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/grunt/fino/frente.svg",
+          "back": "arts/grunt/fino/verso.svg",
+          "canvasMm": [
+            28.998,
+            36.28
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            36.2,
+            28.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/grunt/borda/frente.svg",
+          "back": "arts/grunt/borda/verso.svg",
+          "canvasMm": [
+            34.078,
+            38.82
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            38.7,
+            33.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "machine-gun-team",
+      "candidateId": "a028",
+      "pdfLabel": "Machine Gun Team",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "weapon-team",
+      "equipmentTags": [
+        "Heavy Machinegun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Machine Gun",
+          "armyBook": "Heavy Machinegun"
+        }
+      ],
+      "notes": "arma padrão do Weapon Team. As artes de equipe também serviriam à opção Weapon Team de Infantry Squad/Veterans",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0
+          ],
+          "front": "arts/machine-gun-team/fino/frente.svg",
+          "back": "arts/machine-gun-team/fino/verso.svg",
+          "canvasMm": [
+            40.217,
+            34.629
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            34.5,
+            40.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            0
+          ],
+          "front": "arts/machine-gun-team/borda/frente.svg",
+          "back": "arts/machine-gun-team/borda/verso.svg",
+          "canvasMm": [
+            45.297,
+            37.169
+          ],
+          "frontBackIoU": 0.997,
+          "sizeMm": [
+            37.1,
+            45.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "mortar-team",
+      "candidateId": "a029",
+      "pdfLabel": "Mortar Team",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "weapon-team",
+      "equipmentTags": [
+        "Mortar"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            1
+          ],
+          "front": "arts/mortar-team/fino/frente.svg",
+          "back": "arts/mortar-team/fino/verso.svg",
+          "canvasMm": [
+            51.35,
+            34.713
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            34.6,
+            51.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            1
+          ],
+          "front": "arts/mortar-team/borda/frente.svg",
+          "back": "arts/mortar-team/borda/verso.svg",
+          "canvasMm": [
+            56.388,
+            37.253
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            37.2,
+            56.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "rocket-team",
+      "candidateId": "a030",
+      "pdfLabel": "Rocket Team",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "weapon-team",
+      "equipmentTags": [
+        "Missile Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rocket",
+          "armyBook": "Missile Launcher"
+        }
+      ],
+      "notes": "o único lançador do Weapon Team é Missile Launcher",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            2
+          ],
+          "front": "arts/rocket-team/fino/frente.svg",
+          "back": "arts/rocket-team/fino/verso.svg",
+          "canvasMm": [
+            46.27,
+            34.883
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            34.8,
+            46.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            2
+          ],
+          "front": "arts/rocket-team/borda/frente.svg",
+          "back": "arts/rocket-team/borda/verso.svg",
+          "canvasMm": [
+            51.35,
+            37.423
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            37.3,
+            51.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "laser-cannon-team",
+      "candidateId": "a031",
+      "pdfLabel": "Laser Cannon Team",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "weapon-team",
+      "equipmentTags": [
+        "Laser Cannon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0
+          ],
+          "front": "arts/laser-cannon-team/fino/frente.svg",
+          "back": "arts/laser-cannon-team/fino/verso.svg",
+          "canvasMm": [
+            43.688,
+            34.925
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            34.8,
+            43.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            0
+          ],
+          "front": "arts/laser-cannon-team/borda/frente.svg",
+          "back": "arts/laser-cannon-team/borda/verso.svg",
+          "canvasMm": [
+            48.81,
+            37.465
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            37.3,
+            48.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "autocannon-team",
+      "candidateId": "a032",
+      "pdfLabel": "Autocannon Team",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "weapon-team",
+      "equipmentTags": [
+        "Autocannon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            1
+          ],
+          "front": "arts/autocannon-team/fino/frente.svg",
+          "back": "arts/autocannon-team/fino/verso.svg",
+          "canvasMm": [
+            51.562,
+            31.369
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            31.2,
+            51.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            1
+          ],
+          "front": "arts/autocannon-team/borda/frente.svg",
+          "back": "arts/autocannon-team/borda/verso.svg",
+          "canvasMm": [
+            56.642,
+            33.909
+          ],
+          "frontBackIoU": 0.998,
+          "sizeMm": [
+            33.8,
+            56.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-rifle",
+      "candidateId": "a033",
+      "pdfLabel": "Veteran Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veterans",
+      "equipmentTags": [
+        "Battle Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": "Battle Rifle"
+        }
+      ],
+      "notes": "como a014: a arma padrão é Battle Rifle",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/veteran-rifle/fino/frente.svg",
+          "back": "arts/veteran-rifle/fino/verso.svg",
+          "canvasMm": [
+            25.146,
+            34.121
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            34.0,
+            24.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/veteran-rifle/borda/frente.svg",
+          "back": "arts/veteran-rifle/borda/verso.svg",
+          "canvasMm": [
+            30.226,
+            36.661
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            36.6,
+            30.0
           ],
           "vector": {
             "contract": 2,
@@ -236,6 +2485,1845 @@
       "licenseStatus": "user-approved"
     },
     {
+      "artId": "veteran-flamer",
+      "candidateId": "a035",
+      "pdfLabel": "Veteran Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veterans",
+      "equipmentTags": [
+        "Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0
+          ],
+          "front": "arts/veteran-flamer/fino/frente.svg",
+          "back": "arts/veteran-flamer/fino/verso.svg",
+          "canvasMm": [
+            21.548,
+            33.909
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            33.8,
+            21.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            0
+          ],
+          "front": "arts/veteran-flamer/borda/frente.svg",
+          "back": "arts/veteran-flamer/borda/verso.svg",
+          "canvasMm": [
+            26.628,
+            36.449
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            36.3,
+            26.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-drum-rifle",
+      "candidateId": "a036",
+      "pdfLabel": "Veteran Drum Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veterans",
+      "equipmentTags": [
+        "Shredder Drum-Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Drum Rifle",
+          "armyBook": "Shredder Drum-Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            1
+          ],
+          "front": "arts/veteran-drum-rifle/fino/frente.svg",
+          "back": "arts/veteran-drum-rifle/fino/verso.svg",
+          "canvasMm": [
+            21.802,
+            34.163
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            34.0,
+            21.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            1
+          ],
+          "front": "arts/veteran-drum-rifle/borda/frente.svg",
+          "back": "arts/veteran-drum-rifle/borda/verso.svg",
+          "canvasMm": [
+            26.882,
+            36.703
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            36.6,
+            26.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-plasma-rifle",
+      "candidateId": "a037",
+      "pdfLabel": "Veteran Plasma Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veterans",
+      "equipmentTags": [
+        "Plasma Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            2
+          ],
+          "front": "arts/veteran-plasma-rifle/fino/frente.svg",
+          "back": "arts/veteran-plasma-rifle/fino/verso.svg",
+          "canvasMm": [
+            21.759,
+            34.078
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            34.0,
+            21.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 46,
+          "rows": [
+            2
+          ],
+          "front": "arts/veteran-plasma-rifle/borda/frente.svg",
+          "back": "arts/veteran-plasma-rifle/borda/verso.svg",
+          "canvasMm": [
+            26.839,
+            36.618
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            36.5,
+            26.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-fusion-rifle",
+      "candidateId": "a038",
+      "pdfLabel": "Veteran Fusion Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veterans",
+      "equipmentTags": [
+        "Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0
+          ],
+          "front": "arts/veteran-fusion-rifle/fino/frente.svg",
+          "back": "arts/veteran-fusion-rifle/fino/verso.svg",
+          "canvasMm": [
+            21.844,
+            34.205
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            34.1,
+            21.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            0
+          ],
+          "front": "arts/veteran-fusion-rifle/borda/frente.svg",
+          "back": "arts/veteran-fusion-rifle/borda/verso.svg",
+          "canvasMm": [
+            26.924,
+            36.745
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            36.7,
+            26.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-grenade-launcher",
+      "candidateId": "a039",
+      "pdfLabel": "Veteran Grenade Launcher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veterans",
+      "equipmentTags": [
+        "Grenade Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            1
+          ],
+          "front": "arts/veteran-grenade-launcher/fino/frente.svg",
+          "back": "arts/veteran-grenade-launcher/fino/verso.svg",
+          "canvasMm": [
+            21.759,
+            34.205
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            34.1,
+            21.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            1
+          ],
+          "front": "arts/veteran-grenade-launcher/borda/frente.svg",
+          "back": "arts/veteran-grenade-launcher/borda/verso.svg",
+          "canvasMm": [
+            26.839,
+            36.745
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            36.7,
+            26.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-sniper-rifle",
+      "candidateId": "a040",
+      "pdfLabel": "Veteran Sniper Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veterans",
+      "equipmentTags": [
+        "Sniper Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            2
+          ],
+          "front": "arts/veteran-sniper-rifle/fino/frente.svg",
+          "back": "arts/veteran-sniper-rifle/fino/verso.svg",
+          "canvasMm": [
+            32.554,
+            34.121
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            34.0,
+            32.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 47,
+          "rows": [
+            2
+          ],
+          "front": "arts/veteran-sniper-rifle/borda/frente.svg",
+          "back": "arts/veteran-sniper-rifle/borda/verso.svg",
+          "canvasMm": [
+            37.634,
+            36.661
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            36.6,
+            37.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-banner",
+      "candidateId": "a041",
+      "pdfLabel": "Veteran Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veterans",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Banner = Company Standard",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            0
+          ],
+          "front": "arts/veteran-banner/fino/frente.svg",
+          "back": "arts/veteran-banner/fino/verso.svg",
+          "canvasMm": [
+            27.601,
+            56.134
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            56.0,
+            27.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            0
+          ],
+          "front": "arts/veteran-banner/borda/frente.svg",
+          "back": "arts/veteran-banner/borda/verso.svg",
+          "canvasMm": [
+            32.258,
+            58.462
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            58.3,
+            32.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-radio",
+      "candidateId": "a042",
+      "pdfLabel": "Veteran Radio",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veterans",
+      "equipmentTags": [],
+      "cosmetic": "radio",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Radio = Field Radio",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            1
+          ],
+          "front": "arts/veteran-radio/fino/frente.svg",
+          "back": "arts/veteran-radio/fino/verso.svg",
+          "canvasMm": [
+            19.389,
+            26.035
+          ],
+          "frontBackIoU": 0.961,
+          "sizeMm": [
+            25.9,
+            19.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            1
+          ],
+          "front": "arts/veteran-radio/borda/frente.svg",
+          "back": "arts/veteran-radio/borda/verso.svg",
+          "canvasMm": [
+            24.088,
+            28.363
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            28.3,
+            23.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-medic",
+      "candidateId": "a043",
+      "pdfLabel": "Veteran Medic",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veterans",
+      "equipmentTags": [],
+      "cosmetic": "medic",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Medic = Medical Training",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            2
+          ],
+          "front": "arts/veteran-medic/fino/frente.svg",
+          "back": "arts/veteran-medic/fino/verso.svg",
+          "canvasMm": [
+            29.591,
+            31.708
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            31.6,
+            29.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            2
+          ],
+          "front": "arts/veteran-medic/borda/frente.svg",
+          "back": "arts/veteran-medic/borda/verso.svg",
+          "canvasMm": [
+            34.248,
+            34.036
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            34.0,
+            34.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "veteran-sergeant",
+      "candidateId": "a044",
+      "pdfLabel": "Veteran Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "veterans",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 18,
+          "rows": [
+            3
+          ],
+          "front": "arts/veteran-sergeant/fino/frente.svg",
+          "back": "arts/veteran-sergeant/fino/verso.svg",
+          "canvasMm": [
+            23.41,
+            34.671
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            34.5,
+            23.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 48,
+          "rows": [
+            3
+          ],
+          "front": "arts/veteran-sergeant/borda/frente.svg",
+          "back": "arts/veteran-sergeant/borda/verso.svg",
+          "canvasMm": [
+            28.067,
+            36.999
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            36.9,
+            27.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-trooper-rifle",
+      "candidateId": "a045",
+      "pdfLabel": "Storm Trooper Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-trooper",
+      "equipmentTags": [
+        "Heavy Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Rifle",
+          "armyBook": "Heavy Rifle"
+        }
+      ],
+      "notes": "a arma padrão do Storm Trooper é Heavy Rifle",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/storm-trooper-rifle/fino/frente.svg",
+          "back": "arts/storm-trooper-rifle/fino/verso.svg",
+          "canvasMm": [
+            26.458,
+            35.01
+          ],
+          "frontBackIoU": 0.929,
+          "sizeMm": [
+            34.9,
+            26.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 49,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/storm-trooper-rifle/borda/frente.svg",
+          "back": "arts/storm-trooper-rifle/borda/verso.svg",
+          "canvasMm": [
+            31.115,
+            37.338
+          ],
+          "frontBackIoU": 0.951,
+          "sizeMm": [
+            37.3,
+            30.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-trooper-flamer",
+      "candidateId": "a046",
+      "pdfLabel": "Storm Trooper Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-trooper",
+      "equipmentTags": [
+        "Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0
+          ],
+          "front": "arts/storm-trooper-flamer/fino/frente.svg",
+          "back": "arts/storm-trooper-flamer/fino/verso.svg",
+          "canvasMm": [
+            26.247,
+            34.84
+          ],
+          "frontBackIoU": 0.466,
+          "sizeMm": [
+            34.7,
+            26.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 50,
+          "rows": [
+            0
+          ],
+          "front": "arts/storm-trooper-flamer/borda/frente.svg",
+          "back": "arts/storm-trooper-flamer/borda/verso.svg",
+          "canvasMm": [
+            30.903,
+            37.169
+          ],
+          "frontBackIoU": 0.634,
+          "sizeMm": [
+            37.1,
+            30.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-trooper-drum-rifle",
+      "candidateId": "a047",
+      "pdfLabel": "Storm Trooper Drum Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-trooper",
+      "equipmentTags": [
+        "Shredder Drum-Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Drum Rifle",
+          "armyBook": "Shredder Drum-Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            1
+          ],
+          "front": "arts/storm-trooper-drum-rifle/fino/frente.svg",
+          "back": "arts/storm-trooper-drum-rifle/fino/verso.svg",
+          "canvasMm": [
+            26.966,
+            35.052
+          ],
+          "frontBackIoU": 0.462,
+          "sizeMm": [
+            35.0,
+            26.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 50,
+          "rows": [
+            1
+          ],
+          "front": "arts/storm-trooper-drum-rifle/borda/frente.svg",
+          "back": "arts/storm-trooper-drum-rifle/borda/verso.svg",
+          "canvasMm": [
+            31.623,
+            37.38
+          ],
+          "frontBackIoU": 0.63,
+          "sizeMm": [
+            37.3,
+            31.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-trooper-grenade-launcher",
+      "candidateId": "a048",
+      "pdfLabel": "Storm Trooper Grenade Launcher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-trooper",
+      "equipmentTags": [
+        "Grenade Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            2
+          ],
+          "front": "arts/storm-trooper-grenade-launcher/fino/frente.svg",
+          "back": "arts/storm-trooper-grenade-launcher/fino/verso.svg",
+          "canvasMm": [
+            26.331,
+            34.967
+          ],
+          "frontBackIoU": 0.449,
+          "sizeMm": [
+            34.9,
+            26.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 50,
+          "rows": [
+            2
+          ],
+          "front": "arts/storm-trooper-grenade-launcher/borda/frente.svg",
+          "back": "arts/storm-trooper-grenade-launcher/borda/verso.svg",
+          "canvasMm": [
+            30.988,
+            37.296
+          ],
+          "frontBackIoU": 0.624,
+          "sizeMm": [
+            37.2,
+            30.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-trooper-machine-gun",
+      "candidateId": "a049",
+      "pdfLabel": "Storm Trooper Machine Gun",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-trooper",
+      "equipmentTags": [
+        "Storm Machinegun"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Machine Gun",
+          "armyBook": "Storm Machinegun"
+        }
+      ],
+      "notes": "a única metralhadora do Storm Trooper é Storm Machinegun",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            3
+          ],
+          "front": "arts/storm-trooper-machine-gun/fino/frente.svg",
+          "back": "arts/storm-trooper-machine-gun/fino/verso.svg",
+          "canvasMm": [
+            27.093,
+            34.967
+          ],
+          "frontBackIoU": 0.434,
+          "sizeMm": [
+            34.9,
+            26.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 50,
+          "rows": [
+            3
+          ],
+          "front": "arts/storm-trooper-machine-gun/borda/frente.svg",
+          "back": "arts/storm-trooper-machine-gun/borda/verso.svg",
+          "canvasMm": [
+            31.75,
+            37.296
+          ],
+          "frontBackIoU": 0.606,
+          "sizeMm": [
+            37.2,
+            31.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-trooper-fusion-rifle",
+      "candidateId": "a050",
+      "pdfLabel": "Storm Trooper Fusion Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-trooper",
+      "equipmentTags": [
+        "Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0
+          ],
+          "front": "arts/storm-trooper-fusion-rifle/fino/frente.svg",
+          "back": "arts/storm-trooper-fusion-rifle/fino/verso.svg",
+          "canvasMm": [
+            26.374,
+            35.01
+          ],
+          "frontBackIoU": 0.446,
+          "sizeMm": [
+            34.9,
+            26.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            0
+          ],
+          "front": "arts/storm-trooper-fusion-rifle/borda/frente.svg",
+          "back": "arts/storm-trooper-fusion-rifle/borda/verso.svg",
+          "canvasMm": [
+            31.03,
+            37.338
+          ],
+          "frontBackIoU": 0.617,
+          "sizeMm": [
+            37.3,
+            30.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-trooper-plasma-rifle",
+      "candidateId": "a051",
+      "pdfLabel": "Storm Trooper Plasma Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-trooper",
+      "equipmentTags": [
+        "Plasma Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            1
+          ],
+          "front": "arts/storm-trooper-plasma-rifle/fino/frente.svg",
+          "back": "arts/storm-trooper-plasma-rifle/fino/verso.svg",
+          "canvasMm": [
+            26.585,
+            35.052
+          ],
+          "frontBackIoU": 0.455,
+          "sizeMm": [
+            35.0,
+            26.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            1
+          ],
+          "front": "arts/storm-trooper-plasma-rifle/borda/frente.svg",
+          "back": "arts/storm-trooper-plasma-rifle/borda/verso.svg",
+          "canvasMm": [
+            31.242,
+            37.38
+          ],
+          "frontBackIoU": 0.624,
+          "sizeMm": [
+            37.3,
+            31.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-trooper-sniper-rifle",
+      "candidateId": "a052",
+      "pdfLabel": "Storm Trooper Sniper Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-trooper",
+      "equipmentTags": [
+        "Sniper Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            2
+          ],
+          "front": "arts/storm-trooper-sniper-rifle/fino/frente.svg",
+          "back": "arts/storm-trooper-sniper-rifle/fino/verso.svg",
+          "canvasMm": [
+            38.439,
+            34.925
+          ],
+          "frontBackIoU": 0.477,
+          "sizeMm": [
+            34.8,
+            38.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 51,
+          "rows": [
+            2
+          ],
+          "front": "arts/storm-trooper-sniper-rifle/borda/frente.svg",
+          "back": "arts/storm-trooper-sniper-rifle/borda/verso.svg",
+          "canvasMm": [
+            43.095,
+            37.253
+          ],
+          "frontBackIoU": 0.649,
+          "sizeMm": [
+            37.2,
+            42.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-trooper-banner",
+      "candidateId": "a053",
+      "pdfLabel": "Storm Trooper Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-trooper",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Banner = Company Standard",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            0
+          ],
+          "front": "arts/storm-trooper-banner/fino/frente.svg",
+          "back": "arts/storm-trooper-banner/fino/verso.svg",
+          "canvasMm": [
+            43.053,
+            60.156
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            60.0,
+            42.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 52,
+          "rows": [
+            0
+          ],
+          "front": "arts/storm-trooper-banner/borda/frente.svg",
+          "back": "arts/storm-trooper-banner/borda/verso.svg",
+          "canvasMm": [
+            47.71,
+            62.484
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            62.4,
+            47.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-trooper-radio",
+      "candidateId": "a054",
+      "pdfLabel": "Storm Trooper Radio",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-trooper",
+      "equipmentTags": [],
+      "cosmetic": "radio",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Radio = Field Radio",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            1
+          ],
+          "front": "arts/storm-trooper-radio/fino/frente.svg",
+          "back": "arts/storm-trooper-radio/fino/verso.svg",
+          "canvasMm": [
+            33.57,
+            39.031
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            38.9,
+            33.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 52,
+          "rows": [
+            1
+          ],
+          "front": "arts/storm-trooper-radio/borda/frente.svg",
+          "back": "arts/storm-trooper-radio/borda/verso.svg",
+          "canvasMm": [
+            38.227,
+            41.36
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            41.2,
+            37.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-trooper-medic",
+      "candidateId": "a055",
+      "pdfLabel": "Storm Trooper Medic",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-trooper",
+      "equipmentTags": [],
+      "cosmetic": "medic",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "Medic = Medical Training",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            2
+          ],
+          "front": "arts/storm-trooper-medic/fino/frente.svg",
+          "back": "arts/storm-trooper-medic/fino/verso.svg",
+          "canvasMm": [
+            24.215,
+            35.899
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            35.8,
+            24.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 52,
+          "rows": [
+            2
+          ],
+          "front": "arts/storm-trooper-medic/borda/frente.svg",
+          "back": "arts/storm-trooper-medic/borda/verso.svg",
+          "canvasMm": [
+            28.871,
+            38.227
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            38.1,
+            28.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "storm-trooper-sergeant",
+      "candidateId": "a056",
+      "pdfLabel": "Storm Trooper Sergeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "storm-trooper",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            3
+          ],
+          "front": "arts/storm-trooper-sergeant/fino/frente.svg",
+          "back": "arts/storm-trooper-sergeant/fino/verso.svg",
+          "canvasMm": [
+            27.347,
+            40.217
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            40.1,
+            27.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 52,
+          "rows": [
+            3
+          ],
+          "front": "arts/storm-trooper-sergeant/borda/frente.svg",
+          "back": "arts/storm-trooper-sergeant/borda/verso.svg",
+          "canvasMm": [
+            32.173,
+            42.545
+          ],
+          "frontBackIoU": 0.995,
+          "sizeMm": [
+            42.4,
+            31.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sappers-fusion-rifle",
+      "candidateId": "a057",
+      "pdfLabel": "Sappers Fusion Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "sapper",
+      "equipmentTags": [
+        "Fusion Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            0
+          ],
+          "front": "arts/sappers-fusion-rifle/fino/frente.svg",
+          "back": "arts/sappers-fusion-rifle/fino/verso.svg",
+          "canvasMm": [
+            27.432,
+            37.592
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            37.5,
+            27.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 53,
+          "rows": [
+            0
+          ],
+          "front": "arts/sappers-fusion-rifle/borda/frente.svg",
+          "back": "arts/sappers-fusion-rifle/borda/verso.svg",
+          "canvasMm": [
+            32.089,
+            39.92
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            39.8,
+            31.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sappers-drum-rifle",
+      "candidateId": "a058",
+      "pdfLabel": "Sappers Drum Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "sapper",
+      "equipmentTags": [
+        "Shredder Drum-Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Drum Rifle",
+          "armyBook": "Shredder Drum-Rifle"
+        }
+      ],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            1
+          ],
+          "front": "arts/sappers-drum-rifle/fino/frente.svg",
+          "back": "arts/sappers-drum-rifle/fino/verso.svg",
+          "canvasMm": [
+            27.728,
+            37.592
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            37.5,
+            27.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 53,
+          "rows": [
+            1
+          ],
+          "front": "arts/sappers-drum-rifle/borda/frente.svg",
+          "back": "arts/sappers-drum-rifle/borda/verso.svg",
+          "canvasMm": [
+            32.385,
+            39.92
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            39.8,
+            32.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sappers-flamer",
+      "candidateId": "a059",
+      "pdfLabel": "Sappers Flamer",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "sapper",
+      "equipmentTags": [
+        "Flamer"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            2
+          ],
+          "front": "arts/sappers-flamer/fino/frente.svg",
+          "back": "arts/sappers-flamer/fino/verso.svg",
+          "canvasMm": [
+            32.004,
+            37.507
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            37.4,
+            31.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 53,
+          "rows": [
+            2
+          ],
+          "front": "arts/sappers-flamer/borda/frente.svg",
+          "back": "arts/sappers-flamer/borda/verso.svg",
+          "canvasMm": [
+            36.703,
+            39.836
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            39.7,
+            36.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sappers-grenade-launcher",
+      "candidateId": "a060",
+      "pdfLabel": "Sappers Grenade Launcher",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "sapper",
+      "equipmentTags": [
+        "Grenade Launcher"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "arma padrão",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            0
+          ],
+          "front": "arts/sappers-grenade-launcher/fino/frente.svg",
+          "back": "arts/sappers-grenade-launcher/fino/verso.svg",
+          "canvasMm": [
+            29.887,
+            37.634
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            37.5,
+            29.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            0
+          ],
+          "front": "arts/sappers-grenade-launcher/borda/frente.svg",
+          "back": "arts/sappers-grenade-launcher/borda/verso.svg",
+          "canvasMm": [
+            34.544,
+            39.963
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            39.9,
+            34.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sappers-laser-rifle",
+      "candidateId": "a061",
+      "pdfLabel": "Sappers Laser Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "sapper",
+      "equipmentTags": [
+        "Laser Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            1
+          ],
+          "front": "arts/sappers-laser-rifle/fino/frente.svg",
+          "back": "arts/sappers-laser-rifle/fino/verso.svg",
+          "canvasMm": [
+            30.776,
+            37.761
+          ],
+          "frontBackIoU": 0.972,
+          "sizeMm": [
+            37.7,
+            30.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            1
+          ],
+          "front": "arts/sappers-laser-rifle/borda/frente.svg",
+          "back": "arts/sappers-laser-rifle/borda/verso.svg",
+          "canvasMm": [
+            35.433,
+            40.09
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            40.0,
+            35.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sappers-plasma-rifle",
+      "candidateId": "a062",
+      "pdfLabel": "Sappers Plasma Rifle",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "sapper",
+      "equipmentTags": [
+        "Plasma Rifle"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            2
+          ],
+          "front": "arts/sappers-plasma-rifle/fino/frente.svg",
+          "back": "arts/sappers-plasma-rifle/fino/verso.svg",
+          "canvasMm": [
+            26.924,
+            37.423
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            37.3,
+            26.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 54,
+          "rows": [
+            2
+          ],
+          "front": "arts/sappers-plasma-rifle/borda/frente.svg",
+          "back": "arts/sappers-plasma-rifle/borda/verso.svg",
+          "canvasMm": [
+            31.581,
+            39.751
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            39.6,
+            31.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sniper",
+      "candidateId": "a063",
+      "pdfLabel": "Sniper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "sniper",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/sniper/fino/frente.svg",
+          "back": "arts/sniper/fino/verso.svg",
+          "canvasMm": [
+            40.809,
+            34.713
+          ],
+          "frontBackIoU": 0.946,
+          "sizeMm": [
+            34.6,
+            40.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 55,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/sniper/borda/frente.svg",
+          "back": "arts/sniper/borda/verso.svg",
+          "canvasMm": [
+            45.466,
+            37.042
+          ],
+          "frontBackIoU": 0.964,
+          "sizeMm": [
+            36.9,
+            45.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "frente x verso abaixo de 0,95"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
       "artId": "biker-pistol",
       "candidateId": "a064",
       "pdfLabel": "Biker Pistol",
@@ -308,7 +4396,9 @@
       "labelSource": "agent-vision",
       "labelConfidence": "alta",
       "unitKey": "combat-bikers",
-      "equipmentTags": [],
+      "equipmentTags": [
+        "Heavy Lance|Hunting Lance|Anti-Tank Lance"
+      ],
       "cosmetic": null,
       "mappingStatus": "alias-proposed",
       "aliases": [
@@ -321,7 +4411,7 @@
           ]
         }
       ],
-      "notes": "rótulo diz só 'Lance'; o army book tem três lanças. Usuário escolhe a quais ela serve",
+      "notes": "rótulo diz só 'Lance'; o army book tem três lanças: tag com as três alternativas",
       "styles": {
         "fino": {
           "page": 27,

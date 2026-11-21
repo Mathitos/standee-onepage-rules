@@ -1,0 +1,3506 @@
+{
+  "schemaVersion": 1,
+  "packId": "duchies-of-vinci",
+  "packVersion": "0.1.0",
+  "gameSystem": {
+    "code": "AOF",
+    "slug": "age-of-fantasy",
+    "armyForgeId": 4
+  },
+  "gameSystems": [
+    {
+      "code": "AOF",
+      "slug": "age-of-fantasy",
+      "armyForgeId": 4
+    },
+    {
+      "code": "AOFS",
+      "slug": "age-of-fantasy-skirmish",
+      "armyForgeId": 5
+    }
+  ],
+  "armyBook": {
+    "id": "VU1EFPa2uODffW8D",
+    "name": "Duchies of Vinci",
+    "version": "3.6.0",
+    "retrievedAt": "2026-11-21"
+  },
+  "armyBooks": [
+    {
+      "id": "VU1EFPa2uODffW8D",
+      "name": "Duchies of Vinci",
+      "version": "3.6.0",
+      "gameSystemId": 4,
+      "retrievedAt": "2026-11-21"
+    },
+    {
+      "id": "VU1EFPa2uODffW8D",
+      "name": "Duchies of Vinci",
+      "version": "3.6.0",
+      "gameSystemId": 5,
+      "retrievedAt": "2026-11-21"
+    }
+  ],
+  "source": {
+    "pdfName": "Duchies_of_Vinci_-_BW.pdf",
+    "pdfSha256": "6eb195f9736625f7b9175167ff82f5b3164147f678bc9be1f77419153bbc11f1",
+    "dpi": 300,
+    "mmPerPx": 0.084667
+  },
+  "reviewStatus": "agent-proposed",
+  "units": [
+    {
+      "unitKey": "vinci-leader",
+      "names": [
+        "Vinci Leader"
+      ],
+      "armyForgeUnitId": "4xFAaqz",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "vinci-scholar",
+      "names": [
+        "Vinci Scholar"
+      ],
+      "armyForgeUnitId": "-9F1FDu",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "militia",
+      "names": [
+        "Militia"
+      ],
+      "armyForgeUnitId": "gh9JJOe",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "city-guard",
+      "names": [
+        "City Guard"
+      ],
+      "armyForgeUnitId": "s2QC06M",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "automa-drones",
+      "names": [
+        "Automa Drones",
+        "Automa Drone"
+      ],
+      "armyForgeUnitId": "gAsJjC8",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "automa-guard",
+      "names": [
+        "Automa Guard"
+      ],
+      "armyForgeUnitId": "00sI1ix",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "automa-brutes",
+      "names": [
+        "Automa Brutes",
+        "Automa Brute"
+      ],
+      "armyForgeUnitId": "Cfl-Phe",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "scouts",
+      "names": [
+        "Scouts",
+        "Scout"
+      ],
+      "armyForgeUnitId": "OciwHsc",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "harlequins",
+      "names": [
+        "Harlequins",
+        "Harlequin"
+      ],
+      "armyForgeUnitId": "jVLKMIF",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "assassins",
+      "names": [
+        "Assassins",
+        "Assassin"
+      ],
+      "armyForgeUnitId": "Zpo3LF7",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          25.0
+        ],
+        "raw": "25",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "snipers",
+      "names": [
+        "Snipers",
+        "Sniper"
+      ],
+      "armyForgeUnitId": "MAIEJ2g",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "automa-horse-riders",
+      "names": [
+        "Automa-Horse Riders",
+        "Automa-Horse Rider"
+      ],
+      "armyForgeUnitId": "pRfAhrc",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          60.0,
+          35.0
+        ],
+        "raw": "60x35",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "automa-boar-riders",
+      "names": [
+        "Automa-Boar Riders",
+        "Automa-Boar Rider"
+      ],
+      "armyForgeUnitId": "tLjz9Ia",
+      "base": {
+        "shape": "oval",
+        "dimensionsMm": [
+          75.0,
+          46.0
+        ],
+        "raw": "75x46",
+        "nota": "elipse é suposição até confirmação",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    },
+    {
+      "unitKey": "aerea-guard",
+      "names": [
+        "Aerea Guard"
+      ],
+      "armyForgeUnitId": "2I2swvL",
+      "base": {
+        "shape": "round",
+        "dimensionsMm": [
+          40.0
+        ],
+        "raw": "40",
+        "source": "army-forge v3.6.0",
+        "retrievedAt": "2026-11-21"
+      }
+    }
+  ],
+  "arts": [
+    {
+      "artId": "city-guard-crossbow-v1",
+      "candidateId": "a001",
+      "pdfLabel": "City Guard Crossbow (V1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "city-guard",
+      "equipmentTags": [
+        "Crossbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/city-guard-crossbow-v1/fino/frente.svg",
+          "back": "arts/city-guard-crossbow-v1/fino/verso.svg",
+          "canvasMm": [
+            25.019,
+            36.83
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            36.7,
+            24.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/city-guard-crossbow-v1/borda/frente.svg",
+          "back": "arts/city-guard-crossbow-v1/borda/verso.svg",
+          "canvasMm": [
+            28.406,
+            38.523
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            38.4,
+            28.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "city-guard-crossbow-v2",
+      "candidateId": "a002",
+      "pdfLabel": "City Guard Crossbow (V2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "city-guard",
+      "equipmentTags": [
+        "Crossbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 2,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/city-guard-crossbow-v2/fino/frente.svg",
+          "back": "arts/city-guard-crossbow-v2/fino/verso.svg",
+          "canvasMm": [
+            25.231,
+            31.538
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            31.4,
+            25.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 26,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/city-guard-crossbow-v2/borda/frente.svg",
+          "back": "arts/city-guard-crossbow-v2/borda/verso.svg",
+          "canvasMm": [
+            28.617,
+            33.232
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            33.1,
+            28.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "captain-handbow",
+      "candidateId": "a003",
+      "pdfLabel": "Captain Handbow",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vinci-leader",
+      "equipmentTags": [
+        "Captain",
+        "Handbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Captain",
+          "armyBook": "Vinci Leader (Captain)"
+        }
+      ],
+      "notes": "Captain é opção do Vinci Leader (produto 'Vinci Leader Captain')",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            0
+          ],
+          "front": "arts/captain-handbow/fino/frente.svg",
+          "back": "arts/captain-handbow/fino/verso.svg",
+          "canvasMm": [
+            26.458,
+            41.36
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            41.2,
+            26.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            0
+          ],
+          "front": "arts/captain-handbow/borda/frente.svg",
+          "back": "arts/captain-handbow/borda/verso.svg",
+          "canvasMm": [
+            30.184,
+            43.222
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            43.1,
+            29.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "captain-crossbow",
+      "candidateId": "a004",
+      "pdfLabel": "Captain Crossbow",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vinci-leader",
+      "equipmentTags": [
+        "Captain",
+        "Rapid Crossbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Captain",
+          "armyBook": "Vinci Leader (Captain)"
+        },
+        {
+          "pdf": "Crossbow",
+          "armyBook": "Rapid Crossbow"
+        }
+      ],
+      "notes": "Captain é opção do Vinci Leader; a besta do líder é Rapid Crossbow",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            1
+          ],
+          "front": "arts/captain-crossbow/fino/frente.svg",
+          "back": "arts/captain-crossbow/fino/verso.svg",
+          "canvasMm": [
+            23.622,
+            37.973
+          ],
+          "frontBackIoU": 0.976,
+          "sizeMm": [
+            37.8,
+            23.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            1
+          ],
+          "front": "arts/captain-crossbow/borda/frente.svg",
+          "back": "arts/captain-crossbow/borda/verso.svg",
+          "canvasMm": [
+            27.347,
+            39.836
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            39.7,
+            27.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "captain-sword",
+      "candidateId": "a005",
+      "pdfLabel": "Captain Sword",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vinci-leader",
+      "equipmentTags": [
+        "Captain",
+        "Master Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Captain",
+          "armyBook": "Vinci Leader (Captain)"
+        },
+        {
+          "pdf": "Sword",
+          "armyBook": "Master Hand Weapon"
+        }
+      ],
+      "notes": "Captain é opção do Vinci Leader; espada sozinha = Master Hand Weapon (Hand Weapon do livro vem junto de Poisoned Knives/Handbow)",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            2
+          ],
+          "front": "arts/captain-sword/fino/frente.svg",
+          "back": "arts/captain-sword/fino/verso.svg",
+          "canvasMm": [
+            23.707,
+            38.439
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            38.4,
+            23.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            2
+          ],
+          "front": "arts/captain-sword/borda/frente.svg",
+          "back": "arts/captain-sword/borda/verso.svg",
+          "canvasMm": [
+            27.432,
+            40.301
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            40.2,
+            27.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "boar-captain",
+      "candidateId": "a006",
+      "pdfLabel": "Boar Captain",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vinci-leader",
+      "equipmentTags": [
+        "Captain",
+        "Automa-Boar"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Boar Captain",
+          "armyBook": "Vinci Leader (Captain, Automa-Boar)"
+        }
+      ],
+      "notes": "produto 'Vinci Leader Captain on Automa Boar'",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            3
+          ],
+          "front": "arts/boar-captain/fino/frente.svg",
+          "back": "arts/boar-captain/fino/verso.svg",
+          "canvasMm": [
+            61.002,
+            66.04
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            66.0,
+            60.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            3
+          ],
+          "front": "arts/boar-captain/borda/frente.svg",
+          "back": "arts/boar-captain/borda/verso.svg",
+          "canvasMm": [
+            65.109,
+            67.903
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            67.8,
+            64.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horse-captain",
+      "candidateId": "a007",
+      "pdfLabel": "Horse Captain",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vinci-leader",
+      "equipmentTags": [
+        "Captain",
+        "Automa-Horse"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Horse Captain",
+          "armyBook": "Vinci Leader (Captain, Automa-Horse)"
+        }
+      ],
+      "notes": "produto 'Vinci Leader Captain on Automa Horse'",
+      "styles": {
+        "fino": {
+          "page": 3,
+          "rows": [
+            4
+          ],
+          "front": "arts/horse-captain/fino/frente.svg",
+          "back": "arts/horse-captain/fino/verso.svg",
+          "canvasMm": [
+            41.402,
+            56.938
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            56.8,
+            41.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 27,
+          "rows": [
+            4
+          ],
+          "front": "arts/horse-captain/borda/frente.svg",
+          "back": "arts/horse-captain/borda/verso.svg",
+          "canvasMm": [
+            45.127,
+            58.801
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            58.7,
+            44.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "inventor-helper",
+      "candidateId": "a008",
+      "pdfLabel": "Inventor Helper",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vinci-scholar",
+      "equipmentTags": [
+        "Automa Helper"
+      ],
+      "cosmetic": "companion",
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Inventor Helper",
+          "armyBook": "Automa Helper"
+        }
+      ],
+      "notes": "robozinho do Inventor (produto 'Vinci Scholar (Inventor & Helper)'); no army book é a opção Automa Helper. cosmetic para o site não trocar o Scholar pelo ajudante",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            0
+          ],
+          "front": "arts/inventor-helper/fino/frente.svg",
+          "back": "arts/inventor-helper/fino/verso.svg",
+          "canvasMm": [
+            14.859,
+            22.648
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            22.5,
+            14.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            0
+          ],
+          "front": "arts/inventor-helper/borda/frente.svg",
+          "back": "arts/inventor-helper/borda/verso.svg",
+          "canvasMm": [
+            18.584,
+            24.553
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            24.4,
+            18.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "inventor",
+      "candidateId": "a009",
+      "pdfLabel": "Inventor",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vinci-scholar",
+      "equipmentTags": [
+        "Inventor"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Inventor",
+          "armyBook": "Vinci Scholar (Inventor)"
+        }
+      ],
+      "notes": "Inventor é opção do Vinci Scholar (produto 'Vinci Scholar (Inventor & Helper)')",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            1
+          ],
+          "front": "arts/inventor/fino/frente.svg",
+          "back": "arts/inventor/fino/verso.svg",
+          "canvasMm": [
+            17.611,
+            34.121
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            34.0,
+            17.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            1
+          ],
+          "front": "arts/inventor/borda/frente.svg",
+          "back": "arts/inventor/borda/verso.svg",
+          "canvasMm": [
+            21.336,
+            35.983
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            35.9,
+            21.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "alchemist",
+      "candidateId": "a010",
+      "pdfLabel": "Alchemist",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vinci-scholar",
+      "equipmentTags": [
+        "Alchemist"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Alchemist",
+          "armyBook": "Vinci Scholar (Alchemist)"
+        }
+      ],
+      "notes": "Alchemist é opção do Vinci Scholar (produto 'Vinci Scholar Alchemist'); Zairetia também tem a opção, mas é herói nomeado",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            2
+          ],
+          "front": "arts/alchemist/fino/frente.svg",
+          "back": "arts/alchemist/fino/verso.svg",
+          "canvasMm": [
+            21.505,
+            36.999
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            36.9,
+            21.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            2
+          ],
+          "front": "arts/alchemist/borda/frente.svg",
+          "back": "arts/alchemist/borda/verso.svg",
+          "canvasMm": [
+            25.231,
+            38.862
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            38.8,
+            25.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "horse-inventor",
+      "candidateId": "a011",
+      "pdfLabel": "Horse Inventor",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vinci-scholar",
+      "equipmentTags": [
+        "Inventor",
+        "Automa-Horse"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Horse Inventor",
+          "armyBook": "Vinci Scholar (Inventor, Automa-Horse)"
+        }
+      ],
+      "notes": "produto 'Vinci Scholar Inventor on Automa Horse'",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            3
+          ],
+          "front": "arts/horse-inventor/fino/frente.svg",
+          "back": "arts/horse-inventor/fino/verso.svg",
+          "canvasMm": [
+            39.116,
+            48.387
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            48.3,
+            38.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            3
+          ],
+          "front": "arts/horse-inventor/borda/frente.svg",
+          "back": "arts/horse-inventor/borda/verso.svg",
+          "canvasMm": [
+            43.857,
+            50.25
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            50.1,
+            43.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "master-assassin-v1",
+      "candidateId": "a012",
+      "pdfLabel": "Master Assassin (V1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vinci-leader",
+      "equipmentTags": [
+        "Master Assassin"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Master Assassin",
+          "armyBook": "Vinci Leader (Master Assassin)"
+        }
+      ],
+      "notes": "Master Assassin é opção do Vinci Leader (produto 'Vinci Leader Master Assassin')",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            4
+          ],
+          "front": "arts/master-assassin-v1/fino/frente.svg",
+          "back": "arts/master-assassin-v1/fino/verso.svg",
+          "canvasMm": [
+            25.908,
+            38.65
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            38.5,
+            25.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            4
+          ],
+          "front": "arts/master-assassin-v1/borda/frente.svg",
+          "back": "arts/master-assassin-v1/borda/verso.svg",
+          "canvasMm": [
+            29.633,
+            40.513
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            40.4,
+            29.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "masked-master-assassin-v2",
+      "candidateId": "a013",
+      "pdfLabel": "Masked Master Assassin (V2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "vinci-leader",
+      "equipmentTags": [
+        "Master Assassin"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Masked Master Assassin",
+          "armyBook": "Vinci Leader (Master Assassin)"
+        }
+      ],
+      "notes": "segunda pose do Master Assassin (opção do Vinci Leader)",
+      "styles": {
+        "fino": {
+          "page": 4,
+          "rows": [
+            5
+          ],
+          "front": "arts/masked-master-assassin-v2/fino/frente.svg",
+          "back": "arts/masked-master-assassin-v2/fino/verso.svg",
+          "canvasMm": [
+            25.866,
+            38.65
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            38.5,
+            25.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 28,
+          "rows": [
+            5
+          ],
+          "front": "arts/masked-master-assassin-v2/borda/frente.svg",
+          "back": "arts/masked-master-assassin-v2/borda/verso.svg",
+          "canvasMm": [
+            29.591,
+            40.513
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            40.4,
+            29.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sword-militia",
+      "candidateId": "a014",
+      "pdfLabel": "Sword Militia",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "militia",
+      "equipmentTags": [
+        "Hand Weapon"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sword",
+          "armyBook": "Hand Weapon"
+        }
+      ],
+      "notes": "espada = Hand Weapon",
+      "styles": {
+        "fino": {
+          "page": 5,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/sword-militia/fino/frente.svg",
+          "back": "arts/sword-militia/fino/verso.svg",
+          "canvasMm": [
+            20.997,
+            34.798
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            34.7,
+            20.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 29,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/sword-militia/borda/frente.svg",
+          "back": "arts/sword-militia/borda/verso.svg",
+          "canvasMm": [
+            24.342,
+            36.491
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            36.4,
+            24.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "spear-militia",
+      "candidateId": "a015",
+      "pdfLabel": "Spear Militia",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "militia",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 6,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/spear-militia/fino/frente.svg",
+          "back": "arts/spear-militia/fino/verso.svg",
+          "canvasMm": [
+            24.511,
+            35.221
+          ],
+          "frontBackIoU": 0.969,
+          "sizeMm": [
+            35.1,
+            24.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 30,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/spear-militia/borda/frente.svg",
+          "back": "arts/spear-militia/borda/verso.svg",
+          "canvasMm": [
+            27.898,
+            36.915
+          ],
+          "frontBackIoU": 0.972,
+          "sizeMm": [
+            36.8,
+            27.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "militia-musician",
+      "candidateId": "a016",
+      "pdfLabel": "Militia Musician",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "militia",
+      "equipmentTags": [],
+      "cosmetic": "musician",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose de comando (opção Musician)",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            0
+          ],
+          "front": "arts/militia-musician/fino/frente.svg",
+          "back": "arts/militia-musician/fino/verso.svg",
+          "canvasMm": [
+            22.013,
+            39.666
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            39.5,
+            21.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 31,
+          "rows": [
+            0
+          ],
+          "front": "arts/militia-musician/borda/frente.svg",
+          "back": "arts/militia-musician/borda/verso.svg",
+          "canvasMm": [
+            25.612,
+            41.36
+          ],
+          "frontBackIoU": 0.965,
+          "sizeMm": [
+            41.2,
+            25.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "militia-sargeant",
+      "candidateId": "a017",
+      "pdfLabel": "Militia Sargeant",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "militia",
+      "equipmentTags": [],
+      "cosmetic": "sergeant",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "grafia 'Sargeant' está assim no PDF; pose de comando (opção Sergeant)",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            1
+          ],
+          "front": "arts/militia-sargeant/fino/frente.svg",
+          "back": "arts/militia-sargeant/fino/verso.svg",
+          "canvasMm": [
+            28.321,
+            41.317
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            41.2,
+            28.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 31,
+          "rows": [
+            1
+          ],
+          "front": "arts/militia-sargeant/borda/frente.svg",
+          "back": "arts/militia-sargeant/borda/verso.svg",
+          "canvasMm": [
+            31.708,
+            43.011
+          ],
+          "frontBackIoU": 0.98,
+          "sizeMm": [
+            42.9,
+            31.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "militia-banner",
+      "candidateId": "a018",
+      "pdfLabel": "Militia Banner",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "militia",
+      "equipmentTags": [],
+      "cosmetic": "banner",
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "pose de comando (opção Banner)",
+      "styles": {
+        "fino": {
+          "page": 7,
+          "rows": [
+            2
+          ],
+          "front": "arts/militia-banner/fino/frente.svg",
+          "back": "arts/militia-banner/fino/verso.svg",
+          "canvasMm": [
+            30.48,
+            52.62
+          ],
+          "frontBackIoU": 0.975,
+          "sizeMm": [
+            52.5,
+            30.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 31,
+          "rows": [
+            2
+          ],
+          "front": "arts/militia-banner/borda/frente.svg",
+          "back": "arts/militia-banner/borda/verso.svg",
+          "canvasMm": [
+            33.867,
+            54.314
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            54.2,
+            33.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "city-guard-crossbow-v1-a019",
+      "candidateId": "a019",
+      "pdfLabel": "City Guard Crossbow (V1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "city-guard",
+      "equipmentTags": [
+        "Crossbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "repetida no PDF (pág. 8); mesmo tamanho e cópias de a001",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/city-guard-crossbow-v1-a019/fino/frente.svg",
+          "back": "arts/city-guard-crossbow-v1-a019/fino/verso.svg",
+          "canvasMm": [
+            25.019,
+            36.83
+          ],
+          "frontBackIoU": 0.971,
+          "sizeMm": [
+            36.7,
+            24.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/city-guard-crossbow-v1-a019/borda/frente.svg",
+          "back": "arts/city-guard-crossbow-v1-a019/borda/verso.svg",
+          "canvasMm": [
+            28.406,
+            38.523
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            38.4,
+            28.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "city-guard-crossbow-v2-a020",
+      "candidateId": "a020",
+      "pdfLabel": "City Guard Crossbow (V2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "city-guard",
+      "equipmentTags": [
+        "Crossbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "repetida no PDF (pág. 8); mesmo tamanho e cópias de a002",
+      "styles": {
+        "fino": {
+          "page": 8,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/city-guard-crossbow-v2-a020/fino/frente.svg",
+          "back": "arts/city-guard-crossbow-v2-a020/fino/verso.svg",
+          "canvasMm": [
+            25.231,
+            31.538
+          ],
+          "frontBackIoU": 0.97,
+          "sizeMm": [
+            31.4,
+            25.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 32,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/city-guard-crossbow-v2-a020/borda/frente.svg",
+          "back": "arts/city-guard-crossbow-v2-a020/borda/verso.svg",
+          "canvasMm": [
+            28.617,
+            33.232
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            33.1,
+            28.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "city-guard-shotbow-v1",
+      "candidateId": "a021",
+      "pdfLabel": "City Guard Shotbow (V1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "city-guard",
+      "equipmentTags": [
+        "Shotbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/city-guard-shotbow-v1/fino/frente.svg",
+          "back": "arts/city-guard-shotbow-v1/fino/verso.svg",
+          "canvasMm": [
+            26.162,
+            36.703
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            36.6,
+            25.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/city-guard-shotbow-v1/borda/frente.svg",
+          "back": "arts/city-guard-shotbow-v1/borda/verso.svg",
+          "canvasMm": [
+            29.549,
+            38.396
+          ],
+          "frontBackIoU": 0.982,
+          "sizeMm": [
+            38.3,
+            29.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "city-guard-shotbow-v2",
+      "candidateId": "a022",
+      "pdfLabel": "City Guard Shotbow (V2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "city-guard",
+      "equipmentTags": [
+        "Shotbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 9,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/city-guard-shotbow-v2/fino/frente.svg",
+          "back": "arts/city-guard-shotbow-v2/fino/verso.svg",
+          "canvasMm": [
+            26.204,
+            31.496
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            31.4,
+            26.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 33,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/city-guard-shotbow-v2/borda/frente.svg",
+          "back": "arts/city-guard-shotbow-v2/borda/verso.svg",
+          "canvasMm": [
+            29.591,
+            33.189
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            33.1,
+            29.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "automata-v1",
+      "candidateId": "a023",
+      "pdfLabel": "Automata (V1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "automa-guard",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Automata",
+          "armyBook": "Automa Guard"
+        }
+      ],
+      "notes": "robô humanoide com arm-bow e espada (armas da Automa Guard, genericName Combat Robots); Automata Brute é rótulo à parte",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/automata-v1/fino/frente.svg",
+          "back": "arts/automata-v1/fino/verso.svg",
+          "canvasMm": [
+            24.257,
+            35.433
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            35.3,
+            24.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/automata-v1/borda/frente.svg",
+          "back": "arts/automata-v1/borda/verso.svg",
+          "canvasMm": [
+            27.644,
+            37.126
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            37.0,
+            27.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "automata-v2",
+      "candidateId": "a024",
+      "pdfLabel": "Automata (V2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "automa-guard",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Automata",
+          "armyBook": "Automa Guard"
+        }
+      ],
+      "notes": "robô humanoide com arm-bow e espada (armas da Automa Guard, genericName Combat Robots)",
+      "styles": {
+        "fino": {
+          "page": 10,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/automata-v2/fino/frente.svg",
+          "back": "arts/automata-v2/fino/verso.svg",
+          "canvasMm": [
+            19.346,
+            34.29
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            34.2,
+            19.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 34,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/automata-v2/borda/frente.svg",
+          "back": "arts/automata-v2/borda/verso.svg",
+          "canvasMm": [
+            22.733,
+            35.983
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            35.9,
+            22.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scout",
+      "candidateId": "a025",
+      "pdfLabel": "Scout",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scouts",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 11,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/scout/fino/frente.svg",
+          "back": "arts/scout/fino/verso.svg",
+          "canvasMm": [
+            23.707,
+            34.798
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            34.7,
+            23.5
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 35,
+          "rows": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "front": "arts/scout/borda/frente.svg",
+          "back": "arts/scout/borda/verso.svg",
+          "canvasMm": [
+            27.22,
+            36.534
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            36.4,
+            27.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "winged-scout",
+      "candidateId": "a026",
+      "pdfLabel": "Winged Scout",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scouts",
+      "equipmentTags": [
+        "Wings"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Winged",
+          "armyBook": "Wings"
+        }
+      ],
+      "notes": "asas = opção Wings (há também Raider Wings)",
+      "styles": {
+        "fino": {
+          "page": 12,
+          "rows": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "front": "arts/winged-scout/fino/frente.svg",
+          "back": "arts/winged-scout/fino/verso.svg",
+          "canvasMm": [
+            60.283,
+            44.831
+          ],
+          "frontBackIoU": 0.992,
+          "sizeMm": [
+            44.7,
+            60.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 36,
+          "rows": [
+            0,
+            2,
+            3
+          ],
+          "front": "arts/winged-scout/borda/frente.svg",
+          "back": "arts/winged-scout/borda/verso.svg",
+          "canvasMm": [
+            63.669,
+            46.524
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            46.4,
+            63.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "harlequin-v1",
+      "candidateId": "a027",
+      "pdfLabel": "Harlequin (V1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "harlequins",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/harlequin-v1/fino/frente.svg",
+          "back": "arts/harlequin-v1/fino/verso.svg",
+          "canvasMm": [
+            21.167,
+            37.55
+          ],
+          "frontBackIoU": 0.984,
+          "sizeMm": [
+            37.4,
+            20.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/harlequin-v1/borda/frente.svg",
+          "back": "arts/harlequin-v1/borda/verso.svg",
+          "canvasMm": [
+            24.553,
+            39.243
+          ],
+          "frontBackIoU": 0.988,
+          "sizeMm": [
+            39.1,
+            24.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "harlequin-v2",
+      "candidateId": "a028",
+      "pdfLabel": "Harlequin (V2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "harlequins",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 13,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/harlequin-v2/fino/frente.svg",
+          "back": "arts/harlequin-v2/fino/verso.svg",
+          "canvasMm": [
+            23.834,
+            34.417
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            34.3,
+            23.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 37,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/harlequin-v2/borda/frente.svg",
+          "back": "arts/harlequin-v2/borda/verso.svg",
+          "canvasMm": [
+            27.22,
+            36.11
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            36.0,
+            27.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "assassin-ver-1",
+      "candidateId": "a029",
+      "pdfLabel": "Assassin (Ver. 1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "assassins",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/assassin-ver-1/fino/frente.svg",
+          "back": "arts/assassin-ver-1/fino/verso.svg",
+          "canvasMm": [
+            19.939,
+            37.507
+          ],
+          "frontBackIoU": 0.955,
+          "sizeMm": [
+            37.4,
+            19.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/assassin-ver-1/borda/frente.svg",
+          "back": "arts/assassin-ver-1/borda/verso.svg",
+          "canvasMm": [
+            23.283,
+            39.201
+          ],
+          "frontBackIoU": 0.967,
+          "sizeMm": [
+            39.1,
+            23.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "assassin-ver-2",
+      "candidateId": "a030",
+      "pdfLabel": "Assassin (Ver. 2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "assassins",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "",
+      "styles": {
+        "fino": {
+          "page": 14,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/assassin-ver-2/fino/frente.svg",
+          "back": "arts/assassin-ver-2/fino/verso.svg",
+          "canvasMm": [
+            14.817,
+            36.618
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            36.5,
+            14.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 38,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/assassin-ver-2/borda/frente.svg",
+          "back": "arts/assassin-ver-2/borda/verso.svg",
+          "canvasMm": [
+            18.457,
+            38.312
+          ],
+          "frontBackIoU": 0.986,
+          "sizeMm": [
+            38.2,
+            18.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sniper-v2",
+      "candidateId": "a031",
+      "pdfLabel": "Sniper (V2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "snipers",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "figura com pavise (rótulo não nomeia arma)",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/sniper-v2/fino/frente.svg",
+          "back": "arts/sniper-v2/fino/verso.svg",
+          "canvasMm": [
+            40.005,
+            30.734
+          ],
+          "frontBackIoU": 0.974,
+          "sizeMm": [
+            30.6,
+            39.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            0,
+            1
+          ],
+          "front": "arts/sniper-v2/borda/frente.svg",
+          "back": "arts/sniper-v2/borda/verso.svg",
+          "canvasMm": [
+            43.434,
+            32.554
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            32.4,
+            43.2
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sniper-v1",
+      "candidateId": "a032",
+      "pdfLabel": "Sniper (V1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "snipers",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "figura com pavise (rótulo não nomeia arma)",
+      "styles": {
+        "fino": {
+          "page": 15,
+          "rows": [
+            2,
+            3,
+            4
+          ],
+          "front": "arts/sniper-v1/fino/frente.svg",
+          "back": "arts/sniper-v1/fino/verso.svg",
+          "canvasMm": [
+            40.174,
+            31.03
+          ],
+          "frontBackIoU": 0.981,
+          "sizeMm": [
+            30.9,
+            40.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 39,
+          "rows": [
+            2,
+            3
+          ],
+          "front": "arts/sniper-v1/borda/frente.svg",
+          "back": "arts/sniper-v1/borda/verso.svg",
+          "canvasMm": [
+            43.561,
+            32.724
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            32.6,
+            43.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "automata-brute",
+      "candidateId": "a033",
+      "pdfLabel": "Automata Brute",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "automa-brutes",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Automata Brute",
+          "armyBook": "Automa Brutes"
+        }
+      ],
+      "notes": "Automata = Automa; genericName Heavy Robots",
+      "styles": {
+        "fino": {
+          "page": 16,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/automata-brute/fino/frente.svg",
+          "back": "arts/automata-brute/fino/verso.svg",
+          "canvasMm": [
+            58.716,
+            45.932
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            45.8,
+            58.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 40,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/automata-brute/borda/frente.svg",
+          "back": "arts/automata-brute/borda/verso.svg",
+          "canvasMm": [
+            62.357,
+            47.625
+          ],
+          "frontBackIoU": 0.979,
+          "sizeMm": [
+            47.5,
+            62.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "cavalry-lance-ver-1",
+      "candidateId": "a034",
+      "pdfLabel": "Cavalry Lance (Ver. 1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "automa-horse-riders",
+      "equipmentTags": [
+        "Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Cavalry",
+          "armyBook": "Automa-Horse Riders"
+        }
+      ],
+      "notes": "genericName Robot Cavalry; produto do army book se chama 'Automa Cavalry'",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/cavalry-lance-ver-1/fino/frente.svg",
+          "back": "arts/cavalry-lance-ver-1/fino/verso.svg",
+          "canvasMm": [
+            41.36,
+            66.929
+          ],
+          "frontBackIoU": 0.978,
+          "sizeMm": [
+            66.8,
+            41.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 18,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/cavalry-lance-ver-1/borda/frente.svg",
+          "back": "arts/cavalry-lance-ver-1/borda/verso.svg",
+          "canvasMm": [
+            44.746,
+            68.622
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            68.5,
+            44.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "cavalry-lance-ver-2",
+      "candidateId": "a035",
+      "pdfLabel": "Cavalry Lance (Ver. 2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "automa-horse-riders",
+      "equipmentTags": [
+        "Lance"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Cavalry",
+          "armyBook": "Automa-Horse Riders"
+        }
+      ],
+      "notes": "genericName Robot Cavalry; produto do army book se chama 'Automa Cavalry'",
+      "styles": {
+        "fino": {
+          "page": 17,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/cavalry-lance-ver-2/fino/frente.svg",
+          "back": "arts/cavalry-lance-ver-2/fino/verso.svg",
+          "canvasMm": [
+            39.963,
+            51.477
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            51.4,
+            39.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 18,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/cavalry-lance-ver-2/borda/frente.svg",
+          "back": "arts/cavalry-lance-ver-2/borda/verso.svg",
+          "canvasMm": [
+            43.349,
+            53.171
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            53.1,
+            43.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "cavalry-handbow-ver-1",
+      "candidateId": "a036",
+      "pdfLabel": "Cavalry Handbow (Ver. 1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "automa-horse-riders",
+      "equipmentTags": [
+        "Handbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Cavalry",
+          "armyBook": "Automa-Horse Riders"
+        }
+      ],
+      "notes": "genericName Robot Cavalry; produto do army book se chama 'Automa Cavalry'",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/cavalry-handbow-ver-1/fino/frente.svg",
+          "back": "arts/cavalry-handbow-ver-1/fino/verso.svg",
+          "canvasMm": [
+            41.698,
+            47.498
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            47.4,
+            41.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/cavalry-handbow-ver-1/borda/frente.svg",
+          "back": "arts/cavalry-handbow-ver-1/borda/verso.svg",
+          "canvasMm": [
+            45.17,
+            49.191
+          ],
+          "frontBackIoU": 0.989,
+          "sizeMm": [
+            49.1,
+            44.8
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "cavalry-handbow-ver-2",
+      "candidateId": "a037",
+      "pdfLabel": "Cavalry Handbow (Ver. 2)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "automa-horse-riders",
+      "equipmentTags": [
+        "Handbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Cavalry",
+          "armyBook": "Automa-Horse Riders"
+        }
+      ],
+      "notes": "genericName Robot Cavalry; produto do army book se chama 'Automa Cavalry'",
+      "styles": {
+        "fino": {
+          "page": 19,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/cavalry-handbow-ver-2/fino/frente.svg",
+          "back": "arts/cavalry-handbow-ver-2/fino/verso.svg",
+          "canvasMm": [
+            39.92,
+            54.695
+          ],
+          "frontBackIoU": 0.991,
+          "sizeMm": [
+            54.6,
+            39.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 41,
+          "rows": [
+            3,
+            4
+          ],
+          "front": "arts/cavalry-handbow-ver-2/borda/frente.svg",
+          "back": "arts/cavalry-handbow-ver-2/borda/verso.svg",
+          "canvasMm": [
+            43.307,
+            56.388
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            56.3,
+            43.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "heavy-cavalry",
+      "candidateId": "a038",
+      "pdfLabel": "Heavy Cavalry",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "automa-boar-riders",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Heavy Cavalry",
+          "armyBook": "Automa-Boar Riders"
+        }
+      ],
+      "notes": "genericName Heavy Robot Cavalry; produto do army book se chama 'Heavy Cavalry'",
+      "styles": {
+        "fino": {
+          "page": 20,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/heavy-cavalry/fino/frente.svg",
+          "back": "arts/heavy-cavalry/fino/verso.svg",
+          "canvasMm": [
+            52.155,
+            54.906
+          ],
+          "frontBackIoU": 0.973,
+          "sizeMm": [
+            54.8,
+            51.9
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 42,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/heavy-cavalry/borda/frente.svg",
+          "back": "arts/heavy-cavalry/borda/verso.svg",
+          "canvasMm": [
+            55.541,
+            56.6
+          ],
+          "frontBackIoU": 0.968,
+          "sizeMm": [
+            56.5,
+            55.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "aerea-guard-claws",
+      "candidateId": "a039",
+      "pdfLabel": "Aerea Guard Claws",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "aerea-guard",
+      "equipmentTags": [
+        "Dual Claws"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Claws",
+          "armyBook": "Dual Claws"
+        }
+      ],
+      "notes": "arma padrão Dual Claws",
+      "styles": {
+        "fino": {
+          "page": 21,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/aerea-guard-claws/fino/frente.svg",
+          "back": "arts/aerea-guard-claws/fino/verso.svg",
+          "canvasMm": [
+            45.212,
+            59.097
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            59.0,
+            45.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 43,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/aerea-guard-claws/borda/frente.svg",
+          "back": "arts/aerea-guard-claws/borda/verso.svg",
+          "canvasMm": [
+            48.599,
+            60.791
+          ],
+          "frontBackIoU": 0.985,
+          "sizeMm": [
+            60.7,
+            48.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "aerea-guard-crossbow",
+      "candidateId": "a040",
+      "pdfLabel": "Aerea Guard Crossbow",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "aerea-guard",
+      "equipmentTags": [
+        "Rapid Crossbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Crossbow",
+          "armyBook": "Rapid Crossbow"
+        }
+      ],
+      "notes": "a besta da Aerea Guard é Rapid Crossbow",
+      "styles": {
+        "fino": {
+          "page": 22,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/aerea-guard-crossbow/fino/frente.svg",
+          "back": "arts/aerea-guard-crossbow/fino/verso.svg",
+          "canvasMm": [
+            44.958,
+            58.759
+          ],
+          "frontBackIoU": 0.987,
+          "sizeMm": [
+            58.7,
+            44.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 44,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/aerea-guard-crossbow/borda/frente.svg",
+          "back": "arts/aerea-guard-crossbow/borda/verso.svg",
+          "canvasMm": [
+            48.345,
+            60.452
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            60.4,
+            48.1
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "aerea-guard-shotbow",
+      "candidateId": "a041",
+      "pdfLabel": "Aerea Guard Shotbow",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "aerea-guard",
+      "equipmentTags": [
+        "Rapid Shortbow"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Shotbow",
+          "armyBook": "Rapid Shortbow"
+        }
+      ],
+      "notes": "army book da Aerea Guard só tem 'Rapid Shortbow' (provável grafia de Shotbow, arma comum da facção)",
+      "styles": {
+        "fino": {
+          "page": 23,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/aerea-guard-shotbow/fino/frente.svg",
+          "back": "arts/aerea-guard-shotbow/fino/verso.svg",
+          "canvasMm": [
+            44.916,
+            58.716
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            58.6,
+            44.6
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        },
+        "borda": {
+          "page": 45,
+          "rows": [
+            0,
+            1,
+            2
+          ],
+          "front": "arts/aerea-guard-shotbow/borda/frente.svg",
+          "back": "arts/aerea-guard-shotbow/borda/verso.svg",
+          "canvasMm": [
+            48.302,
+            60.41
+          ],
+          "frontBackIoU": 0.996,
+          "sizeMm": [
+            60.3,
+            48.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sawblade-drone",
+      "candidateId": "a042",
+      "pdfLabel": "Sawblade Drone",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "automa-drones",
+      "equipmentTags": [
+        "Bot-Sawblades"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sawblade Drone",
+          "armyBook": "Automa Drones (Bot-Sawblades)"
+        }
+      ],
+      "notes": "genericName Drones; 5 cópias no PDF = unidade de 5. Pode ser também a opção Sawblade Drone de heróis/Militia/Scouts. Só contorno fino (o par de borda é a050)",
+      "styles": {
+        "fino": {
+          "page": 24,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/sawblade-drone/fino/frente.svg",
+          "back": "arts/sawblade-drone/fino/verso.svg",
+          "canvasMm": [
+            28.533,
+            28.533
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            28.3,
+            28.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "crossbow-drone",
+      "candidateId": "a043",
+      "pdfLabel": "Crossbow Drone",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "automa-drones",
+      "equipmentTags": [
+        "Bot-Bows"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Crossbow Drone",
+          "armyBook": "Automa Drones (Bot-Bows)"
+        }
+      ],
+      "notes": "genericName Drones; 5 cópias no PDF = unidade de 5. Pode ser também a opção Bot-Bow Drone. Só contorno fino (o par de borda é a051)",
+      "styles": {
+        "fino": {
+          "page": 25,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/crossbow-drone/fino/frente.svg",
+          "back": "arts/crossbow-drone/fino/verso.svg",
+          "canvasMm": [
+            28.533,
+            27.136
+          ],
+          "frontBackIoU": 0.994,
+          "sizeMm": [
+            26.9,
+            28.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "spear-militia-a044",
+      "candidateId": "a044",
+      "pdfLabel": "Spear Militia",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "militia",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só borda grossa (sem par); provável cópia de a015",
+      "styles": {
+        "borda": {
+          "page": 30,
+          "rows": [
+            2
+          ],
+          "front": "arts/spear-militia-a044/borda/frente.svg",
+          "back": "arts/spear-militia-a044/borda/verso.svg",
+          "canvasMm": [
+            27.898,
+            36.915
+          ],
+          "frontBackIoU": 0.972,
+          "sizeMm": [
+            36.8,
+            27.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "spear-militia-a045",
+      "candidateId": "a045",
+      "pdfLabel": "Spear Militia",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "militia",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só borda grossa (sem par); provável cópia de a015",
+      "styles": {
+        "borda": {
+          "page": 30,
+          "rows": [
+            3
+          ],
+          "front": "arts/spear-militia-a045/borda/frente.svg",
+          "back": "arts/spear-militia-a045/borda/verso.svg",
+          "canvasMm": [
+            27.898,
+            36.915
+          ],
+          "frontBackIoU": 0.972,
+          "sizeMm": [
+            36.8,
+            27.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "spear-militia-a046",
+      "candidateId": "a046",
+      "pdfLabel": "Spear Militia",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "militia",
+      "equipmentTags": [
+        "Spear"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só borda grossa (sem par); provável cópia de a015",
+      "styles": {
+        "borda": {
+          "page": 30,
+          "rows": [
+            4
+          ],
+          "front": "arts/spear-militia-a046/borda/frente.svg",
+          "back": "arts/spear-militia-a046/borda/verso.svg",
+          "canvasMm": [
+            27.898,
+            36.915
+          ],
+          "frontBackIoU": 0.972,
+          "sizeMm": [
+            36.8,
+            27.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "scout-a047",
+      "candidateId": "a047",
+      "pdfLabel": "Scout",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scouts",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só borda grossa (sem par); provável cópia de a025",
+      "styles": {
+        "borda": {
+          "page": 35,
+          "rows": [
+            2
+          ],
+          "front": "arts/scout-a047/borda/frente.svg",
+          "back": "arts/scout-a047/borda/verso.svg",
+          "canvasMm": [
+            27.22,
+            36.534
+          ],
+          "frontBackIoU": 0.983,
+          "sizeMm": [
+            36.4,
+            27.0
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "winged-scout-a048",
+      "candidateId": "a048",
+      "pdfLabel": "Winged Scout",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "scouts",
+      "equipmentTags": [
+        "Wings"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Winged",
+          "armyBook": "Wings"
+        }
+      ],
+      "notes": "só borda grossa (sem par); provável cópia de a026",
+      "styles": {
+        "borda": {
+          "page": 36,
+          "rows": [
+            1
+          ],
+          "front": "arts/winged-scout-a048/borda/frente.svg",
+          "back": "arts/winged-scout-a048/borda/verso.svg",
+          "canvasMm": [
+            63.669,
+            46.524
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            46.4,
+            63.4
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sniper-v1-a049",
+      "candidateId": "a049",
+      "pdfLabel": "Sniper (V1)",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "snipers",
+      "equipmentTags": [],
+      "cosmetic": null,
+      "mappingStatus": "mapped",
+      "aliases": [],
+      "notes": "só borda grossa (sem par); provável cópia de a032",
+      "styles": {
+        "borda": {
+          "page": 39,
+          "rows": [
+            4
+          ],
+          "front": "arts/sniper-v1-a049/borda/frente.svg",
+          "back": "arts/sniper-v1-a049/borda/verso.svg",
+          "canvasMm": [
+            43.519,
+            32.724
+          ],
+          "frontBackIoU": 0.977,
+          "sizeMm": [
+            32.6,
+            43.3
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "sawblade-drone-a050",
+      "candidateId": "a050",
+      "pdfLabel": "Sawblade Drone",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "automa-drones",
+      "equipmentTags": [
+        "Bot-Sawblades"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Sawblade Drone",
+          "armyBook": "Automa Drones (Bot-Sawblades)"
+        }
+      ],
+      "notes": "só borda grossa, com barra preta embaixo; par de a042",
+      "styles": {
+        "borda": {
+          "page": 46,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/sawblade-drone-a050/borda/frente.svg",
+          "back": "arts/sawblade-drone-a050/borda/verso.svg",
+          "canvasMm": [
+            31.877,
+            44.577
+          ],
+          "frontBackIoU": 0.993,
+          "sizeMm": [
+            44.4,
+            31.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    },
+    {
+      "artId": "crossbow-drone-a051",
+      "candidateId": "a051",
+      "pdfLabel": "Crossbow Drone",
+      "labelSource": "agent-vision",
+      "labelConfidence": "alta",
+      "unitKey": "automa-drones",
+      "equipmentTags": [
+        "Bot-Bows"
+      ],
+      "cosmetic": null,
+      "mappingStatus": "alias-proposed",
+      "aliases": [
+        {
+          "pdf": "Crossbow Drone",
+          "armyBook": "Automa Drones (Bot-Bows)"
+        }
+      ],
+      "notes": "só borda grossa, com barra preta embaixo; par de a043",
+      "styles": {
+        "borda": {
+          "page": 47,
+          "rows": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "front": "arts/crossbow-drone-a051/borda/frente.svg",
+          "back": "arts/crossbow-drone-a051/borda/verso.svg",
+          "canvasMm": [
+            31.835,
+            44.365
+          ],
+          "frontBackIoU": 0.99,
+          "sizeMm": [
+            44.3,
+            31.7
+          ],
+          "vector": {
+            "contract": 2,
+            "dpi": 600
+          }
+        }
+      },
+      "pendencias": [
+        "sem par no outro estilo"
+      ],
+      "reviewStatus": "agent-proposed",
+      "licenseStatus": "user-approved"
+    }
+  ]
+}

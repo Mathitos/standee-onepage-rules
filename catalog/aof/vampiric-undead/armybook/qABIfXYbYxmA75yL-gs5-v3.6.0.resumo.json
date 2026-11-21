@@ -1,0 +1,1492 @@
+{
+  "armyBook": {
+    "id": "qABIfXYbYxmA75yL",
+    "nome": "Vampiric Undead",
+    "versao": "3.6.0",
+    "modificadoEm": "2026-11-05T15:56:23.613Z",
+    "sistema": "age-of-fantasy-skirmish",
+    "sistemaId": 5
+  },
+  "baixadoEm": "2026-11-21",
+  "unidades": [
+    {
+      "id": "SWf2_xE",
+      "nome": "Gremyir & Milyazha",
+      "tamanho": 1,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Telen Hunting Dagger",
+        "Scythes of Zhenye"
+      ],
+      "itens": [
+        {
+          "nome": "Look-Out",
+          "bases": null
+        },
+        {
+          "nome": "Hunting Tactics",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Hunting Tactic",
+          "ganha": [
+            "Hunting Tactics - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3U4V68b",
+      "nome": "Lady Navleva",
+      "tamanho": 1,
+      "bases": {
+        "round": "105x70",
+        "square": "100x50"
+      },
+      "armas": [
+        "Forlorn Falchion"
+      ],
+      "itens": [
+        {
+          "nome": "Blinding Hatred",
+          "bases": null
+        },
+        {
+          "nome": "Ravanez",
+          "bases": null
+        }
+      ],
+      "opcoes": []
+    },
+    {
+      "id": "AdRgjfR",
+      "nome": "Captain Blackfang",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Gravedust Pistols",
+        "Cursed Cutlass"
+      ],
+      "itens": [
+        {
+          "nome": "Greedy Pirate",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Greedy Pirate",
+          "ganha": [
+            "Greedy Pirate - Leader"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WxRJ0da",
+      "nome": "Latmyir The Mad",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Grasping Skeletons",
+        "Pet Experiment"
+      ],
+      "itens": [
+        {
+          "nome": "Skeletal Gravestone",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Skeletal Gravestone",
+          "ganha": [
+            "Necromancer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DmUheiD",
+      "nome": "Werewolf Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "50",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Cursed Blade"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Sharp Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Razor Blades"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Throwing Daggers",
+            "Cursed Blade"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "King's Gift Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Aspiring Lord"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Night Bringer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Commander"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hYgOS5j",
+      "nome": "Vampire Master",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Cursed Blade"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Lance"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Rapid Cursed Crossbow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Throwing Daggers",
+            "Cursed Blade"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Necromancer Staff"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Dagger",
+          "ganha": [
+            "Cursed Bolts"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Dagger",
+          "ganha": [
+            "Dark Bolts"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Cursed Crossbow",
+          "ganha": [
+            "Rapid Crossbow"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Cursed Crossbow",
+          "ganha": [
+            "Deadly Bolts"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hunting Pet"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Steed"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Winged Terror"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Winged Steed"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "King's Gift Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Lord"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Necromancer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Night Bringer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Necromancer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Count"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Commander"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Twisted Seduction"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ounVlif",
+      "nome": "Ghoul Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Toxin Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Cursed Blade"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Sling",
+            "Toxin Claws"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Lance"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Toxin Claws",
+          "ganha": [
+            "Cursed Blade"
+          ]
+        },
+        {
+          "secao": "Replace Toxin Claws",
+          "ganha": [
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace Toxin Claws",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Raider Wings"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Winged Beast"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Magic Attuned"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Grave Digger"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Superior"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Night Bringer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hunt Master"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IFoiX6E",
+      "nome": "Skeleton Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Cursed Blade"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Lance"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Throwing Daggers",
+            "Cursed Blade"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Rapid Cursed Crossbow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Dagger",
+          "ganha": [
+            "Cursed Bolts"
+          ]
+        },
+        {
+          "secao": "Replace Throwing Dagger",
+          "ganha": [
+            "Dark Bolts"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Cursed Crossbow",
+          "ganha": [
+            "Deadly Bolts"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Cursed Crossbow",
+          "ganha": [
+            "Rapid Crossbow"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Skeletal Steed"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Awakened Lord"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Army Standard Bearer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Night Bringer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hunt Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Ancient Count"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Commander"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tcFt2jt",
+      "nome": "Drained Leader",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Master Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Rapid Bow",
+            "Strike"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Sling",
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Necromancer Staff"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Spear",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Sling",
+          "ganha": [
+            "Dark Bolts"
+          ]
+        },
+        {
+          "secao": "Replace Sling",
+          "ganha": [
+            "Cursed Bolts"
+          ]
+        },
+        {
+          "secao": "Replace Rapid Bow",
+          "ganha": [
+            "Deadly Bolts"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Pet Ghoul"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Corpse Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Necromancer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Night Bringer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Master Necromancer"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Hunt Master"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Village Chief"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Great Corpse Master"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nbfcBdh",
+      "nome": "Drained Archer",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Bow",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Defensive Stakes"
+          ]
+        },
+        {
+          "secao": "Upgrade with one",
+          "ganha": [
+            "Fire Braziers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "feVlWGg",
+      "nome": "Drained Soldier",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Hand Weapon"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Hand Weapon",
+          "ganha": [
+            "Halberd"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uZbIBgP",
+      "nome": "Skeleton Guard",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Cursed Blade"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Spear"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Great Weapon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WN-xulZ",
+      "nome": "Zombie Wolf",
+      "tamanho": 1,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Wolf Bites"
+      ],
+      "itens": [
+        {
+          "nome": "Blood-Scent Tracker",
+          "bases": null
+        }
+      ],
+      "opcoes": [
+        {
+          "secao": "Replace Wolf Bite",
+          "ganha": [
+            "Sharp Claws"
+          ]
+        },
+        {
+          "secao": "Replace Blood-Scent Tracker",
+          "ganha": [
+            "Territorial Beast"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ga8M8Bg",
+      "nome": "Ghoul",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Toxin Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Toxin Claws",
+          "ganha": [
+            "Cursed Blade"
+          ]
+        },
+        {
+          "secao": "Replace Toxin Claws",
+          "ganha": [
+            "Halberd"
+          ]
+        },
+        {
+          "secao": "Replace Toxin Claws",
+          "ganha": [
+            "Sling"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t7GGspb",
+      "nome": "Skeleton Watch",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Cursed Crossbow",
+        "Strike"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Crossbow",
+          "ganha": [
+            "Crossbow"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Crossbow",
+          "ganha": [
+            "Hand-Held Bolt Thrower"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VYTV8S4",
+      "nome": "Skeleton Knight",
+      "tamanho": 1,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Cursed Blade"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Great Weapon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Qg1fYYU",
+      "nome": "Vampire Champion",
+      "tamanho": 1,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Cursed Blade"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Great Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Lunar Mace"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Sacrificial Axe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9x1rCWH",
+      "nome": "Vampire Knight",
+      "tamanho": 1,
+      "bases": {
+        "round": "60x35",
+        "square": "50x25"
+      },
+      "armas": [
+        "Cursed Blade"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Hand Weapon"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Throwing Daggers"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Dark Bolts"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Cursed Bolts"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Lunar Mace"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Sacrificial Axe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ywA6N1i",
+      "nome": "Stitched Zombies",
+      "tamanho": 3,
+      "bases": {
+        "round": "25",
+        "square": "25"
+      },
+      "armas": [
+        "Infected Bites"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace all Infected Bites",
+          "ganha": [
+            "Zombie Claws"
+          ]
+        },
+        {
+          "secao": "Replace all Infected Bites",
+          "ganha": [
+            "Grasping Claws"
+          ]
+        },
+        {
+          "secao": "Upgrade all models with",
+          "ganha": [
+            "The Rising Dead"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IiE46QX",
+      "nome": "Bat Swarm",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Toxin Fangs"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Toxin Fang",
+          "ganha": [
+            "Frenzied Bats"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EcmqnZb",
+      "nome": "Stitched Butcher",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Dual Hand Weapons"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Carving Tool"
+          ]
+        },
+        {
+          "secao": "Replace Dual Hand Weapon",
+          "ganha": [
+            "Slicing Blade"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "AxauQas",
+      "nome": "Giant Bat",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Toxin Fangs"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Toxin Fang",
+          "ganha": [
+            "Jagged Fangs"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Sky Raider"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QpKQzOb",
+      "nome": "Ghoul Horror",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Toxin Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Toxin Claws",
+          "ganha": [
+            "Cursed Blade"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SlQz0wf",
+      "nome": "Ghoul Beast Rider",
+      "tamanho": 1,
+      "bases": {
+        "round": "75x46",
+        "square": "75x50"
+      },
+      "armas": [
+        "Cursed Blade"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Banner"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Musician"
+          ]
+        },
+        {
+          "secao": "Upgrade one model with one",
+          "ganha": [
+            "Sergeant"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Lance"
+          ]
+        },
+        {
+          "secao": "Replace Cursed Blade",
+          "ganha": [
+            "Sling"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nb-80_H",
+      "nome": "Bat Horror",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Toxin Fangs"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Toxin Fang",
+          "ganha": [
+            "Dual Claws"
+          ]
+        },
+        {
+          "secao": "Replace Toxin Fang",
+          "ganha": [
+            "Jagged Fangs"
+          ]
+        },
+        {
+          "secao": "Upgrade with",
+          "ganha": [
+            "Sky Raider"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "K2QdNmm",
+      "nome": "Werewolf",
+      "tamanho": 1,
+      "bases": {
+        "round": "40",
+        "square": "40"
+      },
+      "armas": [
+        "Sharp Claws"
+      ],
+      "itens": [],
+      "opcoes": [
+        {
+          "secao": "Replace Sharp Claws",
+          "ganha": [
+            "Great Weapon"
+          ]
+        }
+      ]
+    }
+  ]
+}

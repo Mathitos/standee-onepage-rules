@@ -1,0 +1,1313 @@
+{
+ "packId": "high-elf-fleets",
+ "packVersion": "0.1.0",
+ "gameSystems": [
+  {
+   "code": "GF",
+   "slug": "grimdark-future",
+   "armyForgeId": 2
+  },
+  {
+   "code": "GFF",
+   "slug": "grimdark-future-firefight",
+   "armyForgeId": 3
+  }
+ ],
+ "armyBooks": [
+  {
+   "arquivo": "armybook/7i7blhft75q9zfdc-gs3-v3.6.0.json"
+  },
+  {
+   "arquivo": "armybook/7i7blhft75q9zfdc-gs2-v3.6.0.json"
+  }
+ ],
+ "nota": "Revisão feita por agente em 2026-11-21: rótulos de work/rotulos-*.png, army books v3.6.0 (os dois sistemas).",
+ "unidades": {
+  "elite-protector": {
+   "armyForgeUnitId": "Uvc9UHr"
+  },
+  "elven-noble": {
+   "armyForgeUnitId": "9zCsahE"
+  },
+  "acolyte": {
+   "armyForgeUnitId": "OzZw7JY"
+  },
+  "retributor": {
+   "armyForgeUnitId": "b-mChYC"
+  },
+  "protector": {
+   "armyForgeUnitId": "qfnk-JU"
+  },
+  "striker": {
+   "armyForgeUnitId": "BPcH3j1"
+  },
+  "revenant": {
+   "armyForgeUnitId": "VM7l-RU"
+  },
+  "shifter": {
+   "armyForgeUnitId": "vQBMFLU"
+  },
+  "glider": {
+   "armyForgeUnitId": "ERIGLS2"
+  },
+  "stinger": {
+   "armyForgeUnitId": "G02X_NY"
+  },
+  "sniper": {
+   "armyForgeUnitId": "FmIGYwF"
+  },
+  "scorcher": {
+   "armyForgeUnitId": "yVZh2Ch"
+  },
+  "vanquisher": {
+   "armyForgeUnitId": "25J4jTN"
+  },
+  "elemental-striker": {
+   "armyForgeUnitId": "xE7ljJF"
+  },
+  "elemental-protector": {
+   "armyForgeUnitId": "p50sgkI"
+  },
+  "jetbike-striker": {
+   "armyForgeUnitId": "c2SKcZS"
+  },
+  "jetbike-protector": {
+   "armyForgeUnitId": "aMQa9nT"
+  }
+ },
+ "artes": {
+  "a001": {
+   "artId": "elite-protector-spear",
+   "rotulo": "Elite Protector Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite-protector",
+   "equipmentTags": [
+    "Ancient Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spear",
+     "armyBook": "Ancient Spear"
+    }
+   ],
+   "notas": "a única lança do Elite Protector é Ancient Spear"
+  },
+  "a002": {
+   "artId": "elite-protector-axe",
+   "rotulo": "Elite Protector Axe",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite-protector",
+   "equipmentTags": [
+    "Killing Axe"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Axe",
+     "armyBook": "Killing Axe"
+    }
+   ],
+   "notas": "o único machado do Elite Protector é Killing Axe"
+  },
+  "a003": {
+   "artId": "apprentice",
+   "rotulo": "Apprentice",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite-protector",
+   "equipmentTags": [
+    "Acolyte Psy-Seer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Apprentice",
+     "armyBook": "Acolyte Psy-Seer"
+    }
+   ],
+   "notas": "apprentice ~ acolyte; 1 cópia no PDF (herói) e mesmo traje dos Acolytes (a041/a043). Acolyte Psy-Seer só existe no Elite Protector; alternativa: unidade Acolyte"
+  },
+  "a004": {
+   "artId": "striker-fusion",
+   "rotulo": "Striker Fusion",
+   "confiancaRotulo": "alta",
+   "unitKey": "striker",
+   "equipmentTags": [
+    "Assault Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fusion",
+     "armyBook": "Assault Fusion Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a005": {
+   "artId": "striker-flamer",
+   "rotulo": "Striker Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "striker",
+   "equipmentTags": [
+    "Assault Flamer"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Flamer",
+     "armyBook": "Assault Flamer"
+    }
+   ],
+   "notas": ""
+  },
+  "a006": {
+   "artId": "striker",
+   "rotulo": "Striker",
+   "confiancaRotulo": "alta",
+   "unitKey": "striker",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a007": {
+   "artId": "protector-v1",
+   "rotulo": "Protector V1",
+   "confiancaRotulo": "alta",
+   "unitKey": "protector",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose 1 do modelo básico"
+  },
+  "a008": {
+   "artId": "protector-v2",
+   "rotulo": "Protector V2",
+   "confiancaRotulo": "alta",
+   "unitKey": "protector",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "pose 2 do modelo básico"
+  },
+  "a009": {
+   "artId": "stealth-platform",
+   "rotulo": "Stealth Platform",
+   "confiancaRotulo": "alta",
+   "unitKey": "striker",
+   "equipmentTags": [
+    "Hologram Platform"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Stealth Platform",
+     "armyBook": "Hologram Platform"
+    }
+   ],
+   "notas": "Hologram Platform dá Stealth Aura; plataforma sem arma (as com arma são as Gun Platform dos Protectors)"
+  },
+  "a010": {
+   "artId": "protector-turret-shatter-cannon",
+   "rotulo": "Protector Turret Shatter Cannon",
+   "confiancaRotulo": "alta",
+   "unitKey": "protector",
+   "equipmentTags": [
+    "Gun Platform"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Protector Turret",
+     "armyBook": "Gun Platform"
+    }
+   ],
+   "notas": "Gun Platform troca o Shardgun de um Protector; arma da plataforma: Shatter Cannon. O validador só aceita a tag Gun Platform (a arma é conteúdo do item), então as 5 torres não se distinguem pela tag"
+  },
+  "a011": {
+   "artId": "protector-turret-shard-cannon",
+   "rotulo": "Protector Turret Shard Cannon",
+   "confiancaRotulo": "alta",
+   "unitKey": "protector",
+   "equipmentTags": [
+    "Gun Platform"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Protector Turret",
+     "armyBook": "Gun Platform"
+    }
+   ],
+   "notas": "Gun Platform troca o Shardgun de um Protector; arma da plataforma: Shard Cannon. O validador só aceita a tag Gun Platform (a arma é conteúdo do item), então as 5 torres não se distinguem pela tag"
+  },
+  "a012": {
+   "artId": "protector-turret-missile-launcher",
+   "rotulo": "Protector Turret Missile Launcher",
+   "confiancaRotulo": "alta",
+   "unitKey": "protector",
+   "equipmentTags": [
+    "Gun Platform"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Protector Turret",
+     "armyBook": "Gun Platform"
+    }
+   ],
+   "notas": "Gun Platform troca o Shardgun de um Protector; arma da plataforma: Missile Launcher. O validador só aceita a tag Gun Platform (a arma é conteúdo do item), então as 5 torres não se distinguem pela tag"
+  },
+  "a013": {
+   "artId": "protector-turret-laser-cannon",
+   "rotulo": "Protector Turret Laser Cannon",
+   "confiancaRotulo": "alta",
+   "unitKey": "protector",
+   "equipmentTags": [
+    "Gun Platform"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Protector Turret",
+     "armyBook": "Gun Platform"
+    },
+    {
+     "pdf": "Laser Cannon",
+     "armyBook": "High-Energy Cannon"
+    }
+   ],
+   "notas": "army book não tem Laser Cannon na Gun Platform; por eliminação das 5 opções (as outras 4 batem com a010-a014) é a High-Energy Cannon. Gun Platform troca o Shardgun de um Protector; arma da plataforma: High-Energy Cannon. O validador só aceita a tag Gun Platform (a arma é conteúdo do item), então as 5 torres não se distinguem pela tag"
+  },
+  "a014": {
+   "artId": "protector-turret-burst-laser",
+   "rotulo": "Protector Turret Burst Laser",
+   "confiancaRotulo": "alta",
+   "unitKey": "protector",
+   "equipmentTags": [
+    "Gun Platform"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Protector Turret",
+     "armyBook": "Gun Platform"
+    }
+   ],
+   "notas": "Gun Platform troca o Shardgun de um Protector; arma da plataforma: Burst Laser. O validador só aceita a tag Gun Platform (a arma é conteúdo do item), então as 5 torres não se distinguem pela tag"
+  },
+  "a015": {
+   "artId": "retributor-shardgun",
+   "rotulo": "Retributor Shardgun",
+   "confiancaRotulo": "alta",
+   "unitKey": "retributor",
+   "equipmentTags": [
+    "Shard Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shardgun",
+     "armyBook": "Shard Rifle"
+    }
+   ],
+   "notas": "Retributor não tem Shardgun; a arma de tiro da unidade toda é Shard Rifle"
+  },
+  "a016": {
+   "artId": "retributor-energy-sword",
+   "rotulo": "Retributor Energy Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "retributor",
+   "equipmentTags": [
+    "Ancient Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Energy Sword",
+     "armyBook": "Ancient Sword"
+    }
+   ],
+   "notas": "equipamento padrão: Ancient Sword + Combat Shield"
+  },
+  "a017": {
+   "artId": "retributor-energy-sword-b",
+   "rotulo": "Retributor Energy Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "retributor",
+   "equipmentTags": [
+    "Ancient Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Energy Sword",
+     "armyBook": "Ancient Sword"
+    }
+   ],
+   "notas": "parece a mesma arte de a016 (só estilo fino, 2 cópias; a016 tem fino 3 + borda 5): provável divisão do grupo"
+  },
+  "a018": {
+   "artId": "ancient-commander",
+   "rotulo": "Ancient Commander",
+   "confiancaRotulo": "alta",
+   "unitKey": "elven-noble",
+   "equipmentTags": [
+    "Ancient Commander"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Ancient Commander",
+     "armyBook": "Elven Noble + Ancient Commander"
+    }
+   ],
+   "notas": "Ancient Commander é opção só do Elven Noble"
+  },
+  "a019": {
+   "artId": "retributor-sergeant-pistol",
+   "rotulo": "Retributor Sergeant Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "retributor",
+   "equipmentTags": [
+    "Sgt. Shard Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sergeant Pistol",
+     "armyBook": "Sgt. Shard Pistol"
+    }
+   ],
+   "notas": "sargento com espada e pistola (Sgt. Hand Weapon + Sgt. Shard Pistol)"
+  },
+  "a020": {
+   "artId": "retributor-sergeant-shield",
+   "rotulo": "Retributor Sergeant Shield",
+   "confiancaRotulo": "alta",
+   "unitKey": "retributor",
+   "equipmentTags": [
+    "Flicker Shield"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sergeant Shield",
+     "armyBook": "Flicker Shield"
+    }
+   ],
+   "notas": "o único escudo do sargento é Flicker Shield (troca a Sgt. Shard Pistol)"
+  },
+  "a021": {
+   "artId": "noble-glider",
+   "rotulo": "Noble Glider",
+   "confiancaRotulo": "alta",
+   "unitKey": "elven-noble",
+   "equipmentTags": [
+    "Glider Jetpack"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Noble Glider",
+     "armyBook": "Elven Noble + Glider Jetpack"
+    }
+   ],
+   "notas": "Noble com asas. \"Noble X\" = Elven Noble equipado como o aspecto X (o PDF tem sargentos/campeões à parte)"
+  },
+  "a022": {
+   "artId": "glider-sword",
+   "rotulo": "Glider Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "glider",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Hand Weapon"
+    }
+   ],
+   "notas": "pistola e espada: opção da unidade toda Laser Pistol + Hand Weapon (5 cópias). Empata com a026 nessa opção"
+  },
+  "a023": {
+   "artId": "glider-heavy-laser-rifle",
+   "rotulo": "Glider Heavy Laser Rifle",
+   "confiancaRotulo": "alta",
+   "unitKey": "glider",
+   "equipmentTags": [
+    "Heavy Laser Carbine"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Heavy Laser Rifle",
+     "armyBook": "Heavy Laser Carbine"
+    }
+   ],
+   "notas": ""
+  },
+  "a024": {
+   "artId": "glider-laser-blaster",
+   "rotulo": "Glider Laser Blaster",
+   "confiancaRotulo": "alta",
+   "unitKey": "glider",
+   "equipmentTags": [
+    "Laser Carbine"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Laser Blaster",
+     "armyBook": "Laser Carbine"
+    }
+   ],
+   "notas": "arma de duas mãos; por eliminação com a023/a025 é a Laser Carbine padrão"
+  },
+  "a025": {
+   "artId": "glider-shred-blaster",
+   "rotulo": "Glider Shred Blaster",
+   "confiancaRotulo": "alta",
+   "unitKey": "glider",
+   "equipmentTags": [
+    "Shred-Blaster Gun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Shred Blaster",
+     "armyBook": "Shred-Blaster Gun"
+    }
+   ],
+   "notas": "arma de duas mãos (não a Burst Shred-Blaster Pistol do sargento)"
+  },
+  "a026": {
+   "artId": "glider-pistol",
+   "rotulo": "Glider Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "glider",
+   "equipmentTags": [
+    "Laser Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Pistol",
+     "armyBook": "Laser Pistol"
+    }
+   ],
+   "notas": "mesma pose de a022 (pistola e espada), com capacete; 1 cópia"
+  },
+  "a027": {
+   "artId": "revenant-champion",
+   "rotulo": "Revenant Champion",
+   "confiancaRotulo": "alta",
+   "unitKey": "revenant",
+   "equipmentTags": [],
+   "cosmetic": "sergeant",
+   "status": "mapped",
+   "aliases": [],
+   "notas": "campeão = sargento (Sgt.); figura com chakram e lâmina"
+  },
+  "a028": {
+   "artId": "scorcher-fusion-pike",
+   "rotulo": "Scorcher Fusion Pike",
+   "confiancaRotulo": "alta",
+   "unitKey": "scorcher",
+   "equipmentTags": [
+    "Fusion Lance-Gun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fusion Pike",
+     "armyBook": "Fusion Lance-Gun"
+    }
+   ],
+   "notas": ""
+  },
+  "a029": {
+   "artId": "sniper",
+   "rotulo": "Sniper",
+   "confiancaRotulo": "alta",
+   "unitKey": "sniper",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a030": {
+   "artId": "shifter-carbine",
+   "rotulo": "Shifter Carbine",
+   "confiancaRotulo": "alta",
+   "unitKey": "shifter",
+   "equipmentTags": [
+    "Phaser Carbine"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Carbine",
+     "armyBook": "Phaser Carbine"
+    }
+   ],
+   "notas": ""
+  },
+  "a031": {
+   "artId": "shifter-heavy-spinner",
+   "rotulo": "Shifter Heavy Spinner",
+   "confiancaRotulo": "alta",
+   "unitKey": "shifter",
+   "equipmentTags": [
+    "Heavy Phaser Blaster"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Heavy Spinner",
+     "armyBook": "Heavy Phaser Blaster"
+    }
+   ],
+   "notas": "nome antigo; a única arma pesada dos Shifters é Heavy Phaser Blaster"
+  },
+  "a032": {
+   "artId": "shifter",
+   "rotulo": "Shifter",
+   "confiancaRotulo": "alta",
+   "unitKey": "shifter",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a033": {
+   "artId": "revenant",
+   "rotulo": "Revenant",
+   "confiancaRotulo": "alta",
+   "unitKey": "revenant",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a034": {
+   "artId": "scorcher-fusion",
+   "rotulo": "Scorcher Fusion",
+   "confiancaRotulo": "alta",
+   "unitKey": "scorcher",
+   "equipmentTags": [
+    "Fusion Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Fusion",
+     "armyBook": "Fusion Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a035": {
+   "artId": "scorcher-heavy-flamer",
+   "rotulo": "Scorcher Heavy Flamer",
+   "confiancaRotulo": "alta",
+   "unitKey": "scorcher",
+   "equipmentTags": [
+    "Heavy Flamer"
+   ],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a036": {
+   "artId": "noble-shifter",
+   "rotulo": "Noble Shifter",
+   "confiancaRotulo": "alta",
+   "unitKey": "elven-noble",
+   "equipmentTags": [
+    "Shifter Backpack|Shifter Jumpgate Backpack"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Noble Shifter",
+     "armyBook": [
+      "Elven Noble + Shifter Backpack",
+      "Shifter Jumpgate Backpack"
+     ]
+    }
+   ],
+   "notas": "figura com picareta e arma de phaser; tag aceita as duas mochilas de Shifter"
+  },
+  "a037": {
+   "artId": "noble-sniper",
+   "rotulo": "Noble Sniper",
+   "confiancaRotulo": "alta",
+   "unitKey": "elven-noble",
+   "equipmentTags": [
+    "Sniper Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Noble Sniper",
+     "armyBook": "Elven Noble + Sniper Rifle"
+    }
+   ],
+   "notas": ""
+  },
+  "a038": {
+   "artId": "noble-scorcher",
+   "rotulo": "Noble Scorcher",
+   "confiancaRotulo": "alta",
+   "unitKey": "elven-noble",
+   "equipmentTags": [
+    "Scorcher Fusion-Axe|Scorcher Flamer-Axe"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Noble Scorcher",
+     "armyBook": [
+      "Scorcher Fusion-Axe",
+      "Scorcher Flamer-Axe"
+     ]
+    }
+   ],
+   "notas": "machado com cano; a imagem não diz se é Fusion-Axe ou Flamer-Axe, a tag aceita os dois"
+  },
+  "a039": {
+   "artId": "noble-revenant",
+   "rotulo": "Noble Revenant",
+   "confiancaRotulo": "alta",
+   "unitKey": "elven-noble",
+   "equipmentTags": [
+    "Revenant Mask"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Noble Revenant",
+     "armyBook": "Elven Noble + Revenant Mask"
+    }
+   ],
+   "notas": "glaive dupla; o item de aspecto do Noble é Revenant Mask"
+  },
+  "a040": {
+   "artId": "high-oracle",
+   "rotulo": "High Oracle",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite-protector",
+   "equipmentTags": [
+    "High Oracle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "High Oracle",
+     "armyBook": "Elite Protector + High Oracle"
+    }
+   ],
+   "notas": "High Oracle é opção do Elite Protector e também do Elven Noble; escolhido o Elite Protector (usuário confirma)"
+  },
+  "a041": {
+   "artId": "acolyte-sword",
+   "rotulo": "Acolyte Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "acolyte",
+   "equipmentTags": [
+    "Ancient Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Ancient Sword"
+    }
+   ],
+   "notas": "pistola e espada (padrão do Acolyte)"
+  },
+  "a042": {
+   "artId": "jetbike-elite",
+   "rotulo": "Jetbike Elite",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite-protector",
+   "equipmentTags": [
+    "Assault Jetbike|Combat Jetbike"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Jetbike Elite",
+     "armyBook": [
+      "Elite Protector + Assault Jetbike",
+      "Combat Jetbike"
+     ]
+    }
+   ],
+   "notas": "herói (1 cópia) em jetbike; \"Elite\" como em Elite Protector (a001/a002). Tag aceita as duas jetbikes; o Elven Noble também tem as duas (alternativa de unidade). sem par de estilo: a063 é a mesma arte no estilo borda (pareamento falhou)"
+  },
+  "a043": {
+   "artId": "acolyte-spear",
+   "rotulo": "Acolyte Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "acolyte",
+   "equipmentTags": [
+    "Ancient Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spear",
+     "armyBook": "Ancient Spear"
+    }
+   ],
+   "notas": "rótulo impresso em negrito"
+  },
+  "a044": {
+   "artId": "jetbike-acolyte-pistol",
+   "rotulo": "Jetbike Acolyte Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "acolyte",
+   "equipmentTags": [
+    "Assault Jetbike",
+    "Shard Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Jetbike",
+     "armyBook": "Assault Jetbike"
+    }
+   ],
+   "notas": "Acolyte na opção Assault Jetbike com Shard Pistol + Ancient Sword. sem par de estilo: a064 é a mesma arte no estilo borda (pareamento falhou)"
+  },
+  "a045": {
+   "artId": "jetbike-acolyte-sword",
+   "rotulo": "Jetbike Acolyte Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "acolyte",
+   "equipmentTags": [
+    "Assault Jetbike",
+    "Ancient Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Jetbike",
+     "armyBook": "Assault Jetbike"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Ancient Sword"
+    }
+   ],
+   "notas": "empata com a044 na opção de jetbike com pistola. sem par de estilo: a065 é a mesma arte no estilo borda (pareamento falhou)"
+  },
+  "a046": {
+   "artId": "jetbike-striker-sword",
+   "rotulo": "Jetbike Striker Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "jetbike-striker",
+   "equipmentTags": [
+    "Ancient Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Ancient Sword"
+    }
+   ],
+   "notas": "sem par de estilo: a066 é a mesma arte no estilo borda (pareamento falhou)"
+  },
+  "a047": {
+   "artId": "jetbike-striker-lance",
+   "rotulo": "Jetbike Striker Lance",
+   "confiancaRotulo": "alta",
+   "unitKey": "jetbike-striker",
+   "equipmentTags": [
+    "Ancient Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Lance",
+     "armyBook": "Ancient Lance"
+    }
+   ],
+   "notas": "arma padrão. sem par de estilo: a067 é a mesma arte no estilo borda (pareamento falhou)"
+  },
+  "a048": {
+   "artId": "jetbike-protector",
+   "rotulo": "Jetbike Protector",
+   "confiancaRotulo": "alta",
+   "unitKey": "jetbike-protector",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "sem par de estilo: a068 é a mesma arte no estilo borda (pareamento falhou)"
+  },
+  "a049": {
+   "artId": "jetbike-protector-turret",
+   "rotulo": "Jetbike Protector Turret",
+   "confiancaRotulo": "alta",
+   "unitKey": "jetbike-protector",
+   "equipmentTags": [
+    "Shard Cannon|Burst Laser"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Turret",
+     "armyBook": [
+      "Shard Cannon",
+      "Burst Laser"
+     ]
+    }
+   ],
+   "notas": "jetbike com artilheiro e canhão; o rótulo não diz qual arma pesada, a tag aceita as duas. sem par de estilo: a069 é a mesma arte no estilo borda (pareamento falhou)"
+  },
+  "a050": {
+   "artId": "jetbike-protector-sniper",
+   "rotulo": "Jetbike Protector Sniper",
+   "confiancaRotulo": "alta",
+   "unitKey": "jetbike-protector",
+   "equipmentTags": [
+    "Sniper Rifle|Shard-Sniper Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sniper",
+     "armyBook": [
+      "Sniper Rifle",
+      "Shard-Sniper Rifle"
+     ]
+    }
+   ],
+   "notas": "duas opções de sniper (ambas com Bike-Shardguns), a tag aceita as duas. sem par de estilo: a070 é a mesma arte no estilo borda (pareamento falhou)"
+  },
+  "a051": {
+   "artId": "stinger",
+   "rotulo": "Stinger",
+   "confiancaRotulo": "alta",
+   "unitKey": "stinger",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": ""
+  },
+  "a052": {
+   "artId": "vanquisher-cannon",
+   "rotulo": "Vanquisher Cannon",
+   "confiancaRotulo": "alta",
+   "unitKey": "vanquisher",
+   "equipmentTags": [
+    "Shard Cannon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Cannon",
+     "armyBook": "Shard Cannon"
+    }
+   ],
+   "notas": "único canhão dos Vanquishers"
+  },
+  "a053": {
+   "artId": "vanquisher-missile",
+   "rotulo": "Vanquisher Missile",
+   "confiancaRotulo": "alta",
+   "unitKey": "vanquisher",
+   "equipmentTags": [
+    "Heat-Rocket Launcher|Dart-Rocket Launcher|Arc-Rocket Launcher"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Missile",
+     "armyBook": [
+      "Heat-Rocket Launcher",
+      "Dart-Rocket Launcher",
+      "Arc-Rocket Launcher"
+     ]
+    }
+   ],
+   "notas": "três lançadores de foguete no army book, a tag aceita os três (padrão: Heat-Rocket Launcher)"
+  },
+  "a054": {
+   "artId": "guardian",
+   "rotulo": "Guardian",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite-protector",
+   "equipmentTags": [
+    "Guardian Cleric"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Guardian",
+     "armyBook": "Guardian Cleric"
+    }
+   ],
+   "notas": "Guardian Cleric é opção do Elite Protector e também do Elven Noble; escolhido o Elite Protector (usuário confirma)"
+  },
+  "a055": {
+   "artId": "noble",
+   "rotulo": "Noble",
+   "confiancaRotulo": "alta",
+   "unitKey": "elven-noble",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "arte genérica do Elven Noble"
+  },
+  "a056": {
+   "artId": "noble-stinger",
+   "rotulo": "Noble Stinger",
+   "confiancaRotulo": "alta",
+   "unitKey": "elven-noble",
+   "equipmentTags": [
+    "Master Stinger|Dual Stinger Blades"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Noble Stinger",
+     "armyBook": [
+      "Elven Noble + Master Stinger",
+      "Dual Stinger Blades"
+     ]
+    }
+   ],
+   "notas": "figura com duas lâminas curvas (Dual Stinger Blades); tag aceita a lâmina ou o item de aspecto Master Stinger"
+  },
+  "a057": {
+   "artId": "noble-vanquisher",
+   "rotulo": "Noble Vanquisher",
+   "confiancaRotulo": "alta",
+   "unitKey": "elven-noble",
+   "equipmentTags": [
+    "Vanquisher Rocket Launcher"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Noble Vanquisher",
+     "armyBook": "Elven Noble + Vanquisher Rocket Launcher"
+    }
+   ],
+   "notas": "a opção vem com Vanquisher Leader"
+  },
+  "a058": {
+   "artId": "elemental-striker-axe",
+   "rotulo": "Elemental Striker Axe",
+   "confiancaRotulo": "alta",
+   "unitKey": "elemental-striker",
+   "equipmentTags": [
+    "Killing Axe"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Axe",
+     "armyBook": "Killing Axe"
+    }
+   ],
+   "notas": "machado e escudo (Killing Axe + Combat Shield)"
+  },
+  "a059": {
+   "artId": "elemental-striker-spear",
+   "rotulo": "Elemental Striker Spear",
+   "confiancaRotulo": "alta",
+   "unitKey": "elemental-striker",
+   "equipmentTags": [
+    "Ancient Spear"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Spear",
+     "armyBook": "Ancient Spear"
+    }
+   ],
+   "notas": ""
+  },
+  "a060": {
+   "artId": "elemental-striker-sword",
+   "rotulo": "Elemental Striker Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "elemental-striker",
+   "equipmentTags": [
+    "Ancient Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Ancient Sword"
+    }
+   ],
+   "notas": "uma espada (opção Ancient Sword + Combat Shield); o padrão Dual Ancient Swords não tem arte"
+  },
+  "a061": {
+   "artId": "elemental-striker-distortion-gun",
+   "rotulo": "Elemental Striker Distortion Gun",
+   "confiancaRotulo": "alta",
+   "unitKey": "elemental-protector",
+   "equipmentTags": [
+    "Warp-Blast Gun"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Elemental Striker",
+     "armyBook": "Elemental Protector"
+    },
+    {
+     "pdf": "Distortion Gun",
+     "armyBook": "Warp-Blast Gun"
+    }
+   ],
+   "notas": "rótulo diz Elemental Striker, mas armas de tiro só existem nos Elemental Protectors; distortion ~ warp (arma padrão)"
+  },
+  "a062": {
+   "artId": "elemental-striker-wraith-cannon",
+   "rotulo": "Elemental Striker Wraith Cannon",
+   "confiancaRotulo": "alta",
+   "unitKey": "elemental-protector",
+   "equipmentTags": [
+    "Elemental Cannon"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Elemental Striker",
+     "armyBook": "Elemental Protector"
+    },
+    {
+     "pdf": "Wraith Cannon",
+     "armyBook": "Elemental Cannon"
+    }
+   ],
+   "notas": "rótulo diz Elemental Striker, mas o canhão só existe nos Elemental Protectors"
+  },
+  "a063": {
+   "artId": "jetbike-elite-borda",
+   "rotulo": "Jetbike Elite",
+   "confiancaRotulo": "alta",
+   "unitKey": "elite-protector",
+   "equipmentTags": [
+    "Assault Jetbike|Combat Jetbike"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Jetbike Elite",
+     "armyBook": [
+      "Elite Protector + Assault Jetbike",
+      "Combat Jetbike"
+     ]
+    }
+   ],
+   "notas": "herói (1 cópia) em jetbike; \"Elite\" como em Elite Protector (a001/a002). Tag aceita as duas jetbikes; o Elven Noble também tem as duas (alternativa de unidade). só estilo borda; mesma arte de a042 (fino), pareamento falhou"
+  },
+  "a064": {
+   "artId": "jetbike-acolyte-pistol-borda",
+   "rotulo": "Jetbike Acolyte Pistol",
+   "confiancaRotulo": "alta",
+   "unitKey": "acolyte",
+   "equipmentTags": [
+    "Assault Jetbike",
+    "Shard Pistol"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Jetbike",
+     "armyBook": "Assault Jetbike"
+    }
+   ],
+   "notas": "Acolyte na opção Assault Jetbike com Shard Pistol + Ancient Sword. só estilo borda; mesma arte de a044 (fino), pareamento falhou"
+  },
+  "a065": {
+   "artId": "jetbike-acolyte-sword-borda",
+   "rotulo": "Jetbike Acolyte Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "acolyte",
+   "equipmentTags": [
+    "Assault Jetbike",
+    "Ancient Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Jetbike",
+     "armyBook": "Assault Jetbike"
+    },
+    {
+     "pdf": "Sword",
+     "armyBook": "Ancient Sword"
+    }
+   ],
+   "notas": "empata com a044 na opção de jetbike com pistola. só estilo borda; mesma arte de a045 (fino), pareamento falhou"
+  },
+  "a066": {
+   "artId": "jetbike-striker-sword-borda",
+   "rotulo": "Jetbike Striker Sword",
+   "confiancaRotulo": "alta",
+   "unitKey": "jetbike-striker",
+   "equipmentTags": [
+    "Ancient Sword"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sword",
+     "armyBook": "Ancient Sword"
+    }
+   ],
+   "notas": "só estilo borda; mesma arte de a046 (fino), pareamento falhou"
+  },
+  "a067": {
+   "artId": "jetbike-striker-lance-borda",
+   "rotulo": "Jetbike Striker Lance",
+   "confiancaRotulo": "alta",
+   "unitKey": "jetbike-striker",
+   "equipmentTags": [
+    "Ancient Lance"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Lance",
+     "armyBook": "Ancient Lance"
+    }
+   ],
+   "notas": "arma padrão. só estilo borda; mesma arte de a047 (fino), pareamento falhou"
+  },
+  "a068": {
+   "artId": "jetbike-protector-borda",
+   "rotulo": "Jetbike Protector",
+   "confiancaRotulo": "alta",
+   "unitKey": "jetbike-protector",
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "mapped",
+   "aliases": [],
+   "notas": "só estilo borda; mesma arte de a048 (fino), pareamento falhou"
+  },
+  "a069": {
+   "artId": "jetbike-protector-turret-borda",
+   "rotulo": "Jetbike Protector Turret",
+   "confiancaRotulo": "alta",
+   "unitKey": "jetbike-protector",
+   "equipmentTags": [
+    "Shard Cannon|Burst Laser"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Turret",
+     "armyBook": [
+      "Shard Cannon",
+      "Burst Laser"
+     ]
+    }
+   ],
+   "notas": "jetbike com artilheiro e canhão; o rótulo não diz qual arma pesada, a tag aceita as duas. só estilo borda; mesma arte de a049 (fino), pareamento falhou"
+  },
+  "a070": {
+   "artId": "jetbike-protector-sniper-borda",
+   "rotulo": "Jetbike Protector Sniper",
+   "confiancaRotulo": "alta",
+   "unitKey": "jetbike-protector",
+   "equipmentTags": [
+    "Sniper Rifle|Shard-Sniper Rifle"
+   ],
+   "cosmetic": null,
+   "status": "alias-proposed",
+   "aliases": [
+    {
+     "pdf": "Sniper",
+     "armyBook": [
+      "Sniper Rifle",
+      "Shard-Sniper Rifle"
+     ]
+    }
+   ],
+   "notas": "duas opções de sniper (ambas com Bike-Shardguns), a tag aceita as duas. só estilo borda; mesma arte de a050 (fino), pareamento falhou"
+  }
+ }
+}

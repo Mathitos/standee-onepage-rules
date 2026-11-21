@@ -2,7 +2,7 @@
  "contrato": 2,
  "dpi": 600,
  "packId": "shadow-stalkers",
- "faccao": "Shadow Stalkers",
+ "faccao": "Shadow Stalkers\r",
  "sistema": "aof",
  "pdf": {
   "nome": "Shadow_Stalkers_-_BW.pdf",
@@ -12,14 +12,16 @@
  "manifesto": null,
  "artes": [
   {
-   "id": "a001",
+   "id": "scourge-halberd",
    "candidato": "a001",
-   "rotulo": null,
-   "rotuloImg": "arts/a001/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Scourge Halberd",
+   "rotuloImg": "arts/scourge-halberd/rotulo.png",
+   "unitKey": "scourges",
+   "equipmentTags": [
+    "Halberd"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -51,14 +53,14 @@
    "pendencias": []
   },
   {
-   "id": "a002",
+   "id": "scourge-champion",
    "candidato": "a002",
-   "rotulo": null,
-   "rotuloImg": "arts/a002/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Scourge Champion",
+   "rotuloImg": "arts/scourge-champion/rotulo.png",
+   "unitKey": "scourge-champion",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -90,14 +92,14 @@
    "pendencias": []
   },
   {
-   "id": "a003",
+   "id": "reaper-champion",
    "candidato": "a003",
-   "rotulo": null,
-   "rotuloImg": "arts/a003/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Reaper Champion",
+   "rotuloImg": "arts/reaper-champion/rotulo.png",
+   "unitKey": "reaper-champion",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -129,14 +131,14 @@
    "pendencias": []
   },
   {
-   "id": "a004",
+   "id": "spectre-champion",
    "candidato": "a004",
-   "rotulo": null,
-   "rotuloImg": "arts/a004/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Spectre Champion",
+   "rotuloImg": "arts/spectre-champion/rotulo.png",
+   "unitKey": "spectre-champion",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -168,14 +170,14 @@
    "pendencias": []
   },
   {
-   "id": "a005",
+   "id": "phantom-champion",
    "candidato": "a005",
-   "rotulo": null,
-   "rotuloImg": "arts/a005/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Phantom Champion",
+   "rotuloImg": "arts/phantom-champion/rotulo.png",
+   "unitKey": "phantom-champion",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -207,14 +209,14 @@
    "pendencias": []
   },
   {
-   "id": "a006",
+   "id": "army-standard",
    "candidato": "a006",
-   "rotulo": null,
-   "rotuloImg": "arts/a006/rotulo.png",
+   "rotulo": "Army Standard",
+   "rotuloImg": "arts/army-standard/rotulo.png",
    "unitKey": null,
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "unmapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -246,14 +248,14 @@
    "pendencias": []
   },
   {
-   "id": "a037",
+   "id": "butcher-champion",
    "candidato": "a037",
-   "rotulo": null,
-   "rotuloImg": "arts/a037/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Butcher Champion",
+   "rotuloImg": "arts/butcher-champion/rotulo.png",
+   "unitKey": "butcher-champion",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -285,14 +287,16 @@
    "pendencias": []
   },
   {
-   "id": "a038",
+   "id": "scourge-great-hound",
    "candidato": "a038",
-   "rotulo": null,
-   "rotuloImg": "arts/a038/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Scourge Great Hound",
+   "rotuloImg": "arts/scourge-great-hound/rotulo.png",
+   "unitKey": "scourge-champion",
+   "equipmentTags": [
+    "Great Hound"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -326,14 +330,16 @@
    ]
   },
   {
-   "id": "a039",
+   "id": "reaper-great-flayer",
    "candidato": "a039",
-   "rotulo": null,
-   "rotuloImg": "arts/a039/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Reaper Great Flayer",
+   "rotuloImg": "arts/reaper-great-flayer/rotulo.png",
+   "unitKey": "reaper-champion",
+   "equipmentTags": [
+    "Great Flayer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -365,14 +371,16 @@
    "pendencias": []
   },
   {
-   "id": "a007",
+   "id": "scourge-sword",
    "candidato": "a007",
-   "rotulo": null,
-   "rotuloImg": "arts/a007/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Scourge Sword",
+   "rotuloImg": "arts/scourge-sword/rotulo.png",
+   "unitKey": "scourges",
+   "equipmentTags": [
+    "Hand Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -404,14 +412,16 @@
    "pendencias": []
   },
   {
-   "id": "a008",
+   "id": "scourge-spear",
    "candidato": "a008",
-   "rotulo": null,
-   "rotuloImg": "arts/a008/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Scourge Spear",
+   "rotuloImg": "arts/scourge-spear/rotulo.png",
+   "unitKey": "scourges",
+   "equipmentTags": [
+    "Spear"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -443,14 +453,14 @@
    "pendencias": []
   },
   {
-   "id": "a009",
+   "id": "scourge-sergeant",
    "candidato": "a009",
-   "rotulo": null,
-   "rotuloImg": "arts/a009/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Scourge Sergeant",
+   "rotuloImg": "arts/scourge-sergeant/rotulo.png",
+   "unitKey": "scourges",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -482,14 +492,14 @@
    "pendencias": []
   },
   {
-   "id": "a010",
+   "id": "scourge-musician",
    "candidato": "a010",
-   "rotulo": null,
-   "rotuloImg": "arts/a010/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Scourge Musician",
+   "rotuloImg": "arts/scourge-musician/rotulo.png",
+   "unitKey": "scourges",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -521,14 +531,14 @@
    "pendencias": []
   },
   {
-   "id": "a011",
+   "id": "scourge-banner",
    "candidato": "a011",
-   "rotulo": null,
-   "rotuloImg": "arts/a011/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Scourge Banner",
+   "rotuloImg": "arts/scourge-banner/rotulo.png",
+   "unitKey": "scourges",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -560,14 +570,16 @@
    "pendencias": []
   },
   {
-   "id": "a012",
+   "id": "reaper-greatsword",
    "candidato": "a012",
-   "rotulo": null,
-   "rotuloImg": "arts/a012/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Reaper Greatsword",
+   "rotuloImg": "arts/reaper-greatsword/rotulo.png",
+   "unitKey": "reapers",
+   "equipmentTags": [
+    "Reaper Great-Sword"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -599,14 +611,16 @@
    "pendencias": []
   },
   {
-   "id": "a013",
+   "id": "reaper-halberd",
    "candidato": "a013",
-   "rotulo": null,
-   "rotuloImg": "arts/a013/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Reaper Halberd",
+   "rotuloImg": "arts/reaper-halberd/rotulo.png",
+   "unitKey": "reapers",
+   "equipmentTags": [
+    "Halberd"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -638,14 +652,16 @@
    "pendencias": []
   },
   {
-   "id": "a014",
+   "id": "spectre-wand",
    "candidato": "a014",
-   "rotulo": null,
-   "rotuloImg": "arts/a014/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Spectre Wand",
+   "rotuloImg": "arts/spectre-wand/rotulo.png",
+   "unitKey": "spectres",
+   "equipmentTags": [
+    "Stalker Wand"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -679,14 +695,16 @@
    ]
   },
   {
-   "id": "a015",
+   "id": "spectre-staff",
    "candidato": "a015",
-   "rotulo": null,
-   "rotuloImg": "arts/a015/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Spectre Staff",
+   "rotuloImg": "arts/spectre-staff/rotulo.png",
+   "unitKey": "spectres",
+   "equipmentTags": [
+    "Stalker Staff"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -720,14 +738,14 @@
    ]
   },
   {
-   "id": "a016",
+   "id": "spectre-sergeant",
    "candidato": "a016",
-   "rotulo": null,
-   "rotuloImg": "arts/a016/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Spectre Sergeant",
+   "rotuloImg": "arts/spectre-sergeant/rotulo.png",
+   "unitKey": "spectres",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -761,14 +779,14 @@
    ]
   },
   {
-   "id": "a017",
+   "id": "spectre-musician",
    "candidato": "a017",
-   "rotulo": null,
-   "rotuloImg": "arts/a017/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Spectre Musician",
+   "rotuloImg": "arts/spectre-musician/rotulo.png",
+   "unitKey": "spectres",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -802,14 +820,14 @@
    ]
   },
   {
-   "id": "a018",
+   "id": "spectre-banner",
    "candidato": "a018",
-   "rotulo": null,
-   "rotuloImg": "arts/a018/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Spectre Banner",
+   "rotuloImg": "arts/spectre-banner/rotulo.png",
+   "unitKey": "spectres",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -843,14 +861,16 @@
    ]
   },
   {
-   "id": "a019",
+   "id": "flayer-spear",
    "candidato": "a019",
-   "rotulo": null,
-   "rotuloImg": "arts/a019/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Flayer Spear",
+   "rotuloImg": "arts/flayer-spear/rotulo.png",
+   "unitKey": "flayer-cavalry",
+   "equipmentTags": [
+    "Lance"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -882,14 +902,16 @@
    "pendencias": []
   },
   {
-   "id": "a020",
+   "id": "flayer-axe",
    "candidato": "a020",
-   "rotulo": null,
-   "rotuloImg": "arts/a020/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Flayer Axe",
+   "rotuloImg": "arts/flayer-axe/rotulo.png",
+   "unitKey": "flayer-cavalry",
+   "equipmentTags": [
+    "Great Weapon"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -921,14 +943,14 @@
    "pendencias": []
   },
   {
-   "id": "a021",
+   "id": "flayer-sergeant",
    "candidato": "a021",
-   "rotulo": null,
-   "rotuloImg": "arts/a021/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Flayer Sergeant",
+   "rotuloImg": "arts/flayer-sergeant/rotulo.png",
+   "unitKey": "flayer-cavalry",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "sergeant",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -960,14 +982,14 @@
    "pendencias": []
   },
   {
-   "id": "a022",
+   "id": "flayer-musician",
    "candidato": "a022",
-   "rotulo": null,
-   "rotuloImg": "arts/a022/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Flayer Musician",
+   "rotuloImg": "arts/flayer-musician/rotulo.png",
+   "unitKey": "flayer-cavalry",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "musician",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -999,14 +1021,14 @@
    "pendencias": []
   },
   {
-   "id": "a023",
+   "id": "flayer-banner",
    "candidato": "a023",
-   "rotulo": null,
-   "rotuloImg": "arts/a023/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Flayer Banner",
+   "rotuloImg": "arts/flayer-banner/rotulo.png",
+   "unitKey": "flayer-cavalry",
    "equipmentTags": [],
-   "cosmetic": null,
-   "status": "nao-revisada",
+   "cosmetic": "banner",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1038,14 +1060,16 @@
    "pendencias": []
   },
   {
-   "id": "a024",
+   "id": "phantom-sword",
    "candidato": "a024",
-   "rotulo": null,
-   "rotuloImg": "arts/a024/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Phantom Sword",
+   "rotuloImg": "arts/phantom-sword/rotulo.png",
+   "unitKey": "phantoms",
+   "equipmentTags": [
+    "Assault Daggers"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1079,14 +1103,16 @@
    ]
   },
   {
-   "id": "a025",
+   "id": "phantom-javelin",
    "candidato": "a025",
-   "rotulo": null,
-   "rotuloImg": "arts/a025/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Phantom Javelin",
+   "rotuloImg": "arts/phantom-javelin/rotulo.png",
+   "unitKey": "phantoms",
+   "equipmentTags": [
+    "Throwing Spears"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1118,14 +1144,14 @@
    "pendencias": []
   },
   {
-   "id": "a026",
+   "id": "tormentor-1",
    "candidato": "a026",
-   "rotulo": null,
-   "rotuloImg": "arts/a026/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Tormentor 1",
+   "rotuloImg": "arts/tormentor-1/rotulo.png",
+   "unitKey": "tormentors",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1157,14 +1183,14 @@
    "pendencias": []
   },
   {
-   "id": "a027",
+   "id": "tormentor-2",
    "candidato": "a027",
-   "rotulo": null,
-   "rotuloImg": "arts/a027/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Tormentor 2",
+   "rotuloImg": "arts/tormentor-2/rotulo.png",
+   "unitKey": "tormentors",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1196,14 +1222,14 @@
    "pendencias": []
   },
   {
-   "id": "a028",
+   "id": "hound-1",
    "candidato": "a028",
-   "rotulo": null,
-   "rotuloImg": "arts/a028/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hound 1",
+   "rotuloImg": "arts/hound-1/rotulo.png",
+   "unitKey": "shadow-hounds",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1235,14 +1261,14 @@
    "pendencias": []
   },
   {
-   "id": "a029",
+   "id": "hound-2",
    "candidato": "a029",
-   "rotulo": null,
-   "rotuloImg": "arts/a029/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Hound 2",
+   "rotuloImg": "arts/hound-2/rotulo.png",
+   "unitKey": "shadow-hounds",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1276,14 +1302,16 @@
    ]
   },
   {
-   "id": "a030",
+   "id": "butcher-sword",
    "candidato": "a030",
-   "rotulo": null,
-   "rotuloImg": "arts/a030/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Butcher Sword",
+   "rotuloImg": "arts/butcher-sword/rotulo.png",
+   "unitKey": "butchers",
+   "equipmentTags": [
+    "Butcher Great-Blade"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1315,14 +1343,16 @@
    "pendencias": []
   },
   {
-   "id": "a031",
+   "id": "butcher-mace",
    "candidato": "a031",
-   "rotulo": null,
-   "rotuloImg": "arts/a031/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Butcher Mace",
+   "rotuloImg": "arts/butcher-mace/rotulo.png",
+   "unitKey": "butchers",
+   "equipmentTags": [
+    "Butcher Great-Hammer"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1354,14 +1384,16 @@
    "pendencias": []
   },
   {
-   "id": "a032",
+   "id": "butcher-javelin",
    "candidato": "a032",
-   "rotulo": null,
-   "rotuloImg": "arts/a032/rotulo.png",
-   "unitKey": null,
-   "equipmentTags": [],
+   "rotulo": "Butcher Javelin",
+   "rotuloImg": "arts/butcher-javelin/rotulo.png",
+   "unitKey": "butchers",
+   "equipmentTags": [
+    "Throwing Spears"
+   ],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1393,14 +1425,14 @@
    "pendencias": []
   },
   {
-   "id": "a033",
+   "id": "fiend-1",
    "candidato": "a033",
-   "rotulo": null,
-   "rotuloImg": "arts/a033/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fiend 1",
+   "rotuloImg": "arts/fiend-1/rotulo.png",
+   "unitKey": "fiends",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1432,14 +1464,14 @@
    "pendencias": []
   },
   {
-   "id": "a034",
+   "id": "fiend-2",
    "candidato": "a034",
-   "rotulo": null,
-   "rotuloImg": "arts/a034/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Fiend 2",
+   "rotuloImg": "arts/fiend-2/rotulo.png",
+   "unitKey": "fiends",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "mapped",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1471,14 +1503,14 @@
    "pendencias": []
   },
   {
-   "id": "a035",
+   "id": "swarm-1",
    "candidato": "a035",
-   "rotulo": null,
-   "rotuloImg": "arts/a035/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Swarm 1",
+   "rotuloImg": "arts/swarm-1/rotulo.png",
+   "unitKey": "fang-swarms",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
@@ -1512,14 +1544,14 @@
    ]
   },
   {
-   "id": "a036",
+   "id": "swarm-2",
    "candidato": "a036",
-   "rotulo": null,
-   "rotuloImg": "arts/a036/rotulo.png",
-   "unitKey": null,
+   "rotulo": "Swarm 2",
+   "rotuloImg": "arts/swarm-2/rotulo.png",
+   "unitKey": "fang-swarms",
    "equipmentTags": [],
    "cosmetic": null,
-   "status": "nao-revisada",
+   "status": "alias-proposed",
    "estilos": {
     "fino": {
      "telaMm": [
