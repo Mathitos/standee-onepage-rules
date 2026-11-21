@@ -119,7 +119,8 @@ def main():
         escuro = float(np.median([d[2] for d in dados]))
         estilo = 'borda' if escuro >= G.LIMIAR_BORDA else 'fino'
         paginas.append({'pagina': p, 'tipo': 'arte', 'estilo': estilo, 'linhas': len(linhas),
-                        'faixas_descartadas': descartadas, 'escuro_faixa': round(escuro, 3)})
+                        'faixas_descartadas': descartadas, 'escuro_faixa': round(escuro, 3),
+                        **({'girada': True} if linhas[0].girada else {})})
         locais = []
         for L, m, _, sig in dados:
             ys, xs = np.where(m)
@@ -174,6 +175,35 @@ def main():
         par_de[f['id']] = b
         usados.add(b['id'])
         f['contem'] = -menos_cont
+    # Figuras de página inteira: o contorno fino, ampliado com a figura, passa do limiar e a
+    # página sai como "borda" (Daemons of Lust p8: 0,73). Duas "bordas" sem par com o mesmo
+    # rótulo, tamanho compatível e uma contendo a outra viram par; a menor é a fina.
+    soltos = [b for b in bordas if b['id'] not in usados]
+    ligacoes = []
+    for f in soltos:
+        for b in soltos:
+            if f is b or f['sig_rot'] is None or b['sig_rot'] is None:
+                continue
+            if not (0 < b['tam'][0] - f['tam'][0] <= 5 and 0 < b['tam'][1] - f['tam'][1] <= 9):
+                continue
+            d = float(np.abs(f['sig_rot'] - b['sig_rot']).mean())
+            if d >= LIMIAR_ROTULO:
+                continue
+            cont = contem(f['m'], b['m'])
+            if (d < 0.02 and cont >= 0.75) or cont >= 0.85:
+                ligacoes.append((round(d, 3), -cont, f, b))
+    ligacoes.sort(key=lambda x: (x[0], x[1]))
+    for d, menos_cont, f, b in ligacoes:
+        if f['id'] in usados or b['id'] in usados:
+            continue
+        f['estilo'], f['estilo_pelo_par'], f['contem'] = 'fino', True, -menos_cont
+        par_de[f['id']] = b
+        usados.update((f['id'], b['id']))
+        finos.append(f)
+    for p in paginas:
+        estilos = {g['estilo'] for g in grupos if g['pagina'] == p['pagina']}
+        if p.get('estilo') == 'borda' and estilos == {'fino'}:
+            p['estilo'], p['estilo_pelo_par'] = 'fino', True
     candidatos = [(f, par_de.get(f['id'])) for f in finos]
     candidatos += [(None, b) for b in bordas if b['id'] not in usados]
 

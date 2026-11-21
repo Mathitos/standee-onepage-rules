@@ -42,6 +42,8 @@ Observadas no PDF Human Defense Force. A skill verifica cada PDF novo e para com
 - Página fora do padrão (capa, instruções) é ignorada e listada no relatório.
 - Figuras deitadas: na frente o chão fica do lado esquerdo; no verso, do lado direito. A skill grava as imagens já em pé.
 - Resultado no PDF HDF com `prototipo/pdf_grade.py`: 218 linhas (109 por estilo), todas com rótulo; só capa e instruções descartadas.
+- Variações nos outros PDFs (21/11, D038): abas de 14,8 a 24,8 mm; figura grande de página inteira com a faixa na vertical (aba, verso de cabeça para baixo, frente em pé, aba) e rótulo embaixo ou à esquerda; uma linha a mais (traço na margem) ou a menos (aba aberta, ou linha entre verso e aba coberta pela arte); tabelas estreitas de enxames, com linhas de menos de 80 mm. A detecção cobre esses casos (ver `grade.localizar_faixas`) e recusa "faixas" com células de menos de 10 mm ou abas com mais de 20% de tinta (capas).
+- PDFs em sets (Daemons, High Elf Fleets, Robot Legions, Saurian Starhost): as páginas P&B ficam no meio do set, entre as coloridas. Juntá-las num PDF por facção antes da extração (fração de pixels coloridos por página = 0).
 
 ## Rótulos e mapeamento
 

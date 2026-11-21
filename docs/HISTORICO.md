@@ -75,3 +75,7 @@ O usuário decidiu manter o bico 0,2 e pediu o 3MF com uma unidade por placa, co
 ## 21/11/2026 — bases descolando
 
 O usuário perdeu 4 bases e 1 Biker, descolados no meio da impressão da lista completa. O 3MF trazia "Cool Plate" (padrão da exportação pela CLI) e o G-code aquecia a mesa a 35 °C; o modelo A1 usa Textured PEI, com 65 °C para o PLA Basic. O gerador passou a gravar o tipo de placa padrão da impressora e a centralizar as peças na mesa. Saídas regeradas; G-code conferido com `M190 S65`.
+
+## 21/11/2026 — artes P&B de todas as facções
+
+O usuário baixou os PDFs de todas as facções que achou e pediu as artes P&B de todas, de GF e de AoF. Nos sets, as P&B ficam entre as coloridas; foram juntadas num PDF por facção. O detector de grade, calibrado no HDF, perdia figuras de página inteira (faixa vertical), abas de outras larguras, tabelas estreitas e faixas com uma linha a mais ou a menos; a detecção foi ampliada, com uma trava contra as capas, e o HDF continuou idêntico. 22 facções extraídas: 1152 candidatos, 954 pares (D038).
