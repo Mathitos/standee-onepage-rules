@@ -38,7 +38,7 @@ npm run build   # gera dist/
 
 ## Artes e licença
 
-As artes vêm dos PDFs gratuitos de miniaturas de papel da OPR (D006). A skill extrai as artes como **vetores SVG** (600 dpi, D020/D039) e as grava em `catalog/`, com o índice `artes.json` e o mapeamento; esses arquivos vão para o git e para o site (cerca de 300 MB de SVG, ~80 MB compactados). O **PDF não entra no git** (`*.pdf` no `.gitignore`), nem as saídas geradas (`saidas/`) e os intermediários da skill (`work/`, `review/`, `build/`).
+As artes vêm dos PDFs gratuitos de miniaturas de papel da OPR (D006). A skill extrai as artes como **vetores SVG** (600 dpi, D020/D039) e as grava em `catalog/`, com o índice `artes.json` e o mapeamento; esses arquivos vão para o git e para o site (cerca de 300 MB de SVG, ~90 MB compactados no git). O **PDF não entra no git** (`*.pdf` no `.gitignore`), nem as saídas geradas (`saidas/`) e os intermediários da skill (`work/`, `review/`, `build/`).
 
 ## Estrutura
 
