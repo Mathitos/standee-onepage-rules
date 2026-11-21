@@ -122,19 +122,17 @@
           "front": "arts/infantry-rifle/fino/frente.svg",
           "back": "arts/infantry-rifle/fino/verso.svg",
           "canvasMm": [
-            19.13,
-            34.97
+            19.092,
+            34.713
           ],
-          "frontBackIoU": 0.991,
+          "frontBackIoU": 0.99,
           "sizeMm": [
-            34.5,
-            18.7
+            34.6,
+            18.9
           ],
           "vector": {
-            "epsPx": 0.5,
-            "silhouetteIoU": 0.9985,
-            "inkIoU": 0.9078,
-            "pxOutsideEdge": 0
+            "contract": 2,
+            "dpi": 600
           }
         },
         "borda": {
@@ -149,19 +147,17 @@
           "front": "arts/infantry-rifle/borda/frente.svg",
           "back": "arts/infantry-rifle/borda/verso.svg",
           "canvasMm": [
-            24.38,
-            37.34
+            24.257,
+            37.042
           ],
-          "frontBackIoU": 0.992,
+          "frontBackIoU": 0.993,
           "sizeMm": [
             36.9,
             23.7
           ],
           "vector": {
-            "epsPx": 0.5,
-            "silhouetteIoU": 0.9992,
-            "inkIoU": 0.9691,
-            "pxOutsideEdge": 0
+            "contract": 2,
+            "dpi": 600
           }
         }
       },
@@ -196,19 +192,17 @@
           "front": "arts/veteran-shotgun/fino/frente.svg",
           "back": "arts/veteran-shotgun/fino/verso.svg",
           "canvasMm": [
-            21.93,
-            34.71
+            21.802,
+            34.248
           ],
-          "frontBackIoU": 0.973,
+          "frontBackIoU": 0.984,
           "sizeMm": [
             34.1,
             21.5
           ],
           "vector": {
-            "epsPx": 0.5,
-            "silhouetteIoU": 0.9986,
-            "inkIoU": 0.9097,
-            "pxOutsideEdge": 0
+            "contract": 2,
+            "dpi": 600
           }
         },
         "borda": {
@@ -223,19 +217,17 @@
           "front": "arts/veteran-shotgun/borda/frente.svg",
           "back": "arts/veteran-shotgun/borda/verso.svg",
           "canvasMm": [
-            27.01,
-            37.25
+            26.882,
+            36.788
           ],
-          "frontBackIoU": 0.982,
+          "frontBackIoU": 0.991,
           "sizeMm": [
             36.7,
             26.6
           ],
           "vector": {
-            "epsPx": 0.5,
-            "silhouetteIoU": 0.9992,
-            "inkIoU": 0.9685,
-            "pxOutsideEdge": 0
+            "contract": 2,
+            "dpi": 600
           }
         }
       },
@@ -268,19 +260,17 @@
           "front": "arts/biker-pistol/fino/frente.svg",
           "back": "arts/biker-pistol/fino/verso.svg",
           "canvasMm": [
-            40.64,
-            32.85
+            40.555,
+            32.554
           ],
-          "frontBackIoU": 0.994,
+          "frontBackIoU": 0.995,
           "sizeMm": [
             32.4,
-            40.2
+            40.3
           ],
           "vector": {
-            "epsPx": 0.5,
-            "silhouetteIoU": 0.9993,
-            "inkIoU": 0.9096,
-            "pxOutsideEdge": 0
+            "contract": 2,
+            "dpi": 600
           }
         },
         "borda": {
@@ -293,19 +283,17 @@
           "front": "arts/biker-pistol/borda/frente.svg",
           "back": "arts/biker-pistol/borda/verso.svg",
           "canvasMm": [
-            45.3,
-            35.14
+            45.212,
+            34.883
           ],
-          "frontBackIoU": 0.995,
+          "frontBackIoU": 0.994,
           "sizeMm": [
-            34.7,
-            44.9
+            34.8,
+            45.0
           ],
           "vector": {
-            "epsPx": 0.5,
-            "silhouetteIoU": 0.9997,
-            "inkIoU": 0.9537,
-            "pxOutsideEdge": 0
+            "contract": 2,
+            "dpi": 600
           }
         }
       },
@@ -345,19 +333,17 @@
           "front": "arts/biker-lance/fino/frente.svg",
           "back": "arts/biker-lance/fino/verso.svg",
           "canvasMm": [
-            41.66,
-            33.1
+            41.444,
+            32.808
           ],
-          "frontBackIoU": 0.993,
+          "frontBackIoU": 0.996,
           "sizeMm": [
             32.7,
-            41.1
+            41.2
           ],
           "vector": {
-            "epsPx": 0.5,
-            "silhouetteIoU": 0.9991,
-            "inkIoU": 0.9127,
-            "pxOutsideEdge": 0
+            "contract": 2,
+            "dpi": 600
           }
         },
         "borda": {
@@ -370,19 +356,17 @@
           "front": "arts/biker-lance/borda/frente.svg",
           "back": "arts/biker-lance/borda/verso.svg",
           "canvasMm": [
-            46.31,
-            35.39
+            46.143,
+            35.137
           ],
-          "frontBackIoU": 0.996,
+          "frontBackIoU": 0.997,
           "sizeMm": [
-            35.0,
+            35.1,
             45.8
           ],
           "vector": {
-            "epsPx": 0.5,
-            "silhouetteIoU": 0.9996,
-            "inkIoU": 0.9578,
-            "pxOutsideEdge": 0
+            "contract": 2,
+            "dpi": 600
           }
         }
       },
@@ -413,19 +397,17 @@
           "front": "arts/ogre-minigun/fino/frente.svg",
           "back": "arts/ogre-minigun/fino/verso.svg",
           "canvasMm": [
-            37.76,
-            54.44
+            37.634,
+            54.144
           ],
-          "frontBackIoU": 0.979,
+          "frontBackIoU": 0.982,
           "sizeMm": [
             54.0,
             37.3
           ],
           "vector": {
-            "epsPx": 0.5,
-            "silhouetteIoU": 0.9991,
-            "inkIoU": 0.9147,
-            "pxOutsideEdge": 0
+            "contract": 2,
+            "dpi": 600
           }
         },
         "borda": {
@@ -438,19 +420,17 @@
           "front": "arts/ogre-minigun/borda/frente.svg",
           "back": "arts/ogre-minigun/borda/verso.svg",
           "canvasMm": [
-            42.33,
-            56.73
+            42.249,
+            56.473
           ],
-          "frontBackIoU": 0.983,
+          "frontBackIoU": 0.987,
           "sizeMm": [
-            56.3,
-            41.9
+            56.4,
+            42.1
           ],
           "vector": {
-            "epsPx": 0.5,
-            "silhouetteIoU": 0.9995,
-            "inkIoU": 0.96,
-            "pxOutsideEdge": 0
+            "contract": 2,
+            "dpi": 600
           }
         }
       },
@@ -483,19 +463,17 @@
           "front": "arts/ogre-grenade-launcher/fino/frente.svg",
           "back": "arts/ogre-grenade-launcher/fino/verso.svg",
           "canvasMm": [
-            40.98,
-            53.51
+            40.852,
+            53.086
           ],
-          "frontBackIoU": 0.975,
+          "frontBackIoU": 0.986,
           "sizeMm": [
-            52.9,
+            53.0,
             40.6
           ],
           "vector": {
-            "epsPx": 0.5,
-            "silhouetteIoU": 0.9989,
-            "inkIoU": 0.9275,
-            "pxOutsideEdge": 0
+            "contract": 2,
+            "dpi": 600
           }
         },
         "borda": {
@@ -508,19 +486,17 @@
           "front": "arts/ogre-grenade-launcher/borda/frente.svg",
           "back": "arts/ogre-grenade-launcher/borda/verso.svg",
           "canvasMm": [
-            45.64,
-            55.88
+            45.508,
+            55.414
           ],
-          "frontBackIoU": 0.981,
+          "frontBackIoU": 0.99,
           "sizeMm": [
             55.3,
             45.2
           ],
           "vector": {
-            "epsPx": 0.5,
-            "silhouetteIoU": 0.9994,
-            "inkIoU": 0.963,
-            "pxOutsideEdge": 0
+            "contract": 2,
+            "dpi": 600
           }
         }
       },
@@ -558,19 +534,17 @@
           "front": "arts/ogre-baton/fino/frente.svg",
           "back": "arts/ogre-baton/fino/verso.svg",
           "canvasMm": [
-            47.16,
-            53.26
+            47.032,
+            52.79
           ],
-          "frontBackIoU": 0.983,
+          "frontBackIoU": 0.985,
           "sizeMm": [
             52.7,
             46.7
           ],
           "vector": {
-            "epsPx": 0.5,
-            "silhouetteIoU": 0.9989,
-            "inkIoU": 0.9313,
-            "pxOutsideEdge": 0
+            "contract": 2,
+            "dpi": 600
           }
         },
         "borda": {
@@ -583,19 +557,17 @@
           "front": "arts/ogre-baton/borda/frente.svg",
           "back": "arts/ogre-baton/borda/verso.svg",
           "canvasMm": [
-            51.82,
-            55.63
+            51.689,
+            55.118
           ],
-          "frontBackIoU": 0.986,
+          "frontBackIoU": 0.989,
           "sizeMm": [
             55.0,
-            51.4
+            51.5
           ],
           "vector": {
-            "epsPx": 0.5,
-            "silhouetteIoU": 0.9993,
-            "inkIoU": 0.9659,
-            "pxOutsideEdge": 0
+            "contract": 2,
+            "dpi": 600
           }
         }
       },
@@ -633,19 +605,17 @@
           "front": "arts/ogre-axe/fino/frente.svg",
           "back": "arts/ogre-axe/fino/verso.svg",
           "canvasMm": [
-            42.84,
-            52.92
+            42.757,
+            52.578
           ],
-          "frontBackIoU": 0.983,
+          "frontBackIoU": 0.984,
           "sizeMm": [
-            52.4,
-            42.4
+            52.5,
+            42.5
           ],
           "vector": {
-            "epsPx": 0.5,
-            "silhouetteIoU": 0.9991,
-            "inkIoU": 0.9267,
-            "pxOutsideEdge": 0
+            "contract": 2,
+            "dpi": 600
           }
         },
         "borda": {
@@ -658,19 +628,17 @@
           "front": "arts/ogre-axe/borda/frente.svg",
           "back": "arts/ogre-axe/borda/verso.svg",
           "canvasMm": [
-            47.58,
-            55.29
+            47.413,
+            54.906
           ],
-          "frontBackIoU": 0.986,
+          "frontBackIoU": 0.988,
           "sizeMm": [
             54.8,
             47.2
           ],
           "vector": {
-            "epsPx": 0.5,
-            "silhouetteIoU": 0.9995,
-            "inkIoU": 0.963,
-            "pxOutsideEdge": 0
+            "contract": 2,
+            "dpi": 600
           }
         }
       },

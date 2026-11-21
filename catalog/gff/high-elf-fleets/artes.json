@@ -1,0 +1,2577 @@
+{
+ "contrato": 2,
+ "dpi": 600,
+ "packId": "high-elf-fleets",
+ "faccao": "High Elf Fleets",
+ "sistema": "gff",
+ "pdf": {
+  "nome": "High_Elf_Fleets_-_BW.pdf",
+  "sha256": "8134d9f700a8e7a461eea1249c7504857e82938bb08d22d132a322144ac78d6e",
+  "paginas": 72
+ },
+ "manifesto": null,
+ "artes": [
+  {
+   "id": "a001",
+   "candidato": "a001",
+   "rotulo": null,
+   "rotuloImg": "arts/a001/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      45.0,
+      49.064
+     ],
+     "tamanhoMm": [
+      44.79,
+      48.98
+     ],
+     "iouFrenteVerso": 0.976,
+     "pagina": 1,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      49.615,
+      51.393
+     ],
+     "tamanhoMm": [
+      49.45,
+      51.31
+     ],
+     "iouFrenteVerso": 0.982,
+     "pagina": 37,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a002",
+   "candidato": "a002",
+   "rotulo": null,
+   "rotuloImg": "arts/a002/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      42.926,
+      39.666
+     ],
+     "tamanhoMm": [
+      42.71,
+      39.58
+     ],
+     "iouFrenteVerso": 0.937,
+     "pagina": 1,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      47.583,
+      41.995
+     ],
+     "tamanhoMm": [
+      47.37,
+      41.91
+     ],
+     "iouFrenteVerso": 0.962,
+     "pagina": 37,
+     "copias": 1
+    }
+   },
+   "pendencias": [
+    "frente x verso abaixo de 0,95"
+   ]
+  },
+  {
+   "id": "a003",
+   "candidato": "a003",
+   "rotulo": null,
+   "rotuloImg": "arts/a003/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      26.712,
+      34.375
+     ],
+     "tamanhoMm": [
+      26.5,
+      34.29
+     ],
+     "iouFrenteVerso": 0.965,
+     "pagina": 1,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      31.369,
+      36.703
+     ],
+     "tamanhoMm": [
+      31.16,
+      36.62
+     ],
+     "iouFrenteVerso": 0.968,
+     "pagina": 37,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a004",
+   "candidato": "a004",
+   "rotulo": null,
+   "rotuloImg": "arts/a004/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      26.543,
+      34.417
+     ],
+     "tamanhoMm": [
+      26.33,
+      34.33
+     ],
+     "iouFrenteVerso": 0.968,
+     "pagina": 1,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      31.2,
+      36.745
+     ],
+     "tamanhoMm": [
+      30.99,
+      36.66
+     ],
+     "iouFrenteVerso": 0.978,
+     "pagina": 37,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a005",
+   "candidato": "a005",
+   "rotulo": null,
+   "rotuloImg": "arts/a005/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      26.247,
+      34.756
+     ],
+     "tamanhoMm": [
+      26.04,
+      34.67
+     ],
+     "iouFrenteVerso": 0.97,
+     "pagina": 1,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      30.903,
+      37.084
+     ],
+     "tamanhoMm": [
+      30.69,
+      37.0
+     ],
+     "iouFrenteVerso": 0.978,
+     "pagina": 37,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a006",
+   "candidato": "a006",
+   "rotulo": null,
+   "rotuloImg": "arts/a006/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      46.355,
+      36.237
+     ],
+     "tamanhoMm": [
+      46.14,
+      36.15
+     ],
+     "iouFrenteVerso": 0.973,
+     "pagina": 2,
+     "copias": 5
+    },
+    "borda": {
+     "telaMm": [
+      51.012,
+      38.566
+     ],
+     "tamanhoMm": [
+      50.8,
+      38.48
+     ],
+     "iouFrenteVerso": 0.986,
+     "pagina": 38,
+     "copias": 5
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a007",
+   "candidato": "a007",
+   "rotulo": null,
+   "rotuloImg": "arts/a007/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      21.59,
+      37.296
+     ],
+     "tamanhoMm": [
+      21.38,
+      37.21
+     ],
+     "iouFrenteVerso": 0.969,
+     "pagina": 3,
+     "copias": 5
+    },
+    "borda": {
+     "telaMm": [
+      26.247,
+      39.624
+     ],
+     "tamanhoMm": [
+      26.04,
+      39.54
+     ],
+     "iouFrenteVerso": 0.98,
+     "pagina": 39,
+     "copias": 5
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a008",
+   "candidato": "a008",
+   "rotulo": null,
+   "rotuloImg": "arts/a008/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      21.04,
+      32.893
+     ],
+     "tamanhoMm": [
+      20.83,
+      32.81
+     ],
+     "iouFrenteVerso": 0.967,
+     "pagina": 4,
+     "copias": 5
+    },
+    "borda": {
+     "telaMm": [
+      25.696,
+      35.221
+     ],
+     "tamanhoMm": [
+      25.48,
+      35.14
+     ],
+     "iouFrenteVerso": 0.978,
+     "pagina": 40,
+     "copias": 5
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a009",
+   "candidato": "a009",
+   "rotulo": null,
+   "rotuloImg": "arts/a009/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      35.137,
+      29.76
+     ],
+     "tamanhoMm": [
+      34.92,
+      29.68
+     ],
+     "iouFrenteVerso": 0.928,
+     "pagina": 5,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      38.82,
+      31.623
+     ],
+     "tamanhoMm": [
+      38.65,
+      31.54
+     ],
+     "iouFrenteVerso": 0.949,
+     "pagina": 41,
+     "copias": 1
+    }
+   },
+   "pendencias": [
+    "frente x verso abaixo de 0,95"
+   ]
+  },
+  {
+   "id": "a010",
+   "candidato": "a010",
+   "rotulo": null,
+   "rotuloImg": "arts/a010/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      35.772,
+      31.581
+     ],
+     "tamanhoMm": [
+      35.56,
+      31.5
+     ],
+     "iouFrenteVerso": 0.938,
+     "pagina": 5,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      39.497,
+      33.443
+     ],
+     "tamanhoMm": [
+      39.29,
+      33.36
+     ],
+     "iouFrenteVerso": 0.959,
+     "pagina": 41,
+     "copias": 1
+    }
+   },
+   "pendencias": [
+    "frente x verso abaixo de 0,95"
+   ]
+  },
+  {
+   "id": "a011",
+   "candidato": "a011",
+   "rotulo": null,
+   "rotuloImg": "arts/a011/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      35.094,
+      31.792
+     ],
+     "tamanhoMm": [
+      34.88,
+      31.71
+     ],
+     "iouFrenteVerso": 0.963,
+     "pagina": 5,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      38.82,
+      33.655
+     ],
+     "tamanhoMm": [
+      38.61,
+      33.57
+     ],
+     "iouFrenteVerso": 0.976,
+     "pagina": 41,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a012",
+   "candidato": "a012",
+   "rotulo": null,
+   "rotuloImg": "arts/a012/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      35.475,
+      31.538
+     ],
+     "tamanhoMm": [
+      35.26,
+      31.45
+     ],
+     "iouFrenteVerso": 0.943,
+     "pagina": 6,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      39.158,
+      33.401
+     ],
+     "tamanhoMm": [
+      38.99,
+      33.32
+     ],
+     "iouFrenteVerso": 0.955,
+     "pagina": 42,
+     "copias": 1
+    }
+   },
+   "pendencias": [
+    "frente x verso abaixo de 0,95"
+   ]
+  },
+  {
+   "id": "a013",
+   "candidato": "a013",
+   "rotulo": null,
+   "rotuloImg": "arts/a013/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      39.455,
+      31.962
+     ],
+     "tamanhoMm": [
+      39.24,
+      31.88
+     ],
+     "iouFrenteVerso": 0.93,
+     "pagina": 6,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      43.349,
+      33.824
+     ],
+     "tamanhoMm": [
+      42.97,
+      33.74
+     ],
+     "iouFrenteVerso": 0.941,
+     "pagina": 42,
+     "copias": 1
+    }
+   },
+   "pendencias": [
+    "frente x verso abaixo de 0,95"
+   ]
+  },
+  {
+   "id": "a014",
+   "candidato": "a014",
+   "rotulo": null,
+   "rotuloImg": "arts/a014/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      34.967,
+      31.581
+     ],
+     "tamanhoMm": [
+      34.76,
+      31.5
+     ],
+     "iouFrenteVerso": 0.935,
+     "pagina": 6,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      38.693,
+      33.443
+     ],
+     "tamanhoMm": [
+      38.48,
+      33.36
+     ],
+     "iouFrenteVerso": 0.957,
+     "pagina": 42,
+     "copias": 1
+    }
+   },
+   "pendencias": [
+    "frente x verso abaixo de 0,95"
+   ]
+  },
+  {
+   "id": "a015",
+   "candidato": "a015",
+   "rotulo": null,
+   "rotuloImg": "arts/a015/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      30.565,
+      39.624
+     ],
+     "tamanhoMm": [
+      30.35,
+      39.54
+     ],
+     "iouFrenteVerso": 0.982,
+     "pagina": 7,
+     "copias": 5
+    },
+    "borda": {
+     "telaMm": [
+      34.29,
+      41.487
+     ],
+     "tamanhoMm": [
+      34.08,
+      41.4
+     ],
+     "iouFrenteVerso": 0.988,
+     "pagina": 43,
+     "copias": 5
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a016",
+   "candidato": "a016",
+   "rotulo": null,
+   "rotuloImg": "arts/a016/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      22.437,
+      34.205
+     ],
+     "tamanhoMm": [
+      22.22,
+      34.12
+     ],
+     "iouFrenteVerso": 0.971,
+     "pagina": 8,
+     "copias": 3
+    },
+    "borda": {
+     "telaMm": [
+      26.12,
+      36.068
+     ],
+     "tamanhoMm": [
+      25.95,
+      35.98
+     ],
+     "iouFrenteVerso": 0.976,
+     "pagina": 44,
+     "copias": 5
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a017",
+   "candidato": "a017",
+   "rotulo": null,
+   "rotuloImg": "arts/a017/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      22.437,
+      34.205
+     ],
+     "tamanhoMm": [
+      22.22,
+      34.12
+     ],
+     "iouFrenteVerso": 0.971,
+     "pagina": 8,
+     "copias": 2
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo"
+   ]
+  },
+  {
+   "id": "a018",
+   "candidato": "a018",
+   "rotulo": null,
+   "rotuloImg": "arts/a018/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      48.641,
+      45.678
+     ],
+     "tamanhoMm": [
+      48.43,
+      45.59
+     ],
+     "iouFrenteVerso": 0.924,
+     "pagina": 9,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      52.366,
+      47.54
+     ],
+     "tamanhoMm": [
+      52.15,
+      47.46
+     ],
+     "iouFrenteVerso": 0.947,
+     "pagina": 45,
+     "copias": 1
+    }
+   },
+   "pendencias": [
+    "frente x verso abaixo de 0,95"
+   ]
+  },
+  {
+   "id": "a019",
+   "candidato": "a019",
+   "rotulo": null,
+   "rotuloImg": "arts/a019/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      31.411,
+      47.286
+     ],
+     "tamanhoMm": [
+      31.2,
+      47.2
+     ],
+     "iouFrenteVerso": 0.979,
+     "pagina": 9,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      35.137,
+      49.149
+     ],
+     "tamanhoMm": [
+      34.92,
+      49.06
+     ],
+     "iouFrenteVerso": 0.984,
+     "pagina": 45,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a020",
+   "candidato": "a020",
+   "rotulo": null,
+   "rotuloImg": "arts/a020/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      29.93,
+      49.022
+     ],
+     "tamanhoMm": [
+      29.72,
+      48.94
+     ],
+     "iouFrenteVerso": 0.977,
+     "pagina": 9,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      33.655,
+      50.885
+     ],
+     "tamanhoMm": [
+      33.44,
+      50.8
+     ],
+     "iouFrenteVerso": 0.984,
+     "pagina": 45,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a021",
+   "candidato": "a021",
+   "rotulo": null,
+   "rotuloImg": "arts/a021/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      66.082,
+      66.421
+     ],
+     "tamanhoMm": [
+      65.87,
+      66.34
+     ],
+     "iouFrenteVerso": 0.996,
+     "pagina": 9,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      69.808,
+      68.284
+     ],
+     "tamanhoMm": [
+      69.6,
+      68.2
+     ],
+     "iouFrenteVerso": 0.997,
+     "pagina": 45,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a022",
+   "candidato": "a022",
+   "rotulo": null,
+   "rotuloImg": "arts/a022/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      46.143,
+      54.906
+     ],
+     "tamanhoMm": [
+      45.93,
+      54.82
+     ],
+     "iouFrenteVerso": 0.947,
+     "pagina": 10,
+     "copias": 5
+    },
+    "borda": {
+     "telaMm": [
+      49.869,
+      56.769
+     ],
+     "tamanhoMm": [
+      49.66,
+      56.68
+     ],
+     "iouFrenteVerso": 0.964,
+     "pagina": 46,
+     "copias": 5
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a023",
+   "candidato": "a023",
+   "rotulo": null,
+   "rotuloImg": "arts/a023/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      42.164,
+      54.695
+     ],
+     "tamanhoMm": [
+      41.95,
+      54.61
+     ],
+     "iouFrenteVerso": 0.976,
+     "pagina": 11,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      45.889,
+      56.557
+     ],
+     "tamanhoMm": [
+      45.68,
+      56.47
+     ],
+     "iouFrenteVerso": 0.983,
+     "pagina": 47,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a024",
+   "candidato": "a024",
+   "rotulo": null,
+   "rotuloImg": "arts/a024/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      38.735,
+      55.033
+     ],
+     "tamanhoMm": [
+      38.52,
+      54.95
+     ],
+     "iouFrenteVerso": 0.97,
+     "pagina": 11,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      42.46,
+      56.896
+     ],
+     "tamanhoMm": [
+      42.25,
+      56.81
+     ],
+     "iouFrenteVerso": 0.977,
+     "pagina": 47,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a025",
+   "candidato": "a025",
+   "rotulo": null,
+   "rotuloImg": "arts/a025/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      38.735,
+      54.949
+     ],
+     "tamanhoMm": [
+      38.52,
+      54.86
+     ],
+     "iouFrenteVerso": 0.976,
+     "pagina": 11,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      42.46,
+      56.811
+     ],
+     "tamanhoMm": [
+      42.25,
+      56.73
+     ],
+     "iouFrenteVerso": 0.982,
+     "pagina": 47,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a026",
+   "candidato": "a026",
+   "rotulo": null,
+   "rotuloImg": "arts/a026/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      46.905,
+      54.737
+     ],
+     "tamanhoMm": [
+      46.69,
+      54.65
+     ],
+     "iouFrenteVerso": 0.954,
+     "pagina": 11,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      50.377,
+      56.684
+     ],
+     "tamanhoMm": [
+      50.38,
+      56.6
+     ],
+     "iouFrenteVerso": 0.969,
+     "pagina": 47,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a027",
+   "candidato": "a027",
+   "rotulo": null,
+   "rotuloImg": "arts/a027/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      41.233,
+      40.767
+     ],
+     "tamanhoMm": [
+      41.02,
+      40.68
+     ],
+     "iouFrenteVerso": 0.979,
+     "pagina": 12,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      45.974,
+      43.138
+     ],
+     "tamanhoMm": [
+      45.76,
+      43.05
+     ],
+     "iouFrenteVerso": 0.987,
+     "pagina": 48,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a028",
+   "candidato": "a028",
+   "rotulo": null,
+   "rotuloImg": "arts/a028/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      50.461,
+      40.725
+     ],
+     "tamanhoMm": [
+      50.25,
+      40.64
+     ],
+     "iouFrenteVerso": 0.992,
+     "pagina": 12,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      55.203,
+      43.095
+     ],
+     "tamanhoMm": [
+      54.99,
+      43.01
+     ],
+     "iouFrenteVerso": 0.996,
+     "pagina": 48,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a029",
+   "candidato": "a029",
+   "rotulo": null,
+   "rotuloImg": "arts/a029/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      31.496,
+      34.84
+     ],
+     "tamanhoMm": [
+      31.28,
+      34.76
+     ],
+     "iouFrenteVerso": 0.97,
+     "pagina": 13,
+     "copias": 3
+    },
+    "borda": {
+     "telaMm": [
+      36.237,
+      37.211
+     ],
+     "tamanhoMm": [
+      36.03,
+      37.13
+     ],
+     "iouFrenteVerso": 0.932,
+     "pagina": 49,
+     "copias": 3
+    }
+   },
+   "pendencias": [
+    "frente x verso abaixo de 0,95"
+   ]
+  },
+  {
+   "id": "a030",
+   "candidato": "a030",
+   "rotulo": null,
+   "rotuloImg": "arts/a030/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      33.867,
+      36.28
+     ],
+     "tamanhoMm": [
+      33.66,
+      36.2
+     ],
+     "iouFrenteVerso": 0.984,
+     "pagina": 13,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      38.608,
+      38.65
+     ],
+     "tamanhoMm": [
+      38.4,
+      38.57
+     ],
+     "iouFrenteVerso": 0.985,
+     "pagina": 49,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a031",
+   "candidato": "a031",
+   "rotulo": null,
+   "rotuloImg": "arts/a031/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      32.512,
+      39.031
+     ],
+     "tamanhoMm": [
+      32.3,
+      38.95
+     ],
+     "iouFrenteVerso": 0.993,
+     "pagina": 13,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      37.253,
+      41.402
+     ],
+     "tamanhoMm": [
+      37.04,
+      41.32
+     ],
+     "iouFrenteVerso": 0.996,
+     "pagina": 49,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a032",
+   "candidato": "a032",
+   "rotulo": null,
+   "rotuloImg": "arts/a032/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      32.554,
+      37.338
+     ],
+     "tamanhoMm": [
+      32.34,
+      37.25
+     ],
+     "iouFrenteVerso": 0.988,
+     "pagina": 14,
+     "copias": 5
+    },
+    "borda": {
+     "telaMm": [
+      37.296,
+      39.709
+     ],
+     "tamanhoMm": [
+      37.08,
+      39.62
+     ],
+     "iouFrenteVerso": 0.994,
+     "pagina": 50,
+     "copias": 5
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a033",
+   "candidato": "a033",
+   "rotulo": null,
+   "rotuloImg": "arts/a033/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      41.233,
+      39.709
+     ],
+     "tamanhoMm": [
+      41.02,
+      39.62
+     ],
+     "iouFrenteVerso": 0.97,
+     "pagina": 15,
+     "copias": 5
+    },
+    "borda": {
+     "telaMm": [
+      45.974,
+      42.079
+     ],
+     "tamanhoMm": [
+      45.76,
+      41.99
+     ],
+     "iouFrenteVerso": 0.982,
+     "pagina": 51,
+     "copias": 5
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a034",
+   "candidato": "a034",
+   "rotulo": null,
+   "rotuloImg": "arts/a034/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      29.887,
+      34.925
+     ],
+     "tamanhoMm": [
+      29.68,
+      34.84
+     ],
+     "iouFrenteVerso": 0.992,
+     "pagina": 16,
+     "copias": 5
+    },
+    "borda": {
+     "telaMm": [
+      34.629,
+      37.296
+     ],
+     "tamanhoMm": [
+      34.42,
+      37.21
+     ],
+     "iouFrenteVerso": 0.994,
+     "pagina": 52,
+     "copias": 5
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a035",
+   "candidato": "a035",
+   "rotulo": null,
+   "rotuloImg": "arts/a035/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      33.359,
+      41.529
+     ],
+     "tamanhoMm": [
+      33.15,
+      41.44
+     ],
+     "iouFrenteVerso": 0.994,
+     "pagina": 17,
+     "copias": 5
+    },
+    "borda": {
+     "telaMm": [
+      38.1,
+      43.9
+     ],
+     "tamanhoMm": [
+      37.89,
+      43.82
+     ],
+     "iouFrenteVerso": 0.997,
+     "pagina": 53,
+     "copias": 5
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a036",
+   "candidato": "a036",
+   "rotulo": null,
+   "rotuloImg": "arts/a036/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      41.91,
+      40.047
+     ],
+     "tamanhoMm": [
+      41.7,
+      39.96
+     ],
+     "iouFrenteVerso": 0.995,
+     "pagina": 18,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      46.651,
+      42.418
+     ],
+     "tamanhoMm": [
+      46.44,
+      42.33
+     ],
+     "iouFrenteVerso": 0.998,
+     "pagina": 54,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a037",
+   "candidato": "a037",
+   "rotulo": null,
+   "rotuloImg": "arts/a037/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      44.789,
+      38.608
+     ],
+     "tamanhoMm": [
+      44.58,
+      38.52
+     ],
+     "iouFrenteVerso": 0.976,
+     "pagina": 18,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      49.53,
+      40.979
+     ],
+     "tamanhoMm": [
+      49.32,
+      40.89
+     ],
+     "iouFrenteVerso": 0.981,
+     "pagina": 54,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a038",
+   "candidato": "a038",
+   "rotulo": null,
+   "rotuloImg": "arts/a038/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      51.393,
+      41.19
+     ],
+     "tamanhoMm": [
+      51.18,
+      41.11
+     ],
+     "iouFrenteVerso": 0.98,
+     "pagina": 18,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      56.134,
+      43.561
+     ],
+     "tamanhoMm": [
+      55.92,
+      43.48
+     ],
+     "iouFrenteVerso": 0.985,
+     "pagina": 54,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a039",
+   "candidato": "a039",
+   "rotulo": null,
+   "rotuloImg": "arts/a039/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      51.35,
+      42.841
+     ],
+     "tamanhoMm": [
+      51.14,
+      42.76
+     ],
+     "iouFrenteVerso": 0.918,
+     "pagina": 18,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      56.134,
+      45.212
+     ],
+     "tamanhoMm": [
+      55.88,
+      45.13
+     ],
+     "iouFrenteVerso": 0.953,
+     "pagina": 54,
+     "copias": 1
+    }
+   },
+   "pendencias": [
+    "frente x verso abaixo de 0,95"
+   ]
+  },
+  {
+   "id": "a040",
+   "candidato": "a040",
+   "rotulo": null,
+   "rotuloImg": "arts/a040/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      41.402,
+      40.852
+     ],
+     "tamanhoMm": [
+      41.19,
+      40.77
+     ],
+     "iouFrenteVerso": 0.984,
+     "pagina": 19,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      44.958,
+      42.63
+     ],
+     "tamanhoMm": [
+      44.75,
+      42.54
+     ],
+     "iouFrenteVerso": 0.988,
+     "pagina": 55,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a041",
+   "candidato": "a041",
+   "rotulo": null,
+   "rotuloImg": "arts/a041/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      24.215,
+      43.688
+     ],
+     "tamanhoMm": [
+      24.0,
+      43.6
+     ],
+     "iouFrenteVerso": 0.976,
+     "pagina": 19,
+     "copias": 3
+    },
+    "borda": {
+     "telaMm": [
+      27.728,
+      45.466
+     ],
+     "tamanhoMm": [
+      27.56,
+      45.38
+     ],
+     "iouFrenteVerso": 0.98,
+     "pagina": 55,
+     "copias": 3
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a042",
+   "candidato": "a042",
+   "rotulo": null,
+   "rotuloImg": "arts/a042/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      62.78,
+      37.253
+     ],
+     "tamanhoMm": [
+      62.53,
+      37.08
+     ],
+     "iouFrenteVerso": 0.997,
+     "pagina": 20,
+     "copias": 1
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo"
+   ]
+  },
+  {
+   "id": "a043",
+   "candidato": "a043",
+   "rotulo": null,
+   "rotuloImg": "arts/a043/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      28.49,
+      43.603
+     ],
+     "tamanhoMm": [
+      28.28,
+      43.52
+     ],
+     "iouFrenteVerso": 0.985,
+     "pagina": 20,
+     "copias": 3
+    },
+    "borda": {
+     "telaMm": [
+      32.046,
+      45.381
+     ],
+     "tamanhoMm": [
+      31.83,
+      45.3
+     ],
+     "iouFrenteVerso": 0.984,
+     "pagina": 56,
+     "copias": 3
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a044",
+   "candidato": "a044",
+   "rotulo": null,
+   "rotuloImg": "arts/a044/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      60.833,
+      31.877
+     ],
+     "tamanhoMm": [
+      60.62,
+      31.71
+     ],
+     "iouFrenteVerso": 0.997,
+     "pagina": 21,
+     "copias": 3
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo"
+   ]
+  },
+  {
+   "id": "a045",
+   "candidato": "a045",
+   "rotulo": null,
+   "rotuloImg": "arts/a045/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      65.701,
+      30.522
+     ],
+     "tamanhoMm": [
+      65.49,
+      30.35
+     ],
+     "iouFrenteVerso": 0.996,
+     "pagina": 22,
+     "copias": 3
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo"
+   ]
+  },
+  {
+   "id": "a046",
+   "candidato": "a046",
+   "rotulo": null,
+   "rotuloImg": "arts/a046/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      59.097,
+      39.539
+     ],
+     "tamanhoMm": [
+      58.89,
+      39.37
+     ],
+     "iouFrenteVerso": 0.996,
+     "pagina": 23,
+     "copias": 3
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo"
+   ]
+  },
+  {
+   "id": "a047",
+   "candidato": "a047",
+   "rotulo": null,
+   "rotuloImg": "arts/a047/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      58.801,
+      39.37
+     ],
+     "tamanhoMm": [
+      58.59,
+      39.2
+     ],
+     "iouFrenteVerso": 0.996,
+     "pagina": 24,
+     "copias": 3
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo"
+   ]
+  },
+  {
+   "id": "a048",
+   "candidato": "a048",
+   "rotulo": null,
+   "rotuloImg": "arts/a048/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      56.684,
+      31.75
+     ],
+     "tamanhoMm": [
+      56.47,
+      31.58
+     ],
+     "iouFrenteVerso": 0.997,
+     "pagina": 25,
+     "copias": 3
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo"
+   ]
+  },
+  {
+   "id": "a049",
+   "candidato": "a049",
+   "rotulo": null,
+   "rotuloImg": "arts/a049/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      72.983,
+      47.625
+     ],
+     "tamanhoMm": [
+      72.73,
+      47.46
+     ],
+     "iouFrenteVerso": 0.997,
+     "pagina": 26,
+     "copias": 3
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo"
+   ]
+  },
+  {
+   "id": "a050",
+   "candidato": "a050",
+   "rotulo": null,
+   "rotuloImg": "arts/a050/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      62.272,
+      47.329
+     ],
+     "tamanhoMm": [
+      62.06,
+      47.16
+     ],
+     "iouFrenteVerso": 0.997,
+     "pagina": 27,
+     "copias": 3
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo"
+   ]
+  },
+  {
+   "id": "a051",
+   "candidato": "a051",
+   "rotulo": null,
+   "rotuloImg": "arts/a051/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      28.152,
+      36.026
+     ],
+     "tamanhoMm": [
+      27.94,
+      35.94
+     ],
+     "iouFrenteVerso": 0.977,
+     "pagina": 28,
+     "copias": 5
+    },
+    "borda": {
+     "telaMm": [
+      31.877,
+      37.888
+     ],
+     "tamanhoMm": [
+      31.67,
+      37.8
+     ],
+     "iouFrenteVerso": 0.984,
+     "pagina": 64,
+     "copias": 5
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a052",
+   "candidato": "a052",
+   "rotulo": null,
+   "rotuloImg": "arts/a052/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      42.587,
+      34.84
+     ],
+     "tamanhoMm": [
+      42.38,
+      34.76
+     ],
+     "iouFrenteVerso": 0.993,
+     "pagina": 29,
+     "copias": 5
+    },
+    "borda": {
+     "telaMm": [
+      46.313,
+      36.703
+     ],
+     "tamanhoMm": [
+      46.1,
+      36.62
+     ],
+     "iouFrenteVerso": 0.995,
+     "pagina": 65,
+     "copias": 5
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a053",
+   "candidato": "a053",
+   "rotulo": null,
+   "rotuloImg": "arts/a053/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      43.688,
+      40.894
+     ],
+     "tamanhoMm": [
+      43.48,
+      40.81
+     ],
+     "iouFrenteVerso": 0.994,
+     "pagina": 30,
+     "copias": 5
+    },
+    "borda": {
+     "telaMm": [
+      47.413,
+      42.757
+     ],
+     "tamanhoMm": [
+      47.2,
+      42.67
+     ],
+     "iouFrenteVerso": 0.994,
+     "pagina": 66,
+     "copias": 5
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a054",
+   "candidato": "a054",
+   "rotulo": null,
+   "rotuloImg": "arts/a054/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      29.549,
+      48.302
+     ],
+     "tamanhoMm": [
+      29.34,
+      48.22
+     ],
+     "iouFrenteVerso": 0.948,
+     "pagina": 31,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      33.274,
+      50.165
+     ],
+     "tamanhoMm": [
+      33.06,
+      50.08
+     ],
+     "iouFrenteVerso": 0.958,
+     "pagina": 67,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a055",
+   "candidato": "a055",
+   "rotulo": null,
+   "rotuloImg": "arts/a055/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      45.551,
+      46.609
+     ],
+     "tamanhoMm": [
+      45.34,
+      46.52
+     ],
+     "iouFrenteVerso": 0.98,
+     "pagina": 31,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      49.276,
+      48.472
+     ],
+     "tamanhoMm": [
+      49.06,
+      48.39
+     ],
+     "iouFrenteVerso": 0.985,
+     "pagina": 67,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a056",
+   "candidato": "a056",
+   "rotulo": null,
+   "rotuloImg": "arts/a056/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      32.554,
+      47.879
+     ],
+     "tamanhoMm": [
+      32.34,
+      47.79
+     ],
+     "iouFrenteVerso": 0.968,
+     "pagina": 31,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      36.28,
+      49.742
+     ],
+     "tamanhoMm": [
+      36.07,
+      49.66
+     ],
+     "iouFrenteVerso": 0.975,
+     "pagina": 67,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a057",
+   "candidato": "a057",
+   "rotulo": null,
+   "rotuloImg": "arts/a057/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      40.471,
+      41.317
+     ],
+     "tamanhoMm": [
+      40.26,
+      41.23
+     ],
+     "iouFrenteVerso": 0.984,
+     "pagina": 31,
+     "copias": 1
+    },
+    "borda": {
+     "telaMm": [
+      44.196,
+      43.18
+     ],
+     "tamanhoMm": [
+      43.98,
+      43.1
+     ],
+     "iouFrenteVerso": 0.986,
+     "pagina": 67,
+     "copias": 1
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a058",
+   "candidato": "a058",
+   "rotulo": null,
+   "rotuloImg": "arts/a058/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      42.63,
+      51.985
+     ],
+     "tamanhoMm": [
+      42.42,
+      51.9
+     ],
+     "iouFrenteVerso": 0.988,
+     "pagina": 32,
+     "copias": 3
+    },
+    "borda": {
+     "telaMm": [
+      46.355,
+      53.848
+     ],
+     "tamanhoMm": [
+      46.14,
+      53.76
+     ],
+     "iouFrenteVerso": 0.992,
+     "pagina": 68,
+     "copias": 3
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a059",
+   "candidato": "a059",
+   "rotulo": null,
+   "rotuloImg": "arts/a059/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      61.849,
+      53.933
+     ],
+     "tamanhoMm": [
+      61.64,
+      53.85
+     ],
+     "iouFrenteVerso": 0.984,
+     "pagina": 33,
+     "copias": 3
+    },
+    "borda": {
+     "telaMm": [
+      65.574,
+      55.795
+     ],
+     "tamanhoMm": [
+      65.36,
+      55.71
+     ],
+     "iouFrenteVerso": 0.987,
+     "pagina": 69,
+     "copias": 3
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a060",
+   "candidato": "a060",
+   "rotulo": null,
+   "rotuloImg": "arts/a060/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      59.817,
+      50.334
+     ],
+     "tamanhoMm": [
+      59.61,
+      50.25
+     ],
+     "iouFrenteVerso": 0.989,
+     "pagina": 34,
+     "copias": 3
+    },
+    "borda": {
+     "telaMm": [
+      63.542,
+      52.197
+     ],
+     "tamanhoMm": [
+      63.33,
+      52.11
+     ],
+     "iouFrenteVerso": 0.992,
+     "pagina": 70,
+     "copias": 3
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a061",
+   "candidato": "a061",
+   "rotulo": null,
+   "rotuloImg": "arts/a061/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      37.423,
+      51.435
+     ],
+     "tamanhoMm": [
+      37.21,
+      51.35
+     ],
+     "iouFrenteVerso": 0.981,
+     "pagina": 35,
+     "copias": 3
+    },
+    "borda": {
+     "telaMm": [
+      41.148,
+      53.298
+     ],
+     "tamanhoMm": [
+      40.94,
+      53.21
+     ],
+     "iouFrenteVerso": 0.985,
+     "pagina": 71,
+     "copias": 3
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a062",
+   "candidato": "a062",
+   "rotulo": null,
+   "rotuloImg": "arts/a062/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "fino": {
+     "telaMm": [
+      40.936,
+      51.731
+     ],
+     "tamanhoMm": [
+      40.72,
+      51.65
+     ],
+     "iouFrenteVerso": 0.981,
+     "pagina": 36,
+     "copias": 3
+    },
+    "borda": {
+     "telaMm": [
+      44.662,
+      53.594
+     ],
+     "tamanhoMm": [
+      44.45,
+      53.51
+     ],
+     "iouFrenteVerso": 0.984,
+     "pagina": 72,
+     "copias": 3
+    }
+   },
+   "pendencias": []
+  },
+  {
+   "id": "a063",
+   "candidato": "a063",
+   "rotulo": null,
+   "rotuloImg": "arts/a063/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "borda": {
+     "telaMm": [
+      66.336,
+      45.805
+     ],
+     "tamanhoMm": [
+      66.12,
+      45.72
+     ],
+     "iouFrenteVerso": 0.988,
+     "pagina": 56,
+     "copias": 1
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo"
+   ]
+  },
+  {
+   "id": "a064",
+   "candidato": "a064",
+   "rotulo": null,
+   "rotuloImg": "arts/a064/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "borda": {
+     "telaMm": [
+      64.347,
+      43.646
+     ],
+     "tamanhoMm": [
+      64.18,
+      43.56
+     ],
+     "iouFrenteVerso": 0.759,
+     "pagina": 57,
+     "copias": 3
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo",
+    "frente x verso abaixo de 0,95"
+   ]
+  },
+  {
+   "id": "a065",
+   "candidato": "a065",
+   "rotulo": null,
+   "rotuloImg": "arts/a065/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "borda": {
+     "telaMm": [
+      69.257,
+      43.773
+     ],
+     "tamanhoMm": [
+      69.05,
+      43.69
+     ],
+     "iouFrenteVerso": 0.998,
+     "pagina": 58,
+     "copias": 3
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo"
+   ]
+  },
+  {
+   "id": "a066",
+   "candidato": "a066",
+   "rotulo": null,
+   "rotuloImg": "arts/a066/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "borda": {
+     "telaMm": [
+      62.653,
+      47.921
+     ],
+     "tamanhoMm": [
+      62.44,
+      47.84
+     ],
+     "iouFrenteVerso": 0.991,
+     "pagina": 59,
+     "copias": 3
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo"
+   ]
+  },
+  {
+   "id": "a067",
+   "candidato": "a067",
+   "rotulo": null,
+   "rotuloImg": "arts/a067/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "borda": {
+     "telaMm": [
+      62.357,
+      47.964
+     ],
+     "tamanhoMm": [
+      62.15,
+      47.88
+     ],
+     "iouFrenteVerso": 0.997,
+     "pagina": 60,
+     "copias": 3
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo"
+   ]
+  },
+  {
+   "id": "a068",
+   "candidato": "a068",
+   "rotulo": null,
+   "rotuloImg": "arts/a068/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "borda": {
+     "telaMm": [
+      60.198,
+      46.694
+     ],
+     "tamanhoMm": [
+      60.03,
+      46.61
+     ],
+     "iouFrenteVerso": 0.998,
+     "pagina": 61,
+     "copias": 3
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo"
+   ]
+  },
+  {
+   "id": "a069",
+   "candidato": "a069",
+   "rotulo": null,
+   "rotuloImg": "arts/a069/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "borda": {
+     "telaMm": [
+      76.496,
+      62.823
+     ],
+     "tamanhoMm": [
+      76.28,
+      62.74
+     ],
+     "iouFrenteVerso": 0.997,
+     "pagina": 62,
+     "copias": 3
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo"
+   ]
+  },
+  {
+   "id": "a070",
+   "candidato": "a070",
+   "rotulo": null,
+   "rotuloImg": "arts/a070/rotulo.png",
+   "unitKey": null,
+   "equipmentTags": [],
+   "cosmetic": null,
+   "status": "nao-revisada",
+   "estilos": {
+    "borda": {
+     "telaMm": [
+      65.828,
+      62.611
+     ],
+     "tamanhoMm": [
+      65.62,
+      62.53
+     ],
+     "iouFrenteVerso": 0.993,
+     "pagina": 63,
+     "copias": 3
+    }
+   },
+   "pendencias": [
+    "sem par no outro estilo"
+   ]
+  }
+ ]
+}
