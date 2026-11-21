@@ -71,3 +71,7 @@ O usuário pediu a peça em preto, com branco só onde precisa, e uma Infantry p
 ## 21/11/2026 — uma unidade por placa
 
 O usuário decidiu manter o bico 0,2 e pediu o 3MF com uma unidade por placa, com as bases (D037). Virou o padrão do gerador. Medido pela CLI na lista completa: 6 placas e 48 trocas, 17,4 h no total, contra 13,6 h numa placa só; a diferença é a purga das trocas repetidas em cada placa. Saídas regeradas.
+
+## 21/11/2026 — bases descolando
+
+O usuário perdeu 4 bases e 1 Biker, descolados no meio da impressão da lista completa. O 3MF trazia "Cool Plate" (padrão da exportação pela CLI) e o G-code aquecia a mesa a 35 °C; o modelo A1 usa Textured PEI, com 65 °C para o PLA Basic. O gerador passou a gravar o tipo de placa padrão da impressora e a centralizar as peças na mesa. Saídas regeradas; G-code conferido com `M190 S65`.

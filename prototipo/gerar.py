@@ -802,7 +802,27 @@ def empacotar(pecas, P, reservado=None):
         x += w + P.espaco
         alt_linha = max(alt_linha, h)
     placas.append(atual)
-    return placas
+    return [centralizar(pl, P, reservado) for pl in placas]
+
+
+def centralizar(placa, P, reservado=None):
+    """Leva o conjunto de peças para o centro da mesa, longe das bordas (21/11: bases descolaram
+    na impressão; a causa principal era a mesa a 35 °C, ver perfil_bambu). Se o centro bater na
+    área da torre, aproxima de volta da frente até não bater."""
+    if not placa:
+        return placa
+    x0 = min(p[1] for p in placa); y0 = min(p[2] for p in placa)
+    x1 = max(p[1] + p[3] for p in placa); y1 = max(p[2] + p[4] for p in placa)
+    dx = max(0.0, P.mesa / 2 - (x0 + x1) / 2)
+    dy0 = max(0.0, P.mesa / 2 - (y0 + y1) / 2)
+    bate = lambda dy: reservado is not None and any(not (
+        x + dx + w <= reservado[0] or x + dx >= reservado[2] or y + dy + h <= reservado[1] or y + dy >= reservado[3])
+        for _, x, y, w, h in placa)
+    for passo in range(21):
+        dy = dy0 * (1 - passo / 20)
+        if not bate(dy):
+            return [(k, x + dx, y + dy, w, h) for k, x, y, w, h in placa]
+    return placa
 
 
 # ---------------------------------------------------------------- prévias

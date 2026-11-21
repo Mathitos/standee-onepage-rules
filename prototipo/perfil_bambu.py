@@ -13,6 +13,11 @@ Como é gerado, com o Bambu Studio instalado (observado em 17-18/11, versão 02.
   cores ficam branco (1) e preto (2).
 O resultado fica em cache em prototipo/.cache/ (fora do git: são valores dos perfis do Bambu).
 Volumes de purga são suposição (o Bambu recalcula em "Flushing volumes").
+
+Tipo de placa (21/11/2026): a exportação pela CLI sai com curr_bed_type = "Cool Plate", e a
+mesa ia a 35 °C com PLA (M190 S35 no G-code). O usuário perdeu 4 bases e 1 figura descoladas no
+meio da impressão. Agora vale o default_bed_type do modelo da impressora (A1: "Textured PEI
+Plate", 65 °C com PLA Basic).
 """
 import json
 import subprocess
@@ -71,11 +76,26 @@ def _cubo_3mf(caminho):
         z.writestr('3D/3dmodel.model', modelo)
 
 
+def placa_padrao(maquina):
+    """Tipo de placa padrão do modelo da impressora (ex.: A1 -> "Textured PEI Plate")."""
+    modelo = resolver('machine', maquina).get('printer_model')
+    arq = PERFIS / 'machine' / f'{modelo}.json'
+    return json.loads(arq.read_text(encoding='utf-8')).get('default_bed_type') if modelo and arq.exists() else None
+
+
 def project_settings(maquina, processo, filamento, usar_cache=True):
     """project_settings.config (dict) com 2 filamentos, branco e preto, para esses perfis.
 
     Retorna (config, quantas chaves vieram do perfil resolvido).
     """
+    config, trocados = _project_settings(maquina, processo, filamento, usar_cache)
+    placa = placa_padrao(maquina)
+    if placa:
+        config['curr_bed_type'] = placa
+    return config, trocados
+
+
+def _project_settings(maquina, processo, filamento, usar_cache=True):
     chave = f'{maquina}|{processo}|{filamento}'.replace('@', '').replace(' ', '_').replace('|', '__')
     arq = CACHE / f'project_settings-{chave}.json'
     if usar_cache and arq.exists():
