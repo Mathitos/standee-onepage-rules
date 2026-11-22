@@ -589,6 +589,26 @@ button.cartao-arte:hover {
   margin-top: 12px;
 }
 
+.pronto > .botoes {
+  margin-top: 0;
+}
+
+.saida h3 {
+  margin: 16px 0 6px;
+  font-size: 1.05rem;
+}
+
+.saida + .saida {
+  border-top: 1px dashed var(--linha);
+  margin-top: 16px;
+}
+
+a.botao.secundario {
+  background: transparent;
+  color: var(--texto);
+  border: 1px solid var(--linha);
+}
+
 a.botao {
   display: inline-block;
   background: var(--acento);

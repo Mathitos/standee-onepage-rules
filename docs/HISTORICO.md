@@ -93,3 +93,7 @@ O usuário pediu os army books das outras 21 facções, para o site gerar só a 
 ## 21/11/2026 (noite) — volta às duas metades
 
 O usuário imprimiu a peça única pintada e reprovou a qualidade; pediu para voltar às duas metades coladas e um teste com duas versões da Infantry, uma por placa: desenho só na primeira camada e branco em relevo. Gerado `saidas/teste-duas-metades/projeto-duas-metades-fino.3mf` (pintado com `--face-mm 0.1` e branco em relevo, cada um com a sua base); o gerador passou a separar em placas os acabamentos diferentes da mesma unidade. Fatiado pela CLI: 4 trocas e 56 min; 9 trocas e 88 min. Não impresso. O site continua gerando a peça única até o resultado (D041).
+
+## 22/11/2026 — standees de papel em A4
+
+O usuário pediu para imprimir a lista também em papel A4, nas medidas certas e com várias minis por folha. A etapa 3 do site ganhou "Papel A4 (PDF)": uma faixa dobrável por modelo, no formato do PDF da OPR (aba, frente, verso girado 180°, aba), em pé, várias por folha e na escala do PDF a 100% (D044). O PDF é escrito no navegador, sem dependência nova. A lista piloto coube em 2 folhas; medida num leitor independente, a Infantry tem a mesma largura do PDF da OPR e 0,17 mm a menos de altura, diferença que já vem do SVG do catálogo. O site gerou o PDF da lista de exemplo sem erro, no desktop e a 375 px. Falta imprimir em papel. Outra sessão registrou ao mesmo tempo o teste da mola como D043.

@@ -14,7 +14,7 @@ Usuário inicial: hobbyista com impressora FDM e, opcionalmente, sistema multico
 4. Exibir uma linha por variante com imagem de frente e verso, quantidade, base e estado da associação.
 5. Resolver associações ausentes/ambíguas: escolher a variante substituta vendo a imagem (D013) e distribuir poses entre cópias.
 6. Escolher o estilo da arte (contorno fino ou borda grossa, D012), ajustar parâmetros de impressão e conferir frente, verso e encaixe.
-7. Gerar, acompanhar progresso e baixar 3MF Bambu ou ZIP com STL.
+7. Gerar, acompanhar progresso e baixar 3MF Bambu ou ZIP com STL, ou um PDF A4 com as faixas de papel da lista, em tamanho real (D044).
 
 ## Requisitos funcionais
 

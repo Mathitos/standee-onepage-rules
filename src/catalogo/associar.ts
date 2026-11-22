@@ -10,6 +10,7 @@
 import type { NormalizedArmyList, UnitGroup } from '../armyforge/types'
 import type { BaseSpec } from '../gerador/base'
 import type { ModeloPedido } from '../gerador/gerar'
+import type { ModeloPapel } from '../papel/folhas'
 import { normalizar } from './carregar'
 import type { ManifestoFaccao } from './tipos'
 
@@ -81,18 +82,30 @@ export function resolvida(p: PlanoUnidade): boolean {
  * os números baterem com a lista).
  */
 export function modelosDoPlano(plano: PlanoUnidade[]): { modelos: ModeloPedido[]; omitidas: string[] } {
-  const modelos: ModeloPedido[] = []
+  return percorrer(plano, resolvida, (p, numero, qtd, arte) => ({ unidade: p.unidade.name, numero, qtd, arte, base: p.base! }))
+}
+
+/**
+ * Modelos para as folhas de papel (D044): só a arte importa, então unidade sem base escolhida
+ * entra; sem arte, fica de fora. Mesma numeração do 3MF.
+ */
+export function modelosParaPapel(plano: PlanoUnidade[]): { modelos: ModeloPapel[]; omitidas: string[] } {
+  return percorrer(plano, (p) => p.variantes.every((v) => !!v.arte), (p, numero, qtd, arte) => ({ unidade: p.unidade.name, numero, qtd, arte }))
+}
+
+function percorrer<T>(
+  plano: PlanoUnidade[], ok: (p: PlanoUnidade) => boolean, fazer: (p: PlanoUnidade, numero: number, qtd: number, arte: string) => T,
+): { modelos: T[]; omitidas: string[] } {
+  const modelos: T[] = []
   const omitidas: string[] = []
   let numero = 1
   for (const p of plano) {
-    const ok = resolvida(p)
-    if (!ok) omitidas.push(p.unidade.name)
+    const pronta = ok(p)
+    if (!pronta) omitidas.push(p.unidade.name)
     for (let c = 0; c < p.unidade.copies; c++, numero++) {
-      if (!ok) continue
+      if (!pronta) continue
       p.unidade.variants.forEach((v, i) => {
-        if (v.modelsPerUnit > 0) {
-          modelos.push({ unidade: p.unidade.name, numero, qtd: v.modelsPerUnit, arte: p.variantes[i].arte!, base: p.base! })
-        }
+        if (v.modelsPerUnit > 0) modelos.push(fazer(p, numero, v.modelsPerUnit, p.variantes[i].arte!))
       })
     }
   }

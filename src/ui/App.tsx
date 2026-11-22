@@ -100,7 +100,7 @@ export function App() {
       {lista && lista.units.length > 0 && <EtapaArtes lista={lista} />}
 
       <footer className="rodape">
-        Tudo roda neste navegador: a lista, as artes escolhidas e a geração do 3MF não saem do seu computador. Artes dos
+        Tudo roda neste navegador: a lista, as artes escolhidas e a geração do 3MF e do PDF não saem do seu computador. Artes dos
         paper minis da One Page Rules; listas do Army Forge.
       </footer>
     </div>

@@ -19,6 +19,9 @@ declare module 'opentype.js' {
     ascender: number
     descender: number
     charToGlyph(c: string): Glyph
+    /** contorno do texto, y para baixo, linha de base em y (folhas de papel) */
+    getPath(text: string, x: number, y: number, fontSize: number): { commands: PathCommand[] }
+    getAdvanceWidth(text: string, fontSize: number): number
   }
   export function parse(buffer: ArrayBuffer): Font
 }

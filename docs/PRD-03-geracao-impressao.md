@@ -87,6 +87,8 @@ STL: uma malha por peça (cada metade separada), monocromática, em mm, nomeada 
 
 3MF Bambu: componentes nomeados (modelo, metade, cor), filamento por parte, cópias e bases; disposição sem sobreposição, dentro da mesa e com a área da torre de purga livre. Reutilizar malhas nas cópias. Organizar múltiplas placas quando necessário. Um projeto só, com figuras e bases em placas diferentes (D026), e `project_settings.config` da impressora/bico escolhidos (sem ele o Bambu carrega só a geometria); sem comandos de impressão. A estrutura precisa seguir a do próprio Bambu Studio (ids globais, UUIDs no padrão, `model_settings.config` com filamento por parte); detalhes e testes em `evidencias/2026-11-17-geracao-piloto.md`. Placa de bases numa cor só, sem torre; placa de figuras com a área da torre livre.
 
+Papel A4 (PDF, D044): uma faixa dobrável por modelo, no formato do PDF da OPR (aba com rótulo, frente em pé, verso girado 180°, aba), várias por folha, na escala do PDF a 100%. Abas de 20 mm, célula = figura + 5,5 mm, largura = figura + 5,5 mm de cada lado (mínimo 30 mm). Corte em linha cheia, dobra tracejada; rodapé com instrução de imprimir em tamanho real e régua de 50 mm. Arte alta demais encolhe folga e abas com aviso, nunca a figura. A base não entra no papel.
+
 Manifesto: peças por modelo, estilo, substituições escolhidas e, no modo duas metades, instruções de montagem.
 
 Projeto local: parâmetros, texto importado, IDs/versões dos assets, associações, estilos, substituições e overrides suficientes para regenerar; imagens podem acompanhar exportação pessoal opcional.
