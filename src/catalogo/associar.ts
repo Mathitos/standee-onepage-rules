@@ -86,11 +86,11 @@ export function modelosDoPlano(plano: PlanoUnidade[]): { modelos: ModeloPedido[]
 }
 
 /**
- * Modelos para as folhas de papel (D044): só a arte importa, então unidade sem base escolhida
- * entra; sem arte, fica de fora. Mesma numeração do 3MF.
+ * Modelos para as folhas de papel (D044): a arte é obrigatória; a base, não (sem ela, as abas
+ * saem retangulares, como no PDF da OPR). Mesma numeração do 3MF.
  */
 export function modelosParaPapel(plano: PlanoUnidade[]): { modelos: ModeloPapel[]; omitidas: string[] } {
-  return percorrer(plano, (p) => p.variantes.every((v) => !!v.arte), (p, numero, qtd, arte) => ({ unidade: p.unidade.name, numero, qtd, arte }))
+  return percorrer(plano, (p) => p.variantes.every((v) => !!v.arte), (p, numero, qtd, arte) => ({ unidade: p.unidade.name, numero, qtd, arte, base: p.base }))
 }
 
 function percorrer<T>(

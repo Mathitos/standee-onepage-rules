@@ -37,7 +37,7 @@ export function EtapaGerar(props: { lista: NormalizedArmyList; plano: PlanoUnida
   const totalModelos = modelos.reduce((s, m) => s + m.qtd, 0)
   const podeGerar = modelos.length > 0 && (omitidas.length === 0 || soResolvidas)
   const ocupado = estado.fase === 'preparando' || estado.fase === 'gerando'
-  // no papel a base não importa (D044): só fica de fora a unidade sem arte
+  // no papel a base é opcional (D044): sem ela, abas retangulares; só fica de fora a unidade sem arte
   const doPapel = modelosParaPapel(props.plano)
   const totalPapel = doPapel.modelos.reduce((s, m) => s + m.qtd, 0)
   const podePapel = doPapel.modelos.length > 0 && (doPapel.omitidas.length === 0 || soResolvidas) && papel.fase !== 'gerando'
@@ -113,8 +113,8 @@ export function EtapaGerar(props: { lista: NormalizedArmyList; plano: PlanoUnida
             Sem arte ou base escolhida: <b>{omitidas.join(', ')}</b>.
             {doPapel.omitidas.length < omitidas.length &&
               (doPapel.omitidas.length
-                ? ` No papel a base não importa: só ${doPapel.omitidas.join(', ')} fica de fora.`
-                : ' No papel a base não importa: todas entram.')}
+                ? ` No papel, sem base, as abas saem retangulares: só ${doPapel.omitidas.join(', ')} fica de fora.`
+                : ' No papel, sem base, as abas saem retangulares: todas entram.')}
           </p>
           <label>
             <input type="checkbox" checked={soResolvidas} onChange={(e) => setSoResolvidas(e.target.checked)} /> gerar só as
@@ -197,7 +197,8 @@ export function EtapaGerar(props: { lista: NormalizedArmyList; plano: PlanoUnida
         <h3 id="titulo-papel">Papel A4 (PDF)</h3>
         <p className="ajuda">
           Uma faixa por modelo, como no PDF da OPR, em tamanho real (a mesma escala do PDF impresso a 100%) e várias por folha. Recorte
-          na linha cheia, dobre nas tracejadas e cole a frente no verso. Na impressão, escolha <b>tamanho real</b> ou escala 100%, não
+          na linha cheia, dobre nas tracejadas e cole a frente no verso; as duas abas, dobradas para fora, formam a base da unidade na
+          medida do army book. Na impressão, escolha <b>tamanho real</b> ou escala 100%, não
           “ajustar à página”, e confira a régua de 50 mm no rodapé.
         </p>
         <div className="botoes">
