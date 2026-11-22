@@ -1,0 +1,46 @@
+{
+  "descricao": "Teste de duas metades (pedido do usuário em 21/11/2026, depois da peça única sair com qualidade ruim): Infantry Rifle em duas versões, uma por placa, cada uma com a sua base. Placa 1: desenho só na primeira camada (acabamento pintado com --face-mm 0.1 = a primeira camada do perfil de bico 0,2; metade preta, branco só nas áreas brancas do desenho). Placa 2: branco em relevo.",
+  "pdf": {
+    "caminho": "C:/Users/Matheus/Downloads/Human_Defense_Force_-_BW.pdf",
+    "sha256": "b17c9ba4f73f8f5c1a2aca045526f3e7009b06e8113b653f6f4cf3a0ddd719fc"
+  },
+  "artes": {
+    "infantry-rifle": {
+      "rotulo": "Infantry Rifle",
+      "pagina": {
+        "fino": 6,
+        "borda": 36
+      },
+      "linha": 0
+    }
+  },
+  "bases": {
+    "redonda-25": {
+      "forma": "redonda",
+      "mm": [
+        25
+      ],
+      "fonte": "Army Forge v3.6.0, 17/11/2026"
+    }
+  },
+  "modelos": [
+    {
+      "unidade": "Infantry Squad",
+      "numero": 1,
+      "equipamento": "Battle Rifle, Strike",
+      "qtd": 1,
+      "arte": "infantry-rifle",
+      "base": "redonda-25",
+      "acabamento": "pintado"
+    },
+    {
+      "unidade": "Infantry Squad",
+      "numero": 1,
+      "equipamento": "Battle Rifle, Strike",
+      "qtd": 1,
+      "arte": "infantry-rifle",
+      "base": "redonda-25",
+      "acabamento": "branco-relevo"
+    }
+  ]
+}

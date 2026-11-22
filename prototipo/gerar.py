@@ -1080,17 +1080,24 @@ def main():
                                        and (not duas or P.lateral_preta > 0))
     com_bases = {'Bases', 'Figuras e bases'}
     if P.placas == 'unidade':
-        # D037: uma unidade por placa, figuras e bases juntas, na ordem do número da unidade
+        # D037: uma unidade por placa, figuras e bases juntas, na ordem do número da unidade.
+        # Acabamentos diferentes da mesma unidade vão em placas separadas (com as bases dos seus
+        # modelos): misturados, cada camada teria as duas cores
         por_un = {}
         for m in lista['modelos']:
-            g = por_un.setdefault((m['numero'], m['unidade']), [])
+            g = por_un.setdefault((m['numero'], m['unidade'], acab_de(m)), [])
             for i in range(m['qtd']):
                 for lado in (('frente', 'verso') if duas else ('peca',)):
                     g.append((f'{m["arte"]}-{acab_de(m)}-{lado}', *artes[m['arte']]['peca_mm']))
                 kb = chave_base(m, P, duas)
                 g.append((kb, *bases_def[kb]['dim_mm']))
-        grupos_fig = [(f'{n} {u}', empacotar(g, P, reservado=P.torre_xyxy_bases))
-                      for (n, u), g in sorted(por_un.items(), key=lambda kv: kv[0][0])]
+        n_acab = {}
+        for n, u, ac in por_un:
+            n_acab[(n, u)] = n_acab.get((n, u), 0) + 1
+        # ordem: número da unidade; dentro dela, a ordem dos modelos na lista
+        grupos_fig = [(f'{n} {u}' + (f' - {ACABAMENTOS[ac]}' if n_acab[(n, u)] > 1 else ''),
+                       empacotar(g, P, reservado=P.torre_xyxy_bases))
+                      for (n, u, ac), g in sorted(por_un.items(), key=lambda kv: kv[0][0])]
         com_bases |= {nome for nome, _ in grupos_fig}
         placas_base = []
     elif junto:

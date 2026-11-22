@@ -13,5 +13,6 @@ Não é o site. Serve para validar geometria, formato 3MF e fatiamento antes do 
 | `lista-piloto.json` | Lista piloto resolvida, com as substituições de teste marcadas |
 | `lista-teste-peca-unica.json` | Teste de impressão: 1 miniatura de cada arte em peça única sem relevo (D032) |
 | `lista-teste-acabamento.json` | Teste de impressão: 1 miniatura de cada arte e a Infantry Rifle nos três acabamentos (campo `acabamento` por modelo) |
+| `lista-teste-duas-metades.json` | Teste de 21/11: Infantry Rifle em duas metades, pintado (com `--face-mm 0.1`, desenho só na primeira camada) e branco em relevo; com `--placas unidade`, cada acabamento da mesma unidade vai numa placa própria, com a sua base |
 
 Comandos e resultados: `docs/evidencias/2026-11-17-geracao-piloto.md`. Python: `C:/Users/Matheus/AppData/Local/Python/pythoncore-3.14-64/python.exe -I` (com `manifold3d`).
