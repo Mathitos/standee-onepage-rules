@@ -339,6 +339,7 @@
   },
   "a017": {
    "artId": "warrior-spine-gun-2",
+   "copiaDe": "warrior-spine-gun-1",
    "rotulo": "Warrior Spine Gun",
    "confiancaRotulo": "alta",
    "unitKey": "hive-warrior",

@@ -407,6 +407,7 @@
   },
   "a021": {
    "artId": "gecko-pistol-2",
+   "copiaDe": "gecko-pistol",
    "rotulo": "Gecko Pistol",
    "confiancaRotulo": "alta",
    "unitKey": "gecko-cohort",

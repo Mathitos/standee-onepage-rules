@@ -3,7 +3,7 @@ import { useRef, useState } from 'react'
 import type { NormalizedArmyList } from '../armyforge/types'
 import { modelosDoPlano, modelosParaPapel, type PlanoUnidade } from '../catalogo/associar'
 import { estiloDisponivel, texto, urlArte } from '../catalogo/carregar'
-import type { ArtesFaccao, Estilo, FaccaoIndice } from '../catalogo/tipos'
+import type { ArtesFaccao, Estilo, FaccaoIndice, ManifestoFaccao } from '../catalogo/tipos'
 import { gerarNoWorker, type Geracao } from '../gerador/cliente'
 import type { ArtePedido, Resultado } from '../gerador/gerar'
 import type { ResultadoPapel } from '../papel/folhas'
@@ -29,6 +29,8 @@ export function EtapaGerar(props: {
   plano: PlanoUnidade[]
   faccao: FaccaoIndice
   artes: ArtesFaccao
+  /** para alternar as poses de cada variante (posesDa) */
+  manifesto: ManifestoFaccao | null
   estilo: Estilo
   /** artes enviadas pelo usuário: já vêm como SVG do contrato v2 */
   enviadas: Enviada[]
@@ -44,12 +46,12 @@ export function EtapaGerar(props: {
   const [papel, setPapel] = useState<EstadoPapel>({ fase: 'parado' })
   const geracao = useRef<Geracao | null>(null)
 
-  const { modelos, omitidas } = modelosDoPlano(props.plano)
+  const { modelos, omitidas } = modelosDoPlano(props.plano, props.manifesto)
   const totalModelos = modelos.reduce((s, m) => s + m.qtd, 0)
   const podeGerar = modelos.length > 0 && (omitidas.length === 0 || soResolvidas)
   const ocupado = estado.fase === 'preparando' || estado.fase === 'gerando'
   // no papel a base é opcional (D044): sem ela, abas retangulares; só fica de fora a unidade sem arte
-  const doPapel = modelosParaPapel(props.plano)
+  const doPapel = modelosParaPapel(props.plano, props.manifesto)
   const totalPapel = doPapel.modelos.reduce((s, m) => s + m.qtd, 0)
   const podePapel = doPapel.modelos.length > 0 && (doPapel.omitidas.length === 0 || soResolvidas) && papel.fase !== 'gerando'
   const nomeLista = (props.lista.header?.armyName ?? 'standees').toLowerCase().replace(/[^a-z0-9]+/g, '-')
@@ -144,7 +146,7 @@ export function EtapaGerar(props: {
         <h3 id="titulo-3mf">Impressão 3D (3MF)</h3>
         <p className="ajuda">
           {modo === 'duas-metades'
-            ? 'Cada figura em duas metades (corpo branco, desenho preto em relevo), para colar costas com costas; a lingueta das metades coladas entra na fenda reta da base preta, que também as alinha na colagem.'
+            ? `Cada figura em duas metades (${miolo === 'preto' ? 'corpo preto, branco só na face de cima' : 'corpo branco'}, desenho preto em relevo), para colar costas com costas; a lingueta das metades coladas entra na fenda reta da base preta, que também as alinha na colagem. Quando a unidade alterna poses, cada metade leva o número da pose em fenda na face de colar.`
             : 'Peça única pintada (desenho nas duas faces), na fenda reta da base preta.'}{' '}
           Uma placa por unidade e, no fim, a lista completa junta (em quantas placas forem precisas), com o perfil da Bambu Lab A1
           (filamento 1 branco, filamento 2 preto, Textured PEI).
@@ -174,15 +176,13 @@ export function EtapaGerar(props: {
               <option value="0.4">0,4 mm</option>
             </select>
           </label>
-          {modo === 'peca-unica' && (
-            <label>
-              Miolo{' '}
-              <select value={miolo} onChange={(e) => setMiolo(e.target.value as 'preto' | 'branco')}>
-                <option value="preto">preto (branco só no desenho)</option>
-                <option value="branco">branco</option>
-              </select>
-            </label>
-          )}
+          <label title="Preto: as duas cores só se encontram nas camadas do branco, e não em todas">
+            Miolo{' '}
+            <select value={miolo} onChange={(e) => setMiolo(e.target.value as 'preto' | 'branco')}>
+              <option value="preto">{modo === 'peca-unica' ? 'preto (branco só no desenho)' : 'preto (branco só na face)'}</option>
+              <option value="branco">branco</option>
+            </select>
+          </label>
         </div>
         <div className="botoes">
           <button type="button" onClick={iniciar} disabled={!podeGerar || ocupado}>

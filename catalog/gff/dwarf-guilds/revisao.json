@@ -1236,6 +1236,7 @@
   },
   "a067": {
    "artId": "biker-shotgun-2",
+   "copiaDe": "biker-shotgun",
    "rotulo": "Biker Shotgun",
    "confiancaRotulo": "alta",
    "unitKey": "dwarf-biker",

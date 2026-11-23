@@ -4864,6 +4864,7 @@
     },
     {
       "artId": "biker-shotgun-2",
+      "copiaDe": "biker-shotgun",
       "candidateId": "a067",
       "pdfLabel": "Biker Shotgun",
       "labelSource": "agent-vision",

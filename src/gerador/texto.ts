@@ -147,6 +147,25 @@ export function textoNaBorda(
   }
 }
 
+/**
+ * Texto curto numa linha reta, com letras de `altura` mm (a altura das maiúsculas, como na borda
+ * da base), centrado na origem pela caixa dos glifos. Serve ao número da pose nas metades.
+ */
+export function textoReto(w: ManifoldToplevel, fonte: Font, texto: string, altura: number): CrossSection {
+  const corpo = altura / 0.72
+  const espaco = 0.06 * altura
+  let x = 0
+  const pecas: CrossSection[] = []
+  for (const ch of texto) {
+    const g = glifo(fonte, ch, corpo)
+    if (g.polys.length) pecas.push(w.CrossSection.ofPolygons(g.polys.map((p) => p.map(([a, b]) => [a + x, b] as Vec2)), 'EvenOdd'))
+    x += g.adv + espaco
+  }
+  const cs = w.CrossSection.union(pecas)
+  const b = cs.bounds()
+  return cs.translate([-(b.min[0] + b.max[0]) / 2, -(b.min[1] + b.max[1]) / 2])
+}
+
 /** numpy searchsorted (lado esquerdo): primeiro índice com s[i] >= v. */
 function busca(s: Float64Array, v: number): number {
   let lo = 0

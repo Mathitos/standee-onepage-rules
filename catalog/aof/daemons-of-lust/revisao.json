@@ -67,6 +67,7 @@
   },
   "a002": {
    "artId": "warrior-axe-copia",
+   "copiaDe": "warrior-axe",
    "rotulo": "Warrior Axe",
    "confiancaRotulo": "alta",
    "unitKey": "lust-warriors",

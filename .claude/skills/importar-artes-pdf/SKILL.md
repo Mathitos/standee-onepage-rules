@@ -100,6 +100,7 @@ Leia cada `work/rotulos-NN.png` (Read). Cada quadro traz o id do candidato (`a00
 - Poses de comando/apoio sem arma própria (Sergeant, Banner, Medic, Radio): `"cosmetic": "sergeant"` etc.
 - Arte sem unidade ou arma correspondente (ex.: "OGRE Minigun" quando o army book só tem Gatling Gun): `"status": "unmapped"`, `unitKey` da unidade se ela existir; o site oferece a arte como substituta (D013).
 - Candidato que não é arte (falso positivo): `{"ignorar": true}`.
+- Cópia da mesma figura que o recorte não juntou, com os dois estilos e o mesmo rótulo de outra arte: `"copiaDe": "<artId da original>"`. O site alterna as poses de cada unidade (V1, V2...) entre os modelos; a cópia marcada não conta como pose. Arte de um estilo só com o rótulo de outra do grupo já é tratada como a mesma figura, sem marca. Figuras diferentes com o mesmo rótulo (variantes de cabeça, por exemplo) ficam sem marca.
 - Pode revisar em partes; candidatos ainda não revisados ficam fora do manifesto e listados no relatório.
 - Confira enquanto escreve, sem gravar nada: `montar.py --saida … --so-validar` (aponta tags fora do army book, ids inexistentes, slugs repetidos e candidatos sem revisão).
 

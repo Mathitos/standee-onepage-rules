@@ -6,9 +6,11 @@
  * de 600 dpi do SVG, com os centros nos inteiros.
  */
 import type { CrossSection, Manifold, ManifoldToplevel, Vec2 } from 'manifold-3d'
+import type { Font } from 'opentype.js'
 import type { Malha } from './manifold'
 import { S, meioEntrePx, type Parametros } from './parametros'
 import type { FaceSvg, Poligono } from './svg'
+import { textoReto } from './texto'
 
 export interface Parte {
   malha: Manifold
@@ -175,32 +177,87 @@ export interface Metade {
 }
 
 /**
- * Duas metades em preto em relevo (D041/D045), port de prototipo metade(): corpo branco de
- * P.corpo e desenho preto em relevo de P.relevo em cima, nunca além da borda do corpo. A face
- * da mesa é a da cola; impressas assim, as duas metades coladas costas com costas mostram a
- * frente e o verso. A frente fica como no SVG; a metade do verso tem o contorno da frente
- * espelhado, porque o SVG do verso já vem alinhado à frente espelhada. A lingueta e a barra
- * ficam nas duas metades, sem relevo: coladas, a lingueta tem 2 x P.corpo e entra na fenda.
+ * Duas metades em preto em relevo (D041/D045), port de prototipo metade(): corpo de P.corpo e
+ * desenho preto em relevo de P.relevo em cima, nunca além da borda do corpo. Miolo preto (pedido
+ * do usuário em 23/11, como a D036): o corpo é preto e o branco fica só na face de cima
+ * (P.camadaMesa) dentro da silhueta da arte, embaixo do relevo; a barra e a lingueta ficam
+ * pretas. Assim as duas cores só se encontram nessas camadas, em vez de em todas (o branco com a
+ * lateral preta da D034). Miolo branco: o corpo branco da D046. A face da mesa é a da cola;
+ * impressas assim, as duas metades coladas costas com costas mostram a frente e o verso. A frente
+ * fica como no SVG; a metade do verso tem o contorno da frente espelhado, porque o SVG do verso já
+ * vem alinhado à frente espelhada. A lingueta e a barra ficam nas duas metades, sem relevo:
+ * coladas, a lingueta tem 2 x P.corpo e entra na fenda. Com `numero`, cada metade leva o número
+ * da pose em fenda na face da cola (fendaDoNumero).
  */
-export function metadesPretoRelevo(w: ManifoldToplevel, frente: FaceSvg, verso: FaceSvg, P: Parametros) {
+export function metadesPretoRelevo(
+  w: ManifoldToplevel, frente: FaceSvg, verso: FaceSvg, P: Parametros, numero: { fonte: Font; texto: string } | null = null,
+) {
   const { largura: W, altura: H } = frente
   if (verso.largura !== W || verso.altura !== H) throw new Error('frente e verso com telas diferentes')
   const silF = secao(w, frente.silhueta, H)
   const { corpo: corpoF, medidas } = corpoComLingueta(w, silF, H, P)
   const espelhar = (cs: CrossSection) => cs.mirror([1, 0]).translate([(W - 1) * S, 0])
   const { Manifold } = w
+  const lugar = numero ? lugarDoNumero(w, silF, numero.fonte, numero.texto, P) : null
   const metades: Metade[] = []
-  for (const [lado, contorno, tinta] of [
-    ['frente', corpoF, secao(w, frente.tinta, H)],
-    ['verso', espelhar(corpoF), secao(w, verso.tinta, H)],
+  for (const [lado, contorno, sil, tinta] of [
+    ['frente', corpoF, silF, secao(w, frente.tinta, H)],
+    ['verso', espelhar(corpoF), espelhar(silF), secao(w, verso.tinta, H)],
   ] as const) {
-    const partes: Parte[] = [
-      { malha: Manifold.extrude(contorno, P.corpo), cor: 0, rotulo: 'Branco - corpo' },
-      { malha: Manifold.extrude(tinta.intersect(contorno), P.relevo).translate([0, 0, P.corpo]), cor: 1, rotulo: 'Preto - relevo' },
-    ]
+    const relevo: Parte = { malha: Manifold.extrude(tinta.intersect(contorno), P.relevo).translate([0, 0, P.corpo]), cor: 1, rotulo: 'Preto - relevo' }
+    let partes: Parte[]
+    if (P.miolo === 'preto') {
+      const face = Manifold.extrude(sil.intersect(contorno), P.camadaMesa).translate([0, 0, P.corpo - P.camadaMesa])
+      partes = [
+        { malha: Manifold.extrude(contorno, P.corpo).subtract(face), cor: 1, rotulo: 'Preto - corpo' },
+        { malha: face, cor: 0, rotulo: 'Branco - face' },
+        relevo,
+      ]
+    } else {
+      partes = [{ malha: Manifold.extrude(contorno, P.corpo), cor: 0, rotulo: 'Branco - corpo' }, relevo]
+    }
+    if (lugar) {
+      // a metade do verso é a frente espelhada: o número vai no lugar espelhado, de novo espelhado para ser lido por baixo
+      const [cx, cy] = lado === 'frente' ? lugar.centro : [(W - 1) * S - lugar.centro[0], lugar.centro[1]]
+      const fenda = Manifold.extrude(lugar.glifos.mirror([1, 0]).translate([cx, cy]), P.poseFenda)
+      partes = partes.map((p) => (p.malha.boundingBox().min[2] < P.poseFenda ? { ...p, malha: p.malha.subtract(fenda) } : p))
+    }
     metades.push({ lado, partes: fecharPeca(w, partes, contorno, P) })
   }
-  return { metades, medidas }
+  return { metades, medidas, numero: lugar ? { texto: numero!.texto, alturaMm: lugar.alturaMm } : null }
+}
+
+/**
+ * Lugar do número da pose (pedido do usuário em 23/11: "um número em fenda nas primeiras
+ * camadas, para evitar troca de filamento"): na face da mesa de cada metade, que é a da cola e
+ * fica escondida depois de colada, com P.poseFenda mm de fundo. Vai no ponto da silhueta mais
+ * longe da borda (o meio do maior círculo que cabe nela, recuada P.poseMargem), com letras de
+ * P.poseAltura mm, menores se o círculo em volta do número não couber, até P.poseMin; abaixo
+ * disso, a figura fica sem número (null). Devolve os glifos centrados na origem, sem espelhar.
+ */
+export function lugarDoNumero(w: ManifoldToplevel, sil: CrossSection, fonte: Font, texto: string, P: Parametros) {
+  const regiao = sil.offset(-P.poseMargem, 'Round')
+  if (regiao.isEmpty()) return null
+  const b = regiao.bounds()
+  // raio do maior círculo dentro da região, por bisseção (lo nunca esvazia a região)
+  let lo = 0
+  let hi = Math.min(b.max[0] - b.min[0], b.max[1] - b.min[1]) / 2
+  for (let i = 0; i < 14; i++) {
+    const m = (lo + hi) / 2
+    if (regiao.offset(-m, 'Round').isEmpty()) hi = m
+    else lo = m
+  }
+  const glifos0 = textoReto(w, fonte, texto, P.poseAltura)
+  const g = glifos0.bounds()
+  const raio = Math.hypot(g.max[0] - g.min[0], g.max[1] - g.min[1]) / 2
+  const escala = Math.min(1, (0.98 * lo) / raio)
+  if (P.poseAltura * escala < P.poseMin) return null
+  // o maior pedaço da região recuada quase até o fim; todo ponto dele deixa o número inteiro dentro
+  const fundo = regiao.offset(-Math.max(raio * escala, 0.9 * lo), 'Round').decompose().sort((x, y) => y.area() - x.area())[0]
+  const fb = fundo.bounds()
+  let centro: Vec2 = [(fb.min[0] + fb.max[0]) / 2, (fb.min[1] + fb.max[1]) / 2]
+  if (fundo.intersect(w.CrossSection.square(0.01, true).translate(centro)).area() <= 0) centro = fundo.toPolygons()[0][0]
+  return { centro, glifos: glifos0.scale(escala), alturaMm: Math.round(P.poseAltura * escala * 10) / 10 }
 }
 
 /**

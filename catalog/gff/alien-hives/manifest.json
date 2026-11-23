@@ -1419,6 +1419,7 @@
     },
     {
       "artId": "warrior-spine-gun-2",
+      "copiaDe": "warrior-spine-gun-1",
       "candidateId": "a017",
       "pdfLabel": "Warrior Spine Gun",
       "labelSource": "agent-vision",

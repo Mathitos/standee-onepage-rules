@@ -109,24 +109,68 @@ export function resolvida(p: PlanoUnidade): boolean {
 }
 
 /**
+ * Poses da arte (pedido do usuário em 23/11): as figuras diferentes que o catálogo tem para a
+ * mesma unidade, as mesmas armas e o mesmo cosmético, como "Assault Grunt V1" e "V2", na ordem do
+ * manifesto. Não contam como pose as cópias da mesma figura: a marcada com `copiaDe` na revisão
+ * (cópia que o recorte não juntou) e a arte de um estilo só com o rótulo de outra do grupo (a
+ * mesma figura impressa no outro estilo, como "hunter-sword-a043", só borda grossa). Arte sem
+ * correspondência (unmapped), enviada ou fora do manifesto tem uma pose só: ela mesma.
+ * Devolve as poses começando pela arte escolhida e o número de cada uma (1, 2...), que é a
+ * ordem no catálogo e não muda com a escolha.
+ */
+export function posesDa(arte: string, manifesto: ManifestoFaccao | null): { arte: string; numero: number }[] {
+  const so = [{ arte, numero: 1 }]
+  const a = manifesto?.arts.find((x) => x.artId === arte)
+  if (!manifesto || !a || !a.unitKey || a.mappingStatus === 'unmapped') return so
+  const armas = (x: ManifestoArte) => x.equipmentTags.map(normalizar).sort().join('\u0000')
+  const grupo = manifesto.arts.filter((x) =>
+    x.unitKey === a.unitKey && x.cosmetic === a.cosmetic && x.mappingStatus !== 'unmapped' && armas(x) === armas(a))
+  const figuras: { arte: string; rotulo: string; estilos: Set<string>; membros: string[] }[] = []
+  for (const x of grupo) {
+    if (x.copiaDe) {
+      figuras.find((f) => f.membros.includes(x.copiaDe!))?.membros.push(x.artId)
+      continue
+    }
+    const est = new Set(Object.keys(x.styles ?? {}))
+    const mesma = est.size === 1 && figuras.find((f) => f.rotulo === x.pdfLabel && (f.estilos.size === 2 || ![...est].some((e) => f.estilos.has(e))))
+    if (mesma) {
+      est.forEach((e) => mesma.estilos.add(e))
+      mesma.membros.push(x.artId)
+    } else {
+      figuras.push({ arte: x.artId, rotulo: x.pdfLabel, estilos: est, membros: [x.artId] })
+    }
+  }
+  const i = figuras.findIndex((f) => f.membros.includes(arte))
+  if (figuras.length < 2 || i < 0) return so
+  const poses = figuras.map((f, k) => ({ arte: k === i ? arte : f.arte, numero: k + 1 }))
+  return [...poses.slice(i), ...poses.slice(0, i)]
+}
+
+type ManifestoArte = ManifestoFaccao['arts'][number]
+
+/**
  * Modelos para o gerador. Numeração na ordem da lista, com "2x" como duas unidades (D035):
  * 2x Veterans viram 3 e 4. Unidades não resolvidas ficam de fora (e numeradas mesmo assim, para
- * os números baterem com a lista).
+ * os números baterem com a lista). Com o manifesto, os modelos de cada variante alternam entre as
+ * poses da arte (posesDa): 5 Assault Grunts saem V1, V2, V1, V2, V1, e cada metade leva o número
+ * da pose.
  */
-export function modelosDoPlano(plano: PlanoUnidade[]): { modelos: ModeloPedido[]; omitidas: string[] } {
-  return percorrer(plano, resolvida, (p, numero, qtd, arte) => ({ unidade: p.unidade.name, numero, qtd, arte, base: p.base! }))
+export function modelosDoPlano(plano: PlanoUnidade[], manifesto: ManifestoFaccao | null = null): { modelos: ModeloPedido[]; omitidas: string[] } {
+  return percorrer(plano, resolvida, manifesto, (p, numero, qtd, arte, pose) =>
+    ({ unidade: p.unidade.name, numero, qtd, arte, base: p.base!, ...(pose ? { pose } : {}) }))
 }
 
 /**
  * Modelos para as folhas de papel (D044): a arte é obrigatória; a base, não (sem ela, as abas
- * saem retangulares, como no PDF da OPR). Mesma numeração do 3MF.
+ * saem retangulares, como no PDF da OPR). Mesma numeração e mesmas poses do 3MF.
  */
-export function modelosParaPapel(plano: PlanoUnidade[]): { modelos: ModeloPapel[]; omitidas: string[] } {
-  return percorrer(plano, (p) => p.variantes.every((v) => !!v.arte), (p, numero, qtd, arte) => ({ unidade: p.unidade.name, numero, qtd, arte, base: p.base }))
+export function modelosParaPapel(plano: PlanoUnidade[], manifesto: ManifestoFaccao | null = null): { modelos: ModeloPapel[]; omitidas: string[] } {
+  return percorrer(plano, (p) => p.variantes.every((v) => !!v.arte), manifesto, (p, numero, qtd, arte) => ({ unidade: p.unidade.name, numero, qtd, arte, base: p.base }))
 }
 
 function percorrer<T>(
-  plano: PlanoUnidade[], ok: (p: PlanoUnidade) => boolean, fazer: (p: PlanoUnidade, numero: number, qtd: number, arte: string) => T,
+  plano: PlanoUnidade[], ok: (p: PlanoUnidade) => boolean, manifesto: ManifestoFaccao | null,
+  fazer: (p: PlanoUnidade, numero: number, qtd: number, arte: string, pose: number | null) => T,
 ): { modelos: T[]; omitidas: string[] } {
   const modelos: T[] = []
   const omitidas: string[] = []
@@ -137,7 +181,19 @@ function percorrer<T>(
     for (let c = 0; c < p.unidade.copies; c++, numero++) {
       if (!pronta) continue
       p.unidade.variants.forEach((v, i) => {
-        if (v.modelsPerUnit > 0) modelos.push(fazer(p, numero, v.modelsPerUnit, p.variantes[i].arte!))
+        if (v.modelsPerUnit <= 0) return
+        const poses = posesDa(p.variantes[i].arte!, manifesto)
+        if (poses.length < 2) {
+          modelos.push(fazer(p, numero, v.modelsPerUnit, p.variantes[i].arte!, null))
+          return
+        }
+        // o modelo j fica com a pose j mod k, contando também pelas cópias ("2x"): dois heróis de
+        // um modelo saem um com cada pose
+        const qtd = poses.map(() => 0)
+        for (let j = 0; j < v.modelsPerUnit; j++) qtd[(c * v.modelsPerUnit + j) % poses.length]++
+        poses.forEach((ps, t) => {
+          if (qtd[t] > 0) modelos.push(fazer(p, numero, qtd[t], ps.arte, ps.numero))
+        })
       })
     }
   }

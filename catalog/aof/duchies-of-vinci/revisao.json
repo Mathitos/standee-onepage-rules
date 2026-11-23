@@ -371,6 +371,7 @@
   },
   "a019": {
    "artId": "city-guard-crossbow-v1-a019",
+   "copiaDe": "city-guard-crossbow-v1",
    "rotulo": "City Guard Crossbow (V1)",
    "confiancaRotulo": "alta",
    "unitKey": "city-guard",
@@ -384,6 +385,7 @@
   },
   "a020": {
    "artId": "city-guard-crossbow-v2-a020",
+   "copiaDe": "city-guard-crossbow-v2",
    "rotulo": "City Guard Crossbow (V2)",
    "confiancaRotulo": "alta",
    "unitKey": "city-guard",

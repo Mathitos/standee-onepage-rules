@@ -1494,6 +1494,7 @@
     },
     {
       "artId": "city-guard-crossbow-v1-a019",
+      "copiaDe": "city-guard-crossbow-v1",
       "candidateId": "a019",
       "pdfLabel": "City Guard Crossbow (V1)",
       "labelSource": "agent-vision",
@@ -1560,6 +1561,7 @@
     },
     {
       "artId": "city-guard-crossbow-v2-a020",
+      "copiaDe": "city-guard-crossbow-v2",
       "candidateId": "a020",
       "pdfLabel": "City Guard Crossbow (V2)",
       "labelSource": "agent-vision",

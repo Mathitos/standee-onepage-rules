@@ -246,6 +246,7 @@
   },
   "a009": {
    "artId": "warrior-sword-copia-2",
+   "copiaDe": "warrior-sword",
    "rotulo": "Warrior Sword",
    "confiancaRotulo": "alta",
    "unitKey": "skeleton-warriors",

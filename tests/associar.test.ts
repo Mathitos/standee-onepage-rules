@@ -2,7 +2,7 @@ import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { parseShareText } from '../src/armyforge/parseShareText'
-import { manterEscolhas, modelosDoPlano, modelosParaPapel, resolvida, sugerir } from '../src/catalogo/associar'
+import { manterEscolhas, modelosDoPlano, modelosParaPapel, posesDa, resolvida, sugerir } from '../src/catalogo/associar'
 import { basesDosArmyBooks, type LivroArmyForge } from '../src/catalogo/basesArmyBook'
 import { faccaoDaLista } from '../src/catalogo/carregar'
 import type { ManifestoFaccao } from '../src/catalogo/tipos'
@@ -196,5 +196,56 @@ describe('Atualizar a lista mantém as escolhas feitas à mão', () => {
     const outra = ['Grunt Veteran [1] Q4+ D5+ | 45pts | Hero, Tough(3)', 'Heavy Razor Claws (A4)', '']
     const depois = manterEscolhas(sugerir(texto(outra), manifestoAH, basesAH), antes)
     expect(depois[0].variantes[0].origem).not.toBe('usuario')
+  })
+})
+
+describe('poses alternadas (pedido de 23/11)', () => {
+  const man = (pasta: string) => JSON.parse(readFileSync(join(RAIZ, 'catalog', pasta, 'manifest.json'), 'utf8')) as ManifestoFaccao
+  const manifestoAH = man('gff/alien-hives')
+  const ids = (arte: string, m: ManifestoFaccao) => posesDa(arte, m).map((p) => [p.arte, p.numero])
+
+  it('acha as poses do catálogo, começando pela escolhida e com o número fixo de cada uma', () => {
+    expect(ids('assault-grunt-v1', manifestoAH)).toEqual([['assault-grunt-v1', 1], ['assault-grunt-v2', 2]])
+    expect(ids('assault-grunt-v2', manifestoAH)).toEqual([['assault-grunt-v2', 2], ['assault-grunt-v1', 1]])
+    expect(ids('snatcher-v1', manifestoAH)).toEqual([['snatcher-v1', 1], ['snatcher-v2', 2]])
+    // variantes de cabeça com o mesmo rótulo são poses; os drones A, B e C vêm em artes de um estilo só
+    expect(ids('ninja-sword-a', man('gff/eternal-dynasty')).map(([a]) => a)).toEqual(['ninja-sword-a', 'ninja-sword-b', 'ninja-sword-c'])
+    expect(ids('drone-a', man('gff/eternal-dynasty')).map(([a]) => a)).toEqual(['drone-a', 'drone-b', 'drone-c'])
+  })
+
+  it('cópia da mesma figura não é pose: marcada (copiaDe) ou de um estilo só com o rótulo de outra', () => {
+    expect(ids('warrior-spine-gun-1', manifestoAH)).toEqual([['warrior-spine-gun-1', 1]])
+    expect(ids('spores', manifestoAH)).toEqual([['spores', 1]])
+    expect(ids('hunter-sword-a043', man('aof/beastmen'))).toEqual([['hunter-sword-a043', 1]])
+    // escolhida a cópia de borda grossa da Ver. 1, ela fica no lugar da Ver. 1
+    expect(ids('hound-ver-1-borda', man('aof/daemons-of-war'))).toEqual([['hound-ver-1-borda', 1], ['hound-ver-2', 2]])
+  })
+
+  it('arte sem correspondência, enviada ou sem manifesto tem uma pose só', () => {
+    expect(ids('warrior-barb-gun', manifestoAH)).toEqual([['warrior-barb-gun', 1]])
+    expect(ids('enviada-1', manifestoAH)).toEqual([['enviada-1', 1]])
+    expect(posesDa('assault-grunt-v1', null)).toEqual([{ arte: 'assault-grunt-v1', numero: 1 }])
+  })
+
+  it('alterna as poses entre os modelos, contando pelas cópias ("2x"), no 3MF e no papel', () => {
+    const lista = parseShareText([
+      '++ Alien Hives (v3.6.0) [GFF 300pts] [3 Units] ++', '',
+      'Spores [3] Q6+ D6+ | 30pts | 3x Fearless', '3x Strike (A1)', '',
+      '2x Assault Grunts [3] Q5+ D5+ | 60pts | 3x Furious', '3x Razor Claws (A3)', '',
+      'Shooter Grunts [5] Q5+ D5+ | 60pts | 5x Fearless', '5x Spike-Shooter (18", A3), 5x Claws (A1)',
+    ].join('\n'))
+    const plano = sugerir(lista, manifestoAH)
+    expect(plano.map((p) => p.variantes[0].arte)).toEqual(['spores', 'assault-grunt-v1', 'shooter-grunt-v1'])
+    const { modelos } = modelosDoPlano(plano, manifestoAH)
+    expect(modelos.map((m) => [m.numero, m.arte, m.qtd, m.pose ?? null])).toEqual([
+      [1, 'spores', 3, null],
+      [2, 'assault-grunt-v1', 2, 1], [2, 'assault-grunt-v2', 1, 2],
+      [3, 'assault-grunt-v1', 1, 1], [3, 'assault-grunt-v2', 2, 2],
+      [4, 'shooter-grunt-v1', 3, 1], [4, 'shooter-grunt-v2', 2, 2],
+    ])
+    expect(modelosParaPapel(plano, manifestoAH).modelos.map((m) => [m.arte, m.qtd])).toEqual(modelos.map((m) => [m.arte, m.qtd]))
+    // sem o manifesto, como antes: uma arte por variante
+    expect(modelosDoPlano(plano).modelos.map((m) => [m.numero, m.arte, m.qtd])).toEqual([
+      [1, 'spores', 3], [2, 'assault-grunt-v1', 3], [3, 'assault-grunt-v1', 3], [4, 'shooter-grunt-v1', 5]])
   })
 })

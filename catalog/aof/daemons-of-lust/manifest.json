@@ -231,6 +231,7 @@
     },
     {
       "artId": "warrior-axe-copia",
+      "copiaDe": "warrior-axe",
       "candidateId": "a002",
       "pdfLabel": "Warrior Axe",
       "labelSource": "agent-vision",

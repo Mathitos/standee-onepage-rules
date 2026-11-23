@@ -1,7 +1,7 @@
 /**
  * Parâmetros do gerador do site: o caminho padrão do protótipo (prototipo/gerar.py) que o
- * usuário imprime hoje — duas metades coladas (D041) em preto em relevo (D045), lateral preta
- * (D034), base com fenda retangular (D042, mantida depois do teste da mola, D043; a cônica da
+ * usuário imprime hoje — duas metades coladas (D041) em preto em relevo (D045), miolo preto
+ * com o branco só na face (D048), lateral preta (D034), base com fenda retangular (D042, mantida depois do teste da mola, D043; a cônica da
  * D031 fica como opção), nome e número na base (D022/D027/D035), uma unidade por placa (D037),
  * perfil da A1 embutido (D026) e paredes Arachne (D025). A peça única pintada (D032, miolo
  * preto da D036) fica como opção. Valores e nomes seguem `Param` do protótipo.
@@ -22,10 +22,29 @@ export interface Parametros {
   corpo: number
   /** altura do desenho preto em relevo sobre cada metade */
   relevo: number
-  /** peça única: espessura do desenho rente em cada face (--face-mm) */
+  /**
+   * espessura do branco com miolo preto: na peça única, o desenho rente em cada face (--face-mm);
+   * nas metades, a face branca sob o relevo
+   */
   camadaMesa: number
-  /** peça única: preto (D036), branco só nas áreas brancas do desenho; branco: miolo branco */
+  /**
+   * preto (padrão): peça preta e branco só onde precisa. Na peça única (D036), nas áreas brancas
+   * do desenho; nas metades (pedido do usuário em 23/11), na face de cima, dentro da silhueta.
+   * branco: miolo branco (nas metades, o corpo branco da D046, com as duas cores em toda camada)
+   */
   miolo: 'preto' | 'branco'
+  /**
+   * número da pose em fenda na face da cola de cada metade, quando a arte tem mais de uma pose
+   * (pedido do usuário em 23/11): para casar frente e verso na montagem, sem troca de filamento
+   */
+  poseNaMetade: boolean
+  /** altura do número da pose; menor se não couber, até poseMin */
+  poseAltura: number
+  poseMin: number
+  /** fundo da fenda do número: as primeiras camadas */
+  poseFenda: number
+  /** distância mínima do número à borda da figura */
+  poseMargem: number
   /** retangular (D042): uma lingueta reta numa fenda reta; conico (D031): duas cônicas */
   encaixeBase: 'retangular' | 'conico'
   /** retangular: largura da lingueta */
@@ -77,6 +96,11 @@ export const PADRAO: Parametros = {
   relevo: 0.4,
   camadaMesa: 0.4,
   miolo: 'preto',
+  poseNaMetade: true,
+  poseAltura: 4.0,
+  poseMin: 2.5,
+  poseFenda: 0.4,
+  poseMargem: 1.0,
   encaixeBase: 'retangular',
   linguetaRetLarg: 6.0,
   folgaLarg: 0.3,

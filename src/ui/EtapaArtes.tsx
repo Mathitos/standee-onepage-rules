@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { NormalizedArmyList } from '../armyforge/types'
-import { manterEscolhas, resolvida, sugerir, type PlanoUnidade } from '../catalogo/associar'
+import { manterEscolhas, posesDa, resolvida, sugerir, type PlanoUnidade } from '../catalogo/associar'
 import type { ArteEnviada } from '../catalogo/arteEnviada'
 import type { BasesFaccao } from '../catalogo/basesArmyBook'
 import {
@@ -180,6 +180,14 @@ export function EtapaArtes({ lista }: { lista: NormalizedArmyList }) {
                                   {esc.aliasProposto ? 'sugerida (alias)' : 'do catálogo'}
                                 </span>
                               )}
+                              {esc.arte && (() => {
+                                const poses = posesDa(esc.arte, manifesto)
+                                return poses.length > 1 && v.modelsPerUnit * p.unidade.copies > 1 ? (
+                                  <div className="detalhe" title="Os modelos da unidade alternam entre as poses do catálogo; cada metade leva o número da pose em fenda na face de colar">
+                                    alterna {poses.length} poses: {poses.map((ps) => porId.get(ps.arte)?.rotulo ?? ps.arte).join(', ')}
+                                  </div>
+                                ) : null
+                              })()}
                             </li>
                           )
                         })}
@@ -210,7 +218,7 @@ export function EtapaArtes({ lista }: { lista: NormalizedArmyList }) {
               </tbody>
             </table>
           </div>
-          <EtapaGerar lista={lista} plano={plano} faccao={faccao} artes={artes} estilo={estilo} enviadas={enviadas} />
+          <EtapaGerar lista={lista} plano={plano} faccao={faccao} artes={artes} manifesto={manifesto} estilo={estilo} enviadas={enviadas} />
         </>
       )}
       {galeria && faccao && artes && (

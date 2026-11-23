@@ -898,6 +898,7 @@
     },
     {
       "artId": "warrior-sword-copia-2",
+      "copiaDe": "warrior-sword",
       "candidateId": "a009",
       "pdfLabel": "Warrior Sword",
       "labelSource": "agent-vision",

@@ -141,3 +141,7 @@ A pedido do usuário, o botão "Usar lista de exemplo" virou "Atualizar": o text
 ## 23/11/2026 — torre de purga, lista completa e arte enviada
 
 O usuário aprovou as placas por unidade e pediu três mudanças no site (D047). A torre de purga agora vem desligada, com opção para ligar. O 3MF ganhou, no fim, as placas da lista completa, divididas em placas equilibradas quando não cabe numa só. E a galeria ganhou o envio de arte própria: a imagem vira, no navegador, os mesmos SVGs do catálogo, com o tratamento do importador, e entra no 3MF e no papel. Testado com a lista piloto pela CLI e com uma lista do Alien Hives no site local.
+
+## 23/11/2026 — poses alternadas, número da pose e miolo preto
+
+O usuário imprimiu uma lista do Alien Hives: os 3 Spores saíram com a mesma arte (o PDF só tem uma), e o standee de corpo branco com lateral preta trocava de filamento em todas as camadas. Pediu as poses alternadas, com o número da pose em fenda nas primeiras camadas para casar frente e verso, e lembrou o combinado de peça preta com o branco só onde precisa (D036). Feito no site (D048): as poses do catálogo alternam entre os modelos, sem contar as cópias da mesma figura; o número vai na face da cola, espelhado; e as metades passaram a ter corpo preto e branco só na face de cima. Ao separar poses de cópias, a "Warrior Spine Gun" 2 se mostrou cópia da 1, e não outra pose.

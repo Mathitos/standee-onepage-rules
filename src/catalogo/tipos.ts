@@ -73,5 +73,9 @@ export interface ManifestoFaccao {
     equipmentTags: string[]
     cosmetic: string | null
     mappingStatus: string
+    /** estilos com SVG (fino, borda); a arte de um estilo só pode ser a mesma figura de outra */
+    styles?: Partial<Record<Estilo, unknown>>
+    /** cópia da mesma figura que o recorte não juntou (revisão): não conta como pose */
+    copiaDe?: string
   }[]
 }

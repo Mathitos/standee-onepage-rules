@@ -1706,6 +1706,7 @@
     },
     {
       "artId": "gecko-pistol-2",
+      "copiaDe": "gecko-pistol",
       "candidateId": "a021",
       "pdfLabel": "Gecko Pistol",
       "labelSource": "agent-vision",

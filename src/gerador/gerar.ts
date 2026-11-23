@@ -1,6 +1,7 @@
 /**
  * Gera o projeto 3MF de uma lista resolvida, no caminho padrão do protótipo: duas metades em
- * preto em relevo (D041/D045; a peça única pintada fica como opção), lateral preta, base com
+ * preto em relevo (D041/D045; a peça única pintada fica como opção), miolo preto com o número da
+ * pose na face da cola (D048), lateral preta, base com
  * nome e número, uma unidade por placa (D037), perfil da A1 embutido (D026). Roda no Web Worker
  * do site e no Node (testes). Port de prototipo/gerar.py main().
  */
@@ -24,6 +25,11 @@ export interface ModeloPedido {
   /** chave em Pedido.artes */
   arte: string
   base: BaseSpec
+  /**
+   * número da pose da arte (1, 2...), quando a variante alterna poses (posesDa): vai em fenda na
+   * face da cola de cada metade. Sem ele, a arte tem uma pose só e as metades ficam sem número
+   */
+  pose?: number
 }
 
 export interface ArtePedido {
@@ -57,8 +63,11 @@ export interface Resultado {
   espessuraLinguetaMm: number
   /** grupo: placa de uma unidade (D037) ou da lista completa, no fim do arquivo */
   placas: { nome: string; pecas: number; grupo: 'unidade' | 'lista' }[]
-  /** pecaMm: a caixa de cada metade (as duas têm a mesma) ou da peça única; objetos: chaves no 3MF */
-  artes: Record<string, { pecaMm: [number, number]; medidas: MedidasCorpo; objetos: string[] }>
+  /**
+   * pecaMm: a caixa de cada metade (as duas têm a mesma) ou da peça única; objetos: chaves no 3MF;
+   * numero: o número da pose gravado nas metades e a altura das letras
+   */
+  artes: Record<string, { pecaMm: [number, number]; medidas: MedidasCorpo; objetos: string[]; numero?: { texto: string; alturaMm: number } | null }>
   bases: Record<string, { dimMm: [number, number]; medidas: MedidasBase }>
   checagens: Checagem[]
   avisos: string[]
@@ -134,6 +143,10 @@ export async function gerar(w: ManifoldToplevel, pedido: Pedido, progresso?: Pro
   const artes: Resultado['artes'] = {}
   const bases: Resultado['bases'] = {}
   const usadas = [...new Set(pedido.modelos.map((m) => m.arte))]
+  const poseDa = new Map(pedido.modelos.filter((m) => m.pose != null).map((m) => [m.arte, m.pose!]))
+  if (P.modo === 'duas-metades' && P.poseNaMetade && poseDa.size && !fonte) {
+    avisos.push('Sem fonte: as metades saem sem o número da pose.')
+  }
   const basesUsadas = [...new Map(pedido.modelos.map((m) => [chaveBase(m, P), m])).values()]
   const total = usadas.length + basesUsadas.length + 1
   let feito = 0
@@ -147,17 +160,20 @@ export async function gerar(w: ManifoldToplevel, pedido: Pedido, progresso?: Pro
     if (!a) throw new Error(`arte ${chave} não enviada`)
     try {
       if (P.modo === 'duas-metades') {
-        const { metades, medidas } = metadesPretoRelevo(w, lerSvg(a.frente), lerSvg(a.verso), P)
+        const pose = poseDa.get(chave)
+        const pedirNumero = pose != null && P.poseNaMetade && fonte ? { fonte, texto: String(pose) } : null
+        const { metades, medidas, numero } = metadesPretoRelevo(w, lerSvg(a.frente), lerSvg(a.verso), P, pedirNumero)
+        if (pedirNumero && !numero) avisos.push(`${a.rotulo}: o número da pose (${pose}) não coube na figura; as metades saem sem ele.`)
         const chaves: string[] = []
         let dim: [number, number] = [0, 0]
         for (const { lado, partes } of metades) {
           const k = `${chave}-${lado}`
           const f = fechar(k, partes, checagens)
-          objetos[k] = { nome: `${a.rotulo} - ${lado}`, partes: f.malhas }
+          objetos[k] = { nome: `${a.rotulo} - ${lado}` + (pose != null ? ` - pose ${pose}` : ''), partes: f.malhas }
           chaves.push(k)
           dim = [Math.max(dim[0], f.dim[0]), Math.max(dim[1], f.dim[1])]
         }
-        artes[chave] = { pecaMm: dim, medidas, objetos: chaves }
+        artes[chave] = { pecaMm: dim, medidas, objetos: chaves, numero }
       } else {
         const { partes, medidas } = pecaUnicaPintada(w, lerSvg(a.frente), lerSvg(a.verso), P)
         const { malhas, dim } = fechar(chave, partes, checagens)

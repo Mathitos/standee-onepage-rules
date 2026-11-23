@@ -170,7 +170,8 @@ def main():
             'labelSource': 'agent-vision', 'labelConfidence': r.get('confiancaRotulo', 'alta'),
             'unitKey': r.get('unitKey'), 'equipmentTags': r.get('equipmentTags', []),
             'cosmetic': r.get('cosmetic'), 'mappingStatus': status, 'aliases': r.get('aliases', []),
-            'notes': r.get('notas', ''), 'styles': estilos, 'pendencias': c['pendencias'],
+            'notes': r.get('notas', ''), **({'copiaDe': r['copiaDe']} if r.get('copiaDe') else {}),
+            'styles': estilos, 'pendencias': c['pendencias'],
             'reviewStatus': 'approved' if a.aprovado else 'agent-proposed', 'licenseStatus': 'user-approved',
         })
 

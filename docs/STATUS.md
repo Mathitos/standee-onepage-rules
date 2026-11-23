@@ -8,11 +8,16 @@ Site (GitHub Pages) que gera standees 3MF a partir de listas do Army Forge. O si
 
 - Git local em `C:\Users\Matheus\Desktop\dev\standee-onepage-rules`, branch `main`, com o remoto `origin` em `git@github.com:Mathitos/standee-onepage-rules.git` (público, criado pelo usuário em 23/11). O push vai por SSH: no desktop do usuário, o git usa o SSH do Windows, cujo agente tem a chave do GitHub. Commits pequenos; ver `git log`.
 - No git: artes vetorizadas (SVG) do catálogo, manifestos, revisões e snapshots do army book (D006 decidida, D020). Fora do git: `*.pdf`, `saidas/` e intermediários da skill (`work/`, `review/`, `build/`).
-- `npm run check` (tipos + 44 testes, 22/11) e `npm run build` passam localmente. Workflow `.github/workflows/pages.yml`: checks em push/PR, deploy da `main` no Pages. Primeira execução no GitHub em 23/11: verde (build e deploy). Site em https://mathitos.github.io/standee-onepage-rules/.
+- `npm run check` (tipos + 63 testes, 23/11) e `npm run build` passam localmente. Workflow `.github/workflows/pages.yml`: checks em push/PR, deploy da `main` no Pages. Primeira execução no GitHub em 23/11: verde (build e deploy). Site em https://mathitos.github.io/standee-onepage-rules/.
 - `npm audit`: 0 vulnerabilidades em dependências de produção; alerta "high" de ReDoS no `picomatch` só em ferramentas de desenvolvimento (não corrigido às cegas).
 
 ## Estado real
 
+- **Poses alternadas, número da pose e miolo preto nas metades (23/11, pedido do usuário, D048)**, depois de imprimir uma lista do Alien Hives em que os 3 Spores saíram iguais e o standee trocava de filamento em todas as camadas.
+  - Os modelos de cada variante alternam as poses do catálogo (V1, V2...), no 3MF e no papel. Cópias da mesma figura não contam: 7 delas marcadas `copiaDe` na revisão e no manifesto. Spores têm uma arte só no PDF.
+  - Arte com mais de uma pose: número da pose em fenda de 0,4 mm na face da cola de cada metade, lido por baixo.
+  - Miolo preto: corpo preto, branco só nas últimas 0,4 mm, embaixo do relevo. Pela CLI, 9 trocas por placa em vez de 13 na lista piloto, e o corpo abaixo da face tem uma cor só. O corpo branco fica como opção ("Miolo").
+  - 63 testes; fatiado pela CLI sem erro; testado no site local com uma lista do Alien Hives. Não impresso.
 - **Torre de purga, lista completa e arte enviada (23/11, pedido do usuário, D047)**: "deixar a torre de purga desativada por default", "ter plate no final com todas com o nome 'lista completa'" e "ter a opção de upload de arte caso o usuário ache que nenhuma arte seja boa".
   - Torre desligada por padrão, com a opção "torre de purga" na etapa 3; sem ela, a mesa não reserva área.
   - No fim do 3MF, "Lista completa" (ou "1/N" ... "N/N"), com as peças divididas em placas equilibradas sem separar unidades. Na lista piloto: 18 e 24 peças, 887 min pela CLI, contra 1099 min das 6 placas por unidade.
