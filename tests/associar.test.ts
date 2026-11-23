@@ -2,7 +2,7 @@ import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { parseShareText } from '../src/armyforge/parseShareText'
-import { modelosDoPlano, modelosParaPapel, resolvida, sugerir } from '../src/catalogo/associar'
+import { manterEscolhas, modelosDoPlano, modelosParaPapel, resolvida, sugerir } from '../src/catalogo/associar'
 import { basesDosArmyBooks, type LivroArmyForge } from '../src/catalogo/basesArmyBook'
 import { faccaoDaLista } from '../src/catalogo/carregar'
 import type { ManifestoFaccao } from '../src/catalogo/tipos'
@@ -166,5 +166,35 @@ describe('base do army book para unidade sem arte no manifesto (Alien Hives)', (
       }
     }
     expect(total).toBeGreaterThan(500)
+  })
+})
+
+describe('Atualizar a lista mantém as escolhas feitas à mão', () => {
+  const manifestoAH = JSON.parse(readFileSync(join(RAIZ, 'catalog/gff/alien-hives/manifest.json'), 'utf8')) as ManifestoFaccao
+  const basesAH = basesDosArmyBooks(livros('gff/alien-hives'))
+  const texto = (linhas: string[]) => parseShareText(['++ Alien Hives (v3.6.0) [GFF 300pts] [3 Units] ++', '', ...linhas].join('\n'))
+  const grunt = ['Grunt Veteran [1] Q4+ D5+ | 45pts | Hero, Tough(3)', 'Spike-Shooter (18", A3), Claws (A3)', '']
+  const spores = ['Spores [3] Q6+ D6+ | 30pts | 3x Fearless', '3x Strike (A1)', '']
+
+  it('com unidade nova antes (as linhas mudam), a arte e a base escolhidas continuam', () => {
+    const antes = sugerir(texto([...grunt, ...spores]), manifestoAH, basesAH).map((p) =>
+      p.unidade.name === 'Grunt Veteran'
+        ? { ...p, variantes: p.variantes.map(() => ({ arte: 'warrior-ravager-gun', origem: 'usuario' as const })) }
+        : { ...p, base: { forma: 'redonda' as const, mm: [32] }, baseOrigem: 'usuario' as const })
+    const hive = ['Hive Swarm [1] Q6+ D6+ | 45pts | Tough(6)', 'Toxin Claws (A6)', '']
+    const depois = manterEscolhas(sugerir(texto([...hive, ...grunt, ...spores]), manifestoAH, basesAH), antes)
+    const por = Object.fromEntries(depois.map((p) => [p.unidade.name, p]))
+    expect(por['Grunt Veteran'].variantes[0]).toEqual({ arte: 'warrior-ravager-gun', origem: 'usuario' })
+    expect(por['Spores']).toMatchObject({ base: { forma: 'redonda', mm: [32] }, baseOrigem: 'usuario' })
+    expect(por['Hive Swarm'].baseOrigem).toBe('manifesto')
+  })
+
+  it('se a arma da variante mudou, a arte volta à sugestão', () => {
+    const antes = sugerir(texto(grunt), manifestoAH, basesAH).map((p) => ({
+      ...p, variantes: p.variantes.map(() => ({ arte: 'warrior-ravager-gun', origem: 'usuario' as const })),
+    }))
+    const outra = ['Grunt Veteran [1] Q4+ D5+ | 45pts | Hero, Tough(3)', 'Heavy Razor Claws (A4)', '']
+    const depois = manterEscolhas(sugerir(texto(outra), manifestoAH, basesAH), antes)
+    expect(depois[0].variantes[0].origem).not.toBe('usuario')
   })
 })

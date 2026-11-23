@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import type { NormalizedArmyList } from '../armyforge/types'
-import { resolvida, sugerir, type PlanoUnidade } from '../catalogo/associar'
+import { manterEscolhas, resolvida, sugerir, type PlanoUnidade } from '../catalogo/associar'
 import type { BasesFaccao } from '../catalogo/basesArmyBook'
 import {
   carregarArtes, carregarBases, carregarIndice, carregarManifesto, estiloDisponivel, faccaoDaLista, normalizar, urlArte, urlRotulo,
@@ -59,9 +59,15 @@ export function EtapaArtes({ lista }: { lista: NormalizedArmyList }) {
     }
   }, [faccao])
 
-  // refaz as sugestões ao trocar de lista ou de facção (as escolhas de uma facção não valem na outra)
+  // refaz as sugestões ao atualizar a lista ou trocar de facção. Na mesma facção, mantém as
+  // escolhas feitas à mão nas unidades que continuam na lista; em outra, elas não valem
+  const faccaoDoPlano = useRef<string | null>(null)
   useEffect(() => {
-    setPlano(sugerir(lista, manifesto, bases))
+    const novo = sugerir(lista, manifesto, bases)
+    const caminho = faccao?.caminho ?? null
+    const mesma = faccaoDoPlano.current === caminho
+    faccaoDoPlano.current = caminho
+    setPlano((anterior) => (mesma ? manterEscolhas(novo, anterior) : novo))
   }, [lista, manifesto, bases, faccao])
 
   const porId = useMemo(() => new Map((artes?.artes ?? []).map((a) => [a.id, a])), [artes])

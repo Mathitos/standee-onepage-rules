@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { parseShareText } from '../armyforge/parseShareText'
 import type { ImportIssue, NormalizedArmyList, UnitGroup } from '../armyforge/types'
-import exemplo from '../../tests/fixtures/armyforge/piloto-share-as-text.txt?raw'
 import { EtapaArtes } from './EtapaArtes'
 
 const CHAVE_TEXTO = 'standee-forge:texto-lista'
@@ -29,10 +28,13 @@ const ETAPAS = [
 ]
 
 export function App() {
+  // texto: a lista aplicada (lida, salva e usada nas etapas 2 e 3); rascunho: o que está no campo.
+  // A lista só muda em "Atualizar": editar o campo não refaz as artes a cada tecla.
   const [texto, setTexto] = useState(lerSalvo)
-  const [usandoExemplo, setUsandoExemplo] = useState(false)
+  const [rascunho, setRascunho] = useState(texto)
   useEffect(() => salvar(texto), [texto])
   const lista = useMemo(() => (texto.trim() ? parseShareText(texto) : null), [texto])
+  const alterado = rascunho !== texto
 
   return (
     <div className="pagina">
@@ -56,36 +58,35 @@ export function App() {
         <section className="painel entrada" aria-labelledby="titulo-entrada">
           <h2 id="titulo-entrada">1. Cole a lista</h2>
           <p className="ajuda">
-            No Army Forge, abra a lista e use <b>⋮ → Share List → Share as Text</b>. Cole o texto abaixo.
+            No Army Forge, abra a lista e use <b>⋮ → Share List → Share as Text</b>. Cole o texto abaixo e clique em{' '}
+            <b>Atualizar</b>; se mudar a lista depois, clique de novo.
           </p>
           <textarea
-            value={texto}
-            onChange={(e) => {
-              setTexto(e.target.value)
-              setUsandoExemplo(false)
-            }}
+            value={rascunho}
+            onChange={(e) => setRascunho(e.target.value)}
             placeholder={'++ Exército (v1.0) [GFF 500pts] [4 Units] ++\n\nUnidade [3] Q5+ D5+ | 85pts | ...\n3x Arma (24", A2), ...'}
             spellCheck={false}
             aria-label="Texto da lista exportada do Army Forge"
           />
           <div className="botoes">
+            <button type="button" onClick={() => setTexto(rascunho)} disabled={!alterado}>
+              Atualizar
+            </button>
             <button
               type="button"
               className="secundario"
               onClick={() => {
-                setTexto(exemplo)
-                setUsandoExemplo(true)
+                setRascunho('')
+                setTexto('')
               }}
+              disabled={!rascunho && !texto}
             >
-              Usar lista de exemplo
-            </button>
-            <button type="button" className="secundario" onClick={() => setTexto('')} disabled={!texto}>
               Limpar
             </button>
           </div>
-          {usandoExemplo && (
-            <p className="aviso-exemplo">
-              Exemplo: lista piloto Human Defense Force capturada em 17/11/2026. Não é a sua lista.
+          {alterado && (
+            <p className="aviso-alterado">
+              {texto ? 'O texto mudou: clique em Atualizar para refazer a lista.' : 'Clique em Atualizar para ler a lista.'}
             </p>
           )}
           <p className="privacidade">O texto fica só neste navegador; nada é enviado.</p>
@@ -93,7 +94,7 @@ export function App() {
 
         <section className="painel resultado" aria-labelledby="titulo-resultado" aria-live="polite">
           <h2 id="titulo-resultado">Lista interpretada</h2>
-          {lista ? <Resultado lista={lista} /> : <p className="vazio">Cole um texto para ver unidades, modelos e armas.</p>}
+          {lista ? <Resultado lista={lista} /> : <p className="vazio">Cole o texto e clique em Atualizar para ver unidades, modelos e armas.</p>}
         </section>
       </main>
 

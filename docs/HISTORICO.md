@@ -133,3 +133,7 @@ O usuário criou o repositório público `Mathitos/standee-onepage-rules` e ativ
 ## 23/11/2026 — base pelo army book em toda unidade
 
 Testando o site publicado com uma lista do Alien Hives, o usuário escolheu à mão a arte do Grunt Veteran, mas a base ficou em branco. O site só procurava a base no manifesto, que traz apenas as unidades com arte no PDF. O build agora gera, para cada facção, um `bases.json` com as bases de todas as unidades dos army books, e o site usa esse arquivo quando o manifesto não tem a unidade. As unidades sem base redonda no próprio army book continuam com a escolha manual.
+
+## 23/11/2026 — botão "Atualizar" na lista
+
+A pedido do usuário, o botão "Usar lista de exemplo" virou "Atualizar": o texto colado só é lido quando ele clica, e não a cada tecla. Ao atualizar, as artes e bases escolhidas à mão continuam nas unidades que seguem na lista.

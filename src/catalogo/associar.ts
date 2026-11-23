@@ -78,6 +78,32 @@ export function sugerir(lista: NormalizedArmyList, manifesto: ManifestoFaccao | 
   })
 }
 
+/**
+ * Ao atualizar a lista na mesma facção, mantém o que o usuário escolheu à mão (arte de cada
+ * variante e base) nas unidades que continuam nela: mesmo nome e mesmas armas na variante.
+ * Unidades de mesmo nome casam na ordem da lista. O resto vem da sugestão nova.
+ */
+export function manterEscolhas(novo: PlanoUnidade[], anterior: PlanoUnidade[]): PlanoUnidade[] {
+  const porNome = new Map<string, PlanoUnidade[]>()
+  for (const q of anterior) {
+    const k = normalizar(q.unidade.name)
+    porNome.set(k, [...(porNome.get(k) ?? []), q])
+  }
+  const armas = (u: UnitGroup, i: number) => u.variants[i]?.equipment.join('|')
+  return novo.map((p) => {
+    const q = porNome.get(normalizar(p.unidade.name))?.shift()
+    if (!q) return p
+    const baseManual = q.baseOrigem === 'usuario'
+    return {
+      ...p,
+      base: baseManual ? q.base : p.base,
+      baseOrigem: baseManual ? q.baseOrigem : p.baseOrigem,
+      variantes: p.variantes.map((v, i) =>
+        q.variantes[i]?.origem === 'usuario' && armas(q.unidade, i) === armas(p.unidade, i) ? q.variantes[i] : v),
+    }
+  })
+}
+
 export function resolvida(p: PlanoUnidade): boolean {
   return !!p.base && p.variantes.every((v) => !!v.arte)
 }
