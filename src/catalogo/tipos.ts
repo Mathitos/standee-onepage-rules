@@ -9,6 +9,8 @@ export interface FaccaoIndice {
   manifesto: boolean
   /** nomes do exército no Army Forge (dos army books do manifesto), ex. "Saurian Starhosts" */
   exercitos?: string[]
+  /** há bases.json: as bases de todas as unidades dos army books da facção */
+  bases?: boolean
 }
 
 export interface IndiceCatalogo {
@@ -50,12 +52,19 @@ export interface ArtesFaccao {
   artes: ArteCatalogo[]
 }
 
+/** Base como no manifest.json: medida do army book (D015); "unknown" quando não há ("none"). */
+export interface BaseManifesto {
+  shape: 'round' | 'oval' | 'unknown'
+  dimensionsMm: number[] | null
+  raw: string | null
+}
+
 /** Subconjunto do manifest.json (PRD-02) usado para associar a lista. */
 export interface ManifestoFaccao {
   units: {
     unitKey: string
     names: string[]
-    base: { shape: 'round' | 'oval' | 'unknown'; dimensionsMm: number[] | null; raw: string | null }
+    base: BaseManifesto
   }[]
   arts: {
     artId: string

@@ -1,8 +1,9 @@
-import { readFileSync } from 'node:fs'
+import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { parseShareText } from '../src/armyforge/parseShareText'
-import { modelosDoPlano, resolvida, sugerir } from '../src/catalogo/associar'
+import { modelosDoPlano, modelosParaPapel, resolvida, sugerir } from '../src/catalogo/associar'
+import { basesDosArmyBooks, type LivroArmyForge } from '../src/catalogo/basesArmyBook'
 import { faccaoDaLista } from '../src/catalogo/carregar'
 import type { ManifestoFaccao } from '../src/catalogo/tipos'
 
@@ -105,5 +106,65 @@ describe('arte genérica da unidade e itens nas regras', () => {
   })
   it('só há arte de outra arma: fica para o usuário (D013)', () => {
     expect(arte(4)).toBeNull()
+  })
+})
+
+/** Os snapshots dos army books de uma facção, como o plugin do Vite lê para gravar bases.json. */
+function livros(caminho: string): LivroArmyForge[] {
+  const pasta = join(RAIZ, 'catalog', caminho, 'armybook')
+  return readdirSync(pasta)
+    .filter((f) => /-gs\d+-v[^/]*\.json$/.test(f) && !f.endsWith('.resumo.json'))
+    .map((f) => JSON.parse(readFileSync(join(pasta, f), 'utf8')) as LivroArmyForge)
+}
+
+describe('base do army book para unidade sem arte no manifesto (Alien Hives)', () => {
+  const manifestoAH = JSON.parse(readFileSync(join(RAIZ, 'catalog/gff/alien-hives/manifest.json'), 'utf8')) as ManifestoFaccao
+  const basesAH = basesDosArmyBooks(livros('gff/alien-hives'))
+  // a lista do usuário de 23/11 (captura de tela): Grunt Veteran não tem arte no PDF
+  const lista = parseShareText([
+    '++ Alien Hives (v3.6.0) [GFF 300pts] [5 Units] ++', '',
+    'Grunt Veteran [1] Q4+ D5+ | 45pts | Hero, Tough(3)', 'Spike-Shooter (18", A3), Claws (A3)', '',
+    'Spores [3] Q6+ D6+ | 30pts | 3x Fearless', '3x Strike (A1)', '',
+    '2x Assault Grunts [3] Q5+ D5+ | 60pts | 3x Furious', '3x Razor Claws (A3)', '',
+    'Hive Swarm [1] Q6+ D6+ | 45pts | Tough(6)', 'Toxin Claws (A6)',
+  ].join('\n'))
+
+  it('Grunt Veteran não está no manifesto, mas está no army book com base de 25 mm', () => {
+    expect(manifestoAH.units.some((u) => u.names.includes('Grunt Veteran'))).toBe(false)
+    expect(basesAH.unidades.find((u) => u.nomes.includes('Grunt Veteran'))?.base).toMatchObject({ shape: 'round', dimensionsMm: [25] })
+  })
+
+  it('sem bases.json a base fica vazia; com ele, vem do army book (mesmo com a arte escolhida à mão)', () => {
+    const sem = Object.fromEntries(sugerir(lista, manifestoAH).map((p) => [p.unidade.name, p]))
+    expect(sem['Grunt Veteran'].base).toBeNull()
+    const plano = sugerir(lista, manifestoAH, basesAH)
+    const por = Object.fromEntries(plano.map((p) => [p.unidade.name, p]))
+    expect(por['Grunt Veteran']).toMatchObject({ base: { forma: 'redonda', mm: [25] }, baseOrigem: 'armybook' })
+    expect(por['Assault Grunts']).toMatchObject({ base: { forma: 'redonda', mm: [25] }, baseOrigem: 'manifesto' })
+    expect(por['Hive Swarm'].base).toEqual({ forma: 'redonda', mm: [40] })
+    // o usuário escolhe a arte que faltava: a unidade fica pronta para o 3MF e para o papel
+    const escolhido = plano.map((p) =>
+      p.unidade.name === 'Grunt Veteran' ? { ...p, variantes: p.variantes.map(() => ({ arte: 'warrior-ravager-gun', origem: 'usuario' as const })) } : p)
+    expect(resolvida(escolhido.find((p) => p.unidade.name === 'Grunt Veteran')!)).toBe(true)
+    expect(modelosDoPlano(escolhido).modelos[0]).toMatchObject({ unidade: 'Grunt Veteran', base: { forma: 'redonda', mm: [25] } })
+    expect(modelosParaPapel(escolhido).modelos[0].base).toEqual({ forma: 'redonda', mm: [25] })
+  })
+
+  it('todas as unidades de todos os army books têm base, menos as sem base redonda no Army Forge ("none" ou em branco)', () => {
+    const pastas = readdirSync(join(RAIZ, 'catalog')).flatMap((s) => readdirSync(join(RAIZ, 'catalog', s)).map((f) => `${s}/${f}`))
+    let total = 0
+    for (const c of pastas) {
+      let ls: LivroArmyForge[]
+      try {
+        ls = livros(c)
+      } catch {
+        continue
+      }
+      for (const u of basesDosArmyBooks(ls).unidades) {
+        total++
+        if (u.base.shape === 'unknown') expect(['none', ''], `${c} ${u.nomes[0]}`).toContain(u.base.raw)
+      }
+    }
+    expect(total).toBeGreaterThan(500)
   })
 })

@@ -125,3 +125,11 @@ O usuário imprimiu o teste da mola e respondeu: "o encaixe reto sem mola ficou 
 ## 22/11/2026 (noite) — duas metades no site
 
 Com o acabamento e o encaixe decididos, o usuário pediu para levar as duas metades ao site (D046). O gerador do navegador agora faz por padrão as metades em preto em relevo, com o encaixe reto: dois objetos por figura e uma placa por unidade com as bases. A peça única pintada ficou como opção no seletor "Modo". No caminho, a lateral preta passou a cortar pelo miolo do contorno, o que acabou com lascas microscópicas no verso. Os volumes batem com o protótipo (até 0,45%), a lista piloto fatiou pela CLI sem erro (6 placas, 13 trocas cada) e o site gerou o 3MF no navegador embutido. Falta imprimir um 3MF do site.
+
+## 23/11/2026 — site publicado no GitHub Pages
+
+O usuário criou o repositório público `Mathitos/standee-onepage-rules` e ativou o Pages pelo GitHub Actions. O primeiro push pelo HTTPS parou pedindo login; o git deste PC usa o SSH do Windows, cujo agente tem a chave do GitHub, e o push foi pelo remoto SSH. O workflow passou na primeira execução (testes, build e deploy). No site publicado, a lista de exemplo gerou o 3MF em duas metades e o PDF A4 sem erros.
+
+## 23/11/2026 — base pelo army book em toda unidade
+
+Testando o site publicado com uma lista do Alien Hives, o usuário escolheu à mão a arte do Grunt Veteran, mas a base ficou em branco. O site só procurava a base no manifesto, que traz apenas as unidades com arte no PDF. O build agora gera, para cada facção, um `bases.json` com as bases de todas as unidades dos army books, e o site usa esse arquivo quando o manifesto não tem a unidade. As unidades sem base redonda no próprio army book continuam com a escolha manual.

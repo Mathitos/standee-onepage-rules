@@ -1,3 +1,4 @@
+import type { BasesFaccao } from './basesArmyBook'
 import type { ArteCatalogo, ArtesFaccao, Estilo, FaccaoIndice, IndiceCatalogo, ManifestoFaccao } from './tipos'
 
 /** Relativo à página: funciona no GitHub Pages em qualquer subcaminho. */
@@ -27,6 +28,9 @@ export const carregarIndice = () => json<IndiceCatalogo>(`${BASE_CATALOGO}/index
 export const carregarArtes = (f: FaccaoIndice) => json<ArtesFaccao>(`${BASE_CATALOGO}/${f.caminho}/artes.json`)
 export const carregarManifesto = (f: FaccaoIndice) =>
   f.manifesto ? json<ManifestoFaccao>(`${BASE_CATALOGO}/${f.caminho}/manifest.json`) : Promise.resolve(null)
+/** Bases de todas as unidades dos army books; sem o arquivo, a base fica só a do manifesto. */
+export const carregarBases = (f: FaccaoIndice) =>
+  f.bases ? json<BasesFaccao>(`${BASE_CATALOGO}/${f.caminho}/bases.json`).catch(() => null) : Promise.resolve(null)
 
 export const urlArte = (f: FaccaoIndice, id: string, estilo: Estilo, lado: 'frente' | 'verso') =>
   `${BASE_CATALOGO}/${f.caminho}/arts/${id}/${estilo}/${lado}.svg`

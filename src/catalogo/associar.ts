@@ -4,17 +4,20 @@
  * arte pela arma: vence a arte da unidade com mais equipmentTags, todas presentes no equipamento
  * ou nas regras do modelo (montarias e itens aparecem nas regras); "A|B" aceita qualquer uma. Se nenhuma servir, vale a arte
  * genérica da unidade: a que o PDF rotulou sem arma (equipmentTags vazio). A base vem do army
- * book (D015). Sem correspondência, a escolha fica com o usuário, vendo as artes (D013): arte de
- * outra arma não entra sozinha.
+ * book (D015): do manifesto, ou de bases.json para as unidades que não têm arte no PDF e por isso
+ * não estão no manifesto, mesmo com a arte escolhida à mão. Sem correspondência, a escolha fica
+ * com o usuário, vendo as artes (D013): arte de outra arma não entra sozinha.
  */
 import type { NormalizedArmyList, UnitGroup } from '../armyforge/types'
 import type { BaseSpec } from '../gerador/base'
 import type { ModeloPedido } from '../gerador/gerar'
 import type { ModeloPapel } from '../papel/folhas'
+import type { BasesFaccao } from './basesArmyBook'
 import { normalizar } from './carregar'
-import type { ManifestoFaccao } from './tipos'
+import type { BaseManifesto, ManifestoFaccao } from './tipos'
 
-export type Origem = 'manifesto' | 'usuario'
+/** manifesto: sugestão do catálogo; armybook: base de bases.json; usuario: escolha na tela */
+export type Origem = 'manifesto' | 'armybook' | 'usuario'
 
 export interface EscolhaVariante {
   arte: string | null
@@ -33,17 +36,20 @@ export interface PlanoUnidade {
   variantes: EscolhaVariante[]
 }
 
-export function baseDoManifesto(b: ManifestoFaccao['units'][number]['base'] | undefined): BaseSpec | null {
+export function baseDoManifesto(b: BaseManifesto | undefined): BaseSpec | null {
   if (!b?.dimensionsMm?.length) return null
   if (b.shape === 'round') return { forma: 'redonda', mm: [b.dimensionsMm[0]] }
   if (b.shape === 'oval' && b.dimensionsMm.length >= 2) return { forma: 'oval', mm: [b.dimensionsMm[0], b.dimensionsMm[1]] }
   return null
 }
 
-export function sugerir(lista: NormalizedArmyList, manifesto: ManifestoFaccao | null): PlanoUnidade[] {
+export function sugerir(lista: NormalizedArmyList, manifesto: ManifestoFaccao | null, bases: BasesFaccao | null = null): PlanoUnidade[] {
   return lista.units.map((u) => {
-    const un = manifesto?.units.find((x) => x.names.some((n) => normalizar(n) === normalizar(u.name)))
-    const base = baseDoManifesto(un?.base)
+    const mesmoNome = (n: string) => normalizar(n) === normalizar(u.name)
+    const un = manifesto?.units.find((x) => x.names.some(mesmoNome))
+    const doManifesto = baseDoManifesto(un?.base)
+    const base = doManifesto ?? baseDoManifesto(bases?.unidades.find((x) => x.nomes.some(mesmoNome))?.base)
+    const baseOrigem: Origem | null = doManifesto ? 'manifesto' : base ? 'armybook' : null
     const variantes = u.variants.map((v): EscolhaVariante => {
       if (!un || !manifesto) return { arte: null, origem: null }
       const equip = new Set([
@@ -68,7 +74,7 @@ export function sugerir(lista: NormalizedArmyList, manifesto: ManifestoFaccao | 
         ? { arte: melhor.artId, origem: 'manifesto', aliasProposto: melhor.mappingStatus === 'alias-proposed' }
         : { arte: null, origem: null }
     })
-    return { linha: u.line, unidade: u, unitKey: un?.unitKey ?? null, base, baseOrigem: base ? 'manifesto' : null, variantes }
+    return { linha: u.line, unidade: u, unitKey: un?.unitKey ?? null, base, baseOrigem, variantes }
   })
 }
 

@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { NormalizedArmyList } from '../armyforge/types'
 import { resolvida, sugerir, type PlanoUnidade } from '../catalogo/associar'
+import type { BasesFaccao } from '../catalogo/basesArmyBook'
 import {
-  carregarArtes, carregarIndice, carregarManifesto, estiloDisponivel, faccaoDaLista, normalizar, urlArte, urlRotulo,
+  carregarArtes, carregarBases, carregarIndice, carregarManifesto, estiloDisponivel, faccaoDaLista, normalizar, urlArte, urlRotulo,
 } from '../catalogo/carregar'
 import type { ArteCatalogo, ArtesFaccao, Estilo, FaccaoIndice, IndiceCatalogo, ManifestoFaccao } from '../catalogo/tipos'
 import { nomeBase, type BaseSpec } from '../gerador/base'
@@ -24,6 +25,7 @@ export function EtapaArtes({ lista }: { lista: NormalizedArmyList }) {
   const [faccao, setFaccao] = useState<FaccaoIndice | null>(null)
   const [artes, setArtes] = useState<ArtesFaccao | null>(null)
   const [manifesto, setManifesto] = useState<ManifestoFaccao | null>(null)
+  const [bases, setBases] = useState<BasesFaccao | null>(null)
   const [plano, setPlano] = useState<PlanoUnidade[]>([])
   const [estilo, setEstilo] = useState<Estilo>('fino')
   const [galeria, setGaleria] = useState<{ linha: number; variante: number } | null>(null)
@@ -40,13 +42,15 @@ export function EtapaArtes({ lista }: { lista: NormalizedArmyList }) {
   useEffect(() => {
     setArtes(null)
     setManifesto(null)
+    setBases(null)
     if (!faccao) return
     let vivo = true
-    Promise.all([carregarArtes(faccao), carregarManifesto(faccao)]).then(
-      ([a, m]) => {
+    Promise.all([carregarArtes(faccao), carregarManifesto(faccao), carregarBases(faccao)]).then(
+      ([a, m, b]) => {
         if (!vivo) return
         setArtes(a)
         setManifesto(m)
+        setBases(b)
       },
       (e) => setErro(`Falha ao carregar ${faccao.faccao}: ${e.message}`),
     )
@@ -57,8 +61,8 @@ export function EtapaArtes({ lista }: { lista: NormalizedArmyList }) {
 
   // refaz as sugestões ao trocar de lista ou de facção (as escolhas de uma facção não valem na outra)
   useEffect(() => {
-    setPlano(sugerir(lista, manifesto))
-  }, [lista, manifesto, faccao])
+    setPlano(sugerir(lista, manifesto, bases))
+  }, [lista, manifesto, bases, faccao])
 
   const porId = useMemo(() => new Map((artes?.artes ?? []).map((a) => [a.id, a])), [artes])
   const resolvidas = plano.filter(resolvida).length
@@ -170,7 +174,7 @@ export function EtapaArtes({ lista }: { lista: NormalizedArmyList }) {
                           </option>
                         ))}
                       </select>
-                      {p.baseOrigem === 'manifesto' && <div className="detalhe">do army book</div>}
+                      {(p.baseOrigem === 'manifesto' || p.baseOrigem === 'armybook') && <div className="detalhe">do army book</div>}
                     </td>
                   </tr>
                 ))}

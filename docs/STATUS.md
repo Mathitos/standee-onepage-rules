@@ -1,4 +1,4 @@
-# Checkpoint atual — 22/11/2026
+# Checkpoint atual — 23/11/2026
 
 ## Objetivo
 
@@ -6,13 +6,20 @@ Site (GitHub Pages) que gera standees 3MF a partir de listas do Army Forge. O si
 
 ## Repositório
 
-- Git local em `C:\Users\Matheus\Desktop\dev\standee-onepage-rules`, branch `main`, **sem remoto** (o usuário cria o repositório no GitHub e faz o push). Commits pequenos; ver `git log`.
+- Git local em `C:\Users\Matheus\Desktop\dev\standee-onepage-rules`, branch `main`, com o remoto `origin` em `git@github.com:Mathitos/standee-onepage-rules.git` (público, criado pelo usuário em 23/11). O push vai por SSH: no desktop do usuário, o git usa o SSH do Windows, cujo agente tem a chave do GitHub. Commits pequenos; ver `git log`.
 - No git: artes vetorizadas (SVG) do catálogo, manifestos, revisões e snapshots do army book (D006 decidida, D020). Fora do git: `*.pdf`, `saidas/` e intermediários da skill (`work/`, `review/`, `build/`).
-- `npm run check` (tipos + 44 testes, 22/11) e `npm run build` passam localmente. Workflow `.github/workflows/pages.yml`: checks em push/PR, deploy da `main` no Pages. **Ainda não rodou no GitHub.**
+- `npm run check` (tipos + 44 testes, 22/11) e `npm run build` passam localmente. Workflow `.github/workflows/pages.yml`: checks em push/PR, deploy da `main` no Pages. Primeira execução no GitHub em 23/11: verde (build e deploy). Site em https://mathitos.github.io/standee-onepage-rules/.
 - `npm audit`: 0 vulnerabilidades em dependências de produção; alerta "high" de ReDoS no `picomatch` só em ferramentas de desenvolvimento (não corrigido às cegas).
 
 ## Estado real
 
+- **Base pelo army book em toda unidade (23/11, relato do usuário)**: no site publicado, o Grunt Veteran do Alien Hives ficava sem base mesmo com a arte escolhida à mão. Causa: o site buscava a base só no manifesto, que tem apenas as unidades com arte no PDF (16 das 41 do Alien Hives). Agora o build grava `catalogo/<sistema>/<facção>/bases.json` com a base de todas as unidades dos army books (22 facções, 96 KB no total; os army books em si continuam fora do site), e o site usa esse arquivo quando o manifesto não tem a unidade (`src/catalogo/basesArmyBook.ts`). 42 unidades não têm base redonda no próprio army book ("none" ou em branco, como titãs e alguns heróis): nelas a escolha continua com o usuário. O aviso de figura maior que a base não se repete mais para "2x" a mesma unidade. 47 testes; testado no site local com a lista do usuário: Grunt Veteran com base redonda de 25 mm "do army book" e 3MF com a base. Falta publicar (push).
+- **Site publicado (23/11)**: o usuário criou o repositório público `Mathitos/standee-onepage-rules` e ativou o Pages (GitHub Actions); o agente fez o push da `main` por SSH. A primeira execução do workflow passou em ~1,5 min (tipos e 44 testes, build, deploy). Testado no navegador embutido em https://mathitos.github.io/standee-onepage-rules/:
+  - catálogo carregado (Human Defense Force, 69 artes);
+  - lista de exemplo com 3 de 4 unidades associadas; o OGRE fica sem arte (D040);
+  - 3MF em duas metades: 4 placas de 9 peças em 2,1 s, sem avisos (o perfil da A1 carregou);
+  - PDF A4: 2 folhas, 12 faixas;
+  - console sem erros.
 - **Standees de papel em A4 (22/11, pedido do usuário, D044)**: "imprimir a lista em papel a4 tbm nas medidas certas com varias minis por folha". A etapa 3 do site gera também um PDF A4: uma faixa dobrável por modelo (aba com rótulo, frente, verso girado 180°, aba, como no PDF da OPR), em pé, várias por folha, na escala do PDF a 100% (D014). Rodapé com "imprima em tamanho real" e régua de 50 mm. Código em `src/papel/`, 6 testes. Lista piloto: 14 modelos em 2 folhas (`saidas/papel-piloto/piloto-fino-a4.pdf`, gerado pelo teste com `GRAVAR_PDF=1`); Infantry com 18,88 mm de largura, igual à do PDF da OPR, e 0,17 mm a menos de altura (vem do SVG); dobrada, o verso cobre a frente (IoU 0,992). Testado no site (lista de exemplo, desktop e 375 px). **Conferência de tamanho (22/11, pedido do usuário)**: minis iguais ao PDF da OPR em 4 artes × 2 estilos (largura até 0,04 mm, altura até 0,17 mm); régua 49,996 mm; bases do catálogo iguais ao army book nas 298 unidades. As abas retangulares davam a base errada; agora cada aba é meia base do army book e, dobradas para fora, formam a base inteira (24,97 × 25,00 mm na de 25; 60,02 × 34,99 na oval 60 × 35; 39,97 × 39,99 na de 40). Não impresso em papel. Evidência: `evidencias/2026-11-22-papel-a4.md`.
 
 - **Duas metades no site (22/11, noite, pedido do usuário, D046)**: "Sim, levar ao site". A etapa 3 gera por padrão as duas metades em preto em relevo, com o encaixe reto. Cada figura sai como dois objetos ("- frente" e "- verso") e cada unidade numa placa, com as bases. A peça única pintada ficou como opção no seletor "Modo". A lateral preta agora corta pelo miolo e não deixa mais lascas no verso. Conferido:
@@ -83,7 +90,7 @@ Site (GitHub Pages) que gera standees 3MF a partir de listas do Army Forge. O si
    Impressora do usuário: Bambu Lab A1 "Isaac", placa Textured PEI, bico 0,2 instalado para os testes (o perfil embutido é o do 0,2).
 0c. **Usuário**: imprimir uma folha do PDF de papel (etapa 3 do site, "Gerar PDF A4") em tamanho real e conferir a régua de 50 mm com uma régua de verdade; dizer se a faixa monta bem (dobra, cola, recorte), se o tamanho bate com o PDF da OPR e se as abas dobradas para fora ficam do tamanho da base (D044).
 1. **Usuário**: gerar uma unidade no site (etapa 3, modo padrão), imprimir e dizer se as metades e a base montam como no teste do protótipo (D046).
-2. **Usuário**: criar o repositório no GitHub e fazer o push da `main` (~300 MB de SVG; ~90 MB compactados no git), ativar o Pages (Settings → Pages → Source: GitHub Actions) e abrir o site publicado. Testar com uma lista real (GF, GFF, AoF ou Skirmish).
+2. **Usuário**: testar o site publicado (https://mathitos.github.io/standee-onepage-rules/) com uma lista real (GF, GFF, AoF ou Skirmish). Repositório, push e Pages feitos em 23/11.
 3. **Usuário**: revisar os 717 aliases propostos (relatórios em `catalog/*/*/review/relatorio.md`, fora do git; depois `montar.py --aprovado`) e decidir as leituras de "Superior"/"Overseer", dos heróis cuja arte é uma melhoria e a política de silhuetas diferentes (capas) (D040).
 4. **Backlog**: investigar a troca de cor a mais nas placas 2–4 do 3MF do site na peça única (D039; nas metades, as 6 placas da lista piloto dão 13 trocas cada, como no protótipo); cópias de estilo único sem par no catálogo (D040); T002 (casos especiais do texto) e T005 (schemas).
 
@@ -93,4 +100,4 @@ Site (GitHub Pages) que gera standees 3MF a partir de listas do Army Forge. O si
 - Escala (22/11): o usuário achou as miniaturas pequenas perto do PDF em A4, mas a figura mede 35 mm nos dois. Com o que ele comparou? Quer um multiplicador (ex.: 40/35 ≈ 1,14 para a figura ocupar a célula de papel inteira)? (D014)
 - Detalhe fino em preto em relevo: os vãos de 0,1–0,25 mm fecham (medido na peça única, 18/11). Mesmo assim, o usuário preferiu o preto em relevo nas metades (D045). Se incomodar, as opções: relevo mais baixo (`--relevo-mm 0.2`) ou um vão mínimo no desenho, que ainda não existe.
 - O que exatamente saiu ruim na peça única (o usuário não descreveu).
-- GitHub (nome do repositório, público ou privado), uso pessoal/público das artes. Não pedir tokens ou senhas.
+- Uso das artes: o repositório e o site são públicos desde 23/11, como decidido na D006. Não pedir tokens ou senhas.

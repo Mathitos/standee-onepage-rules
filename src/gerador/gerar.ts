@@ -165,7 +165,9 @@ export async function gerar(w: ManifoldToplevel, pedido: Pedido, progresso?: Pro
     const art = artes[m.arte]
     const meio = m.base.mm[0] / 2
     const sobra = Math.max(art.medidas.figuraEsqMm, art.medidas.figuraDirMm) - meio
-    if (sobra > 0) avisos.push(`${pedido.artes[m.arte].rotulo}: a figura passa ${sobra.toFixed(1)} mm da borda da base ${nomeBase(m.base)} (${m.unidade}).`)
+    const aviso = `${pedido.artes[m.arte].rotulo}: a figura passa ${sobra.toFixed(1)} mm da borda da base ${nomeBase(m.base)} (${m.unidade}).`
+    // "2x Assault Grunts" são duas unidades com a mesma arte e base: um aviso basta
+    if (sobra > 0 && !avisos.includes(aviso)) avisos.push(aviso)
   }
 
   // D037: uma placa por unidade da lista, figuras e bases juntas, na ordem do número

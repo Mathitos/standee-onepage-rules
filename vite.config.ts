@@ -3,12 +3,28 @@ import { join, relative, resolve, sep } from 'node:path'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vitest/config'
 import type { Plugin } from 'vite'
+import { basesDosArmyBooks, type LivroArmyForge } from './src/catalogo/basesArmyBook'
 
 const CATALOGO = resolve(import.meta.dirname, 'catalog')
 // só o que é público vai para o site: índice, manifesto e artes (D006/D039); work/, review/ e build/ nunca
 const PERMITIDO =
   /^[a-z0-9-]+\/[a-z0-9-]+\/(artes\.json|manifest\.json|arts\/[a-z0-9-]+\/((fino|borda)\/(frente|verso)\.svg|rotulo\.png))$/
 const TIPOS: Record<string, string> = { json: 'application/json', svg: 'image/svg+xml', png: 'image/png' }
+
+/** Snapshots dos army books da facção (armybook/*-gs<N>-v<versão>.json, sem os resumos). */
+function arquivosArmyBook(pastaFaccao: string): string[] {
+  const pasta = join(pastaFaccao, 'armybook')
+  if (!existsSync(pasta)) return []
+  return readdirSync(pasta).filter((f) => /-gs\d+-v[^/]*\.json$/.test(f) && !f.endsWith('.resumo.json')).sort().map((f) => join(pasta, f))
+}
+
+/**
+ * catalogo/<sistema>/<facção>/bases.json: a base de todas as unidades dos army books, não só das
+ * que têm arte no manifesto (D015). Os army books em si não vão para o site.
+ */
+function basesJson(pastaFaccao: string) {
+  return basesDosArmyBooks(arquivosArmyBook(pastaFaccao).map((f) => JSON.parse(readFileSync(f, 'utf8')) as LivroArmyForge))
+}
 
 /** catalogo/index.json: as facções com artes exportadas (catalog/<sistema>/<facção>/artes.json). */
 function indiceCatalogo() {
@@ -27,6 +43,7 @@ function indiceCatalogo() {
       faccoes.push({
         sistema, slug, caminho: `${sistema}/${slug}`, faccao: a.faccao, artes: a.artes.length,
         manifesto: !!m,
+        bases: arquivosArmyBook(join(pasta, slug)).length > 0,
         exercitos: [...new Set(livros.map((l) => l?.name).filter(Boolean))],
       })
     }
@@ -51,6 +68,12 @@ function catalogo(): Plugin {
           res.end(JSON.stringify(indiceCatalogo()))
           return
         }
+        const b = /^([a-z0-9-]+\/[a-z0-9-]+)\/bases\.json$/.exec(m[1])
+        if (b && arquivosArmyBook(join(CATALOGO, b[1])).length) {
+          res.setHeader('Content-Type', TIPOS.json)
+          res.end(JSON.stringify(basesJson(join(CATALOGO, b[1]))))
+          return
+        }
         const arq = join(CATALOGO, m[1])
         if (!PERMITIDO.test(m[1]) || !existsSync(arq)) {
           res.statusCode = 404
@@ -73,7 +96,11 @@ function catalogo(): Plugin {
           return PERMITIDO.test(rel)
         },
       })
-      writeFileSync(join(destino, 'index.json'), JSON.stringify(indiceCatalogo()))
+      const indice = indiceCatalogo()
+      writeFileSync(join(destino, 'index.json'), JSON.stringify(indice))
+      for (const f of indice.faccoes) {
+        if (f.bases) writeFileSync(join(destino, String(f.caminho), 'bases.json'), JSON.stringify(basesJson(join(CATALOGO, String(f.caminho)))))
+      }
     },
   }
 }

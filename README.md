@@ -2,7 +2,7 @@
 
 Transforma listas do [Army Forge](https://army-forge.onepagerules.com) (One Page Rules) em standees imprimíveis: figura recortada com relevo preto, lingueta sob os pés e base separada no tamanho recomendado, exportados em 3MF (Bambu Studio, duas cores) ou STL.
 
-> Projeto em andamento. O site importa a lista, deixa escolher a arte e a base de cada unidade e **gera o 3MF no navegador** (duas metades em preto em relevo para colar, uma unidade por placa, perfil da Bambu Lab A1; a peça única pintada fica como opção). O protótipo Python (`prototipo/`) continua como referência.
+> Projeto em andamento, publicado em <https://mathitos.github.io/standee-onepage-rules/>. O site importa a lista, deixa escolher a arte e a base de cada unidade e **gera o 3MF no navegador** (duas metades em preto em relevo para colar, uma unidade por placa, perfil da Bambu Lab A1; a peça única pintada fica como opção). O protótipo Python (`prototipo/`) continua como referência.
 
 ## Estado
 
