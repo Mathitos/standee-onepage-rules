@@ -80,32 +80,28 @@ export interface MedidasTexto {
 /**
  * Texto na borda da base, letras com o topo para o centro. centro = 270 graus: borda da frente
  * (y negativo), lida pela frente; 90: borda de trás, lida por trás. Os glifos seguem a elipse
- * interna (a, b) recuada pela margem; o tamanho cai até P.textoMin se o texto não couber.
+ * interna (a, b) recuada pela margem. Se o texto não couber na altura pedida, fica com a maior
+ * altura que cabe (por bisseção, até P.textoMin): antes o tamanho caía na proporção do que
+ * faltava, e com a altura máxima de 4 mm os nomes longos saíam menores que com 3 mm.
  */
 export function textoNaBorda(
   w: ManifoldToplevel, fonte: Font, nome: string, a: number, b: number, P: Parametros,
   centro = 270, altura?: number,
 ): { secao: CrossSection; medidas: MedidasTexto } {
-  let alt = altura ?? P.textoAltura
   const N = 2000
-  let glifos: Glifo[] = []
-  let espaco = 0
-  let total = 0
-  let ra = 0
-  let rb = 0
-  const t = new Float64Array(N)
-  const pts: Vec2[] = new Array(N)
-  const s = new Float64Array(N)
-  for (;;) {
+  const montar = (alt: number) => {
     const corpo = alt / 0.72
     const desc = (-fonte.descender * corpo) / fonte.unitsPerEm
-    glifos = [...nome].map((ch) => glifo(fonte, ch, corpo))
-    espaco = 0.06 * alt
-    total = glifos.reduce((soma, g) => soma + g.adv, 0) + espaco * (glifos.length - 1)
+    const glifos = [...nome].map((ch) => glifo(fonte, ch, corpo))
+    const espaco = 0.06 * alt
+    const total = glifos.reduce((soma, g) => soma + g.adv, 0) + espaco * (glifos.length - 1)
     // curva na meia altura das letras: o espaçamento fica correto no meio do glifo
     const meio = P.textoMargem + desc + alt / 2
-    ra = a - meio
-    rb = b - meio
+    const ra = a - meio
+    const rb = b - meio
+    const t = new Float64Array(N)
+    const pts: Vec2[] = new Array(N)
+    const s = new Float64Array(N)
     const t0 = ((centro - P.textoArcoGraus / 2) * Math.PI) / 180
     const t1 = ((centro + P.textoArcoGraus / 2) * Math.PI) / 180
     for (let i = 0; i < N; i++) {
@@ -113,9 +109,22 @@ export function textoNaBorda(
       pts[i] = [ra * Math.cos(t[i]), rb * Math.sin(t[i])]
       s[i] = i === 0 ? 0 : s[i - 1] + Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1])
     }
-    if (total <= s[N - 1] || alt <= P.textoMin) break
-    alt = Math.max(P.textoMin, ((alt * s[N - 1]) / total) * 0.98)
+    return { alt, glifos, espaco, total, ra, rb, t, pts, s, cabe: total <= s[N - 1] }
   }
+  let m = montar(altura ?? P.textoAltura)
+  if (!m.cabe && m.alt > P.textoMin) {
+    let menor = montar(P.textoMin)
+    if (menor.cabe) {
+      let hi = m.alt
+      for (let i = 0; i < 14; i++) {
+        const meio = montar((menor.alt + hi) / 2)
+        if (meio.cabe) menor = meio
+        else hi = meio.alt
+      }
+    }
+    m = menor
+  }
+  const { alt, glifos, espaco, total, ra, rb, t, pts, s } = m
   let pos = (s[N - 1] - total) / 2
   const pecas: CrossSection[] = []
   for (const g of glifos) {

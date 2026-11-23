@@ -145,3 +145,7 @@ O usuário aprovou as placas por unidade e pediu três mudanças no site (D047).
 ## 23/11/2026 — poses alternadas, número da pose e miolo preto
 
 O usuário imprimiu uma lista do Alien Hives: os 3 Spores saíram com a mesma arte (o PDF só tem uma), e o standee de corpo branco com lateral preta trocava de filamento em todas as camadas. Pediu as poses alternadas, com o número da pose em fenda nas primeiras camadas para casar frente e verso, e lembrou o combinado de peça preta com o branco só onde precisa (D036). Feito no site (D048): as poses do catálogo alternam entre os modelos, sem contar as cópias da mesma figura; o número vai na face da cola, espelhado; e as metades passaram a ter corpo preto e branco só na face de cima. Ao separar poses de cópias, a "Warrior Spine Gun" 2 se mostrou cópia da 1, e não outra pose.
+
+## 23/11/2026 — nome da base em maiúsculas
+
+O usuário mandou a foto de uma base dos Spores com o nome meio ilegível. As minúsculas tinham ~2,4 mm e embolaram na textura da mesa. Desenhei três opções e o usuário escolheu maiúsculas com até 4 mm (D049). O cálculo do tamanho passou a achar a maior altura que cabe, para os nomes longos não encolherem mais que o necessário.

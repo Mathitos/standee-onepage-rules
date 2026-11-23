@@ -8,11 +8,12 @@ Site (GitHub Pages) que gera standees 3MF a partir de listas do Army Forge. O si
 
 - Git local em `C:\Users\Matheus\Desktop\dev\standee-onepage-rules`, branch `main`, com o remoto `origin` em `git@github.com:Mathitos/standee-onepage-rules.git` (público, criado pelo usuário em 23/11). O push vai por SSH: no desktop do usuário, o git usa o SSH do Windows, cujo agente tem a chave do GitHub. Commits pequenos; ver `git log`.
 - No git: artes vetorizadas (SVG) do catálogo, manifestos, revisões e snapshots do army book (D006 decidida, D020). Fora do git: `*.pdf`, `saidas/` e intermediários da skill (`work/`, `review/`, `build/`).
-- `npm run check` (tipos + 63 testes, 23/11) e `npm run build` passam localmente. Workflow `.github/workflows/pages.yml`: checks em push/PR, deploy da `main` no Pages. Primeira execução no GitHub em 23/11: verde (build e deploy). Site em https://mathitos.github.io/standee-onepage-rules/.
+- `npm run check` (tipos + 64 testes, 23/11) e `npm run build` passam localmente. Workflow `.github/workflows/pages.yml`: checks em push/PR, deploy da `main` no Pages. Primeira execução no GitHub em 23/11: verde (build e deploy). Site em https://mathitos.github.io/standee-onepage-rules/.
 - `npm audit`: 0 vulnerabilidades em dependências de produção; alerta "high" de ReDoS no `picomatch` só em ferramentas de desenvolvimento (não corrigido às cegas).
 
 ## Estado real
 
+- **Nome da base em maiúsculas, até 4 mm (23/11, D049)**: o usuário achou meio ilegível o "Spores" das bases impressas (minúsculas de ~2,4 mm na textura da mesa). Agora "SPORES" sai com 4 mm; nomes longos na base de 25 mm, com ~2,3 mm (o maior que cabe na borda da frente). Não impresso.
 - **Poses alternadas, número da pose e miolo preto nas metades (23/11, pedido do usuário, D048)**, depois de imprimir uma lista do Alien Hives em que os 3 Spores saíram iguais e o standee trocava de filamento em todas as camadas.
   - Os modelos de cada variante alternam as poses do catálogo (V1, V2...), no 3MF e no papel. Cópias da mesma figura não contam: 7 delas marcadas `copiaDe` na revisão e no manifesto. Spores têm uma arte só no PDF.
   - Arte com mais de uma pose: número da pose em fenda de 0,4 mm na face da cola de cada metade, lido por baixo.

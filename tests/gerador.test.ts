@@ -281,3 +281,22 @@ describe('lista completa equilibrada', () => {
     }
   })
 })
+
+describe('nome na base em maiúsculas, até 4 mm (pedido de 23/11)', () => {
+  it('nome curto fica com 4 mm; o longo, com o maior tamanho que cabe na borda', async () => {
+    const { base } = await import('../src/gerador/base')
+    const w = await carregarManifold()
+    const fonte = carregarFonte(buf(join(RAIZ, 'node_modules/@fontsource/barlow-semi-condensed/files/barlow-semi-condensed-latin-700-normal.woff')))
+    const r25 = { forma: 'redonda' as const, mm: [25] }
+    const nome = (n: string, P = PADRAO) => base(w, r25, P, 2.4, fonte, n, 2).medidas.nome!
+    expect(nome('Spores')).toMatchObject({ texto: 'SPORES', alturaLetraMm: 4, coube: true })
+    const longo = nome('Assault Grunts')
+    expect(longo.texto).toBe('ASSAULT GRUNTS')
+    expect(longo.coube).toBe(true)
+    // a bisseção acha o maior tamanho: um pouco maior já não cabe
+    expect(longo.comprimentoMm).toBeGreaterThan(0.97 * longo.arcoDisponivelMm)
+    expect(longo.alturaLetraMm).toBeGreaterThan(2.2)
+    // a opção antiga continua: como na lista
+    expect(nome('Spores', { ...PADRAO, textoMaiusculas: false, textoAltura: 3 })).toMatchObject({ texto: 'Spores', alturaLetraMm: 3 })
+  }, 300_000)
+})

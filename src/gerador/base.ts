@@ -108,7 +108,7 @@ export function base(
   const medidas: MedidasBase = { fendas: medF }
   let partes: Parte[] = [{ malha: solido, cor: 1, rotulo: 'Preto - base' }]
   if (nome && fonte) {
-    const t1 = textoNaBorda(w, fonte, nome, a, b, P)
+    const t1 = textoNaBorda(w, fonte, P.textoMaiusculas ? nome.toUpperCase() : nome, a, b, P)
     medidas.nome = t1.medidas
     let txt = t1.secao
     if (numero != null) {

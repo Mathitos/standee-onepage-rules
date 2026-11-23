@@ -70,6 +70,12 @@ export interface Parametros {
   nomeNaBase: boolean
   numeroNaBase: boolean
   numeroAltura: number
+  /**
+   * nome da unidade em maiúsculas na base (pedido do usuário em 23/11): em minúsculas, "Spores"
+   * saiu com ~2,4 mm de letra e embolou na textura da mesa
+   */
+  textoMaiusculas: boolean
+  /** altura máxima das letras do nome; o nome que não couber na borda fica com o maior tamanho que cabe, até textoMin */
   textoAltura: number
   textoMin: number
   textoCamada: number
@@ -120,7 +126,8 @@ export const PADRAO: Parametros = {
   nomeNaBase: true,
   numeroNaBase: true,
   numeroAltura: 3.0,
-  textoAltura: 3.0,
+  textoMaiusculas: true,
+  textoAltura: 4.0,
   textoMin: 1.8,
   textoCamada: 0.4,
   textoMargem: 0.6,
