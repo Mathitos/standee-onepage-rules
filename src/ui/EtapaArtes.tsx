@@ -1,13 +1,18 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { NormalizedArmyList } from '../armyforge/types'
 import { manterEscolhas, resolvida, sugerir, type PlanoUnidade } from '../catalogo/associar'
+import type { ArteEnviada } from '../catalogo/arteEnviada'
 import type { BasesFaccao } from '../catalogo/basesArmyBook'
 import {
   carregarArtes, carregarBases, carregarIndice, carregarManifesto, estiloDisponivel, faccaoDaLista, normalizar, urlArte, urlRotulo,
 } from '../catalogo/carregar'
 import type { ArteCatalogo, ArtesFaccao, Estilo, FaccaoIndice, IndiceCatalogo, ManifestoFaccao } from '../catalogo/tipos'
 import { nomeBase, type BaseSpec } from '../gerador/base'
+import { EnvioArte } from './EnvioArte'
 import { EtapaGerar } from './EtapaGerar'
+
+/** Arte enviada pelo usuário, com o endereço local da prévia (o SVG da frente). */
+export type Enviada = ArteEnviada & { url: string }
 
 /** Tamanhos comuns de base. A escolha é do usuário quando o catálogo não traz a base da unidade (D015). */
 const BASES_COMUNS: BaseSpec[] = [
@@ -29,6 +34,8 @@ export function EtapaArtes({ lista }: { lista: NormalizedArmyList }) {
   const [plano, setPlano] = useState<PlanoUnidade[]>([])
   const [estilo, setEstilo] = useState<Estilo>('fino')
   const [galeria, setGaleria] = useState<{ linha: number; variante: number } | null>(null)
+  const [enviadas, setEnviadas] = useState<Enviada[]>([])
+  const contadorEnviadas = useRef(0)
 
   useEffect(() => {
     carregarIndice().then(setIndice, (e) => setErro(`Catálogo indisponível: ${e.message}`))
@@ -71,6 +78,15 @@ export function EtapaArtes({ lista }: { lista: NormalizedArmyList }) {
   }, [lista, manifesto, bases, faccao])
 
   const porId = useMemo(() => new Map((artes?.artes ?? []).map((a) => [a.id, a])), [artes])
+  const enviadaPorId = useMemo(() => new Map(enviadas.map((a) => [a.id, a])), [enviadas])
+  // altura padrão da arte enviada: a mediana das figuras da facção, no estilo escolhido
+  const alturaPadraoMm = useMemo(() => {
+    const alturas = (artes?.artes ?? [])
+      .map((a) => { const e = estiloDisponivel(a, estilo); return e ? a.estilos[e]?.tamanhoMm[1] : undefined })
+      .filter((v): v is number => typeof v === 'number' && v > 0)
+      .sort((x, y) => x - y)
+    return alturas.length ? Math.round(alturas[Math.floor(alturas.length / 2)] * 2) / 2 : 35
+  }, [artes, estilo])
   const resolvidas = plano.filter(resolvida).length
 
   const atualizar = (linha: number, f: (p: PlanoUnidade) => PlanoUnidade) =>
@@ -145,12 +161,19 @@ export function EtapaArtes({ lista }: { lista: NormalizedArmyList }) {
                         {p.unidade.variants.map((v, i) => {
                           const esc = p.variantes[i]
                           const a = esc.arte ? porId.get(esc.arte) : undefined
+                          const enviada = esc.arte ? enviadaPorId.get(esc.arte) : undefined
                           return (
                             <li key={i}>
                               <span className="qtd">{v.modelsPerUnit * p.unidade.copies}×</span>{' '}
                               <span className="equip">{v.equipment.join(' + ') || 'sem arma listada'}</span>
                               <button type="button" className="escolher" onClick={() => setGaleria({ linha: p.linha, variante: i })}>
-                                {a ? <Miniatura faccao={faccao} arte={a} estilo={estilo} pequena /> : 'Escolher arte'}
+                                {a ? (
+                                  <Miniatura faccao={faccao} arte={a} estilo={estilo} pequena />
+                                ) : enviada ? (
+                                  <MiniaturaEnviada arte={enviada} pequena />
+                                ) : (
+                                  'Escolher arte'
+                                )}
                               </button>
                               {a && esc.origem === 'manifesto' && (
                                 <span className={`selo ${esc.aliasProposto ? 'revisar' : 'ok'}`}>
@@ -187,7 +210,7 @@ export function EtapaArtes({ lista }: { lista: NormalizedArmyList }) {
               </tbody>
             </table>
           </div>
-          <EtapaGerar lista={lista} plano={plano} faccao={faccao} artes={artes} estilo={estilo} />
+          <EtapaGerar lista={lista} plano={plano} faccao={faccao} artes={artes} estilo={estilo} enviadas={enviadas} />
         </>
       )}
       {galeria && faccao && artes && (
@@ -205,6 +228,18 @@ export function EtapaArtes({ lista }: { lista: NormalizedArmyList }) {
             atualizar(galeria.linha, (p) => ({
               ...p,
               variantes: p.variantes.map((v, i) => (i === galeria.variante ? { arte: id, origem: 'usuario' } : v)),
+            }))
+            setGaleria(null)
+          }}
+          enviadas={enviadas}
+          alturaPadraoMm={alturaPadraoMm}
+          proximoId={() => `enviada-${++contadorEnviadas.current}`}
+          onEnviar={(a) => {
+            const url = URL.createObjectURL(new Blob([a.frente], { type: 'image/svg+xml' }))
+            setEnviadas((xs) => [...xs, { ...a, url }])
+            atualizar(galeria.linha, (p) => ({
+              ...p,
+              variantes: p.variantes.map((v, i) => (i === galeria.variante ? { arte: a.id, origem: 'usuario' } : v)),
             }))
             setGaleria(null)
           }}
@@ -229,6 +264,19 @@ function Miniatura({ faccao, arte, estilo, pequena }: { faccao: FaccaoIndice; ar
   )
 }
 
+/** Prévia da arte enviada: o SVG gerado da frente (silhueta branca, traço preto). */
+function MiniaturaEnviada({ arte, pequena }: { arte: Enviada; pequena?: boolean }) {
+  return (
+    <span className={`miniatura${pequena ? ' pequena' : ''}`}>
+      <img src={arte.url} alt="" />
+      <span className="legenda">
+        {arte.rotulo}
+        <span className="aviso-estilo">enviada{arte.versoProprio ? '' : ', verso espelhado'}</span>
+      </span>
+    </span>
+  )
+}
+
 function Galeria(props: {
   faccao: FaccaoIndice
   artes: ArteCatalogo[]
@@ -237,6 +285,10 @@ function Galeria(props: {
   titulo: string
   onEscolher: (id: string) => void
   onFechar: () => void
+  enviadas: Enviada[]
+  alturaPadraoMm: number
+  proximoId: () => string
+  onEnviar: (a: ArteEnviada) => void
 }) {
   const [busca, setBusca] = useState('')
   const [soUnidade, setSoUnidade] = useState(!!props.unitKey)
@@ -272,7 +324,17 @@ function Galeria(props: {
           )}
           <span className="contagem">{lista.length} artes</span>
         </div>
+        <details className="envio-arte">
+          <summary>Nenhuma serve? Enviar uma arte própria</summary>
+          <EnvioArte alturaPadraoMm={props.alturaPadraoMm} proximoId={props.proximoId} onEnviar={props.onEnviar} />
+        </details>
         <div className="grade-artes">
+          {props.enviadas.map((a) => (
+            <button key={a.id} type="button" className="cartao-arte" onClick={() => props.onEscolher(a.id)}>
+              <MiniaturaEnviada arte={a} />
+              <span className="id-arte">{a.tamanhoMm[1]} mm de altura</span>
+            </button>
+          ))}
           {lista.map((a) => (
             <button key={a.id} type="button" className="cartao-arte" onClick={() => props.onEscolher(a.id)}>
               <Miniatura faccao={props.faccao} arte={a} estilo={props.estilo} />

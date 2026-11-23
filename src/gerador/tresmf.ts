@@ -30,6 +30,8 @@ export interface Opcoes3mf {
   mesa: number
   /** posição da torre de purga em cada placa (null = a do perfil) */
   torres?: ([number, number] | null)[]
+  /** liga ou desliga a torre de purga no projeto (enable_prime_tower); omitido = a do perfil */
+  torrePurga?: boolean
   versaoBambu?: string
 }
 
@@ -175,6 +177,7 @@ export function escrever3mf(objetos: Record<string, Objeto3mf>, placas: Placa3mf
     Object.fromEntries(placas.map((_, i) => [`plate_${i + 1}`, { nozzle_sequence: [], optimal_assignment: [], sequence: [] }])))
   if (op.projeto) {
     const projeto: Record<string, unknown> = { ...op.projeto }
+    if (op.torrePurga != null) projeto.enable_prime_tower = op.torrePurga ? '1' : '0'
     ;(['wipe_tower_x', 'wipe_tower_y'] as const).forEach((k, i) => {   // um valor por placa (PartPlate.cpp)
       const atual = projeto[k]
       if (Array.isArray(atual) && atual.length) {

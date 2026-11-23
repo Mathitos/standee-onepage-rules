@@ -137,3 +137,7 @@ Testando o site publicado com uma lista do Alien Hives, o usuário escolheu à m
 ## 23/11/2026 — botão "Atualizar" na lista
 
 A pedido do usuário, o botão "Usar lista de exemplo" virou "Atualizar": o texto colado só é lido quando ele clica, e não a cada tecla. Ao atualizar, as artes e bases escolhidas à mão continuam nas unidades que seguem na lista.
+
+## 23/11/2026 — torre de purga, lista completa e arte enviada
+
+O usuário aprovou as placas por unidade e pediu três mudanças no site (D047). A torre de purga agora vem desligada, com opção para ligar. O 3MF ganhou, no fim, as placas da lista completa, divididas em placas equilibradas quando não cabe numa só. E a galeria ganhou o envio de arte própria: a imagem vira, no navegador, os mesmos SVGs do catálogo, com o tratamento do importador, e entra no 3MF e no papel. Testado com a lista piloto pela CLI e com uma lista do Alien Hives no site local.

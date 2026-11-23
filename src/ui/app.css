@@ -677,3 +677,24 @@ a.botao {
     width: 100%;
   }
 }
+
+/* envio de arte própria, na galeria (pedido de 23/11) */
+.envio-arte {
+  margin: 4px 0 12px;
+  border: 1px dashed var(--linha);
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.envio-arte > summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.envio-arte-corpo input[type='file'] {
+  max-width: 100%;
+}
+
+.numero-curto {
+  width: 5.5em;
+}

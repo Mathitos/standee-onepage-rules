@@ -9,7 +9,7 @@ import { base, nomeBase, type BaseSpec, type MedidasBase } from './base'
 import { metadesPretoRelevo, paraMalha, pecaUnicaPintada, type MedidasCorpo, type Parte } from './figura'
 import { liberar } from './manifold'
 import { espessuraPeca, PADRAO, type Parametros } from './parametros'
-import { empacotar } from './placas'
+import { empacotar, type Colocada } from './placas'
 import { lerSvg } from './svg'
 import { carregarFonte } from './texto'
 import { escrever3mf, type Objeto3mf, type ParteMalha, type Placa3mf } from './tresmf'
@@ -55,7 +55,8 @@ export interface Resultado {
   modo: Parametros['modo']
   /** espessura da lingueta que entra na fenda (as metades coladas, ou a peça única) */
   espessuraLinguetaMm: number
-  placas: { nome: string; pecas: number }[]
+  /** grupo: placa de uma unidade (D037) ou da lista completa, no fim do arquivo */
+  placas: { nome: string; pecas: number; grupo: 'unidade' | 'lista' }[]
   /** pecaMm: a caixa de cada metade (as duas têm a mesma) ou da peça única; objetos: chaves no 3MF */
   artes: Record<string, { pecaMm: [number, number]; medidas: MedidasCorpo; objetos: string[] }>
   bases: Record<string, { dimMm: [number, number]; medidas: MedidasBase }>
@@ -94,6 +95,32 @@ function fechar(nome: string, partes: Parte[], checagens: Checagem[]) {
     malhas.push({ malha: paraMalha(p.malha), cor: p.cor, rotulo: p.rotulo })
   }
   return { malhas, dim: [Math.round((x1 - x0) * 100) / 100, Math.round((y1 - y0) * 100) / 100] as [number, number] }
+}
+
+/**
+ * Placas da lista completa. O empacotamento guloso decide quantas placas são precisas (N); se
+ * forem mais de uma, a lista é dividida em N placas equilibradas pela área das peças, sem separar
+ * unidades e na ordem da lista: o guloso enchia a primeira e deixava, por exemplo, uma metade
+ * sozinha na última. Se alguma parte equilibrada não couber numa placa, vale o guloso.
+ */
+export function listaCompleta(porUnidade: [string, number, number][][], P: Parametros, reservado?: [number, number, number, number]): Colocada[][] {
+  const guloso = empacotar(porUnidade.flat(), P, reservado)
+  const n = guloso.length
+  if (n <= 1) return guloso
+  const area = (pecas: [string, number, number][]) => pecas.reduce((s, [, w, h]) => s + w * h, 0)
+  const total = area(porUnidade.flat())
+  const partes: [string, number, number][][] = [[]]
+  let acumulada = 0
+  for (const pecas of porUnidade) {
+    const a = area(pecas)
+    // fecha a parte quando o meio desta unidade passa da fração dela (k/N da área total)
+    if (partes[partes.length - 1].length && partes.length < n && acumulada + a / 2 > (total * partes.length) / n) partes.push([])
+    partes[partes.length - 1].push(...pecas)
+    acumulada += a
+  }
+  if (partes.length !== n) return guloso
+  const equilibradas = partes.map((pecas) => empacotar(pecas, P, reservado))
+  return equilibradas.every((pl) => pl.length === 1) ? equilibradas.map((pl) => pl[0]) : guloso
 }
 
 export async function gerar(w: ManifoldToplevel, pedido: Pedido, progresso?: Progresso): Promise<Resultado> {
@@ -186,27 +213,35 @@ export async function gerar(w: ManifoldToplevel, pedido: Pedido, progresso?: Pro
   const placas: Placa3mf[] = []
   const torres: ([number, number] | null)[] = []
   const info: Resultado['placas'] = []
-  for (const g of [...porUnidade.values()].sort((A, B) => A.numero - B.numero)) {
-    const grupo = empacotar(g.pecas, P, P.torreXyxyBases)
-    grupo.forEach((pl, i) => {
-      const nome = `${g.numero} ${g.unidade}` + (grupo.length > 1 ? ` (${i + 1}/${grupo.length})` : '')
-      placas.push([nome, pl.map(([k, x, y]) => [k, x, y] as [string, number, number])])
-      torres.push(P.torrePosBases)
-      info.push({ nome, pecas: pl.length })
-      // nada sobreposto nem fora da mesa
-      pl.forEach(([, x1, y1, w1, h1], j) => {
-        if (x1 < 0 || y1 < 0 || x1 + w1 > P.mesa || y1 + h1 > P.mesa) throw new Error(`peça fora da mesa na placa ${nome}`)
-        for (const [, x2, y2, w2, h2] of pl.slice(j + 1)) {
-          if (!(x1 + w1 <= x2 || x2 + w2 <= x1 || y1 + h1 <= y2 || y2 + h2 <= y1)) throw new Error(`peças sobrepostas na placa ${nome}`)
-        }
-      })
+  // sem torre de purga (padrão), a mesa inteira fica para as peças
+  const reservado = P.torrePurga ? P.torreXyxyBases : undefined
+  const adicionar = (nome: string, pl: Colocada[], grupo: 'unidade' | 'lista') => {
+    placas.push([nome, pl.map(([k, x, y]) => [k, x, y] as [string, number, number])])
+    torres.push(P.torrePurga ? P.torrePosBases : null)
+    info.push({ nome, pecas: pl.length, grupo })
+    // nada sobreposto nem fora da mesa
+    pl.forEach(([, x1, y1, w1, h1], j) => {
+      if (x1 < 0 || y1 < 0 || x1 + w1 > P.mesa || y1 + h1 > P.mesa) throw new Error(`peça fora da mesa na placa ${nome}`)
+      for (const [, x2, y2, w2, h2] of pl.slice(j + 1)) {
+        if (!(x1 + w1 <= x2 || x2 + w2 <= x1 || y1 + h1 <= y2 || y2 + h2 <= y1)) throw new Error(`peças sobrepostas na placa ${nome}`)
+      }
     })
   }
+  const unidades = [...porUnidade.values()].sort((A, B) => A.numero - B.numero)
+  for (const g of unidades) {
+    const grupo = empacotar(g.pecas, P, reservado)
+    grupo.forEach((pl, i) => adicionar(`${g.numero} ${g.unidade}` + (grupo.length > 1 ? ` (${i + 1}/${grupo.length})` : ''), pl, 'unidade'))
+  }
+  // no fim, a lista inteira junta (pedido do usuário em 23/11), para imprimir tudo de uma vez em
+  // vez de unidade por unidade: "Lista completa", ou "Lista completa 1/N" ... "N/N" se não couber
+  const completa = listaCompleta(unidades.map((g) => g.pecas), P, reservado)
+  completa.forEach((pl, i) => adicionar(completa.length > 1 ? `Lista completa ${i + 1}/${completa.length}` : 'Lista completa', pl, 'lista'))
   const arquivo = escrever3mf(objetos, placas, {
     ajustes: P.paredes ? { wall_generator: P.paredes } : null,
     projeto: pedido.projeto ?? null,
     mesa: P.mesa,
     torres,
+    torrePurga: P.torrePurga,
   })
   if (!pedido.projeto) avisos.push('Sem perfil da impressora: o Bambu Studio vai abrir só a geometria.')
   const ruins = checagens.filter((c) => c.status !== 'NoError' || !(c.volumeMm3 > 0))

@@ -3,7 +3,7 @@ import { join, relative, resolve, sep } from 'node:path'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vitest/config'
 import type { Plugin } from 'vite'
-import { basesDosArmyBooks, type LivroArmyForge } from './src/catalogo/basesArmyBook'
+import { basesDosArmyBooks, type LivroArmyForge } from './src/catalogo/basesArmyBook.ts'
 
 const CATALOGO = resolve(import.meta.dirname, 'catalog')
 // só o que é público vai para o site: índice, manifesto e artes (D006/D039); work/, review/ e build/ nunca

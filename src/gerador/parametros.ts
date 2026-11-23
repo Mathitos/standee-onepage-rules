@@ -60,7 +60,12 @@ export interface Parametros {
   mesa: number
   margemMesa: number
   espaco: number
-  /** torre de purga das placas com bases (D027/D034) */
+  /**
+   * torre de purga ligada no projeto (enable_prime_tower). Desligada por padrão (pedido do
+   * usuário em 23/11): a A1 purga a troca de cor pela calha de trás, e a mesa não reserva área
+   */
+  torrePurga: boolean
+  /** posição da torre de purga, quando ligada (D027/D034) */
   torrePosBases: [number, number]
   /** área da mesa deixada livre para a torre: x0, y0, x1, y1 */
   torreXyxyBases: [number, number, number, number]
@@ -100,6 +105,7 @@ export const PADRAO: Parametros = {
   mesa: 256,
   margemMesa: 8,
   espaco: 4,
+  torrePurga: false,
   torrePosBases: [15, 200],
   torreXyxyBases: [0, 190, 70, 256],
 }

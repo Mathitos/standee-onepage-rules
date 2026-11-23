@@ -25,7 +25,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import perfil_bambu as B  # noqa: E402
 
-POR_PLACA = ('wipe_tower_x', 'wipe_tower_y')  # mantidos do arquivo, se ele trouxer
+# mantidos do arquivo, se ele trouxer: a posição da torre (por placa) e se ela está ligada (o site
+# grava enable_prime_tower = 0 por padrão desde 23/11; o perfil do sistema vem com 1)
+POR_PLACA = ('wipe_tower_x', 'wipe_tower_y', 'enable_prime_tower')
 
 
 def main():

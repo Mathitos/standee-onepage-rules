@@ -36,7 +36,7 @@ describe('gerador (borda grossa, sem nome nem perfil)', () => {
     })
     expect([r.modo, r.espessuraLinguetaMm]).toEqual(['peca-unica', 1.6])
     expect(r.checagens.every((c) => c.status === 'NoError' && c.volumeMm3 > 0)).toBe(true)
-    expect(r.placas).toEqual([{ nome: '1 Veterans', pecas: 4 }])
+    expect(r.placas).toEqual([{ nome: '1 Veterans', pecas: 4, grupo: 'unidade' }, { nome: 'Lista completa', pecas: 4, grupo: 'lista' }])
     expect(r.avisos).toContain('Sem perfil da impressora: o Bambu Studio vai abrir só a geometria.')
     expect(Object.keys(r.bases)).toEqual(['base-redonda-25-plana'])
     // encaixe retangular (D042): uma lingueta de 6 mm numa fenda de 6,3 mm, 1,6 + 0,25 de espessura
@@ -62,7 +62,7 @@ describe('gerador (borda grossa, sem nome nem perfil)', () => {
     expect([r.modo, r.espessuraLinguetaMm]).toEqual(['duas-metades', 2.4])
     expect(r.artes.v.objetos).toEqual(['v-frente', 'v-verso'])
     // por modelo: as duas metades e a base
-    expect(r.placas).toEqual([{ nome: '1 Veterans', pecas: 6 }])
+    expect(r.placas).toEqual([{ nome: '1 Veterans', pecas: 6, grupo: 'unidade' }, { nome: 'Lista completa', pecas: 6, grupo: 'lista' }])
     expect(r.checagens.map((c) => c.peca).filter((p) => p.startsWith('v-'))).toEqual([
       'v-frente Branco - corpo', 'v-frente Preto - relevo', 'v-frente Preto - lateral',
       'v-verso Branco - corpo', 'v-verso Preto - relevo', 'v-verso Preto - lateral'])
@@ -137,15 +137,24 @@ describe('gerador (lista piloto HDF, como o protótipo)', () => {
     }
     const r = await gerar(w, pedido)
     expect(r.checagens.filter((c) => c.status !== 'NoError' || c.volumeMm3 <= 0)).toEqual([])
-    expect(r.placas.map((p) => p.nome)).toEqual([
+    const porUnidade = r.placas.filter((p) => p.grupo === 'unidade')
+    expect(porUnidade.map((p) => p.nome)).toEqual([
       '1 Infantry Squad', '2 Combat Bikers', '3 Veterans', '4 Veterans', '5 OGRE Robot', '6 OGRE Robot'])
     // duas metades e uma base por modelo (D041/D045)
     expect(r.modo).toBe('duas-metades')
-    expect(r.placas.map((p) => p.pecas)).toEqual([9, 9, 9, 9, 3, 3])
+    expect(porUnidade.map((p) => p.pecas)).toEqual([9, 9, 9, 9, 3, 3])
+    // no fim, a lista completa: as mesmas 42 peças, em "Lista completa 1/N" ... "N/N" (pedido de 23/11)
+    const lista = r.placas.filter((p) => p.grupo === 'lista')
+    expect(r.placas.slice(-lista.length)).toEqual(lista)
+    expect(lista.length).toBeGreaterThan(1)
+    expect(lista.map((p) => p.nome)).toEqual(lista.map((_, i) => `Lista completa ${i + 1}/${lista.length}`))
+    expect(lista.reduce((s, p) => s + p.pecas, 0)).toBe(42)
     const z = unzipSync(r.arquivo)
     const proj = JSON.parse(strFromU8(z['Metadata/project_settings.config']))
     expect(proj.curr_bed_type).toBe('Textured PEI Plate')
-    expect(proj.wipe_tower_y).toEqual(['200', '200', '200', '200', '200', '200'])
+    // torre de purga desligada por padrão (pedido de 23/11)
+    expect(proj.enable_prime_tower).toBe('0')
+    expect(proj.wipe_tower_y).toHaveLength(r.placas.length)
     const cfg = strFromU8(z['Metadata/model_settings.config'])
     expect(cfg).toContain('value="Branco - nome e número"')
     expect(cfg).toContain('<metadata key="wall_generator" value="arachne"/>')
@@ -158,4 +167,39 @@ describe('gerador (lista piloto HDF, como o protótipo)', () => {
       writeFileSync(join(pasta, 'relatorio.json'), JSON.stringify({ ...r, arquivo: undefined }, null, 1))
     }
   }, 600_000)
+})
+
+describe('torre de purga (opção)', () => {
+  it('ligada, grava enable_prime_tower e a posição em cada placa, e as peças desviam da área dela', async () => {
+    const w = await carregarManifold()
+    const ler = (lado: string) => readFileSync(join(HDF, 'veteran-shotgun', 'borda', `${lado}.svg`), 'utf8')
+    const r = await gerar(w, {
+      artes: { v: { rotulo: 'Veteran Shotgun', frente: ler('frente'), verso: ler('verso') } },
+      modelos: [{ unidade: 'Veterans', numero: 1, qtd: 1, arte: 'v', base: { forma: 'redonda', mm: [25] } }],
+      parametros: { nomeNaBase: false, torrePurga: true },
+      projeto: JSON.parse(readFileSync(join(RAIZ, 'public/bambu/a1-bico-0.2.json'), 'utf8')).projeto,
+    })
+    const z = unzipSync(r.arquivo)
+    const proj = JSON.parse(strFromU8(z['Metadata/project_settings.config']))
+    expect(proj.enable_prime_tower).toBe('1')
+    expect(proj.wipe_tower_y).toEqual(['200', '200'])
+  }, 300_000)
+})
+
+describe('lista completa equilibrada', () => {
+  it('divide em N placas equilibradas sem separar unidades; se não couber, fica o guloso', async () => {
+    const { listaCompleta } = await import('../src/gerador/gerar')
+    const { PADRAO } = await import('../src/gerador/parametros')
+    // 6 unidades de 9 peças de 40 x 40 mm: 54 peças não cabem numa mesa de 256 mm
+    const unidades = Array.from({ length: 6 }, (_, u) => Array.from({ length: 9 }, (_, i) => [`u${u}-${i}`, 40, 40] as [string, number, number]))
+    const placas = listaCompleta(unidades, PADRAO)
+    expect(placas.length).toBeGreaterThan(1)
+    expect(placas.flat().length).toBe(54)
+    // nenhuma placa com uma peça sobrando; cada unidade inteira numa placa só
+    const tamanhos = placas.map((p) => p.length)
+    expect(Math.max(...tamanhos) - Math.min(...tamanhos)).toBeLessThanOrEqual(9)
+    for (let u = 0; u < 6; u++) {
+      expect(new Set(placas.map((p, i) => (p.some(([k]) => k.startsWith(`u${u}-`)) ? i : -1)).filter((i) => i >= 0)).size).toBe(1)
+    }
+  })
 })

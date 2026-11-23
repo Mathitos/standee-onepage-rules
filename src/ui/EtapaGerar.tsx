@@ -7,6 +7,7 @@ import type { ArtesFaccao, Estilo, FaccaoIndice } from '../catalogo/tipos'
 import { gerarNoWorker, type Geracao } from '../gerador/cliente'
 import type { ArtePedido, Resultado } from '../gerador/gerar'
 import type { ResultadoPapel } from '../papel/folhas'
+import type { Enviada } from './EtapaArtes'
 
 type Estado =
   | { fase: 'parado' }
@@ -23,12 +24,21 @@ type EstadoPapel =
 
 const plural = (n: number, um: string, varios: string) => `${n} ${n === 1 ? um : varios}`
 
-export function EtapaGerar(props: { lista: NormalizedArmyList; plano: PlanoUnidade[]; faccao: FaccaoIndice; artes: ArtesFaccao; estilo: Estilo }) {
+export function EtapaGerar(props: {
+  lista: NormalizedArmyList
+  plano: PlanoUnidade[]
+  faccao: FaccaoIndice
+  artes: ArtesFaccao
+  estilo: Estilo
+  /** artes enviadas pelo usuário: já vêm como SVG do contrato v2 */
+  enviadas: Enviada[]
+}) {
   const [nomeNaBase, setNomeNaBase] = useState(true)
   const [numero, setNumero] = useState(true)
   const [bico, setBico] = useState<'0.2' | '0.4'>('0.2')
   const [modo, setModo] = useState<'duas-metades' | 'peca-unica'>('duas-metades')
   const [miolo, setMiolo] = useState<'preto' | 'branco'>('preto')
+  const [torre, setTorre] = useState(false)
   const [soResolvidas, setSoResolvidas] = useState(false)
   const [estado, setEstado] = useState<Estado>({ fase: 'parado' })
   const [papel, setPapel] = useState<EstadoPapel>({ fase: 'parado' })
@@ -47,8 +57,14 @@ export function EtapaGerar(props: { lista: NormalizedArmyList; plano: PlanoUnida
   /** Textos dos SVG das artes usadas, no estilo escolhido (ou no outro, se a arte só tiver um). */
   async function baixarArtes(ids: string[]): Promise<Record<string, ArtePedido>> {
     const porId = new Map(props.artes.artes.map((a) => [a.id, a]))
+    const enviada = new Map(props.enviadas.map((a) => [a.id, a]))
     const artes: Record<string, ArtePedido> = {}
     await Promise.all([...new Set(ids)].map(async (id) => {
+      const env = enviada.get(id)
+      if (env) {
+        artes[id] = { rotulo: env.rotulo, frente: env.frente, verso: env.verso }
+        return
+      }
       const a = porId.get(id)
       const e = a && estiloDisponivel(a, props.estilo)
       if (!a || !e) throw new Error(`a arte ${id} não está em ${props.faccao.faccao}; escolha de novo`)
@@ -70,7 +86,7 @@ export function EtapaGerar(props: { lista: NormalizedArmyList; plano: PlanoUnida
         fetch(fonteUrl).then((r) => r.arrayBuffer()),
       ])
       const g = gerarNoWorker(
-        { modelos, artes, projeto: perfil.projeto, fonte, parametros: { modo, nomeNaBase, numeroNaBase: numero, miolo } },
+        { modelos, artes, projeto: perfil.projeto, fonte, parametros: { modo, nomeNaBase, numeroNaBase: numero, miolo, torrePurga: torre } },
         (feito, total, etapa) => setEstado({ fase: 'gerando', feito, total, etapa }),
       )
       geracao.current = g
@@ -130,7 +146,8 @@ export function EtapaGerar(props: { lista: NormalizedArmyList; plano: PlanoUnida
           {modo === 'duas-metades'
             ? 'Cada figura em duas metades (corpo branco, desenho preto em relevo), para colar costas com costas; a lingueta das metades coladas entra na fenda reta da base preta, que também as alinha na colagem.'
             : 'Peça única pintada (desenho nas duas faces), na fenda reta da base preta.'}{' '}
-          Uma unidade por placa, com o perfil da Bambu Lab A1 (filamento 1 branco, filamento 2 preto, Textured PEI).
+          Uma placa por unidade e, no fim, a lista completa junta (em quantas placas forem precisas), com o perfil da Bambu Lab A1
+          (filamento 1 branco, filamento 2 preto, Textured PEI).
         </p>
         <div className="linha-controles">
           <label>
@@ -146,6 +163,9 @@ export function EtapaGerar(props: { lista: NormalizedArmyList; plano: PlanoUnida
           <label>
             <input type="checkbox" checked={numero} disabled={!nomeNaBase} onChange={(e) => setNumero(e.target.checked)} /> número da
             unidade na lista
+          </label>
+          <label title="Sem a torre, a A1 purga a troca de cor pela calha de trás">
+            <input type="checkbox" checked={torre} onChange={(e) => setTorre(e.target.checked)} /> torre de purga
           </label>
           <label>
             Bico{' '}
@@ -189,8 +209,10 @@ export function EtapaGerar(props: { lista: NormalizedArmyList; plano: PlanoUnida
               Baixar {estado.nome} ({(estado.resultado.arquivo.byteLength / 1e6).toFixed(1)} MB)
             </a>
             <p className="detalhe">
-              {estado.resultado.placas.length} placas, gerado em {(estado.resultado.tempoMs / 1000).toFixed(1)} s:{' '}
-              {estado.resultado.placas.map((p) => `${p.nome} (${p.pecas} peças)`).join(' · ')}
+              {plural(estado.resultado.placas.filter((p) => p.grupo === 'unidade').length, 'placa', 'placas')} por unidade e{' '}
+              {plural(estado.resultado.placas.filter((p) => p.grupo === 'lista').length, 'placa', 'placas')} com a lista completa no fim,
+              gerado em {(estado.resultado.tempoMs / 1000).toFixed(1)} s:{' '}
+              {estado.resultado.placas.map((p) => `${p.nome} (${plural(p.pecas, 'peça', 'peças')})`).join(' · ')}
             </p>
             {estado.resultado.avisos.length > 0 && (
               <ul className="alertas">
