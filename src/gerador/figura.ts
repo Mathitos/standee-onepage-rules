@@ -1,6 +1,7 @@
 /**
- * Figura em peça única pintada (D032), port de prototipo/gerar.py: secao, corpo_com_lingueta,
- * peca_unica_pintada e lateral_preta. Toda a geometria 2D fica em mm, y para cima, como no
+ * Figura em duas metades em preto em relevo (D041/D045, padrão) ou em peça única pintada (D032),
+ * port de prototipo/gerar.py: secao, corpo_com_lingueta, metade, peca_unica_pintada e
+ * lateral_preta. Toda a geometria 2D fica em mm, y para cima, como no
  * protótipo; as contas de pixel (fundo da figura, colunas de apoio, linguetas) usam os pixels
  * de 600 dpi do SVG, com os centros nos inteiros.
  */
@@ -30,15 +31,25 @@ function pxParaMm(p: [number, number][], H: number): Vec2[] {
 export interface MedidasCorpo {
   travessaMm: number
   travessaAlargada: boolean
-  linguetas: { entreCentrosMm: number; largJuntoBarraMm: number; largPontaMm: number; profMm: number }
+  linguetas: {
+    encaixe: Parametros['encaixeBase']
+    quantidade: number
+    /** só no cônico */
+    entreCentrosMm: number | null
+    largJuntoBarraMm: number
+    largPontaMm: number
+    profMm: number
+  }
   figuraEsqMm: number
   figuraDirMm: number
 }
 
 /**
- * prototipo corpo_com_lingueta(): silhueta + travessa sob os pés + duas linguetas cônicas
- * (D031), simétricas em volta do meio da travessa, a P.linguetaEntre uma da outra em todas as
- * artes. Figura estreita ganha travessa mais larga. Tudo na orientação da frente.
+ * prototipo corpo_com_lingueta(): silhueta + travessa sob os pés + lingueta do encaixe.
+ * Retangular (D042, padrão): uma lingueta reta de P.linguetaRetLarg no meio do apoio dos pés.
+ * Cônico (D031): duas linguetas cônicas simétricas em volta do meio da travessa, a
+ * P.linguetaEntre uma da outra em todas as artes. Figura estreita ganha travessa mais larga.
+ * Tudo na orientação da frente.
  */
 export function corpoComLingueta(w: ManifoldToplevel, sil: CrossSection, H: number, P: Parametros) {
   const b = sil.bounds()
@@ -50,8 +61,10 @@ export function corpoComLingueta(w: ManifoldToplevel, sil: CrossSection, H: numb
   const esq = Math.round(apoioPes.min[0] / S + 0.5)
   const dir = Math.round(apoioPes.max[0] / S - 0.5)
   const centro = Math.floor((esq + dir + 1) / 2)            // fronteira entre colunas: eixo das linguetas
-  const D = meioEntrePx(P)
-  const meiaTopo = P.linguetaLarg / 2 / S
+  const conico = P.encaixeBase === 'conico'
+  const D = conico ? meioEntrePx(P) : 0
+  const meiaTopo = (conico ? P.linguetaLarg : P.linguetaRetLarg) / 2 / S
+  const tg = conico ? P.linguetaConicidade : 0
   const alcance = D + Math.ceil(meiaTopo + P.barraSobra / S)
   const travOrig = (dir - esq + 1) * S
   const esq2 = Math.min(esq, centro - alcance)
@@ -63,11 +76,11 @@ export function corpoComLingueta(w: ManifoldToplevel, sil: CrossSection, H: numb
   const prof = Math.round(P.linguetaProf / S)
   const linguetas: Vec2[][] = []
   let meiaPonta = 0
-  for (const cx of [centro - D, centro + D]) {
+  for (const cx of conico ? [centro - D, centro + D] : [centro]) {
     const ladoEsq: [number, number][] = []
     const ladoDir: [number, number][] = []
     for (let i = 0; i < prof; i++) {
-      const meia = Math.round(meiaTopo - (i + 0.5) * P.linguetaConicidade)
+      const meia = Math.round(meiaTopo - (i + 0.5) * tg)
       meiaPonta = meia
       const y0 = apoio + 0.5 + i
       ladoEsq.push([cx - meia - 0.5, y0], [cx - meia - 0.5, y0 + 1])
@@ -80,7 +93,9 @@ export function corpoComLingueta(w: ManifoldToplevel, sil: CrossSection, H: numb
     travessaMm: round((dir2 - esq2 + 1) * S, 2),
     travessaAlargada: (dir2 - esq2 + 1) * S > travOrig + 1e-6,
     linguetas: {
-      entreCentrosMm: round(2 * D * S, 3),
+      encaixe: P.encaixeBase,
+      quantidade: conico ? 2 : 1,
+      entreCentrosMm: conico ? round(2 * D * S, 3) : null,
       largJuntoBarraMm: round(2 * Math.round(meiaTopo) * S, 2),
       largPontaMm: round(2 * meiaPonta * S, 2),
       profMm: round(prof * S, 2),
@@ -136,7 +151,14 @@ export function pecaUnicaPintada(w: ManifoldToplevel, frente: FaceSvg, verso: Fa
       { malha: Manifold.extrude(cima, cam).translate([0, 0, esp - cam]), cor: 1, rotulo: 'Preto - desenho em cima' },
     ]
   }
-  // origem no canto da caixa do corpo inteiro, antes de recortar a lateral
+  return { partes: fecharPeca(w, partes, contorno, P), medidas }
+}
+
+/**
+ * Recorta a lateral preta (D034) e leva a origem ao canto da caixa da peça inteira, medida antes
+ * do recorte, como o protótipo.
+ */
+function fecharPeca(w: ManifoldToplevel, partes: Parte[], contorno: CrossSection, P: Parametros): Parte[] {
   let x0 = Infinity
   let y0 = Infinity
   for (const p of partes) {
@@ -144,22 +166,59 @@ export function pecaUnicaPintada(w: ManifoldToplevel, frente: FaceSvg, verso: Fa
     x0 = Math.min(x0, bb.min[0])
     y0 = Math.min(y0, bb.min[1])
   }
-  partes = lateralPreta(w, partes, contorno, P).map((p) => ({ ...p, malha: p.malha.translate([-x0, -y0, 0]) }))
-  return { partes, medidas }
+  return lateralPreta(w, partes, contorno, P).map((p) => ({ ...p, malha: p.malha.translate([-x0, -y0, 0]) }))
 }
 
-/** prototipo lateral_preta(): o branco a menos de P.lateralPreta mm da borda vira preto, em toda a altura. */
+export interface Metade {
+  lado: 'frente' | 'verso'
+  partes: Parte[]
+}
+
+/**
+ * Duas metades em preto em relevo (D041/D045), port de prototipo metade(): corpo branco de
+ * P.corpo e desenho preto em relevo de P.relevo em cima, nunca além da borda do corpo. A face
+ * da mesa é a da cola; impressas assim, as duas metades coladas costas com costas mostram a
+ * frente e o verso. A frente fica como no SVG; a metade do verso tem o contorno da frente
+ * espelhado, porque o SVG do verso já vem alinhado à frente espelhada. A lingueta e a barra
+ * ficam nas duas metades, sem relevo: coladas, a lingueta tem 2 x P.corpo e entra na fenda.
+ */
+export function metadesPretoRelevo(w: ManifoldToplevel, frente: FaceSvg, verso: FaceSvg, P: Parametros) {
+  const { largura: W, altura: H } = frente
+  if (verso.largura !== W || verso.altura !== H) throw new Error('frente e verso com telas diferentes')
+  const silF = secao(w, frente.silhueta, H)
+  const { corpo: corpoF, medidas } = corpoComLingueta(w, silF, H, P)
+  const espelhar = (cs: CrossSection) => cs.mirror([1, 0]).translate([(W - 1) * S, 0])
+  const { Manifold } = w
+  const metades: Metade[] = []
+  for (const [lado, contorno, tinta] of [
+    ['frente', corpoF, secao(w, frente.tinta, H)],
+    ['verso', espelhar(corpoF), secao(w, verso.tinta, H)],
+  ] as const) {
+    const partes: Parte[] = [
+      { malha: Manifold.extrude(contorno, P.corpo), cor: 0, rotulo: 'Branco - corpo' },
+      { malha: Manifold.extrude(tinta.intersect(contorno), P.relevo).translate([0, 0, P.corpo]), cor: 1, rotulo: 'Preto - relevo' },
+    ]
+    metades.push({ lado, partes: fecharPeca(w, partes, contorno, P) })
+  }
+  return { metades, medidas }
+}
+
+/**
+ * prototipo lateral_preta(): o branco a menos de P.lateralPreta mm da borda vira preto, em toda a
+ * altura. Corta pelo miolo (o contorno deslocado para dentro), não pelo anel da borda: dá o mesmo
+ * resultado, mas sem bordas quase coincidentes. Com o anel, o contorno espelhado do verso deixava
+ * lascas de volume ~1e-10 mm³ no branco.
+ */
 export function lateralPreta(w: ManifoldToplevel, partes: Parte[], contorno: CrossSection, P: Parametros): Parte[] {
   if (P.lateralPreta <= 0) return partes
-  const anel = contorno.subtract(contorno.offset(-P.lateralPreta, 'Round'))
-  const prisma = w.Manifold.extrude(anel, 100).translate([0, 0, -50])
+  const miolo = w.Manifold.extrude(contorno.offset(-P.lateralPreta, 'Round'), 100).translate([0, 0, -50])
   const saida: Parte[] = []
   let faixa: Manifold | null = null
   for (const p of partes) {
     if (p.cor === 0) {
-      const parte = p.malha.intersect(prisma)
+      const parte = p.malha.subtract(miolo)
       faixa = faixa ? faixa.add(parte) : parte
-      saida.push({ ...p, malha: p.malha.subtract(prisma) })
+      saida.push({ ...p, malha: p.malha.intersect(miolo) })
     } else {
       saida.push(p)
     }

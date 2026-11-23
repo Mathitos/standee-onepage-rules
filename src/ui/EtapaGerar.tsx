@@ -27,6 +27,7 @@ export function EtapaGerar(props: { lista: NormalizedArmyList; plano: PlanoUnida
   const [nomeNaBase, setNomeNaBase] = useState(true)
   const [numero, setNumero] = useState(true)
   const [bico, setBico] = useState<'0.2' | '0.4'>('0.2')
+  const [modo, setModo] = useState<'duas-metades' | 'peca-unica'>('duas-metades')
   const [miolo, setMiolo] = useState<'preto' | 'branco'>('preto')
   const [soResolvidas, setSoResolvidas] = useState(false)
   const [estado, setEstado] = useState<Estado>({ fase: 'parado' })
@@ -69,7 +70,7 @@ export function EtapaGerar(props: { lista: NormalizedArmyList; plano: PlanoUnida
         fetch(fonteUrl).then((r) => r.arrayBuffer()),
       ])
       const g = gerarNoWorker(
-        { modelos, artes, projeto: perfil.projeto, fonte, parametros: { nomeNaBase, numeroNaBase: numero, miolo } },
+        { modelos, artes, projeto: perfil.projeto, fonte, parametros: { modo, nomeNaBase, numeroNaBase: numero, miolo } },
         (feito, total, etapa) => setEstado({ fase: 'gerando', feito, total, etapa }),
       )
       geracao.current = g
@@ -126,10 +127,19 @@ export function EtapaGerar(props: { lista: NormalizedArmyList; plano: PlanoUnida
       <section className="saida" aria-labelledby="titulo-3mf">
         <h3 id="titulo-3mf">Impressão 3D (3MF)</h3>
         <p className="ajuda">
-          Peça única pintada (desenho nas duas faces, miolo preto), base preta com fendas e uma unidade por placa, com o
-          perfil da Bambu Lab A1 (filamento 1 branco, filamento 2 preto, Textured PEI).
+          {modo === 'duas-metades'
+            ? 'Cada figura em duas metades (corpo branco, desenho preto em relevo), para colar costas com costas; a lingueta das metades coladas entra na fenda reta da base preta, que também as alinha na colagem.'
+            : 'Peça única pintada (desenho nas duas faces), na fenda reta da base preta.'}{' '}
+          Uma unidade por placa, com o perfil da Bambu Lab A1 (filamento 1 branco, filamento 2 preto, Textured PEI).
         </p>
         <div className="linha-controles">
+          <label>
+            Modo{' '}
+            <select value={modo} onChange={(e) => setModo(e.target.value as 'duas-metades' | 'peca-unica')}>
+              <option value="duas-metades">duas metades, preto em relevo</option>
+              <option value="peca-unica">peça única pintada</option>
+            </select>
+          </label>
           <label>
             <input type="checkbox" checked={nomeNaBase} onChange={(e) => setNomeNaBase(e.target.checked)} /> nome da unidade na base
           </label>
@@ -144,13 +154,15 @@ export function EtapaGerar(props: { lista: NormalizedArmyList; plano: PlanoUnida
               <option value="0.4">0,4 mm</option>
             </select>
           </label>
-          <label>
-            Miolo{' '}
-            <select value={miolo} onChange={(e) => setMiolo(e.target.value as 'preto' | 'branco')}>
-              <option value="preto">preto (branco só no desenho)</option>
-              <option value="branco">branco</option>
-            </select>
-          </label>
+          {modo === 'peca-unica' && (
+            <label>
+              Miolo{' '}
+              <select value={miolo} onChange={(e) => setMiolo(e.target.value as 'preto' | 'branco')}>
+                <option value="preto">preto (branco só no desenho)</option>
+                <option value="branco">branco</option>
+              </select>
+            </label>
+          )}
         </div>
         <div className="botoes">
           <button type="button" onClick={iniciar} disabled={!podeGerar || ocupado}>

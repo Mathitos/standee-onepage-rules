@@ -24,6 +24,7 @@ python -I prototipo/gerar.py prototipo/lista-teste-duas-metades.json --modo duas
 - **Por que 0,1 mm:** no perfil do bico 0,2 (`0.10mm Standard @BBL A1 0.2 nozzle`), a primeira camada e as demais têm 0,1 mm. Então `--face-mm 0.1` põe o desenho exatamente na primeira camada.
 - **Bases:** as duas são iguais, de 2 mm, com o nome e o número 1 em branco embutidos em 0,4 mm (D027/D035).
 - **Regra do usuário:** cada placa tem uma unidade com a sua base (CLAUDE.md, D037).
+- **Regerado em 22/11** com o encaixe retangular (D042): uma lingueta reta numa fenda reta, no lugar das duas cônicas. As medidas da figura, as trocas e os tempos ficaram iguais (`evidencias/2026-11-22-encaixe-retangular-e-escala.md`). A geometria e a tabela de fendas abaixo são as da geração de 21/11.
 
 ## Mudança no gerador
 

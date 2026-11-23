@@ -1,5 +1,6 @@
 /**
- * Base preta com duas fendas cônicas vazadas (D031), impressa de cabeça para baixo (D027),
+ * Base preta com a fenda vazada do encaixe (D042 retangular, padrão; D031 cônica), impressa de
+ * cabeça para baixo (D027),
  * com nome e número da unidade embutidos em branco (D022/D035). Port de prototipo/gerar.py
  * fendas() e base().
  */
@@ -19,18 +20,45 @@ export function nomeBase(b: BaseSpec): string {
   return b.forma === 'redonda' ? `redonda-${b.mm[0]}` : `oval-${b.mm[0]}x${b.mm[1]}`
 }
 
+export interface MedidasFendas {
+  encaixe: Parametros['encaixeBase']
+  quantidade: number
+  /** retangular: largura da fenda; cônico: largura na boca */
+  largura: number
+  espessura: number
+  /** só no cônico */
+  entreCentros?: number
+  largFundo?: number
+  chanfroBoca?: number
+}
+
 /**
- * Duas fendas centradas em x = 0, no sistema da base impressa de cabeça para baixo: z = 0 é a
- * boca. Na boca, a fenda é 2 x folga x conicidade mais estreita que a lingueta junto à barra:
- * empurrada, a lingueta encosta nas paredes inclinadas e para com a barra a P.linguetaFolgaBarra
- * da base. A boca tem chanfro contra o pé de elefante.
+ * Vãos do encaixe, centrados em x = 0, no sistema da base impressa de cabeça para baixo: z = 0 é
+ * a boca. `extensao` é a meia largura e a meia espessura do que a fenda ocupa na face de cima.
+ *
+ * Retangular (D042, padrão): uma fenda reta e vazada, P.folgaLarg mais larga que a lingueta e
+ * P.folgaEsp mais grossa, sem chanfro, como nas primeiras versões do protótipo.
+ *
+ * Cônico (D031): duas fendas; na boca, 2 x folga x conicidade mais estreitas que a lingueta junto
+ * à barra: empurrada, a lingueta encosta nas paredes inclinadas e para com a barra a
+ * P.linguetaFolgaBarra da base. A boca tem chanfro contra o pé de elefante.
  */
-export function fendas(w: ManifoldToplevel, P: Parametros, espessuraLingueta: number) {
-  const tg = P.linguetaConicidade
+export function fendas(w: ManifoldToplevel, P: Parametros, espessuraLingueta: number): {
+  vaos: Manifold; medidas: MedidasFendas; extensao: [number, number]
+} {
   const H = P.baseAltura
+  const e = espessuraLingueta + P.folgaEsp
+  if (P.encaixeBase !== 'conico') {
+    const fl = P.linguetaRetLarg + P.folgaLarg
+    return {
+      vaos: w.Manifold.cube([fl, e, H + 0.02]).translate([-fl / 2, -e / 2, -0.01]),
+      medidas: { encaixe: 'retangular', quantidade: 1, largura: fl, espessura: e },
+      extensao: [fl / 2, e / 2],
+    }
+  }
+  const tg = P.linguetaConicidade
   const c = P.bocaChanfro
   const boca = P.linguetaLarg - 2 * P.linguetaFolgaBarra * tg
-  const e = espessuraLingueta + P.folgaEsp
   const larg = (z: number) => boca - 2 * z * tg
   if (larg(H) < 0.8) throw new Error('fenda cônica fecha antes do fundo da base')
   const tronco = (x: number, z0: number, w0: number, e0: number, z1: number, w1: number, e1: number) => {
@@ -48,12 +76,13 @@ export function fendas(w: ManifoldToplevel, P: Parametros, espessuraLingueta: nu
   }
   return {
     vaos: w.Manifold.union(partes),
-    medidas: { entreCentros: L, largBoca: boca, largFundo: larg(H), espessura: e, chanfroBoca: c },
+    medidas: { encaixe: 'conico', quantidade: 2, largura: boca, espessura: e, entreCentros: L, largFundo: larg(H), chanfroBoca: c },
+    extensao: [(L + boca) / 2 + c, e / 2 + c],
   }
 }
 
 export interface MedidasBase {
-  fendas: ReturnType<typeof fendas>['medidas']
+  fendas: MedidasFendas
   nome?: MedidasTexto
   numero?: MedidasTexto
 }
@@ -71,9 +100,7 @@ export function base(
   }
   const contorno = w.CrossSection.ofPolygons([elipse], 'EvenOdd')
   let solido = w.Manifold.extrude(contorno, P.baseAltura)
-  const { vaos, medidas: medF } = fendas(w, P, espessuraLingueta)
-  const xf = (medF.entreCentros + medF.largBoca) / 2 + P.bocaChanfro
-  const yf = medF.espessura / 2 + P.bocaChanfro
+  const { vaos, medidas: medF, extensao: [xf, yf] } = fendas(w, P, espessuraLingueta)
   if ((xf + 1.2) ** 2 / a ** 2 + (yf + 1.2) ** 2 / b ** 2 > 1) {
     throw new Error(`as fendas não cabem numa base de ${spec.mm.join('x')} mm`)
   }

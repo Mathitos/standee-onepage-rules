@@ -1,4 +1,5 @@
-"""Confere o encaixe das linguetas cônicas nas fendas da base (D031) com as malhas geradas.
+"""Confere o encaixe da figura na fenda da base com as malhas geradas: a lingueta retangular
+(D042, padrão) ou as duas linguetas cônicas (D031, --encaixe-base conico).
 
 Para cada arte, corta a metade da frente no meio da espessura (contorno da figura) e a base
 num plano vertical pelas fendas, e põe o contorno de pé sobre a base. Depois:
@@ -42,19 +43,19 @@ def corte_da_base(stl):
 
 
 def pontas(contorno):
-    """Centros das duas linguetas e a ponta (y mínimo) do contorno."""
+    """Centros das linguetas (1 retangular ou 2 cônicas) e a ponta (y mínimo) do contorno."""
     x0, ymin, x1, _ = contorno.bounds()
     faixa = contorno ^ mf.CrossSection.square((x1 - x0 + 2, 0.6)).translate((x0 - 1, ymin))
     pedacos = sorted(faixa.decompose(), key=lambda c: c.bounds()[0])
-    if len(pedacos) != 2:
-        raise SystemExit(f'esperava 2 linguetas, achei {len(pedacos)}')
+    if len(pedacos) not in (1, 2):
+        raise SystemExit(f'esperava 1 ou 2 linguetas, achei {len(pedacos)}')
     cx = [(p.bounds()[0] + p.bounds()[2]) / 2 for p in pedacos]
     return cx, ymin
 
 
 def afundar(contorno, base, xb, cx, ymin, dx=0.0, giro=0.0):
     """Maior profundidade s (ponta das linguetas abaixo da face de cima) sem interseção."""
-    meio = (cx[0] + cx[1]) / 2
+    meio = sum(cx) / len(cx)
     c = contorno.translate((-meio, -ymin))
     if giro:
         c = c.rotate(giro)
@@ -92,7 +93,8 @@ def main():
         cx, ymin = pontas(cont)
         prof = rel['artes'][arte]['linguetas_mm']['prof']
         s0 = afundar(cont, base, xb, cx, ymin)
-        r = {'entre_linguetas_mm': round(cx[1] - cx[0], 3), 'folga_barra_base_mm': round(prof - s0, 3)}
+        r = {'linguetas': len(cx), 'entre_linguetas_mm': round(cx[1] - cx[0], 3) if len(cx) == 2 else None,
+             'folga_barra_base_mm': round(prof - s0, 3)}
         # deslocada para o lado: quanto sobe
         r['sobe_se_deslocada_mm'] = {f'{d:+.2f}': round(s0 - afundar(cont, base, xb, cx, ymin, dx=d), 3)
                                      for d in (-0.1, -0.05, 0.05, 0.1)}
@@ -122,7 +124,7 @@ def desenhar(figs, png, k=90):
     contorno vermelho, vazio em azul claro."""
     paineis = []
     for arte, cont, base, xb, cx, ymin, s0 in figs[:1]:
-        meio = (cx[0] + cx[1]) / 2
+        meio = sum(cx) / len(cx)
         c = cont.translate((xb - meio, -ymin - s0))
         x0, x1, y0, y1 = xb - 9, xb + 9, -2.3, 1.2
         w, h = int((x1 - x0) * k), int((y1 - y0) * k)

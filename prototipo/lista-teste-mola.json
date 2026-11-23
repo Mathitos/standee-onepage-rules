@@ -1,0 +1,53 @@
+{
+  "descricao": "Teste da mola na base (pedido do usuário em 22/11/2026, depois da pesquisa de encaixe em FDM): uma Infantry Rifle em duas metades, acabamento preto em relevo (corpo branco, contorno preto em relevo; regerado em 22/11 a pedido do usuário, que achou esse acabamento melhor), com três bases de 25 mm na mesma placa para comparar o encaixe com a mesma figura. A borda de trás de cada base diz qual é: RETA (D042, sem mola), MOLA 0,8 e MOLA 0,6 (espessura da lâmina, em mm).",
+  "pdf": {
+    "caminho": "C:/Users/Matheus/Downloads/Human_Defense_Force_-_BW.pdf",
+    "sha256": "b17c9ba4f73f8f5c1a2aca045526f3e7009b06e8113b653f6f4cf3a0ddd719fc"
+  },
+  "artes": {
+    "infantry-rifle": {
+      "rotulo": "Infantry Rifle",
+      "pagina": {
+        "fino": 6,
+        "borda": 36
+      },
+      "linha": 0
+    }
+  },
+  "bases": {
+    "redonda-25": {
+      "forma": "redonda",
+      "mm": [
+        25
+      ],
+      "fonte": "Army Forge v3.6.0, 17/11/2026"
+    }
+  },
+  "modelos": [
+    {
+      "unidade": "Infantry Squad",
+      "numero": 1,
+      "equipamento": "Battle Rifle, Strike",
+      "qtd": 1,
+      "arte": "infantry-rifle",
+      "base": "redonda-25",
+      "acabamento": "preto-relevo",
+      "bases_teste": [
+        {
+          "encaixe_base": "retangular",
+          "rotulo": "RETA"
+        },
+        {
+          "encaixe_base": "mola",
+          "mola_lamina": 0.8,
+          "rotulo": "MOLA 0,8"
+        },
+        {
+          "encaixe_base": "mola",
+          "mola_lamina": 0.6,
+          "rotulo": "MOLA 0,6"
+        }
+      ]
+    }
+  ]
+}

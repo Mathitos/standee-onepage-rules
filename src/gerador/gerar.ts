@@ -1,12 +1,12 @@
 /**
- * Gera o projeto 3MF de uma lista resolvida, no caminho padrão do protótipo: peça única pintada,
- * miolo preto, lateral preta, base com nome e número, uma unidade por placa (D037), perfil da
- * A1 embutido (D026). Roda no Web Worker do site e no Node (testes). Port de
- * prototipo/gerar.py main().
+ * Gera o projeto 3MF de uma lista resolvida, no caminho padrão do protótipo: duas metades em
+ * preto em relevo (D041/D045; a peça única pintada fica como opção), lateral preta, base com
+ * nome e número, uma unidade por placa (D037), perfil da A1 embutido (D026). Roda no Web Worker
+ * do site e no Node (testes). Port de prototipo/gerar.py main().
  */
 import type { ManifoldToplevel } from 'manifold-3d'
 import { base, nomeBase, type BaseSpec, type MedidasBase } from './base'
-import { paraMalha, pecaUnicaPintada, type MedidasCorpo, type Parte } from './figura'
+import { metadesPretoRelevo, paraMalha, pecaUnicaPintada, type MedidasCorpo, type Parte } from './figura'
 import { liberar } from './manifold'
 import { espessuraPeca, PADRAO, type Parametros } from './parametros'
 import { empacotar } from './placas'
@@ -52,8 +52,12 @@ export interface Checagem {
 
 export interface Resultado {
   arquivo: Uint8Array
+  modo: Parametros['modo']
+  /** espessura da lingueta que entra na fenda (as metades coladas, ou a peça única) */
+  espessuraLinguetaMm: number
   placas: { nome: string; pecas: number }[]
-  artes: Record<string, { pecaMm: [number, number]; medidas: MedidasCorpo }>
+  /** pecaMm: a caixa de cada metade (as duas têm a mesma) ou da peça única; objetos: chaves no 3MF */
+  artes: Record<string, { pecaMm: [number, number]; medidas: MedidasCorpo; objetos: string[] }>
   bases: Record<string, { dimMm: [number, number]; medidas: MedidasBase }>
   checagens: Checagem[]
   avisos: string[]
@@ -115,10 +119,24 @@ export async function gerar(w: ManifoldToplevel, pedido: Pedido, progresso?: Pro
     const a = pedido.artes[chave]
     if (!a) throw new Error(`arte ${chave} não enviada`)
     try {
-      const { partes, medidas } = pecaUnicaPintada(w, lerSvg(a.frente), lerSvg(a.verso), P)
-      const { malhas, dim } = fechar(chave, partes, checagens)
-      objetos[chave] = { nome: a.rotulo, partes: malhas }
-      artes[chave] = { pecaMm: dim, medidas }
+      if (P.modo === 'duas-metades') {
+        const { metades, medidas } = metadesPretoRelevo(w, lerSvg(a.frente), lerSvg(a.verso), P)
+        const chaves: string[] = []
+        let dim: [number, number] = [0, 0]
+        for (const { lado, partes } of metades) {
+          const k = `${chave}-${lado}`
+          const f = fechar(k, partes, checagens)
+          objetos[k] = { nome: `${a.rotulo} - ${lado}`, partes: f.malhas }
+          chaves.push(k)
+          dim = [Math.max(dim[0], f.dim[0]), Math.max(dim[1], f.dim[1])]
+        }
+        artes[chave] = { pecaMm: dim, medidas, objetos: chaves }
+      } else {
+        const { partes, medidas } = pecaUnicaPintada(w, lerSvg(a.frente), lerSvg(a.verso), P)
+        const { malhas, dim } = fechar(chave, partes, checagens)
+        objetos[chave] = { nome: a.rotulo, partes: malhas }
+        artes[chave] = { pecaMm: dim, medidas, objetos: [chave] }
+      }
     } finally {
       liberar()
     }
@@ -157,7 +175,8 @@ export async function gerar(w: ManifoldToplevel, pedido: Pedido, progresso?: Pro
     if (!porUnidade.has(k)) porUnidade.set(k, { numero: m.numero, unidade: m.unidade, pecas: [] })
     const g = porUnidade.get(k)!
     for (let i = 0; i < m.qtd; i++) {
-      g.pecas.push([m.arte, ...artes[m.arte].pecaMm])
+      // as duas metades têm a mesma caixa (o contorno do verso é o da frente espelhado)
+      for (const k of artes[m.arte].objetos) g.pecas.push([k, ...artes[m.arte].pecaMm])
       const kb = chaveBase(m, P)
       g.pecas.push([kb, ...bases[kb].dimMm])
     }
@@ -191,5 +210,8 @@ export async function gerar(w: ManifoldToplevel, pedido: Pedido, progresso?: Pro
   const ruins = checagens.filter((c) => c.status !== 'NoError' || !(c.volumeMm3 > 0))
   if (ruins.length) avisos.push(`Malhas com problema: ${ruins.map((c) => c.peca).join(', ')}`)
   await passo('3MF')
-  return { arquivo, placas: info, artes, bases, checagens, avisos, tempoMs: Date.now() - t0, versao: VERSAO_GERADOR }
+  return {
+    arquivo, modo: P.modo, espessuraLinguetaMm: Math.round(esp * 100) / 100, placas: info, artes, bases, checagens, avisos,
+    tempoMs: Date.now() - t0, versao: VERSAO_GERADOR,
+  }
 }

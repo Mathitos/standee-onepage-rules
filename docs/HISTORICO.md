@@ -94,6 +94,18 @@ O usuário pediu os army books das outras 21 facções, para o site gerar só a 
 
 O usuário imprimiu a peça única pintada e reprovou a qualidade; pediu para voltar às duas metades coladas e um teste com duas versões da Infantry, uma por placa: desenho só na primeira camada e branco em relevo. Gerado `saidas/teste-duas-metades/projeto-duas-metades-fino.3mf` (pintado com `--face-mm 0.1` e branco em relevo, cada um com a sua base); o gerador passou a separar em placas os acabamentos diferentes da mesma unidade. Fatiado pela CLI: 4 trocas e 56 min; 9 trocas e 88 min. Não impresso. O site continua gerando a peça única até o resultado (D041).
 
+## 22/11/2026 — encaixe retangular de volta e escala conferida
+
+O usuário imprimiu o encaixe cônico e relatou que a peça caía da base; pediu o encaixe retangular das primeiras versões. Voltou no protótipo e no site com os números de antes: uma lingueta central reta de 6,0 × 1,9 mm numa fenda reta 0,3 mm mais larga e 0,25 mm mais grossa, sem chanfro; o cônico ficou como opção (D042). O teste das duas metades foi regerado, conferido nas malhas e fatiado pela CLI; o site passou nos 34 testes e a lista piloto fatiou sem erro. O usuário também achou as miniaturas pequenas perto do PDF impresso em A4. Medido no PDF e no 3MF: a figura tem 35 mm nos dois, dentro de uma célula de papel de 40 mm. A escala não mudou (D014): falta o usuário dizer com o que comparou e se quer um multiplicador.
+
+## 22/11/2026 — pesquisa de encaixe em FDM
+
+O usuário pediu um subagente para pesquisar boas práticas de encaixe em FDM. Resultado em `evidencias/2026-11-22-pesquisa-encaixe-fdm.md`. O encaixe cônico soltou porque a cunha de 26,6° por face passa do ângulo de autotravamento do PLA impresso (atrito de 0,12 a 0,38, conferido no resumo do artigo) e não tinha pré-carga. A folga do encaixe reto é de alinhamento; ele segurar na A1 do usuário deve depender da folga real ficar perto de zero. A recomendação é uma mola na base, que empurra a lingueta contra a parede oposta e tolera ±0,20 mm de erro da impressora sem mudar a figura. As medidas da mola são inferência e precisam de teste impresso. Nada foi implementado.
+
+## 22/11/2026 — teste da mola na base
+
+O usuário pediu para testar a mola recomendada pela pesquisa. O protótipo ganhou `--encaixe-base mola`: a mesma figura e a mesma fenda do encaixe retangular, com uma lâmina atrás da fenda cujo ressalto aperta a lingueta 0,30 mm contra a parede da frente (D043). Os vãos em volta da lâmina ficaram com 0,6 mm, não os 0,5 da pesquisa, porque a ponta da lâmina anda mais que o ressalto. A lista agora pode pedir bases de teste na placa do modelo. Gerado um teste numa placa: a Infantry em duas metades com as bases RETA, MOLA 0,8 e MOLA 0,6. Conferido nas malhas e no G-code; a CLI fatiou com 4 trocas em 77,7 min. Falta imprimir; o padrão continua o retangular e o site não mudou.
+
 ## 22/11/2026 — standees de papel em A4
 
 O usuário pediu para imprimir a lista também em papel A4, nas medidas certas e com várias minis por folha. A etapa 3 do site ganhou "Papel A4 (PDF)": uma faixa dobrável por modelo, no formato do PDF da OPR (aba, frente, verso girado 180°, aba), em pé, várias por folha e na escala do PDF a 100% (D044). O PDF é escrito no navegador, sem dependência nova. A lista piloto coube em 2 folhas; medida num leitor independente, a Infantry tem a mesma largura do PDF da OPR e 0,17 mm a menos de altura, diferença que já vem do SVG do catálogo. O site gerou o PDF da lista de exemplo sem erro, no desktop e a 375 px. Falta imprimir em papel. Outra sessão registrou ao mesmo tempo o teste da mola como D043.
@@ -101,3 +113,15 @@ O usuário pediu para imprimir a lista também em papel A4, nas medidas certas e
 ## 22/11/2026 — conferência de tamanho do papel: minis e bases
 
 O usuário pediu para conferir se as bases e as minis ficam do tamanho certo impressas em A4. As minis batem com o PDF da OPR, medidas nos dois PDFs a 600 dpi em 4 artes e 2 estilos: a largura fica igual e a altura até 0,17 mm diferente, diferença que vem do SVG do catálogo. As bases do catálogo batem com o army book nas 298 unidades. Mas as abas da faixa eram retângulos de 20 mm, e a pegada não tinha nada a ver com a base. Agora cada aba é meia base, centrada nos pés; dobradas para fora, as duas formam a base do army book, conferida no PDF com até 0,03 mm de diferença. 10 das 2096 artes, figuras muito altas com base grande, não cabem com a meia base e ficam com abas retangulares e aviso.
+
+## 22/11/2026 (noite) — acabamento preto em relevo e teste da mola regerado
+
+O usuário disse que, no fim, o contorno preto em relevo ficou melhor e pediu o teste de encaixe com uma mini nesse estilo (D045). O preto em relevo já era o padrão do protótipo. O teste da mola foi regerado com a Infantry em duas metades nesse acabamento; as três bases (RETA, MOLA 0,8, MOLA 0,6) não mudaram, e o relevo não chega à lingueta. A CLI fatiou com 13 trocas em 131,5 min, contra 4 trocas e 77,7 min com a mini pintada, por causa da lateral preta no corpo branco. Falta imprimir.
+
+## 22/11/2026 (noite) — resultado do teste da mola
+
+O usuário imprimiu o teste da mola e respondeu: "o encaixe reto sem mola ficou melhor". A mola (D043) foi reprovada e fica só como opção do protótipo; o padrão continua o encaixe retangular das primeiras versões (D042), que o site já usa. Com o acabamento (preto em relevo, D045) e o encaixe decididos, o próximo passo do agente é levar as duas metades para o site. O motivo da escolha não foi descrito, nem se o reto segura bem a figura.
+
+## 22/11/2026 (noite) — duas metades no site
+
+Com o acabamento e o encaixe decididos, o usuário pediu para levar as duas metades ao site (D046). O gerador do navegador agora faz por padrão as metades em preto em relevo, com o encaixe reto: dois objetos por figura e uma placa por unidade com as bases. A peça única pintada ficou como opção no seletor "Modo". No caminho, a lateral preta passou a cortar pelo miolo do contorno, o que acabou com lascas microscópicas no verso. Os volumes batem com o protótipo (até 0,45%), a lista piloto fatiou pela CLI sem erro (6 placas, 13 trocas cada) e o site gerou o 3MF no navegador embutido. Falta imprimir um 3MF do site.
