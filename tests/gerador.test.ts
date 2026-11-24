@@ -232,7 +232,11 @@ describe('gerador (lista piloto HDF, como o protótipo)', () => {
     expect(proj.curr_bed_type).toBe('Textured PEI Plate')
     // torre de purga desligada por padrão (pedido de 23/11)
     expect(proj.enable_prime_tower).toBe('0')
-    expect(proj.wipe_tower_y).toHaveLength(r.placas.length)
+    // listada como diferente do perfil do sistema: sem isso o Bambu Studio religava a torre ao abrir
+    expect(proj.different_settings_to_system[0].split(';')).toContain('enable_prime_tower')
+    expect(proj.different_settings_to_system).toHaveLength(4)
+    // a posição vai em toda placa, para a torre ligada depois cair na área livre
+    expect(proj.wipe_tower_y).toEqual(r.placas.map(() => '200'))
     const cfg = strFromU8(z['Metadata/model_settings.config'])
     expect(cfg).toContain('value="Branco - nome e número"')
     expect(cfg).toContain('<metadata key="wall_generator" value="arachne"/>')
@@ -262,6 +266,27 @@ describe('torre de purga (opção)', () => {
     expect(proj.enable_prime_tower).toBe('1')
     expect(proj.wipe_tower_y).toEqual(['200', '200'])
   }, 300_000)
+})
+
+describe('torre desligada: canto da torre livre quando não custa placa (pedido de 23/11)', () => {
+  it('deixa a área da torre livre; se isso pedir uma placa a mais, usa a mesa inteira', async () => {
+    const { empacotar, invadeArea, longeDaTorre } = await import('../src/gerador/placas')
+    const P = { ...PADRAO, torrePurga: false }
+    const quadrados = (n: number) => Array.from({ length: n }, (_, i) => [`q${i}`, 40, 40] as [string, number, number])
+    // 25 quadrados de 40 mm enchem a mesa (5 x 5); com o canto da torre livre, cabem 24
+    expect(empacotar(quadrados(25), P)).toHaveLength(1)
+    expect(empacotar(quadrados(25), P, P.torreXyxyBases)).toHaveLength(2)
+    const cheia = longeDaTorre((r) => empacotar(quadrados(25), P, r), P)
+    expect(cheia).toHaveLength(1)
+    expect(invadeArea(cheia[0], P.torreXyxyBases)).toBe(true)
+    const folgada = longeDaTorre((r) => empacotar(quadrados(20), P, r), P)
+    expect(folgada).toHaveLength(1)
+    expect(invadeArea(folgada[0], P.torreXyxyBases)).toBe(false)
+    // com a torre ligada, a área fica sempre livre, nem que custe uma placa
+    const ligada = longeDaTorre((r) => empacotar(quadrados(25), P, r), { ...P, torrePurga: true })
+    expect(ligada).toHaveLength(2)
+    expect(ligada.some((pl) => invadeArea(pl, P.torreXyxyBases))).toBe(false)
+  })
 })
 
 describe('lista completa equilibrada', () => {

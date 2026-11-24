@@ -10,7 +10,7 @@ import { base, nomeBase, type BaseSpec, type MedidasBase } from './base'
 import { metadesPretoRelevo, paraMalha, pecaUnicaPintada, type MedidasCorpo, type Parte } from './figura'
 import { liberar } from './manifold'
 import { espessuraPeca, PADRAO, type Parametros } from './parametros'
-import { empacotar, type Colocada } from './placas'
+import { empacotar, invadeArea, longeDaTorre, type Colocada } from './placas'
 import { lerSvg } from './svg'
 import { carregarFonte } from './texto'
 import { escrever3mf, type Objeto3mf, type ParteMalha, type Placa3mf } from './tresmf'
@@ -229,11 +229,14 @@ export async function gerar(w: ManifoldToplevel, pedido: Pedido, progresso?: Pro
   const placas: Placa3mf[] = []
   const torres: ([number, number] | null)[] = []
   const info: Resultado['placas'] = []
-  // sem torre de purga (padrão), a mesa inteira fica para as peças
-  const reservado = P.torrePurga ? P.torreXyxyBases : undefined
+  // placas em que a torre de purga, se for ligada depois no Bambu Studio, ficaria sobre as peças
+  const semLugarTorre: string[] = []
   const adicionar = (nome: string, pl: Colocada[], grupo: 'unidade' | 'lista') => {
     placas.push([nome, pl.map(([k, x, y]) => [k, x, y] as [string, number, number])])
-    torres.push(P.torrePurga ? P.torrePosBases : null)
+    // a posição da torre vai em toda placa, ligada ou não: se o usuário a ligar no Bambu
+    // Studio, ela aparece na área que o empacotamento deixou livre
+    torres.push(P.torrePosBases)
+    if (!P.torrePurga && invadeArea(pl, P.torreXyxyBases)) semLugarTorre.push(nome)
     info.push({ nome, pecas: pl.length, grupo })
     // nada sobreposto nem fora da mesa
     pl.forEach(([, x1, y1, w1, h1], j) => {
@@ -245,13 +248,17 @@ export async function gerar(w: ManifoldToplevel, pedido: Pedido, progresso?: Pro
   }
   const unidades = [...porUnidade.values()].sort((A, B) => A.numero - B.numero)
   for (const g of unidades) {
-    const grupo = empacotar(g.pecas, P, reservado)
+    const grupo = longeDaTorre((reservado) => empacotar(g.pecas, P, reservado), P)
     grupo.forEach((pl, i) => adicionar(`${g.numero} ${g.unidade}` + (grupo.length > 1 ? ` (${i + 1}/${grupo.length})` : ''), pl, 'unidade'))
   }
   // no fim, a lista inteira junta (pedido do usuário em 23/11), para imprimir tudo de uma vez em
   // vez de unidade por unidade: "Lista completa", ou "Lista completa 1/N" ... "N/N" se não couber
-  const completa = listaCompleta(unidades.map((g) => g.pecas), P, reservado)
+  const completa = longeDaTorre((reservado) => listaCompleta(unidades.map((g) => g.pecas), P, reservado), P)
   completa.forEach((pl, i) => adicionar(completa.length > 1 ? `Lista completa ${i + 1}/${completa.length}` : 'Lista completa', pl, 'lista'))
+  if (semLugarTorre.length) {
+    avisos.push(`Sem lugar livre para a torre de purga em: ${semLugarTorre.join(', ')}. ` +
+      'Deixar o canto da torre livre custaria uma placa a mais; se ligar a torre no Bambu Studio, arrume essas placas.')
+  }
   const arquivo = escrever3mf(objetos, placas, {
     ajustes: P.paredes ? { wall_generator: P.paredes } : null,
     projeto: pedido.projeto ?? null,

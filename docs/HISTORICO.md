@@ -149,3 +149,7 @@ O usuário imprimiu uma lista do Alien Hives: os 3 Spores saíram com a mesma ar
 ## 23/11/2026 — nome da base em maiúsculas
 
 O usuário mandou a foto de uma base dos Spores com o nome meio ilegível. As minúsculas tinham ~2,4 mm e embolaram na textura da mesa. Desenhei três opções e o usuário escolheu maiúsculas com até 4 mm (D049). O cálculo do tamanho passou a achar a maior altura que cabe, para os nomes longos não encolherem mais que o necessário.
+
+## 23/11/2026 — torre de purga religada pelo Bambu Studio
+
+O usuário desligou a torre no site, e o Bambu Studio abriu o projeto com a torre ligada, por cima das bases da "Lista completa". O 3MF baixado tinha `enable_prime_tower` = 0; o código-fonte do Bambu Studio mostrou que ele volta ao perfil do sistema as chaves que o projeto não lista em `different_settings_to_system`. O 3MF passou a listar a chave, e o empacotamento passou a deixar livre o canto da torre quando cabe, a pedido do usuário (D050). O teste pela CLI não tinha pegado o problema porque o script mantinha a chave do arquivo à força; agora segue a regra do Bambu Studio.

@@ -3,7 +3,24 @@ import type { Parametros } from './parametros'
 
 /** [chave, x, y, largura, altura] em mm da mesa */
 export type Colocada = [string, number, number, number, number]
-type Retangulo = [number, number, number, number]
+export type Retangulo = [number, number, number, number]
+
+/** Alguma peça da placa entra no retângulo (x0, y0, x1, y1)? */
+export function invadeArea(placa: Colocada[], r: Retangulo): boolean {
+  return placa.some(([, x, y, w, h]) => !(x + w <= r[0] || x >= r[2] || y + h <= r[1] || y >= r[3]))
+}
+
+/**
+ * Empacota deixando livre a área da torre de purga (P.torreXyxyBases): com a torre ligada,
+ * sempre; desligada, quando isso não custa uma placa a mais (pedido do usuário em 23/11), para
+ * que a torre ligada depois no Bambu Studio já tenha lugar sem arrumar as peças.
+ */
+export function longeDaTorre(empacotarCom: (reservado?: Retangulo) => Colocada[][], P: Parametros): Colocada[][] {
+  const livre = empacotarCom(P.torreXyxyBases)
+  if (P.torrePurga) return livre
+  const solto = empacotarCom()
+  return livre.length <= solto.length ? livre : solto
+}
 
 /**
  * Prateleiras simples, da peça mais alta para a mais baixa; o que não couber vai para outra

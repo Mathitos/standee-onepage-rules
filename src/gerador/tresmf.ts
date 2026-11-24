@@ -177,7 +177,20 @@ export function escrever3mf(objetos: Record<string, Objeto3mf>, placas: Placa3mf
     Object.fromEntries(placas.map((_, i) => [`plate_${i + 1}`, { nozzle_sequence: [], optimal_assignment: [], sequence: [] }])))
   if (op.projeto) {
     const projeto: Record<string, unknown> = { ...op.projeto }
-    if (op.torrePurga != null) projeto.enable_prime_tower = op.torrePurga ? '1' : '0'
+    if (op.torrePurga != null) {
+      projeto.enable_prime_tower = op.torrePurga ? '1' : '0'
+      // Ao abrir o projeto, o Bambu Studio volta ao valor do perfil do sistema toda chave do
+      // processo que não estiver em different_settings_to_system (a primeira posição é a do
+      // processo; PresetCollection::load_external_preset). Sem isso, a torre desligada voltava
+      // ligada (relato do usuário em 23/11). Os projetos que ele mesmo salva com a torre
+      // desligada trazem "enable_prime_tower" nessa lista.
+      const dif = projeto.different_settings_to_system
+      if (Array.isArray(dif) && dif.length) {
+        const chaves = new Set(String(dif[0]).split(';').filter(Boolean))
+        chaves.add('enable_prime_tower')
+        projeto.different_settings_to_system = [[...chaves].sort().join(';'), ...dif.slice(1)]
+      }
+    }
     ;(['wipe_tower_x', 'wipe_tower_y'] as const).forEach((k, i) => {   // um valor por placa (PartPlate.cpp)
       const atual = projeto[k]
       if (Array.isArray(atual) && atual.length) {

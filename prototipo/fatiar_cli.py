@@ -25,9 +25,17 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import perfil_bambu as B  # noqa: E402
 
-# mantidos do arquivo, se ele trouxer: a posição da torre (por placa) e se ela está ligada (o site
-# grava enable_prime_tower = 0 por padrão desde 23/11; o perfil do sistema vem com 1)
-POR_PLACA = ('wipe_tower_x', 'wipe_tower_y', 'enable_prime_tower')
+# mantidos do arquivo, se ele trouxer: a posição da torre (por placa, o Bambu Studio a restaura do
+# arquivo depois de carregar os perfis) e as chaves listadas em different_settings_to_system. Como
+# na interface (PresetCollection::load_external_preset), as outras voltam ao perfil do sistema:
+# até 23/11 este script mantinha o enable_prime_tower à força, e a torre que o site desligava sem
+# listar a chave voltava ligada no Bambu Studio sem aparecer no teste
+POR_PLACA = ('wipe_tower_x', 'wipe_tower_y')
+
+
+def listadas(do_arquivo):
+    """Chaves que o projeto diz diferirem do perfil do sistema (processo, filamentos e máquina)."""
+    return {k for v in do_arquivo.get('different_settings_to_system') or [] for k in str(v).split(';') if k}
 
 
 def main():
@@ -54,7 +62,7 @@ def main():
     mantidos = {}
     if 'Metadata/project_settings.config' in original:
         do_arquivo = json.loads(original['Metadata/project_settings.config'])
-        mantidos = {k: do_arquivo[k] for k in POR_PLACA if k in do_arquivo}
+        mantidos = {k: do_arquivo[k] for k in (*POR_PLACA, *sorted(listadas(do_arquivo))) if k in do_arquivo}
         proj.update(mantidos)
     for aj in a.ajuste:
         k, v = aj.split('=', 1)
