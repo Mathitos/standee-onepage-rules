@@ -12,7 +12,7 @@ import type { NormalizedArmyList, UnitGroup } from '../armyforge/types'
 import type { BaseSpec } from '../gerador/base'
 import type { ModeloPedido } from '../gerador/gerar'
 import type { ModeloPapel } from '../papel/folhas'
-import type { BasesFaccao } from './basesArmyBook'
+import { itemComBaseDaLista, type BasesFaccao } from './basesArmyBook'
 import { normalizar } from './carregar'
 import type { BaseManifesto, ManifestoFaccao } from './tipos'
 
@@ -33,6 +33,10 @@ export interface PlanoUnidade {
   unitKey: string | null
   base: BaseSpec | null
   baseOrigem: Origem | null
+  /** item do upgrade (montaria, carruagem) reconhecido na lista que deu a base */
+  baseUpgrade?: string | null
+  /** mais de um item com bases diferentes bate com a lista: a base ficou a da unidade */
+  baseAmbigua?: boolean
   variantes: EscolhaVariante[]
 }
 
@@ -48,8 +52,13 @@ export function sugerir(lista: NormalizedArmyList, manifesto: ManifestoFaccao | 
     const mesmoNome = (n: string) => normalizar(n) === normalizar(u.name)
     const un = manifesto?.units.find((x) => x.names.some(mesmoNome))
     const doManifesto = baseDoManifesto(un?.base)
-    const base = doManifesto ?? baseDoManifesto(bases?.unidades.find((x) => x.nomes.some(mesmoNome))?.base)
-    const baseOrigem: Origem | null = doManifesto ? 'manifesto' : base ? 'armybook' : null
+    const doLivro = bases?.unidades.find((x) => x.nomes.some(mesmoNome))
+    // montaria ou carruagem na lista troca a base (revisão de 25/11: o Champion of Change no
+    // Disc of Change ficava com os 25 mm da unidade em vez dos 40 mm do army book)
+    const upgrade = itemComBaseDaLista(u, doLivro, lista.header?.systemCode)
+    const doUpgrade = upgrade.item ? baseDoManifesto(upgrade.item.base) : null
+    const base = doUpgrade ?? doManifesto ?? baseDoManifesto(doLivro?.base)
+    const baseOrigem: Origem | null = doUpgrade ? 'armybook' : doManifesto ? 'manifesto' : base ? 'armybook' : null
     const variantes = u.variants.map((v): EscolhaVariante => {
       if (!un || !manifesto) return { arte: null, origem: null }
       const equip = new Set([
@@ -74,7 +83,10 @@ export function sugerir(lista: NormalizedArmyList, manifesto: ManifestoFaccao | 
         ? { arte: melhor.artId, origem: 'manifesto', aliasProposto: melhor.mappingStatus === 'alias-proposed' }
         : { arte: null, origem: null }
     })
-    return { linha: u.line, unidade: u, unitKey: un?.unitKey ?? null, base, baseOrigem, variantes }
+    return {
+      linha: u.line, unidade: u, unitKey: un?.unitKey ?? null, base, baseOrigem, variantes,
+      baseUpgrade: doUpgrade ? upgrade.item!.nome : null, baseAmbigua: upgrade.ambiguo,
+    }
   })
 }
 
@@ -98,6 +110,8 @@ export function manterEscolhas(novo: PlanoUnidade[], anterior: PlanoUnidade[]): 
       ...p,
       base: baseManual ? q.base : p.base,
       baseOrigem: baseManual ? q.baseOrigem : p.baseOrigem,
+      baseUpgrade: baseManual ? null : p.baseUpgrade,
+      baseAmbigua: baseManual ? false : p.baseAmbigua,
       variantes: p.variantes.map((v, i) =>
         q.variantes[i]?.origem === 'usuario' && armas(q.unidade, i) === armas(p.unidade, i) ? q.variantes[i] : v),
     }

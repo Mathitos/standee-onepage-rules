@@ -3,7 +3,7 @@ import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { parseShareText } from '../src/armyforge/parseShareText'
 import { manterEscolhas, modelosDoPlano, modelosParaPapel, posesDa, resolvida, sugerir } from '../src/catalogo/associar'
-import { basesDosArmyBooks, type LivroArmyForge } from '../src/catalogo/basesArmyBook'
+import { basesDosArmyBooks, itemComBaseDaLista, type LivroArmyForge } from '../src/catalogo/basesArmyBook'
 import { faccaoDaLista } from '../src/catalogo/carregar'
 import type { ManifestoFaccao } from '../src/catalogo/tipos'
 
@@ -247,5 +247,84 @@ describe('poses alternadas (pedido de 23/11)', () => {
     // sem o manifesto, como antes: uma arte por variante
     expect(modelosDoPlano(plano).modelos.map((m) => [m.numero, m.arte, m.qtd])).toEqual([
       [1, 'spores', 3], [2, 'assault-grunt-v1', 3], [3, 'assault-grunt-v1', 3], [4, 'shooter-grunt-v1', 5]])
+  })
+})
+
+describe('base da montaria ou carruagem da lista (revisão de 25/11)', () => {
+  // O texto da lista do Army Forge não traz o nome do item, só as regras que ele dá (Tough soma,
+  // as outras com nota ficam com a maior) e as armas: getListAsText e getAllUpgradedRules, no
+  // código público do site, lido em 25/11. As listas abaixo seguem essa regra.
+  const manifestoMU = JSON.parse(readFileSync(join(RAIZ, 'catalog/aof/mummified-undead/manifest.json'), 'utf8')) as ManifestoFaccao
+  const basesMU = basesDosArmyBooks(livros('aof/mummified-undead'))
+  const manifestoDC = JSON.parse(readFileSync(join(RAIZ, 'catalog/aof/daemons-of-change/manifest.json'), 'utf8')) as ManifestoFaccao
+  const basesDC = basesDosArmyBooks(livros('aof/daemons-of-change'))
+  const campeao = (cabecalho: string, regras: string, armas: string, m: ManifestoFaccao, b: typeof basesMU, nome = 'Royal Champion') =>
+    sugerir(parseShareText([cabecalho, '', `${nome} [1] Q3+ D4+ | 150pts | ${regras}`, armas].join('\n')), m, b)[0]
+  const MU = '++ Mummified Undead (v3.6.0) [AOFS 150pts] [1 Units] ++'
+
+  it('o army book traz as montarias do Royal Champion com a base e o que elas dão', () => {
+    const rc = basesMU.unidades.find((u) => u.nomes.includes('Royal Champion'))!
+    const skirmish = rc.sistemas!.find((s) => s.sistema === 5)!
+    expect(skirmish.itensComBase.find((i) => i.nome === 'Royal Snake')).toEqual({
+      nome: 'Royal Snake', base: { shape: 'oval', dimensionsMm: [75, 46], raw: '75x46' },
+      regras: [{ nome: 'Impact', nota: 6 }, { nome: 'Tough', nota: 9 }], armas: [],
+    })
+    expect(skirmish.itensComBase.find((i) => i.nome === 'Royal Beast')).toMatchObject({ regras: [{ nome: 'Fast', nota: null }], armas: ['Heavy Claws'] })
+  })
+
+  it('Royal Snake (Impact(6), Tough(9) a mais) põe o Royal Champion na oval de 75 x 46 mm', () => {
+    const p = campeao(MU, 'Hero, Tough(18), Royal Legion, Impact(6)', 'Dual Hand Weapons (A8)', manifestoMU, basesMU)
+    expect(p).toMatchObject({ base: { forma: 'oval', mm: [75, 46] }, baseOrigem: 'armybook', baseUpgrade: 'Royal Snake', baseAmbigua: false })
+  })
+
+  it('Royal Beast (Fast e Heavy Claws) dá a oval de 60 x 35 mm', () => {
+    const p = campeao(MU, 'Hero, Tough(9), Royal Legion, Fast', 'Dual Hand Weapons (A8), Heavy Claws (A2, AP(1))', manifestoMU, basesMU)
+    expect(p).toMatchObject({ base: { forma: 'oval', mm: [60, 35] }, baseUpgrade: 'Royal Beast' })
+  })
+
+  it('sem montaria, a base é a da unidade: a lista do usuário de 24/11 (Venom Expert dá só uma regra)', () => {
+    const p = campeao(MU, 'Hero, Tough(9), Royal Legion, Bane in Melee Aura', 'Dual Hand Weapons (A8)', manifestoMU, basesMU)
+    expect(p).toMatchObject({ base: { forma: 'redonda', mm: [25] }, baseUpgrade: null, baseAmbigua: false })
+  })
+
+  it('Champion of Change no Disc of Change (AoF): 40 mm em vez de 25; a carruagem não se confunde', () => {
+    const AOF = '++ Daemons of Change (v3.6.0) [AOF 150pts] [1 Units] ++'
+    const disco = campeao(AOF, 'Hero, Tough(6), Changebound, Fast, Strider', 'Dual Hand Weapons (A4), Strike (A3)', manifestoDC, basesDC, 'Champion of Change')
+    expect(disco).toMatchObject({ base: { forma: 'redonda', mm: [40] }, baseUpgrade: 'Disc of Change' })
+    const carro = campeao(AOF, 'Hero, Tough(9), Changebound, Armor(3), Fast, Impact(4), Strider', 'Dual Hand Weapons (A4), Screechers (A2, AP(1))', manifestoDC, basesDC, 'Champion of Change')
+    expect(carro).toMatchObject({ base: { forma: 'oval', mm: [120, 92] }, baseUpgrade: 'Screecher Chariot' })
+    const sem = campeao(AOF, 'Hero, Tough(3), Changebound', 'Dual Hand Weapons (A4)', manifestoDC, basesDC, 'Champion of Change')
+    expect(sem).toMatchObject({ base: { forma: 'redonda', mm: [25] }, baseUpgrade: null })
+  })
+
+  it('em todos os army books, unidade sem upgrade nenhum não é tomada por montada', () => {
+    const pastas = readdirSync(join(RAIZ, 'catalog')).flatMap((s) => readdirSync(join(RAIZ, 'catalog', s)).map((f) => `${s}/${f}`))
+    const codigo: Record<number, string> = { 2: 'GF', 3: 'GFF', 4: 'AOF', 5: 'AOFS' }
+    let comMontaria = 0
+    for (const c of pastas) {
+      let ls: LivroArmyForge[]
+      try {
+        ls = livros(c)
+      } catch {
+        continue
+      }
+      const bases = basesDosArmyBooks(ls)
+      for (const l of ls) {
+        for (const u of l.units ?? []) {
+          const entrada = bases.unidades.find((x) => x.armyForgeUnitId === u.id)
+          if (!entrada?.sistemas?.length) continue
+          comMontaria++
+          // a unidade como o Army Forge a escreve sem upgrade: regras e armas do próprio livro
+          const grupo = {
+            line: 1, copies: 1, name: u.name, modelsPerUnit: 1, quality: 4, defense: 4, pointsPerUnit: 0,
+            rules: (u.rules ?? []).map((r) => ({ count: null, name: r.rating != null ? `${r.name}(${r.rating})` : r.name, raw: r.name })),
+            equipment: (u.weapons ?? []).map((w) => ({ count: 1, name: w.name, profile: null, raw: w.name })),
+            variants: [], distribution: 'uniform' as const, needsReview: false,
+          }
+          expect(itemComBaseDaLista(grupo, entrada, codigo[l.gameSystemId ?? 0]).item, `${c} ${u.name}`).toBeNull()
+        }
+      }
+    }
+    expect(comMontaria).toBeGreaterThan(50)
   })
 })

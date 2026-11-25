@@ -198,7 +198,7 @@ export function EtapaArtes({ lista }: { lista: NormalizedArmyList }) {
                         value={p.base ? nomeBase(p.base) : ''}
                         onChange={(e) => {
                           const b = BASES_COMUNS.find((x) => nomeBase(x) === e.target.value) ?? null
-                          atualizar(p.linha, (q) => ({ ...q, base: b, baseOrigem: b ? 'usuario' : null }))
+                          atualizar(p.linha, (q) => ({ ...q, base: b, baseOrigem: b ? 'usuario' : null, baseUpgrade: null, baseAmbigua: false }))
                         }}
                       >
                         <option value="">— escolha —</option>
@@ -211,7 +211,12 @@ export function EtapaArtes({ lista }: { lista: NormalizedArmyList }) {
                           </option>
                         ))}
                       </select>
-                      {(p.baseOrigem === 'manifesto' || p.baseOrigem === 'armybook') && <div className="detalhe">do army book</div>}
+                      {(p.baseOrigem === 'manifesto' || p.baseOrigem === 'armybook') && (
+                        <div className="detalhe">do army book{p.baseUpgrade ? `, com ${p.baseUpgrade}` : ''}</div>
+                      )}
+                      {p.baseAmbigua && (
+                        <div className="detalhe atencao">a lista pode ter mais de uma montaria: confira a base</div>
+                      )}
                     </td>
                   </tr>
                 ))}
