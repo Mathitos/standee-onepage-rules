@@ -8,21 +8,40 @@ import { gerarNoWorker, type Geracao } from '../gerador/cliente'
 import type { ArtePedido, Resultado } from '../gerador/gerar'
 import type { ResultadoPapel } from '../papel/folhas'
 import type { Enviada } from './EtapaArtes'
+import { MENSAGEM_ATUALIZADO, siteAtualizado } from './versao'
 
 type Estado =
   | { fase: 'parado' }
   | { fase: 'preparando' }
   | { fase: 'gerando'; feito: number; total: number; etapa: string }
   | { fase: 'pronto'; resultado: Resultado; url: string; nome: string }
-  | { fase: 'erro'; mensagem: string }
+  | { fase: 'erro'; mensagem: string; atualizado: boolean }
 
 type EstadoPapel =
   | { fase: 'parado' }
   | { fase: 'gerando' }
   | { fase: 'pronto'; resultado: ResultadoPapel; url: string; nome: string }
-  | { fase: 'erro'; mensagem: string }
+  | { fase: 'erro'; mensagem: string; atualizado: boolean }
 
 const plural = (n: number, um: string, varios: string) => `${n} ${n === 1 ? um : varios}`
+
+/** Mensagem da falha e, se o site mudou com a página aberta, verifica isso para pedir que recarregue. */
+async function falha(e: unknown): Promise<{ fase: 'erro'; mensagem: string; atualizado: boolean }> {
+  const mensagem = e instanceof Error ? e.message : String(e)
+  return { fase: 'erro', mensagem, atualizado: mensagem !== 'cancelado' && (await siteAtualizado()) }
+}
+
+function Falha(props: { mensagem: string; atualizado: boolean }) {
+  if (!props.atualizado) return <p className="erro-carga">Falhou: {props.mensagem}</p>
+  return (
+    <div className="erro-carga">
+      <p>{MENSAGEM_ATUALIZADO}</p>
+      <button type="button" onClick={() => location.reload()}>
+        Recarregar a página
+      </button>
+    </div>
+  )
+}
 
 export function EtapaGerar(props: {
   lista: NormalizedArmyList
@@ -98,7 +117,7 @@ export function EtapaGerar(props: {
       const url = URL.createObjectURL(new Blob([resultado.arquivo as BlobPart], { type: 'model/3mf' }))
       setEstado({ fase: 'pronto', resultado, url, nome })
     } catch (e) {
-      setEstado({ fase: 'erro', mensagem: e instanceof Error ? e.message : String(e) })
+      setEstado(await falha(e))
     } finally {
       geracao.current = null
     }
@@ -119,7 +138,7 @@ export function EtapaGerar(props: {
       const url = URL.createObjectURL(new Blob([resultado.arquivo as BlobPart], { type: 'application/pdf' }))
       setPapel({ fase: 'pronto', resultado, url, nome })
     } catch (e) {
-      setPapel({ fase: 'erro', mensagem: e instanceof Error ? e.message : String(e) })
+      setPapel(await falha(e))
     }
   }
 
@@ -202,7 +221,7 @@ export function EtapaGerar(props: {
           </div>
         )}
         {estado.fase === 'erro' &&
-          (estado.mensagem === 'cancelado' ? <p className="vazio">Geração cancelada.</p> : <p className="erro-carga">Falhou: {estado.mensagem}</p>)}
+          (estado.mensagem === 'cancelado' ? <p className="vazio">Geração cancelada.</p> : <Falha {...estado} />)}
         {estado.fase === 'pronto' && (
           <div className="pronto">
             <a className="botao" href={estado.url} download={estado.nome}>
@@ -241,7 +260,7 @@ export function EtapaGerar(props: {
           </button>
         </div>
         {papel.fase === 'gerando' && <p className="vazio">Montando as folhas…</p>}
-        {papel.fase === 'erro' && <p className="erro-carga">Falhou: {papel.mensagem}</p>}
+        {papel.fase === 'erro' && <Falha {...papel} />}
         {papel.fase === 'pronto' && (
           <div className="pronto">
             <div className="botoes">

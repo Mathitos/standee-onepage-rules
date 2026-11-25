@@ -415,6 +415,10 @@ code {
   border-radius: 6px;
 }
 
+.erro-carga p {
+  margin: 0 0 8px;
+}
+
 .tabela-artes td {
   vertical-align: top;
 }
