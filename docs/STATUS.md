@@ -1,4 +1,4 @@
-# Checkpoint atual — 24/11/2026
+# Checkpoint atual — 25/11/2026
 
 ## Objetivo
 
@@ -13,6 +13,7 @@ Site (GitHub Pages) que gera standees 3MF a partir de listas do Army Forge. O si
 
 ## Estado real
 
+- **Revisão de outro agente (25/11, D052–D054)**: dos 7 itens, todos procedem; três falhas foram corrigidas: travamento com peça grande (regressão da D050), base de montaria ou carruagem e download desatualizado. Ficam pendentes: frente x verso sem alerta na interface, distribuição ambígua de armas sem confirmação (PRD-02), projeto não salvo (RF07/RF08), ARQUITETURA e PRD-01 desatualizados (geometria no navegador, STL) e as artes com tag de item ou montaria, que não casam pela lista (D053).
 - **Aviso de site atualizado (24/11, D051)**: numa aba aberta antes de um deploy, gerar o 3MF dava só "Falhou: falha no worker", porque o worker da versão anterior some do site. Agora o site percebe que foi atualizado e pede para recarregar a página, com um botão. A lista de Mummified Undead do relato gera normalmente numa aba nova.
 - **Torre de purga desligada de verdade e canto da torre livre (23/11, D050)**: o Bambu Studio religava a torre que o site desligava, porque a chave não estava na lista de ajustes alterados do projeto; agora está. Com a torre desligada, as peças deixam o canto dela livre quando isso não custa uma placa, para ligá-la depois sem arrumar nada. Conferido pela CLI; não conferido na interface do Bambu Studio. Não impresso.
 - **Nome da base em maiúsculas, até 4 mm (23/11, D049)**: o usuário achou meio ilegível o "Spores" das bases impressas (minúsculas de ~2,4 mm na textura da mesa). Agora "SPORES" sai com 4 mm; nomes longos na base de 25 mm, com ~2,3 mm (o maior que cabe na borda da frente). Não impresso.

@@ -287,6 +287,20 @@ describe('torre desligada: canto da torre livre quando não custa placa (pedido 
     expect(ligada).toHaveLength(2)
     expect(ligada.some((pl) => invadeArea(pl, P.torreXyxyBases))).toBe(false)
   })
+
+  it('peça grande demais para ficar fora do canto vai por cima dele, sem travar (revisão de 25/11)', async () => {
+    const { empacotar, invadeArea, longeDaTorre } = await import('../src/gerador/placas')
+    // 190 x 200 mm cabe na mesa (240 mm úteis), mas não fora do canto da torre (x 0-70, y 190-256):
+    // antes, o laço abria placas vazias até acabar a memória
+    const pecas: [string, number, number][] = [['grande', 190, 200], ['q', 40, 40]]
+    for (const torrePurga of [false, true]) {
+      const P = { ...PADRAO, torrePurga }
+      const placas = longeDaTorre((r) => empacotar(pecas, P, r), P)
+      expect(placas).toHaveLength(1)
+      expect(placas[0].map((p) => p[0]).sort()).toEqual(['grande', 'q'])
+      expect(invadeArea(placas[0], P.torreXyxyBases)).toBe(true)
+    }
+  })
 })
 
 describe('lista completa equilibrada', () => {

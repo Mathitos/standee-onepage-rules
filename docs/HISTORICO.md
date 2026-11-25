@@ -157,3 +157,7 @@ O usuário desligou a torre no site, e o Bambu Studio abriu o projeto com a torr
 ## 24/11/2026 — "falha no worker" depois do deploy
 
 O usuário colou uma lista de Mummified Undead e o 3MF falhou com "falha no worker". A mesma lista gerou normalmente no site local e no publicado, numa aba nova. O worker da versão anterior não existe mais no site depois do deploy da D050, e um worker que aponta para ele falha sem mensagem, que é o que o site mostrava; é a causa provável, não confirmada com o usuário. O site passou a avisar que foi atualizado e a oferecer recarregar a página (D051).
+
+## 25/11/2026 — revisão de outro agente
+
+O usuário pediu para conferir uma análise do projeto feita por outro agente. Os 7 itens procedem, com dados conferidos no código, nos army books e nos PRDs; o 2 em parte (os aliases propostos vêm da D040). O travamento do empacotamento com peça grande era regressão da D050. O usuário pediu as correções dos itens 6, 1 e 5 (D052–D054). Ao corrigir o 1, a leitura do código público do Army Forge mostrou que a lista não traz o nome dos itens, só o que eles dão, o que contradiz a D040.
