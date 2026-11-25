@@ -9,7 +9,7 @@
   "sha256": "934be4554170b8866248950f1e56917706ac21d5aa6886d332df73e9b0b81e4b",
   "paginas": 78
  },
- "manifesto": null,
+ "manifesto": "manifest.json",
  "artes": [
   {
    "id": "guild-lord-hammer",
@@ -116,7 +116,7 @@
       52.41,
       34.21
      ],
-     "iouFrenteVerso": 0.985,
+     "iouFrenteVerso": 0.99,
      "pagina": 2,
      "copias": 1
     },
@@ -129,7 +129,7 @@
       56.13,
       36.07
      ],
-     "iouFrenteVerso": 0.988,
+     "iouFrenteVerso": 0.992,
      "pagina": 40,
      "copias": 1
     }
@@ -1233,7 +1233,7 @@
       46.4,
       50.46
      ],
-     "iouFrenteVerso": 0.974,
+     "iouFrenteVerso": 0.819,
      "pagina": 14,
      "copias": 5
     },
@@ -1246,7 +1246,7 @@
       51.27,
       53.0
      ],
-     "iouFrenteVerso": 0.978,
+     "iouFrenteVerso": 0.865,
      "pagina": 52,
      "copias": 2
     }
@@ -1276,7 +1276,7 @@
       40.13,
       50.21
      ],
-     "iouFrenteVerso": 0.969,
+     "iouFrenteVerso": 0.812,
      "pagina": 15,
      "copias": 5
     },
@@ -1289,7 +1289,7 @@
       44.79,
       52.54
      ],
-     "iouFrenteVerso": 0.976,
+     "iouFrenteVerso": 0.861,
      "pagina": 53,
      "copias": 5
     }
@@ -2094,7 +2094,7 @@
       42.93,
       34.5
      ],
-     "iouFrenteVerso": 0.983,
+     "iouFrenteVerso": 0.986,
      "pagina": 30,
      "copias": 5
     },
@@ -2107,7 +2107,7 @@
       46.65,
       36.36
      ],
-     "iouFrenteVerso": 0.989,
+     "iouFrenteVerso": 0.991,
      "pagina": 68,
      "copias": 5
     }
@@ -2623,7 +2623,7 @@
       37.89,
       36.66
      ],
-     "iouFrenteVerso": 0.974,
+     "iouFrenteVerso": 0.992,
      "pagina": 37,
      "copias": 1
     },
@@ -2636,7 +2636,7 @@
       41.28,
       38.35
      ],
-     "iouFrenteVerso": 0.979,
+     "iouFrenteVerso": 0.993,
      "pagina": 75,
      "copias": 1
     }
@@ -2819,7 +2819,7 @@
       51.56,
       53.0
      ],
-     "iouFrenteVerso": 0.977,
+     "iouFrenteVerso": 0.864,
      "pagina": 52,
      "copias": 3
     }

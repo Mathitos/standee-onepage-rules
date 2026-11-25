@@ -9,7 +9,7 @@
   "sha256": "652d1a6acb1ed79c0ef299d33045f537161d9a21b3434865ef251b1c8fc52f84",
   "paginas": 44
  },
- "manifesto": null,
+ "manifesto": "manifest.json",
  "artes": [
   {
    "id": "captain-pistol-katana",
@@ -1309,7 +1309,7 @@
       40.13,
       32.85
      ],
-     "iouFrenteVerso": 0.921,
+     "iouFrenteVerso": 0.929,
      "pagina": 13,
      "copias": 2
     },
@@ -1322,7 +1322,7 @@
       45.13,
       35.35
      ],
-     "iouFrenteVerso": 0.96,
+     "iouFrenteVerso": 0.965,
      "pagina": 34,
      "copias": 2
     }

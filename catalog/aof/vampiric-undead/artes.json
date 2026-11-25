@@ -9,7 +9,7 @@
   "sha256": "14e35f3696109ed6cd8fdb2f2bec343d8f141f9de52004cf149551126cb3079b",
   "paginas": 66
  },
- "manifesto": null,
+ "manifesto": "manifest.json",
  "artes": [
   {
    "id": "vampire-lord",
@@ -1080,7 +1080,7 @@
       40.47,
       34.21
      ],
-     "iouFrenteVerso": 0.964,
+     "iouFrenteVerso": 0.969,
      "pagina": 15,
      "copias": 1
     },
@@ -1093,7 +1093,7 @@
       45.25,
       36.58
      ],
-     "iouFrenteVerso": 0.978,
+     "iouFrenteVerso": 0.981,
      "pagina": 47,
      "copias": 1
     }
@@ -1158,7 +1158,7 @@
       44.58,
       54.19
      ],
-     "iouFrenteVerso": 0.985,
+     "iouFrenteVerso": 0.996,
      "pagina": 15,
      "copias": 1
     },
@@ -1171,7 +1171,7 @@
       49.32,
       56.56
      ],
-     "iouFrenteVerso": 0.99,
+     "iouFrenteVerso": 0.998,
      "pagina": 47,
      "copias": 1
     }
@@ -1626,7 +1626,7 @@
       44.79,
       35.31
      ],
-     "iouFrenteVerso": 0.968,
+     "iouFrenteVerso": 0.988,
      "pagina": 23,
      "copias": 3
     },
@@ -1639,7 +1639,7 @@
       48.51,
       37.17
      ],
-     "iouFrenteVerso": 0.977,
+     "iouFrenteVerso": 0.992,
      "pagina": 55,
      "copias": 3
     }
@@ -1743,7 +1743,7 @@
       46.52,
       28.7
      ],
-     "iouFrenteVerso": 0.922,
+     "iouFrenteVerso": 0.917,
      "pagina": 26,
      "copias": 5
     },
@@ -1756,7 +1756,7 @@
       52.11,
       31.5
      ],
-     "iouFrenteVerso": 0.955,
+     "iouFrenteVerso": 0.952,
      "pagina": 58,
      "copias": 5
     }
@@ -1866,7 +1866,7 @@
       57.7,
       50.84
      ],
-     "iouFrenteVerso": 0.99,
+     "iouFrenteVerso": 0.988,
      "pagina": 29,
      "copias": 3
     },
@@ -1879,7 +1879,7 @@
       63.29,
       53.64
      ],
-     "iouFrenteVerso": 0.994,
+     "iouFrenteVerso": 0.993,
      "pagina": 61,
      "copias": 3
     }
@@ -1944,7 +1944,7 @@
       58.0,
       55.03
      ],
-     "iouFrenteVerso": 0.985,
+     "iouFrenteVerso": 0.996,
      "pagina": 30,
      "copias": 1
     },
@@ -1957,7 +1957,7 @@
       63.58,
       57.83
      ],
-     "iouFrenteVerso": 0.991,
+     "iouFrenteVerso": 0.998,
      "pagina": 62,
      "copias": 1
     }

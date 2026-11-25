@@ -9,7 +9,7 @@
   "sha256": "6eb195f9736625f7b9175167ff82f5b3164147f678bc9be1f77419153bbc11f1",
   "paginas": 48
  },
- "manifesto": null,
+ "manifesto": "manifest.json",
  "artes": [
   {
    "id": "city-guard-crossbow-v1",
@@ -1324,7 +1324,7 @@
       58.5,
       45.85
      ],
-     "iouFrenteVerso": 0.989,
+     "iouFrenteVerso": 0.981,
      "pagina": 16,
      "copias": 3
     },
@@ -1337,7 +1337,7 @@
       62.15,
       47.54
      ],
-     "iouFrenteVerso": 0.979,
+     "iouFrenteVerso": 0.973,
      "pagina": 40,
      "copias": 3
     }

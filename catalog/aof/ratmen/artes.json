@@ -9,7 +9,7 @@
   "sha256": "36640b0594fd942cceba5c13fe1a9692a38770f5a7b181222455d0469e095f13",
   "paginas": 68
  },
- "manifesto": null,
+ "manifesto": "manifest.json",
  "artes": [
   {
    "id": "captain",
@@ -364,7 +364,7 @@
       37.08,
       41.19
      ],
-     "iouFrenteVerso": 0.962,
+     "iouFrenteVerso": 0.972,
      "pagina": 3,
      "copias": 1
     },
@@ -377,7 +377,7 @@
       40.81,
       43.05
      ],
-     "iouFrenteVerso": 0.978,
+     "iouFrenteVerso": 0.983,
      "pagina": 36,
      "copias": 1
     }

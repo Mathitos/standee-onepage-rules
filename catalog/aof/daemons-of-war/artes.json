@@ -9,7 +9,7 @@
   "sha256": "c2a3eb488ed684a44efb23221dde5c441eb36edfb4872a92991cbd584eb91de6",
   "paginas": 28
  },
- "manifesto": null,
+ "manifesto": "manifest.json",
  "artes": [
   {
    "id": "champion-whip",
@@ -32,7 +32,7 @@
       39.5,
       42.04
      ],
-     "iouFrenteVerso": 0.956,
+     "iouFrenteVerso": 0.959,
      "pagina": 1,
      "copias": 1
     },
@@ -45,7 +45,7 @@
       42.88,
       43.73
      ],
-     "iouFrenteVerso": 0.969,
+     "iouFrenteVerso": 0.971,
      "pagina": 15,
      "copias": 1
     }
@@ -194,7 +194,7 @@
       39.54,
       59.86
      ],
-     "iouFrenteVerso": 0.973,
+     "iouFrenteVerso": 0.97,
      "pagina": 2,
      "copias": 1
     },
@@ -207,7 +207,7 @@
       42.93,
       61.55
      ],
-     "iouFrenteVerso": 0.983,
+     "iouFrenteVerso": 0.981,
      "pagina": 16,
      "copias": 1
     }
@@ -555,7 +555,7 @@
       46.78,
       26.16
      ],
-     "iouFrenteVerso": 0.839,
+     "iouFrenteVerso": 0.861,
      "pagina": 9,
      "copias": 3
     },
@@ -568,7 +568,7 @@
       50.08,
       27.94
      ],
-     "iouFrenteVerso": 0.883,
+     "iouFrenteVerso": 0.899,
      "pagina": 23,
      "copias": 2
     }
@@ -676,7 +676,7 @@
       67.44,
       65.66
      ],
-     "iouFrenteVerso": 0.982,
+     "iouFrenteVerso": 0.986,
      "pagina": 10,
      "copias": 2
     },
@@ -689,7 +689,7 @@
       69.09,
       67.31
      ],
-     "iouFrenteVerso": 0.986,
+     "iouFrenteVerso": 0.989,
      "pagina": 24,
      "copias": 1
     }
@@ -801,7 +801,7 @@
       59.01,
       59.1
      ],
-     "iouFrenteVerso": 0.875,
+     "iouFrenteVerso": 0.993,
      "pagina": 13,
      "copias": 3
     },
@@ -814,7 +814,7 @@
       62.4,
       60.79
      ],
-     "iouFrenteVerso": 0.897,
+     "iouFrenteVerso": 0.985,
      "pagina": 27,
      "copias": 3
     }
@@ -881,7 +881,7 @@
       48.47,
       36.75
      ],
-     "iouFrenteVerso": 0.879,
+     "iouFrenteVerso": 0.859,
      "pagina": 14,
      "copias": 1
     },
@@ -894,7 +894,7 @@
       51.86,
       38.44
      ],
-     "iouFrenteVerso": 0.896,
+     "iouFrenteVerso": 0.88,
      "pagina": 28,
      "copias": 1
     }
@@ -952,7 +952,7 @@
       49.78,
       27.94
      ],
-     "iouFrenteVerso": 0.883,
+     "iouFrenteVerso": 0.898,
      "pagina": 23,
      "copias": 1
     }
@@ -981,7 +981,7 @@
       69.17,
       67.31
      ],
-     "iouFrenteVerso": 0.986,
+     "iouFrenteVerso": 0.989,
      "pagina": 24,
      "copias": 1
     }

@@ -9,7 +9,7 @@
   "sha256": "4352c069255a9cc44966326dac9803dfcc5d88646bf6bca451cc4f8023627b77",
   "paginas": 80
  },
- "manifesto": null,
+ "manifesto": "manifest.json",
  "artes": [
   {
    "id": "jetpack-superior",
@@ -814,7 +814,7 @@
       20.45,
       33.1
      ],
-     "iouFrenteVerso": 0.985,
+     "iouFrenteVerso": 0.991,
      "pagina": 9,
      "copias": 1
     },
@@ -827,7 +827,7 @@
       23.83,
       35.18
      ],
-     "iouFrenteVerso": 0.99,
+     "iouFrenteVerso": 0.994,
      "pagina": 48,
      "copias": 1
     }
@@ -937,7 +937,7 @@
       20.24,
       32.85
      ],
-     "iouFrenteVerso": 0.985,
+     "iouFrenteVerso": 0.99,
      "pagina": 9,
      "copias": 1
     },
@@ -950,7 +950,7 @@
       23.62,
       34.54
      ],
-     "iouFrenteVerso": 0.99,
+     "iouFrenteVerso": 0.994,
      "pagina": 48,
      "copias": 1
     }
@@ -2000,7 +2000,7 @@
       38.86,
       33.57
      ],
-     "iouFrenteVerso": 0.981,
+     "iouFrenteVerso": 0.986,
      "pagina": 20,
      "copias": 2
     },
@@ -2013,7 +2013,7 @@
       41.91,
       35.31
      ],
-     "iouFrenteVerso": 0.989,
+     "iouFrenteVerso": 0.993,
      "pagina": 59,
      "copias": 1
     }
@@ -2927,7 +2927,7 @@
       29.21,
       35.31
      ],
-     "iouFrenteVerso": 0.987,
+     "iouFrenteVerso": 0.992,
      "pagina": 31,
      "copias": 3
     },
@@ -2940,7 +2940,7 @@
       32.6,
       37.0
      ],
-     "iouFrenteVerso": 0.991,
+     "iouFrenteVerso": 0.995,
      "pagina": 70,
      "copias": 3
     }
@@ -3092,7 +3092,7 @@
       34.84,
       36.7
      ],
-     "iouFrenteVerso": 0.991,
+     "iouFrenteVerso": 0.993,
      "pagina": 35,
      "copias": 3
     },
@@ -3105,7 +3105,7 @@
       38.57,
       38.57
      ],
-     "iouFrenteVerso": 0.993,
+     "iouFrenteVerso": 0.996,
      "pagina": 74,
      "copias": 3
     }

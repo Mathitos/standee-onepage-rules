@@ -9,7 +9,7 @@
   "sha256": "b1a8968c7ae7676a03ef4bf57621396218440755bb21d574f2a86af7de4f2f18",
   "paginas": 52
  },
- "manifesto": null,
+ "manifesto": "manifest.json",
  "artes": [
   {
    "id": "warrior-rifle",
@@ -450,7 +450,7 @@
       50.97,
       36.58
      ],
-     "iouFrenteVerso": 0.966,
+     "iouFrenteVerso": 0.969,
      "pagina": 6,
      "copias": 5
     },
@@ -463,7 +463,7 @@
       54.69,
       38.69
      ],
-     "iouFrenteVerso": 0.978,
+     "iouFrenteVerso": 0.981,
      "pagina": 32,
      "copias": 5
     }
@@ -1458,7 +1458,7 @@
       33.53,
       40.13
      ],
-     "iouFrenteVerso": 0.986,
+     "iouFrenteVerso": 0.989,
      "pagina": 23,
      "copias": 1
     },
@@ -1471,7 +1471,7 @@
       37.25,
       41.99
      ],
-     "iouFrenteVerso": 0.993,
+     "iouFrenteVerso": 0.994,
      "pagina": 49,
      "copias": 1
     }

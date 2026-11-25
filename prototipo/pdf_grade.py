@@ -29,6 +29,8 @@ INSET_PX = 3        # descarta a borda antialiased das linhas da grade
 ABA_MIN_MM, ABA_MAX_MM = 12, 30   # abas observadas: 14,8 (Wood Elves) a 24,8 mm (Daemons of Lust)
 LINHA_CURTA_MM = 50               # 2ª tentativa, para tabelas estreitas
 SIL_LIMIAR = 200                  # traço que fecha a silhueta (ver silhueta)
+SIL_ABERTURA_PX = 7               # a 600 dpi: tira as lascas do contorno da silhueta de 300 (D055)
+SIL_EXTRA_MIN_MM2 = 2.0           # região mínima que a silhueta de 300 dpi acrescenta (D055)
 CELULA_MIN_MM = 10                # frente e verso; as capas davam "faixas" de 0,2 a 3,7 mm
 ABA_TINTA_MAX = 0.2               # aba é papel em branco: até 0,07 nas faixas reais, 0,63+ nas capas
 
@@ -207,7 +209,43 @@ def extrair_pagina(doc, pagina, dpi=DPI):
 
 def silhueta(cinza, dpi=DPI):
     """Silhueta preenchida: traço escuro fechado, buracos preenchidos, ilhas mínimas removidas.
-    Limiar SIL_LIMIAR (200), o mesmo da skill (grade.silhueta): traço de fora cinza claro."""
+    Limiar SIL_LIMIAR (200), o mesmo da skill (grade.silhueta): traço de fora cinza claro.
+
+    Acima de DPI (a arte a 600 dpi), a silhueta ganha as regiões grandes que a mesma célula
+    reduzida a DPI preenche e a de 600 deixa de fora (D055). O traço cinza-claro que fecha partes
+    da figura junto à borda de baixo da célula (as voltas da cauda do Snakeman, as patas dos
+    cães, a nuvem do Jetpack Warrior) fica com falhas a 600 dpi e o miolo virava fundo; reduzida,
+    a célula fecha esse traço como na importação (grade.silhueta, máscara de 300 dpi). O contorno
+    continua o de 600 dpi; uma abertura tira as lascas do contorno, mais grosso a 300 dpi."""
+    s = _silhueta(cinza, dpi)
+    f = dpi // DPI
+    if f < 2:
+        return s
+    h, w = cinza.shape
+    try:
+        s3 = _silhueta(cv2.resize(cinza, (w // f, h // f), interpolation=cv2.INTER_AREA), DPI)
+    except ValueError:
+        return s
+    s3 = cv2.resize(s3.astype(np.uint8), (w, h), interpolation=cv2.INTER_NEAREST) > 0
+    k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (SIL_ABERTURA_PX, SIL_ABERTURA_PX))
+    extra = cv2.morphologyEx((s3 & ~s).astype(np.uint8), cv2.MORPH_OPEN, k) > 0
+    rot, n = ndi.label(extra)
+    if n == 0:
+        return s
+    px_mm2 = (25.4 / dpi) ** 2
+    areas = ndi.sum(extra, rot, range(1, n + 1)) * px_mm2
+    # só o que encosta na silhueta (miolo e reentrâncias): ilha solta viraria peça flutuando
+    borda = cv2.dilate(s.astype(np.uint8), np.ones((3, 3), np.uint8)) > 0
+    encosta = ndi.sum(borda, rot, range(1, n + 1)) > 0
+    manter = [i + 1 for i in range(n) if areas[i] >= SIL_EXTRA_MIN_MM2 and encosta[i]]
+    if not manter:
+        return s
+    # a abertura deixa frestas de 1-3 px entre a silhueta e o acréscimo: viravam furinhos com
+    # lateral preta na peça; fechadas, ficam como o resto da silhueta (buracos preenchidos)
+    return ndi.binary_fill_holes(s | np.isin(rot, manter))
+
+
+def _silhueta(cinza, dpi):
     escuro = cinza < SIL_LIMIAR
     n = int(round(5 * dpi / DPI))     # fechamento de ~0,42 mm em qualquer resolução
     k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (n, n))

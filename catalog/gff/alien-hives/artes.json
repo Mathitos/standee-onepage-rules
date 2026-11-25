@@ -9,7 +9,7 @@
   "sha256": "4a7e051c8bd8392dd3f71c009bb77ef614ad7cf991d55d42888331fbc1b5953a",
   "paginas": 58
  },
- "manifesto": null,
+ "manifesto": "manifest.json",
  "artes": [
   {
    "id": "prime-gunner-spitter-gun",
@@ -112,7 +112,7 @@
       56.73,
       68.79
      ],
-     "iouFrenteVerso": 0.983,
+     "iouFrenteVerso": 0.984,
      "pagina": 2,
      "copias": 1
     },
@@ -125,7 +125,7 @@
       60.45,
       70.65
      ],
-     "iouFrenteVerso": 0.987,
+     "iouFrenteVerso": 0.988,
      "pagina": 30,
      "copias": 1
     }
@@ -239,7 +239,7 @@
       60.62,
       78.78
      ],
-     "iouFrenteVerso": 0.978,
+     "iouFrenteVerso": 0.992,
      "pagina": 3,
      "copias": 1
     },
@@ -252,7 +252,7 @@
       63.92,
       80.98
      ],
-     "iouFrenteVerso": 0.983,
+     "iouFrenteVerso": 0.993,
      "pagina": 31,
      "copias": 1
     }

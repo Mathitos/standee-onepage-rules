@@ -9,7 +9,7 @@
   "sha256": "efa12f2e3f4514e97cd063fe398fa52a4c761912c50ac164787e0adf01b1be06",
   "paginas": 28
  },
- "manifesto": null,
+ "manifesto": "manifest.json",
  "artes": [
   {
    "id": "champion-gauntlet",

@@ -9,7 +9,7 @@
   "sha256": "64e66a68d8e9a56acf777d590aa80718423c73e0fecdd7d93069b62287c52ac3",
   "paginas": 42
  },
- "manifesto": null,
+ "manifesto": "manifest.json",
  "artes": [
   {
    "id": "warrior-gauss",
@@ -477,7 +477,7 @@
       42.76,
       44.87
      ],
-     "iouFrenteVerso": 0.986,
+     "iouFrenteVerso": 0.988,
      "pagina": 6,
      "copias": 2
     },
@@ -490,7 +490,7 @@
       46.57,
       46.78
      ],
-     "iouFrenteVerso": 0.99,
+     "iouFrenteVerso": 0.992,
      "pagina": 27,
      "copias": 2
     }
@@ -753,14 +753,14 @@
    "estilos": {
     "fino": {
      "telaMm": [
-      44.281,
+      44.238,
       46.651
      ],
      "tamanhoMm": [
       44.07,
       46.57
      ],
-     "iouFrenteVerso": 0.909,
+     "iouFrenteVerso": 0.913,
      "pagina": 12,
      "copias": 1
     },
@@ -773,7 +773,7 @@
       47.46,
       48.26
      ],
-     "iouFrenteVerso": 0.942,
+     "iouFrenteVerso": 0.945,
      "pagina": 33,
      "copias": 1
     }
@@ -1213,7 +1213,7 @@
       51.05,
       41.4
      ],
-     "iouFrenteVerso": 0.971,
+     "iouFrenteVerso": 0.973,
      "pagina": 18,
      "copias": 1
     },
@@ -1226,7 +1226,7 @@
       54.44,
       43.1
      ],
-     "iouFrenteVerso": 0.981,
+     "iouFrenteVerso": 0.982,
      "pagina": 39,
      "copias": 1
     }

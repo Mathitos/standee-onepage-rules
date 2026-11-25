@@ -9,7 +9,7 @@
   "sha256": "8134d9f700a8e7a461eea1249c7504857e82938bb08d22d132a322144ac78d6e",
   "paginas": 72
  },
- "manifesto": null,
+ "manifesto": "manifest.json",
  "artes": [
   {
    "id": "elite-protector-spear",
@@ -890,7 +890,7 @@
       45.93,
       54.82
      ],
-     "iouFrenteVerso": 0.947,
+     "iouFrenteVerso": 0.988,
      "pagina": 10,
      "copias": 5
     },
@@ -903,7 +903,7 @@
       49.66,
       56.68
      ],
-     "iouFrenteVerso": 0.964,
+     "iouFrenteVerso": 0.992,
      "pagina": 46,
      "copias": 5
     }
@@ -1054,7 +1054,7 @@
       46.69,
       54.65
      ],
-     "iouFrenteVerso": 0.954,
+     "iouFrenteVerso": 0.987,
      "pagina": 11,
      "copias": 1
     },
@@ -1067,7 +1067,7 @@
       50.38,
       56.6
      ],
-     "iouFrenteVerso": 0.969,
+     "iouFrenteVerso": 0.992,
      "pagina": 47,
      "copias": 1
     }
@@ -1093,7 +1093,7 @@
       41.02,
       40.68
      ],
-     "iouFrenteVerso": 0.979,
+     "iouFrenteVerso": 0.985,
      "pagina": 12,
      "copias": 1
     },
@@ -1106,7 +1106,7 @@
       45.76,
       43.05
      ],
-     "iouFrenteVerso": 0.987,
+     "iouFrenteVerso": 0.991,
      "pagina": 48,
      "copias": 1
     }

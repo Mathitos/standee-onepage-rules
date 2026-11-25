@@ -9,7 +9,7 @@
   "sha256": "6eeb40510359def8de3e2068c8104f6e7ae5b3fee291a13d95eea2bb22438adb",
   "paginas": 50
  },
- "manifesto": null,
+ "manifesto": "manifest.json",
  "artes": [
   {
    "id": "raptor-veteran",
@@ -235,7 +235,7 @@
       52.03,
       70.23
      ],
-     "iouFrenteVerso": 0.683,
+     "iouFrenteVerso": 0.684,
      "pagina": 3,
      "copias": 1
     },
@@ -580,7 +580,7 @@
       43.98,
       63.2
      ],
-     "iouFrenteVerso": 0.963,
+     "iouFrenteVerso": 0.965,
      "pagina": 8,
      "copias": 1
     },
@@ -593,7 +593,7 @@
       47.79,
       65.11
      ],
-     "iouFrenteVerso": 0.978,
+     "iouFrenteVerso": 0.979,
      "pagina": 32,
      "copias": 1
     }
@@ -949,7 +949,7 @@
       42.5,
       43.6
      ],
-     "iouFrenteVerso": 0.953,
+     "iouFrenteVerso": 0.955,
      "pagina": 15,
      "copias": 1
     },
@@ -962,7 +962,7 @@
       45.89,
       45.3
      ],
-     "iouFrenteVerso": 0.967,
+     "iouFrenteVerso": 0.969,
      "pagina": 39,
      "copias": 1
     }
@@ -1029,7 +1029,7 @@
       44.41,
       60.28
      ],
-     "iouFrenteVerso": 0.967,
+     "iouFrenteVerso": 0.965,
      "pagina": 15,
      "copias": 1
     },
@@ -1042,7 +1042,7 @@
       47.79,
       61.98
      ],
-     "iouFrenteVerso": 0.977,
+     "iouFrenteVerso": 0.975,
      "pagina": 39,
      "copias": 1
     }
@@ -1228,7 +1228,7 @@
       64.64,
       76.84
      ],
-     "iouFrenteVerso": 0.97,
+     "iouFrenteVerso": 0.979,
      "pagina": 19,
      "copias": 1
     },
@@ -1241,7 +1241,7 @@
       68.03,
       78.53
      ],
-     "iouFrenteVerso": 0.979,
+     "iouFrenteVerso": 0.986,
      "pagina": 43,
      "copias": 1
     }

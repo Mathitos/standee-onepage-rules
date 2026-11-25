@@ -649,20 +649,20 @@
       18.63,
       34.37
      ],
-     "iouFrenteVerso": 0.989,
+     "iouFrenteVerso": 0.979,
      "pagina": 7,
      "copias": 1
     },
     "borda": {
      "telaMm": [
-      23.918,
+      23.876,
       36.999
      ],
      "tamanhoMm": [
       23.71,
       36.91
      ],
-     "iouFrenteVerso": 0.992,
+     "iouFrenteVerso": 0.987,
      "pagina": 37,
      "copias": 1
     }
@@ -969,7 +969,7 @@
       24.13,
       27.56
      ],
-     "iouFrenteVerso": 0.953,
+     "iouFrenteVerso": 0.979,
      "pagina": 9,
      "copias": 1
     },
@@ -982,7 +982,7 @@
       29.21,
       30.18
      ],
-     "iouFrenteVerso": 0.967,
+     "iouFrenteVerso": 0.985,
      "pagina": 39,
      "copias": 1
     }
@@ -1086,7 +1086,7 @@
       28.79,
       36.2
      ],
-     "iouFrenteVerso": 0.981,
+     "iouFrenteVerso": 0.987,
      "pagina": 11,
      "copias": 5
     },
@@ -1099,7 +1099,7 @@
       33.87,
       38.74
      ],
-     "iouFrenteVerso": 0.989,
+     "iouFrenteVerso": 0.992,
      "pagina": 41,
      "copias": 5
     }
@@ -1658,7 +1658,7 @@
       27.39,
       56.05
      ],
-     "iouFrenteVerso": 0.991,
+     "iouFrenteVerso": 0.994,
      "pagina": 18,
      "copias": 1
     },
@@ -1671,7 +1671,7 @@
       32.05,
       58.38
      ],
-     "iouFrenteVerso": 0.993,
+     "iouFrenteVerso": 0.995,
      "pagina": 48,
      "copias": 1
     }

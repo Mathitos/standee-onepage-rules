@@ -161,3 +161,7 @@ O usuário colou uma lista de Mummified Undead e o 3MF falhou com "falha no work
 ## 25/11/2026 — revisão de outro agente
 
 O usuário pediu para conferir uma análise do projeto feita por outro agente. Os 7 itens procedem, com dados conferidos no código, nos army books e nos PRDs; o 2 em parte (os aliases propostos vêm da D040). O travamento do empacotamento com peça grande era regressão da D050. O usuário pediu as correções dos itens 6, 1 e 5 (D052–D054). Ao corrigir o 1, a leitura do código público do Army Forge mostrou que a lista não traz o nome dos itens, só o que eles dão, o que contradiz a D040.
+
+## 25/11/2026 — Snakeman vazado na impressão
+
+O usuário imprimiu o Snakeman (Mummified Undead) e mandou a foto: vazio onde devia ser cheio e preto onde devia ser branco. A frente impressa, comparada com o SVG, o 3MF e o G-code, mostrou três coisas: as voltas da cauda vazadas, por uma silhueta que a 600 dpi não fechava junto à borda de baixo (defeito, D055, em 78 artes do catálogo); o triângulo sob a lança, fundo fechado que vira figura como no paper mini; e o preto embolado, linhas finas de escama que se juntaram na impressão. A regra foi conferida arte por arte antes de regerar só as afetadas.

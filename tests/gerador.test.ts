@@ -24,6 +24,18 @@ describe('svg v2', () => {
       [[1, 1], [2, 1], [2, 2]],
     ])
   })
+
+  it('a silhueta do Snakeman inclui as voltas da cauda junto à borda de baixo (D055)', async () => {
+    // relato do usuário de 25/11, com foto da impressão: as voltas saíam ocas (1357 mm² de
+    // silhueta); a máscara da importação, a 300 dpi, tem 1572 mm²
+    const w = await carregarManifold()
+    const S = 25.4 / 600
+    const pasta = join(RAIZ, 'catalog/aof/mummified-undead/arts/snakeman/fino')
+    // só a frente: o contorno das duas metades sai dela (o verso tem outra silhueta e não muda)
+    const f = lerSvg(readFileSync(join(pasta, 'frente.svg'), 'utf8'))
+    const mm = f.silhueta.map((p) => p.map(([x, y]) => [x * S, (f.altura - y) * S] as [number, number]))
+    expect(w.CrossSection.ofPolygons(mm, 'EvenOdd').area()).toBeGreaterThan(1540)
+  })
 })
 
 describe('gerador (borda grossa, sem nome nem perfil)', () => {

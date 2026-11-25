@@ -9,7 +9,7 @@
   "sha256": "a27326b360a30d0f27b397f0ef8ef668ad52a8e331d7113ce655903741139fef",
   "paginas": 66
  },
- "manifesto": null,
+ "manifesto": "manifest.json",
  "artes": [
   {
    "id": "knight-captain",
@@ -2103,7 +2103,7 @@
       50.67,
       54.06
      ],
-     "iouFrenteVerso": 0.99,
+     "iouFrenteVerso": 0.995,
      "pagina": 22,
      "copias": 1
     },
@@ -2116,7 +2116,7 @@
       54.4,
       55.92
      ],
-     "iouFrenteVerso": 0.993,
+     "iouFrenteVerso": 0.997,
      "pagina": 54,
      "copias": 1
     }
@@ -2866,7 +2866,7 @@
       65.49,
       96.31
      ],
-     "iouFrenteVerso": 0.994,
+     "iouFrenteVerso": 0.995,
      "pagina": 33,
      "copias": 1
     },
@@ -2879,7 +2879,7 @@
       69.22,
       98.17
      ],
-     "iouFrenteVerso": 0.995,
+     "iouFrenteVerso": 0.996,
      "pagina": 65,
      "copias": 1
     }

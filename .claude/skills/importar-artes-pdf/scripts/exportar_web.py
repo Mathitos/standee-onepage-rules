@@ -10,6 +10,7 @@ arts/<id>/rotulo.png e artes.json. Apaga artes de uma exportação anterior que 
 Reaproveita os SVG da exportação anterior do mesmo PDF (mesmo SHA-256, contrato e dpi) pelo id do
 candidato: depois da revisão as artes só trocam de nome (a001 -> warrior-sword-1), sem traçar de novo.
 --revetorizar traça tudo de novo (use depois de mudar vetor.py ou a extração).
+--refazer ART_ID traça de novo só essas artes (D055: as que uma mudança da silhueta altera).
 """
 import argparse
 import hashlib
@@ -58,7 +59,10 @@ def main():
     ap.add_argument('--saida', type=Path, required=True)
     ap.add_argument('--faccao', help='nome de exibição (padrão: do nome do PDF)')
     ap.add_argument('--revetorizar', action='store_true', help='não reaproveita SVG da exportação anterior')
+    ap.add_argument('--refazer', action='append', default=[], metavar='ART_ID',
+                    help='traça de novo só esta arte (pode repetir); as outras são reaproveitadas')
     a = ap.parse_args()
+    refazer = set(a.refazer)
     raiz, work = a.saida, a.saida / 'work'
     cand = json.loads((work / 'candidatos.json').read_text(encoding='utf-8'))
     sha = hashlib.sha256(a.pdf.read_bytes()).hexdigest()
@@ -109,7 +113,7 @@ def main():
             pasta = tmp_arts / art_id / estilo
             ant = anterior.get(c['id'])
             velho = raiz / 'arts' / ant['id'] / estilo if ant else None
-            if ant and estilo in ant['estilos'] and all((velho / f'{l}.svg').exists() for l in ('frente', 'verso')):
+            if ant and art_id not in refazer and estilo in ant['estilos'] and all((velho / f'{l}.svg').exists() for l in ('frente', 'verso')):
                 pasta.mkdir(parents=True, exist_ok=True)
                 for lado in ('frente', 'verso'):
                     shutil.copyfile(velho / f'{lado}.svg', pasta / f'{lado}.svg')
