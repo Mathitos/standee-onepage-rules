@@ -14,14 +14,22 @@ type Estado =
   | { fase: 'parado' }
   | { fase: 'preparando' }
   | { fase: 'gerando'; feito: number; total: number; etapa: string }
-  | { fase: 'pronto'; resultado: Resultado; url: string; nome: string }
+  | { fase: 'pronto'; resultado: Resultado; url: string; nome: string; assinatura: string }
   | { fase: 'erro'; mensagem: string; atualizado: boolean }
 
 type EstadoPapel =
   | { fase: 'parado' }
   | { fase: 'gerando' }
-  | { fase: 'pronto'; resultado: ResultadoPapel; url: string; nome: string }
+  | { fase: 'pronto'; resultado: ResultadoPapel; url: string; nome: string; assinatura: string }
   | { fase: 'erro'; mensagem: string; atualizado: boolean }
+
+/**
+ * Arquivo gerado com uma configuração que já mudou (revisão de 25/11): o link de download sumia só
+ * ao gerar de novo, e o arquivo antigo continuava oferecido depois de trocar arte, base ou opção.
+ */
+function Desatualizado() {
+  return <p className="vazio">A lista, as artes, as bases ou as opções mudaram depois da geração; gere de novo para baixar.</p>
+}
 
 const plural = (n: number, um: string, varios: string) => `${n} ${n === 1 ? um : varios}`
 
@@ -74,6 +82,10 @@ export function EtapaGerar(props: {
   const totalPapel = doPapel.modelos.reduce((s, m) => s + m.qtd, 0)
   const podePapel = doPapel.modelos.length > 0 && (doPapel.omitidas.length === 0 || soResolvidas) && papel.fase !== 'gerando'
   const nomeLista = (props.lista.header?.armyName ?? 'standees').toLowerCase().replace(/[^a-z0-9]+/g, '-')
+  // tudo o que muda o arquivo: com a assinatura diferente da usada na geração, o download sai da tela
+  const enviadasIds = props.enviadas.map((e) => e.id)
+  const assinatura3mf = JSON.stringify([props.faccao.caminho, props.estilo, enviadasIds, modelos, modo, nomeNaBase, numero, miolo, torre, bico])
+  const assinaturaPapel = JSON.stringify([props.faccao.caminho, props.estilo, enviadasIds, doPapel.modelos, nomeLista])
 
   /** Textos dos SVG das artes usadas, no estilo escolhido (ou no outro, se a arte só tiver um). */
   async function baixarArtes(ids: string[]): Promise<Record<string, ArtePedido>> {
@@ -99,6 +111,7 @@ export function EtapaGerar(props: {
 
   async function iniciar() {
     if (estado.fase === 'pronto') URL.revokeObjectURL(estado.url)
+    const assinatura = assinatura3mf
     setEstado({ fase: 'preparando' })
     try {
       const artes = await baixarArtes(modelos.map((m) => m.arte))
@@ -115,7 +128,7 @@ export function EtapaGerar(props: {
       const resultado = await g.promessa
       const nome = `${nomeLista}-${props.estilo}.3mf`
       const url = URL.createObjectURL(new Blob([resultado.arquivo as BlobPart], { type: 'model/3mf' }))
-      setEstado({ fase: 'pronto', resultado, url, nome })
+      setEstado({ fase: 'pronto', resultado, url, nome, assinatura })
     } catch (e) {
       setEstado(await falha(e))
     } finally {
@@ -125,6 +138,7 @@ export function EtapaGerar(props: {
 
   async function iniciarPapel() {
     if (papel.fase === 'pronto') URL.revokeObjectURL(papel.url)
+    const assinatura = assinaturaPapel
     setPapel({ fase: 'gerando' })
     try {
       // carregado só aqui: o opentype.js não pesa na abertura do site
@@ -136,7 +150,7 @@ export function EtapaGerar(props: {
       const resultado = gerarPapel({ modelos: doPapel.modelos, artes, fonte, titulo: props.lista.header?.armyName ?? undefined })
       const nome = `${nomeLista}-${props.estilo}-papel-a4.pdf`
       const url = URL.createObjectURL(new Blob([resultado.arquivo as BlobPart], { type: 'application/pdf' }))
-      setPapel({ fase: 'pronto', resultado, url, nome })
+      setPapel({ fase: 'pronto', resultado, url, nome, assinatura })
     } catch (e) {
       setPapel(await falha(e))
     }
@@ -222,7 +236,8 @@ export function EtapaGerar(props: {
         )}
         {estado.fase === 'erro' &&
           (estado.mensagem === 'cancelado' ? <p className="vazio">Geração cancelada.</p> : <Falha {...estado} />)}
-        {estado.fase === 'pronto' && (
+        {estado.fase === 'pronto' && estado.assinatura !== assinatura3mf && <Desatualizado />}
+        {estado.fase === 'pronto' && estado.assinatura === assinatura3mf && (
           <div className="pronto">
             <a className="botao" href={estado.url} download={estado.nome}>
               Baixar {estado.nome} ({(estado.resultado.arquivo.byteLength / 1e6).toFixed(1)} MB)
@@ -261,7 +276,8 @@ export function EtapaGerar(props: {
         </div>
         {papel.fase === 'gerando' && <p className="vazio">Montando as folhas…</p>}
         {papel.fase === 'erro' && <Falha {...papel} />}
-        {papel.fase === 'pronto' && (
+        {papel.fase === 'pronto' && papel.assinatura !== assinaturaPapel && <Desatualizado />}
+        {papel.fase === 'pronto' && papel.assinatura === assinaturaPapel && (
           <div className="pronto">
             <div className="botoes">
               <a className="botao" href={papel.url} download={papel.nome}>

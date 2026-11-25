@@ -8,7 +8,7 @@ Site (GitHub Pages) que gera standees 3MF a partir de listas do Army Forge. O si
 
 - Git local em `C:\Users\Matheus\Desktop\dev\standee-onepage-rules`, branch `main`, com o remoto `origin` em `git@github.com:Mathitos/standee-onepage-rules.git` (público, criado pelo usuário em 23/11). O push vai por SSH: no desktop do usuário, o git usa o SSH do Windows, cujo agente tem a chave do GitHub. Commits pequenos; ver `git log`.
 - No git: artes vetorizadas (SVG) do catálogo, manifestos, revisões e snapshots do army book (D006 decidida, D020). Fora do git: `*.pdf`, `saidas/` e intermediários da skill (`work/`, `review/`, `build/`).
-- `npm run check` (tipos + 68 testes, 24/11) e `npm run build` passam localmente. Workflow `.github/workflows/pages.yml`: checks em push/PR, deploy da `main` no Pages. Primeira execução no GitHub em 23/11: verde (build e deploy). Site em https://mathitos.github.io/standee-onepage-rules/.
+- `npm run check` (tipos + 75 testes, 25/11) e `npm run build` passam localmente. Workflow `.github/workflows/pages.yml`: checks em push/PR, deploy da `main` no Pages. Primeira execução no GitHub em 23/11: verde (build e deploy). Site em https://mathitos.github.io/standee-onepage-rules/.
 - `npm audit`: 0 vulnerabilidades em dependências de produção; alerta "high" de ReDoS no `picomatch` só em ferramentas de desenvolvimento (não corrigido às cegas).
 
 ## Estado real
